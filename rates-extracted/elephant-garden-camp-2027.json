@@ -1,0 +1,59 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftotext -layout from 'ELEPHANT GARDEN CAMP/Elephant Garden Camp 2027-2028 Non-Resident DMC rates.pdf' (8pp, single property, very clean/unambiguous single-page rate table). Two older files in the same folder ('...DMC rates 2026-2027.pdf' and '...rates 2026-2027.pdf') were NOT extracted - this newer 2027-2028 document supersedes them for our slice.",
+  "property": "Elephant Garden Camp",
+  "location": "Amboseli",
+  "currency": "USD",
+  "validity": { "start": "2027-06-01", "end": "2028-05-31" },
+  "note": "Camp closed 18 April - 12 May 2028 (outside this validity window's start but relevant if quoting into 2028)",
+  "confidence": "confirmed-2027-08-06",
+  "seasons": {
+    "peak": { "dates": "Jul - Sep, 20 Dec - 2 Jan" },
+    "mid": { "dates": "3 Jan - 31 Mar, Jun, Oct, 1-19 Dec" },
+    "green": { "dates": "Apr - May, Nov" }
+  },
+  "rates": {
+    "unit": "per person per night unless noted; Family Tent priced per unit",
+    "gamePackage": {
+      "rack": { "peak": { "sharing": 730, "single": 860, "familyTent": 2550 }, "mid": { "sharing": 590, "single": 700, "familyTent": 2065 }, "green": { "sharing": 434, "single": 528, "familyTent": 1515 } },
+      "dmc": { "peak": { "sharing": 548, "single": 645, "familyTent": 1913 }, "mid": { "sharing": 443, "single": 525, "familyTent": 1549 }, "green": { "sharing": 326, "single": 396, "familyTent": 1137 } }
+    },
+    "fullBoard": {
+      "rack": { "peak": { "sharing": 616, "single": 740, "familyTent": 2150 }, "mid": { "sharing": 476, "single": 586, "familyTent": 1660 }, "green": { "sharing": 320, "single": 410, "familyTent": 1120 } },
+      "dmc": { "peak": { "sharing": 462, "single": 555, "familyTent": 1613 }, "mid": { "sharing": 357, "single": 440, "familyTent": 1245 }, "green": { "sharing": 240, "single": 308, "familyTent": 840 } }
+    },
+    "verified": true,
+    "confidenceNote": "DMC rate is roughly 75% of Rack on most cells (e.g. Game Package Peak Sharing 730->548 = 75.07%) but not an exact clean 25% on every cell - treat as the contracted DMC figure itself rather than a derived percentage."
+  },
+  "mandatoryFees": {
+    "amboseliParkFees": "Paid directly to KWS by agent/guest - not a fixed figure in this document",
+    "elephantGardenConservancyFee": { "adult": 35, "child3to17": 20, "unit": "per night", "note": "Only applicable to Game Package, not Full Board" },
+    "verified": true
+  },
+  "transferRates": { "emaliOrTarakea": { "rack": 240, "dmc": 216, "unit": "per car" }, "namanga": { "rack": 420, "dmc": 378, "unit": "per car" }, "verified": true },
+  "aLaCarteRack_dmc": {
+    "additionalVehiclePerNight": { "rack": 300, "dmc": 270 },
+    "guidingByEricOleKalama": { "perDay": 300 },
+    "extraLunchAtCamp": { "rack": 40, "dmc": 36 },
+    "extraPackedLunch": { "rack": 20, "dmc": 18 },
+    "bushBreakfastFullBoardGuests": { "rack": 65, "dmc": 59, "minGuests": 2 },
+    "bushWalk2hrFullBoardGuests": { "rack": 80, "dmc": 71, "minGuests": 2 },
+    "sundownerFullBoardGuests": { "rack": 65, "dmc": 59, "minGuests": 2 },
+    "verified": true
+  },
+  "specialOffers": {
+    "pay3Stay4": "25% discount on accommodation for a 4-night stay charged as 3; excludes Jul-Sep; park/conservancy fees still charged for all nights",
+    "singleDiscount": "First single tent in a booking charged at double-sharing rate (Full Board only, not Game Package); excludes Jul-Sep",
+    "honeymoonDiscount": "25% off accommodation for one partner; valid all seasons; requires marriage certificate, travel within 9 months of wedding",
+    "verified": true
+  },
+  "childPolicy": {
+    "under8SharingWith1or2Adults": "Free of charge (in addition to adult single/double rate)",
+    "age8to17SharingWith1or2Adults": "50% of adult rate (in addition to adult single/double rate)",
+    "age12to17OwnTent": "75% of adult single/double rate",
+    "verified": true
+  },
+  "occupancy": { "familyTentMax": 5, "standardTentMax": 3, "thirdGuestInStandardTent": "50% of double sharing rate (adult or child 8-17)", "minNightStay": 2, "verified": true },
+  "tourLeaderRates": { "with2plusGuests": 130, "withOnly1Guest": 250, "unit": "per person sharing, includes meals and soft drinks", "verified": true },
+  "cancellationPolicy": "After confirmation: 20%; 45-30 days before arrival: 50%; less than 30 days/no-show: 100%",
+  "singleTentPolicy": "3 or fewer single tents per booking = single tent rate; 4th+ single tent charged at double-tent rate (2x double sharing)"
+}

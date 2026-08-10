@@ -1,0 +1,18 @@
+{
+  "$note": "Extracted 6 Aug 2026 via whole-file pdftotext read. Source: Bush and Beyond Ltd rate sheet.",
+  "property": "Ol Malo Lodge",
+  "operator": "Bush and Beyond Ltd (booking agent) / Francombe family",
+  "region": "Northern Laikipia District (Samburu tribal heartland), near Loisaba Airstrip",
+  "tier": "RSP (rack) and Trade Rates/Preferential",
+  "source": { "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/BUSH&BEYOND/Ol Malo Lodge - 2026 Preferential US$.pdf" },
+  "seasons": { "regular": "5 Jan-31 Mar, Jun, 1 Sep-31 Oct, 1-19 Dec 2026 (closed April, May, November 2026)", "premium": "1 Jul-31 Aug 2026, 20 Dec 2026-3 Jan 2027" },
+  "rates": {
+    "currency": "USD", "unit": "per person per night sharing, no single supplement",
+    "regular": { "rsp": { "adult": 1095, "childSharing5to15": 710, "conservancyFee": { "adult": 183, "child": 92 }, "total": { "adult": 1278, "child": 802 } }, "trade": { "adult": 821, "childSharing5to15": 533, "conservancyFee": { "adult": 183, "child": 92 }, "total": { "adult": 1004, "child": 625 } } },
+    "premium": { "rsp": { "adultSharing": 1600, "adultSingle": 1875, "childSharing": 1030, "conservancyFee": 183, "total": { "adultSharing": 1783, "adultSingle": 2058, "childSharing": 1122 } }, "trade": { "adultSharing": 1200, "adultSingle": 1406, "childSharing": 773, "conservancyFee": 183, "total": { "adultSharing": 1383, "adultSingle": 1589, "childSharing": 865 } } }
+  },
+  "childPolicy": { "under5": "Free", "5to15sharing": "Child rate applies", "allAgesWelcome": true },
+  "inclusions": "Full board, soft drinks/local beers/non-premium wines/spirits, Ol Malo Airstrip transfers, statutory taxes, laundry, exclusive day/night game drives, horse riding, guided/medicinal plant walks, sleepouts (Treehouse/Leopard hide), Samburu cultural visits, 3-peak challenge, mountain biking, sundowners, camel treks.",
+  "exclusions": "Conservancy fees, helicopter trips, market purchases, transfers to/from Loisaba airstrip ($110/vehicle), champagne/premium spirits, fly camping.",
+  "notes": "Closed April, May, November 2026. Fly Camp and Nomad Expedition add-ons available (mobilisation surcharge $500/night)."
+}

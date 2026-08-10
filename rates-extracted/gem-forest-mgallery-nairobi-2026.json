@@ -1,0 +1,44 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftotext -layout, per-page read (single-page rate schedule, no multi-property risk). NOT a Soroi property. Nairobi city hotel used as a stopover option, part of Accor's MGallery Collection.",
+  "property": "Gem Forest Hotel Nairobi - MGallery Collection",
+  "operator": "Accor (MGallery)",
+  "region": "Nairobi",
+  "tier": "Tour Operators and Agent Rates (Net Rate) - schedule attached to a Leisure Individual Distribution Agreement between Sunworld Safaris and the Hotel",
+  "residency": "Not tier-split by residency on this document",
+  "source": {
+    "files": [
+      "2026 CONTRACT RATES/KENYA/ACCOMODATION/GEM FOREST/Gem Forest Schedule 1 - Applicable Rates.pdf",
+      "2026 CONTRACT RATES/KENYA/ACCOMODATION/GEM FOREST/Gem Forest Mgallery  - Leisure Distribution Agreement 2025 - 2027.pdf"
+    ],
+    "note": "The Leisure Distribution Agreement file is a legal contract with no additional rate tables beyond what's in Schedule 1 - checked page by page via keyword search, only cross-references Schedule 1.",
+    "validity": { "start": "2026-02-07", "end": "2027-01-02" },
+    "agreementExecuted": "2026-02-09"
+  },
+  "confidence": "confirmed-2026-08-06",
+  "rates": {
+    "currency": "USD",
+    "unit": "per room per night, Net Rate",
+    "mealPlan": "BB (Bed & Breakfast)",
+    "roomTypes": {
+      "superiorRoomKing": { "allotment": "65 rooms", "single": 150, "double": 180, "extraBed": 40, "maxOccupancy": "2 adults + 1 child (below 12 yrs) OR 1 adult + 1 child (below 12 yrs)", "size": "30 sq.m / 325 sq.ft", "verified": true },
+      "superiorRoomTwin": { "allotment": "8 rooms", "single": 150, "double": 180, "extraBed": null, "maxOccupancy": "3 adults + 1 child (below 12yrs) OR 2 adults + 2 children (below 12yrs), no extra bed", "size": "30 sq.m / 325 sq.ft", "verified": true },
+      "deluxeRoomKing": { "allotment": "21 rooms", "single": 210, "double": 240, "extraBed": 40, "maxOccupancy": "2 adults + 1 child (below 12yrs), child on extra bed", "size": "35 sq.m / 375 sq.ft", "verified": true },
+      "juniorSuiteKing": { "allotment": "5 rooms", "single": 300, "double": 330, "extraBed": 40, "maxOccupancy": "2 adults + 1 child (below 12yrs), child on extra bed", "size": "70 sq.m / 753 sq.ft", "verified": true },
+      "gemSuiteKing": { "allotment": "5 rooms", "single": 400, "double": 430, "extraBed": 40, "maxOccupancy": "2 adults + 1 child (below 12yrs), child on extra bed", "size": "72 sq.m / 775 sq.ft", "verified": true },
+      "presidentialSuiteKing": { "allotment": "1 room", "single": 750, "double": 780, "extraBed": 40, "maxOccupancy": "2 adults + 1 child (below 12yrs), child on extra bed", "size": "190 sq.m / 2045 sq.ft", "verified": true }
+    },
+    "extraBedChargeGeneral": { "amount": 40, "unit": "USD net per night, for adult or child", "verified": true }
+  },
+  "mealSupplementRates": {
+    "note": "Table exists for extra meal charges (breakfast/lunch/dinner, adult/children) applicable 23-01-26 to 02-01-27 but pdftotext -layout scrambled the numeric column alignment - only Lunch Adult=$40, Dinner Adult=$40, Lunch Children=$20, Dinner Children=$20 could be confidently read; Breakfast is 'Incl' (included in BB rate). verified: true for the four figures read; flagged in case column misalignment hid a different season split.",
+    "lunchAdult": 40, "dinnerAdult": 40, "lunchChild": 20, "dinnerChild": 20
+  },
+  "taxes": { "vat": "Included in rate", "localTaxes": "Not included, amount unspecified per pax/night on this document" },
+  "childPolicy": {
+    "note": "Not a portfolio-wide statement like Soroi's — this document only states max occupancy allows 1 child below 12 per room (accommodated on extra bed for most room types at $40/night). No sliding-scale child discount percentage stated anywhere in this document.",
+    "childAgeThreshold": "below 12 years"
+  },
+  "contractTerms": {
+    "note": "From the Leisure Distribution Agreement (2025-2027): Applicable Rates must not be disclosed to guests/public, must be sold exclusively as part of a Package. Standard hotel distribution agreement boilerplate (deposits, cancellation, force majeure, confidentiality) — not itinerary-relevant, not reproduced here."
+  }
+}

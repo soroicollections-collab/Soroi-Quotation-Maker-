@@ -1,0 +1,27 @@
+{
+  "$note": "Extracted 6 Aug 2026 by reading the source Excel workbook directly with openpyxl (python3, cached/calculated values) rather than converting to PDF/text first - the workbook has dropdown-driven 'Camp Specific' and 'Camp Comparison' sheets whose cached cell values only reflect whichever camp was last selected, so the flat 'Rate Table' sheet (which lists every camp x season x board-basis row explicitly) was used instead as the authoritative source, cross-checked against the 'Camp Seasons & Rack' summary sheet. Source: 'Asilia-Contract-Rates-26-27.xlsx', issued 29 Aug 2025. This is one of 4 Kenya camps in Asilia's East-Africa-wide workbook (Rekero, Naboisho Camp, Encounter Mara, Ol Pejeta Bush Camp) - all other camps in the file are Tanzania or Uganda and excluded from this extraction.",
+  "property": "Rekero Camp",
+  "operator": "Asilia Africa",
+  "region": "Masai Mara",
+  "tier": "Standard net rate (RSP/rack rate x 0.75, i.e. Sunworld's confirmed 'Agent Discount' of 25% per the workbook's Cover sheet) - Bronze/Silver/Gold Dynamic Discount tiers also exist (7%/15%/25% off RSP before the 25% agent discount) but are availability-dependent and not extracted here",
+  "source": {
+    "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/ASILIA/Asilia-Contract-Rates-26-27.xlsx",
+    "validity": { "start": "2026-06-01", "end": "2027-05-31", "note": "This is Asilia's 2026-27 season-year rate sheet, not a calendar-year 2026 sheet - it does not cover Jan-May 2026 (that would be under the prior '25-26' rate sheet, not extracted in this pass)." }
+  },
+  "mealPlan": "Game Package only (no Full Board option at this camp)",
+  "seasons": { "high": "1 Jul-31 Oct, 20 Dec-5 Jan", "low": "1-30 Jun, 1 Nov-19 Dec, 6 Jan-31 Mar", "closed": "1 Apr-31 May" },
+  "rates": {
+    "currency": "USD", "unit": "per person per night",
+    "rsp": { "high": { "sharing": 1450, "single": 2175, "triple": 1208.33 }, "low": { "sharing": 910, "single": 1365, "triple": 758.33 } },
+    "standardNet": { "high": { "sharing": 1087.5, "single": 1631.25, "triple": 906.25 }, "low": { "sharing": 682.5, "single": 1023.75, "triple": 568.75 } }
+  },
+  "mandatoryFees": {
+    "unit": "per person per night unless noted",
+    "asiliaConservationCharge": 10,
+    "parkFee": { "adult": { "julDec": 200, "janJun": 100 }, "child9to17": 50 },
+    "narokCountyFee": { "adult": 40, "child9to17": 20 }
+  },
+  "childPolicy": { "5to18": "50% of adult sharing rate", "19plus": "Full adult rate", "under12MustShareWithAdult": true },
+  "privateVehicle": "On request, rate not captured in this extraction - check Asilia directly",
+  "notes": "Tier classified 'Classic' in Asilia's internal camp tier list. Rates in USD, per person/camp/unit/child as noted."
+}

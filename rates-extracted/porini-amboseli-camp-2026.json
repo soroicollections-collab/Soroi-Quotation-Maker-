@@ -1,0 +1,58 @@
+{
+  "property": "Porini Amboseli Camp",
+  "operator": "Gamewatchers Safaris Ltd (Porini Camps)",
+  "region": "Selenkay Conservancy, Amboseli",
+  "isSoroiProperty": false,
+  "sourceFiles": [
+    "2026 CONTRACT RATES/KENYA/ACCOMODATION/PORINI CAMPS/PORINI CAMPS  NAIROBI TENTED 2026 - PREFERRED AGENT NETT RATES.pdf",
+    "2026 CONTRACT RATES/KENYA/ACCOMODATION/PORINI CAMPS/Reduced Rates for 6 nights Porini Camps 2026 - Net Rates..pdf"
+  ],
+  "currency": "USD",
+  "rateType": "Preferred Agent NETT rates (already Sunworld's discounted rate - no separate public Rack card found in this folder)",
+  "groundPackage_perPersonSharing_perNight": {
+    "seasons": [
+      { "dates": "20 Dec 2025-2 Jan 2026", "rate": 706, "singleSupplement": 190 },
+      { "dates": "3 Jan-31 Mar 2026", "rate": 526, "singleSupplement": 180 },
+      { "dates": "1-15 Apr 2026", "rate": 466, "singleSupplement": 180 },
+      { "dates": "15 Apr-31 May 2026", "rate": "Closed", "singleSupplement": 180 },
+      { "dates": "1-30 Jun 2026", "rate": 490, "singleSupplement": 180 },
+      { "dates": "1-21 Jul 2026", "rate": 706, "singleSupplement": 195 },
+      { "dates": "22 Jul-30 Sep 2026", "rate": 706, "singleSupplement": 210 },
+      { "dates": "1-31 Oct 2026", "rate": 706, "singleSupplement": 190 },
+      { "dates": "1 Nov-19 Dec 2026", "rate": 490, "singleSupplement": 180 },
+      { "dates": "20 Dec 2026-2 Jan 2027", "rate": 726, "singleSupplement": 210 }
+    ],
+    "verified": true
+  },
+  "reducedRate_6nightsSpecialOffer_combinedWithPoriniRhino": {
+    "confidenceNote": "Rate shown is for the combined 'Porini Amboseli Camp & Porini Rhino Camp' offer column - applies when booking 6+ nights across 2 qualifying camps, min 3 nights each. See top-level offer terms.",
+    "seasons": [
+      { "dates": "20 Dec 2025-2 Jan 2026", "rate": 636 }, { "dates": "3 Jan-31 Mar 2026", "rate": 468 }, { "dates": "1-15 Apr 2026", "rate": 411 }, { "dates": "16 Apr-31 May 2026", "rate": 412 },
+      { "dates": "1-30 Jun 2026", "rate": 468 }, { "dates": "1-21 Jul 2026", "rate": 636 }, { "dates": "22 Jul-30 Sep 2026", "rate": 636 }, { "dates": "1-31 Oct 2026", "rate": 489 },
+      { "dates": "1 Nov-19 Dec 2026", "rate": 468 }, { "dates": "20 Dec 2026-2 Jan 2027", "rate": 655 }
+    ],
+    "verified": true
+  },
+  "roomNote": "Each tent has 1 double bed + 1 single bed (3 adults possible; 3rd adult pays same per-person-sharing rate). 1 Family Unit (2 ensuite tents + interconnecting lounge, sold as 2 individual tents); a child taking a tent in the family unit pays 75% of per-person-sharing rate.",
+  "minStay": "2 nights (exclusive use also requires minimum 2 nights)",
+  "includes": ["Full board accommodation", "Soft drinks, Tusker beer, house wine, vodka, gin & tonic, mineral water", "Day & night shared game drives (open-sided 4x4, qualified guides)", "Sundowners & walks with Maasai warriors", "Local conservancy airstrip transfers", "Daily conservancy fees", "Game drives in Selenkay Conservancy + one full day with picnic lunch in Amboseli National Park (2-3 night stays)", "One Maasai village visit", "Free inter-camp transfers to Porini Cottages/Giraffe/Mara/Cheetah/Lion with enroute game drives"],
+  "excludes": ["Regional/international flights, taxes, visa fees", "Personal items", "Laundry", "Tips/gratuities", "Exclusive use of vehicle: US$300/vehicle/day, min 2 days", "Late departure after 10:00 checkout: US$125pp min 2 pax", "Christmas/New Year supplement 24/25/26/31 Dec & 1 Jan: US$40pp/night"],
+  "additionalFees": { "poriniWildlifeHabitatTrustPayment": "US$5 per person per night, non-commissionable" },
+  "airstripTransfers": { "raw": "Selenkay Airstrip (charter flights, free) or Amboseli Airstrip (scheduled flights, +US$50pp pickup supplement + 1 park fee)", "verified": true },
+  "roadTransfers_06seaterMinivan_2026": [
+    { "route": "Nairobi to Porini Amboseli", "amount": "US$255/vehicle" },
+    { "route": "Namanga to Porini Amboseli", "amount": "US$300/vehicle" },
+    { "route": "Voi to Porini Amboseli", "amount": "US$495/vehicle" }
+  ],
+  "childPolicy": { "raw": "8-16 years sharing with 2 adults: 60% of adult rate.", "verified": true },
+  "specialOffers": [
+    "20 Dec-2 Jan booking of 8+ nights combining Porini Camps: 15% discount on total booking cost",
+    "Honeymoon: 50% off for bride staying 4+ nights (25% off in Aug/Sep), proof of wedding required, not combinable",
+    "Solo travelers: stay in single tent at no extra cost, valid 1 Nov-19 Dec and 2 Jan-31 May",
+    "Pay Stay: stay 4 nights pay for 3 (4th night free, conservancy fee still payable), valid year-round except Jul/Aug/Sep, 4 consecutive nights same camp"
+  ],
+  "policies": {
+    "deposit": "25% deposit to confirm, balance due 60 days before arrival",
+    "cancellation": "Confirmation-120 days: 25%; 120-60 days: 35%; 60-30 days: 50%; 30-15 days: 75%; 15-3 days: 90%; <=3 days: 100%"
+  }
+}

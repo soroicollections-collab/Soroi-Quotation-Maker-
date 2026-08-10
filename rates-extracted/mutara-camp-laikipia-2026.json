@@ -1,0 +1,99 @@
+{
+  "property": "Mutara Camp Laikipia",
+  "operator": "JCH Group Ltd (Jambo Chester Hotels) / The Monarch Group Limited",
+  "region": "Laikipia (Mutara Conservancy)",
+  "isSoroiProperty": false,
+  "sourceFiles": [
+    "2026 CONTRACT RATES/KENYA/ACCOMODATION/MUTARA/2026-2027 CONTRACT JCH GROUP -SUNWORLD SAFARIS.pdf"
+  ],
+  "currency": "USD",
+  "validity": {
+    "raw": "Agreement valid immediately until 06 Jan 2028",
+    "seasons": { "seasonA": "7 Jan-31 May, 1 Nov-14 Dec", "seasonB": "1 Jun-31 Oct, 15 Dec-6 Jan" },
+    "verified": true
+  },
+  "notes": [
+    "Both Rack rates (public) and Net rates (Sunworld's actual cost, 30% commission built in per note below) are given - Net = the rate Sunworld pays; Rack = ceiling rate ('Travel agent may not sell room rate above our rack rate. Commission at 30%.').",
+    "Full camp (all 15 tents) booking: one person travels complimentary on full board accommodation only, and can accommodate 6 additional drivers.",
+    "Conservancy Entrance fees NOT included in accommodation rates - billed separately.",
+    "Camp has 15 luxury tents (500-600 sq ft); 6 with outdoor bath tubs, 1 with outdoor Jacuzzi; tents 1-9 overlook a watering hole."
+  ],
+  "allInclusivePackage_perPersonPerNight": {
+    "includes": ["Full board accommodation", "Morning and afternoon game drive", "Guided bush walk", "Transfers Kamok/Nanyuki", "Bush meals", "Non-premium drinks", "Mineral water", "Sundowner", "Laundry"],
+    "excludes": ["Conservancy entrance fee", "Activities not listed", "Any other extras"],
+    "seasonA_7Jan_31May_1Nov_14Dec": {
+      "rack": { "nonResident": 888, "resident": 616 },
+      "net": { "nonResident": 622, "resident": 431 },
+      "gpSingleSupplementActivities": { "nonResident": 185, "resident": 185 },
+      "singleSupplement": { "nonResident": 200, "resident": 100 },
+      "festiveSupplement": { "nonResident": 60, "resident": 30 }
+    },
+    "seasonB_1Jun_31Oct_15Dec_6Jan": {
+      "rack": { "nonResident": 927, "resident": 697 },
+      "net": { "nonResident": 649, "resident": 488 },
+      "gpSingleSupplementActivities": { "nonResident": 185, "resident": 185 },
+      "singleSupplement": { "nonResident": 200, "resident": 100 },
+      "festiveSupplement": { "nonResident": 60, "resident": 30 }
+    },
+    "verified": true
+  },
+  "fullBoard_perPersonPerNight": {
+    "includes": ["Breakfast, Lunch & Dinner", "Mineral Water", "Guided Bush Walk"],
+    "excludes": ["Conservancy Entrance Fees", "Conservancy activities", "Any other extras"],
+    "seasonA_7Jan_31May_1Nov_14Dec": {
+      "rack": { "nonResident": 549, "resident": 277 },
+      "net": { "nonResident": 384, "resident": 194 },
+      "singleSupplement": { "nonResident": 200, "resident": 100 },
+      "festiveSupplement": { "nonResident": 60, "resident": 30 }
+    },
+    "seasonB_1Jun_31Oct_15Dec_6Jan": {
+      "rack": { "nonResident": 590, "resident": 361 },
+      "net": { "nonResident": 413, "resident": 253 },
+      "singleSupplement": { "nonResident": 200, "resident": 100 },
+      "festiveSupplement": { "nonResident": 60, "resident": 30 }
+    },
+    "verified": true
+  },
+  "conservancyEntranceTariff2026": {
+    "nonResident": 110, "resident": 35, "citizen": 20,
+    "childPolicy": "Children 3-11 years pay 50% of the adult conservancy fee rate",
+    "confidenceNote": "2027 conservancy tariff is TBC (not yet set).",
+    "verified": true
+  },
+  "childPolicy": {
+    "raw": "Infants under 3 sharing with adult(s): no charge. 3-11 years sharing with parents: 50%. 12-15 years sharing with 1-2 adults: 75% of per-person sharing rate. Children in own room 3-15 years: 85% of per-person sharing rate + single supplement applies.",
+    "verified": true
+  },
+  "festiveSupplementDates": "24, 25, 26, 31 Dec & 1 Jan, and every other public holiday",
+  "activitiesAndMisc": [
+    { "item": "Day Game Drive", "amount": "US$55pp, min 2 pax" },
+    { "item": "Night Game Drive", "amount": "US$65pp, min 2 pax" },
+    { "item": "Bush Meals", "amount": "US$35pp, min 2 pax" },
+    { "item": "Transfer from Kamok/Nanyuki Airstrip", "amount": "US$60pp one way, min 2 max 6 pax" },
+    { "item": "Transfer from Mt. Kenya Game R. Airstrip", "amount": "US$80pp one way, min 2 max 6 pax" },
+    { "item": "Sundowner (excl. drinks)", "amount": "US$35pp, min 2 pax" },
+    { "item": "Sundowner with non-premium drinks", "amount": "US$95pp" },
+    { "item": "Non-premium drinks", "amount": "US$60 per person per day" },
+    { "item": "Extra meal", "amount": "US$40pp" },
+    { "item": "Picnic lunch", "amount": "US$40pp" },
+    { "item": "Walk-in lunch", "amount": "US$40pp" },
+    { "item": "Birthday/Anniversary cake", "amount": "US$45pp" },
+    { "item": "Conference supplement", "amount": "US$45pp" },
+    { "item": "Honeymoon supplement (bottle of wine, room decor, massage)", "amount": "US$75pp" },
+    { "item": "Exclusive use of vehicle", "amount": "US$500/day" },
+    { "item": "Transfer to/from Nairobi", "amount": "US$500 one way" }
+  ],
+  "agentFamAndTourLeaders": {
+    "famRate": "US$180 per person sharing",
+    "famSingleSupplement": "US$30 per room",
+    "localTourLeader": "50% of resident rack rates",
+    "internationalTourLeader": "50% of non-resident rack rates",
+    "driversFullBoard": "US$30 per person"
+  },
+  "policies": {
+    "checkIn": "12:00", "checkOut": "10:00",
+    "breakfast": "06:30-09:30", "lunch": "12:30-14:30", "dinner": "19:30-21:30",
+    "deposit": "50% deposit within 3 days of invoice; full payment 7 days prior to arrival",
+    "cancellation": "<14 days or no-show: 100% charge. 15-30 days: 50% charge. 31-60 days: 25% charge. 61+ days: no charge."
+  }
+}

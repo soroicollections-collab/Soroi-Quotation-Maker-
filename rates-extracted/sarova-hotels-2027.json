@@ -1,0 +1,112 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftotext -layout, paginated, from 'SAROVA/Sarova - Sunworld Safaris 2027.pdf' (8pp, signed 04 June 2026). Covers 8 Sarova properties on clearly-labeled tables, no misattribution risk. A companion 'Sarova - 2027 Supplementary Specials.pdf' exists in the same folder but was not separately extracted (promotional specials, not base contract rates).",
+  "operator": "Sarova Hotels & Resorts",
+  "currency": "USD",
+  "validity": { "start": "2027-01-01", "end": "2027-12-31" },
+  "unit": "per room per night unless noted",
+  "confidence": "confirmed-2027-08-06",
+  "properties": {
+    "Sarova Stanley (Nairobi)": {
+      "mealPlan": "BB",
+      "rooms": {
+        "StanleyRoom": { "sgl": 145, "twin": 165, "thirdBedSupp": 50, "premierClub_SS": 255, "heritageSuite": "N/A", "presidentialSS_signatureSPAN_stateSuiteSWHS": 655 },
+        "StanleyClub": { "sgl": 205, "twin": 225, "thirdBedSupp": "N/A", "premierClub_SS": 255, "presidentialEtc": 655 }
+      }
+    },
+    "Sarova Panafric (Nairobi)": {
+      "mealPlan": "BB",
+      "rooms": {
+        "PanafricRoom": { "sgl": 140, "twin": 160, "studioSuiteSPAN": 495, "presidentialEtc": 695 },
+        "PanafricDeluxe": { "sgl": 175, "twin": 195, "thirdBedSupp": 60, "studioSuiteSPAN": 495, "presidentialEtc": 695 },
+        "PanafricExecutive": { "sgl": 205, "twin": 225, "thirdBedSupp": 70, "studioSuiteSPAN": 495, "presidentialEtc": 695 }
+      }
+    },
+    "Sarova Woodlands (Nakuru)": {
+      "mealPlan": "FB",
+      "rooms": {
+        "SuperiorRoom": { "sgl": 170, "twin": 240 },
+        "StudioSuite": { "sgl": 240, "twin": 310 },
+        "ExecutiveSuite": { "sgl": 270, "twin": 340, "presidentialEtc": 620 }
+      }
+    },
+    "Sarova Imperial (Kisumu)": {
+      "mealPlan": "BB",
+      "rooms": { "DeluxeRoom": { "sgl": 120, "twin": 140 }, "Suite": { "sgl": 340, "twin": 340 } }
+    },
+    "Sarova Whitesands Beach Resort (Mombasa)": {
+      "mealPlan": "HB (FB during Festive)",
+      "unit": "per person - Garden Facing Room base",
+      "seasons": {
+        "high": { "dates": "03Jan-31Mar & 01Jul-31Aug 2027", "sgl": 235, "twin": 300, "thirdBedSupp": 90, "studioSuite": 450, "oneBedroomSuite": 650, "presidentialSuite": 3413 },
+        "normal": { "dates": "01Apr-30Jun & 01Sep-22Dec 2027", "sgl": 195, "twin": 260, "thirdBedSupp": 80, "studioSuite": 410, "oneBedroomSuite": 610, "presidentialSuite": 3360 },
+        "festive": { "dates": "23Dec27-03Jan28", "sgl": 525, "twin": 625, "thirdBedSupp": 188, "studioSuite": 775, "oneBedroomSuite": 975, "presidentialSuite": 3623, "mealPlan": "FB" }
+      },
+      "roomSupplements": { "poolFacing": 20, "seaFacing": 40, "premierSeaFacing": 60, "premierSeaFacingFamily4pax": 280, "fullBoardSupplement": 25, "allInclusiveSupplement": { "adult": 45, "childUnder12": 23 }, "note": "All supplements added to Garden Facing base rate" }
+    },
+    "Sarova Lion Hill Game Lodge (Lake Nakuru)": {
+      "mealPlan": "FB",
+      "seasons": {
+        "highJan_Oct": { "dates": "03Jan-28Feb & 01-31Oct 2027", "standard": { "sgl": 205, "twin": 270, "thirdBedSupp": 81 }, "deluxe": { "sgl": 235, "twin": 300, "thirdBedSupp": 90 }, "chuiFaruSuite": 457, "ziwaSuite2BR": 709, "bornFree2BR": 994 },
+        "low": { "dates": "01Apr-31May 2027", "standard": { "sgl": 90, "twin": 181, "thirdBedSupp": 54 }, "deluxe": { "sgl": 120, "twin": 211, "thirdBedSupp": 63 }, "chuiFaruSuite": 343, "ziwaSuite2BR": 538, "bornFree2BR": 569 },
+        "peak": { "dates": "16Jun-30Sep 2027", "standard": { "sgl": 343, "twin": 428, "thirdBedSupp": 129 }, "deluxe": { "sgl": 373, "twin": 458, "thirdBedSupp": 137 }, "chuiFaruSuite": 574, "ziwaSuite2BR": 1052, "bornFree2BR": 1194 },
+        "shoulder": { "dates": "01-31Mar, 01-15Jun, 01Nov-22Dec 2027", "standard": { "sgl": 144, "twin": 219, "thirdBedSupp": 66 }, "deluxe": { "sgl": 174, "twin": 249, "thirdBedSupp": 75 }, "chuiFaruSuite": 401, "ziwaSuite2BR": 627, "bornFree2BR": 711 },
+        "festive": { "dates": "23Dec27-03Jan28", "standard": { "sgl": 383, "twin": 483, "thirdBedSupp": 145 }, "deluxe": { "sgl": 413, "twin": 513, "thirdBedSupp": 154 }, "chuiFaruSuite": 588, "ziwaSuite2BR": 1082, "bornFree2BR": 1197 }
+      }
+    },
+    "Sarova Shaba Game Lodge (Samburu)": {
+      "mealPlan": "FB",
+      "seasons": {
+        "high": { "dates": "03Jan-31Mar & 01Jul-22Dec 2027", "standard": { "sgl": 189, "twin": 249, "thirdBedSupp": 75, "exSuite": 525 }, "deluxe": { "sgl": 219, "twin": 279, "thirdBedSupp": 84, "exSuite": 525 }, "bornFreeSuiteSSGL": 683 },
+        "low": { "dates": "01Apr-30Jun 2027", "standard": { "sgl": 84, "twin": 168, "thirdBedSupp": 50, "exSuite": 420 }, "deluxe": { "sgl": 114, "twin": 198, "thirdBedSupp": 59, "exSuite": 420 }, "bornFreeSuiteSSGL": 578 },
+        "festive": { "dates": "23Dec27-03Jan28", "standard": { "sgl": 247, "twin": 312, "thirdBedSupp": 94, "exSuite": 683 }, "deluxe": { "sgl": 277, "twin": 342, "thirdBedSupp": 103, "exSuite": 683 }, "bornFreeSuiteSSGL": 788 }
+      }
+    },
+    "Sarova Mara Game Camp (Maasai Mara)": {
+      "mealPlan": "FB (All Inclusive for Olchani Club Tents)",
+      "seasons": {
+        "highJan_Oct": { "dates": "03Jan-28Feb & 01-31Oct 2027", "deluxe": { "sgl": 295, "twin": 365, "thirdBedSupp": 110 }, "olchaniClubTentAI": { "sgl": 645, "twin": 715 }, "familyTent2BRmax4pax": { "twin": 840 } },
+        "low": { "dates": "01Apr-31May 2027", "deluxe": { "sgl": 140, "twin": 280, "thirdBedSupp": 85 }, "olchaniClubTentAI": { "sgl": 365, "twin": 505 }, "familyTent2BRmax4pax": { "twin": 525 } },
+        "peak": { "dates": "16Jun-30Sep 2027", "deluxe": { "sgl": 520, "twin": 610, "thirdBedSupp": 185 }, "olchaniClubTentAI": { "sgl": 970, "twin": 1060 }, "familyTent2BRmax4pax": { "twin": 1365 } },
+        "shoulder": { "dates": "01-31Mar, 01-15Jun, 01Nov-22Dec 2027", "deluxe": { "sgl": 215, "twin": 315, "thirdBedSupp": 95 }, "olchaniClubTentAI": { "sgl": 465, "twin": 565 }, "familyTent2BRmax4pax": { "twin": 735 } },
+        "festive": { "dates": "23Dec27-03Jan28", "deluxe": { "sgl": 495, "twin": 585, "thirdBedSupp": 175 }, "olchaniClubTentAI": { "sgl": 845, "twin": 935 }, "familyTent2BRmax4pax": { "twin": 1418 } }
+      },
+      "olchaniClubInclusions": "Access to Olchani Lounge, all-inclusive F&B menu (excl. premium drinks), experiential dining, return Keekorok airstrip transfers, guided nature walks, evening sundowners, complimentary minibar, laundry (2 garments/day), pillow menu, memento",
+      "gameDriveSupplement": { "twoGameDrivesExclusiveVehicle": 300, "fullDayGameDrive": 550 }
+    },
+    "verified": true
+  },
+  "childPolicy": {
+    "sharingWithAdults": { "age0to6": "Free (max 2 per room)", "age7to12": "15% of single room rate (max 2 children)", "age13to17": "25% of single room rate (max 2 children)" },
+    "ownRoom": "80% of applicable full single/double/triple rate; 1 adult + 1 child = adult pays single rate",
+    "age18plus": "Full adult rate",
+    "olchaniRestriction": "Children under 13 not permitted in Olchani Club Tents & Lounge at Sarova Mara Game Camp",
+    "verified": true
+  },
+  "famTripRates": {
+    "note": "Not applicable 15Jun-30Sep 2027 (game lodges), Easter (26-29Mar27), Christmas (23Dec27-03Jan28)",
+    "SarovaStanley_Panafric_Woodlands_Imperial": { "single": 90, "double": 115, "note": "Woodlands/Imperial single is $85" },
+    "SarovaWhitesands": { "high": { "single": 115, "double": 140 }, "normal": { "single": 105, "double": 125 } },
+    "SarovaGameLodgesCamp": { "lowShoulder": { "single": 85, "double": 130 }, "high": { "single": 115, "double": 140 } },
+    "verified": true
+  },
+  "groupDiscounts": { "30to49pax": "5%", "50to99pax": "7.5%", "100pluspax": "10%", "freePaxPer15": { "max": 4 }, "shabaAdHoc3nightsPlus": "5% extra discount" },
+  "circuitDiscounts": {
+    "SL1_3gameLodgesPlusStanleyPlusOneCity": "12.5% off",
+    "SL2_3gameLodgesPlusStanleyOrPanafricPlusOneCity": "10% off",
+    "SL3_3gameLodgesOnly": "10% off",
+    "SL4_shabaPlusWoodlandsOrImperialPlusOneOtherGameLodge": "10% off",
+    "SL5_2gameLodges": "5% off",
+    "note": "Only one circuit code applicable at a time, not combinable with net ground packages or already-discounted rates"
+  },
+  "dayRooms": { "to16h00": "30% of booking rate", "to18h00": "50% of booking rate", "beyond18h00": "full rate" },
+  "casualMealRates": { "breakfast": 30, "lunch": 35, "dinner": 40, "packedLunch": 25, "note": "Same across all 8 properties" },
+  "tourLeaderPolicy": "1 complimentary per 15 paying pax; for groups <15 pax, TL pays 25% of contract rate",
+  "singleRoomPolicy": "Max 5 single rooms per group at single rate; thereafter double rate applies",
+  "cancellationPolicy": {
+    "cityHotels_Stanley_Panafric_Woodlands_Imperial": "14-2 days before arrival: 33%; within 48hrs/no-show: 100%",
+    "gameLodges_LionHill_Shaba_Mara": "Tiered by season (Low/Shoulder, High, Peak) with 15%/33%/100% bands at increasing notice windows - e.g. Peak season: 90-75 days=15%, 75-60 days=33%, within 60 days=100%",
+    "whitesands": "Normal season 14-7 days=15%, 7-2 days=33%, within 48hrs=100%; High season 35-21 days=15%, 21-14 days=33%, within 14 days=100%"
+  },
+  "minimumStay": { "whitesands": 3, "gameLodgesCampFestive": 2, "maraGameLodgePeakSeason": 2 },
+  "checkInOut": { "gameLodgesCamp": "Check-in 12:00, check-out 10:00", "cityHotelsAndWhitesands": "Check-in 14:00, check-out 11:00 (Stanley/Panafric/Woodlands/Imperial) or per Whitesands own time" }
+}

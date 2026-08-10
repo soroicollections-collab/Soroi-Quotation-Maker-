@@ -1,0 +1,124 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftotext -layout. NOT Soroi properties. Mada Hotels / Mada Collection is a group operating properties in BOTH Kenya and Tanzania - only the Kenya properties are in-scope by default per this project's CLAUDE.md (Tanzania excluded unless a combined Kenya-Tanzania itinerary is deliberately requested). All 4 source files were found together in the Kenya ACCOMODATION/MADA HOTELS folder despite two of them (Mada-Z, Mada-T) covering non-Kenya properties - extracted per the task brief's instruction to extract everything in the assigned folder, but flagged by region below. 'Mada-T' and 'Mada Baloon-T' are byte-identical duplicates (confirmed via md5).",
+  "operator": "Mada Hotels / Mada Collection",
+  "source": {
+    "madaK_kenyaFile": "2026 CONTRACT RATES/KENYA/ACCOMODATION/MADA HOTELS/Mada-K Sunworld Safaris 2526.pdf",
+    "madaZ_zanzibarFile": "2026 CONTRACT RATES/KENYA/ACCOMODATION/MADA HOTELS/Mada-Z Sunworld Safaris 2526.pdf (Shukran Palace, Zanzibar - TANZANIA, out of default scope)",
+    "madaT_tanzaniaFile": "2026 CONTRACT RATES/KENYA/ACCOMODATION/MADA HOTELS/Mada-T Sunworld Safaris 2526.pdf (Elephant Rock Camp + Adventure Aloft balloon safaris, Tarangire - TANZANIA, out of default scope; byte-identical duplicate also filed as 'Mada Baloon-T Sunworld Safaris 2526.pdf')",
+    "signedDate": "2025-08-04",
+    "tier": "Non-Resident rates, NET and non-commissionable"
+  },
+  "confidence": "confirmed-2026-08-06",
+  "currency": "USD",
+  "kenyaProperties_madaK": {
+    "figTreeCamp": {
+      "region": "Masai Mara", "unit": "per person per night, Full Board", "maxOccupancy": 3,
+      "seasons": {
+        "03Janto31Mar_16Junto30Jun_01Julto30Sep_21Decto02Jan": { "superiorRoom": { "halfTwin": [130, 265, 265, 265], "single": [195, 398, 398, 398] }, "note": "First figure is 03Jan-31Mar band, remaining three correspond to the other high-rate bands listed - see explicit season table below for exact mapping." }
+      },
+      "seasonTable": {
+        "03Jan-31Mar26": { "superiorHalfTwin": 130, "superiorSingle": 195, "deluxeNgaboliHalfTwin": 160, "deluxeNgaboliSingle": 240 },
+        "01Apr-30Apr26": { "superiorHalfTwin": 90, "superiorSingle": 90, "deluxeNgaboliHalfTwin": 100, "deluxeNgaboliSingle": 100 },
+        "01May-15Jun26": { "superiorHalfTwin": 90, "superiorSingle": 90, "deluxeNgaboliHalfTwin": 100, "deluxeNgaboliSingle": 100 },
+        "16Jun-30Jun26": { "superiorHalfTwin": 130, "superiorSingle": 195, "deluxeNgaboliHalfTwin": 160, "deluxeNgaboliSingle": 240 },
+        "01Jul-30Sep26": { "superiorHalfTwin": 265, "superiorSingle": 398, "deluxeNgaboliHalfTwin": 310, "deluxeNgaboliSingle": 465 },
+        "01Oct-31Oct26": { "superiorHalfTwin": 190, "superiorSingle": 285, "deluxeNgaboliHalfTwin": 210, "deluxeNgaboliSingle": 315 },
+        "01Nov-20Dec26": { "superiorHalfTwin": 90, "superiorSingle": 90, "deluxeNgaboliHalfTwin": 100, "deluxeNgaboliSingle": 100 },
+        "21Dec26-02Jan27": { "superiorHalfTwin": 265, "superiorSingle": 398, "deluxeNgaboliHalfTwin": 310, "deluxeNgaboliSingle": 465 }
+      },
+      "roomInventory": { "superior": "32 rooms", "deluxeNgaboli": "48 tents" },
+      "gamePackageSupplement": { "amount": 95, "unit": "per person per night, min 4 pax" },
+      "verified": true
+    },
+    "kilimaSafariCamp": {
+      "region": "Masai Mara", "unit": "per person per night, Full Board",
+      "seasonTable": {
+        "03Jan-31Mar26": { "superiorRoomTentHalfTwin": 130, "superiorSingle": 195, "deluxeMilimaTentHalfTwin": 150, "deluxeMilimaSingle": 225 },
+        "01Apr-15Jun26": { "superiorRoomTentHalfTwin": 95, "superiorSingle": 95, "deluxeMilimaTentHalfTwin": 115, "deluxeMilimaSingle": 173 },
+        "16Jun-30Jun26": { "superiorRoomTentHalfTwin": 95, "superiorSingle": 95, "deluxeMilimaTentHalfTwin": 115, "deluxeMilimaSingle": 173 },
+        "01Jul-30Sep26": { "superiorRoomTentHalfTwin": 165, "superiorSingle": 248, "deluxeMilimaTentHalfTwin": 185, "deluxeMilimaSingle": 278 },
+        "01Oct-31Oct26": { "superiorRoomTentHalfTwin": 165, "superiorSingle": 248, "deluxeMilimaTentHalfTwin": 185, "deluxeMilimaSingle": 278 },
+        "01Nov-20Dec26": { "superiorRoomTentHalfTwin": 95, "superiorSingle": 95, "deluxeMilimaTentHalfTwin": 115, "deluxeMilimaSingle": 173 },
+        "21Dec26-02Jan27": { "superiorRoomTentHalfTwin": 165, "superiorSingle": 248, "deluxeMilimaTentHalfTwin": 185, "deluxeMilimaSingle": 278 }
+      },
+      "roomInventory": { "superiorRoomTent": "50 tent/12 room", "deluxeMilimaTent": "10 tents" }, "maxOccupancy": 3,
+      "verified": true
+    },
+    "hotelLaMada": { "region": "Not stated (likely Nairobi-area transit hotel)", "unit": "per room per night, Bed & Breakfast", "rate": { "halfTwin": 75, "single": 110 }, "note": "Flat rate, no seasonal variation.", "roomInventory": "35 rooms", "maxOccupancy": 2, "verified": true },
+    "huntersLodge": { "region": "Between Nairobi and Amboseli/Mombasa route (transit stop)", "unit": "per room per night, Bed & Breakfast", "rate": { "halfTwin": 55, "single": 85 }, "note": "Flat rate, no seasonal variation.", "roomInventory": "50 rooms", "maxOccupancy": 3, "hotLunchSpecial": { "amount": 30, "unit": "per person, best used transiting Amboseli-Mombasa/Tsavo, subject to advance confirmation" }, "verified": true },
+    "kilifiBayBeachResort": {
+      "region": "Kilifi coast", "unit": "per person per night, Half Board",
+      "seasonTable": {
+        "03Jan-31Mar26": { "gardenViewRoom": { "halfTwin": 80, "single": 120 }, "gardenViewSuite": { "halfTwin": 90, "single": 135 }, "partialPoolSeaViewRoom": { "halfTwin": 95, "single": 143 }, "partialPoolSeaViewSuite": { "halfTwin": 105, "single": 158 }, "seaViewRoom": { "halfTwin": 110, "single": 165 }, "seaViewSuite": { "halfTwin": 120, "single": 180 } },
+        "01Apr-30Apr26": { "gardenViewRoom": { "halfTwin": 69, "single": 104 }, "gardenViewSuite": { "halfTwin": 79, "single": 119 }, "partialPoolSeaViewRoom": { "halfTwin": 84, "single": 126 }, "partialPoolSeaViewSuite": { "halfTwin": 94, "single": 141 }, "seaViewRoom": { "halfTwin": 99, "single": 149 }, "seaViewSuite": { "halfTwin": 109, "single": 164 } },
+        "01May-30Jun26": { "gardenViewRoom": { "halfTwin": 60, "single": 90 }, "gardenViewSuite": { "halfTwin": 70, "single": 105 }, "partialPoolSeaViewRoom": { "halfTwin": 75, "single": 113 }, "partialPoolSeaViewSuite": { "halfTwin": 85, "single": 128 }, "seaViewRoom": { "halfTwin": 90, "single": 135 }, "seaViewSuite": { "halfTwin": 100, "single": 150 } },
+        "01Jul-30Sep26": { "gardenViewRoom": { "halfTwin": 76, "single": 114 }, "gardenViewSuite": { "halfTwin": 86, "single": 129 }, "partialPoolSeaViewRoom": { "halfTwin": 91, "single": 137 }, "partialPoolSeaViewSuite": { "halfTwin": 101, "single": 152 }, "seaViewRoom": { "halfTwin": 106, "single": 159 }, "seaViewSuite": { "halfTwin": 116, "single": 174 } },
+        "01Oct-31Oct26": { "gardenViewRoom": { "halfTwin": 65, "single": 98 }, "gardenViewSuite": { "halfTwin": 75, "single": 113 }, "partialPoolSeaViewRoom": { "halfTwin": 80, "single": 120 }, "partialPoolSeaViewSuite": { "halfTwin": 90, "single": 135 }, "seaViewRoom": { "halfTwin": 95, "single": 143 }, "seaViewSuite": { "halfTwin": 105, "single": 158 } },
+        "01Nov-20Dec26": { "gardenViewRoom": { "halfTwin": 69, "single": 104 }, "gardenViewSuite": { "halfTwin": 79, "single": 119 }, "partialPoolSeaViewRoom": { "halfTwin": 84, "single": 126 }, "partialPoolSeaViewSuite": { "halfTwin": 94, "single": 141 }, "seaViewRoom": { "halfTwin": 99, "single": 149 }, "seaViewSuite": { "halfTwin": 109, "single": 164 } },
+        "21Dec26-02Jan27": { "gardenViewRoom": { "halfTwin": 128, "single": 192 }, "gardenViewSuite": { "halfTwin": 138, "single": 207 }, "partialPoolSeaViewRoom": { "halfTwin": 143, "single": 215 }, "partialPoolSeaViewSuite": { "halfTwin": 153, "single": 230 }, "seaViewRoom": { "halfTwin": 158, "single": 237 }, "seaViewSuite": { "halfTwin": 168, "single": 252 } }
+      },
+      "suiteCapacity": "2 adults + 1 child (living room + bed room + child room)", "maxOccupancyRoom": 2,
+      "verified": true
+    },
+    "baobabSeaLodge": {
+      "region": "Coast", "unit": "per person per night, Half Board",
+      "seasonTable": {
+        "03Jan-31Mar26": { "gardenView": { "halfTwin": 74, "single": 111 }, "seaView": { "halfTwin": 84, "single": 126 } },
+        "01Apr-30Apr26": { "gardenView": { "halfTwin": 62, "single": 93 }, "seaView": { "halfTwin": 72, "single": 108 } },
+        "01May-30Jun26": { "gardenView": { "halfTwin": 54, "single": 81 }, "seaView": { "halfTwin": 64, "single": 96 } },
+        "01Jul-30Sep26": { "gardenView": { "halfTwin": 70, "single": 105 }, "seaView": { "halfTwin": 80, "single": 120 } },
+        "01Oct-31Oct26": { "gardenView": { "halfTwin": 59, "single": 89 }, "seaView": { "halfTwin": 69, "single": 104 } },
+        "01Nov-20Dec26": { "gardenView": { "halfTwin": 62, "single": 93 }, "seaView": { "halfTwin": 72, "single": 108 } },
+        "21Dec26-02Jan27": { "gardenView": { "halfTwin": 122, "single": 183 }, "seaView": { "halfTwin": 132, "single": 198 } }
+      },
+      "maxOccupancy": 3,
+      "verified": true
+    },
+    "sharedTerms": {
+      "thirdAdultTripleRoomRate": "20% reduction on half-twin room rate, excluding low season",
+      "childPolicy": { "under3SharingWithAdult": "Free, max 2 per room", "age3to12SharingWith2Adults": "50% of adult rate, max 2 per room", "age3to12PrivateRoom": "75% of twin or triple rate", "singleChildWith1Adult": "50% of half twin or adult sharing rate" },
+      "festiveSupplement": { "amount": 20, "unit": "USD net per person per night", "dates": "Easter Friday and Easter Monday", "properties": ["Fig Tree Camp", "Kilima Safari Camp", "Kilifi Bay Beach Resort", "Baobab Sea Lodge"] },
+      "figTreeCampBalloonPolicy": "Guests at Fig Tree Camp must fly exclusively with Adventure Aloft; rate includes $80/person landing fee.",
+      "extrasFigTreeKilima": { "halfBoardDeduction": 5, "picnicLunchBox": 25, "extraLunchDinner": 30, "sundownerBushBreakfastOrDinner": { "amount": 50, "minPax": 4 }, "natureWalk": 20, "airstripTransfer": { "amount": 45, "minPax": 4 }, "exclusiveVehicleFullDay": 350, "exclusiveVehicleHalfDay": 300 },
+      "extrasKilifiBaobab": { "halfBoardDeduction": 5, "picnicLunchBox": 25, "extraLunchDinner": 30, "mombasaAirportOrSGRTransfer": { "amount": 100, "maxPax": 7 }, "malindiAirportTransfer": { "amount": 70, "maxPax": 7 }, "boatRide": { "amount": 25, "minPax": 5 } },
+      "circuitDiscount": { "twoProperties4Nights": "5%", "threeProperties6Nights": "7%", "excludes": "July and August" },
+      "singleRoomPolicy": "Max 3 singles per group at single rate; additional at double rate.",
+      "tourLeaderPolicy": "Complimentary half-twin accommodation per 15 adult paying guests, max 3 comp guests per group.",
+      "cancellation": { "allSeasonsExcl01Aprto15Jun": { "0to30days": "100%", "31to45days": "50%", "45to60days": "25%" }, "lowSeason01Aprto15Jun": { "0to7days": "100%", "8to14days": "50%", "15to25days": "25%" } }
+    },
+    "verified": true
+  },
+  "tanzaniaProperties_outOfDefaultScope": {
+    "note": "Included here only because both files were physically located in the Kenya ACCOMODATION/MADA HOTELS folder. Do not use for a Kenya-only quote per CLAUDE.md's Tanzania exclusion rule - only bring in deliberately for a combined Kenya-Tanzania itinerary.",
+    "shukranPalaceZanzibar": {
+      "region": "Michamvi, Zanzibar, Tanzania",
+      "unit": "per person per night, All Inclusive",
+      "seasonTable": {
+        "07Jan-31Jan26": { "gardenPalaceRoom": { "halfTwin": 327, "single": 491 }, "gardenPalaceSuite": { "halfTwin": 402, "single": 603 }, "oceanFrontRoom": { "halfTwin": 377, "single": 566 }, "oceanFrontSuite": { "halfTwin": 452, "single": 678 } },
+        "01Feb-31Mar26": { "gardenPalaceRoom": { "halfTwin": 290, "single": 435 }, "gardenPalaceSuite": { "halfTwin": 365, "single": 548 }, "oceanFrontRoom": { "halfTwin": 340, "single": 510 }, "oceanFrontSuite": { "halfTwin": 415, "single": 623 } },
+        "01Apr-31May26": { "gardenPalaceRoom": { "halfTwin": 173, "single": 260 }, "gardenPalaceSuite": { "halfTwin": 248, "single": 372 }, "oceanFrontRoom": { "halfTwin": 223, "single": 335 }, "oceanFrontSuite": { "halfTwin": 298, "single": 447 } },
+        "01Jun-15Jul26": { "gardenPalaceRoom": { "halfTwin": 246, "single": 369 }, "gardenPalaceSuite": { "halfTwin": 321, "single": 482 }, "oceanFrontRoom": { "halfTwin": 296, "single": 444 }, "oceanFrontSuite": { "halfTwin": 371, "single": 557 } },
+        "16Jul-31Aug26": { "gardenPalaceRoom": { "halfTwin": 290, "single": 435 }, "gardenPalaceSuite": { "halfTwin": 365, "single": 548 }, "oceanFrontRoom": { "halfTwin": 340, "single": 510 }, "oceanFrontSuite": { "halfTwin": 415, "single": 623 } },
+        "01Sep-31Oct26": { "gardenPalaceRoom": { "halfTwin": 246, "single": 369 }, "gardenPalaceSuite": { "halfTwin": 321, "single": 482 }, "oceanFrontRoom": { "halfTwin": 296, "single": 444 }, "oceanFrontSuite": { "halfTwin": 371, "single": 557 } },
+        "01Nov-21Dec26": { "gardenPalaceRoom": { "halfTwin": 246, "single": 369 }, "gardenPalaceSuite": { "halfTwin": 321, "single": 482 }, "oceanFrontRoom": { "halfTwin": 296, "single": 444 }, "oceanFrontSuite": { "halfTwin": 371, "single": 557 } },
+        "22Dec26-06Jan27": { "gardenPalaceRoom": { "halfTwin": 508, "single": 762 }, "gardenPalaceSuite": { "halfTwin": 583, "single": 875 }, "oceanFrontRoom": { "halfTwin": 558, "single": 837 }, "oceanFrontSuite": { "halfTwin": 633, "single": 950 } }
+      },
+      "longStayDiscount": "5% for 7+ nights",
+      "childPolicy": { "under2SharingWithAdult": "Free, max 2 per room", "age2to12SharingWith2Adults": "50% of adult rate, max 2 per room, 2nd child shares bed with parents", "age1to12PrivateRoom2or3Children": "75% of twin/triple rate", "singleChildWith1Adult": "50% of half-twin or adult sharing rate" },
+      "verified": true
+    },
+    "elephantRockCampTarangire": {
+      "region": "Tarangire National Park, Tanzania",
+      "unit": "per person per night, Full Board, Superior Tent",
+      "seasonTable": { "01Jan-28Feb26": { "halfTwin": 247, "single": 371 }, "01Mar-14Jun26": { "halfTwin": 149, "single": 149 }, "15Jun-31Oct26": { "halfTwin": 247, "single": 371 }, "01Nov-14Dec26": { "halfTwin": 149, "single": 149 }, "15Dec-31Dec26": { "halfTwin": 247, "single": 371 } },
+      "festiveSupplement": { "amount": 30, "unit": "USD net per person per night", "dates": "24-26 Dec & 31 Dec-1 Jan" },
+      "verified": true
+    },
+    "adventureAloftBalloonSafaris": {
+      "note": "Rate per person, take-off sites in Tarangire/Serengeti (Tanzania) and Fig Tree Camp Masai Mara (Kenya - this specific line item IS Kenya-relevant).",
+      "tarangireTanzania": 410, "serengetiSeronera": 440, "serengetiTogoro": 440, "serengetiKogatende": 440, "ngorongoroNdutu": 440,
+      "figTreeCampMasaiMaraKenya": 420,
+      "verified": true
+    }
+  }
+}

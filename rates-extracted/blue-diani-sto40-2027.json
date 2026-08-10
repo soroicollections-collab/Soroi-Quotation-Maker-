@@ -1,0 +1,50 @@
+{
+  "$note": "Fresh extraction, 6 Aug 2026, read directly from the property's own page (page 21 of 34) in 'Soroi - 2027 STO 40% Contract Rates.pdf' (see cheetah-tented-camp-sto40-2027.json for full provenance/duplicate-file note). VALUABLE SIDE FINDING: this page has explicit 'Peak Season / Shoulder Season / Green Season' column headers directly above the Rack/Net columns - this independently CONFIRMS the season-column-order inference flagged in blue-diani-rack-2027.json (which said the order was inferred, not visually confirmed, from the Rack-only source). All four room categories' Rack figures here match blue-diani-rack-2027.json exactly under this now-confirmed order. blue-diani-rack-2027.json should be updated to reflect this.",
+  "property": "Soroi Blue (Diani Beach)",
+  "region": "Diani Beach",
+  "tier": "STO 40%",
+  "residency": "Non-Resident",
+  "source": {
+    "file": "2027 CONTRACT RATES/KENYA/ACCOMODATIONS/SOROI/Soroi - 2027 STO 40% Contract Rates.pdf",
+    "pdfPageIndex": 20,
+    "docPrintedPageNumber": 21,
+    "validity": { "start": "2027-01-04", "end": "2028-01-03" }
+  },
+  "confidence": "confirmed-2026-08-06",
+  "seasons": {
+    "peak": { "dateRanges": ["20 Dec – 3 Jan 2028"] },
+    "shoulder": { "dateRanges": ["4 Jan – 31 Mar", "1 Jun – 31 Oct"] },
+    "green": { "dateRanges": ["1 Apr – 31 May", "1 Nov – 19 Dec"] }
+  },
+  "rates": {
+    "currency": "USD",
+    "unit": "per person per night, Half Board",
+    "columnOrderConfirmed": "Peak/Shoulder/Green order is explicitly labeled on this page's column headers - no longer an inference (see $note).",
+    "gardenView": {
+      "perPerson": { "peak": { "rack": 690, "net": 414 }, "shoulder": { "rack": 420, "net": 252 }, "green": { "rack": 250, "net": 150 } },
+      "single": { "peak": { "rack": 1035, "net": 621 }, "shoulder": { "rack": 630, "net": 378 }, "green": { "rack": 375, "net": 225 } }
+    },
+    "oceanView": {
+      "perPerson": { "peak": { "rack": 710, "net": 426 }, "shoulder": { "rack": 480, "net": 288 }, "green": { "rack": 290, "net": 174 } },
+      "single": { "peak": { "rack": 1065, "net": 639 }, "shoulder": { "rack": 720, "net": 432 }, "green": { "rack": 435, "net": 261 } }
+    },
+    "juniorSuite": {
+      "perPerson": { "peak": { "rack": 780, "net": 468 }, "shoulder": { "rack": 570, "net": 342 }, "green": { "rack": 410, "net": 246 } },
+      "single": { "peak": { "rack": 1170, "net": 702 }, "shoulder": { "rack": 855, "net": 513 }, "green": { "rack": 615, "net": 369 } }
+    },
+    "executiveSuite": {
+      "perPerson": { "peak": { "rack": 880, "net": 528 }, "shoulder": { "rack": 670, "net": 402 }, "green": { "rack": 510, "net": 306 } },
+      "single": { "peak": { "rack": 1320, "net": 792 }, "shoulder": { "rack": 1005, "net": 603 }, "green": { "rack": 765, "net": 459 } }
+    }
+  },
+  "discountRatioCheck": { "note": "Net = Rack x 0.60 confirmed exactly on every cell above.", "verified": true },
+  "mealSupplements": {
+    "fullBoard": { "amount": 45, "childAmount": 20, "unit": "per person per day, added to Half Board rate" },
+    "allInclusive": { "amount": 95, "childAmount": 50, "unit": "per person per day, added to Full Board rate" },
+    "note": "Identical to the Rack extraction - these supplements aren't tier-discounted, stated as flat add-ons regardless of accommodation tier."
+  },
+  "portfolioWideTerms": {
+    "note": "Same caution as the Rack extraction - general Soroi terms may not map cleanly onto Diani's room-occupancy model.",
+    "childAge5to11": "50% of adult sharing rate (general Soroi policy)"
+  }
+}

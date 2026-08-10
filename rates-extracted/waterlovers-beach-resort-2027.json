@@ -1,0 +1,80 @@
+{
+  "$note": "Extracted 6 Aug 2026, read directly (pdftotext -layout, poppler). Waterlovers Beach Resort — non-Soroi, Diani Beach. Folder named 'WATERLOVERS' in 2027 tree, which contains SIX files with overlapping/confusing names for what are really only 2 distinct rate cards (base + TO 20%), each duplicated as a full 3-page version and a Breakfast-only-subset 2-page version. MD5 checksums run to confirm: 'NEW 2027 USD Non Resident Rates.pdf' is byte-identical to 'Waterlovers  NEW 2027 USD Non Resident Rates.pdf' (md5 703ed762f8178012717bb7b3fb5f3350), and 'NEW 2027 USD 20% Non Resident  rates .pdf' is byte-identical to 'Waterlovers  NEW 2027 USD 20% Non Resident  rates.pdf' (md5 5fb9ce1093a58214d4dc64fa06e71680) — true exact duplicates, safe to treat as one file each. Separately, 'WATERLOVERS - 2027 USD WL Non Resident Rates.pdf' and 'WATERLOVERS - 2027 USD 20% Non resident rates.pdf' are NOT duplicates of the 'NEW 2027...' files — they are the SAME rate card but with more content: the 'NEW 2027...' pair only shows the Breakfast meal-plan row, while the 'WATERLOVERS - 2027...' pair shows Breakfast + Half Board + Full Board for the same occupancies/prices (Breakfast figures verified identical across both pairs cell-for-cell). Used the fuller 'WATERLOVERS - 2027...' documents as the source of truth below since they are a strict superset of the 'NEW 2027...' documents' data.",
+  "property": "Waterlovers Beach Resort",
+  "region": "Diani Beach (South Coast)",
+  "tier": "Two tiers: 'Non Resident Rates' (base/published, primary) and 'TO Rates' (tour-operator, ~20% off base, secondary).",
+  "residency": "Non-Resident",
+  "source": {
+    "baseFile": "2027 CONTRACT RATES/KENYA/BEACH ACCOMODATION/WATERLOVERS/WATERLOVERS - 2027 USD WL Non Resident Rates.pdf",
+    "toFile": "2027 CONTRACT RATES/KENYA/BEACH ACCOMODATION/WATERLOVERS/WATERLOVERS - 2027 USD 20% Non resident rates.pdf",
+    "duplicateSubsetFiles_notSeparatelyUsed": [
+      "NEW 2027 USD Non Resident Rates.pdf (Breakfast-only subset of baseFile, byte-identical to 'Waterlovers  NEW 2027 USD Non Resident Rates.pdf')",
+      "NEW 2027 USD 20% Non Resident  rates .pdf (Breakfast-only subset of toFile, byte-identical to 'Waterlovers  NEW 2027 USD 20% Non Resident  rates.pdf')"
+    ],
+    "pdfPageIndex": [0, 1, 2],
+    "validity": { "regular": { "start": "2027-01-11", "end": "2027-12-17" }, "festive": { "start": "2027-12-18", "end": "2028-01-10" } }
+  },
+  "confidence": "confirmed-2026-08-06",
+  "extractionMethod": { "note": "Read directly; cross-checked the 4 files' MD5 hashes and Breakfast-row figures against each other before selecting sources." },
+  "structuralFindings": [
+    "TO rate confirmed ~80% of base rate on every checked cell (e.g. Ocean View Suites 2 Adults Breakfast: 477 -> 382 = 80.1%; Ocean Penthouse 4 Adults Breakfast: 1076 -> 861 = 80.0%), same relationship as 2026.",
+    "Same 3 room categories and pricing shapes as 2026 (Ocean View Suites max 3 pax with mixed-occupancy rows now simplified to just 1/2/3-adult + one flat 'Child price 4-9yrs' column rather than 2026's six separate adult+child combo rows — a genuine shape simplification, not a data loss on my part), Ocean Penthouse and Birds Villa min4-max8 pax scaling.",
+    "Taxi transfer menu replaced with 'Available on request at a surcharge' — no longer a fixed price list like 2026's Mombasa/Diani/SGR figures."
+  ],
+  "seasons": {
+    "regular": { "dateRange": "11 Jan 2027 - 17 Dec 2027" },
+    "festive": { "dateRange": "18 Dec 2027 - 10 Jan 2028" }
+  },
+  "rates": {
+    "currency": "USD",
+    "unit": "price per night, per the occupancy/room shown",
+    "base_nonResident": {
+      "oceanViewSuites_max3pax": {
+        "regular": { "breakfast": { "1Adult": 293, "2Adults": 477, "3Adults": 574, "child4to9": 50 }, "halfBoard": { "1Adult": 339, "2Adults": 564, "3Adults": 704, "child4to9": 70 }, "fullBoard": { "1Adult": 374, "2Adults": 636, "3Adults": 813, "child4to9": 90 } },
+        "festive": { "breakfast": { "1Adult": 440, "2Adults": 716, "3Adults": 861, "child4to9": 75 }, "halfBoard": { "1Adult": 509, "2Adults": 846, "3Adults": 1056, "child4to9": 105 }, "fullBoard": { "1Adult": 561, "2Adults": 954, "3Adults": 1220, "child4to9": 135 } }
+      },
+      "oceanPenthouse_min4max8pax": {
+        "regular": { "breakfast": { "4A": 1076, "5A": 1285, "6A": 1385, "7A": 1520, "8A": 1618, "child4to9": 80 }, "halfBoard": { "4A": 1264, "5A": 1519, "6A": 1666, "7A": 1849, "8A": 1994, "child4to9": 110 }, "fullBoard": { "4A": 1420, "5A": 1715, "6A": 1902, "7A": 2123, "8A": 2308, "child4to9": 130 } },
+        "festive": { "breakfast": { "4A": 1614, "5A": 1927, "6A": 2078, "7A": 2280, "8A": 2427, "child4to9": 120 }, "halfBoard": { "4A": 1896, "5A": 2279, "6A": 2500, "7A": 2773, "8A": 2990, "child4to9": 165 }, "fullBoard": { "4A": 2130, "5A": 2572, "6A": 2853, "7A": 3184, "8A": 3461, "child4to9": 195 } }
+      },
+      "birdsVilla_min4max8pax": {
+        "regular": { "breakfast": { "4A": 815, "5A": 918, "6A": 1023, "7A": 1111, "8A": 1195, "child4to9": 50 }, "halfBoard": { "4A": 1003, "5A": 1081, "6A": 1304, "7A": 1439, "8A": 1571, "child4to9": 70 }, "fullBoard": { "4A": 1159, "5A": 1349, "6A": 1538, "7A": 1713, "8A": 1885, "child4to9": 90 } },
+        "festive": { "breakfast": { "4A": 1223, "5A": 1377, "6A": 1534, "7A": 1666, "8A": 1793, "child4to9": 75 }, "halfBoard": { "4A": 1505, "5A": 1621, "6A": 1956, "7A": 2159, "8A": 2356, "child4to9": 105 }, "fullBoard": { "4A": 1739, "5A": 2023, "6A": 2308, "7A": 2570, "8A": 2827, "child4to9": 135 } }
+      }
+    },
+    "to20pct_nonResident": {
+      "confidenceNote": "Verified ~80% of base rate — see structuralFindings.",
+      "oceanViewSuites_max3pax": {
+        "regular": { "breakfast": { "1Adult": 234, "2Adults": 382, "3Adults": 459, "child4to9": 40 }, "halfBoard": { "1Adult": 271, "2Adults": 451, "3Adults": 563, "child4to9": 56 }, "fullBoard": { "1Adult": 299, "2Adults": 509, "3Adults": 650, "child4to9": 72 } },
+        "festive": { "breakfast": { "1Adult": 352, "2Adults": 572, "3Adults": 689, "child4to9": 60 }, "halfBoard": { "1Adult": 407, "2Adults": 677, "3Adults": 845, "child4to9": 84 }, "fullBoard": { "1Adult": 449, "2Adults": 763, "3Adults": 976, "child4to9": 108 } }
+      },
+      "oceanPenthouse_min4max8pax": {
+        "regular": { "breakfast": { "4A": 861, "5A": 1028, "6A": 1108, "7A": 1216, "8A": 1294, "child4to9": 64 }, "halfBoard": { "4A": 1011, "5A": 1215, "6A": 1333, "7A": 1479, "8A": 1595, "child4to9": 88 }, "fullBoard": { "4A": 1136, "5A": 1372, "6A": 1521, "7A": 1698, "8A": 1846, "child4to9": 104 } },
+        "festive": { "breakfast": { "4A": 1291, "5A": 1542, "6A": 1662, "7A": 1824, "8A": 1942, "child4to9": 96 }, "halfBoard": { "4A": 1517, "5A": 1823, "6A": 2000, "7A": 2218, "8A": 2392, "child4to9": 132 }, "fullBoard": { "4A": 1704, "5A": 2058, "6A": 2282, "7A": 2547, "8A": 2769, "child4to9": 156 } }
+      },
+      "birdsVilla_min4max8pax": {
+        "regular": { "breakfast": { "4A": 652, "5A": 734, "6A": 818, "7A": 889, "8A": 956, "child4to9": 40 }, "halfBoard": { "4A": 803, "5A": 865, "6A": 1043, "7A": 1151, "8A": 1257, "child4to9": 56 }, "fullBoard": { "4A": 927, "5A": 1079, "6A": 1231, "7A": 1371, "8A": 1508, "child4to9": 72 } },
+        "festive": { "breakfast": { "4A": 978, "5A": 1101, "6A": 1227, "7A": 1333, "8A": 1435, "child4to9": 60 }, "halfBoard": { "4A": 1204, "5A": 1297, "6A": 1565, "7A": 1727, "8A": 1885, "child4to9": 84 }, "fullBoard": { "4A": 1391, "5A": 1619, "6A": 1846, "7A": 2056, "8A": 2262, "child4to9": 108 } }
+      }
+    }
+  },
+  "childPolicy": {
+    "age0to3": "Free",
+    "age4to9": "Flat child price shown per occupancy row (Ocean View Suites now included this too, unlike 2026's combo-row shape)",
+    "age10Plus": "Charged full adult rate"
+  },
+  "roomNotes": {
+    "oceanViewSuites": "Triple Suite = King bed + day bed. Twin Suite = King bed + day bed."
+  },
+  "transfers": "Available on request at a surcharge (no fixed price list on this year's document).",
+  "paymentTerms": "30% deposit on confirmation; 70% balance one month prior to arrival; USD only unless prior arrangement.",
+  "cancellationPolicy": {
+    "60PlusDays": "15%",
+    "60to21Days": "30%",
+    "20to4Days": "75%",
+    "3DaysOrNoShow": "100%"
+  },
+  "portfolioWideTerms": {
+    "note": "Non-Soroi property — CLAUDE.md's Soroi-portfolio-wide terms do not apply."
+  }
+}

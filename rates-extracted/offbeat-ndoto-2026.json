@@ -1,0 +1,47 @@
+{
+  "property": "Offbeat Ndoto",
+  "operator": "Offbeat Safaris Holdings Ltd",
+  "region": "Mara North Conservancy",
+  "isSoroiProperty": false,
+  "sourceFiles": ["2026 CONTRACT RATES/KENYA/ACCOMODATION/OFFBEAT/2026 Offbeat Collection Wholesale Rates (30%) AMENDED.pdf"],
+  "notes": [
+    "Part of the same 8-property Offbeat document - see offbeat-mara-camp-2026.json for sibling properties.",
+    "Has a Luxury Suite category (up to 4 pax) in addition to standard sharing rates - unique among the Offbeat Mara North properties.",
+    "Wholesale rate confirmed arithmetically as Rack x 0.70 (e.g. Green adult: $497 = $710 x 0.70)."
+  ],
+  "currency": "USD",
+  "validity": "3 Jan 2026 - 2 Jan 2027",
+  "publishedRates_perPersonPerNight": {
+    "green_MarAprMay": { "adultSharing": 710, "teenSharing12to17": 535, "childSharing4to11": 355, "perSingle": 960, "luxurySuiteUpTo4pax": 2840 },
+    "regular_JanFebJunNov_01to15Dec": { "adultSharing": 845, "teenSharing12to17": 635, "childSharing4to11": 425, "perSingle": 1095, "luxurySuiteUpTo4pax": 3380 },
+    "mid_Oct_16Dec_02Jan": { "adultSharing": 1095, "teenSharing12to17": 820, "childSharing4to11": 545, "perSingle": 1345, "luxurySuiteUpTo4pax": 4380 },
+    "high_JulAugSep": { "adultSharing": 1175, "teenSharing12to17": 880, "childSharing4to11": 590, "perSingle": 1525, "luxurySuiteUpTo4pax": 4700 }
+  },
+  "wholesale30pct_perPersonPerNight": {
+    "green_MarAprMay": { "adultSharing": 497, "teenSharing12to17": 375, "childSharing4to11": 249, "perSingle": 672, "luxurySuiteUpTo4pax": 1988 },
+    "regular_JanFebJunNov_01to15Dec": { "adultSharing": 592, "teenSharing12to17": 445, "childSharing4to11": 298, "perSingle": 767, "luxurySuiteUpTo4pax": 2366 },
+    "mid_Oct_16Dec_02Jan": { "adultSharing": 767, "teenSharing12to17": 574, "childSharing4to11": 382, "perSingle": 942, "luxurySuiteUpTo4pax": 3066 },
+    "high_JulAugSep": { "adultSharing": 823, "teenSharing12to17": 616, "childSharing4to11": 413, "perSingle": 1068, "luxurySuiteUpTo4pax": 3290 }
+  },
+  "luxurySuiteNote": "Any additional person beyond capacity charged at the standard sharing rate applies.",
+  "conservancyFees_perPersonPerNight": { "adult": 150, "teenAndChild": 75, "verified": true },
+  "childPolicy": { "raw": "0-3 years free of charge.", "verified": true },
+  "specials": [
+    "Family Discount, Honeymoon Discount, Per Single rate, 4 nights for price of 3, 6 nights for price of 5 (paired with Ekorian) - same structure as Offbeat Mara Camp, see that file for full wording."
+  ],
+  "includes": ["Full board accommodation", "All drinks except champagne", "Exclusive use of vehicle for game drives (NEW from 2025)", "Unlimited game drives", "Mara North airstrip transfers", "Laundry", "Bush breakfasts/picnic lunches/sundowners/bush dinners", "Guided safari walks", "Visits to local market", "Visits to Koiyaki Guiding School/Aitong School", "Running with Masai"],
+  "excludes": [
+    "Conservation fees (see above)",
+    "Late departure after 2pm: US$100pp",
+    "Exclusive use of customised photographic vehicle: US$375/vehicle/day",
+    "Visit to a Masai village: US$30/adult, US$15/child",
+    "Balloon Safaris (price on request)",
+    "Maasai Mara National Reserve fees additional: Jan-Jun US$100/adult, US$50/child/day; Jul-Dec US$200/adult, US$50/child/day",
+    "Vehicle transfers in/out of Mara North Conservancy (rates on request)"
+  ],
+  "policies": {
+    "checkIn": "11:00", "checkOut": "10:00",
+    "deposit": "20% deposit confirms booking; balance due 45 days prior to arrival.",
+    "cancellation": ">120 days: 20% deposit refunded (net of bank charges); 120-46 days: 20% deposit forfeited; 45-30 days: 50% of full booking value forfeited; <30 days or no-show: 100% forfeited."
+  }
+}

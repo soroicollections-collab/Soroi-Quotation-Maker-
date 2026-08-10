@@ -1,0 +1,54 @@
+{
+  "$note": "Extracted 6 Aug 2026 via direct PDF-to-image render + visual read (pdftotext/pdffonts confirmed this is an image-only/scanned PDF with zero extractable text, same situation as the documented 'SOROI 2027 UNIQUE DEALS.pdf' case) from 'MARA CROSSINGS CAMP/MARA CROSSINGS CAMP 2027.pdf' (2pp). Both pages read visually and transcribed below at full confidence - image was clear/legible, not a low-quality scan.",
+  "property": "Mara Crossings Luxury Camp",
+  "location": "Maasai Mara",
+  "currency": "USD",
+  "validity": { "start": "2026-01-02", "end": "2028-01-02" },
+  "confidence": "confirmed-2027-08-06-via-visual-read",
+  "seasons": {
+    "high": { "dates": "02 Jan - 31 Mar, 15 Oct - 15 Dec" },
+    "low": { "dates": "01 Apr - 30 Jun" },
+    "peak": { "dates": "01 Jul - 14 Oct, 16 Dec - 01 Jan" }
+  },
+  "rates": {
+    "fullBoard": {
+      "unit": "per person per night",
+      "perPerson": { "high": { "rack": 460, "net": 360 }, "low": { "rack": 403, "net": 310 }, "peak": { "rack": 658, "net": 506 } },
+      "singleTent": { "high": { "rack": 546, "net": 420 }, "low": { "rack": 494, "net": 380 }, "peak": { "rack": 758, "net": 583 } },
+      "inclusions": "Full board (3 meals/day), community levy, afternoon tea, campfire nibbles, filtered water, Wi-Fi",
+      "exclusions": "Park fees, transport to/from camp, game activities, airstrip transfers, laundry, extra meals, gratuities"
+    },
+    "groundPackage": {
+      "unit": "per person per night",
+      "perPerson": { "high": { "rack": 663, "net": 510 }, "low": { "rack": 598, "net": 460 }, "peak": { "rack": 870, "net": 670 } },
+      "singleTent": { "high": { "rack": 936, "net": 720 }, "low": { "rack": 884, "net": 680 }, "peak": { "rack": 1118, "net": 860 } },
+      "inclusions": "Full board, afternoon tea, campfire nibbles, filtered water, community levy, Wi-Fi, exclusive game drives in custom 4x4 with English-speaking guide, local airstrip transfers to/from Musiara Airstrip",
+      "exclusions": "Park fees, extra meals, all beverages, additional activities, laundry, gratuities"
+    },
+    "verified": true
+  },
+  "safariSuite": {
+    "maxPax": 5,
+    "unit": "per night (whole unit)",
+    "highPeakWindow": { "dates": "01 Jan-31 Mar, 01 Jul-31 Oct, 21-31 Dec 2027", "rate": 3150 },
+    "shoulderWindow": { "dates": "01 Apr-30 Jun, 01 Nov-20 Dec 2027", "rate": 2600 },
+    "inclusions": "Full board, house wine, soft drinks, mineral water, local beers, selected spirits, 1 sundowner, half-hour massage per person",
+    "verified": true
+  },
+  "extras": {
+    "sundowners": 40,
+    "bushBreakfastOrDinner": 60,
+    "drinksSupplement": { "amount": 60, "unit": "per person per day - house wine, soft drinks, local beers, selected spirits" },
+    "maasaiVillageVisit": 35,
+    "verified": true
+  },
+  "childTourGuidePolicy": {
+    "age0to5": "Free",
+    "age6to13SharingWithParents": "50% of adult rate",
+    "age13to17SharingWithParents": "75% of adult rate",
+    "tourLeaderInGuestTent": "75% of adult single rate",
+    "verified": true
+  },
+  "christmasSupplement": { "dates": "24-26 Dec & 31 Dec-01 Jan 2028", "adult": 40, "child": 20, "verified": true },
+  "cancellationPolicy": "0-7 days before arrival: 100%; 8-12 days: 50%; 15-35 days: 25%"
+}

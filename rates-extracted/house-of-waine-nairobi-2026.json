@@ -1,0 +1,52 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftotext -layout. NOT a Soroi property. Nairobi (Karen) hotel - one of the CLAUDE.md-listed unverified Nairobi/stopover candidates, now extracted. Two tiers exist: Standard Travel Agent (25% commissionable) and Residents (10% commissionable) - both cover the same room types/dates.",
+  "property": "House of Waine",
+  "region": "Karen, Nairobi",
+  "source": {
+    "files": [
+      "2026 CONTRACT RATES/KENYA/ACCOMODATION/HOUSE OF WAINE/Sunworld Safaris -Standard Travel Agents Rates Agreement - 25% Commission (2026).pdf",
+      "2026 CONTRACT RATES/KENYA/ACCOMODATION/HOUSE OF WAINE/Sunworld Safaris -Residents Rates Agreement - 10% (2026).pdf"
+    ],
+    "validity": { "start": "2025-12-29", "end": "2026-12-21" },
+    "skipped": ["Re STO RATES FOR HOUSE OF WAINE - 2025.msg - superseded by the two 2026 PDFs above"]
+  },
+  "confidence": "confirmed-2026-08-06",
+  "currency": "USD",
+  "unit": "per room, per night",
+  "standardTravelAgentRates": {
+    "commission": "25% off rack",
+    "restriction": "Not valid for Commercial/Corporate Clients or Conference delegates",
+    "rooms": {
+      "standardSingle": { "bb": { "rack": 490, "net": 365 }, "hb": { "rack": 510, "net": 385 }, "fb": { "rack": 530, "net": 395 } },
+      "standardDouble": { "bb": { "rack": 740, "net": 555 }, "hb": { "rack": 780, "net": 585 }, "fb": { "rack": 820, "net": 615 } },
+      "standardTriple": { "bb": { "rack": 1110, "net": 830 }, "hb": { "rack": 1170, "net": 880 }, "fb": { "rack": 1230, "net": 920 } },
+      "malaikaSuiteSingle": { "bb": { "rack": 580, "net": 435 }, "hb": { "rack": 600, "net": 450 }, "fb": { "rack": 620, "net": 465 } },
+      "malaikaSuiteDouble": { "bb": { "rack": 880, "net": 660 }, "hb": { "rack": 915, "net": 690 }, "fb": { "rack": 960, "net": 720 } },
+      "malaikaSuiteTriple": { "bb": { "rack": 1225, "net": 920 }, "hb": { "rack": 1285, "net": 965 }, "fb": { "rack": 1345, "net": 1010 } },
+      "poolsideCottage": { "bb": { "rack": 1225, "net": 920 }, "hb": { "rack": 1285, "net": 965 }, "fb": { "rack": 1345, "net": 1010 } }
+    },
+    "oneChildOneAdultSharing": { "bb": { "rack": 555, "net": 415 }, "hb": { "rack": 585, "net": 440 }, "fb": { "rack": 615, "net": 460 } },
+    "verified": true
+  },
+  "residentsRates": {
+    "commission": "10%",
+    "note": "Also valid for Commercial/Corporate Clients or Conference delegates (opposite restriction from the Travel Agent tier above)",
+    "rooms": {
+      "standardSingle": { "bb": { "rack": 280, "net": 250 }, "hb": { "rack": 300, "net": 270 }, "fb": { "rack": 320, "net": 285 } },
+      "standardDouble": { "bb": { "rack": 380, "net": 340 }, "hb": { "rack": 420, "net": 380 }, "fb": { "rack": 460, "net": 415 } },
+      "standardTriple": { "bb": { "rack": 570, "net": 510 }, "hb": { "rack": 630, "net": 565 }, "fb": { "rack": 690, "net": 620 } },
+      "malaikaSuiteSingle": { "bb": { "rack": 380, "net": 340 }, "hb": { "rack": 400, "net": 360 }, "fb": { "rack": 420, "net": 380 } },
+      "malaikaSuiteDouble": { "bb": { "rack": 465, "net": 415 }, "hb": { "rack": 500, "net": 450 }, "fb": { "rack": 545, "net": 490 } },
+      "malaikaSuiteTriple": { "bb": { "rack": 865, "net": 780 }, "hb": { "rack": 925, "net": 835 }, "fb": { "rack": 990, "net": 890 } },
+      "poolsideCottage": { "bb": { "rack": 865, "net": 780 }, "hb": { "rack": 925, "net": 835 }, "fb": { "rack": 990, "net": 890 } }
+    },
+    "oneChildOneAdultSharing": { "bb": { "rack": 285, "net": 255 }, "hb": { "rack": 315, "net": 280 }, "fb": { "rack": 345, "net": 310 } },
+    "verified": true
+  },
+  "mealPlans": { "bb": "Accommodation + Breakfast", "hb": "Accommodation + Breakfast + Dinner", "fb": "Accommodation + Breakfast + Lunch + Dinner" },
+  "childPolicy": { "under2": "Free", "under12": "50% of applicable rate", "age12Plus": "100% of adult rate" },
+  "dayRoomRate": "50% of applicable net rate, subject to availability, must be requested at booking",
+  "lateCheckout": { "10amTo2pm": "Free", "after2pm": "50% of applicable rate" },
+  "mealsOnReservation": { "dinnerOrLunch": 70, "afternoonTea": 35, "unit": "USD per person", "commissionable": "10%", "maxCapacity": 20 },
+  "closureNote": "Hotel operations pause 22-28 December annually for staff holidays (not a guest-facing closure, but flag if quoting over Christmas week); annual renovation typically in May, subject to confirmation, not automatic."
+}

@@ -1,0 +1,29 @@
+{
+  "$note": "Extracted 6 Aug 2026. Both source PDFs are explicitly headed '2025' (not 2026) and dated 2 Jan 2025, despite living in the 2026 CONTRACT RATES tree - no 2026-dated version exists in this folder. Filename reflects this ('2025 Non Residents / Residents Agent Rates - UPDATED'). Named '...-2025.json' rather than '...-2026.json' to be honest about the source vintage; flag to preparer if used for a 2026 quote.",
+  "property": "Cedar Retreat Kenya",
+  "operator": "Cedar Retreat Kenya",
+  "region": "Aberdare (Nyeri area, Aberdare National Park)",
+  "tier": "Resident (KES) and Non-Resident (USD) Agent rates",
+  "confidenceNote": "[Unverified for 2026] Document says 'THIS CONTRACT SUPERSEDES ANY OTHER ISSUED PREVIOUSLY' but is itself dated 2 Jan 2025 with no 2026 rate sheet found alongside it - confirm current 2026 rates with the property before quoting.",
+  "source": {
+    "files": [
+      "2026 CONTRACT RATES/KENYA/ACCOMODATION/Cedar Retreat/Cedar Retreat Kenya 2025 Non Residents Agent Rates USD - UPDATED.pdf",
+      "2026 CONTRACT RATES/KENYA/ACCOMODATION/Cedar Retreat/Cedar Retreat Kenya 2025 Residents Agents Rates KSH - UPDATED.pdf"
+    ],
+    "validity": "Dated 2 Jan 2025, no end date stated"
+  },
+  "rates": {
+    "unit": "per night, Full Board (Breakfast, Lunch, Dinner)",
+    "nonResidentUSD": { "doubleCabin_2guests": 380, "singleCabin_1guest": 230, "tripleCabin_3guests": 515, "childSharing8to11": 95 },
+    "residentKES": { "doubleCabin_2guests": 37900, "singleCabin_1guest": 22750, "tripleCabin_3guests": 51700, "childSharing8to11": 9475 }
+  },
+  "commissionable": "10%",
+  "childPolicy": {
+    "note": "Different from Soroi's 5-11 bracket - children under 8 not permitted at all.",
+    "under8": "NOT permitted",
+    "8to11sharing": "50% of adult rate",
+    "under12ownRoom": "75% of room rate",
+    "over12": "Full adult rate"
+  },
+  "maxOccupancy": "2 children per cabin max (1 on camp bed, 1 sharing queen bed with parents); 3rd adult on camp bed"
+}

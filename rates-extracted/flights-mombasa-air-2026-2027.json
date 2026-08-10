@@ -1,0 +1,125 @@
+{
+  "$note": "New carrier - Mombasa Air Safari. Not previously captured anywhere in rates-extracted/. Covers Coast (Mombasa/Ukunda/Diani area, via Malindi)-Mara-Amboseli-Tsavo-Wilson circuit network, plus Mombasa-Ukunda coastal hop. Both 2026 and 2027 contract years extracted together (structurally identical carrier/route set) per this project's convention (see sunworld-transport-2026-2027.json for a precedent of combining adjacent years in one file).",
+  "carrier": "Mombasa Air Safari",
+  "currency": "USD",
+  "verified": true,
+  "sources": {
+    "2026": {
+      "file": "2026 CONTRACT RATES/KENYA/FLIGHTS/Mombasa Air 2026/CONTRACT RATES from 01st January 2026 UP TO 31st December 2026 - All Agents.pdf",
+      "validity": { "start": "2026-01-01", "end": "2026-12-31" },
+      "fareStructure": "Gross Fares / Nett Fares only - no separate fuel surcharge column in the 2026 document."
+    },
+    "2027": {
+      "files": [
+        "2027 CONTRACT RATES/KENYA/FLIGHTS/Mombasa Air/MOMBASA AIR CONTRACT RATES 2027.pdf",
+        "2027 CONTRACT RATES/KENYA/FLIGHTS/Mombasa Air/CONTRACT RATES from 01st January 2027 UP TO 31st December 2027 - All Agents.pdf"
+      ],
+      "note": "Both 2027 files contain identical content (confirmed via full-text comparison) - two differently-named copies of the same rate sheet, not two different rate sets.",
+      "validity": { "start": "2027-01-01", "end": "2027-12-31" },
+      "fareStructure": "Gross Fares / Nett Fares PLUS a separate 'Fuel Surcharge' column not present in the 2026 sheet - [Unverified] whether this surcharge is additive to Nett Fare or already reflected elsewhere; recorded as a separate figure exactly as printed, not added into the Nett total."
+    }
+  },
+  "extractionMethod": "Clean embedded text layer via pdftotext -layout, all files.",
+  "generalTerms": {
+    "farePresentation": "Fares are inclusive of all taxes.",
+    "checkIn": "60 minutes before departure at Nairobi-Wilson, 30 minutes elsewhere.",
+    "childPolicy": "Children below 12 years charged 75% of the adult rate.",
+    "baggage": "15kg per person, soft bags only (explicitly 'Not a suit case').",
+    "surchargeClause": "Fares subject to surcharges being levied through written notice - relevant given the 2027 sheet's new explicit Fuel Surcharge line."
+  },
+  "routes": {
+    "coastToMaraViaUkundaMalindi": {
+      "minPax": "2026 doc: minimum 4 passengers for Malindi leg. 2027 doc: minimum 2 passengers for Amboseli / 4 passengers for Malindi and Tsavo West (2027 wording is reused from the Amboseli/Tsavo section and may be a copy-paste artifact in the source since this table is about Coast-Mara, not Amboseli - flagging as [Unverified] rather than silently correcting).",
+      "2026": {
+        "coastToMaraReturn": { "depart": "07:30", "arrive": "10:30", "gross": 550, "nett": 495 },
+        "maraToCoastOneWay": { "depart": "11:30", "arrive": "13:45", "gross": 420, "nett": 370 },
+        "coastToMaraOneWay": { "gross": 295, "nett": 255 }
+      },
+      "2027": {
+        "coastToMaraReturn": { "depart": "07:30", "arrive": "10:30", "gross": 515, "nett": 495, "fuelSurcharge": 70 },
+        "maraToCoastOneWay": { "depart": "11:30", "arrive": "13:45", "gross": 420, "nett": 370, "fuelSurcharge": 35 },
+        "coastToMaraOneWay": { "gross": 295, "nett": 255, "fuelSurcharge": 35 }
+      },
+      "confidenceNote": "2027 Return GROSS ($515) is actually LOWER than 2026 Return gross ($550) while Nett stays identical ($495) - an inconsistency worth flagging (would expect gross to rise or stay flat given the new fuel surcharge line, not fall). Recorded as printed in each source, not corrected."
+    },
+    "coastToAmboseliAndTsavoViaUkundaMalindi": {
+      "2026": {
+        "coastToAmboTsavoReturn": { "depart": "07:30", "arrive": "09:00", "gross": 555, "nett": 500 },
+        "amboTsavoToCoastOneWay": { "depart": "12:45", "arrive": "13:45", "gross": 435, "nett": 385 },
+        "coastToAmboTsavoOneWay": { "gross": 310, "nett": 270 }
+      },
+      "2027": {
+        "coastToAmboTsavoReturn": { "depart": "07:30", "arrive": "09:00", "gross": 410, "nett": 350, "fuelSurcharge": 40 },
+        "amboTsavoToCoastOneWay": { "depart": "12:45", "arrive": "13:45", "gross": 295, "nett": 250, "fuelSurcharge": 20 }
+      },
+      "confidenceNote": "2027 figures are markedly LOWER than 2026 on this route (return $410 vs $555; one-way $295 vs $310/$435 - and the 2027 sheet only lists a single one-way figure where 2026 had two directional figures). This is a genuine structural change between the two contract years as printed, not an extraction error - flag for confirmation with Mombasa Air Safari before relying on it for a 2027 quote.",
+      "minPax": "Minimum 2 passengers for Amboseli / 4 passengers for Malindi and Tsavo West (both years)."
+    },
+    "amboseliTsavoToMara": {
+      "2026": {
+        "amboTsavoToMaraReturn": { "depart": "09:15", "arrive": "10:30", "gross": 555, "nett": 500 },
+        "maraToAmboCoastOneWay": { "depart": "11:30", "arrive": "12:30", "gross": 435, "nett": 385 },
+        "amboTsavoToMaraOneWay": { "gross": 310, "nett": 270 }
+      },
+      "2027": {
+        "amboTsavoToMaraReturn": { "depart": "09:15", "arrive": "10:30", "gross": 530, "nett": 480, "fuelSurcharge": 40 },
+        "maraToAmboCoastOneWay": { "depart": "11:30", "arrive": "12:30", "gross": 410, "nett": 385, "fuelSurcharge": 20 },
+        "amboTsavoToMaraOneWay": { "gross": 310, "nett": 270, "fuelSurcharge": 20 }
+      },
+      "minPax": "2 passengers for Amboseli, 4 passengers for Tsavo West (both years)."
+    },
+    "wilsonToAmboseli": {
+      "2026": { "return": { "depart": "07:30", "arrive": "08:05", "gross": 340, "nett": 290 }, "amboseliToWilsonOneWay": { "depart": "08:30", "arrive": "09:05", "gross": 190, "nett": 160 } },
+      "2027": { "return": { "depart": "07:30", "arrive": "08:05", "gross": 340, "nett": 290, "fuelSurcharge": 40 }, "amboseliToWilsonOneWay": { "depart": "08:30", "arrive": "09:05", "gross": 190, "nett": 160, "fuelSurcharge": 20 } },
+      "note": "Identical gross/nett figures 2026 to 2027 on this specific route - only the new fuel surcharge line changes."
+    },
+    "wilsonToMaraAmAndPm": {
+      "2026": {
+        "morning": { "wilsonToMara": { "depart": "10:00", "arrive": "11:00", "gross": 370, "nett": 300 }, "maraToWilson": { "depart": "11:15", "arrive": "12:15", "gross": 200, "nett": 170 } },
+        "afternoon": { "wilsonToMara": { "depart": "14:15", "arrive": "15:15", "gross": 370, "nett": 300 }, "maraToWilson": { "depart": "15:30", "arrive": "16:30", "gross": 200, "nett": 170 } }
+      },
+      "2027": {
+        "morning": { "wilsonToMara": { "depart": "10:00", "arrive": "11:00", "gross": 370, "nett": 300, "fuelSurcharge": 40 }, "maraToWilson": { "depart": "11:15", "arrive": "12:15", "gross": 200, "nett": 170, "fuelSurcharge": 20 } },
+        "afternoon": { "wilsonToMara": { "depart": "14:15", "arrive": "15:15", "gross": 370, "nett": 300, "fuelSurcharge": 40 }, "maraToWilson": { "depart": "15:30", "arrive": "16:30", "gross": 200, "nett": 170, "fuelSurcharge": 20 } }
+      },
+      "note": "Identical gross/nett figures 2026 to 2027 - only the fuel surcharge line is new. CROSS-CHECK vs other carriers on Wilson-Mara: this is materially cheaper than ALS's general contract fare ($187 net one-way, see flights-als-routes-2026.json) and AirKenya's ($219.30 net one-way, see flights-air-kenya-routes-2026.json) - Mombasa Air's $170 nett one-way undercuts both, worth surfacing when quoting this specific route."
+    },
+    "circuitAndThroughRates": {
+      "2026": {
+        "wilsonMaraAmboseli": { "gross": 570, "nett": 520 },
+        "wilsonMaraCoast": { "gross": 550, "nett": 500 },
+        "wilsonMaraAmboseliCoast": { "gross": 915, "nett": 825 },
+        "coastAmboMaraCoast": { "gross": 915, "nett": 825 },
+        "coastMaraWilson": { "gross": 475, "nett": 415 },
+        "commencing1Jul2025": {
+          "wilsonAmboseliMaraWilson": { "gross": 650, "nett": 585 },
+          "wilsonAmboseliMaraCoast": { "gross": 830, "nett": 750 },
+          "wilsonAmboseliCoast": { "gross": 580, "nett": 525 },
+          "coastAmboseliWilson": { "gross": 460, "nett": 420 }
+        }
+      },
+      "2027": {
+        "wilsonMaraAmboseli": { "gross": 570, "nett": 520, "fuelSurcharge": 40 },
+        "wilsonMaraCoast": { "gross": 550, "nett": 500, "fuelSurcharge": 55 },
+        "wilsonMaraAmboseliCoast": { "gross": 850, "nett": 750, "fuelSurcharge": 60 },
+        "wilsonMaraAmboseliWilson": { "gross": 750, "nett": 680, "fuelSurcharge": 60, "note": "New circuit combo not present in the 2026 sheet." },
+        "coastAmboMaraCoast": { "gross": 915, "nett": 825, "fuelSurcharge": 75 },
+        "coastMaraWilson": { "gross": 475, "nett": 415, "fuelSurcharge": 55 },
+        "wilsonAmboseliMaraWilson": { "gross": 650, "nett": 585, "fuelSurcharge": 60 },
+        "wilsonAmboseliMaraCoast": { "gross": 830, "nett": 750, "fuelSurcharge": 75 },
+        "wilsonAmboseliCoast": { "gross": 470, "nett": 400, "fuelSurcharge": 40, "confidenceNote": "2027 gross ($470) is LOWER than 2026 ($580) for the same route label - flag, not corrected." },
+        "coastAmboseliWilson": { "gross": 470, "nett": 400, "fuelSurcharge": 40, "confidenceNote": "2027 gross ($470) is HIGHER than 2026 ($460); nett LOWER than 2026 ($420) - inconsistent movement vs the reverse-direction route above, flag rather than assume symmetry." }
+      },
+      "note": "2026 sheet's 'commencing 1 Jul 2025' sub-table heading suggests these specific 4 through-rates were themselves a mid-2025 update carried into the 2026 document - i.e. the 2026 doc is not fully self-consistent about when its own rates took effect. Not resolved further."
+    },
+    "mombasaToUkunda": {
+      "2026": { "return": { "depart": "07:30", "arrive": "07:45", "gross": 70, "nett": 50 }, "oneWay": { "depart": "13:30", "arrive": "13:45", "gross": 35, "nett": 25 } },
+      "2027": { "return": { "depart": "07:30", "arrive": "07:45", "gross": 70, "nett": 50, "fuelSurcharge": 10 }, "oneWay": { "depart": "13:30", "arrive": "13:45", "gross": 35, "nett": 25, "fuelSurcharge": 5 } }
+    }
+  },
+  "contact": {
+    "phones": ["0734-400400", "0734-500500", "0786-505055", "0704-400819", "0722-202559", "0701-100100", "0701-400400", "0701-500500"],
+    "email": "reservations@mombasaairsafari.com",
+    "website": "www.mombasaairsafari.com"
+  }
+}

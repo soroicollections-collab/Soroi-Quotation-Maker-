@@ -1,0 +1,73 @@
+{
+  "$note": "Fresh extraction, 5 Aug 2026, read directly from the property's own page in the paginated source PDF. Structurally very different from every inland safari property — flagged throughout below rather than forced into the same pattern. UPDATE 6 Aug 2026: the season column order (Peak/Shoulder/Green), originally an inference below, is now independently CONFIRMED — the STO 40% source document ('Soroi - 2027 STO 40% Contract Rates.pdf', page 21) has explicit 'Peak Season / Shoulder Season / Green Season' column headers, and every Rack figure there matches this file exactly under that order. See rates-extracted/blue-diani-sto40-2027.json.",
+  "property": "Soroi Blue (Diani Beach)",
+  "region": "Diani Beach",
+  "tier": "Rack Rate",
+  "residency": "Non-Resident",
+  "source": {
+    "file": "SOROI 2027/Soroi - 2027 RACK Rates.pdf",
+    "pdfPageIndex": 20,
+    "docPrintedPageNumber": 21,
+    "validity": { "start": "2027-01-04", "end": "2028-01-03" }
+  },
+  "confidence": "confirmed-2026-08-06",
+  "extractionMethod": { "note": "Read directly from the property's own page, header 'SOROI BLUE / DIANI' present with the figures." },
+  "structuralFindings": [
+    "Base meal plan is HALF BOARD, not Full Board — every other property checked uses Full Board as the base with a Ground Package upgrade. There is no 'Ground Package' concept here at all (no game drives at a beach property); instead there are optional Full Board and All-Inclusive supplements.",
+    "No mandatory conservancy/park fee of any kind — makes sense for a beach resort, but is a genuine structural difference from every inland property, all of which have one.",
+    "Season calendar shape is different: Peak here is a single short window (20 Dec-3 Jan) rather than the two-range Peak seen at every inland property. Shoulder is the majority of the year.",
+    "Room-level occupancy varies by specific room name, not just by category — some rooms (Tiwi, Wasini) are 2-adults-only with no child capacity, unlike others in the same rate row."
+  ],
+  "seasons": {
+    "peak": { "dateRanges": ["20 Dec – 3 Jan 2028"] },
+    "shoulder": { "dateRanges": ["4 Jan – 31 Mar", "1 Jun – 31 Oct"] },
+    "green": { "dateRanges": ["1 Apr – 31 May", "1 Nov – 19 Dec"] }
+  },
+  "rates": {
+    "currency": "USD",
+    "unit": "per person per night, Half Board",
+    "columnOrderConfirmed": "Peak/Shoulder/Green order - originally inferred here from the descending-price convention, since this document's own table has no per-column season label - is now independently confirmed via the STO 40% source document's explicit column headers (6 Aug 2026). No longer flag this as an inference.",
+    "gardenView": {
+      "perPerson": { "peak": 690, "shoulder": 420, "green": 250 },
+      "single": { "peak": 1035, "shoulder": 630, "green": 375 }
+    },
+    "oceanView": {
+      "perPerson": { "peak": 710, "shoulder": 480, "green": 290 },
+      "single": { "peak": 1065, "shoulder": 720, "green": 435 }
+    },
+    "juniorSuite": {
+      "perPerson": { "peak": 780, "shoulder": 570, "green": 410 },
+      "single": { "peak": 1170, "shoulder": 855, "green": 615 }
+    },
+    "executiveSuite": {
+      "perPerson": { "peak": 880, "shoulder": 670, "green": 510 },
+      "single": { "peak": 1320, "shoulder": 1005, "green": 765 }
+    },
+    "tiwiRoomDiscount": { "amount": 40, "unit": "per person per night reduction during Peak & Shoulder only", "note": "Tiwi is Garden View, twin/double bed, 2 adults only (no child capacity)." }
+  },
+  "mealSupplements": {
+    "fullBoard": { "amount": 45, "childAmount": 20, "unit": "per person per day, added to Half Board rate" },
+    "allInclusive": { "amount": 95, "childAmount": 50, "unit": "per person per day, added to Full Board rate", "excludes": "champagne, private cellar wines, premium spirits" }
+  },
+  "roomInventory": {
+    "totalRooms": 11,
+    "note": "Room-specific max occupancy varies — see source PDF for the full room-by-room table (Chale, Funzi, Lamu, Tiwi = Garden View; Kusini, Galu, Wasini, Kaskazi = Ocean View; Shimoni, Zanzibar = Junior Suite; Bahari Blue = Executive Suite, 2-bedroom). Most rooms fit 2 adults + 1 child (some + infant only); Tiwi and Wasini are 2-adults-only.",
+    "babyCot": "Available in all rooms on request."
+  },
+  "specialOffers": {
+    "longStay": "7.5% discount for bookings of 5+ nights.",
+    "freeTransfer": "Free transfers from Ukunda for a minimum 4-night booking.",
+    "honeymoon": "10% discount on room booking for a minimum 4-night stay.",
+    "combinability": "Offers are not combinable with each other or other discounts; only one per booking. Not valid during festive season (20 Dec - 3 Jan)."
+  },
+  "minimumStay": {
+    "standard": "2 nights (4 Jan - 19 Dec)",
+    "lateMarch": "3 nights (26-29 Mar)",
+    "festive": "5 nights (20 Dec - 3 Jan)"
+  },
+  "portfolioWideTerms": {
+    "note": "Child/Young Adult/Tour Leader terms from CLAUDE.md's Portfolio-wide terms were written for the inland tented-camp properties and may not map cleanly onto Diani's Half Board + room-occupancy model above — check room-level occupancy notes first for this property specifically rather than assuming the general terms apply as-is.",
+    "childAge5to11": "50% of adult sharing rate (general Soroi policy — not independently re-confirmed on this page)",
+    "christmasNewYearSupplement": "Not stated on this page — festive season here is instead handled via the 5-night minimum stay and offer-exclusion rules above."
+  }
+}

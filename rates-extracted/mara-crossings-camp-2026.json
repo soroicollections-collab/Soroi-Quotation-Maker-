@@ -1,0 +1,30 @@
+{
+  "$note": "Extracted 6 Aug 2026. Found inside the 'FLAMINGO HILL AND MARA CROSSING' folder, filename 'MCC 2026 AGENT RATES.pdf' (MCC = Mara Crossings Camp). Document heading says 'MARA CROSSINGS CAMP' (plural 'Crossings') vs the folder name 'MARA CROSSING' (singular) - treated as the same property, minor naming variance.",
+  "property": "Mara Crossings Camp",
+  "operator": "Not explicitly named beyond 'Mara Crossings Camp'",
+  "region": "Maasai Mara (Musiara Airstrip)",
+  "tier": "Agent rate (Rack and Net given side by side)",
+  "source": {
+    "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/FLAMINGO HILL AND MARA CROSSING/MCC 2026 AGENT RATES.pdf",
+    "validity": { "start": "2026-01-02", "end": "2027-01-02" }
+  },
+  "seasons": { "high": "2 Jan-31 Mar, 15 Oct-15 Dec", "low": "1 Apr-30 Jun", "peak": "1 Jul-14 Oct, 16 Dec-1 Jan" },
+  "rates": {
+    "currency": "USD", "unit": "per person per night",
+    "fullBoard": {
+      "perPerson": { "high": { "rack": 460, "net": 360 }, "low": { "rack": 403, "net": 310 }, "peak": { "rack": 598, "net": 460 } },
+      "singleTent": { "high": { "rack": 546, "net": 420 }, "low": { "rack": 494, "net": 380 }, "peak": { "rack": 689, "net": 530 } }
+    },
+    "groundPackage": {
+      "perPerson": { "high": { "rack": 663, "net": 510 }, "low": { "rack": 598, "net": 460 }, "peak": { "rack": 793, "net": 610 } },
+      "singleTent": { "high": { "rack": 936, "net": 720 }, "low": { "rack": 884, "net": 680 }, "peak": { "rack": 1118, "net": 860 } }
+    },
+    "safariSuite_maxPax5_perNight": { "01Jan-30Jun_01Jul-20Dec": 2600, "01Jul-31Oct_21Dec-31Dec": 3150 }
+  },
+  "childPolicy": { "0to5": "Free", "6to13sharingWithParents": "50% of adult rate", "13to17sharingWithParents": "75% of adult rate" },
+  "tourLeaderGuide": "75% of Adult single rate (in Guest Tent)",
+  "extras": { "sundowner": 40, "bushBreakfastDinner": 60, "drinksSupplementPerDay": 60, "maasaiVillageVisit": 35 },
+  "christmasSupplement_24to26Dec_31Dec-01Jan": { "adult": 40, "child": 20 },
+  "groundPackageInclusions": "Full board, community levy, exclusive game drives in custom-built 4x4, local airstrip transfers to/from Musiara.",
+  "safariSuiteInclusions": "Full board, house wine/soft drinks/local beers/selected spirits, 1 sundowner, 30-min massage per person."
+}

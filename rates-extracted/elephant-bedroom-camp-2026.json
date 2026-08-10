@@ -1,0 +1,19 @@
+{
+  "$note": "Extracted 6 Aug 2026, from the same Atua Enkop workbook as mbweha-safari-camp-2026.json.",
+  "property": "Elephant Bedroom Camp",
+  "operator": "Atua Enkop Africa Ltd",
+  "region": "Samburu",
+  "tier": "Nett, non-commissionable contract rate",
+  "source": { "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/ATUA ENKOP/Atua Enkop  - Sunworld Safaris  - 2026.xlsx", "validity": { "start": "2026-01-03", "end": "2027-01-02" } },
+  "seasons": { "mid": "03 Jan-31 Mar, 01-30 Jun, 16 Oct-22 Dec 2026", "low": "01 Apr-31 May", "high": "01 Jul-15 Oct 2026, 23 Dec 2026-02 Jan 2027" },
+  "rates": {
+    "currency": "USD", "unit": "per person per night",
+    "package": { "mid": { "adultSharing": 495, "single": 640, "child6to11": 250, "child12to16": 370 }, "low": { "adultSharing": 420, "single": 420, "child6to11": 210, "child12to16": 315 }, "high": { "adultSharing": 610, "single": 795, "child6to11": 305, "child12to16": 460 } },
+    "nonPackage": { "mid": { "adultSharing": 345, "single": 445, "child6to11": 175, "child12to16": 260 }, "low": { "adultSharing": 290, "single": 290, "child6to11": 145, "child12to16": 220 }, "high": { "adultSharing": 425, "single": 550, "child6to11": 215, "child12to16": 320 } }
+  },
+  "deluxeTentSupplement": 60,
+  "childPolicy": { "ownRoomUnder12": "75% of adult rate", "ownRoom12plus": "Full adult rate", "oneAdultOneChildSharing": "Adult pays single room rate" },
+  "packageInclusions": "Full board accommodation, local airstrip transfer, 2 shared game drives, sundowner, selected drinks incl. non-premium spirits.",
+  "exclusions": "Premium drinks, laundry, gratuities, park entry fees, flight cost, health insurance, Samburu village visit ($40), exclusive vehicle ($395-505/day), bush breakfast/dinner ($60), extra lunch ($35).",
+  "circuitDiscount": { "twoProperties": "5%", "threeOrFourFiveProperties": "7.5%" }
+}

@@ -1,0 +1,41 @@
+{
+  "$note": "Extracted 6 Aug 2026 via full pdftotext read (5-page document, clearly sectioned by property with own headers - low misattribution risk). Source: 'andBeyond Lodge Rates 2026 - Kenya STO20 - FB.pdf', last revised 2026/02/17 per footer. One of 3 Kenya &Beyond properties in this document (Suyian Lodge, Bateleur Camp, Kichwa Tembo Tented Camp).",
+  "property": "Suyian Lodge",
+  "operator": "andBeyond",
+  "region": "Suyian Conservancy, Laikipia",
+  "tier": "STO 20% (Rack shown for reference, plus STO Long Stay tiers)",
+  "source": { "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/ANDBEYOND/andBeyond Lodge Rates 2026 - Kenya STO20 - FB.pdf", "validity": { "start": "2026-01-11", "end": "2027-01-10" } },
+  "mealPlan": "Fully Inclusive (only meal plan offered for this lodge)",
+  "seasons": { "high": "01 Jul-31 Oct; 21 Dec'26-05 Jan'27", "mid": "11 Jan-30 Jun; 01 Nov-20 Dec; 06-10 Jan'27" },
+  "rates": {
+    "currency": "USD", "unit": "per person per night sharing (Family Suite = per Suite per night)",
+    "suites": {
+      "rack": { "high": 2500, "mid": 1500 },
+      "sto_1to3nights": { "high": 2000, "mid": 1200 },
+      "sto_4to5nights": { "high": 1900, "mid": 1140 },
+      "stoLongStay_6plusNights": { "high": 1700, "mid": 1020 }
+    },
+    "familySuite_perSuitePerNight": {
+      "rack": { "high": 8750, "mid": 5250 },
+      "sto_1to3nights": { "high": 7000, "mid": 4200 },
+      "sto_4to5nights": { "high": 6650, "mid": 3990 },
+      "stoLongStay_6plusNights": { "high": 5950, "mid": 3570 },
+      "note": "Not valid Jun-Sep"
+    },
+    "localPilotDriverGuideRate": { "high": 1000, "mid": 600, "note": "1x no charge per source table" },
+    "tourLeaderRate": "1-14 guests / 15+ guests columns present but blank/no distinct figure captured for this lodge in the source table - see Kichwa Tembo for a populated example"
+  },
+  "mandatoryFees": { "suyianConservationFee_perPersonPerNight": { "18plus": 176, "9to17": 106, "0to8": 36 } },
+  "childPolicy": {
+    "0to2sharing": "Free, no game drives/walks/other activities",
+    "3to5sharing": "Free, no game drives/walks/other activities (triple rooms subject to availability)",
+    "6to16sharing": "50% of adult rate; walks/game drives at Lodge Manager's/Guide's discretion",
+    "6to16ownRoom": "1st child adult rate, 2nd/3rd child 50% of adult rate (max 3 children per room)",
+    "childminders": "USD 5/child/hour, payable at lodge, must book on arrival day"
+  },
+  "familySuiteConfig": "1 Family Suite (2 rooms), max 2 adults + 2 children (3 on request)",
+  "singleSupplement": "50% supplement only from 3rd single room per booking (11 Jan-31 May, 1 Nov-20 Dec); 50% on ALL singles (1 Jun-31 Oct, 21 Dec-10 Jan)",
+  "inclusions": "All meals, soft/alcoholic drinks (excl. champagne/cognac/fine wines), tea/coffee, safari activities incl. guided walk/horseback riding/camel walking/village visit/yoga, laundry, medevac, transfers to/from Suyian or Loisaba Airstrip, binoculars, Guides' Journal.",
+  "exclusions": "Telephone, safari shop, gratuities, personal items, cigars, wellness treatments, park fees.",
+  "notes": "Rates confidential, nett, non-commissionable, inclusive of VAT."
+}

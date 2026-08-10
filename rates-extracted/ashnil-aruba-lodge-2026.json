@@ -1,0 +1,43 @@
+{
+  "$note": "Extracted 6 Aug 2026, from the same bundled Ashnil documents. Not the same property as Aruba-Mara Camp & Safaris (separate ARUBA MARA folder, different operator) - Ashnil Aruba is Ashnil's own Tsavo/Voi lodge. Do not confuse the two 'Aruba' names.",
+  "property": "Ashnil Aruba Lodge",
+  "operator": "Ashnil Hotels Limited (AHL)",
+  "region": "Tsavo East (Voi)",
+  "tier": "Contract rate and Rack rate (full board)",
+  "source": {
+    "files": [
+      "2026 CONTRACT RATES/KENYA/ACCOMODATION/ASHNIL HOTELS/ASHNIL HOTELS LTD_2026.pdf",
+      "2026 CONTRACT RATES/KENYA/ACCOMODATION/ASHNIL HOTELS/ASHNIL HOTELS RACK RATES_2026.pdf",
+      "2026 CONTRACT RATES/KENYA/ACCOMODATION/ASHNIL HOTELS/Ashnil  Surana Resident Rates 2026.pdf"
+    ]
+  },
+  "rates": {
+    "currency": "USD",
+    "unit": "per person, Full Board, Half Twin/Single/3rd Adult",
+    "contract": {
+      "high_16Dec-06Apr_01Jun-20Dec": { "halfTwin": 123, "single": 185, "thirdAdult": 113 },
+      "low_07Apr-31May": { "halfTwin": 89, "single": 89, "thirdAdult": 89 }
+    },
+    "rack": {
+      "high": { "halfTwin": 197, "single": 295, "thirdAdult": 187 },
+      "low": { "halfTwin": 142, "single": 142, "thirdAdult": 142 }
+    },
+    "residentKES_fullBoard": { "halfTwin": 12000, "single": 16800 }
+  },
+  "supplements": {
+    "tentsSupplement": { "perAdultPerNight": 30 },
+    "clubWingSupplement": { "perAdultPerNight": 50, "note": "12 exclusive rooms, private pool" },
+    "tentSupplementKES": 3000,
+    "clubWingSupplementKES": 5000
+  },
+  "gamePackage": { "note": "Return VOI SGR Station transfers + 1 shared game drive", "supplementAdult": 80, "supplementChild": 60, "sgrOneWayTransfer": 50 },
+  "childPolicy": {
+    "0to3": "Free",
+    "4to12Sharing": "50% of adult rate",
+    "twoChildrenOwnRoom": "75% of adult rate each",
+    "threeChildrenOwnRoom": "Full double room rate"
+  },
+  "circuitDiscount": { "4nights": "5%", "5nights": "7.5%", "6nights": "8.5%" },
+  "tourLeader": 50,
+  "exclusions": "Tsavo East National Park entry fees, airfares."
+}

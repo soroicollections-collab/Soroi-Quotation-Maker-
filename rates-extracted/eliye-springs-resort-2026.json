@@ -1,0 +1,43 @@
+{
+  "$note": "Extracted 6 Aug 2026 by reading the source .docx directly (unzipped as XML, word/document.xml) since it's a Word document, not a PDF. Source: 'The Jewel 2026 - Eliye Springs Resort.docx' - a combined fact sheet + tariff sheet. Note the property was significantly rebuilt 2020-2025 after Lake Turkana's rising water levels destroyed the original bomas/rondavels/pool/restaurant - current product is 5 new Cliff Cabins plus a campsite with Manyattas/tents.",
+  "property": "Eliye Springs Resort (\"The Jewel on Lake Turkana\")",
+  "operator": "Gloroadventure Ltd",
+  "region": "Lake Turkana (60km NE of Lodwar, Eliye airstrip - IATA EYS)",
+  "tier": "Resident (KES) and Non-Resident (USD) rack rates",
+  "source": { "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/Eliye Springs Resort/The Jewel 2026 - Eliye Springs Resort.docx" },
+  "rates": {
+    "unit": "per room per night unless noted",
+    "cliffCabin": {
+      "note": "Self-contained; 3 have double bed, 1 twin, 1 family (2 bedrooms, separately priced below)",
+      "bedOnly": { "residentKES": { "single": 6400, "double": 9600 }, "nonResidentUSD": { "single": 58, "double": 87 } },
+      "BB": { "residentKES": { "single": 7900, "double": 12600 }, "nonResidentUSD": { "single": 72, "double": 115 } },
+      "HB": { "residentKES": { "single": 9600, "double": 16000 }, "nonResidentUSD": { "single": 87, "double": 145 } },
+      "FB": { "residentKES": { "single": 10800, "double": 18400 }, "nonResidentUSD": { "single": 98, "double": 167 } }
+    },
+    "familyCliffCabin_2bedrooms": {
+      "unit": "per unit per night, priced by number of persons (1-4)",
+      "bedOnly": { "residentKES": 12500, "nonResidentUSD": 114, "note": "Same flat rate 1-4 persons" },
+      "BB": { "residentKES": [14000, 15500, 17000, 18500], "nonResidentUSD": [127, 141, 155, 168], "personCounts": [1, 2, 3, 4] },
+      "HB": { "residentKES": [15700, 18900, 22100, 25300], "nonResidentUSD": [143, 172, 200, 230], "personCounts": [1, 2, 3, 4] },
+      "FB": { "residentKES": [16900, 21300, 25700, 30100], "nonResidentUSD": [154, 194, 234, 274], "personCounts": [1, 2, 3, 4] }
+    },
+    "manyatta_campsite": {
+      "bedOnly": { "residentKES": { "single": 3000, "double": 4000 }, "nonResidentUSD": { "single": 27, "double": 36 } },
+      "BB": { "residentKES": { "single": 4500, "double": 7000 }, "nonResidentUSD": { "single": 41, "double": 63 } },
+      "HB": { "residentKES": { "single": 6200, "double": 10400 }, "nonResidentUSD": { "single": 56, "double": 95 } },
+      "FB": { "residentKES": { "single": 7400, "double": 12800 }, "nonResidentUSD": { "single": 67, "double": 116 } }
+    },
+    "tent_perPersonPerNight_bedOnly": { "residentKES": 1500, "nonResidentUSD": 14 },
+    "ownTent_perPersonPerNight_bedOnly": { "residentKES": 1000, "nonResidentUSD": 9 }
+  },
+  "flyInPackage2026": {
+    "description": "3 days/2 nights, transfers Lodwar-Eliye Springs-Lodwar, luxury Cliff Cabin accommodation, Turkana Boy site visit, full board with candlelight dinners, bonfire and film night",
+    "perPersonSharing": 70400,
+    "singleOccupancySupplement": 8000,
+    "additionalNight": { "single": 10800, "double": 18400 },
+    "currency": "KES",
+    "excludes": "Flights (confirmed per booking due to price fluctuation), KWS Central Island National Park entrance fee (Non-Resident $40, Resident KES 600, Citizen KES 500)"
+  },
+  "activitiesKES": { "turkanaBoyDayTrip": 30000, "centralIslandBoatTrip": 32000, "boatRide": 4000, "sportfishingHalfDay": 38000, "desertSundowner_min2pax": 5000, "turkanaHomesteadVisit": 25000, "wadachPyramidsVisit": 8000 },
+  "notes": "No explicit child policy stated in this source - flag as [Unverified gap] if quoting with children."
+}

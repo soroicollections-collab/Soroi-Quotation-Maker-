@@ -1,0 +1,46 @@
+{
+  "category": "excursion",
+  "activity": "Dhow safari, snorkeling & diving day trip — Kisite Mpunguti Marine Park via Shimoni",
+  "operator": "Pilli Pipa Dhow (Kisite Discovery / Firefly Ocean Camp, PADI dive resort #22994)",
+  "region": "Diani Beach / South Coast, Kenya",
+  "extractedDate": "2026-08-06",
+  "sourceFiles": [
+    "2026 CONTRACT RATES/EXCURSIONS/PILIPIPA DHOW/Price Pilli Pipa June to December 2026.pdf",
+    "2026 CONTRACT RATES/EXCURSIONS/PILIPIPA DHOW/EAC Citizens price  list.pdf",
+    "2026 CONTRACT RATES/EXCURSIONS/PILIPIPA DHOW/Price PIlli Pipa 2024.pdf"
+  ],
+  "$gapFlag": "[Flag — data gap] The 2027 CONTRACT RATES/EXCURSIONS/PILIPIPA DHOW/ folder does NOT contain a 2026/2027-dated price sheet — it only holds the same stale 'Price PIlli Pipa 2024.pdf' and 'EAC Citizens price list.pdf' (confirmed byte-identical to the 2026 copies via md5) plus a brochure with no pricing. There is no confirmed Pilli Pipa non-resident rate for any period after 31 Dec 2026. Extract fresh from source before quoting a 2027 Pilli Pipa trip.",
+  "currency": "USD (non-resident); KES (EAC citizen rate)",
+  "nonResidentRates": {
+    "validity": "15 June 2026 - 31 December 2026",
+    "source": "Price Pilli Pipa June to December 2026.pdf",
+    "adultFromSouthCoastUSD": 137,
+    "adultFromNorthCoastUSD": 147,
+    "note": "South Coast = Diani Beach, Tiwi, Msambweni area.",
+    "childPolicy": "Age 3-12: half price. Age 2 and under: free.",
+    "includes": ["KWS marine park entrance fees and all applicable taxes", "Snorkelling in Kisite Mpunguti Marine Park", "Transport from Diani/South Coast area", "Light refreshments on board", "Lunch (vegetarian/chicken option available on request)", "Soft drinks, white wine or beer with lunch", "Visit to Shimoni Cave"],
+    "diveSupplementsUSD": { "oneDiveCertified": 40, "twoDivesCertified": 70, "oneFunDiveUncertified": 50 },
+    "verified": true
+  },
+  "priorYearReference": {
+    "validity": "2024 (South Coast only stated)",
+    "source": "Price PIlli Pipa 2024.pdf",
+    "adultFromSouthCoastUSD": 130,
+    "childPolicy": "Age 5-12: half price. Under 5: free. (Note: differs from the 2026 sheet's 3-12 half price / under-2 free bracket — a genuine change between the two documents, not a transcription error.)",
+    "verified": true,
+    "confidenceNote": "Superseded by the June-Dec 2026 rate above; retained here only as historical reference, not for current quoting."
+  },
+  "eacCitizenRates": {
+    "source": "EAC Citizens price  list.pdf",
+    "eligibility": "Valid Citizen ID or passport from Kenya, Tanzania, Uganda, Rwanda, Burundi, South Sudan, or Congo shown to KWS rangers in Shimoni.",
+    "snorkellingWithTransportKES": 8000,
+    "snorkellingSelfDriveToShimoniKES": 7000,
+    "childPolicy": "Age 5-12: half price. Age 4 and under: free.",
+    "diveSupplementsUSD": { "oneDiveCertified": 40, "twoDivesCertified": 70, "oneFunDiveUncertified": 50 },
+    "noIdPenalty": "US$25 marine park fee charged if citizen cannot show ID/passport.",
+    "verified": true
+  },
+  "skippedFiles": [
+    { "file": "An Adventure with Pilli Pipa.pdf", "reason": "Marketing brochure with no pricing table (only one incidental mention of the Shimoni Slave Caves being 'included in the price' — no figures)." }
+  ]
+}

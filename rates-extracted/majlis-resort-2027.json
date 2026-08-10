@@ -1,0 +1,69 @@
+{
+  "$note": "Extracted 6 Aug 2026, read directly (pdftotext -layout, poppler, 4-page document). The Majlis Resort — non-Soroi, Lamu. Folder named 'THE MAJLIS RESORT' in the 2027 tree. 'The Majlis Resort - KES RESIDENCE Rates 2027.pdf' (Resident tier, KES) NOT extracted here — out of scope, non-resident is primary target.",
+  "property": "The Majlis Resort",
+  "region": "Lamu",
+  "tier": "USD Rack Rates 2027 — this document is labelled 'RACK' only; no separate Nett/STO-discount figure is given on this particular card (unlike the 2026 card, which showed both Rack and Nett side by side). Treat this as the published rate; confirm the actual Sunworld buy-in/commission structure for 2027 separately if needed for costing.",
+  "residency": "Non-Resident (implied — no explicit 'Non-Resident' label on this card, but it's the USD-denominated rack card, paired against the separate KES 'RESIDENCE' card in the same folder)",
+  "source": {
+    "file": "2027 CONTRACT RATES/KENYA/BEACH ACCOMODATION/THE MAJLIS RESORT/The Majlis Resort - USD RACK RATES 2027.pdf",
+    "pdfPageIndex": [0, 1, 2, 3],
+    "validity": { "note": "Not explicitly dated as a single range in the document; season labels reference 'Easter period and December 15th, 2027 - January 15th, 2028', implying validity spans calendar year 2027 through mid-Jan 2028." }
+  },
+  "confidence": "confirmed-2026-08-06",
+  "extractionMethod": { "note": "Read directly, 4-page single-property document." },
+  "structuralFindings": [
+    "Structurally very different from the 2026 card: priced PER ROOM (2 pax standard, Royal Suite max 4 pax) across 3 seasons (Regular/Peak/Festive) rather than 2026's Year-Round/Festive split, and season windows are named differently (no more 'Year Round 08 Jan-20 Dec' block — instead 'Regular Season' explicitly lists Mar/Apr/May/Jun/Sep/Oct/Nov/Dec-to-15th, and 'Peak Season' is Jan15-Feb28 AND Jul1-Aug31 combined under one price).",
+    "No Twin/Double vs Single split shown on this card the way 2026 had it — Single travelers instead get a flat 20% reduction off the double-occupancy rate per the notes section, a different mechanism than 2026's separate Single Room Rate rows.",
+    "No separate 'Per Triple Room (2 Adults 1 Child)' pricing row exists on this 2027 card — the room rate appears to be the base 2-pax price for Superior/Deluxe/Junior Suite, with Royal Suite listed as 'Max 4 pax' at one flat price (not broken out by occupancy count the way 2026 was).",
+    "Meal plan: Regular & Peak Season = Half Board; Easter & Festive Season = Full Board, min 5 nights — same underlying concept as 2026's Year-Round HB / Festive FB, but season boundaries don't line up 1:1 with the 2026 card's Year-Round/Festive dates.",
+    "Cancellation policy tightened materially vs 2026: 90+ days now the ONLY no-charge band (2026 had multiple graduated softer bands down to 20% at 90-60 days); No Show is 100% (same); deposit requirement rose from 20% (2026) to 50% (2027).",
+    "New 'Day Use' policy appears on this 2027 card with no 2026 equivalent: 75% of applicable room rate, checkout 17:00, KES 3,000 non-redeemable pool charge.",
+    "Child policy text is near-identical to 2026's (0-3 free, 4-11 sharing = 50%, 4-11 own room = 75% max 3 children, single adult + child = single rate + 50%), confirmed matching wording on this page."
+  ],
+  "seasons": {
+    "regularSeason": { "dateRange": "March, April, May, June, September, October, November, and 1 Dec - 15 Dec 2027", "mealPlan": "Half Board" },
+    "peakSeason": { "dateRange": "15 Jan - 28 Feb 2027 and 1 Jul - 31 Aug 2027", "mealPlan": "Half Board" },
+    "easterFestiveSeason": { "dateRange": "Easter period and 15 Dec 2027 - 15 Jan 2028", "mealPlan": "Full Board", "minimumStay": "5 nights" }
+  },
+  "rates": {
+    "currency": "USD",
+    "unit": "per room per night (2 pax standard rooms; Royal Suite max 4 pax)",
+    "superiorRoom": { "regularSeason": 530, "peakSeason": 580, "easterFestiveSeason": 850 },
+    "deluxeRoom": { "regularSeason": 650, "peakSeason": 715, "easterFestiveSeason": 960 },
+    "juniorSuite": { "regularSeason": 970, "peakSeason": 1070, "easterFestiveSeason": 1500 },
+    "royalSuite_max4pax": { "regularSeason": 1970, "peakSeason": 2170, "easterFestiveSeason": 2240 },
+    "singleTravelerDiscount": "20% off double-occupancy rate"
+  },
+  "childPolicy": {
+    "age0to3": "Free",
+    "age4to11_sharingWith2Adults": "50% of adult rate",
+    "age4to11_ownRoom": "75% of room rate (max 3 children per room)",
+    "singleAdultWithChild4to11": "Single Room Rate + 50% of adult rate (for the child)",
+    "maxChildrenSharingWithAdults": 2,
+    "maxChildrenRoomExclusive": 3
+  },
+  "packageAddOn": "USD 50 per person per meal (Full Board add-on), includes 1 soft drink/soda/water/fresh juice per meal.",
+  "transfers": "Complimentary scheduled return boat transfers from Lamu Airport.",
+  "dayUse": {
+    "rate": "75% of applicable room rate",
+    "checkoutTime": "17:00hrs (full room rate charged if later)",
+    "poolCharge": "KES 3,000, non-redeemable"
+  },
+  "paymentTerms": "50% deposit due on confirmed bookings; full balance 30 days prior to arrival; last-minute bookings paid in full on confirmation.",
+  "cancellationPolicy": {
+    "90PlusDays": "No charge",
+    "90to60Days": "20% charge",
+    "60to35Days": "30% charge",
+    "34to20Days": "50% charge",
+    "19toArrival": "100% charge",
+    "noShow": "100%",
+    "earlyDeparture": "No refund"
+  },
+  "notExtracted": {
+    "file": "2027 CONTRACT RATES/KENYA/BEACH ACCOMODATION/THE MAJLIS RESORT/The Majlis Resort - KES RESIDENCE Rates 2027.pdf",
+    "reason": "Resident tier, KES — out of scope, non-resident is primary target."
+  },
+  "portfolioWideTerms": {
+    "note": "Non-Soroi property — CLAUDE.md's Soroi-portfolio-wide terms do not apply. Room-based (not per-person) pricing unit, same as 2026, but season/occupancy structure changed materially year over year — do not assume 2026's shape carries into 2027 for this property."
+  }
+}

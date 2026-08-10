@@ -1,0 +1,48 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftotext -layout from two documents in 'JW MARRIOT/': '2026 and 2027 Resident Nett Rates - JW Marriott Mount Kenya Rhino Reserve Safari Camp_compressed.pdf' and the parallel 'Rack Rates' file (both 7pp). ANOMALY: both files are explicitly titled 'Resident' rates, but the USD figures ($880-$2,535/person/night) are consistent with NON-resident luxury safari pricing, not typical Kenyan-resident discount pricing (which is usually far lower and often KES-denominated). Flagging this prominently rather than assuming a mislabeling either way - use with caution and confirm residency-tier applicability with the hotel/Sunworld before quoting either a resident or non-resident client from this document.",
+  "property": "JW Marriott Mount Kenya Rhino Reserve Safari Camp",
+  "region": "Solio Ranch / Mount Kenya",
+  "currency": "USD",
+  "validity": { "start": "2026-06-01", "end": "2028-01-05", "note": "Single document spans both 2026 and 2027 - two seasons only (High and Shoulder/Low), both years use the same figures" },
+  "confidence": "confirmed-2027-08-06 for the figures themselves; confidenceNote above applies to the Resident/Non-Resident labeling",
+  "seasons": {
+    "high": { "dates": ["1 Jun - 15 Oct 2026", "20 Dec 2026 - 5 Jan 2027", "1 Jun - 15 Oct 2027", "20 Dec 2027 - 5 Jan 2028"] },
+    "shoulderLow": { "dates": ["16 Oct 2026 - 19 Dec 2026", "6 Jan 2027 - 31 May 2027", "16 Oct 2027 - 19 Dec 2027"] }
+  },
+  "rates": {
+    "unit": "per person sharing per night unless noted",
+    "labeled_ResidentNett": {
+      "perPersonSharing": { "high": 1520, "shoulderLow": 880 },
+      "singleRoom": { "high": 2285, "shoulderLow": 1320 },
+      "child6to12Single": { "high": 1715, "shoulderLow": 990 },
+      "child6to12OwnRoom": { "high": 1143, "shoulderLow": 660 },
+      "child6to12SharingWithAdults": { "high": 760, "shoulderLow": 445 },
+      "guidePilot": { "high": 500, "shoulderLow": 500 },
+      "twoBedroomSuiteUpTo4pax": { "high": 6085, "shoulderLow": 3510 }
+    },
+    "labeled_ResidentRack": {
+      "perPersonSharing": { "high": 1690, "shoulderLow": 975 },
+      "singleRoom": { "high": 2535, "shoulderLow": 1465 },
+      "child6to12Single": { "high": 1905, "shoulderLow": 1100 },
+      "child6to12OwnRoom": { "high": 1270, "shoulderLow": 730 },
+      "child6to12SharingWithAdults": { "high": 845, "shoulderLow": 490 },
+      "guidePilot": { "high": 500, "shoulderLow": 500 }
+    },
+    "verified": true,
+    "discountVerification": "Nett is roughly 10% off Rack on the per-person-sharing/single figures (e.g. High Season PPS: 1690 vs 1520 = 10.06% off) - not an exact round percentage, treated as the contracted figure rather than a derived ratio."
+  },
+  "mandatoryFees": {
+    "jwMarriottMasaiMaraFoundationFee": { "amount": 15, "unit": "per guest per stay" },
+    "solioRanchConservationFee": { "adult": 106, "child": 52, "unit": "per person, subject to change - excluded from rate" },
+    "lazizWelfareFoundationContribution": { "amount": 15, "unit": "per guest per stay", "note": "listed under Excluded" },
+    "verified": true
+  },
+  "childPolicy": { "note": "Property is unfenced - children under 6 not recommended for safety reasons. Rates only structured for the 6-12 bracket.", "verified": true },
+  "inclusions": "Full board + select alcoholic/non-alcoholic beverages, return airstrip transfers (Nanyuki/Solio), 2 shared game drives/day, shared night game drive (once), bush meals (once), sundowners (once), bicycle safaris, guided walks, transfer to Aberdare NP (excl. park fees), Ol Pejeta visit (excl. park fees), yoga, gym/pool/library, laundry (5 items/person/day), community visits",
+  "exclusions": "Champagne/premium wines/spirits, Solio conservation fee, spa, personal items, gratuities, Lazizi Welfare Foundation contribution",
+  "exclusiveVehicle": { "amount": 450, "unit": "per day, excl. park entry fees" },
+  "singleRoomPolicy": "Max 3 single rooms per group at single rate; additional singles charged at double rate",
+  "circuitDiscount": "Combine with JW Marriott Masai Mara Lodge and/or The Ritz-Carlton: 5% off for 2 properties, 7.5% off for 3 properties (accommodation package total)",
+  "paymentTerms": "20% non-refundable deposit on confirmation; balance due 90 days before arrival; 100% cancellation fee within 90 days of arrival",
+  "tourLeaderPolicy": "Complimentary half-twin-rate accommodation for bona fide tour leaders after minimum 10 paying rooms, max 2 comps per group"
+}

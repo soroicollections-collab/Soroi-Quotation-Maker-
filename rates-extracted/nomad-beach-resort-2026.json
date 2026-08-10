@@ -1,0 +1,67 @@
+{
+  "$note": "Extracted 6 Aug 2026, read directly (pdftotext -layout, poppler, 1-page document). Nomad Beach Resort — non-Soroi, part of 'The Sands & Chale Island' resort complex. Same filing-duplication issue as Chale Island applies here: byte-identical copy confirmed at both '2026 CONTRACT RATES/KENYA/BEACH ACCOMODATION/CHALE AND NOMADS/Nomad Beach Resort - USD - Net 2026.pdf' and the nested 'THE SANDS/CHALE AND NOMADS/' copy (MD5 5ba998bca4807450b94454ba2e59bc49, confirmed both locations). Used the top-level copy as source. USD Net is the only USD tier available for 2026 (KES Rack also exists, not extracted).",
+  "property": "Nomad Beach Resort (part of The Sands & Chale Island)",
+  "region": "Diani / South Coast",
+  "tier": "USD Net — primary and only USD tier available for 2026.",
+  "residency": "Non-Resident",
+  "source": {
+    "file": "2026 CONTRACT RATES/KENYA/BEACH ACCOMODATION/CHALE AND NOMADS/Nomad Beach Resort - USD - Net 2026.pdf",
+    "duplicateFilingNote": "Byte-identical copy also exists at '2026 CONTRACT RATES/KENYA/BEACH ACCOMODATION/THE SANDS/CHALE AND NOMADS/Nomad Beach Resort - USD - Net 2026.pdf' — same filing duplication as Chale Island, see that file's note.",
+    "kesRackFile_notExtracted": "2026 CONTRACT RATES/KENYA/BEACH ACCOMODATION/CHALE AND NOMADS/Nomad Beach Resort - KES - Rack 2026 (1).pdf",
+    "pdfPageIndex": [0],
+    "validity": { "start": "2025-11-01", "end": "2026-10-31" }
+  },
+  "confidence": "confirmed-2026-08-06",
+  "extractionMethod": { "note": "Read directly, single-page document." },
+  "structuralFindings": [
+    "Base meal plan is Bed & Breakfast (explicitly stated in document header) — a genuinely different base than Chale Island's Half Board, even though these two properties are commercially bundled/sold together.",
+    "4 room categories: Sea Breeze Room, Ocean View Suite, Beach Cottage (all max 3 pax, per-person-sharing shape identical to Chale Island's), plus Family Suite which is priced 'Based on min 4 pax sharing' as a flat figure with a separate 'Extra bed' add-on — a 4th, differently-shaped category not present at Chale Island.",
+    "Same 3 season bands as Chale Island (Spring 15Mar-15Jun, Regular implicit, Festive 20Dec-10Jan min 7 nights) — confirmed identical wording, a shared complex-wide season calendar.",
+    "Supplement structure simpler than Chale Island: only Half Board and Full Board supplements exist (no All Inclusive supplement line), consistent with there being no AI-inclusive room category here."
+  ],
+  "seasons": {
+    "spring": { "dateRange": "15 Mar - 15 Jun" },
+    "regular": { "dateRange": "implicit — all other dates outside Spring/Festive" },
+    "festive": { "dateRange": "20 Dec - 10 Jan", "minimumStay": "7 nights" }
+  },
+  "rates": {
+    "currency": "USD",
+    "unit": "per person sharing (or single occupancy) per night, Bed & Breakfast base",
+    "seaBreezeRoom": { "perPersonSharing": { "spring": 119, "regular": 151, "festive": 224 }, "singleOccupancy": { "spring": 167, "regular": 211, "festive": 314 }, "thirdBedAdult": { "spring": 83, "regular": 106, "festive": 157 }, "thirdBedChild": { "spring": 70, "regular": 70, "festive": 120 } },
+    "oceanViewSuite": { "perPersonSharing": { "spring": 189, "regular": 217, "festive": 292 }, "singleOccupancy": { "spring": 265, "regular": 304, "festive": 409 }, "thirdBedAdult": { "spring": 132, "regular": 152, "festive": 204 }, "thirdBedChild": { "spring": 70, "regular": 70, "festive": 120 } },
+    "beachCottage": { "perPersonSharing": { "spring": 189, "regular": 231, "festive": 357 }, "singleOccupancy": { "spring": 265, "regular": 323, "festive": 500 }, "thirdBedAdult": { "spring": 132, "regular": 162, "festive": 250 }, "thirdBedChild": { "spring": 70, "regular": 70, "festive": 120 } },
+    "familySuite_min4paxSharing": { "flatRate": { "spring": 438, "regular": 560, "festive": 749 }, "extraBed": { "spring": 77, "regular": 98, "festive": 131 } }
+  },
+  "supplements": {
+    "halfBoard": { "perAdult": 50, "perChild": 25 },
+    "fullBoard": { "perAdult": 75, "perChild": 37 }
+  },
+  "childPolicy": {
+    "age0to2": "Free",
+    "age12Plus": "Adult rates",
+    "age3to11_sharingWith1Adult": "3rd bed Child + Single Occupancy",
+    "age3to11_sharingWith2Adults": "3rd bed Child + 2pp Sharing",
+    "2Children_with1Adult": "Single Occupancy + 1pp Sharing",
+    "2Children_noAdults": "Single Occupancy",
+    "3Children_noAdults": "Single Occupancy + 3rd bed Child"
+  },
+  "maxRoomOccupancy": "3 pax (exceptions may apply, except Family Suite which is min 4 pax)",
+  "transfers": {
+    "moiInternationalAirport": { "amount": 70, "unit": "per 4 pax, Airconditioned Mini Van via Dongo-Kundu bypass, 60 min" },
+    "dianiAirport": { "amount": 15, "unit": "per 4 pax, 15 min" },
+    "nomadToChaleIsland": { "amount": 35, "unit": "per 4 pax, 30 min" }
+  },
+  "paymentTerms": "30% deposit 14 days after invoicing; balance 30 days prior to arrival.",
+  "cancellationPolicy": {
+    "regularAndFestive": { "30PlusDays": "No charge", "15to30Days": "50%", "14orFewerDays": "100%", "noShow": "100%" },
+    "spring": { "14PlusDays": "No charge", "7to14Days": "50%", "under7Days": "100%", "noShow": "100%" }
+  },
+  "skippedFiles": [
+    "RE_ 2026 Chale Island and Nomad Beach Net rates.msg (email)",
+    "Confirmation Voucher -Denis Family.pdf (booking confirmation, not a rate card)",
+    "Nomad Beach Resort - KES - Rack 2026 (1).pdf (KES Rack tier, not extracted)"
+  ],
+  "portfolioWideTerms": {
+    "note": "Non-Soroi property — CLAUDE.md's Soroi-portfolio-wide terms do not apply."
+  }
+}

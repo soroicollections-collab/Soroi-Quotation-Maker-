@@ -1,0 +1,21 @@
+{
+  "$note": "Extracted 6 Aug 2026. Source is NOT a formal rate sheet PDF - it is a promotional/marketing email (forwarded internally at Sunworld, 26 Jun 2025) from Maasai.com announcing new 2026 all-inclusive seasonal rates for Campi ya Kanzi & Chyulu Lodge jointly. No room-category breakdown, no child policy, no mandatory-fee breakdown are given - flagged as a materially thinner source than other properties in this batch.",
+  "property": "Chyulu Lodge & Campi ya Kanzi (jointly rated)",
+  "operator": "Maasai.com / Great Plains-style conservation operator (Luca Belpietro)",
+  "region": "Chyulu Hills",
+  "tier": "All-inclusive seasonal rate (single blended rate, not split by room category)",
+  "confidenceNote": "[Unverified] This is a marketing email, not a signed rate agreement. No child policy, no room categories, no mandatory park/conservancy fees stated. Do not treat as a fully quotable rate card without confirming a formal contract with the property.",
+  "source": {
+    "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/CHYULU LODGE/Chyulu Lodge Rates 2026.pdf",
+    "validity": "2026 season (exact dates not stated beyond season labels below)"
+  },
+  "rates": {
+    "currency": "USD",
+    "unit": "per person per night, all-inclusive (includes full board, return scenic charter flights from Nairobi, game drives, guided walks, horseback riding)",
+    "green_AprMay_Nov": 1100,
+    "mid_11Jan-31Mar": 1250,
+    "high_JunOct_Dec-10Jan": 1500,
+    "christmasSupplement_20Dec-10Jan": "+125 per person per night"
+  },
+  "notes": "Rate includes round-trip private charter flights from Nairobi - a materially different inclusion set from most other properties in this batch, factor this in before comparing per-night prices directly."
+}

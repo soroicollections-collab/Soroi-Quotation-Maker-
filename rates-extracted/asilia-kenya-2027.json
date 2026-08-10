@@ -1,0 +1,96 @@
+{
+  "$note": "Extracted 6 Aug 2026 via openpyxl from 'ASILIA/Asilia-Contract-Rates-27-28_25.xlsx' (Non-Resident) and 'ASILIA/Asilia-Resident-Rate-27_28_10.xlsx' (Resident). Both workbooks cover Asilia's FULL East Africa portfolio (Kenya + Northern/Southern Tanzania + Uganda, 21 properties total in the Non-Resident file). Only the 5 Kenya properties were extracted for this Kenya-accommodations slice: Naboisho Camp, Encounter Mara, Rekero, Emboo (all Maasai Mara), and Ol Pejeta Bush Camp (Laikipia). Property-to-country attribution was cross-checked against the workbook's own 'Park Fees' sheet, which groups fee blocks by country header (Kenya / Northern Tanzania / Southern Tanzania / Uganda) in adjacent spreadsheet columns - this is a spreadsheet, not a flattened PDF text dump, so no adjacent-property misattribution risk of the kind documented for Soroi/PDF sources.",
+  "operator": "Asilia Africa",
+  "properties": ["Naboisho Camp", "Encounter Mara", "Rekero", "Emboo", "Ol Pejeta Bush Camp"],
+  "currency": "USD",
+  "unit": "per person, Sharing/Single/Triple as labeled",
+  "confidence": "confirmed-2027-08-06 - values read directly from structured spreadsheet cells, no OCR/layout ambiguity",
+  "tierSystemNote": "Asilia's own tier system (RSP=rack, Standard, Gold, Silver, Bronze) is NOT the same as Soroi's STO ladder or A&K's flat %. Verified arithmetically: 'Standard' = RSP x 0.75 exactly (25% off rack, matching the 'Agent Discount 0.25' cell in the workbook). 'RSP-Gold' duplicates 'Standard' exactly (i.e. Gold's starting point IS the Standard/25%-off rate); 'Gold' = RSP-Gold x 0.75 (a further 25% off, ~43.75% off rack total). 'RSP-Silver' sits at roughly 15% off rack, then 'Silver' = RSP-Silver x 0.75. 'RSP-Bronze' sits at roughly 7% off rack, then 'Bronze' = RSP-Bronze x 0.75. Which named tier (Standard/Gold/Silver/Bronze) applies to Sunworld specifically is NOT stated anywhere in the workbook - confirm with Asilia/Sunworld contracting before quoting a specific tier.",
+  "nonResident": {
+    "Encounter Mara": {
+      "region": "Maasai Mara Conservancy",
+      "boardBasis": "Game Package only (no Full Board tier offered)",
+      "seasons": {
+        "High": { "dates": "1 Jun - 31 Oct | 20 Dec - 5 Jan", "rspSharing": 1100, "rspSingle": 1650, "rspTriple": 916.67, "standardSharing": 825, "standardSingle": 1237.5, "standardTriple": 687.5, "goldSharing": 618.75, "goldSingle": 928.13, "goldTriple": 515.63, "silverSharing": 701.25, "silverSingle": 1051.88, "silverTriple": 584.38, "bronzeSharing": 767.25, "bronzeSingle": 1150.88, "bronzeTriple": 639.38 },
+        "Secret": { "dates": "1 Nov - 19 Dec | 6 Jan - 28 Feb", "rspSharing": 830, "rspSingle": 1245, "rspTriple": 691.67, "standardSharing": 622.5, "standardSingle": 933.75, "standardTriple": 518.75, "goldSharing": 466.88, "goldSingle": 700.31, "goldTriple": 389.06, "silverSharing": 529.13, "silverSingle": 793.69, "silverTriple": 440.94, "bronzeSharing": 578.93, "bronzeSingle": 868.39, "bronzeTriple": 482.44 },
+        "Green": { "dates": "1 - 30 Apr", "rspSharing": 600, "rspSingle": 900, "rspTriple": 500, "standardSharing": 450, "standardSingle": 675, "standardTriple": 375, "goldSharing": 337.5, "goldSingle": 506.25, "goldTriple": 281.25, "silverSharing": 382.5, "silverSingle": 573.75, "silverTriple": 318.75, "bronzeSharing": 418.5, "bronzeSingle": 627.75, "bronzeTriple": 348.75 }
+      }
+    },
+    "Naboisho Camp": {
+      "region": "Naboisho Conservancy, Maasai Mara",
+      "boardBasis": "Game Package only",
+      "seasons": {
+        "High": { "dates": "1 Jun - 31 Oct | 20 Dec - 5 Jan", "rspSharing": 2320, "rspSingle": 3480, "rspTriple": 1933.33, "standardSharing": 1740, "standardSingle": 2610, "standardTriple": 1450, "goldSharing": 1305, "goldSingle": 1957.5, "goldTriple": 1087.5, "silverSharing": 1479, "silverSingle": 2218.5, "silverTriple": 1232.5, "bronzeSharing": 1618.2, "bronzeSingle": 2427.3, "bronzeTriple": 1348.5 },
+        "Secret": { "dates": "1 Nov - 19 Dec | 6 Jan - 31 Mar", "rspSharing": 1370, "rspSingle": 2055, "rspTriple": 1141.67, "standardSharing": 1027.5, "standardSingle": 1541.25, "standardTriple": 856.25, "goldSharing": 770.63, "goldSingle": 1155.94, "goldTriple": 642.19, "silverSharing": 873.38, "silverSingle": 1310.06, "silverTriple": 727.81, "bronzeSharing": 955.58, "bronzeSingle": 1433.36, "bronzeTriple": 796.31 },
+        "Green": { "dates": "1 Apr - 31 May", "rspSharing": 760, "rspSingle": 1140, "rspTriple": 633.33, "standardSharing": 570, "standardSingle": 855, "standardTriple": 475, "goldSharing": 427.5, "goldSingle": 641.25, "goldTriple": 356.25, "silverSharing": 484.5, "silverSingle": 726.75, "silverTriple": 403.75, "bronzeSharing": 530.1, "bronzeSingle": 795.15, "bronzeTriple": 441.75 }
+      }
+    },
+    "Rekero": {
+      "region": "Maasai Mara National Reserve (unfenced, no conservancy)",
+      "boardBasis": "Game Package only",
+      "seasons": {
+        "High": { "dates": "1 Jul - 31 Oct | 20 Dec - 5 Jan", "rspSharing": 1450, "rspSingle": 2175, "rspTriple": 1208.33, "standardSharing": 1087.5, "standardSingle": 1631.25, "standardTriple": 906.25, "goldSharing": 815.63, "goldSingle": 1223.44, "goldTriple": 679.69, "silverSharing": 924.38, "silverSingle": 1386.56, "silverTriple": 770.31, "bronzeSharing": 1011.38, "bronzeSingle": 1517.06, "bronzeTriple": 842.81 },
+        "Secret": { "dates": "1 - 30 Jun | 1 Nov - 19 Dec | 6 Jan - 31 Mar", "rspSharing": 910, "rspSingle": 1365, "rspTriple": 758.33, "standardSharing": 682.5, "standardSingle": 1023.75, "standardTriple": 568.75, "goldSharing": 511.88, "goldSingle": 767.81, "goldTriple": 426.56, "silverSharing": 580.13, "silverSingle": 870.19, "silverTriple": 483.44, "bronzeSharing": 634.73, "bronzeSingle": 952.09, "bronzeTriple": 528.94 }
+      },
+      "confidenceNote": "No 'Green' season row exists for Rekero in the source (unlike its Mara neighbors) - confirmed gap, not an extraction miss."
+    },
+    "Emboo": {
+      "region": "Maasai Mara National Reserve",
+      "boardBasis": "Game Package only",
+      "seasons": {
+        "High": { "dates": "1 Jul - 31 Oct | 20 Dec - 5 Jan", "rspSharing": 930, "rspSingle": 1395, "rspTriple": 775, "standardSharing": 697.5, "standardSingle": 1046.25, "standardTriple": 581.25, "goldSharing": 523.13, "goldSingle": 784.69, "goldTriple": 435.94, "silverSharing": 592.88, "silverSingle": 889.31, "silverTriple": 494.06, "bronzeSharing": 648.68, "bronzeSingle": 973.01, "bronzeTriple": 540.56 },
+        "Secret": { "dates": "1 - 30 Jun | 1 Nov - 19 Dec | 6 Jan - 31 Mar", "rspSharing": 680, "rspSingle": 1020, "rspTriple": 566.67, "standardSharing": 510, "standardSingle": 765, "standardTriple": 425, "goldSharing": 382.5, "goldSingle": 573.75, "goldTriple": 318.75, "silverSharing": 433.5, "silverSingle": 650.25, "silverTriple": 361.25, "bronzeSharing": 474.3, "bronzeSingle": 711.45, "bronzeTriple": 395.25 },
+        "Green": { "dates": "1 Apr - 31 May", "rspSharing": 520, "rspSingle": 780, "rspTriple": 433.33, "standardSharing": 390, "standardSingle": 585, "standardTriple": 325, "goldSharing": 292.5, "goldSingle": 438.75, "goldTriple": 243.75, "silverSharing": 331.5, "silverSingle": 497.25, "silverTriple": 276.25, "bronzeSharing": 362.7, "bronzeSingle": 544.05, "bronzeTriple": 302.25 }
+      }
+    },
+    "Ol Pejeta Bush Camp": {
+      "region": "Ol Pejeta Conservancy, Laikipia",
+      "boardBasis": "Both Game Package AND Full Board offered (unlike the 4 Mara camps above, which are Game Package only)",
+      "gamePackage": {
+        "High": { "dates": "1 Jul - 31 Oct | 20 Dec - 5 Jan", "rspSharing": 920, "rspSingle": 1380, "rspTriple": 766.67, "standardSharing": 690, "standardSingle": 1035, "standardTriple": 575, "goldSharing": 517.5, "goldSingle": 776.25, "goldTriple": 431.25, "silverSharing": 586.5, "silverSingle": 879.75, "silverTriple": 488.75, "bronzeSharing": 641.7, "bronzeSingle": 962.55, "bronzeTriple": 534.75 },
+        "Secret": { "dates": "1 - 30 Jun | 1 Nov - 19 Dec | 6 Jan - 31 Mar", "rspSharing": 740, "rspSingle": 1110, "rspTriple": 616.67, "standardSharing": 555, "standardSingle": 832.5, "standardTriple": 462.5, "goldSharing": 416.25, "goldSingle": 624.38, "goldTriple": 346.88, "silverSharing": 471.75, "silverSingle": 707.63, "silverTriple": 393.13, "bronzeSharing": 516.15, "bronzeSingle": 774.23, "bronzeTriple": 430.13 },
+        "Green": { "dates": "1 - 30 Apr", "rspSharing": 600, "rspSingle": 900, "rspTriple": 500, "standardSharing": 450, "standardSingle": 675, "standardTriple": 375, "goldSharing": 337.5, "goldSingle": 506.25, "goldTriple": 281.25, "silverSharing": 382.5, "silverSingle": 573.75, "silverTriple": 318.75, "bronzeSharing": 418.5, "bronzeSingle": 627.75, "bronzeTriple": 348.75 }
+      },
+      "fullBoard": {
+        "High": { "dates": "1 Jul - 31 Oct | 20 Dec - 5 Jan", "rspSharing": 795, "rspSingle": 1192.5, "rspTriple": 662.5, "standardSharing": 596.25, "standardSingle": 894.38, "standardTriple": 496.88 },
+        "Secret": { "dates": "1 - 30 Jun | 1 Nov - 19 Dec | 6 Jan - 31 Mar", "rspSharing": 615, "rspSingle": 922.5, "rspTriple": 512.5, "standardSharing": 461.25, "standardSingle": 691.88, "standardTriple": 384.38 },
+        "Green": { "dates": "1 - 30 Apr", "rspSharing": 475, "rspSingle": 712.5, "rspTriple": 395.83, "standardSharing": 356.25, "standardSingle": 534.38, "standardTriple": 296.88 }
+      }
+    },
+    "verified": true
+  },
+  "resident": {
+    "note": "Resident rates are FLAT year-round (no High/Secret/Green split) for every Kenya property, unlike Non-Resident. Only RSP and Standard tiers captured (Gold/Silver/Bronze columns exist in the source but were not transcribed for residents - low expected relevance to this project's non-resident-focused quoting).",
+    "currency": "USD",
+    "Encounter Mara": { "gamePackage": { "rspSharing": 320, "rspSingle": 480, "rspTriple": 266.67, "standardSharing": 288, "standardSingle": 432, "standardTriple": 240 } },
+    "Naboisho Camp": { "gamePackage": { "rspSharing": 400, "rspSingle": 600, "rspTriple": 333.33, "standardSharing": 360, "standardSingle": 540, "standardTriple": 300 } },
+    "Rekero": { "gamePackage": { "rspSharing": 320, "rspSingle": 480, "rspTriple": 266.67, "standardSharing": 288, "standardSingle": 432, "standardTriple": 240 } },
+    "Emboo": { "gamePackage": { "rspSharing": 270, "rspSingle": 405, "rspTriple": 225, "standardSharing": 243, "standardSingle": 364.5, "standardTriple": 202.5 } },
+    "Ol Pejeta Bush Camp": {
+      "gamePackage": { "rspSharing": 270, "rspSingle": 405, "rspTriple": 225, "standardSharing": 243, "standardSingle": 364.5, "standardTriple": 202.5 },
+      "fullBoard": { "rspSharing": 145, "rspSingle": 217.5, "rspTriple": 120.83, "standardSharing": 130.5, "standardSingle": 195.75, "standardTriple": 108.75 }
+    },
+    "verified": true
+  },
+  "mandatoryFees": {
+    "unit": "per person per night, single entry, includes 16% VAT where applicable",
+    "Emboo": { "asiliaConservationCharge": { "adult": 10, "child9to17": 10, "season": "year round" }, "parkFee": { "adult": { "01Jul-31Dec": 200, "01Jan-30Jun": 100 }, "child9to17": 50 }, "narokCountyFee": { "adult": 80, "child9to17": 40, "season": "year round" } },
+    "Rekero": { "asiliaConservationCharge": { "adult": 10, "child9to17": 10 }, "parkFee": { "adult": { "01Jul-31Dec": 200, "01Jan-30Jun": 100 }, "child9to17": 50 }, "narokCountyFee": { "adult": 80, "child9to17": 40 } },
+    "Naboisho Camp": { "asiliaConservationCharge": { "adult": 10, "child3to17": 10 }, "conservancyFee": { "adult": 150, "child3to17": 75, "season": "year round" } },
+    "Encounter Mara": { "asiliaConservationCharge": { "adult": 10, "child3to17": 10 }, "conservancyFee": { "adult": 150, "child3to17": 75, "season": "year round" } },
+    "Ol Pejeta Bush Camp": { "asiliaConservationCharge": { "adult": 10, "child3to11": 10 }, "conservancyFee": { "adult": 110, "child3to11": 55, "season": "01 Jun - 30 Apr" }, "concessionFee": { "adult": 77.72, "child3to11": 38.86, "season": "01 Jun - 30 Apr" } },
+    "verified": true,
+    "confidenceNote": "Child age brackets for the mandatory fees differ property-by-property within Asilia's own Kenya portfolio (9-17 at Emboo/Rekero vs 3-17 at Naboisho/Encounter Mara vs 3-11 at Ol Pejeta) - do not assume one bracket applies portfolio-wide, matches this project's existing 'mandatory-fee structure varies by property' finding for Soroi."
+  },
+  "inclusionsExclusionsByProperty": {
+    "note": "Full inclusions/exclusions text captured verbatim from the 'Camp information' sheet for reference; summarized: all 5 Kenya camps include Full Board + house drinks (excl. champagne, and Naboisho also excludes premium wines) + limited laundry. Game Package additionally includes scheduled game drives + transfers to/from nearest airstrip. All exclude the mandatory fees above, balloon safaris, flying doctor/medevac insurance, flights, gratuities, additional picnic/in-house lunch ($25pp).",
+    "OlPejetaBushCamp_specific": "$60 charge for external (non-Asilia) driver-guides to eat front-of-house with guests. Private visit to Northern white rhinos, lion tracking, night drives all excluded/extra.",
+    "Naboisho_specific": "Cultural visits $30pp extra. Fly camping available 1 Jun-31 Mar at $250pp (min 2 pax, min age 12, min 3-night camp stay required).",
+    "verified": true
+  },
+  "childPolicyGeneral": {
+    "note": "No single portfolio-wide child policy found in this workbook (unlike Soroi) - policy is per-property via the mandatory-fee child-age brackets above plus a general note found under 'Emboo': children 5-18 years = 50% of adult sharing rate; 19+ = full adult rate; children under 12 must share a room with an adult; children under 5 not permitted unless camp is booked exclusively with prior Field Ops approval.",
+    "verified": true,
+    "confidenceNote": "This 5-18/19+ split was only explicitly stated under Emboo's info block - not confirmed to apply to the other 4 Kenya camps, though no contradicting policy was found for them either."
+  }
+}

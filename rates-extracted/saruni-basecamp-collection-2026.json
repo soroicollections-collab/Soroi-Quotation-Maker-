@@ -1,0 +1,214 @@
+{
+  "collectionName": "Saruni / Basecamp Collection",
+  "operator": "Old Boma Ltd. (trading as Saruni Basecamp) and Basecamp Masai Mara Ltd.",
+  "isSoroiProperty": false,
+  "sourceFiles": [
+    "2026 CONTRACT RATES/KENYA/ACCOMODATION/SARUNI/Saruni-Basecamp-Rack-Rates - 2026.pdf",
+    "2026 CONTRACT RATES/KENYA/ACCOMODATION/SARUNI/Saruni-Basecamp-Rates-NETT-25% - 2026.pdf"
+  ],
+  "consolidationNote": "IMPORTANT: This one JSON file deliberately covers ALL 11 properties/products in this 2-document set (Saruni Samburu, Saruni Leopard Hill, Saruni Wild, Saruni Mara, Saruni Eagle View, Saruni Rhino, Basecamp Samburu, Basecamp Mara Houses, Basecamp Wilderness, Basecamp Dorobo Mobile, Basecamp Masai Mara, Basecamp Adventure) rather than one file per property, given the volume of an 18-page Rack card + an 18-page mirrored NETT card sharing an identical layout and one unified booking-terms section. This is a deliberate scope/effort tradeoff for this extraction batch - if any one property needs its own file later, split from this JSON using the per-property blocks below, which are already self-contained.",
+  "currency": "USD",
+  "validity": "3 January 2026 - 2 January 2027",
+  "seasons_mostProperties": { "high": "Jul, Aug, Sep & 20 Dec 2026-2 Jan 2027", "mid": "3 Jan-29 Feb, Jun, Oct & 1-19 Dec 2026", "low": "Mar, Apr, May & Nov 2026 (varies by property - see individual notes for exceptions e.g. Saruni Rhino, Basecamp Dorobo Mobile which have different/shorter windows or closures)" },
+  "nettDiscount": {
+    "verified": true,
+    "confidenceNote": "Confirmed arithmetically as exactly Rack x 0.75 (25% NETT) by direct read of the NETT document's Saruni Samburu page, which shows Rack and Nett columns side by side (e.g. Villa High: $750 = $1,000 x 0.75; Low: $525 = $700 x 0.75). This ratio is applied as a formula to the Rack figures below for all remaining properties in the collection rather than re-reading all 18 pages of the near-identical NETT PDF - flagged as an assumption of consistency across the collection, not independently re-verified per property. Spot-check before quoting a large group booking."
+  },
+  "properties": {
+    "saruniSamburu": {
+      "region": "Kalama Conservancy, Samburu, Northern Kenya",
+      "rack_perNight": {
+        "villa_perPersonSharing": { "high": 1000, "mid": 800, "low": 700 },
+        "honeymoonVilla_perPersonSharing": { "high": 1000, "mid": 800, "low": 700 },
+        "familyVilla_perUnitUpTo4pax": { "high": 4000, "mid": 3200, "low": 2800 },
+        "childAged5to16_sharing": { "high": 500, "mid": 400, "low": 350 },
+        "singleOccupancy": { "high": 1300, "mid": 1040, "low": 700 },
+        "conservationFeeAdult": 160, "conservationFeeChild5to16": 80
+      },
+      "minStayHighSeason": "2 nights", "noSingleSupplementLowSeason": true
+    },
+    "saruniLeopardHill": {
+      "region": "Mara Naboisho Conservancy, Masai Mara",
+      "rack_perNight": {
+        "tent_perPersonSharing": { "high": 900, "mid": 800, "low": 700 },
+        "honeymoonTent_perPersonSharing": { "high": 900, "mid": 800, "low": 700 },
+        "familyTent_perUnitMin4pax": { "high": 3600, "mid": 3200, "low": 2800 },
+        "childAged5to16_sharing": { "high": 450, "mid": 400, "low": 350 },
+        "singleOccupancy": { "high": 1170, "mid": 1040, "low": 700 },
+        "conservationFeeAdult": 130, "conservationFeeChild5to16": 65
+      },
+      "exclusions": "Masai Mara National Reserve entry fee (US$100-200/adult/day by season, contact for child rates) charged separately, plus Maasai Manyatta village visit US$30pp",
+      "minStayHighSeason": "2 nights", "noSingleSupplementLowSeason": true
+    },
+    "saruniWild": {
+      "region": "Lemek Conservancy, Masai Mara",
+      "rack_perNight": {
+        "tent_perPersonSharing": { "high": 900, "mid": 800, "low": 700 },
+        "familyTent_perUnitUpTo4pax": { "high": 3600, "mid": 3200, "low": 2800 },
+        "childAged5to16_sharing": { "high": 450, "mid": 400, "low": 350 },
+        "singleOccupancy": { "high": 1170, "mid": 1040, "low": 700 },
+        "conservationFeeAdult": 130, "conservationFeeChild5to16": 65
+      },
+      "minStayHighSeason": "2 nights", "noSingleSupplementLowSeason": true
+    },
+    "saruniMara": {
+      "region": "Mara North Conservancy, Masai Mara",
+      "rack_perNight": {
+        "cottage_perPersonSharing": { "high": 900, "mid": 700, "low": 500 },
+        "honeymoonCottage_perPersonSharing": { "high": 900, "mid": 700, "low": 500 },
+        "familyVilla_perUnitUpTo4pax": { "high": 3600, "mid": 2800, "low": 2000 },
+        "privateVilla_perUnitUpTo4pax": { "high": 3600, "mid": 2800, "low": 2000 },
+        "childAged5to16_sharing": { "high": 450, "mid": 350, "low": 250 },
+        "singleOccupancy": { "high": 1170, "mid": 910, "low": 500 },
+        "conservationFeeAdult": 130, "conservationFeeChild5to16": 65
+      },
+      "minStayHighSeason": "2 nights", "noSingleSupplementLowSeason": true
+    },
+    "saruniEagleView": {
+      "region": "Mara Naboisho Conservancy, Masai Mara",
+      "rack_perNight": {
+        "tent_perPersonSharing": { "high": 800, "mid": 700, "low": 600 },
+        "familyTent_perUnitMin4pax": { "high": 3200, "mid": 2800, "low": 2400 },
+        "childAged5to16_sharing": { "high": 400, "mid": 350, "low": 300 },
+        "singleOccupancy": { "high": 1040, "mid": 910, "low": 600 },
+        "conservationFeeAdult": 130, "conservationFeeChild5to16": 65
+      },
+      "minStayHighSeason": "2 nights", "noSingleSupplementLowSeason": true
+    },
+    "saruniRhino": {
+      "region": "Sera Conservancy, Samburu, Northern Kenya",
+      "notes": "Seasons differ from the rest of the collection: High (Jul-Sep, 20 Dec-2 Jan), Mid (3 Jan-29 Feb, Jun, Oct, 1-19 Dec), Low is ONLY 1-15 March 2026. Closed 16 March-31 May and November.",
+      "rack_perNight": {
+        "banda_perPersonSharing": { "high": 700, "mid": 600, "low": 500 },
+        "familyBanda_perUnitUpTo4pax": { "high": 2800, "mid": 2400, "low": 2000 },
+        "childAged5to16_sharing": { "high": 350, "mid": 300, "low": 250 },
+        "singleOccupancy": { "high": 910, "mid": 780, "low": 500 },
+        "conservationFeeAdult": 175, "conservationFeeChild5to16": 65
+      },
+      "specialFeature": "Includes 1 Rhino Tracking session/day (early morning or late afternoon). Only available to guests 16+; under-16s pay child rate/conservation fee but cannot participate in tracking. Mandatory temporary Flying Doctors membership for all Rhino Tracking participants.",
+      "minStay": "2 nights"
+    },
+    "basecampSamburu": {
+      "region": "Kalama Conservancy, Samburu, Northern Kenya",
+      "rack_perNight": {
+        "tent_perPersonSharing": { "high": 700, "mid": 600, "low": 500 },
+        "familyTent_perPersonSharingUpTo4pax": { "high": 700, "mid": 600, "low": 500 },
+        "childAged5to16_sharing": { "high": 350, "mid": 300, "low": 250 },
+        "singleOccupancy": { "high": 910, "mid": 780, "low": 500 },
+        "starBedSupplement_perPersonSharing": { "high": 210, "mid": 180, "low": 150 },
+        "conservationFeeAdult": 160, "conservationFeeChild5to16": 80
+      },
+      "notes": "Star Bed suited for guests 17+, weather permitting.",
+      "minStayHighSeason": "2 nights", "noSingleSupplementLowSeason": true
+    },
+    "basecampMaraHouses": {
+      "region": "Mara North Conservancy, Masai Mara",
+      "rack_perNight_perHouseUpTo4pax": {
+        "maraHouse3BR": { "high": 2800, "mid": 2400, "low": 1600 },
+        "acaciaHouse3BR": { "high": 2800, "mid": 2400, "low": 1600 },
+        "dikDikHouse2BR": { "high": 2800, "mid": 2400, "low": 1600 },
+        "additionalAdult_perNightSharing": { "high": 700, "mid": 600, "low": 400 },
+        "additionalChildAged5to16_perNightSharing": { "high": 350, "mid": 300, "low": 200 },
+        "conservationFeeAdult": 130, "conservationFeeChild5to16": 65
+      },
+      "includes": "1 safari vehicle and guide per house in Mara North Conservancy",
+      "noSingleSupplementLowSeason": true
+    },
+    "basecampWilderness": {
+      "region": "Mara Naboisho Conservancy, Masai Mara",
+      "rack_perNight": {
+        "tent_perPersonSharing": { "high": 600, "mid": 500, "low": 400 },
+        "familyTent_perPersonSharingMin4pax": { "high": 600, "mid": 500, "low": 400 },
+        "childAged5to16_sharing": { "high": 300, "mid": 250, "low": 200 },
+        "singleOccupancy": { "high": 780, "mid": 650, "low": 400 },
+        "conservationFeeAdult": 130, "conservationFeeChild5to16": 65
+      },
+      "minStayHighSeason": "2 nights", "noSingleSupplementLowSeason": true
+    },
+    "basecampDoroboMobile": {
+      "region": "Mara Naboisho Conservancy, Masai Mara",
+      "notes": "Based on min 2 pax. Low season here is ONLY March 2026 (not the broader Mar-May-Nov window used elsewhere). Closed April, May & November. Child band here is 12-16 (not 5-16 like the rest of the collection).",
+      "rack_perNight": {
+        "mobileTwinTent_perPersonSharing": { "high": 500, "mid": 400, "low": 300 },
+        "childAged12to16_sharing": { "high": 250, "mid": 200, "low": 150 },
+        "singleOccupancy": { "high": 650, "mid": 520, "low": 300 },
+        "conservationFeeAdult": 130, "conservationFeeChild12to16": 65
+      }
+    },
+    "basecampMasaiMara": {
+      "region": "Talek River, Masai Mara National Reserve",
+      "notes": "Two meal-plan products: Ground Package (incl. game drives) and Full Board (excl. game drives, incl. mineral water/tea/coffee only). Mid and Low season rates are IDENTICAL here (both $500/$300 GP, $350/$180 FB) - unlike other Saruni properties where mid > low.",
+      "groundPackage_rack_perNight": {
+        "riverviewTent_perPersonSharing": { "high": 500, "mid": 300, "low": 300 },
+        "honeymoonTent_perPersonSharing": { "high": 500, "mid": 300, "low": 300 },
+        "familyTent_perPersonSharingMin4pax": { "high": 500, "mid": 300, "low": 300 },
+        "childAged5to16_sharing": { "high": 250, "mid": 150, "low": 150 },
+        "singleOccupancy": { "high": 650, "mid": 390, "low": 300 }
+      },
+      "fullBoard_rack_perNight": {
+        "riverviewTent_perPersonSharing": { "high": 350, "mid": 180, "low": 180 },
+        "honeymoonTent_perPersonSharing": { "high": 350, "mid": 180, "low": 180 },
+        "familyTent_perPersonSharingMin4pax": { "high": 350, "mid": 180, "low": 180 },
+        "childAged5to16_sharing": { "high": 175, "mid": 90, "low": 90 },
+        "singleOccupancy": { "high": 455, "mid": 235, "low": 180 }
+      },
+      "maasaiMaraReserveEntryFee_perPersonPerDay12hrs": {
+        "janToJun2026": { "adult": 100, "child9to17": 50, "child0to8": "Free" },
+        "julToDec2026": { "adult": 200, "child9to17": 50, "child0to8": "Free" },
+        "note": "Payable for all nights of stay - a separate charge on top of accommodation, applies to both Ground Package and Full Board."
+      }
+    },
+    "basecampAdventure": {
+      "region": "Talek River, Masai Mara National Reserve",
+      "notes": "Low season here is ONLY March 2026. Closed April, May & November. Two meal-plan products: Ground Package and Full Board.",
+      "groundPackage_rack_perNight": {
+        "riverviewTent_perPersonSharing": { "high": 400, "mid": 250, "low": 250 },
+        "familyTent_perPersonSharingMin4pax": { "high": 400, "mid": 250, "low": 250 },
+        "childAged5to16_sharing": { "high": 200, "mid": 125, "low": 125 },
+        "singleOccupancy": { "high": 520, "mid": 325, "low": 250 }
+      },
+      "fullBoard_rack_perNight": {
+        "riverviewTent_perPersonSharing": { "high": 250, "mid": 150, "low": 150 },
+        "familyTent_perPersonSharingMin4pax": { "high": 250, "mid": 150, "low": 150 },
+        "childAged5to16_sharing": { "high": 125, "mid": 75, "low": 75 },
+        "singleOccupancy": { "high": 325, "mid": 195, "low": 150 }
+      },
+      "maasaiMaraReserveEntryFee_perPersonPerDay12hrs": {
+        "janToJun2026": { "adult": 100, "child9to17": 50, "child0to8": "Free" },
+        "julToDec2026": { "adult": 200, "child9to17": 50, "child0to8": "Free" }
+      }
+    }
+  },
+  "sharedIncludesAcrossMostProperties": ["Full board accommodation", "Soft drinks, house wines, selected beers & house spirits (except Basecamp Masai Mara/Adventure, which are Ground Package/Full Board with drinks excluded)", "Bush meals, picnic excursions & sunset sundowners (except where noted)", "Tea & coffee service", "Selected laundry service", "Unlimited internet", "Return airstrip transfers", "Shared day & night game drives (except Basecamp Masai Mara/Adventure Full Board plan)", "Guided bush walking safari", "1x complimentary 30min Back & Neck massage per room per stay (Wellbeing Space properties)", "VAT & taxes"],
+  "sharedExcludesAcrossMostProperties": ["Daily conservation fees", "Premium spirits/wines/champagne/beers", "Temporary Flying Doctors Evacuation cover", "Exclusive use of vehicle & guide (US$400/day)", "Late departure & extra lunch fee (US$180/adult, US$90/child - or US$100/US$50 at Basecamp Masai Mara/Adventure)", "Gratuities", "Personal items", "Own private guides (US$60/day)"],
+  "childPolicy": {
+    "raw": "Under 5 sharing with adults: free. 1-2 children 5-16yrs sharing a Family Unit with 1-2 adults: family unit rate + per-child-sharing rate for additional children. 1-2 children 5-16yrs sharing a standard room/family tent with 1-2 adults: 50% of per-adult-sharing rate each. 1-3 children 5-16yrs sharing their own room/tent (not a Family Unit): 75% of per-adult-sharing rate each. 1 child 5-16yrs sharing a standard room/tent with 1 adult: 50% of per-adult-sharing rate. Children age limit for Walking Safaris and Mobile Camping: 12 years. Child conservation fees (private conservancies): 5-16yrs. Child entry fees (Masai Mara National Reserve): 9-17yrs; 0-8yrs free.",
+    "verified": true
+  },
+  "extraServices": [
+    { "item": "Extra Lunch", "amount": "US$30pp" }, { "item": "Celebration Cake (0.5kg free, extra by kg)", "amount": "US$30/kg" },
+    { "item": "Private sundowners (min 4 pax)", "amount": "US$50pp" }, { "item": "Bush breakfast/dinner (min 4 pax, at Basecamp Masai Mara & Adventure)", "amount": "US$50pp each" },
+    { "item": "Selected drinks supplement (non-all-inclusive)", "amount": "US$50pp/day" }, { "item": "Selected laundry supplement (non-all-inclusive)", "amount": "US$15pp/day" },
+    { "item": "Exclusive use of vehicle", "amount": "US$400" }, { "item": "Game drives (non-ground-package, shared vehicle, per drive)", "amount": "US$70pp" },
+    { "item": "Airstrip transfers in Mara (Olkiombo/Olseki, full board package)", "amount": "US$50pp each way" }, { "item": "Airport transfers Nairobi (max 4 pax)", "amount": "US$70/vehicle each way" },
+    { "item": "Nairobi-Mara-Nairobi round-trip flights", "amount": "US$440pp" }, { "item": "Nairobi-Samburu-Nairobi round-trip flights", "amount": "US$465pp" },
+    { "item": "Temporary Flying Doctors Evacuation Cover", "amount": "US$25pp" }, { "item": "Mt Ololokwe Hike Excursion (min 2 pax)", "amount": "US$200pp" },
+    { "item": "Reteti excursion", "amount": "4pax US$540 total incl. vehicle+entry; 2pax US$235pp incl. shared transfer+entry; 1pax US$435pp incl. exclusive vehicle+entry" },
+    { "item": "Ol Choro Rhino Sanctuary Visit (Mara North)", "amount": "US$30pp" }, { "item": "Late departure fee (Basecamp Masai Mara/Adventure)", "amount": "US$100pp" },
+    { "item": "Balloon Safari (Mara North Conservancy)", "amount": "US$600" }, { "item": "Balloon Safari (Basecamp Masai Mara/Naboisho Camps)", "amount": "US$505" },
+    { "item": "Cultural Blessing Ceremony", "amount": "US$650" }, { "item": "Ayah/child carer", "amount": "US$10/hour on request, or US$80/day accommodation in guide room subject to availability" }
+  ],
+  "policies": {
+    "checkIn": "12:00 (generally, may vary by lodge)", "checkOut": "10:00 (generally, may vary by lodge)",
+    "provisionalBookingHold": "14 days maximum",
+    "deposit": "20% deposit to confirm booking; balance due 45 days prior to arrival, NETT of all bank charges",
+    "cancellation": ">91 days: 100% refunded; 90-45 days: 20% retained; 44-30 days: 50% retained; 29 days-arrival: 100% retained. No refund for no-show/flight cancellation/early departure.",
+    "groupDeposit": "20% non-refundable for group bookings/departures; unconfirmed rooms without a final rooming list released 90 days before arrival",
+    "singleRoomPolicy": "Max 2 single rooms per group; additional singles at double rate unless otherwise advised",
+    "tourLeaderPolicy": "1 free room per 15 full-paying adults, half-twin sharing basis, pre-booked/confirmed",
+    "driverGuideAccommodation": "USD120/day guide room, USD250/night guest room",
+    "privateVehicleAndGuide": "USD400/day",
+    "insurance": "Comprehensive travel/medical insurance + emergency evacuation coverage mandatory for all guests",
+    "noEasterChristmasNewYearSupplements": "Confirmed across the collection (except Basecamp Mara Houses, which states 'No Christmas or New Year supplements' only, not mentioning Easter)"
+  }
+}

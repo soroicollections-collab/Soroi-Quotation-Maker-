@@ -1,0 +1,40 @@
+{
+  "property": "Offbeat Riding Safaris (Set Departure & Tailor-Made)",
+  "operator": "Offbeat Safaris Holdings Ltd",
+  "region": "Maasai Mara & Laikipia",
+  "isSoroiProperty": false,
+  "sourceFiles": ["2026 CONTRACT RATES/KENYA/ACCOMODATION/OFFBEAT/2026 Offbeat Collection Wholesale Rates (30%) AMENDED.pdf"],
+  "documentType": "Multi-day riding safari packages, not a per-night lodge rate",
+  "notes": [
+    "Nett rate = 20% off Rack (not 30% like most other Offbeat properties), and explicitly excludes conservation fees despite conservation fees being listed as INCLUDED in the overall package - i.e. the 20%-off-Rack Nett math applies to a rate base that already has conservation fees folded in, per the source note 'Nett rate based on 20% of Rack rate excluding conservation fees'.",
+    "Minimum 4 people required to guarantee a safari departs (set departures); maximum 12 riders per safari; minimum age 14 years; private/tailor-made rides require minimum 5 nights.",
+    "Closed seasons: April, May, November."
+  ],
+  "currency": "USD",
+  "setDepartureRidingSafaris2026": {
+    "masaiMara_7nights": {
+      "dates": ["07-14 Feb 2026", "14-21 Feb 2026", "13-20 Jun 2026", "20-27 Jun 2026", "04-11 Jul 2026", "11-18 Jul 2026", "18-25 Jul 2026", "01-08 Aug 2026", "08-15 Aug 2026", "15-22 Aug 2026", "05-12 Sep 2026", "19-26 Sep 2026", "10-17 Oct 2026", "17-24 Oct 2026", "01-08 Dec 2026", "29 Dec 2026-05 Jan 2027"],
+      "rackPerPerson": 11950, "nettPerPerson": 9840
+    },
+    "laikipia_19to27Jan2026_8nights": { "rackPerPerson": 13650, "nettPerPerson": 11240 },
+    "laikipia_11to18Mar2026_7nights": { "rackPerPerson": 11950, "nettPerPerson": 9840 },
+    "laikipia_18to26Mar2026_8nights": { "rackPerPerson": 13650, "nettPerPerson": 11240 },
+    "verified": true
+  },
+  "tailorMadePrivateSafaris2026_perPersonPerNight": {
+    "1rider": { "rack": 5280, "nett": 4264 },
+    "2riders": { "rack": 3960, "nett": 3208 },
+    "3to4riders": { "rack": 2750, "nett": 2240 },
+    "5to6riders": { "rack": 2145, "nett": 1756 },
+    "7to8riders": { "rack": 1815, "nett": 1492 },
+    "9to12riders": { "rack": 1650, "nett": 1360 },
+    "minimumNights": 5,
+    "verified": true
+  },
+  "includes": ["Full board accommodation and laundry", "All house drinks and food", "All activities (riding, game drives, walks, night drives)", "All conservation fees, park fees, camping fees", "Internal return domestic flights Nairobi-safari", "Transfers associated with the safari (pick/drop Nairobi)", "Dayroom in Nairobi on last day if required", "Amref Flying Doctors Membership (Air-Evacuation to Nairobi)"],
+  "excludes": ["Single Supplement: $100/night if not willing to share", "Gratuities, other services, personal items, insurance"],
+  "policies": {
+    "deposit": "20% deposit confirms booking; balance due 45 days prior to arrival.",
+    "cancellation": ">120 days: 20% deposit refunded (net of bank charges); 120-46 days: 20% deposit forfeited; 45-30 days: 50% of full booking value forfeited; <30 days or no-show: 100% forfeited."
+  }
+}

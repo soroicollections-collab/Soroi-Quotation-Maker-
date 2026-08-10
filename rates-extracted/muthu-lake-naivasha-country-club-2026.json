@@ -1,0 +1,40 @@
+{
+  "property": "Muthu Lake Naivasha Country Club",
+  "operator": "MGM Muthu Hotels",
+  "region": "Lake Naivasha",
+  "isSoroiProperty": false,
+  "sourceFiles": [
+    "2026 CONTRACT RATES/KENYA/ACCOMODATION/MUTHU/Muthu - SUNWORLD SAFARIS - 2026 Contract Rates.pdf",
+    "2026 CONTRACT RATES/KENYA/ACCOMODATION/MUTHU HOTELS/MUTHU HOTELS - SUNWORLD SAFARIS - 2026 Contract Rates.pdf"
+  ],
+  "notes": [
+    "Part of the same multi-property Sunworld/MGM Muthu contract as Muthu Keekorok Lodge, Sovereign Suites, and Silver Springs - see those files for shared terms (circuit/group discounts, cancellation, payment schedule).",
+    "13 Standard Rooms, 23 Premium Rooms, 11 Deluxe Rooms, 2 Executive Suites, 1 Presidential Cottage (2 bedrooms)."
+  ],
+  "currency": "USD",
+  "validity": "CY 2026 (Jan-Dec 2026)",
+  "fullBoardRates_perPersonPerNight": {
+    "shoulder": { "dates": "1 Jan-28 Feb, 16-30 Jun, 16 Sep-22 Dec", "single": 185, "double": 235, "extraAdult": 70, "child": 50 },
+    "low": { "dates": "1 Apr-15 Jun", "single": 155, "double": 205, "extraAdult": 70, "child": 50 },
+    "peak": { "dates": "1 Jul-15 Sep, 23-31 Dec", "single": 285, "double": 335, "extraAdult": 100, "child": 70 },
+    "verified": true,
+    "confidenceNote": "[Unverified] Low season here is dated '1 April-15 June' vs Keekorok Lodge's '1 Mar-15 Jun' in the same document - genuinely different per-property date ranges, not a transcription inconsistency (both read directly off their own tables)."
+  },
+  "roomSupplements_perRoomPerNight": { "premium": 30, "deluxe": 50, "executiveSuite": 100, "presidentialCottage": 400, "verified": true },
+  "dayRoomRate": { "raw": "50% of published rates, applicable 10:00am-3:00pm", "verified": true },
+  "halfBoardReduction": { "raw": "Applicable here and at Keekorok Lodge - child 50%", "verified": true },
+  "extraMealRates_perPersonPerDay": { "extraMealInHouse": 30, "lunch": 30, "dinner": 30, "picnicBox": 30, "verified": true },
+  "childPolicy": { "raw": "0-5yrs sharing with parents free. 6-11yrs child sharing rate applies. Two children in own room: 75% of twin rate (per person). Three children in own room: full twin rate.", "verified": true },
+  "seasonalSupplements": { "easter": "US$40 pppd (Good Friday-Easter Monday)", "christmas": "US$45 pppd (24, 25, 26, 31 Dec, 1 Jan)", "verified": true },
+  "circuitDiscounts": { "twoProperties": "4%", "threeProperties": "7%", "fourProperties": "9%", "note": "Must be indicated on booking voucher", "verified": true },
+  "groupDiscount": { "raw": "7.5% off applicable rate for 20+ rooms or 40+ guests on a single voucher. Not applicable in Peak/Festive season, not for >70% of property inventory, not for allotments.", "verified": true },
+  "famTripRate": { "raw": "50% discount off contract rate, subject to availability, not applicable Easter/Christmas/Peak", "verified": true },
+  "tourLeaderRates": { "raw": "1-6 paying pax: half twin rate. 7-14 paying pax: 50% of half twin rate. Complimentary: 1 per 15 paying guests, max 5 free, must be pre-booked.", "verified": true },
+  "policies": {
+    "checkIn": "13:30 EAT", "checkOut": "09:30 EAT",
+    "deposit": "20% non-refundable on proforma invoice to secure booking; further 50% non-refundable 90 days before arrival; balance 30 days before arrival. Peak/Festive: 30% then 45% then balance on same schedule.",
+    "cancellationPeakFestive": "0-30 days: 100%; 31-75 days: 75%",
+    "cancellationShoulder": "0-30 days: 100%; 31-45 days: 50%",
+    "cancellationLow": "0-30 days: 100%"
+  }
+}

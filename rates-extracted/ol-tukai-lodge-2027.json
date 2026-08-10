@@ -1,0 +1,45 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftotext -layout from 'Ol Tukai/Oltukai 2027 - CONTRACT RATES -  Sunworld Safaris.pdf' (3pp, single property, clean tables).",
+  "property": "Ol Tukai Lodge",
+  "location": "Amboseli National Park",
+  "currency": "USD",
+  "unit": "per person per night",
+  "confidence": "confirmed-2027-08-06",
+  "rates": {
+    "fullBoard": {
+      "high_02Jan-31Mar27": { "single": 238, "halfTwin": 156, "thirdBed": 126 },
+      "low_01Apr-31May27": { "single": 108, "halfTwin": 108, "thirdBed": 108 },
+      "peak_01Jun-31Oct27": { "single": 274, "halfTwin": 185, "thirdBed": 148 },
+      "high_01Nov-19Dec27": { "single": 238, "halfTwin": 156, "thirdBed": 126 },
+      "peak_20Dec27-01Jan28": { "single": 274, "halfTwin": 185, "thirdBed": 148 },
+      "halfBoardReduction": 9
+    },
+    "groundPackage": {
+      "note": "Includes Full Board + return airstrip transfers + 2 game drives/day",
+      "high_02Jan-31Mar27": { "firstNight": 312, "extraNights": 264, "singleRoomSupplement": 60 },
+      "low_01Apr-31May27": { "firstNight": 294, "extraNights": 247, "singleRoomSupplement": 60 },
+      "peak_01Jun-31Oct27": { "firstNight": 340, "extraNights": 294, "singleRoomSupplement": 60 },
+      "high_01Nov-19Dec27": { "firstNight": 312, "extraNights": 264, "singleRoomSupplement": 60 },
+      "peak_20Dec27-01Jan28": { "firstNight": 341, "extraNights": 337, "singleRoomSupplement": 60 },
+      "childPolicy": "70% of adult sharing rate"
+    },
+    "verified": true
+  },
+  "circuitDiscount": "Combined stays at Eka Hotel + Ol Tukai: 5% off Eka Hotel + 5% off Ol Tukai",
+  "childPolicy": {
+    "ageDefinitions": "Infant 0-1.99, Child 2-11.99, Adult 12+",
+    "oneChildInSingleRoom": "Single room rate applies",
+    "twoChildrenInRoom": "Equivalent to single rate",
+    "threeChildrenInRoom": "Single + child rate",
+    "fourChildrenInRoom": "Equivalent to full twin room",
+    "oneAdultOneChild": "Single + child sharing rate",
+    "oneAdultTwoChildren": "Equivalent to full twin room",
+    "oneAdultThreeChildren": "Twin + child sharing rate",
+    "twoAdultsOneChild": "Twin + child sharing rate (50% of adult double)",
+    "verified": true
+  },
+  "supplements": { "easter": { "amount": 30, "unit": "per person per day" }, "extraLunch": 30, "festive": { "amount": 42, "dates": "24 Dec - 1 Jan 2028" }, "tourLeaderRate": { "amount": 92, "note": "only when accompanying group of min 4 pax" }, "verified": true },
+  "cancellationPolicy": "Booking date-61 days before arrival: 20%; 60-31 days: 50%; 30 days or less: 100%",
+  "paymentTerms": "With credit: 30 days from invoice. Without credit: full payment 60 days before arrival.",
+  "tourLeaderComp": "1 complimentary room per 15 paying persons, pre-booked and confirmed"
+}

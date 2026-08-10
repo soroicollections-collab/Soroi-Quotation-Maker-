@@ -1,0 +1,29 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftotext -layout. NOT a Soroi property. Nairobi airport hotel, potential Nairobi/stopover option (flexible variable per CLAUDE.md).",
+  "property": "Hilton Garden Inn Jomo Kenyatta International Airport (Reliance Hotels Ltd, trading as)",
+  "region": "Nairobi (JKIA airport hotel)",
+  "source": {
+    "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/HILTON GARDEN INN/Sunworld Safaris.pdf",
+    "validity": { "start": "2025-01-01", "end": "2025-12-31" }
+  },
+  "confidence": "confirmed-2026-08-06",
+  "confidenceNote": "IMPORTANT: this contract's stated validity is 1 Jan-31 Dec 2025, not 2026, despite being filed in the '2026 CONTRACT RATES' tree. No 2026-dated rate sheet for this specific JKIA property was found in the HILTON GARDEN INN folder (the folder's other files relate to a different Hilton-branded property, Kwetu Nairobi - see separate JSON). Flag to Sunworld/the requester that these are last-verified 2025 rates before quoting a 2026 stay here; do not silently roll them forward.",
+  "currency": "USD",
+  "unit": "per room per night, Bed & Breakfast, inclusive of taxes, net non-commissionable",
+  "rates": {
+    "contract": { "hiltonStandardKingOrTwinRoom": { "single": 140.00, "double": 170.00 }, "hiltonDeluxeSuiteKing": { "single": 250.00, "double": 280.00 } },
+    "rack": { "hiltonStandardKingOrTwinRoom": { "single": 270.00, "double": 300.00 }, "hiltonDeluxeSuiteKing": { "single": 350.00, "double": 380.00 } },
+    "verified": true
+  },
+  "rollawayBed": { "amount": 50, "unit": "USD, on request, subject to availability" },
+  "dayRoomUsage": { "hours": "11am-6pm", "rate": "70% of contract rate" },
+  "checkIn": "3:00pm", "checkOut": "12:00pm",
+  "childPolicy": {
+    "age0to5SharingWithAdult": "Complimentary accommodation and breakfast",
+    "age6to12SharingWithAdult": "Complimentary room, meal charges @ 50%",
+    "childOwnRoom0to12": "80% of double room rate"
+  },
+  "groupAllowance": "1 free room per 10 paying rooms / 2 free rooms per 20 paying, subject to availability",
+  "mealCharges": { "breakfastBuffet": 30, "lunchBuffet": 30, "dinnerBuffet": 30, "unit": "USD per person" },
+  "airportTransfers": "Complimentary, on request"
+}

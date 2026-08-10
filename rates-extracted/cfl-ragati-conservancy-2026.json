@@ -1,0 +1,55 @@
+{
+  "property": "CFL (Ragati Conservancy)",
+  "operator": "Unclear from source - referred to only as 'CFL' throughout both documents",
+  "region": "Ragati Conservancy (Mt Kenya area, inferred from folder name and horse riding/fishing/hiking activity list)",
+  "isSoroiProperty": false,
+  "sourceFiles": [
+    "2026 CONTRACT RATES/KENYA/ACCOMODATION/RAGATI CONSERVANCY/CFL RACK RATES 2025 -26 Residents (1).pdf",
+    "2026 CONTRACT RATES/KENYA/ACCOMODATION/RAGATI CONSERVANCY/2025 CFL RACK RATES NonRes  (1).xlsx"
+  ],
+  "notes": [
+    "Property is only ever referred to as 'CFL' in both source documents (no full name spelled out) - the acronym is not expanded anywhere in the files. Folder name 'RAGATI CONSERVANCY' is the only location clue. Flag to whoever owns the SharePoint folder to confirm the full property name.",
+    "Resident rate card explicitly covers '1 August 2025 to 31 July 2026'; Non-Resident rate card (xlsx) is titled 'RACK RATES FOR THE YEAR 2025' with no explicit end-date stated - both extend into 2026 but neither is a clean calendar-2026 card. Flagged for reconciliation before treating as fully current.",
+    "Both files are Rack rates only - no separate Sunworld contract/STO discount rate found in this folder."
+  ],
+  "residentRates_KES_perNight": {
+    "validity": "1 August 2025 - 31 July 2026",
+    "doubleRoomOrCottage": { "mainhouseBudget": { "fullBoard": 11900, "halfBoard": 9900, "bb": 7000, "roomOnly": 5000 }, "cottageStandard": { "fullBoard": 16300, "halfBoard": 14300, "bb": 11400, "roomOnly": 9400 } },
+    "singleUse": { "budget": { "fullBoard": 8450, "halfBoard": 7450, "bb": 6000, "roomOnly": 5000 }, "standard": { "fullBoard": 12850, "halfBoard": 11850, "bb": 10400, "roomOnly": 9400 } },
+    "bungalow4Adults": { "standardSunMoonhouse": { "fullBoard": 25300, "halfBoard": 21300, "bb": 16000, "roomOnly": 12000 }, "luxuryStarhouse": { "fullBoard": 29800, "halfBoard": 25800, "bb": 20000, "roomOnly": 16000 } },
+    "bungalow3Adults": { "standardSunMoonhouse": { "fullBoard": 22350, "halfBoard": 19350, "bb": 15000, "roomOnly": 12000, "note": "Same rate as 2 adults + 2 children under 12" }, "luxuryStarhouse": { "fullBoard": 26350, "halfBoard": 23350, "bb": 19000, "roomOnly": 16000 } },
+    "bungalow2Adults": { "standardSunMoonhouse": { "fullBoard": 18900, "halfBoard": 16900, "bb": 14000, "roomOnly": 11000, "note": "Same rate as 1 adult + 2 children under 12" }, "luxuryStarhouse": { "fullBoard": 22900, "halfBoard": 20900, "bb": 18000, "roomOnly": 16000 } },
+    "chaletMontane_selfCatering_roomOnlyBase": 40000,
+    "chaletMontane_byAdults": { "8": { "fullBoard": 67600, "halfBoard": 59600, "bb": 48000 }, "7": { "fullBoard": 64150, "halfBoard": 57150, "bb": 47000 }, "6": { "fullBoard": 50700, "halfBoard": 44700, "bb": 36000, "roomOnly": 35000 }, "5": { "fullBoard": 47250, "halfBoard": 42250, "bb": 35000 }, "4": { "fullBoard": 43800, "halfBoard": 39800, "bb": 34000, "roomOnly": 30000 }, "3": { "fullBoard": 40350, "halfBoard": 37350, "bb": 33000 }, "everyAdditionalPerson": { "fullBoard": 3450, "halfBoard": 2450, "bb": 1000 } },
+    "chaletTelluride_selfCatering_roomOnlyBase": 35000,
+    "chaletTelluride_byAdults": { "6": { "fullBoard": 55700, "halfBoard": 49700, "bb": 41000 }, "5": { "fullBoard": 52250, "halfBoard": 47250, "bb": 40000 }, "4": { "fullBoard": 48800, "halfBoard": 44800, "bb": 39000 }, "3": { "fullBoard": 45350, "halfBoard": 42350, "bb": 38000 }, "2": { "fullBoard": 41900, "halfBoard": 39900, "bb": 37000 }, "everyAdditionalPerson": { "fullBoard": 3450, "halfBoard": 2450, "bb": 1000 } },
+    "activities": [
+      { "item": "Short Nature Walk (2-3 hrs)", "amount": "KES800pp" }, { "item": "Long hike/Birding (4-6 hrs)", "amount": "KES1000pp" },
+      { "item": "Horse riding (per hour)", "amount": "KES1200pp" }, { "item": "Fishing with a guide", "amount": "KES500pp" },
+      { "item": "Camping per person", "amount": "KES2000/night" }, { "item": "Rent of a tent", "amount": "KES1000" }, { "item": "Rent of beddings", "amount": "KES1000" }
+    ],
+    "verified": true
+  },
+  "nonResidentRates_USD_perNight": {
+    "validity": "'RACK RATES FOR THE YEAR 2025' - no explicit end date given in source",
+    "doubleRoomOrCottage": {
+      "unlabeledRow_confidenceNote": "[Unverified] The 'Rates for a Double room/cottage' section has a row labeled 'rates meals (not visible)' with figures 35/24/10 FB/HB/BB and no room-only figure - this appears to be an incompletely-labeled row in the source spreadsheet, possibly a per-person-per-meal supplement rather than a room category. Quoted as found.",
+      "cottageStandard": { "fullBoard": 160, "halfBoard": 138, "bb": 110, "roomOnly": 90 }
+    },
+    "singleUse": { "standard": { "fullBoard": 125, "halfBoard": 114, "bb": 100, "roomOnly": 90 } },
+    "bungalow4Adults": { "standardSunMoonhouse": { "fullBoard": 290, "halfBoard": 246, "bb": 190, "roomOnly": 150 }, "luxuryStarhouse": { "fullBoard": 340, "halfBoard": 296, "bb": 240, "roomOnly": 200 } },
+    "bungalow3Adults": { "standardSunMoonhouse": { "fullBoard": 255, "halfBoard": 222, "bb": 180, "roomOnly": 150 }, "luxuryStarhouse": { "fullBoard": 305, "halfBoard": 272, "bb": 230, "roomOnly": 200 } },
+    "bungalow2Adults": { "standardSunMoonhouse": { "fullBoard": 220, "halfBoard": 198, "bb": 170, "roomOnly": 150, "note": "2 bedrooms, 1 bathroom" }, "luxuryStarhouse": { "fullBoard": 270, "halfBoard": 248, "bb": 220, "roomOnly": 200 } },
+    "chaletMontane_selfCatering_roomOnlyBase": 360,
+    "chaletMontane_byAdults": { "note": "4 en-suite bedrooms", "8": { "fullBoard": 640, "halfBoard": 552, "bb": 440 }, "7": { "fullBoard": 605, "halfBoard": 528, "bb": 430 }, "6": { "fullBoard": 540, "halfBoard": 474, "bb": 390, "roomOnly": 330, "noteInline": "'with 3 en-suite bedrooms' label also appears against this row in source - likely referring to Chalet Telluride instead, a possible layout/column-bleed artifact" }, "5": { "fullBoard": 505, "halfBoard": 450, "bb": 380 }, "4": { "fullBoard": 470, "halfBoard": 426, "bb": 370 }, "3": { "fullBoard": 435, "halfBoard": 402, "bb": 360 }, "2": { "fullBoard": 400, "halfBoard": 378, "bb": 350 }, "everyAdditionalPerson": { "fullBoard": 35, "halfBoard": 24, "bb": 10 } },
+    "chaletTelluride_selfCatering_roomOnlyBase": 330,
+    "chaletTelluride_byAdults": { "note": "3 bedrooms, 2 bathrooms", "6": { "fullBoard": 540, "halfBoard": 474, "bb": 390 }, "5": { "fullBoard": 505, "halfBoard": 450, "bb": 380 }, "4": { "fullBoard": 470, "halfBoard": 426, "bb": 370 }, "3": { "fullBoard": 435, "halfBoard": 402, "bb": 360 }, "2": { "fullBoard": 400, "halfBoard": 378, "bb": 350 } },
+    "activities": [
+      { "item": "Walking Safaris with a guide (2-3 hrs)", "amount": "US$7.50pp" }, { "item": "Walking Safaris with a guide (5-6 hrs)", "amount": "US$10pp" },
+      { "item": "Fishing with a guide", "amount": "US$7.50pp" }, { "item": "Horse riding (per hour)", "amount": "US$20pp" },
+      { "item": "Camping per person", "amount": "US$10/night" }, { "item": "Rent of a tent", "amount": "US$10/night" }, { "item": "Rent of beddings", "amount": "US$7/night" }
+    ],
+    "verified": true,
+    "confidenceNote": "[Unverified] Note the Non-Resident chalet Montane/Telluride figures for identical adult counts (e.g. 6 adults: 540/474/390 for both chalets) are exactly the same - could be a genuine shared price point or a copy-paste artifact in the source spreadsheet. Not reconciled."
+  }
+}

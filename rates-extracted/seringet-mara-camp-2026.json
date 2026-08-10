@@ -1,0 +1,79 @@
+{
+  "property": "Seringet Mara Camp",
+  "operator": "Nigel Archer Safaris",
+  "region": "Maasai Mara Reserve (near Ol Kiombo airstrip)",
+  "isSoroiProperty": false,
+  "sourceFiles": [
+    "2026 CONTRACT RATES/KENYA/ACCOMODATION/Nigel Archer Safaris/NAS SERINGET MARA CAMP 2026 - RACK RATES.pdf",
+    "2026 CONTRACT RATES/KENYA/ACCOMODATION/Nigel Archer Safaris/Full Board - 30 Commission - NAS SERINGET MARA CAMP - 2026.pdf"
+  ],
+  "skippedFiles": [
+    { "file": "NAS SERINGET MARA CAMP 2026 - STO RATES.pdf", "reason": "Image-only/scanned PDF - no extractable text on any of its 8 pages." }
+  ],
+  "currency": "USD",
+  "notes": [
+    "Two distinct rate PDFs cover this camp with two different meal-plan products and, confusingly, two different season-date definitions for the same-named seasons - see confidenceNote below.",
+    "7 doubles/twins + 2 Family Suites. Exclusive use available for groups of 16+ guests (or by paying the full 16-guest rate for smaller groups).",
+    "30% Commission rate (Full Board) confirmed arithmetically as Rack x 0.70 (e.g. Adult Green: 451 = 644 x 0.7 exactly).",
+    "No verified STO/commission rate exists for the Game Package product (its STO file is unreadable) - only Rack is on file for Game Package."
+  ],
+  "gamePackage_perPersonPerNight_RACK_ONLY": {
+    "seasonDates": { "green": "4 Jan-31 Mar, 1 Jun-14 Jul", "shoulder": "1 Apr-31 May, 14 Sep-14 Dec", "high": "15 Jul-15 Sep, 15 Dec-3 Jan 2027" },
+    "green": { "adult": 702, "child8to12": 456, "childUnder8": 352, "singleSupplement": 168, "familySuitePerNight": 2575 },
+    "shoulder": { "adult": 758, "child8to12": 493, "childUnder8": 379, "singleSupplement": 181, "familySuitePerNight": 2784 },
+    "high": { "adult": 948, "child8to12": 617, "childUnder8": 474, "singleSupplement": 227, "familySuitePerNight": 3480 },
+    "includes": ["Full board accommodation", "House beverages (house wine, local beer, local spirits, tea, coffee, soft drinks, bottled water)", "Guided game drives shared vehicle (max 6 guests/vehicle)", "Experienced guides", "Bush meals & sundowners (no bush dinners in Mara Reserve)", "Laundry", "Airstrip pickup/dropoff to Ol Kiombo"],
+    "excludes": ["Maasai Mara Reserve Fees & Community Levy", "Personal items", "Phone calls", "Premium spirits/cellar wines/champagne", "Cigars/cigarettes", "Guided walks outside reserve", "Beauty therapy/massages", "Cultural visits"],
+    "minStay": "3 nights",
+    "verified": true
+  },
+  "fullBoard_perPersonPerNight": {
+    "seasonDates": { "green": "4 Jan-31 May, 1 Jun-14 Jul", "shoulder": "14 Sep-14 Dec", "high": "15 Jul-15 Sep, 15 Dec-3 Jan 2027" },
+    "confidenceNote": "[Unverified] These season date ranges differ from the Game Package document's ranges (e.g. Green here runs through 31 May, vs the Game Package doc's Green ending 31 Mar with a separate Shoulder 1 Apr-31 May) - read directly off each document's own table, not reconciled. Use the season labels/dates matching whichever product (Game Package vs Full Board) is actually being quoted.",
+    "rack": {
+      "green": { "adult": 644, "child8to12": 419, "childUnder8": 322, "singleSupplement": 168, "familySuitePerNight": 2575 },
+      "shoulder": { "adult": 696, "child8to12": 453, "childUnder8": 348, "singleSupplement": 181, "familySuitePerNight": 2784 },
+      "high": { "adult": 870, "child8to12": 566, "childUnder8": 436, "singleSupplement": 227, "familySuitePerNight": 3480 }
+    },
+    "commission30pct_Sunworld": {
+      "green": { "adult": 451, "child8to12": 293, "childUnder8": 226, "singleSupplement": 126, "familySuitePerNight": 1931 },
+      "shoulder": { "adult": 487, "child8to12": 317, "childUnder8": 244, "singleSupplement": 136, "familySuitePerNight": 2088 },
+      "high": { "adult": 609, "child8to12": 396, "childUnder8": 305, "singleSupplement": 170, "familySuitePerNight": 2610 }
+    },
+    "includes": ["Full board accommodation", "House beverages", "Laundry"],
+    "excludes": ["Game drives and extra activities (beauty therapy/massages/cultural visits)", "Personal items", "Phone calls", "Bush meals", "Premium spirits/cellar wines/champagne", "Cigars/cigarettes", "Any airstrip transfer"],
+    "minStay": "2 nights",
+    "verified": true
+  },
+  "mandatoryFees": {
+    "maasaiMaraReserveFee": { "raw": "Adult Jan-Jun: $100/24hrs; Adult Jul-Dec: $200/24hrs; Child under 18 Jan-Dec: $50/day", "verified": true },
+    "communityLevy": { "raw": "Adult Jan-Dec: $80/day; Child under 12 Jan-Dec: $40/day", "verified": true },
+    "note": "Non-refundable, non-transferable, mandatory, subject to change. Payable directly with KAPS or included in booking; Community Levy paid directly to Nigel Archer Safaris."
+  },
+  "childPolicy": { "raw": "Sharing with at least 1 adult: 8-12yrs 35% off adult rate; under 8yrs (upon request) 50% off adult rate.", "verified": true },
+  "singleSupplementPolicy": { "raw": "3 or less single tents per booking: single room rate. 4 or more single tents: double room rate applies instead.", "verified": true },
+  "tripleOccupancy": { "raw": "Additional camp bed added to double occupancy tent, subject to availability, children under 12 only.", "verified": true },
+  "guideAndStaffRates": [
+    { "item": "KPSGA guide / Non-KPSGA guide", "amount": "US$114" },
+    { "item": "Pilot accompanying paying guest", "amount": "US$144 (guide tent, may be shared)" },
+    { "item": "Driver/Nanny", "amount": "US$20 (staff area accommodation)" },
+    { "item": "Agent's Fam trip", "amount": "US$124 (guest tent)" }
+  ],
+  "activitiesAndExtras": [
+    { "item": "Extra lunch", "amount": "US$45pp" },
+    { "item": "Picnic/takeaway lunch", "amount": "US$29pp" },
+    { "item": "Formal Bush Dinner (in camp grounds)", "amount": "US$63pp" },
+    { "item": "Cultural Visit (paid to village directly)", "amount": "US$35pp" },
+    { "item": "Guided bush walk outside reserve (Full Board doc only)", "amount": "US$60/adult, min age 12" },
+    { "item": "Hot Air Balloon Ride with Champagne Breakfast", "amount": "US$480" },
+    { "item": "Exclusive use of vehicle per day", "amount": "US$350" },
+    { "item": "Mara Airstrip drop off/pick up besides Ol Kiombo", "amount": "US$207 per vehicle" },
+    { "item": "Afternoon departure after 12:30", "amount": "25% nightly rate per person plus extra lunch" }
+  ],
+  "policies": {
+    "checkIn": "12:00", "checkOut": "10:00",
+    "deposit": "20% non-refundable deposit on booking, provisional hold 14 days if arrival >3 months away",
+    "balancePayment": "Full payment due 45 days prior to arrival",
+    "cancellation": "80% fee 44-31 days prior; 100% fee within 30 days prior"
+  }
+}

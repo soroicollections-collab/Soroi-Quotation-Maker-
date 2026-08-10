@@ -1,0 +1,34 @@
+{
+  "$note": "Extracted 6 Aug 2026. Validity window (01.07.2025-30.06.2026) only covers the first half of 2026 - no rate sheet covering Jul-Dec 2026 was found in this folder (only a 2024-June2025 predecessor and this 2025-2027 sheet exist). Flag: for a 2026 H2 booking, this document's rates may not still be valid - confirm with camp directly.",
+  "property": "Aruba-Mara Camp & Safaris",
+  "operator": "Aruba-Mara Camp & Safaris Ltd",
+  "region": "Maasai Mara (near Ol Kiombo airstrip)",
+  "tier": "STO/Contract rate",
+  "source": {
+    "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/ARUBA MARA/Aruba Prices_STO-CONTRACT-Rates2025-2027 USD.pdf",
+    "validity": { "start": "2025-07-01", "end": "2026-06-30" }
+  },
+  "seasons": { "lowSeason": "15 Nov-20 Dec, May, June", "highSeason": "rest of year" },
+  "rates": {
+    "currency": "USD",
+    "unit": "per person per night, park fee not included",
+    "bushTent": 30,
+    "camping": { "low": 10, "high": 10 },
+    "comfortTentNoGameDrives_FB": { "low": 100, "high": 135 },
+    "comfortTentWith2GameDrives_FB": { "low": 160, "high": 200 },
+    "luxuryTentNoGameDrives_FB": { "low": 140, "high": 170 },
+    "luxuryTentWith2GameDrives_FB": { "low": 200, "high": 240 },
+    "singleSupplement": "+20%",
+    "festiveSurcharge": "+20% (Easter, Christmas, New Year)"
+  },
+  "extras": {
+    "fullDayGameDriveOrPrivateCar_1to6pax": 260,
+    "additionalLunchbox": 20,
+    "singleGameDrive_perPersonPerDrive": 50,
+    "bushBreakfastSundowner": { "perPerson": 40, "4plusPax": 35 },
+    "airstripTransferOlKiombo": 50,
+    "nairobiTransferOneWay_1to4pax": 220,
+    "narokTransferOneWay_1to4pax": 80
+  },
+  "notes": "No stated child policy in this document - flag as [Unverified gap] if a child is included in a quote using this property."
+}

@@ -1,0 +1,127 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftotext -layout from 5 files in 'NEPTUNE HOTELS/'. ANOMALY WORTH FLAGGING: this folder is filed under the KENYA/ACCOMODATIONS path but contains 8 PDFs, of which 3 are actually TANZANIA properties: 'STO USD - Neptune Ngorongoro 2027 - Luxury Safari Collection.pdf', 'STO USD - Neptune Serengeti 2027 - Luxury Safari Collection.pdf', and 'STO USD - Pwani contract nov26oct27.pdf' (Neptune Pwani Beach Resort, Zanzibar - legal entity Neptune Hotels (Zanzibar) Limited). Those 3 were confirmed Tanzania via their own legal-entity/location text and were NOT extracted here (out of scope for this Kenya slice). The remaining 5 files ARE genuinely Kenya properties (confirmed via each document's own 'Legal Entity' line) and are extracted below: Neptune Mara Rianta Luxury Camp (Narok/Masai Mara), Neptune Palm Beach, Neptune Village Beach, Neptune Paradise Beach (all Diani Beach/Mombasa), and Neptune Beach Resort (Bamburi Beach/Mombasa).",
+  "operator": "Neptune Hotels",
+  "currency": "USD",
+  "tier": "STO",
+  "confidence": "confirmed-2027-08-06",
+  "properties": {
+    "Neptune Mara Rianta Luxury Camp": {
+      "region": "Narok / Masai Mara",
+      "legalEntity": "Mararianta Camp Limited [Kenya]",
+      "collection": "Neptune Luxury Safari Collection",
+      "unit": "per person per night",
+      "dateWindows": ["04Jan-21Mar27", "22Mar-31May27", "01Jun-31Oct27", "01Nov-22Dec27", "23Dec27-06Jan28"],
+      "accommodationOnly": {
+        "note": "No conservancy/park fees charged if guest is NOT going on a game drive",
+        "fullBoard_double_luxuryTent": { "rack": [572, 490, 835, 602, 835], "nett": [397, 339, 579, 418, 579] },
+        "fullBoard_single_luxuryTent": { "rack": [858, 735, 1253, 903, 1253], "nett": [596, 509, 869, 627, 869] },
+        "fullBoard_double_ultraLuxuryTent": { "rack": [858, 735, 1253, 903, 1253], "nett": [596, 509, 869, 627, 869] },
+        "fullBoard_single_ultraLuxuryTent": { "rack": [1286, 1103, 1879, 1354, 1879], "nett": [893, 763, 1303, 941, 1303] }
+      },
+      "gameDrivePackage": {
+        "note": "Private Conservancy (Siria Olomelok) OR Masai Mara National Reserve game drives - excludes conservancy/reserve park fees",
+        "double_luxuryTent": { "rack": [780, 698, 1043, 810, 1043], "nett": [522, 464, 704, 543, 704] },
+        "single_luxuryTent": { "rack": [1066, 943, 1461, 1111, 1461], "nett": [721, 634, 994, 752, 994] },
+        "double_ultraLuxuryTent": { "rack": [1066, 943, 1461, 1111, 1461], "nett": [721, 634, 994, 752, 994] },
+        "single_ultraLuxuryTent": { "rack": [1495, 1311, 2087, 1562, 2087], "nett": [1018, 888, 1428, 1066, 1428] }
+      },
+      "childPolicy": {
+        "twoAdultsOneChild2to12": "First child free (sharing tent)",
+        "twoAdultsTwoChildren2to12": "2nd child pays 50% of adult sharing rate",
+        "oneAdultChildren2to12": "Adult pays single rate, 1st child free, 2nd child 50% of adult sharing rate",
+        "childrenSeparateTent": "1st child pays adult single rate, 2nd/3rd child 30% of adult sharing rate each",
+        "thirdAdult": "70% of sharing rate",
+        "maxTentOccupancy": "3 adults or 2 adults + 2 children"
+      },
+      "festiveSeasonSupplement": { "dates": "Dec 24, 25, 31", "adult": 100, "child": 50, "compulsory": true },
+      "mandatoryFeesExcluded": {
+        "siriaOlomelokConservancyFee": { "adult": 70, "child": 50, "note": "only if game drive taken in conservancy" },
+        "masaiMaraNationalReserveParkFee": { "adult": { "JanToJun": 100, "JulToDec": 200 }, "child": 50, "note": "only if game drive taken in reserve" }
+      },
+      "extras": {
+        "gameDriveSupplementOnFullBoardRate": 125,
+        "privateGameDriveVehicle": { "onePerson": 225, "twoPeople": 150, "threePlusPeople": 100 },
+        "thirdPartyVehicleConservancyAccess": { "adult": 70, "child": 50, "unit": "daily, guests bring own vehicle/guide" },
+        "airstripTransferMaraNorth": 50,
+        "tourGuideAccommodation": 125,
+        "driverAccommodation": { "amount": 1800, "currency": "KES", "unit": "per night, meals in staff canteen" },
+        "extraLunch": 50, "extraDinner": 75
+      },
+      "multiPropertyDiscount": "4 nights=5%, 5-6 nights=10%, 7+ nights=15% when combined with other Neptune Luxury Safari Collection properties (Masai Mara/Ngorongoro/Serengeti); 5% off a combined Neptune Beach Resort booking (Mombasa or Zanzibar); not applicable to park/conservancy fees",
+      "cancellationPolicy": "60-14 days: 50%; 13 days-no show: 100%. Jun-Oct: 90-46 days: 50%, 45-0 days: 100%. Dec23-Jan6: at time of booking: 50%, 60-0 days: 100%.",
+      "verified": true
+    },
+    "Neptune Palm Beach Boutique Resort & Spa": {
+      "region": "Diani Beach, Mombasa",
+      "legalEntity": "Holiday Resorts Limited [Kenya]",
+      "collection": "Neptune All-Inclusive Resort Collection (shares full access to Neptune Village & Paradise Resorts)",
+      "unit": "per person per night, All Inclusive",
+      "dateWindows": ["01Nov-22Dec26", "23Dec26-06Jan27", "07Jan-21Mar27", "22Mar-20Jun27", "21Jun-31Aug27", "01Sep-31Oct27"],
+      "minimumStayByWindow": [3, 5, 3, 3, 3, 3],
+      "rates": {
+        "DeluxeGarden": { "double": [155, 263, 191, 145, 186, 160], "single": [233, 395, 287, 174, 279, 240] },
+        "DeluxeSeaSide": { "double": [176, 299, 212, 166, 207, 181], "single": [264, 449, 318, 199, 311, 272] },
+        "DeluxeOceanFront": { "double": [190, 327, 226, 181, 221, 195], "single": [285, 491, 339, 217, 332, 293], "note": "Includes in-room coffee machine" }
+      },
+      "childPolicy": { "under13with2adults_1st": "Free (sharing room)", "under13with2adults_2nd": "50% of adult sharing rate", "oneAdultOneChildUnder13": "Adult pays single, child free", "oneAdultTwoChildrenUnder13": "2nd child 50% of adult sharing rate", "thirdAdult": "30% reduction on adult sharing rate", "maxOccupancy": "3 persons or 2 adults + 2 children, no connecting rooms" },
+      "festiveSupplement": { "dates": "Dec 24 & 31", "amount": 80, "kids2to12": "50%", "compulsory": true },
+      "extension": { "amount": 50, "unit": "per person, 12h-18h all-inclusive without room" },
+      "cancellationPolicy": "21-14 days: 30%; 13-7 days: 50%; 6 days-no show: 100%. Dec23-Jan6 (booked by Oct15 or at booking): 100%.",
+      "verified": true
+    },
+    "Neptune Village Beach Resort & Spa": {
+      "region": "Diani Beach, Mombasa",
+      "legalEntity": "Holiday Resorts Limited [Kenya]",
+      "unit": "per person per night, All Inclusive",
+      "dateWindows": ["01Nov-22Dec26", "23Dec26-06Jan27", "07Jan-21Mar27", "22Mar-20Jun27", "21Jun-31Aug27", "01Sep-31Oct27"],
+      "minimumStayByWindow": [3, 5, 3, 3, 3, 3],
+      "rates": {
+        "SuperiorGarden": { "double": [108, 174, 135, 103, 118, 111], "single": [162, 261, 203, 124, 177, 167], "maxOccupancy": 2 },
+        "PremiumGarden": { "double": [117, 196, 143, 112, 129, 123], "single": [176, 294, 215, 134, 194, 185], "maxOccupancy": 3 },
+        "DeluxeGarden": { "double": [131, 217, 157, 126, 143, 137], "single": [197, 326, 236, 151, 215, 206], "maxOccupancy": 2 },
+        "DeluxeSeaSide": { "double": [145, 238, 172, 140, 157, 151], "single": [218, 357, 258, 168, 236, 227], "maxOccupancy": 2 },
+        "JuniorSuite": { "double": [216, 309, 243, 211, 228, 222], "single": [324, 464, 365, 253, 342, 333], "maxOccupancy": 3 }
+      },
+      "childPolicy": { "under13with2adults_1st": "Free (sharing room)", "oneAdultOneChildUnder13": "Adult pays single, child free", "oneAdultTwoChildrenUnder13": "2nd child 50%", "thirdAdult": "30% reduction on adult sharing rate" },
+      "verified": true
+    },
+    "Neptune Paradise Beach Resort & Spa": {
+      "region": "Diani Beach, Mombasa",
+      "legalEntity": "Holiday Resorts Limited [Kenya]",
+      "collection": "Full access to Neptune Village Resort included",
+      "unit": "per person per night, All Inclusive",
+      "dateWindows": ["01Nov-22Dec26", "23Dec26-06Jan27", "07Jan-21Mar27", "22Mar-20Jun27", "21Jun-31Aug27", "01Sep-31Oct27"],
+      "minimumStayByWindow": [3, 5, 3, 3, 3, 3],
+      "rates": {
+        "DeluxeGarden": { "double": [132, 209, 163, 124, 143, 136], "single": [198, 314, 245, 149, 215, 204] },
+        "DeluxeBaobab": { "double": [139, 223, 170, 132, 150, 143], "single": [209, 335, 255, 158, 225, 215] },
+        "DeluxeSeaSide": { "double": [167, 266, 199, 160, 179, 171], "single": [251, 399, 299, 192, 269, 257] }
+      },
+      "maxOccupancy": "3 persons, connecting rooms available on request",
+      "festiveSupplement": { "dates": "Dec 24 & 31", "amount": 80, "kids2to12": "50%", "compulsory": true },
+      "verified": true
+    },
+    "Neptune Beach Resort": {
+      "region": "Bamburi Beach, Mombasa",
+      "legalEntity": "Holiday Resorts Limited [Kenya]",
+      "unit": "per person per night, All Inclusive",
+      "dateWindows": ["01Nov-22Dec26", "23Dec26-06Jan27", "07Jan-21Mar27", "22Mar-20Jun27", "21Jun-31Aug27", "01Sep-31Oct27"],
+      "minimumStayByWindow": [3, 5, 3, 3, 3, 3],
+      "rates": {
+        "Standard": { "double": [101, 145, 114, 98, 112, 104], "single": [152, 218, 171, 118, 168, 156] },
+        "SuperiorOceanFront": { "double": [123, 166, 136, 120, 133, 125], "single": [185, 249, 204, 144, 200, 188], "note": "Connecting rooms available (Superior Ocean Front only)" },
+        "SuiteOceanFront": { "double": [179, 223, 192, 177, 190, 182], "single": [269, 335, 288, 212, 285, 273] }
+      },
+      "maxOccupancy": 3,
+      "festiveSupplement": { "dates": "Dec 24 & 31", "amount": 80, "kids2to12": "50%", "compulsory": true },
+      "verified": true
+    }
+  },
+  "commonAllInclusiveTerms": {
+    "note": "Coast properties share near-identical All-Inclusive scope: buffet breakfast/lunch/dinner, snack service, drinks (soft/local beer/select wine/spirits) from 10h-midnight, recreation (gym/yoga/games/kids club/canoes), pools, sunbeds, turndown service, mini fridge/TV/WiFi. Palm & Paradise guests get full cross-access to Neptune Village & each other; Village anchors the shared restaurants (Indian a la carte, Sea Food set menu) and animation programming.",
+    "commissionable": false,
+    "distributionRestriction": "Not for OTA distribution, strictly confidential rates",
+    "checkInOut": "Check-in 14:00, check-out 12:00 noon. Late checkout to 18:00 = 50% of rate, after 18:00 = 100%.",
+    "verified": true
+  }
+}

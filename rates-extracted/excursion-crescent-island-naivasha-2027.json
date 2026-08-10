@@ -1,0 +1,36 @@
+{
+  "category": "excursion",
+  "activity": "Crescent Island Game Sanctuary — walking wildlife tour, Lake Naivasha",
+  "operator": "Crescent Island Game Sanctuary",
+  "region": "Lake Naivasha, Kenya",
+  "extractedDate": "2026-08-06",
+  "sourceFiles": [
+    "2027 CONTRACT RATES/EXCURSIONS/CRESCENT ISLAND/2027 Rates Trade.pdf"
+  ],
+  "$gapFlag": "[Flag — data gap] There is NO Crescent Island folder or rate file inside 2026 CONTRACT RATES/EXCURSIONS/ at all — only 2027 has one. Do not assume the 2027 rate applies to 2026; if a 2026 Crescent Island quote is needed, source it fresh (this operator was not part of Sunworld's 2026 excursions folder as filed).",
+  "validity": "1 January 2027 - 31 December 2027",
+  "currency": "KES (USD equivalents also quoted in source)",
+  "vatStatus": "VAT included",
+  "rackRate": {
+    "nonResidentAdult": { "KES": 4150, "USD": 33 },
+    "nonResidentStudent": { "KES": 2750, "USD": 22 },
+    "nonResidentChild": { "KES": 2000, "USD": 16 },
+    "residentAdult": { "KES": 1200 },
+    "residentChild": { "KES": 600 },
+    "citizenAdult": { "KES": 800 },
+    "citizenChild": { "KES": 400 },
+    "verified": true
+  },
+  "tradeRate": {
+    "note": "Only applies if pre-booked via email.",
+    "nonResidentAdult": { "KES": 3750, "USD": 30 },
+    "nonResidentStudent": { "KES": 2500, "USD": 20 },
+    "nonResidentChild": { "KES": 1800, "USD": 15 },
+    "verified": true
+  },
+  "childPolicy": "Child rate applies age 5 to 15 years.",
+  "notes": [
+    "Rates subject to change due to currency fluctuations, per source.",
+    "Island Fever Cafe is mentioned as newly open on Crescent Island — no pricing given."
+  ]
+}

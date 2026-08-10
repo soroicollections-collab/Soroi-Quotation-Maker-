@@ -1,0 +1,126 @@
+{
+  "property": "Mara Leisure Camp",
+  "operator": "Marasa Africa (Mara Leisure Camp Limited)",
+  "region": "Maasai Mara National Park",
+  "isSoroiProperty": false,
+  "sourceFiles": [
+    "2026 CONTRACT RATES/KENYA/ACCOMODATION/Marasa Africa Kenya/00 2026 Marasa Africa Kenya Lodges Published Rack Rates_1.pdf",
+    "2026 CONTRACT RATES/KENYA/ACCOMODATION/Marasa Africa Kenya/02 2026 Marasa Africa Kenya Lodges Local and Regional STO Nett Rates.pdf",
+    "2026 CONTRACT RATES/KENYA/ACCOMODATION/Marasa Africa Kenya/DMC 25 Marasa Africa Kenya Rate- 2025 Local DMC - Wholesale Tour Operator -.pdf (2025, historical reference only)",
+    "2026 CONTRACT RATES/KENYA/ACCOMODATION/Marasa Africa Kenya/EAC45-Marasa Africa Kenya Rate -Special Negotiated Tour Operator.pdf (titled '2025 Direct Resident Rates', historical reference only)",
+    "2026 CONTRACT RATES/KENYA/ACCOMODATION/Marasa Africa Kenya/2025 East Africa Marasa Africa Wholesale Contact.pdf (group-wide T&Cs)"
+  ],
+  "notes": [
+    "Part of the same Marasa Africa Kenya contract family as Aberdare Country Club and The Ark - see aberdare-country-club-2026.json for full group-wide notes on scope (Uganda properties excluded), skipped documents, and shared policies.",
+    "Widest room category range of the three: Classic Room, Classic Tent, Deluxe Tent, Superior Tent, Classic Cottage.",
+    "Superior Tent has 'N/A' for the 'Children 3-15 In Own Room' column in the 2026 Rack/STO cards - not priced, presumably that category cannot accommodate a child in its own room.",
+    "STO discount confirmed arithmetically: STO = Rack x 0.75 exactly. STO 25% tier.",
+    "10 Classic Rooms, 21 Classic Tents, 4 Deluxe Tents, 1 Superior Tent, 1 Classic Cottage."
+  ],
+  "currency": "USD",
+  "validity2026": "1 July 2026 - 31 December 2026 (Low: 1 Oct-22 Dec 2026; High: 1 Jul-30 Sep 2026 and 23-31 Dec 2026; Peak Season Room Supplement US$35 surcharge 23 Dec 2026-1 Jan 2027)",
+  "rack2026_perPersonPerNight": {
+    "fullBoard": {
+      "low": {
+        "classicRoom": { "double": 254, "single": 169, "furtherPerson15plus": 96, "childUnder3": 0, "childSharingWithAdult": 64, "child3to15OwnRoom": 96 },
+        "classicTent": { "double": 266, "single": 177, "furtherPerson15plus": 100, "childUnder3": 0, "childSharingWithAdult": 67, "child3to15OwnRoom": 100 },
+        "deluxeTent": { "double": 286, "single": 191, "furtherPerson15plus": 108, "childUnder3": 0, "childSharingWithAdult": 72, "child3to15OwnRoom": 108 },
+        "superiorTent": { "double": 330, "single": 220, "furtherPerson15plus": 124, "childUnder3": 0, "childSharingWithAdult": 83, "child3to15OwnRoom": "N/A" },
+        "classicCottage": { "double": 268, "single": 179, "furtherPerson15plus": 101, "childUnder3": 0, "childSharingWithAdult": 67, "child3to15OwnRoom": 101 }
+      },
+      "high": {
+        "classicRoom": { "double": 508, "single": 338, "furtherPerson15plus": 191, "childUnder3": 0, "childSharingWithAdult": 127, "child3to15OwnRoom": 191 },
+        "classicTent": { "double": 530, "single": 353, "furtherPerson15plus": 199, "childUnder3": 0, "childSharingWithAdult": 133, "child3to15OwnRoom": 199 },
+        "deluxeTent": { "double": 570, "single": 380, "furtherPerson15plus": 214, "childUnder3": 0, "childSharingWithAdult": 143, "child3to15OwnRoom": 214 },
+        "superiorTent": { "double": 658, "single": 438, "furtherPerson15plus": 247, "childUnder3": 0, "childSharingWithAdult": 165, "child3to15OwnRoom": "N/A" },
+        "classicCottage": { "double": 562, "single": 374, "furtherPerson15plus": 211, "childUnder3": 0, "childSharingWithAdult": 141, "child3to15OwnRoom": 211 }
+      }
+    },
+    "halfBoard": {
+      "low": {
+        "classicRoom": { "double": 222, "single": 153, "furtherPerson15plus": 80, "childSharingWithAdult": 48, "child3to15OwnRoom": 80 },
+        "classicTent": { "double": 234, "single": 161, "furtherPerson15plus": 84, "childSharingWithAdult": 51, "child3to15OwnRoom": 84 },
+        "deluxeTent": { "double": 254, "single": 175, "furtherPerson15plus": 92, "childSharingWithAdult": 56, "child3to15OwnRoom": 92 },
+        "superiorTent": { "double": 298, "single": 204, "furtherPerson15plus": 108, "childSharingWithAdult": 67, "child3to15OwnRoom": "N/A" },
+        "classicCottage": { "double": 236, "single": 163, "furtherPerson15plus": 85, "childSharingWithAdult": 51, "child3to15OwnRoom": 85 }
+      },
+      "high": {
+        "classicRoom": { "double": 476, "single": 322, "furtherPerson15plus": 175, "childSharingWithAdult": 111, "child3to15OwnRoom": 175 },
+        "classicTent": { "double": 498, "single": 337, "furtherPerson15plus": 183, "childSharingWithAdult": 117, "child3to15OwnRoom": 183 },
+        "deluxeTent": { "double": 538, "single": 364, "furtherPerson15plus": 198, "childSharingWithAdult": 127, "child3to15OwnRoom": 198 },
+        "superiorTent": { "double": 626, "single": 422, "furtherPerson15plus": 231, "childSharingWithAdult": 149, "child3to15OwnRoom": "N/A" },
+        "classicCottage": { "double": 530, "single": 358, "furtherPerson15plus": 195, "childSharingWithAdult": 125, "child3to15OwnRoom": 195 }
+      }
+    },
+    "verified": true
+  },
+  "sto25pct_2026_perPersonPerNight": {
+    "fullBoard": {
+      "low": {
+        "classicRoom": { "double": 191, "single": 127, "furtherPerson15plus": 72, "childSharingWithAdult": 48, "child3to15OwnRoom": 72 },
+        "classicTent": { "double": 200, "single": 133, "furtherPerson15plus": 75, "childSharingWithAdult": 51, "child3to15OwnRoom": 75 },
+        "deluxeTent": { "double": 215, "single": 144, "furtherPerson15plus": 81, "childSharingWithAdult": 54, "child3to15OwnRoom": 81 },
+        "superiorTent": { "double": 248, "single": 165, "furtherPerson15plus": 93, "childSharingWithAdult": 63, "child3to15OwnRoom": "N/A" },
+        "classicCottage": { "double": 201, "single": 135, "furtherPerson15plus": 76, "childSharingWithAdult": 51, "child3to15OwnRoom": 76 }
+      },
+      "high": {
+        "classicRoom": { "double": 381, "single": 254, "furtherPerson15plus": 144, "childSharingWithAdult": 96, "child3to15OwnRoom": 144 },
+        "classicTent": { "double": 398, "single": 265, "furtherPerson15plus": 150, "childSharingWithAdult": 100, "child3to15OwnRoom": 150 },
+        "deluxeTent": { "double": 428, "single": 285, "furtherPerson15plus": 161, "childSharingWithAdult": 108, "child3to15OwnRoom": 161 },
+        "superiorTent": { "double": 494, "single": 329, "furtherPerson15plus": 186, "childSharingWithAdult": 124, "child3to15OwnRoom": "N/A" },
+        "classicCottage": { "double": 422, "single": 281, "furtherPerson15plus": 159, "childSharingWithAdult": 106, "child3to15OwnRoom": 159 }
+      }
+    },
+    "halfBoard": {
+      "low": {
+        "classicRoom": { "double": 167, "single": 115, "furtherPerson15plus": 60, "childSharingWithAdult": 36, "child3to15OwnRoom": 60 },
+        "classicTent": { "double": 176, "single": 121, "furtherPerson15plus": 63, "childSharingWithAdult": 39, "child3to15OwnRoom": 63 },
+        "deluxeTent": { "double": 191, "single": 132, "furtherPerson15plus": 69, "childSharingWithAdult": 42, "child3to15OwnRoom": 69 },
+        "superiorTent": { "double": 224, "single": 153, "furtherPerson15plus": 81, "childSharingWithAdult": 51, "child3to15OwnRoom": "N/A" },
+        "classicCottage": { "double": 177, "single": 123, "furtherPerson15plus": 64, "childSharingWithAdult": 39, "child3to15OwnRoom": 64 }
+      },
+      "high": {
+        "classicRoom": { "double": 357, "single": 242, "furtherPerson15plus": 132, "childSharingWithAdult": 84, "child3to15OwnRoom": 132 },
+        "classicTent": { "double": 374, "single": 253, "furtherPerson15plus": 138, "childSharingWithAdult": 88, "child3to15OwnRoom": 138 },
+        "deluxeTent": { "double": 404, "single": 273, "furtherPerson15plus": 149, "childSharingWithAdult": 96, "child3to15OwnRoom": 149 },
+        "superiorTent": { "double": 470, "single": 317, "furtherPerson15plus": 174, "childSharingWithAdult": 112, "child3to15OwnRoom": "N/A" },
+        "classicCottage": { "double": 398, "single": 269, "furtherPerson15plus": 147, "childSharingWithAdult": 94, "child3to15OwnRoom": 147 }
+      }
+    },
+    "verified": true
+  },
+  "gamePackage_perPersonPerNight": {
+    "includes": "Full board and selection of activities: shared morning game drive (06:30-10:30, min 2 guests) with bush snacks/beverages; afternoon game drive (15:00-18:30) with sundowner selection",
+    "excludes": "National Park Fees",
+    "rack2026": { "low": { "classicRoom": 384, "classicTent": 620, "deluxeTent": null, "superiorTent": null }, "confidenceNote": "[Unverified] Game Package rates for Mara Leisure Camp were not found broken out separately by room category in the 2026 Rack/STO cards read - the 00/02 documents only show Full Board and Half Board columns for Mara Leisure Camp, not Game Package. Game Package figures shown here are read from the 2025 historical DMC document only (see historicalReference below) and should not be treated as 2026-confirmed." }
+  },
+  "historicalReference_2025_DMC_wholesale": {
+    "confidenceNote": "[Unverified for 2026] Valid only 1 Jan-31 Dec 2025. Included for season-structure and game-package-pricing reference only.",
+    "classicRoom_fullBoard_perPersonPerNight": { "low": 91, "shoulder": 109, "high": 183 },
+    "classicRoom_gamePackage_perPersonPerNight": { "low": 306, "shoulder": 323, "high": 397 },
+    "classicTent_fullBoard_perPersonPerNight": { "low": 95, "shoulder": 116, "high": 191 },
+    "classicTent_gamePackage_perPersonPerNight": { "low": 310, "shoulder": 330, "high": 405 }
+  },
+  "historicalReference_2025_directResident": {
+    "confidenceNote": "[Unverified for 2026] Valid only 1 Jan-31 Dec 2025. Included for structure reference only - likely superseded.",
+    "classicRoom_fullBoard_perPersonPerNight": { "low": 67, "shoulder": 80, "high": 134 },
+    "classicRoom_gamePackage_perPersonPerNight": { "low": 281, "shoulder": 294, "high": 348 }
+  },
+  "groupSharedPolicies_MarasaAfrica": {
+    "checkIn": "12:00", "checkOut": "10:00",
+    "tourLeaderAccommodation": "Max 2 tour leaders per reservation. 2-9 guests: US$150 full board. 10+ guests: stay free.",
+    "agentTravelTradeRate": "US$90 full board per person, bookable only within 7 days of arrival",
+    "agentFamTripRate": "US$90 full board per person, subject to Group Head of Sales approval",
+    "fitCancellation_lessThan9rooms": {
+      "safariSeason": { "0-14days": "100%", "15-30days": "100%", "30-45days": "50%", "45-60days": "25%", "60+days": "10%" },
+      "valueSeason": { "0-14days": "100%", "15-30days": "50%", "30-45days": "25%", "45-60days": "10%", "60+days": "10%" }
+    },
+    "groupCancellation_9plusRooms": {
+      "safariSeason": { "0-30days": "100%", "31-60days": "100%", "61-89days": "50%", "90+days": "25%" },
+      "valueSeason": { "0-30days": "100%", "31-60days": "50%", "61-89days": "25%", "90+days": "25%" }
+    },
+    "experienceAndTravelBookings": "100% deposit and 100% cancellation liability at ALL lead times - no refund window for 3rd-party experiences/permits/transfers once booked",
+    "parkFeesExcluded": "All Marasa Africa rates exclude national park/entrance/landing fees - Maasai Mara National Park entry fees apply separately",
+    "residentRatesNote": "East African resident and bona fide conservation organisation rates available on request at reservations.kenya@marasa.africa - not published in these documents"
+  }
+}

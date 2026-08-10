@@ -1,0 +1,31 @@
+{
+  "property": "Ole Sereni Hotel",
+  "operator": "Ole-Sereni Hotel (Off Mombasa Road, Nairobi - 'The Only City Hotel by the Game Park')",
+  "region": "Nairobi",
+  "isSoroiProperty": false,
+  "sourceFiles": ["2026 CONTRACT RATES/KENYA/ACCOMODATION/OLE SERENI HOTELS -EMARA AND 254/Ole Sereni - Sunworld Safaris - Ole Sereni Rates 2026 - 2027.pdf"],
+  "notes": [
+    "Folder name 'OLE SERENI HOTELS -EMARA AND 254' implies 3 sub-brands/products, but only 2 rate documents were found in the folder: this one (Ole Sereni, room types Cozy/Club/Wow Suites) and a second for 'Emara Ole Sereni Hotel' (different room types - Superior/Deluxe/Apartments/Executive Suite, see emara-ole-sereni-hotel-2026.json). No '254'-branded rate document exists in this folder - that portion of the folder name is unaccounted for and should be flagged to whoever owns the SharePoint folder.",
+    "This is a flexible Nairobi/stopover hotel candidate not yet in CLAUDE.md's known priced list.",
+    "Rates are quoted as Contract/Sunworld figures directly alongside Rack in the same table (not a separate discount tier document)."
+  ],
+  "currency": "USD",
+  "validity": "1 January 2026 - 31 December 2027",
+  "rates_perRoomPerNight_BB": {
+    "cozyRooms": { "single": { "contract": 140, "rack": 230 }, "double": { "contract": 190, "rack": 280 } },
+    "clubRooms": { "single": { "contract": 170, "rack": 290 }, "double": { "contract": 220, "rack": 340 } },
+    "wowSuites": { "single": { "contract": 600, "rack": 1000 }, "double": { "contract": 600, "rack": 1000 } },
+    "verified": true
+  },
+  "mealRates": { "breakfast": 30, "lunch": 40, "dinner": 40 },
+  "conferencePackage_min10pax": { "fullDay": { "usd": 55, "kes": 6000 }, "halfDay": { "usd": 50, "kes": 5500 }, "unit": "per person" },
+  "tripleRoomSupplement": { "raw": "US$60 for extra bed on an adult - Club Rooms only", "verified": true },
+  "dayUseOfRooms": { "raw": "Excludes meals, valid 12:00-18:00, charged at 75% of room rate, subject to availability", "verified": true },
+  "childPolicy": { "raw": "Under 3 sharing with adult(s): free. 3-12 sharing with adult(s): US$40. 3-12 in own room (min 2 children): US$50 per child. One child in own room: charged at Single Room rate.", "verified": true },
+  "policies": {
+    "checkIn": "14:00", "checkOut": "10:00",
+    "payment": "No credit facilities - full payment required prior to or upon check-in",
+    "cancellation": "21 days prior: 50% cancellation fee on first night; 14 days prior: 75% on first night; within 72 hours of noon on accommodation date, or no-show: 100% of net booking value for max 2 nights",
+    "conferencesExcluded": "Rates do not apply for major conferences/meetings/incentive groups - negotiated per case"
+  }
+}

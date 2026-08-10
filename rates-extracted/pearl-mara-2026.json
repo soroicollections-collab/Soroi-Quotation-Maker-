@@ -1,0 +1,57 @@
+{
+  "property": "Pearl Mara Luxury Tented Lodge",
+  "operator": "Pearl Mara",
+  "region": "Maasai Mara",
+  "isSoroiProperty": false,
+  "sourceFiles": [
+    "2026 CONTRACT RATES/KENYA/ACCOMODATION/PEARL MARA/RACK_Pearl Mara Rate Card 2026_NON RESIDENT (1).pdf",
+    "2026 CONTRACT RATES/KENYA/ACCOMODATION/PEARL MARA/STO_Pearl Mara Rate Card 2026_NON RESIDENT_25 OFF.pdf",
+    "2026 CONTRACT RATES/KENYA/ACCOMODATION/PEARL MARA/RACK_Pearl Mara Rate Card 2026_RESIDENT (1).pdf",
+    "2026 CONTRACT RATES/KENYA/ACCOMODATION/PEARL MARA/STO_Pearl Mara Rate Card 2026_RESIDENT_20 OFF (1).pdf",
+    "2026 CONTRACT RATES/KENYA/ACCOMODATION/PEARL MARA/Pearl Mara Fact Sheet--.pdf (property overview, no additional pricing)"
+  ],
+  "currency": "USD",
+  "notes": [
+    "Two accommodation types: Suites (4 Double Suites + 2 Family Suites) and Tents (7 Double Tents + 3 Double Guide Tents). Rates only cover a 'Game Package' meal/activity plan - no separate Full Board-only rate is offered here (unlike some other properties in this project).",
+    "No alcohol is served on the premises (stated explicitly on every rate card).",
+    "STO discount confirmed arithmetically: Non-Resident STO = Rack x 0.75 exactly (25% off, e.g. Suites Peak: 1350=1800x0.75). Resident STO = Rack x 0.80 exactly (20% off, e.g. Suites Peak: 840=1050x0.8).",
+    "ANOMALY: The plain (non-STO) Non-Resident Rack Rate Card's Tents section states season dates as '10th June 2025-15th October 2025, 20th December 2025-5th January 2027' - mixing 2025 and 2027 years inconsistently, unlike every other season block in this document set (which correctly uses 2026/2027). Likely a copy-paste year error specific to that one file/section; the STO Non-Resident file's Tents section has the corrected 2026 dates. Season boundaries used below assume the corrected 2026 dates.",
+    "Camp reserves the right to change rates with only 48 hours' notice - shorter than most properties in this project."
+  ],
+  "seasons": {
+    "high_Peak": "10 June-15 October 2026, 20 December 2026-5 January 2027",
+    "low_OffPeak": "6 January-9 June 2026, 16 October-19 December 2026"
+  },
+  "nonResident_suites_perPersonPerNight": {
+    "rack": { "peak": { "perPersonSharing": 1800, "extraBed": 900, "childSharing5to12": 300, "singleOccupancy": 2500, "familyRoomMax4Adults": 1800 }, "offPeak": { "perPersonSharing": 1050, "extraBed": 650, "childSharing5to12": 200, "singleOccupancy": 1575, "familyRoomMax4Adults": 1050 } },
+    "sto25pct": { "peak": { "perPersonSharing": 1350, "extraBed": 675, "childSharing5to12": 225, "singleOccupancy": 1875, "familyRoomMax4Adults": 1350 }, "offPeak": { "perPersonSharing": 788, "extraBed": 488, "childSharing5to12": 150, "singleOccupancy": 1182, "familyRoomMax4Adults": 788 } },
+    "verified": true
+  },
+  "nonResident_tents_perPersonPerNight": {
+    "rack": { "peak": { "perPersonSharing": 650, "extraBed": 475, "childSharing5to12": 250, "singleOccupancy": 850 }, "offPeak": { "perPersonSharing": 475, "extraBed": 300, "childSharing5to12": 150, "singleOccupancy": 700 } },
+    "sto25pct": { "peak": { "perPersonSharing": 488, "extraBed": 300, "childSharing5to12": 188, "singleOccupancy": 638 }, "offPeak": { "perPersonSharing": 356, "extraBed": 225, "childSharing5to12": 113, "singleOccupancy": 525 } },
+    "verified": true,
+    "confidenceNote": "[Unverified] The non-STO Rack file's Tents 'Extra Bed' figures (475 Peak / 300 Off-Peak) differ from the STO file's own Rack column shown for comparison (400 Peak / 300 Off-Peak) - a genuine cross-document discrepancy on this one line item, not reconciled. STO figures themselves (488/356) are still confirmed as 0.75x their own file's stated Rack baseline."
+  },
+  "resident_suites_perPersonPerNight": {
+    "rack": { "peak": { "perPersonSharing": 1050, "extraBed": 650, "childSharing5to12": 200, "singleOccupancy": 1500, "familyRoomMax4Adults": 1050 }, "offPeak": { "perPersonSharing": 750, "extraBed": 450, "childSharing5to12": 150, "singleOccupancy": 850, "familyRoomMax4Adults": 750 } },
+    "sto20pct": { "peak": { "perPersonSharing": 840, "extraBed": 520, "childSharing5to12": 160, "singleOccupancy": 1200, "familyRoomMax4Adults": 840 }, "offPeak": { "perPersonSharing": 600, "extraBed": 360, "childSharing5to12": 120, "singleOccupancy": 680, "familyRoomMax4Adults": 600 } },
+    "verified": true
+  },
+  "resident_tents_perPersonPerNight": {
+    "rack": { "peak": { "perPersonSharing": 475, "extraBed": 300, "childSharing5to12": 150, "singleOccupancy": 650 }, "offPeak": { "perPersonSharing": 375, "extraBed": 200, "childSharing5to12": 100, "singleOccupancy": 500 } },
+    "verified": true,
+    "confidenceNote": "[Unverified] STO figures for Resident Tents were not fully captured in the extracted text (page truncated in source read) - only Rack confirmed here."
+  },
+  "includes_suites": ["Full board accommodation", "Transfers to/from airstrips in the Mara", "In-room minibar", "Food, beverages, in-room dining", "Tea, coffee, espresso amenities", "Game vehicles and guide", "Shamba (farm) experience & seasonal menus", "Gym with personal trainer", "Archery by local Maasai warriors", "Guided nature walk", "Pool table, foosball, darts, table tennis, board games", "Bush dinner/breakfast/lunch (once per stay)", "Laundry", "Binoculars and telescopes in room"],
+  "excludes_suites": ["Maasai Mara and conservancy park fees", "Air/road transfers to/from Pearl Mara", "In-house spa treatment", "Personal guide/driver accommodation (subject to availability)", "Boutique purchases", "Hot air balloon safaris", "Guided walking safaris", "Cultural visits", "Rhino sanctuary", "Bicycle safaris"],
+  "includes_tents": ["Full board accommodation", "Transfers to/from airstrips in the Mara", "In-room minibar", "Tea/coffee amenities", "Food, beverages, in-room dining", "Shared game drives and guide", "Shamba experience & seasonal menus", "Archery", "Pool table, foosball, darts, table tennis, board games", "Laundry", "Guided nature walk"],
+  "excludes_tents": ["Maasai Mara park fees", "Bush meals", "Air/road transfers to/from Pearl Mara", "In-house spa treatment", "Guide/driver accommodation (subject to availability)", "Boutique purchases", "Hot air balloon safaris", "Guided walking safaris", "Cultural visits", "Rhino sanctuary", "Bicycle safaris"],
+  "childPolicy": { "raw": "Infants 0-4: up to 2 stay free, additional infants at child rate. Children 5-12: child rate. 13+: adult rate.", "verified": true },
+  "policies": {
+    "deposit": "20% non-refundable deposit to confirm booking, provisional hold 5 working days",
+    "balancePayment": "80% balance due at least 45 days prior to arrival",
+    "cancellation": "45+ days: 20% deposit + bank charges forfeited; 45-30 days: 50% of total booking cost; <30 days or no-show: 100%",
+    "insurance": "Comprehensive travel/medical insurance mandatory, plus AMREF Flying Doctors coverage for emergency evacuation"
+  }
+}

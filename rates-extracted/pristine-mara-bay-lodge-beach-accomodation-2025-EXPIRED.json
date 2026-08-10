@@ -1,0 +1,88 @@
+{
+  "$note": "Extracted 6 Aug 2026. RESOLVED FINDING (see resolutionUpdate below): a parallel extraction batch working the correctly-categorized 'KENYA/ACCOMODATION/Pristine Mara Bay Lodge/' folder found a genuine, fully 2026-valid rate card for this property (validity 6 Jan 2026 - 5 Jan 2027) with a source filename that correctly says '2026 NON-RESIDENT RACK RATES'. That means the copy documented in THIS file — found in the task-assigned 'BEACH ACCOMODATION/PRISTINE MARA BAY LODGE/' folder — is a misfiled, EXPIRED 2025 duplicate (validity 6 Jan 2025 - 5 Jan 2026, confirmed from its own companion Sunworld contract document's text: 'The rates are to be applied effective from 6th January 2025 till 5th January 2026'). Saved under this filename (rather than the plain 'pristine-mara-bay-lodge-2026.json') to avoid clobbering the sibling batch's now-current file, while preserving the misfiling evidence for the record.",
+  "resolutionUpdate": {
+    "correctFileToUse": "rates-extracted/pristine-mara-bay-lodge-2026.json (produced by the sibling KENYA/ACCOMODATION batch, sourced from 'Pristine Mara Bay Lodge - 2026 NON-RESIDENT RACK RATES (33) (93).pdf' and its companion 2026 Contract document) — use that file for any 2026 Pristine Mara Bay Lodge quote, NOT this one.",
+    "thisFileValue": "Documents the misfiling itself (same property name, same lodge, appearing a second time under BEACH ACCOMODATION with a stale 2025 rate card) — useful evidence that the SharePoint archive has a genuine duplicate-with-different-validity issue for this property, worth flagging to whoever owns the folder structure per CLAUDE.md's 'flag, don't silently resolve' rule.",
+    "figureDiscrepancyNote": "Even accounting for the different year, the two cards' figures are NOT a clean rollover of each other (e.g. this file's Introductory-season Wilderness Twin/Double is $560, the sibling's 2026 Green-season equivalent is $575 — a real per-night difference, not just a season-label rename). Don't assume one card is simply 'last year's numbers' of the other."
+  },
+  "property": "Pristine Mara Bay Lodge",
+  "region": "Maasai Mara National Reserve (Near Kiboko, beside the Mara River) — NOT a beach/coastal property",
+  "locationFlag": {
+    "finding": "MISFILING CONFIRMED. Despite sitting inside the 'BEACH ACCOMODATION' folder, this is a genuine inland Maasai Mara safari lodge — confirmed from the PDF's own cover page ('Location: Near Kiboko, Beside Mara River, Masai Mara National Reserve, P.O. Box 72 Ololulunga') and GPS coordinates (-1.4862991, 35.0337629 / 1°29'12\"S, 35°1'57\"E, altitude 4888 ft), which place it firmly in the Mara, nowhere near the coast. The name 'Mara Bay' refers to a bend of the Mara River, not a beach bay. This is a source-side filing mistake, comparable to the Fairmont misfiling noted in a sibling extraction batch. As it turns out, the property is ALSO correctly filed under 'KENYA/ACCOMODATION/Pristine Mara Bay Lodge/' with a current, valid rate card — so the BEACH ACCOMODATION copy is a genuine stray duplicate, not the only record of this property. Flag to whoever owns the SharePoint folder structure; never silently re-file (per CLAUDE.md, never reorganize the source folder)."
+  },
+  "yearValidityFlag": {
+    "finding": "This copy's rate card covers ONLY 6 Jan 2025 - 5 Jan 2026 (confirmed explicitly in its companion Contract document's own text). Confirmed EXPIRED for any 2026 date beyond 5 Jan. The correctly-filed sibling-batch copy supersedes this entirely for 2026 quoting purposes.",
+    "confirmedCoverage": "6 Jan 2025 - 5 Jan 2026",
+    "usableFor2026Quotes": "None — use the sibling batch's pristine-mara-bay-lodge-2026.json instead."
+  },
+  "tier": "Rack Rate (Non-Resident) — primary; Sunworld Contract Rate — secondary, see below",
+  "residency": "Non-Resident",
+  "source": {
+    "file": "2026 CONTRACT RATES/KENYA/BEACH ACCOMODATION/PRISTINE MARA BAY LODGE/Pristine Mara Bay Lodge  - NON-RESIDENT 2025 RACK RATES.pdf",
+    "totalPages": 2,
+    "extractionMethod": "Page 1 (rate table) is image-only — read visually. Page 2 (footnotes/T&Cs/extras) is text, read via pdftotext.",
+    "validity": { "start": "2025-01-06", "end": "2026-01-05" }
+  },
+  "confidence": "confirmed-visual-read-2026-08-06-BUT-EXPIRED",
+  "structuralFindings": [
+    "44 guest suites total, of which 4 are Family Suites with an added children's bedroom. A Presidential Suite is noted as 'Coming in 2026' — not yet priced on this copy (the sibling batch's 2026 card does have a priced Presidential House, confirming the timeline).",
+    "Two room categories: Wilderness Rooms and River Rooms. ALL Suite categories are River Rooms only.",
+    "Base meal plan is Full Board; All-Inclusive is a separate, fully re-priced tier.",
+    "Rates inclusive of 16% VAT, 10% service charge, 2% training levy — exclude mandatory park fees and community levy, billed separately.",
+    "A second, lower rate table exists in the companion 'NON-RESIDENT 2025 CONTRACT RATES AND AGREEMENT' document — Sunworld's actual negotiated rate, captured below."
+  ],
+  "seasons": {
+    "introductory": { "dateRanges": ["1 Apr - 14 Jun 2025"] },
+    "value": { "dateRanges": ["6 Jan - 31 Mar 2025", "11 Oct - 20 Dec 2025"] },
+    "peak": { "dateRanges": ["15 Jun - 10 Oct 2025", "21 Dec 2025 - 5 Jan 2026"] }
+  },
+  "rackRates": {
+    "currency": "USD",
+    "unit": "per night (per room/suite, not per person)",
+    "verified": true,
+    "fullBoard": {
+      "twinDouble_2guests": { "introductory": { "wilderness": 560, "river": 660 }, "value": { "wilderness": 980, "river": 1080 }, "peak": { "wilderness": 1400, "river": 1500 } },
+      "singleStandard_1guest": { "introductory": { "wilderness": 420, "river": 490 }, "value": { "wilderness": 700, "river": 770 }, "peak": { "wilderness": 980, "river": 1050 } },
+      "doubleSuite_2guests": { "introductory": { "river": 840 }, "value": { "river": 1260 }, "peak": { "river": 1680 } },
+      "singleSuite_1guest": { "introductory": { "river": 560 }, "value": { "river": 980 }, "peak": { "river": 1400 } },
+      "tripleSuite_3guests": { "introductory": { "river": 980 }, "value": { "river": 1680 }, "peak": { "river": 2240 } },
+      "quadrupleSuite_4guests": { "introductory": { "river": 1120 }, "value": { "river": 1960 }, "peak": { "river": 2730 } }
+    },
+    "allInclusive": {
+      "twinDouble_2guests": { "introductory": { "wilderness": 840, "river": 940 }, "value": { "wilderness": 1260, "river": 1360 }, "peak": { "wilderness": 1820, "river": 1920 } },
+      "singleStandard_1guest": { "introductory": { "wilderness": 560, "river": 630 }, "value": { "wilderness": 840, "river": 910 }, "peak": { "wilderness": 1190, "river": 1260 } },
+      "doubleSuite_2guests": { "introductory": { "river": 1120 }, "value": { "river": 1540 }, "peak": { "river": 2100 } },
+      "singleSuite_1guest": { "introductory": { "river": 700 }, "value": { "river": 1120 }, "peak": { "river": 1610 } },
+      "tripleSuite_3guests": { "introductory": { "river": 1400 }, "value": { "river": 2100 }, "peak": { "river": 2870 } },
+      "quadrupleSuite_4guests": { "introductory": { "river": 1680 }, "value": { "river": 2240 }, "peak": { "river": 3570 } }
+    }
+  },
+  "sunworldContractRates2025": {
+    "confidence": "confirmed-2026-08-06",
+    "currency": "USD",
+    "unit": "per night",
+    "verified": true,
+    "fullBoard": {
+      "twinDouble_2guests": { "introductory": { "wilderness": 400, "river": 500 }, "value": { "wilderness": 700, "river": 800 }, "peak": { "wilderness": 1000, "river": 1100 } },
+      "singleStandard_1guest": { "introductory": { "wilderness": 300, "river": 370 }, "value": { "wilderness": 500, "river": 570 }, "peak": { "wilderness": 700, "river": 770 } },
+      "doubleSuite_2guests": { "introductory": { "river": 600 }, "value": { "river": 1000 }, "peak": { "river": 1300 } },
+      "singleSuite_1guest": { "introductory": { "river": 450 }, "value": { "river": 700 }, "peak": { "river": 1000 } },
+      "tripleSuite_3guests": { "introductory": { "river": 700 }, "value": { "river": 1200 }, "peak": { "river": 1600 } },
+      "quadrupleSuite_4guests": { "introductory": { "river": 800 }, "value": { "river": 1400 }, "peak": { "river": 1950 } }
+    },
+    "allInclusive": {
+      "twinDouble_2guests": { "introductory": { "wilderness": 600, "river": 700 }, "value": { "wilderness": 900, "river": 1000 }, "peak": { "wilderness": 1300, "river": 1400 } },
+      "singleStandard_1guest": { "introductory": { "wilderness": 400, "river": 470 }, "value": { "wilderness": 600, "river": 670 }, "peak": { "wilderness": 850, "river": 920 } },
+      "doubleSuite_2guests": { "introductory": { "river": 800 }, "value": { "river": 1200 }, "peak": { "river": 1600 } },
+      "singleSuite_1guest": { "introductory": { "river": 500 }, "value": { "river": 800 }, "peak": { "river": 1150 } },
+      "tripleSuite_3guests": { "introductory": { "river": 1000 }, "value": { "river": 1500 }, "peak": { "river": 2050 } },
+      "quadrupleSuite_4guests": { "introductory": { "river": 1200 }, "value": { "river": 1600 }, "peak": { "river": 2550 } }
+    }
+  },
+  "childrenPolicy": {
+    "age12Plus": "Considered adults",
+    "age3to11_ownRoom": "75% of rate",
+    "age3to11_sharingWithAdult": "50% of rate",
+    "under3_sharingWithAdult": "Complimentary, maximum 2 per room"
+  }
+}

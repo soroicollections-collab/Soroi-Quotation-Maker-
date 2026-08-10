@@ -1,0 +1,28 @@
+{
+  "$note": "Extracted 6 Aug 2026 via paginated pdftotext read (page 9 of 24) of 'EC-2026-Rates-40.pdf'. Adjacent-property caution applied: cross-checked this page's property name against the page before (Elsa's Kopje Meru, page 8) and after (Elephant Pepper Masai Mara, page 10) - each has its own clearly distinct header and no figures repeat between them, so no misattribution risk found.",
+  "property": "Sand River Masai Mara",
+  "operator": "Elewana Collection",
+  "region": "Masai Mara (Keekorok airstrip)",
+  "tier": "Rack and Nett (Nett = Rack x 0.60)",
+  "source": { "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/ELEWANA/EC-2026-Rates-40.pdf", "pdfPageIndex": 9, "validity": { "start": "2026-01-04", "end": "2027-01-03" } },
+  "seasons": { "high": "Jul 1-Oct 31, Dec 20-Jan 3", "mid": "Jan 4-Mar 31, Jun 1-Jun 30, Nov 1-Dec 19", "green": "Apr 1-May 31" },
+  "rates": {
+    "currency": "USD", "unit": "per person per night",
+    "fullBoard": {
+      "perPersonSharing": { "high": { "rack": 1076, "nett": 645 }, "mid": { "rack": 897, "nett": 538 }, "green": { "rack": 656, "nett": 394 } },
+      "singleRoom": { "high": { "rack": 1614, "nett": 968 }, "mid": { "rack": 1345, "nett": 807 }, "green": { "rack": 984, "nett": 591 } },
+      "tripleRoom_limitedAvailability": { "high": { "rack": 2421, "nett": 1452 }, "mid": { "rack": 2017, "nett": 1210 }, "green": { "rack": 1477, "nett": 886 } },
+      "familySuite2Adults2Children": { "high": { "rack": 4301, "nett": 2581 }, "mid": { "rack": 3587, "nett": 2152 }, "green": { "rack": 2622, "nett": 1573 } }
+    },
+    "gamePackage": {
+      "perPersonSharing": { "high": { "rack": 1276, "nett": 765 }, "mid": { "rack": 1097, "nett": 658 }, "green": { "rack": 856, "nett": 514 } },
+      "singleRoom": { "high": { "rack": 1814, "nett": 1088 }, "mid": { "rack": 1545, "nett": 927 }, "green": { "rack": 1184, "nett": 711 } },
+      "tripleRoom_limitedAvailability": { "high": { "rack": 2871, "nett": 1722 }, "mid": { "rack": 2467, "nett": 1480 }, "green": { "rack": 1927, "nett": 1156 } },
+      "familySuite2Adults2Children": { "high": { "rack": 5071, "nett": 3043 }, "mid": { "rack": 4336, "nett": 2601 }, "green": { "rack": 3357, "nett": 2014 } }
+    }
+  },
+  "mandatoryFees": { "maasaiMaraNationalReserveEntrance": { "adult": { "lowJanJun": 100, "highJulDec": 200 }, "child9to17": 50, "unit": "per person per day" } },
+  "childPolicy": { "note": "Elewana portfolio-wide policy (3-17 bracket) applies - see tortilis extraction for full detail." },
+  "transfers": { "toTalek": { "rack": 280, "nett": 252 }, "toMaraBridge": { "rack": 280, "nett": 252 } },
+  "inclusionsGamePackage": "Scheduled/shared game drives twice daily, Maasai cultural visit, balloon safari (on request, priced separately), airstrip transfer to/from Keekorok."
+}

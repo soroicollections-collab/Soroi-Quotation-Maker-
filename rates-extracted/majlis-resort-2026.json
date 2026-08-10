@@ -1,0 +1,90 @@
+{
+  "$note": "Extracted 6 Aug 2026, read directly (pdftotext -layout, poppler, 3-page document). The Majlis Resort — non-Soroi, Lamu. Folder named 'MAJLIS RESORT' in the 2026 tree. Skipped in this folder: 'Re_ 2026 Rates and Exciting Offers at The Majlis Resort.msg' (email), 'Return Flying Package Offer with Jambo Jet.pdf', 'Return Flying Package Offer with Safarilink.pdf', 'Return Flying package Offer - Safarilink and Jambojet Combo.pdf', 'Spa & Accommodation Offer.pdf', 'Stay Longer pay less Offers.pdf' — all pure marketing/add-on offer sheets with no core accommodation rate table, per task instructions. 2026 MAJLIS EA Resident Rates.pdf also NOT extracted (Resident tier, out of scope — non-resident is primary target).",
+  "property": "The Majlis Resort",
+  "region": "Lamu",
+  "tier": "STO Contract Rate — both Rack and Nett figures given on the same document, at 20% commission to Sunworld Safaris. Rack used as primary reference figure; Nett is Sunworld's actual buy-in cost.",
+  "residency": "Non-Resident",
+  "source": {
+    "file": "2026 CONTRACT RATES/KENYA/BEACH ACCOMODATION/MAJLIS RESORT/2026 MAJLIS Non Resident Rates (Sunworld Safaris).pdf",
+    "pdfPageIndex": [0, 1, 2],
+    "agreementParties": "The Majlis Resorts, Lamu Limited and Sunworld Safaris Ltd, at 20% commission",
+    "validity": { "start": "2026-01-08", "end": "2027-01-08" }
+  },
+  "confidence": "confirmed-2026-08-06",
+  "extractionMethod": { "note": "Read directly, 3-page single-property document." },
+  "structuralFindings": [
+    "Priced PER ROOM PER NIGHT (not per person) — a structural difference from every other property in this batch and from all Soroi properties. Room categories: Superior Room, Deluxe Room (both max 3), Junior Suite, Royal Suite (max 4) — 4 categories total, but Junior Suite and Royal Suite are only priced under the 'Per Triple Room (2 Adults 1 Child)' row, i.e. they have no distinct Twin/Double or Single figure on this card.",
+    "Two season bands only: 'Year Round' (08 Jan - 20 Dec) and 'Festive period' (21 Dec - 08 Jan, min 5-night stay) — simpler than most beach properties in this batch.",
+    "Meal plan differs by season: Year-Round is Half Board (bed, breakfast, a la carte lunch OR dinner); Festive Period is Full Board (bed, breakfast, a la carte lunch AND dinner) — the base meal plan itself changes with season, not just price.",
+    "Nett rate confirmed to be a flat ~20.8-21% discount off Rack across most rows (e.g. Superior Twin/Double: 380/480=79.2%; Deluxe Twin/Double: 470/590=79.7%), consistent with the stated 20% commission structure, though not perfectly uniform cell-to-cell — read as printed rather than assuming a single clean multiplier.",
+    "Children policy: 0-3 free; 4-11 sharing with 2 adults = 50% of adult; 4-11 in own room = 75% of room rate (max 3 children); single adult + one 4-11 child = Single Room Rate + 50% of adult rate for the child.",
+    "Rates stated inclusive of 16% VAT and 2% Room levy — already tax-inclusive, unlike some properties where taxes are added separately."
+  ],
+  "seasons": {
+    "yearRound": { "dateRange": "08 Jan 2026 - 20 Dec 2026", "mealPlan": "Half Board" },
+    "festive": { "dateRange": "21 Dec 2026 - 08 Jan 2027", "mealPlan": "Full Board", "minimumStay": "5 nights" }
+  },
+  "rates": {
+    "currency": "USD",
+    "unit": "per room per night",
+    "rack": {
+      "yearRound": {
+        "twinDouble": { "superior": 480, "deluxe": 590 },
+        "single": { "superior": 305, "deluxe": 360 },
+        "tripleRoom_2Adults1Child": { "superior": 620, "deluxe": 725, "juniorSuite": 880, "royalSuite": 1790 }
+      },
+      "festive": {
+        "twinDouble": { "superior": 780, "deluxe": 890 },
+        "single": { "superior": 500, "deluxe": 590 },
+        "tripleRoom_2Adults1Child": { "superior": 970, "deluxe": 1110, "juniorSuite": 1400, "royalSuite": 2100 }
+      }
+    },
+    "nett": {
+      "yearRound": {
+        "twinDouble": { "superior": 380, "deluxe": 470 },
+        "single": { "superior": 240, "deluxe": 290 },
+        "tripleRoom_2Adults1Child": { "superior": 500, "deluxe": 580, "juniorSuite": 700, "royalSuite": 1430 }
+      },
+      "festive": {
+        "twinDouble": { "superior": 620, "deluxe": 710 },
+        "single": { "superior": 400, "deluxe": 470 },
+        "tripleRoom_2Adults1Child": { "superior": 780, "deluxe": 890, "juniorSuite": 1120, "royalSuite": 1680 }
+      }
+    }
+  },
+  "childPolicy": {
+    "age0to3": "Free",
+    "age4to11_sharingWith2Adults": "50% of adult rate",
+    "age4to11_ownRoom": "75% of room rate (max 3 children)",
+    "singleAdultWithChild4to11": "Single Room Rate + 50% of adult rate (for the child)"
+  },
+  "packageAddOn": "USD 50 per person per meal, add-on to Full Board.",
+  "inclusions": [
+    "Bed, breakfast, a la carte lunch/dinner per meal plan",
+    "Bottled mineral water in room, 2 x 700ml per person per day",
+    "Return Manda Airport transfers by motor boat (~10 min), Kayaking",
+    "Wi-Fi in main areas"
+  ],
+  "paymentTerms": "20% deposit due on confirmed bookings; full balance 30 days prior to arrival; last-minute bookings paid in full on confirmation.",
+  "cancellationPolicy": {
+    "90to60Days": "20% of total cost",
+    "60to35Days": "30% of total cost",
+    "34to20Days": "50% of total cost",
+    "19toArrival": "100% of total cost"
+  },
+  "notExtracted": {
+    "file": "2026 CONTRACT RATES/KENYA/BEACH ACCOMODATION/MAJLIS RESORT/2026 MAJLIS EA Resident Rates (Sunworld Safaris).pdf",
+    "reason": "East Africa/Resident tier — out of scope, non-resident is primary target."
+  },
+  "skippedFiles": [
+    "Re_ 2026 Rates and Exciting Offers at The Majlis Resort.msg (email)",
+    "Return Flying Package Offer with Jambo Jet.pdf (marketing add-on, no accommodation rate table)",
+    "Return Flying Package Offer with Safarilink.pdf (marketing add-on, no accommodation rate table)",
+    "Return Flying package Offer - Safarilink and Jambojet Combo.pdf (marketing add-on, no accommodation rate table)",
+    "Spa & Accommodation Offer.pdf (marketing add-on, no accommodation rate table)",
+    "Stay Longer pay less Offers.pdf (marketing add-on, no accommodation rate table)"
+  ],
+  "portfolioWideTerms": {
+    "note": "Non-Soroi property — CLAUDE.md's Soroi-portfolio-wide terms do not apply. Room-based (not per-person) pricing unit is unique among properties extracted in this batch."
+  }
+}

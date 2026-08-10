@@ -1,0 +1,39 @@
+{
+  "$note": "Extracted 6 Aug 2026 from separate Non-Resident (20% commission) and Resident (15% commission) rate sheets.",
+  "property": "Entumoto Safari Camp",
+  "operator": "Entumoto",
+  "region": "Mara Siana Conservancy, Maasai Mara",
+  "tier": "Non-Resident 20% Comm Level (USD) and Resident 15% Comm Level (KSH)",
+  "source": {
+    "files": [
+      "2026 CONTRACT RATES/KENYA/ACCOMODATION/ENTUMOTO/Entumoto Non-resident Rates 2026 - 20 Comm Level.pdf",
+      "2026 CONTRACT RATES/KENYA/ACCOMODATION/ENTUMOTO/Entumoto Resident Rates 2026 - 15 Comm Level.pdf"
+    ]
+  },
+  "seasons": { "high": "20 Dec-5 Jan & 16 Jun-30 Sep", "mid": "6 Jan-15 Apr & 1 Oct-7 Nov", "low": "16 Apr-15 Jun & 8 Nov-19 Dec" },
+  "rates": {
+    "unit": "per person per night unless noted",
+    "nonResidentUSD": {
+      "classicTwinDouble_singleOcc": { "allInclusive": { "high": 608, "mid": 512, "low": 416 }, "fullBoard": { "high": 544, "mid": 432, "low": 336 } },
+      "classicTwinDouble_perAdultSharing": { "allInclusive": { "high": 520, "mid": 440, "low": 360 }, "fullBoard": { "high": 456, "mid": 360, "low": 280 } },
+      "classicTwinDouble_perChildSharing": { "allInclusive": { "high": 260, "mid": 220, "low": 180 }, "fullBoard": { "high": 228, "mid": 180, "low": 140 } },
+      "classicFamilyTent_flatUnit": { "allInclusive": { "high": 1560, "mid": 1320, "low": 1080 }, "fullBoard": { "high": 1368, "mid": 1080, "low": 840 } },
+      "luxuryTwinDouble_singleOcc": { "allInclusive": { "high": 776, "mid": 704, "low": 488 }, "fullBoard": { "high": 712, "mid": 624, "low": 408 } },
+      "luxuryTwinDouble_perAdultSharing": { "allInclusive": { "high": 664, "mid": 600, "low": 416 }, "fullBoard": { "high": 600, "mid": 520, "low": 336 } },
+      "luxuryTwinDouble_perChildSharing": { "allInclusive": { "high": 332, "mid": 300, "low": 208 }, "fullBoard": { "high": 300, "mid": 260, "low": 168 } },
+      "luxuryFamilyTent_flatUnit": { "allInclusive": { "high": 2656, "mid": 2400, "low": 1664 }, "fullBoard": { "high": 2400, "mid": 2080, "low": 1344 } }
+    },
+    "residentKES": {
+      "classicTwinDouble_singleOcc": { "high": 45900, "mid": 32300, "low": 28050 },
+      "classicTwinDouble_perAdultSharing": { "high": 39100, "mid": 27200, "low": 23800 },
+      "luxuryTwinDouble_singleOcc": { "high": 58650, "mid": 42500, "low": 32300 },
+      "luxuryTwinDouble_perAdultSharing": { "high": 49300, "mid": 35700, "low": 27200 }
+    }
+  },
+  "mandatoryFees": {
+    "maasaiMaraParkFee_perPersonPerDay12h": { "adultUSD": { "high_JulDec": 200, "low_JanJun": 100 }, "childUSD9to17": 50, "adultKES": { "high": 3000, "low": 1500 }, "childKES": 1000 },
+    "maraSianaConservancyFee_perPersonPerNight": { "adultUSD": 116, "childUSD9to17": 58, "adultKES": 2000, "childKES": 1000 }
+  },
+  "childPolicy": { "0to4": "Free", "5to11": "Children's rate", "12plus": "Adult rate" },
+  "notes": "All Inclusive package includes activities/game drives; Full Board excludes activities. 30% deposit required within 10 days."
+}

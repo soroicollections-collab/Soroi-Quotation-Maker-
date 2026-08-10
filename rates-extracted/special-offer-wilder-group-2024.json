@@ -1,0 +1,27 @@
+{
+  "$note": "Extracted 6 Aug 2026 from SPECIAL OFFERS/WILDER GROUP/FW WILDER SPECIALS.msg via extract_msg Python library. Body text extracted cleanly, but the substantive offer content in the original marketing email is entirely image-based (two embedded image URLs, hosted on mcusercontent.com, not retrievable from the .msg body text) - the plain-text body only contains the validity terms and a 'Fly for FREE' subject-line style promo, no room rates.",
+  "offerStatus": "promotional - confirm current validity before use",
+  "operator": "The Wilder Group",
+  "propertiesCovered": "Wilder Camps (not itemized by name in the extractable text - see limitation note)",
+  "offerName": "Fly for FREE with Wilder Group (inferred from a 'BOOK' mailto link subject line - actual offer graphic not extractable)",
+  "source": {
+    "file": "SPECIAL OFFERS/WILDER GROUP/FW WILDER SPECIALS.msg",
+    "emailDate": "2024-09-02",
+    "extractionMethod": "extract_msg Python library, plain-text body only - two offer images referenced by URL could not be fetched/read (no image OCR performed)"
+  },
+  "validity": {
+    "statedText": "1st September 2024 - 20th December 2024",
+    "verified": true,
+    "expiryAssessment": "EXPIRED - validity window closed well over a year before today's date (6 Aug 2026)."
+  },
+  "offerMechanics": {
+    "exclusions": "Exclusive of all Park & Conservancy Fees",
+    "scope": "Applies to Ground Package Stays Only",
+    "residency": "Applies to Non-Residents Only",
+    "flightAvailability": "Subject to Availability",
+    "combinability": "Offer cannot be combined with other specials"
+  },
+  "noPricedFiguresInSource": true,
+  "verified": true,
+  "confidenceNote": "No dollar/room-rate figures exist anywhere in the extractable text - the actual offer (what 'Fly for FREE' means in pricing terms, and which specific Wilder properties it applies to) is only visible in two embedded marketing images this extraction could not read. Do not infer a rate or property list for this offer; if it's ever needed for a real quote, someone will need to open the original email and view the images directly, or request a text version from The Wilder Group (contact: experiences@wilder-group.com / +254 733 258 120)."
+}

@@ -1,0 +1,33 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftotext -layout. NOT a Soroi property. Single private villa property, sold as a whole unit regardless of occupancy - a distinct pricing model from per-person properties in this dataset.",
+  "property": "Kitumo Mara Lodges",
+  "region": "Off C12 Road, Sekenani, Maasai Mara",
+  "unitType": "Private Double Floor Villa - 2 King bedrooms (en-suite) + 1 bunk bedroom, sleeps 6. Sold as a whole unit regardless of occupancy.",
+  "source": { "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/KITUMO MARA/Kitumo Mara Rate sheet 2026.pdf", "tier": "Tour Operator Rates 2026, net non-commissionable", "skipped": "Kitumo Video.mp4 - marketing video, not a rate document" },
+  "confidence": "confirmed-2026-08-06",
+  "unit": "per night, Full Board, whole villa (priced by guest count, not per person)",
+  "seasons": { "low": ["Apr", "May", "Jun"], "medium": ["Jan", "Feb", "Mar", "Nov", "Dec"], "high": ["Jul", "Aug", "Sep", "Oct"] },
+  "internationalRatesUSD": {
+    "2guests": { "low": 432, "medium": 540, "high": 648 },
+    "3guests": { "low": 648, "medium": 810, "high": 972 },
+    "4guests": { "low": 864, "medium": 1080, "high": 1296 },
+    "5guests": { "low": 1080, "medium": 1350, "high": 1620 },
+    "6guests": { "low": 1296, "medium": 1630, "high": 1944 },
+    "verified": true
+  },
+  "eastAfricanRatesKES": {
+    "2guests": { "low": 43200, "medium": 54000, "high": 64800 },
+    "3guests": { "low": 64800, "medium": 81000, "high": 97200 },
+    "4guests": { "low": 86400, "medium": 108000, "high": 129600 },
+    "5guests": { "low": 108000, "medium": 135000, "high": 162000 },
+    "6guests": { "low": 129600, "medium": 162000, "high": 194400 },
+    "verified": true
+  },
+  "confidenceNote": "6-guest medium-season figure (1,630 USD) breaks the otherwise-exact linear per-guest scaling seen everywhere else in this table (2 guests x3 = 6-guest expected value of 1,620, not 1,630; every other cell in the whole table scales exactly linearly from the 2-guest base). Reproduced as printed since it may be an intentional small step-up rather than a typo, but flagged given how clean every other cell's scaling is.",
+  "inclusions": ["All meals, soft drinks, bottled water", "Daily housekeeping and Wi-Fi", "Private staff and personal chef", "Robes, towels, slippers", "Catered to all dietary requirements", "2 living areas with TV/satellite", "Tea & coffee room + kids play area", "Balcony + private pool"],
+  "exclusions": ["Alcohol (extra charge)"],
+  "childPolicy": { "age0to8SharingWithAdult": "Free", "age9to11SharingWithAdult": "50% of accommodation rate", "age12Plus": "Full adult rate" },
+  "paymentTerms": "50% deposit at time of booking",
+  "cancellationPolicy": "Non-refundable; transferable, may incur charges",
+  "otherNotes": "Seasonal surcharges may apply during peak periods; group/long-stay rates and all-inclusive/tailor-made packages available on request."
+}

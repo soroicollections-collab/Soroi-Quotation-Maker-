@@ -1,0 +1,110 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftotext -layout from two documents in 'A&K SANCTUARY/': 'A&K Sanctuary East Africa - 2027 Full Board Rates - 25%.pdf' (28pp) and '...2027 Game Package Rates - 25%.pdf' (35pp). Both are combined Kenya+Tanzania documents; only the Kenya section (3 properties: Olonana Lodge, Tambarare Camp, Kitirua Plains Lodge) was extracted for this Kenya-accommodations slice. Companion 2028-dated files in the same folder were NOT extracted (out of scope - 2027 only). Tanzania section (Swala Camp, Ngorongoro Crater Camp, Kichakani Camp) also NOT extracted - out of scope for Kenya slice.",
+  "operator": "A&K Sanctuary (Abercrombie & Kent)",
+  "properties": ["Olonana Lodge (Maasai Mara)", "Tambarare Camp (Laikipia / Ol Pejeta area)", "Kitirua Plains Lodge (Amboseli)"],
+  "tier": "'25%' Nett rate off rack (file name states 25% - not independently arithmetic-verified against a separate rack sheet since no rack-only Kenya PDF was found in this folder)",
+  "currency": "USD",
+  "unit": "per person per night sharing, EXCEPT Geoffrey Kent Suite (Olonana), Private Villa (Tambarare), and Two-bedroom Suite (Kitirua) which are priced per unit (max 4 adults)",
+  "validity": { "start": "2027-01-03", "end": "2028-01-02" },
+  "confidence": "confirmed-2027-08-06 for all rate cells transcribed below - read directly from paginated -layout text, tables are clean/unambiguous",
+  "rates": {
+    "fullBoard": {
+      "note": "All meals + non-alcoholic AND alcoholic beverages incl. premium brands, transfers to/from nearest airstrip, laundry, medical evacuation. Excludes park/conservancy fees, additional activities, flights.",
+      "Olonana Lodge - Suite & Family Suite (per person sharing)": {
+        "03Jan-31Mar_01-15Jun": { "perPerson1to3n": 743, "single1to3n": 1110, "child1to3n": 375, "thirdAdult1to3n": 600, "perPerson4to6n": 630, "single4to6n": 953, "child4to6n": 323, "thirdAdult4to6n": 510, "perPerson7plusN": 563, "single7plusN": 840, "child7plusN": 285, "thirdAdult7plusN": 450 },
+        "01Apr-31May_01Nov-20Dec": { "perPerson1to3n": 600, "single1to3n": 600, "child1to3n": 300, "thirdAdult1to3n": 450, "perPerson4to6n": 518, "single4to6n": 518, "child4to6n": 263, "thirdAdult4to6n": 390, "perPerson7plusN": 450, "single7plusN": 450, "child7plusN": 225, "thirdAdult7plusN": 338 },
+        "16Jun-31Oct_21Dec-02Jan28": "Not Applicable on Full Board (Olonana closed/unavailable on Full Board basis in this window - Game Package IS available, see below)"
+      },
+      "Olonana Lodge - Geoffrey Kent Suite (per suite, max 4)": {
+        "03Jan-31Mar_01-15Jun": { "perSuite1to3n": 2475, "child1to3n": 450, "fifthAdult1to3n": 825, "perSuite4to6n": 2100, "child4to6n": 375, "fifthAdult4to6n": 750, "perSuite7plusN": 1875, "child7plusN": 375, "fifthAdult7plusN": 675 },
+        "01Apr-31May_01Nov-20Dec": { "perSuite1to3n": 2025, "child1to3n": 375, "fifthAdult1to3n": 675, "perSuite4to6n": 1725, "child4to6n": 300, "fifthAdult4to6n": 600, "perSuite7plusN": 1500, "child7plusN": 300, "fifthAdult7plusN": 525 },
+        "16Jun-31Oct_21Dec-02Jan28": "Not Applicable"
+      },
+      "Tambarare Camp - Tented Suite (per person sharing)": {
+        "03Jan-31Mar_01-15Jun": { "perPerson1to3n": 563, "single1to3n": 1050, "child1to3n": 353, "thirdAdult1to3n": 563, "perPerson4to6n": 600, "single4to6n": 900, "child4to6n": 300, "thirdAdult4to6n": 480, "perPerson7plusN": 525, "single7plusN": 788, "child7plusN": 263, "thirdAdult7plusN": 420 },
+        "01Apr-31May_01Nov-20Dec": { "perPerson1to3n": 465, "single1to3n": 465, "child1to3n": 233, "thirdAdult1to3n": 353, "perPerson4to6n": 398, "single4to6n": 398, "child4to6n": 203, "thirdAdult4to6n": 300, "perPerson7plusN": 353, "single7plusN": 353, "child7plusN": 180, "thirdAdult7plusN": 270 },
+        "16Jun-31Oct_21Dec-02Jan28": { "perPerson1to3n": 698, "single1to3n": 1230, "child1to3n": 413, "thirdAdult1to3n": 698, "perPerson4to6n": 743, "single4to6n": 1118, "child4to6n": 375, "thirdAdult4to6n": 638, "perPerson7plusN": 698, "single7plusN": 1050, "child7plusN": 353, "thirdAdult7plusN": 600 }
+      },
+      "Tambarare Camp - Private Villa (per villa, max 4)": {
+        "03Jan-31Mar_01-15Jun": { "perVilla1to3n": 1875, "child1to3n": 450, "fifthAdult1to3n": 675, "perVilla4to6n": 2025, "child4to6n": 375, "fifthAdult4to6n": 675, "perVilla7plusN": 1800, "child7plusN": 300, "fifthAdult7plusN": 600 },
+        "01Apr-31May_01Nov-20Dec": { "perVilla1to3n": 1575, "child1to3n": 300, "fifthAdult1to3n": 525, "perVilla4to6n": 1350, "child4to6n": 225, "fifthAdult4to6n": 450, "perVilla7plusN": 1200, "child7plusN": 225, "fifthAdult7plusN": 450 },
+        "16Jun-31Oct_21Dec-02Jan28": { "perVilla1to3n": 3075, "child1to3n": 525, "fifthAdult1to3n": 825, "perVilla4to6n": 3300, "child4to6n": 450, "fifthAdult4to6n": 825, "perVilla7plusN": 3075, "child7plusN": 450, "fifthAdult7plusN": 825 }
+      },
+      "Kitirua Plains Lodge - Suite (per person sharing)": {
+        "03Jan-15Jun_01Nov-20Dec": { "perPerson1to3n": 593, "single1to3n": 593, "child1to3n": 300, "thirdAdult1to3n": 450, "perPerson4to6n": 510, "single4to6n": 510, "child4to6n": 255, "thirdAdult4to6n": 383, "perPerson7plusN": 450, "single7plusN": 450, "child7plusN": 225, "thirdAdult7plusN": 338 },
+        "16Jun-31Oct_21Dec-02Jan28": { "perPerson1to3n": 1283, "single1to3n": 1928, "child1to3n": 645, "thirdAdult1to3n": 1095, "perPerson4to6n": 1155, "single4to6n": 1740, "child4to6n": 585, "thirdAdult4to6n": 983, "perPerson7plusN": 1095, "single7plusN": 1643, "child7plusN": 555, "thirdAdult7plusN": 938 }
+      },
+      "Kitirua Plains Lodge - Two-bedroom Suite (per suite, max 4)": {
+        "03Jan-15Jun_01Nov-20Dec": { "perSuite1to3n": 2025, "child1to3n": 375, "fifthAdult1to3n": 675, "perSuite4to6n": 1725, "child4to6n": 300, "fifthAdult4to6n": 600, "perSuite7plusN": 1500, "child7plusN": 300, "fifthAdult7plusN": 525 },
+        "16Jun-31Oct_21Dec-02Jan28": { "perSuite1to3n": 5700, "child1to3n": 750, "fifthAdult1to3n": 1425, "perSuite4to6n": 5100, "child4to6n": 675, "fifthAdult4to6n": 1275, "perSuite7plusN": 4875, "child7plusN": 675, "fifthAdult7plusN": 1275 }
+      },
+      "verified": true
+    },
+    "gamePackage": {
+      "note": "Adds twice-daily game drives (or one full-day drive + community/wildlife activity per property - see inclusionsByProperty), vs Full Board's activities excluded. Geoffrey Kent Suite/Private Villa additionally include exclusive vehicle, private guide, private chef, dedicated waiter/housekeeper on Game Package (also included on Full Board per source wording - same suite-level inclusion applies both bases).",
+      "Olonana Lodge - Suite & Family Suite (per person sharing)": {
+        "03Jan-31Mar_01-15Jun": { "perPerson1to3n": 923, "single1to3n": 1388, "child1to3n": 465, "thirdAdult1to3n": 743, "perPerson4to6n": 788, "single4to6n": 1185, "child4to6n": 398, "thirdAdult4to6n": 630, "perPerson7plusN": 698, "single7plusN": 1050, "child7plusN": 353, "thirdAdult7plusN": 563 },
+        "01Apr-31May_01Nov-20Dec": { "perPerson1to3n": 795, "single1to3n": 795, "child1to3n": 398, "thirdAdult1to3n": 600, "perPerson4to6n": 683, "single4to6n": 683, "child4to6n": 345, "thirdAdult4to6n": 518, "perPerson7plusN": 600, "single7plusN": 600, "child7plusN": 300, "thirdAdult7plusN": 450 },
+        "16Jun-31Oct_21Dec-02Jan28": { "perPerson1to3n": 1898, "single1to3n": 2850, "child1to3n": 953, "thirdAdult1to3n": 1620, "perPerson4to6n": 1710, "single4to6n": 2565, "child4to6n": 855, "thirdAdult4to6n": 1455, "perPerson7plusN": 1620, "single7plusN": 2430, "child7plusN": 810, "thirdAdult7plusN": 1380, "confidenceNote": "Note: this window is priced on Game Package but 'Not Applicable' on Full Board for Olonana - not an extraction error, both source files confirm this independently." }
+      },
+      "Olonana Lodge - Geoffrey Kent Suite (per suite, max 4)": {
+        "03Jan-31Mar_01-15Jun": { "perSuite1to3n": 3075, "child1to3n": 525, "fifthAdult1to3n": 1050, "perSuite4to6n": 2625, "child4to6n": 450, "fifthAdult4to6n": 900, "perSuite7plusN": 2325, "child7plusN": 450, "fifthAdult7plusN": 825 },
+        "01Apr-31May_01Nov-20Dec": { "perSuite1to3n": 2625, "child1to3n": 450, "fifthAdult1to3n": 1050, "perSuite4to6n": 2325, "child4to6n": 450, "fifthAdult4to6n": 825, "perSuite7plusN": 2025, "child7plusN": 375, "fifthAdult7plusN": 675 },
+        "16Jun-31Oct_21Dec-02Jan28": { "perSuite1to3n": 8400, "child1to3n": 1050, "fifthAdult1to3n": 2100, "perSuite4to6n": 7575, "child4to6n": 975, "fifthAdult4to6n": 1950, "perSuite7plusN": 7200, "child7plusN": 900, "fifthAdult7plusN": 1800 }
+      },
+      "Tambarare Camp - Tented Suite (per person sharing)": {
+        "03Jan-31Mar_01-15Jun": { "perPerson1to3n": 698, "single1to3n": 1050, "child1to3n": 353, "thirdAdult1to3n": 563, "perPerson4to6n": 600, "single4to6n": 900, "child4to6n": 300, "thirdAdult4to6n": 480, "perPerson7plusN": 525, "single7plusN": 788, "child7plusN": 263, "thirdAdult7plusN": 420 },
+        "01Apr-31May_01Nov-20Dec": { "perPerson1to3n": 615, "single1to3n": 615, "child1to3n": 308, "thirdAdult1to3n": 465, "perPerson4to6n": 525, "single4to6n": 525, "child4to6n": 263, "thirdAdult4to6n": 398, "perPerson7plusN": 465, "single7plusN": 465, "child7plusN": 233, "thirdAdult7plusN": 353 },
+        "16Jun-31Oct_21Dec-02Jan28": { "perPerson1to3n": 818, "single1to3n": 1230, "child1to3n": 413, "thirdAdult1to3n": 698, "perPerson4to6n": 743, "single4to6n": 1118, "child4to6n": 375, "thirdAdult4to6n": 638, "perPerson7plusN": 698, "single7plusN": 1050, "child7plusN": 353, "thirdAdult7plusN": 600 }
+      },
+      "Tambarare Camp - Private Villa (per villa, max 4)": {
+        "03Jan-31Mar_01-15Jun": { "perVilla1to3n": 2325, "child1to3n": 450, "fifthAdult1to3n": 825, "perVilla4to6n": 2025, "child4to6n": 375, "fifthAdult4to6n": 675, "perVilla7plusN": 1800, "child7plusN": 300, "fifthAdult7plusN": 600 },
+        "01Apr-31May_01Nov-20Dec": { "perVilla1to3n": 2100, "child1to3n": 375, "fifthAdult1to3n": 750, "perVilla4to6n": 1800, "child4to6n": 300, "fifthAdult4to6n": 600, "perVilla7plusN": 1575, "child7plusN": 300, "fifthAdult7plusN": 525 },
+        "16Jun-31Oct_21Dec-02Jan28": { "perVilla1to3n": 3600, "child1to3n": 525, "fifthAdult1to3n": 900, "perVilla4to6n": 3300, "child4to6n": 450, "fifthAdult4to6n": 825, "perVilla7plusN": 3075, "child7plusN": 450, "fifthAdult7plusN": 825 }
+      },
+      "Kitirua Plains Lodge - Suite (per person sharing)": {
+        "03Jan-15Jun_01Nov-20Dec": { "perPerson1to3n": 788, "single1to3n": 788, "child1to3n": 398, "thirdAdult1to3n": 593, "perPerson4to6n": 675, "single4to6n": 675, "child4to6n": 338, "thirdAdult4to6n": 510, "perPerson7plusN": 593, "single7plusN": 593, "child7plusN": 300, "thirdAdult7plusN": 450 },
+        "16Jun-31Oct_21Dec-02Jan28": { "perPerson1to3n": 1508, "single1to3n": 2265, "child1to3n": 758, "thirdAdult1to3n": 1283, "perPerson4to6n": 1358, "single4to6n": 2040, "child4to6n": 683, "thirdAdult4to6n": 1155, "perPerson7plusN": 1283, "single7plusN": 1928, "child7plusN": 645, "thirdAdult7plusN": 1095 }
+      },
+      "Kitirua Plains Lodge - Two-bedroom Suite (per suite, max 4)": {
+        "03Jan-15Jun_01Nov-20Dec": { "perSuite1to3n": 2625, "child1to3n": 450, "fifthAdult1to3n": 900, "perSuite4to6n": 2250, "child4to6n": 375, "fifthAdult4to6n": 750, "perSuite7plusN": 2025, "child7plusN": 375, "fifthAdult7plusN": 675 },
+        "16Jun-31Oct_21Dec-02Jan28": { "perSuite1to3n": 6675, "child1to3n": 900, "fifthAdult1to3n": 1725, "perSuite4to6n": 6000, "child4to6n": 825, "fifthAdult4to6n": 1500, "perSuite7plusN": 5700, "child7plusN": 750, "fifthAdult7plusN": 1425 }
+      },
+      "verified": true
+    }
+  },
+  "inclusionsByProperty": {
+    "Olonana Lodge": "Game Package adds: twice daily game drives OR one full day game drive + Maasai community visit",
+    "Tambarare Camp": "Game Package adds: twice daily game drives OR one full day game drive + Northern White Rhino Encounter (once per person per stay)",
+    "Kitirua Plains Lodge": "Game Package adds: twice daily game drives + Maasai community visit",
+    "verified": true
+  },
+  "mandatoryFees": {
+    "note": "Park/Conservancy fees are excluded from BOTH rate bases and listed as 'Price on request' on the additional-services page for all three Kenya properties (Olonana - park fees; Tambarare - conservancy fees; Kitirua - Amboseli National Park fees AND conservancy fees). No dollar figure given anywhere in either document.",
+    "olonanaParkFees": "Price on request - not priced in source",
+    "tambarareConservancyFees": "Price on request - not priced in source",
+    "kitiruaParkAndConservancyFees": "Price on request - not priced in source",
+    "verified": false,
+    "confidenceNote": "[Unverified - gap] These are mandatory fees per the inclusions/exclusions list but the source genuinely gives no figure ('Price on request'), not an extraction miss. Must be obtained directly from A&K Sanctuary before finalizing a quote including these properties."
+  },
+  "childPolicy": {
+    "age6AndYounger": "Free of charge",
+    "age7to15_sharingWith1Adult": "Full adult rate applies",
+    "age7to15_sharingWith2Adults": "Child rate applies",
+    "twoChildren15AndYoungerSharingWith1Adult": "One child rate + one adult rate applies",
+    "age16plus": "Full adult rate applies",
+    "childPolicyNote": "Children 15 and younger must share with an adult. A private vehicle must be booked for game drives for families with children aged 5 and younger (all three properties).",
+    "propertyNote": "Tambarare Camp explicitly states 'Children of all ages welcome' - Olonana and Kitirua rows are blank in the source table (same age-restriction wording block applies to all three per the shared paragraph beneath), interpreted as the same policy applying portfolio-wide across all 3 Kenya properties.",
+    "verified": true
+  },
+  "tripleOccupancy": {
+    "Olonana Lodge": "3 family suites available per night for triple occupancy, subject to availability",
+    "Tambarare Camp": "2 tented suites available per night for triple occupancy, subject to availability",
+    "Kitirua Plains Lodge": "3 suites available per night for triple occupancy, subject to availability",
+    "verified": true
+  },
+  "singleSupplement": {
+    "note": "No single supplement charged 01 Jan-31 May and 01 Sep-31 Dec 2027 (single occupancy charged at listed single rates always; supplement-free window is specifically about when the 'single' column rate is NOT inflated above per-person sharing - in practice the tables above already show single = per-person-sharing in the 01Apr-31May/01Nov-20Dec season for all 3 properties, consistent with this note).",
+    "verified": true
+  }
+}

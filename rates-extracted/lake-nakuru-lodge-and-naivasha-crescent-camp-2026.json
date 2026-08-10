@@ -1,0 +1,73 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftotext -layout. NOT Soroi properties. Two related properties (same owner/manager Joyce Maina, same Nairobi booking office at Flamingo Towers) - Lake Nakuru Lodge and Lake Naivasha Crescent Camp. Files for both are cross-duplicated across the 'LAKE NAIVASHA CRESCENT CAMP' and 'LAKE NAKURU LODGE' folders (confirmed byte-identical via md5) - genuine duplicates, not different documents. One additional file, 'Lake Nakuru Lodge 2026 - Sunworld Safaris.pdf', is a single combined contract LETTER that itself contains BOTH properties' Sunworld-specific contract rates (letter switches from Lake Nakuru Lodge terms to Lake Naivasha Crescent Camp terms partway through) - this is a third, distinct rate source, not a duplicate of the two tariff-sheet PDFs.",
+  "properties": ["Lake Nakuru Lodge", "Lake Naivasha Crescent Camp"],
+  "source": {
+    "nakuruTariffSheet": "2026 CONTRACT RATES/KENYA/ACCOMODATION/LAKE NAKURU LODGE/Lake Nakuru Lodge Tariff Rates-Nakuru 2026.pdf (byte-identical duplicate also in LAKE NAIVASHA CRESCENT CAMP folder as 'Lake Nakuru Lodge- Bird Watchers Paradise - Tariff Rates-Nakuru 2026.pdf')",
+    "naivashaTariffSheet": "2026 CONTRACT RATES/KENYA/ACCOMODATION/LAKE NAIVASHA CRESCENT CAMP/Lake Naivasha Crescent Camp - Tariff Rates-Naivasha 2026.pdf (byte-identical duplicate also in LAKE NAKURU LODGE folder as 'Lake Nakuru Lodge  Tariff Rates-Naivasha 2026.pdf', a misnamed copy)",
+    "sunworldContractLetter": "2026 CONTRACT RATES/KENYA/ACCOMODATION/LAKE NAKURU LODGE/Lake Nakuru Lodge 2026 - Sunworld Safaris.pdf (letter dated 2025-05-09, covers BOTH properties)"
+  },
+  "confidence": "confirmed-2026-08-06",
+  "confidenceNote_criticalDiscrepancy": "The two Tariff Sheets and the Sunworld Contract Letter give MATERIALLY DIFFERENT figures and even different room-category structures for both properties, all nominally covering the same 2025/2026 period. Tariff Sheets use Single/Double/Triple by room name (Deluxe/Junior/Senior Suite for Nakuru; Luxury Tent for Naivasha) with a 2-season split (Low/High). The Sunworld Letter uses Single/Double/Triple/Junior Suite(2pax)/Senior Suite(2pax) for Nakuru with a 4-period split, and Single/Double/Triple only for Naivasha - and its actual dollar figures for equivalent categories are lower than the Tariff Sheets (e.g. Nakuru Deluxe/Standard Single: Tariff Sheet Low $220 vs Sunworld Letter low-equivalent period 01/04-30/06 $124; High season Tariff Sheet $330 vs Sunworld Letter equivalent period $234-245). Both sources are reproduced in full below, clearly separated - do NOT merge or average them. Confirm directly with the properties/Sunworld which is the currently governing rate before quoting.",
+  "currency": "USD (non-resident) / KES (resident)",
+  "lakeNakuruLodge_tariffSheet": {
+    "unit": "per person, Full Board",
+    "seasons": { "low": "01 Apr 26 - 30 Jun 26", "high": ["16 Dec 25 - 31 Mar 26", "01 Jul 26 - 15 Dec 26"] },
+    "nonResidentUSD": { "deluxeRoom": { "low": { "single": 220, "double": 330, "triple": 418 }, "high": { "single": 330, "double": 440, "triple": 550 } }, "juniorSuite": { "low": { "single": 275, "double": 385, "triple": 440 }, "high": { "single": 385, "double": 506, "triple": 660 } }, "seniorSuite": { "low": { "single": 330, "double": 418, "triple": 462 }, "high": { "single": 468, "double": 605, "triple": 787 } } },
+    "residentKES": { "deluxeRoom": { "low": { "single": 14200, "double": 18000, "triple": 25000 }, "high": { "single": 18500, "double": 24000, "triple": 30600 } }, "juniorSuite": { "low": { "single": 18400, "double": 22800, "triple": 29400 }, "high": { "single": 25000, "double": 30500, "triple": 36000 } }, "seniorSuite": { "low": { "single": 20600, "double": 26100, "triple": 33800 }, "high": { "single": 28300, "double": 32700, "triple": 41050 } } },
+    "childPolicy": { "age3to12SharingWithParents": "50% of adult rate", "childOwnRoom": "75% of room rate" },
+    "christmasSupplement": { "resident": { "adult": 3000, "child": 2000, "currency": "KES" }, "nonResident": { "adult": 50, "child": 30, "currency": "USD" } },
+    "easterPeriod": "High season rates apply",
+    "verified": true
+  },
+  "lakeNaivashaCrescentCamp_tariffSheet": {
+    "unit": "per person, Full Board",
+    "roomType": "Luxury Tent",
+    "seasons": { "low": "01 Apr 26 - 30 Jun 26", "high": ["16 Dec 25 - 31 Mar 26", "01 Jul 26 - 15 Dec 26"] },
+    "nonResidentUSD": { "low": { "single": 220, "double": 308, "triple": 385 }, "high": { "single": 297, "double": 396, "triple": 506 } },
+    "residentKES": { "low": { "single": 12100, "double": 17600, "triple": 23100 }, "high": { "single": 15400, "double": 22000, "triple": 26400 } },
+    "childPolicy": { "age3to12SharingWithParents": "50% of adult rate", "childOwnRoom": "75% of room rate" },
+    "christmasSupplement": { "resident": { "adult": 3000, "child": 2000, "currency": "KES" }, "nonResident": { "adult": 50, "child": 30, "currency": "USD" } },
+    "easterPeriod": "High season rates apply",
+    "verified": true
+  },
+  "lakeNakuruLodge_sunworldContractLetter_seeDiscrepancyNote": {
+    "unit": "per person, Full Board, non-resident, USD",
+    "periods": {
+      "16Dec25to31Mar26": { "single": 234, "double": 310, "triple": 402, "oneBedroomJuniorSuite2pax": 454, "oneBedroomSeniorSuite2pax": 466 },
+      "01Apr26to30Jun26": { "single": 124, "double": 201, "triple": 252, "oneBedroomJuniorSuite2pax": 272, "oneBedroomSeniorSuite2pax": 386 },
+      "01Jul26to31Aug26": { "single": 245, "double": 326, "triple": 422, "oneBedroomJuniorSuite2pax": 476, "oneBedroomSeniorSuite2pax": 483 },
+      "01Sep26to15Dec26": { "single": 234, "double": 310, "triple": 402, "oneBedroomJuniorSuite2pax": 454, "oneBedroomSeniorSuite2pax": 466 }
+    },
+    "casualMeals": { "lunch": 30, "picnicLunch": 21 },
+    "christmasSupplement": { "dateRange": "24-26 Dec, 31 Dec, 1 Jan", "adult": 28, "child": 17 },
+    "easterAndWrcSafariRallyPeriod": "High season rate applies",
+    "otherActivities": { "bushBarbeque": 30, "sundowner": 20, "champagneBushBreakfast": 20 },
+    "childPolicy": { "age0to2SharingWithAdults": "Free", "age3to12SharingWithAdults": "50% reduction, half twin rate", "childOwnRoom": "75% of contract" },
+    "guidedHorseRidingExcursion": { "amount": 40, "unit": "per person per hour" },
+    "naishiAirstripTransfer": { "amount": 15000, "currency": "KES", "unit": "per vehicle" , "pilotFee": { "amount": 3000, "currency": "KES" }},
+    "verified": true
+  },
+  "lakeNaivashaCrescentCamp_sunworldContractLetter_seeDiscrepancyNote": {
+    "unit": "per person, Full Board, non-resident, USD",
+    "periods": {
+      "16Dec25to31Mar26": { "single": 201, "double": 284, "triple": 348 },
+      "01Apr26to30Jun26": { "single": 124, "double": 201, "triple": 251 },
+      "01Jul26to31Aug26": { "single": 212, "double": 296, "triple": 364 },
+      "01Sep25to15Dec26": { "single": 201, "double": 284, "triple": 348 }
+    },
+    "confidenceNote": "One period is printed as '01Sep25' (2025) rather than 2026 in the source - likely a typo given it's positioned as the 4th of 4 sequential periods within 2026 (following 01Jul26-31Aug26), but reproduced as printed.",
+    "casualMeals": { "lunch": 30, "picnicLunch": 21 },
+    "christmasSupplement": { "dateRange": "24-26 Dec, 31 Dec, 1 Jan", "adult": 28, "child": 17 },
+    "easterAndWrcSafariRallyPeriod": "High season rate applies",
+    "childPolicy": { "age0to2SharingWithAdults": "Free", "age3to12SharingWithAdults": "50% reduction, half twin rate", "childOwnRoom": "75% of contract" },
+    "verified": true
+  },
+  "sharedContractTerms": {
+    "creditFacility": "NIL by default; full payment required within 21 days prior to arrival otherwise booking auto-released",
+    "releasePeriod": "60 days",
+    "cancellation": { "45to60days": "20%", "30to45days": "40%", "15to30days": "60%", "5to15days": "80%", "1to5daysOrNoShow": "100%" },
+    "maxSingles": 3,
+    "groupAllowance": "1 free half-twin pax per 15 paying pax",
+    "paymentTerms": "Invoiced weekly/monthly/end-of-stay; payment due within 30 days of invoicing"
+  }
+}

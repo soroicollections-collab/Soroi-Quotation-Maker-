@@ -1,0 +1,107 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftotext -layout. NOT Soroi properties. Multi-property document (Kibo Classic Ltd operates 3 camps): Kibo Safari Camp, Mara Maisha Camp, Maisha Sweetwaters Camp - each has its own rate table (Club/Deluxe categories for Kibo and Mara Maisha; Morani/Deluxe categories for Maisha Sweetwaters) within the same PDF, clearly labeled per table so no cross-property misattribution risk. An 'ADDENDUM' PDF also exists in this folder with the same season/policy structure but its rate table cells rendered blank under pdftotext -layout (likely a source table/formatting issue, not necessarily meaning the addendum truly has no rates) - not used as a data source here since the main STO Rates file already has complete figures; flagged as skipped/unreadable rather than silently assumed identical.",
+  "operator": "Kibo Classic Ltd",
+  "properties": ["Kibo Safari Camp", "Mara Maisha Camp", "Maisha Sweetwaters Camp"],
+  "source": {
+    "nonResidentFile": "2026 CONTRACT RATES/KENYA/ACCOMODATION/KIBO SAFARI CAMP/Kibo Safari Camp, Mara Maisha Camp, Maisha Sweetwaters Camp STO Rates 2026 - Kibo Safari Camp, Mara Maisha Camp, Maisha Sweetwaters Camp.pdf",
+    "residentFile": "2026 CONTRACT RATES/KENYA/ACCOMODATION/KIBO SAFARI CAMP/Maisha Group Resident Rates 2026.pdf",
+    "skipped": "ADDENDUM - Rates 2026 - Kibo Safari Camp, Mara Maisha Camp, Maisha Sweetwaters Camp.pdf - table cells rendered blank on extraction, not usable as a rate source; policy text matches the main file",
+    "signedDates": { "residentContract": "2026-01-16", "nonResidentContract": "2025-08-13" }
+  },
+  "confidence": "confirmed-2026-08-06",
+  "currency": "USD (non-resident) / KES (resident)",
+  "unit": "per room per night, Full Board, inclusive of service charge and taxes",
+  "seasons": {
+    "high": ["4 Jan - 28 Feb 2026", "1 Jun - 14 Jun 2026", "1 Oct - 31 Oct 2026"],
+    "green": ["1 Mar - 2 Apr 2026", "7 Apr - 31 May 2026", "1 Nov - 22 Dec 2026"],
+    "easterWeekend": ["3 Apr - 6 Apr 2026"],
+    "peak": ["15 Jun - 30 Sep 2026"],
+    "festive": ["23 Dec 2026 - 3 Jan 2027"]
+  },
+  "nonResidentRates": {
+    "kiboSafariCamp": {
+      "clubDeluxe": {
+        "high": { "single": { "club": 305, "deluxe": 235 }, "double": { "club": 410, "deluxe": 315 }, "triple": { "club": 615, "deluxe": 475 }, "childSharing4to12": { "club": 105, "deluxe": 80 } },
+        "green": { "single": { "club": 250, "deluxe": 195 }, "double": { "club": 340, "deluxe": 260 }, "triple": { "club": 510, "deluxe": 390 }, "childSharing4to12": { "club": 85, "deluxe": 65 } },
+        "easterWeekend": { "single": { "club": 310, "deluxe": 240 }, "double": { "club": 415, "deluxe": 320 }, "triple": { "club": 620, "deluxe": 480 }, "childSharing4to12": { "club": 105, "deluxe": 80 } },
+        "peak": { "single": { "club": 390, "deluxe": 300 }, "double": { "club": 525, "deluxe": 405 }, "triple": { "club": 790, "deluxe": 610 }, "childSharing4to12": { "club": 130, "deluxe": 100 } },
+        "festive": { "single": { "club": 390, "deluxe": 300 }, "double": { "club": 525, "deluxe": 405 }, "triple": { "club": 790, "deluxe": 610 }, "childSharing4to12": { "club": 130, "deluxe": 100 } }
+      },
+      "familyTentSupplement": { "clubTentMax5pax": { "adultOrChildOver12": 50, "childUnder12": 25 }, "deluxeTentMax4pax": { "adultOrChildOver12": 40, "childUnder12": 20 } },
+      "commission": "10%",
+      "verified": true
+    },
+    "maraMaishaCamp": {
+      "clubDeluxe": {
+        "high": { "single": { "club": 360, "deluxe": 275 }, "double": { "club": 475, "deluxe": 365 }, "triple": { "club": 805, "deluxe": 620 }, "childSharing4to12": { "club": 120, "deluxe": 90 } },
+        "green": { "single": { "club": 305, "deluxe": 235 }, "double": { "club": 410, "deluxe": 315 }, "triple": { "club": 695, "deluxe": 535 }, "childSharing4to12": { "club": 105, "deluxe": 80 } },
+        "easterWeekend": { "single": { "club": 360, "deluxe": 275 }, "double": { "club": 475, "deluxe": 365 }, "triple": { "club": 805, "deluxe": 620 }, "childSharing4to12": { "club": 120, "deluxe": 90 } },
+        "peak": { "single": { "club": 640, "deluxe": 490 }, "double": { "club": 845, "deluxe": 650 }, "triple": { "club": 1430, "deluxe": 1100 }, "childSharing4to12": { "club": 215, "deluxe": 165 } },
+        "festive": { "single": { "club": 640, "deluxe": 490 }, "double": { "club": 845, "deluxe": 650 }, "triple": { "club": 1430, "deluxe": 1100 }, "childSharing4to12": { "club": 215, "deluxe": 165 } }
+      },
+      "familyTentSupplement": { "clubTentMax5pax": { "adultOrChildOver12": 60, "childUnder12": 30 }, "deluxeTentMax4pax": { "adultOrChildOver12": 50, "childUnder12": 25 } },
+      "commission": "10%",
+      "verified": true
+    },
+    "maishaSweetwatersCamp": {
+      "moraniDeluxe": {
+        "high": { "single": { "morani": 320, "deluxe": 235 }, "double": { "morani": 400, "deluxe": 315 }, "triple": { "morani": 600, "deluxe": 475 }, "childSharing4to12": { "morani": 100, "deluxe": 80 } },
+        "green": { "single": { "morani": 285, "deluxe": 200 }, "double": { "morani": 350, "deluxe": 265 }, "triple": { "morani": 525, "deluxe": 400 }, "childSharing4to12": { "morani": 85, "deluxe": 65 } },
+        "easterWeekend": { "single": { "morani": 395, "deluxe": 245 }, "double": { "morani": 475, "deluxe": 325 }, "triple": { "morani": 715, "deluxe": 490 }, "childSharing4to12": { "morani": 100, "deluxe": 80 } },
+        "peak": { "single": { "morani": 460, "deluxe": 310 }, "double": { "morani": 560, "deluxe": 410 }, "triple": { "morani": 840, "deluxe": 615 }, "childSharing4to12": { "morani": 140, "deluxe": 105 } },
+        "festive": { "single": { "morani": 460, "deluxe": 310 }, "double": { "morani": 560, "deluxe": 410 }, "triple": { "morani": 840, "deluxe": 615 }, "childSharing4to12": { "morani": 140, "deluxe": 105 } }
+      },
+      "familyTentSupplement": { "moraniTentMax5pax": { "adultOrChildOver12": 50, "childUnder12": 25 }, "deluxeTentMax4pax": { "adultOrChildOver12": 40, "childUnder12": 20 } },
+      "commission": "15%",
+      "verified": true
+    }
+  },
+  "residentRatesKES": {
+    "note": "Same 3 properties, same season windows, KES currency. Kibo Safari Camp table 1, Mara Maisha Camp table 2, Maisha Sweetwaters Camp table 3 (labeled 'Family Morani Tent' confirming property identity).",
+    "kiboSafariCamp": {
+      "high_4Janto28Feb": { "single": { "club": 34125, "deluxe": 26250 }, "double": { "club": 45500, "deluxe": 35000 }, "triple": { "club": 62550, "deluxe": 48125 }, "childSharing4to11": { "club": 11375, "deluxe": 8750 } },
+      "green_1Marto2Apr": { "single": { "club": 31200, "deluxe": 24000 }, "double": { "club": 41600, "deluxe": 32000 }, "triple": { "club": 57200, "deluxe": 44000 }, "childSharing4to11": { "club": 10400, "deluxe": 8000 } },
+      "easterWeekend": { "single": { "club": 42900, "deluxe": 33000 }, "double": { "club": 57200, "deluxe": 44000 }, "triple": { "club": 78650, "deluxe": 60500 }, "childSharing4to11": { "club": 14300, "deluxe": 11000 } },
+      "peak_15Junto30Sep": { "single": { "club": 42900, "deluxe": 33000 }, "double": { "club": 57200, "deluxe": 44000 }, "triple": { "club": 78650, "deluxe": 60500 }, "childSharing4to11": { "club": 14300, "deluxe": 11000 } },
+      "festive": { "single": { "club": 39000, "deluxe": 30000 }, "double": { "club": 52000, "deluxe": 40000 }, "triple": { "club": 71500, "deluxe": 55000 }, "childSharing4to11": { "club": 13000, "deluxe": 10000 } },
+      "familyTentSupplement": { "clubTentMax5pax": { "adultOrChildOver12": 6500, "childUnder12": 3250 }, "deluxeTentMax4pax": { "adultOrChildOver12": 5200, "childUnder12": 2600 } },
+      "verified": true
+    },
+    "maraMaishaCamp": {
+      "high_4Janto28Feb": { "single": { "club": 37050, "deluxe": 28500 }, "double": { "club": 49400, "deluxe": 38000 }, "triple": { "club": 67925, "deluxe": 52250 }, "childSharing4to11": { "club": 12350, "deluxe": 9500 } },
+      "green_1Marto2Apr": { "single": { "club": 34125, "deluxe": 26250 }, "double": { "club": 45500, "deluxe": 35000 }, "triple": { "club": 62550, "deluxe": 48125 }, "childSharing4to11": { "club": 11375, "deluxe": 8750 } },
+      "easterWeekend": { "single": { "club": 39000, "deluxe": 30000 }, "double": { "club": 52000, "deluxe": 40000 }, "triple": { "club": 71500, "deluxe": 55000 }, "childSharing4to11": { "club": 13000, "deluxe": 10000 } },
+      "peak_15Junto30Sep": { "single": { "club": 59475, "deluxe": 45750 }, "double": { "club": 79300, "deluxe": 61000 }, "triple": { "club": 109000, "deluxe": 83875 }, "childSharing4to11": { "club": 19825, "deluxe": 15250 } },
+      "festive": { "single": { "club": 39000, "deluxe": 30000 }, "double": { "club": 52000, "deluxe": 40000 }, "triple": { "club": 71500, "deluxe": 55000 }, "childSharing4to11": { "club": 13000, "deluxe": 10000 } },
+      "familyTentSupplement": { "clubTentMax5pax": { "adultOrChildOver12": 7800, "childUnder12": 3900 }, "deluxeTentMax4pax": { "adultOrChildOver12": 6500, "childUnder12": 3250 } },
+      "verified": true
+    },
+    "maishaSweetwatersCamp": {
+      "high_4Janto28Feb": { "single": { "morani": 35100, "deluxe": 27000 }, "double": { "morani": 46800, "deluxe": 36000 }, "triple": { "morani": 64350, "deluxe": 49500 }, "childSharing4to11": { "morani": 11700, "deluxe": 9000 } },
+      "green_1Marto2Apr": { "single": { "morani": 31200, "deluxe": 24000 }, "double": { "morani": 41600, "deluxe": 32000 }, "triple": { "morani": 57200, "deluxe": 44000 }, "childSharing4to11": { "morani": 10400, "deluxe": 8000 } },
+      "easterWeekend": { "single": { "morani": 43875, "deluxe": 33750 }, "double": { "morani": 58500, "deluxe": 45000 }, "triple": { "morani": 80450, "deluxe": 61875 }, "childSharing4to11": { "morani": 14625, "deluxe": 11250 } },
+      "peak_15Junto30Sep": { "single": { "morani": 43875, "deluxe": 33750 }, "double": { "morani": 58500, "deluxe": 45000 }, "triple": { "morani": 80450, "deluxe": 61875 }, "childSharing4to11": { "morani": 14625, "deluxe": 11250 } },
+      "festive": { "single": { "morani": 43875, "deluxe": 33750 }, "double": { "morani": 58500, "deluxe": 45000 }, "triple": { "morani": 80450, "deluxe": 61875 }, "childSharing4to11": { "morani": 14625, "deluxe": 11250 } },
+      "familyTentSupplement": { "moraniTentMax5pax": { "adultOrChildOver12": 6500, "childUnder12": 3250 }, "deluxeTentMax4pax": { "adultOrChildOver12": 5200, "childUnder12": 2600 } },
+      "verified": true
+    }
+  },
+  "sharedPolicies": {
+    "meals": { "nonResident": { "lunch": 40, "dinner": 50, "packedLunch": 30, "halfBoardReduction": 5, "currency": "USD" }, "resident": { "extraLunchOrDinner": 4500, "extraPackedLunch": 4000, "halfBoardReduction": 500, "currency": "KES" } },
+    "childPolicy": { "under3SharingWithAdults": "Free, max 2 per room", "childOwnRoom": "80% of applicable full room rate", "age12Plus": "Full adult rate", "nonResidentChildBracket": "4-12 years", "residentChildBracket": "4-11 years" },
+    "singleRoomPolicy": "Max 5 rooms per group at single rate; additional rooms charged at double rate",
+    "agentFamRate": { "nonResident": { "amount": 200, "unit": "USD per night, single or double, max 2-night stay, High/Green season only" }, "resident": { "amount": 12000, "unit": "KES per night, same conditions" } },
+    "groupDiscountsNonResidentOnly": { "30to49pax": "5%", "50to99pax": "7.5%", "100PaxPlus": "10%" },
+    "tourLeaderNonResidentOnly": { "amount": 120, "unit": "USD per night, Full Board, subject to availability" },
+    "circuitDiscount": { "threeCoampsUsed": "10% off contract rates", "twoCampsUsed": "5% off contract rates" },
+    "cancellation": {
+      "15pctCharge": { "greenHighSeason": "60-45 days prior", "peakEasterFestive": "90-75 days prior" },
+      "33pctCharge": { "greenSeason": "14-7 days prior", "highSeason": "45-30 days prior", "peakEasterFestive": "75-60 days prior" },
+      "100pctCharge": { "greenSeason": "within 7 days", "highSeason": "within 30 days", "peakEasterFestive": "within 60 days" }
+    },
+    "paymentPolicy": { "peakEasterFestive": "30% deposit on confirmation, balance 45 days prior", "highSeason": "30% deposit, balance 30 days prior", "greenSeason": "30% deposit, balance 15 days prior", "cashPaymentsProhibited": true },
+    "checkInOut": { "checkIn": "12:00 noon", "checkOut": "10:00am" },
+    "residentContractApplicability": "Valid for East Africa Residents only, not for onward distribution to OTAs/third parties.",
+    "nonResidentContractApplicability": "Valid for Non-Residents only, not for onward distribution to OTAs/third parties."
+  }
+}

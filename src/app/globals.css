@@ -1,26 +1,105 @@
 @import "tailwindcss";
 
+/*
+ * Placeholder brand palette, matching the colors already used in generated quote
+ * PDFs (see webapp/templates/*.hbs). This is a stand-in until the live soroi.com
+ * site's actual design can be reviewed and matched more closely - see the
+ * conversation this was built in for context. Swap the values below, not the
+ * variable names, when that reference is available.
+ */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #FBF7F0;
+  --foreground: #3D2B1F;
+  --gold: #C4A265;
+  --gold-deep: #B8843F;
+  --earth: #3D2B1F;
+  --earth-deep: #2A1D14;
+  --tan: #EADFC8;
+  --tan-light: #F4EEE1;
+  --grey: #7A6A55;
+  --line: #E4D6BE;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-gold: var(--gold);
+  --color-gold-deep: var(--gold-deep);
+  --color-earth: var(--earth);
+  --color-earth-deep: var(--earth-deep);
+  --color-tan: var(--tan);
+  --color-tan-light: var(--tan-light);
+  --color-grey: var(--grey);
+  --color-line: var(--line);
+  --font-heading: var(--font-cinzel);
+  --font-sans: var(--font-poppins);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-poppins), sans-serif;
+}
+
+/* Styling for react-markdown output inside chat bubbles - plain HTML elements
+   otherwise render with no spacing/hierarchy at all. */
+.prose-chat p {
+  margin: 0 0 0.6em;
+}
+.prose-chat p:last-child {
+  margin-bottom: 0;
+}
+.prose-chat strong {
+  font-weight: 600;
+}
+.prose-chat ul,
+.prose-chat ol {
+  margin: 0.3em 0 0.6em;
+  padding-left: 1.25em;
+}
+.prose-chat li {
+  margin-bottom: 0.25em;
+}
+.prose-chat li::marker {
+  color: var(--gold-deep);
+}
+.prose-chat table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0.5em 0 0.8em;
+  font-size: 0.9em;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  border: 1px solid var(--line);
+}
+.prose-chat th {
+  background: var(--earth);
+  color: white;
+  text-align: left;
+  padding: 0.5em 0.75em;
+  font-weight: 600;
+  font-size: 0.85em;
+}
+.prose-chat td {
+  padding: 0.5em 0.75em;
+  border-top: 1px solid var(--line);
+  background: white;
+}
+.prose-chat code {
+  background: var(--tan);
+  border-radius: 0.25em;
+  padding: 0.1em 0.4em;
+  font-size: 0.85em;
+}
+.prose-chat a {
+  color: var(--gold-deep);
+  text-decoration: underline;
+}
+.prose-chat-user table td,
+.prose-chat-user table th {
+  background: transparent;
+  color: inherit;
+}
+.prose-chat-user code {
+  background: rgba(255, 255, 255, 0.15);
 }

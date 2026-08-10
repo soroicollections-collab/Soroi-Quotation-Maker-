@@ -1,0 +1,89 @@
+{
+  "property": "Rhino River Camp",
+  "operator": "Gamewatchers Safaris Ltd (Porini Camps)",
+  "region": "Meru National Park",
+  "isSoroiProperty": false,
+  "sourceFiles": [
+    "2026 CONTRACT RATES/KENYA/ACCOMODATION/PORINI CAMPS/PORINI CAMPS  NAIROBI TENTED 2026 - PREFERRED AGENT NETT RATES.pdf",
+    "2026 CONTRACT RATES/KENYA/ACCOMODATION/PORINI CAMPS/Reduced Rates for 6 nights Porini Camps 2026 - Net Rates..pdf"
+  ],
+  "currency": "USD",
+  "notes": ["The general Porini 2-night minimum stay explicitly does NOT apply to this camp.", "Two room categories with different rates: River View Tents and Forest View Tents. Two meal-plan products: Ground Package (includes game drives) and Full Board (accommodation + meals only)."],
+  "groundPackage_perNight": {
+    "riverViewTents": {
+      "seasons": [
+        { "dates": "20 Dec 2025-2 Jan 2026", "adultSharing": 568, "childSharing3to16with2adults": 360, "singleSupplement": 210 },
+        { "dates": "3-31 Jan 2026", "adultSharing": 424, "childSharing3to16with2adults": 268, "singleSupplement": 115 },
+        { "dates": "1-28 Feb 2026", "adultSharing": 444, "childSharing3to16with2adults": 281, "singleSupplement": 125 },
+        { "dates": "1 Mar-31 May 2026", "adultSharing": 364, "childSharing3to16with2adults": 230, "singleSupplement": 115 },
+        { "dates": "1-30 Jun 2026", "adultSharing": 464, "childSharing3to16with2adults": 294, "singleSupplement": 125 },
+        { "dates": "1-21 Jul 2026", "adultSharing": 568, "childSharing3to16with2adults": 360, "singleSupplement": 205 },
+        { "dates": "22 Jul-30 Sep 2026", "adultSharing": 632, "childSharing3to16with2adults": 401, "singleSupplement": 235 },
+        { "dates": "1-31 Oct 2026", "adultSharing": 484, "childSharing3to16with2adults": 306, "singleSupplement": 115 },
+        { "dates": "1 Nov-19 Dec 2026", "adultSharing": 459, "childSharing3to16with2adults": 290, "singleSupplement": 115 },
+        { "dates": "20 Dec 2026-2 Jan 2027", "adultSharing": 632, "childSharing3to16with2adults": 401, "singleSupplement": 235 }
+      ]
+    },
+    "forestViewTents": {
+      "seasons": [
+        { "dates": "20 Dec 2025-2 Jan 2026", "adultSharing": 516, "childSharing3to16with2adults": 310, "singleSupplement": 210 },
+        { "dates": "3-31 Jan 2026", "adultSharing": 372, "childSharing3to16with2adults": 223, "singleSupplement": 115 },
+        { "dates": "1-28 Feb 2026", "adultSharing": 391, "childSharing3to16with2adults": 235, "singleSupplement": 125 },
+        { "dates": "1 Mar-31 May 2026", "adultSharing": 312, "childSharing3to16with2adults": 187, "singleSupplement": 115 },
+        { "dates": "1-30 Jun 2026", "adultSharing": 408, "childSharing3to16with2adults": 245, "singleSupplement": 125 },
+        { "dates": "1-21 Jul 2026", "adultSharing": 516, "childSharing3to16with2adults": 310, "singleSupplement": 205 },
+        { "dates": "22 Jul-30 Sep 2026", "adultSharing": 572, "childSharing3to16with2adults": 343, "singleSupplement": 235 },
+        { "dates": "1-31 Oct 2026", "adultSharing": 428, "childSharing3to16with2adults": 257, "singleSupplement": 115 },
+        { "dates": "1 Nov-19 Dec 2026", "adultSharing": 408, "childSharing3to16with2adults": 245, "singleSupplement": 115 },
+        { "dates": "20 Dec 2026-2 Jan 2027", "adultSharing": 576, "childSharing3to16with2adults": 346, "singleSupplement": 235 }
+      ]
+    },
+    "includes": ["Full board accommodation", "Soft drinks, Tusker beer, house wine, vodka, gin & tonic, mineral water", "Day shared game drives in Meru National Park (4x4)", "Meru National Park fee", "Local airstrip transfers", "Nature walk around camp", "Sundowners, fishing rods, laundry, free WiFi"],
+    "excludes": ["Exclusive vehicle use $300/day min 2 days", "Massages (prebooked): Swedish 1hr $40, 30min $40", "Personal items", "Tips/gratuities", "Christmas/New Year supplement $40pp/night"],
+    "verified": true
+  },
+  "fullBoard_perNight": {
+    "riverViewTents": {
+      "seasons": [
+        { "dates": "20 Dec 2025-2 Jan 2026", "adultSharing": 468, "childSharing3to16with2adults": 281, "singleSupplement": 210 },
+        { "dates": "3-31 Jan 2026", "adultSharing": 324, "childSharing3to16with2adults": 194, "singleSupplement": 115 },
+        { "dates": "1-28 Feb 2026", "adultSharing": 340, "childSharing3to16with2adults": 204, "singleSupplement": 125 },
+        { "dates": "1 Mar-31 May 2026", "adultSharing": 228, "childSharing3to16with2adults": 137, "singleSupplement": 115 },
+        { "dates": "1-30 Jun 2026", "adultSharing": 356, "childSharing3to16with2adults": 214, "singleSupplement": 125 },
+        { "dates": "1-21 Jul 2026", "adultSharing": 468, "childSharing3to16with2adults": 281, "singleSupplement": 205 },
+        { "dates": "22 Jul-30 Sep 2026", "adultSharing": 516, "childSharing3to16with2adults": 310, "singleSupplement": 235 },
+        { "dates": "1-31 Oct 2026", "adultSharing": 372, "childSharing3to16with2adults": 223, "singleSupplement": 115 },
+        { "dates": "1 Nov-19 Dec 2026", "adultSharing": 356, "childSharing3to16with2adults": 214, "singleSupplement": 115 },
+        { "dates": "20 Dec 2026-2 Jan 2027", "adultSharing": 532, "childSharing3to16with2adults": 319, "singleSupplement": 235 }
+      ]
+    },
+    "forestViewTents": {
+      "seasons": [
+        { "dates": "20 Dec 2025-2 Jan 2026", "adultSharingDoubleOrTwin": 416, "childSharing3to16with2adults": 250, "singleSupplement": 210 },
+        { "dates": "3-31 Jan 2026", "adultSharingDoubleOrTwin": 276, "childSharing3to16with2adults": 166, "singleSupplement": 115 },
+        { "dates": "1-28 Feb 2026", "adultSharingDoubleOrTwin": 288, "childSharing3to16with2adults": 173, "singleSupplement": 125 },
+        { "dates": "1 Mar-31 May 2026", "adultSharingDoubleOrTwin": 176, "childSharing3to16with2adults": 105, "singleSupplement": 115 },
+        { "dates": "1-30 Jun 2026", "adultSharingDoubleOrTwin": 304, "childSharing3to16with2adults": 182, "singleSupplement": 125 },
+        { "dates": "1-21 Jul 2026", "adultSharingDoubleOrTwin": 416, "childSharing3to16with2adults": 250, "singleSupplement": 205 },
+        { "dates": "22 Jul-30 Sep 2026", "adultSharingDoubleOrTwin": 460, "childSharing3to16with2adults": 276, "singleSupplement": 235 },
+        { "dates": "1-31 Oct 2026", "adultSharingDoubleOrTwin": 304, "childSharing3to16with2adults": 182, "singleSupplement": 115 },
+        { "dates": "1 Nov-19 Dec 2026", "adultSharingDoubleOrTwin": 224, "childSharing3to16with2adults": 134, "singleSupplement": 115 },
+        { "dates": "20 Dec 2026-2 Jan 2027", "adultSharingDoubleOrTwin": 460, "childSharing3to16with2adults": 276, "singleSupplement": 235 }
+      ]
+    },
+    "includes": ["Full board accommodation", "Nature walk around camp", "Laundry", "WiFi"],
+    "excludes": ["Meru National Park fees", "Massages (prebooked)", "Personal items", "Tips/gratuities", "Christmas/New Year supplement $40pp/night"],
+    "verified": true
+  },
+  "reducedRate_6nightsSpecialOffer_combinedWithPoriniAmboseli": {
+    "seasons": [
+      { "dates": "20 Dec 2025-2 Jan 2026", "rate": 520, "singleSupplement": 210 }, { "dates": "3 Jan-31 Mar 2026", "rate": 385, "singleSupplement": 115 }, { "dates": "1-15 Apr 2026", "rate": 404, "singleSupplement": 125 }, { "dates": "16 Apr-31 May 2026", "rate": 329, "singleSupplement": 115 },
+      { "dates": "1-30 Jun 2026", "rate": 456, "singleSupplement": 125 }, { "dates": "1-21 Jul 2026", "rate": 520, "singleSupplement": 205 }, { "dates": "22 Jul-30 Sep 2026", "rate": 580, "singleSupplement": 235 }, { "dates": "1-31 Oct 2026", "rate": 441, "singleSupplement": 115 },
+      { "dates": "1 Nov-19 Dec 2026", "rate": 385, "singleSupplement": 115 }, { "dates": "20 Dec 2026-2 Jan 2027", "rate": 580, "singleSupplement": 235 }
+    ],
+    "verified": true
+  },
+  "additionalFees": { "poriniWildlifeHabitatTrustPayment": "US$5 per person per night, non-commissionable" },
+  "childPolicy": { "raw": "3-16 years sharing with 2 adults: 60% of adult rate (Reduced Rate offer document).", "verified": true },
+  "sharedTermsNote": "Deposit/cancellation policy identical to other Porini properties - see porini-amboseli-camp-2026.json."
+}

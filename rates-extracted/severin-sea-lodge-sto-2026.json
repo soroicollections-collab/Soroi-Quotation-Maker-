@@ -1,0 +1,59 @@
+{
+  "$note": "Extracted 6 Aug 2026, read directly, single-page document, no misattribution risk. Secondary/lower-priority tier per task instructions — extracted in full anyway since the file is short and clean, but flagged as secondary. Same non-breaking-space filename quirk as the Rack file (see severin-sea-lodge-rack-2026.json note).",
+  "property": "Severin Sea Lodge",
+  "region": "Mombasa North Coast",
+  "tier": "Tour Operator NET (labeled 'STO non res' in filename, 'Market Code: Tour Operator NET' in-document) — same caution as Baobab's file: don't assume this maps to a specific rung of the generic STO 15-40% ladder without confirmation.",
+  "residency": "Non-Resident.",
+  "source": {
+    "file": "2026 CONTRACT RATES/KENYA/BEACH ACCOMODATION/SEVERIN SEA LODGE/Severin Sea Lodge. STO non res 2026.pdf",
+    "pdfPageIndex": 0,
+    "validity": { "start": "2025-11-01", "end": "2026-10-31" }
+  },
+  "confidence": "confirmed-2026-08-06",
+  "extractionMethod": { "note": "Read directly, single-page table, structurally identical layout to the Rack document (same rooms/seasons/terms), only base figures and reduction/transport amounts differ." },
+  "structuralFindings": [
+    "Structurally identical to the Rack document — same 5 seasonal columns, same room categories, same seaview surcharge concept, same policies (cancellation, check-in/out, longstay/group discount, honeymoon package, children policy shape).",
+    "NET figures are consistently lower than Rack, by roughly 28-35% depending on room/season — not a single flat percentage across every cell (e.g. Standard DBL main season: Rack $100 -> NET $72, a 28% cut; Suite Seaview SGL festive: Rack $672 -> NET $449, a 33% cut). Unlike Soroi's STO-tier finding (exactly Rack x (1-discount%) on every cell), this NET rate is NOT a clean single-percentage discount off Rack — flag this if anyone tries to back-calculate one tier from the other.",
+    "Bed & Breakfast reduction on HB rate here is -$10 (vs -$15 on the Rack tier) — a different reduction amount at NET than at Rack, not just a scaled-down version.",
+    "Transport figures also differ from Rack: SGR-Station Transfer $18 (vs $28 Rack), Airport Transfer $15 (vs $23 Rack).",
+    "Children policy flat rate for 3-12yrs sharing with adult is the SAME $26 as the Rack tier (not discounted at NET) — worth noting since everything else is discounted."
+  ],
+  "seasons": {
+    "columns": ["01/11/25-22/12/25 (Main)", "23/12/25-02/01/26 (Festive)", "03/01/26-02/04/26 (Main)", "03/04/26-06/04/26 (Easter)", "07/04/26-31/10/26 (Main)"]
+  },
+  "rates": {
+    "currency": "USD",
+    "unit": "per person per night, Half Board (DBL = per person sharing double; SGL = single occupancy)",
+    "standardRoom": {
+      "dbl": { "main1": 72, "festive": 98, "main2": 72, "easter": 85, "main3": 72 },
+      "sgl": { "main1": 98, "festive": 150, "main2": 98, "easter": 124, "main3": 98 }
+    },
+    "deluxeRoom": {
+      "dbl": { "main1": 92, "festive": 128, "main2": 92, "easter": 110, "main3": 92 },
+      "sgl": { "main1": 138, "festive": 210, "main2": 138, "easter": 174, "main3": 138 }
+    },
+    "deluxeBungalowRoom": {
+      "dbl": { "main1": 101, "festive": 142, "main2": 101, "easter": 122, "main3": 101 },
+      "sgl": { "main1": 157, "festive": 239, "main2": 157, "easter": 198, "main3": 157 },
+      "note": "Suitable for 2 adults + 1 child."
+    },
+    "seaviewSurcharge": { "main1": 26, "festive": 26, "main2": 26, "easter": 26, "main3": 26 },
+    "suiteWithSeaview": {
+      "dbl": { "main1": 170, "festive": 247, "main2": 170, "easter": 209, "main3": 170 },
+      "sgl": { "main1": 294, "festive": 449, "main2": 294, "easter": 372, "main3": 294 }
+    }
+  },
+  "reductionsAndTransport": {
+    "bedBreakfastReductionOnHB": -10,
+    "sgrStationTransfer": { "amount": 18, "unit": "USD per person, one way" },
+    "airportTransfer": { "amount": 15, "unit": "USD per person, one way" }
+  },
+  "childPolicy": {
+    "infant0to2": "Free of charge",
+    "children3to12SharingWithAdult": { "amount": 26, "unit": "USD per person per night, flat — same as Rack tier" }
+  },
+  "otherTermsNote": "Longstay/group discount, honeymoon package, cancellation policy, and check-in/out rules are identical wording to the Rack document — see severin-sea-lodge-rack-2026.json for full text, not repeated here.",
+  "portfolioWideTerms": {
+    "note": "Non-Soroi property — CLAUDE.md's Soroi-portfolio-wide terms do not apply."
+  }
+}

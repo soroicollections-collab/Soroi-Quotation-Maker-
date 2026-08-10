@@ -1,0 +1,41 @@
+{
+  "property": "Porini Rhino Camp",
+  "operator": "Gamewatchers Safaris Ltd (Porini Camps)",
+  "region": "Ol Pejeta Conservancy",
+  "isSoroiProperty": false,
+  "sourceFiles": [
+    "2026 CONTRACT RATES/KENYA/ACCOMODATION/PORINI CAMPS/PORINI CAMPS  NAIROBI TENTED 2026 - PREFERRED AGENT NETT RATES.pdf",
+    "2026 CONTRACT RATES/KENYA/ACCOMODATION/PORINI CAMPS/Reduced Rates for 6 nights Porini Camps 2026 - Net Rates..pdf"
+  ],
+  "currency": "USD",
+  "rateType": "Preferred Agent NETT rates",
+  "sharedTermsNote": "Shared Gamewatchers/Porini Group policies (deposit, cancellation, child policy pattern, special offers, additional fees) are documented in full in porini-amboseli-camp-2026.json - not repeated verbatim here except where this camp differs.",
+  "groundPackage_perPersonSharing_perNight": {
+    "seasons": [
+      { "dates": "20 Dec 2025-2 Jan 2026", "rate": 702, "singleSupplement": 190 },
+      { "dates": "3 Jan-31 Mar 2026", "rate": 522, "singleSupplement": 180 },
+      { "dates": "1-15 Apr 2026", "rate": 462, "singleSupplement": 180 },
+      { "dates": "15 Apr-31 May 2026", "rate": 462, "singleSupplement": 180 },
+      { "dates": "1-30 Jun 2026", "rate": 486, "singleSupplement": 180 },
+      { "dates": "1-21 Jul 2026", "rate": 702, "singleSupplement": 195 },
+      { "dates": "22 Jul-30 Sep 2026", "rate": 702, "singleSupplement": 210 },
+      { "dates": "1-31 Oct 2026", "rate": 702, "singleSupplement": 190 },
+      { "dates": "1 Nov-19 Dec 2026", "rate": 486, "singleSupplement": 180 },
+      { "dates": "20 Dec 2026-2 Jan 2027", "rate": 722, "singleSupplement": 210 }
+    ],
+    "verified": true,
+    "confidenceNote": "[Unverified] Unlike Porini Amboseli, this camp is NOT shown as 'Closed' in the 15 Apr-31 May window - both windows share the $462 rate, so no closure inferred here."
+  },
+  "roomNote": "Each tent has 1 double bed + 1 single bed (3 adults possible). 1 Family Unit (2 ensuite tents + interconnecting lounge); child in family unit tent pays 75% of per-person-sharing rate.",
+  "minStay": "None stated specifically for Rhino - the general 2-night minimum 'doesn't apply for Rhino River Camp and Nairobi Tented Camp' per the source note (NOTE: this exemption is for 'Rhino River Camp', a DIFFERENT property from 'Porini Rhino Camp' - do not confuse the two despite similar names).",
+  "includes": ["Full board accommodation", "Soft drinks, Tusker beer, house wine, vodka, gin & tonic, mineral water", "Day & night shared game drives", "Sundowners & walks with Maasai warriors", "Local conservancy airstrip transfers (Kamok Airstrip)", "Daily conservancy fees", "Visit to Chimpanzee Sanctuary", "Free inter-camp transfers"],
+  "excludes": ["Flights/taxes/visas", "Personal items", "Laundry", "Tips/gratuities", "Exclusive vehicle use $300/day min 2 days", "Late departure after 10:00: $125pp min 2 pax", "Christmas/New Year supplement $40pp/night"],
+  "additionalFees": { "poriniWildlifeHabitatTrustPayment": "US$5 per person per night, non-commissionable" },
+  "airstripTransfer": "Kamok Airstrip using scheduled/charter flights",
+  "roadTransfer_06seaterMinivan": "Nairobi to Porini Rhino: US$330/vehicle",
+  "childPolicy": { "raw": "8-16 years sharing with 2 adults: 60% of adult rate.", "verified": true },
+  "policies": {
+    "deposit": "25% deposit to confirm, balance due 60 days before arrival",
+    "cancellation": "Confirmation-120 days: 25%; 120-60 days: 35%; 60-30 days: 50%; 30-15 days: 75%; 15-3 days: 90%; <=3 days: 100%"
+  }
+}

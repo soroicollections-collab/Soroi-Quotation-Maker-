@@ -1,0 +1,61 @@
+{
+  "$note": "Fresh extraction, 6 Aug 2026, read directly from source PDF text (1-page, single-property document, layout-preserving pdftotext, no adjacent-property risk).",
+  "property": "Eleven Pearl Boutique Hotel & Spa",
+  "region": "Diani Beach",
+  "tier": "New Agent Rates 2026 (single published rate card)",
+  "residency": "Not stated — no Resident/Non-Resident split. Rates quoted in KES with a note that USD/EUR conversion will vary by exchange rate — treat as a general/agent rate, not residency-specific.",
+  "source": {
+    "file": "2026 CONTRACT RATES/KENYA/BEACH ACCOMODATION/Eleven Pearl Boutique/Eleven Pearl Boutique - AGENT RATES 2026.pdf",
+    "pages": 1
+  },
+  "confidence": "confirmed-2026-08-06",
+  "extractionMethod": { "note": "Single-property, 1-page PDF read directly with pdftotext -layout; no adjacent-property risk." },
+  "structuralFindings": [
+    "Rate is quoted per room per night, tiered by occupancy (Single/Double/3rd Pax/Child) — not a strict per-person figure.",
+    "Three meal plans independently priced per season (BB/HB/FB), not base+supplement.",
+    "Four named seasons: High (23 Dec-2 Jan), Easter (2-8 Apr), Normal (3 Jan-2 Apr & 10 Jul-22 Dec), Low (23 Apr-9 Jul) — note the High season window (23 Dec 2026-2 Jan 2027) spans a year boundary and the Easter window (2-8 Apr) sits inside what would otherwise be Normal, splitting it into two date ranges.",
+    "High season (Festive) restricts booking to Half Board/Full Board only — no BB or single-occupancy option offered in that window, per the explicit note on the page.",
+    "Currency is KES only on this sheet; a note states USD/EUR rates would need separate conversion at prevailing exchange rate, not a fixed rate."
+  ],
+  "seasons": {
+    "high_festive": { "dateRange": "23 Dec 2026 - 2 Jan 2027", "minimumStay": "4 nights", "restriction": "Half Board & Full Board options only; no single occupancy.", "supplement": "KSh 8,000 per person per night on 24, 25, 31 Dec & 1 Jan" },
+    "easter": { "dateRange": "2 Apr - 8 Apr 2026", "minimumStay": "3 nights" },
+    "normal": { "dateRanges": ["3 Jan - 2 Apr 2026", "10 Jul - 22 Dec 2026"] },
+    "low": { "dateRange": "23 Apr - 9 Jul 2026" }
+  },
+  "rates": {
+    "currency": "KES",
+    "unit": "per room per night (Single/Double/3rd pax/Child columns)",
+    "highFestive": {
+      "bedAndBreakfast": { "single": 20689, "double": 28388, "thirdPax": 7762, "child": 7098 },
+      "halfBoard": { "single": 23264, "double": 33540, "thirdPax": 10338, "child": 8386 },
+      "fullBoard": { "single": 25427, "double": 37868, "thirdPax": 12502, "child": 9467 }
+    },
+    "easter": {
+      "bedAndBreakfast": { "single": 14023, "double": 20286, "thirdPax": 8867, "child": 5072 },
+      "halfBoard": { "single": 16600, "double": 25438, "thirdPax": 11444, "child": 6360 },
+      "fullBoard": { "single": 18764, "double": 29766, "thirdPax": 13607, "child": 7442 }
+    },
+    "normal": {
+      "bedAndBreakfast": { "single": 12418, "double": 17076, "thirdPax": 7262, "child": 4269 },
+      "halfBoard": { "single": 14995, "double": 22228, "thirdPax": 9839, "child": 5558 },
+      "fullBoard": { "single": 17159, "double": 26556, "thirdPax": 12002, "child": 6639 }
+    },
+    "low": {
+      "bedAndBreakfast": { "single": 9315, "double": 12730, "thirdPax": 4347, "child": 3183 },
+      "halfBoard": { "single": 11890, "double": 17882, "thirdPax": 6922, "child": 4469 },
+      "fullBoard": { "single": 14053, "double": 22210, "thirdPax": 9086, "child": 5551 }
+    }
+  },
+  "verified": true,
+  "childPolicy": {
+    "maxChildrenPerRoom": 2,
+    "ageRange": "above 3 years, below 11 years",
+    "oneAdultWithChild": "25% discount"
+  },
+  "notes": [
+    "If Kenyan inflation exceeds 5% from end of June (or before), rates are subject to change.",
+    "USD/EUR figures will vary on exchange rate depending on inflation state & international forex market — no fixed conversion given."
+  ],
+  "confidenceNote": "No mandatory conservancy/park-style fee found — consistent with a Diani boutique hotel. No explicit residency split on this rate sheet."
+}

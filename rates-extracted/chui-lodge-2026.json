@@ -1,0 +1,46 @@
+{
+  "$note": "Extracted 6 Aug 2026 from 'CHUI LODGE RACK RATES-USD updated.pdf' (Rack, non-resident) and '15% Citizen Nett Rates 2025-2026 Oserengoni(Chui Lodge,Bush Homes).pdf' (Resident KES, covers Chui Lodge AND the separate Chui Bush Homes product on the same conservancy). Not a Soroi property, but interesting parallel: Cheetah Tented Camp/Leopard's Lair adjacent-property misattribution risk from CLAUDE.md applies in spirit here too since this document also covers 2 similarly-named products on one page cluster - cross-checked, Standard/Deluxe Room figures vs Chui Bush Homes figures are clearly separated by heading, no mixup found.",
+  "property": "Chui Lodge (+ Chui Bush Homes on same rate sheet)",
+  "operator": "La Pieve Ltd (billing name) / Oserengoni Private Wildlife Conservancy",
+  "region": "Oserengoni Private Wildlife Conservancy",
+  "tier": "Rack Rate (Non-Resident, USD) and Resident Nett -15% (KES)",
+  "source": {
+    "files": [
+      "2026 CONTRACT RATES/KENYA/ACCOMODATION/CHUI LODGE/CHUI LODGE RACK RATES-USD updated .pdf",
+      "2026 CONTRACT RATES/KENYA/ACCOMODATION/CHUI LODGE/15% Citizen Nett Rates 2025 - 2026 Oserengoni(Chui Lodge,Bush Homes).pdf"
+    ],
+    "validity": { "start": "2025-01-01", "end": "2026-12-31" }
+  },
+  "seasons": { "high": "June, July, August, September, 20 Dec-10 Jan", "low": "11 Jan, Feb, Mar, Apr, May 31, Oct, Nov, 1-19 Dec" },
+  "rates": {
+    "chuiLodge": {
+      "nonResidentUSD_rack": {
+        "unit": "per person",
+        "standardRoom": { "sharing": { "high": 675, "low": 450 }, "single": { "high": 870, "low": 580 } },
+        "deluxeRoom": { "sharing": { "high": 805, "low": 550 }, "single": { "high": 1040, "low": 710 } },
+        "childSharing3to11": { "standard": { "high": 338, "low": 225 }, "deluxe": { "high": 403, "low": 275 } }
+      },
+      "residentKES_nett15pct": {
+        "note": "Sun-Thur vs Fri&Sat rows present per room category - 4 rows given per category, mapped here as [SunThur, ?, FriSat, ?] per source layout ambiguity",
+        "confidenceNote": "[Unverified] The pdftotext layout for this table produced 4 numeric rows per room category without fully clear row labels beyond 'SUN-THUR' and 'FRI & SAT' - only 2 labels for 4 rows. Recommend a direct visual/paginated re-check before using this KES table in a live quote.",
+        "standardPerAdultSharing": [26880, 22848, 30770, 26154],
+        "standardSingle": [34390, 29232, 39670, 33720],
+        "standardChildSharing3to11": [13440, 11424, 15385, 13077],
+        "deluxePerAdultSharing": [29660, 25211, 33555, 28520],
+        "deluxeSingle": [37170, 31595, 42460, 36091],
+        "deluxeChildSharing3to11": [14830, 12606, 16777, 14260]
+      }
+    },
+    "chuiBushHomes": {
+      "note": "Chui, Kiboko and Seriniti House - resident rates only found in this document",
+      "residentKES_nett15pct_perAdultSharing": [26880, 22848, 30770, 26154],
+      "residentKES_childSharing3to11": [13440, 11424, 15385, 13077],
+      "confidenceNote": "[Unverified] Same 4-row ambiguity as Chui Lodge Standard Room above; figures happen to match Chui Lodge Standard Room exactly, which may be coincidental (shared pricing) or may indicate a table-parsing duplication artifact - verify against the original paginated PDF before quoting."
+    }
+  },
+  "mandatoryFees": {
+    "conservationFees": { "unit": "per person per night", "adult": { "high": 70, "low": 70 }, "child3to11": { "high": 35, "low": 35 } },
+    "oserengoniConservancyFee_residentKES": { "adult": 3350, "child": 1675 }
+  },
+  "notes": "Christmas supplement $40/adult (half for children) per night, Dec 24/25/26/31/1 Jan. Easter supplement same. Minimum 2 nights over Easter/Christmas."
+}

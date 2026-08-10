@@ -1,0 +1,40 @@
+{
+  "$note": "Extracted 6 Aug 2026 from a formal Virgin Limited Edition (VLE)/Future Hotels Limited STO 20% Net rate agreement.",
+  "property": "Finch Hattons",
+  "operator": "Virgin Limited Edition (Future Hotels Limited)",
+  "region": "Tsavo West National Park",
+  "tier": "STO 20% Net (Rack and Net rates both given)",
+  "source": {
+    "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/FINCH HATTONS/20 STO FINCH HATTONS 2026 - Kenya.pdf",
+    "validity": { "start": "2026-01-05", "end": "2027-01-04" }
+  },
+  "seasons": { "low": "5 Jan-14 Jun, 16 Oct-19 Dec", "peak": "15 Jun-15 Oct", "festive": "20 Dec 2026-4 Jan 2027 (min 2-night stay)" },
+  "rates": {
+    "currency": "USD", "unit": "per person per night",
+    "rack": {
+      "luxuryTentedSuiteSharing": { "low": 990, "peak": 1450, "festive": 1200 },
+      "luxuryTentedSuiteSingle": { "low": 1485, "peak": 2175, "festive": 1800 },
+      "childRate6to12": { "low": 495, "peak": 725, "festive": 600 },
+      "luxuryTentedFamilySuiteSleeps4": { "low": 1150, "peak": 1550, "festive": 1300 },
+      "familySuiteChild6to12": { "low": 575, "peak": 775, "festive": 650 },
+      "finchHattonsSuiteSleeps2": { "low": 3700, "peak": 4700, "festive": 4450 }
+    },
+    "net20pct": {
+      "luxuryTentedSuiteSharing": { "low": 792, "peak": 1160, "festive": 960 },
+      "luxuryTentedSuiteSingle": { "low": 1188, "peak": 1740, "festive": 1440 },
+      "childRate6to12": { "low": 396, "peak": 580, "festive": 480 },
+      "luxuryTentedFamilySuiteSleeps4": { "low": 920, "peak": 1240, "festive": 1040 },
+      "familySuiteChild6to12": { "low": 460, "peak": 620, "festive": 520 },
+      "finchHattonsSuiteSleeps2": { "low": 2960, "peak": 3760, "festive": 3560 }
+    }
+  },
+  "childPolicy": {
+    "note": "Different from Soroi's 5-11 bracket - Finch Hattons is 6-12.",
+    "minAge": 6,
+    "6to12": "Child rate, up to 2 children sharing family tent with 2 adults",
+    "13plus": "Adult rate, separate tent"
+  },
+  "occupancy": { "luxuryTentedSuite_x14": { "maxOcc": 2, "maxAdults13plus": 2 }, "luxuryTentedFamilySuite_x2": { "maxOcc": 4, "maxAdults": 2 }, "finchHattonsSuite_x1": { "maxOcc": 3, "maxAdults": 2 } },
+  "extras": { "guideAccommodation": 275, "privateVehicleFullDay": 605, "privateVehicleHalfDay": 385 },
+  "exclusions": "Park fees (Tsavo West, valid 24h from entry), road/air transfers between other airports, spa treatments, bush breakfast, gratuities."
+}

@@ -1,0 +1,19 @@
+{
+  "$note": "Extracted 6 Aug 2026, from the same Atua Enkop workbook.",
+  "property": "Tipilikwani Mara Camp",
+  "operator": "Atua Enkop Africa Ltd (cheques payable to Tipilikwani Mara Camp Ltd)",
+  "region": "Masai Mara",
+  "tier": "Nett, non-commissionable contract rate",
+  "source": { "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/ATUA ENKOP/Atua Enkop  - Sunworld Safaris  - 2026.xlsx", "validity": { "start": "2026-01-03", "end": "2027-01-02" } },
+  "seasons": { "mid": "03 Jan-31 Mar, 01-30 Jun, 16 Oct-22 Dec 2026", "low": "01 Apr-31 May", "high": "01 Jul-15 Oct 2026, 23 Dec 2026-02 Jan 2027" },
+  "rates": {
+    "currency": "USD", "unit": "per person per night",
+    "package": { "mid": { "adultSharing": 245, "single": 325, "child6to11": 125, "child12to16": 185 }, "low": { "adultSharing": 225, "single": 225, "child6to11": 115, "child12to16": 170 }, "high": { "adultSharing": 460, "single": 600, "child6to11": 230, "child12to16": 345 } },
+    "nonPackage": { "mid": { "adultSharing": 175, "single": 225, "child6to11": 90, "child12to16": 130 }, "low": { "adultSharing": 155, "single": 155, "child6to11": 80, "child12to16": 120 }, "high": { "adultSharing": 310, "single": 405, "child6to11": 155, "child12to16": 235 } }
+  },
+  "drinksSupplement": { "amount": 40, "unit": "per person per day", "covers": "Soft drinks, house wine, mineral water, local beers" },
+  "childPolicy": { "ownRoomUnder12": "75% of adult rate", "ownRoom12plus": "Full adult rate", "oneAdultOneChildSharing": "Adult pays single room rate" },
+  "packageInclusions": "Full board accommodation, local airstrip transfers, 2 shared game drives, drinks/laundry/gratuities.",
+  "exclusions": "Park entry fees, flight cost, health insurance, Maasai village visit ($40), exclusive vehicle ($395-505/day), bush breakfast/dinner ($60), extra lunch ($30), river bed breakfast ($40).",
+  "circuitDiscount": { "twoProperties": "5%", "threeOrFourFiveProperties": "7.5%" }
+}

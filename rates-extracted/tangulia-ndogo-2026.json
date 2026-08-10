@@ -1,0 +1,20 @@
+{
+  "$note": "Extracted 6 Aug 2026. Sister camp to Tangulia Mara, a short distance away, booked on an EXCLUSIVE USE basis only (whole camp, min 4 guests/2 nights) rather than per-tent - a different pricing shape from its sister property. NOTE: the source PDF's Maasai Mara Reserve Fee section header says '1st January - 30th June 2025' / '1st July - 31st December 2025' (2025, not 2026) even though the accommodation rate table below it is explicitly dated 2026 - likely a copy-paste artifact from a prior year's template; the fee amounts themselves ($100/$200) match the confirmed 2026 Mara fee structure used elsewhere in this batch (e.g. Tangulia Mara, Entumoto), so treat the dollar amounts as correct for 2026 despite the stale year label.",
+  "property": "Tangulia Ndogo",
+  "operator": "Bush and Beyond Ltd (booking agent) / Jackson Looseyia & Dominic Nchoe",
+  "region": "Western boundary of the Masai Mara Reserve, near Tangulia Mara (Musiara airstrip)",
+  "tier": "RSP (rack) and Trade Rates/Preferential",
+  "source": { "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/BUSH&BEYOND/Tangulia Ndogo - 2026 Preferential US$.pdf" },
+  "seasons": { "regular": "5 Jan-30 Jun, 1 Oct-19 Dec 2026", "premium": "1 Jul-30 Sep 2026, 20 Dec 2026-3 Jan 2027" },
+  "rates": {
+    "currency": "USD", "unit": "exclusive use, minimum 2 nights & 4 guests, per night for base group + extra adult each",
+    "regular": { "rsp": { "baseGroupPerNight": 3600, "extraAdultEach": 900, "childSharing5to15": 485 }, "trade": { "baseGroupPerNight": 2700, "extraAdultEach": 675, "childSharing5to15": 364 } },
+    "premium": { "rsp": { "baseGroupPerNight": 5200, "extraAdultEach": 1300, "childSharing5to15": 650 }, "trade": { "baseGroupPerNight": 3900, "extraAdultEach": 975, "childSharing5to15": 488 } }
+  },
+  "mandatoryFees": { "maasaiMaraNationalReserveFee_perAdultPerDay": { "janJun": 100, "julDec": 200 }, "child9to17": 50, "under8": "Free" },
+  "capacity": "2 ensuite tents + 1 family tent (2 ensuite bedrooms, shared sitting area), central dining area",
+  "childPolicy": { "note": "Not recommended for children under 5 years." },
+  "inclusions": "Full board, soft drinks/local beers/non-premium wines/spirits, Musiara airstrip transfers, statutory taxes, laundry, exclusive day game drives (Mara Reserve + Mara Triangle), bush breakfasts/lunches, Maasai village visit, guided walks.",
+  "exclusions": "Maasai Mara National Reserve fees, Jackson Looseiya private guide ($600/day, min 3 days), champagne/premium spirits.",
+  "notes": "Open year-round. Booked exclusively - minimum 4 guests for 2 nights."
+}

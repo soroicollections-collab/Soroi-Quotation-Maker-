@@ -1,0 +1,38 @@
+{
+  "property": "Sankara Nairobi, Autograph Collection",
+  "operator": "Marriott International (Autograph Collection)",
+  "region": "Nairobi (Westlands)",
+  "isSoroiProperty": false,
+  "sourceFiles": ["2026 CONTRACT RATES/KENYA/ACCOMODATION/SANKARA HOTEL/Sankara - Sunworld Safaris - Contract Rate 2026.pdf"],
+  "notes": [
+    "This is a flexible Nairobi/stopover hotel candidate not yet in CLAUDE.md's known priced list - now part of Marriott's Autograph Collection with access to Marriott Bonvoy loyalty program.",
+    "Rate confidentiality clause: agreed rates may not be revealed to or used to book for third parties, nor displayed transparently on the internet."
+  ],
+  "currency": "USD",
+  "validity": "January 2026 - December 2026",
+  "rates_perRoomPerNight": {
+    "superiorRoom_baseEntryLevel": { "singleOccupancy": 240, "doubleOccupancy": 260 },
+    "supplementsPerRoom": { "executiveRoom": 90, "sankaraRoom": 120, "juniorSuite": 150, "executiveSuite": 350 },
+    "additionalBuffetBreakfastPerPerson": 32,
+    "extraBedTripleSuitesOnly": 75,
+    "verified": true
+  },
+  "notesOnRates": "Net and non-commissionable. Inclusive of 18% statutory taxes and breakfast at Artisan Restaurant. Room service charged separately.",
+  "accommodationEnhancements": ["Complimentary health club (Technogym equipment)", "Separate Turkish steam/sauna for ladies and gentlemen", "Complimentary wireless/wired internet", "In-room tea/coffee facilities", "Complimentary shoe polishing", "Outdoor rooftop infinity pool with sun-lounge"],
+  "sankaraLoungeAccess": {
+    "eligibleRoomTypes": "Executive Rooms, Sankara Rooms, Suites",
+    "benefits": ["Private check-in/check-out", "Exclusive lounge breakfast", "2 hours free use of 2 state-of-the-art boardrooms (extra hours charged)", "Evening canopy cocktail", "Dedicated work/relaxation zones", "Personal butler services"]
+  },
+  "childPolicy": { "raw": "Child in baby cot (up to 4yrs) or up to 12yrs sharing a room with an adult: free. Up to 2 children under 12 in a separate interconnecting room: 75% of room rate.", "verified": true },
+  "maxOccupancy": { "raw": "Max 2 adults per room. With children: max 1 child under 4 (1 baby cot) or max 1 child 5-12 sharing bed with adult. No extra bed except in Executive Suites.", "verified": true },
+  "policies": {
+    "checkIn": "14:00", "checkOut": "12:00",
+    "dayRoom": "75% of applicable rate, check-out by 18:00 (full rate applies after 18:00)",
+    "complimentaryRooms": "1 free room per 15 paying guests in a group (16th guest)",
+    "singleRoomPolicy": "Single rate applies to max 7 single rooms per group; additional singles charged at double rate",
+    "groupDefinition": "10+ rooms on peak night",
+    "deposit": "50% due if booked 8-14 days prior to arrival; 100% due if booked 0-7 days prior to arrival (separate policy for groups/conferences)",
+    "cancellation": "0-7 days: 100% of entire stay; 8-14 days: 50%; 15-35 days: 25%; no-show: 100%",
+    "invoiceDispute": "Must be raised within 7 days of invoice date"
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftotext -layout, signed contract PDF specifically for Sunworld Safaris. NOT Soroi properties. Covers FIVE properties under 'Zebra Plains Collection': Zebra Plains Mara Camp, Zebra River Camp, Zebra Valley Camp, Little Zebra River Camp, Royal Zebra River Safari Lodge - all Maasai Mara. A SIXTH, related property (same owner/operator, same contact details, same founder Alfred Korir) is Praro Amboseli Camp, extracted from a separate contract document. A 'Zebra Plains Collection and Lalashe Camps Offer.pdf' and resident-rate PDFs also exist in this folder but were not opened this pass (offer/marketing doc + resident tier, out of scope).",
+  "operator": "Zebra Plains Collection (Alfred Korir, Founder & Owner)",
+  "contractParty": "Sunworld Safaris",
+  "currency": "USD",
+  "unit": "per person sharing per night unless noted (Nett, non-commissionable)",
+  "source": {
+    "zebraFile": "2026 CONTRACT RATES/KENYA/ACCOMODATION/ZEBRA COLLECTION CAMPS/Zebra Collection Camps-Non Resident Rates-2026 (SUNWORLD SAFARIS).pdf",
+    "praroFile": "2026 CONTRACT RATES/KENYA/ACCOMODATION/ZEBRA COLLECTION CAMPS/PRARO AMBOSELI CAMP RATES 2025 & 2026.pdf",
+    "skippedFiles": ["Zebra Plains Collection and Lalashe Camps Offer.pdf - marketing/special offer, not opened", "PRARO AMBOSELI CAMP RESIDENT RATES 2025-2026 (KSH).pdf, RESIDENTS RATES 2026.pdf - resident tier, out of scope"],
+    "zebraContractDate": "2025-09-24", "praroContractDate": "2025-12-10",
+    "validity": "2026 (Praro doc also covers late 2025)"
+  },
+  "confidence": "confirmed-2026-08-06",
+  "seasons_zebraPlains": {
+    "low": { "dateRanges": ["3 Jan - 30 Jun", "1 Oct - 22 Dec"] },
+    "high": { "dateRanges": ["1 Jul - 14 Jul", "16 Sep - 30 Sep", "23 Dec - 2 Jan"] },
+    "peak": { "dateRanges": ["15 Jul - 15 Sep"] }
+  },
+  "properties": {
+    "zebraPlainsMaraCamp": {
+      "roomCategories": "20 Savannah Tents, 26/29 Hillside Facing Tents (count stated inconsistently as 26 in table header vs 29 in narrative text - flagged), 2 Family Savannah Tents (2-bedroom villa, min 4 pax)",
+      "hillside": { "fullBoard": { "adultSharing": { "low": 120, "high": 205, "peak": 245 } }, "gamePackage": { "adultSharing": { "low": 235, "high": 360, "peak": 400 } } },
+      "savannah": {
+        "fullBoard": { "adultSharing": { "low": 125, "high": 220, "peak": 260 }, "childSharing": { "low": 90, "high": 145, "peak": 175 }, "singleAdult": { "low": 165, "high": 285, "peak": 360 }, "thirdBedSupplement": { "low": 100, "high": 175, "peak": 195 }, "familyTentSupplement": { "low": "N/A", "high": 165, "peak": 165 } },
+        "gamePackage": { "adultSharing": { "low": 245, "high": 370, "peak": 410 }, "childSharing": { "low": 160, "high": 195, "peak": 245 }, "singleAdult": { "low": 275, "high": 550, "peak": 625 }, "thirdBedSupplement": { "low": 195, "high": 285, "peak": 310 }, "familyTentSupplement": { "low": "N/A", "high": 165, "peak": 165 } }
+      },
+      "confidenceNote": "[Unverified] Room count discrepancy: table header says 'HILLSIDE (26)' and 'SAVANNAH (20)' but narrative inclusions text says '20 Savannah Tents, 29 Hillside Facing Tents' - the Hillside count (26 vs 29) is inconsistent within this single source document, not resolved."
+    },
+    "zebraRiverCamp": {
+      "roomCategories": "15 River-Facing Tents (Talek River), 1 Family Tent (min 4 pax)",
+      "fullBoard": { "adultSharing": { "low": 205, "high": 355, "peak": 380 }, "childSharing": { "low": 110, "high": 175, "peak": 190 }, "singleAdult": { "low": 305, "high": 530, "peak": 580 }, "thirdBedSupplement": { "low": 155, "high": 270, "peak": 290 }, "familyTentSupplement": { "low": 110, "high": 160, "peak": 210 } },
+      "gamePackage": { "adultSharing": { "low": 350, "high": 450, "peak": 485 }, "childSharing": { "low": 175, "high": 225, "peak": 245 }, "singleAdult": { "low": 520, "high": 675, "peak": 730 }, "thirdBedSupplement": { "low": 255, "high": 330, "peak": 365 }, "familyTentSupplement": { "low": 110, "high": 160, "peak": 210 } }
+    },
+    "zebraValleyCamp": {
+      "roomCategories": "14 Park Facing Tents (table header says 20), 1 Family Tent (min 4 pax)",
+      "fullBoard": { "adultSharing": { "low": 205, "high": 355, "peak": 380 }, "childSharing": { "low": 110, "high": 175, "peak": 190 }, "singleAdult": { "low": 305, "high": 530, "peak": 580 }, "thirdBedSupplement": { "low": 155, "high": 270, "peak": 290 }, "familyTentSupplement": { "low": 110, "high": 160, "peak": 210 } },
+      "gamePackage": { "adultSharing": { "low": 350, "high": 450, "peak": 485 }, "childSharing": { "low": 175, "high": 225, "peak": 245 }, "singleAdult": { "low": 520, "high": 675, "peak": 730 }, "thirdBedSupplement": { "low": 255, "high": 330, "peak": 365 }, "familyTentSupplement": { "low": 110, "high": 160, "peak": 210 } },
+      "confidenceNote": "[Unverified] Same room-count discrepancy pattern as Zebra Plains Mara Camp: table header '(20)' vs narrative text '14 Park facing tents' - not resolved."
+    },
+    "littleZebraRiverCamp": {
+      "roomCategories": "9 River-Facing Tents (Talek River), 1 Family Tent (min 4 pax)",
+      "fullBoard": { "adultSharing": { "low": 270, "high": 385, "peak": 455 }, "childSharing": { "low": 130, "high": 195, "peak": 225 }, "singleAdult": { "low": 400, "high": 580, "peak": 685 }, "thirdBedSupplement": { "low": 205, "high": 290, "peak": 340 }, "familyTentSupplement": { "low": 160, "high": 210, "peak": 260 } },
+      "gamePackage": { "adultSharing": { "low": 440, "high": 455, "peak": 650 }, "childSharing": { "low": 225, "high": 285, "peak": 320 }, "singleAdult": { "low": 650, "high": 835, "peak": 965 }, "thirdBedSupplement": { "low": 330, "high": 430, "peak": 480 }, "familyTentSupplement": { "low": 160, "high": 210, "peak": 260 } },
+      "extraInclusion": "45-minute Swedish massage per guest (once per stay) included in Full Board."
+    },
+    "royalZebraRiverSafariLodge": {
+      "roomCategories": "5 Luxury Savannah/Park View Suites (Main Reserve View), 3 Luxury Forest View Tents",
+      "fullBoard_mainReserveView": { "adultSharing": { "low": 315, "high": 400, "peak": 510 }, "childSharing": { "low": 160, "high": 205, "peak": 255 }, "singleAdult": { "low": 440, "high": 600, "peak": 740 }, "thirdBedSupplement": { "low": 235, "high": 300, "peak": 350 } },
+      "fullBoard_forestView": { "adultSharing": { "low": 290, "high": 380, "peak": 530 }, "childSharing": { "low": 160, "high": 205, "peak": 255 }, "singleAdult": { "low": 440, "high": 600, "peak": 740 }, "thirdBedSupplement": { "low": 235, "high": 300, "peak": 350 } },
+      "gamePackage_mainReserveView": { "adultSharing": { "low": 460, "high": 580, "peak": 785 } },
+      "gamePackage_forestView": { "adultSharing": { "low": 450, "high": 570, "peak": 745 } },
+      "extraInclusions": "Sundowner, private butler, bubbly breakfast, 45-min Swedish massage per guest (once per stay) included in Full Board. Game Package adds exclusive 4x4 use, airstrip transfers, bush breakfast/lunch/dinner, walking safari, Maasai cultural visit."
+    }
+  },
+  "mealPlanInclusions": {
+    "fullBoard_general": "Breakfast, lunch, dinner (Zebra Plains Mara Camp only - base level)",
+    "fullBoard_riverValleyLittleCamps": "Breakfast, lunch, dinner, laundry (excl. undergarments), selected in-house alcoholic/non-alcoholic drinks",
+    "gamePackage_general": "All Full Board inclusions + shared 4x4 open-sided Landcruiser + airstrip/Talek gate transfer. Booking 4-7 pax in a car gets exclusive vehicle use at no extra charge (River/Valley/Little Camp only)."
+  },
+  "childPolicy": { "definition": "4-11.9 years; under 4 free (excluding park fees)", "ownRoom": "75% of adult sharing rate", "oneAdultWithChild": "Adult pays 75% of single room rate, child pays child-sharing rate", "twoPlusAdultsWithChildren": "Standard adult sharing + child sharing rates apply" },
+  "mandatoryFeesNote": "Park/Conservation fees NOT included, mandatory, subject to change, valid 12 hours.",
+  "extras_zebraPlains": {
+    "walkingSafari": 25, "maasaiCulturalVisit": 25, "exclusiveVehicleHirePerDay": { "amount": 250, "note": "Applicable to Game Package clients; does NOT apply to guests at 'Zebra Plains Mara Lemek Camp' (a variant name not otherwise defined in this doc - flagged)." },
+    "bushDinner": { "upTo2pax": 85, "above2pax": 60 }, "bushBreakfast": { "upTo2pax": 85, "above2pax": 60 }, "sundowner": { "upTo2pax": 85, "above2pax": 60 },
+    "holidaySupplement": { "amount": 20, "unit": "per adult/child per night", "dates": "New Year (31/1), Christmas (24/25), Easter (Fri/Mon), Valentine's" },
+    "extraLunch": 35, "birthdayCake": 35
+  },
+  "cancellationPolicy_zebraPlains": [
+    { "daysBeforeArrival": ">60", "refund": "65% of total invoice" },
+    { "daysBeforeArrival": "45", "refund": "45%" },
+    { "daysBeforeArrival": "30", "refund": "25%" },
+    { "daysBeforeArrival": "<30", "refund": "None (consult camp for credit)" }
+  ],
+  "paymentTerms_zebraPlains": { "deposit": "30% non-refundable, due 14 days after confirmation", "balanceHighPeak": "100% due 60 days before arrival", "balanceLow": "100% due 30 days before arrival" },
+  "tourLeaderAndFamPolicy_zebraPlains": { "tourLeader": "50% of contracted rate, low season + full board only", "famTrip": "50% of contracted full board rate, low season only, unless otherwise agreed" },
+
+  "praroAmboseliCamp": {
+    "$note": "Sixth property, same owner (Alfred Korir) and contact details as Zebra Plains Collection, but a separate signed contract with slightly different season windows.",
+    "region": "Amboseli",
+    "roomCategories": "46 tents, 1 Savannah Facing Family Suite (2-bedroom villa), 1 Junior Family Tent (1 double + 2 single beds, ideal for families with under-12s)",
+    "seasons": {
+      "low": { "dateRanges": ["3 Jan - 30 Jun", "1 Oct - 22 Dec"] },
+      "high": { "dateRanges": ["1 Jul - 31 Jul", "1 Sep - 30 Sep", "23 Dec 2025 - 2 Jan 2026"] },
+      "peak": { "dateRanges": ["1 Aug - 31 Aug"] }
+    },
+    "fullBoard": { "adultSharing": { "low": 125, "high": 175, "peak": 200 }, "childSharing": { "low": 65, "high": 90, "peak": 100 }, "singleAdult": { "low": 190, "high": 260, "peak": 300 }, "thirdBedSupplement": { "low": 95, "high": 130, "peak": 150 }, "familyTentSupplement": { "low": "N/A", "high": 165, "peak": 165 } },
+    "gamePackage": { "adultSharing": { "low": 230, "high": 345, "peak": 385 }, "childSharing": { "low": 115, "high": 175, "peak": 195 }, "singleAdult": { "low": 345, "high": 520, "peak": 580 }, "thirdBedSupplement": { "low": 175, "high": 260, "peak": 290 }, "familyTentSupplement": { "low": "N/A", "high": 165, "peak": 165 } },
+    "mealPlanInclusions": { "fullBoard": "Breakfast, lunch, dinner", "gamePackage": "Breakfast, lunch, dinner, shared 4x4 open-sided Landcruiser, return airstrip transfers" },
+    "extras": { "walkingSafari": 20, "maasaiCulturalVisit": 20, "exclusiveVehicleHirePerDay": 300, "bushDinner": { "upTo2pax": 75, "above2pax": 50 }, "bushBreakfast": { "upTo2pax": 75, "above2pax": 50 }, "sundowner": { "upTo2pax": 75, "above2pax": 50 }, "holidaySupplement": 20, "extraLunch": 35, "birthdayCake": 30 },
+    "cancellationPolicy": "Same structure as Zebra Plains (65%/45%/25%/none at 60/45/30/<30 days).",
+    "paymentTerms": "Same as Zebra Plains (30% deposit, 100% due 60/30 days before arrival for high-peak/low)."
+  }
+}

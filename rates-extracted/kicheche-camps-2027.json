@@ -1,0 +1,110 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftotext -layout, paginated, from 'KICHECHE/2027 Kicheche Camps STO Rates.pdf' (10pp, issued 27 April 2026). 4 properties, each clearly labeled: Kicheche Mara North, Kicheche Bush Olare, Kicheche Valley Naboisho (all Maasai Mara conservancies), Kicheche Laikipia (Ol Pejeta Conservancy).",
+  "operator": "Kicheche Camps",
+  "currency": "USD",
+  "tier": "STO",
+  "confidence": "confirmed-2027-08-06",
+  "changesFrom2026": {
+    "kichecheValleyNaboisho": "Now open year-round from June 2026 (previously seasonal)",
+    "ratesIncrease": "2-5% increase due to operating costs",
+    "juneSeasonShift": "June moves from Regular to Mid season effective 2027",
+    "communityTrustBedNightFee": "Increased to $10/night in 2027",
+    "tourLeaderTentRate": "Increased to $200",
+    "maraConservancyFee": "Increased to $150",
+    "childAgeLimit": "7+ years at Kicheche Bush Olare and Kicheche Valley Naboisho (reminder of existing policy)"
+  },
+  "seasons": {
+    "peak": { "dates": "01 Jul - 31 Oct 27, 20 Dec 27 - 02 Jan 28" },
+    "mid": { "dates": "03 Jan - 28 Feb 27, 01 Jun - 30 Jun 27" },
+    "regular": { "dates": "01 Mar - 31 Mar 27, 23 May - 31 May 27, 01 Nov - 19 Dec 27" }
+  },
+  "properties": {
+    "Kicheche Mara North": {
+      "region": "Mara North Conservancy",
+      "closurePeriod": "01 Apr - 22 May 2027",
+      "childAgeBracket": "3-11 years (Young Adult 12-17)",
+      "rates": {
+        "unit": "per person per night",
+        "peak": { "adult": 840, "youngAdult12to17": 630, "child3to11": 420, "singleSupplement": 220 },
+        "mid": { "adult": 600, "youngAdult12to17": 450, "child3to11": 300, "singleSupplement": 145 },
+        "regular": { "adult": 520, "youngAdult12to17": 390, "child3to11": 260, "singleSupplement": 135 }
+      },
+      "conservancyFees": { "adult": 150, "child3to17": 75 },
+      "familySuitePerNight_exclConservancyFees": { "peak": 3360, "mid": 2400, "regular": 2080 },
+      "verified": true
+    },
+    "Kicheche Bush Olare": {
+      "region": "Olare Motorogi Conservancy",
+      "closurePeriod": "01 Apr - 22 May 2027",
+      "childAgeBracket": "7-11 years (Young Adult 12-17); children under 7 not permitted",
+      "rates": {
+        "peak": { "adult": 920, "youngAdult12to17": 690, "child7to11": 460, "singleSupplement": 245 },
+        "mid": { "adult": 690, "youngAdult12to17": 520, "child7to11": 345, "singleSupplement": 170 },
+        "regular": { "adult": 630, "youngAdult12to17": 475, "child7to11": 315, "singleSupplement": 150 }
+      },
+      "conservancyFees": { "adult": 150, "child7to17": 75 },
+      "familySuitePerNight_exclConservancyFees": { "peak": 3680, "mid": 2760, "regular": 2520 },
+      "verified": true
+    },
+    "Kicheche Valley Naboisho": {
+      "region": "Naboisho Conservancy",
+      "openYearRound": true,
+      "childAgeBracket": "7-11 years (Young Adult 12-17); children under 7 not permitted",
+      "rates": {
+        "peak": { "adult": 920, "youngAdult12to17": 690, "child7to11": 460, "singleSupplement": 245 },
+        "mid": { "adult": 690, "youngAdult12to17": 520, "child7to11": 345, "singleSupplement": 170 },
+        "regular": { "adult": 630, "youngAdult12to17": 475, "child7to11": 315, "singleSupplement": 150, "dates": "01 Mar - 31 May 27 & 01 Nov - 19 Dec 27" }
+      },
+      "conservancyFees": { "adult": 150, "child7to17": 75 },
+      "familySuitePerNight_exclConservancyFees": { "peak": 3680, "mid": 2760, "regular": 2520 },
+      "honeymoonOffer": "25% off accommodation for the bride Jul-Sep, 50% off rest of year, plus free half-hour massage (travel within 12 months of wedding)",
+      "verified": true
+    },
+    "Kicheche Laikipia": {
+      "region": "Ol Pejeta Conservancy",
+      "closurePeriod": "01 Apr - 22 May 2027",
+      "childAgeBracket": "3-11 years (Young Adult 12-17)",
+      "rates": {
+        "peak": { "adult": 715, "youngAdult12to17": 535, "child3to11": 360, "singleSupplement": 205 },
+        "mid": { "adult": 540, "youngAdult12to17": 405, "child3to11": 270, "singleSupplement": 130 },
+        "regular": { "adult": 475, "youngAdult12to17": 355, "child3to11": 240, "singleSupplement": 115 }
+      },
+      "conservancyFees": { "adult": 187, "youngAdult12to17": 187, "child3to11": 94, "note": "Includes Ol Pejeta Conservancy entrance AND Wilderness zone bednight fees" },
+      "familySuitePerNight_exclConservancyFees": { "peak": 2860, "mid": 2160, "regular": 1900 },
+      "nonPackageRates": "Available subject to conditions - contact Kicheche directly",
+      "verified": true
+    }
+  },
+  "commonPolicy": {
+    "familySuite": "Max 5 pax, 2 ensuite bedrooms (double + twin/triple), guaranteed exclusive vehicle use",
+    "singleSupplementRule": "Valid for 2 singles per booking; double supplement charged from 3rd single onward",
+    "minimumStay": "2 nights",
+    "youngAdultChildRateException": "Young Adults (12-17) qualify for child rates only if sharing a Triple or Quad room",
+    "lateDeparture": { "peak": 150, "midRegular": 100, "unit": "per person, if departing after midday" },
+    "verified": true
+  },
+  "specialOffers": {
+    "longStayDiscount": "10% off for 6+ nights (also applies to exclusive vehicle charges)",
+    "conservancySafari": "Combine Kicheche Laikipia with any Mara camp: 6 nights for the price of 5 (free night at Laikipia); conservancy fees still payable on free night",
+    "notCombinable": true
+  },
+  "walkingWildernessPackage": {
+    "description": "5-night exclusive package: 2 nights Kicheche Valley Naboisho + 1 night mobile Wild Camping (walk across Naboisho Conservancy) + 2 nights Kicheche Bush Olare (via morning walk through Olare Motorogi Conservancy). Min 2 pax, 16+ only on walks.",
+    "unit": "per person sharing, inclusive of conservancy fees",
+    "peak": 5520, "mid": 4370, "regular": 4070,
+    "verified": true
+  },
+  "exclusiveVehicle": {
+    "unit": "per day, min 2 consecutive days",
+    "standardVehicle": { "peak": 400, "midRegular": 350 },
+    "photographyVehicle": { "peak": 500, "midRegular": 450, "note": "exclusive use only, max 2 guests" },
+    "note": "4-6 guest bookings automatically get exclusive vehicle at no extra cost. Families with children under 7 MUST book exclusive vehicle.",
+    "verified": true
+  },
+  "tourLeaderRate": { "amount": 200, "unit": "per night accommodation, plus conservancy fees (Mara non-resident $150/night, Laikipia non-resident $187/night)", "verified": true },
+  "wildCamping": { "amount": 200, "unit": "per person per night supplement, min 2 max 6 pax", "note": "children under 16 not allowed on walks" },
+  "maraNationalReserveVisit": { "adult": 200, "childUnder17": 50, "note": "Kicheche camps don't require Reserve visits for game viewing (low-density conservancy model) - this is an optional extra" },
+  "cancellationPolicy": "45+ days before arrival: loss of deposit only; 45-31 days: 50%; 30 days or less: 100%. Groups (3+ tents): 90+ days loss of deposit, 90-31 days 50%, 30 or less 100%.",
+  "paymentTerms": "20% non-refundable deposit; full payment 45 days before arrival",
+  "transfersNote": "Detailed inter-camp and Mara-wide vehicle transfer rate chart captured in source (pages 8-9) - not transcribed in full here given volume; refer to source PDF directly for a specific route if needed."
+}

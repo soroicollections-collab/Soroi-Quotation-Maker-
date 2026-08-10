@@ -1,0 +1,23 @@
+{
+  "$note": "Extracted 6 Aug 2026. Not a lodge - a 75ft liveaboard dhow (boat) for Lamu Archipelago coastal exploration. Priced per boat per night, not per person.",
+  "property": "NaiSabah",
+  "operator": "Bush and Beyond Ltd (booking agent)",
+  "region": "Lamu Archipelago (Manda Airstrip)",
+  "tier": "RSP (rack) and Trade Rates/Preferential",
+  "source": { "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/BUSH&BEYOND/NaiSabah - 2026 Preferential US$.pdf" },
+  "seasons": { "operating": "January-April, August-December", "closed": "May, June, July" },
+  "rates": {
+    "currency": "USD", "unit": "per boat per night (min stay 2 nights, 4 guests)",
+    "1to4guests": { "rsp": 3950, "trade": 2963 },
+    "1to6guests": { "rsp": 4905, "trade": 3679 },
+    "extraAdultEach": { "rsp": 700, "trade": 525 },
+    "extraChild6to16each": { "rsp": 520, "trade": 390 },
+    "communityHeritageFee_perPersonPerNight": 40,
+    "communityHeritageFeeChild": 23
+  },
+  "capacity": "3 air-conditioned cabins, up to 8 people; also open-deck star-sleeping",
+  "childPolicy": { "note": "Not suitable for children under 6 years." },
+  "inclusions": "Full board, soft drinks/local beers/non-premium wines/spirits, Manda airstrip transfers, statutory taxes, laundry, tidal floats, snorkelling, inshore fishing, Lamu shopping, dolphin watching, cultural experiences, nature walks, historical sites, beach picnics, weaving, birdwatching, watersports, sundowners.",
+  "exclusions": "Community Heritage fee, bespoke diving, private leisure boat, privately guided fly fishing, deep sea fishing.",
+  "notes": "Exclusive use minimum charge is 4 adults."
+}

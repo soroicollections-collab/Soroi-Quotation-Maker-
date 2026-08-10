@@ -1,0 +1,28 @@
+{
+  "$note": "Extracted 6 Aug 2026 via paginated pdftotext read (page 11 of 24) of 'EC-2026-Rates-40.pdf'. Different property from Bush and Beyond's 'Lewa House' (also in Lewa Wildlife Conservancy but a separate operator/product) - do not confuse the two.",
+  "property": "Lewa Safari Camp",
+  "operator": "Elewana Collection",
+  "region": "Lewa Wildlife Conservancy",
+  "tier": "Rack and Nett (Nett = Rack x 0.60)",
+  "source": { "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/ELEWANA/EC-2026-Rates-40.pdf", "pdfPageIndex": 11, "validity": { "start": "2026-01-04", "end": "2027-01-03" } },
+  "seasons": { "high": "Jul 1-Oct 31, Dec 20-Jan 3", "mid": "Jan 4-Mar 31, Jun 1-Jun 30, Nov 1-Dec 19", "green": "Apr 1-May 31" },
+  "rates": {
+    "currency": "USD", "unit": "per person per night",
+    "fullBoard": {
+      "perPersonSharing": { "high": { "rack": 724, "nett": 434 }, "mid": { "rack": 442, "nett": 265 }, "green": { "rack": 307, "nett": 184 } },
+      "singleRoom": { "high": { "rack": 1086, "nett": 651 }, "mid": { "rack": 663, "nett": 398 }, "green": { "rack": 460, "nett": 276 } },
+      "tripleRoom": { "high": { "rack": 1629, "nett": 977 }, "mid": { "rack": 994, "nett": 597 }, "green": { "rack": 690, "nett": 414 } },
+      "familySuite2Adults2Children": { "high": { "rack": 2856, "nett": 1713 }, "mid": { "rack": 1865, "nett": 1119 }, "green": { "rack": 1278, "nett": 767 } }
+    },
+    "gamePackage": {
+      "perPersonSharing": { "high": { "rack": 924, "nett": 554 }, "mid": { "rack": 642, "nett": 385 }, "green": { "rack": 507, "nett": 304 } },
+      "singleRoom": { "high": { "rack": 1286, "nett": 771 }, "mid": { "rack": 863, "nett": 518 }, "green": { "rack": 660, "nett": 396 } },
+      "tripleRoom": { "high": { "rack": 2079, "nett": 1247 }, "mid": { "rack": 1444, "nett": 867 }, "green": { "rack": 1140, "nett": 684 } },
+      "familySuite2Adults2Children": { "high": { "rack": 3626, "nett": 2175 }, "mid": { "rack": 2614, "nett": 1568 }, "green": { "rack": 2013, "nett": 1208 } }
+    }
+  },
+  "mandatoryFees": { "lewaWildlifeConservancy": { "adult": 183, "child6to15": 92, "unit": "per person per day, year-round" } },
+  "childPolicy": { "note": "Elewana portfolio-wide 3-17 policy generally, but this property's mandatory fee table uses a 6-15 bracket specifically - flag as a property-specific variance." },
+  "extras": { "forestVisitNgareNdare": { "rack": 85, "nett": 72, "minGuests": 4 }, "culturalBomaVisitNgwesi": { "rack": 80, "nett": 68, "minGuests": 2 }, "horseOrCamelSafari": { "rack": 120, "nett": 102, "minAge": 12 } },
+  "transfers": { "toNanyukiAirstrip": { "rack": 350, "nett": 315 }, "toLoisabaLaikipia": { "rack": 700, "nett": 630 }, "toSamburu": { "rack": 410, "nett": 369 }, "toBoranaLodge": { "rack": 125, "nett": 113 } }
+}

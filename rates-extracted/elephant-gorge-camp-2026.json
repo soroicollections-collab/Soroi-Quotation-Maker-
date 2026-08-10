@@ -1,0 +1,25 @@
+{
+  "$note": "Extracted 6 Aug 2026, from the same Atua Enkop workbook. Only Atua Enkop property in this portfolio with 3 room categories (Deluxe, Suites, 2 Bedroom Suite) - the other 4 have a single category.",
+  "property": "Elephant Gorge Camp",
+  "operator": "Atua Enkop Africa Ltd",
+  "region": "Amboseli",
+  "tier": "Nett, non-commissionable contract rate",
+  "source": { "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/ATUA ENKOP/Atua Enkop  - Sunworld Safaris  - 2026.xlsx", "validity": { "start": "2026-01-03", "end": "2027-01-02" } },
+  "seasons": { "midLow": "03 Jan-31 Mar, 01-30 Jun, 16 Oct-22 Dec 2026, and 01 Apr-31 May combined into one 'Mid Season/Low Season' band", "high": "01 Jul-15 Oct 2026, 23 Dec 2026-02 Jan 2027" },
+  "rates": {
+    "currency": "USD", "unit": "per person per night",
+    "package": {
+      "midLow": { "deluxe": { "adultSharing": 450, "single": 585, "child6to11": 225, "child12to16": 340 }, "suites": { "adultSharing": 490, "single": 620, "child6to11": 245, "child12to16": 370 }, "twoBedroomSuite": { "adultSharing": 565, "single": 700, "child6to11": 280, "child12to16": 420 } },
+      "high": { "deluxe": { "adultSharing": 685, "single": 890, "child6to11": 345, "child12to16": 515 }, "suites": { "adultSharing": 720, "single": 925, "child6to11": 360, "child12to16": 540 }, "twoBedroomSuite": { "adultSharing": 760, "single": 980, "child6to11": 380, "child12to16": 570 } }
+    },
+    "nonPackage": {
+      "midLow": { "deluxe": { "adultSharing": 320, "single": 415, "child6to11": 160, "child12to16": 240 }, "suites": { "adultSharing": 360, "single": 450, "child6to11": 180, "child12to16": 270 }, "twoBedroomSuite": { "adultSharing": 395, "single": 490, "child6to11": 200, "child12to16": 300 } },
+      "high": { "deluxe": { "adultSharing": 450, "single": 585, "child6to11": 225, "child12to16": 340 }, "suites": { "adultSharing": 490, "single": 625, "child6to11": 245, "child12to16": 370 }, "twoBedroomSuite": { "adultSharing": 525, "single": 685, "child6to11": 265, "child12to16": 395 } }
+    }
+  },
+  "mandatoryFees": { "conservancyFee": { "amount": 55, "unit": "USD per person per night" } },
+  "childPolicy": { "ownRoomUnder12": "75% of adult rate", "ownRoom12plus": "Full adult rate", "oneAdultOneChildSharing": "Adult pays single room rate" },
+  "packageInclusions": "Full board accommodation, local airstrip transfer, 2 shared game drives, sundowner, non-premium drinks.",
+  "exclusions": "Conservancy fee, laundry/gratuities, park entry fees, flight cost, health insurance, exclusive vehicle ($395-505/day), bush breakfast/dinner, extra lunch ($40), nature walk ($45).",
+  "circuitDiscount": { "twoProperties": "5%", "threeOrFourFiveProperties": "7.5%" }
+}

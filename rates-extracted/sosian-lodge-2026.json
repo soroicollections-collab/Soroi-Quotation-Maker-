@@ -1,0 +1,52 @@
+{
+  "property": "Sosian Lodge",
+  "operator": "Offbeat Safaris Holdings Ltd",
+  "region": "Laikipia",
+  "isSoroiProperty": false,
+  "sourceFiles": ["2026 CONTRACT RATES/KENYA/ACCOMODATION/OFFBEAT/2026 Offbeat Collection Wholesale Rates (30%) AMENDED.pdf"],
+  "notes": [
+    "Part of the same 8-property Offbeat document - see offbeat-mara-camp-2026.json for sibling properties.",
+    "Closed in May.",
+    "Has an Exclusive Use per night rate (up to 16 guests) in addition to per-person rates.",
+    "Wholesale rate confirmed arithmetically as Rack x 0.70 (e.g. Low adult: $525 = $750 x 0.70)."
+  ],
+  "currency": "USD",
+  "validity": "6 Jan 2026 - 5 Jan 2027 (closed May)",
+  "publishedRates_perPersonPerNight": {
+    "low_MarAprNov_01to18Dec": { "adultSharing": 750, "teenSharing12to16": 565, "childSharing3to11": 375, "perSingle": 1125, "exclusiveUsePerNightUpTo16guests": 9675 },
+    "mid_06to31Jan_Feb_JunSepOct": { "adultSharing": 810, "teenSharing12to16": 600, "childSharing3to11": 405, "perSingle": 1215, "exclusiveUsePerNightUpTo16guests": 10750 },
+    "high_JulAug": { "adultSharing": 970, "teenSharing12to16": 725, "childSharing3to11": 485, "perSingle": 1455, "exclusiveUsePerNightUpTo16guests": 12900 },
+    "peak_19Dec_05Jan": { "adultSharing": 1020, "teenSharing12to16": 765, "childSharing3to11": 510, "perSingle": 1530, "exclusiveUsePerNightUpTo16guests": 13975 }
+  },
+  "wholesale30pct_perPersonPerNight": {
+    "low_MarAprNov_01to18Dec": { "adultSharing": 525, "teenSharing12to16": 396, "childSharing3to11": 263, "perSingle": 788, "exclusiveUsePerNightUpTo16guests": 6773 },
+    "mid_06to31Jan_Feb_JunSepOct": { "adultSharing": 567, "teenSharing12to16": 420, "childSharing3to11": 284, "perSingle": 851, "exclusiveUsePerNightUpTo16guests": 7525 },
+    "high_JulAug": { "adultSharing": 679, "teenSharing12to16": 508, "childSharing3to11": 340, "perSingle": 1019, "exclusiveUsePerNightUpTo16guests": 9030 },
+    "peak_19Dec_05Jan": { "adultSharing": 714, "teenSharing12to16": 536, "childSharing3to11": 357, "perSingle": 1071, "exclusiveUsePerNightUpTo16guests": 9783 }
+  },
+  "conservancyFees_perPersonPerNight": { "adult": 140, "teen": 105, "child": 70, "verified": true },
+  "childPolicy": { "raw": "0-2 years free of charge.", "verified": true },
+  "specials": [
+    "Early Bird Discount: 5% off accommodation on bookings confirmed with deposit 9 months prior to travel. All seasons, combinable with 2/3/4.",
+    "Family Discount: 3rd child (4-11yrs) sharing a triple pays conservancy fees only.",
+    "Honeymooners Discount: 25% off accommodation for one of the couple. Low & Mid seasons only.",
+    "Per Single rate only from 2nd single room per booking.",
+    "5 nights for the price of 4 (conservation fees payable all nights). Low season only."
+  ],
+  "includes": ["Full board accommodation", "All drinks except champagne", "Day & night game drives", "Horse riding", "Guided walks", "Camel treks", "Mountain biking", "Fly camping (without horses)", "Fishing", "Running with rangers", "Ranching activities", "Sosian community project/school/clinic visits", "Sosian airstrip transfers", "Laundry"],
+  "excludes": [
+    "Conservation fees (see above)",
+    "Late departure after 12pm (incl. morning activities & lunch): Adult $65, Teen $45, Child $35",
+    "Fly camp with Horses (pre-book): 1 night $150/rider, 2 nights $400/rider",
+    "Fly camp with Camels (pre-book): 1 night $150/rider, 2 nights $400/rider",
+    "Massages: $50/hour",
+    "Loisaba Airstrip transfer (50min, 7-seater): $120/vehicle incl. $50 Loisaba entrance fee",
+    "Nanyuki Airstrip transfer (2hrs, 6-seater): $300/vehicle",
+    "Exclusive use of vehicle: $350/vehicle/day"
+  ],
+  "policies": {
+    "checkIn": "11:00", "checkOut": "10:00",
+    "deposit": "20% deposit confirms booking; balance due 45 days prior to arrival.",
+    "cancellation": ">120 days: 20% deposit refunded (net of bank charges); 120-46 days: 20% deposit forfeited; 45-30 days: 50% of full booking value forfeited; <30 days or no-show: 100% forfeited."
+  }
+}

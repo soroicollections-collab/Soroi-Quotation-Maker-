@@ -1,0 +1,48 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftotext -layout, clean document. NOT a Soroi property - a resort near Olepolos, Magadi Road, Kajiado County (not a classic safari-circuit lodge; likely a Nairobi-area weekend getaway property given its location near Nairobi/Ngong area). Both Resident and Non-Resident rates shown together in KSH only (no USD given, 'provided upon request' per T&Cs). Skipped: 'Enkaji Resort Company Brochure.pdf' - marketing only, no rate table.",
+  "property": "Enkaji Resort",
+  "region": "Kisamis, near Olepolos, Magadi Road, Kajiado County",
+  "currency": "KES",
+  "unit": "per cottage (Bed Only) or per person (B&B/HB/FB, sharing basis as specified)",
+  "source": {
+    "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/enkaji Resort/Enkaji Resort - Rate Card_Contract Rates 2026.pdf",
+    "validity": "2026 (season windows below)"
+  },
+  "confidence": "confirmed-2026-08-06",
+  "seasons": {
+    "low": { "dateRanges": ["5 Jan - 15 Jun", "1 Oct - 15 Dec"] },
+    "high": { "dateRanges": ["16 Jun - 30 Sep", "16 Dec - 4 Jan"] }
+  },
+  "rates_oneBedroomCottage_2pax": {
+    "bedOnly_perCottage": { "low": { "rack": 20000, "contract": 17000 }, "high": { "rack": 25000, "contract": 21500 } },
+    "BB": { "sharing": { "low": { "rack": 14500, "contract": 12500 }, "high": { "rack": 17000, "contract": 14500 } }, "single": { "low": { "rack": 22000, "contract": 19000 }, "high": { "rack": 27000, "contract": 23000 } } },
+    "halfBoard": { "sharing": { "low": { "rack": 18500, "contract": 15800 }, "high": { "rack": 21000, "contract": 18000 } }, "single": { "low": { "rack": 26000, "contract": 22100 }, "high": { "rack": 31000, "contract": 26500 } } },
+    "fullBoard": { "sharing": { "low": { "rack": 22500, "contract": 19000 }, "high": { "rack": 25000, "contract": 21500 } }, "single": { "low": { "rack": 32500, "contract": 28000 }, "high": { "rack": 37500, "contract": 32000 } } }
+  },
+  "rates_twoBedroomCottage_4pax": {
+    "bedOnly_perCottage": { "low": { "rack": 33000, "contract": 28000 }, "high": { "rack": 40000, "contract": 34000 } },
+    "BB": {
+      "4sharing": { "low": { "rack": 12000, "contract": 10500 }, "high": { "rack": 14500, "contract": 12500 } },
+      "3sharing": { "low": { "rack": 16000, "contract": 13600 }, "high": { "rack": 19350, "contract": 16500 } },
+      "2sharing": { "low": { "rack": 24000, "contract": 20500 }, "high": { "rack": 29000, "contract": 25000 } }
+    },
+    "halfBoard": {
+      "4sharing": { "low": { "rack": 16000, "contract": 13600 }, "high": { "rack": 18500, "contract": 16000 } },
+      "3sharing": { "low": { "rack": 21000, "contract": 18000 }, "high": { "rack": 24650, "contract": 21000 } },
+      "2sharing": { "low": { "rack": 32000, "contract": 27200 }, "high": { "rack": 37000, "contract": 31500 } }
+    },
+    "fullBoard": {
+      "4sharing": { "low": { "rack": 20000, "contract": 17000 }, "high": { "rack": 22500, "contract": 19000 } },
+      "3sharing": { "low": { "rack": 26500, "contract": 23000 }, "high": { "rack": 30000, "contract": 25500 } },
+      "2sharing": { "low": { "rack": 40000, "contract": 34000 }, "high": { "rack": 45000, "contract": 38500 } }
+    }
+  },
+  "childPolicy": { "under2": "Free of charge", "age2to12": { "BB": 2000, "HB": 5000, "FB": 7000, "unit": "KES per night" } },
+  "termsAndConditions": {
+    "usdAvailability": "USD rates provided upon request - not published in this document.",
+    "exclusions": "Alcoholic drinks excluded from all rates.",
+    "minimumStay": "2 nights during Peak Season (16 Jun-30 Sep / 16 Dec-4 Jan, referred to as 'High Season' in the season table but 'PEAK SEASON' in T&Cs - same window, inconsistent label used within the same document).",
+    "taxInclusive": "Rates inclusive of VAT and Tourism Levy.",
+    "payment": "As per invoice.", "cancellation": "As per agreement (not itemized in this document)."
+  }
+}

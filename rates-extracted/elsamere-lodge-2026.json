@@ -1,0 +1,33 @@
+{
+  "$note": "Extracted 6 Aug 2026 by reading the source .xls (legacy Excel format) directly with Python xlrd, since this is an older binary Excel format not readable by openpyxl/pdftotext. Room categories are grouped into two rate columns: 'GA House, Dik Dik, Extn and Rm 4' vs 'Elsa, Penny, Pippa and Pati' (named rooms/cottages) rather than generic Standard/Deluxe labels.",
+  "property": "Elsamere Lodge",
+  "operator": "Elsamere Conservation Centre",
+  "region": "Lake Naivasha (former home of Joy Adamson)",
+  "tier": "Resident (KES) and Non-Resident (USD) rack rates, 10% commissionable on accommodation",
+  "source": { "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/ELSAMERE LODGE/2026 Elsamere  High and Low season rates.xls" },
+  "seasons": {
+    "high": "1 Jan-20 Apr, 15 Jun-15 Oct, 10-31 Dec 2026",
+    "low": "21 Apr-14 Jun 2026, 16 Oct-9 Dec 2026"
+  },
+  "rates": {
+    "residentKES_fullBoard": {
+      "high": { "gaHouseGroup": { "single": 10300, "double": 15300, "triple": 19500, "childSharing3to12": 4500 }, "namedCottagesGroup": { "single": 12000, "double": 18000, "triple": 23900, "childSharing3to12": 4500 } },
+      "low": { "gaHouseGroup": { "single": 9500, "double": 13500, "triple": 17500, "childSharing3to12": 4000 }, "namedCottagesGroup": { "single": 10300, "double": 15300, "triple": 19500, "childSharing3to12": 4500 } }
+    },
+    "residentKES_halfBoard": {
+      "high": { "gaHouseGroup": { "single": 8800, "double": 13900, "triple": 17400, "childSharing3to12": 4000 }, "namedCottagesGroup": { "single": 10400, "double": 16500, "triple": 21000, "childSharing3to12": 4000 } },
+      "low": { "gaHouseGroup": { "single": 7800, "double": 12500, "triple": 15500, "childSharing3to12": 3500 }, "namedCottagesGroup": { "single": 8800, "double": 13900, "triple": 17400, "childSharing3to12": 4000 } }
+    },
+    "residentKES_BB": { "high": { "single": 7500, "double": 15000 }, "low": { "single": 7000, "double": 14000 } },
+    "residentKES_bedOnly": { "high": { "single": 6500, "double": 13000 }, "low": { "single": 6000, "double": 12000 } },
+    "nonResidentUSD_fullBoard": {
+      "high": { "gaHouseGroup": { "single": 165, "double": 270, "triple": 396, "childSharing3to12": 90 }, "namedCottagesGroup": { "single": 170, "double": 305, "triple": 396, "childSharing3to12": 100 } },
+      "low": { "gaHouseGroup": { "single": 140, "double": 210, "triple": 305, "childSharing3to12": 75 }, "namedCottagesGroup": { "single": 150, "double": 230, "triple": 330, "childSharing3to12": 85 } }
+    },
+    "conferencePackage_perPax_KES": 16000
+  },
+  "childPolicy": { "ageRange": "3-12 years, sharing" },
+  "mealRatesKES": { "lunchWeekday": 2500, "lunchHighTeaWeekend": 3000, "dinner": 3000, "breakfast": 1500, "childRate3to12": { "lunch": 1000, "dinner": 1500, "breakfast": 750 } },
+  "festiveSupplement": { "double": 2000, "single": 1500, "child2to12": 750, "currency": "KES", "note": "Not commissionable" },
+  "notes": "All prices inclusive of 16% VAT and 2% catering levy. Boat hire KES 4000/hr (max 7 pax); boat to Crescent Island KES 8000 return. 50% deposit on confirmation, balance on arrival. Cancellation: 30% (30-15 days), 70% (14-7 days), 100% (6-1 days)."
+}

@@ -1,0 +1,88 @@
+{
+  "$note": "Extracted 6 Aug 2026, read directly, single-page documents, no misattribution risk (each PDF covers only Pinewood Beach). Two tiers extracted in full: USD Tariff (r) = Rack/primary, USD Net Operator Rate (c2) = secondary net tier. A third file (EA tariff, East African Resident rates) exists and was checked but NOT extracted in depth — Resident tier, out of scope. KSH tariff and fact sheet were not opened (USD is primary per task instructions; fact sheet is marketing collateral).",
+  "property": "Pinewood Beach",
+  "region": "Mombasa North Coast (P.O. Box 90521, Mombasa)",
+  "tier": "Rack/Tariff (primary, labeled 'TARIFF (r)') and Nett Operator Rate (secondary, labeled 'CONTRACT RATES (c2)') — both extracted below from separate documents.",
+  "residency": "Non-Resident (both r and c2 tariffs). A separate 'East African RESIDENT rates 2026' document exists (file: EA tariff USD 2026 04Jan to 23Dec amended 18dec2025.pdf) — checked but not deep-extracted, out of scope per task priorities. Its single flat rate is $128 (Deluxe Garden Room) to $192 (Grand Ocean Front Suite) per person/night FULL BOARD for 04 Jan-23 Dec 2026, notably a different (Full Board, not Half Board) base meal plan than the Non-Resident tariffs.",
+  "source": {
+    "rackFile": "2026 CONTRACT RATES/KENYA/BEACH ACCOMODATION/PINEWOOD BEACH/USD tariff (r) 2026 - revised 26jan2026  - Pinewood, Kenya.pdf",
+    "netOperatorFile": "2026 CONTRACT RATES/KENYA/BEACH ACCOMODATION/PINEWOOD BEACH/USD net operator rate (c2) 2026 - revised 26jan2026 - Pinewood, Kenya.pdf",
+    "pdfPageIndex": 0,
+    "documentRevisionDate": "26 Jan 2026",
+    "validity": { "start": "2025-11-01", "end": "2026-10-31", "note": "⚠ Header banner states validity '01 Nov 2025 - 31 Oct 2026', BUT the actual rate table's first column only starts at '07-Jan' — there is NO priced row covering 01 Nov 2025 - 06 Jan 2026 in either the Rack or Net Operator document. This is a genuine gap in the source PDF (verified by inspecting raw, non-layout text extraction — no hidden/cut-off column), not an extraction error. Flag explicitly on any quote needing Nov 2025-early Jan 2026 dates for this property; the true rate for that window is not available in either 2026 document on file." }
+  },
+  "confidence": "confirmed-2026-08-06",
+  "extractionMethod": { "note": "Read directly, single-page tables, both Rack and Net Operator documents cross-checked and found structurally identical (same rooms/seasons/supplements, only base figures differ)." },
+  "structuralFindings": [
+    "Currency USD, confirmed.",
+    "Base meal plan is HALF BOARD (breakfast + dinner + afternoon tea) for BOTH non-resident tariffs — a different base than Baobab/Diamonds (All Inclusive) and closer to Soroi Blue's Half Board base, though Pinewood's supplement structure is simpler.",
+    "6 room categories: Deluxe Garden Room (24 units), Premium Garden Room (12), Deluxe Garden Suite (12), Premium Garden Suite (6), Luxury Ocean Front Room (4), Grand Ocean Front Suite (2) — unit counts are stated inventory sizes, useful for availability context.",
+    "5 seasonal columns in the 2026 table (given the Nov-Jan gap noted above): 07Jan-28Feb, 01Mar-31Mar, 01Apr-30Jun, 01Jul-30Sep, 01Oct-31Oct.",
+    "Hotel closure for renovations: 01 May - 31 May 2026 — no bookings possible in this window regardless of rate.",
+    "Full Board supplement +$20 pp/pd; All Inclusive supplement +$44 pp/pd (added cumulatively — AI = HB + both supplements, or possibly AI supplement replaces both; document lists them as two separate line items without clarifying whether AI supplement is inclusive of the FB step — flagged as [Unverified] interpretation).",
+    "3rd bed (adult): 30% reduction off adult rate. Children 2-11 sharing room: 50% of adult rate. Children 2-11 in own room: 80% of adult rate (much higher than Soroi's 50% own-room-adjacent policy or Baobab's 75%).",
+    "Single supplement: 50% of rate (i.e. single = 1.5x per-person-sharing rate, standard convention).",
+    "Easter Supplement $24 pp/pd for specific Fri-Mon dates (03-06 April 2026). Xmas 25th & New Year's Eve 31st Dec: $40 pp/pd. Minimum stay 5 nights for the 24 Dec - 02 Jan period.",
+    "Honeymooners: door archway + sparkling wine (all bookings); 7+ night stay gets 30-min his & her massage.",
+    "Cancellation policy: 0-14 days prior = 100% chargeable; 15-35 days prior = 50% chargeable (note: no explicit 35+ days band stated, implying no charge beyond 35 days, not confirmed explicitly)."
+  ],
+  "seasons": {
+    "note": "5 columns present in source; the implied Nov2025-06Jan2026 gap flagged above.",
+    "columns": ["07-Jan to 28-Feb-26", "01-Mar to 31-Mar-26", "01-Apr to 30-Jun-26", "01-Jul to 30-Sep-26", "01-Oct to 31-Oct-26"]
+  },
+  "rates": {
+    "rack": {
+      "currency": "USD",
+      "unit": "per person per day, sharing, Half Board",
+      "deluxeGardenRoom": { "07Jan-28Feb": 176, "01Mar-31Mar": 156, "01Apr-30Jun": 146, "01Jul-30Sep": 176, "01Oct-31Oct": 156 },
+      "premiumGardenRoom": { "07Jan-28Feb": 195, "01Mar-31Mar": 175, "01Apr-30Jun": 166, "01Jul-30Sep": 195, "01Oct-31Oct": 175 },
+      "deluxeGardenSuite": { "07Jan-28Feb": 217, "01Mar-31Mar": 197, "01Apr-30Jun": 188, "01Jul-30Sep": 217, "01Oct-31Oct": 197 },
+      "premiumGardenSuite": { "07Jan-28Feb": 237, "01Mar-31Mar": 217, "01Apr-30Jun": 207, "01Jul-30Sep": 237, "01Oct-31Oct": 217 },
+      "luxuryOceanFrontRoom": { "07Jan-28Feb": 240, "01Mar-31Mar": 220, "01Apr-30Jun": 211, "01Jul-30Sep": 240, "01Oct-31Oct": 220 },
+      "grandOceanFrontSuite": { "07Jan-28Feb": 286, "01Mar-31Mar": 266, "01Apr-30Jun": 257, "01Jul-30Sep": 286, "01Oct-31Oct": 266 }
+    },
+    "netOperator_c2": {
+      "currency": "USD",
+      "unit": "per person per day, sharing, Half Board",
+      "deluxeGardenRoom": { "07Jan-28Feb": 141, "01Mar-31Mar": 125, "01Apr-30Jun": 117, "01Jul-30Sep": 141, "01Oct-31Oct": 125 },
+      "premiumGardenRoom": { "07Jan-28Feb": 156, "01Mar-31Mar": 140, "01Apr-30Jun": 133, "01Jul-30Sep": 156, "01Oct-31Oct": 140 },
+      "deluxeGardenSuite": { "07Jan-28Feb": 174, "01Mar-31Mar": 158, "01Apr-30Jun": 150, "01Jul-30Sep": 174, "01Oct-31Oct": 158 },
+      "premiumGardenSuite": { "07Jan-28Feb": 189, "01Mar-31Mar": 173, "01Apr-30Jun": 166, "01Jul-30Sep": 189, "01Oct-31Oct": 173 },
+      "luxuryOceanFrontRoom": { "07Jan-28Feb": 192, "01Mar-31Mar": 176, "01Apr-30Jun": 168, "01Jul-30Sep": 192, "01Oct-31Oct": 176 },
+      "grandOceanFrontSuite": { "07Jan-28Feb": 229, "01Mar-31Mar": 213, "01Apr-30Jun": 205, "01Jul-30Sep": 229, "01Oct-31Oct": 213 }
+    }
+  },
+  "supplements": {
+    "fullBoard": { "amount": 20, "unit": "USD per person per day" },
+    "allInclusive": { "amount": 44, "unit": "USD per person per day", "confidenceNote": "[Unverified] Not stated whether this is on top of Half Board directly (i.e. AI = HB + $44) or on top of the Full Board step (HB + $20 + $44). Listed as its own line item alongside the FB supplement, so read literally as HB + $44 directly, but flagging the ambiguity." },
+    "thirdBedAdultReduction": "30% off adult rate",
+    "childrenSharingRoom": "50% of adult rate (age 2-11)",
+    "childrenOwnRoom": "80% of adult rate (age 2-11)",
+    "singleSupplement": "50% of rate",
+    "easterSupplement": { "amount": 24, "unit": "USD pp/pd", "dates": "03-06 April 2026 (Fri-Mon)" },
+    "xmasNewYearSupplement": { "amount": 40, "unit": "USD pp/pd", "dates": "25 Dec & 31 Dec" },
+    "minimumStayFestive": { "nights": 5, "period": "24 Dec - 02 Jan" }
+  },
+  "hotelClosure": { "dates": "01 May - 31 May 2026", "reason": "renovations" },
+  "roomInventory": {
+    "deluxeGardenRoom": { "units": 24, "features": "split-unit A/C, ceiling fan, mosquito net, private balcony, mini-bar, tea/coffee, telephone, internet, hairdryer on request, safe" },
+    "premiumGardenRoom": { "units": 12, "features": "same as Deluxe Garden Room + superior furnishings, superior garden position, closer to pool/beach" },
+    "deluxeGardenSuite": { "units": 12, "features": "sitting & dining area, private veranda, double shower, A/C, mosquito net, ceiling fan, mini-bar, tea/coffee, telephone, internet, hairdryer, safe" },
+    "premiumGardenSuite": { "units": 6, "features": "same as Deluxe Garden Suite + superior furnishings/position" },
+    "luxuryOceanFrontRoom": { "units": 4, "features": "same as Deluxe Room + sea-front view, superior finish, double shower, mini-bar, hairdryer" },
+    "grandOceanFrontSuite": { "units": 2, "features": "same as Deluxe Garden Suite + sea-front view, superior finish, bath tub + double shower" }
+  },
+  "mealPlanDefinitions": {
+    "halfBoard": "Breakfast & dinner at Bahari Restaurant, afternoon tea at pool.",
+    "fullBoard": "Half Board + a la carte lunch at Jahazi Bistro or Tamu Grill.",
+    "allInclusive": "Full Board + soft drinks, house cocktails, local beers, house wines and spirits, fruit juices, house water, taxes."
+  },
+  "cancellationPolicy": {
+    "0to14daysPrior": "100% chargeable",
+    "15to35daysPrior": "50% chargeable",
+    "depositRequired": "50% deposit due within 2 weeks of proforma invoice issue date; booking provisional until received."
+  },
+  "portfolioWideTerms": {
+    "note": "Non-Soroi property — CLAUDE.md's Soroi-portfolio-wide terms do not apply. Pinewood's own child/single/3rd-bed policy documented above."
+  }
+}

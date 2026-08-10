@@ -1,0 +1,51 @@
+{
+  "$note": "National Museums of Kenya (NMK) heritage facilities admission fees - new source, not previously captured. Relevant if an itinerary includes Nairobi National Museum, Karen Blixen Museum, Fort Jesus, or other NMK sites (e.g. as a Nairobi/stopover add-on activity).",
+  "source": {
+    "file": "2026 CONTRACT RATES/KENYA/PARK FEES/Revision-of-NMK-admission-fees-2026-Website.pdf",
+    "legalBasis": "Legal Notice No. 79 of 2025, National Museums and Heritage (Admission Fees) Regulations, 2025",
+    "effectiveDate": "2026-05-07"
+  },
+  "verified": true,
+  "currency": "Mixed - KSH for Kenya/East African Citizens, USD for Residents-and-rest-of-Africa and Foreigners-outside-Africa (see per-site breakdown). Note this document's residency split differs from the KWS convention (KWS: Resident/Non-Resident/African Citizen/East African Citizen in 4 tiers; NMK: only 3 tiers - Kenya&EA Citizens / Residents&restOfAfrica / Foreigners-outside-Africa).",
+  "revisedFeesEffective7May2026": {
+    "nairobiNationalMuseum": { "adult": { "kenyaEACitizenKSH": 350, "residentsRestOfAfricaUSD": 9, "foreignersOutsideAfricaUSD": 18 }, "child": { "kenyaEACitizenKSH": 200, "residentsRestOfAfricaUSD": 6, "foreignersOutsideAfricaUSD": 9 } },
+    "snakePark": { "adult": { "kenyaEACitizenKSH": 350, "residentsRestOfAfricaUSD": 6, "foreignersOutsideAfricaUSD": 18 }, "child": { "kenyaEACitizenKSH": 200, "residentsRestOfAfricaUSD": 3, "foreignersOutsideAfricaUSD": 9 } },
+    "combinedMuseumSnakePark": { "adult": { "kenyaEACitizenKSH": 600, "residentsRestOfAfricaUSD": 15, "foreignersOutsideAfricaUSD": 25 }, "child": { "kenyaEACitizenKSH": 300, "residentsRestOfAfricaUSD": 10, "foreignersOutsideAfricaUSD": 15 } },
+    "nairobiGalleryRevised": { "adult": { "kenyaEACitizenKSH": 300, "foreignersOutsideAfricaUSD": 14 }, "child": { "kenyaEACitizenKSH": 200, "foreignersOutsideAfricaUSD": 7 }, "confidenceNote": "No residentsRestOfAfrica figure given for Nairobi Gallery in this revised table (blank in source) - note this also conflicts with a SEPARATE 'Nairobi Gallery' entry in the unchanged-fees table below (600/400 KSH) which appears to be a different ticket/site naming duplication in the source document itself. Flag rather than resolve." },
+    "karenBlixenMuseumAndFortJesus": { "adult": { "kenyaEACitizenKSH": 550, "residentsRestOfAfricaUSD": 9, "foreignersOutsideAfricaUSD": 17 }, "child": { "kenyaEACitizenKSH": 300, "residentsRestOfAfricaUSD": 6, "foreignersOutsideAfricaUSD": 8 } },
+    "combinedFortJesusButterflyHouse": { "adult": { "kenyaEACitizenKSH": 650, "residentsRestOfAfricaUSD": 12, "foreignersOutsideAfricaUSD": 19 }, "child": { "kenyaEACitizenKSH": 400, "residentsRestOfAfricaUSD": 7, "foreignersOutsideAfricaUSD": 9 } },
+    "regionalSitesGroup1": {
+      "sites": ["Meru", "Malindi", "Kabarnet", "Kapenguria", "Gede Ruins", "Butterfly House", "Mnarani Ruins", "Mtwapa Heritage Site", "Kariandusi", "Olorgesailie", "Koobi Fora", "Thimlich Ohinga", "Jumba Ruins", "Takwa Ruins", "Jomo Kenyatta House Maralal", "Jomo Kenyatta House Lodwar", "Jomo Kenyatta Prison Lokitaung"],
+      "adult": { "kenyaEACitizenKSH": 200, "residentsRestOfAfricaUSD": 6, "foreignersOutsideAfricaUSD": 8 },
+      "child": { "kenyaEACitizenKSH": 100, "residentsRestOfAfricaUSD": 3, "foreignersOutsideAfricaUSD": 4 }
+    },
+    "lamuSites": {
+      "sites": ["Lamu Fort", "Lamu Museum", "Swahili House", "German Post Office"],
+      "adult": { "kenyaEACitizenKSH": 200, "residentsRestOfAfricaUSD": 6, "foreignersOutsideAfricaUSD": 10 },
+      "child": { "kenyaEACitizenKSH": 100, "residentsRestOfAfricaUSD": 3, "foreignersOutsideAfricaUSD": 4 }
+    },
+    "lamuCombinedPackage": {
+      "adult": { "kenyaEACitizenKSH": 750, "residentsRestOfAfricaUSD": 24, "foreignersOutsideAfricaUSD": 40 },
+      "child": { "kenyaEACitizenKSH": 400, "residentsRestOfAfricaUSD": 12, "foreignersOutsideAfricaUSD": 16 }
+    },
+    "regionalSitesGroup2": {
+      "sites": ["Tambach", "Kakapel", "Pate", "Nyeri", "Shimoni", "Songhor", "Fort Ternan", "Siyu Fort"],
+      "adult": { "kenyaEACitizenKSH": 100, "residentsRestOfAfricaUSD": 3, "foreignersOutsideAfricaUSD": 4 },
+      "child": { "kenyaEACitizenKSH": 50, "residentsRestOfAfricaUSD": 2, "foreignersOutsideAfricaUSD": 2 }
+    }
+  },
+  "unchangedFeesUntilFurtherNotice": {
+    "note": "These sites keep OLD fees, all in KSH (no USD tier at all, unlike the revised table above) - a structural difference worth flagging (i.e. don't assume every NMK site has a USD price).",
+    "hyraxHill": { "adult": { "kenyaEACitizenKSH": 100, "residentsRestOfAfricaKSH": 400, "foreignersOutsideAfricaKSH": 500 }, "child": { "kenyaEACitizenKSH": 50, "residentsRestOfAfricaKSH": 200, "foreignersOutsideAfricaKSH": 250 } },
+    "nairobiGalleryOld": { "adult": { "residentsRestOfAfricaKSH": 600 }, "child": { "residentsRestOfAfricaKSH": 400 }, "confidenceNote": "See conflict flagged above under revisedFeesEffective7May2026.nairobiGalleryRevised." },
+    "rabai": { "adult": { "kenyaEACitizenKSH": 100, "residentsRestOfAfricaKSH": 400, "foreignersOutsideAfricaKSH": 500 }, "child": { "kenyaEACitizenKSH": 50, "residentsRestOfAfricaKSH": 200, "foreignersOutsideAfricaKSH": 250 } }
+  },
+  "openingHours": "8:30am - 5:30pm, Monday-Sunday including public holidays.",
+  "contact": {
+    "email": "publicrelations@museums.or.ke",
+    "educationEmail": "nmkeduc@museums.or.ke",
+    "phone": "+254 721 308 485",
+    "website": "www.museums.or.ke",
+    "onlinePayment": "https://nmkpay.ecitizen.go.ke/"
+  }
+}

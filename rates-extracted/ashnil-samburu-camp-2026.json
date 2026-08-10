@@ -1,0 +1,39 @@
+{
+  "$note": "Extracted 6 Aug 2026, from the same bundled Ashnil documents as ashnil-mara-camp-2026.json.",
+  "property": "Ashnil Samburu Camp",
+  "operator": "Ashnil Hotels Limited (AHL)",
+  "region": "Samburu",
+  "tier": "Contract rate and Rack rate (full board), plus KES Resident rate for one date window",
+  "source": {
+    "files": [
+      "2026 CONTRACT RATES/KENYA/ACCOMODATION/ASHNIL HOTELS/ASHNIL HOTELS LTD_2026.pdf",
+      "2026 CONTRACT RATES/KENYA/ACCOMODATION/ASHNIL HOTELS/ASHNIL HOTELS RACK RATES_2026.pdf",
+      "2026 CONTRACT RATES/KENYA/ACCOMODATION/ASHNIL HOTELS/Ashnil  Surana Resident Rates 2026.pdf"
+    ]
+  },
+  "rates": {
+    "currency": "USD",
+    "unit": "per person, Full Board, Half Twin/Single/3rd Adult",
+    "contract": {
+      "peak_21Dec-02Jan_01Jul-30Sep": { "halfTwin": 209, "single": 313, "thirdAdult": 167 },
+      "high_03Jan-06Apr_01Jun-30Jun_01Oct-20Dec": { "halfTwin": 148, "single": 222, "thirdAdult": 118 },
+      "low_07Apr-31May": { "halfTwin": 93, "single": 93, "thirdAdult": 74 }
+    },
+    "rack": {
+      "peak": { "halfTwin": 334, "single": 501, "thirdAdult": 267 },
+      "high": { "halfTwin": 237, "single": 355, "thirdAdult": 190 },
+      "low": { "halfTwin": 148, "single": 148, "thirdAdult": 118 }
+    },
+    "residentKES_05Jan-06Apr2026only": { "halfTwin": 12500, "single": 17500 }
+  },
+  "gamePackageSupplement": { "perNight": 90, "child4to12": 70, "oneWayAirstripTransfer": { "usd": 60, "minPax": 4 } },
+  "childPolicy": {
+    "0to3": "Free",
+    "4to12Sharing": "50% of adult rate",
+    "twoChildrenOwnRoom": "75% of adult rate each",
+    "threeChildrenOwnRoom": "Full double room rate"
+  },
+  "circuitDiscount": { "4nights": "5%", "5nights": "7.5%", "6nights": "8.5%" },
+  "tourLeader": { "usd50OffSeasonAtSamburuAndMara": true, "peakSamburuMara": 80 },
+  "notes": "Full Board only - no All-Inclusive drinks package (unlike Mara Camp)."
+}

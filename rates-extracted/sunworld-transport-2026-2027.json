@@ -1,0 +1,47 @@
+{
+  "$note": "Structured conversion of CLAUDE.md > Known Reference Data > Sunworld transport.",
+  "provider": "Sunworld Safaris (own fleet)",
+  "yearsCovered": [2026, 2027],
+  "note": "2026 and 2027 figures are identical per CLAUDE.md.",
+  "sources": [
+    "2026 CONTRACT RATES/KENYA/TRANSPORT/SWS, LGA, LOCAL AGENTS/2026 TRANSPORT CONTRACT RATES.pdf",
+    "2027 CONTRACT RATES/KENYA/TRANSPORT/2027 TRANSPORT CONTRACT RATES.pdf"
+  ],
+  "currency": "USD",
+  "pricingModel": "per vehicle, per day",
+  "pricingModelNote": "~200 km/day included; fuel, driver's allowance, and park entrance fees for driver + vehicle included. NOT a fixed point-to-point fare. No discrete price exists for specific long-distance Soroi routings (e.g. Cheetah–Nairobi–Mara).",
+  "dailyRates": {
+    "peak": { "amount": 320, "dateRanges": ["1 Jul – 30 Sep", "20 Dec – 2 Jan"] },
+    "restOfYear": { "amount": 275 }
+  },
+  "vehicles": [
+    { "type": "Landcruiser, Extended Chassis", "seating": "7+1 (driver)" },
+    { "type": "Landcruiser, Standard Chassis", "seating": "5+1 (driver)" },
+    { "type": "Self-drive fleet", "rate": null, "note": "No rate given — contact Sunworld directly." }
+  ],
+  "conversionSupplements": {
+    "photographicOpenSided": { "amount": 50, "unit": "per day" },
+    "wheelchairAccessible": { "amount": 50, "unit": "per day" }
+  },
+  "fixedNairobiLocalTransfers": {
+    "note": "Nairobi-local only — do not apply these to camp-to-camp routing.",
+    "unit": "per vehicle, one way",
+    "routes": {
+      "JKIA-TownHotel": 95,
+      "JKIA-OutOfTownHotel": 115,
+      "JKIA-Wilson": 95,
+      "Wilson-TownHotel": 95,
+      "Wilson-OutOfTownHotel": 130,
+      "DinnerDisposal": 140,
+      "HalfDayDisposal": 200,
+      "FullDayTownDisposal": 260
+    }
+  },
+  "openFlags": [
+    "Long routes (Cheetah–Nairobi ~7hrs, Nairobi–Mara ~5–6hrs) likely exceed the 200km/day allowance. No excess-km rate is stated in the source document. Any day-rate total is a floor estimate only — flag this explicitly in any quote and recommend confirming the real total with Sunworld operations before it's treated as final."
+  ],
+  "excludedSources": [
+    { "folder": "KENYA/TRANSPORT/Overseas Agents/", "reason": "Rates from overseas agents — not Sunworld's own." },
+    { "folder": "KENYA/TRANSPORT/KETTY TOURS/", "reason": "Named external operator — not Sunworld's own." }
+  ]
+}

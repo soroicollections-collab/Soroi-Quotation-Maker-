@@ -1,0 +1,41 @@
+{
+  "$note": "Extracted 6 Aug 2026 from SPECIAL OFFERS/ELEPHANT GORGE CAMP/FW (Revised Version) 2 Nights Flying Package Offer Elephant Gorge Camp - Amboseli.msg (forwarded email, original sender Atua Enkop Africa, read via extract_msg Python library - body text extracted cleanly, no image-only fallback needed). Operator/property is Atua Enkop Africa's Elephant Gorge Camp in Amboseli - not a Sunworld/Soroi property, sourced here only because it sits in Sunworld's own SPECIAL OFFERS archive.",
+  "offerStatus": "promotional - confirm current validity before use",
+  "operator": "Atua Enkop Africa Ltd",
+  "property": "Elephant Gorge Camp",
+  "region": "Amboseli",
+  "offerName": "2 Nights Flying Package Offer (Revised Version)",
+  "source": {
+    "file": "SPECIAL OFFERS/ELEPHANT GORGE CAMP/FW (Revised Version)  ✈2 Nights Flying Package Offer ✈Elephant Gorge Camp - Amboseli🐘🐘.msg",
+    "emailDate": "2024-09-12",
+    "extractionMethod": "extract_msg Python library, plain-text body"
+  },
+  "validity": {
+    "statedText": "Valid for bookings for travel dates between now (12 Sep 2024) and Oct 31, 2024",
+    "verified": true,
+    "expiryAssessment": "EXPIRED - travel window closed nearly 2 years before today's date (6 Aug 2026)."
+  },
+  "eligibility": "Minimum 2 pax, both Residents and Non-Residents offer.",
+  "rates": {
+    "currency": "mixed - KES for Residents, USD for Non-Residents, as stated in source",
+    "residents": {
+      "standard_2nightPackage": { "amount": 119000, "currency": "KES", "plusConservancyFee": 5000 },
+      "deluxe_2nightPackage": { "amount": 129000, "currency": "KES", "plusConservancyFee": 5000 },
+      "additionalNight_standard": { "amount": 30000, "currency": "KES", "unit": "per person sharing", "plusConservancyFee": true },
+      "additionalNight_deluxe": { "amount": 35000, "currency": "KES", "unit": "per person sharing", "plusConservancyFee": true }
+    },
+    "nonResidents": {
+      "deluxe_2nightPackage": { "amount": 1925, "currency": "USD", "unit": "per person sharing", "plusConservancyFee": 110 },
+      "additionalNight_deluxe": { "amount": 725, "currency": "USD", "unit": "per person sharing", "plusConservancyFee": true },
+      "note": "Only a 'Deluxe' figure is given for Non-Residents in the source - no Standard-category Non-Resident figure was stated."
+    }
+  },
+  "packageInclusions": ["Return flights", "Local airstrip transfers", "Full board accommodation", "Shared game drives", "Sundowner"],
+  "bookingTerms": {
+    "newBookingsOnly": true,
+    "combinability": "Cannot be combined with any other offer.",
+    "availability": "Subject to availability; Atua Enkop Africa Ltd reserves the right to withdraw the offer at any time."
+  },
+  "verified": true,
+  "confidenceNote": "All figures read directly and verbatim from the forwarded email body - this is the most numerically complete of the .msg-sourced offers in this slice. Note the currency split (KES for Resident rates, USD for Non-Resident) is exactly as stated in the source, not a conversion or assumption on our part."
+}

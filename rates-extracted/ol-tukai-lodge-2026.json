@@ -1,0 +1,48 @@
+{
+  "property": "Ol Tukai Lodge",
+  "operator": "Ol Tukai Lodge Limited",
+  "region": "Amboseli",
+  "isSoroiProperty": false,
+  "sourceFiles": ["2026 CONTRACT RATES/KENYA/ACCOMODATION/Ol TUKAI LODGE/Ol Tukai Lodge 2026 - CONTRACT RATES -  Sunworld Safaris.pdf"],
+  "skippedFiles": [{ "file": "Oltukai Resident Rates 2026.pdf", "reason": "Image-only/scanned PDF - no extractable text." }],
+  "currency": "USD",
+  "notes": ["Rates quoted are already Sunworld's net, non-commissionable contract rates - no separate Rack card in this folder to compare against.", "Resident rate card exists but is a scanned image only - could not be extracted."],
+  "fullBoardAndHalfBoard_perPersonPerNight": {
+    "unit": "Single / 1-2 Twin (double) / Third bed",
+    "highSeason_2Jan_31Mar2026": { "single": 227, "double": 149, "thirdBed": 120 },
+    "lowSeason_1Apr_31May2026": { "single": 103, "double": 103, "thirdBed": 103 },
+    "peakSeason_1Jun_31Oct2026": { "single": 255, "double": 172, "thirdBed": 138 },
+    "highSeason_1Nov_19Dec2026": { "single": 227, "double": 149, "thirdBed": 120 },
+    "peakSeason_20Dec2026_3Jan2027": { "single": 255, "double": 172, "thirdBed": 138 },
+    "halfBoardReduction": "US$9 per person per night off the Full Board figures above",
+    "verified": true
+  },
+  "groundPackageRates_perPersonPerNight": {
+    "unit": "First Night / Extra Nights / SRS (single room supplement)",
+    "includes": "Full-board accommodation, return airstrip transfers, 2 game drives per day",
+    "highSeason_2Jan_31Mar2026": { "firstNight": 292, "extraNights": 248, "srs": 55 },
+    "lowSeason_1Apr_31May2026": { "firstNight": 275, "extraNights": 231, "srs": 55 },
+    "peakSeason_1Jun_31Oct2026": { "firstNight": 318, "extraNights": 274, "srs": 55 },
+    "highSeason_1Nov_19Dec2026": { "firstNight": 292, "extraNights": 248, "srs": 55 },
+    "peakSeason_20Dec2026_3Jan2027": { "firstNight": 319, "extraNights": 314, "srs": 55 },
+    "childPolicy": "70% of adult sharing rate",
+    "verified": true
+  },
+  "circuitDiscount": { "raw": "Groups/series staying at Eka Hotel & Ol Tukai enjoy a further discount: Eka Hotel 5%, Ol Tukai 5%", "verified": true },
+  "childPolicy_fullBoardHalfBoard": {
+    "raw": "0-1.99yrs infant; 2-11.99yrs child; 12+ adult. One child in single room: single rate. Two children in a room: single rate. Three children: single + child rate. Four children: full twin rate. One adult+one child: single + child sharing. One adult+two children: full twin rate. One adult+three children: twin + child sharing. Two adults+one child: twin + child sharing rate (50% of an adult in double).",
+    "verified": true
+  },
+  "seasonalSupplementsAndExtras": [
+    { "item": "Easter Supplement", "amount": "US$30 pp/day" },
+    { "item": "Extra lunch", "amount": "US$28" },
+    { "item": "Festive Supplement", "amount": "US$35pp (25 Dec-1 Jan 2027)" },
+    { "item": "Tour Leader's rate (only if accompanying group of min 4 pax)", "amount": "US$90" }
+  ],
+  "policies": {
+    "payment": "With credit facilities: full payment within 30 days of invoice. Without: full payment at least 60 days before accommodation date.",
+    "invoiceDispute": "Must be raised within 14 days of invoice receipt",
+    "complimentaryTourLeader": "1 room per 15 paying persons, pre-booked and confirmed",
+    "cancellation": "Booking date to 61 days prior: 20% fee; 60-31 days: 50% fee; within 30 days: 100% fee. Additional fees may apply for cancelled flights/other services."
+  }
+}

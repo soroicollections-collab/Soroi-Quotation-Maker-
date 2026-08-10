@@ -1,0 +1,64 @@
+{
+  "$note": "Extracted 6 Aug 2026 via `textutil -convert txt` (docx, not a PDF - only .docx file encountered in this slice). NOT a Soroi property. Working farm/cottage accommodation near Njoro/Nakuru - a genuinely different pricing model from every other property in this dataset: priced per-cottage (bed-only) plus separate a-la-carte meal plans, not a single per-person all-inclusive rate.",
+  "property": "Kembu Cottages (Kembu (EA) Ltd, on Kenana Farm)",
+  "region": "Njoro, near Nakuru, Kenya",
+  "source": { "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/KEMBU COTTAGES/Kembu Cottages 2026 Rates.docx", "validity": { "start": "2026-01-01", "end": "2026-12-31" }, "tier": "Agent rate = 20% discount off the listed price (both gross and 20%-discounted figures printed side by side in source; captured below as 'gross' and 'agentDiscounted')" },
+  "confidence": "confirmed-2026-08-06",
+  "currency": "USD",
+  "unit": "per cottage per night, Bed Only rate, self-catering (meals priced separately below) unless noted",
+  "cottages": {
+    "cedarCottage": { "beds": "1 Double (2 pax) or 2 Single (2 pax)", "bedOnly": { "gross": 205.00, "agentDiscounted": 164.00 }, "extraBed": { "gross": 17.00, "agentDiscounted": 13.60, "note": "max 2 extra beds" }, "note": "Larger social area, good for combining with another cottage for family groups." },
+    "kenanaCottage": { "beds": "1 Double (2 pax) or 2 Single (2 pax)", "note": "Rate not separately printed - grouped under the same rate block header as Beryl's/Albizia (likely shares Cedar's rate tier, but not explicitly confirmed on this page for this specific cottage name - flag before quoting)." },
+    "berylsCottage": { "beds": "1 Double (2 pax) or 2 Single (2 pax)", "note": "Historic cottage (childhood home of aviator Beryl Markham). Rate not separately printed on this page - same flag as Kenana Cottage above." },
+    "albiziaCottage": { "beds": "2 Single (2 pax) or 1 Double (2 pax)", "note": "Rate not separately printed on this page - grouped visually with Mutati Cottage's rate block below it, but not explicitly labeled as sharing that rate. Flag before quoting." },
+    "mutatiCottage": { "beds": "2 Single (2 pax) or 1 Double (2 pax)", "bedOnly": { "gross": 170.00, "agentDiscounted": 136.00 }, "extraBed": { "gross": 17.00, "agentDiscounted": 13.60, "note": "max 1 extra bed" }, "note": "Two bedrooms share one downstairs bathroom." },
+    "acaciaCottage": { "beds": "1 Double (2 pax)", "bedOnly": { "gross": 110.00, "agentDiscounted": 88.00 }, "note": "Self-catering only, as part of a group booked alongside another cottage with a kitchen (has no kitchen of its own)." },
+    "yellowRoom": { "beds": "2 Single (2 pax) + annex single (1 pax)", "note": "Rate not printed on this page." },
+    "treeHouse": { "beds": "Double bed, in campsite", "bedOnly": { "gross": 85.00, "agentDiscounted": 70.00 } },
+    "cobbsCarriage": { "beds": "Double bed, in campsite, converted railway carriage", "note": "Rate not printed on this page." },
+    "camping": { "unit": "per day, adult or child (1-12y)", "rate": 9.00 },
+    "tentHire": { "unit": "per 2 adults or child, per tent per day", "rateRange": "18.00-30.00" },
+    "beddingHire": { "perAdultOrChildPerDay": 9.00 },
+    "stretcherBedWithBedding": { "perAdultOrChildPerDay": 17.00 },
+    "confidenceNote": "Several cottages (Kenana, Beryl's, Albizia, Yellow Room, Cobb's Carriage) are described in detail but their specific nightly rates were not printed as distinct line items on the same page as their description in this document layout - only Cedar, Mutati, Acacia, and Tree House have explicit bed-only rates directly attached. Do not assume they share a neighboring cottage's rate without confirming with Kembu directly.",
+    "verified": true
+  },
+  "mealPlans": {
+    "cottageCatering": {
+      "note": "Dinner/Breakfast/Lunch served in-cottage.",
+      "adultDinnerBreakfastLunch": { "gross": 72.00, "agentDiscounted": 57.60 },
+      "adultDinnerBreakfast": { "gross": 61.00, "agentDiscounted": 48.80 },
+      "child5to12DinnerBreakfastLunch": { "gross": 40.00, "agentDiscounted": 32.00 },
+      "child5to12DinnerBreakfast": { "gross": 30.00, "agentDiscounted": 24.00 },
+      "infantUnder5": "Complimentary"
+    },
+    "fbHostedMeals": {
+      "note": "Set menu hosted by owners in main Farmhouse; incl. mid-morning/afternoon tea/coffee, drinks with meals, laundry, farm activities.",
+      "adultPerDay": { "gross": 166.00, "agentDiscounted": 132.80 },
+      "child5to12PerDay": { "gross": 53.00, "agentDiscounted": 42.40 },
+      "infantUnder5": "Complimentary"
+    },
+    "restaurantCatering": {
+      "note": "Set Meal of the Day at the Restaurant (not agent-discounted per source - only one price column given).",
+      "adultDinnerBreakfastLunch": 40.00, "adultDinnerBreakfast": 34.00,
+      "child5to12DinnerBreakfastLunch": 32.00, "child5to12DinnerBreakfast": 25.00
+    },
+    "largeGroupRestaurantCatering": { "condition": "Groups of 10+, buffet style, advance booking required", "amount": 15.00, "unit": "per set meal per person regardless of age" },
+    "howToCalculate": "Cottage bed-only rate + required meals for the number of adults/children per day = total cottage stay cost.",
+    "verified": true
+  },
+  "bookingPolicy": {
+    "provisionalHold": "24 hours without payment, then auto-cancelled",
+    "depositRequired": "30% non-refundable if booked more than 30 days before arrival; full payment required if booked 30 days or less before arrival",
+    "balanceDue": "30 days prior to arrival, cleared through Kembu accounts",
+    "lateChangeSurcharge": "10% for changes made less than 30 days prior to arrival",
+    "minStayPeakPeriods": "2 nights over Christmas, New Year, Easter, public holiday weekends, event weekends",
+    "onSiteDiscounts": "None - discounts only available via advance invoice payment"
+  },
+  "cancellationPolicy": {
+    "depositAlwaysNonRefundable": true,
+    "fullyPaidCancelledMoreThan30Days": "60% credit (not cash refund) toward a future booking within 6 months",
+    "cancelledLessThan30Days": "No refund or credit"
+  },
+  "activities": "Complimentary farm walks; charged activities (archery, orienteering, obstacle course, bird walks, chameleon walks, forest craft, etc.) priced per adult/child for full day/half day/single activity - specific amounts not stated on this page."
+}

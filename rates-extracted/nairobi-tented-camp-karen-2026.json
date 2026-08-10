@@ -1,0 +1,51 @@
+{
+  "property": "Nairobi Tented Camp (Karen)",
+  "operator": "Gamewatchers Safaris Ltd (Porini Camps)",
+  "region": "Nairobi (Karen)",
+  "isSoroiProperty": false,
+  "sourceFiles": [
+    "2026 CONTRACT RATES/KENYA/ACCOMODATION/PORINI CAMPS/PORINI CAMPS  NAIROBI TENTED 2026 - PREFERRED AGENT NETT RATES.pdf",
+    "2026 CONTRACT RATES/KENYA/ACCOMODATION/PORINI CAMPS/Reduced Rates for 6 nights Porini Camps 2026 - Net Rates..pdf"
+  ],
+  "currency": "USD",
+  "documentType": "'Introductory Offer' rate card",
+  "notes": [
+    "This is a flexible Nairobi/stopover option not yet in CLAUDE.md's known priced list - a budget-friendly tented option in Karen.",
+    "The general Porini 2-night minimum stay explicitly does NOT apply here.",
+    "This is one of the cheapest Nairobi-area options seen in this extraction batch."
+  ],
+  "bedAndBreakfast_perPersonSharing_perNight": {
+    "seasons": [
+      { "dates": "1 Jan-31 May 2026", "rate": 84, "singleTentSupplement": 50, "childSharing3to12": 50 },
+      { "dates": "1-30 Jun 2026", "rate": 88, "singleTentSupplement": 50, "childSharing3to12": 50 },
+      { "dates": "1 Jul-31 Oct 2026", "rate": 96, "singleTentSupplement": 50, "childSharing3to12": 50 },
+      { "dates": "1 Nov-19 Dec 2026", "rate": 88, "singleTentSupplement": 50, "childSharing3to12": 50 },
+      { "dates": "20 Dec 2026-2 Jan 2027", "rate": 104, "singleTentSupplement": 50, "childSharing3to12": 50 }
+    ],
+    "verified": true
+  },
+  "mealSupplements": { "preBookedHalfBoard": "US$30pp", "preBookedFullBoard": "US$65pp", "extraLunch": "US$39 incl. VAT" },
+  "dayRoom": { "raw": "70% of contracted room rate, 12:00 check-in to 18:00 check-out", "verified": true },
+  "reducedRate_6nightsOffer_bb_perPersonSharing": {
+    "seasons": [
+      { "dates": "20 Dec 2025-2 Jan 2026", "rate": 79 }, { "dates": "3 Jan-31 Mar 2026", "rate": 79 }, { "dates": "1 Apr-30 May 2026", "rate": 79 }, { "dates": "1-30 Jun 2026", "rate": 89 },
+      { "dates": "1-31 Jul 2026", "rate": 90 }, { "dates": "1 Aug-30 Sep 2026", "rate": 90 }, { "dates": "1-31 Oct 2026", "rate": 90 }, { "dates": "1 Nov-19 Dec 2026", "rate": 89 }, { "dates": "20 Dec 2026-2 Jan 2027", "rate": 97 }
+    ],
+    "singleSupplement": 50,
+    "note": "This reduced rate applies only when extending a qualifying 6-night Porini multi-camp stay - not a standalone discount.",
+    "verified": true
+  },
+  "childPolicy": {
+    "raw": "Sharing with 2 adults in a tent: normal child sharing rate. 2 children in own tent: 75% each of per-person-sharing rate; 3rd child in same tent: 75%. 1 child sharing with 1 adult: child pays 75% of adult sharing rate, adult pays per-adult-sharing rate. 1 child sharing with 2 adults: child rate above, adults pay double tent rate. Under 3: free. Max 1 child sharing with 2 adults per tent (space limit). 3rd adult in a tent not recommended (limited space) but if booked, pays per-person-sharing rate with foldable camp bed.",
+    "reducedRateOfferChildPolicy": "3-12 years sharing with 2 adults: 50% of the above rates (under 3 free) - per the 6-night reduced-rate offer document specifically.",
+    "verified": true
+  },
+  "includes_bb": ["Bed & Breakfast accommodation", "Water & soft drinks", "All Kenya government taxes"],
+  "includes_halfBoard": ["Bed, breakfast, lunch & dinner", "Water & soft drinks", "All Kenya government taxes"],
+  "includes_fullBoard": ["Bed, breakfast, lunch & dinner", "Water & soft drinks", "All Kenya government taxes"],
+  "excludes": ["Personal items", "Laundry", "Tips/gratuities", "Christmas/New Year supplement 24/25/26/31 Dec & 1 Jan: $40pp/night incl. 16% VAT"],
+  "additionalFees": { "poriniWildlifeHabitatTrustPayment": "US$5 per person per night, non-commissionable" },
+  "oneWayCampTransfers_inclVAT": { "jkiaToCamp": 50, "nairobiCityToCamp": 50, "wilsonToCamp": 50, "note": "Per vehicle, min 2 pax max 4 pax" },
+  "singleRoomPolicy": "Max 2 singles per booking",
+  "sharedTermsNote": "Deposit/cancellation policy identical to other Porini properties - see porini-amboseli-camp-2026.json. NOTE: camp is stated as 'not suitable for children under 8 years of age' in the 6-night reduced-rate offer's terms section, which conflicts with the main rate card's own under-3/3-12 child pricing bands - both quoted verbatim, not reconciled."
+}

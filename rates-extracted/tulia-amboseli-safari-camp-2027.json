@@ -1,0 +1,71 @@
+{
+  "$note": "Extracted 6 Aug 2026 via openpyxl from 'TULIA/TULIA JAN 27 - 31 MAY 28 RATES - Sunworld Safaris Rates.xlsx' (sheets: 27-28 RSP, Special Rates, Park Fees, TCs and General Info, Experience RSP/NETT, Property Road Transfer). Single property (Tulia Amboseli Safari Camp), two room categories. RSP = Rack Sell Price (this workbook's own term for rack rate) - no separate discounted/NETT accommodation tier was found for Sunworld in the '27-28 RSP' sheet itself (a 'Special Rates' sheet exists but was not extracted in this pass - check directly if a discounted tier is needed).",
+  "property": "Tulia Amboseli Safari Camp",
+  "location": "Amboseli",
+  "currency": "USD",
+  "unit": "per person per day",
+  "validity": { "start": "2027-01-06", "end": "2028-05-31" },
+  "confidence": "confirmed-2027-08-06",
+  "seasons": {
+    "low": { "dates": ["6-31 Jan 27", "1 Mar-30 Jun 27", "1 Nov-19 Dec 27", "6-31 Jan 28", "1 Mar-31 May 28"] },
+    "mid": { "dates": ["1-28 Feb 27", "1-15 Jul 27", "16 Sep-31 Oct 27", "1-29 Feb 28"] },
+    "high": { "dates": ["3-5 Jan 27", "16 Jul-15 Sep 27", "20 Dec 27-5 Jan 28"] }
+  },
+  "gamePackageSupplement": { "amount": 207.26, "note": "Added on top of Full Board rate to get Game Package rate; constant across all room types/seasons" },
+  "rates": {
+    "MountainViewSuperbTent": {
+      "note": "Open year round, shared basis standard tent",
+      "fullBoard": {
+        "adultSingle": { "low": 290.0, "mid": 368.42, "high": 581.52 },
+        "adultDoubleTwin": { "low": 225.0, "mid": 284.21, "high": 336.96 },
+        "adultTriple": { "low": 205.0, "mid": 259.65, "high": 322.46 },
+        "firstChildSharing": { "low": 0, "mid": 0, "high": 0 },
+        "secondChildSharing": { "low": 112.5, "mid": 142.11, "high": 168.48 },
+        "firstChildOwnRoom": { "low": 290, "mid": 368.42, "high": 581.52 },
+        "secondChildSharingWithOtherChildren": { "low": 0, "mid": 0, "high": 0 },
+        "thirdChildSharingWithOtherChildren": { "low": 112.5, "mid": 142.11, "high": 168.48 },
+        "twoBedroomUnit_max4adults2children": { "low": 900, "mid": 1136.84, "high": 1347.84 }
+      },
+      "gamePackage": {
+        "adultSingle": { "low": 497.26, "mid": 575.68, "high": 788.78 },
+        "adultDoubleTwin": { "low": 432.26, "mid": 491.47, "high": 544.22 },
+        "adultTriple": { "low": 412.26, "mid": 466.91, "high": 529.72 },
+        "twoBedroomUnit_max4adults2children": { "low": 1729.04, "mid": 1965.88, "high": 2176.88 }
+      }
+    },
+    "MountainViewDeluxeTent": {
+      "fullBoard": {
+        "adultSingle": { "low": 400.0, "mid": 521.05, "high": 739.13 },
+        "adultDoubleTwin": { "low": 300.0, "mid": 373.68, "high": 554.35 },
+        "adultTriple": { "low": 275.0, "mid": 343.86, "high": 509.06 },
+        "firstChildSharing": { "low": 0, "mid": 0, "high": 0 },
+        "secondChildSharing": { "low": 150, "mid": 186.84, "high": 277.175 },
+        "firstChildOwnRoom": { "low": 400, "mid": 521.05, "high": 739.13 },
+        "thirdChildSharingWithOtherChildren": { "low": 150, "mid": 186.84, "high": 277.175 }
+      },
+      "gamePackage": {
+        "adultSingle": { "low": 607.26, "mid": 728.31, "high": 946.39 },
+        "adultDoubleTwin": { "low": 507.26, "mid": 580.94, "high": 761.61 },
+        "adultTriple": { "low": 482.26, "mid": 551.12, "high": 716.32 }
+      }
+    },
+    "verified": true
+  },
+  "mandatoryFees": {
+    "netConservationFee": { "amount": 15, "unit": "per person per night, added to all accommodation rates above" },
+    "amboseliNationalParkFee": {
+      "nonResident": { "adult": 90, "child_upTo17_9": 45 },
+      "africaCitizen": { "adult": 50, "child_upTo17_9": 25 },
+      "resident": { "adult": 2025, "child_upTo17_9": 1050, "currency": "KES" },
+      "unit": "per person per 24 hours, max 2 entries; excluded from accommodation rate, collected by trade partner",
+      "verified": true
+    }
+  },
+  "inclusionsExclusions": {
+    "fullBoardIncludes": "Accommodation, all meals, WiFi, laundry",
+    "fullBoardExcludes": "Park fees, conservation fees, drinks, transfers, game drives",
+    "verified": true
+  },
+  "childPolicyNote": "First child sharing with 1-2 adults is FREE at both room categories; 2nd/3rd children sharing pay the reduced 'sharing' rate; a child alone in own room pays the full adult single rate.",
+  "unextractedSheets": "This workbook also contains 'Special Rates' (possibly a discounted tier), 'Experience RSP'/'Experience NETT' (activity pricing), and 'Property Road Transfer' (transfer rates) sheets not transcribed in this pass - check directly if needed for a specific quote."
+}

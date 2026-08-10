@@ -1,0 +1,23 @@
+{
+  "$note": "Extracted 6 Aug 2026 via paginated pdftotext read (page 12 of 24) of 'EC-2026-Rates-40.pdf'. Game Package only (no Full Board).",
+  "property": "Kifaru House",
+  "operator": "Elewana Collection",
+  "region": "Lewa Wildlife Conservancy",
+  "tier": "Rack and Nett (Nett = Rack x 0.60)",
+  "source": { "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/ELEWANA/EC-2026-Rates-40.pdf", "pdfPageIndex": 12, "validity": { "start": "2026-01-04", "end": "2027-01-03" } },
+  "seasons": { "high": "Jul 1-Oct 31, Dec 20-Jan 3", "mid": "Jan 4-Mar 31, Jun 1-Jun 30, Nov 1-Dec 19", "green": "Apr 1-May 31" },
+  "mealPlan": "Game Package only",
+  "rates": {
+    "currency": "USD", "unit": "per person per night",
+    "gamePackage": {
+      "perPersonSharing": { "high": { "rack": 1332, "nett": 799 }, "mid": { "rack": 1071, "nett": 643 }, "green": { "rack": 804, "nett": 483 } },
+      "singleRoom": { "high": { "rack": 1998, "nett": 1199 }, "mid": { "rack": 1607, "nett": 964 }, "green": { "rack": 1206, "nett": 724 } },
+      "tripleRoom": { "high": { "rack": 2997, "nett": 1798 }, "mid": { "rack": 2410, "nett": 1446 }, "green": { "rack": 1810, "nett": 1086 } },
+      "familySuite2Adults2Children": { "high": { "rack": 3693, "nett": 2216 }, "mid": { "rack": 2974, "nett": 1784 }, "green": { "rack": 2239, "nett": 1343 } }
+    }
+  },
+  "mandatoryFees": { "lewaWildlifeConservancy": { "adult": 183, "child6to15": 92, "unit": "per person per day, year-round" } },
+  "extras": { "forestVisitNgareNdare": { "rack": 85, "nett": 72 }, "culturalBomaVisitNgwesi": { "rack": 80, "nett": 68 }, "horseOrCamelSafari": { "rack": 120, "nett": 102, "minAge": 12 } },
+  "transfers": { "toNanyukiAirstrip": { "rack": 350, "nett": 315 }, "toBoranaLodge": { "rack": 125, "nett": 113 } },
+  "inclusions": "Scheduled/shared game drives twice daily, 2hr walking safari, night game drive, behind-the-scenes Lewa HQ tour, bush breakfast/lunch, bush sundowner, airstrip transfer to/from Lewa (all included)."
+}

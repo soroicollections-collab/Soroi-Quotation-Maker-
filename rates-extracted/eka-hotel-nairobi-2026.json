@@ -1,0 +1,20 @@
+{
+  "$note": "Extracted 6 Aug 2026. Source is an internal forwarded email chain (Sunworld contracting <-> Eka Hotel sales), not a formal signed contract PDF, but does contain a complete dated rate table.",
+  "property": "Eka Hotel Nairobi",
+  "operator": "Eka Hotel",
+  "region": "Nairobi",
+  "tier": "STO Rate 2026",
+  "source": {
+    "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/EKA HOTEL/Eka 2026 STO.pdf",
+    "validity": { "start": "2026-01-02", "end": "2027-01-01" }
+  },
+  "rates": {
+    "currency": "USD", "unit": "per room per night, inclusive of buffet breakfast",
+    "superior": { "single": 155, "double": 180 },
+    "superiorPoolView": { "single": 187, "double": 212 },
+    "juniorSuite": { "single": 250, "double": 274 },
+    "executiveSuite": { "single": 316, "double": 340 }
+  },
+  "mealRates": { "breakfastAdditional": 26, "lunch": 30, "packedLunch": 22, "dinner": 32 },
+  "notes": "Rates inclusive of 28% statutory taxes, non-commissionable, for leisure/tour-travel segment only (not corporate/conference/incentive). No child policy stated in this source - flag as [Unverified gap] if used for a quote with children."
+}

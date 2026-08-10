@@ -1,0 +1,139 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftotext -layout, paginated, from 'OFFBEAT MARA CAMP/OFFBEAT MARA CAMP 2027 rates.pdf' (21pp). Despite the folder name, this single document is Offbeat Safaris Holdings Ltd's combined rate sheet covering ALL EIGHT of its properties/products, each on clearly-labeled pages: Offbeat Mara Camp, Offbeat Ndoto (both Mara North Conservancy), Sosian Lodge + Sosian Horse Riding Safaris (Laikipia), Ekorian's Mugie Camp (Mugie Conservancy, Laikipia), Deloraine House (Rongai, Nakuru), The Cabanas (Lamu, coastal), and Offbeat Riding Safaris (multi-day set-departure/tailor-made riding safaris, Masai Mara & Laikipia). Named at the operator level rather than 'offbeat-mara-camp-2027.json' since 7 of the 8 products are NOT Offbeat Mara Camp.",
+  "operator": "Offbeat Safaris Holdings Ltd",
+  "currency": "USD",
+  "confidence": "confirmed-2027-08-06",
+  "properties": {
+    "Offbeat Mara Camp": {
+      "region": "Mara North Conservancy",
+      "validity": "03 Jan 2027 - 02 Jan 2028",
+      "tier": "Wholesale 30% off Published",
+      "seasons": {
+        "green": { "dates": "Mar, Apr, May", "adultSharing": { "published": 600, "wholesale": 420 }, "teen12to17": { "published": 450, "wholesale": 315 }, "child4to11": { "published": 300, "wholesale": 210 }, "single": { "published": 850, "wholesale": 595 }, "familySuite1UpTo4pax": { "published": 2400, "wholesale": 1680 } },
+        "regular": { "dates": "03-31 Jan, Feb, Jun, Nov, 01-15 Dec", "adultSharing": { "published": 700, "wholesale": 490 }, "teen12to17": { "published": 525, "wholesale": 368 }, "child4to11": { "published": 350, "wholesale": 245 }, "single": { "published": 950, "wholesale": 665 }, "familySuite1UpTo4pax": { "published": 2800, "wholesale": 1960 } },
+        "mid": { "dates": "Oct, 16 Dec-02 Jan", "adultSharing": { "published": 920, "wholesale": 644 }, "teen12to17": { "published": 690, "wholesale": 483 }, "child4to11": { "published": 460, "wholesale": 322 }, "single": { "published": 1170, "wholesale": 819 }, "familySuite1UpTo4pax": { "published": 3680, "wholesale": 2576 } },
+        "high": { "dates": "Jul, Aug, Sep", "adultSharing": { "published": 1010, "wholesale": 707 }, "teen12to17": { "published": 755, "wholesale": 529 }, "child4to11": { "published": 505, "wholesale": 354 }, "single": { "published": 1360, "wholesale": 952 }, "familySuite1UpTo4pax": { "published": 4040, "wholesale": 2828 } }
+      },
+      "conservancyFee": { "adult": 150, "child": 75, "unit": "per person per night" },
+      "childPolicy": "0-3yrs free",
+      "specials": ["3rd child (4-11yrs) sharing triple pays conservancy fee only", "Honeymoon 25% off for one partner (travel within 9 months)", "Single rate only from 2nd single room (1st single pays adult sharing rate)", "4 nights for price of 3 (Regular/Mid/Green)", "6 nights for price of 5 (combined with Ekorian)"],
+      "inclusions": "Full board, all drinks except champagne, unlimited shared game drives, Mara North airstrip transfers, laundry, bush breakfasts/picnic lunches/sundowners/bush dinners, guided walks, local market/school visits",
+      "exclusions": { "lateDeparture": 100, "villageVisit": { "adult": 30, "child": 15 }, "exclusiveVehicle": 300, "photographicVehicle": 375, "maraReserveFee": { "adult": { "JanJun": 100, "JulDec": 200 }, "child": 50 } },
+      "verified": true
+    },
+    "Offbeat Ndoto": {
+      "region": "Mara North Conservancy",
+      "validity": "03 Jan 2027 - 02 Jan 2028",
+      "seasons": {
+        "green": { "dates": "Mar, Apr, May", "adultSharing": { "published": 730, "wholesale": 511 }, "teen12to17": { "published": 550, "wholesale": 385 }, "child4to11": { "published": 365, "wholesale": 256 }, "single": { "published": 980, "wholesale": 686 }, "luxurySuiteUpTo4pax": { "published": 2925, "wholesale": 2048 } },
+        "regular": { "dates": "03-31 Jan, Feb, Jun, Nov, 01-15 Dec", "adultSharing": { "published": 870, "wholesale": 609 }, "teen12to17": { "published": 650, "wholesale": 455 }, "child4to11": { "published": 435, "wholesale": 305 }, "single": { "published": 1120, "wholesale": 784 }, "luxurySuiteUpTo4pax": { "published": 3480, "wholesale": 2436 } },
+        "mid": { "dates": "Oct, 16 Dec-02 Jan", "adultSharing": { "published": 1130, "wholesale": 791 }, "teen12to17": { "published": 845, "wholesale": 592 }, "child4to11": { "published": 565, "wholesale": 396 }, "single": { "published": 1380, "wholesale": 966 }, "luxurySuiteUpTo4pax": { "published": 4520, "wholesale": 3164 } },
+        "high": { "dates": "Jul, Aug, Sep", "adultSharing": { "published": 1210, "wholesale": 847 }, "teen12to17": { "published": 905, "wholesale": 634 }, "child4to11": { "published": 605, "wholesale": 424 }, "single": { "published": 1560, "wholesale": 1092 }, "luxurySuiteUpTo4pax": { "published": 4840, "wholesale": 3388 } }
+      },
+      "conservancyFee": { "adult": 150, "child": 75 },
+      "inclusions": "Full board, all drinks except champagne, exclusive-use game-drive vehicle, unlimited game drives, Mara North airstrip transfers, laundry, bush meals, guided walks, binoculars in each tent",
+      "verified": true
+    },
+    "Sosian Lodge": {
+      "region": "Laikipia",
+      "validity": "06 Jan 2027 - 05 Jan 2028",
+      "closedMonth": "May",
+      "seasons": {
+        "low": { "dates": "Mar, Apr, Nov, 01-18 Dec", "adultSharing": { "published": 800, "wholesale": 560 }, "teen12to16": { "published": 600, "wholesale": 420 }, "child3to11": { "published": 400, "wholesale": 280 }, "single": { "published": 1200, "wholesale": 840 }, "exclusiveUseUpTo16guests": { "published": 10400, "wholesale": 7280 } },
+        "mid": { "dates": "06-31 Jan, Feb, Jun, Sep", "adultSharing": { "published": 900, "wholesale": 630 }, "teen12to16": { "published": 675, "wholesale": 473 }, "child3to11": { "published": 450, "wholesale": 315 }, "single": { "published": 1350, "wholesale": 945 }, "exclusiveUseUpTo16guests": { "published": 11700, "wholesale": 8190 } },
+        "high": { "dates": "Jul, Aug, Oct", "adultSharing": { "published": 1000, "wholesale": 700 }, "teen12to16": { "published": 750, "wholesale": 525 }, "child3to11": { "published": 500, "wholesale": 350 }, "single": { "published": 1500, "wholesale": 1050 }, "exclusiveUseUpTo16guests": { "published": 13000, "wholesale": 9100 } },
+        "peak": { "dates": "19 Dec-05 Jan", "adultSharing": { "published": 1100, "wholesale": 770 }, "teen12to16": { "published": 825, "wholesale": 578 }, "child3to11": { "published": 550, "wholesale": 385 }, "single": { "published": 1650, "wholesale": 1155 }, "exclusiveUseUpTo16guests": { "published": 14300, "wholesale": 10010 } }
+      },
+      "conservancyFee": { "adult": 150, "teen": 115, "child": 75 },
+      "childPolicy": "0-2yrs free",
+      "specials": ["Early Bird 5% off (deposit 9mo ahead)", "3rd child sharing triple pays conservancy fee only", "Honeymoon 25% off one partner (Low/Mid only)", "Single rate from 2nd single room", "5 Nights Special: 50% off 5th night (Low season only)"],
+      "inclusions": "Full board, all drinks except champagne, day/night game drives, horse riding, guided walks, camel treks, mountain biking, fly camping (no horses), fishing, ranching activities, community visits, Sosian airstrip transfers, laundry",
+      "exclusions": { "lateDeparture": { "adult": 70, "teen": 50, "child": 40 }, "flyCampWithHorses": { "1night": 150, "2nights": 400, "unit": "per rider" }, "flyCampWithCamels": { "1night": 150, "2nights": 400, "unit": "per rider" }, "massage": 50, "loisabaAirstripTransfer": 150, "nanyukiAirstripTransfer": 350, "exclusiveVehicle": 350 },
+      "verified": true
+    },
+    "Sosian Horse Riding Safaris": {
+      "region": "Laikipia",
+      "validity": "06 Jan - 18 Dec 2027",
+      "closedMonths": "May, Jul, Aug, Oct, 19 Dec-05 Jan",
+      "tier": "Wholesale 20%",
+      "product": "7-night lodge-to-lodge ride",
+      "rates": { "adultSharing": { "published": 9800, "wholesale": 7840 }, "single": { "published": 12880, "wholesale": 10300 }, "teenSharing12to16": { "published": 7350, "wholesale": 5880 } },
+      "minAge": 12,
+      "inclusions": "Full board throughout itinerary, all drinks except champagne, all conservancy fees, guided horse ride, day/night game drives, guided walks, camel treks, mountain biking, fishing, ranching activities, community visits, airstrip transfers, laundry",
+      "exclusions": "Internal flights, late departure fees, massages, airstrip transfers, exclusive vehicle",
+      "verified": true
+    },
+    "Ekorian's Mugie Camp": {
+      "region": "Mugie Conservancy, Laikipia",
+      "validity": "05 Jan 2027 - 04 Jan 2028",
+      "seasons": {
+        "low": { "dates": "Mar, Apr, May, Nov", "adultSharing": { "published": 610, "wholesale": 427 }, "child5to15": { "published": 305, "wholesale": 214 }, "single": { "published": 860, "wholesale": 602 }, "familySuiteUpTo4pax": { "published": 2440, "wholesale": 1708 } },
+        "regular": { "dates": "05-31 Jan, Feb, Jun, Sep, Oct, 01-17 Dec", "adultSharing": { "published": 680, "wholesale": 476 }, "child5to15": { "published": 340, "wholesale": 238 }, "single": { "published": 930, "wholesale": 651 }, "familySuiteUpTo4pax": { "published": 2720, "wholesale": 1904 } },
+        "high": { "dates": "Jul, Aug, 18Dec-04Jan", "adultSharing": { "published": 880, "wholesale": 616 }, "child5to15": { "published": 440, "wholesale": 308 }, "single": { "published": 1230, "wholesale": 861 }, "familySuiteUpTo4pax": { "published": 3520, "wholesale": 2464 } }
+      },
+      "conservancyFee": { "adult": 150, "child": 75 },
+      "childPolicy": "0-4yrs free",
+      "specials": ["Early Bird 5% off", "3rd child sharing triple pays conservation fee only", "Honeymoon 25% off one partner", "Single rate from 2nd single", "4 nights for price of 3 (Regular/Low)", "6 nights for price of 5 (with Offbeat Mara)", "Exclusive use of camp min charge = 10 adults at season rate"],
+      "inclusions": "Full board, house wine/beer/spirits, laundry, Mugie airstrip transfers, exclusive vehicle for 4+ pax, unlimited shared game drives, night drives, guided walks, kayaking, fishing, camel rides, ranch activities, bloodhound demo, community visits, bush meals/sundowners",
+      "exclusions": { "golfGreenFee": 30, "loisabaAirstripTransfer": 150, "lateDeparture": 100, "exclusiveVehicleUnder4pax": 250, "pokotSamburuBomaVisit": 150 },
+      "verified": true
+    },
+    "Deloraine House": {
+      "region": "Rongai, Nakuru",
+      "validity": "05 Jan 2027 - 04 Jan 2028",
+      "seasons": {
+        "regular": { "dates": "05 Jan-19 Dec", "standardRoomMainHouse": { "published": 690, "wholesale": 483 }, "teen12to17": { "published": 520, "wholesale": 364 }, "child4to11": { "published": 345, "wholesale": 242 }, "cottageRoom": { "published": 515, "wholesale": 361 }, "cottageTeen": { "published": 390, "wholesale": 273 }, "cottageChild": { "published": 260, "wholesale": 182 }, "exclusiveUseUpTo14guests": { "published": 8085, "wholesale": 5660 } },
+        "high": { "dates": "20 Dec-04 Jan", "standardRoomMainHouse": { "published": 895, "wholesale": 627 }, "teen12to17": { "published": 675, "wholesale": 473 }, "child4to11": { "published": 445, "wholesale": 312 }, "cottageRoom": { "published": 670, "wholesale": 469 }, "cottageTeen": { "published": 510, "wholesale": 357 }, "cottageChild": { "published": 340, "wholesale": 238 }, "exclusiveUseUpTo14guests": { "published": 10500, "wholesale": 7350 } }
+      },
+      "adultTeenChildSharingWithAdults": { "regular": 50, "high": 50, "note": "possible per-person add-on fee, unclear from table label" },
+      "childPolicy": "0-3yrs free",
+      "note": "Cottage Room rates apply only when Main House rooms unavailable",
+      "specials": ["Early Bird 5% off (year round)", "3rd child sharing triple pays conservancy fee only"],
+      "inclusions": "Full board, all drinks except champagne, horse riding & polo, guided bush walks, swimming pool, tennis court, school visits, laundry, Gogar airstrip transfers",
+      "exclusions": { "ridingPoloLessons": 40, "extraLunch": { "adult": 30, "child": 15 }, "lakeNakuruOrBogoriaDayVisit": "price on request" },
+      "verified": true
+    },
+    "The Cabanas": {
+      "region": "Lamu (coastal)",
+      "validity": "11 Jan 2027 - 10 Jan 2028",
+      "tier": "Wholesale 25%",
+      "seasons": {
+        "regular": { "dates": "11 Jan-19 Dec, min 2 nights",
+          "beachfrontCabana2pax_Lokahi": { "published": { "double": 430, "single": 515 }, "wholesale": { "double": 323, "single": 386 } },
+          "beachfrontCabana4pax_MakaiMoana": { "published": { "double": 430, "child4to10": 220 }, "wholesale": { "double": 323, "child4to10": 165 } },
+          "oceanViewCabana_Aloha": { "published": { "double": 410, "child4to10": 205, "single": 495 }, "wholesale": { "double": 308, "child4to10": 154, "single": 371 } },
+          "luxuryOceanViewCabana_Kailani": { "published": 1980, "wholesale": 1485, "note": "min child age 8, confident swimmers required" },
+          "exclusiveUse": { "published": 8170, "wholesale": 6128, "note": "not applicable in High Season" }
+        },
+        "high": { "dates": "20 Dec-10 Jan, min 5 nights",
+          "beachfrontCabana2pax_Lokahi": { "published": 620, "wholesale": 465 },
+          "beachfrontCabana4pax_MakaiMoana": { "published": { "double": 620, "child4to10": 310 }, "wholesale": { "double": 465, "child4to10": 233 } },
+          "oceanViewCabana_Aloha": { "published": { "double": 575, "child4to10": 290 }, "wholesale": { "double": 431, "child4to10": 218 }, "note": "Malama/Ohana sold as 3-adult minimum in High Season" },
+          "luxuryOceanViewCabana_Kailani": { "published": 2750, "wholesale": 2063 }
+        }
+      },
+      "inclusions": "Full board (3 meals/day + hot beverages/coffee to 10am), drinking water, pool/common areas, yoga shala, SUP boarding, WiFi, laundry, airport transfers (4+ night bookings)",
+      "exclusions": "All drinks incl. bottled water from bar, coffee after 10am, watersports/dhow sailing, deep sea fishing, motorised activities, snorkelling, spa, Lamu guide fees, extra Lamu transfers, gratuities",
+      "specialPackages": { "drinksActivitySupplement": { "adult": 350, "child4to10": 175, "unit": "per night", "includes": "soft drinks/house wine/spirits/cocktails/beer, 1 Lamu tour + 1 sunset dhow cruise per booking" }, "honeymoonSupplement": 500, "celebrationSupplement1to5pax": 400 },
+      "minChildAge": 4,
+      "verified": true
+    },
+    "Offbeat Riding Safaris": {
+      "region": "Masai Mara & Laikipia",
+      "product": "Set-departure and tailor-made multi-day riding safaris",
+      "setDeparture_masaiMara7nights": { "rack": 12550, "nett": 10290, "unit": "per person", "departures2027": ["20-27 Feb", "13-20 Mar", "12-19 Jun", "19-26 Jun", "10-17 Jul", "17-24 Jul", "07-14 Aug", "14-21 Aug", "11-18 Sep", "18-25 Sep", "09-16 Oct", "16-23 Oct", "04-11 Dec"] },
+      "setDeparture_laikipia8nights": { "rack": 14330, "nett": 11750, "unit": "per person", "departures2027": ["22-30 Jan", "30Jan-07Feb", "07-15 Feb"] },
+      "tailorMade_perPersonPerNight": { "1rider": { "rack": 5545, "nett": 4472 }, "2riders": { "rack": 4160, "nett": 3364 }, "3to4riders": { "rack": 2890, "nett": 2348 }, "5to6riders": { "rack": 2250, "nett": 1836 }, "7to8riders": { "rack": 1900, "nett": 1556 }, "9to12riders": { "rack": 1730, "nett": 1420 }, "minNights": 5 },
+      "inclusions": "Full board + laundry, all house drinks/food, all activities (riding/game drives/walks/night drives), all conservation/park/camping fees, internal return flights Nairobi-safari, Nairobi transfers, Nairobi dayroom on last day if needed, Rescue.co air evacuation",
+      "exclusions": { "singleSupplement": 100, "gratuities": "excluded" },
+      "closedMonths": "Apr, May, Nov",
+      "minPax": 4, "maxRiders": 12, "minAge": 14,
+      "verified": true
+    }
+  },
+  "generalTerms": {
+    "bookingHold": "2 weeks provisional",
+    "depositPolicy": "20% deposit to confirm; balance due 45 days before arrival",
+    "cancellationPolicy": "120+ days: deposit refunded (net bank charges); 120-46 days: 20% deposit forfeited; 45-30 days: 50% of full value forfeited; less than 30 days/no-show: 100% forfeited"
+  }
+}

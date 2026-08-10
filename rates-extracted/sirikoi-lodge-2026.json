@@ -1,0 +1,68 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftotext -layout, clean text PDFs. NOT a Soroi property. Two rate tiers found: Rack, and a 'Nett (25% commission)' tier which is verified Rack x 0.75 on every checked cell (e.g. 1200/1600=0.75, 5625/7500=0.75). A third file, 'Sirikoi Experiences Nett cost sheet 25 & 26 (1).pdf' (14 pages, activities/add-on pricing), was not extracted this pass - the Rack doc's own 'Experiences and Extras' section already covers the core add-on prices.",
+  "property": "Sirikoi Lodge",
+  "region": "Lewa Wildlife Conservancy, Laikipia",
+  "currency": "USD",
+  "unit": "per person per night unless noted",
+  "source": {
+    "rackFile": "2026 CONTRACT RATES/KENYA/ACCOMODATION/SIRIKOI/2026 Sirikoi Rack Rates (1).pdf",
+    "nett25File": "2026 CONTRACT RATES/KENYA/ACCOMODATION/SIRIKOI/2026 Sirikoi Rates 25% Commission (1).pdf",
+    "skippedFile": "Sirikoi Experiences Nett cost sheet 25 & 26 (1).pdf - not opened, 14-page activities cost sheet, core add-ons already captured from the Rack doc's own Extras section"
+  },
+  "confidence": "confirmed-2026-08-06",
+  "seasons": {
+    "peak": { "dateRanges": ["1 Jun - 30 Sep", "20 Dec - 5 Jan 2027"] },
+    "regular": { "dateRanges": ["6 Jan - 14 Apr", "16 May - 31 May", "throughout October", "1 Dec - 19 Dec"] },
+    "closed": { "dateRanges": ["15 Apr - 15 May", "entire November"], "reason": "Rainy seasons" }
+  },
+  "rates": {
+    "luxuryTents": {
+      "rack": { "peak": { "perAdultSharing": 1600, "singleRoom": 2300, "child6to15": 1200 }, "regular": { "perAdultSharing": 1300, "singleRoom": 2000, "child6to15": 1000 } },
+      "nett25pctCommission": { "peak": { "perAdultSharing": 1200, "singleRoom": 1725, "child6to15": 900 }, "regular": { "perAdultSharing": 975, "singleRoom": 1500, "child6to15": 750 } }
+    },
+    "sirikoiCottage_exclusiveUse4pax": {
+      "rack": { "peak": { "perNight": 7500, "extraBedAdult": 1900, "extraBedChild6to15": 1400 }, "regular": { "perNight": 6500, "extraBedAdult": 1700, "extraBedChild6to15": 1200 } },
+      "nett25pctCommission": { "peak": { "perNight": 5625, "extraBedAdult": 1425, "extraBedChild6to15": 1050 }, "regular": { "perNight": 4875, "extraBedAdult": 1275, "extraBedChild6to15": 900 } }
+    },
+    "sirikoiHouse_exclusiveUse6pax": {
+      "rack": { "peak": { "perNight": 12200, "extraBedAdult": 2050, "extraBedChild6to15": 1650 }, "regular": { "perNight": 10500, "extraBedAdult": 1750, "extraBedChild6to15": 1400 } },
+      "nett25pctCommission_note": "[Unverified] Not shown on page 1 of the 25% commission doc (table only covered Luxury Tents and Sirikoi Cottage on the page read) - Sirikoi House's Nett figures were not independently captured; if needed, re-open the 25% commission PDF's later pages, or apply the same 0.75 multiplier verified elsewhere (10500*0.75=7875, 12200*0.75=9150) as an inference only."
+    }
+  },
+  "mandatoryFees": {
+    "conservationFee": { "adult": 183, "child6to15": 92, "unit": "per person per night", "note": "Excluded from all rates above." }
+  },
+  "inclusions": ["Full board accommodation", "Soft drinks, beers, house wines, selected house spirits", "Local airstrip transfers (Lewa Downs Airstrip)", "Guided morning/evening game drives", "Exclusive use of vehicle", "Guided bush walks, bird watching", "Bush meals, picnic excursion, sundowners", "Sirikoi Tour, pre-historic site visits, Bau games, Lewa Behind the Scenes Tour", "WiFi & laundry", "Heated pool, gym, pickleball"],
+  "exclusions": ["Conservation fees (see mandatoryFees)", "Champagne, premium spirits, cellar wines", "Additional payable activities/extras", "Gratuities and personal items"],
+  "extrasActivities": {
+    "guidePilotAccommodationPerNight": { "amount": 200, "note": "max 1 guide per 6 clients" },
+    "lateDepartureWithoutRoom": 215,
+    "lateDepartureWithRoom": "Charged at per-night rate",
+    "extraDayVisitorMeals": { "breakfast": 30, "lunch": 45, "tea": 15, "supper": 60, "picnicWithoutAlcohol": 25, "picnicWithAlcohol": 35 },
+    "masaiDancers": { "base15dancers": 250, "extraPerDancerMax30": 20 },
+    "masaiWeddingBlessingOrVowRenewal": { "base4pax": 1065, "extraPerPerson": 50 },
+    "ilNgwesiCulturalVisit": 75,
+    "horseRidingOnLewa": 125,
+    "camelRiding": 65,
+    "ngareNdareForestVisit": { "adult": 80, "child10to15": 40, "under10": "Free", "optionalVillageMarketStop": 35 },
+    "saunaSessionMax6": 50,
+    "helicopterExcursions": "Available on request, see separate Extra Activities document"
+  },
+  "childPolicy": {
+    "minimumAge": "6 years and older welcome",
+    "under12": "Must share a tent with an adult, cannot stay alone.",
+    "ownTentIfPermittedAge": "Single room rate applies.",
+    "sharingTwinOrTriple": "First child = adult sharing rate; second/third child = child sharing rate.",
+    "oneAdultWithChildren": "Adult sharing rate applies, plus child rate for each child."
+  },
+  "operationalPolicy": {
+    "checkIn": "11:00 AM", "checkOut": "10:00 AM",
+    "deposit": "20% non-refundable to confirm; balance due 60 days prior to arrival.",
+    "cancellation": [
+      { "daysBeforeArrival": ">51", "charge": "20% of total booking value" },
+      { "daysBeforeArrival": "50-31", "charge": "50% of total accommodation value" },
+      { "daysBeforeArrival": "<30 / no-show", "charge": "100% of total accommodation value" }
+    ],
+    "exclusiveUseThreshold": "80%+ of rooms (min 8 rooms) - different cancellation terms apply, case-by-case."
+  }
+}

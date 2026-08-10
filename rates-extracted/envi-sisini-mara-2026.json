@@ -1,0 +1,24 @@
+{
+  "$note": "Extracted 6 Aug 2026. ANOMALY: ENVI Sisini Mara is located in Tanzania's Mara Region near Serengeti National Park (Kogatende Airstrip, Tabora B Gate) - NOT Kenya's Maasai Mara - despite the confusingly similar name and its filing under KENYA/ACCOMODATION. There is a sister property 'ENVI Sisini Serengeti' also mentioned (referenced for a circuit offer) but not separately priced in this document beyond a name-check. Flag to project owner: likely misfiled, or intentionally included because it's part of a Kenya-Tanzania combined circuit product Sunworld sells.",
+  "property": "ENVI Sisini Mara",
+  "operator": "Sisini Collection Limited / ENVI Lodges",
+  "region": "Mara Region, TANZANIA (near Serengeti National Park, not Kenya)",
+  "tier": "STO Rates 2026 (Game Package and Full Board Package 20%)",
+  "source": { "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/ENVI SISINI MARA/ENVI Sisini Mara-STO Rates-2026.pdf" },
+  "seasons": { "low": "1 Apr-31 May, 1 Nov-19 Dec", "shoulder": "11 Jan-31 Mar, 1-30 Jun", "peak": "1 Jul-31 Oct, 20 Dec-10 Jan" },
+  "rates": {
+    "currency": "USD",
+    "gamePackage": {
+      "natureTentedSuite_perPersonPerNight_max2pax": { "low": 440, "shoulder": 600, "peak": 1200 },
+      "theRetreat_perUnitPerNight_max5pax": { "low": 1200, "shoulder": 2400, "peak": 5200 }
+    },
+    "fullBoardPackage20pct": {
+      "natureTentedSuite_perPersonPerNight": { "low": 240, "shoulder": 400, "peak": 1000 },
+      "theRetreat_perPersonPerNight": { "low": 800, "shoulder": 2000, "peak": 4800 }
+    }
+  },
+  "mandatoryFees": { "tourismDevelopmentLevy": "1% of accommodation per night", "carbonOffsetCommunityDevelopmentFee": "$3 per guest per night" },
+  "childPolicy": { "note": "Only welcomes children 12+, charged at adult rate. No child rate exists.", "minimumAge": 12 },
+  "singleSupplement": "50% of adult sharing rate",
+  "notes": "Game Package includes accommodation, full board, house drinks, daily game drives, transfers from Kogatende Airstrip. Currency/geography: this is a Tanzania property; do not blend its costs into a Kenya-only itinerary total without flagging the border crossing."
+}

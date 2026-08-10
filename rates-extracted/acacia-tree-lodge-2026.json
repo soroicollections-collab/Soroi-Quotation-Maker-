@@ -1,0 +1,29 @@
+{
+  "$note": "Extracted 6 Aug 2026. Source PDF filename says '2025-2026rack rates.pdf' but the rate table itself is headed '2025 RACK RATES USD' with no explicit 2026 validity window stated anywhere in the document.",
+  "property": "Acacia Tree Lodge",
+  "operator": "Acacia Tree Suites Ltd",
+  "region": "Not stated in document (no address/park reference found on this single page)",
+  "tier": "Rack Rate",
+  "residency": "Not split by residency",
+  "confidenceNote": "[Unverified] Document only labels itself '2025 RACK RATES' - whether these figures still apply for 2026 is not confirmed by the source, only inferred from the folder/filename. Treat as provisional until a dated 2026 rate sheet is obtained.",
+  "source": {
+    "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/ACACIA TREE LODGE/2025-2026rack rates.pdf",
+    "validity": "Not explicitly stated; filename implies 2025-2026"
+  },
+  "rates": {
+    "currency": "USD",
+    "unit": "per room per night",
+    "single": { "BB": 85, "HB": 100, "FB": 120 },
+    "doubleTwin": { "BB": 150, "HB": 180, "FB": 200 },
+    "triple": { "BB": 200, "HB": 280, "FB": 310 },
+    "suite": { "BB": 200 },
+    "honeymoonStandardRoom": { "BB": 150, "HB": 175, "FB": 200 },
+    "honeymoonSuite": { "BB": 230, "HB": 250, "FB": 270 }
+  },
+  "childPolicy": {
+    "0to4": "Free, sharing bed with parent",
+    "5to11": "30% of one adult's rate",
+    "12plus": "Full room rate"
+  },
+  "notes": "Late checkout 12pm-5pm: 50% of day rate; after 5pm: full room rate."
+}

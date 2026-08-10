@@ -1,0 +1,25 @@
+{
+  "$note": "Extracted 6 Aug 2026 via whole-file pdftotext read of '2026 Rate Sheet - Fairmont Mara Safari Club.pdf' (1 page).",
+  "property": "Fairmont Mara Safari Club",
+  "operator": "Fairmont Hotels (DMC-operated)",
+  "region": "Masai Mara National Reserve",
+  "tier": "FIT Leisure Rate 2026/2027, All Inclusive basis, all markets",
+  "source": { "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/FAIRMONT HOTELS/NORFOLK AND MARA SAFARI CLUB/2026 Rate Sheet - Fairmont Mara Safari Club.pdf", "validity": { "start": "2026-01-02", "end": "2027-01-01" } },
+  "seasons": {
+    "mid": "2 Jan-28 Feb, 1 Jun-30 Jun, 1 Oct-31 Oct, 1 Dec-21 Dec 2026",
+    "low": "1 Mar-31 May 2026, 1 Nov-30 Nov 2026",
+    "high": "1 Jul-30 Sep 2026, 22 Dec 2026-1 Jan 2027"
+  },
+  "rates": {
+    "currency": "USD", "unit": "per room per night, All Inclusive, Full Board incl. 16% VAT/10% service/2% training levy",
+    "riverfrontTent": { "mid": { "single": 692, "double": 923, "triple": 1385.42 }, "low": { "single": 564, "double": 752, "triple": 1128 }, "high": { "single": 925, "double": 1234, "triple": 1870 } },
+    "deluxeRiverTent": { "mid": { "single": 842, "double": 1073, "triple": 1535 }, "low": { "single": 714, "double": 902, "triple": 1278 }, "high": { "single": 1075, "double": 1384, "triple": 2020 } },
+    "newLuxuryTents_notYetPublished_Q22025": { "mid": { "single": 1541, "double": 2055, "triple": 3038 }, "low": { "single": 1401, "double": 1868, "triple": 2801 }, "high": { "single": 1682, "double": 2243, "triple": 3364 }, "confidenceNote": "[Unverified] Marked 'TBA' status / 'not to be published' in source - these 6 new tents may not yet be bookable; confirm availability before quoting." }
+  },
+  "mandatoryFees": { "conservancyFee": { "adult": 130, "child6to12": 65, "unit": "per person per night, not included in rate" }, "parkFee": "Masai Mara Game Reserve park fees excluded, payable directly at entrance" },
+  "childPolicy": { "thirdAdultAbove12": "50% of per-person double adult rate", "thirdChildBelow12": "50% of per-person sharing rate" },
+  "occupancy": { "riverfrontTent": "1 queen bed, max 2 adults, no extra bed", "deluxeRiverTent_orNewTents": "2 twin beds, max 2 adults + 2 children under 12, no extra bed" },
+  "multiPropertyDiscount": { "twoFairmontKenyaHotels": "5%", "threeFairmontKenyaHotels": "10%", "eligibleHotels": ["Fairmont The Norfolk", "Fairmont Mara Safari Club", "Fairmont Mount Kenya Safari Club"] },
+  "inclusions": "Full board, 2 shared game drives/person/night (1 bottle water/game drive), return airstrip transfers from Ngerende, stocked minibar, 1 White Rhino sanctuary visit/stay, free-flowing soft/selected alcoholic beverages, 1 Boma Experience Dinner/stay.",
+  "notes": "Non-commissionable. Day use rooms 75% of full rate. Easter/festive treated as peak, min 2-night stay. Cancellation 100% within 45-90 days depending on season (very strict - effectively non-refundable once booked)."
+}

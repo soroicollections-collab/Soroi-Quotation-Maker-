@@ -1,0 +1,88 @@
+{
+  "$note": "Extracted 6 Aug 2026, read directly, single-page document. Casa Blanca by Kobe is confirmed to be a genuinely distinct priced entity, not a room category within the main Kobe Suite Resort rate table — it has its own standalone one-page rate sheet with a completely different pricing shape (whole-unit rate, no per-person/single/double breakdown at all).",
+  "property": "Casa Blanca by Kobe",
+  "parentProperty": "Kobe Suite Resort (Watamu) — same resort group/ownership, distinct sub-property/villa.",
+  "region": "Watamu, Kenya",
+  "tier": "Travel Agent Rate (same document family/naming convention as the main Kobe rates file).",
+  "residency": "Not split Resident/Non-Resident on this document.",
+  "source": {
+    "file": "2027 CONTRACT RATES/KENYA/BEACH ACCOMODATION/KOBE SUITE RESORT/CASA BLANCA BY KOBE TRAVEL AGENT RATES 2026-2027 PDF.xlsx.pdf",
+    "pdfPageIndex": 0,
+    "validity": { "start": "2026-07-11", "end": "2027-04-30", "note": "Same odd fiscal window as the main Kobe 2027 document (11 Jul 2026 - 30 Apr 2027), not a full calendar year." }
+  },
+  "confidence": "confirmed-2026-08-06",
+  "extractionMethod": { "note": "Read directly, single-page rates table, three parallel currency columns on separate mini-tables (KES/USD/EUR)." },
+  "structuralFindings": [
+    "Pricing unit is a SINGLE flat rate per night — no SGL/DBL/PP breakdown, no per-person figure at all. Given the magnitude ($841-$1,594/night USD), this reads as a whole-villa/whole-unit rate, consistent with 'Casa Blanca' being a private villa rather than a standard hotel room — but the source document does not explicitly state occupancy capacity or state 'per villa' in words, so this is an inference from the pricing shape, not a stated fact.",
+    "No meal plan stated explicitly on this specific page beyond the table header 'BED & BREAKFAST' (same base plan as the main resort).",
+    "No children policy, cancellation policy, check-in/out times, or supplement structure stated for Casa Blanca specifically — these may follow the main Kobe Suite Resort's terms (same ownership) but that is not confirmed anywhere in the source.",
+    "Same 10 date-range row structure as the main Kobe 2027 table, same minimum-stay-nights column."
+  ],
+  "occupancyCapacity": {
+    "verified": false,
+    "confidenceNote": "[Inference] Not stated in the source document. Given the per-night price is roughly 5-6x a standard Kobe double room, this is likely a multi-bedroom private villa, but exact bedroom/pax count is not confirmed anywhere in this file — confirm directly with the property before quoting."
+  },
+  "seasons": {
+    "rows": [
+      { "dateRange": "11-07-26 - 31-07-26", "minStayNights": 1 },
+      { "dateRange": "01-08-26 - 31-08-26", "minStayNights": 2 },
+      { "dateRange": "01-09-26 - 05-10-26", "minStayNights": 1 },
+      { "dateRange": "06-10-26 - 02-11-26", "minStayNights": 2 },
+      { "dateRange": "03-11-26 - 20-12-26", "minStayNights": 1 },
+      { "dateRange": "21-12-26 - 11-01-27", "minStayNights": 2, "note": "Festive peak. Note: min stay here is 2 nights, not 4 as in the main Kobe table's equivalent festive row — a genuine difference, not a transcription error." },
+      { "dateRange": "12-01-27 - 01-03-27", "minStayNights": 4, "note": "Unusually, this row's minimum stay (4 nights) is higher than the festive row's (2 nights) — flagged as-is, not smoothed over; matches the source exactly." },
+      { "dateRange": "02-03-27 - 24-03-27", "minStayNights": 2 },
+      { "dateRange": "25-03-27 - 30-03-27", "minStayNights": 2 },
+      { "dateRange": "31-03-27 - 30-04-27", "minStayNights": 1 }
+    ]
+  },
+  "rates": {
+    "unit": "Per night, whole unit (see occupancyCapacity note above), Bed & Breakfast.",
+    "USD": {
+      "primary": true,
+      "rows": [
+        { "dateRange": "11-07-26/31-07-26", "rate": 841 },
+        { "dateRange": "01-08-26/31-08-26", "rate": 1169 },
+        { "dateRange": "01-09-26/05-10-26", "rate": 841 },
+        { "dateRange": "06-10-26/02-11-26", "rate": 1169 },
+        { "dateRange": "03-11-26/20-12-26", "rate": 841 },
+        { "dateRange": "21-12-26/11-01-27", "rate": 1594 },
+        { "dateRange": "12-01-27/01-03-27", "rate": 1169 },
+        { "dateRange": "02-03-27/24-03-27", "rate": 841 },
+        { "dateRange": "25-03-27/30-03-27", "rate": 1169 },
+        { "dateRange": "31-03-27/30-04-27", "rate": 841 }
+      ]
+    },
+    "KES": {
+      "rows": [
+        { "dateRange": "11-07-26/31-07-26", "rate": 84051 },
+        { "dateRange": "01-08-26/31-08-26", "rate": 116886 },
+        { "dateRange": "01-09-26/05-10-26", "rate": 84051 },
+        { "dateRange": "06-10-26/02-11-26", "rate": 116886 },
+        { "dateRange": "03-11-26/20-12-26", "rate": 84051 },
+        { "dateRange": "21-12-26/11-01-27", "rate": 159390 },
+        { "dateRange": "12-01-27/01-03-27", "rate": 116886 },
+        { "dateRange": "02-03-27/24-03-27", "rate": 84051 },
+        { "dateRange": "25-03-27/30-03-27", "rate": 116886 },
+        { "dateRange": "31-03-27/30-04-27", "rate": 84051 }
+      ]
+    },
+    "EUR": {
+      "rows": [
+        { "dateRange": "11-07-26/31-07-26", "rate": 764 },
+        { "dateRange": "01-08-26/31-08-26", "rate": 1063 },
+        { "dateRange": "01-09-26/05-10-26", "rate": 764 },
+        { "dateRange": "06-10-26/02-11-26", "rate": 1063 },
+        { "dateRange": "03-11-26/20-12-26", "rate": 764 },
+        { "dateRange": "21-12-26/11-01-27", "rate": 1449 },
+        { "dateRange": "12-01-27/01-03-27", "rate": 1063 },
+        { "dateRange": "02-03-27/24-03-27", "rate": 764 },
+        { "dateRange": "25-03-27/30-03-27", "rate": 1063 },
+        { "dateRange": "31-03-27/30-04-27", "rate": 764 }
+      ]
+    }
+  },
+  "portfolioWideTerms": {
+    "note": "Non-Soroi property, distinct sub-entity — CLAUDE.md's Soroi-portfolio-wide terms do not apply. No 2026 equivalent file exists for Casa Blanca — the 2026 Kobe folder contains no Casa Blanca rate sheet at all, so there is no casa-blanca-by-kobe-2026.json; this property only appears in the 2027 folder."
+  }
+}

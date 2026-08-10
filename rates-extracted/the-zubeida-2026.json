@@ -1,0 +1,97 @@
+{
+  "$note": "Extracted 6 Aug 2026 directly from paginated source PDF (12 pages, mix of design/photo pages and rate tables; single property, no adjacent-property risk). Pages 2 and 4 were image-only (layout diagrams), rates on pages 5-8 were clean text tables.",
+  "property": "The Zubeida",
+  "operatorEntity": "Zubeida Holiday Homes Limited",
+  "region": "Diani Beach, Kenya Coast",
+  "tier": "Rack Rate (primary) and Nett Rate (secondary, same document)",
+  "residency": "Both KES-Resident and USD-International tables provided in this single document",
+  "source": {
+    "file": "2026 CONTRACT RATES/KENYA/BEACH ACCOMODATION/THE ZUBEIDA/Travel Agent Nett Rates- The Zubeida 2026..pdf",
+    "totalPages": 12,
+    "pdfPageIndex_rateTables": "4-7 (0-indexed)",
+    "validity": { "note": "Document titled 'SPECIAL AGENT NETT RATES 2026 - JANUARY 2027', with two seasons stated: standard (10 Jan - 19 Dec, excluding Easter week) and Peak (20 Dec - 9 Jan, including Easter week). No further explicit start/end date given, but effectively covers all of 2026 into early Jan 2027." }
+  },
+  "confidence": "confirmed-2026-08-06",
+  "extractionMethod": { "note": "Read directly via pdftotext -layout across the rate-bearing pages." },
+  "structuralFindings": [
+    "Entire property is 8 PRIVATE VILLAS, beachfront — priced as PACKAGES (Couples/Family/Owners Villa), not per-person or per-standard-room. This is a fundamentally different pricing unit from every other property in this batch.",
+    "'All Packages are at a set rate' — single occupancy is treated (and priced) as a full Couples Package, i.e. no single-occupancy discount exists.",
+    "Family Package price is split into two figures ('3 OR 4 PAX Respectively') — a single flat rate for 3 pax and a separate flat rate for 4 pax, not a per-person rate.",
+    "Owners Villa is an 8-pax unit, its own flat package rate.",
+    "TWO seasons only: Standard (10 Jan - 19 Dec, EXCLUDING Easter week) and Peak (20 Dec - 9 Jan, INCLUDING Easter week) — note Easter week is carved OUT of the standard season and priced at Peak rates specifically, a distinct mechanic from every other property (which typically prices Easter as its own separate mini-season at an intermediate rate).",
+    "FOUR parallel rate tables exist in this single document: KES Rack (Resident), KES Nett (Resident), USD Rack (International/Non-Resident), USD Nett (International/Non-Resident). All four captured below since they're all short and clearly laid out.",
+    "USD Nett Peak Bed & Breakfast Couples Package figure reads as $245 in the extracted text — this is LOWER than the same package's Standard-season Nett BB rate of $322, which is internally inconsistent (Peak should not undercut Standard). Flagged as [Unverified — likely a source transcription/typo error, not corrected here] rather than silently adjusted; the equivalent Rack figures ($395 Peak vs $370 Standard) DO follow the expected Peak > Standard pattern, reinforcing that the $245 Nett figure looks like an error in the source, not a genuine discount.",
+    "Owners Villa USD Nett Peak BB figure is printed as '1.194' (period instead of comma) in the source — read as 1,194, consistent with the surrounding number formatting, but noted since it's a raw OCR/typesetting oddity in the original.",
+    "Nett rate tables carry an explicit anti-discounting instruction: 'Please do not share a discount over 5% off the rack rates, for industry fairness' — a resale-price constraint on whoever books this rate, worth remembering if this is used as a wholesale cost basis for a client-facing markup.",
+    "Child pricing is a flat KES/USD figure for ages 3-6 (not a percentage), while ages 7-11 get a 20% discount off the PER PERSON rate — but since packages are priced flat rather than per-person, how the 7-11 discount actually applies within a flat package price is not fully spelled out — flag as an open question if a 7-11-year-old is part of a booking.",
+    "Villa inventory: 7 of the 8 villas are 2-Bedroom (max 4 persons each); 1 villa is a 4-Bedroom (max 8 persons, presumably the 'Owners Villa')."
+  ],
+  "seasons": {
+    "standard": { "dateRange": "10 Jan - 19 Dec", "note": "Excludes Easter week, which is priced at Peak rates instead." },
+    "peak": { "dateRange": "20 Dec - 9 Jan", "note": "Includes Easter week." }
+  },
+  "rackRates": {
+    "kesResident": {
+      "currency": "KES",
+      "unit": "per villa/package per night",
+      "verified": true,
+      "standard": { "halfBoard": { "couplesPackage2pax": 43050, "familyPackage3pax": 56175, "familyPackage4pax": 69300, "ownersVilla8pax": 152250 }, "bedAndBreakfast": { "couplesPackage2pax": 36750, "familyPackage3pax": 45675, "familyPackage4pax": 60900, "ownersVilla8pax": 128100 } },
+      "peak": { "halfBoard": { "couplesPackage2pax": 46200, "familyPackage3pax": 60375, "familyPackage4pax": 74550, "ownersVilla8pax": 162750 }, "bedAndBreakfast": { "couplesPackage2pax": 39375, "familyPackage3pax": 48825, "familyPackage4pax": 65100, "ownersVilla8pax": 136500 } },
+      "childRates_age3to6": { "bedAndBreakfast": 9000, "halfBoard": 10500 },
+      "childDiscount_age7to11": "20% off the per-person rate"
+    },
+    "usdInternational": {
+      "currency": "USD",
+      "unit": "per villa/package per night",
+      "verified": true,
+      "standard": { "halfBoard": { "couplesPackage2pax": 430, "familyPackage3pax": 565, "familyPackage4pax": 695, "ownersVilla8pax": 1525 }, "bedAndBreakfast": { "couplesPackage2pax": 370, "familyPackage3pax": 460, "familyPackage4pax": 610, "ownersVilla8pax": 1280 } },
+      "peak": { "halfBoard": { "couplesPackage2pax": 465, "familyPackage3pax": 605, "familyPackage4pax": 745, "ownersVilla8pax": 1630 }, "bedAndBreakfast": { "couplesPackage2pax": 395, "familyPackage3pax": 490, "familyPackage4pax": 650, "ownersVilla8pax": 1365 } },
+      "childRates_age3to6": { "bedAndBreakfast": 90, "halfBoard": 105 },
+      "childDiscount_age7to11": "20% off the per-person rate"
+    }
+  },
+  "nettRates": {
+    "$note": "Same document, 'SPECIAL NETT RATES' tables. Anti-discounting clause applies: do not sell at more than 5% below Rack.",
+    "kesResident": {
+      "currency": "KES",
+      "unit": "per villa/package per night",
+      "verified": true,
+      "standard": { "halfBoard": { "couplesPackage2pax": 37669, "familyPackage3pax": 49153, "familyPackage4pax": 60638, "ownersVilla8pax": 133219 }, "bedAndBreakfast": { "couplesPackage2pax": 32156, "familyPackage3pax": 39996, "familyPackage4pax": 53288, "ownersVilla8pax": 112088 } },
+      "peak": { "halfBoard": { "couplesPackage2pax": 40425, "familyPackage3pax": 52828, "familyPackage4pax": 65231, "ownersVilla8pax": 142406 }, "bedAndBreakfast": { "couplesPackage2pax": 34453, "familyPackage3pax": 42722, "familyPackage4pax": 56963, "ownersVilla8pax": 119438 } },
+      "childRates_age3to6": { "bedAndBreakfast": 7875, "halfBoard": 9188 },
+      "childDiscount_age7to11": "20% off the per-person rack rate"
+    },
+    "usdInternational": {
+      "currency": "USD",
+      "unit": "per villa/package per night",
+      "verified": true,
+      "standard": { "halfBoard": { "couplesPackage2pax": 377, "familyPackage3pax": 492, "familyPackage4pax": 606, "ownersVilla8pax": 1332 }, "bedAndBreakfast": { "couplesPackage2pax": 322, "familyPackage3pax": 400, "familyPackage4pax": 533, "ownersVilla8pax": 1121 } },
+      "peak": {
+        "halfBoard": { "couplesPackage2pax": 404, "familyPackage3pax": 528, "familyPackage4pax": 652, "ownersVilla8pax": 1424 },
+        "bedAndBreakfast": { "couplesPackage2pax": 245, "familyPackage3pax": 427, "familyPackage4pax": 570, "ownersVilla8pax": 1194, "confidenceNote": "[Unverified — likely source typo] Couples Package figure of $245 is LOWER than the same package's Standard-season BB Nett rate ($322), which is internally inconsistent for a 'Peak' rate. Every other cell in this Peak/BB row (and the corresponding Peak/BB Rack row) is correctly higher than Standard. Flag this specific figure before using it in a quote; consider re-confirming with the property directly rather than trusting the printed $245." }
+      },
+      "childRates_age3to6": { "bedAndBreakfast": 79, "halfBoard": 92 },
+      "childDiscount_age7to11": "20% off the per-person rack rate"
+    }
+  },
+  "villaInventory": {
+    "twoBedroomVilla": { "maxPersons": 4, "count": 7 },
+    "fourBedroomVilla": { "maxPersons": 8, "count": 1, "note": "Presumed to be the 'Owners Villa' priced above." }
+  },
+  "inclusiveFeatures": ["Daily housekeeping", "Turn-down service", "Soaps and amenities", "Free WiFi", "TV", "A/C rooms", "Parking", "Swimming pool", "Security", "Poolside bar", "Beach lounge", "3-course Half Board meals", "High Tea (complimentary)", "Handcrafted experience based on client preferences"],
+  "extras": {
+    "extraBeds": "Available at an additional per-person fee (amount not specified on this page)",
+    "airportTransfers": { "ukunda_4pax": 30, "mombasa_4pax": 80, "currency": "USD" },
+    "note": "A la carte dining/activities charged separately during stay."
+  },
+  "minimumStay": { "period": "20 Dec - 10 Jan", "nights": 3 },
+  "checkInOut": { "checkIn": "12 PM onward", "checkOut": "before 10 AM" },
+  "cancellationPolicy": {
+    "30DaysInAdvance": "30% deposit (usable as credit for up to 6 months)",
+    "10DaysInAdvance": "30% charge + 30% deposit",
+    "lessThan10Days": "50% charge + 30% deposit",
+    "noShow": "100% charge"
+  },
+  "paymentTerms": { "deposit": "30% upon booking confirmation", "balanceDue": "No later than 15 days prior to arrival, by bank transfer" },
+  "contact": { "reservations": "info@thezubeida.com", "groupInquiries": "zeenat@thezubeida.com", "manager": "manager@thezubeida.com", "website": "www.thezubeida.com" }
+}

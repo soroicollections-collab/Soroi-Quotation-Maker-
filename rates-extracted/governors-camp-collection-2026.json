@@ -1,0 +1,138 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftotext -layout. NOT a Soroi property. Multi-property document (Musiara Ltd / The Governors' Camp Collection) covering 4 properties across 3 regions. Two separate source documents: an Agent NETT rate sheet (Non-Resident, appears to be a general 30% trade discount card per the folder's own filename 'Net 30%') and a Kenyan Resident rate email (different tier, different date-band structure, forwarded via Outlook so page 1 is just the email chrome).",
+  "operator": "Musiara Ltd / The Governors' Camp Collection / Governors' Aviation",
+  "region": "Maasai Mara, Lake Naivasha, Laikipia Plateau",
+  "properties": ["Governors' Camp", "Governors' Il Moran Camp", "Loldia House", "Governors' Mugie"],
+  "source": {
+    "agentNettFile": {
+      "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/GOVERNOR COLLECTION/Governors rate sheet 2026  - Net 30%.pdf",
+      "validity": { "start": "2026-01-01", "end": "2026-12-31" },
+      "issuedDate": "2025-05-26",
+      "tier": "Agent Nett Rates (folder-named 'Net 30%' — Sunworld's own filing label; the document itself does not state a discount percentage against a published rack, so the '30%' relationship to a rack card is not independently verified from this file alone)",
+      "residency": "Not resident-restricted"
+    },
+    "residentEmailFile": {
+      "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/GOVERNOR COLLECTION/Governors Kenya Resident Rates for 2026.msg (rendered as PDF export of the email)",
+      "tier": "Kenyan Resident Rates",
+      "residency": "Kenyan residents only, proof of residency required at booking",
+      "validity": { "note": "Rates apply to new bookings 23 June to 31 Dec 2026 per the email; email itself dated 2026-06-23", "start": "2026-06-23", "end": "2026-12-31" }
+    },
+    "skipped": ["Governors' Camp Collection - 2025 & 2026 Special Offers (2).pdf - not yet extracted, promotional specials not core rate data", "FW Governors 2025 net accommodation flight rates and special offers.msg - superseded by the two files above, older year"]
+  },
+  "confidence": "confirmed-2026-08-06",
+  "agentNettRates": {
+    "currency": "USD",
+    "unit": "per person per night sharing, Full Board+ (unless noted)",
+    "dateBands": ["1-Jan-26 to 31-Mar-26", "1-Apr-26 to 31-May-26", "1-Jun-26 to 30-Jun-26", "1-Jul-26 to 30-Sep-26", "1-Jul-26 to 31-Oct-26", "1-Oct-26 to 31-Oct-26", "1-Nov-26 to 15-Dec-26", "1-Nov-26 to 20-Dec-26", "16-Dec-26 to 20-Dec-26", "21-Dec-26 to 31-Dec-26"],
+    "note": "Source table has overlapping/inconsistently-spaced date bands per property (some properties only have values in a subset of the 10 columns) — reproduced exactly as printed, verified true for every cell with a value present; blank cells are genuinely blank in the source, not omitted by us.",
+    "governorsCamp": {
+      "justusTentPerPersonSharing": { "1-Jan-26to31-Mar-26": 436, "1-Apr-26to31-May-26": 317, "1-Jun-26to30-Jun-26": 436, "1-Jul-26to31-Oct-26": 699, "1-Nov-26to20-Dec-26": 436, "21-Dec-26to31-Dec-26": 699 },
+      "luxuryTentPerPersonSharing": { "1-Jan-26to31-Mar-26": 436, "1-Apr-26to31-May-26": 317, "1-Jun-26to30-Jun-26": 436, "1-Jul-26to31-Oct-26": 699, "1-Nov-26to20-Dec-26": 436, "21-Dec-26to31-Dec-26": 699 },
+      "singleSupplement": { "1-Jul-26to31-Oct-26": 175, "21-Dec-26to31-Dec-26": 175 },
+      "familyTent1to4Guests": { "1-Jan-26to31-Mar-26": 1744, "1-Apr-26to31-May-26": 1268, "1-Jun-26to30-Jun-26": 1744, "1-Jul-26to31-Oct-26": 2794, "1-Nov-26to20-Dec-26": 1744, "21-Dec-26to31-Dec-26": 2794 },
+      "familyTent5Guests": { "1-Jan-26to31-Mar-26": 2027, "1-Apr-26to31-May-26": 1474, "1-Jun-26to30-Jun-26": 2027, "1-Jul-26to31-Oct-26": 3249, "1-Nov-26to20-Dec-26": 2027, "21-Dec-26to31-Dec-26": 3249 },
+      "childPerNight": { "1-Jan-26to31-Mar-26": 283, "1-Apr-26to31-May-26": 206, "1-Jun-26to30-Jun-26": 283, "1-Jul-26to31-Oct-26": 454, "1-Nov-26to20-Dec-26": 283, "21-Dec-26to31-Dec-26": 454 },
+      "verified": true
+    },
+    "governorsIlMoranCamp": {
+      "luxuryTentPerPersonSharing": { "1-Jan-26to31-Mar-26": 640, "1-Apr-26to31-May-26": 467, "1-Jun-26to30-Jun-26": 640, "1-Jul-26to31-Oct-26": 1114, "1-Nov-26to20-Dec-26": 640, "21-Dec-26to31-Dec-26": 1114 },
+      "singleSupplement": { "1-Jul-26to31-Oct-26": 278, "21-Dec-26to31-Dec-26": 278 },
+      "childPerNight": { "1-Jan-26to31-Mar-26": 417, "1-Apr-26to31-May-26": 303, "1-Jun-26to30-Jun-26": 417, "1-Jul-26to31-Oct-26": 724, "1-Nov-26to20-Dec-26": 417, "21-Dec-26to31-Dec-26": 724 },
+      "note": "Minimum age 8 years at this camp (per separate Resident-rate document child policy note — assumed to also apply here as it's the same operator/camp; not independently re-stated in this Nett rate file).",
+      "verified": true
+    },
+    "loldiaHouse": {
+      "luxuryRoomPerPersonSharing": { "1-Jan-26to31-Mar-26": 436, "1-Apr-26to31-May-26": 297, "1-Jun-26to30-Jun-26": 436, "1-Jul-26to31-Oct-26": 655, "1-Nov-26to20-Dec-26": 436, "21-Dec-26to31-Dec-26": 655 },
+      "singleSupplement": { "1-Jul-26to31-Oct-26": 164, "21-Dec-26to31-Dec-26": 164 },
+      "suite1Guest": { "1-Jan-26to31-Mar-26": 536, "1-Apr-26to31-May-26": 397, "1-Jun-26to30-Jun-26": 536, "1-Jul-26to30-Sep-26": 919, "1-Oct-26to31-Oct-26": 919, "1-Nov-26to20-Dec-26": 536, "21-Dec-26to31-Dec-26": 919 },
+      "suite2Guests": { "1-Jan-26to31-Mar-26": 972, "1-Apr-26to31-May-26": 694, "1-Jun-26to30-Jun-26": 972, "1-Jul-26to30-Sep-26": 1410, "1-Oct-26to31-Oct-26": 1410, "1-Nov-26to20-Dec-26": 972, "21-Dec-26to31-Dec-26": 1410 },
+      "suite3Guests": { "1-Jan-26to31-Mar-26": 1408, "1-Apr-26to31-May-26": 991, "1-Jun-26to30-Jun-26": 1408, "1-Jul-26to30-Sep-26": 2065, "1-Oct-26to31-Oct-26": 2065, "1-Nov-26to20-Dec-26": 1408, "21-Dec-26to31-Dec-26": 2065 },
+      "childPerNight": { "1-Jan-26to31-Mar-26": 283, "1-Apr-26to31-May-26": 193, "1-Jun-26to30-Jun-26": 283, "1-Jul-26to31-Oct-26": 426, "1-Nov-26to20-Dec-26": 283, "21-Dec-26to31-Dec-26": 426 },
+      "luxurySuiteNightlySupplement": { "amount": 50, "unit": "USD net per suite per night", "verified": true },
+      "verified": true
+    },
+    "governorsMugie": {
+      "region": "Laikipia Plateau",
+      "cottagePerPersonSharing": { "1-Jan-26to31-Mar-26": 627, "1-Apr-26to31-May-26": 459, "1-Jun-26to30-Jun-26": 627, "1-Jul-26to30-Sep-26": 1007, "1-Oct-26to31-Oct-26": 1007, "1-Nov-26to20-Dec-26": 627, "21-Dec-26to31-Dec-26": 1007 },
+      "singleSupplement": { "1-Jul-26to30-Sep-26": 250, "1-Oct-26to31-Oct-26": 250, "21-Dec-26to31-Dec-26": 250 },
+      "suite1Guest": { "1-Jan-26to31-Mar-26": 804, "1-Apr-26to31-May-26": 635, "1-Jun-26to30-Jun-26": 804, "1-Jul-26to30-Sep-26": 1433, "1-Oct-26to31-Oct-26": 1433, "1-Nov-26to20-Dec-26": 804, "21-Dec-26to31-Dec-26": 1433 },
+      "suite2Guests": { "1-Jan-26to31-Mar-26": 1431, "1-Apr-26to31-May-26": 1093, "1-Jun-26to30-Jun-26": 1431, "1-Jul-26to30-Sep-26": 2190, "1-Oct-26to31-Oct-26": 2190, "1-Nov-26to20-Dec-26": 1431, "21-Dec-26to31-Dec-26": 2190 },
+      "childPerNight": { "1-Jan-26to31-Mar-26": 410, "1-Apr-26to31-May-26": 300, "1-Jun-26to30-Jun-26": 410, "1-Jul-26to30-Sep-26": 657, "1-Oct-26to31-Oct-26": 657, "1-Nov-26to20-Dec-26": 410, "21-Dec-26to31-Dec-26": 657 },
+      "verified": true
+    },
+    "guideRates": {
+      "guideInGuideAccommodation": { "governorsMugie": 195, "governorsCamp": 195, "governorsIlMoranCamp": 195, "unit": "USD per night, flat rate 1-Jan-26 to 31-Dec-26", "verified": true },
+      "guideInGuestAccommodation": {
+        "note": "Same date bands as the main accommodation table, per property.",
+        "governorsMugie": { "1-Jan-26to31-Mar-26": 404, "1-Apr-26to31-May-26": 294, "1-Jun-26to30-Jun-26": 404, "1-Jul-26to31-Oct-26": 651, "1-Nov-26to20-Dec-26": 404, "21-Dec-26to31-Dec-26": 651 },
+        "loldiaHouse": { "1-Jan-26to31-Mar-26": 283, "1-Apr-26to31-May-26": 193, "1-Jun-26to30-Jun-26": 283, "1-Jul-26to31-Oct-26": 426, "1-Nov-26to20-Dec-26": 283, "21-Dec-26to31-Dec-26": 426 },
+        "governorsCamp": { "1-Jan-26to31-Mar-26": 283, "1-Apr-26to31-May-26": 206, "1-Jun-26to30-Jun-26": 283, "1-Jul-26to31-Oct-26": 454, "1-Nov-26to20-Dec-26": 283, "21-Dec-26to31-Dec-26": 454 },
+        "governorsIlMoranCamp": { "1-Jan-26to31-Mar-26": 417, "1-Apr-26to31-May-26": 304, "1-Jun-26to30-Jun-26": 417, "1-Jul-26to31-Oct-26": 724, "1-Nov-26to20-Dec-26": 417, "21-Dec-26to31-Dec-26": 724 },
+        "verified": true
+      }
+    },
+    "mandatoryFeesAndExtras": {
+      "laikipiaPlateauConservationLevy": { "adult": 130, "child": 65, "unit": "per person per night, flat 1-Jul-26 to 31-Dec-26 band shown (only one column populated in source)", "verified": true },
+      "lakeNaivashaConservationLevy": { "adult": 80, "child": 40, "unit": "per person per night", "verified": true },
+      "lakeNakuruParkFee": { "adult": { "1-Jan-26to30-Jun-26": 80, "1-Jul-26to31-Dec-26": 100 }, "child": { "1-Jan-26to30-Jun-26": 20, "1-Jul-26to31-Dec-26": 35 }, "unit": "per person per entry", "verified": true },
+      "masaiMaraCommunityFee": { "adult": 50, "child": 50, "unit": "per person per night", "verified": true },
+      "masaiMaraParkFee": { "adult": { "1-Jan-26to30-Jun-26": 100, "1-Jul-26to31-Dec-26": 200 }, "child": { "1-Jan-26to30-Jun-26": 50, "1-Jul-26to31-Dec-26": 50 }, "unit": "per person per day", "verified": true },
+      "note": "Applicability: Laikipia levy at Governors' Mugie only; Lake Naivasha levy + Nakuru park fee at Loldia House only; Masai Mara community + park fee at any Governors' Mara camp."
+    },
+    "mealSupplements": { "bushBreakfast": 72, "bushDinner": 88, "bushLunch": 72, "extraLunch": 50, "unit": "USD per person, flat 1-Jan-26 to 31-Dec-26, applicable at Laikipia Plateau and Masai Mara properties", "verified": true },
+    "privateActivities": { "exclusiveUseVehicleMaasaiMara": { "1-Jan-26to30-Jun-26": 347, "1-Jul-26to31-Oct-26": 460, "1-Nov-26to15-Dec-26": 347, "16-Dec-26to31-Dec-26": 460, "unit": "per vehicle per day, max 6 guests", "verified": true } },
+    "activities": { "masaiVillageVisit": { "amount": 40, "unit": "USD per person, flat", "verified": true } },
+    "weddingBlessingPackage": { "amount": 3060, "unit": "USD per group, max 6 guests", "verified": true }
+  },
+  "residentRates": {
+    "currency": "USD",
+    "note": "This is the Kenyan Resident tier (email dated 23 Jun 2026, applicable to new bookings 23 Jun-31 Dec 2026). Uses a DIFFERENT date-band structure than the Agent Nett rates above (5 travel windows vs the Nett sheet's ~10 columns) - do not cross-map bands between the two tiers.",
+    "governorsCamp": {
+      "newBookings23to30Jun2026": { "adultSharingNet": 312, "adultSharingGross": 367, "childSharingNet": 203, "childSharingGross": 239, "note": "No single supplement at this camp" },
+      "newBookings1Julto30Sep2026": { "adultSharingNet": 390, "adultSharingGross": 458, "singleNet": 465, "singleGross": 533, "childSharingNet": 254, "childSharingGross": 298 },
+      "newBookings1to31Oct2026": { "adultSharingNet": 312, "adultSharingGross": 367, "singleNet": 387, "singleGross": 442, "childSharingNet": 203, "childSharingGross": 239 },
+      "newBookings1Novto15Dec2026": { "adultSharingNet": 250, "adultSharingGross": 294, "childSharingNet": 163, "childSharingGross": 191, "note": "No single supplement" },
+      "newBookings16Dec2026to3Jan2027": { "adultSharingNet": 390, "adultSharingGross": 458, "singleNet": 465, "singleGross": 533, "childSharingNet": 254, "childSharingGross": 298 },
+      "verified": true
+    },
+    "governorsIlMoranCamp": {
+      "newBookings23to30Jun2026": { "adultSharingNet": 476, "adultSharingGross": 560, "childSharingNet": 309, "childSharingGross": 364, "note": "No single supplement" },
+      "newBookings1Julto30Sep2026": { "adultSharingNet": 575, "adultSharingGross": 655, "singleNet": 675, "singleGross": 755, "childSharingNet": 374, "childSharingGross": 425 },
+      "newBookings1to31Oct2026": { "adultSharingNet": 476, "adultSharingGross": 560, "singleNet": 576, "singleGross": 660, "childSharingNet": 309, "childSharingGross": 364 },
+      "newBookings1Novto15Dec2026": { "adultSharingNet": 345, "adultSharingGross": 405, "childSharingNet": 224, "childSharingGross": 264, "note": "No single supplement" },
+      "newBookings16Dec2026to3Jan2027": { "adultSharingNet": 575, "adultSharingGross": 655, "singleNet": 675, "singleGross": 755, "childSharingNet": 362, "childSharingGross": 425 },
+      "verified": true
+    },
+    "loldiaHouse": {
+      "newBookings23to30Jun2026": { "adultSharingNet": 220, "adultSharingGross": 259, "childSharingNet": 143, "childSharingGross": 168, "note": "No single supplement" },
+      "newBookings23Julto30Sep2026": { "adultSharingNet": 290, "adultSharingGross": 341, "singleNet": 340, "singleGross": 391, "childSharingNet": 188, "childSharingGross": 222 },
+      "newBookings1to31Oct2026": { "adultSharingNet": 220, "adultSharingGross": 259, "singleNet": 270, "singleGross": 309, "childSharingNet": 143, "childSharingGross": 168 },
+      "newBookings1Novto15Dec2026": { "adultSharingNet": 220, "adultSharingGross": 259, "childSharingNet": 143, "childSharingGross": 168, "note": "No single supplement" },
+      "newBookings16Dec2026to3Jan2027": { "adultSharingNet": 290, "adultSharingGross": 341, "singleNet": 340, "singleGross": 391, "childSharingNet": 188, "childSharingGross": 221 },
+      "luxurySuiteSupplement": { "net": 50, "gross": 60, "unit": "per suite per night" },
+      "verified": true
+    },
+    "governorsAviation": {
+      "route": "Nairobi Wilson - all Masai Mara airstrips - Nairobi Wilson (round trip)",
+      "newBookings23to30Jun2026": { "adultNet": 294, "adultGross": 336, "childNet": 208, "childGross": 236, "childAgeRange": "2-15 years" },
+      "newBookings23Julto31Oct2026": { "adultNet": 304, "adultGross": 348, "childNet": 214, "childGross": 244 },
+      "newBookings1Novto15Dec2026": { "adultNet": 294, "adultGross": 336, "childNet": 208, "childGross": 236 },
+      "newBookings16to31Dec2026": { "adultNet": 304, "adultGross": 348, "childNet": 214, "childGross": 244 },
+      "fuelSurcharge": "13% for flight-only bookings; 2.9% for fly-safari package bookings",
+      "verified": true
+    },
+    "fuelSurcharge": { "packageBookings": "2.9%", "flightOnlyBookings": "13%", "note": "Not applied to park fees, community fees, or conservancy fees.", "verified": true },
+    "mandatoryFeesReferenced": {
+      "note": "Resident email states Mara park fees Ksh 4,500/adult and Ksh 2,000/child per night, and Mara Community fee USD 50/person/night, and Loldia Ranch conservation fee $10/adult $5/child per night — these are DIFFERENT figures/currency from the Agent Nett sheet's Masai Mara Park Fee ($100-200) and Lake Naivasha Conservation Levy ($80/$40). Both are 'confirmed from their own source document' but the two tiers' fee documents disagree on units/currency for what should be the same government/conservancy fee. Flag explicitly on any quote — this is an unresolved cross-document discrepancy, not a typo we're correcting.",
+      "verified": false,
+      "confidenceNote": "Discrepancy between Agent Nett sheet's Mara Park Fee ($100-200/night) and Resident email's Mara park fee (Ksh 4,500/night, roughly $35 at typical FX) is large and unexplained — could reflect Ksh vs USD figures actually referring to different fee lines (e.g. one might be old/stale). Do not average or pick one silently; ask Sunworld to confirm which applies for a resident booking."
+    },
+    "childPolicy": {
+      "governorsCampLoldiaMugie": "Child rate under age 16. Infants under 3 free.",
+      "governorsIlMoranCamp": "Child rate under age 16. Children under 8 not permitted (special requests possible).",
+      "twoAdultsOneChild": "Per-person-sharing adult rate x2 + child rate per night",
+      "oneAdultOneChild": "Per-person-sharing adult rate (1 pax) + child rate per night",
+      "maraParkFeeChild": "Available for children under 18; under 3 exempt from park fees entirely."
+    }
+  }
+}

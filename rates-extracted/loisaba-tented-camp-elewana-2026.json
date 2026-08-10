@@ -1,0 +1,28 @@
+{
+  "$note": "Extracted 6 Aug 2026 via paginated pdftotext read (page 13 of 24) of 'EC-2026-Rates-40.pdf'. One of 3 Loisaba properties in this document (Tented Camp, Lodo Springs, Star Beds) - each separately priced.",
+  "property": "Loisaba Tented Camp",
+  "operator": "Elewana Collection",
+  "region": "Loisaba Conservancy, Laikipia",
+  "tier": "Rack and Nett (Nett = Rack x 0.60)",
+  "source": { "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/ELEWANA/EC-2026-Rates-40.pdf", "pdfPageIndex": 13, "validity": { "start": "2026-01-04", "end": "2027-01-03" } },
+  "seasons": { "high": "Jul 1-Oct 31, Dec 20-Jan 3", "mid": "Jan 4-Mar 31, Jun 1-Jun 30, Nov 1-Dec 19", "green": "Apr 1-May 31" },
+  "rates": {
+    "currency": "USD", "unit": "per person per night",
+    "fullBoard": {
+      "perPersonSharing": { "high": { "rack": 888, "nett": 533 }, "mid": { "rack": 672, "nett": 403 }, "green": { "rack": 522, "nett": 313 } },
+      "singleRoom": { "high": { "rack": 1332, "nett": 799 }, "mid": { "rack": 1008, "nett": 605 }, "green": { "rack": 783, "nett": 470 } },
+      "tripleRoom": { "high": { "rack": 1997, "nett": 1198 }, "mid": { "rack": 1512, "nett": 907 }, "green": { "rack": 1174, "nett": 704 } },
+      "safariSuiteUpTo3": { "high": { "rack": 2311, "nett": 1387 }, "mid": { "rack": 1753, "nett": 1052 }, "green": { "rack": 1363, "nett": 818 } }
+    },
+    "gamePackage": {
+      "perPersonSharing": { "high": { "rack": 1088, "nett": 653 }, "mid": { "rack": 872, "nett": 523 }, "green": { "rack": 722, "nett": 433 } },
+      "singleRoom": { "high": { "rack": 1532, "nett": 919 }, "mid": { "rack": 1208, "nett": 725 }, "green": { "rack": 983, "nett": 590 } },
+      "tripleRoom": { "high": { "rack": 2447, "nett": 1468 }, "mid": { "rack": 1962, "nett": 1177 }, "green": { "rack": 1624, "nett": 974 } },
+      "safariSuiteUpTo3": { "high": { "rack": 2861, "nett": 1717 }, "mid": { "rack": 2288, "nett": 1373 }, "green": { "rack": 1888, "nett": 1133 } }
+    }
+  },
+  "mandatoryFees": { "loisabaConservancy": { "adult": 180, "child3to17": 90, "unit": "per person per day, year-round" } },
+  "extras": { "samburuVillageVisit": { "rack": 55, "nett": 47 }, "antiPoachingSnifferDogs": { "rack": 40, "nett": 34, "minMax": "2-6 guests" }, "helicopterSafari": "On request, price not stated" },
+  "transfers": { "toNanyukiAirstrip": { "rack": 410, "nett": 369 } },
+  "inclusionsGamePackage": "Scheduled game drives, 2hr walk, horse/camel safari, night game drive, e-bikes, mountain biking - all included."
+}

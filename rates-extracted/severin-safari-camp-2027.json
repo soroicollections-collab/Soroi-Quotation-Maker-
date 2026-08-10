@@ -1,0 +1,53 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftotext (single dense page) from 'SEVERIN SAFARI CAMP/SEVERIN SAFARI CAMP  Rate Policy 2027 - Google Sheets.pdf'. A duplicate '(1)' file exists in the same folder - not separately verified as identical but same title pattern.",
+  "property": "Severin Safari Camp",
+  "location": "Tsavo West",
+  "currency": "USD",
+  "tier": "Rack",
+  "confidence": "confirmed-2027-08-06",
+  "seasons": {
+    "mainSeason1": { "dates": "01 Jan - 29 Mar 2027" },
+    "lowSeason": { "dates": "30 Mar - 30 Jun 2027" },
+    "mainSeason2": { "dates": "01 Jul - 22 Dec 2027" },
+    "festiveSeason": { "dates": "23 - 31 Dec 2027" }
+  },
+  "rates": {
+    "KitaniBandas_selfCatering_perRoomUpTo3pax": { "main1": 105, "low": 85, "main2": 105, "festive": 155 },
+    "LuxuryTent_fullBoard": {
+      "single": { "main1": 260, "low": 210, "main2": 260, "festive": 390 },
+      "double": { "main1": 360, "low": 310, "main2": 360, "festive": 490 },
+      "triple": { "main1": 460, "low": 410, "main2": 460, "festive": 590 }
+    },
+    "JuniorSuite_fullBoard": { "single": { "main1": 400, "low": 320, "main2": 400, "festive": 600 }, "double": { "main1": 500, "low": 420, "main2": 500, "festive": 700 } },
+    "Suite_fullBoard": { "single": { "main1": 500, "low": 420, "main2": 500, "festive": 750 }, "double": { "main1": 600, "low": 520, "main2": 600, "festive": 850 } },
+    "verified": true
+  },
+  "occupancyNotes": { "kitaniBandas": "Up to 3 adults", "juniorSuite": "2 adults with 1 or 2 children under 12" },
+  "taxesIncluded": "Prevailing taxes and service charge included; KWS park fees excluded",
+  "groupPolicy": "1 free guest per 15 full-paying adult guests",
+  "longStaySpecial": "10% discount for bookings over 3 nights",
+  "honeymoonPackage": "Complimentary upgrade to Suite (subject to availability) + romantic candlelit dinner (excl. drinks); valid for couples married within last 6 months, min 2-night stay",
+  "safariPackages": {
+    "unit": "per guest, accommodation not included",
+    "trainPackage_SSC01_2nights": 315,
+    "trainPackage_SSC02_3nights": 537,
+    "roadSafari_SSC03_2nights": 77,
+    "roadSafari_SSC04_3nights": 222,
+    "verified": true
+  },
+  "extrasAndActivities": {
+    "extraBreakfast": 23, "extraLunch": 30, "extraDinner": 38, "picnicBox": 23, "bushBreakfastOrLunch": 77,
+    "massage30min": 38, "massage60min": 61,
+    "masaiNatureWalk1hr": 30, "kwsRangerBushWalk4hr": 100,
+    "sundownerPoachersLookoutExclTransfer": 54, "sundownerPoachersLookoutInclTransfer": 69,
+    "sunriseNosimInclMasaiWalk": 77, "sundownerNosimInclMasaiWalk": 92,
+    "gameDrive2_5hr": 77, "nightGameDrive": 154, "privateGameDrive2_5hrPerCar": 154,
+    "verified": true
+  },
+  "transport": { "unit": "per person, min 2 pax", "railwayStationMtitoAndei": 46, "airstripKilaguniFinch": 30, "verified": true },
+  "childPolicy": { "infant0to5": "On request", "age6to12SharingWithAdults": 50, "verified": true },
+  "lateCheckout": { "to18h00": "50% of room rate", "after18h00": "100% of room rate" },
+  "checkInOut": "Check-in 12:00, check-out 10:00",
+  "bookingTerms": "30% deposit to confirm; provisional hold max 14 days; cancellation 30+ days before arrival = deposit refunded net of bank charges; within 48hrs/no-show = 100% charged",
+  "paymentNote": "Cash payments not accepted"
+}

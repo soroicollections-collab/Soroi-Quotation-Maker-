@@ -1,0 +1,33 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftotext -layout. NOT a Soroi property. Single 2-page document with 2025 rates (page 1) and 2026 rates (page 2, superseding) for the same combined Hyatt Place/Hyatt House property.",
+  "property": "Hyatt Place and Hyatt House Nairobi Westlands",
+  "region": "Nairobi (Westlands)",
+  "source": {
+    "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/HYATT PLACE/Hyatt Place Nairobi STO Rates 2026.pdf",
+    "tier": "Conference and Accommodation STO Rates",
+    "validity": { "note": "Not explicitly dated on the page beyond the '2026' label in the section header; 2025 rates on page 1 are superseded." }
+  },
+  "confidence": "confirmed-2026-08-06",
+  "currency": "USD",
+  "unit": "per room per night",
+  "rates2026": {
+    "hyattPlace": {
+      "kingDeluxeOrTwinBeds84rooms": { "single": 140, "double": 160 },
+      "kingBedDeluxeForestView30rooms": { "single": 150, "double": 175 },
+      "juniorSuite1KingOr1BedroomKingSuiteAccessible": { "single": 200, "double": 240 },
+      "executive1BedroomKingSuiteWithSofaBed11rooms": { "single": 220, "double": 260 }
+    },
+    "hyattHouse": {
+      "kingBedStudio12rooms": { "single": 170, "double": 210 },
+      "kingBedStudioWithKitchen9rooms": { "single": 240, "double": 280 },
+      "oneBedroom2TwinBedSuiteWithKitchen3rooms": { "single": 290, "double": 330 },
+      "oneBedroomExecutiveKingSuiteWithKitchen29roomsOrAccessible1room": { "single": 335, "double": 375 }
+    },
+    "verified": true
+  },
+  "rates2025_superseded": {
+    "note": "Kept for reference only - do not use for 2026 quoting. Hyatt Place King Deluxe/Twin was $130/$155 and King Deluxe Forest View $140/$165 in 2025 (both rose by $10/$5-10 for 2026); all other room categories unchanged between the two years.",
+    "verified": true
+  },
+  "conferencePackages": { "fullDay": 40, "halfDay": 37, "breakfastMeeting": 35, "unit": "USD per person" }
+}

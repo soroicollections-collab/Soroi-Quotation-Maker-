@@ -1,0 +1,145 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftotext -layout, read the whole 14-page rates manual (each Kenya camp is on its own clearly-labeled page with its own name in a page header - low misattribution risk since properties don't share a table, unlike the Soroi Lumo/Tsavo cluster). NOT a Soroi property. Multi-property document: Great Plains Conservation's Kenya camps (Botswana/Zimbabwe pages in the same manual were skipped, out of scope).",
+  "operator": "Great Plains Conservation",
+  "region": "Maasai Mara (Naboisho/Olare Motorogi/Mara North conservancies) and Chyulu Hills/Amboseli region",
+  "properties": ["Mara Toto Tree Camp", "Mara Expedition Camp", "Mara Nyika Camp (incl. The Sambuk Suite)", "Mara Plains Camp (incl. The Jahazi Suite)", "ol Donyo Lodge", "Zamara Private"],
+  "source": {
+    "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/GREAT PLAINS/Great Plains 2026_STONettRates_Kenya_GreatPlainsConservation_30Jul2025.pdf",
+    "validity": { "start": "2026-01-11", "end": "2027-01-10" },
+    "updated": "2025-07-30",
+    "tier": "STO Nett Rates - Great Plains' own trade-nett rate card (their term, 'STO Nett Rates', as printed in the filename/cover) - not necessarily the same STO ladder terminology used by Sunworld/Soroi; treat as this operator's own single nett tier, not mapped to Sunworld's 15-40% STO ladder."
+  },
+  "confidence": "confirmed-2026-08-06",
+  "currency": "USD",
+  "seasonWindows": {
+    "note": "Season windows are NOT identical across all camps - Mara Plains and ol Donyo have a 3rd/different window boundary than the other Mara camps. Recorded per-camp below exactly as printed.",
+    "standard3Season": { "low": "11 Jan - 31 Mar 2026", "shoulderA": "01 Apr - 14 Jun 2026 & 01 Oct - 19 Dec 2026", "high": "15 Jun - 30 Sep 2026 & 20 Dec 2026 - 10 Jan 2027" }
+  },
+  "properties_detail": {
+    "maraTotoTreeCamp": {
+      "rooms": "4 Guest Suites + Pilot/guide tent",
+      "region": "Maasai Mara National Reserve / Mara North Conservancy",
+      "seasons": { "low": "11 Jan - 31 Mar 2026", "shoulder": "01 Apr - 14 Jun 2026 & 01 Oct - 19 Dec 2026", "high": "15 Jun - 30 Sep 2026 & 20 Dec 2026 - 10 Jan 2027" },
+      "guestSuitePerPersonSharing": { "low": 1856, "shoulder": 1396, "high": 2724 },
+      "singleSupplement": { "low": 928, "shoulder": 698, "high": 1362 },
+      "childSharingWithAdult6to15": { "low": 928, "shoulder": 698, "high": 1362 },
+      "pilotGuideRatePerNight": 365,
+      "privateVehiclePerNight": 980,
+      "conservationCommunityContribution": { "amount": 100, "unit": "per person (any age) per night" },
+      "minChildAge": 6,
+      "verified": true
+    },
+    "maraExpeditionCamp": {
+      "rooms": "5 Guest tents, 1 x 2-bedroom family tent + Pilot/guide tent",
+      "region": "Maasai Mara National Reserve / Mara North Conservancy",
+      "seasons": { "low": "11 Jan - 31 Mar 2026", "shoulder": "01 Apr - 14 Jun 2026 & 01 Oct - 19 Dec 2026", "high": "15 Jun - 30 Sep 2026 & 20 Dec 2026 - 10 Jan 2027" },
+      "guestTentPerPersonSharing": { "low": 1096, "shoulder": 980, "high": 1384 },
+      "singleSupplement": { "low": 548, "shoulder": 490, "high": 692 },
+      "childSharingWithAdult6to15": { "low": 548, "shoulder": 490, "high": 692 },
+      "twoBedroomFamilyTentPerNight": { "low": 3287, "shoulder": 2940, "high": 4153 },
+      "pilotGuideRatePerNight": 365,
+      "privateVehiclePerNight": 980,
+      "maasaiMaraReserveFee": { "adultJanToJune": 100, "adultJulToDec": 200, "child9to17": 50, "unit": "per night; subject to change without notice" },
+      "conservationCommunityContribution": { "amount": 100, "unit": "per person (any age) per night" },
+      "minChildAge": 6,
+      "familyTentCapacity": 4,
+      "verified": true
+    },
+    "maraNyikaCamp": {
+      "rooms": "4 Guest Suites, 1 x 2-Bedroom Family Suite, 1 x 2-Bedroom Private Suite (The Sambuk Suite) + Pilot/guide tent",
+      "region": "Naboisho Private Conservancy, Northern Maasai Mara",
+      "affiliation": "Relais & Chateaux member",
+      "seasons": { "low": "11 Jan - 31 Mar 2026", "shoulder": "01 Apr - 14 Jun 2026 & 01 Oct - 19 Dec 2026", "high": "15 Jun - 30 Sep 2026 & 20 Dec 2026 - 10 Jan 2027" },
+      "guestSuitePerPersonSharing": { "low": 1856, "shoulder": 1396, "high": 2724 },
+      "singleSupplement": { "low": 928, "shoulder": 698, "high": 1362 },
+      "childSharingWithAdults6to15": { "low": 928, "shoulder": 698, "high": 1362 },
+      "twoBedroomFamilySuitePerNight": { "low": 5568, "shoulder": 4188, "high": 8172 },
+      "sambukSuiteExclusiveUsePerNight": { "low": 8908, "shoulder": 6700, "high": 13076, "note": "Exclusive use only, incl. private vehicle+guide; accommodates 4 adults sharing or max 5 with children 6-15. No child rate or private vehicle surcharge applies (already included)." },
+      "pilotGuideRatePerNight": 365,
+      "privateVehiclePerNight": 980,
+      "conservationCommunityContribution": { "amount": 100, "unit": "per person (any age) per night" },
+      "minChildAge": 6,
+      "familySuiteCapacity": 4,
+      "note": "Every 3+ night stay includes one day's Maasai Mara National Reserve wildlife viewing; 1-2 night stays pay an additional Reserve entrance fee (amount not stated on this page).",
+      "verified": true
+    },
+    "maraPlainsCamp": {
+      "rooms": "5 Guest Suites, 1 x 2-Bedroom Private Suite (The Jahazi Suite) + Pilot/guide tent",
+      "region": "Olare Motorogi Private Conservancy, Northern Maasai Mara",
+      "affiliation": "Relais & Chateaux member",
+      "seasons": { "low": "11 Jan - 31 Mar 2026", "shoulderA": "01 Apr - 14 Jun 2026 & 01 Nov - 19 Dec 2026", "high": "15 Jun - 31 Oct 2026 & 20 Dec 2026 - 10 Jan 2027" },
+      "note_seasons": "This camp's shoulder window differs from Mara Toto/Mara Expedition/Mara Nyika (uses 01 Nov instead of 01 Oct as the shoulder start, and high season runs through 31 Oct instead of 30 Sep) - do not reuse another Mara camp's season dates for this one.",
+      "guestSuitePerPersonSharing": { "low": 1856, "shoulderA": 1396, "high": 2724 },
+      "singleSupplement": { "low": 928, "shoulderA": 698, "high": 1362 },
+      "childSharingWithAdults6to15": { "low": 928, "shoulderA": 698, "high": 1362 },
+      "jahaziSuiteExclusiveUsePerNight": { "low": 8908, "shoulderA": 6700, "high": 13076, "note": "Exclusive use, incl. private vehicle+guide+pool; accommodates 4 adults sharing or max 5 with children. No child rate applies." },
+      "pilotGuideRatePerNight": 365,
+      "privateVehiclePerNight": 980,
+      "conservationCommunityContribution": { "amount": 100, "unit": "per person (any age) per night" },
+      "minChildAge": 6,
+      "verified": true
+    },
+    "olDonyoLodge": {
+      "rooms": "8 Deluxe Pool Suites, 1 x 2-Bedroom Sambu Suite + Pilot/guide room",
+      "region": "Chyulu Hills / Amboseli region",
+      "affiliation": "Relais & Chateaux member",
+      "seasons": { "low": "11 Jan - 31 Mar 2026", "shoulder": "01 Apr - 14 Jun 2026 & 01 Nov - 19 Dec 2026", "high": "15 Jun - 31 Oct 2026 & 20 Dec 2026 - 10 Jan 2027" },
+      "deluxePoolSuitePerPersonSharing": { "low": 1420, "shoulder": 1272, "high": 2044 },
+      "singleSupplement": { "low": 710, "shoulder": 636, "high": 1022 },
+      "childSharingWithAdults6to15": { "low": 710, "shoulder": 636, "high": 1022 },
+      "twoBedroomSambuSuitePerNight": { "low": 4260, "shoulder": 3816, "high": 6132, "capacity": "max 4 guests sharing" },
+      "pilotGuideRatePerNight": 365,
+      "privateVehiclePerNight": 980,
+      "conservationCommunityContribution": { "amount": 100, "unit": "per person (any age) per night" },
+      "minChildAge": 6,
+      "inclusionsNote": "Includes a complimentary 15-min helicopter flight (new from Jan 2026, 1/stay, min 2-night stay, subject to availability) and Big Life conservation fees.",
+      "verified": true
+    },
+    "zamaraPrivate": {
+      "rooms": "6 Guest Suites + Pilot/guide room",
+      "region": "Maasai Mara National Reserve",
+      "openingNote": "New property, opened January 2026",
+      "validity": { "start": "2026-01-01", "end": "2027-01-10" },
+      "exclusiveUseCampNightlyRate": 26000,
+      "pilotGuideRatePerNight": 365,
+      "conservationCommunityContribution": { "amount": 100, "unit": "per person (any age) per night" },
+      "minChildAge": 6,
+      "maxGuests": 16,
+      "note": "First 12 guests' air transfers included in nightly rate; additional guests up to 16 (with children) charged separately for transfers. Kenya specific special offers (Stay4Pay3 etc.) NOT available at Zamara Private.",
+      "verified": true
+    }
+  },
+  "airTransferRates2026": {
+    "includedInNightlyRate": ["Nairobi Wilson <-> Mara Expedition/Nyika/Toto/Plains camps (and Sambuk/Jahazi suites)", "Nairobi Wilson <-> Zamara Private (first 12 guests)", "Nairobi Wilson <-> ol Donyo Lodge", "ol Donyo Lodge <-> Mara camps (high season: 01 Jan-31 Mar, 16 Jun-31 Oct, 16-31 Dec 2026)"],
+    "thirdPartyMaraPropertySurcharge": { "amount": "200 per person + 15 per person tax", "note": "Applies when flying to/from third-party properties in the Maasai Mara" },
+    "verified": true
+  },
+  "helicopterScenicFlights": {
+    "fromOlDonyoLodge": {
+      "sunsetWithSundowners": { "amount": 680, "unit": "USD per person, 1 hour" },
+      "chyuluHillsMistForest": { "amount": 750, "unit": "USD per person, 1 hour" },
+      "amboseliSafariDriveReturnByVehicle": { "amount": 398, "parkFeeAdult": { "high": 100, "low": 80 }, "parkFeeChild": { "high": 35, "low": 20 } },
+      "amboseliSafariDriveReturnByHelicopter": { "amount": 795 }
+    },
+    "verified": true
+  },
+  "nairobiTransferRates2026": {
+    "currency": "USD",
+    "unit": "per vehicle one-way, seating 1-4 guests, luxury vehicle",
+    "jkiaToNairobiCityHotelsMuthaiga": 158,
+    "jkiaToWilson": 158,
+    "jkiaToLangataKarenWindsorTribe": 163,
+    "wilsonToNairobiCityHotelsMuthaiga": 158,
+    "wilsonToLangataKarenWindsorTribe": 158,
+    "nairobiHalfDayDisposal": 326,
+    "nairobiFullDayDisposal": 435,
+    "verified": true
+  },
+  "generalNotes": {
+    "childPolicyPortfolioWide": "Minimum age 6 years at all Kenya camps (differs from Soroi's 5-11 bracket entirely - Great Plains excludes under-6 outright rather than pricing them). Children 15 and younger must share with an adult; 16+ pay full adult rate in a separate room.",
+    "conservationLevyStructure": "Single flat 'Great Plains Foundation Conservation & Community Contribution' of $100 per person (any age) per night, applied identically across every Kenya camp - simpler/flatter than any Soroi property's fee shape.",
+    "depositRequirement": "20% deposit required to secure dates.",
+    "insuranceRequirement": "Comprehensive travel/medical insurance (incl. Flying Doctors membership in Kenya where relevant) is a stated condition of travel, not optional.",
+    "specialOffers": "Seasonal Stay4Pay3 / Stay8Pay6 / Honeymoon offers exist for the Mara camps and ol Donyo (not Zamara Private) - not itemized here as they are promotional, not base rate; see source pages 2-3 if needed for a specific quote."
+  }
+}

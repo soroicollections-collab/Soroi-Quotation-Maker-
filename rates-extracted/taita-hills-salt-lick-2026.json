@@ -1,0 +1,71 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftotext -layout, clean text. NOT a Soroi property. Covers TWO properties under one operator (Taita Hills & Salt Lick Wildlife Resort Ltd): Salt Lick Safari Lodge and Taita Hills Safari Resort & Spa, both inside Taita Hills Wildlife Sanctuary. Two documents used: 'RACK RATES...FINAL.pdf' (public rack) and 'SUNWORLD SAFARIS-2026.pdf' (signed Sunworld-specific contract, lower Nett figures, ~68% of rack). Skipped: 'Supplementary Offers-2026...Brochure.pdf' (marketing), 'TRAIN PACKAGE...DMCs.pdf' x2 (rail-transfer add-on product, not core accommodation - not extracted this pass), 'TSL Consolidated Factsheet_compressed.pdf' (marketing factsheet), 'Taita Hills and Salt Lick Terms and Conditions - 2026_compressed.pdf' (general T&Cs, superseded by the per-rate-doc T&Cs already captured), '.msg' email.",
+  "operator": "Taita Hills & Salt Lick Wildlife Resort Ltd",
+  "region": "Taita Hills Wildlife Sanctuary, Tsavo",
+  "currency": "USD",
+  "unit": "per person per night (Single/Double/Third Bed columns)",
+  "source": {
+    "rackFile": "2026 CONTRACT RATES/KENYA/ACCOMODATION/TAITA HILLS/RACK RATES- Salt Lick Safari Lodge and Taita Hills Safari Resort  Spa-2026-FINAL.pdf",
+    "sunworldNettFile": "2026 CONTRACT RATES/KENYA/ACCOMODATION/TAITA HILLS/SUNWORLD SAFARIS-2026.pdf",
+    "validity": { "start": "2026-01-02", "end": "2027-01-01" }
+  },
+  "confidence": "confirmed-2026-08-06",
+  "seasons": {
+    "high": { "dateRanges": ["2 Jan 2026 - 31 Mar 2026", "1 Jul 2026 - 1 Jan 2027"] },
+    "green": { "dateRanges": ["1 Apr 2026 - 30 Jun 2026"] }
+  },
+  "properties": {
+    "saltLickSafariLodge": {
+      "parkViewRooms": {
+        "rack": { "high": { "single": 297, "double": 396, "thirdBed": 119 }, "green": { "single": 154, "double": 308, "thirdBed": 93 } },
+        "sunworldNett": { "high": { "single": 203, "double": 270, "thirdBed": 81 }, "green": { "single": 106, "double": 211, "thirdBed": 63 } },
+        "mealPlan": "FB"
+      },
+      "waterholeViewRooms": {
+        "rack": { "high": { "single": 313, "double": 417, "thirdBed": "N/A" }, "green": { "single": 164, "double": 328, "thirdBed": "N/A" } },
+        "sunworldNett": { "high": { "single": 219, "double": 292, "thirdBed": "N/A" }, "green": { "single": 116, "double": 231, "thirdBed": "N/A" } },
+        "mealPlan": "FB",
+        "note": "No triple rooms possible in Waterhole View rooms."
+      },
+      "childRestriction": "Under 5 years not permitted for safety reasons.",
+      "occupancy": "Max 3 adults, or 2 adults + 1 child. No interconnecting rooms available."
+    },
+    "taitaHillsSafariResortSpa": {
+      "resortRooms": {
+        "rack": { "high": { "single": 225, "double": 301, "thirdBed": 90 }, "green": { "single": 113, "double": 226, "thirdBed": 68 } },
+        "sunworldNett": { "high": { "single": 154, "double": 205, "thirdBed": 62 }, "green": { "single": 77, "double": 155, "thirdBed": 46 } },
+        "mealPlan": "FB"
+      },
+      "resortJuniorSuite": {
+        "rack": { "high": { "single": 305, "double": 406, "thirdBed": "N/A" }, "green": { "single": 118, "double": 236, "thirdBed": "N/A" } },
+        "sunworldNett": { "high": { "single": 210, "double": 280, "thirdBed": "N/A" }, "green": { "single": 110, "double": 220, "thirdBed": "N/A" } },
+        "mealPlan": "FB",
+        "occupancy": "Max 2 adults + 1 child."
+      },
+      "occupancy": "Max 3 adults, or 2 adults + 1 child. Interconnecting rooms ARE available (unlike Salt Lick)."
+    }
+  },
+  "childPolicy": {
+    "under4_sharingWith1or2Adults": "Free of charge (at Taita Hills Safari Resort & Spa)",
+    "age5to11_99_sharing": "50% of adult sharing (half twin) rate, max 3 guests/room",
+    "age5to11_99_ownRoom": "75% of adult sharing rate, min 2 / max 3 children, should share connecting rooms if under 12",
+    "under5NotPermittedAtSaltLick": true
+  },
+  "seasonalSupplements": {
+    "christmasNewYear": { "adult": 40, "child5to11_99": 25, "unit": "per night", "dates": "23 Dec - 1 Jan inclusive" },
+    "easter": { "adult": 20, "child5to11_99": 10, "unit": "per night", "dates": "3-6 Apr 2026 inclusive" }
+  },
+  "mandatoryFees": {
+    "sanctuaryEntryFee": { "adult": 40, "child": 20, "unit": "per person per night", "under5": "Free", "validity": "2 Jan 2026 - 1 Jan 2027", "note": "Applies at Salt Lick Safari Lodge always; at Taita Hills Safari Resort & Spa only if guests enter the sanctuary for game activities." },
+    "vehicleEntryFeesPerVehiclePerNight": { "4to12seats": 5, "13to24seats": 10, "25to44seats": 15, "45plusSeats": 20, "aircraft": 20, "helicopterLanding": 20 }
+  },
+  "dayRoomPolicy": { "checkIn": "12:00", "checkOut": "10:00", "dayRoomRate": "50% of double/single room rate, usable until 17:00 incl. lunch", "afterHoursCharge": "Departure after 17:00 charged at full overnight rate" },
+  "walkInAdditionalMeals": { "hotBuffetBreakfast": 25, "hotBuffetLunch": 25, "buffetDinner": 25, "picnicBoxMeal": 20, "childDiscount": "50% of adult meal rate" },
+  "halfBoardReduction": { "amount": 5, "unit": "per adult/child per night" },
+  "cancellationPolicy": [
+    { "daysBeforeArrival": "30-16", "charge": "25%" },
+    { "daysBeforeArrival": "15-8", "charge": "50%" },
+    { "daysBeforeArrival": "7-0", "charge": "100%" }
+  ],
+  "paymentTerms": "Full payment due 30 days prior to arrival; cheques not accepted."
+}

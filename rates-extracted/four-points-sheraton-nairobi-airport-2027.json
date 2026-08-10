@@ -1,0 +1,35 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftotext -layout from 'Four Points/Sunworld Safaris   - 2027 Contract Rates - Four Points by Sheraton Nairobi Airport.pdf' (6pp, single property). Consistent with the existing CLAUDE.md flexible-variable entry for Four Points 2026 ($220 total = presumably $170 base + $50 extra bed) - this 2027 contract's Traditional King single rate ($170) matches that inferred base almost exactly, single/double base didn't change meaningfully year over year.",
+  "property": "Four Points by Sheraton Nairobi Airport",
+  "currency": "USD",
+  "validity": { "end": "2027-12-31", "contractDated": "2026-01-28" },
+  "unit": "per room per night, Bed & Breakfast, inclusive of all prevailing taxes",
+  "confidence": "confirmed-2027-08-06",
+  "rates": {
+    "Traditional King Room": { "single": 170, "double": 180 },
+    "Suite": { "single": 310, "double": 340 },
+    "Executive Suite": { "single": 440, "double": 490 },
+    "verified": true
+  },
+  "maxOccupancy": "2 pax per room",
+  "tripleOccupancy": { "extraBedInSuite": 50, "note": "Extra bed only available in Suite category" },
+  "childPolicy": {
+    "under12With1Adult": "Free, pays for breakfast at child meal rate; 12+ pays full adult rate",
+    "under12With2Adults": "USD 50/night extra bed",
+    "2ChildrenUnder12With1Adult": "Double room rate applies (B&B)",
+    "2ChildrenAloneUnder12": "75% of double adult rate",
+    "3ChildrenAloneUnder12": "Full double adult rate",
+    "2ChildrenAlone12plus": "Full double adult rate",
+    "3ChildrenAlone12plus": "Full double adult rate + USD 50 extra bed",
+    "infant0to2": "Free, cot on request",
+    "verified": true
+  },
+  "mealCharges": { "breakfast": 35, "lunchOrDinner": 40, "lunchBox": 30, "child6to12": "50% of adult", "childUnder6": "Complimentary", "verified": true },
+  "dayUse": { "hours": "9am-6pm, max 6 hours", "rate": "75% of contracted rate", "verified": true },
+  "checkInOut": "Check-in 14:00, check-out 12:00",
+  "cancellationPolicy": "48 hours notice required; within 48hrs = 1 night charge; no-show = full charge",
+  "groupBooking": "15 paying rooms = 16th complimentary; 25% deposit + staged payments",
+  "conferenceRates": { "fullDay": 40, "halfDay": 38, "minDelegates": 10 },
+  "commissionable": false,
+  "airportTransfers": "Complimentary personalized transfers to/from hotel and JKIA terminals included"
+}

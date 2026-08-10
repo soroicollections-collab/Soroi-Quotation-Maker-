@@ -1,0 +1,32 @@
+{
+  "$note": "Extracted 6 Aug 2026 via paginated pdftotext read (page 8 of 24) of 'EC-2026-Rates-40.pdf', the same East-Africa-wide Elewana Collection document already used for tortilis-camp-amboseli-elewana-2026.json (5 Aug 2026). This extraction cross-checked the Tortilis figures against this same PDF via pdftotext and found an EXACT match to the earlier visual-read extraction (e.g. Full Board sharing High $715/$429 Nett) - confirming pdftotext works fine on this document (contrary to the original note that said pypdf text extraction failed; that may have been a pypdf-specific issue, not a true image-only PDF). One of 8 remaining Kenya Elewana properties in this document beyond Tortilis.",
+  "property": "Elsa's Kopje Meru",
+  "operator": "Elewana Collection",
+  "region": "Meru National Park",
+  "tier": "Rack and Nett (Nett = Rack x 0.60 exactly, confirmed across every checked cell - consistent with the Tortilis extraction's already-documented ratio)",
+  "source": { "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/ELEWANA/EC-2026-Rates-40.pdf", "pdfPageIndex": 8, "validity": { "start": "2026-01-04", "end": "2027-01-03" } },
+  "seasons": { "high": "Jul 1-Oct 31, Dec 20-Jan 3", "mid": "Jan 4-Mar 31, Jun 1-Jun 30, Nov 1-Dec 19", "green": "Apr 1-May 31" },
+  "rates": {
+    "currency": "USD", "unit": "per person per night unless noted",
+    "fullBoard": {
+      "perPersonSharing": { "high": { "rack": 833, "nett": 500 }, "mid": { "rack": 594, "nett": 356 }, "green": { "rack": 385, "nett": 231 } },
+      "singleRoom": { "high": { "rack": 1249, "nett": 749 }, "mid": { "rack": 891, "nett": 534 }, "green": { "rack": 578, "nett": 347 } },
+      "tripleRoom": { "high": { "rack": 1874, "nett": 1124 }, "mid": { "rack": 1336, "nett": 802 }, "green": { "rack": 867, "nett": 520 } },
+      "safariSuiteUpTo3": { "high": { "rack": 1874, "nett": 1124 }, "mid": { "rack": 1336, "nett": 802 }, "green": { "rack": 867, "nett": 520 } },
+      "familySuite2Adults2Children": { "high": { "rack": 2822, "nett": 1693 }, "mid": { "rack": 2047, "nett": 1228 }, "green": { "rack": 1401, "nett": 840 } },
+      "privateHouse4Adults": { "high": { "rack": 3530, "nett": 2118 }, "mid": { "rack": 2666, "nett": 1600 }, "green": { "rack": 1766, "nett": 1060 } }
+    },
+    "gamePackage": {
+      "perPersonSharing": { "high": { "rack": 1033, "nett": 620 }, "mid": { "rack": 794, "nett": 476 }, "green": { "rack": 585, "nett": 351 } },
+      "singleRoom": { "high": { "rack": 1449, "nett": 869 }, "mid": { "rack": 1091, "nett": 654 }, "green": { "rack": 778, "nett": 467 } },
+      "tripleRoom": { "high": { "rack": 2324, "nett": 1394 }, "mid": { "rack": 1786, "nett": 1072 }, "green": { "rack": 1317, "nett": 790 } },
+      "safariSuiteUpTo3": { "high": { "rack": 2324, "nett": 1394 }, "mid": { "rack": 1786, "nett": 1072 }, "green": { "rack": 1317, "nett": 790 } },
+      "familySuite2Adults2Children": { "high": { "rack": 3592, "nett": 2155 }, "mid": { "rack": 2796, "nett": 1678 }, "green": { "rack": 2136, "nett": 1281 } },
+      "privateHouse4Adults": { "high": { "rack": 4300, "nett": 2580 }, "mid": { "rack": 3415, "nett": 2049 }, "green": { "rack": 2501, "nett": 1501 } }
+    }
+  },
+  "mandatoryFees": { "meruNationalParkEntrance": { "adult": 52, "child3to17": 35, "unit": "per person per day, year-round" }, "nightGameDrivePark": { "amount": 60, "note": "listed alongside park fees" } },
+  "childPolicy": { "note": "Elewana portfolio-wide policy applies (see tortilis-camp-amboseli-elewana-2026.json for full detail) - child bracket 3-17, materially different from Soroi's 5-11." },
+  "transfers": { "toNanyukiAirstrip": { "rack": 575, "nett": 518 }, "toSararaCamp": { "rack": 575, "nett": 518 }, "toLewaSafariCamp": { "rack": 575, "nett": 518 }, "toSamburu": { "rack": 625, "nett": 563 }, "toLoisabaLaikipia": { "rack": 845, "nett": 761 } },
+  "inclusionsGamePackage": "Scheduled/shared game drives twice daily, night game drive, fishing (hand line), 2hr guided walk, airstrip transfer to/from Kinna."
+}

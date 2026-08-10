@@ -1,0 +1,17 @@
+{
+  "$note": "Extracted 6 Aug 2026 from SPECIAL OFFERS/LAST MINUTE OFFER- SARUNIBASECAMP/FW Exciting Last-Minute Offers.msg via extract_msg Python library. The .msg file itself was last modified/synced 3 Dec 2025 on disk, but the actual email content (headers) is dated 20 Aug 2024 - treating the email date as authoritative for validity assessment, not the file's on-disk modification date.",
+  "offerStatus": "promotional - confirm current validity before use",
+  "operator": "Saruni Basecamp (Old Boma Ltd. & Basecamp Masai Mara Ltd.)",
+  "offerName": "Exciting Last-Minute Offers - East African Residents Rates",
+  "source": {
+    "file": "SPECIAL OFFERS/LAST MINUTE OFFER- SARUNIBASECAMP/FW Exciting Last-Minute Offers.msg",
+    "emailDate": "2024-08-20",
+    "extractionMethod": "extract_msg Python library, plain-text body - the only content is a single section header 'EAST AFRICAN RESIDENTS RATES' immediately followed by an embedded image (image003.jpg per the attachment list); no rate table exists in text form"
+  },
+  "validity": { "verified": false, "confidenceNote": "No explicit validity/expiry date is present anywhere in the extractable text (only the 'Last-Minute' framing and the Aug 2024 send date). Given the 'last-minute' nature of the promo, it was almost certainly tied to short-term travel around Aug-Sep 2024 and is long expired, but this is an inference, not a stated fact." },
+  "noPricedFiguresInSource": true,
+  "imageOnlyContent": true,
+  "attachmentsPresent": ["image001.jpg", "image002.jpg", "image003.png", "image004.png", "image005.gif", "image006.gif", "image007.png", "image008.gif", "image009.png", "image010.png"],
+  "verified": true,
+  "confidenceNote": "This offer's actual rate figures exist only as an embedded image in the original marketing email - no OCR was performed on the attachments (out of scope for this text-extraction pass). There is nothing numeric to record here. If Saruni Basecamp rates are ever needed for a quote, this file cannot supply them - a fresh rate card from Saruni Basecamp (reservations@sarunibasecamp.com / +254 796 222 555) or manual visual review of the embedded images would be required."
+}

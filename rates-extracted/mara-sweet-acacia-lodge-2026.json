@@ -1,0 +1,90 @@
+{
+  "property": "Mara Sweet Acacia Lodge",
+  "operator": "Mara Sweet Acacia Lodge Limited",
+  "region": "Maasai Mara",
+  "isSoroiProperty": false,
+  "sourceFiles": [
+    "2026 CONTRACT RATES/KENYA/ACCOMODATION/MARA SWEET ACACIA LODGE/MARA SWEET ACACIA LODGE 2026 RATE.pdf"
+  ],
+  "currency": { "nonResident": "USD", "resident": "USD (stated as figures without currency symbol on Resident page, but structurally identical to Full Board/Ground tables which are explicitly USD; treat with caution)", "verified": false,
+    "confidenceNote": "[Unverified] The Resident Rate table (page 3) does not restate 'US Dollars' the way the Non-Residents section does on page 1 - given the magnitude of the numbers (e.g. 26,000 for a double) these read as KES, not USD, despite no explicit currency label on that page. Treat resident figures as KES pending confirmation." },
+  "roomCategories": ["Lodge (Double/Single/Family)", "Tents (Double/Single/Family)"],
+  "notes": [
+    "Family room = per room, max 4 adults, two twins + shared sitting area.",
+    "Deluxe category has doubles only (no twins); Superior category has both twin and double beds.",
+    "3rd bed supplement: 75% of the per-person sharing rate. Single room rate is 75% of the double room rate.",
+    "10% commission offered to tour firms/operators.",
+    "ANOMALY: Resident rate table's Family figure for 23/12/2026-2/1/2027 season reads 760000, wildly inconsistent with every other Family figure in that table (52000-112000 range) - almost certainly a typo (missing decimal / extra zero, likely meant 76000). Flagged, not corrected."
+  ],
+  "nonResidentFullBoardRates_perNight": {
+    "unit": "Lodge/Tents, Double/Single per person; Family per room (max 4 pax)",
+    "seasons": [
+      { "dates": "3 Jan-31 Mar 2026", "lodge": { "double": 200, "single": 150, "family": 400 }, "tents": { "double": 260, "single": 200, "family": 530 } },
+      { "dates": "1 Apr-31 May 2026", "lodge": { "double": 150, "single": 120, "family": 300 }, "tents": { "double": 210, "single": 170, "family": 430 } },
+      { "dates": "1-30 Jun 2026", "lodge": { "double": 200, "single": 150, "family": 400 }, "tents": { "double": 260, "single": 200, "family": 530 } },
+      { "dates": "1-10 Jul 2026", "lodge": { "double": 280, "single": 210, "family": 560 }, "tents": { "double": 340, "single": 260, "family": 690 } },
+      { "dates": "11 Jul-31 Aug 2026", "lodge": { "double": 400, "single": 280, "family": 800 }, "tents": { "double": 460, "single": 350, "family": 930 } },
+      { "dates": "1-30 Sep 2026", "lodge": { "double": 260, "single": 200, "family": 520 }, "tents": { "double": 320, "single": 260, "family": 650 } },
+      { "dates": "1 Oct-22 Dec 2026", "lodge": { "double": 200, "single": 150, "family": 400 }, "tents": { "double": 260, "single": 200, "family": 530 } },
+      { "dates": "23 Dec 2026-2 Jan 2027", "lodge": { "double": 320, "single": 240, "family": 640 }, "tents": { "double": 380, "single": 290, "family": 770 } }
+    ],
+    "verified": true
+  },
+  "nonResidentGroundPackageRates_perNight": {
+    "seasons": [
+      { "dates": "3 Jan-31 Mar 2026", "lodge": { "double": 300, "single": 200, "family": 600 }, "tents": { "double": 360, "single": 250, "family": 730 } },
+      { "dates": "1 Apr-31 May 2026", "lodge": { "double": 260, "single": 170, "family": 520 }, "tents": { "double": 320, "single": 220, "family": 650 } },
+      { "dates": "1-30 Jun 2026", "lodge": { "double": 300, "single": 200, "family": 600 }, "tents": { "double": 360, "single": 250, "family": 730 } },
+      { "dates": "1-10 Jul 2026", "lodge": { "double": 380, "single": 260, "family": 760 }, "tents": { "double": 440, "single": 310, "family": 890 } },
+      { "dates": "11 Jul-31 Aug 2026", "lodge": { "double": 540, "single": 350, "family": 1080 }, "tents": { "double": 600, "single": 420, "family": 1220 } },
+      { "dates": "1-30 Sep 2026", "lodge": { "double": 360, "single": 260, "family": 720 }, "tents": { "double": 420, "single": 310, "family": 850 } },
+      { "dates": "1 Oct-22 Dec 2026", "lodge": { "double": 300, "single": 200, "family": 600 }, "tents": { "double": 360, "single": 250, "family": 730 } },
+      { "dates": "23 Dec 2026-2 Jan 2027", "lodge": { "double": 420, "single": 250, "family": 840 }, "tents": { "double": 480, "single": 340, "family": 970 } }
+    ],
+    "includes": "Full board accommodation, local airstrip transfers, shared game drive",
+    "excludes": ["All drinks", "Laundry and gratuities", "Park entry fee and flight cost", "Maasai Mara Conservation fee (USD40pp)", "Health/travel insurance and evacuation", "Masai Mara Village visit (USD45)", "Exclusive use of safari vehicle (USD300/day)", "Bush breakfast/dinner (USD45pp, min 3 pax)", "Extra/picnic lunch (USD25)", "International/local flights", "Park entrance fees"],
+    "verified": true
+  },
+  "residentRates_possiblyKES_unconfirmed": {
+    "seasons": [
+      { "dates": "3 Jan-31 Mar 2026", "lodge": { "double": 26000, "single": 19000, "family": 52000 }, "tents": { "double": 35000, "single": 26000, "family": 70000 } },
+      { "dates": "1 Apr-31 May 2026", "lodge": { "double": 22000, "single": 16000, "family": 44000 }, "tents": { "double": 31000, "single": 23000, "family": 62000 } },
+      { "dates": "1-30 Jun 2026", "lodge": { "double": 26000, "single": 19000, "family": 52000 }, "tents": { "double": 35000, "single": 26000, "family": 70000 } },
+      { "dates": "1-10 Jul 2026", "lodge": { "double": 36000, "single": 27000, "family": 72000 }, "tents": { "double": 45000, "single": 34000, "family": 90000 } },
+      { "dates": "11 Jul-31 Aug 2026", "lodge": { "double": 49000, "single": 35000, "family": 98000 }, "tents": { "double": 56000, "single": 42000, "family": 112000 } },
+      { "dates": "1-30 Sep 2026", "lodge": { "double": 36000, "single": 27000, "family": 72000 }, "tents": { "double": 45000, "single": 34000, "family": 90000 } },
+      { "dates": "1 Oct-22 Dec 2026", "lodge": { "double": 26000, "single": 19000, "family": 52000 }, "tents": { "double": 35000, "single": 26000, "family": 70000 } },
+      { "dates": "23 Dec 2026-2 Jan 2027", "lodge": { "double": 38000, "single": 28000, "family": 760000 }, "tents": { "double": 47000, "single": 35000, "family": 94000 } }
+    ],
+    "verified": true,
+    "confidenceNote": "[Unverified currency] See top-level currency note. [Unverified figure] Family 760000 for lodge, festive season - almost certainly a typo for 76000 (see anomalies note)."
+  },
+  "childPolicy": {
+    "raw": "Free under 3yrs sharing with adult (max 2/room). 3-11yrs sharing with two adults: 50% of adult rate (max 2/room). Two children 3-11 in own private room: 75% of double room rate. One child sharing with one adult: full adult sharing rate. Three children in a room: 75% of double room rate plus 50% of adult rate. 12+ considered adults.",
+    "verified": true
+  },
+  "gameDriveAndActivityRates": [
+    { "item": "Half day game drive (exclusive vehicle)", "amount": "US$200", "verified": true },
+    { "item": "Full day game drive (exclusive vehicle)", "amount": "US$300", "verified": true },
+    { "item": "2-hour game drive (exclusive vehicle)", "amount": "US$150", "verified": true },
+    { "item": "Airstrip transfer", "amount": "US$30pp one way, min 4 pax", "verified": true },
+    { "item": "Maasai Mara Park Entrance Fee", "amount": "US$200/adult/night, US$100/child/night", "verified": true },
+    { "item": "Balloon flight/safari", "amount": "US$500pp", "verified": true },
+    { "item": "Horseback safari experience", "amount": "US$200pp", "verified": true },
+    { "item": "Masai cultural home visit", "amount": "US$35pp", "verified": true },
+    { "item": "Bush Breakfast", "amount": "US$45pp, min 4 pax, weather-dependent", "verified": true },
+    { "item": "Bush Dinner", "amount": "US$50pp, min 4 pax, weather-dependent", "verified": true },
+    { "item": "Extra lunch", "amount": "US$30pp (or US$25 per T&Cs page, inconsistent - see confidenceNote)", "verified": true, "confidenceNote": "Two different extra-lunch figures appear in the source: US$30pp (activities page) vs US$25pp (T&Cs page). Both quoted verbatim." },
+    { "item": "Extra picnic lunch", "amount": "US$25pp", "verified": true },
+    { "item": "Sundowner", "amount": "US$40pp", "verified": true }
+  ],
+  "policies": {
+    "checkIn": "12:00",
+    "checkOut": "10:00",
+    "deposit": "30% non-refundable deposit for peak season bookings; otherwise full payment 30 days prior to arrival unless agent has approved credit",
+    "cancellationShoulderPeak": "0-30 days: 100% of contract rate; 31-45 days: 50%; 45-60 days: 25%",
+    "cancellationLowSeason": "0-7 days: 100%; 8-14 days: 50%; 15-25 days: 25%",
+    "groupPolicy": "1 free pax per 15 paying clients, max 2 free per group, must be requested at booking",
+    "roomsPolicy": "Max 3 single rooms per group at single rate; additional singles charged at double room rate"
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "property": "Mara River Camp",
+  "operator": "Wilderness Seekers t/a Mara River Camp",
+  "region": "Maasai Mara (North Conservancy, near Musiara/Ololoo gates)",
+  "isSoroiProperty": false,
+  "sourceFiles": [
+    "2026 CONTRACT RATES/KENYA/ACCOMODATION/MARA RIVER/MAra River Camp 2026 Agents Nett Rates.pdf",
+    "2026 CONTRACT RATES/KENYA/ACCOMODATION/MARA RIVER/Mara RIver Terms  Conditions.pdf"
+  ],
+  "currency": {
+    "nonResident": "USD",
+    "resident": "KES",
+    "verified": true
+  },
+  "rateBasis": "2026 Non-Resident / Resident - NETT RATES TO THE AGENTS ONLY",
+  "seasons": {
+    "shoulder": "2 Jan - 31 March & 1 Nov - 22 Dec",
+    "low": "1 April - 30 June",
+    "peakHigh": "1 July - 31 October & 23 Dec - 1 Jan"
+  },
+  "packages": {
+    "fullBoard": "Bed, breakfast, lunch & dinner",
+    "groundPackage": "Full board accommodation + 2 game drives per day OR full day with packed lunch"
+  },
+  "notes": [
+    "Camp has 19 Superior tents, 3 Deluxe tents, 1 two-bedroom Log Cabin.",
+    "Gate/park fees NOT included in any rate.",
+    "Flying package available on request: 2 nights full board + shared game drives + return airfare Wilson-Mara-Wilson + airstrip transfers; additional nights at standard tariff.",
+    "Sundowners minimum 8 pax at KES 6,000 per person (Resident rate card only; not priced in USD file)."
+  ],
+  "nonResidentRates": {
+    "unit": "per person unless noted",
+    "shoulderSeason": {
+      "doubleSuperior": { "fullBoard": 215, "groundPackage": 285, "verified": true },
+      "singleSuperior": { "fullBoard": 320, "groundPackage": 390, "verified": true },
+      "doubleDeluxe": { "fullBoard": 260, "groundPackage": 330, "verified": true },
+      "extraBed": { "fullBoard": 140, "groundPackage": 210, "verified": true },
+      "logCabin4paxExclusive": { "fullBoard": 1300, "groundPackage": 1580, "unit": "per night per 4 pax", "verified": true }
+    },
+    "lowSeason": {
+      "doubleSuperior": { "fullBoard": 150, "groundPackage": 220, "verified": true },
+      "singleSuperior": { "fullBoard": 225, "groundPackage": 295, "verified": true },
+      "doubleDeluxe": { "fullBoard": 170, "groundPackage": 240, "verified": true },
+      "extraBed": { "fullBoard": 90, "groundPackage": 160, "verified": true },
+      "logCabin4paxExclusive": { "fullBoard": 910, "groundPackage": 1190, "unit": "per night per 4 pax", "verified": true }
+    },
+    "peakHighSeason": {
+      "doubleSuperior": { "fullBoard": 360, "groundPackage": 430, "verified": true },
+      "singleSuperior": { "fullBoard": 530, "groundPackage": 600, "verified": true },
+      "doubleDeluxe": { "fullBoard": 410, "groundPackage": 480, "verified": true },
+      "extraBed": { "fullBoard": 180, "groundPackage": 250, "verified": true },
+      "logCabin4paxExclusive": { "fullBoard": 1925, "groundPackage": 2205, "unit": "per night per 4 pax", "verified": true }
+    },
+    "childRate": { "raw": "5-12yrs: 50% of adult rate sharing with adult; 75% of adult rate in own tent. Both packages: 50% of adult sharing.", "verified": true }
+  },
+  "residentRates_KES": {
+    "unit": "per person unless noted",
+    "shoulderSeason": {
+      "doubleSuperior": { "fullBoard": 21500, "groundPackage": 29000, "verified": true },
+      "singleSuperior": { "fullBoard": 30000, "groundPackage": 37500, "verified": true },
+      "doubleDeluxe": { "fullBoard": 26000, "groundPackage": 33500, "verified": true },
+      "extraBed": { "fullBoard": 14800, "groundPackage": 22300, "verified": true },
+      "logCabin4paxExclusive": { "fullBoard": 106400, "groundPackage": 136400, "unit": "per night per 4 pax", "verified": true }
+    },
+    "lowSeason": {
+      "doubleSuperior": { "fullBoard": 15000, "groundPackage": 22500, "verified": true },
+      "singleSuperior": { "fullBoard": 22600, "groundPackage": 30100, "verified": true },
+      "doubleDeluxe": { "fullBoard": 19000, "groundPackage": 26500, "verified": true },
+      "extraBed": { "fullBoard": 10800, "groundPackage": 18300, "verified": true },
+      "logCabin4paxExclusive": { "fullBoard": 80600, "groundPackage": 110600, "unit": "per night per 4 pax", "verified": true }
+    },
+    "peakHighSeason": {
+      "doubleSuperior": { "fullBoard": 30800, "groundPackage": 38300, "verified": true },
+      "singleSuperior": { "fullBoard": 47300, "groundPackage": 54800, "verified": true },
+      "doubleDeluxe": { "fullBoard": 35200, "groundPackage": 42700, "verified": true },
+      "extraBed": { "fullBoard": 17600, "groundPackage": 25100, "verified": true },
+      "logCabin4paxExclusive": { "fullBoard": 165000, "groundPackage": 195000, "unit": "per night per 4 pax", "verified": true }
+    },
+    "childRate": { "raw": "Same structure as non-resident: 5-12yrs 50% sharing / 75% own tent; 50% of adult on ground package sharing.", "verified": true },
+    "sundowner": { "raw": "Minimum 8 pax at KES 6,000 per person", "verified": true }
+  },
+  "termsAndConditions": {
+    "childUnder5": { "raw": "Free (from Terms & Conditions doc - not explicitly stated on the rate sheet itself, which only defines the 5-12yrs bracket)", "verified": true },
+    "parkFees": "NOT included in any rate; payable separately for guests, car and driver on self-game-drives.",
+    "festiveSupplement": "Easter (Good Friday & Easter Monday): US$35pp/day. 25-26 Dec: US$35pp/day. 31 Dec-1 Jan: US$40pp/day.",
+    "highSeasonCancellation": "0-30 days before arrival: 100% charge. 31-45 days: 50% charge. 46-60 days: 30% charge.",
+    "blockBookingRelease": "90 days in advance - no charge",
+    "checkOut": "11:00",
+    "deposit": "50% required upon confirmation, balance payable before arrival",
+    "confidenceNote": "[Unverified] The Terms doc's high-season cancellation window overlaps but doesn't exactly align with a general (non-season-specific) cancellation policy - only the high-season table was found; no separate low/shoulder season cancellation table was located."
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "property": "Taita Hills Safari Resort & Spa",
+  "operator": "Taita Hills & Salt Lick Wildlife Resort Ltd",
+  "region": "Taita Hills Wildlife Sanctuary (main entrance)",
+  "isSoroiProperty": false,
+  "sourceFiles": [
+    "2026 CONTRACT RATES/KENYA/ACCOMODATION/SALT LICK WILDLIFE RESORT/SALT LICK WILDLIFE RESORT  SUNWORLD SAFARIS-2026.pdf",
+    "2026 CONTRACT RATES/KENYA/ACCOMODATION/SALT LICK WILDLIFE RESORT/SALT LICK WILDLIFE RESORT  RACK RATES- Spa-2026.pdf",
+    "2026 CONTRACT RATES/KENYA/ACCOMODATION/SALT LICK WILDLIFE RESORT/SALT LICK WILDLIFE RESORT - TRAIN PACKAGE-US$ TAITA HILLS -2026 DMCs.pdf"
+  ],
+  "notes": [
+    "Sister property to Salt Lick Safari Lodge (same operator/contract document, same overall T&Cs) - see salt-lick-safari-lodge-2026.json for shared policies (group discounts, tour leader, agent/FAM rates, day room, walk-in meals, cancellation).",
+    "59 Resort Rooms + 2 Executive Suites, each with a private viewing balcony. Historic WWI-era stone building with onsite museum.",
+    "Unlike Salt Lick, children under 4 ARE welcome here (free when sharing with adults) - no age-based exclusion."
+  ],
+  "currency": "USD",
+  "validity": "2 January 2026 - 1 January 2027",
+  "seasons": { "high": "2 Jan-31 Mar 2026 & 1 Jul 2026-1 Jan 2027", "green": "1 Apr-30 Jun 2026" },
+  "contract_Sunworld_perPersonPerNight_FB": {
+    "resortRooms": { "high": { "single": 154, "double": 205, "thirdBed": 62 }, "green": { "single": 77, "double": 155, "thirdBed": 46 } },
+    "resortJuniorSuite": { "high": { "single": 210, "double": 280, "thirdBed": "N/A" }, "green": { "single": 110, "double": 220, "thirdBed": "N/A" } },
+    "verified": true
+  },
+  "rack_perPersonPerNight_FB": {
+    "resortRooms": { "high": { "single": 225, "double": 301, "thirdBed": 90 }, "green": { "single": 113, "double": 226, "thirdBed": 68 } },
+    "resortJuniorSuite": { "high": { "single": 305, "double": 406, "thirdBed": "N/A" }, "green": { "single": 118, "double": 236, "thirdBed": "N/A" } },
+    "verified": true
+  },
+  "christmasNewYearSupplement": { "raw": "23 Dec-1 Jan inclusive: US$40/adult/night, US$25/child(5-11.99yrs)/night", "verified": true },
+  "easterSupplement": { "raw": "3-6 April 2026 inclusive: US$20/adult/night, US$10/child(5-11.99yrs)/night", "verified": true },
+  "childPolicy": { "raw": "Infant to 4yrs sharing with 1-2 adults: free. 5-11.99yrs sharing with 1-2 adults: 50% of adult sharing rate (max 3 guests/room). 5-11.99yrs own room (min 2, max 3): 75% of adult sharing rate. Suites: max 2 adults + 1 child.", "verified": true },
+  "occupancyRules": { "raw": "Max 3 adults, or 2 adults + 1 child. Triple rooms subject to availability. Interconnecting rooms ARE available here (unlike Salt Lick).", "verified": true },
+  "sanctuaryEntryFee": { "raw": "Does NOT apply for stays at Taita Hills Safari Resort & Spa unless guests enter the sanctuary for game activities (in which case US$40/adult, US$20/child/night applies).", "verified": true },
+  "vehicleEntryFees_perVehiclePerNight": { "4to12seats": 5, "13to24seats": 10, "25to44seats": 15, "45plusSeats": 20, "aircraft": 20, "helicopterLanding": 20 },
+  "madarakaExpressTrainPackage_2026": {
+    "route": "Nairobi-Voi & Mombasa-Voi",
+    "roomCategory": "Park View Rooms only (no Waterhole View category at this property)",
+    "highSeason_excludingFestive": { "singleSolo": { "oneNight": 382, "extraNight": 272 }, "doubleSharing": { "oneNight": 331, "extraNight": 221 }, "tripleSharing": { "oneNight": 280, "extraNight": 180 } },
+    "greenSeason_excludingEaster": { "singleSolo": { "oneNight": 349, "extraNight": 239 }, "doubleSharing": { "oneNight": 311, "extraNight": 201 }, "tripleSharing": { "oneNight": 269, "extraNight": 169 } },
+    "oneNightPackageIncludes": ["One night full board", "All-day drinking water", "Return 1st class train tickets", "Return transfers in Voi", "2 game drives", "Sanctuary entry fees", "WW1 Talk & Artifacts Museum visit"],
+    "extraNightPackageIncludes": ["One night full board", "All-day drinking water", "2 game drives", "Sanctuary entry fees", "Visit to Taita Hills Wildlife Education Centre"],
+    "childPolicyNote": "Infants to age 4 free of charge sharing with 1-2 adults (train tickets payable if applicable) - notably more lenient than Salt Lick's under-5 exclusion.",
+    "optionalExtras": [{ "item": "Extra Game Drive", "amount": "US$39pp" }, { "item": "Night Game Drive", "amount": "US$50pp" }],
+    "verified": true
+  },
+  "policies": {
+    "checkIn": "12:00", "checkOut": "10:00",
+    "deposit": "Full payment 30 days prior to arrival; cheques not accepted",
+    "cancellation": "30-16 days: 25% loss; 15-8 days: 50% loss; 7 days-arrival: 100% loss",
+    "reservationsEmail": "reservations@taitahillssafariresort.com",
+    "sharedGroupTermsNote": "Group discounts, tour leader policy, agent/FAM rates, day room policy, walk-in meal rates, half board reduction identical to Salt Lick Safari Lodge - see salt-lick-safari-lodge-2026.json."
+  }
+}

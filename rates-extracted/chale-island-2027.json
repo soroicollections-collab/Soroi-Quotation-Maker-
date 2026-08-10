@@ -1,0 +1,72 @@
+{
+  "$note": "Extracted 6 Aug 2026, read directly (pdftotext -layout, poppler, 1-page documents). Chale Island — non-Soroi, part of 'The Sands & Chale Island'. 2027 folder is cleanly named 'THE SANDS & CHALE ISLAND' with no duplication issue (unlike 2026). Both USD Net and USD Rack documents exist for 2027 (2026 only had Net). Net used as primary per task instructions (tour-operator-facing buy rate); Rack recorded as secondary comparison point. Net confirmed to be almost exactly Rack x 0.70 across every room/season cell checked (e.g. Standard Regular PP: 270 Rack -> 189 Net = 70.0%; Tower Suite Regular PP: 345 -> 242 = 70.1%; Ocean View Banda Regular PP: 400 -> 280 = 70.0%) — i.e. functionally an 'STO 30%' relationship in CLAUDE.md's terminology, though this document never uses that label.",
+  "property": "Chale Island (part of The Sands & Chale Island)",
+  "region": "Diani / South Coast",
+  "tier": "USD Net (primary) and USD Rack (secondary) — both present in the 2027 folder.",
+  "residency": "Non-Resident",
+  "source": {
+    "netFile": "2027 CONTRACT RATES/KENYA/BEACH ACCOMODATION/THE SANDS & CHALE ISLAND/Chale Island - USD - Net 2027.pdf",
+    "rackFile": "2027 CONTRACT RATES/KENYA/BEACH ACCOMODATION/THE SANDS & CHALE ISLAND/Chale Island - USD - Rack 2027.pdf",
+    "pdfPageIndex": [0],
+    "validity": { "start": "2026-11-01", "end": "2027-10-31" }
+  },
+  "confidence": "confirmed-2026-08-06",
+  "extractionMethod": { "note": "Read directly, single-page documents each." },
+  "structuralFindings": [
+    "Base room category RENAMED from 'Deluxe' (2026) to 'Standard' (2027) — same tier position (cheapest room, Half Board), price moved from $175 (2026 Regular PP) to $189 (2027 Regular PP Net) i.e. a real increase, not a renamed-and-repriced coincidence; confirmed by checking relative position/order in both documents' tables.",
+    "Same 3-season structure as 2026 (Spring 15Mar-15Jun, Regular implicit, Festive 20Dec-10Jan min 7 nights) and same 5 room categories in the same order (Standard/Tower Suite/Ocean View Banda = Half Board; Overwater Suite/Suite on the Rocks = All Inclusive).",
+    "All Inclusive per-child supplement changed from $50 (2026) to $0 (2027) on both Net and Rack documents, with an added note 'All Inclusive for Children is included in the Adult Rate' — a genuine T&C/pricing-shape change, not a typo (checked both files, consistent).",
+    "Transfer prices increased across the board vs 2026 (Moi Airport 80->90, Diani Airstrip 35->40, Nomad-to-Chale 35->40)."
+  ],
+  "seasons": {
+    "spring": { "dateRange": "15 Mar - 15 Jun" },
+    "regular": { "dateRange": "implicit — all other dates outside Spring/Festive" },
+    "festive": { "dateRange": "20 Dec - 10 Jan", "minimumStay": "7 nights" }
+  },
+  "rates": {
+    "currency": "USD",
+    "unit": "per person sharing (or single occupancy) per night, meal plan varies by category",
+    "net": {
+      "standard_halfBoard": { "perPersonSharing": { "spring": 151, "regular": 189, "festive": 266 }, "singleOccupancy": { "spring": 211, "regular": 265, "festive": 372 }, "thirdBedAdult": { "spring": 105, "regular": 132, "festive": 186 }, "thirdBedChild": { "spring": 70, "regular": 70, "festive": 130 } },
+      "towerSuite_halfBoard": { "perPersonSharing": { "spring": 203, "regular": 242, "festive": 322 }, "singleOccupancy": { "spring": 284, "regular": 338, "festive": 451 }, "thirdBedAdult": { "spring": 142, "regular": 169, "festive": 225 }, "thirdBedChild": { "spring": 70, "regular": 70, "festive": 130 } },
+      "oceanViewBanda_halfBoard": { "perPersonSharing": { "spring": 217, "regular": 280, "festive": 382 }, "singleOccupancy": { "spring": 304, "regular": 392, "festive": 534 }, "thirdBedAdult": { "spring": 152, "regular": 196, "festive": 267 }, "thirdBedChild": { "spring": 70, "regular": 70, "festive": 130 } },
+      "overwaterSuite_allInclusive": { "perPersonSharing": { "spring": 462, "regular": 483, "festive": 602 }, "singleOccupancy": { "spring": 647, "regular": 676, "festive": 843 }, "thirdBedAdult": { "spring": 323, "regular": 338, "festive": 421 }, "thirdBedChild": { "spring": 70, "regular": 70, "festive": 130 } },
+      "suiteOnTheRocks_allInclusive": { "perPersonSharing": { "spring": 704, "regular": 725, "festive": 847 }, "singleOccupancy": { "spring": 985, "regular": 1014, "festive": 1186 } }
+    },
+    "rack": {
+      "standard_halfBoard": { "perPersonSharing": { "spring": 215, "regular": 270, "festive": 380 }, "singleOccupancy": { "spring": 300, "regular": 380, "festive": 530 }, "thirdBedAdult": { "spring": 150, "regular": 190, "festive": 265 }, "thirdBedChild": { "spring": 70, "regular": 70, "festive": 130 } },
+      "towerSuite_halfBoard": { "perPersonSharing": { "spring": 290, "regular": 345, "festive": 460 }, "singleOccupancy": { "spring": 410, "regular": 480, "festive": 640 }, "thirdBedAdult": { "spring": 205, "regular": 240, "festive": 320 }, "thirdBedChild": { "spring": 70, "regular": 70, "festive": 130 } },
+      "oceanViewBanda_halfBoard": { "perPersonSharing": { "spring": 310, "regular": 400, "festive": 545 }, "singleOccupancy": { "spring": 430, "regular": 560, "festive": 760 }, "thirdBedAdult": { "spring": 215, "regular": 280, "festive": 380 }, "thirdBedChild": { "spring": 70, "regular": 70, "festive": 130 } },
+      "overwaterSuite_allInclusive": { "perPersonSharing": { "spring": 660, "regular": 690, "festive": 860 }, "singleOccupancy": { "spring": 920, "regular": 990, "festive": 1200 }, "thirdBedAdult": { "spring": 460, "regular": 485, "festive": 600 }, "thirdBedChild": { "spring": 70, "regular": 70, "festive": 130 } },
+      "suiteOnTheRocks_allInclusive": { "perPersonSharing": { "spring": 1005, "regular": 1035, "festive": 1210 }, "singleOccupancy": { "spring": 1410, "regular": 1450, "festive": 1690 } }
+    }
+  },
+  "supplements": {
+    "fullBoard": { "perAdult": 55, "perChild": 27 },
+    "allInclusive": { "perAdult": 100, "perChild": 0, "note": "All Inclusive for children is included in the Adult Rate as of 2027 — changed from 2026's $50/child supplement." }
+  },
+  "childPolicy": {
+    "age0to2": "Free",
+    "age12Plus": "Adult rates",
+    "age3to11_sharingWith1Adult": "3rd bed Child + Single Occupancy",
+    "age3to11_sharingWith2Adults": "3rd bed Child + 2pp Sharing",
+    "2Children_with1Adult": "Single Occupancy + 1pp Sharing",
+    "2Children_with2Adults": "2x 3rd bed Child + 2pp Sharing",
+    "2Children_noAdults": "Single Occupancy",
+    "3Children_noAdults": "Single Occupancy + 3rd bed Child"
+  },
+  "maxRoomOccupancy": "3 pax (exceptions may apply)",
+  "transfers": {
+    "moiInternationalAirport": { "amount": 90, "unit": "per 4 pax, 90 min" },
+    "dianiAirstrip": { "amount": 40, "unit": "per 4 pax, 45 min" },
+    "nomadToChaleIsland": { "amount": 40, "unit": "per 4 pax, 30 min" }
+  },
+  "paymentTerms": "30% deposit 14 days after invoicing; balance 30 days prior to arrival.",
+  "cancellationPolicy": {
+    "regularAndFestive": { "30PlusDays": "No charge", "15to30Days": "50%", "14orFewerDays": "100% (per 2026 card wording; 2027 card's text was cut off after '15-30 days: 50%' in extraction — treated as unchanged from 2026 pending confirmation)" }
+  },
+  "additionalInclusions2027": "Rate includes access to motorised and non-motorised water sports, island activities, cultural excursions. Third-party activities (diving, fishing) not included — new explicit wording not present on the 2026 card.",
+  "portfolioWideTerms": {
+    "note": "Non-Soroi property — CLAUDE.md's Soroi-portfolio-wide terms do not apply."
+  }
+}

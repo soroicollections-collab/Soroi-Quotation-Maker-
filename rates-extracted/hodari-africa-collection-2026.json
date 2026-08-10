@@ -1,0 +1,87 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftotext -layout. NOT a Soroi property. Multi-property document: Hodari Africa Collection (HAC), 3 properties across 3 regions. IMPORTANT DISCREPANCY FOUND: a second, separate file in this same folder ('Ewaso Camp Rates 2025-26.pdf') gives materially different Ewaso Camp figures than this 2026 collection document - see ewasoCampDiscrepancy note below. Do not silently pick one.",
+  "operator": "Hodari Africa Collection (HAC)",
+  "properties": ["Sarabi Wild (Masai Mara)", "Samburu Elephant Lodge (Samburu)", "Ewaso Camp (Laikipia)"],
+  "source": {
+    "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/HODARI AFRICA/HODARI AFRICA 2026 RATES MARA SAMBURU LAIKIPIA.pdf",
+    "tier": "Rates as printed (no separate rack/contract split on this document, unlike the standalone Ewaso Camp file)"
+  },
+  "confidence": "confirmed-2026-08-06",
+  "currency": "USD (non-resident) / KES (resident, Sarabi Wild and Samburu Elephant Lodge only)",
+  "sarabiWildMasaiMara": {
+    "description": "Community-based luxury guest house in Masai Mara, built/operated by local community members.",
+    "unit": "per person per night, Full Board",
+    "nonResident": {
+      "lowSeason": { "dateRanges": ["01 Apr - 30 Jun", "01 Nov - 23 Dec"], "ppSharing": 168.00, "ppSingle": 195.00, "child2to12": 117.00 },
+      "midSeason": { "dateRanges": ["04 Jan - 31 Mar"], "ppSharing": 195.00, "ppSingle": 219.00, "child2to12": 138.00 },
+      "highSeason": { "dateRanges": ["01 Jul - 31 Oct", "24 Dec - 3 Jan"], "ppSharing": 285.00, "ppSingle": 309.00, "child2to12": 210.00 }
+    },
+    "resident": {
+      "currency": "KES (sharing rate) / USD (single & child rate, as literally printed - likely a source typo but reproduced as-is)",
+      "confidenceNote": "Source table prints 'PPSingle PN (USD)' as the resident single-room row label even though the values (19,000/21,400/30,000) are clearly KES-scale, not USD - this looks like a copy-paste label error in the source document. Reproduced verbatim; treat the resident single and child figures as KES, not USD, when using them.",
+      "lowSeason": { "ppSharingKES": 16500.00, "ppSingle": 19000.00, "child2to12": 11500.00 },
+      "midSeason": { "ppSharingKES": 19000.00, "ppSingle": 21400.00, "child2to12": 13600.00 },
+      "highSeason": { "ppSharingKES": 27900.00, "ppSingle": 30000.00, "child2to12": 20600.00 }
+    },
+    "sharedGameDrive": { "amount": 100, "unit": "USD per game drive" },
+    "exclusiveVehiclePerDay": 350,
+    "parkFees": "Masai Mara National Reserve fees apply (not itemized on this document)",
+    "verified": true
+  },
+  "samburuElephantLodge": {
+    "region": "Samburu National Reserve",
+    "unit": "per person per night, Full Board",
+    "seasons": { "low_quiet": ["Feb", "Mar", "May", "Nov"], "mid_shoulder": ["06-31 Jan", "Apr", "Jun", "Oct", "01-15 Dec"], "high_prime": ["01 Jul - 31 Oct", "24 Dec - 3 Jan"] },
+    "usd": { "low": { "ppSharing": 135.00, "ppSingle": 190.00, "child5to12": 75.00 }, "mid": { "ppSharing": 155.00, "ppSingle": 230.00, "child5to12": 85.00 }, "high": { "ppSharing": 165.00, "ppSingle": 275.00, "child5to12": 95.00 } },
+    "kesResident": {
+      "low": { "ppSharing": 15000.00, "ppSingle": 20000.00, "child5to12": 8000.00 },
+      "mid": { "ppSharing": 17000.00, "ppSingle": 24000.00, "child5to12": 9500.00 },
+      "high": { "ppSharing": 19000.00, "ppSingle": 28000.00, "child5to12": 10500.00 },
+      "confidenceNote": "Source prints the low-season child KES figure as '80,00.00' (misplaced comma) - read as 8,000.00 (consistent with the mid/high progression: 8,000 -> 9,500 -> 10,500). Flagging the source typo explicitly rather than silently normalizing."
+    },
+    "sharedGameDrive": "Can be arranged on request (no fixed price stated)",
+    "exclusiveVehiclePerDay": 300,
+    "parkFees": "Samburu National Reserve fees apply (not itemized on this document)",
+    "verified": true
+  },
+  "ewasoCampLaikipia": {
+    "region": "Naibunga Conservancy, Laikipia (bordering Loisaba)",
+    "rooms": 5,
+    "unit": "per person per night, Full Board",
+    "seasons": { "low": { "dateRanges": ["01 Mar - 30 Jun", "01 Nov - 14 Dec"] }, "high": { "dateRanges": ["15 Dec - 28 Feb", "01 Jul - 31 Oct"] } },
+    "ratesFromThis2026CollectionDoc": {
+      "low": { "ppSharing": 160.00, "ppSingle": 220.00, "child5to12": 105.00 },
+      "high": { "ppSharing": 200.00, "ppSingle": 275.00, "child5to12": 140.00 },
+      "verified": true
+    },
+    "mandatoryConservationFee": { "amount": 75, "unit": "USD per person per stay (not per night)" },
+    "exclusiveVehiclePerDay": 200,
+    "activitiesEach": { "amount": 35, "unit": "USD per person - animal tracking, singing wells, traditional healer visit, star gazing, bush walks, camel rides" },
+    "ewasoCampDiscrepancy": {
+      "confidenceNote": "UNRESOLVED CONFLICT between two source documents for the same property, both on file in the same HODARI AFRICA folder. This 2026 collection PDF states Ewaso Camp Non-Resident Full Board Low/High sharing at $160/$200. A separate standalone file, 'Ewaso Camp Rates 2025-26.pdf' (same folder), states Non-Resident Full Board rates as: Low season (1 Mar-31 May) RACK sharing $220 / CONTRACT sharing $200; High season (1 Jun-28/29 Feb) RACK sharing $250 / CONTRACT sharing $235. Neither the Rack nor Contract figures in the standalone file match this collection doc's $160/$200 sharing figures, and even the two files' season date windows differ (this doc: low=Mar-Jun+Nov-mid Dec, high=mid Dec-Oct; standalone file: low=Mar-May, high=Jun-Feb). Also note the standalone file's child bracket is 3-11 years vs this doc's 5-12 years, and its conservation fee/game drive/activity figures differ slightly ($75pp is consistent, but game drives $200/car vs 'on request' here, activities $25pp vs $35pp here). Do not average or default to either source - confirm current 2026 Ewaso Camp rates directly with Hodari Africa/Ewaso Camp before quoting.",
+      "standaloneFileRackContract": {
+        "source": "2026 CONTRACT RATES/KENYA/ACCOMODATION/HODARI AFRICA/Ewaso Camp Rates 2025-26.pdf",
+        "nonResident": {
+          "low_1Mar-31May": { "rackSingle": 275, "rackSharing": 220, "rackChild3to11": 150, "contractSingle": 250, "contractSharing": 200, "contractChild3to11": 140 },
+          "high_1Jun-28Feb": { "rackSingle": 315, "rackSharing": 250, "rackChild3to11": 175, "contractSingle": 275, "contractSharing": 235, "contractChild3to11": 160 }
+        },
+        "resident": {
+          "low_1Mar-31May": { "rackSingle": 240, "rackSharing": 210, "rackChild3to11": 145, "contractSingle": 225, "contractSharing": 190, "contractChild3to11": 130 },
+          "high_1Jun-28Feb": { "rackSingle": 275, "rackSharing": 235, "rackChild3to11": 165, "contractSingle": 250, "contractSharing": 220, "contractChild3to11": 155 }
+        },
+        "mandatoryConservationFee": 75,
+        "gameDrive": { "amount": 200, "unit": "USD per car" },
+        "activities": { "amount": 25, "unit": "USD per person - wildlife training, singing wells, traditional healer, stargazing, bush walks (camel ride separately at $35pp for 2-3hrs)" },
+        "under3": "Free of charge",
+        "verified": true
+      }
+    },
+    "verified": true
+  },
+  "portfolioWideNotes": {
+    "mealPlan": "All three properties Full Board: breakfast, lunch, dinner, plus tea/coffee/selected beverages during meals.",
+    "exclusions": "Park/conservation fees, unspecified drinks, laundry, tips, transfers (on request), optional activities.",
+    "checkIn": "12:00", "checkOut": "10:00",
+    "childPolicy": "All ages welcome; children 2 and under stay free of charge (FOC) - portfolio-wide statement in the 2026 collection doc, though individual property child-rate brackets above vary (2-12 at Sarabi Wild, 5-12 at Samburu Elephant Lodge and Ewaso Camp in this doc; 3-11 in the standalone Ewaso file)."
+  }
+}

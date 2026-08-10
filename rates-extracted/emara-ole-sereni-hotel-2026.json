@@ -1,0 +1,34 @@
+{
+  "property": "Emara Ole Sereni Hotel",
+  "operator": "Ole-Sereni Hotel (Off Mombasa Road, Nairobi) - document header says 'Ole-Sereni Hotel' but rate table and signature block are branded 'Emara Ole Sereni'",
+  "region": "Nairobi",
+  "isSoroiProperty": false,
+  "sourceFiles": ["2026 CONTRACT RATES/KENYA/ACCOMODATION/OLE SERENI HOTELS -EMARA AND 254/Emara Ole Serenirld Safaris - Contract 2026 - 2027.pdf"],
+  "notes": [
+    "Same physical Nairobi property as ole-sereni-hotel-2026.json (identical address, contact, terms boilerplate) but a different room-category rate card under the 'Emara' sub-brand name - room names do not overlap with the plain 'Ole Sereni' card (Cozy/Club/Wow Suites there vs Superior/Deluxe/Apartments/Executive Suite here). Not reconciled which is current/primary - both are dated 2026-2027 and both were on file.",
+    "Folder name references a third '254' brand not found as a separate document - see ole-sereni-hotel-2026.json note.",
+    "Rates quoted are 'net, non-commissionable' unlike the plain Ole Sereni card, which didn't state non-commissionable status explicitly."
+  ],
+  "currency": "USD",
+  "validity": "1 January 2026 - 31 December 2027",
+  "rates_perRoomPerNight_BB": {
+    "superiorRoom": { "single": { "contract": 190, "rack": 340 }, "double": { "contract": 230, "rack": 390 }, "extraAdultOrChild": "N/A", "childInOwnRoomMin2": 70 },
+    "deluxeRoom": { "single": { "contract": 220, "rack": 400 }, "double": { "contract": 260, "rack": 450 }, "extraAdultOrChild": "N/A", "childInOwnRoomMin2": 70 },
+    "apartmentOneBedroom": { "single": { "contract": 250, "rack": 550 }, "double": { "contract": 300, "rack": 600 }, "thirdBedAdult": 70, "extraBedChild": 70, "childInOwnRoomMin2": 70 },
+    "apartmentTwoBedroom": { "single": { "contract": 300, "rack": 700 }, "double": { "contract": 350, "rack": 750 }, "thirdBedAdult": 70, "extraBedChild": 70, "childInOwnRoomMin2": 70 },
+    "executiveSuite": { "single": { "contract": 600, "rack": 1500 }, "double": { "contract": 600, "rack": 1500 }, "thirdBedAdult": 70, "extraBedChild": 70, "childInOwnRoomMin2": 70 },
+    "verified": true
+  },
+  "mealRates": { "breakfast": 35, "lunch": 40, "dinner": 45 },
+  "conferencePackage_min10pax": { "halfDay": 40, "fullDay": 45, "unit": "per person per day" },
+  "childPolicy": { "raw": "Under 3 sharing with adult(s): free. 3-12 sharing with adult(s): child rate applies. 3-12 in own room (min 2 children): children-in-own-room rate. One child in own room: charged at Single Room rate.", "verified": true },
+  "policies": {
+    "checkIn": "14:00", "checkOut": "10:00",
+    "dayUse": "12:00-18:00, excludes meals, charged at 60% of room rate (differs from plain Ole Sereni card's 75%)",
+    "payment": "Full payment at least 30 days before accommodation date unless special agreement on file; cheques only accepted if cleared in advance",
+    "complimentaryTourLeader": "1 bed without meals per 15 full-paying guests, max 4 beds",
+    "cancellation": "21 days prior: 50% cancellation fee on first night; 14 days prior: 75% on first night; within 72 hours of noon on accommodation date, or no-show: 100% of net booking value for max 2 nights",
+    "releasePeriod": "60 days prior to arrival; rooming list must be forwarded 60 days prior",
+    "conferencesExcluded": "Rates do not apply for major conferences/meetings/incentive groups - negotiated per case"
+  }
+}

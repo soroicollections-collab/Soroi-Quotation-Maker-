@@ -1,0 +1,60 @@
+{
+  "$note": "Fresh extraction, 5 Aug 2026, read directly from the property's own page in the paginated source PDF. This is the property whose Family Unit rate ($3,520/$4,400 Peak) was previously found sitting in the PDF and mistakenly considered as a possible source for Mara Bush Camp's unverified Family Tent figure — confirmed today that it genuinely belongs here, not Mara.",
+  "property": "Soroi Luxury Migration Camp",
+  "region": "Maasai Mara",
+  "tier": "Rack Rate",
+  "residency": "Non-Resident",
+  "source": {
+    "file": "SOROI 2027/Soroi - 2027 RACK Rates.pdf",
+    "pdfPageIndex": 3,
+    "docPrintedPageNumber": 4,
+    "validity": { "start": "2027-01-04", "end": "2028-01-03" }
+  },
+  "confidence": "confirmed-2026-08-05",
+  "extractionMethod": { "note": "Read directly from the property's own page, header 'SOROI LUXURY MIGRATION CAMP' present on the same page as the figures." },
+  "seasons": {
+    "peak": { "dateRanges": ["1 Jul – 30 Sep", "20 Dec – 3 Jan"] },
+    "shoulder": { "dateRanges": ["4 Jan – 28 Feb", "1 Jun – 30 Jun"] },
+    "extendedGreen": { "dateRanges": ["1 Mar – 31 May", "1 Oct – 19 Dec"] }
+  },
+  "rates": {
+    "currency": "USD",
+    "unit": "per person per night",
+    "fullBoard": {
+      "perPerson": { "peak": 880, "shoulder": 750, "extendedGreen": 630 },
+      "single": { "peak": 1320, "shoulder": 1125, "extendedGreen": 788 },
+      "familyUnit": { "peak": 3520, "shoulder": 3000, "extendedGreen": 2520 }
+    },
+    "groundPackage": {
+      "perPerson": { "peak": 1100, "shoulder": 970, "extendedGreen": 850 },
+      "single": { "peak": 1650, "shoulder": 1455, "extendedGreen": 1063 },
+      "familyUnit": { "peak": 4400, "shoulder": 3880, "extendedGreen": 3400 }
+    }
+  },
+  "mandatoryFees": {
+    "note": "Identical wording/figures to Mara Bush Camp and Private Wing — shared Maasai Mara conservancy fee, not property-specific.",
+    "verified": true,
+    "verifiedDate": "2026-08-05",
+    "communityLevy": {
+      "peak": { "adult": 80, "child": 40, "unit": "per night" },
+      "shoulder": { "adult": 40, "child": 20, "unit": "per night" },
+      "extendedGreen": { "adult": 40, "child": 20, "unit": "per night" }
+    },
+    "parkFee": {
+      "janToJun": { "adult": 100, "child": 50, "unit": "per adult per 12h" },
+      "julToDec": { "adult": 200, "child": 50, "unit": "per adult per 12h" },
+      "billingUnitStillAmbiguous": true
+    }
+  },
+  "roomNote": "8 Luxury Tents + 2 Two-Bedroom Family Units Overlooking River. Each Family Unit: Room 1 (king double) connected to Room 2 (twin beds), extra bed can be added, max 5 pax.",
+  "portfolioWideTerms": {
+    "note": "Applies across Soroi properties per CLAUDE.md > Portfolio-wide terms. Duplicated here for convenience — CLAUDE.md is authoritative.",
+    "childAge5to11": "50% of adult sharing rate",
+    "childUnder4": "free (sharing)",
+    "youngAdult12to17Sharing": "75% of adult rate",
+    "tourLeaderGuide": { "inTLTent": 175, "inGuestTent": "75% of adult single rate" },
+    "privateGuideMeals": { "amount": 50, "unit": "per day" },
+    "singleSupplementGreenSeason": "reduced to 25% (from 50%) — Mara properties only",
+    "christmasNewYearSupplement": { "adult": 40, "child": 20, "unit": "per night" }
+  }
+}

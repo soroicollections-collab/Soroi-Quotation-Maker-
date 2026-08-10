@@ -1,0 +1,109 @@
+{
+  "$note": "Extracted 6 Aug 2026 directly from paginated source PDF (2-page contract sheet, single property, no adjacent-property risk). Contract runs 23 Dec 2025 - 22 Dec 2026, so it straddles the 2025/2026 boundary — priced per this project's 2026 scope regardless.",
+  "property": "Leopard Beach Resort",
+  "region": "Diani Beach, South Coast",
+  "tier": "Contract Rate (USD Non-Resident)",
+  "residency": "Non-Resident",
+  "source": {
+    "file": "2026 CONTRACT RATES/KENYA/BEACH ACCOMODATION/LEOPARD BEACH/Leopard Beach Resort - Contract 2025-2026 USD Non Resident Rates.pdf",
+    "pdfPageIndex": 0,
+    "totalPages": 2,
+    "validity": { "start": "2025-12-23", "end": "2026-12-22" }
+  },
+  "confidence": "confirmed-2026-08-06",
+  "extractionMethod": { "note": "Read directly via pdftotext -layout across both pages. Dense tabular contract sheet; single property so no cross-property mixup risk, but column alignment was double-checked against the header row (5 date-window columns) before transcription." },
+  "structuralFindings": [
+    "Base meal plan is Half Board (HB) for all room categories — Fullboard and All-Inclusive are paid per-adult supplements on top, not separate base rates like Lantana.",
+    "Five pricing periods, not three: 23 Dec-3 Jan (highest/'peak'), 4 Jan-31 Mar, 1 Apr-15 Jul, 16 Jul-31 Aug, 1 Sep-22 Dec. Do not force these into Soroi's Peak/Shoulder/Green 3-season model.",
+    "Three property zones with different room categories: 'Superior & Deluxe' (Gardenview), 'Cottages, Suites & Seaview Villas' (Seaview), and 'The Residence' (2BR/3BR villas, priced per-person with pax-count surcharge tiers rather than a flat category rate).",
+    "The Residence villas have a base 'min pax' rate plus an explicit surcharge for 3rd/4th (2BR) or 5th/6th (3BR) occupant — a different pricing mechanic from every other category here.",
+    "Single supplement ('Double = Single occupancy') varies by season and does NOT apply to The Residence at all.",
+    "Children's policy is split into two separate tables (Superior & Deluxe vs The Residence) with different age brackets and discount structures — do not assume one applies to the other.",
+    "Long-stay discount here is 20% off contract rates AND 20% off F&B/spa/laundry for 21+ nights — a different threshold/shape from Soroi's 6/9/12-night ladder.",
+    "Groups of 12+ get 10% off all contract conditions, except during 23 Dec-3 Jan.",
+    "A KES East Africa Resident rate file also exists (Leopard Beach Resort Contract 2025-2026 EA KES Rates.pdf) — not extracted, out of scope for this non-resident extraction pass."
+  ],
+  "seasons": {
+    "window1_christmasNewYear": { "dateRange": "23 Dec 2025 - 3 Jan 2026", "minimumStay": "5 days (does not apply for overlapping stays from/to lower season)", "releasePeriod": "28 days" },
+    "window2": { "dateRange": "4 Jan 2026 - 31 Mar 2026", "minimumStay": "1 day", "releasePeriod": "14 days" },
+    "window3": { "dateRange": "1 Apr 2026 - 15 Jul 2026", "minimumStay": "1 day", "releasePeriod": "3 days" },
+    "window4": { "dateRange": "16 Jul 2026 - 31 Aug 2026", "minimumStay": "1 day", "releasePeriod": "3 days" },
+    "window5": { "dateRange": "1 Sep 2026 - 22 Dec 2026", "minimumStay": "1 day", "releasePeriod": "3 days" }
+  },
+  "rates": {
+    "currency": "USD",
+    "unit": "per person per night, Half Board",
+    "verified": true,
+    "superiorDeluxe": {
+      "superiorBalconyGardenview": { "w1": 196, "w2": 100, "w3": 62, "w4": 100, "w5": 71, "occupancy": "min 1 / max 3, +2 extra beds, allows child, interconnecting door available" },
+      "deluxeTerraceGardenview": { "w1": 246, "w2": 112, "w3": 74, "w4": 112, "w5": 83, "occupancy": "min 1 / max 3, +2 extra beds, allows child, interconnecting door available" }
+    },
+    "cottagesSuitesSeaviewVillas": {
+      "chuiCottageSeaview": { "w1": 320, "w2": 138, "w3": 100, "w4": 127, "w5": 98, "occupancy": "min 2 / max 2, no child, no interconnecting" },
+      "honeymoonSuiteSeaview": { "w1": 435, "w2": 178, "w3": 127, "w4": 200, "w5": 149, "occupancy": "min 2 / max 2, no child" },
+      "executiveSuiteSeaview": { "w1": 492, "w2": 214, "w3": 177, "w4": 242, "w5": 203, "occupancy": "min 2 / max 2, no child" },
+      "seaviewVilla": { "w1": 535, "w2": 242, "w3": 204, "w4": 274, "w5": 233, "occupancy": "min 2 / max 2, no child" }
+    },
+    "theResidence": {
+      "forestVilla2Bedroom": { "basePax3to4min": { "w1": 328, "w2": 185, "w3": 134, "w4": 185, "w5": 157 }, "surcharge3rdAnd4thPax": { "w1": 246, "w2": 139, "w3": 100, "w4": 139, "w5": 118 }, "occupancy": "min 3 / max 4, +2 extra beds" },
+      "forestVilla3Bedroom": { "basePaxMin5": { "w1": 328, "w2": 185, "w3": 134, "w4": 185, "w5": 157 }, "surcharge5thAnd6thPax": { "w1": 246, "w2": 139, "w3": 100, "w4": 139, "w5": 118 }, "occupancy": "min 5 / max 6, +2 extra beds" },
+      "poolVilla2Bedroom": { "basePax3to4min": { "w1": 349, "w2": 207, "w3": 151, "w4": 207, "w5": 178 }, "surcharge3rdAnd4thPax": { "w1": 262, "w2": 155, "w3": 114, "w4": 155, "w5": 134 }, "occupancy": "min 3 / max 4, +2 extra beds" },
+      "poolVilla3Bedroom": { "basePaxMin5": { "w1": 349, "w2": 207, "w3": 151, "w4": 207, "w5": 178 }, "surcharge5thAnd6thPax": { "w1": 262, "w2": 155, "w3": 114, "w4": 155, "w5": 134 }, "occupancy": "min 5 / max 6, +2 extra beds" }
+    }
+  },
+  "foodSupplements": {
+    "unit": "USD per adult, flat across all five windows",
+    "fullboard": 15,
+    "allInclusive": 40
+  },
+  "supplementsSuperiorDeluxeCottagesSuitesVillas": {
+    "note": "Not applicable to The Residence.",
+    "singleOccupancy_doubleEqualsSingle": { "w1": "+50%", "w2": "+50%", "w3": "+0%", "w4": "+30%", "w5": "+30%" },
+    "thirdAdultSuperiorDeluxe": { "ageFrom": "14 years onwards", "basis": "based on HB rate, FB+AI surcharges apply separately", "discount": "-30% all windows" }
+  },
+  "childrenPolicy": {
+    "superiorAndDeluxe": {
+      "twoAdultsPlusInfant_0to1.9yrs": "-100% (free) on all meal plans",
+      "twoAdultsPlusChild_2to13.9yrs": "-100% (free) on all meal plans",
+      "twoChildrenInOwnRoom_2to13.9yrs": "-25% on all meal plans",
+      "oneAdultPlusMaxTwoChildren_2to13.9yrs": "-50% on all meal plans"
+    },
+    "theResidence": {
+      "note": "Discounts based on the full per-pax rate; also valid for FB/AI food supplements.",
+      "twoAdultsPlusInfant_0to1.9yrs": "-100%",
+      "twoBedroomVillas_2minAdults_allChildren2to13.9yrs": "-50%, in existing bedding of the villa",
+      "threeBedroomVillas_4minAdults_allChildren2to13.9yrs": "-50%, in existing bedding of the villa"
+    },
+    "confidenceNote": "[Unverified beyond stated text] Age bracket boundaries (e.g. '13,9 years') are transcribed exactly as printed in source, likely meaning 'up to but not including 14'."
+  },
+  "longStayOffer": {
+    "threshold": "21+ nights",
+    "discount": "20% on all contract rates, plus 20% on Food & Beverage, spa, laundry"
+  },
+  "groupsDiscount": {
+    "threshold": "12+ persons",
+    "discount": "10% on all contract conditions, applicable on pre-confirmed group allotments",
+    "exclusion": "Does not apply 23 Dec - 3 Jan"
+  },
+  "honeymoonSpecial": {
+    "eligibility": "within 12 months of marriage, min. stay 7 nights",
+    "benefit": "complimentary upgrade on arrival: Superior -> Deluxe, Deluxe -> Chui Cottage, Chui Cottage -> Honeymoon Suite; plus fruit basket, flowers, and 30-min massage per guest"
+  },
+  "mealPlanDetails": {
+    "fullBoard": "Breakfast, lunch, dinner from buffet in Horizon restaurant",
+    "halfBoard": "Breakfast + lunch OR dinner, plus afternoon tea",
+    "allInclusive": "In addition to Full Board: local soft drinks/soda water/still & sparkling water, local bottled beer (Tusker, Pilsner, Balozi), South African house wines, afternoon snack menu (Pool Bistro/Pizzeria 13h00-18h00), local spirits at bars (10h00-23h00), daily minibar restock (soft drinks & beer); every 7 nights: 1 a la carte dinner at Chui Grill or Lemongrass included (Lobster & Prawns excluded)"
+  },
+  "dayRooms": { "window": "06h00 arrival to 17h00 departure", "charge": "50% of contracted rate" },
+  "cancellationPolicy": {
+    "7to3days": "25%",
+    "3to1days": "50%",
+    "noShow": "90%",
+    "note": "% charged on services booked"
+  },
+  "checkInOut": { "checkOut": "10h00 latest", "checkIn": "15h00 earliest" },
+  "residencyNote": "Rates applicable for international tourism only (excludes EA citizens and residents).",
+  "notExtracted": {
+    "residentRates": "Leopard Beach Resort Contract 2025-2026 EA KES Rates.pdf — not extracted (out of scope for this non-resident pass). Exists on file if needed."
+  }
+}

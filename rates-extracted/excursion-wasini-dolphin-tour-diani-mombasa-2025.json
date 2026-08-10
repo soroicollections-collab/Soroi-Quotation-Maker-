@@ -1,0 +1,36 @@
+{
+  "category": "excursion",
+  "activity": "Wasini Island excursion — dolphin watching, Kisite Marine Park snorkeling, Shimoni Slave Caves",
+  "operator": "Kisite Discovery Safaris",
+  "region": "Diani Beach / South Coast & Mombasa, Kenya",
+  "extractedDate": "2026-08-06",
+  "sourceFiles": [
+    "2026 CONTRACT RATES/KENYA/EXCURSIONS/WASINI DOLPHIN TOUR/2025 WASINI UPDATED NET RATE.pdf"
+  ],
+  "$dateFlag": "[Unverified] Document is titled '2025 Wasini Island Contract RATES' ('New Updated 2025...'). No 2026/2027 update found in either CONTRACT RATES folder. Confirm current pricing before quoting 2026/2027 travel.",
+  "currency": "Multiple — USD for Non-Resident, KES for Resident/EA Resident/Kenyan Citizen tiers, all stated per adult/child",
+  "pricingModel": "per person, by pickup location",
+  "adultRates": {
+    "fromDiani": { "nonResidentUSD": 110, "residentKES": 8500, "eastAfricanResidentKES": 7000, "kenyanCitizenKES": 6000 },
+    "fromMombasa": { "nonResidentUSD": 115, "residentKES": 9000, "eastAfricanResidentKES": 7500, "kenyanCitizenKES": 6500 },
+    "verified": true
+  },
+  "childRates": {
+    "ageRange": "3-11 years",
+    "fromDiani": { "nonResidentUSD": 55, "residentKES": 4500, "eastAfricanResidentKES": 3750, "kenyanCitizenKES": 3250 },
+    "fromMombasa": { "nonResidentUSD": 60, "residentKES": 4750, "eastAfricanResidentKES": 4000, "kenyanCitizenKES": 3500 },
+    "verified": true
+  },
+  "itinerary": {
+    "fromDiani": "Pickup 7:00-7:30am, ~45km drive to Shimoni, dolphin search boat ride, snorkeling at Kisite Marine National Park, seafood/Swahili lunch at Wasini Island, village walk, Shimoni Slave Caves visit, return to hotel ~5:00pm.",
+    "fromMombasa": "Pickup 5:30-5:40am, ~100km drive to Shimoni, same itinerary, return to hotel ~6:00pm."
+  },
+  "inclusions": ["Transport", "Light breakfast", "Marine park ticket", "Boat ride", "Snorkeling equipment", "Soft drinks on board", "Fruits after snorkeling", "Seafood lunch (chicken/vegetarian option available)", "Mangrove walk at Wasini Island", "Slave cave visit"],
+  "cancellationPolicy": {
+    "0to14DaysPrior": "100% chargeable",
+    "15to35DaysPrior": "50% chargeable"
+  },
+  "skippedFiles": [
+    { "file": "FW_ Wasini Dolphin Tour Excursions.msg", "reason": "Not opened — the accompanying PDF ('2025 WASINI UPDATED NET RATE.pdf') already provides a complete, clearly dated rate table; the .msg is presumed to be the cover email delivering that same PDF." }
+  ]
+}

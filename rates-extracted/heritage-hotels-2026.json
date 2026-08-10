@@ -1,0 +1,196 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftotext -layout for the two Non-Resident contract PDFs, and pdftoppm + visual image read for the two Resident-rate flyers (image-only JPGs re-exported as PDF, pdftotext returned nothing but a filename caption). NOT a Soroi property. Multi-property document set: Heritage Hotels operates several distinct properties across Mara, Samburu, Tsavo/coast.",
+  "operator": "Heritage Hotels Ltd",
+  "properties": ["Voyager Ziwani Camp (Tsavo West)", "Voyager Beach Resort (Mombasa coast)", "Samburu Intrepids", "Mara Intrepids Camp", "Mara Elatia Camp", "Kizingo Eco Lodge", "Voyager Safari Camp (Resident-rate flyer only, property not otherwise seen in Non-Resident docs on file)"],
+  "source": {
+    "nonResidentFiles": [
+      "2026 CONTRACT RATES/KENYA/ACCOMODATION/HERITAGE HOTELS/2026-Sunworld Safaris-VSC-VBR-Old.pdf (Voyager Ziwani Camp + Voyager Beach Resort)",
+      "2026 CONTRACT RATES/KENYA/ACCOMODATION/HERITAGE HOTELS/2026 Sunworld Safaris -Intrepids-Explorer-Old.pdf (Samburu Intrepids, Mara Intrepids, Mara Elatia, Kizingo Eco Lodge)"
+    ],
+    "residentFiles": [
+      "2026 CONTRACT RATES/KENYA/ACCOMODATION/HERITAGE HOTELS/Heritage - Resident Rate (Jan-Mar + Easter).pdf",
+      "2026 CONTRACT RATES/KENYA/ACCOMODATION/HERITAGE HOTELS/Heritage - Resident Rate (Apr-May).pdf"
+    ],
+    "validity": { "start": "2026-01-02", "end": "2027-01-01" },
+    "contractSigned": "2025-03-27 (Intrepids doc) / 2025-04-09 (Ziwani/Voyager Beach doc)",
+    "note": "Both non-resident PDF filenames contain the word 'Old' - flag that a newer contract version may exist elsewhere and hasn't been located in this folder; use with that caveat."
+  },
+  "confidence": "confirmed-2026-08-06",
+  "currency": "USD (non-resident); KES (resident)",
+  "nonResident": {
+    "voyagerZiwaniCamp": {
+      "region": "Tsavo West",
+      "unit": "per person per day, Full Board, inclusive of VAT and service charge",
+      "dateBands": {
+        "02Jan-31Mar2026": { "single": 158, "twin": 105, "thirdBed": 84 },
+        "01Apr-31May2026": { "single": 126, "twin": 84, "thirdBed": 67 },
+        "03Apr-06Apr2026Easter": { "single": 158, "twin": 105, "thirdBed": 84 },
+        "01Jun-30Jun2026": { "single": 150, "twin": 100, "thirdBed": 80 },
+        "01Jul-31Oct2026": { "single": 203, "twin": 135, "thirdBed": 108 },
+        "01Nov-19Dec2026": { "single": 158, "twin": 105, "thirdBed": 84 },
+        "20Dec2026-01Jan2027": { "single": 198, "twin": 132, "thirdBed": 106 }
+      },
+      "childPolicy": { "ageband": "2-12 years", "2adults1child": "Double rate + 50% of half twin", "1adult1child": "Single rate", "1adult2children": "Full double rate", "2childrenOwnRoom": "75% of double rate", "3childrenOwnRoom": "Full double rate", "1childOwnRoom": "Single rate", "thirdAdult": "20% reduction on half twin" },
+      "halfBoardReduction": { "amount": 3.5, "unit": "USD per person per night" },
+      "verified": true
+    },
+    "voyagerBeachResort": {
+      "region": "Mombasa coast",
+      "unit": "per person per day, All Inclusive (AI), inclusive of VAT and service charge",
+      "roomCategories": {
+        "gardenRoom": {
+          "02Jan-31Mar2026": { "single": 162, "twin": 108, "thirdBed": 86 }, "01Apr-30Jun2026": { "single": 126, "twin": 84, "thirdBed": 67 }, "03Apr-06Apr2026Easter": { "single": 186, "twin": 124, "thirdBed": 99 }, "01Jul-31Oct2026": { "single": 192, "twin": 128, "thirdBed": 102 }, "01Nov-22Dec2026": { "single": 162, "twin": 108, "thirdBed": 86 }, "23Dec2026-01Jan2027": { "single": 348, "twin": 232, "thirdBed": 186 }
+        },
+        "gardenRoomHalfOlympicPoolView": {
+          "02Jan-31Mar2026": { "single": 177, "twin": 118, "thirdBed": 94 }, "01Apr-30Jun2026": { "single": 141, "twin": 94, "thirdBed": 75 }, "03Apr-06Apr2026Easter": { "single": 201, "twin": 134, "thirdBed": 107 }, "01Jul-31Oct2026": { "single": 207, "twin": 138, "thirdBed": 110 }, "01Nov-22Dec2026": { "single": 177, "twin": 118, "thirdBed": 94 }, "23Dec2026-01Jan2027": { "single": 363, "twin": 242, "thirdBed": 194 }
+        },
+        "superiorGardenViewCabin": {
+          "02Jan-31Mar2026": { "single": 186, "twin": 124, "thirdBed": 99 }, "01Apr-30Jun2026": { "single": 150, "twin": 100, "thirdBed": 80 }, "03Apr-06Apr2026Easter": { "single": 210, "twin": 140, "thirdBed": 112 }, "01Jul-31Oct2026": { "single": 216, "twin": 144, "thirdBed": 115 }, "01Nov-22Dec2026": { "single": 186, "twin": 124, "thirdBed": 99 }, "23Dec2026-01Jan2027": { "single": 372, "twin": 248, "thirdBed": 198 }
+        },
+        "superiorSeaViewCabin": {
+          "02Jan-31Mar2026": { "single": 200, "twin": 133, "thirdBed": null }, "01Apr-30Jun2026": { "single": 164, "twin": 109, "thirdBed": null }, "03Apr-06Apr2026Easter": { "single": 224, "twin": 149, "thirdBed": null }, "01Jul-31Oct2026": { "single": 230, "twin": 153, "thirdBed": null }, "01Nov-22Dec2026": { "single": 200, "twin": 133, "thirdBed": null }, "23Dec2026-01Jan2027": { "single": 401, "twin": 267, "thirdBed": null }
+        },
+        "superiorDeluxeCabin": {
+          "02Jan-31Mar2026": { "single": 215, "twin": 143, "thirdBed": 114 }, "01Apr-30Jun2026": { "single": 179, "twin": 119, "thirdBed": 95 }, "03Apr-06Apr2026Easter": { "single": 239, "twin": 159, "thirdBed": 127 }, "01Jul-31Oct2026": { "single": 245, "twin": 163, "thirdBed": 130 }, "01Nov-22Dec2026": { "single": 215, "twin": 143, "thirdBed": 114 }, "23Dec2026-01Jan2027": { "single": 423, "twin": 282, "thirdBed": 226 }
+        },
+        "executiveGardenViewCabin": {
+          "02Jan-31Mar2026": { "single": 230, "twin": 153, "thirdBed": null }, "01Apr-30Jun2026": { "single": 194, "twin": 129, "thirdBed": null }, "03Apr-06Apr2026Easter": { "single": 254, "twin": 169, "thirdBed": null }, "01Jul-31Oct2026": { "single": 260, "twin": 173, "thirdBed": null }, "01Nov-22Dec2026": { "single": 230, "twin": 153, "thirdBed": null }, "23Dec2026-01Jan2027": { "single": 446, "twin": 297, "thirdBed": null }
+        },
+        "executiveSeaViewCabin": {
+          "02Jan-31Mar2026": { "single": 245, "twin": 163, "thirdBed": null }, "01Apr-30Jun2026": { "single": 209, "twin": 139, "thirdBed": null }, "03Apr-06Apr2026Easter": { "single": 269, "twin": 179, "thirdBed": null }, "01Jul-31Oct2026": { "single": 275, "twin": 183, "thirdBed": null }, "01Nov-22Dec2026": { "single": 245, "twin": 163, "thirdBed": null }, "23Dec2026-01Jan2027": { "single": 453, "twin": 302, "thirdBed": null }
+        }
+      },
+      "maxOccupancy": {
+        "gardenRoom": "2 adults in a double, or 3 adults in a triple, or 2 adults + 1 child (below 12) in a double with extra bed",
+        "gardenRoomHalfOlympicPoolView": "2 adults double / 2 adults twin / 1 adult + 1 child",
+        "superiorGardenViewCabin": "2 adults and 2 children (below 12) or 3 adults",
+        "superiorSeaViewCabin": "2 adults or 3 adults in a triple (triple on request only)",
+        "superiorDeluxeCabin": "2 adults and 2 children (below 12) or 3 adults",
+        "executiveSuites": "2 adults"
+      },
+      "childPolicy": {
+        "note": "Materially different structure from Voyager Ziwani's child policy despite being the same operator - do not reuse Ziwani's child rules for Voyager Beach.",
+        "age0to1.99": "Free of charge",
+        "firstChild2to11.99SharingWith2Adults": "Free of charge",
+        "secondChild2to11.99SharingWith2Adults": "50% off half double rate",
+        "child2to11.99SharingWith1Adult": "Child 50% off half double rate; adult pays single rate",
+        "twoChildrenSharingWith1AdultSuperiorGardenViewOnly": "Each child 50% off half double; adult pays single rate",
+        "minTwoChildren2to11.99OwnRoom": "75% of full double rate",
+        "halfBoardReduction": { "amount": 3.0, "unit": "USD per person per night" }
+      },
+      "guestAmenities": "Welcome drink + chilled towel on arrival; turndown service for all; fruit basket + wine for Superior Garden View and up (honeymooners only)",
+      "seaFoodRestaurantDiscount": "20% off menu at Smugglers Cove Restaurant",
+      "circuitDiscount": { "amount": "5%", "condition": "Booking both Voyager Ziwani and Voyager Beach Resort, minimum 3 nights" },
+      "verified": true
+    },
+    "samburuIntrepids": {
+      "region": "Samburu",
+      "unit": "per person per day, Full Board, inclusive of VAT and service charge",
+      "fullBoard": {
+        "high02Jan-31Mar2026": { "twin": 130, "single": 195 }, "low01Apr-30Jun2026": { "twin": 115, "single": 173 }, "peak01Jul-31Oct2026": { "twin": 160, "single": 240 }, "high01Nov-22Dec2026": { "twin": 130, "single": 195 }, "festive23Dec2026-01Jan2027": { "twin": 140, "single": 210 }
+      },
+      "package": {
+        "high02Jan-31Mar2026": { "twin": 248, "single": 371 }, "low01Apr-30Jun2026": { "twin": 168, "single": 252 }, "peak01Jul-31Oct2026": { "twin": 424, "single": 636 }, "high01Nov-22Dec2026": { "twin": 248, "single": 371 }, "festive23Dec2026-01Jan2027": { "twin": 381, "single": 572 }
+      },
+      "familyTentNote": "Charged as two doubles regardless of occupancy",
+      "verified": true
+    },
+    "greatRiftValleyLodgeTwinvilla": {
+      "region": "Not stated in this doc section (Great Rift Valley Lodge, listed alongside Samburu/Mara properties in the same table)",
+      "unit": "per person per day, Full Board",
+      "rates": {
+        "high02Jan-31Mar2026": { "twin": 130, "single": 208 }, "low01Apr-30Jun2026": { "twin": 113, "single": 181 }, "peak01Jul-31Oct2026": { "twin": 160, "single": 256 }, "high01Nov-22Dec2026": { "twin": 130, "single": 208 }, "festive23Dec2026-01Jan2027": { "twin": 150, "single": 230 }
+      },
+      "verified": true
+    },
+    "greatRiftValleyLodgeJuniorSuite": {
+      "unit": "per person per day, Full Board",
+      "rates": {
+        "high02Jan-31Mar2026": { "twin": 240, "single": 384 }, "low01Apr-30Jun2026": { "twin": 223, "single": 357 }, "peak01Jul-31Oct2026": { "twin": 270, "single": 432 }, "high01Nov-22Dec2026": { "twin": 240, "single": 384 }, "festive23Dec2026-01Jan2027": { "twin": 260, "single": 389 }
+      },
+      "verified": true
+    },
+    "kizingoEcoLodge": {
+      "region": "Not stated in this doc section",
+      "unit": "per person per day, Full Board",
+      "rates": {
+        "high02Jan-31Mar2026": { "twin": 157, "single": 236, "thirdBed": 126 }, "low01Apr-30Apr2026": { "twin": 134, "single": 201, "thirdBed": 107 }, "closed01May-30Jun2026": "Closed for renovations", "peak01Jul-31Oct2026": { "twin": 150, "single": 225, "thirdBed": 120 }, "high01Nov-22Dec2026": { "twin": 157, "single": 236, "thirdBed": 126 }, "festive23Dec2026-01Jan2027": { "twin": 166, "single": 249, "thirdBed": 133 }
+      },
+      "maxOccupancy": "3 pax per room",
+      "verified": true
+    },
+    "maraIntrepidsCamp": {
+      "region": "Maasai Mara",
+      "unit": "per person per day, Package rate",
+      "rates": {
+        "high02Jan-31Mar2026": { "twin": 345, "single": 552 }, "low01Apr-31May2026": { "twin": 230, "single": 368 }, "high01Jun-30Jun2026": { "twin": 345, "single": 552 }, "peak01Jul-14Sep2026": { "twin": 610, "single": 976 }, "shoulder15Sep-31Oct2026": { "twin": 549, "single": 878 }, "high01Nov-22Dec2026": { "twin": 345, "single": 552 }, "festive23Dec2026-01Jan2027": { "twin": 549, "single": 878 }
+      },
+      "familyTentNote": "Charged as two doubles regardless of occupancy",
+      "verified": true
+    },
+    "maraElatiaCamp": {
+      "region": "Maasai Mara",
+      "unit": "per person per day",
+      "fullBoard": {
+        "high02Jan-31Mar2026": { "twin": 221, "single": 353 }, "low01Apr-31May2026": { "twin": 221, "single": 353 }, "peak01Jun-15Sep2026": { "twin": 256, "single": 410 }, "high16Sep-22Dec2026": { "twin": 221, "single": 353 }, "festive23Dec2026-01Jan2027": { "twin": 256, "single": 410 }
+      },
+      "package": {
+        "high02Jan-31Mar2026": { "twin": 309, "single": 494 }, "low01Apr-31May2026": { "twin": 309, "single": 494 }, "peak01Jun-15Sep2026": { "twin": 355, "single": 568 }, "high16Sep-22Dec2026": { "twin": 309, "single": 494 }, "festive23Dec2026-01Jan2027": { "twin": 355, "single": 568 }
+      },
+      "familyTentNote": "Charged as two doubles regardless of occupancy",
+      "verified": true
+    },
+    "sharedChildPolicySamburuMaraGRVL": {
+      "note": "This child policy block applies to Samburu Intrepids, Mara Intrepids, Mara Elatia and Great Rift Valley Lodge (all on the second Heritage doc) - NOT to Voyager Ziwani/Voyager Beach, which have their own distinct policies recorded above despite an almost identical-looking clause for Ziwani.",
+      "ageband": "2-12 years",
+      "2adults1child": "Double rate + 50% of half twin", "1adult1child": "Single rate", "1adult2children": "Full double rate", "2childrenOwnRoom": "75% of double rate", "3childrenOwnRoom": "Full double rate", "1childOwnRoom": "Single rate", "thirdAdult": "20% reduction on half twin",
+      "halfBoardReduction": { "marInterpidsSamburuIntrepidsElatia": 4.0, "greatRiftValleyLodge": 3.5, "unit": "USD per person per night" }
+    },
+    "unitClarification": "Above rates are per person per day inclusive of VAT and service charge. During Easter, High Season rates apply."
+  },
+  "resident": {
+    "note": "Two separate KES resident-rate flyers, covering a DIFFERENT set of properties than the non-resident doc's full list — only 4 properties appear here: Mara Intrepids, Mara Elatia, Samburu Intrepids, and 'Voyager Safari Camp' (this exact name does not appear in the Non-Resident contract docs, which instead list 'Voyager Ziwani Camp' and 'Voyager Beach Resort' — could be the same property under a shortened/generic name, or a genuinely different Voyager-branded camp; NOT verified as the same property, flag before using).",
+    "currency": "KES",
+    "janToMarPlusEaster": {
+      "validity": "3 Jan - 31 Mar 2026 + Easter",
+      "fullBoardAccommodation": {
+        "maraIntrepidsCamp": { "single": 35415, "double": 47220, "triple": 66110 },
+        "maraElatiaCamp": { "single": 22500, "double": 30000, "triple": 42000 },
+        "samburuIntrepidsCamp": { "single": 24165, "double": 32220, "triple": 45110 },
+        "voyagerSafariCamp": { "single": 22500, "double": 30000, "triple": 42000 }
+      },
+      "flyingPackage": {
+        "unit": "2 nights base / extra night / SRS (single room supplement, presumably)",
+        "maraIntrepidsCamp": { "twoNights": 102385, "extraNight": 22000, "srs": 11000 },
+        "maraElatiaCamp": { "twoNights": 95500, "extraNight": 26750, "srs": 13375 },
+        "samburuIntrepidsCamp": { "twoNights": 104500, "extraNight": 20000, "srs": 10000 },
+        "voyagerSafariCamp": { "twoNights": 87300, "extraNight": 15625, "srs": 7815 }
+      },
+      "verified": true
+    },
+    "aprToMayExclEaster": {
+      "validity": "Apr - May 2026 (excluding Easter)",
+      "fullBoardAccommodation": {
+        "maraIntrepidsCamp": { "single": 28255, "double": 37670, "triple": 52740 },
+        "maraElatiaCamp": { "single": 19500, "double": 26000, "triple": 36400 },
+        "samburuIntrepidsCamp": { "single": 21525, "double": 28700, "triple": 40180 },
+        "voyagerSafariCamp": { "single": 19500, "double": 26000, "triple": 36400 }
+      },
+      "flyingPackage": {
+        "maraIntrepidsCamp": { "twoNights": 99970, "extraNight": 20720, "srs": 10360 },
+        "maraElatiaCamp": { "twoNights": 96735, "extraNight": 19000, "srs": 9500 },
+        "samburuIntrepidsCamp": { "twoNights": 100935, "extraNight": 18125, "srs": 9065 },
+        "voyagerSafariCamp": { "twoNights": 87300, "extraNight": 15625, "srs": 7815 }
+      },
+      "verified": true
+    },
+    "inclusions": { "fullBoard": "Breakfast, Lunch, Dinner", "flyingPackage": "Full Board + return Wilson flights (AM/PM) + 3 game drives/day (Mara Intrepids) or 2/day (Samburu Intrepids, Mara Elatia) + return airstrip transfers" },
+    "landingAirstrips": { "maraIntrepidsCamp": "Ol Kiombo", "maraElatiaCamp": "Kichwa Tembo", "samburuIntrepidsCamp": "Kalama", "voyagerSafariCampOrZiwani": "Ziwani Airstrip" },
+    "childPolicy": {
+      "ageDefinitions": "12+ = adults, 3-11 = children, 0-2 = infants",
+      "2adults1child": "Double rate + 50% of half double rate", "2adults2children": "Double rate + 50% of half double per child", "1adult1child": "Single rate", "1adult2children": "Double rate", "2childrenOwnRoom": "75% of double rate", "3childrenOwnRoom": "Double rate", "1childOwnRoom": "Single rate",
+      "notApplicableToFlyingPackage": true
+    },
+    "voyagerSafariCampFlyingPackageCondition": "Minimum 4 guests per booking, minimum 2-night stay, subject to confirmation."
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftotext -layout. NOT Soroi properties. Kempinski Hotels in Kenya operates 2 distinct properties, each with its own separate Memorandum of Agreement PDF: Olare Mara Kempinski (Maasai Mara, Olare Motorogi Conservancy) and Villa Rosa Kempinski (Nairobi city hotel). A 3rd file 'Olare Mara Kempinski- Stay 3 Pay 2 offer.pdf' is image-only (pdftotext returned only 1 byte) - skipped, promotional flyer, not re-rendered given it's a stackable-offer detail already summarized in the main contract's 'Offers' section (3 Nights Offer: pay 3 nights, implying a 4th night discount context - exact 'stay 3 pay 2' mechanic not independently confirmed from this specific flyer).",
+  "operator": "Kempinski Hotels in Kenya",
+  "properties": ["Olare Mara Kempinski (Maasai Mara)", "Villa Rosa Kempinski (Nairobi)"],
+  "source": {
+    "olareMaraFile": "2026 CONTRACT RATES/KENYA/ACCOMODATION/Kempinski/2026 OLARE MARA KEMPINSKI KENYA CONTRACT RATES.pdf (signed 2025-11-28)",
+    "villaRosaFile": "2026 CONTRACT RATES/KENYA/ACCOMODATION/Kempinski/2026 VILLA ROSA KEMPINSKI KENYA CONTRACT RATES - Copy - Copy - Copy.pdf (signed 2025-10-01)",
+    "skippedFile": "Olare Mara Kempinski- Stay 3 Pay 2 offer.pdf - image-only, not re-rendered",
+    "tier": "2026 F.I.T. (Free Independent Traveller) contracted Tour Operator Rates, net non-commissionable"
+  },
+  "confidence": "confirmed-2026-08-06",
+  "currency": "USD",
+  "olareMaraKempinski": {
+    "region": "Olare Motorogi Conservancy, Maasai Mara",
+    "unit": "per person per night unless noted, All Inclusive",
+    "minimumAge": 8,
+    "seasons": {
+      "shoulder": { "dateRanges": ["06 Jan - 28 Feb 2026", "16 Oct - 18 Dec 2026"], "deluxeTentPerPersonSharing": 670, "single": 1115, "extraBedPerNight": 553, "honeymoonTentSupplement": 210 },
+      "low": { "dateRanges": ["01 Mar - 31 May 2026"], "deluxeTentPerPersonSharing": 608, "single": 910, "extraBedPerNight": 452, "honeymoonTentSupplement": 210 },
+      "high": { "dateRanges": ["01 Jun - 15 Oct 2026", "19 Dec 2026 - 05 Jan 2027"], "minStay": 2, "deluxeTentPerPersonSharing": 1065, "single": 1598, "extraBedPerNight": 746, "honeymoonTentSupplement": 210 }
+    },
+    "exclusiveUseOfCamp7to12Tents": { "high": 28056, "shoulder": 20852, "low": 16776, "unit": "USD" },
+    "inclusions": ["Return airstrip transfers", "Full board", "Alcoholic and non-alcoholic drinks", "Day and evening game drives", "Guided bush walks", "Bush meals", "Return transfers to cultural visits", "Laundry", "Government taxes"],
+    "exclusions": {
+      "olareMotorogiConservancyFee": { "adult": 130, "child8to12": 65, "unit": "USD per person per night, subject to change" },
+      "premiumDrinks": true, "culturalVisits": { "amount": 40, "unit": "per person" }, "exclusiveVehicleMax6guests": { "amount": 350, "unit": "per vehicle" }, "departureDayExtraLunch": { "amount": 40, "unit": "per person" }
+    },
+    "childPolicy": { "under8": "Not encouraged at the camp", "age8to12SharingWith2Adults": "50% of per-adult sharing rate", "age8to12OwnTent2Children": "75% of adult sharing rate each", "age8to12SharingWith1Adult": "Adult pays single rate, child pays 50% of adult sharing rate", "age13Plus": "Full adult rate" },
+    "honeymoonAnniversary": "Flowers, fruit basket, bottle of house wine (proof of authenticity required)",
+    "payment": { "lowShoulderSeason": "Full payment 14 days prior to arrival", "highSeason": "Full payment 60 days prior to arrival", "deposit": "20% within 7 days of invoice" },
+    "cancellation": { "shoulderLow": { "0to7DaysOrNoShow": "100%", "8to14days": "35%", "15to35days": "20%" }, "high": { "0to60DaysOrNoShow": "100%", "61to90days": "35%" } },
+    "offers": {
+      "highSeasonOnly": { "circuitDiscount": "Book 3 paid nights at Olare Mara + get 10% off Villa Rosa Kempinski contract rates", "migrationOffer": "3 paid nights = 1 free full-day game drive (excl. park entry fees)" },
+      "shoulderLowSeasonOnly": { "honeymoonersOffer": "Bride stays free, groom pays per-person-sharing rate (conservancy fees still apply)", "lastMinute": "Book/pay 7 days prior to arrival = 5% off contract, non-refundable", "photographersSpecial": "Min 6 nights = 15% off contract + exclusive vehicle use", "threeNightsOffer": "Book/pay 3 nights = 10% off Villa Rosa Kempinski contract rate" },
+      "note": "Offers non-commissionable and not combinable with each other."
+    },
+    "resaleMarkupRequirement": "Contract Partner must resell at a markup of at least 20% above the net FIT rate.",
+    "verified": true
+  },
+  "villaRosaKempinskiNairobi": {
+    "region": "Nairobi (city hotel)",
+    "unit": "per room per night, Bed & Breakfast",
+    "minimumAge": "18, unless minors accompanied by a parent/legal guardian",
+    "validity": { "start": "2026-01-01", "end": "2026-12-31" },
+    "rates": {
+      "superiorRoom": { "single": 220, "double": 250 }, "deluxeRoom": { "single": 250, "double": 280 }, "balconyDeluxeRoom": { "single": 280, "double": 310 }, "executiveRoom": { "single": 310, "double": 340 }, "executiveBalconyRoom": { "single": 340, "double": 370 },
+      "businessSuite": 600, "premiumSuite1Bedroom": 2000, "premiumSuite2Bedroom": 4500, "presidentialSuite4Bedroom": 15000,
+      "note": "Suites priced single/double at same rate.",
+      "verified": true
+    },
+    "dayUsePolicy": { "rate": "80% of room rate", "validUntil": "18:00, full rate thereafter" },
+    "childPolicy": { "under6SharingWithAdult": "Free (cot/extra bed free)", "age6to12SharingWithAdult": "USD 20 supplement per child per night", "age12AndUnderOwnRoom": "75% of double room rate (max 3 children)", "extraBedAbove12": "50% of per-person sharing rate", "breakfastUnder6": "Complimentary" },
+    "childAmenities": "Free: bathrobes/slippers, bedtime milk, no-tear shampoo/toiletries, welcome gift. At charge: children's menu, babysitting.",
+    "mealSupplements": { "breakfast": 30, "lunch": 45, "dinner": 50, "unit": "USD per person, exclusive of drinks" },
+    "jkiaTransfer": { "saloonCarOneWay": 60, "limousineOneWay": 90, "unit": "USD per person per way" },
+    "onRequest": { "groups10RoomsPlus": "Rates on request", "agentFamRate": { "superiorSingle": 170, "superiorDouble": 200 }, "mediaFamRate": { "superiorSingle": 210 } },
+    "honeymoonAnniversary": "Upgrade to next room category (subject to availability) + flowers, card, wine",
+    "payment": { "deposit": "20% within 7 days of invoice", "fullPayment": "14 days prior to arrival unless credit facility in place" },
+    "cancellation": { "7daysPrior": "35%", "24hoursPrior": "100%", "noShow": "100% of first night" },
+    "resaleMarkupRequirement": "Contract Partner must resell at a markup of at least 20% above the net FIT rate.",
+    "verified": true
+  },
+  "sharedContractTerms": { "note": "Both properties share largely identical boilerplate (confidentiality, marketing approval, online rate publishing restrictions, double-booking handling, turnaway policy) - not duplicated here as it's not itinerary-relevant." }
+}

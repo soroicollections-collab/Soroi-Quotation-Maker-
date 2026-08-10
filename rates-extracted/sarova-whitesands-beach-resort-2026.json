@@ -1,0 +1,34 @@
+{
+  "property": "Sarova Whitesands Beach Resort & Spa",
+  "operator": "Sarova Hotels & Resorts",
+  "region": "Mombasa (coast)",
+  "isSoroiProperty": false,
+  "sourceFiles": ["2026 CONTRACT RATES/KENYA/ACCOMODATION/SAROVA/Sarova - Sunworld Safaris 2026.pdf"],
+  "notes": ["Sibling property to Sarova Stanley - see sarova-stanley-2026.json for full shared group terms, but this property has its OWN distinct cancellation policy and season structure - see below.", "Only property in the Sarova set with a Festive-season 'ALL DAY DINING' meal plan tier."],
+  "currency": "USD",
+  "mealPlan": "Half Board (base); All Inclusive supplement available",
+  "gitRates_garden FacingRoom_perNight": {
+    "highSeason_04Jan_31Mar_Easter03to06Apr_01Jul_31Aug2026": { "single": 226, "twin": 291, "thirdBedSupplement": 87, "studioSuite": 441, "oneBedroomSuite": 641, "presidentialSuite": 1241 },
+    "normalSeason_01to02Apr_07Apr_30Jun_01Sep_22Dec2026": { "single": 184, "twin": 249, "thirdBedSupplement": 75, "studioSuite": 399, "oneBedroomSuite": 599, "presidentialSuite": 1199 },
+    "festive_23Dec2026_03Jan2027": { "single": 525, "twin": 625, "thirdBedSupplement": 188, "studioSuite": 775, "oneBedroomSuite": 975, "presidentialSuite": 1575, "mealPlan": "All Day Dining" },
+    "verified": true
+  },
+  "roomMealSupplements": {
+    "poolFacing": "US$20 added to Garden Facing rate",
+    "seaFacing": "US$40 added to Garden Facing rate",
+    "premierSeaFacing": "US$60 added to Garden Facing rate",
+    "premierSeaFacingFamilyRoom4pax": "US$280 added to Garden Facing Double rate",
+    "fullBoardSupplement": "US$25pp added to Half Board rate",
+    "allInclusiveSupplement": "US$45 adult / US$23 child under 12, added to Full Board rate"
+  },
+  "groupRestaurantCommission": "10% commission on food for groups of 7+ pax at Lido Seafood Grill",
+  "agentFamTripRate": { "raw": "High season: US$105 single, US$130 double. Normal season: US$95 single, US$115 double. Half Board.", "verified": true },
+  "casualMealRates": { "breakfast": 30, "lunch": 35, "dinner": 40, "standardPackedLunch": 25, "premiumPackedLunch": 30 },
+  "minStay": "3 nights",
+  "policies": {
+    "checkIn": "14:00", "checkOut": "11:00",
+    "cancellation": "Normal season: 14-7 days: 15% of rate/bed-night; 7-2 days: 33%; within 48 hours: 100%. High season: 35-21 days: 15%; 21-14 days: 33%; within 14 days: 100%.",
+    "demiPensionReduction": "US$8 per person (applies at Whitesands HS/PS/LS/SS and other lodges)",
+    "sharedGroupTermsNote": "Group/circuit discounts, child policy, single room policy, tour leader policy identical to Sarova Stanley - see sarova-stanley-2026.json."
+  }
+}

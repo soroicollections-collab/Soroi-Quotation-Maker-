@@ -1,0 +1,61 @@
+{
+  "$note": "Extracted 6 Aug 2026 via direct visual read of the source PDF — image-only (pdftotext returned 0 lines for the single page, confirmed via pdfinfo). Single clean page, fully legible, high confidence despite not being machine-text-extracted.",
+  "property": "Warm Sea Sand Villa Diani",
+  "region": "Diani Beach, Kenya Coast",
+  "tier": "Only rate tier/file provided for this property",
+  "residency": "Not distinguished as Resident/Non-Resident on this document — currency is USD throughout except a passing mention that 'Payment by residents are accepted in Kenyan Shilling'",
+  "source": {
+    "file": "2026 CONTRACT RATES/KENYA/BEACH ACCOMODATION/WARM SEA SAND VILLA DIANI/Warm Sea Sand Villa Diani RATES 2025.pdf",
+    "pdfPageIndex": 0,
+    "totalPages": 1,
+    "extractionMethod": "Image-only PDF — read visually via the PDF-rendering tool.",
+    "validity": { "note": "See yearValidityFlag below." }
+  },
+  "yearValidityFlag": {
+    "finding": "AMBIGUOUS YEAR MISMATCH. The document is titled plainly '2025 RATES' and every date range in its table (e.g. '1st Jan - 14th April', '19th Dec - 5th Jan') is given WITHOUT any year label at all — there is no '2025' or '2026' printed next to any individual date range, only the single top-level '2025 RATES' heading. This is a milder version of the Pristine Mara Bay / Travellers Beach year-mismatch pattern: rather than a rate card that explicitly expires partway through 2026, this one simply never states a 2026 figure at all, and it is NOT SAFE to assume the 2025 pricing structure automatically carries over unchanged into 2026 (villas/small self-catering operators often do reprice annually without reissuing a full new PDF). Treat every figure below as UNVERIFIED for any 2026 date until confirmed directly with the villa or Sunworld — do not quote it as current 2026 pricing without that confirmation.",
+    "recommendation": "Contact the property/Sunworld to confirm whether the 2025 rate table shown here is still in effect for 2026, or whether an updated 2026 rate card exists elsewhere."
+  },
+  "confidence": "confirmed-visual-read-2026-08-06-BUT-YEAR-UNCONFIRMED",
+  "structuralFindings": [
+    "Rates are per VILLA per night, scaled by pax count (2/4/6/8 pax) — not per room or per person. This is a small self-catering villa operation, not a hotel with room categories.",
+    "Base meal plan is SELF-CATERING — no meals included at all. Breakfast is an optional paid add-on ($15/adult, $8/child), and no Half Board/Full Board/All-Inclusive option exists.",
+    "Property is FULLY CLOSED during May every year ('MAY WE ARE CLOSED') — a hard exclusion, not just a slow season.",
+    "Five pricing periods, each with its own MINIMUM NIGHTS requirement: most periods require 3 nights minimum, but 19 Dec-5 Jan (Festive) requires 5 nights minimum.",
+    "The 15-31 April period is priced FLAT at $595 regardless of pax count (2/4/6/8 all identical) — unlike every other period, where price scales up with pax count. This looks like a short, deliberately simplified 'Easter-adjacent' pricing window, but flagged as a genuine structural anomaly rather than assumed to be an extraction error, since it was clearly printed that way across all four pax columns.",
+    "1 Dec-18 Dec and 19 Dec-5 Jan are two separate windows with very different pricing (Dec 1-18 scales $525-$850 by pax; Dec 19-Jan 5 Festive is flat $1,250 regardless of pax) — the Festive flat rate does not scale with pax count either.",
+    "An 'Additional cottage for 2 pax' can be added for a flat $100 (presumably per stay or per night — not specified which)."
+  ],
+  "seasons": {
+    "window1": { "dateRange": "1 Jan - 14 Apr", "minimumStay": "3 nights" },
+    "window2": { "dateRange": "15 Apr - 31 Apr", "minimumStay": "3 nights", "note": "Flat rate regardless of pax count — see structuralFindings. (Date printed as '31st April' in source, which doesn't exist on the calendar — likely means through end of April; transcribed exactly as printed rather than silently corrected to '30th'.)" },
+    "closed": { "dateRange": "1 - 31 May", "note": "Property fully closed." },
+    "window3": { "dateRange": "1 Jun - 30 Nov", "minimumStay": "3 nights" },
+    "window4": { "dateRange": "1 - 18 Dec", "minimumStay": "3 nights" },
+    "window5_festive": { "dateRange": "19 Dec - 5 Jan", "minimumStay": "5 nights", "note": "Flat rate regardless of pax count." }
+  },
+  "rates": {
+    "currency": "USD",
+    "unit": "per villa per night",
+    "verified": true,
+    "window1": { "2pax": 325, "4pax": 395, "6pax": 425, "8pax": 650 },
+    "window2": { "2pax": 595, "4pax": 595, "6pax": 595, "8pax": 595 },
+    "window3": { "2pax": 325, "4pax": 395, "6pax": 425, "8pax": 650 },
+    "window4": { "2pax": 525, "4pax": 625, "6pax": 725, "8pax": 850 },
+    "window5_festive": { "2pax": 1250, "4pax": 1250, "6pax": 1250, "8pax": 1250 }
+  },
+  "additionalCottage": { "capacity": "2 pax", "rate": 100, "currency": "USD", "confidenceNote": "[Unverified unit] Not specified whether this $100 is per night or a one-time/per-stay fee — source only says 'Additional cottage for 2 pax 100 USD'." },
+  "mealPlan": {
+    "base": "Self-catering (no meals included)",
+    "breakfastOnRequest": { "adult": 15, "child": 8, "unit": "USD per person, per request" }
+  },
+  "cancellationPolicy": {
+    "standardDeposit": "30% required to confirm any booking, balance paid upon arrival",
+    "christmasNewYearEaster": "50% deposit upon booking, balance paid 1 month before arrival",
+    "residentPayment": "Accepted in Kenyan Shilling for residents",
+    "cancellation7DaysOrMoreBeforeArrival": "A 2-year voucher issued, to be spent according to villa availability and agreed with owner",
+    "cancellation5DaysOrLessBeforeArrival": "100% of booking charged",
+    "noShow": "100% charged if guest doesn't show and doesn't communicate"
+  },
+  "checkInOut": { "checkIn": "2:30 PM (early check-in upon request)", "checkOut": "10:00 AM" },
+  "idRequirement": "A copy of ID/Passport must be produced on arrival or sent online prior to check-in."
+}

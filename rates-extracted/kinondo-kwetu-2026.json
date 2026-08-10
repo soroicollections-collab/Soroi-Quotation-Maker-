@@ -1,0 +1,101 @@
+{
+  "$note": "Fresh extraction, 6 Aug 2026, read directly from source PDF text (2-page, single-property document, layout-preserving pdftotext, no adjacent-property risk). '.msg' email file in the same folder (FW_ 2026 rates 20%.msg) was explicitly skipped per task brief (email file, not a rate document).",
+  "property": "Kinondo Kwetu",
+  "region": "Galu Beach, Diani area",
+  "tier": "Contract Rates 2026 — this file is titled '2026 20% USD NET Rates Kinondo Kwetu' and the page header reads 'Kinondo Kwetu Contract Rates 2026' with a prominent 'ADD 20%' annotation in the top-right corner. Both Rack Rates and Contract Rates columns are shown side by side for every room/season row; Contract is consistently ~20% below Rack (e.g. Cottages Mid Season per-person-sharing: Rack $540 vs Contract $430, a 20.4% gap) — consistent with the filename's '20% NET' framing. The 'ADD 20%' header annotation's exact meaning is NOT explained anywhere on the page — it could mean 'add 20% commission on top of the Contract/Net figure to reach a sell price' or it could just be restating the discount depth. Recorded as-is; do not assume which interpretation is correct without confirming with Sunworld/the property.",
+  "residency": "Not stated — no Resident/Non-Resident split.",
+  "skipped": {
+    "file": "FW_ 2026 rates 20%.msg",
+    "reason": "Email file (.msg), not a rate document, skipped per task brief."
+  },
+  "source": {
+    "file": "2026 CONTRACT RATES/KENYA/BEACH ACCOMODATION/KINONDO KWETU/2026 20% USD NET Rates Kinondo Kwetu.pdf",
+    "pages": 2
+  },
+  "confidence": "confirmed-2026-08-06",
+  "extractionMethod": { "note": "Single-property, 2-page PDF read directly with pdftotext -layout; no adjacent-property risk." },
+  "structuralFindings": [
+    "Property is structured into four distinct booking units, each with its own rate table: (1) 'Cottages (1 to 4) & rooms at Mama Taa Villa', (2) 'Cottage 5, Borelius room, Honeymoon (Andersson) Room & Alex' House' (priced per person, presumably for individual rooms within these units, separate from Alex House's own exclusive-villa pricing), (3) 'Main House (Mama Tina) — Children & Singles only' (no adult-sharing rate; Single Room/Use and child rates only), and (4) Alex House as a private 4-bedroom villa (min 4 paying guests, max 8 pax) — referenced in a footnote but with NO explicit per-pax or per-villa rate printed on the page for Alex House itself as an exclusive unit (only its per-person room rate appears bundled in table 2's row). Flag this gap if Alex House exclusive-use pricing is requested — not found on this page.",
+    "Base plan is All-Inclusive (per the 'Included Items' list: soft drinks, beer, house wines, spirits, activities) — one of the more inclusive base plans seen in this batch.",
+    "Three named seasons: Mid (2 Mar-17 Oct & 3 Nov-18 Dec), High (7 Jan-1 Mar & 18 Oct-2 Nov), Christmas (19 Dec-10 Jan) — a Mid/High/Christmas trio rather than Peak/Shoulder/Green.",
+    "Two age-banded child rates (12-17 and 6-11) plus a distinct '3rd Child in third bed/extra bed' rate — three child pricing tiers, more granular than most properties in this batch. Children under 6 sharing are free of charge (stated in Additional Information, not in the main table).",
+    "'Kinondo Kwetu Specials' offer a stay-X-pay-Y discount ladder (5-for-4 Mid season, 6-for-5 during 21 Jul-31 Aug, 7-for-6 High season) plus a 50% Brides Discount for honeymoon couples (Mid/High season only, one person per couple) — these specials cannot combine with each other or any other discount, and are NOT valid during Christmas season.",
+    "Extensive Excluded Items list (non-commissionable) includes specific named excursions (Marine Park & Paradise Lost, PADI diving, deep sea fishing, cultural visits, massage, waterskiing, horse riding, sailing, Shimba Hills safari) and separately-priced airstrip transfers (Ukunda one-way $50/vehicle max pax; Mombasa Moi Intl one-way $135/vehicle max 4 pax) — these transfer fees are explicitly marked non-commissionable.",
+    "Property closes for the whole of May and approximately 21 June (June dates flexible/demand-based) — a confirmed closure window, not a gap in the source."
+  ],
+  "seasons": {
+    "mid": { "dateRanges": ["2 Mar - 17 Oct 2026", "3 Nov - 18 Dec 2026"] },
+    "high": { "dateRanges": ["7 Jan - 1 Mar 2026", "18 Oct - 2 Nov 2026"] },
+    "christmas": { "dateRange": "19 Dec 2026 - 10 Jan 2027" }
+  },
+  "rates": {
+    "currency": "USD",
+    "unit": "per person sharing per night, All-Inclusive (unless noted)",
+    "cottages1to4AndMamaTaaVilla": {
+      "mid": {
+        "perPersonSharing": { "rack": 540, "contract": 430 },
+        "childSharing12to17": { "rack": 380, "contract": 305 },
+        "childSharing6to11": { "rack": 325, "contract": 260 },
+        "thirdChildExtraBed": { "rack": 250, "contract": 200 },
+        "singleRoomUse": { "rack": 645, "contract": 515 }
+      },
+      "high": {
+        "perPersonSharing": { "rack": 600, "contract": 480 },
+        "childSharing12to17": { "rack": 410, "contract": 330 },
+        "childSharing6to11": { "rack": 370, "contract": 295 },
+        "thirdChildExtraBed": { "rack": 275, "contract": 220 },
+        "singleRoomUse": { "rack": 680, "contract": 545 }
+      },
+      "christmas": {
+        "perPersonSharing": { "rack": 640, "contract": 510 },
+        "childSharing12to17": { "rack": 455, "contract": 365 },
+        "childSharing6to11": { "rack": 405, "contract": 325 },
+        "thirdChildExtraBed": { "rack": 300, "contract": 240 },
+        "singleRoomUse": { "rack": 735, "contract": 590 }
+      }
+    },
+    "cottage5BoreliusHoneymoonAndersson": {
+      "mid": { "perPersonSharing": { "rack": 590, "contract": 470 }, "childSharing12to17": { "rack": 380, "contract": 305 }, "childSharing6to11": { "rack": 325, "contract": 260 }, "thirdChildExtraBed": null, "singleRoomUse": null },
+      "high": { "perPersonSharing": { "rack": 650, "contract": 520 }, "childSharing12to17": { "rack": 420, "contract": 335 }, "childSharing6to11": { "rack": 370, "contract": 295 }, "thirdChildExtraBed": null, "singleRoomUse": null },
+      "christmas": { "perPersonSharing": { "rack": 695, "contract": 555 }, "childSharing12to17": { "rack": 455, "contract": 365 }, "childSharing6to11": { "rack": 370, "contract": 295 }, "thirdChildExtraBed": null, "singleRoomUse": null },
+      "confidenceNote": "'N/A' recorded as null for thirdChildExtraBed and singleRoomUse — not offered for this unit per source."
+    },
+    "mainHouseMamaTinaChildrenAndSinglesOnly": {
+      "note": "No adult-sharing rate exists for this unit — Singles and children only, per the source's own section title.",
+      "mid": { "singleRoomUse": { "rack": 295, "contract": 235 }, "childSharing12to17": { "rack": 220, "contract": 175 }, "childSharing6to11": { "rack": 220, "contract": 175 } },
+      "high": { "singleRoomUse": { "rack": 345, "contract": 275 }, "childSharing12to17": { "rack": 270, "contract": 215 }, "childSharing6to11": { "rack": 270, "contract": 215 } },
+      "christmas": { "singleRoomUse": { "rack": 375, "contract": 300 }, "childSharing12to17": { "rack": 320, "contract": 255 }, "childSharing6to11": { "rack": 320, "contract": 255 } }
+    },
+    "alexHouse": {
+      "description": "Private 4-bedroom villa with private pool, sleeps max 8 pax. Minimum 4 paying guests (2 adults + 2 children); max 4 adults + 4 children.",
+      "confidenceNote": "[Unverified/Gap] No explicit per-villa or per-pax exclusive-use rate is printed on this page for Alex House as a standalone booking — only referenced in a footnote alongside the per-person Cottage 5/Borelius/Honeymoon table. If a client requests Alex House exclusive use, this figure needs a fresh confirmation with the property/Sunworld — do not assume it equals the Cottage 5 per-person rate multiplied by occupancy."
+    }
+  },
+  "verified": true,
+  "specials": {
+    "stayPayDiscounts": [
+      { "offer": "Stay 5 nights, pay for 4", "validity": "Mid season only, excluding 21 Jul-31 Aug" },
+      { "offer": "Stay 6 nights, pay for 5", "validity": "21 Jul - 31 Aug only" },
+      { "offer": "Stay 7 nights, pay for 6", "validity": "High season only, excluding 18 Oct-2 Nov" }
+    ],
+    "bridesDiscount": "50% discount for the Bride only (1 person per honeymoon couple), Mid & High season only, not combinable with other discounts, not valid at Christmas.",
+    "combinability": "Kinondo Kwetu discounts/specials cannot be combined with each other or any other discount. Not valid during Christmas season."
+  },
+  "childPolicy": {
+    "under6Sharing": "free of charge",
+    "age6to11Sharing": "see childSharing6to11 rate above",
+    "age12to17Sharing": "see childSharing12to17 rate above",
+    "cottage5AdditionalChild": "charged the Child Sharing rate, NOT the third-bed/extra-bed rate — an explicit exception noted on the source."
+  },
+  "inclusions": ["All-inclusive accommodation (soft drinks, beer, house wines, spirits)", "Yoga platform, gym, tennis (racket & balls)", "Wood fired sauna", "Canoeing/kayaking", "Snorkeling equipment", "Wireless internet", "Limited laundry"],
+  "exclusionsNonCommissionable": ["Champagne, special request luxury spirits", "Motor boat excursions", "Marine Park & Paradise Lost excursions", "PADI diving activities", "Deep sea fishing", "Cultural visits/shopping trips to Ukunda & Mombasa", "Massage & beauty treatments", "Waterskiing", "Horse riding", "Sailing", "Safari to Shimba Hills", "Extra lunch ($35pp)"],
+  "transfers": {
+    "ukundaAirportOneWay": { "amount": 50, "unit": "per vehicle (max pax)", "commissionable": false },
+    "mombasaMoiIntlOneWay": { "amount": 135, "unit": "per vehicle, max 4 pax", "commissionable": false }
+  },
+  "minimumStay": { "midHighSeason": "2 nights", "christmasSeason": "4 nights" },
+  "checkInOut": "Check-in 12:00 / Check-out 10:00",
+  "closedDates": "Closed all of May and approx. 21 June (June dates flexible, demand-dependent)",
+  "paymentDetails": "Cheques payable to COROMANDELE RESORT LTD",
+  "confidenceNote": "The top-of-page 'ADD 20%' annotation is unexplained on its own page — recorded verbatim, not interpreted, since acting on the wrong interpretation (adding another 20% vs. treating Contract as already-final) would materially change a quote. Alex House exclusive-use rate is a genuine gap in this source. No mandatory conservancy/park-style fee found."
+}

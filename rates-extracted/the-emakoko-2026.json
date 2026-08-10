@@ -1,0 +1,24 @@
+{
+  "$note": "Extracted 6 Aug 2026. Uniquely positioned as a Nairobi-adjacent lodge (edge of Nairobi National Park) rather than a remote safari camp - useful as a Nairobi-arrival/departure option alongside the flexible-variable Nairobi hotels already logged in CLAUDE.md, though positioned as more of a safari-style lodge experience (game drives included) than a standard city hotel.",
+  "property": "The Emakoko",
+  "operator": "Bush and Beyond Ltd (booking agent)",
+  "region": "Edge of Nairobi National Park",
+  "tier": "RSP (rack) and Trade Rates/Preferential",
+  "source": { "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/BUSH&BEYOND/The Emakoko - 2026 Preferential US$.pdf", "validity": { "start": "2026-01-04", "end": "2027-01-03" } },
+  "rates": {
+    "currency": "USD", "unit": "per person per night sharing unless noted",
+    "rooms": { "rsp": { "adultSharing": 765, "adultSingle": 930, "childSharing5to15": 460 }, "trade": { "adultSharing": 574, "adultSingle": 698, "childSharing5to15": 345 } },
+    "dayRooms_11h00to20h00": { "rsp": { "adultSharing": 380, "adultSingle": 465, "childSharing": 230 }, "trade": { "adultSharing": 285, "adultSingle": 349, "childSharing": 173 } },
+    "privateHouse_perNight_max4guests": { "rsp": 3300, "trade": 2475, "extraChild5to15each": { "rsp": 460, "trade": 345 }, "note": "5th pax must be a child 5-15; no children under 5" }
+  },
+  "mandatoryFees": {
+    "nairobiNationalParkFee_perAdultPerNight": 100,
+    "childFee_5to15": { "regularSeason_AprJun": 20, "premiumSeason_restOfYear": 25 },
+    "childFee_3to4": { "regularSeason": 20, "premiumSeason": 25 },
+    "note": "Valid 24hrs from time of entry"
+  },
+  "childPolicy": { "allAgesWelcomeInRooms": true, "privateHouse": "No children under 5" },
+  "inclusions": "Full board, soft drinks/local beers/non-premium wines/spirits, 1 JKIA + 1 Wilson airport transfer per booking, Karen excursions, private vehicle for transfers, statutory taxes, laundry, 2 game drives/day in Nairobi NP, Giraffe Centre/David Sheldrick excursions (entrance fees direct).",
+  "exclusions": "Extra transfers ($150 each), champagne/premium spirits, massage treatments.",
+  "notes": "Special: book 2 consecutive nights arriving after 20h30, get first night at day-room rate. Late departure after 17:30 incurs extra dinner ($80pp) + transfer ($150/vehicle, max 6pax)."
+}

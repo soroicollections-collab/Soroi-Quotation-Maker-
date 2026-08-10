@@ -1,0 +1,89 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftotext -layout from two documents in 'Zebra Plains Collection & Lalashe Camps/': 'Zebra Plains Collection (SUNWORLD SAFARIS) - 2027 Contract Rates.pdf' (7pp, 6 properties, dated 25 Mar 2027) and 'Lalashe Maasai Mara & Lalashe Mara Ripoi - 2027 Contract Rates.pdf' (4pp, 2 properties). A third file 'Zebra Plains Collection and Lalashe Camps Offers 2026-2027.pdf' was not extracted (promotional offers).",
+  "currency": "USD",
+  "confidence": "confirmed-2027-08-06",
+  "zebraPlainsCollection": {
+    "operator": "Zebra Plains Collection",
+    "unit": "per person, Adult Sharing basis unless noted",
+    "seasonsMaasaiMara": { "low": "3 Jan-30 Jun & 1 Oct-22 Dec", "high": "1-14 Jul, 16-30 Sep & 23 Dec-2 Jan", "peak": "15 Jul-15 Sep" },
+    "seasonsAmboseli": { "low": "3 Jan-30 Jun & 1 Oct-22 Dec", "high": "1-31 Jul, 1-30 Sep & 23 Dec-2 Jan", "peak": "1-31 Aug" },
+    "properties": {
+      "Zebra Plains Mara Camp": {
+        "config": "20 Savannah Tents, 29 Hillside Facing Tents, 2 Family Savannah Tents (2BR villa+lounge, min 4 pax)",
+        "fullBoard": { "hillsideAdultSharing": { "low": 130, "high": 220, "peak": 260 }, "savannahAdultSharing": { "low": 135, "high": 235, "peak": 280 }, "childSharing": { "low": 95, "high": 155, "peak": 185 }, "singleAdult": { "low": 175, "high": 305, "peak": 385 }, "thirdBedSupplement": { "low": 105, "high": 190, "peak": 210 }, "familyTent2Supplement": { "low": "N/A", "high": 175, "peak": 175 } },
+        "gamePackage": { "hillsideAdultSharing": { "low": 250, "high": 385, "peak": 430 }, "savannahAdultSharing": { "low": 260, "high": 395, "peak": 440 }, "childSharing": { "low": 170, "high": 210, "peak": 260 }, "singleAdult": { "low": 400, "high": 590, "peak": 700 }, "thirdBedSupplement": { "low": 210, "high": 305, "peak": 330 }, "familyTent2Supplement": { "low": "N/A", "high": 175, "peak": 175 } },
+        "gamePackageAdds": "Shared 4x4 open-sided vehicle, airstrip or Talek Gate transfer"
+      },
+      "Zebra River Camp": {
+        "config": "15 River-Facing Tents (Talek River), 1 Family Tent, min 4 pax for family tent",
+        "fullBoard": { "adultSharing": { "low": 220, "high": 380, "peak": 405 }, "childSharing": { "low": 120, "high": 190, "peak": 205 }, "singleAdult": { "low": 325, "high": 565, "peak": 620 }, "thirdBedSupplement": { "low": 165, "high": 290, "peak": 310 }, "familyTent1Supplement": { "low": 115, "high": 185, "peak": 225 } },
+        "gamePackage": { "adultSharing": { "low": 375, "high": 480, "peak": 520 }, "childSharing": { "low": 185, "high": 240, "peak": 260 }, "singleAdult": { "low": 555, "high": 720, "peak": 780 }, "thirdBedSupplement": { "low": 270, "high": 350, "peak": 390 }, "familyTent1Supplement": { "low": 115, "high": 185, "peak": 225 } },
+        "gamePackageAdds": "Shared game drives; 4-7 pax in one car gets exclusive vehicle use at no extra charge",
+        "fullBoardAdds": "Laundry (excl. underwear), selected in-house alcoholic/non-alcoholic drinks"
+      },
+      "Zebra Valley Camp": {
+        "config": "18 Savannah Facing Tents, 1 Family Tent, min 4 pax for family tent",
+        "rates": "Identical rate structure to Zebra River Camp (same figures)",
+        "verified": true
+      },
+      "Little Zebra River West & East Camps": {
+        "config": "11 River-Facing Tents (Talek River) each + 1 Family Tent each, min 4 pax for family tent",
+        "fullBoard": { "adultSharing": { "low": 290, "high": 410, "peak": 485 }, "childSharing": { "low": 140, "high": 210, "peak": 240 }, "singleAdult": { "low": 420, "high": 620, "peak": 730 }, "thirdBedSupplement": { "low": 220, "high": 310, "peak": 365 }, "familyTent1Supplement": { "low": 170, "high": 225, "peak": 280 } },
+        "gamePackage": { "adultSharing": { "low": 470, "high": 485, "peak": 695 }, "childSharing": { "low": 240, "high": 305, "peak": 340 }, "singleAdult": { "low": 695, "high": 895, "peak": 1030 }, "thirdBedSupplement": { "low": 350, "high": 460, "peak": 515 }, "familyTent1Supplement": { "low": 170, "high": 225, "peak": 280 } },
+        "fullBoardAdds": "Laundry, selected alcoholic/non-alcoholic drinks (some premium included), 45-min Swedish massage per guest once/stay",
+        "gamePackageAdds": "Exclusive 4x4 vehicle, sundowner, walking safari, Maasai cultural visit"
+      },
+      "Royal Zebra River Safari Lodge": {
+        "config": "5 Luxury Savannah View Suites, 3 Luxury Forest Suites",
+        "fullBoard": { "mainReserveView_adultSharing": { "low": 335, "high": 430, "peak": 545 }, "forestView_adultSharing": { "low": 310, "high": 405, "peak": 565 }, "childSharing": { "low": 170, "high": 220, "peak": 270 }, "singleAdult": { "low": 470, "high": 640, "peak": 730 }, "thirdBedSupplement": { "low": 250, "high": 320, "peak": 375 } },
+        "gamePackage": { "mainReserveView_adultSharing": { "low": 490, "high": 620, "peak": 840 }, "forestView_adultSharing": { "low": 480, "high": 610, "peak": 800 }, "childSharing": { "low": 245, "high": 310, "peak": 420 }, "singleAdult": { "low": 720, "high": 915, "peak": 1105 }, "thirdBedSupplement": { "low": 375, "high": 470, "peak": 525 } },
+        "fullBoardAdds": "Laundry, drinks (some premium incl.), sundowner, private butler, bubbly breakfast, 45-min Swedish massage once/stay",
+        "gamePackageAdds": "Exclusive 4x4, airstrip transfers, bush breakfast/lunch/dinner, walking safari, Maasai cultural visit"
+      },
+      "Praro Amboseli Camp": {
+        "config": "46 tents, 1 Savannah Facing Family Suite (2BR villa+lounge), 1 Junior Family Tent (1 double + 2 twin beds, ideal for under-12s)",
+        "fullBoard": { "adultSharing": { "low": 135, "high": 185, "peak": 215 }, "childSharing": { "low": 70, "high": 95, "peak": 105 }, "singleAdult": { "low": 205, "high": 275, "peak": 320 }, "thirdBedSupplement": { "low": 100, "high": 140, "peak": 160 }, "familyTent1Supplement": { "low": "N/A", "high": 175, "peak": 175 } },
+        "gamePackage": { "adultSharing": { "low": 245, "high": 370, "peak": 410 }, "childSharing": { "low": 125, "high": 185, "peak": 210 }, "singleAdult": { "low": 370, "high": 555, "peak": 620 }, "thirdBedSupplement": { "low": 185, "high": 275, "peak": 310 }, "familyTent1Supplement": { "low": "N/A", "high": 175, "peak": 175 } },
+        "conservancyFee": { "amount": 25, "unit": "per guest per day", "note": "Only charged to Full Board guests who choose to do game drives in Aloca Conservancy - waived entirely for Game Package guests in 2027" }
+      }
+    },
+    "childPolicy": { "ageDefinition": "4-11.9 years", "under4": "Free (excl. park fees)", "ownRoom": "75% of adult sharing rate", "oneAdultOneChild": "75% of single room rate + child sharing rate", "twoAdultsPlusChildren": "Adult sharing rate + child sharing rate each" },
+    "mandatoryFeesNote": "Park/Conservation fees NOT included in any rate above; valid 12 hours in Maasai Mara, 24 hours in Amboseli; subject to change without notice",
+    "extras": {
+      "walkingSafari": 25, "maasaiCulturalVisit": 25, "exclusiveVehicleGamePackageOnly": 300,
+      "bushDinner": { "upTo2pax": 85, "above2pax": 60 }, "bushBreakfast": { "upTo2pax": 85, "above2pax": 60 }, "sundowner": { "upTo2pax": 85, "above2pax": 60 },
+      "festiveSupplement": { "amount": 20, "unit": "per adult/child per night", "dates": "New Year 31/1, Christmas 24/25, Easter Fri/Mon, Valentine's" },
+      "extraLunch": 35, "birthdayCake": 35, "extraGameDriveOnDeparture": 200, "airstripTransfer": 200, "spotterService": 15,
+      "emaliTarakeaNamangaToPraroAmboseli": 275
+    },
+    "tourLeaderFamPolicy": "Tour leader pays 50% of contracted rates (low season, full board only). FAM trip agents pay 50% of contracted full board rates (low season only) unless otherwise agreed.",
+    "cancellationPolicy": "60 days before arrival: 65% credit note; 45 days: 45% credit note; 30 days: 25% credit note; under 30 days: no credit note",
+    "verified": true
+  },
+  "lalasheCamps": {
+    "operator": "Lalashe Mara",
+    "tier": "All Inclusive",
+    "unit": "per person",
+    "seasons": { "low": "1 Apr-31 May", "mid": "3 Jan-31 Mar, 1-30 Jun, 1-31 Oct, 1 Nov-18 Dec", "high": "1 Jul-30 Sep, 19 Dec-2 Jan 28" },
+    "properties": {
+      "Lalashe Maasai Mara": {
+        "rates": { "perPersonSharing": { "low": 580, "mid": 765, "high": 1155 }, "singleRoom": { "low": 875, "mid": 1155, "high": 1725 }, "tripleRoom": { "low": 1580, "mid": 2080, "high": 3180 } },
+        "airstripTransfer": "Olkiombo Airstrip",
+        "inclusions": "Luxury tent accommodation, all meals/snacks, alcoholic/non-alcoholic drinks in camp and safari, exclusive custom open-sided vehicle, unlimited game drives, guide, airstrip transfer, walking safari, Rhino Sanctuary visit, Maasai cultural visit, 45-min Swedish massage, Amref emergency medical cover, bush breakfast/lunch/dinner, bush sundowner, WiFi, laundry, all taxes"
+      },
+      "Lalashe Mara Ripoi": {
+        "rates": { "perPersonSharing": { "low": 580, "mid": 765, "high": 1155 }, "singleRoom": { "low": 875, "mid": 1155, "high": 1725 }, "tripleRoom": { "low": 1580, "mid": 2080, "high": 3180 } },
+        "airstripTransfer": "Siana Airstrip",
+        "inclusions": "Same as Lalashe Maasai Mara plus Maasai village visit and elaborate walking safari; also includes conservancy fees (Lalashe Maasai Mara's list does not explicitly mention conservancy fees as included - flagged as a difference between the two otherwise-identical rate sheets)"
+      },
+      "verified": true,
+      "confidenceNote": "[Unverified] Both Lalashe properties share byte-identical pricing across all 3 tiers - confirmed by direct read, not assumed."
+    },
+    "extraLunch": 75,
+    "familyTentSupplement": { "amount": 750, "unit": "per night, added on top of per-occupant pricing" },
+    "childPolicy": { "age4to12": "50% of adult sharing rate" },
+    "cancellationPolicy": "60 days before arrival: 65% refund; 45 days: 45% refund; 30 days: 25% refund; under 30 days: no refund",
+    "tourLeaderPolicy": "75% of contracted rates in mid/high season",
+    "famTripPolicy": "30% of contracted rates unless otherwise agreed"
+  }
+}

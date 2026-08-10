@@ -1,0 +1,79 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftotext -layout + PDF-to-image render (to identify property names on unlabeled title pages) from 'NEW AFRICAN TERRITORIES/NEW AFRICAN TERRITORIES 2027 Combined Rates for Sunworld.pdf' (9pp). IMPORTANT: the cover page lists 8 New African Territories properties (Manzili House-Nairobi, Manzili Mara-Maasai Mara, Kandili Camp-Maasai Mara, Desert Rose-Northern Kenya, Kitich Forest Camp-Mathews Range, Shompole Wilderness-Rift Valley, Tawi Lodge-Amboseli, Alex Walker's Serian-Kenya&Tanzania) but this specific document ONLY contains priced rate tables for TWO of them: Kitich Forest Camp and Tawi Lodge. The other 6 properties are named/mapped on page 2 but have no rate table anywhere in this PDF - confirmed by reading every page (title-image pages for each property precede their data page, but only these 2 had a data page follow). Extract those 6 separately on demand if a quote ever needs them - they are NOT in rates-extracted/ from this pass.",
+  "operator": "New African Territories",
+  "currency": "USD",
+  "tier": "Preferred Agent / STO 30% (labeled differently per property but same 30% figure)",
+  "propertiesPricedInThisDocument": ["Kitich Forest Camp", "Tawi Lodge"],
+  "propertiesListedButNotPricedHere": ["Manzili House (Nairobi)", "Manzili Mara (Maasai Mara)", "Kandili Camp (Maasai Mara)", "Desert Rose (Northern Kenya)", "Shompole Wilderness (Rift Valley)", "Alex Walker's Serian (Kenya & Tanzania - and Serengeti/Kakessio locations are Tanzania anyway per the map)"],
+  "confidence": "confirmed-2027-08-06",
+  "properties": {
+    "Kitich Forest Camp": {
+      "region": "Mathews Mountain Range (Samburu area)",
+      "validity": "1 Jan - 31 Dec 2027",
+      "openAllYear": true,
+      "config": "8 tents (4 double, 4 twin); 2 tents convertible to triples",
+      "rates": {
+        "unit": "per person per night, Full Board (Preferred Agent 30%)",
+        "adult": 450,
+        "child3to15": 210
+      },
+      "communityFees": { "adult": 80, "child": 40, "unit": "per day" },
+      "inclusions": "Full board accommodation, filtered water/soft drinks/house wine/non-luxury spirits, guided bush walks, sundowners, fly-camping, return airstrip transfer (Ngelai Airstrip), hiking trails & overnight fly camping",
+      "exclusions": {
+        "extraLunch": 30,
+        "airstripTransferKalamaOrSereolipi": { "amount": 300, "unit": "per vehicle one way, max 5 pax" },
+        "guidePilot": { "amount": 180, "unit": "per night, plus community fees" },
+        "champagnePremiumWinesSpirits": "excluded",
+        "samburuBuffaloSpringsReserveFees": "excluded",
+        "emergencyEvacuationCover": { "amount": 35, "unit": "per person, mandatory" }
+      },
+      "singleSupplement": "None",
+      "verified": true
+    },
+    "Tawi Lodge": {
+      "region": "Amboseli (Tawi Conservancy)",
+      "validity": "6 Jan 2027 - 5 Jan 2028",
+      "config": "12 cottages + 1 family room + suite with 2 luxury rooms, views of Mt Kilimanjaro, kosher meals on request",
+      "seasons": {
+        "mid": { "dates": "6 Jan-31 Mar, 1-30 Jun, 1-20 Dec 2027" },
+        "low": { "dates": "1 Apr-31 May, 1-30 Nov 2027 (Easter 3-night min)" },
+        "high": { "dates": "1 Jul-31 Oct 2027, 21 Dec 2027-5 Jan 2028 (2-night min)" }
+      },
+      "rates": {
+        "unit": "per person per night",
+        "standardCottage_fullBoard": { "mid": 340, "low": 220, "high": 460, "conservancyFee": 40 },
+        "standardCottage_allInclusive": { "mid": 545, "low": 420, "high": 640, "conservancyFee": 40 },
+        "standardCottage_singleSupplement_fullBoard": { "mid": 80, "low": 70, "high": 80, "note": "max 3 singles per group, 4th single onward charged double room rate" },
+        "standardCottage_thirdAdultSharing_fullBoard": { "mid": 291, "low": 189, "high": 378, "conservancyFee": 40 },
+        "standardCottage_thirdAdultSharing_allInclusive": { "mid": 452, "low": 357, "high": 539, "conservancyFee": 40 },
+        "familyCottageCottage8_fullBoard": { "mid": 360, "low": 230, "high": 480, "conservancyFee": 40 },
+        "familyCottageCottage8_allInclusive": { "mid": 550, "low": 440, "high": 665, "conservancyFee": 40 },
+        "suite_fullBoard": { "mid": 497, "low": 322, "high": 735, "conservancyFee": 40 },
+        "suite_allInclusive": { "mid": 693, "low": 525, "high": 910, "conservancyFee": 40 },
+        "suiteFamilyCottage_singleSupplement": { "mid": 155, "low": 155, "high": 155 }
+      },
+      "childPolicy": { "age3to12sharing": "50% of adult rate (does not apply to Family Cottage)", "age3to12ownRoom": "75% of adult rate", "conservancyFee": 20 },
+      "fullBoardIncludes": "Full board accommodation, drinks (house wine/beer/soft drinks/selected spirits), sundowners, bush walks",
+      "allInclusiveIncludes": "Full board + drinks + shared game drives, night game drive, bush breakfast, bush walk, sundowners, return airstrip transfers, laundry. Suite guests get exclusive use of 1 vehicle on All Inclusive rate.",
+      "extras": {
+        "amboseliNationalParkFee": "excluded, not priced in this document",
+        "maasaiVillageVisit": 25,
+        "bushBreakfast": { "amount": 30, "minPax": 2 },
+        "airstripTransferInclGameDrive": { "amount": 80, "minPax": 2 },
+        "gameDrive": { "amount": 80, "minPax": 2 },
+        "extraLunch": 40,
+        "picnicLunch": 30,
+        "nightGameDrive": { "amount": 60, "minPax": 2 },
+        "exclusiveVehicle": { "fullBoard": 550, "allInclusive": 350, "unit": "per day" },
+        "transferToEmali": { "amount": 250, "unit": "per vehicle one way" },
+        "transferToNamangaOrTarekea": { "amount": 400, "unit": "per vehicle one way" }
+      },
+      "verified": true
+    }
+  },
+  "generalTerms": {
+    "cancellationPolicy": "61+ days before arrival: deposit retained; 60-31 days: 50% withheld; less than 30 days/no-show: 100% forfeited",
+    "depositPolicy": "20% non-refundable deposit to confirm; balance due 60 days before arrival",
+    "provisionalBookingHold": "14 days"
+  }
+}

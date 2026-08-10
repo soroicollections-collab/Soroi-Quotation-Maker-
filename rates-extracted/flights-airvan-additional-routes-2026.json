@@ -1,0 +1,88 @@
+{
+  "$note": "Expansion of Airvan Kenya Ltd coverage beyond the Wilson-Amboseli-Mara legs already captured in flights-amboseli-mara-nanyuki-2026.json. That file's 'airvan' block already has Wilson-Amboseli, Amboseli-Wilson, Amboseli-Mara, Mara-Amboseli, Wilson-Mara (one way + return) - not repeated here. This file adds the Ukunda (Diani/coast) routes found in the same two source documents, plus flags a material rate discrepancy between the two Airvan documents that goes beyond what was previously flagged.",
+  "carrier": "Airvan Kenya Ltd",
+  "currency": "USD",
+  "verified": true,
+  "sources": [
+    {
+      "file": "2026 CONTRACT RATES/KENYA/FLIGHTS/AIRVAN/Airvan Contract Rates - Sunworld 2026 & 2027.pdf",
+      "label": "contract-letter",
+      "validity": "2026/2027 contract, no explicit end date stated, signed by Tasneem Kaderbhai (Managing Director)",
+      "rateBasis": "Net fares, no explicit high/low season split, taxes not stated as included/excluded"
+    },
+    {
+      "file": "2026 CONTRACT RATES/KENYA/FLIGHTS/AIRVAN/Airvan Rates All Routes 2025 & 2026.xlsx",
+      "label": "xlsx-all-routes",
+      "validity": "2025/2026 rate sheet",
+      "rateBasis": "Nett fares, INCLUSIVE OF TAXES, explicitly split High season / Low season",
+      "seasons": {
+        "high": "20 Dec - 4 Jan / Easter weekend / 15 Jun - 30 Sep",
+        "low": "5 Jan - 14 Jun (excluding Easter weekend) / 1 Oct - 19 Dec"
+      }
+    }
+  ],
+  "newRoutesAddedByThisExtraction": {
+    "amboseliToUkunda": {
+      "source": "contract-letter",
+      "oneWay": { "adult": 370, "child": 285, "unit": "net, USD" },
+      "confidenceNote": "Only appears in the contract-letter PDF, not in the xlsx (which has Mara-Ukunda and Ukunda-Wilson but not Amboseli-Ukunda directly)."
+    },
+    "maraToUkunda": {
+      "contractLetterFigure": { "adult": 370, "child": 285, "unit": "one way, net, USD" },
+      "xlsxFigure": { "adult": 350, "child": 267, "unit": "one way, net, USD, inclusive of taxes, no season split shown for this route" },
+      "confidenceNote": "DISCREPANCY: contract letter says $370/$285, xlsx says $350/$267 for the same Mara-Ukunda one-way route. Neither figure independently verified against a third source - flag both, do not silently pick one. Xlsx also states minimum 4 passengers required on Mara-Ukunda."
+    },
+    "ukundaToWilson": {
+      "source": "xlsx-all-routes",
+      "oneWay": { "adult": 90, "child": 90, "unit": "net, USD, inclusive of taxes" },
+      "confidenceNote": "Only in xlsx, not in contract letter. Child = adult fare on this route specifically (no discount stated) - unusual vs. Airvan's general child-discount pattern on other routes, but that's what the source states."
+    }
+  },
+  "crossCheckOnAlreadyCapturedRoutes": {
+    "wilsonMaraRoundTrip": {
+      "alreadyOnFileFrom": "contract-letter (see flights-amboseli-mara-nanyuki-2026.json: wilsonToMaasaiMaraReturn adult $285/child $225, wilsonToMaasaiMaraOneWay adult $185/child $145)",
+      "xlsxFigures": {
+        "wilsonToMaraOneWayHigh": { "adult": 180, "child": 139 },
+        "wilsonToMaraOneWayLow": { "adult": 170, "child": 132 },
+        "maraToWilsonOneWayHigh": { "adult": 180, "child": 139 },
+        "maraToWilsonOneWayLow": { "adult": 170, "child": 132 },
+        "returnHigh": { "adult": 280, "child": 214 },
+        "returnLow": { "adult": 265, "child": 203 }
+      },
+      "confidenceNote": "MATERIAL DISCREPANCY, broader than the single Mara-Amboseli gap already flagged in flights-amboseli-mara-nanyuki-2026.json. On Wilson-Mara one-way, contract letter ($185/$145) is $5-15 HIGHER than xlsx ($180/$139 high season, $170/$132 low season) depending on season. On the return, contract letter ($285/$225) is likewise higher than both xlsx seasonal figures ($280/$214 high, $265/$203 low). This is not just a Mara-Amboseli-specific gap - the two Airvan documents disagree on nearly every shared route, with the xlsx being season-differentiated and cheaper, and the contract letter being flat and higher. Per the existing convention (see flights-amboseli-mara-nanyuki-2026.json note), the signed contract-letter PDF figures are treated as the more authoritative source for Sunworld's actual contracted rate, but this should be confirmed with Airvan/Sunworld directly before relying on either figure for a quote outside the original Amboseli/Mara/Nanyuki itinerary this was first extracted for."
+    }
+  },
+  "childAndInfantPolicy": {
+    "xlsxDefinition": "Child is 02-11 years. Infant fare = 10% of adult fare.",
+    "contractLetterDefinition": "No explicit child age range stated in the contract letter itself - only 'child' fares given per route without an age bracket.",
+    "confidenceNote": "The two documents don't state the same child age definition explicitly (contract letter is silent on the exact bracket) - using the xlsx's 02-11 definition as the working assumption is an [Inference], not directly confirmed for the contract-letter rates."
+  },
+  "minimumPax": {
+    "maraUkundaOrMaraAmboseli": 4,
+    "maraWilson": 2
+  },
+  "otherTerms": {
+    "nameDateChangeAfterTicketing": "$30 each change, plus any fare difference",
+    "reRouting": "$30 plus any fare upgrade difference",
+    "refundability": "All tickets non-refundable (xlsx); contract letter separately states tickets non-refundable but valid 3 months with change fees applying.",
+    "baggage": "15kg per passenger inclusive of hand baggage/cameras, soft bags only.",
+    "checkIn": "60 minutes before flight; Airvan may reallocate seats or depart up to 20 min early if passenger not present; counters close 30 min before departure on other services.",
+    "idRequirement": "Passport or photo national ID required at check-in; birth certificate or passport for children/infants."
+  },
+  "additionalScheduleFromContractLetter": {
+    "wilsonMaraWilson": [
+      { "from": "Wilson", "to": "Maasai Mara", "depart": "10:00am", "arrive": "10:50am", "days": "Daily" },
+      { "from": "Maasai Mara", "to": "Nairobi Wilson", "depart": "11:15am", "arrive": "12:15pm", "days": "Daily" }
+    ],
+    "maraOnwardConnections": [
+      { "from": "Maasai Mara", "to": "Amboseli", "depart": "11:15am", "arrive": "12:15pm", "days": "Daily" },
+      { "from": "Maasai Mara", "to": "Ukunda", "depart": "11:15am", "arrive": "13:45pm", "days": "Daily", "confidenceNote": "Source PDF prints arrival as '13:45pm' verbatim (24h+pm mixed notation, likely means 1:45pm) - recorded as printed, flag the ambiguity rather than silently correcting." }
+    ],
+    "wilsonAmboseliAndOnward": [
+      { "from": "Wilson", "to": "Amboseli", "depart": "07:30am", "arrive": "07:50am", "days": "Daily" },
+      { "from": "Amboseli", "to": "Nairobi Wilson", "depart": "08:15am", "arrive": "09:00am", "days": "Daily" },
+      { "from": "Amboseli", "to": "Maasai Mara", "depart": "08:30am", "arrive": "09:30am", "days": "Daily" },
+      { "from": "Amboseli", "to": "Ukunda", "depart": "08:30am", "arrive": "09:50am", "days": "Daily" }
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "$note": "Extracted 6 Aug 2026. ANOMALY: Roving Bushtops is a mobile camp operating entirely in TANZANIA (Southern Serengeti/Kusini 21 Dec-31 Mar, Northern Serengeti 1 Jun-31 Oct) - not Kenya - despite being filed in the Kenya BUSHTOPS folder alongside Mara Bushtops (which IS in Kenya). Flag to project owner. Contracted directly by Sunworld with the Tanzanian operator (Orion Hotels (T) Ltd, signed 29 Oct 2025), so it appears intentionally sold by Sunworld rather than a pure filing error, but it does not belong in a Kenya-only itinerary without flagging the border crossing.",
+  "property": "Roving Bushtops",
+  "operator": "Orion Hotels (T) Ltd",
+  "region": "TANZANIA - Southern Serengeti/Kusini and Northern Serengeti (roving mobile camp, relocates seasonally)",
+  "tier": "Rack Rate and Sunworld-specific Nett Rate (STO 20%)",
+  "source": {
+    "files": [
+      "2026 CONTRACT RATES/KENYA/ACCOMODATION/BUSHTOPS/Roving Bushtops Rack Rates.pdf",
+      "2026 CONTRACT RATES/KENYA/ACCOMODATION/BUSHTOPS/Sunworld Safaris Ltd RBT 20%.pdf"
+    ],
+    "validity": { "start": "2025-12-21", "end": "2026-12-20" }
+  },
+  "rovingLocationDates": { "southernSerengetiKusini": "21 Dec 2025-31 Mar 2026", "northernSerengeti": "1 Jun 2026-31 Oct 2026" },
+  "rates": {
+    "currency": "USD", "unit": "per person sharing, per night, ground package",
+    "peak1_21Dec25-31Mar26_1Jun-30Jun_1Oct-31Oct26": { "rack": { "0to15": 1518, "16to17": 1518, "18plus": 2530, "single": 3289 }, "nett": { "0to15": 1214.40, "16to17": 1214.40, "18plus": 2024, "single": 2631.20 } },
+    "peak2_1Jul-30Sep26": { "rack": { "0to15": 1518, "16to17": 1518, "18plus": 2530, "single": 3289 }, "nett": { "0to15": 1214.40, "16to17": 1214.40, "18plus": 2024, "single": 2631.20 } },
+    "parkFees_perPerson": { "0to15": 23.60, "16plus": 82.60 },
+    "campingFee_perPerson": { "0to15": 11.80, "16plus": { "peak1": 59.00, "peak2": 70.80 } },
+    "privateUseOfCamp_perUnitPerNight": { "rack": 35200, "nett": 28160, "note": "8 doubles/twins, max 4 extra beds, min 2 nights, 4 vehicles included" }
+  },
+  "childPolicy": { "recommendedAge": "7 and above", "under16CannotStayAlone": true },
+  "inclusions": "Full board, 2 game drives daily (or full-day private vehicle) with bush lunch/breakfast, Kogatende/Southern Serengeti Airstrip transfers, laundry, wifi, non-alcoholic drinks/beers/cellar wines/spirits, complimentary massages, departure-day packed lunch.",
+  "exclusions": "Park/camping fees, champagne, cigars, shop items, tips.",
+  "notes": "Circuit discount and 4-for-3 offer same structure as Mara Bushtops. Signed 29 Oct 2025 by Orion Hotels (T) Ltd for Sunworld Safaris Ltd."
+}

@@ -1,0 +1,76 @@
+{
+  "$note": "Fresh extraction, 6 Aug 2026, read directly from the property's own pages (pages 13-14 of 34) in 'Soroi - 2027 STO 40% Contract Rates.pdf' (see cheetah-tented-camp-sto40-2027.json for full provenance/duplicate-file note). A new detail was found here not previously on file: the Star-Bed Suite page has a shorter, DIFFERENT validity window than the Luxury Tents page - see accommodation.starBedSuite.validityNote below. This should be checked against the Rack-tier source document too, since amboseli-rack-2027.json currently applies one blanket validity window to both room categories.",
+  "property": "Soroi Amboseli",
+  "region": "Amboseli",
+  "tier": "STO 40%",
+  "residency": "Non-Resident",
+  "source": {
+    "file": "2027 CONTRACT RATES/KENYA/ACCOMODATIONS/SOROI/Soroi - 2027 STO 40% Contract Rates.pdf",
+    "pdfPageIndexes": [12, 13],
+    "docPrintedPageNumbers": [13, 14],
+    "validity": { "start": "2027-01-04", "end": "2028-01-03" }
+  },
+  "confidence": "confirmed-2026-08-06",
+  "extractionMethod": {
+    "note": "Read per-page via pdftotext.",
+    "misattributionCheck": { "checked": true, "result": "No misattribution - both pages headed 'SOROI AMBOSELI' / 'SOROI AMBOSELI CAMP' with their own figures." }
+  },
+  "seasons": {
+    "peak": { "dateRanges": ["1 Jul – 30 Sep", "20 Dec – 3 Jan 2028"] },
+    "shoulder": { "dateRanges": ["4 Jan – 28 Feb", "1 Jun – 30 Jun"] },
+    "extendedGreen": { "dateRanges": ["1 Mar – 31 May", "1 Oct – 19 Dec"] }
+  },
+  "accommodation": {
+    "luxuryTents": {
+      "roomNote": "13 Luxury Tents - 2 Two-Bedroom Family Units.",
+      "currency": "USD",
+      "unit": "per person per night",
+      "validity": { "start": "2027-01-04", "end": "2028-01-03" },
+      "fullBoard": {
+        "perPerson": { "peak": { "rack": 750, "net": 450 }, "shoulder": { "rack": 640, "net": 384 }, "extendedGreen": { "rack": 535, "net": 321 } },
+        "single": { "peak": { "rack": 1125, "net": 675 }, "shoulder": { "rack": 960, "net": 576 }, "extendedGreen": { "rack": 669, "net": 401 } },
+        "familyUnit": { "peak": { "rack": 3000, "net": 1800 }, "shoulder": { "rack": 2560, "net": 1536 }, "extendedGreen": { "rack": 2140, "net": 1284 } }
+      },
+      "groundPackage": {
+        "perPerson": { "peak": { "rack": 970, "net": 582 }, "shoulder": { "rack": 860, "net": 516 }, "extendedGreen": { "rack": 755, "net": 453 } },
+        "single": { "peak": { "rack": 1455, "net": 873 }, "shoulder": { "rack": 1290, "net": 774 }, "extendedGreen": { "rack": 944, "net": 566 } },
+        "familyUnit": { "peak": { "rack": 3880, "net": 2328 }, "shoulder": { "rack": 3440, "net": 2064 }, "extendedGreen": { "rack": 3020, "net": 1812 } }
+      }
+    },
+    "starBedSuite": {
+      "roomNote": "1 Star-Bed Suite (Deluxe Suite). Children below 8 years NOT allowed.",
+      "validityNote": {
+        "flag": true,
+        "note": "This property's own page header states '01 June 2027 to 03 January 2028' - NOT the 04-Jan-2027 start date used everywhere else in this document (including this same property's Luxury Tents page). This may mean the Star-Bed Suite genuinely isn't bookable/priced before 1 June 2027, or may be a document inconsistency - flagging rather than assuming either way. Not yet cross-checked against the Rack-tier source PDF."
+      },
+      "currency": "USD",
+      "unit": "per person per night",
+      "fullBoard": {
+        "perPerson": { "peak": { "rack": 970, "net": 582 }, "shoulder": { "rack": 790, "net": 474 }, "extendedGreen": { "rack": 655, "net": 393 } },
+        "single": { "peak": { "rack": 1455, "net": 873 }, "shoulder": { "rack": 1185, "net": 711 }, "extendedGreen": { "rack": 819, "net": 491 } }
+      },
+      "groundPackage": {
+        "perPerson": { "peak": { "rack": 1190, "net": 714 }, "shoulder": { "rack": 1010, "net": 606 }, "extendedGreen": { "rack": 875, "net": 525 } },
+        "single": { "peak": { "rack": 1785, "net": 1071 }, "shoulder": { "rack": 1515, "net": 909 }, "extendedGreen": { "rack": 1094, "net": 656 } }
+      }
+    }
+  },
+  "discountRatioCheck": { "note": "Net = Rack x 0.60 confirmed exactly (nearest-integer rounding) on every cell in both room categories.", "verified": true },
+  "mandatoryFees": {
+    "note": "Amboseli National Park fee - %-surcharge shape, unaffected by tier. Identical to the Rack extraction.",
+    "verified": true,
+    "verifiedDate": "2026-08-06",
+    "amboseliNationalParkFee": {
+      "nonResident": { "adult": 90, "child": 45, "unit": "per adult per 12h" },
+      "africanCitizen": { "adult": 50, "child": 25, "unit": "per adult per 12h", "note": "Not applicable to this project's Non-Resident scope." },
+      "surcharge": "+8.5% KWS surcharge on top of the base fee"
+    }
+  },
+  "portfolioWideTerms": {
+    "childAge5to11": "50% of adult sharing rate",
+    "youngAdult12to17Sharing": "75% of adult rate",
+    "tourLeaderGuide": { "inTLTent": 175, "inGuestTent": "75% of adult single rate" },
+    "privateGuideMeals": { "amount": 50, "unit": "per day" },
+    "christmasNewYearSupplement": { "adult": 40, "child": 20, "unit": "per night" }
+  }
+}

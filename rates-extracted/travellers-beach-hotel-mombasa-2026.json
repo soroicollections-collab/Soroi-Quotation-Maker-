@@ -1,0 +1,64 @@
+{
+  "$note": "Extracted 6 Aug 2026 directly from paginated source PDF (2 pages, single property, no adjacent-property risk). Clean text extraction via pdftotext.",
+  "property": "Travellers Beach Hotel and Club",
+  "region": "Mombasa (North Coast), Kenya Coast",
+  "tier": "Special Non-Resident Rate",
+  "residency": "Non-Resident",
+  "source": {
+    "file": "2026 CONTRACT RATES/KENYA/BEACH ACCOMODATION/TRAVELLERS BEACH HOTEL MOMBASA/SPECIAL NON-RESIDENT  RATES 2025.pdf",
+    "pdfPageIndex": 0,
+    "totalPages": 2,
+    "validity": { "note": "See yearValidityFlag below." }
+  },
+  "yearValidityFlag": {
+    "finding": "CONFIRMED YEAR MISMATCH, and severe. This document is titled 'SPECIAL NON-RESIDENTS RATES 2025' and its own five season windows cover: 3 Jan-22 Apr 2025 & 1 Jul-31 Aug 2025; 23 Apr-30 Jun 2025; 1 Sep-31 Oct 2025; 1 Nov-22 Dec 2025; and 23 Dec 2025-2 Jan 2026. That means ONLY 1-2 January 2026 is actually covered by this rate card. Every other date in 2026 (3 Jan 2026 onward) has NO published rate in this document at all, despite it living inside the '2026 CONTRACT RATES' folder tree. This mirrors the Pristine Mara Bay Lodge finding in this same batch — flag prominently on any 2026 quote beyond 2 January; a current 2026 rate card would need to be requested from the hotel or Sunworld before quoting any other 2026 date.",
+    "confirmedCoverage": "3 Jan 2025 - 2 Jan 2026",
+    "usableFor2026Quotes": "1-2 Jan 2026 only"
+  },
+  "confidence": "confirmed-2026-08-06",
+  "extractionMethod": { "note": "Read directly via pdftotext -layout across both pages." },
+  "structuralFindings": [
+    "Rates are per ROOM (Single/Double), with separate flat add-on lines for 3rd Bed, Child under 12, and Infant under 2 — a hybrid per-room-plus-occupant-addon structure.",
+    "Four meal plans priced in parallel for every season: Bed & Breakfast, Half Board, Full Board, All Inclusive — a fuller meal-plan ladder than most properties in this batch.",
+    "Five pricing seasons across the (2025-into-2026) year, with a sharply escalated Festive window (23 Dec-2 Jan) roughly double the standard rate — e.g. Single B&B jumps from $226 (Nov-Dec) to $453 (Festive).",
+    "Room-category supplements exist SEPARATELY from the base Single/Double table: Seaview/Superior +$60/room/day, Deluxe +$55/room/day, and a Suite at a flat $726/day (or $1,500/day specifically during Festive season) — these aren't folded into the main table at all.",
+    "Child policy stated in TWO different places with seemingly different numbers: the main rate table has a flat 'CHILD UNDER 12YRS' dollar figure per season/meal-plan; a separate 'CHILD POLICIES' footnote instead says 'Rooms 6-12 Years in own room is 80% of adult room rate' — these are not obviously reconcilable (a flat $ figure vs an 80% ratio) and appear to be two different children's provisions (a child SHARING with parents at the flat table rate, vs a child in their OWN separate room at 80% of adult rate) rather than a contradiction — but this interpretation is not stated explicitly in the source, so flagged as [Inference].",
+    "Day Room charge is 75% of room rate up to 18:00; full rate applies automatically thereafter.",
+    "Rates stated as inclusive of all taxes and service charge."
+  ],
+  "seasons": {
+    "window1": { "dateRanges": ["3 Jan - 22 Apr 2025", "1 Jul - 31 Aug 2025"] },
+    "window2": { "dateRange": "23 Apr - 30 Jun 2025" },
+    "window3": { "dateRange": "1 Sep - 31 Oct 2025" },
+    "window4": { "dateRange": "1 Nov - 22 Dec 2025" },
+    "window5_festive": { "dateRange": "23 Dec 2025 - 2 Jan 2026" }
+  },
+  "rates": {
+    "currency": "USD",
+    "unit": "per room per night unless noted",
+    "verified": true,
+    "window1": { "singleRoom": { "bb": 210, "hb": 226, "fb": 248, "ai": 270 }, "doubleRoom": { "bb": 266, "hb": 299, "fb": 341, "ai": 378 }, "thirdBed": { "bb": 95, "hb": 104, "fb": 121, "ai": 136 }, "childUnder12": { "bb": 64, "hb": 75, "fb": 86, "ai": 99 }, "infantUnder2": "Free" },
+    "window2": { "singleRoom": { "bb": 179, "hb": 191, "fb": 222, "ai": 251 }, "doubleRoom": { "bb": 226, "hb": 264, "fb": 311, "ai": 371 }, "thirdBed": { "bb": 80, "hb": 90, "fb": 109, "ai": 128 }, "childUnder12": { "bb": 57, "hb": 67, "fb": 77, "ai": 94 }, "infantUnder2": "Free" },
+    "window3": { "singleRoom": { "bb": 193, "hb": 209, "fb": 228, "ai": 253 }, "doubleRoom": { "bb": 248, "hb": 281, "fb": 320, "ai": 370 }, "thirdBed": { "bb": 86, "hb": 98, "fb": 112, "ai": 129 }, "childUnder12": { "bb": 63, "hb": 69, "fb": 81, "ai": 94 }, "infantUnder2": "Free" },
+    "window4": { "singleRoom": { "bb": 226, "hb": 250, "fb": 264, "ai": 292 }, "doubleRoom": { "bb": 286, "hb": 320, "fb": 368, "ai": 420 }, "thirdBed": { "bb": 100, "hb": 113, "fb": 128, "ai": 145 }, "childUnder12": { "bb": 73, "hb": 81, "fb": 93, "ai": 113 }, "infantUnder2": "Free" },
+    "window5_festive": { "singleRoom": { "bb": 453, "hb": 461, "fb": 499, "ai": 528 }, "doubleRoom": { "bb": 593, "hb": 614, "fb": 671, "ai": 714 }, "thirdBed": { "bb": 208, "hb": 216, "fb": 235, "ai": 250 }, "childUnder12": { "bb": 146, "hb": 154, "fb": 167, "ai": 177 }, "infantUnder2": "Free" }
+  },
+  "roomCategorySupplements": {
+    "unit": "USD per room per day, added on top of base Single/Double rate",
+    "seaviewOrSuperior": 60,
+    "deluxe": 55,
+    "suite": { "standard": 726, "festiveSeason": 1500 }
+  },
+  "childPolicyFootnote": {
+    "age6to12_ownRoom": "80% of adult room rate",
+    "confidenceNote": "[Inference] Read as applying specifically when a 6-12yr-old occupies their OWN separate room, distinct from the main table's flat 'Child Under 12' add-on figure (which appears to apply when sharing a room with adults). Not explicitly reconciled in the source — confirm with the hotel before quoting a child in their own room."
+  },
+  "dayRoomCharge": { "rate": "75% of room rate", "validUntil": "18:00", "note": "Full normal rate applies automatically after 18:00" },
+  "cancellationPolicy": { "35to14Days": "25%", "13to4Days": "50%", "3DaysToNoShow": "100%" },
+  "checkInOut": { "checkIn": "12:00pm", "checkOut": "10:00am", "note": "Extended departure time may be considered subject to availability" },
+  "taxesAndFees": { "note": "Rates inclusive of all taxes and service charge." },
+  "notExtracted": {
+    "residentRates": "SPECIAL RESIDENTS RATES 2025.pdf — not extracted (out of scope for this non-resident pass). Likely shares the same year-validity gap given the matching filename year — worth checking if a Resident quote is ever needed.",
+    "skippedFiles": ["Thumbs.db (system file)", "OFFER.jpg", "HONEYMOON PACKAGE.jpg", "FESTIVE EARLY BIRD OFFER.jpg — all image files, not machine-extractable via pdftotext; noted as promotional add-ons that exist but whose pricing (if any) could not be read. If a honeymoon or festive early-bird promotion is specifically requested for this hotel, these images would need manual visual review."]
+  }
+}

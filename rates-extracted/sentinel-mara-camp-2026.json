@@ -1,0 +1,50 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftotext -layout, clean text PDFs. NOT a Soroi property. Rack Rates 2026-27 and STO30% 2026-27 PDFs cover the same season windows and are cross-consistent (STO = Rack x 0.70 on every checked cell). A third PDF, 'Kenya Residents Rack Rates 2025-26', is priced in KES for Kenya residents and covers a different (2025-26, not 2026-27) season window - captured separately below for completeness but out of scope for non-resident quoting.",
+  "property": "Sentinel Mara Camp",
+  "operator": "Sentinel Safaris",
+  "region": "Maasai Mara",
+  "currency": "USD",
+  "unit": "per person per night",
+  "source": {
+    "rackFile": "2026 CONTRACT RATES/KENYA/ACCOMODATION/SENTINEL MARA CAMP/Sentinel Mara Camp Rack Rates 2026-27.pdf",
+    "sto30File": "2026 CONTRACT RATES/KENYA/ACCOMODATION/SENTINEL MARA CAMP/Sentinel Mara Camp STO30  2026-27.pdf",
+    "residentFile": "2026 CONTRACT RATES/KENYA/ACCOMODATION/SENTINEL MARA CAMP/Sentinel Mara Camp Kenya Residents Rack Rates 2025-26.pdf"
+  },
+  "confidence": "confirmed-2026-08-06",
+  "seasons": {
+    "peak": { "dateRanges": ["15 Jul 2026 - 15 Oct 2026", "20 Dec 2026 - 3 Jan 2027"] },
+    "offPeak": { "dateRanges": ["4 Jan 2026 - 14 Jul 2026", "16 Oct 2026 - 19 Dec 2026"] }
+  },
+  "rates": {
+    "rack_nonResident_2026_27": {
+      "peak": { "perPersonSharing": 960, "childUnder12": 560, "singleOccupancy": 1330 },
+      "offPeak": { "perPersonSharing": 780, "childUnder12": 475, "singleOccupancy": 1035 }
+    },
+    "sto30_nonResident_2026_27": {
+      "peak": { "perPersonSharing": 672, "childUnder12": 392, "singleOccupancy": 931 },
+      "offPeak": { "perPersonSharing": 546, "childUnder12": 332.5, "singleOccupancy": 724.5 },
+      "note": "Verified STO30 = Rack x 0.70 on every cell (672/960=0.70, 392/560=0.70, 931/1330=0.70, 546/780=0.70, 332.5/475=0.70, 724.5/1035=0.70)."
+    },
+    "kenyaResident_rack_2025_26_KES": {
+      "$note": "Different validity window (2025-26, not 2026-27) and different currency (KES) - not directly comparable to the non-resident figures above. Included for reference only.",
+      "currency": "KES",
+      "peak": { "perPersonSharing": 74550, "childUnder12": 43450, "singleOccupancy": 103100 },
+      "offPeak": { "perPersonSharing": 60490, "childUnder12": 36600, "singleOccupancy": 80100 }
+    }
+  },
+  "mandatoryFees_nonResident_2026_27": {
+    "maraNationalReserveParkFee": { "adult": 200, "childUnder18": 50, "unit": "per day", "note": "As stated on the Rack/STO 2026-27 docs." },
+    "narokCountyBedNightLevy": { "adult": 40, "childUnder18": 20, "unit": "per night" }
+  },
+  "mandatoryFees_resident_2025_26_KES": {
+    "adultParkFee": { "amount": 5000, "currency": "KES", "unit": "per adult per day" },
+    "childParkFee": { "amount": 2000, "currency": "KES", "unit": "per child per day" },
+    "narokCountyBedNightLevy": { "residentAdult": 1500, "residentChildUnder18": 750, "currency": "KES", "unit": "per night" }
+  },
+  "inclusions": ["All meals & snacks", "Teas & coffees", "Quality wines & spirits, beers, soft drinks", "Game drives, guided walks", "WiFi", "Laundry"],
+  "exclusions": ["Staff gratuity", "French champagne", "Health insurance", "Balloon rides, Maasai village visits, other external activities", "Personal effects", "Daily park fees", "Extra lunch USD 35 pp", "Exclusive use of vehicle USD 350/day"],
+  "policyNotes": {
+    "twelveHourRule": "6am-6pm rule for park visitors; guests staying inside the Reserve get an extension to exit the gate or be at the airstrip by 11am on departure day.",
+    "minimumStay": "2 nights year-round"
+  }
+}

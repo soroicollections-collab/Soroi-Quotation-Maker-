@@ -1,0 +1,28 @@
+{
+  "$note": "Extracted 6 Aug 2026. This is one of the three known 'Nairobi/stopover hotel' flexible-variable options already referenced in CLAUDE.md (Crowne Plaza $250/night, 2 adults + 1 child listed there) - this extraction gives the full underlying room-rate table behind that headline figure.",
+  "property": "Crowne Plaza Nairobi Airport",
+  "operator": "Crowne Plaza Nairobi Airport (IHG)",
+  "region": "Nairobi (JKIA)",
+  "tier": "Wholesale Leisure Rate Agreement, specific to Sunworld Safaris",
+  "source": {
+    "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/CROWN PLAZA/Crown Plaza Nairobi Airport - Sunworld Safaris Contract - 2026.pdf",
+    "validity": { "start": "2026-01-01", "end": "2026-12-31" }
+  },
+  "rates": {
+    "currency": "USD", "unit": "per room per night, includes breakfast, taxes, and return airport transfers",
+    "standardRoom": { "single": 150, "double": 180 },
+    "standardRoomBalcony": { "single": 180, "double": 210 },
+    "clubRoom": { "single": 210, "double": 240 },
+    "executiveSuite": { "single": 310, "double": 340 },
+    "thirdAdultSupplement": 60
+  },
+  "roomNamingNote": "[Flag - matches CLAUDE.md Known Issues] Contract labels rooms 'Standard/Standard with Balcony/Club/Executive Suite' here, consistent with the room naming inconsistency already flagged in CLAUDE.md for Crowne Plaza.",
+  "mealRates": { "breakfastIncluded": true, "breakfastCasual": 30, "lunch": 35, "dinner": 35, "child0to6": "Complimentary", "child7to11": "50% discount" },
+  "childPolicy": {
+    "0to12sharing": "Allowed in Superior room with no extra bed; rollaway in Deluxe/other double rooms only",
+    "extraBed4to11": 70,
+    "extraBed12plus": 90,
+    "thirdAdultBedOnlyInClubOrExecSuite": true
+  },
+  "notes": "Rate confidential, non-commissionable, transient travelers only (not group bookings). Day room rate 10am-6pm: USD 120 Superior single/double; other categories 70% of contract rate."
+}

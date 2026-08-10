@@ -1,0 +1,51 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftotext -layout. NOT Soroi properties. Three separate rate-sheet PDFs, same folder, same template/layout, likely a shared operator group (Voi Wildlife Lodge, Man Eaters Camp, Manyatta Camp) - all in the Tsavo area (VWL = Voi Wildlife Lodge, in Tsavo East). Also present in this folder: Terms and Conditions PDFs for 'VWL' and 'MEL' and 'MNYTA' (Voi Wildlife Lodge, Man Eaters Lodge, Manyatta - matching abbreviations) confirming these 3 properties share one operator/terms template - not separately extracted as they are boilerplate T&Cs, not rate data.",
+  "operator": "Shared rate-sheet template (Voi Wildlife Lodge / Man Eaters Camp / Manyatta Camp) - Tsavo area",
+  "region": "Tsavo, Kenya",
+  "source": {
+    "manEatersFile": "2026 CONTRACT RATES/KENYA/ACCOMODATION/MAN EATERS/Man Eaters Camp Non Resident Rates 2026.pdf",
+    "manyattaFile": "2026 CONTRACT RATES/KENYA/ACCOMODATION/MAN EATERS/Manyatta Camp Non Resident Rates 2026.pdf",
+    "voiWildlifeLodgeFile": "2026 CONTRACT RATES/KENYA/ACCOMODATION/MAN EATERS/Voi Wildlfie Lodge Non Resident Rates 2026.pdf",
+    "skipped": "Terms and Conditions VWL.pdf, Terms and Conditions MEL.pdf, Terms and Conditions MNYTA.pdf - boilerplate T&Cs only, no pricing"
+  },
+  "confidence": "confirmed-2026-08-06",
+  "currency": "USD",
+  "unit": "per person per night",
+  "seasons": { "high": ["16 Dec 2025 - 31 Mar 2026", "01 Jul 2026 - 15 Dec 2026"], "low": ["01 Apr 2026 - 30 Jun 2026"], "christmas": "23-26 Dec 2025", "newYears": "31 Dec 2025" },
+  "childPolicy": { "under3": "Free", "age4to12Sharing": "50% of adult rate", "age4to12OwnTentOrRoom": "75% of adult rate" },
+  "manEatersCamp": {
+    "high": { "fullBoard": { "single": 117, "sharing": 90, "childSharing": 45, "childOwnTent": 68 }, "halfBoard": { "single": 112, "sharing": 85, "childSharing": 43, "childOwnTent": 64 }, "bb": { "single": 107, "sharing": 80, "childSharing": 40, "childOwnTent": 60 } },
+    "low": { "fullBoard": { "single": 104, "sharing": 80, "childSharing": 40, "childOwnTent": 60 }, "halfBoard": { "single": 99, "sharing": 75, "childSharing": 38, "childOwnTent": 56 }, "bb": { "single": 94, "sharing": 70, "childSharing": 35, "childOwnTent": 53 } },
+    "christmas": { "fullBoard": { "single": 143, "sharing": 110, "childSharing": 55, "childOwnTent": 83 }, "halfBoard": { "single": 138, "sharing": 105, "childSharing": 53, "childOwnTent": 79 }, "bb": { "single": 133, "sharing": 100, "childSharing": 50, "childOwnTent": 75 } },
+    "newYears": { "fullBoard": { "single": 124, "sharing": 95, "childSharing": 48, "childOwnTent": 71 }, "halfBoard": { "single": 119, "sharing": 90, "childSharing": 45, "childOwnTent": 68 }, "bb": { "single": 114, "sharing": 85, "childSharing": 43, "childOwnTent": 64 } },
+    "verified": true
+  },
+  "manyattaCamp": {
+    "high": { "fullBoard": { "single": 156, "sharing": 120, "childSharing": 60, "childOwnTent": 90 }, "halfBoard": { "single": 151, "sharing": 115, "childSharing": 58, "childOwnTent": 86 }, "bb": { "single": 146, "sharing": 110, "childSharing": 55, "childOwnTent": 83 } },
+    "low": { "fullBoard": { "single": 137, "sharing": 105, "childSharing": 53, "childOwnTent": 79 }, "halfBoard": { "single": 132, "sharing": 100, "childSharing": 50, "childOwnTent": 75 }, "bb": { "single": 127, "sharing": 95, "childSharing": 48, "childOwnTent": 71 } },
+    "christmas": { "fullBoard": { "single": 182, "sharing": 140, "childSharing": 70, "childOwnTent": 105 }, "halfBoard": { "single": 177, "sharing": 135, "childSharing": 68, "childOwnTent": 101 }, "bb": { "single": 172, "sharing": 130, "childSharing": 65, "childOwnTent": 98 } },
+    "newYears": { "fullBoard": { "single": 169, "sharing": 130, "childSharing": 65, "childOwnTent": 98 }, "halfBoard": { "single": 164, "sharing": 125, "childSharing": 63, "childOwnTent": 94 }, "bb": { "single": 159, "sharing": 120, "childSharing": 60, "childOwnTent": 90 } },
+    "verified": true
+  },
+  "voiWildlifeLodge": {
+    "high": { "fullBoard": { "single": 130, "sharing": 100, "childSharing": 50, "childOwnRoom": 75 }, "halfBoard": { "single": 124, "sharing": 95, "childSharing": 48, "childOwnRoom": 71 }, "bb": { "single": 117, "sharing": 90, "childSharing": 45, "childOwnRoom": 68 } },
+    "low": { "fullBoard": { "single": 111, "sharing": 85, "childSharing": 43, "childOwnRoom": 64 }, "halfBoard": { "single": 104, "sharing": 80, "childSharing": 40, "childOwnRoom": 60 }, "bb": { "single": 98, "sharing": 75, "childSharing": 38, "childOwnRoom": 56 } },
+    "christmas": { "fullBoard": { "single": 156, "sharing": 120, "childSharing": 60, "childOwnRoom": 90 }, "halfBoard": { "single": 150, "sharing": 115, "childSharing": 58, "childOwnRoom": 86 }, "bb": { "single": 143, "sharing": 110, "childSharing": 55, "childOwnRoom": 83 } },
+    "newYears": { "fullBoard": { "single": 143, "sharing": 110, "childSharing": 55, "childOwnRoom": 83 }, "halfBoard": { "single": 137, "sharing": 105, "childSharing": 53, "childOwnRoom": 79 }, "bb": { "single": 130, "sharing": 100, "childSharing": 50, "childOwnRoom": 75 } },
+    "acRoomAndPresidentialSuite": {
+      "note": "Additional room categories unique to Voi Wildlife Lodge - not seasonal in the source table (single flat rate shown, no High/Low split given for these categories).",
+      "acRoom": { "singleAdult": { "fb": 165, "hb": 160, "bb": 155 }, "perAdultSharing": { "fb": 127, "hb": 122, "bb": 117 } },
+      "presidentialSuite2pax": { "fb": 400, "hb": 390, "bb": 380 }
+    },
+    "verified": true
+  },
+  "extraSupplements": {
+    "unit": "USD per person, not commissionable",
+    "breakfast": 25, "lunch": 30, "packedLunch": 25, "dinner": 35, "extraLunchDepartureDay": 25,
+    "bushBreakfastNonAlcoholic": 30, "bushBreakfastAlcoholic": 35,
+    "sundownerAlcoholic": 40, "sundownerNonAlcoholic": 30,
+    "bushDinnerAlcoholic": 40, "bushDinnerNonAlcoholic": 30,
+    "verified": true
+  },
+  "rateChangePolicy": "Management reserves the right to change rates at any time, given one month's notice."
+}

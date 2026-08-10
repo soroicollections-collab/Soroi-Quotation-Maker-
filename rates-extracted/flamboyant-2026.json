@@ -1,0 +1,51 @@
+{
+  "$note": "Fresh extraction, 6 Aug 2026, read directly from source XLSX (not a PDF) via openpyxl (data_only=True) in a one-off Python script — Read tool was not used directly on the xlsx since openpyxl gave a clean structured dump of every row; single worksheet named 'WorkSheet', dimensions A1:H164 but only ~28 rows contain data, the rest are empty. No adjacent-property risk (single-property document).",
+  "property": "Flamboyant (Diani)",
+  "region": "Diani Beach",
+  "tier": "Favoured TA/TO Rates 2026, LESS 10% — per the sheet's own title 'FLAMBOYANT DIANI FAVOURED TA/TO RATES 2026 LESS 10%'. This appears to be an already-discounted trade rate (10% off some unstated base), not a Rack rate.",
+  "residency": "Not stated — no Resident/Non-Resident split in the sheet.",
+  "source": {
+    "file": "2026 CONTRACT RATES/KENYA/BEACH ACCOMODATION/Flamboyant/RATES 2026 .xlsx",
+    "sheet": "WorkSheet",
+    "extractionMethod": "openpyxl load_workbook(data_only=True), iterated all rows, filtered blanks."
+  },
+  "confidence": "confirmed-2026-08-06",
+  "structuralFindings": [
+    "The property is actually a cluster of several named sub-buildings/blocks sharing one rate card: Flamboyant (Rooms 1-10 + Annex 1-2), Johari (Rooms 1-3), Dessert Rose (Rooms 1-3), Baobab (Rooms 1-4 + Cottage) — 22 individually named/numbered rooms in total, each independently priced, not grouped purely by room-type category.",
+    "Rate is labeled 'Base Rate' with no explicit occupancy count or meal plan stated anywhere on the sheet — currency is inferred as USD only from the 'Extra bed... USD 15' note at the bottom; the base rate figures themselves have no currency symbol in the cells. Treat the base rate currency as USD by inference from that one note, not directly confirmed on each rate cell.",
+    "No meal plan (BB/HB/FB/AI) is stated anywhere in the sheet — a genuine gap, don't assume any base plan without confirming with the property.",
+    "Five date columns forming the 2026 season calendar: High Season 2025/26 (20 Dec 2025-8 Jan 2026), Regular (8 Jan-2 Apr 2026), Easter (3-7 Apr 2026), Low (8 Apr-17 Jul 2026), Regular/Shoulder (18 Jul-21 Dec 2026) — five bands rather than a clean Peak/Shoulder/Low trio, and the Easter band briefly interrupts what's otherwise a long Regular period.",
+    "Extra bed and baby cot are both flagged in the sheet itself as 'on request and to be confirmed, not assumed' — the source explicitly warns against assuming these are automatically available at the stated price."
+  ],
+  "rooms": {
+    "flamboyantRoom1": { "type": "Double", "rates": { "highSeason20Dec25to8Jan26": 135.00, "regular8Jan-2Apr26": 130.00, "easter3-7Apr26": 140.00, "low8Apr-17Jul26": 120.00, "regular18Jul-21Dec26": 130.00 } },
+    "flamboyantRoom2": { "type": "Double", "rates": { "highSeason20Dec25to8Jan26": 130.00, "regular8Jan-2Apr26": 125.00, "easter3-7Apr26": 130.00, "low8Apr-17Jul26": 100.00, "regular18Jul-21Dec26": 125.00 } },
+    "flamboyantRoom3": { "type": "Twin", "rates": { "highSeason20Dec25to8Jan26": 130.00, "regular8Jan-2Apr26": 125.00, "easter3-7Apr26": 130.00, "low8Apr-17Jul26": 100.00, "regular18Jul-21Dec26": 125.00 } },
+    "flamboyantRoom4": { "type": "Twin", "rates": { "highSeason20Dec25to8Jan26": 130.00, "regular8Jan-2Apr26": 125.00, "easter3-7Apr26": 130.00, "low8Apr-17Jul26": 100.00, "regular18Jul-21Dec26": 125.00 } },
+    "flamboyantRoom5": { "type": "Double", "rates": { "highSeason20Dec25to8Jan26": 130.00, "regular8Jan-2Apr26": 125.00, "easter3-7Apr26": 130.00, "low8Apr-17Jul26": 100.00, "regular18Jul-21Dec26": 125.00 } },
+    "flamboyantRoom6": { "type": "Twin or double", "rates": { "highSeason20Dec25to8Jan26": 120.00, "regular8Jan-2Apr26": 115.00, "easter3-7Apr26": 125.00, "low8Apr-17Jul26": 95.00, "regular18Jul-21Dec26": 115.00 } },
+    "flamboyantRoom7": { "type": "Twin or double", "rates": { "highSeason20Dec25to8Jan26": 120.00, "regular8Jan-2Apr26": 115.00, "easter3-7Apr26": 125.00, "low8Apr-17Jul26": 95.00, "regular18Jul-21Dec26": 115.00 } },
+    "flamboyantRoom8": { "type": "Double", "rates": { "highSeason20Dec25to8Jan26": 120.00, "regular8Jan-2Apr26": 115.00, "easter3-7Apr26": 125.00, "low8Apr-17Jul26": 95.00, "regular18Jul-21Dec26": 115.00 } },
+    "flamboyantRoom9": { "type": "Triple", "rates": { "highSeason20Dec25to8Jan26": 136.00, "regular8Jan-2Apr26": 115.00, "easter3-7Apr26": 125.00, "low8Apr-17Jul26": 95.00, "regular18Jul-21Dec26": 115.00 } },
+    "flamboyantRoom10": { "type": "Family x 4", "rates": { "highSeason20Dec25to8Jan26": 165.00, "regular8Jan-2Apr26": 155.00, "easter3-7Apr26": 160.00, "low8Apr-17Jul26": 140.00, "regular18Jul-21Dec26": 155.00 } },
+    "flamboyantAnnex1": { "type": "Double", "rates": { "highSeason20Dec25to8Jan26": 80.00, "regular8Jan-2Apr26": 80.00, "easter3-7Apr26": 90.00, "low8Apr-17Jul26": 80.00, "regular18Jul-21Dec26": 80.00 } },
+    "flamboyantAnnex2": { "type": "Family x 4", "rates": { "highSeason20Dec25to8Jan26": 165.00, "regular8Jan-2Apr26": 155.00, "easter3-7Apr26": 160.00, "low8Apr-17Jul26": 140.00, "regular18Jul-21Dec26": 155.00 } },
+    "johariRoom1": { "type": "Twin", "rates": { "highSeason20Dec25to8Jan26": 120.00, "regular8Jan-2Apr26": 115.00, "easter3-7Apr26": 125.00, "low8Apr-17Jul26": 95.00, "regular18Jul-21Dec26": 115.00 } },
+    "johariRoom2": { "type": "Double", "rates": { "highSeason20Dec25to8Jan26": 120.00, "regular8Jan-2Apr26": 115.00, "easter3-7Apr26": 125.00, "low8Apr-17Jul26": 95.00, "regular18Jul-21Dec26": 115.00 } },
+    "johariRoom3": { "type": "Double", "rates": { "highSeason20Dec25to8Jan26": 120.00, "regular8Jan-2Apr26": 115.00, "easter3-7Apr26": 125.00, "low8Apr-17Jul26": 95.00, "regular18Jul-21Dec26": 115.00 } },
+    "dessertRose1": { "type": "Triple", "rates": { "highSeason20Dec25to8Jan26": 120.00, "regular8Jan-2Apr26": 115.00, "easter3-7Apr26": 125.00, "low8Apr-17Jul26": 95.00, "regular18Jul-21Dec26": 115.00 } },
+    "dessertRose2": { "type": "Double", "rates": { "highSeason20Dec25to8Jan26": 120.00, "regular8Jan-2Apr26": 115.00, "easter3-7Apr26": 125.00, "low8Apr-17Jul26": 95.00, "regular18Jul-21Dec26": 115.00 } },
+    "dessertRose3": { "type": "Double", "rates": { "highSeason20Dec25to8Jan26": 120.00, "regular8Jan-2Apr26": 115.00, "easter3-7Apr26": 125.00, "low8Apr-17Jul26": 95.00, "regular18Jul-21Dec26": 115.00 } },
+    "baobabRoom1": { "type": "Economy double", "rates": { "highSeason20Dec25to8Jan26": 75.00, "regular8Jan-2Apr26": 60.00, "easter3-7Apr26": 60.00, "low8Apr-17Jul26": 50.00, "regular18Jul-21Dec26": 60.00 } },
+    "baobabRoom2": { "type": "Double", "rates": { "highSeason20Dec25to8Jan26": 120.00, "regular8Jan-2Apr26": 115.00, "easter3-7Apr26": 125.00, "low8Apr-17Jul26": 95.00, "regular18Jul-21Dec26": 115.00 } },
+    "baobabRoom3": { "type": "Economy Twin", "rates": { "highSeason20Dec25to8Jan26": 75.00, "regular8Jan-2Apr26": 60.00, "easter3-7Apr26": 60.00, "low8Apr-17Jul26": 50.00, "regular18Jul-21Dec26": 60.00 } },
+    "baobabRoom4": { "type": "Double", "rates": { "highSeason20Dec25to8Jan26": 120.00, "regular8Jan-2Apr26": 115.00, "easter3-7Apr26": 125.00, "low8Apr-17Jul26": 95.00, "regular18Jul-21Dec26": 115.00 } },
+    "baobabCottage": { "type": "Family x 4", "rates": { "highSeason20Dec25to8Jan26": 165.00, "regular8Jan-2Apr26": 155.00, "easter3-7Apr26": 160.00, "low8Apr-17Jul26": 140.00, "regular18Jul-21Dec26": 155.00 } }
+  },
+  "currency": "USD (inferred from the 'Extra bed... USD 15' note — not printed on the base-rate cells themselves)",
+  "unit": "per room per night, 'Base Rate' — occupancy count and meal plan not stated in source",
+  "verified": true,
+  "extraBed": { "amount": 15, "currency": "USD", "note": "On request and to be confirmed, not assumed — per source's own wording." },
+  "babyCot": { "charge": "No charge", "note": "On request and to be confirmed, not assumed — per source's own wording." },
+  "confidenceNote": "This is the only Flamboyant file in the folder and is a real, readable spreadsheet (not corrupted) — Flamboyant is NOT a skip case. Meal plan and occupancy count per 'Base Rate' figure are genuine gaps in the source, not omissions in this extraction — flag both if quoting this property. No mandatory conservancy/park-style fee found."
+}

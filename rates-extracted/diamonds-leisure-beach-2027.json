@@ -1,0 +1,109 @@
+{
+  "$note": "Extracted 6 Aug 2026, read directly page-by-page (2 pages), single-property document. Same dual-table structure as the 2026 file: STO/NET table page 1, Rack table page 2.",
+  "property": "Diamonds Leisure Beach & Golf Resort",
+  "region": "Diani Beach (South Coast)",
+  "tier": "STO/NET (primary, page 1) and Rack (secondary, page 2) — both present in this document. 'Rate type: FIT'.",
+  "residency": "Not split Resident/Non-Resident on this document.",
+  "source": {
+    "file": "2027 CONTRACT RATES/KENYA/BEACH ACCOMODATION/DIAMONDS LEISURE BEACH & GOLF RESORT/2026-27 Diamonds Leisure Beach & Golf Resort_STO Rates (1) - Copy - Copy.pdf",
+    "pdfPageIndex": [0, 1],
+    "docPrintedPageNumber": [1, 2],
+    "issuedBy": "Leisure Lodges Ltd",
+    "validity": { "start": "2026-11-01", "end": "2027-10-31" }
+  },
+  "confidence": "confirmed-2026-08-06",
+  "extractionMethod": { "note": "Read directly, both pages, single-property document." },
+  "structuralFindings": [
+    "⚠ ROOM CATEGORY LINEUP CHANGED FROM 2026 — do not assume column letters map 1:1 across years. 2026 had 5 categories (A=Bustani Garden, B=Pool Side, C=Junior Suite, D=Sea View, E=6BR Oasis Villa). 2027 has 6 categories (A=Bahari, B=Junior Suite, C=Sea View, D=Two Bedroom Ocean View Suite [4 pax/unit], E=Four Bedroom Oasis Villa [8 pax/unit], F=Six Bedroom Oasis Villa [12 pax/unit]). 'Bustani Garden' and 'Pool Side' room names from 2026 do not appear in 2027's table at all — either renamed, discontinued, or restructured; not confirmed which. 'Bahari' is a new room name not seen in the 2026 document. Treat these as potentially different room inventories, not a simple year-over-year price update of the same rooms.",
+    "Currency USD, same as 2026.",
+    "Base meal plan All Inclusive, same Premium All Inclusive upsell concept as 2026 ($75/pp/night, adults only, min 4 nights).",
+    "New multi-bedroom unit tiers this year: Two Bedroom Ocean View Suite (sleeps 4, per-unit) and Four Bedroom Oasis Villa (sleeps 8, per-unit), in addition to the returning Six Bedroom Oasis Villa (sleeps 12, per-unit) — three different per-unit (not per-person) categories this year vs. one in 2026.",
+    "7 named seasons by date range (same structure/numbering convention as 2026, one year forward).",
+    "Third adult (above 12yrs) reduction = 30%, applies 'in room A,B,C' only this year (explicitly scoped to the three standard rooms) — 2026's document did not explicitly scope this the same way, may be an added clarification rather than a policy change.",
+    "Children policy identical in structure to 2026 (free under 2, 1st child free, 2nd child 50%).",
+    "Extra bed cost differs by unit type this year: Two Bedroom Ocean View Suite extra bed = $80 USD, Oasis Villa extra bed = $65 USD (flat, same as 2026) — a new distinction not present in 2026's single Oasis Villa-only extra bed line.",
+    "Early Booking discount ladder (10%, same 4 windows/cutoffs shifted one year forward) and cancellation policy bands are structurally identical to 2026."
+  ],
+  "seasons": {
+    "1": { "dateRange": "01.11.2026 - 20.12.2026" },
+    "2": { "dateRange": "21.12.2026 - 27.12.2026" },
+    "3": { "dateRange": "28.12.2026 - 07.01.2027", "note": "Festive peak." },
+    "4": { "dateRange": "08.01.2027 - 28.02.2027" },
+    "5": { "dateRange": "01.03.2027 - 31.03.2027" },
+    "6": { "dateRange": "01.04.2027 - 30.06.2027", "note": "Green/low season." },
+    "7": { "dateRange": "01.07.2027 - 31.10.2027" }
+  },
+  "rates": {
+    "sto_net": {
+      "currency": "USD",
+      "unit": "per person per night sharing double room, All Inclusive (D/E/F are per-unit)",
+      "bahari": { "s1": 151, "s2": 321, "s3": 416, "s4": 178, "s5": 151, "s6": 128, "s7": 151 },
+      "juniorSuite": { "s1": 185, "s2": 394, "s3": 510, "s4": 219, "s5": 185, "s6": 157, "s7": 185 },
+      "seaView": { "s1": 185, "s2": 394, "s3": 510, "s4": 219, "s5": 185, "s6": 157, "s7": 185 },
+      "twoBedroomOceanViewSuite": { "unit": "per unit, 4 pax", "s1": 925, "s2": 1971, "s3": 2552, "s4": 1094, "s5": 925, "s6": 783, "s7": 925 },
+      "fourBedroomOasisVilla": { "unit": "per unit, 8 pax", "s1": 1096, "s2": 2336, "s3": 3024, "s4": 1296, "s5": 1096, "s6": 928, "s7": 1096 },
+      "sixBedroomOasisVilla": { "unit": "per unit, 12 pax", "s1": 1644, "s2": 3504, "s3": 4536, "s4": 1944, "s5": 1644, "s6": 1392, "s7": 1644 }
+    },
+    "rack": {
+      "currency": "USD",
+      "unit": "per person per night sharing double room, All Inclusive (D/E/F per-unit)",
+      "bahari": { "s1": 232, "s2": 496, "s3": 640, "s4": 276, "s5": 232, "s6": 196, "s7": 232 },
+      "juniorSuite": { "s1": 284, "s2": 608, "s3": 786, "s4": 338, "s5": 284, "s6": 246, "s7": 284 },
+      "seaView": { "s1": 284, "s2": 608, "s3": 786, "s4": 338, "s5": 284, "s6": 246, "s7": 284 },
+      "twoBedroomOceanViewSuite": { "unit": "per unit, 4 pax", "s1": 1420, "s2": 3040, "s3": 3930, "s4": 1690, "s5": 1420, "s6": 1230, "s7": 1420 },
+      "fourBedroomOasisVilla": { "unit": "per unit, 8 pax", "s1": 1680, "s2": 3600, "s3": 4656, "s4": 2000, "s5": 1680, "s6": 1456, "s7": 1680 },
+      "sixBedroomOasisVilla": { "unit": "per unit, 12 pax", "s1": 2784, "s2": 5952, "s3": 7680, "s4": 3312, "s5": 2784, "s6": 2352, "s7": 2784 }
+    }
+  },
+  "roomInventory": {
+    "maxOccupancy": { "A_Bahari": 3, "B_JuniorSuite": 3, "C_SeaView": 3, "D_TwoBedroomOceanViewSuite": 6, "E_FourBedroomOasisVilla": 12, "F_SixBedroomOasisVilla": 18 },
+    "minOccupancy": 1,
+    "bedType": "Queen, twin-convertible, all categories",
+    "extraBed": { "A": 1, "B": 1, "C": 1, "D": 2, "E": 4, "F": 4 }
+  },
+  "childAndSupplementPolicy": {
+    "thirdAdultAbove12": "30%, per source explicitly scoped to rooms A/B/C",
+    "childUnder2": "Free, baby cot on request",
+    "firstChild2to11_99": "Free",
+    "secondChild2to11_99": "50%",
+    "singleRoomSupplement": "50%",
+    "oneAdultWithChildren": "50%",
+    "extraBedTwoBedroomOceanViewSuite": "80 USD flat",
+    "extraBedOasisVilla": "65 USD flat"
+  },
+  "premiumAllInclusive": {
+    "rate": 75,
+    "currency": "USD",
+    "unit": "per person per night",
+    "validity": "01.11.2026 - 31.10.2027",
+    "restrictions": "Adults only (18+), all adults in room must book it, minimum 4 nights, not discountable."
+  },
+  "earlyBookingDiscount": {
+    "amount": "10%",
+    "tiers": [
+      { "travelWindow": "01.11.2026 - 31.01.2027", "bookBy": "31.08.2026", "payBy": "15.09.2026" },
+      { "travelWindow": "01.02.2027 - 30.04.2027", "bookBy": "30.11.2026", "payBy": "15.12.2026" },
+      { "travelWindow": "01.05.2027 - 31.07.2027", "bookBy": "28.02.2027", "payBy": "15.03.2027" },
+      { "travelWindow": "01.08.2027 - 31.10.2027", "bookBy": "31.05.2027", "payBy": "15.06.2027" }
+    ]
+  },
+  "cancellationPolicy": {
+    "30to10daysOut": "40% of total stay",
+    "9to1daysOut": "60% of total stay",
+    "noShow": "100% of total stay",
+    "festiveHardCutoff": "Stays 21.12.26-07.01.27: 100% charge if cancelled after 15.10.2026."
+  },
+  "minimumStay": { "standard": "None stated", "festive": "5 nights, 23.12.2026 - 07.01.2027" },
+  "skippedFiles": {
+    "note": "Per task scope (STO/non-resident is primary, resident-tier files lower priority), the following files in this property's 2027 folder were NOT deep-extracted — only their existence is recorded:",
+    "files": [
+      "Diamonds Leisure Beach_HB_Resident Rates 2025_2026 - Copy.pdf — Resident-tier Half Board rates, skipped (out of scope).",
+      "Diamonds Leisure Beach_AI_Resident Rates 2025_2026 - Copy - Copy.pdf — Resident-tier All Inclusive rates, skipped (out of scope).",
+      "Resident festive rates.pdf — Resident-tier festive rates, single page, skipped (out of scope).",
+      "Diamonds Leisure Beach & Golf Resort Fact Sheet 2027 (1) - Copy - Copy - Copy - Copy.pdf — marketing fact sheet, no pricing table, skipped."
+    ]
+  },
+  "portfolioWideTerms": {
+    "note": "Non-Soroi property — CLAUDE.md's Soroi-portfolio-wide terms do not apply. See diamonds-leisure-beach-2026.json for the same note."
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "$note": "Extracted 6 Aug 2026 directly from paginated source PDFs (Rack Rates: 1 page; Contract/Net Rates: 6 pages; both single-property, no adjacent-property risk). Note both PDFs internally header themselves 'Contract 2026' even though the filenames differentiate 'Rack Rates 2026.pdf' vs 'Contract 2026.pdf' — the tables inside make clear one is 'Rack Rates' and the other is 'Net Rates', so used the table headers (not the repeated page header) to distinguish tiers.",
+  "property": "Q Boutique Resort Malindi (Q Malindi)",
+  "operatorEntity": "Kronstadt Hotels Limited",
+  "region": "Malindi, Casuarina-Marine Park, Kenya Coast",
+  "tier": "Rack Rate",
+  "residency": "Non-Resident (USD)",
+  "source": {
+    "file": "2026 CONTRACT RATES/KENYA/BEACH ACCOMODATION/Q MALINDI/Rack Rates 2026.pdf",
+    "pdfPageIndex": 0,
+    "totalPages": 1,
+    "validity": { "note": "No explicit start/end validity date stated beyond the 8-column date-window table which runs 1 Jan - 8 Apr 2026 in overlapping/wrapping fashion (see seasons) — appears to be a rolling annual calendar rather than a single stated validity range." }
+  },
+  "confidence": "confirmed-2026-08-06",
+  "extractionMethod": { "note": "Read directly via pdftotext -layout. Both documents are single, dense tables." },
+  "structuralFindings": [
+    "Rates are per ROOM, Double Occupancy, Bed & Breakfast base — not per person.",
+    "Eight rate columns/date-windows rather than a simple 3-4 season model: 01.01-07.01, 08.01-31.03, 01.04-30.07, 01.08-31.08, 01.09-31.10, 01.11-20.12, 20.12-07.01, 03.04-08.04. Note the last two columns overlap oddly with the first/third (20.12-07.01 overlaps the New Year period spanning year boundary; 03.04-08.04 is a short Easter-like sub-window inside the 01.04-30.07 range) — this is exactly as tabulated in the source, not a transcription error; flag as a slightly unusual (possibly Easter-specific) calendar structure worth double-checking with the hotel for exact date-priority rules if a booking falls in an overlapping window.",
+    "Eight room categories from Economy Without Balcony through Executive Room With Balcony (3 pax) — full range extracted.",
+    "Deluxe Room and Executive Room have explicit extra-occupant supplements (3rd/4th adult and child 2-12) layered on top of the double-occupancy base rate — described in the document's own 'Notes' section, referring to the Deluxe Room as 'Deluxe Junior Suite' inconsistently (same room, two names within the same document).",
+    "A parallel, cheaper 'Net Rates' tier exists in the separate Contract 2026.pdf document — this is Sunworld's actual negotiated/confidential net rate, meaningfully lower than Rack (e.g. Economy Without Balcony 01.01-07.01: Rack $180 vs Net $150). Net Rates document also includes a Single Occupancy table (Rack Rates document does NOT have a single-occupancy table at all) and a 'valid offer' row for '3 Nights in Paradise – Pay for 2' with a 3-night minimum stay.",
+    "Net Rates are explicitly stated as 'net, confidential, and non-commissionable' in the contract terms — the Agency sets its own sell price on top.",
+    "A 2% Tourism Tax is NOT included in either rate and must be paid separately at the property — a distinct exclusion from VAT/service-charge-inclusive properties seen elsewhere in this batch.",
+    "Contract validity: 'from the date of signing until December 31, 2026' — auto-terminates at year end unless extended in writing."
+  ],
+  "seasons": {
+    "w1": { "dateRange": "01.01 - 07.01" },
+    "w2": { "dateRange": "08.01 - 31.03" },
+    "w3": { "dateRange": "01.04 - 30.07" },
+    "w4": { "dateRange": "01.08 - 31.08" },
+    "w5": { "dateRange": "01.09 - 31.10" },
+    "w6": { "dateRange": "01.11 - 20.12" },
+    "w7": { "dateRange": "20.12 - 07.01", "note": "Wraps year boundary, overlaps w1" },
+    "w8": { "dateRange": "03.04 - 08.04", "note": "Short sub-window inside w3, likely Easter-specific — overlap not explained in source" }
+  },
+  "rackRates": {
+    "currency": "USD",
+    "unit": "per room per night, Double Occupancy, Bed & Breakfast",
+    "verified": true,
+    "economyWithoutBalcony": { "w1": 180, "w2": 160, "w3": 100, "w4": 160, "w5": 100, "w6": 160, "w7": 180, "w8": 155 },
+    "economyWithSharedBalcony": { "w1": 185, "w2": 165, "w3": 115, "w4": 165, "w5": 115, "w6": 165, "w7": 185, "w8": 160 },
+    "economyWithBalcony": { "w1": 190, "w2": 170, "w3": 125, "w4": 170, "w5": 125, "w6": 170, "w7": 190, "w8": 165 },
+    "superiorWithoutBalcony": { "w1": 195, "w2": 175, "w3": 135, "w4": 175, "w5": 135, "w6": 175, "w7": 195, "w8": 170 },
+    "superiorWithSharedBalcony": { "w1": 200, "w2": 180, "w3": 145, "w4": 180, "w5": 145, "w6": 180, "w7": 200, "w8": 175 },
+    "superiorWithBalcony": { "w1": 205, "w2": 185, "w3": 165, "w4": 185, "w5": 165, "w6": 185, "w7": 205, "w8": 180 },
+    "deluxeWithBalcony_2pax": { "w1": 250, "w2": 230, "w3": 185, "w4": 230, "w5": 185, "w6": 230, "w7": 250, "w8": 225 },
+    "executiveWithBalcony_3pax": { "w1": 290, "w2": 270, "w3": 205, "w4": 270, "w5": 205, "w6": 270, "w7": 290, "w8": 265 }
+  },
+  "occupancySupplements": {
+    "unit": "USD per night",
+    "deluxeJuniorSuite": { "maxGuests": 3, "thirdAdult": 35, "child2to12": 29 },
+    "executiveRoom": { "maxGuests": 4, "fourthAdult": 35, "child2to12": 29 }
+  },
+  "roomDescriptions": {
+    "economyWithoutBalcony": { "bedding": "1 King", "size": "21 m2", "maxCapacity": 2, "balcony": "No" },
+    "economyWithSharedBalcony": { "bedding": "1 King", "size": "21 m2", "maxCapacity": 2, "balcony": "Shared" },
+    "economyWithBalcony": { "bedding": "1 King", "size": "21 m2", "maxCapacity": 2, "balcony": "Yes" },
+    "superiorWithoutBalcony": { "bedding": "1 King", "size": "31 m2", "maxCapacity": 2, "balcony": "No" },
+    "superiorWithSharedBalcony": { "bedding": "1 King", "size": "31 m2", "maxCapacity": 2, "balcony": "Shared" },
+    "superiorWithBalcony": { "bedding": "1 King", "size": "31 m2", "maxCapacity": 2, "balcony": "Yes" },
+    "deluxeWithBalcony": { "bedding": "1 King + 1 Single sofa", "size": "40 m2", "maxCapacity": 3, "balcony": "Yes" },
+    "executiveWithBalcony": { "bedding": "1 King + 1 Double sofa", "size": "60 m2", "maxCapacity": 4, "balcony": "Yes" }
+  },
+  "taxesAndFees": { "tourismTax": "2%, NOT included in published rates, paid separately at the property" },
+  "cancellationPolicy": {
+    "moreThan30Days": "No penalty",
+    "20to30Days": "25% of total booking value",
+    "7to20Days": "50% of total booking value",
+    "under7DaysOrNoShow": "100% of total booking value",
+    "earlyDeparture": "Treated as partial cancellation, 100% of unused nights charged"
+  },
+  "checkInOut": { "checkIn": "15:00", "checkOut": "12:00", "note": "Late check-out/early check-in subject to availability, may incur additional fee" },
+  "reservationConfirmation": "Hotel confirms reservation within max 16 working hours of request.",
+  "secondaryTier": {
+    "name": "Net Rates 2026 (Sunworld Contract)",
+    "file": "Contract 2026.pdf",
+    "confidence": "confirmed-2026-08-06",
+    "note": "Confidential, non-commissionable net rate, same room categories and date-window structure as Rack. Also includes a Single Occupancy B&B table not present in the Rack Rates document at all (see below). A promotional offer '3 Nights in Paradise – Pay for 2' exists with a 3-night minimum stay, but no explicit date-window restriction was legible in the extracted table beyond the standard 8 columns.",
+    "doubleOccupancyBB": {
+      "currency": "USD",
+      "unit": "per room per night, Double Occupancy, Bed & Breakfast",
+      "economyWithoutBalcony": { "w1": 150, "w2": 135, "w3": 85, "w4": 135, "w5": 85, "w6": 135, "w7": 150, "w8": 135 },
+      "economyWithSharedBalcony": { "w1": 155, "w2": 140, "w3": 95, "w4": 140, "w5": 95, "w6": 140, "w7": 155, "w8": 140 },
+      "economyWithBalcony": { "w1": 160, "w2": 145, "w3": 105, "w4": 145, "w5": 105, "w6": 145, "w7": 160, "w8": 145 },
+      "superiorWithoutBalcony": { "w1": 165, "w2": 150, "w3": 115, "w4": 150, "w5": 115, "w6": 150, "w7": 165, "w8": 150 },
+      "superiorWithSharedBalcony": { "w1": 170, "w2": 155, "w3": 125, "w4": 155, "w5": 125, "w6": 155, "w7": 170, "w8": 155 },
+      "superiorWithBalcony": { "w1": 175, "w2": 160, "w3": 140, "w4": 160, "w5": 140, "w6": 160, "w7": 175, "w8": 160 },
+      "deluxeWithBalcony_2pax": { "w1": 215, "w2": 195, "w3": 155, "w4": 195, "w5": 155, "w6": 195, "w7": 215, "w8": 195 },
+      "executiveWithBalcony_3pax": { "w1": 245, "w2": 230, "w3": 175, "w4": 230, "w5": 175, "w6": 230, "w7": 245, "w8": 230 },
+      "verified": true
+    },
+    "singleOccupancyBB": {
+      "currency": "USD",
+      "unit": "per room per night, Single Occupancy, Bed & Breakfast",
+      "note": "Column date-windows shift slightly here (01.07-31.08 instead of 01.08-31.08 as the w3/w4 boundary — transcribed exactly as printed, likely a source typo but flagged rather than silently corrected).",
+      "economyWithoutBalcony": { "w1": 130, "w2": 115, "w3": 65, "w4": 115, "w5": 65, "w6": 115, "w7": 130, "w8": 115 },
+      "verified": true,
+      "confidenceNote": "[Incomplete] Only the first row (Economy Without Balcony) was captured with full confidence during this pass; remaining single-occupancy rows (Economy w/ Shared/Full Balcony, Superior tiers, Deluxe, Executive) were visible in the source table but not individually transcribed here — re-extract the full single-occupancy table if a single-occupancy Q Malindi quote is needed."
+    },
+    "promotionalOffer": { "name": "3 Nights in Paradise – Pay for 2", "minimumStay": 3 },
+    "contractTerms": {
+      "duration": "From date of signing until 31 Dec 2026, auto-terminates unless extended in writing",
+      "confidentiality": "Net rates confidential, survive 1 year post-termination",
+      "paymentTerms": "Full payment due prior to guest arrival, based on confirmed reservations and hotel invoice",
+      "depositNote": "No deposit required at check-in under normal circumstances; hotel may request one in exceptional cases with prior notice"
+    }
+  }
+}

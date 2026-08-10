@@ -1,0 +1,53 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftotext -layout. NOT a Soroi property - part of the 'Secluded Africa' portfolio.",
+  "property": "Kipalo Hills",
+  "operator": "Secluded Africa",
+  "region": "Tsavo West National Park",
+  "tier": "Rack (Tour Operator) and Net (Contract A)",
+  "residency": "Not tier-split by residency on this document",
+  "currency": "USD",
+  "unit": "per person per night unless noted",
+  "source": {
+    "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/SECLUDED AFRICAN PROPERTIES/Secluded African Properties Rates_Kipalo_2026.pdf",
+    "validity": { "start": "2025-12-20", "end": "2026-12-19" }
+  },
+  "confidence": "confirmed-2026-08-06",
+  "seasons": {
+    "high": { "dateRanges": ["20 Dec 2025 - 8 Jan 2026", "3 Apr - 6 Apr 2026", "16 Jul - 30 Sep 2026"] },
+    "mid": { "dateRanges": ["9 Jan - 28 Feb 2026", "1 Jun - 15 Jul 2026", "1 Oct - 31 Oct 2026"] },
+    "low_green": { "dateRanges": ["1 Mar - 2 Apr 2026", "7 Apr - 31 May 2026", "1 Nov - 19 Dec 2026"] }
+  },
+  "rates": {
+    "gamePackage": {
+      "rack": {
+        "traditionalSafariTentPerPersonSharing": { "high": 745, "mid": 550, "low": 415 },
+        "traditionalSafariTentSingle": { "high": 965, "mid": 680, "low": 600 },
+        "childSharingWithAdults_3to16": { "high": 370, "mid": 275, "low": 205 },
+        "childOwnRoom_3to16": { "high": 520, "mid": 385, "low": 290 },
+        "rockSuiteSupplementPerAdult": { "high": 150, "mid": 100, "low": 50 },
+        "rockSuiteSupplementChild": "50% of adult supplement (75/50/25)",
+        "cliffVillaPerPersonSharing": { "allSeasons": 1200, "note": "max 2 pax" }
+      },
+      "net": {
+        "traditionalSafariTentPerPersonSharing": { "high": 559, "mid": 413, "low": 311 },
+        "traditionalSafariTentSingle": { "high": 724, "mid": 510, "low": 450 },
+        "childSharingWithAdults_3to16": { "high": 278, "mid": 206, "low": 154 },
+        "childOwnRoom_3to16": { "high": 390, "mid": 289, "low": 218 },
+        "rockSuiteSupplementPerAdult": { "high": 150, "mid": 100, "low": 50 },
+        "cliffVillaPerPersonSharing": { "allSeasons": 900, "note": "max 2 pax" }
+      }
+    }
+  },
+  "extras": {
+    "guidePilotPerNight": 85,
+    "driverAccommodationPerNight": 20,
+    "conservancyFees": { "adult": 75, "child": 37, "unit": "per person per night" }
+  },
+  "exclusions": {
+    "tsavoNationalParkFees": { "adult": 52, "child": 35, "unit": "per person", "note": "Distinct from the Conservancy fee above - a separate charge." },
+    "kilaguniAirstripTransfer": { "amount": 180, "unit": "per vehicle per way" }
+  },
+  "inclusions": ["Airstrip transfers from Manyani and Ikanga", "Transfer to/from Voi train station", "Full board, bush meals, house wines/beer/non-luxury spirits", "Game drives, night game drives, guided walks, laundry"],
+  "circuitIncentive": { "5to7nights": "5% off accommodation", "8to10nights": "7.5% off accommodation", "11to15nights": "10% off accommodation", "note": "Within Secluded Africa portfolio only. Conservancy/park/reserve fees charged in full." },
+  "christmasSupplement": { "amount": 50, "unit": "per person per night", "minStay": 3, "dates": "24/25/26/31 Dec 2025 and 1 Jan 2026" }
+}

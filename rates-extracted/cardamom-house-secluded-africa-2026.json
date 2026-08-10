@@ -1,0 +1,87 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftotext -layout (clean single/few-page PDFs, no flattening risk). NOT a Soroi property - Cardamom House is part of the 'Secluded Africa' portfolio (Secluded African Properties folder), operated independently of Sunworld/Soroi. Three separate meal-plan PDFs exist for this property (Full Board, Half Board, All Inclusive) - all extracted here as three separate 'mealPlan' blocks sharing one season/validity structure. A fourth Secluded Africa property, 'Delta Dunes', is referenced in the boilerplate footer of all these PDFs ('This agreement is between Secluded Africa management on behalf of Kipalo Hills, Instinct of the Mara, Cardamom House and Delta Dunes') but NO rate PDF for Delta Dunes exists in this folder - not extracted, flagged as a gap.",
+  "property": "Cardamom House",
+  "operator": "Secluded Africa",
+  "region": "Kuruwitu Beach, Vipingo (Kenya coast)",
+  "tier": "Rack (Tour Operator) and Net (Contract A) - both shown per document",
+  "residency": "Not tier-split by residency on this document",
+  "currency": "USD",
+  "unit": "per person per night unless noted",
+  "source": {
+    "files": [
+      "2026 CONTRACT RATES/KENYA/ACCOMODATION/SECLUDED AFRICAN PROPERTIES/Secluded African Properties Rates_Cardamom_House_Full_Board_2026.pdf",
+      "2026 CONTRACT RATES/KENYA/ACCOMODATION/SECLUDED AFRICAN PROPERTIES/Secluded African Properties Rates_Cardamom_House_Half_Board_2026.pdf",
+      "2026 CONTRACT RATES/KENYA/ACCOMODATION/SECLUDED AFRICAN PROPERTIES/Secluded African Properties_Rates_Cardamom_House_Package_2026.pdf"
+    ],
+    "validity": { "start": "2025-12-20", "end": "2026-12-19" }
+  },
+  "confidence": "confirmed-2026-08-06",
+  "seasons": {
+    "festive": { "dateRanges": ["20 Dec 2025 - 3 Jan 2026"] },
+    "high": { "dateRanges": ["4 Jan - 8 Jan 2026", "3 Apr - 6 Apr 2026", "16 Jul - 30 Sep 2026"] },
+    "mid": { "dateRanges": ["9 Jan - 28 Feb 2026", "1 Jun - 15 Jul 2026", "1 Oct - 31 Oct 2026"] },
+    "low_green": { "dateRanges": ["1 Mar - 2 Apr 2026", "7 Apr - 31 May 2026", "1 Nov - 19 Dec 2026"] }
+  },
+  "mealPlans": {
+    "fullBoard": {
+      "sourceFile": "Secluded African Properties Rates_Cardamom_House_Full_Board_2026.pdf",
+      "rack": {
+        "suitePerPersonSharing": { "festive": 696, "high": 640, "mid": 500, "low": 410 },
+        "suitePerSingle": { "festive": 935, "high": 850, "mid": 670, "low": 545 },
+        "childSharingSuite_3to16": { "festive": 350, "high": 320, "mid": 250, "low": 205 },
+        "childOwnRoom_3to16": { "festive": 490, "high": 450, "mid": 350, "low": 290 },
+        "penthouseMandaToto_perPersonSharing": { "festive_and_high": 1200, "mid_and_low": 900, "note": "1200 max 2 pax; 900 max 4 pax - exact season mapping ambiguous from table layout, see confidenceNote" }
+      },
+      "net": {
+        "suitePerPersonSharing": { "festive": 521, "high": 480, "mid": 375, "low": 308 },
+        "suitePerSingle": { "festive": 701, "high": 638, "mid": 503, "low": 409 },
+        "childSharingSuite_3to16": { "festive": 263, "high": 240, "mid": 188, "low": 154 },
+        "childOwnRoom_3to16": { "festive": 368, "high": 338, "mid": 263, "low": 218 },
+        "penthouseMandaToto_perPersonSharing": { "high": 900, "mid_and_low": 675 }
+      }
+    },
+    "halfBoard": {
+      "sourceFile": "Secluded African Properties Rates_Cardamom_House_Half_Board_2026.pdf",
+      "rack": {
+        "suitePerPersonSharing": { "festive": 655, "high": 575, "mid": 435, "low": 365 },
+        "suitePerSingle": { "festive": 890, "high": 800, "mid": 640, "low": 500 },
+        "childSharingSuite_3to16": { "festive": 325, "high": 285, "mid": 215, "low": 180 },
+        "childOwnRoom_3to16": { "festive": 460, "high": 400, "mid": 305, "low": 255 }
+      },
+      "net": {
+        "suitePerPersonSharing": { "festive": 491, "high": 431, "mid": 326, "low": 274 },
+        "suitePerSingle": { "festive": 668, "high": 600, "mid": 480, "low": 375 },
+        "childSharingSuite_3to16": { "festive": 244, "high": 214, "mid": 161, "low": 135 },
+        "childOwnRoom_3to16": { "festive": 345, "high": 300, "mid": 229, "low": 191 }
+      }
+    },
+    "allInclusive": {
+      "sourceFile": "Secluded African Properties_Rates_Cardamom_House_Package_2026.pdf",
+      "rack": {
+        "suitePerPersonSharing": { "festive": 940, "high": 870, "mid": 650, "low": 578 },
+        "suitePerSingle": { "festive": 1175, "high": 1120, "mid": 870, "low": 781 },
+        "childSharingSuite_3to16": { "festive": 470, "high": 435, "mid": 325, "low": 289 },
+        "childOwnRoom_3to16": { "festive": 660, "high": 610, "mid": 455, "low": 433 }
+      },
+      "net": {
+        "suitePerPersonSharing": { "festive": 705, "high": 653, "mid": 488, "low": 431 },
+        "suitePerSingle": { "festive": 881, "high": 840, "mid": 653, "low": 585 },
+        "childSharingSuite_3to16": { "festive": 353, "high": 326, "mid": 244, "low": 214 },
+        "childOwnRoom_3to16": { "festive": 495, "high": 458, "mid": 341, "low": 300 }
+      }
+    }
+  },
+  "commonAcrossMealPlans": {
+    "guidePilotPerNight": 80,
+    "conservancyFees": { "adult": 65, "child": 32, "unit": "per person per night", "note": "Excluded from all package rates above - charged separately." },
+    "childSharing50pctAdultRate": "Penthouse child rate = 50% of adult rate (all meal plans)",
+    "circuitIncentive": { "5to7nights": "5% off accommodation", "8to10nights": "7.5% off accommodation", "11to15nights": "10% off accommodation", "note": "Within the Secluded Africa portfolio only (Cardamom House, Instinct of the Mara, Kipalo Hills, Delta Dunes). Conservancy/park/reserve fees charged in full regardless." },
+    "eastSupplement": { "amount": 50, "unit": "per person per night", "dates": "3 Apr - 6 Apr 2026", "label": "Easter Supplement" },
+    "christmasSupplement": { "amount": 50, "unit": "per person per night", "minStay": 5, "dates": "24/25/26/31 Dec 2025 and 1 Jan 2026" },
+    "singlesPolicy": "Max 2 singles per booking at single rate; additional singles charged at double room rate.",
+    "checkOut": "12pm; late departure prebookable, surcharge may apply (extra lunch USD 35/pp + activities)",
+    "mombasaMalindiAirstripTransfer": { "amount": 160, "unit": "per vehicle per way", "note": "excluded, must be prearranged" },
+    "vipingoAirstripTransfer": "included"
+  },
+  "confidenceNote": "[Unverified] Penthouse (Manda Toto) rate table layout places '1,200 (max. 2 pax)' and '900 (max. 4 pax)' under a merged FESTIVE/HIGH column header with the number appearing to visually align under HIGH/MID only in the raw text dump - the exact season-to-price mapping is ambiguous from pdftotext -layout output alone and was not independently verified against the original page image. Treat Penthouse figures as indicative only until confirmed by direct visual PDF review."
+}

@@ -1,0 +1,18 @@
+{
+  "$note": "Extracted 6 Aug 2026 by reading the raw XLSX XML directly (zipfile + sharedStrings.xml + sheet1.xml parse, since this file is Excel not PDF). NOT a Soroi property - a simple town hotel/inn near Tsavo, minimal rate sheet (single sheet, 4 rows, no seasonality, no dates, no mandatory fees, no policies stated at all).",
+  "property": "Tsavo Inn",
+  "region": "Tsavo area, Kenya",
+  "currency": "USD",
+  "unit": "per room per night",
+  "source": {
+    "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/TSAVO INN/Tsavo inn NON RESIDENTS RATES.xlsx",
+    "validity": "Not stated in source - no date range given anywhere in this document."
+  },
+  "confidence": "confirmed-2026-08-06 for the figures themselves; low-confidence for everything else since no supporting policy/date/fee information exists in the source at all",
+  "rates": {
+    "single": { "BB": 90, "HB": 100, "FB": 110 },
+    "double": { "BB": 120, "HB": 140, "FB": 160 },
+    "triple": { "BB": 160, "HB": 190, "FB": 220 }
+  },
+  "confidenceNote": "[Unverified] This is the thinnest formal rate sheet in this entire extraction batch - just a 4-row table, no validity dates, no child policy, no mandatory fees, no meal plan definitions, no cancellation terms. Treat as indicative only and confirm all other details directly with the property before quoting."
+}

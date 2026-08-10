@@ -1,0 +1,33 @@
+{
+  "$note": "Extracted 6 Aug 2026, from the same bundled Ashnil documents (Surana is a sister brand of Ashnil Hotels).",
+  "property": "Surana Mara Camp",
+  "operator": "Ashnil Hotels Limited (AHL) / Surana Luxury",
+  "region": "Maasai Mara",
+  "tier": "Contract rate and Rack rate (full board + all-inclusive)",
+  "source": {
+    "files": [
+      "2026 CONTRACT RATES/KENYA/ACCOMODATION/ASHNIL HOTELS/ASHNIL HOTELS LTD_2026.pdf",
+      "2026 CONTRACT RATES/KENYA/ACCOMODATION/ASHNIL HOTELS/ASHNIL HOTELS RACK RATES_2026.pdf"
+    ]
+  },
+  "rates": {
+    "currency": "USD",
+    "unit": "per person, Full Board & All-Inclusive, Half Twin/Single/3rd Adult",
+    "contract": {
+      "peak_01Jul-30Sep": { "halfTwin": 1200, "single": 1800, "thirdAdult": 1300 },
+      "high_21Dec-06Apr_01Jun-30Jun_01Oct-20Dec": { "halfTwin": 780, "single": 1170, "thirdAdult": 560 },
+      "low_07Apr-31May": { "halfTwin": 525, "single": 525, "thirdAdult": 420 }
+    },
+    "rack": {
+      "peak": { "halfTwin": 1920, "single": 2880, "thirdAdult": 1536 },
+      "high": { "halfTwin": 1248, "single": 1872, "thirdAdult": 998 },
+      "low": { "halfTwin": 840, "single": 840, "thirdAdult": 672 }
+    }
+  },
+  "gamePackageSupplement": { "perNight": 130, "child4to12": 100, "note": "Includes Hippo Pool Breakfast and Masai Village cultural visit transfer once during stay" },
+  "childPolicy": { "0to3": "Free", "4to12Sharing": "50% of adult rate" },
+  "circuitDiscount": { "4nights": "5%", "5nights": "7.5%", "6nights": "8.5%", "7plusNights": "10%" },
+  "familyTentSupplement": { "contract": 150, "rack": 150 },
+  "maxSingles": "3 per group at single rate, additional charged at double rate",
+  "exclusions": "Masai Mara Park entry fees, local airfares, SPA treatments."
+}

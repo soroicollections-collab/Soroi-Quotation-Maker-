@@ -1,0 +1,107 @@
+{
+  "$note": "Fresh extraction, 6 Aug 2026. METHOD NOTE: pdftotext (both plain and -layout) extracted only the marketing/policy text on both pages — the entire rate table (both the room-rate grid and the room-inventory/bedding-options grid) is embedded as a large JPEG image (4032x2688px per pdfimages -list) on each page, not as extractable text. Resolved by rendering each page to PNG at 200dpi via pdftoppm and reading the images directly. All room-rate and room-inventory figures below were read visually, not machine-extracted text — flagged prominently since this differs from most files in this batch (Diani Sea Resort/Lodge had the same issue for a different underlying reason).",
+  "property": "Kijani Hotel",
+  "region": "Shela, Lamu Island",
+  "tier": "Single published rate card, with High/Festive season explicitly labeled 'Rack Rates' in its own table header — Low and Mid season tables carry no such label. Possible implication that Low/Mid are a form of negotiated/agent rate while only Festive is true Rack, but this is [Inference] — the sheet doesn't state it explicitly either way.",
+  "residency": "Not stated — no Resident/Non-Resident split.",
+  "source": {
+    "file": "2026 CONTRACT RATES/KENYA/BEACH ACCOMODATION/KIJANI HOTEL LAMU/KIJANI HOTEL LAMU - 2026 rates.pdf",
+    "pages": 2,
+    "validity": { "start": "2026-01-15", "end": "2027-01-15" },
+    "extractionMethod": "Visual read of rendered page PNGs (pdftotext could not surface the embedded rate-table images)."
+  },
+  "confidence": "confirmed-2026-08-06-visual-read",
+  "structuralFindings": [
+    "TWO CURRENCIES, one per page: page 1 is the KES rate table, page 2 is the exact same table structure in USD — not two different rate tiers, but the same tier expressed in two currencies (values are not exact-rate-of-day FX conversions of each other by a simple ratio; e.g. KES Single/Garden Standard Low Season 14,500 vs USD 145.00 implies ~100 KES/USD, but Superior Room Low Season KES 35,000 vs USD 350.00 is consistent at the same ~100 ratio — so this does appear to be one simple assumed FX rate applied uniformly, not independently priced per currency; not explicitly confirmed by the source though).",
+    "Base meal plan for both currency tables is explicitly '(Bed, a la carte breakfast)' per the Low/Mid/High season sub-headers on page 2 (page 1's sub-headers for Low/Mid don't repeat the meal-plan text but the High/Festive header and the footer note both confirm Bed & Breakfast) — consistent across both pages.",
+    "Four room categories in the main rate grid: Standard Room (Garden facing), Standard Room (Sea facing), Classic Room (Sea facing), Superior Room (Sea facing) — Superior Room is priced as a single flat figure per occupancy tier (not split by view, since it's a single room type) spanning across the three lower-category columns visually (merged cell in the source table).",
+    "Separately, a 12-room bedding-options/inventory table lists every individual room number with its own bedding configuration, AC availability, capacity max, and view — this is NOT a pricing table, it's a room-inventory reference; room categories 6-11 share the 'Standard Sea Facing'/'Classic Room' names used in the price grid but the individual room numbers have different bed configurations and capacity (2-3 pax) within the same named category. Room #12 'Kijani Apartment' (3-bedroom self-serviced, 7 pax max) appears in the inventory table but has NO corresponding rate row in the main price grid at all — a genuine pricing gap for that specific unit.",
+    "Minor source inconsistency: the boilerplate line 'Rates are in Ksh per room per night inclusive of 16% VAT and 2% catering levy and 5% service charge' appears on BOTH pages, including the USD page — almost certainly a copy-paste carryover from the KES page rather than a real statement that the USD-page rates are secretly in KES. Recorded as printed but flagged as likely a source document error, not something to act on literally."
+  ],
+  "seasons": {
+    "low": { "dateRange": "21 Apr - 15 Jun" },
+    "mid": { "dateRanges": ["15 Jan - 20 Apr", "16 Jun - 15 Dec"] },
+    "highFestive": { "dateRange": "15 Dec - 14 Jan", "minimumStay": "5 nights", "label": "Rack Rates" }
+  },
+  "rates": {
+    "kes": {
+      "currency": "KES",
+      "unit": "per room per night, Bed & Breakfast (à la carte)",
+      "low": {
+        "singleRoom1Adult": { "standardGarden": 14500, "standardSea": 17000, "classicSea": 23500, "superiorSea": 35000 },
+        "doubleRoom2Adults": { "standardGarden": 19800, "standardSea": 23000, "classicSea": 29500, "superiorSea": 35000 },
+        "tripleRoom3Adults": { "standardGarden": 28000, "standardSea": 32000, "classicSea": 38000, "superiorSea": 44000 },
+        "accompanyingChild3to11Sharing": { "standardGarden": 6000, "standardSea": 6300, "classicSea": 6300, "superiorSea": 7500 }
+      },
+      "mid": {
+        "singleRoom1Adult": { "standardGarden": 18200, "standardSea": 21000, "classicSea": 29100, "superiorSea": 38600 },
+        "doubleRoom2Adults": { "standardGarden": 24300, "standardSea": 29500, "classicSea": 36400, "superiorSea": 38600 },
+        "tripleRoom3Adults": { "standardGarden": 33700, "standardSea": 38700, "classicSea": 45800, "superiorSea": 49000 },
+        "accompanyingChild3to11Sharing": { "standardGarden": 6300, "standardSea": 6500, "classicSea": 6500, "superiorSea": 7900 }
+      },
+      "highFestive": {
+        "singleRoom1Adult": { "standardGarden": 26600, "standardSea": 30500, "classicSea": 42800, "superiorSea": 54000 },
+        "doubleRoom2Adults": { "standardGarden": 35600, "standardSea": 43000, "classicSea": 53500, "superiorSea": 54000 },
+        "tripleRoom3Adults": { "standardGarden": 48300, "standardSea": 55600, "classicSea": 66200, "superiorSea": 69300 },
+        "accompanyingChild3to11Sharing": { "standardGarden": 8700, "standardSea": 9800, "classicSea": 9800, "superiorSea": 11000 }
+      },
+      "extraBedAdults": 9500,
+      "extraBedAdultsFestive": 11500,
+      "packageAddOn": { "halfBoard": { "amount": 5200, "unit": "per person per meal" }, "fullBoard": { "amount": 10400, "unit": "per person per day" } }
+    },
+    "usd": {
+      "currency": "USD",
+      "unit": "per room per night, Bed & Breakfast (à la carte)",
+      "low": {
+        "singleRoom1Adult": { "standardGarden": 145.00, "standardSea": 170.00, "classicSea": 230.00, "superiorSea": 350.00 },
+        "doubleRoom2Adults": { "standardGarden": 200.00, "standardSea": 230.00, "classicSea": 290.00, "superiorSea": 350.00 },
+        "tripleRoom3Adults": { "standardGarden": 280.00, "standardSea": 300.00, "classicSea": 380.00, "superiorSea": 440.00 },
+        "accompanyingChild3to11Sharing": { "standardGarden": 60.00, "standardSea": 60.00, "classicSea": 60.00, "superiorSea": 75.00 }
+      },
+      "mid": {
+        "singleRoom1Adult": { "standardGarden": 180.00, "standardSea": 200.00, "classicSea": 285.00, "superiorSea": 390.00 },
+        "doubleRoom2Adults": { "standardGarden": 245.00, "standardSea": 290.00, "classicSea": 345.00, "superiorSea": 390.00 },
+        "tripleRoom3Adults": { "standardGarden": 340.00, "standardSea": 380.00, "classicSea": 435.00, "superiorSea": 485.00 },
+        "accompanyingChild3to11Sharing": { "standardGarden": 65.00, "standardSea": 65.00, "classicSea": 65.00, "superiorSea": 80.00 }
+      },
+      "highFestive": {
+        "singleRoom1Adult": { "standardGarden": 270.00, "standardSea": 300.00, "classicSea": 430.00, "superiorSea": 590.00 },
+        "doubleRoom2Adults": { "standardGarden": 370.00, "standardSea": 430.00, "classicSea": 520.00, "superiorSea": 590.00 },
+        "tripleRoom3Adults": { "standardGarden": 475.00, "standardSea": 535.00, "classicSea": 625.00, "superiorSea": 685.00 },
+        "accompanyingChild3to11Sharing": { "standardGarden": 90.00, "standardSea": 100.00, "classicSea": 100.00, "superiorSea": 115.00 }
+      },
+      "extraBedAdults": 95,
+      "extraBedAdultsFestive": 115,
+      "packageAddOn": { "halfBoard": { "amount": 45, "unit": "per person per meal" }, "fullBoard": { "amount": 90, "unit": "per person per day" } }
+    }
+  },
+  "verified": true,
+  "childPolicy": {
+    "under2": "free",
+    "age3to11Sharing": "as per the accompanyingChild rate above",
+    "age3to11OwnRoom": "75% of room rate"
+  },
+  "roomInventory": [
+    { "roomNumber": 1, "category": "Superior Room", "bedding": "Two double beds king size (option to add third single) - No AC", "capacityMax": 5, "view": "Sea Facing" },
+    { "roomNumber": 2, "category": "Classic Room", "bedding": "One double bed only - No AC", "capacityMax": 2, "view": "Sea Facing" },
+    { "roomNumber": 3, "category": "Classic Room", "bedding": "One double bed + one single bed - No AC", "capacityMax": 3, "view": "Sea Facing" },
+    { "roomNumber": 4, "category": "Standard Room", "bedding": "Twin beds (option to add third single) - Has AC", "capacityMax": 3, "view": "Pool Facing" },
+    { "roomNumber": 5, "category": "Standard Room", "bedding": "One double bed + one single bed - Has AC", "capacityMax": 3, "view": "Garden Facing" },
+    { "roomNumber": 6, "category": "Standard Sea Facing", "bedding": "One double (option to add a single bed) - Has AC", "capacityMax": 3, "view": "Sea Facing" },
+    { "roomNumber": 7, "category": "Standard Sea Facing", "bedding": "Twin beds (option to add third single) - Has AC", "capacityMax": 3, "view": "Sea Facing" },
+    { "roomNumber": 8, "category": "Standard Sea Facing", "bedding": "Double bed (option to add single bed) - Has AC", "capacityMax": 3, "view": "Sea Facing" },
+    { "roomNumber": 9, "category": "Standard Sea Facing", "bedding": "Double bed (option to add single bed) - Has AC", "capacityMax": 3, "view": "Sea Facing" },
+    { "roomNumber": 10, "category": "Standard Sea Facing", "bedding": "One double bed only - Has AC", "capacityMax": 2, "view": "Sea Facing" },
+    { "roomNumber": 11, "category": "Classic Room", "bedding": "One double bed + one single bed (option to add single bed) - Has AC", "capacityMax": 3, "view": "Sea Facing" },
+    { "roomNumber": 12, "category": "Kijani Apartment", "bedding": "3 Bedroom self-serviced (option to add 2 single beds) - No AC", "capacityMax": 7, "view": "Sea Facing", "confidenceNote": "No priced rate row exists for this unit anywhere in the main price grid — pricing gap in the source, not an omission here." }
+  ],
+  "cancellationPolicy": {
+    "between90and61Days": "20% of total cost charged",
+    "between60and45Days": "30% of total cost charged",
+    "between44and21Days": "50% of total cost charged",
+    "within20Days": "100% of total cost charged",
+    "noShow": "full accommodation rate charged"
+  },
+  "inclusions": "Complimentary airport transfers included in all rates.",
+  "confidenceNote": "No mandatory conservancy/park-style fee found. Room #12 (Kijani Apartment) has inventory details but no price — flag if a client requests it. USD/KES page both carry a KES-referencing boilerplate tax note, likely a copy-paste artifact rather than the USD page secretly being KES-denominated — flag rather than silently correct."
+}

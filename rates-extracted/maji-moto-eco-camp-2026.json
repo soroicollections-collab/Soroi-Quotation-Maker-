@@ -1,0 +1,48 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftotext -layout. NOT a Soroi property. Loita Hills / Maasai cultural-immersion camp (operated by Boutique Camps Ltd), Non-Resident tier. Two distinct products in one document: standard camp stay (per day, seasonal) and multi-night Walking Safari / Fly Camping packages (priced per group size, not seasonal).",
+  "property": "Maji Moto Eco Camp",
+  "operator": "Boutique Camps Ltd",
+  "region": "Loita Hills, south of Nairobi / northeast of Maasai Mara",
+  "source": { "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/MAJI MOTO/Maji Moto Eco Camp Tariff 2026 - NON RESIDENT - CONTRACT - USD.pdf" },
+  "confidence": "confirmed-2026-08-06",
+  "currency": "USD",
+  "standardCampStay": {
+    "unit": "per person per day, Full Board",
+    "normalSeason": { "dateRanges": ["01 Jan - 31 Mar 2026", "16 Jun - 31 Dec 2026"], "adultSharingTwinTent": { "contract": 130, "rack": 150 }, "adultSingleTent": { "contract": 195, "rack": 225 }, "thirdBedAdult": { "contract": 110, "rack": 125 }, "childUnder12": { "contract": 75, "rack": 90 }, "childUnder3": "FOC" },
+    "greenSeason": { "dateRange": "01 Apr - 15 Jun 2026", "adultSharingTwinTent": { "contract": 110, "rack": 130 }, "adultSingleTent": { "contract": 165, "rack": 190 }, "thirdBedAdult": { "contract": 90, "rack": 105 }, "childUnder12": { "contract": 55, "rack": 70 }, "childUnder3": "FOC" },
+    "inclusions": ["Full board incl. drinking water, tea, coffee", "Nature walks, cultural experience (warrior training, fire making, beading)", "Walking safaris", "School and hot spring visit, Manyatta visit"],
+    "noConservancyFee": true,
+    "exclusions": ["Alcoholic/non-alcoholic drinks", "Tips"],
+    "optionalExtras": {
+      "picnicLunch": 25,
+      "privateGameDriveMaraReserve": { "amount": 350, "unit": "per vehicle, 4x4 Landcruiser" },
+      "maraParkFees": { "adultPeak": 200, "adultLow": 100, "child9to17": 50, "under9": "Free", "note": "Payable directly at park gate; peak = 1 Jul-31 Dec, low = 1 Jan-30 Jun" },
+      "sleepingUnderStars": { "adult": 80, "child": 40, "note": "Private setup, bush dinner, wine, Maasai shuka" },
+      "transferNairobi": { "saloonCar1to4pax": 190, "minivanUpTo7pax": 250, "unit": "per vehicle one way" }
+    },
+    "verified": true
+  },
+  "walkingSafariFlyCamping": {
+    "unit": "per person sharing room, price varies by number of adults in the group (1-7) and single room supplement (SRS)",
+    "note": "Rates decrease per person as group size increases (shared fixed costs model), typical of exclusive-basis walking safaris. Kids under 12 sharing = 60% of adult rate; kids under 12 in own space = 80%.",
+    "oneNightTwoDays": {
+      "contract": { "1adult": 385, "2adults": 295, "3adults": 265, "4adults": 245, "5adults": 240, "6adults": 230, "7adults": 230, "srs": 65 },
+      "rack": { "1adult": 455, "2adults": 340, "3adults": 305, "4adults": 285, "5adults": 275, "6adults": 265, "7adults": 260, "srs": 70 }
+    },
+    "twoNightsThreeDays": {
+      "contract": { "1adult": 635, "2adults": 500, "3adults": 455, "4adults": 430, "5adults": 420, "6adults": 410, "7adults": 405, "srs": 125 },
+      "rack": { "1adult": 725, "2adults": 570, "3adults": 515, "4adults": 490, "5adults": 475, "6adults": 465, "7adults": 460, "srs": 140 }
+    },
+    "threeNightsFourDays": {
+      "contract": { "1adult": 890, "2adults": 710, "3adults": 650, "4adults": 615, "5adults": 600, "6adults": 585, "7adults": 580, "srs": 185 },
+      "rack": { "1adult": 1010, "2adults": 805, "3adults": 735, "4adults": 700, "5adults": 680, "6adults": 665, "7adults": 655, "srs": 210 }
+    },
+    "minAge": "Not stated for walking (contrast: fly camping under-16 not allowed on walks per other Kicheche-style properties in this dataset - not independently confirmed for Maji Moto)",
+    "verified": true
+  },
+  "driverGuideAccommodation": { "amount": 1500, "currency": "KES", "unit": "per person per day, incl. meals/accommodation excl. drinks; charged directly to driver" },
+  "paymentTerms": "100% payment required to confirm booking; full payment 30 days prior to arrival.",
+  "cancellation": { "30to21days": "20%", "20to15days": "50%", "14daysToNoShow": "100%" },
+  "checkOut": "10am regardless of arrival time",
+  "lateDeparture": { "after12pm": { "adult": 50, "child": 25 }, "note": "Includes lunch if required." }
+}

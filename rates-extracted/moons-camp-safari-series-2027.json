@@ -1,0 +1,54 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftotext -layout from 3 files in 'THE SAFARI SERIES/': '30% STO Moon's Camp 2027.pdf' (2pp, Non-Resident STO), 'Resident Moon's Camp - 2027 rates.pdf' (Resident/Citizen, KES), and 'The Safari Series - specials 2027.pdf' (not extracted - promotional specials). ANOMALY: page 1 header of the STO file literally reads 'Moon's Camp - 2026 rates, 30% STO' even though the filename says 2027 and the season windows extend into Jan 2028 (consistent with a full 2027 calendar-year rate card) - likely a leftover typo from a prior year's template, not a real 2026/2027 distinction. Treated as the 2027 rate card since that's what the filename, season structure, and folder location all indicate.",
+  "property": "Moon's Camp",
+  "operator": "The Safari Series",
+  "location": "Lolldaiga Conservancy, Laikipia",
+  "confidence": "confirmed-2027-08-06",
+  "confidenceNote": "[Unverified] Page header year mismatch noted above - low-risk but flagged per project convention.",
+  "nonResident": {
+    "currency": "USD",
+    "tier": "30% STO off Rack",
+    "unit": "per person per night",
+    "seasons": {
+      "mid": { "dates": "6 Jan-30 Apr, 1 Jul-31 Oct, 1-17 Dec 2027", "adult": { "rack": 550, "nett": 385 }, "child5to15": { "rack": 275, "nett": 193 }, "conservationPlusCommunityFeeAdult": "$120 + $10", "conservationPlusCommunityFeeChild": "$60 + $5" },
+      "green": { "dates": "1 May-30 Jun, 1-30 Nov 2027", "adult": { "rack": 400, "nett": 280 }, "child5to15": { "rack": 200, "nett": 140 }, "conservationPlusCommunityFeeAdult": "$120 + $10", "conservationPlusCommunityFeeChild": "$60 + $5" },
+      "high": { "dates": "18 Dec 2027-5 Jan 2028", "adult": { "rack": 580, "nett": 406 }, "child5to15": { "rack": 290, "nett": 203 }, "conservationPlusCommunityFeeAdult": "$120 + $10", "conservationPlusCommunityFeeChild": "$60 + $5" }
+    },
+    "verified": true,
+    "discountVerification": "Nett = Rack x 0.70 exactly on every cell (e.g. 550*0.7=385, matches)."
+  },
+  "resident": {
+    "currency": "KES",
+    "seasons": {
+      "mid": { "dates": "6 Jan-30 Apr, 1 Jul-31 Oct, 1-17 Dec 2027", "adult": 25000, "child5to15": 12500, "conservationFeeAdult": { "resident": 4000, "citizen": 2000 }, "conservationFeeChild": { "resident": 2000, "citizen": 1000 }, "communityFeeAdult": 1000, "communityFeeChild": 500 },
+      "green": { "dates": "1 May-30 Jun, 1-30 Nov 2027", "adult": 18000, "child5to15": 9000, "conservationFeeAdult": { "resident": 4000, "citizen": 2000 }, "conservationFeeChild": { "resident": 2000, "citizen": 1000 }, "communityFeeAdult": 1000, "communityFeeChild": 500 },
+      "high": { "dates": "18 Dec 2027-5 Jan 2028", "adult": 35000, "child5to15": 17500, "conservationFeeAdult": { "resident": 4000, "citizen": 2000 }, "conservationFeeChild": { "resident": 2000, "citizen": 1000 }, "communityFeeAdult": 1000, "communityFeeChild": 500 }
+    },
+    "verified": true
+  },
+  "inclusions": "Accommodation, all meals, some drinks (water/tea/coffee/welcome juice), 2 daily shared-vehicle game drives, bush meals, sundowners (excl. drinks), local bird walk, transfers to/from Main Gate or conservancy airstrip (non-resident only - not stated for resident), VAT",
+  "exclusions": {
+    "nanyukiTransfer": { "amount": 220, "unit": "per vehicle (8-seater), Nanyuki town/airstrip to Lolldaiga Main Gate" },
+    "additionalDrinks": "Via Drinks Supplement or camp bar (pay at checkout)",
+    "additionalActivities": "Fly camping setup, community visit, extra/private/night game drives, day walks, caves visit, conservation activities, horse riding, vintage Land Rover driving - via Activity Supplement or book in camp",
+    "spaServices": "excluded",
+    "horseRidingExperiences": "Price on request, must book prior to stay",
+    "personalItems": "insurance, gratuities, shopping, etc."
+  },
+  "supplements": {
+    "unit": "per person per night unless noted",
+    "drinksSupplement": { "adult": { "rack": 45 }, "child5to15": { "rack": 20 }, "note": "All drinks excl. luxury spirits/champagne/prosecco; non-resident STO discount not stated for this supplement" },
+    "activitySupplement": { "adult": { "rack": 70, "nett": 49 }, "child5to15": { "rack": 50, "nett": 35 }, "note": "All activities except horse riding" },
+    "privateVehicleAndGuide": { "perGroupPerNight": { "rack": 350, "nett": 245 }, "note": "Must be booked for entire stay" },
+    "verified": true
+  },
+  "childPolicy": { "under5": "Free of charge", "verified": true },
+  "bookingNotes": {
+    "conservationAndTransferFeesNonCommissionable": true,
+    "minimumStay": "2 nights (3 nights minimum in High Season)",
+    "singleSupplement": "None",
+    "paymentFeeInCamp": "2.9% fee on card/bank transfer/MPESA payments in camp",
+    "supplementsAppliedWholeBookingOnly": "Cannot add supplements on a day-by-day basis",
+    "nearestAirstrips": "Nanyuki (40 min drive), Lolldaiga Northern Airstrip (charter only)"
+  }
+}

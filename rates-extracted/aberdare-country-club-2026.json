@@ -1,0 +1,103 @@
+{
+  "property": "Aberdare Country Club",
+  "operator": "Marasa Africa (The Ark Limited)",
+  "region": "Kenyan Highlands (Aberdare / Mweiga area)",
+  "isSoroiProperty": false,
+  "sourceFiles": [
+    "2026 CONTRACT RATES/KENYA/ACCOMODATION/Marasa Africa Kenya/00 2026 Marasa Africa Kenya Lodges Published Rack Rates_1.pdf",
+    "2026 CONTRACT RATES/KENYA/ACCOMODATION/Marasa Africa Kenya/02 2026 Marasa Africa Kenya Lodges Local and Regional STO Nett Rates.pdf",
+    "2026 CONTRACT RATES/KENYA/ACCOMODATION/Marasa Africa Kenya/DMC 25 Marasa Africa Kenya Rate- 2025 Local DMC - Wholesale Tour Operator -.pdf (2025, historical reference only)",
+    "2026 CONTRACT RATES/KENYA/ACCOMODATION/Marasa Africa Kenya/EAC45-Marasa Africa Kenya Rate -Special Negotiated Tour Operator.pdf (titled '2025 Direct Resident Rates', historical reference only)",
+    "2026 CONTRACT RATES/KENYA/ACCOMODATION/Marasa Africa Kenya/2025 East Africa Marasa Africa Wholesale Contact.pdf (group-wide T&Cs)"
+  ],
+  "notes": [
+    "Marasa Africa's Kenya portfolio (this folder) covers 3 properties sharing one contract family: Aberdare Country Club, The Ark, Mara Leisure Camp. Marasa Africa also operates Uganda properties (Marasa Chobe, Marasa Paraa, Marasa Mweya, Silverback Lodge) whose rates appear in '2025 Marasa Africa East Africa Net Contracted Rates.pdf' and are OUT OF SCOPE for this Kenya extraction - not extracted here.",
+    "'Marasa Contract - Sunworld Safaris.pdf' in this folder is a scanned/image-only document with no extractable text - skipped.",
+    "Two 2026-dated rate cards are the primary, verified source: '00 Published Rack Rates' (public rate) and '02 Local and Regional STO Nett Rates' (Sunworld's discounted rate), both explicitly valid 1 Jul-31 Dec 2026 only - no 2026 H1 (Jan-Jun) card was found in this folder.",
+    "The 2025-dated DMC Wholesale and Resident-rate documents are INCLUDED below purely as historical/structural reference (season definitions, game package descriptions) - their pricing is NOT current for 2026 and should not be quoted without a fresh 2026 equivalent.",
+    "STO discount confirmed arithmetically: STO = Rack x 0.75 exactly (e.g. Classic Double Low season: $171 STO vs $228 Rack = 0.75). This is an STO 25% tier.",
+    "'CHILD UNDER 3' column reads 0 throughout - i.e. free of charge for children under 3, consistent across all Marasa Kenya properties.",
+    "43 Classic Rooms, 1 Signature Room, 2 Superior Cottages, 1 Signature Cottage."
+  ],
+  "currency": "USD",
+  "validity2026": "1 July 2026 - 31 December 2026 (Low: 1 Oct-22 Dec 2026; High: 1 Jul-30 Sep 2026 and 23-31 Dec 2026; Peak Season Room Supplement US$35 surcharge 23 Dec 2026-1 Jan 2027)",
+  "rack2026_perPersonPerNight": {
+    "fullBoard": {
+      "low": { "classicRoom": { "double": 228, "single": 152, "furtherPerson15plus": 86, "childUnder3": 0, "childSharingWithAdult": 57, "child3to15OwnRoom": 86 },
+        "signatureRoom": { "double": 378, "single": 252, "furtherPerson15plus": 142, "childUnder3": 0, "childSharingWithAdult": 95, "child3to15OwnRoom": 142 },
+        "superiorCottage": { "double": 280, "single": 187, "furtherPerson15plus": 105, "childUnder3": 0, "childSharingWithAdult": 70, "child3to15OwnRoom": 105 },
+        "signatureCottage": { "double": 460, "single": 306, "furtherPerson15plus": 173, "childUnder3": 0, "childSharingWithAdult": 115, "child3to15OwnRoom": 173 } },
+      "high": { "classicRoom": { "double": 328, "single": 219, "furtherPerson15plus": 123, "childUnder3": 0, "childSharingWithAdult": 82, "child3to15OwnRoom": 123 },
+        "signatureRoom": { "double": 542, "single": 361, "furtherPerson15plus": 204, "childUnder3": 0, "childSharingWithAdult": 136, "child3to15OwnRoom": 204 },
+        "superiorCottage": { "double": 496, "single": 330, "furtherPerson15plus": 186, "childUnder3": 0, "childSharingWithAdult": 124, "child3to15OwnRoom": 186 },
+        "signatureCottage": { "double": 824, "single": 548, "furtherPerson15plus": 309, "childUnder3": 0, "childSharingWithAdult": 206, "child3to15OwnRoom": 309 } }
+    },
+    "halfBoard": {
+      "low": { "classicRoom": { "double": 196, "single": 136, "furtherPerson15plus": 70, "childSharingWithAdult": 41, "child3to15OwnRoom": 70 },
+        "signatureRoom": { "double": 346, "single": 236, "furtherPerson15plus": 126, "childSharingWithAdult": 79, "child3to15OwnRoom": 126 },
+        "superiorCottage": { "double": 248, "single": 171, "furtherPerson15plus": 89, "childSharingWithAdult": 54, "child3to15OwnRoom": 89 },
+        "signatureCottage": { "double": 428, "single": 290, "furtherPerson15plus": 157, "childSharingWithAdult": 99, "child3to15OwnRoom": 157 } },
+      "high": { "classicRoom": { "double": 296, "single": 203, "furtherPerson15plus": 107, "childSharingWithAdult": 66, "child3to15OwnRoom": 107 },
+        "signatureRoom": { "double": 510, "single": 345, "furtherPerson15plus": 188, "childSharingWithAdult": 120, "child3to15OwnRoom": 188 },
+        "superiorCottage": { "double": 464, "single": 314, "furtherPerson15plus": 170, "childSharingWithAdult": 108, "child3to15OwnRoom": 170 },
+        "signatureCottage": { "double": 792, "single": 532, "furtherPerson15plus": 293, "childSharingWithAdult": 190, "child3to15OwnRoom": 293 } }
+    },
+    "verified": true
+  },
+  "sto25pct_2026_perPersonPerNight": {
+    "fullBoard": {
+      "low": { "classicRoom": { "double": 171, "single": 114, "furtherPerson15plus": 65, "childSharingWithAdult": 43, "child3to15OwnRoom": 65 },
+        "signatureRoom": { "double": 284, "single": 189, "furtherPerson15plus": 107, "childSharingWithAdult": 72, "child3to15OwnRoom": 107 },
+        "superiorCottage": { "double": 210, "single": 141, "furtherPerson15plus": 79, "childSharingWithAdult": 53, "child3to15OwnRoom": 79 },
+        "signatureCottage": { "double": 345, "single": 230, "furtherPerson15plus": 130, "childSharingWithAdult": 87, "child3to15OwnRoom": 130 } },
+      "high": { "classicRoom": { "double": 246, "single": 165, "furtherPerson15plus": 93, "childSharingWithAdult": 62, "child3to15OwnRoom": 93 },
+        "signatureRoom": { "double": 407, "single": 271, "furtherPerson15plus": 153, "childSharingWithAdult": 102, "child3to15OwnRoom": 153 },
+        "superiorCottage": { "double": 372, "single": 248, "furtherPerson15plus": 140, "childSharingWithAdult": 93, "child3to15OwnRoom": 140 },
+        "signatureCottage": { "double": 618, "single": 411, "furtherPerson15plus": 232, "childSharingWithAdult": 155, "child3to15OwnRoom": 232 } }
+    },
+    "halfBoard": {
+      "low": { "classicRoom": { "double": 147, "single": 102, "furtherPerson15plus": 53, "childSharingWithAdult": 31, "child3to15OwnRoom": 53 },
+        "signatureRoom": { "double": 260, "single": 177, "furtherPerson15plus": 95, "childSharingWithAdult": 60, "child3to15OwnRoom": 95 },
+        "superiorCottage": { "double": 186, "single": 129, "furtherPerson15plus": 67, "childSharingWithAdult": 41, "child3to15OwnRoom": 67 },
+        "signatureCottage": { "double": 321, "single": 218, "furtherPerson15plus": 118, "childSharingWithAdult": 75, "child3to15OwnRoom": 118 } },
+      "high": { "classicRoom": { "double": 222, "single": 153, "furtherPerson15plus": 81, "childSharingWithAdult": 50, "child3to15OwnRoom": 81 },
+        "signatureRoom": { "double": 383, "single": 259, "furtherPerson15plus": 141, "childSharingWithAdult": 90, "child3to15OwnRoom": 141 },
+        "superiorCottage": { "double": 348, "single": 236, "furtherPerson15plus": 128, "childSharingWithAdult": 81, "child3to15OwnRoom": 128 },
+        "signatureCottage": { "double": 594, "single": 399, "furtherPerson15plus": 220, "childSharingWithAdult": 143, "child3to15OwnRoom": 220 } }
+    },
+    "verified": true
+  },
+  "gamePackage": {
+    "includes": "Full Board Accommodation, Airstrip Meet and Greet with return transfers to lodge, option to select any 2 Safari Activities from provided list",
+    "excludes": "National Park Fees",
+    "activities": ["Guided Bush Walk with continental breakfast at Bush Lounge", "Afternoon Game Drive - Bush Lounge sundowners with dry snacks"],
+    "airstrip": "Nyeri Airfield / Marasa Chobe-equivalent local airstrip (Aberdare)"
+  },
+  "historicalReference_2025_DMC_wholesale": {
+    "confidenceNote": "[Unverified for 2026] Valid only 1 Jan-31 Dec 2025. Included for season-structure reference only.",
+    "classicRoom_fullBoard_perPersonPerNight": { "low": 83, "shoulder": 107, "high": 118 },
+    "classicRoom_singleRoomRate": { "low": 110, "shoulder": 143, "high": 157 }
+  },
+  "historicalReference_2025_directResident": {
+    "confidenceNote": "[Unverified for 2026] Valid only 1 Jan-31 Dec 2025. Included for structure reference only - likely superseded.",
+    "classicRoom_fullBoard_perPersonPerNight": { "low": 61, "shoulder": 79, "high": 87 }
+  },
+  "groupSharedPolicies_MarasaAfrica": {
+    "checkIn": "12:00", "checkOut": "10:00",
+    "tourLeaderAccommodation": "Max 2 tour leaders per reservation. 2-9 guests: US$150 full board. 10+ guests: stay free.",
+    "guideAccommodationKenya": "KSH 1,000 (basis not specified beyond this figure)",
+    "agentTravelTradeRate": "US$90 full board per person, bookable only within 7 days of arrival, vacation-basis (no site inspection obligation)",
+    "agentFamTripRate": "US$90 full board per person, subject to Group Head of Sales approval",
+    "fitCancellation_lessThan9rooms": {
+      "safariSeason": { "0-14days": "100%", "15-30days": "100%", "30-45days": "50%", "45-60days": "25%", "60+days": "10%" },
+      "valueSeason": { "0-14days": "100%", "15-30days": "50%", "30-45days": "25%", "45-60days": "10%", "60+days": "10%" }
+    },
+    "groupCancellation_9plusRooms": {
+      "safariSeason": { "0-30days": "100%", "31-60days": "100%", "61-89days": "50%", "90+days": "25%" },
+      "valueSeason": { "0-30days": "100%", "31-60days": "50%", "61-89days": "25%", "90+days": "25%" }
+    },
+    "experienceAndTravelBookings": "100% deposit and 100% cancellation liability at ALL lead times (0-14 through 90+ days) - no refund window for 3rd-party experiences/permits/transfers once booked",
+    "parkFeesExcluded": "All Marasa Africa rates exclude national park/entrance/landing fees - Aberdare National Park entry via Kenya Wildlife Service",
+    "residentRatesNote": "East African resident and bona fide conservation organisation rates available on request at reservations.kenya@marasa.africa - not published in these documents"
+  }
+}

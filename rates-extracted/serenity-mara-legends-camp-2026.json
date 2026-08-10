@@ -1,0 +1,69 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftotext -layout, single clean document, no flattening risk. NOT a Soroi property.",
+  "property": "Serenity Mara Legends Camp",
+  "region": "Maasai Mara",
+  "currency": "USD (non-resident) / KES (resident)",
+  "unit": "per person per night",
+  "source": {
+    "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/SERENITY MARA/SERENITY MARA LEGENDS CAMP - CONTRACT RATES- 2026.pdf",
+    "validity": "2026 (no explicit start/end date stated beyond season windows)"
+  },
+  "confidence": "confirmed-2026-08-06",
+  "seasons": {
+    "low": { "dateRanges": ["16 Mar - 15 Jun", "16 Oct - 20 Dec"] },
+    "mid": { "dateRanges": ["3 Jan - 15 Mar", "16 Jun - 30 Jun", "1 Oct - 15 Oct"] },
+    "high": { "dateRanges": ["1 Jul - 30 Sep", "21 Dec - 3 Jan"] }
+  },
+  "rates": {
+    "nonResident_fullBoard_superiorRoom": {
+      "low": { "double": 176, "single": 229, "triple": 141 },
+      "mid": { "double": 200, "single": 260, "triple": 160 },
+      "high": { "double": 320, "single": 416, "triple": 256 }
+    },
+    "nonResident_fullBoard_luxuryRoom": {
+      "low": { "double": 220, "single": 286, "triple": 176 },
+      "mid": { "double": 250, "single": 328, "triple": 200 },
+      "high": { "double": 400, "single": 520, "triple": 320 }
+    },
+    "resident_fullBoard_superiorRoom_KES": {
+      "low": { "double": 14960, "single": 19440, "triple": 12000 },
+      "mid": { "double": 17000, "single": 22160, "triple": 13680 },
+      "high": { "double": 27200, "single": 35200, "triple": 21840 }
+    },
+    "resident_fullBoard_luxuryRoom_KES": {
+      "low": { "double": 18700, "single": 24300, "triple": 15000 },
+      "mid": { "double": 21200, "single": 27680, "triple": 17100 },
+      "high": { "double": 34000, "single": 44280, "triple": 27360 }
+    }
+  },
+  "extraRates_allSeasons": {
+    "sundownerPerPerson_min4pax": 50,
+    "extraLunchPerPerson": 35,
+    "bushBreakfast_min4pax": 50,
+    "bushDinner_min4pax": 65,
+    "guidedNatureWalk": 40,
+    "maasaiVillageVisit": 40
+  },
+  "mealPlanInclusions": "Three meals (breakfast, lunch, dinner), afternoon tea/coffee, campfire nibbles",
+  "mealPlanExclusions": "Drinks, gratuities, park fees, laundry, other extras",
+  "childPolicy": {
+    "under3SharingWithAdults": "Free",
+    "age4to12SharingWithAdults": "50% of adult rate",
+    "age12to17SharingWithAdults": "75% of adult rate",
+    "age4to12OwnRoom": "75% of adult rate",
+    "over12OwnRoom": "Adult rate applies",
+    "note": "Age-bracket boundaries (4-12, 12-17) as literally stated in source - note the overlap at exactly age 12 between the two sharing brackets is the document's own wording, not a transcription error; flagged as [Unverified] ambiguity, not resolved by Sunworld."
+  },
+  "mixedResidencyRoomPolicy": {
+    "oneAdultResidentOneNonResidentSharing": "Room charged at resident rate; non-resident pays an additional bed-night fee of USD 80/night (Low & Mid season only). In High Season, the non-resident pays full non-resident rate and the resident pays full resident rate (i.e. no shared-room discount in High Season)."
+  },
+  "operationalPolicy": {
+    "maxRoomOccupancy": 4,
+    "familyTent": "Available on request - not separately priced in this document.",
+    "checkIn": "12:00 noon",
+    "checkOut": "10:00 AM",
+    "singleRoomPolicy": "Max 2 single rooms per booking; additional singles at double room rate.",
+    "minimumStay": "2 nights during High Season",
+    "residencyProof": "Proof of passport/residency required at check-in; non-resident rates apply by default if not shown."
+  }
+}

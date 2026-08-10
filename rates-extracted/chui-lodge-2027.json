@@ -1,0 +1,29 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftotext -layout, single-page PDF, from 'CHUI LODGE/CHUI LODGE RACK RATES-USD - 2027.pdf'. A parallel KES-denominated file ('CHUI LODGE RACK RATES-KES  2027.pdf') exists in the same folder but was not separately transcribed - USD is the relevant currency for this project.",
+  "property": "Chui Lodge",
+  "location": "Oserengoni Wildlife Conservancy, Naivasha",
+  "currency": "USD",
+  "tier": "Rack",
+  "validity": { "start": "2027-01-11", "end": "2028-01-10" },
+  "unit": "per person per night sharing (or per single room as noted)",
+  "confidence": "confirmed-2027-08-06",
+  "rates": {
+    "highSeason": { "dateRanges": ["Jun-Sep 2027", "20 Dec 2027 - 10 Jan 2028"], "standardRoomSharing": 743, "standardRoomSingle": 957, "deluxeRoomSharing": 886, "deluxeRoomSingle": 1144, "childSharing3to11_standard": 372, "childSharing3to11_deluxe": 443 },
+    "lowSeason": { "dateRanges": ["11 Jan - 31 May 2027", "31 Oct - 19 Dec 2027 (11 Jan/Feb/Mar/Apr/May/1-19 Dec)"], "standardRoomSharing": 495, "standardRoomSingle": 638, "deluxeRoomSharing": 605, "deluxeRoomSingle": 781, "childSharing3to11_standard": 248, "childSharing3to11_deluxe": 303 }
+  },
+  "mandatoryFees": {
+    "conservationFee": { "adult": 70, "child3to12": 35, "unit": "per person per night, both seasons flat", "note": "Oserengoni conservation fee - excluded from base rate" },
+    "verified": true
+  },
+  "childPolicy": { "under3SharingWithAdults": "Free of charge", "age3to11": "See childSharing figures above", "verified": true },
+  "festiveSupplements": {
+    "christmas": { "amount": 40, "dates": "Dec 24, 25, 26, 31, 01 Jan", "note": "per adult per night, half price for children" },
+    "easter": { "amount": 40, "dates": "Easter Friday - Easter Monday", "note": "per adult per night, half price for children" },
+    "minStayFestive": "2 nights minimum during Easter/Christmas period",
+    "verified": true
+  },
+  "mealPlan": "Full Board (all meals + accommodation), soft drinks/local beer/house wine/selected house spirits included, shared game drives, bush breakfast, sundowner, guided bush walking safari, boat ride, VAT/taxes included",
+  "exclusions": ["Daily conservation fees", "Premium spirits/wine/champagne", "Massages/treatments", "Bush dinner", "Extra/packed lunch ($40pp)", "Flying Doctors evacuation cover", "Exclusive vehicle use ($250/day)", "Gratuities"],
+  "insuranceRequirement": "All guests must have comprehensive travel/medical/evacuation insurance",
+  "verified": true
+}

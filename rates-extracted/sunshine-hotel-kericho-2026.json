@@ -1,0 +1,35 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftotext -layout, clean single-page-equivalent PDF. NOT a Soroi property, NOT a safari lodge - a town hotel in Kericho (tea country), likely used as a stopover for western Kenya itineraries.",
+  "property": "Sunshine Hotel",
+  "region": "Kericho, Kenya",
+  "currency": "KES (resident) / USD (non-resident)",
+  "unit": "per room per night (not per person - room types are Single/Double/Twin/Triple)",
+  "source": {
+    "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/SUNSHINE HOTEL/Sunshine Hotel Contracted Rates - 2026.pdf",
+    "validity": "2026 (no explicit date range stated, no seasonality in this document)"
+  },
+  "confidence": "confirmed-2026-08-06",
+  "roomTypes": ["Standard", "Deluxe", "Superior"],
+  "residentRates_KES": {
+    "singleStandard": { "BB": 6500, "HB": 7500, "FB": 8500 },
+    "standardDouble": { "BB": 7500, "HB": 10000, "FB": 12000 },
+    "standardTwin": { "BB": 8000, "HB": 10000, "FB": 12000 },
+    "standardTriple": { "BB": 9000, "HB": 12000, "FB": 15000 },
+    "deluxeSingle": { "BB": 8500, "HB": 9500, "FB": 10500 },
+    "deluxeDouble": { "BB": 9500, "HB": 12000, "FB": 15000 },
+    "superiorSuite": { "BB": 25000, "HB": 28000, "FB": 30000 }
+  },
+  "nonResidentRates_USD": {
+    "singleStandard": { "BB": 75, "HB": 90, "FB": 105 },
+    "standardDouble": { "BB": 90, "HB": 130, "FB": 170 },
+    "standardTwin": { "BB": 97, "HB": 136, "FB": 175 },
+    "standardTriple": { "BB": 113, "HB": 171, "FB": 228 },
+    "deluxeSingle": { "BB": 98, "HB": 120, "FB": 136 },
+    "deluxeDouble": { "BB": 113, "HB": 151, "FB": 190 },
+    "confidenceNote": "[Unverified] No non-resident USD rate is listed for Superior Suite - only resident KES rate given. If a non-resident Superior Suite quote is needed, this is a gap; do not estimate from the resident figure."
+  },
+  "extraBreakfastCharge_residentOnly": { "amount": 1000, "currency": "KES", "unit": "per extra head" },
+  "childPolicy": { "under3SharingWithAdults": "Free", "age4to10Sharing": "50% of normal rate", "age3to12OwnRoom": "75% of normal rate", "confidenceNote": "[Unverified] Document's own age brackets overlap (4-10 sharing vs 3-12 own room) - transcribed as literally stated, not resolved." },
+  "operationalPolicy": { "checkIn": "3:00pm", "checkOut": "10:00am", "taxNote": "All prices inclusive of government taxes." },
+  "conferenceRatesExcluded": "Conference/meeting room hire rates exist in the source document but are out of scope for accommodation quoting - not extracted."
+}

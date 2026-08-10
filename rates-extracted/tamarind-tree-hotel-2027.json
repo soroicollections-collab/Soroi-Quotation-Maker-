@@ -1,0 +1,36 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftotext -layout from 'Tamarind Tree Hotel/Tamarind Tree Hotel Sunworld Safaris 2027 Rates.pdf' (3pp, single property).",
+  "property": "Tamarind Tree Hotel, Nairobi",
+  "operator": "Langata Hotel Development Ltd (The Tamarind Group)",
+  "currency": "USD",
+  "validity": { "end": "2027-12-31" },
+  "unit": "per room per night, Bed & Breakfast",
+  "confidence": "confirmed-2027-08-06",
+  "rates": {
+    "StandardRoom": { "single": 175, "double": 210 },
+    "JuniorSuite": { "single": 350, "double": 390 },
+    "ExecutiveSuite": { "single": 400, "double": 440 },
+    "SuperiorSuite": { "single": 500, "double": 500, "note": "VIP suites have same rate single or double" },
+    "FamilySuite": { "double": 600 },
+    "verified": true
+  },
+  "taxesIncluded": "28% statutory taxes (16% VAT + 10% service charge + 2% training levy) included",
+  "applicability": "Rates apply to both residents and non-residents",
+  "commissionable": false,
+  "transfers": { "sedanToJKIA": 35, "sedanToWilson": 12, "vanToJKIA": 45, "vanToWilson": 20, "sedanCapacity": 3, "vanCapacity": 5 },
+  "mealPrices": { "breakfast": 40, "lunch": 40, "dinner": 40, "picnicBox": 25, "roomServiceTrayCharge": 5 },
+  "roomCapacity": { "maxPersonsPerRoom": 3, "tripleRoomsUponRequest": true, "extraBedRate": "Per person sharing room rate" },
+  "childPolicy": {
+    "under4inCotSharing": "Free of charge",
+    "age4to12sharingWithAdults": "Breakfast rate charged",
+    "age4to12ownRoom": "75% of applicable room rate",
+    "twoChildrenOver12ownRoom": "Full double adult rate",
+    "unaccompaniedMinors": "Cannot check in without written parent/guardian consent",
+    "verified": true
+  },
+  "weekendPolicy": "Weekend rate applies Friday and Saturday nights only",
+  "dayUse": { "rate": "75% of applicable room rate", "hours": "from 10:00, checkout by 18:00", "afterCheckout": "Full room rate" },
+  "checkInOut": "Check-in 12:00, check-out 10:00",
+  "cancellationPolicy": "60-31 days before arrival: 20%; 30-16 days: 50%; 15 days-no show: 100%",
+  "depositPolicy": "On confirmation: 25%; 14 days before arrival: 25%; 5 days before arrival: 50%; bookings within 30 days: 50%"
+}

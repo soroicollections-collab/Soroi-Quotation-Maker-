@@ -1,0 +1,64 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftotext -layout. NOT a Soroi property. Small lodge near Mount Kenya / Solio, potential circuit add-on. Two rate cards on file: Resident (KES) and STO/Non-Resident (USD), both labeled 'Tour operator margin of 25%' - i.e. GROSS is Glamping Kenya's rack, NETT STO is Gross x 0.75 (25% trade discount), confirmed arithmetically on spot-checked cells (e.g. USD High FB Double: 320 x 0.8 = 256, matches).",
+  "property": "Glamping Kenya (Mount Kenya Lodge)",
+  "operator": "Independent (Glamping Kenya)",
+  "region": "Mount Kenya / Solio area",
+  "residency": "Two separate rate cards exist: Resident (KES) and Non-Resident/STO (USD)",
+  "source": {
+    "files": [
+      "2026 CONTRACT RATES/KENYA/ACCOMODATION/GLAMPING KENYA/STO Resident rates  2026.pdf",
+      "2026 CONTRACT RATES/KENYA/ACCOMODATION/GLAMPING KENYA/Glamping-Kenya , near Mount Kenya STO rates Glamping 2026.pdf"
+    ],
+    "skipped": [
+      "Glamping-Kenya , near Mount Kenya BOOKING TERMS & CONDITIONS GLAMPING KENYA.pdf - terms only, no pricing",
+      "Glamping-Kenya , near Mount Kenya - Flyer Glamping II Small (1).pdf - marketing flyer, no pricing",
+      "Flyer Glamping Back II small (1).pdf - marketing flyer, no pricing"
+    ],
+    "validity": { "start": "2026-01-01", "end": "2026-12-31" },
+    "note": "Both rate cards state 'These new rates replace all previous ones (01.10.2025)' — i.e. issued in Oct 2025 for calendar-year 2026."
+  },
+  "confidence": "confirmed-2026-08-06",
+  "seasons": {
+    "high": { "dateRanges": ["01 Jun - 31 Oct", "23 Dec - 31 Jan"], "mealPlans": ["Full Board", "Bed & Breakfast"] },
+    "low": { "dateRanges": ["01 Feb - 31 May", "01 Nov - 22 Dec"], "mealPlans": ["Full Board", "Bed & Breakfast"] }
+  },
+  "rates": {
+    "resident": {
+      "currency": "KES",
+      "unit": "per night unless noted",
+      "highSeason": {
+        "fullBoard": { "doubleTwin2Pax": { "gross": 38900, "nett": 31120 }, "single1Pax": { "gross": 26000, "nett": 20800 }, "extraAdultSharing": { "gross": 16100, "nett": 12880 }, "childSharing3to12": { "gross": 8600, "nett": 6880 } },
+        "bedBreakfast": { "doubleTwin2Pax": { "gross": 26800, "nett": 21440 }, "single1Pax": { "gross": 20300, "nett": 16240 }, "extraAdultSharing": { "gross": 11400, "nett": 9120 }, "childSharing3to12": { "gross": 6350, "nett": 5080 } }
+      },
+      "lowSeason": {
+        "fullBoard": { "doubleTwin2Pax": { "gross": 36900, "nett": 29520 }, "single1Pax": { "gross": 24000, "nett": 19200 }, "extraAdultSharing": { "gross": 16100, "nett": 12880 }, "childSharing3to12": { "gross": 8600, "nett": 6880 } },
+        "bedBreakfast": { "doubleTwin2Pax": { "gross": 23300, "nett": 18640 }, "single1Pax": { "gross": 16800, "nett": 13440 }, "extraAdultSharing": { "gross": 11400, "nett": 9120 }, "childSharing3to12": { "gross": 6350, "nett": 5080 } }
+      },
+      "verified": true
+    },
+    "nonResidentSTO": {
+      "currency": "USD",
+      "unit": "per night unless noted",
+      "highSeason": {
+        "fullBoard": { "doubleTwin2Pax": { "gross": 320, "nett": 256.00 }, "extraAdultInTwinDouble": { "gross": 135, "nett": 108.00 }, "single1Pax": { "gross": 220, "nett": 176.00 }, "childSharing3to12": { "gross": 70, "nett": 56.00 } },
+        "bedBreakfast": { "doubleTwin2Pax": { "gross": 220, "nett": 176.00 }, "extraAdultInTwinDouble": { "gross": 90, "nett": 72.00 }, "single1Pax": { "gross": 170, "nett": 136.00 }, "childSharing3to12": { "gross": 60, "nett": 48.00 } }
+      },
+      "lowSeason": {
+        "fullBoard": { "doubleTwin2Pax": { "gross": 299, "nett": 239.20 }, "extraAdultInTwinDouble": { "gross": 135, "nett": 108.00 }, "single1Pax": { "gross": 199, "nett": 159.20 }, "childSharing3to12": { "gross": 70, "nett": 56.00 } },
+        "bedBreakfast": { "doubleTwin2Pax": { "gross": 199, "nett": 159.20 }, "extraAdultInTwinDouble": { "gross": 90, "nett": 72.00 }, "single1Pax": { "gross": 149, "nett": 119.20 }, "childSharing3to12": { "gross": 60, "nett": 48.00 } }
+      },
+      "verified": true
+    }
+  },
+  "childPolicy": {
+    "note": "Different from Soroi's bracket (5-11). Glamping Kenya's own bracket: under 3 free sharing with parents/adults; 3-12 years sharing = per rates above; children 3-12 in a SEPARATE room get 25% off the adult rate instead of the child-sharing rate.",
+    "under3": "Free of charge sharing with parents/adults",
+    "age3to12Sharing": "Per child-sharing rate table above",
+    "age3to12SeparateRoom": "25% off adult rate"
+  },
+  "driverGuideRate": { "amount": 1500, "currency": "KES", "unit": "per person per night, shared staff-house accommodation incl. 3 meals", "note": "Same figure quoted on both the Resident and Non-Resident STO rate cards (this one stated in KES on both, even the USD card) - book in advance.", "verified": true },
+  "inclusionsNote": {
+    "fullBoard": "Breakfast, lunch or packed lunch, and dinner.",
+    "insurance": "All guests must have comprehensive travel insurance, medical insurance and emergency evacuation coverage - stated requirement, not just a recommendation."
+  }
+}

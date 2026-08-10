@@ -1,0 +1,205 @@
+{
+  "$note": "New carrier - ALS (Air Logistics/FlyALS). Not previously captured anywhere in rates-extracted/. This is the fullest single-carrier route network found in this extraction pass, covering Wilson-Amboseli, Wilson-Tsavo, Wilson-Nanyuki/Samburu/Lewa/Loisaba-Mara, Wilson-Mara direct, Wilson-Diani/Vipingo, Mara-Migori-Serengeti (Tanzania connector), plus a Sunworld-specific Mara Bush Camp promo fare and a general promo ratesheet.",
+  "carrier": "ALS (Air Logistics / FlyALS)",
+  "currency": "USD",
+  "verified": true,
+  "sources": [
+    {
+      "file": "2026 CONTRACT RATES/KENYA/FLIGHTS/ALS/CONTRACT RATES FOR SUNWORLD SAFARIS FOR 2026.pdf",
+      "label": "main-2026-contract",
+      "documentDate": "25 Nov 2025",
+      "addressee": "Sunworld Safaris 2026",
+      "note": "Primary, most current source - used for all 'routes' figures below."
+    },
+    {
+      "file": "2026 CONTRACT RATES/KENYA/FLIGHTS/ALS/ALS Flight Schedule 2025 latest.pdf",
+      "label": "2025-schedule-lower-confidence",
+      "note": "2025-dated general marketing/schedule brochure (fleet info + rack-rate-only tables, no net/contract column). Fares are visibly lower than the 2026 contract on shared routes (e.g. Wilson-Amboseli rack $185 O/W here vs $204 O/W in the 2026 contract; Wilson-Tsavo rack $230 O/W here vs $253 O/W in the 2026 contract) - treated as a YEAR-OVER-YEAR increase (2025 to 2026), not a same-year discrepancy, since the two documents are for different years. Not used as the authoritative 2026 figure; kept only for the extra detail this doc has that the 2026 contract PDF doesn't fully spell out (e.g. Amboseli-Finch-direct-to-Mara route, full airstrip list for Tsavo including Ziwani/Satao, seasonal-flight calendar windows for the Diani/Vipingo service)."
+    },
+    {
+      "file": "2026 CONTRACT RATES/KENYA/FLIGHTS/ALS/ALS - Sunworld_Mara Bush camp Mara Special Package'26.pdf",
+      "label": "sunworld-mara-bush-camp-special-package-2026"
+    },
+    {
+      "file": "2026 CONTRACT RATES/KENYA/FLIGHTS/ALS/FlyALS Promo rates 2026.pdf",
+      "label": "promo-ratesheet-2026"
+    }
+  ],
+  "skippedAsDuplicates": [
+    { "folder": "2026 CONTRACT RATES/KENYA/FLIGHTS/ALS/OLd/", "files": ["ALS - CONTRACT RATES FOR SUNWORLD SAFARIS 2026.pdf", "ALS - SUNWORLD 2026.pdf", "Fly ALS - SUNWORLD 2026.pdf"], "reason": "First file confirmed byte-for-byte-equivalent content to main-2026-contract via spot text comparison (identical header, dates, first-page rate table). Folder is literally named 'OLd' - treating all three as superseded duplicates, not independently extracted. Not opened further." },
+    { "file": "2026 CONTRACT RATES/KENYA/FLIGHTS/ALS/Thumbs.db", "reason": "Not a document." },
+    { "file": "2026 CONTRACT RATES/KENYA/FLIGHTS/ALS/SnipImage.JPG", "reason": "Screenshot, not a rate document - not opened." },
+    { "file": "2026 CONTRACT RATES/KENYA/FLIGHTS/ALS/FW_ 2026 Charter Rates.msg", "reason": "Outlook .msg file - not opened (no reader tool available); flagging its existence in case it contains additional 2026 charter rates not captured elsewhere. Worth a follow-up manual open in Outlook/Mail." }
+  ],
+  "routes": {
+    "wilsonAmboseliWilson": {
+      "airstripsServed": "Amboseli/Selenkay/Kimana",
+      "minPax": "2 per airstrip, 4 to operate service",
+      "note": "Depending on loads may occasionally fly Amboseli direct to Masai Mara. Connects to Mara/Nanyuki/Loisaba/Lewa/Samburu.",
+      "morningService": {
+        "wilsonToAmboseli": { "depart": "07:00", "arrive": "07:45" },
+        "amboseliToWilson": { "depart": "08:00", "arrive": "08:45" },
+        "rack": { "oneWay": 204, "return": 341 },
+        "net": { "oneWay": 173.40, "return": 289.85 },
+        "tax": { "oneWay": 16, "return": 32 },
+        "contractTotal": { "oneWay": 189.40, "return": 321.85 }
+      },
+      "afternoonServiceWithTsavoConnection": {
+        "wilsonToAmboseli": { "depart": "14:15", "arrive": "15:00" },
+        "amboseliToWilson": { "depart": "16:45", "arrive": "17:30" },
+        "rack": { "oneWay": 204, "return": 341 },
+        "net": { "oneWay": 173.40, "return": 289.85 },
+        "tax": { "oneWay": 16, "return": 32 },
+        "contractTotal": { "oneWay": 189.40, "return": 321.85 }
+      }
+    },
+    "wilsonAmboseliTsavoWilson": {
+      "wilsonToTsavo": { "depart": "14:15", "arrive": "15:40", "rack": { "oneWay": 253, "return": 407 }, "net": { "oneWay": 215, "return": 345.95 }, "tax": { "oneWay": 16, "return": 32 }, "contractTotal": { "oneWay": 231, "return": 377.95 } },
+      "tsavoToWilson": { "depart": "16:00", "arrive": "17:30", "rack": { "oneWay": 253, "return": 407 }, "net": { "oneWay": 215, "return": 345.95 }, "tax": { "oneWay": 16, "return": 32 }, "contractTotal": { "oneWay": 231, "return": 377.95 } },
+      "airstripsServed": "Finch Hattons, Mwatate, Taita Hills, Voi, Oldonyo Wuas, Kilaguni (plus Ziwani and Satao per the 2025 schedule doc)",
+      "minPax": "2 per airstrip, 4 per service"
+    },
+    "amboseliTsavoMara": {
+      "note": "Occasionally routes via Wilson, arriving Masai Mara ~10:30am. Timings are estimates.",
+      "amboseliToMara": { "depart": "08:30", "arrive": "10:15", "rack": 400, "net": 340, "tax": 16, "contractTotal": 356 },
+      "tsavoToMara": { "depart": "08:30", "arrive": "10:15", "rack": 450, "net": 382.50, "tax": 16, "contractTotal": 398.50, "minPax": "2 per airstrip, 4 to operate" }
+    },
+    "wilsonNanyukiSamburuLewaLoisabaMara": {
+      "wilsonNanyuki": {
+        "wilsonToNanyuki": { "depart": "10:00", "arrive": "10:40" },
+        "nanyukiToWilson": { "depart": "11:00", "arrive": "13:00" },
+        "rack": { "oneWay": 192.50, "return": 341 }, "net": { "oneWay": 163.63, "return": 289.85 }, "tax": { "oneWay": 16, "return": 32 }, "contractTotal": { "oneWay": 179.63, "return": 321.85 },
+        "airstripsServed": "Mt. Kenya Game Ranch, Nanyuki Civil, Nanyuki Kamok", "minPax": "2 per airstrip, 4 to operate"
+      },
+      "nanyukiToMasaiMara": { "depart": "11:00", "arrive": "13:30", "rack": 355, "net": 301.75, "tax": 16, "contractTotal": 317.75, "note": "May occasionally route via Wilson, connecting to Mara service at 14:30, arriving 15:15. CROSS-CHECK: AirKenya's competing Nanyuki-Masai Mara fare is $446 rack (see flights-air-kenya-routes-2026.json) and Safarilink's is $441 published/$374.80 nett+$15 tax (see flights-amboseli-mara-nanyuki-2026.json) - ALS is the cheapest of the three carriers on this specific route as extracted, not a data error, just genuine inter-carrier price variation." },
+      "wilsonSamburu": {
+        "wilsonToSamburu": { "depart": "10:00", "arrive": "11:30" },
+        "samburuToWilson": { "depart": "11:20", "arrive": "13:00" },
+        "rack": { "oneWay": 240, "return": 415 }, "net": { "oneWay": 204, "return": 352.75 }, "tax": { "oneWay": 16, "return": 32 }, "contractTotal": { "oneWay": 220, "return": 384.75 },
+        "airstripsServed": "Kalama/Buffalo/Oryx/Saasab", "minPax": "2 per airstrip, 4 to operate"
+      },
+      "samburuToMasaiMara": { "depart": "11:20", "arrive": "13:30", "rack": 415, "net": 352.75, "tax": 16, "contractTotal": 368.75, "note": "May occasionally route via Wilson, connecting to Mara at 14:30, arriving 15:15." },
+      "wilsonLewa": {
+        "wilsonToLewa": { "depart": "10:00", "arrive": "11:00" },
+        "lewaToWilson": { "depart": "11:15", "arrive": "13:00" },
+        "rack": { "oneWay": 240, "return": 415 }, "net": { "oneWay": 204, "return": 352.75 }, "tax": { "oneWay": 16, "return": 32 }, "contractTotal": { "oneWay": 220, "return": 384.75 },
+        "minPax": "2 per airstrip, 4 to operate"
+      },
+      "lewaToMasaiMara": { "depart": "11:15", "arrive": "13:30", "rack": 415, "net": 352.75, "tax": 16, "contractTotal": 368.75, "note": "May occasionally route via Wilson, connecting to Mara at 14:30, arriving 15:15." },
+      "wilsonLoisaba": {
+        "wilsonToLoisaba": { "depart": "10:00", "arrive": "11:15" },
+        "loisabaToWilson": { "depart": "11:30", "arrive": "13:00" },
+        "rack": { "oneWay": 240, "return": 415 }, "net": { "oneWay": 204, "return": 352.75 }, "tax": { "oneWay": 16, "return": 32 }, "contractTotal": { "oneWay": 220, "return": 384.75 },
+        "minPax": "2 per airstrip, 4 to operate"
+      },
+      "loisabaToMasaiMara": { "depart": "11:30", "arrive": "13:30", "rack": 415, "net": 352.75, "tax": 16, "contractTotal": 368.75, "note": "May occasionally route via Wilson, connecting to Mara at 14:30, arriving 15:15." }
+    },
+    "nanyukiKamokNamunyakMasaiMaraSetDepartures": {
+      "note": "Set-departure service, non-commissionable, fares are PER SEAT with NO child fare (differs from the general 75%-of-adult child policy elsewhere in this contract). Operates with a minimum of six (6) passengers.",
+      "nanyukiKamokToNamunyak": { "depart": "11:15", "arrive": "11:40", "rack": 295, "net": 295, "tax": 16, "contractTotal": 311 },
+      "namunyakToMasaiMara": { "depart": "12:00", "arrive": "13:30", "rack": 470, "net": 470, "tax": 16, "contractTotal": 486 }
+    },
+    "wilsonMaraWilsonTwiceDaily": {
+      "minPax": "2 per airstrip (all airstrips including Cottars & Siana)",
+      "morning": { "wilsonToMara": { "depart": "09:30", "arrive": "10:15" }, "maraToWilson": { "depart": "11:00", "arrive": "12:30" } },
+      "afternoon": { "wilsonToMara": { "depart": "14:30", "arrive": "15:15" }, "maraToWilson": { "depart": "16:00", "arrive": "16:45" } },
+      "rack": { "oneWay": 220, "return": 380 }, "net": { "oneWay": 187, "return": 323 }, "tax": { "oneWay": 16, "return": 32 }, "contractTotal": { "oneWay": 203, "return": 355 },
+      "note": "Wilson arrivals from this service can connect same-day to Vipingo, Ukunda, Amboseli/Tsavo in the afternoon."
+    },
+    "wilsonUkundaVipingoWilsonSeasonal": {
+      "seasonalWindow": "Seasonal flight - operates Easter holidays, Public holidays, High Season (1 Jul-30 Sep) and Festive/Christmas Season (8 Dec-8 Jan). Off-season: contact res@flyals.com for promotional/group fares.",
+      "minPax": "12 passengers per sector",
+      "commission": "Non-commissionable",
+      "note": "NET rate is inclusive of tax and applies equally to adult and child (no child discount on this specific route).",
+      "wilsonToUkunda": { "depart": "14:30", "arrive": "15:40", "oneWay": 200, "return": 400 },
+      "ukundaToWilson": { "depart": "16:00", "arrive": "17:15", "oneWay": 200, "return": 400 },
+      "wilsonToVipingo": { "depart": "14:30", "arrive": "15:40", "oneWay": 200, "return": 400 },
+      "vipingoToWilson": { "depart": "16:00", "arrive": "17:15", "oneWay": 200, "return": 400 },
+      "baggageAllowanceNote": "20kg per person on this route (vs 15kg on the safari/bush routes) per the 2025 schedule doc."
+    },
+    "maraMigoriHighSeasonOnly": {
+      "seasonWindow": "16 Jun - 30 Sep",
+      "minPax": "2 per airstrip, 4 to operate",
+      "note": "Connects into Serengeti with Auric Air Tanzania.",
+      "maraToMigori": { "depart": "11:00", "arrive": "11:30", "rack": 295, "net": 250.75, "tax": 16, "contractTotal": 266.75 },
+      "migoriToMara": { "depart": "12:00", "arrive": "12:30", "rack": 295, "net": 250.75, "tax": 16, "contractTotal": 266.75 }
+    },
+    "maraSerengetiViaMigoriTarimeHighSeasonOnly": {
+      "seasonWindow": "16 Jun - 30 Sep",
+      "note": "Taxes include ground transfer between Migori (KE) and Tarime (TZ). On inducement, 2 seats to book, minimum 4 seats to operate.",
+      "schedule": { "maraDepart": "11:00", "migoriArrive": "11:30", "migoriDepart": "12:00", "tarimeArrive": "12:30" },
+      "destinations": {
+        "chemChem": { "arriveTZ": "15:45", "rack": 705, "net": 599, "tax": 141, "contractTotal": 740 },
+        "manyara": { "arriveTZ": "15:35", "rack": 680, "net": 578, "tax": 111, "contractTotal": 689 },
+        "fortIkoma": { "arriveTZ": "14:25", "rack": 605, "net": 514, "tax": 111, "contractTotal": 625 },
+        "grumeti": { "arriveTZ": "14:15", "rack": 605, "net": 514, "tax": 111, "contractTotal": 625 },
+        "kogatende": { "arriveTZ": "13:55", "rack": 590, "net": 502, "tax": 111, "contractTotal": 613 },
+        "lamai": { "arriveTZ": "13:45", "rack": 605, "net": 514, "tax": 111, "contractTotal": 625 },
+        "lobo": { "arriveTZ": "14:05", "rack": 605, "net": 514, "tax": 111, "contractTotal": 625 },
+        "mwiba": { "arriveTZ": "15:25", "rack": 755, "net": 642, "tax": 111, "contractTotal": 753 },
+        "ndutu": { "arriveTZ": "15:15", "rack": 625, "net": 531, "tax": 111, "contractTotal": 642 },
+        "sasakwa": { "arriveTZ": "14:35", "rack": 625, "net": 531, "tax": 111, "contractTotal": 642 },
+        "seronera": { "arriveTZ": "14:45", "rack": 605, "net": 514, "tax": 111, "contractTotal": 625 },
+        "serengetiSouth": { "arriveTZ": "15:05", "rack": 625, "net": 531, "tax": 111, "contractTotal": 642 },
+        "tarangireKuro": { "arriveTZ": "15:55", "rack": 720, "net": 612, "tax": 111, "contractTotal": 723 }
+      },
+      "note2": "Reverse direction (Serengeti via Tarime via Migori to Mara) uses identical fares/rack/net/tax figures, just reversed schedule times - not duplicated here, same numbers apply both ways per source table."
+    }
+  },
+  "multiSectorDiscount2026": {
+    "note": "Book 3+ flights on FlyALS scheduled services to create custom circuits. Discount applies ONLY to Y-class published RACK rates; taxes excluded from discount, applied per sector.",
+    "threeSectors": "20%",
+    "fourPlusSectors": "25%"
+  },
+  "termsAndConditions": {
+    "fareClass": "Terms apply to Y-class fares specifically; other fare classes have different, more restrictive conditions.",
+    "childFare": "75% of the adult fare before tax, applicable to children aged 2-11 years, applicable only on bush flights (NOT the set-departure Nanyuki-Namunyak-Mara service, which has no child fare at all).",
+    "refundability": "All tickets non-refundable.",
+    "amendment": {
+      "upTo24hrsBeforeDeparture": "$30/person plus fare difference if original class unavailable",
+      "within24to6hrs": "50% of ticket fare plus fare difference if original class unavailable",
+      "within6hrs": "Marked No-Show - non-refundable, non-amendable"
+    },
+    "nameChangeReRouting": "$30 per ticket (unutilized tickets only)",
+    "baggage": {
+      "safariRoutes": "15kg per person inclusive of hand baggage/cameras, soft bags only",
+      "dianiVipingo": "20kg per person"
+    },
+    "firearms": "Must be declared at check-in at least 4 hours prior to departure, or directly to the pilot at bush airstrips."
+  },
+  "sunworldMaraBushCampSpecialPackage2026": {
+    "source": "sunworld-mara-bush-camp-special-package-2026",
+    "period": "1 Jan - 31 Dec 2026",
+    "confidenceNote": "This is a Sunworld-negotiated, Mara-Bush-Camp-specific promotional fare - significantly cheaper than ALS's general Wilson-Mara rack/contract fares above (e.g. $144-154 net one-way here vs $187 net one-way in the general contract). Do NOT apply this fare to a non-Mara-Bush-Camp booking - it is named/restricted to that specific Sunworld product.",
+    "mara": {
+      "lowSeason": { "dateRanges": ["1 Jan - 15 Jun 2026", "1 Oct - 15 Dec 2026"], "rbd": "P", "oneWay": { "net": 144, "tax": 16 }, "return": { "net": 218, "tax": 32 } },
+      "highSeason": { "dateRanges": ["16 Jun - 30 Sep 2026", "16 Dec - 31 Dec 2026"], "rbd": "P", "oneWay": { "net": 154, "tax": 16 }, "return": { "net": 238, "tax": 32 } }
+    },
+    "samburu": {
+      "lowSeason": { "dateRanges": ["1 Jan - 15 Jun 2026", "1 Oct - 15 Dec 2026"], "rbd": "P", "oneWay": { "net": 174, "tax": 16 }, "return": { "net": 301, "tax": 32 } },
+      "highSeason": { "dateRanges": ["16 Jun - 30 Sep 2026", "16 Dec - 31 Dec 2026"], "rbd": "Y", "oneWay": { "net": 204, "tax": 16 }, "return": { "net": 353, "tax": 32 } },
+      "confidenceNote": "This Samburu fare's exact route (Wilson-Samburu presumably, not explicitly labeled beyond the 'SAMBURU' section heading) is [Inference] based on context - the source PDF doesn't restate 'Wilson' on this page, only 'MARA' and 'SAMBURU' as section headers. Also unclear which Samburu property this applies to (document title only names Mara Bush Camp) - flag before using for a Samburu-specific quote."
+    },
+    "childFare": "75% of adult rate",
+    "amendmentPolicy": "Same $30/50%-penalty/No-Show structure as the main 2026 contract, but change window is 24hrs/6hrs (same as main contract, differs from the promo ratesheet's 24hrs/12hrs window below)."
+  },
+  "flyAlsPromoRatesheet2026": {
+    "source": "promo-ratesheet-2026",
+    "validityWindow": "1 Jan - 15 Jun 2026 & 1 Nov - 20 Dec 2026",
+    "confidenceNote": "General promotional rate, NOT Sunworld/Mara-Bush-Camp-specific like the package above - a third, separate ALS pricing tier alongside the main contract and the Sunworld special package. Requires cash payment within 48hrs of booking. Agent commission 7.5% is applied on the 'Total Payable to FlyALS' figure (i.e. net of commission), a different commission mechanic than the main contract's flat net+tax structure.",
+    "routes": {
+      "amboseliNanyuki": { "rack": { "oneWay": 164, "return": 248 }, "net7_5pct": { "oneWay": 152, "return": 230 }, "tax": { "oneWay": 16, "return": 32 }, "totalPayableToFlyALS": { "oneWay": 168, "return": 262 } },
+      "tsavo": { "rack": { "oneWay": 194, "return": 298 }, "net7_5pct": { "oneWay": 180, "return": 277 }, "tax": { "oneWay": 16, "return": 32 }, "totalPayableToFlyALS": { "oneWay": 196, "return": 309 } },
+      "mara": { "rack": { "oneWay": 164, "return": 278 }, "net7_5pct": { "oneWay": 152, "return": 258 }, "tax": { "oneWay": 16, "return": 32 }, "totalPayableToFlyALS": { "oneWay": 168, "return": 290 } },
+      "lewaLoisabaSamburu": { "rack": { "oneWay": 194, "return": 318 }, "net7_5pct": { "oneWay": 180, "return": 295 }, "tax": { "oneWay": 16, "return": 32 }, "totalPayableToFlyALS": { "oneWay": 196, "return": 327 } }
+    },
+    "childFare": "75% of the fare",
+    "amendmentWindow": "24hrs/12hrs (differs from main contract's 24hrs/6hrs)"
+  },
+  "contact": {
+    "phone": ["+254 701 382382", "+254 701 707777", "+254 702 978348"],
+    "charters": "+254 709 078 000 / commercial@als.co.ke",
+    "email": "Res@flyals.com / Marketing@flyals.com",
+    "website": "www.flyals.com"
+  }
+}

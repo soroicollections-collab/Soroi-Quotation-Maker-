@@ -1,0 +1,36 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftotext -layout. NOT a Soroi property. IMPORTANT: this project's folder list treats 'TAYARI CAMP' and 'TAYARI LUXURY TENTED' as two separate folders, but both contain rate PDFs for the SAME property ('Tayari Luxury Tented Camp - Mara') with nearly identical content - this is one property, not two. A data discrepancy was found between the two files: in 'TAYARI CAMP RATES 2025-2026.pdf', the Double/Twin Non-Resident HIGH SEASON row shows HB=$95, BB=$75, BO=$65 - values that exactly duplicate the Single Occupancy High Season row (HB=$95, BB=$75, BO=$65) and are almost certainly a copy-paste error, since they break the otherwise-consistent decreasing FB>HB>BB>BO pattern seen everywhere else in both documents (e.g. Low Season Double: 160>140>105>95). The 'Tayari Luxury Tented Camp_RATES_2025-2026[1].pdf' file (from the other folder) shows internally-consistent values for the same cells (HB=$160, BB=$140, BO=$115) matching the expected pattern. This extraction uses the internally-consistent figures as primary and flags the other file's figures as the likely error.",
+  "property": "Tayari Luxury Tented Camp - Mara",
+  "region": "Maasai Mara",
+  "currency": "KES (resident) / USD (non-resident)",
+  "unit": "per person per night",
+  "source": {
+    "primaryFile": "2026 CONTRACT RATES/KENYA/ACCOMODATION/TAYARI LUXURY TENTED/Tayari Luxury Tented Camp_RATES_2025-2026[1].pdf",
+    "secondaryFileWithSuspectedError": "2026 CONTRACT RATES/KENYA/ACCOMODATION/TAYARI CAMP/TAYARI CAMP RATES 2025-2026.pdf",
+    "validity": "2025-2026 season, no explicit end date beyond the season labels"
+  },
+  "confidence": "confirmed-2026-08-06 for most figures; Double/Twin Non-Resident High Season HB/BB/BO flagged as [Unverified] due to the two-source discrepancy above",
+  "seasons": {
+    "high": { "dateRanges": ["15 Jun 2025 - 15 Oct 2025", "18 Dec 2025 - 7 Jan 2026"] },
+    "low": { "dateRanges": ["all other dates"] }
+  },
+  "rates": {
+    "singleOccupancy": {
+      "nonResident_USD": { "FB": { "low": 95, "high": 110 }, "HB": { "low": 80, "high": 95 }, "BB": { "low": 65, "high": 75 }, "BO": { "low": 55, "high": 65 } },
+      "resident_KES": { "FB": { "low": 9500, "high": 11000 }, "HB": { "low": 7500, "high": 9500 }, "BB": { "low": 6000, "high": 7500 }, "BO": { "low": 5000, "high": 6000 } }
+    },
+    "doubleTwinOccupancy": {
+      "nonResident_USD": { "FB": { "low": 160, "high": 195 }, "HB": { "low": 140, "high": 160 }, "BB": { "low": 105, "high": 140 }, "BO": { "low": 95, "high": 115 } },
+      "resident_KES": { "FB": { "low": 16000, "high": 19700 }, "HB": { "low": 14000, "high": 16700 }, "BB": { "low": 10000, "high": 13000 }, "BO": { "low": 8500, "high": 10500 } },
+      "confidenceNote": "[Unverified] High-season HB/BB/BO non-resident figures (160/140/115) come from the internally-consistent source file; the other source file in the 'TAYARI CAMP' folder shows 95/75/65 for these same cells instead - suspected copy-paste error in that file, see $note. Confirm with the lodge before quoting a high-season double/twin stay at anything other than Full Board."
+    },
+    "tripleOccupancy": {
+      "nonResident_USD": { "FB": { "low": 240, "high": 293 }, "HB": { "low": 210, "high": 240 }, "BB": { "low": 158, "high": 210 }, "BO": { "low": 143, "high": 173 } },
+      "resident_KES": { "FB": { "low": 24000, "high": 29550 }, "HB": { "low": 21000, "high": 25050 }, "BB": { "low": 15000, "high": 19500 }, "BO": { "low": 12750, "high": 15750 } }
+    },
+    "camping": { "nonResident_USD": 18, "resident_KES": 1300, "note": "Camping grounds with hot showers, shared kitchen, modern toilets." }
+  },
+  "mealPlanKey": { "FB": "Full Board", "HB": "Half Board", "BB": "Bed & Breakfast", "BO": "Bed Only" },
+  "childPolicy": { "under4": "Free", "age5to11_sharingWithParentGuardian": "75% of adult charges", "age12plus": "Adult charges apply" },
+  "commission": "Contract rates commissionable at 10%."
+}

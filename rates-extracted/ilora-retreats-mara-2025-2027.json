@@ -1,0 +1,106 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftoppm + visual image read (both PDFs are fully image-based design documents - pdftotext returned only 32-78 bytes of stray text, essentially nothing). NOT a Soroi property. IMPORTANT NAMING NOTE: despite the folder's two files both having 'Rack Rate' in the filename, they are actually TWO DIFFERENT SEASON-YEAR DOCUMENTS, each internally containing BOTH Rack AND STO rates side by side, plus BOTH Non-Resident and Resident sections: '2025-2026 Rack Rate.pdf' = season 2025-26 (10 pages: Non-Resident pp1-4, Resident pp5-8+); 'STO 2025-2026 Rack Rate.pdf' is actually labeled internally 'NON-RESIDENT/RESIDENT RATE 2026-27' (its own cover pages say 2026-27, one year later than its filename implies) (8 pages rendered: Non-Resident pp1-3, Resident pp5-7). Filenames are misleading - go by each document's own internal cover-page labels, not the filename.",
+  "property": "Ilora Retreats Mara",
+  "region": "Masai Mara",
+  "source": {
+    "files": [
+      "2026 CONTRACT RATES/KENYA/ACCOMODATION/ILORA RETREATS MARA/Ilora Retreats Mara 2025-2026 Rack Rate.pdf (internally: season 2025-26)",
+      "2026 CONTRACT RATES/KENYA/ACCOMODATION/ILORA RETREATS MARA/Ilora Retreats Mara STO 2025-2026 Rack Rate.pdf (internally: season 2026-27, despite filename)"
+    ]
+  },
+  "confidence": "confirmed-2026-08-06",
+  "currency": "USD (non-resident) / KES (resident)",
+  "unit": "per person per night",
+  "season2025_26": {
+    "dateWindows": {
+      "peak": ["01 Jul 2025 - 30 Sep 2025", "21 Dec 2025 - 3 Jan 2026"],
+      "shoulder": ["04 Jan 2025 - 31 Mar 2025", "01 Jun 2025 - 30 Jun 2025", "01 Oct 2025 - 20 Dec 2025", "04 Jan 2026 - 31 Mar 2026"],
+      "green": ["01 Apr 2025 - 31 May 2025"]
+    },
+    "nonResidentUSD": {
+      "fullBoardPackageAP": {
+        "peak": { "rack": { "single": 915, "double": 570 }, "sto": { "single": 640, "double": 400 } },
+        "shoulder": { "rack": { "single": 595, "double": 370 }, "sto": { "single": 415, "double": 260 } },
+        "green": { "rack": { "single": 460, "double": 285 }, "sto": { "single": 320, "double": 200 } }
+      },
+      "gamePackageGP": {
+        "peak": { "rack": { "single": 1165, "double": 820 }, "sto": { "single": 840, "double": 600 } },
+        "shoulder": { "rack": { "single": 845, "double": 620 }, "sto": { "single": 615, "double": 460 } },
+        "green": { "rack": { "single": 710, "double": 535 }, "sto": { "single": 520, "double": 400 } }
+      },
+      "verified": true
+    },
+    "residentKES": {
+      "fullBoardPackageAP": {
+        "peak": { "rack": { "single": 91500, "double": 57000 }, "sto": { "single": 64000, "double": 40000 } },
+        "shoulder": { "rack": { "single": 59500, "double": 37000 }, "sto": { "single": 41500, "double": 26000 } },
+        "green": { "rack": { "single": 46000, "double": 28500 }, "sto": { "single": 32000, "double": 20000 } }
+      },
+      "gamePackageGP": {
+        "peak": { "rack": { "single": 116500, "double": 82000 }, "sto": { "single": 84000, "double": 60000 } },
+        "shoulder": { "rack": { "single": 84500, "double": 62000 }, "sto": { "single": 61500, "double": 46000 } },
+        "green": { "rack": { "single": 71000, "double": 53500 }, "sto": { "single": 52000, "double": 40000 } }
+      },
+      "verified": true
+    }
+  },
+  "season2026_27": {
+    "dateWindows": {
+      "peak": ["01 Jul 2026 - 30 Sep 2026", "21 Dec 2026 - 3 Jan 2027"],
+      "shoulder": ["04 Jan 2026 - 31 Mar 2026", "01 Jun 2026 - 30 Jun 2026", "01 Oct 2026 - 20 Dec 2026", "04 Jan 2027 - 31 Mar 2027"],
+      "green": ["01 Apr 2026 - 31 May 2026"]
+    },
+    "nonResidentUSD": {
+      "fullBoardPackageAP": {
+        "peak": { "rack": { "single": 1100, "double": 690 }, "sto": { "single": 770, "double": 480 } },
+        "shoulder": { "rack": { "single": 720, "double": 450 }, "sto": { "single": 500, "double": 320 } },
+        "green": { "rack": { "single": 550, "double": 340 }, "sto": { "single": 390, "double": 240 } }
+      },
+      "gamePackageGP": {
+        "peak": { "rack": { "single": 1400, "double": 980 }, "sto": { "single": 1010, "double": 720 } },
+        "shoulder": { "rack": { "single": 1020, "double": 750 }, "sto": { "single": 740, "double": 550 } },
+        "green": { "rack": { "single": 850, "double": 640 }, "sto": { "single": 630, "double": 480 } }
+      },
+      "verified": true
+    },
+    "residentKES": {
+      "fullBoardPackageAP": {
+        "peak": { "rack": { "single": 110000, "double": 69000 }, "sto": { "single": 77000, "double": 48000 } },
+        "shoulder": { "rack": { "single": 72000, "double": 45000 }, "sto": { "single": 50000, "double": 32000 } },
+        "green": { "rack": { "single": 55000, "double": 34000 }, "sto": { "single": 39000, "double": 24000 } }
+      },
+      "gamePackageGP": {
+        "peak": { "rack": { "single": 114000, "double": 98000 }, "sto": { "single": 101000, "double": 72000 } },
+        "shoulder": { "rack": { "single": 102000, "double": 75000 }, "sto": { "single": 74000, "double": 55000 } },
+        "green": { "rack": { "single": 85000, "double": 64000 }, "sto": { "single": 63000, "double": 48000 } }
+      },
+      "verified": true,
+      "confidenceNote": "Peak-season Game Package resident single/double figures (114,000/98,000 KSH) look anomalous relative to the rest of this table's progression (peak double 98,000 is only slightly below peak single 114,000, and is HIGHER than shoulder single 102,000 - an unusually flat single-to-double gap compared to every other cell in both season tables, where double is consistently ~65-75% of single). Read directly and clearly from the source image twice, so reproduced as printed, but flagged as worth confirming with Ilora Retreats directly given how it breaks the pattern of every neighboring cell."
+    }
+  },
+  "fullBoardPackageAP_inclusions": ["Accommodation with all meals, filtered water, coffee, tea", "Use of gym and pool", "All camp activities", "Wi-Fi throughout stay", "Childminding (18:00-22:00)"],
+  "gamePackageGP_inclusions": ["Accommodation with all meals, filtered water, coffee, tea, local branded beverages incl. beers/wines/spirits", "Laundry service up to 5 pieces per person per day", "Daily game drives in luxury shared land cruisers with certified English-speaking guides", "Complimentary sundowner and bush breakfast on minimum 3-night stay", "Return transfers from Olkiombo Airstrip", "Use of gym and pool", "All camp activities", "Emergency medical air evacuation", "Wi-Fi throughout stay", "Childminding (18:00-22:00)"],
+  "ratesExclusions": ["Flights and transfers to/from Masai Mara", "Masai Mara National Reserve park fees", "The Starbed Experience (supplement, subject to availability/weather)", "Exclusive spa treatments", "Extra laundry", "Premium spirits"],
+  "policies": {
+    "note": "Captured from the 2025-26 document's policy page (page 4). Not independently re-confirmed on the 2026-27 document (its equivalent page 8 was not legible at safe render size) - treat as portfolio-standard policy carried forward, flag if a 2026-27 booking needs it re-verified.",
+    "bookingDeposit": "30% required to confirm booking; balance due 45 days prior to arrival. Voucher issued only after full payment confirmation.",
+    "cancellation": { "within21days": "100% charge", "21to45days": "50% charge", "46to90days": "30% charge", "moreThan91days": "No charge" },
+    "reschedule": { "differentSeason": "Applicable cost difference charged", "sameSeasonOutside30days": "Free", "within30daysOfCheckIn": "Not accepted, cancellation policy applies instead" },
+    "childPolicy": { "under3": "Not permitted on safari (allowed in camp, nanny can be arranged)", "age3to12": "50% of adult sharing rate, includes an extra bed", "age12Plus": "Considered adult" },
+    "extraAdult": "80% of the per-person rate"
+  },
+  "activitiesAddOns2025_26": {
+    "note": "From the 2025-26 document's activities table (page 4). Currency USD. Not independently re-confirmed for the 2026-27 document.",
+    "privateSundowner": { "perAdult": 70, "perChild": 40, "minPeople": 4 },
+    "privateBushDinner": { "perAdult": 70, "perChild": 40, "minPeople": 4 },
+    "privateBushBreakfast": { "perAdult": 55, "perChild": 30 },
+    "privateAirstripPickupOrDrop": { "perCar": 100 },
+    "privateSafariLandcruiser": { "perCarPerDay": 400 },
+    "masaiVillageVisit": { "perAdult": 45, "perChild": 30 },
+    "balloonSafari": { "perAdult": 550, "perChild": 450 },
+    "starBed": { "perCouple": "600 (peak season) / 400 (all other seasons)" },
+    "nairobiToMaraOneWayFlight": { "perAdult": 270, "perChild": 205 },
+    "nairobiToMaraReturnFlight": { "perAdult": 360, "perChild": 270 },
+    "verified": true
+  }
+}

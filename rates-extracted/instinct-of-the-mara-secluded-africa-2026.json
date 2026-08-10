@@ -1,0 +1,55 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftotext -layout. NOT a Soroi property - part of the 'Secluded Africa' portfolio. Single PDF contains both Rack (Tour Operator) and Net (Contract A) rates for the Game Package (Full Board equivalent).",
+  "property": "Instinct of the Mara",
+  "operator": "Secluded Africa",
+  "region": "Olderkesi Conservancy, Maasai Mara",
+  "tier": "Rack (Tour Operator) and Net (Contract A)",
+  "residency": "Not tier-split by residency on this document",
+  "currency": "USD",
+  "unit": "per person per night unless noted",
+  "source": {
+    "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/SECLUDED AFRICAN PROPERTIES/Secluded African Properties Rates_Instinct_of_the_Mara_2026.pdf",
+    "validity": { "start": "2025-12-20", "end": "2026-12-19" }
+  },
+  "confidence": "confirmed-2026-08-06",
+  "seasons": {
+    "high": { "dateRanges": ["20 Dec 2025 - 8 Jan 2026", "3 Apr - 6 Apr 2026", "16 Jul - 30 Sep 2026"] },
+    "mid": { "dateRanges": ["9 Jan - 28 Feb 2026", "1 Jun - 15 Jul 2026", "1 Oct - 31 Oct 2026"] },
+    "low_green": { "dateRanges": ["1 Mar - 2 Apr 2026", "7 Apr - 31 May 2026", "1 Nov - 19 Dec 2026"] }
+  },
+  "rates": {
+    "gamePackage": {
+      "rack": {
+        "premiumSafariTentPerPersonSharing": { "high": 875, "mid": 630, "low": 415 },
+        "premiumSafariTentSingle": { "high": 1150, "mid": 825, "low": 600 },
+        "childSharingWithAdults_3to16": { "high": 437, "mid": 315, "low": 205 },
+        "childOwnRoom_3to16": { "high": 610, "mid": 440, "low": 290 },
+        "forestSuiteSupplementPerAdult": { "high": 50, "mid": 50, "low": 50 },
+        "forestSuiteSupplementChild": "50% of adult supplement (25/25/25)",
+        "privateVillaPerPersonSharing": { "allSeasons": 1200, "note": "max 2 pax", "childSharing": "50% of adult rate, max 5 pax" }
+      },
+      "net": {
+        "premiumSafariTentPerPersonSharing": { "high": 656, "mid": 473, "low": 311 },
+        "premiumSafariTentSingle": { "high": 863, "mid": 619, "low": 450 },
+        "childSharingWithAdults_3to16": { "high": 328, "mid": 236, "low": 154 },
+        "childOwnRoom_3to16": { "high": 458, "mid": 330, "low": 218 },
+        "forestSuiteSupplementPerAdult": { "high": 50, "mid": 50, "low": 50 },
+        "privateVillaPerPersonSharing": { "allSeasons": 900, "note": "max 2 pax", "childSharing": "50% of adult rate, max 5 pax" }
+      }
+    }
+  },
+  "extras": {
+    "guidePilotPerNight": 85,
+    "driverAccommodationPerNight": 20,
+    "conservancyFees": { "adult": 80, "child": 40, "unit": "per person per night" }
+  },
+  "parkFees": {
+    "note": "Excluded from rate, billed separately. Matches Maasai Mara's calendar-half park fee split seen elsewhere in this project (e.g. Soroi Mara properties) - same conservancy, consistent figures.",
+    "child": { "amount": 50, "unit": "per child per night" },
+    "adult": { "jan1_jun30": 100, "jul1_dec31": 200, "unit": "per person per night" }
+  },
+  "circuitIncentive": { "5to7nights": "5% off accommodation", "8to10nights": "7.5% off accommodation", "11to15nights": "10% off accommodation", "note": "Within Secluded Africa portfolio only. Conservancy/park/reserve fees charged in full." },
+  "christmasSupplement": { "amount": 50, "unit": "per person per night", "minStay": 3, "dates": "24/25/26/31 Dec 2025 and 1 Jan 2026" },
+  "otherExclusions": { "extraLunch": 35, "maasaiVillageEntryFee": "excluded, amount not stated", "balloonSafaris": "excluded, amount not stated", "flyingDoctorsMembership": "excluded, amount not stated" },
+  "checkOut": "10am; late departure prebookable, surcharge may apply"
+}

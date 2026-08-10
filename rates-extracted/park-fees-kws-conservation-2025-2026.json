@@ -1,0 +1,118 @@
+{
+  "$note": "KWS (Kenya Wildlife Service) national park/reserve/sanctuary conservation fees. Cross-verified across THREE independent documents in the PARK FEES folder, all found to match exactly on every core park-fee figure - a high-confidence result.",
+  "currency": "Mixed - KSH for East African Citizen/Resident, USD for Non-Resident/African Citizen (see per-figure breakdown).",
+  "verified": true,
+  "sources": [
+    {
+      "file": "2026 CONTRACT RATES/KENYA/PARK FEES/KWS CONSERVATION FEES REQUISITION.pdf",
+      "label": "requisition-form",
+      "title": "KWS CONSERVATION FEES 2025/2026",
+      "note": "Sunworld's own internal requisition/booking form, pre-filled with the current KWS fee table for staff to reference when requesting park entry."
+    },
+    {
+      "file": "2026 CONTRACT RATES/KENYA/PARK FEES/KWS CONSERVATION FEES REQUISITION.xlsx",
+      "label": "requisition-xlsx",
+      "note": "Same content as requisition-form PDF, confirmed identical via direct cell-by-cell read (openpyxl) - not a separate independent source, just the underlying spreadsheet."
+    },
+    {
+      "file": "2026 CONTRACT RATES/KENYA/PARK FEES/KWS Conservation Fee October  2025.pdf",
+      "label": "official-fee-sheet",
+      "title": "CONSERVATION FEES 2025",
+      "note": "KWS's own official, much more comprehensive fee sheet - includes park entry fees (matches requisition-form exactly) PLUS extensive additional charges not in the requisition form (vehicle/aircraft/boat/truck fees, camping, water sports, tourism experiences, annual passes, group discounts, exemptions). Contact: 0800 597 000 / customerservice@kws.go.ke."
+    },
+    {
+      "file": "2026 CONTRACT RATES/KENYA/PARK FEES/The Wildlife Conservation and Management (Access, Entry and Conservation) (Fees) Regulations 2025 (Leg.pdf",
+      "label": "legal-gazette",
+      "title": "Kenya Gazette Supplement No. 161, Legal Notice No. 160 (22 Sep 2025) - The Wildlife Conservation and Management (Access, Entry and Conservation) (Fees) Regulations 2025",
+      "note": "The actual legal instrument underpinning all KWS fees - published under the Wildlife Conservation and Management Act (Cap. 376). This is the authoritative primary source; the other two documents are operational restatements of it. All core park-fee figures confirmed to match this gazette exactly, cell for cell."
+    }
+  ],
+  "confidenceNote": "All three documents agree exactly on every park-fee figure checked - this is now a high-confidence, cross-referenced dataset, not a single-source extraction. No discrepancies found between the legal gazette (primary law) and Sunworld's internal working documents.",
+  "definitions": {
+    "eastAfricanCitizen": "A citizen of the East African Community (per the Treaty for the Establishment of the East African Community Act, Cap. 4C).",
+    "africanCitizen": "A national of other African countries outside East Africa.",
+    "resident": "A person, other than a Kenyan or East African citizen, residing in Kenya with a valid resident permit.",
+    "nonResident": "A national of any country other than an East African citizen or African citizen - THE RELEVANT CATEGORY for this project's Non-Resident-focused Soroi quoting per CLAUDE.md.",
+    "child": "Per the Children Act - generally under 18; specific park tables split 'Adult' vs 'Child/Student'.",
+    "student": "An individual not older than 23 from a recognized institution, visiting for educational purposes under a documented arrangement.",
+    "dailyFee": "Valid for a single access, not exceeding 24 hours.",
+    "exemptions": "Kenyan citizens aged 70+; persons with disability; children aged 5 and younger; registered tour drivers/guides/boat crew/porters (Tourism Regulatory Authority registered)."
+  },
+  "parkEntryFeesAdult": {
+    "unit": "per adult per day unless noted",
+    "premiumParks_amboseliAndLakeNakuru": { "nonResidentUSD": 90, "africanCitizenUSD": 50, "residentKSH": 2025, "eastAfricanCitizenKSH": 1500 },
+    "wildernessParks_tsavoEastAndWest": { "nonResidentUSD": 80, "africanCitizenUSD": 40, "residentKSH": 1350, "eastAfricanCitizenKSH": 1000 },
+    "wildernessParks_meruKoraAberdare": { "nonResidentUSD": 70, "africanCitizenUSD": 40, "residentKSH": 1100, "eastAfricanCitizenKSH": 800 },
+    "tsavoWestAmboseliPackage": { "nonResidentUSD": 150, "africanCitizenUSD": 80, "residentKSH": 2900, "eastAfricanCitizenKSH": 2200 },
+    "tsavoEastTsavoWestAmboseliPackage": { "nonResidentUSD": 215, "africanCitizenUSD": 115, "residentKSH": 4000, "eastAfricanCitizenKSH": 3000 },
+    "mountainPark_mtKenya": { "nonResidentUSD": 70, "africanCitizenUSD": 30, "residentKSH": 1100, "eastAfricanCitizenKSH": 800 },
+    "urbanPark_nairobiNationalPark": { "nonResidentUSD": 80, "africanCitizenUSD": 40, "residentKSH": 1350, "eastAfricanCitizenKSH": 1000 },
+    "nairobiPackage_parkPlusOrphanagePlusSafariWalk": { "nonResidentUSD": 105, "africanCitizenUSD": 55, "residentKSH": 1750, "eastAfricanCitizenKSH": 1300 },
+    "scenicParks_hellsGateLongonotElgonOlDonyoSabukLakeElementaitaShimbaKakamega": { "nonResidentUSD": 50, "africanCitizenUSD": 20, "residentKSH": 675, "eastAfricanCitizenKSH": 500 },
+    "sanctuaries_nairobiOrphanageSafariWalkKisumuImpala": { "nonResidentUSD": 25, "africanCitizenUSD": 15, "residentKSH": 405, "eastAfricanCitizenKSH": 300 },
+    "specialInterestParks_mweaRumaSaiwaEtc": { "nonResidentUSD": 40, "africanCitizenUSD": 20, "residentKSH": 675, "eastAfricanCitizenKSH": 500 },
+    "marineProtectedAreas_kisiteWatamuMombasaMalindiKiungaDianiChale": { "nonResidentUSD": 25, "africanCitizenUSD": 15, "residentKSH": 675, "eastAfricanCitizenKSH": 500 },
+    "vehicleEntry6to12Seats": { "amount": 1500, "currency": "USD", "note": "Requisition form lists this figure ($1500) under a 'VEHICLE 6-12 SEATS' column identically across every park row - appears to be a flat vehicle fee regardless of park category, distinct from the per-day-per-vehicle 'Other Charges' table in the official fee sheet (600/1500/3000/4500/5000 KSH tiers below). [Unverified] whether these are the same fee expressed differently or two separate vehicle charges - flag before applying to a quote." }
+  },
+  "parkEntryFeesChildStudent": {
+    "unit": "per child/student per day",
+    "premiumParks_amboseliAndLakeNakuru": { "nonResidentUSD": 45, "africanCitizenUSD": 25, "residentKSH": 1050, "eastAfricanCitizenKSH": 750 },
+    "wildernessParks_tsavoEastAndWest": { "nonResidentUSD": 40, "africanCitizenUSD": 20, "residentKSH": 675, "eastAfricanCitizenKSH": 500 },
+    "wildernessParks_meruKoraAberdare": { "nonResidentUSD": 40, "africanCitizenUSD": 20, "residentKSH": 675, "eastAfricanCitizenKSH": 500 },
+    "tsavoWestAmboseliPackage": { "nonResidentUSD": 80, "africanCitizenUSD": 45, "residentKSH": 1550, "eastAfricanCitizenKSH": 1100 },
+    "tsavoEastTsavoWestAmboseliPackage": { "nonResidentUSD": 115, "africanCitizenUSD": 60, "residentKSH": 2150, "eastAfricanCitizenKSH": 1500 },
+    "mountainPark_mtKenya": { "nonResidentUSD": 35, "africanCitizenUSD": 15, "residentKSH": 550, "eastAfricanCitizenKSH": 400 },
+    "urbanPark_nairobiNationalPark": { "nonResidentUSD": 40, "africanCitizenUSD": 20, "residentKSH": 675, "eastAfricanCitizenKSH": 500 },
+    "nairobiPackage": { "nonResidentUSD": 55, "africanCitizenUSD": 20, "residentKSH": 950, "eastAfricanCitizenKSH": 700 },
+    "scenicParks": { "nonResidentUSD": 25, "africanCitizenUSD": 10, "residentKSH": 350, "eastAfricanCitizenKSH": 250 },
+    "sanctuaries": { "nonResidentUSD": 15, "africanCitizenUSD": 10, "residentKSH": 300, "eastAfricanCitizenKSH": 200 },
+    "specialInterestParks": { "nonResidentUSD": 20, "africanCitizenUSD": 10, "residentKSH": 350, "eastAfricanCitizenKSH": 250 },
+    "marineProtectedAreas": { "nonResidentUSD": 15, "africanCitizenUSD": 10, "residentKSH": 350, "eastAfricanCitizenKSH": 250 }
+  },
+  "otherChargesFromOfficialFeeSheet": {
+    "note": "Not in the simpler requisition form - only in the 'official-fee-sheet' (KWS Conservation Fee October 2025) source. Extracted since park-fee-adjacent charges could matter for a full itinerary costing (e.g. vehicle/aircraft charges for a fly-in safari).",
+    "motorVehicleChargesPerDayKSH": { "lessThan6Seats": 600, "sixTo12Seats": 1500, "thirteenTo24Seats": 3000, "twentyFiveTo44Seats": 4500, "fortyFiveSeatsAndAbove": 5000 },
+    "vehicleParkingChargesPerDay_specificParks": { "parks": "Malindi, Mombasa, Shimoni, Longonot, Hells Gate, Lake Nakuru National Park", "eastAfricaCitizenKSH": 1000, "nonResidentUSD": 30, "note": "Not applicable to park visitors with paid tickets." },
+    "aircraftLandingChargesUSD": { "upTo1500Kg": 10, "1501to2500Kg": 20, "2501to5000Kg": 25, "5001to10000Kg": 40, "10001to20000Kg": 65, "20001to40000Kg": 102 },
+    "helicopterLandingUSD": { "amount": 300, "parks": "Mt Kenya, Central & South Island, Chyulu, Kisite Mpunguti" },
+    "aircraftDailyParkingUSD": { "upTo10000Kg": 24, "10001to40000Kg": 40 },
+    "droneChargesPerDronePerDayPerPark": { "eastAfricaCitizenKSH": 5000, "nonResidentUSD": 300, "note": "KCAA license required." },
+    "trucksPerDayKSH": { "1to3Tons": 1000, "4to7Tons": 2250, "moreThan7Tons": 3250 },
+    "boatsExcursionDailyKSH": 500,
+    "boatsExcursionMonthlyKSH": 10500,
+    "boatsExcursionAnnualKSH": 30000,
+    "campingSpecialCampsitesPerNight": {
+      "premiumParks": { "nonResidentUSD": 50, "africanCitizenUSD": 25, "residentKSH": 700, "eastAfricanCitizenKSH": 500, "childNonResidentUSD": 25, "childAfricanCitizenUSD": 15, "childResidentKSH": 350, "childEastAfricanCitizenKSH": 250 },
+      "allOtherParks": { "nonResidentUSD": 35, "africanCitizenUSD": 20, "residentKSH": 350, "eastAfricanCitizenKSH": 250 },
+      "reservationFeePerWeekKSH": { "amount": 10000, "note": "Non-refundable." }
+    },
+    "campingPublicCampsitesPerNight": {
+      "premiumParks": { "nonResidentUSD": 30, "africanCitizenUSD": 25, "residentKSH": 350, "eastAfricanCitizenKSH": 250 },
+      "allOtherParks": { "nonResidentUSD": 20, "africanCitizenUSD": 15, "residentKSH": 300, "eastAfricanCitizenKSH": 200 }
+    },
+    "tourismExperiences": {
+      "animalTrackingPerPerson": { "eastAfricaKSH": 2000, "nonResidentAfricanUSD": 20, "note": "Exclusive of park fee." },
+      "wardensLecturePerGroup": { "eastAfricaKSH": 3000, "nonResidentAfricanUSD": 30 },
+      "nightGameDrivePerPerson": { "eastAfricaKSH": 3000, "nonResidentAfricanUSD": 50, "note": "Exclusive of conservation fees, selected parks/reserves only." },
+      "balloonSafarisPerLandingPerPerson": { "adultUSD": 80, "childUSD": 40 },
+      "lakeBoatingPerPersonPerHour": { "eastAfricaKSH": 1500, "nonResidentAfricanUSD": 15 },
+      "dhowExcursionMarineProtectedAreas": { "eastAfricaKSH": 1000, "nonResidentAfricanUSD": 10 },
+      "horseRidingPerDayExcludingRider": { "eastAfricaKSH": 1500, "nonResidentAfricanUSD": 15 },
+      "sportFishingPerLine": { "eastAfricaKSH": 1500, "nonResidentAfricanUSD": 15 }
+    },
+    "groupActivityDiscountsOnParkEntryFees": {
+      "note": "Applies to East African Citizens, Residents, African Citizens and Non-residents' park entry fees.",
+      "hundredPlusParticipants": "30% of applicable park entry fees",
+      "fiftyTo99": "20% of applicable park entry fees",
+      "thirtyTo49": "10% of applicable park entry fees",
+      "tenTo29": "5% of applicable park entry fees"
+    },
+    "annualPassesKSH": { "adult": 45000, "child": 10400, "couple": 80000, "family_2AdultsUpTo5Children": 130000, "corporate": 120000, "marine": 10500 }
+  },
+  "contact": {
+    "tollFree": "0800 597 000",
+    "email": "customerservice@kws.go.ke",
+    "phone": "+254 726 610 509",
+    "website": "www.kws.go.ke"
+  }
+}

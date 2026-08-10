@@ -1,0 +1,65 @@
+{
+  "category": "excursion",
+  "activity": "Golf course green fees, equipment rental, coaching, and membership",
+  "operator": "Diamonds Leisure Golf Club (Diamonds Resorts)",
+  "region": "Kenya Coast (Diamonds Resorts property — exact town not stated on this price sheet)",
+  "extractedDate": "2026-08-06",
+  "sourceFiles": [
+    "2026 CONTRACT RATES/KENYA/EXCURSIONS/DIAMONDS LEISURE GOLF CLUB_PRICE LIST 2025 edited (4).pdf"
+  ],
+  "effectiveDate": "New prices effective 1 December 2024; current members effective 1 January 2025.",
+  "$dateFlag": "[Unverified] No 2026/2027 update found — this remains the latest price list on file as of extraction.",
+  "currency": "KES",
+  "dailyGreenFees": {
+    "9holes": 4000,
+    "18holes": 5000,
+    "juniorAge12to17_9years": 800,
+    "verified": true
+  },
+  "drivingRange": {
+    "fee": 1200,
+    "ballHire50balls": 200,
+    "note": "To be paid directly to the Pro Shop.",
+    "verified": true
+  },
+  "caddyFees": {
+    "9holes": 750,
+    "18holes": 1200,
+    "note": "To be paid directly to the Caddy.",
+    "verified": true
+  },
+  "equipmentRental": {
+    "clubs9holes": 1350,
+    "clubs18holes": 2200,
+    "note": "To be paid directly to the Pro Shop.",
+    "verified": true
+  },
+  "golfCarts": {
+    "9holes": 3000,
+    "18holes": 4500,
+    "verified": true
+  },
+  "golfCoaching": {
+    "oneHourPerPerson": 2750,
+    "oneHour2Persons": 4070,
+    "oneHour3to5Persons": 4950,
+    "verified": true
+  },
+  "greenFeePackages": {
+    "3Days": 11540,
+    "7Days": 26930,
+    "14Days": 53850,
+    "verified": true
+  },
+  "annualMembership": {
+    "single": 100000,
+    "adultCouple": 169400,
+    "familyTwoAdultsTwoJuniors6to17_9years": 226270,
+    "corporatePerPersonMin4": 75000,
+    "caddyMembership": 25000,
+    "juniorAge6to17_9years": 20000,
+    "under5_9years": "Free",
+    "verified": true
+  },
+  "dressCodeAndEligibility": "Men need a handicap of at least 54 or a playing certificate from a recognized club. Dress code: trousers/shorts or skirts of reasonable length, collared shirts, golf/sports shoes."
+}

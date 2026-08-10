@@ -1,0 +1,27 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftotext -layout from 'EGRET SAVANNA/EGRET  SAVANNA RATES 2027.pdf' (2pp, single property).",
+  "property": "Egret Savanna Camp",
+  "location": "Lake Nakuru National Park",
+  "currency": "USD",
+  "validity": { "start": "2027-01-04", "end": "2028-01-04" },
+  "unit": "per person per night, Full Board",
+  "confidence": "confirmed-2027-08-06",
+  "rates": {
+    "highSeason": { "dateRanges": ["02 Jan - 31 Mar", "10 Oct - 31 Oct"], "perPersonSharing": { "rack": 180, "net": 135 }, "singleTent": { "rack": 247, "net": 190 } },
+    "lowSeason": { "dateRanges": ["01 Apr - 30 Jun", "01 Nov - 20 Dec"], "perPersonSharing": { "rack": 130, "net": 100 }, "singleTent": { "rack": 156, "net": 120 } },
+    "peakSeason": { "dateRanges": ["01 Jul - 09 Oct", "21 Dec - 03 Jan"], "perPersonSharing": { "rack": 221, "net": 170 }, "singleTent": { "rack": 299, "net": 230 } },
+    "verified": true
+  },
+  "inclusions": "Full board (3 meals/day), afternoon tea, Wi-Fi, all government taxes",
+  "exclusions": "Park fees, transport to/from camp, game activities, personal items",
+  "childPolicy": { "age0to5": "Free of charge", "age6to13SharingWithParents": "50% of adult rate", "tourLeaderInGuestTent": "75% of adult single rate", "verified": true },
+  "festiveSupplements": {
+    "easter": { "adult": 35, "child": 18 },
+    "christmas": { "adult": 40, "child": 20, "dates": "24-26 Dec & 31 Dec-01 Jan" },
+    "verified": true
+  },
+  "agentsFamTripRate": { "amount": 80, "unit": "per person per night, all year", "note": "Subject to availability, not applicable during Easter/Christmas/Peak-High season" },
+  "cancellationPolicy": "0-7 days before arrival: 100%; 8-14 days: 50%; 15-35 days: 25%",
+  "groupDiscount": "Minimum 20 pax; 1 free per 15 paying pax; 30% non-refundable deposit + 70% balance 3 weeks before arrival",
+  "verified": true
+}

@@ -1,0 +1,72 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftotext -layout, clean document. FLAGGED: despite living in this project's KENYA/ACCOMODATION folder tree (folder name 'TOP GUIDE'), both properties in this document are explicitly located in TANZANIA (Tarangire National Park and Eastern Serengeti) - out of scope under this project's standing Tanzania-exclusion rule, captured anyway per the assigned extraction list since the folder was explicitly named. NOT Soroi properties.",
+  "operator": "Topguides Bush Camps Ltd",
+  "region": "TANZANIA (Tarangire National Park; Eastern Serengeti)",
+  "currency": "USD",
+  "unit": "per person per night sharing unless noted",
+  "source": {
+    "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/TOP GUIDE/Topguides Bush Camps 20% TBC Rates.docx.pdf",
+    "tier": "International Tour Operators (ITO) 20% off Rack",
+    "validity": "2026"
+  },
+  "confidence": "confirmed-2026-08-06",
+  "properties": {
+    "lolkisaleCamp": {
+      "region": "Tarangire National Park, Tanzania",
+      "accommodation": "7 standard ensuite tents",
+      "seasons": {
+        "high": { "dateRanges": ["1 Jul 2026 - 30 Sep 2026", "16 Dec 2026 - 5 Jan 2027"] },
+        "shoulder": { "dateRanges": ["6 Jan 2026 - 28 Feb 2026", "1 Oct 2026 - 15 Dec 2026"] },
+        "low": { "dateRanges": ["1 Apr 2026 - 31 May 2026"] }
+      },
+      "rates": {
+        "high": { "ppSharing": { "rackFB": 752, "rackGP": 910, "ito20FB": 602, "ito20GP": 728 }, "single": { "rackFB": 1052, "rackGP": 1202, "ito20FB": 842, "ito20GP": 962 }, "ppTriple": { "rackFB": 652, "rackGP": 802, "ito20FB": 522, "ito20GP": 642 }, "child": { "rackFB": 376, "rackGP": 534, "ito20FB": 301, "ito20GP": 427 }, "tlTent": { "rackFB": 140, "rackGP": 225, "ito20FB": 140, "ito20GP": 225 } },
+        "shoulder": { "ppSharing": { "rackFB": 606, "rackGP": 763, "ito20FB": 485, "ito20GP": 610 }, "single": { "rackFB": 906, "rackGP": 1063, "ito20FB": 725, "ito20GP": 850 }, "ppTriple": { "rackFB": 506, "rackGP": 663, "ito20FB": 405, "ito20GP": 530 }, "child": { "rackFB": 303, "rackGP": 382, "ito20FB": 242, "ito20GP": 306 }, "tlTent": { "rackFB": 140, "rackGP": 225, "ito20FB": 140, "ito20GP": 225 } },
+        "low": { "ppSharing": { "rackFB": 520, "rackGP": 678, "ito20FB": 416, "ito20GP": 542 }, "single": { "rackFB": 631, "rackGP": 781, "ito20FB": 505, "ito20GP": 625 }, "ppTriple": { "rackFB": 406, "rackGP": 556, "ito20FB": 325, "ito20GP": 445 }, "child": { "rackFB": 180, "rackGP": 330, "ito20FB": 144, "ito20GP": 264 }, "tlTent": { "rackFB": 140, "rackGP": 225, "ito20FB": 140, "ito20GP": 225 } },
+        "TDL": 1.5
+      },
+      "parkFees_TANAPA": { "high_16May-14Mar": { "adult": 59, "child5to15": 18 }, "low_15Mar-15May": { "adult": 53, "child5to15": 18 } },
+      "campingFees_TANAPA": { "high_16May-14Mar": { "adult": 71, "child5to15": 12 }, "low_15Mar-15May": { "adult": 59, "child5to15": 12 } },
+      "residentRates": { "adult": 170, "childUpTo16": 120, "mealPlan": "FB with soft drinks/local beer/house wines only", "note": "Not available during peak season." }
+    },
+    "serengetiPlainsCamp": {
+      "region": "Eastern Serengeti (Ngare-Nanyukie 5), Tanzania",
+      "accommodation": "8 standard ensuite tents (4m x 10m)",
+      "seasons": {
+        "high": { "dateRanges": ["6 Jan 2026 - 31 Mar 2026", "1 Jun 2026 - 30 Sep 2026", "16 Dec 2026 - 31 Mar 2027"] },
+        "shoulder": { "dateRanges": ["1 Oct 2026 - 15 Dec 2026"] },
+        "low": { "dateRanges": ["1 Apr 2026 - 31 May 2026"] }
+      },
+      "rates": {
+        "high": { "ppSharing": { "rackFB": 1181, "rackGP": 1391, "ito20FB": 945, "ito20GP": 1113 }, "single": { "rackFB": 1506, "rackGP": 1720, "ito20FB": 1205, "ito20GP": 1376 }, "ppTriple": { "rackFB": 985, "rackGP": 1195, "ito20FB": 788, "ito20GP": 956 }, "child": { "rackFB": 590, "rackGP": 696, "ito20FB": 472, "ito20GP": 557 }, "tlTent": { "rackFB": 170, "rackGP": 270, "ito20FB": 170, "ito20GP": 270 } },
+        "shoulder": { "ppSharing": { "rackFB": 850, "rackGP": 1100, "ito20FB": 680, "ito20GP": 880 }, "single": { "rackFB": 1112, "rackGP": 1362, "ito20FB": 890, "ito20GP": 1090 }, "ppTriple": { "rackFB": 757, "rackGP": 1007, "ito20FB": 606, "ito20GP": 806 }, "child": { "rackFB": 425, "rackGP": 550, "ito20FB": 340, "ito20GP": 440 }, "tlTent": { "rackFB": 170, "rackGP": 270, "ito20FB": 170, "ito20GP": 270 } },
+        "low": { "ppSharing": { "rackFB": 500, "rackGP": 700, "ito20FB": 400, "ito20GP": 560 }, "single": { "rackFB": 700, "rackGP": 900, "ito20FB": 560, "ito20GP": 720 }, "ppTriple": { "rackFB": 350, "rackGP": 550, "ito20FB": 280, "ito20GP": 440 }, "child": { "rackFB": 250, "rackGP": 400, "ito20FB": 200, "ito20GP": 320 }, "tlTent": { "rackFB": 170, "rackGP": 270, "ito20FB": 170, "ito20GP": 270 } },
+        "TDL": 1.5
+      },
+      "parkFees_TANAPA": { "high_16May-14Mar": { "adult": 83, "child5to15": 24 }, "low_15Mar-15May": { "adult": 71, "child5to15": 24 } },
+      "campingFees_TANAPA": { "high_16May-14Mar": { "adult": 71, "child5to15": 12 }, "low_15Mar-15May": { "adult": 59, "child5to15": 12 } },
+      "residentRates": { "adult": 170, "childUpTo15": 120, "note": "Not available during peak season." }
+    }
+  },
+  "sharedTermsBothCamps": {
+    "childUnder5_1": "Free of charge",
+    "childRateAge": "5.1 to 15 years",
+    "under12Policy": "Not recommended to stay unaccompanied in tent; not allowed to walk in camp without adult.",
+    "fullBoardInclusions": ["Full board (B/L/D)", "Soft drinks, local beer, house wines, standard spirits in camp", "Laundry"],
+    "gamePackageInclusions": ["Full board", "Sundowners, bush breakfast/lunch/dinner", "Drinks during activities too", "Airstrip transfer before 11am", "Laundry", "Scheduled shared game drives"],
+    "exclusions": ["Premium spirits/wines/champagne", "Additional meals", "FB clients' airstrip transfers", "Night game drives, walking safaris", "Medical evacuation insurance", "Flights/airport taxes", "TDL, gratuities, personal items"],
+    "exclusiveVehiclePerDay": 450,
+    "extraTransferFeeCheckoutAfter11am": 200,
+    "nightGameDrivesMin2pax": 135,
+    "walkingSafarisMin2pax": 120,
+    "bushExtras": { "sparklingWineBreakfast": 60, "sundowners": 35, "bushLunch": 55, "bushDinner": 60 },
+    "guidePolicy": "Driver-guide in regular guide tent: 20,000 TSH payable at camp. Tour Leader tent fee payable in advance.",
+    "deposit": "20% non-refundable to confirm.",
+    "payment": "Full payment due 45 days prior to tour start (or immediately if booked within 45 days)."
+  },
+  "cancellationPolicy": [
+    { "daysBeforeArrival": ">45", "charge": "20% deposit forfeited" },
+    { "daysBeforeArrival": "45-30", "charge": "50% of full value" },
+    { "daysBeforeArrival": "<30 / no-show", "charge": "100%" }
+  ]
+}

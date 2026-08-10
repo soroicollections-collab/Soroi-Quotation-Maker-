@@ -1,0 +1,190 @@
+{
+  "$note": "FULL Safarilink 2026 route network - expands substantially beyond the two routes already captured in flights-amboseli-mara-nanyuki-2026.json (nanyukiToMasaiMara and amboseliTsavoToMara). Both of those pre-existing figures are CONFIRMED to match this document exactly ($441 published / $374.80 nett + $15 tax for Nanyuki-Mara; $331.50 nett + $15 tax for Amboseli/Tsavo-Mara) - no discrepancy found, just re-verified. Everything else below is newly captured.",
+  "carrier": "Safarilink",
+  "currency": "USD",
+  "verified": true,
+  "source": {
+    "file": "2026 CONTRACT RATES/KENYA/FLIGHTS/Safarilink/SAFARILINK - SUNWORLD SAFARIS.pdf",
+    "validity": { "start": "2026-01-01", "end": "2026-12-31" },
+    "documentVersion": "Date: 20th July 2026 /rk v1.",
+    "extractionMethod": "Clean embedded text layer via pdftotext -layout."
+  },
+  "seasons": {
+    "low": { "dateRanges": ["01 Apr - 15 Jun 2026", "01 Nov - 15 Dec 2026"] },
+    "high": { "dateRanges": ["01 Jan - 31 Mar 2026", "16 Jun - 31 Oct 2026", "16 Dec - 31 Dec 2026"] }
+  },
+  "generalChildRule": "Child fare is 75% of the adult fare, EXCEPT Tanzania through-fares (Mara-Migori-Tarime-Serengeti connector) where child (2-11 years) is 80% of the adult fare. Consistent with what's already noted in flights-amboseli-mara-nanyuki-2026.json.",
+  "routes": {
+    "nairobiMasaiMara": {
+      "single": { "publishedFare": 260, "nett": 221.0, "tax": 15 },
+      "return": { "publishedFare": 425, "nett": 361.2, "tax": 30 },
+      "note": "Operates into multiple strips, timings may vary significantly."
+    },
+    "naivasha": {
+      "nairobiToNaivasha": { "publishedFare": 170, "nett": 144.5, "tax": 15, "minPax": 4 },
+      "naivashaToMasaiMara": { "publishedFare": 275, "nett": 233.7, "tax": 15 }
+    },
+    "masaiMaraToMigori": {
+      "single": { "publishedFare": 317, "nett": 269.4, "tax": 15 },
+      "note": "Vice versa (v.v.). Min 4 pax per service year-round."
+    },
+    "masaiMaraToUkundaMombasa": {
+      "single": { "publishedFare": 435, "nett": 369.7, "tax": 15 },
+      "note": "Will operate in high season from June 2026, min 6 pax per service, or may re-route via Wilson."
+    },
+    "nairobiAmboseli": {
+      "single": { "publishedFare": 205, "nett": 174.2, "tax": 15 },
+      "return": { "publishedFare": 352, "nett": 299.2, "tax": 30 },
+      "note": "Can be combined with Tsavo West; confirm timings 24hrs prior."
+    },
+    "nairobiKimanaAmboseli": {
+      "single": { "publishedFare": 247, "nett": 209.9, "tax": 15, "minPax": 4 },
+      "return": { "publishedFare": 436, "nett": 370.6, "tax": 30 },
+      "note": "Combined service with Amboseli; afternoon flights don't operate in low season."
+    },
+    "amboseliTsavoToMara": {
+      "single": { "publishedFare": 390, "nett": 331.5, "tax": 15 },
+      "note": "CONFIRMED match to the existing flights-amboseli-mara-nanyuki-2026.json figure. Direct routing in high season, min 2 pax/airstrip, 4 pax/service; otherwise reroutes via Wilson."
+    },
+    "amboseliToNanyuki": {
+      "single": { "publishedFare": 510, "nett": 433.5, "tax": 15 }
+    },
+    "amboseliToLoisabaSamburuLewa": {
+      "single": { "publishedFare": 620, "nett": 527.0, "tax": 15 },
+      "note": "Combined Amboseli/Tsavo to Laikipia service operates direct in high season from Jan 2026, min 2 pax/airstrip, 4 pax/service. Airstrips within Samburu & Nanyuki may be combined. May reroute via Wilson."
+    },
+    "tsavoToNanyuki": {
+      "single": { "publishedFare": 580, "nett": 493.0, "tax": 15 }
+    },
+    "tsavoToLoisabaSamburuLewa": {
+      "single": { "publishedFare": 680, "nett": 578.0, "tax": 15 }
+    },
+    "nairobiTsavoWest": {
+      "single": { "publishedFare": 250, "nett": 212.5, "tax": 15 },
+      "return": { "publishedFare": 395, "nett": 335.7, "tax": 30 },
+      "note": "Can be combined with Amboseli; afternoon flights don't operate in low season."
+    },
+    "nairobiNanyuki": {
+      "single": { "publishedFare": 205, "nett": 174.2, "tax": 15 },
+      "return": { "publishedFare": 352, "nett": 299.2, "tax": 30 },
+      "note": "Serves Nanyuki Civil or Kamok strips. Low season: Laikipia-Mara may route via Wilson."
+    },
+    "nanyukiToMasaiMara": {
+      "single": { "publishedFare": 441, "nett": 374.8, "tax": 15 },
+      "note": "CONFIRMED match to the existing flights-amboseli-mara-nanyuki-2026.json figure."
+    },
+    "nairobiLoisabaSamburuLewa": {
+      "single": { "publishedFare": 289, "nett": 245.6, "tax": 15 },
+      "return": { "publishedFare": 473, "nett": 402.0, "tax": 30 },
+      "note": "Samburu area service uses Kalama and Sasaab strips. Low season: Laikipia-Mara may route via Wilson."
+    },
+    "loisabaSamburuLewaToMasaiMara": {
+      "single": { "publishedFare": 467, "nett": 396.9, "tax": 15 }
+    },
+    "nairobiLamu": {
+      "single": { "yClass": { "publishedFare": 230, "nett": 195.5, "tax": 15 }, "mClass": { "publishedFare": 210, "nett": 184.8, "tax": 15 } },
+      "return": { "yClass": { "publishedFare": 390, "nett": 331.5, "tax": 30 }, "mClass": { "publishedFare": 347, "nett": 305.3, "tax": 30 } },
+      "note": "Other fares/classes available; stricter T&Cs apply to those."
+    },
+    "lamuToMalindi": {
+      "single": { "yClass": { "publishedFare": 126, "nett": 107.1, "tax": 15 }, "mClass": { "publishedFare": 95, "nett": 83.6, "tax": 15 } }
+    },
+    "nairobiZanzibar": {
+      "yClass": { "nairobiToZanzibar": { "publishedFare": 338, "nett": 287.3, "tax": 65 }, "zanzibarToNairobi": { "publishedFare": 338, "nett": 287.3, "tax": 75 }, "return": { "publishedFare": 645, "nett": 548.2, "tax": 140 } },
+      "mClass": { "nairobiToZanzibar": { "publishedFare": 286, "nett": 251.6, "tax": 65 }, "zanzibarToNairobi": { "publishedFare": 286, "nett": 251.6, "tax": 75 }, "return": { "publishedFare": 541, "nett": 459.8, "tax": 140 } }
+    },
+    "mombasaZanzibar": {
+      "yClass": { "mombasaToZanzibar": { "publishedFare": 250, "nett": 212.5, "tax": 65 }, "zanzibarToMombasa": { "publishedFare": 250, "nett": 212.5, "tax": 75 }, "return": { "publishedFare": 420, "nett": 357.0, "tax": 140 } },
+      "mClass": { "mombasaToZanzibar": { "publishedFare": 215, "nett": 189.2, "tax": 65 }, "zanzibarToMombasa": { "publishedFare": 215, "nett": 189.2, "tax": 75 }, "return": { "publishedFare": 360, "nett": 316.8, "tax": 140 } }
+    },
+    "nairobiDianiMalindiMombasa": {
+      "yClass": { "single": { "publishedFare": 215, "nett": 182.7, "tax": 15 }, "return": { "publishedFare": 350, "nett": 297.5, "tax": 30 } },
+      "mClass": { "single": { "publishedFare": 194, "nett": 170.7, "tax": 15 }, "return": { "publishedFare": 313, "nett": 275.4, "tax": 30 } }
+    },
+    "nairobiKilimanjaro": {
+      "yClass": { "nairobiToKilimanjaro": { "publishedFare": 210, "nett": 178.5, "tax": 65 }, "kilimanjaroToNairobi": { "publishedFare": 210, "nett": 178.5, "tax": 75 }, "return": { "publishedFare": 378, "nett": 321.3, "tax": 140 } },
+      "mClass": { "nairobiToKilimanjaro": { "publishedFare": 175, "nett": 154.0, "tax": 65 }, "kilimanjaroToNairobi": { "publishedFare": 175, "nett": 154.0, "tax": 75 }, "return": { "publishedFare": 299, "nett": 263.1, "tax": 140 } },
+      "note": "Min 4 pax high season, 6 pax low season. NOTE: this is a materially different fare from AirKenya's competing Wilson-Kilimanjaro/Arusha route ($210 rack, same coincidentally, but AirKenya's tax is $70-128 not $65-75) and different minimum-pax rule - don't conflate carriers."
+    },
+    "nairobiKisumu": {
+      "yClass": { "single": { "publishedFare": 165, "nett": 140.2, "tax": 15 }, "return": { "publishedFare": 310, "nett": 263.5, "tax": 30 } },
+      "mClass": { "single": { "publishedFare": 146, "nett": 128.4, "tax": 15 }, "return": { "publishedFare": 278, "nett": 244.6, "tax": 30 } }
+    }
+  },
+  "tanzaniaThroughFaresViaMigoriTarime2026": {
+    "note": "Two parallel connecting-carrier options from Mara into the Serengeti, both via a Safarilink Mara-Migori flight + road transfer Migori-Tarime (~1hr incl. immigration, arranged by the connecting carrier) + onward flight on the connecting carrier. Fare INCLUDES the road transfer. Child (2-11) = 80% of fare (differs from the 75% general rule). Requires Kenya visa in advance and valid yellow fever certificate for Tanzania entry. Safarilink serves max 3 Mara strips for this connection: Olkiombo, Keekorok, and either Mara North or Kichwa - other strips considered case-by-case.",
+    "safarilinkAndAuricAir": {
+      "fortIkoma": { "published": 569, "nett": 500.7, "tax": 115 },
+      "grumeti": { "published": 569, "nett": 500.7, "tax": 115 },
+      "kogatende": { "published": 555, "nett": 488.4, "tax": 115 },
+      "lamai": { "published": 555, "nett": 488.4, "tax": 115 },
+      "lobo": { "published": 569, "nett": 500.7, "tax": 115 },
+      "ndutu": { "published": 588, "nett": 517.4, "tax": 115 },
+      "sasakwa": { "published": 588, "nett": 517.4, "tax": 115 },
+      "seronera": { "published": 569, "nett": 500.7, "tax": 115 },
+      "serengetiSouth": { "published": 588, "nett": 517.4, "tax": 115 },
+      "manyara": { "published": 639, "nett": 562.3, "tax": 115 }
+    },
+    "safarilinkAndCoastal": {
+      "fortIkoma": { "published": 646, "nett": 581.4, "tax": 55 },
+      "grumeti": { "published": 646, "nett": 581.4, "tax": 55 },
+      "kogatende": { "published": 613, "nett": 551.7, "tax": 55 },
+      "lamai": { "published": 613, "nett": 551.7, "tax": 55 },
+      "lobo": { "published": 646, "nett": 581.4, "tax": 55 },
+      "ndutu": { "published": 673, "nett": 605.7, "tax": 55 },
+      "singita": { "published": 646, "nett": 581.4, "tax": 55 },
+      "seronera": { "published": 646, "nett": 581.4, "tax": 55 },
+      "serengetiSouth": { "published": 673, "nett": 605.7, "tax": 55 },
+      "manyara": { "published": 743, "nett": 668.7, "tax": 60 }
+    },
+    "minPax": "2 per strip, 4 per service in high season; low season (1 Apr-15 Jun, 1 Nov-15 Dec) requests considered at min 4 per strip AND per service.",
+    "scheduleExTanzania": [
+      { "from": "TZ destinations", "to": "Tarime", "depart": "0835-0930", "arrive": "1000" },
+      { "from": "Tarime", "to": "Migori", "depart": "1040", "arrive": "1200" },
+      { "from": "Migori", "to": "Mara", "depart": "1215", "arrive": "1245" }
+    ],
+    "scheduleExKenya": [
+      { "from": "Mara", "to": "Migori", "depart": "1130", "arrive": "1200" },
+      { "from": "Migori", "to": "Tarime", "depart": "1215", "arrive": "1315" },
+      { "from": "Tarime", "to": "TZ destinations", "depart": "1400", "arrive": "1425-1600" }
+    ],
+    "bookingRule": "Reservations may be made through either airline but must show complete routing on ONE voucher for the through-fare to apply; camps/lodges for both TZ and Mara must be indicated.",
+    "cancellationPolicy": "Cancellations within 14 days of travel = 100% no-show charge. Amendments within 7 days = $100 penalty ($50 per airline)."
+  },
+  "multiSectorDiscount2026": {
+    "note": "Book 3+ flights on Safarilink scheduled services only.",
+    "threeToFourSectors": "23%",
+    "fivePlusSectors": "28%",
+    "rules": [
+      "Applies from 1 Jan - 31 Dec 2026.",
+      "Only Y-class published fares qualify.",
+      "Must be booked on ONE voucher/PNR, else individual sector fares apply.",
+      "Taxes excluded from discount, applied per sector.",
+      "Net fare = applicable seasonal published (not nett) fare x discount%; a return fare can substitute for 2 singles if cheaper. No retrospective credit notes."
+    ]
+  },
+  "groupFares2026": {
+    "note": "Safarilink scheduled services only, off Gross Fare.",
+    "twelveToTwentyPax": "20%",
+    "aboveTwentyPax": "25%",
+    "combinabilityNote": "Group fares and multi-sector discounts cannot be combined.",
+    "groupCancellationRefund": { "nonRefundablePortion": "10%", "between45and21Days": "50% charge", "within21Days": "100% charge" }
+  },
+  "termsAndConditions": {
+    "applicability": "Y & M class fares only; other classes have different, more restrictive conditions.",
+    "cancellation": { "upTo30Days": "Free", "within30to7Days": "$50/pax", "within7Days": "100%/pax", "festiveEasterException": "14-day window applies over Easter (2-6 Apr 2026) and Festive period (16 Dec 2026-10 Jan 2027) instead of the standard 7-day window.", "creditCardRefundFee": "Less 5% credit card company commission." },
+    "amendment": { "above7Days": "Nil charge (same class only, else fare difference applies)", "within7DaysTo24Hours": "$50/pax ($100 over Christmas/New Year/Easter)", "within24Hours": "100%/pax (Christmas/New Year/Easter: 100% within 7 days)" },
+    "ticketValidity": "1 year from first date of travel on first ticket issuance.",
+    "noShow": "Non-refundable, non-transferable, cannot be rebooked.",
+    "nameChanges": "$30 on fully unutilized tickets; not permitted after travel.",
+    "reRoutings": "Permitted with fare recalculation.",
+    "flightClosure": "Safarilink may close flights 7 days in advance; min-pax bookings thereafter considered at discretion with possible revised minimum."
+  },
+  "baggage": {
+    "standardAllowance": "15kg per person, soft bags, inclusive of hand luggage/cameras.",
+    "coastalRoutesAllowance": { "amount": "20kg", "routes": "KIS, UKA, MYD, LAU, MBA, ZNZ", "note": "Inclusive of hand luggage." },
+    "excessBaggageRate": { "domestic": 3.50, "mbaZnzSector": 5, "international": 10, "unit": "per kg, VAT inclusive, subject to payload/space availability, max 10kg at this per-kg rate before the advance-purchase table applies" },
+    "freightSeat": "75kg extra at the adult fare.",
+    "advancePurchaseExcessBaggage": { "note": "Book 96hrs+ before flight, in 10/20/30kg batches.", "oneToTenKg": 50, "elevenToTwentyKg": 80, "twentyOneToThirtyKg": 145 }
+  }
+}

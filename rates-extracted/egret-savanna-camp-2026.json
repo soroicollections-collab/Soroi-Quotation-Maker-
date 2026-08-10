@@ -1,0 +1,21 @@
+{
+  "$note": "Extracted 6 Aug 2026. Found inside the 'FLAMINGO HILL AND MARA CROSSING' folder, but the document itself is titled 'EGRET SAVANNA CAMP' - not 'Flamingo Hill'. [Flag] Possibly a sister/associated property of Flamingo Hill Camp (both being Lake Nakuru camps commonly clustered under one operator) but this is not confirmed anywhere in the source text - no Flamingo Hill rate document was actually found in this folder.",
+  "property": "Egret Savanna Camp",
+  "operator": "Not explicitly named in document beyond 'Egret Savannah Camp'",
+  "region": "Lake Nakuru National Park",
+  "tier": "Agent rate (Rack and Net given side by side)",
+  "source": {
+    "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/FLAMINGO HILL AND MARA CROSSING/EGRET  SAVANNA RATES 2026.pdf",
+    "validity": { "start": "2026-01-04", "end": "2027-01-04" }
+  },
+  "seasons": { "high": "2 Jan-31 Mar, 10 Oct-31 Oct, 1 Nov-20 Dec", "low": "1 Apr-30 Jun", "peak": "1 Jul-9 Oct, 21 Dec-3 Jan" },
+  "rates": {
+    "currency": "USD", "unit": "per person per night, Full Board",
+    "perPerson": { "high": { "rack": 180, "net": 135 }, "low": { "rack": 130, "net": 100 }, "peak": { "rack": 221, "net": 155 } },
+    "singleTent": { "high": { "rack": 247, "net": 190 }, "low": { "rack": 156, "net": 120 }, "peak": { "rack": 286, "net": 220 } }
+  },
+  "childPolicy": { "0to5": "Free", "6to13sharingWithParents": "50% of adult rate" },
+  "tourLeaderGuide": "75% of Adult single rate (in Guest Tent)",
+  "supplements": { "easter": { "adult": 35, "child": 18 }, "christmas_24to26Dec_31Dec-01Jan": { "adult": 40, "child": 20 } },
+  "notes": "Excludes park fees, transport, game activities. Agents FAM trip rate: $80/person/night (subject to availability, not in peak/high/Easter/Christmas)."
+}

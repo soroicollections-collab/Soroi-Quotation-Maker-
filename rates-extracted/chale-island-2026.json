@@ -1,0 +1,69 @@
+{
+  "$note": "Extracted 6 Aug 2026, read directly (pdftotext -layout, poppler, 1-page document). Chale Island — non-Soroi, part of 'The Sands & Chale Island' resort complex (Diani/South Coast area, accessed via Nomad Beach Resort). FILING ANOMALY CONFIRMED: the 2026 folder tree has TWO copies of this property's files — a top-level 'CHALE AND NOMADS' folder and a nested 'THE SANDS/CHALE AND NOMADS' folder. MD5 checksum comparison confirms every file in the nested folder is BYTE-IDENTICAL to its top-level counterpart (Chale Island USD Net: e8b2bdc281bf4d6f3c41ed03773cf79b in both locations; same for the KES Rack, Nomad, and Private Beach Villa files). This is a pure filing duplication, not two different rate cards — used the top-level 'CHALE AND NOMADS' copy as source. Only the USD Net rate is extracted as primary here since it's the only USD tier available for 2026 (no USD Rack card exists for 2026, only KES Rack — see structuralFindings).",
+  "property": "Chale Island (part of The Sands & Chale Island / Chale Island Lodge)",
+  "region": "Diani / South Coast (accessed via Nomad Beach Resort)",
+  "tier": "USD Net — primary and only USD tier available for 2026. A KES 'Rack' card also exists (see structuralFindings) but was not the focus of extraction given the project's USD-based quoting convention.",
+  "residency": "Non-Resident",
+  "source": {
+    "file": "2026 CONTRACT RATES/KENYA/BEACH ACCOMODATION/CHALE AND NOMADS/Chale Island - USD - Net 2026 .pdf",
+    "duplicateFilingNote": "Byte-identical copy also exists at '2026 CONTRACT RATES/KENYA/BEACH ACCOMODATION/THE SANDS/CHALE AND NOMADS/Chale Island - USD - Net 2026 .pdf' (MD5 e8b2bdc281bf4d6f3c41ed03773cf79b, confirmed both locations). Flag to whoever owns the SharePoint tree — likely an accidental double-file, similar in spirit to the SOROI 2027 duplicate-filename issue documented in CLAUDE.md.",
+    "kesRackFile_notExtracted": "2026 CONTRACT RATES/KENYA/BEACH ACCOMODATION/CHALE AND NOMADS/Chale Island - KES - Rack 2026  (1).pdf",
+    "pdfPageIndex": [0],
+    "validity": { "start": "2025-11-01", "end": "2026-10-31" }
+  },
+  "confidence": "confirmed-2026-08-06",
+  "extractionMethod": { "note": "Read directly, single-page document." },
+  "structuralFindings": [
+    "5 room categories, each with a DIFFERENT base meal plan: Deluxe/Tower Suite/Ocean View Banda = Half Board; Overwater Suite/Suite on the Rocks = All Inclusive built in (no separate AI supplement needed for these two top categories) — a genuinely mixed meal-plan shape within one property, not seen elsewhere in this batch.",
+    "3 season bands only: Spring (15 Mar-15 Jun), Regular (the rest of the year, implicit), Festive (20 Dec-10 Jan, min 7-night stay) — Spring here is the LOW season (cheapest), unlike most properties where a 'Spring'-type label might imply value pricing, worth double-checking against client expectations.",
+    "3rd bed adult = flat 70% of per-person-sharing rate (not a % of double-total); 3rd bed child = flat $55 (Spring/Regular) or $120 (Festive), not a percentage.",
+    "Extensive child-policy substitution table given (2 children with 1 or 2 adults, 2 or 3 children with no adults) expressed as combinations of Single Occupancy + 3rd-bed-child charges rather than simple percentages — read and recorded as printed, do not simplify without checking this table."
+  ],
+  "seasons": {
+    "spring": { "dateRange": "15 Mar - 15 Jun" },
+    "regular": { "dateRange": "implicit — all other dates outside Spring/Festive" },
+    "festive": { "dateRange": "20 Dec - 10 Jan", "minimumStay": "7 nights" }
+  },
+  "rates": {
+    "currency": "USD",
+    "unit": "per person sharing (or single occupancy) per night, meal plan varies by category — see structuralFindings",
+    "deluxe_halfBoard": { "perPersonSharing": { "spring": 140, "regular": 175, "festive": 245 }, "singleOccupancy": { "spring": 196, "regular": 245, "festive": 343 }, "thirdBedAdult": { "spring": 98, "regular": 122, "festive": 172 }, "thirdBedChild": { "spring": 55, "regular": 55, "festive": 120 } },
+    "towerSuite_halfBoard": { "perPersonSharing": { "spring": 175, "regular": 210, "festive": 280 }, "singleOccupancy": { "spring": 245, "regular": 294, "festive": 392 }, "thirdBedAdult": { "spring": 122, "regular": 147, "festive": 196 }, "thirdBedChild": { "spring": 55, "regular": 55, "festive": 120 } },
+    "oceanViewBanda_halfBoard": { "perPersonSharing": { "spring": 189, "regular": 245, "festive": 333 }, "singleOccupancy": { "spring": 265, "regular": 343, "festive": 466 }, "thirdBedAdult": { "spring": 132, "regular": 172, "festive": 233 }, "thirdBedChild": { "spring": 55, "regular": 55, "festive": 120 } },
+    "overwaterSuite_allInclusive": { "perPersonSharing": { "spring": 403, "regular": 420, "festive": 525 }, "singleOccupancy": { "spring": 564, "regular": 588, "festive": 735 }, "thirdBedAdult": { "spring": 282, "regular": 294, "festive": 368 }, "thirdBedChild": { "spring": 55, "regular": 55, "festive": 120 } },
+    "suiteOnTheRocks_allInclusive": { "perPersonSharing": { "spring": 613, "regular": 630, "festive": 735 }, "singleOccupancy": { "spring": 858, "regular": 882, "festive": 1029 } }
+  },
+  "supplements": {
+    "fullBoard": { "perAdult": 55, "perChild": 27 },
+    "allInclusive": { "perAdult": 100, "perChild": 50 }
+  },
+  "childPolicy": {
+    "age0to2": "Free",
+    "age12Plus": "Adult rates",
+    "age3to11_sharingWith1Adult": "3rd bed Child + Single Occupancy",
+    "age3to11_sharingWith2Adults": "3rd bed Child + 2pp Sharing",
+    "2Children_with1Adult": "Single Occupancy + 1pp Sharing",
+    "2Children_with2Adults": "2x 3rd bed Child + 2pp Sharing",
+    "2Children_noAdults": "Single Occupancy",
+    "3Children_noAdults": "Single Occupancy + 3rd bed Child"
+  },
+  "maxRoomOccupancy": "3 pax (exceptions may apply)",
+  "transfers": {
+    "moiInternationalAirport": { "amount": 80, "unit": "per 4 pax, Airconditioned Mini Van via Dongo-Kundu bypass, 90 min" },
+    "dianiAirstrip": { "amount": 35, "unit": "per 4 pax, 45 min" },
+    "nomadToChaleIsland": { "amount": 35, "unit": "per 4 pax, 30 min" }
+  },
+  "paymentTerms": "30% deposit 14 days after invoicing; balance 30 days prior to arrival.",
+  "cancellationPolicy": {
+    "regularAndFestive": { "30PlusDays": "No charge", "15to30Days": "50%", "14orFewerDays": "100%", "noShow": "100%" },
+    "spring": { "14PlusDays": "No charge", "7to14Days": "50%", "under7Days": "100%", "noShow": "100%" }
+  },
+  "skippedFiles": [
+    "RE_ 2026 Chale Island and Nomad Beach Net rates.msg (email)",
+    "Confirmation Voucher -Denis Family.pdf (booking confirmation, not a rate card)",
+    "Chale Island - KES - Rack 2026  (1).pdf (KES Rack tier, not extracted — USD Net was primary target and only USD tier available for 2026)"
+  ],
+  "portfolioWideTerms": {
+    "note": "Non-Soroi property — CLAUDE.md's Soroi-portfolio-wide terms do not apply."
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftotext -layout. NOT a Soroi property. Multi-property document: Karen Blixen Group operates two distinct properties in two different regions - Karen Blixen Coffee Garden & Cottages (Nairobi) and Karen Blixen Camp (Mara North Conservancy, Maasai Mara). Filed in the same 'KAREN GABLES & BLIXEN' folder as the unrelated 'Karen Gables' property (see separate karen-gables-nairobi-2025-2026.json) - the folder name groups two different operators together, not one.",
+  "operator": "Karen Blixen Group",
+  "source": { "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/KAREN GABLES & BLIXEN/Karen Blixen Group 2026 Rates Compressed -ELTO.pdf", "validity": { "nairobiCottages": { "start": "2026-01-01", "end": "2026-12-31" }, "maraCamp": { "start": "2026-01-03", "end": "2027-01-02" } } },
+  "confidence": "confirmed-2026-08-06",
+  "currency": "USD",
+  "karenBlixenCoffeeGardenCottagesNairobi": {
+    "unit": "per night, inclusive of breakfast and taxes",
+    "nonResident": {
+      "rack": { "classicRoom": { "single": 264, "dblTwin": 382 }, "juniorSuite": { "single": 378, "dblTwin": 546 }, "deluxeSuite": { "single": 491, "dblTwin": 709 }, "honeymoonSuite": { "single": 491, "dblTwin": 709 } },
+      "net": { "classicRoom": { "single": 192, "dblTwin": 274 }, "juniorSuite": { "single": 274, "dblTwin": 392 }, "deluxeSuite": { "single": 356, "dblTwin": 509 }, "honeymoonSuite": { "single": 356, "dblTwin": 509 } }
+    },
+    "resident": {
+      "rack": { "classicRoom": { "single": 176, "dblTwin": 228 }, "juniorSuite": { "single": 251, "dblTwin": 325 }, "deluxeSuite": { "single": 327, "dblTwin": 423 }, "honeymoonSuite": { "single": 327, "dblTwin": 423 } },
+      "net": { "classicRoom": { "single": 150, "dblTwin": 192 }, "juniorSuite": { "single": 214, "dblTwin": 274 }, "deluxeSuite": { "single": 278, "dblTwin": 356 }, "honeymoonSuite": { "single": 278, "dblTwin": 356 } }
+    },
+    "childPolicy": { "note": "Applies specifically to Deluxe Suite cottage (and day rooms).", "age2to12SharingDeluxeSuite": "50% of per-adult sharing rate", "adultPlusChildSharingDeluxeSuite": "Adult pays single rate, child pays 75% of per-person sharing rate", "age12Plus": "Full rate", "under2": "Free", "3AdultsInDeluxeSuite": "Double + single charge", "2AdultsPlusChildDeluxeSuite": "Child pays 75% of single rate" },
+    "maxSingleRooms": "3 per booking; additional singles charged at double room rate",
+    "dayRoom": { "hours": "1200-1800", "rate": "70% of room rate", "lateDeparture": "Full night charged past 1800hrs" },
+    "groupPolicy": "1 FOC twin-share stay per 15 paying pax (BB basis)",
+    "comboDiscount": { "karenBlixenGroupCombo": "5% off when combined with 3+ nights at Karen Blixen Camp", "longStay": "5% off for 4+ nights at the Cottages (not combinable with the combo discount)" },
+    "checkInOut": { "checkIn": "1200hrs", "checkOut": "1100hrs" },
+    "cancellation": { "35to16days": "50% of contracted cost", "15daysToNoShow": "100% of contracted cost" },
+    "verified": true
+  },
+  "karenBlixenCampMaraNorth": {
+    "region": "Mara North Conservancy, Maasai Mara",
+    "unit": "per person per night, Full Board ground package",
+    "seasons": { "low": "01/04/26-31/05/26", "shoulder": "01/06/26-30/06/26 & 1/11/26-22/12/26", "high": "03/01/26-31/03/26", "peak": "01/07/26-31/10/26 & 23/12/26-02/01/27" },
+    "nonResident": {
+      "rack": { "singleTent": { "low": 733, "shoulder": 817, "high": 902, "peak": 1042 }, "doubleTwin": { "low": 1134, "shoulder": 1274, "high": 1415, "peak": 1641 }, "triple": { "low": 1601, "shoulder": 1785, "high": 1968, "peak": 2291 }, "childSharingWith2Adults": { "low": 361, "shoulder": 403, "high": 446, "peak": 518 }, "childOwnTentOrSharingWith1Adult": { "low": 462, "shoulder": 506, "high": 561, "peak": 652 } },
+      "contract": { "singleTent": { "low": 476, "shoulder": 535, "high": 595, "peak": 694 }, "doubleTwin": { "low": 723, "shoulder": 820, "high": 916, "peak": 1076 }, "triple": { "low": 1015, "shoulder": 1152, "high": 1289, "peak": 1501 }, "childSharingWith2Adults": { "low": 234, "shoulder": 264, "high": 293, "peak": 342 }, "childOwnTentOrSharingWith1Adult": { "low": 358, "shoulder": 400, "high": 442, "peak": 515 } }
+    },
+    "resident": {
+      "note": "Figures reproduced exactly as printed in KES. The 'child sharing with 2 adults' resident-rack row has an anomalously low low-season figure (1,640) compared to its own shoulder/high/peak neighbors (11,291/20,941/24,340) and compared to the equivalent contract-rate row (13,849) - looks like a probable source typo (missing a digit, e.g. possibly meant ~16,400) but reproduced as printed since it cannot be corrected without the source being fixed.",
+      "rack": { "singleTent": { "low": 33190, "shoulder": 37621, "high": 42052, "peak": 46864 }, "doubleTwin": { "low": 54587, "shoulder": 61964, "high": 69340, "peak": 77365 }, "triple": { "low": 75980, "shoulder": 85379, "high": 94777, "peak": 105795 }, "childSharingWith2Adults": { "low": 1640, "shoulder": 11291, "high": 20941, "peak": 24340 }, "childOwnTentOrSharingWith1Adult": { "low": 20942, "shoulder": 23707, "high": 26472, "peak": 29493 } },
+      "contract": { "singleTent": { "low": 27871, "shoulder": 31830, "high": 35404, "peak": 39491 }, "doubleTwin": { "low": 48236, "shoulder": 53252, "high": 58268, "peak": 63534 }, "triple": { "low": 66076, "shoulder": 73597, "high": 81118, "peak": 89105 }, "childSharingWith2Adults": { "low": 13849, "shoulder": 40339, "high": 17618, "peak": 19651 }, "childOwnTentOrSharingWith1Adult": { "low": 17618, "shoulder": 19968, "high": 22318, "peak": 24884 } },
+      "confidenceNote": "The resident contract-rate 'child sharing with 2 adults' shoulder-season figure (40,339) is also anomalous - far higher than its own low/high/peak neighbors (13,849/17,618/19,651) and higher than the equivalent rack-rate figure for the same season/category. Read directly from source and reproduced as printed; flag as a likely source data-entry error before using this specific cell."
+    },
+    "verified": true,
+    "inclusions": ["Full board accommodation", "Water, soft drinks, tea, coffee, local beers, house wines, selected spirit and vodka", "Unlimited shared game drives per day (optional full day)", "One night game drive within Mara North Conservancy", "Return airstrip transfers in Mara", "Guided camp eco walk", "Cooking School / bead project visit when in session"],
+    "exclusions": {
+      "maraNorthConservancyFee": { "nonResidentAdult": 130, "nonResidentChild": 65, "residentAdultKES": 3000, "residentChildKES": 1500, "unit": "per person per night, invoiced separately with the booking - not payable directly at camp, subject to change within the year" },
+      "other": ["Domestic flights", "Travel insurance", "Nairobi transfers", "Tips/personal items", "Bush breakfast/lunch/dinner and sundowner", "Laundry", "Bush walk safaris", "Exclusive vehicle use"]
+    },
+    "longStayDiscount": "5% off ground package rates from the 4th night onward",
+    "childPolicy": { "under2": "Free", "definition": "Child = 2 to below 12 years" },
+    "tourLeaderGuide": { "amount": 120, "unit": "USD per person per night, exclusive of $130/night non-resident conservancy fee" },
+    "groupPolicy": "1 FOC twin-share stay per 15 full-paying pax (conservancy fees still invoiced)",
+    "activities": {
+      "maasaiManyattaVisit": 30, "natureWalk": 10, "gameWalk": 35, "ecoWalk": "Free", "maasaiBeadworkForLadies": 30,
+      "hotAirBalloonSafari": { "adult": 510, "child": 255 },
+      "bushBreakfast": 40, "bushLunch": 45, "bushDinner": 50, "sundowners": 30,
+      "extraLunch": { "adult": 30, "child": 25 }, "extraBreakfast": { "adult": 15, "child": 10 }, "packedLunch": { "adult": 20, "child": 15 },
+      "extraGameDrive": 55,
+      "exclusiveVehicleMaraNorth": 245, "exclusiveVehicleMaraReserve": 350, "borderTransfersOneWay": 420,
+      "commissionable": "10% except Maasai Manyatta visit, game drives, and transfers",
+      "verified": true
+    },
+    "maxSingleRooms": "5 per booking",
+    "cancellation": { "59to45days": "25%", "44to31days": "50%", "30daysToArrival": "100%" }
+  }
+}

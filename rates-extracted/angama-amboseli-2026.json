@@ -1,0 +1,45 @@
+{
+  "$note": "Extracted 6 Aug 2026, same source documents as angama-mara-2026.json.",
+  "property": "Angama Amboseli",
+  "operator": "Angama",
+  "region": "Kimana Sanctuary, Amboseli",
+  "tier": "Nett MA Rate (Rack shown for reference), African Resident Rack & Nett, and Group Rate",
+  "source": {
+    "files": [
+      "2026 CONTRACT RATES/KENYA/ACCOMODATION/ANGAMA/Angama 2026_MA_Rates.pdf",
+      "2026 CONTRACT RATES/KENYA/ACCOMODATION/ANGAMA/Angama 2026_African_Residents_Rack_Rates.pdf",
+      "2026 CONTRACT RATES/KENYA/ACCOMODATION/ANGAMA/Angama 2026_African_Residents_Nett_Rates.pdf",
+      "2026 CONTRACT RATES/KENYA/ACCOMODATION/ANGAMA/Angama Group-Rack-Rates-2026 EAR.pdf"
+    ]
+  },
+  "seasons": { "standard": "5 Jan-Jun & Oct-22 Dec", "peak": "Jul-Sept & 23 Dec-4 Jan 2027" },
+  "rates": {
+    "currency": "USD", "unit": "per guest per night, 2 adults sharing Guest Suite",
+    "nettMA": {
+      "guestSuite": { "standard": 1575, "peak": 1665, "rackReference": { "standard": 1850, "peak": 1850 } },
+      "children0to17": { "standard": 790, "peak": 1255, "rackReference": { "standard": 925, "peak": 1390 } },
+      "familyStay_2adults2children_2guestSuites_perNight": { "janMayNovDec": 3145, "junOct": 4720, "julSepDec23Jan4": 5835 },
+      "interconnectedGuestSuiteSurcharge_perNight": { "janMayNovDec": 320, "junOct": 490, "julSepDec23Jan4": 880 }
+    },
+    "africanResidentRack": { "guestSuite": { "standard": 925, "peak": 925 } },
+    "africanResidentNett": { "guestSuite": { "standard": 835, "peak": 835 } },
+    "groupRate_8plusGuestSuites_min3nights": { "standard": 1250, "peak": 1250, "note": "T&Cs vary Standard vs Peak; not applicable Jul/Aug or 23 Dec-4 Jan" }
+  },
+  "mandatoryFees": {
+    "kimanaConservationLevy": { "adult": 60, "child": 30 },
+    "angamaFoundation": { "perGuestPerNight": 20 },
+    "amboseliNationalParkFee": { "adult": 60, "child3to17": 30, "under3": "Free" },
+    "tsavoWest_ifVisited": { "adult": 60, "child": 30 }
+  },
+  "childPolicy": {
+    "ageRestriction": "All ages welcome year-round",
+    "under12": "Required to share a triple unless additional Guest Suite booked at Family Stay rate",
+    "familyStaySecondSuite": "75% in Peak Season; free (excl. Jun/Oct) for first 2 children 0-17 sharing in Standard Season",
+    "under6Note": "Private safari vehicle required if booking fewer than 3 Guest Suites"
+  },
+  "guideAccommodation": { "guideRoom_ensuite": 300 },
+  "multiPropertyDiscount": { "combine2AngamaProperties": "further 5%", "combine3AngamaProperties": "further 10%" },
+  "specialOffers": { "mountainAndMara_3nightsEach_perGuest": { "janMayNovDec": 8770, "junOct": 14940, "julSepDec23Jan4": 19125, "note": "3 nights Angama Amboseli + 3 nights Angama Mara, based on 2 sharing, includes private flights & vehicle" } },
+  "inclusions": "Guided safaris in Kimana Sanctuary & Amboseli NP, guided walks, all meals/drinks, laundry, WiFi, transfers to/from Kimana Airfield, medevac, childminding, VAT.",
+  "exclusions": "Amboseli NP Fees, transfers to/from Amboseli Airstrip, Kimana Conservation Levy, Angama Foundation contribution, safari shop/massages, transfers from elsewhere in Kenya, private vehicles, gratuities."
+}

@@ -1,0 +1,31 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftotext -layout. NOT a Soroi property. Nakuru/Naivasha-highway hotel, no fixed 2-season split like most other properties in this dataset - instead has 4 named periods (High/Resident-only labeled seasons, Easter, Christmas, Low), applying only to Resident rates; Non-Resident rates are flat, no seasonal breakdown given.",
+  "property": "Lake Elementaita Manor",
+  "region": "Nakuru-Naivasha Highway, opposite Lake Elementaita",
+  "source": { "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/Lake Elementaita Manor/NEW B2B CONTRACT RATES 2026.pdf", "validity": { "start": "immediate (2025)", "end": "2026-12-31" } },
+  "confidence": "confirmed-2026-08-06",
+  "currency": "USD (Non-Resident) / KES (Resident)",
+  "unit": "per room per night",
+  "nonResidentRates": {
+    "note": "No seasonal split given for Non-Resident rates on this document - flat rate all year, per room type per meal plan.",
+    "gardenStandardRooms": { "hb": { "single": 127, "double": 154 }, "fb": { "single": 138, "double": 177 } },
+    "gardenDeluxeRooms": { "hb": { "single": 137, "double": 164 }, "fb": { "single": 148, "double": 187 } },
+    "jacuzziRooms": { "hb": { "single": 158, "double": 198 }, "fb": { "single": 174, "double": 220 } },
+    "bathtubRooms": { "hb": { "single": 141, "double": 179 }, "fb": { "single": 156, "double": "202 (source prints 'KSH.202 USD' - a currency-label typo; treated as USD 202 given the whole non-resident table is otherwise USD)" } },
+    "commission": "None - non-commissionable for Non-Resident USD rate",
+    "verified": true
+  },
+  "residentRatesKES": {
+    "highSeason": { "months": ["Feb", "Mar", "Jul", "Aug", "Sep", "Oct", "Dec"], "gardenStandardRooms": { "hb": { "single": 14025, "double": 17000 }, "fb": { "single": 15300, "double": 19550 } }, "gardenDeluxeRooms": { "hb": { "single": 15725, "double": 18700 }, "fb": { "single": 17000, "double": 21250 } }, "bathtubRooms": { "hb": { "single": 16575, "double": 20400 }, "fb": { "single": 17850, "double": 22950 } }, "jacuzziRooms": { "hb": { "single": 17425, "double": 21250 }, "fb": { "single": 18700, "double": 23800 } } },
+    "easter": { "gardenStandardRooms": { "hb": { "single": 18500, "double": 22000 }, "fb": { "single": 20000, "double": 25500 } }, "gardenDeluxeRooms": { "hb": { "single": 20500, "double": 24500 }, "fb": { "single": 22000, "double": 27500 } }, "bathtubRooms": { "hb": { "single": 21500, "double": 26500 }, "fb": { "single": 23500, "double": 29500 } }, "jacuzziRooms": { "hb": { "single": 22500, "double": 27500 }, "fb": { "single": 24500, "double": 30500 } } },
+    "christmas": { "gardenStandardRooms": { "hb": { "single": 20000, "double": 24000 }, "fb": { "single": 22000, "double": 28000 } }, "gardenDeluxeRooms": { "hb": { "single": 22500, "double": 26500 }, "fb": { "single": 24000, "double": 30000 } }, "bathtubRooms": { "hb": { "single": 23500, "double": 29000 }, "fb": { "single": 25500, "double": 32500 } }, "jacuzziRooms": { "hb": { "single": 25000, "double": 30000 }, "fb": { "single": 28000, "double": 34000 } } },
+    "lowSeason": { "months": ["Jan", "Apr", "May", "Jun", "Nov"], "gardenStandardRooms": { "hb": { "single": 11050, "double": 12750 }, "fb": { "single": 12750, "double": 15300 } }, "gardenDeluxeRooms": { "hb": { "single": 11900, "double": 13600 }, "fb": { "single": 13600, "double": 16150 } }, "bathtubRooms": { "hb": { "single": 12325, "double": 16150 }, "fb": { "single": 13600, "double": 18700 } }, "jacuzziRooms": { "hb": { "single": 13600, "double": 17850 }, "fb": { "single": 15300, "double": 20400 } } },
+    "verified": true
+  },
+  "conferenceRates": { "singleOccupancy": 13500, "doubleOccupancy": 16000, "fullDayConference": 4000, "halfDayConference": 3500, "dayTeamBuilding": 3500, "currency": "KES" },
+  "mealsKES": { "breakfast": 2500, "lunch": 3500, "dinner": 3500, "teaCoffeeSnacks": 1500, "picnicLunch": 2000 },
+  "mealsNonResidentUSD": { "breakfast": 23, "lunch": 31, "dinner": 31 },
+  "swimmingKES": { "adult": 1000, "child": 500 },
+  "childPolicy": { "under4SharingWithAdults": "Complimentary", "age5to12SharingWith2Adults": "50% of half double/twin", "age5to12SharingWith1Adult": "85% of double rate", "childOwnRoom": "85% of room rate, max 3 children per room" },
+  "seasonalPolicyNote": "Easter, Rally, Valentine's, Christmas periods strictly use High Season rates. Min stay 2 nights for Valentine's/Rally, 3 nights for Christmas/Easter."
+}

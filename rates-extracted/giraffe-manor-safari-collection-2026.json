@@ -1,0 +1,54 @@
+{
+  "$note": "Extracted 6 Aug 2026 via direct paginated pdftotext read of 'TSC 2026 20% GIRAFFE MANOR 06.05.25.pdf', a separate signed Docusign contract from the Sala's Camp/Sasaab/Solio one, at a different discount tier (20%, not 30%). NOT a Soroi property. Includes The Retreat at Giraffe Manor (a distinct day-use/wellness facility on the same sanctuary, not overnight accommodation for non-Giraffe-Manor guests).",
+  "property": "Giraffe Manor",
+  "operator": "The Safari Collection",
+  "region": "Nairobi (Langata/Karen, adjacent to Nairobi National Park)",
+  "tier": "Contract 20% Nett (Rate shown alongside; Contract 20% = Rate x 0.80 verified: 3865/4832=0.80)",
+  "currency": "USD",
+  "unit": "Fully Inclusive / Day room basis",
+  "source": {
+    "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/THE SAFARI COLLECTION/TSC 2026 20% GIRAFFE MANOR 06.05.25.pdf",
+    "sectionTitle": "2026 GM 20% RATES CONTRACT",
+    "validity": { "start": "2026-01-01", "end": "2026-12-31" }
+  },
+  "confidence": "confirmed-2026-08-06",
+  "closure": "Giraffe Manor closed 10 April - 10 May 2026 inclusive.",
+  "rates_allYear": {
+    "superiorFamilySuites_karenBlixenAndFinchHatton": {
+      "minimumRoomRate_upTo2Adults2Children": { "rate": 4832, "contract20": 3865 },
+      "thirdChild3to11": { "rate": 622, "contract20": 498 },
+      "note": "4 adults in this room charged at per-person superior room rate; 3 adults charged at the room rate."
+    },
+    "superiorRooms_tenNamedRooms": {
+      "note": "Rooms: Jock, Betty, Daisy, Marlon, Lynn, Arlene, Kelly, Helen, Edd, Salma",
+      "perAdultSharing": { "rate": 1413, "contract20": 1130 },
+      "perChildSharing": { "rate": 974, "contract20": 779 },
+      "singleRoom": { "rate": 2218, "contract20": 1774 }
+    }
+  },
+  "additionalRates": {
+    "professionalGuideRoomPerPersonPerNight": 210,
+    "nairobiNationalParkGameViewingVehicle": { "amount": 490, "note": "Exclusive of park entrance fees; one open-sided 4x4, exclusive basis only, 6am-4pm, max 6 guests, cannot be combined with arrival/departure transfers." },
+    "luggageStoragePerBagPerDay": 5
+  },
+  "inclusions": ["Arrival/departure transfers around Karen/Langata (if collection after 11:30am arrival day and before 10am checkout day)", "All meals, house wines/soft drinks/beers/spirits", "Laundry", "WiFi", "AFEW Giraffe Centre entrance", "Orchid House dining", "Access to The Retreat during check-in/out times", "Boules, croquet", "VAT"],
+  "exclusions": ["Champagne, luxury spirits, selected wines", "Tips", "Health insurance", "Massage treatments", "Personal effects"],
+  "childPolicy": { "definition": "3-11 years inclusive; 12+ is adult; 2 and under is infant (free)", "note": "Only one child-sharing rate for Superior Rooms regardless of bed type. If a child is put in a single room, full single room rate applies." },
+  "operationalPolicy": {
+    "checkIn": "12:00 noon", "checkOut": "10:00am strictly",
+    "externalMeals": "Not offered to non-staying guests.",
+    "famTrips": "STO rates only for agents staying at Giraffe Manor alone; not accepted Jun/Jul/Aug/Sep/Oct/Dec/Jan.",
+    "weddings": "Requires exclusive-use booking of the whole property for 3 consecutive nights."
+  },
+  "roomStructure": "10 Superior Rooms + 2 Superior Family Suites (Garden Manor, built 2011, bookable by anyone) + 6 Historic Manor rooms (bookable only for guests also staying 2+ nights at a Safari Collection bush property).",
+  "theRetreatAtGiraffeManor": {
+    "$note": "Day-use only facility - NOT overnight accommodation for the general public; Day Rooms/Retreat Pass/Early Bird bookable in combination with a Safari Collection bush property, or as a standalone destination only within 4 weeks of arrival.",
+    "dayRoomSuite_Lily": { "minimumRoomRate_upTo4guests": { "rate": 2000, "contract20": 1600 }, "perAdultSharing": { "rate": 485, "contract20": 388 }, "perChildSharing": { "rate": 340, "contract20": 272 } },
+    "deluxeDayRoom_WaridiNandi": { "minimumRoomRate_upTo2guests": { "rate": 1080, "contract20": 864 }, "perAdultSharing": { "rate": 485, "contract20": 388 }, "perChildSharing": { "rate": 340, "contract20": 272 } },
+    "deluxeDayRoom_Alizeti": { "minimumRoomRate_upTo2guests": { "rate": 1080, "contract20": 864 }, "perAdultSharing": { "rate": 485, "contract20": 388 }, "perChildSharing": { "rate": 340, "contract20": 272 } },
+    "earlyBirdPackage": { "rate": 275, "contract20": 220, "hours": "6:00am-12:00pm", "maxPerDay": 8 },
+    "retreatDayPass": { "rate": 350, "contract20": 280, "hours": "10:00am-10:00pm", "maxPerDay": 10 },
+    "dayRoomCheckIn": "10:00am", "dayRoomCheckOut": "10:00pm",
+    "childPolicy": "Same 3-11/12+ definition; full rate applies to children 3+ for Retreat Pass and Early Bird Package (no child discount on those two products)."
+  }
+}

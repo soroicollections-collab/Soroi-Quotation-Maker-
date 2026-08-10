@@ -1,0 +1,58 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftoppm + visual image read (all 3 PDFs are image-only/scanned - pdftotext returned nothing for any of them). NOT Soroi properties. Three related but separately-branded resorts, filed together in one 'LAKE BOGORIA SPA & RESORT' folder: Lake Bogoria Spa Resort (Marigat), Lake Bogoria Spa Resort - Kabarak (Nakuru), and Rift Valley Hills Resort (Kabarnet) - likely a shared ownership group given near-identical contract templates and terms & conditions.",
+  "operator": "Same contract-template group (shared T&Cs wording) covering 3 separately-branded resorts",
+  "source": {
+    "lakeBogoriaFile": "2026 CONTRACT RATES/KENYA/ACCOMODATION/LAKE BOGORIA SPA & RESORT/Lake Bogoria Spa Resort 2026.pdf",
+    "kabarakFile": "2026 CONTRACT RATES/KENYA/ACCOMODATION/LAKE BOGORIA SPA & RESORT/Lake Bogoria Spa Resort – Kabarak 2026.pdf",
+    "riftValleyHillsFile": "2026 CONTRACT RATES/KENYA/ACCOMODATION/LAKE BOGORIA SPA & RESORT/Rift Valley Hills Resort 2026.pdf",
+    "tier": "Tour Operator Contract Rates 2026, net non-commissionable"
+  },
+  "confidence": "confirmed-2026-08-06",
+  "currency": "USD (non-resident) / KES (resident)",
+  "unit": "per room per night, buffet breakfast inclusive of statutory 16% VAT, 2% Training Levy, 5% service charge",
+  "lakeBogoriaSpaResort": {
+    "region": "Marigat, Kenya",
+    "seasons": { "regular": ["02/01/2026 to 30/06/2026", "01/11/2026 to 22/12/2026"], "high": ["01/07/2026 to 30/10/2026", "23/12/2026 to 02/01/2027"] },
+    "nonResidentUSD": {
+      "standardRoom": { "regular": { "single": { "bb": 143, "hb": 162, "fb": 171 }, "double": { "bb": 219, "hb": 238, "fb": 247 }, "triple": { "bb": 279, "hb": 288, "fb": 327 } }, "high": { "single": { "bb": 181, "hb": 204, "fb": 230 }, "double": { "bb": 266, "hb": 276, "fb": 299 }, "triple": { "bb": 286, "hb": 326, "fb": 379 } } },
+      "cottageRoom": { "regular": { "single": { "bb": 152, "hb": 171, "fb": 181 }, "double": { "bb": 228, "hb": 247, "fb": 266 }, "triple": { "bb": 248, "hb": 297, "fb": 346 } }, "high": { "single": { "bb": 190, "hb": 209, "fb": 227 }, "double": { "bb": 271, "hb": 280, "fb": 309 }, "triple": { "bb": 291, "hb": 330, "fb": 389 } } },
+      "juniorSuite": { "regular": { "single": { "bb": 181, "hb": 200, "fb": 209 }, "double": { "bb": 266, "hb": 298, "fb": 303 }, "triple": { "bb": 286, "hb": 348, "fb": 381 } }, "high": { "single": { "bb": 230, "hb": 238, "fb": 247 }, "double": { "bb": 304, "hb": 323, "fb": 333 }, "triple": { "bb": 324, "hb": 373, "fb": 413 } } }
+    },
+    "residentKES": {
+      "standardRoom": { "regular": { "single": { "bb": 13300, "hb": 14725, "fb": 15675 }, "double": { "bb": 20900, "hb": 21850, "fb": 24700 }, "triple": { "bb": 27170, "hb": 28405, "fb": 32110 } }, "highFbOnly": { "single": 18050, "double": 29450, "triple": 35910 } },
+      "cottageRoom": { "regular": { "single": { "bb": 14250, "hb": 15675, "fb": 16625 }, "double": { "bb": 21850, "hb": 22800, "fb": 25650 }, "triple": { "bb": 28405, "hb": 29640, "fb": 33345 } }, "highFbOnly": { "single": 19000, "double": 30400, "triple": 36860 } },
+      "juniorSuite": { "regular": { "single": { "bb": 19000, "hb": 19950, "fb": 20900 }, "double": { "bb": 26600, "hb": 27550, "fb": 28500 }, "triple": { "bb": 34580, "hb": 35815, "fb": 37050 } }, "highFbOnly": { "single": 18050, "double": 33250, "triple": 39710 } },
+      "note": "Resident 'High Season' column only shows FB figures (labeled 'Christmas Season' / covers Good Friday-Easter Monday and 22 Dec-2 Jan) - no BB/HB breakout given for that column in the source."
+    },
+    "additionalCharges": { "extraBuffetBreakfastNonResident": 20, "extraBuffetBreakfastResidentKES": 2000, "extraLunchDinnerNonResident": 30, "extraLunchDinnerResidentKES": 2500, "unit": "per person per meal, inclusive of 1 soft drink" },
+    "festiveSeasonSupplement": { "note": "Applies Easter (Thu-Easter Monday) and 22 Dec through New Year, min 3-night stay required over these periods, charged daily, not commissionable.", "residentAdult13Plus": 2500, "residentChildUnder13OwnRoom": 1500, "residentChildUnder13Sharing": 750, "nonResidentAdult13Plus": 35, "nonResidentChildUnder13OwnRoom": 25, "nonResidentChildUnder13Sharing": 15 },
+    "applicability": "Tour-Travel/leisure clientele only - not valid for Corporate, Conference, Meetings or Incentive clientele.",
+    "verified": true
+  },
+  "lakeBogoriaSpaResortKabarak": {
+    "region": "Nakuru, Kenya",
+    "seasonNote": "Single 'Regular Season' banner covers all of 01/01/2026-31/12/2026 with festive/Easter supplements layered on top (unlike the main Lake Bogoria property, which has separate Regular/High season base rates).",
+    "nonResidentUSD": { "standardRoom": { "single": { "bb": 62, "hb": 79, "fb": 108 }, "double": { "bb": 88, "hb": 100, "fb": 125 } }, "executiveRoom": { "single": { "bb": 76, "hb": 107, "fb": 128 }, "double": { "bb": 113, "hb": 124, "fb": 154 } } },
+    "residentKES": { "standardRoom": { "single": { "bb": 5800, "hb": 6900, "fb": 8000 }, "double": { "bb": 8550, "hb": 9650, "fb": 11850 } }, "executiveRoom": { "single": { "bb": 6900, "hb": 8000, "fb": 10395 }, "double": { "bb": 10975, "hb": 12120, "fb": 15000 } } },
+    "festiveSeasonSupplement": { "note": "Same structure/figures as the main Lake Bogoria property above.", "residentAdult13Plus": 2500, "residentChildUnder13OwnRoom": 1500, "residentChildUnder13Sharing": 750, "nonResidentAdult13Plus": 35, "nonResidentChildUnder13OwnRoom": 25, "nonResidentChildUnder13Sharing": 15 },
+    "verified": true
+  },
+  "riftValleyHillsResort": {
+    "region": "Kabarnet, Kenya",
+    "confidenceNote_dateTypo": "Source table header prints the Non-Resident season window as '01/01/2025 to 31/12/2025' (2025, not 2026) despite the document being titled '2026 Rates' throughout and priced accordingly - almost certainly a leftover typo from a prior-year template that wasn't updated. Treat the rates as intended for calendar year 2026, but flag this printed inconsistency before relying on it for an exact date boundary.",
+    "nonResidentUSD": { "standardRoom": { "single": { "bb": 75, "hb": 108, "fb": 135 }, "double": { "bb": 135, "hb": 146, "fb": 188 } }, "superiorRoom": { "single": { "bb": 109, "hb": 135, "fb": 146 }, "double": { "bb": 174, "hb": 191, "fb": 229 } } },
+    "residentKES": { "standardRoom": { "single": { "bb": 5785, "hb": 8175, "fb": 9083 }, "double": { "bb": 9035, "hb": 11570, "fb": 14842 } }, "superiorRoom": { "single": { "bb": 8300, "hb": 9035, "fb": 11587 }, "double": { "bb": 13206, "hb": 15281, "fb": 17482 } } },
+    "additionalCharges": { "extraBuffetBreakfast": 25, "extraBedTripleOccupancy": 45, "unit": "USD per person" },
+    "festiveSeasonSupplement": { "note": "Same structure/figures as the other two properties.", "residentAdult13Plus": 2500, "residentChildUnder13OwnRoom": 1500, "residentChildUnder13Sharing": 750, "nonResidentAdult13Plus": 35, "nonResidentChildUnder13OwnRoom": 25, "nonResidentChildUnder13Sharing": 15, "minStay": 3 },
+    "verified": true
+  },
+  "sharedTermsAllThreeProperties": {
+    "cancellation": { "0to7days": "100% of entire stay", "8to14days": "50% of entire stay", "15to35days": "25% of entire stay", "noShow": "100% of entire stay" },
+    "depositPolicy": { "8to14daysPriorToArrival": "50% due", "0to7daysPriorToArrival": "100% due" },
+    "childPolicy": { "babyCotUnder4SharingWithAdult": "Free", "childUnder13OwnRoom": "75% of applicable room rate", "childUnder13SharingWithAdults": "45% of single (per Lake Bogoria/Rift Valley Hills main T&Cs page)" },
+    "arrivalCheckout": { "checkIn": "12:00 (rooms available from)", "checkOut": "10:00" },
+    "dayRoomRate": "75% of applicable rates, checkout by 18:00 (full rate thereafter)",
+    "complimentaryRooms": "1 free single room per 15 paying guests in a group (max 1 free room)",
+    "applicability": "Tour-Travel/leisure clientele only, not for Corporate/Conference/Meetings/Incentive."
+  }
+}

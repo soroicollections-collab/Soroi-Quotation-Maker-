@@ -1,0 +1,42 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftoppm + visual image read (pdftotext returned nothing - image-only/scanned PDF for both the 2025 and 2026 versions on file). NOT a Soroi property. Nairobi hotel, potential Nairobi/stopover option (flexible variable per CLAUDE.md) - distinct property from the Hilton Garden Inn JKIA (different folder file, different brand: Curio Collection by Hilton vs Hilton Garden Inn).",
+  "property": "Kwetu Nairobi - Curio Collection by Hilton (One Jiko Limited trading as Kwetu Curio)",
+  "region": "Peponi Road, Kitisuru, Nairobi",
+  "source": {
+    "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/HILTON GARDEN INN/Kwetu Nairobi curio collection by Hilton 2026 FIT Agreement..pdf",
+    "validity": { "start": "2026-01-01", "end": "2026-12-31" },
+    "note": "A 2025 version of this same FIT agreement also exists on file (also image-only) but was not separately re-transcribed since the 2026 version supersedes it for current quoting purposes."
+  },
+  "confidence": "confirmed-2026-08-06",
+  "currency": "USD",
+  "unit": "per room per night",
+  "ratesInclude": "Local taxes (25%), breakfast, complimentary minibar, butler service",
+  "rates": {
+    "weekday": {
+      "sereneGuestRoom": { "single": 235, "double": 255, "maxOccupancy": 2 },
+      "sereneDeluxeRoom": { "single": 265, "double": 285, "maxOccupancy": 3 },
+      "sereneDeluxeRoomWithTerrace": { "single": 305, "double": 325, "maxOccupancy": 3 },
+      "signaturePremierRoomWithBalcony": { "single": 335, "double": 355, "maxOccupancy": 3 },
+      "oneBedroomRibaSuite": { "single": 555, "double": 575, "maxOccupancy": 3 },
+      "oneBedroomKwetuSuite": { "single": 645, "double": 665, "maxOccupancy": 3 }
+    },
+    "weekendFridaySaturday": {
+      "sereneGuestRoom": { "single": 215, "double": 235, "maxOccupancy": 2 },
+      "sereneDeluxeRoom": { "single": 245, "double": 265, "maxOccupancy": 3 },
+      "sereneDeluxeRoomWithTerrace": { "single": 285, "double": 305, "maxOccupancy": 3 },
+      "signaturePremierRoomWithBalcony": { "single": 315, "double": 335, "maxOccupancy": 3 },
+      "oneBedroomRibaSuite": { "single": 535, "double": 555, "maxOccupancy": 3 },
+      "oneBedroomKwetuSuite": { "single": 625, "double": 645, "maxOccupancy": 3 }
+    },
+    "verified": true
+  },
+  "childPolicy": {
+    "note": "Distinct from Soroi's 5-11 bracket and from the nearby JKIA Hilton Garden Inn's 0-12 bracket.",
+    "under12SharingMax2Adults": "Free, available from Deluxe room category and above, max 3 children per room",
+    "age12Plus": "Considered an adult, adult rate applies",
+    "childOwnRoom": "Same rate as adult",
+    "breakfastCharge": { "upTo5yrs": "No charge", "age6to11": "50% per child per night", "age12Plus": "Full supplement of USD 20 per child per night" }
+  },
+  "blackoutDates": "Advised by the Hotel directly - contact reservations for last-minute availability.",
+  "reservationsContact": "nbokn_res@hilton.com / +254 711 555 528"
+}

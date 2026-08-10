@@ -1,0 +1,27 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftotext -layout. NOT a Soroi property. This is a DIFFERENT property from Tamarind Tree Hotel Nairobi (see separate file) despite sharing 'The Tamarind Group' branding and living in the same 'TAMARIND TREE HOTEL' source folder - the filename 'Rack Rates 2026.pdf' is misleadingly generic. Identified as Tamarind Village via its own contact details (reservations.village@tamarind.co.ke, www.tamarindvillage.co.ke) and coastal-apartment-style inventory (Tamarind Dhow, Harbour Restaurant, self-catering apartments) - almost certainly the Mombasa/Nyali coastal property, though the city itself is not explicitly named in the extracted text - flagged as [Inference].",
+  "property": "Tamarind Village",
+  "operator": "The Tamarind Group",
+  "region": "Kenya coast (likely Mombasa/Nyali - not explicitly stated in this document, inferred from brand/facilities)",
+  "currency": "KES",
+  "unit": "per apartment per night (not per person)",
+  "source": {
+    "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/TAMARIND TREE HOTEL/Rack Rates 2026.pdf",
+    "validity": "Applicable up to 20 December 2026, subject to change"
+  },
+  "confidence": "confirmed-2026-08-06 for figures; property identity is [Inference] as noted above",
+  "rates_rack_KES": {
+    "oneBedroomApartment_sleeps2": 25500,
+    "twoBedroomApartment_sleeps4": 39300,
+    "threeBedroomApartment_sleeps6": 50900
+  },
+  "dayRoomRate": "75% of rack rate, 06:00-18:00, includes room use, pool, gym, spa access, resident's restaurant.",
+  "inclusions": ["Accommodation", "Daily housekeeping", "WiFi", "Satellite TV", "All government taxes & levies", "Safe secure storage"],
+  "exclusions": ["Meals", "Insurance cover", "Drinks", "Gratuities", "Excursions", "Airport & train transfers", "Festive season rates"],
+  "operationalPolicy": {
+    "checkIn": "12:00", "checkOut": "10:00",
+    "lateCheckout": "Before 18:00: 50% of room charge. After 18:00: full room rate.",
+    "deposit": "50% required to confirm reservation."
+  },
+  "onSiteFacilities": ["Gym", "Room Service", "Tamarind Dhow", "Dawa Terrace Lounge", "Harbour Restaurant", "Conference & Meeting Rooms", "Business Center", "Spa Services", "Golden Key Casino", "2 Swimming Pools"]
+}

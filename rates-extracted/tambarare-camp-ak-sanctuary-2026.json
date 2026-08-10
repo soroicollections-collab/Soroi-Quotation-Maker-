@@ -1,0 +1,47 @@
+{
+  "$note": "Extracted 6 Aug 2026, same paginated source as olonana-lodge-ak-sanctuary-2026.json (Kenya section of the East Africa-wide A&K Sanctuary Full Board and Game Package rate PDFs).",
+  "property": "Tambarare Camp",
+  "operator": "A&K Sanctuary Retreats (Abercrombie & Kent)",
+  "region": "Laikipia, near Ol Pejeta (Nanyuki/Kamok airstrip) - inferred region from transfer names; White Rhino Encounter activity suggests Ol Pejeta Conservancy specifically",
+  "tier": "Rack Rate and STO 25% - both Full Board and Game Package documents",
+  "source": {
+    "files": [
+      "2026 CONTRACT RATES/KENYA/ACCOMODATION/A&K SANCTUARY RETREAT/A&K Sanctuary East Africa - 2026 Full Board Rates - Rack & 25%.pdf",
+      "2026 CONTRACT RATES/KENYA/ACCOMODATION/A&K SANCTUARY RETREAT/A&K Sanctuary East Africa - 2026 Game Package Rates - Rack & 25%.pdf"
+    ],
+    "validity": { "start": "2026-01-03", "end": "2027-01-02" }
+  },
+  "seasons": { "midA": "03 Jan-31 Mar, 01-15 Jun", "green": "01 Apr-31 May, 01 Nov-20 Dec", "high": "16 Jun-31 Oct", "festive": "21 Dec-02 Jan 2027" },
+  "rates": {
+    "currency": "USD",
+    "unit": "per person per night, 1-3 nights tier (see source for 4-6 and 7+ night discount tiers, roughly 20% and 25% off respectively)",
+    "fullBoard": {
+      "luxuryTent_perPersonSharing": {
+        "rack": { "midA": 650, "green": 560, "high": 840, "festive": 840 },
+        "sto25": { "midA": 488, "green": 420, "high": 630, "festive": 630 }
+      },
+      "privateVillaMax4_perSuite": {
+        "rack": { "midA": 2860, "green": 2464, "high": 3696, "festive": 3696 },
+        "sto25": { "midA": 2145, "green": 1848, "high": 2772, "festive": 2772 }
+      }
+    },
+    "gamePackage": {
+      "luxuryTent_perPersonSharing": {
+        "rack": { "midA": 895, "green": 790, "high": 1050, "festive": 1050 },
+        "sto25": { "midA": 671, "green": 593, "high": 788, "festive": 788 }
+      },
+      "privateVillaMax4_perSuite": {
+        "rack": { "midA": 3938, "green": 3476, "high": 4620, "festive": 4620 },
+        "sto25": { "midA": 2954, "green": 2607, "high": 3465, "festive": 3465 }
+      }
+    }
+  },
+  "mandatoryFees": { "conservancyFee_perPersonPerDay": 115, "bedNightLevy": "Included in the rate per source Inclusions list" },
+  "childPolicy": { "ageRestriction": "Children 15 and younger must share with an adult; private vehicle required for game drives if a child is 6 or younger" },
+  "extraAdult": { "midGreenSeason": "75% of sharing rate", "highFestiveSeason": "85% of sharing rate" },
+  "maxTripleTents": 2,
+  "extras": { "exclusiveVehicleFullDay": { "rack": 650, "sto25": 585 }, "exclusiveVehicleHalfDay": { "rack": 325, "sto25": 292 } },
+  "inclusionsFullBoard": "All meals, drinks (incl. premium brands), bed night levy, laundry, emergency medical evacuation. Private Villa additionally includes exclusive game vehicle, private guide/chef/waiter/housekeeper.",
+  "inclusionsGamePackage": "As Full Board, plus twice-daily game drives (or 1 full-day) and one Northern White Rhino Encounter per person per stay.",
+  "exclusions": "Conservancy fees, additional activities, flights, road transfers to other camps, insurance, spa, gratuities."
+}

@@ -1,0 +1,64 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftotext -layout, paginated, from 'GOVERNORS/2027 governors rate sheet - gg - 08 may 26 (7).pdf' (9pp). Single document, 3 properties, each clearly labeled by region/name - no misattribution risk. 'Agent Nett Rates' - this is already a net/agent rate, not a rack rate (no separate rack figure given in this document).",
+  "operator": "Governors' Camp Collection",
+  "properties": ["Loldia House (Lake Naivasha)", "Governors' Camp (Masai Mara)", "Governors' Il Moran Camp (Masai Mara)"],
+  "currency": "USD",
+  "validity": { "start": "2027-01-01", "end": "2027-12-31" },
+  "tier": "Agent Nett",
+  "unit": "per person sharing per night, Full Board Plus (FB+)",
+  "confidence": "confirmed-2027-08-06",
+  "dateWindows": ["1 Jan-31 Mar", "1 Apr-31 May", "1 Jun-30 Jun", "1 Jul-31 Oct", "1 Nov-20 Dec", "21 Dec-31 Dec"],
+  "rates": {
+    "Loldia House - Luxury Room": { "perPersonSharing": [449, 306, 449, 675, 449, 675], "singleSupplement": [null, null, null, 169, null, 169] },
+    "Governors' Camp - Justus Tent": { "perPersonSharing": [458, 333, 458, 734, 458, 734], "singleSupplement": [null, null, null, 183, null, 183] },
+    "Governors' Camp - Luxury Tent": { "perPersonSharing": [458, 333, 458, 734, 458, 734], "singleSupplement": [null, null, null, 183, null, 183] },
+    "Governors' Il Moran Camp - Luxury Tent": { "perPersonSharing": [673, 490, 673, 1170, 673, 1170], "singleSupplement": [null, null, null, 293, null, 293] },
+    "Governors' Camp - Family Tent (per unit)": { "1to4Guests": [1832, 1332, 1832, 2934, 1832, 2934], "5thGuest": [2129, 1548, 2129, 3411, 2129, 3411], "note": "5thGuest figure is total unit price for 5 guests, not an incremental add-on" },
+    "Loldia House - Suite": { "1Guest": [549, 406, 549, 944, 549, 944], "2Guests": [998, 711, 998, 1450, 998, 1450], "3Guests": [1448, 1017, 1448, 2125, 1448, 2125] },
+    "verified": true,
+    "dateWindowsKey": "Array order = [1-Jan-31Mar, 1-Apr-31May, 1-Jun-30Jun, 1-Jul-31Oct, 1-Nov-20Dec, 21-Dec-31Dec]"
+  },
+  "childRates": {
+    "unit": "per child per night, same date-window array order as above",
+    "Loldia House - Luxury Room": [292, 199, 292, 439, 292, 439],
+    "Governors' Camp - Luxury Tent": [298, 216, 298, 477, 298, 477],
+    "Governors' Il Moran Camp - Luxury Tent": [437, 319, 437, 761, 437, 761],
+    "verified": true
+  },
+  "childPolicy": {
+    "GovernorsCampAndLoldia": "Child rate available under age 16; infants under 3 free",
+    "GovernorsIlMoranCamp": "Child rate available under age 16; children under 8 NOT permitted (special requests considered)",
+    "calculationRule": "2 adults + 1 child = 2x per-person-sharing adult rate + 1x child rate. 1 adult + 1 child sharing = 1x per-person-sharing adult rate + 1x child rate.",
+    "maraParkFeeChild": "Available for under-18s; under-3s exempt from park fees entirely",
+    "verified": true
+  },
+  "guideRates": {
+    "inGuideAccommodation": { "GovernorsCamp": 195, "GovernorsIlMoranCamp": 195, "note": "Flat rate, no seasonal variation, Loldia House not listed" },
+    "inGuestAccommodation": { "note": "Same date-window array as main rates - guide priced at the child rate for each property when housed in guest accommodation", "LoldiaHouse": [292, 199, 292, 439, 292, 439], "GovernorsCamp": [298, 216, 298, 477, 298, 477], "GovernorsIlMoranCamp": [437, 319, 437, 761, 437, 761] },
+    "verified": true
+  },
+  "mandatoryFees": {
+    "unit": "per person",
+    "lakeNaivasha_conservationLevy": { "adult": 80, "child": 40, "unit": "per night", "appliesAt": "Loldia House" },
+    "lakeNakuru_parkFee": { "adult": 90, "child": 45, "unit": "per entry", "appliesAt": "Loldia House (when visiting Lake Nakuru)" },
+    "masaiMara_communityFee": { "adult": 50, "child": 50, "unit": "per night", "appliesAt": "any Governors camp" },
+    "masaiMara_parkFee": { "adult": { "01Jan-30Jun": 100, "01Jul-31Dec": 200 }, "child": 50, "unit": "per day", "appliesAt": "any Governors camp" },
+    "verified": true
+  },
+  "inclusionsByProperty": {
+    "LoldiaHouse": "Full board, 3 meals/day, purified water, welcome drink, laundry, VAT, boat rides on Lake Naivasha, 4WD transport to Nakuru/Hells Gate/Elementaita/Eburu/Crescent Island, soft drinks/beer/house wine/non-premium spirits included. Excludes premium drinks, Loldia Conservation Fee, all named park fees.",
+    "GovernorsCamp": "Full board, 3 meals/day, soft drinks/beer/house wine/non-premium spirits, laundry, VAT, Musiara airstrip transfers, 2-3 daily excursions into Masai Mara Reserve, Maasai village visits, community project visits. Excludes premium drinks, Manyatta entrance fees, park fees, community fees. Justus Suite carries a supplement (price on request).",
+    "GovernorsIlMoranCamp": "Same as Governors' Camp, minus Justus Suite note."
+  },
+  "extras": {
+    "extraLunch_LakeNaivasha": 52,
+    "bushBreakfastSupplement_Mara": 76,
+    "bushDinnerSupplement_Mara": 92,
+    "bushLunchSupplement_Mara": 72,
+    "extraLunch_Mara": 52,
+    "exclusiveUseVehicle_Mara": { "perVehiclePerDay": { "01Jan-30Jun": 347, "01Jul-31Oct": 460, "01Nov-15Dec": 347, "16Dec-31Dec": 460 }, "maxGuests": 6 },
+    "masaiVillageVisit": { "adult": 40, "child3to15": "50% of adult" },
+    "weddingBlessingPackage": { "amount": 3150, "unit": "per group, max 6 guests", "note": "Non-resident legal weddings not permitted in Kenya - this is a blessing ceremony only. Excludes accommodation/flights/transfers/park fees." },
+    "verified": true
+  }
+}

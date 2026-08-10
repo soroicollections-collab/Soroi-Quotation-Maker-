@@ -1,0 +1,42 @@
+{
+  "property": "The Panari Hotel (Nairobi)",
+  "operator": "Panari Hotels and Resorts",
+  "region": "Nairobi",
+  "isSoroiProperty": false,
+  "sourceFiles": ["2026 CONTRACT RATES/KENYA/ACCOMODATION/PANARI/PANARI - PRIME TIME TRAVEL LTD 2026 CONTRACT RATES.pdf"],
+  "notes": [
+    "Document is a Tour Operator Rate Agreement between Panari Hotels and Prime Time Travel Ltd (not Sunworld directly), but the rate structure/terms are the general template Panari issues to tour operators.",
+    "ANOMALY: Agreement term clause states 'shall commence...and shall continue until 31 December 2025' despite this being explicitly labelled a '2026 CONTRACT RATES' document with rates valid into 2027 elsewhere - likely a template carryover error, not corrected here.",
+    "STO discount off Rack roughly ~40-45% depending on room/occupancy (e.g. Superior single: 143/250=0.572, i.e. ~43% off)."
+  ],
+  "currency": "USD",
+  "validity": "3 January - 15 June 2026 and 1 September 2026 - 3 January 2027 (NETT rates)",
+  "bedAndBreakfast_perRoomPerNight": {
+    "superior": { "rack": { "single": 250, "double": 319 }, "stoRegular2026": { "single": 143, "double": 176, "triple": 209 }, "childSharing5to11": 44, "childOwnRoom5to11": 108 },
+    "superiorParkFacing": { "rack": { "single": 308, "double": 341 }, "stoRegular2026": { "single": 176, "double": 209, "triple": 243 }, "childSharing5to11": 77, "childOwnRoom5to11": 151 },
+    "deluxe": { "rack": { "single": 330, "double": 363 }, "stoRegular2026": { "single": 209, "double": 242, "triple": 275 }, "childSharing5to11": 104, "childOwnRoom5to11": 156 },
+    "executive": { "rack": { "single": 363, "double": 407 }, "stoRegular2026": { "single": 230, "double": 254, "triple": 308 }, "childSharing5to11": 142, "childOwnRoom5to11": 189 },
+    "verified": true
+  },
+  "additionalMeals_perPerson": { "buffetBreakfast": 25, "buffetLunch": 28, "buffetDinner": 30, "setMenuBG": 25, "packedLunch": 25, "brazilianOptionAtFogoGaucho": 30 },
+  "jkiaTransfer": "US$15 per person one way, max 4 pax",
+  "dayRoomPackages_Panari": {
+    "timings": "11:00-20:00",
+    "refresherPackage": { "raw": "One meal (breakfast/lunch/dinner) + freshening up. US$66pp. Complimentary one-way airport transfer. 3 hours in room." },
+    "sundownerPackage": { "raw": "3 selected cocktails/beers/juices pp + finger foods. US$83pp. Complimentary one-way airport transfer. 3 hours in room." },
+    "dayUseRoomOnly": { "raw": "Superior room, single or double. US$105pp. Complimentary one-way airport transfer. 5 hours in room." },
+    "dayUseRoomWithMeal": { "raw": "Superior room + one meal. US$132 single / US$160 double. Complimentary one-way airport transfer. 5 hours in room." }
+  },
+  "circuitDiscount": { "raw": "Groups staying at both Panari Hotel Nairobi and Panari Resort Nyahururu enjoy a further 5% circuit discount - must be stated in booking voucher.", "verified": true },
+  "childPolicy": { "raw": "Baby cots free for infants up to 4 years. 5-11yrs sharing with adult: 50% of adult per-person-sharing rate. 5-11yrs in own room: 75% of applicable room rate.", "verified": true },
+  "generalTerms": {
+    "taxesIncluded": "STO rates include VAT 14%, Service Charge 10%, Training Levy 2%",
+    "applicability": "STO rates apply to leisure FIT and group reservations only, not corporate/MICE segments",
+    "dayUseGeneral": "50% of STO rate for in-house guests, 75% for new arrivals, applicable up to 18:00 (full rate thereafter)",
+    "groupComplimentary": "Group of 15+ paying persons/night: 16th person accommodated free (twin or double), max 3 persons/rooms - must be stated in booking voucher",
+    "famTripRate": "75% of applicable STO rate, subject to availability",
+    "checkIn": "12:00", "checkOut": "10:00",
+    "payment": "With credit facility: 30 days from invoice. Without: full payment prior to guest check-in.",
+    "cancellation": "30-14 days: 50% of room charges for entire stay; 13-3 days: 75%; within 48 hours or no-show: 100%"
+  }
+}

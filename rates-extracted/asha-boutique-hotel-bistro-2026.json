@@ -1,0 +1,23 @@
+{
+  "$note": "Extracted 6 Aug 2026 via whole-file pdftotext read (2-page single-property document).",
+  "property": "Asha Boutique Hotel & Bistro",
+  "operator": "Asha Boutique Hotel & Bistro",
+  "region": "Diani/south coast area (exact locality not stated beyond references to Moi International Airport Mombasa and Ukunda airstrip transfers)",
+  "tier": "STO Rate 2026",
+  "source": { "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/ASHA BOUTIQUE HOTEL & BISTRO/Asha Boutique Hotel & Bistro 2026 - ABH STO RATES.pdf", "validity": { "start": "2026-01-01", "end": "2027-01-12" } },
+  "seasons": {
+    "high": "1 Apr-9 Apr, 1 Jul-31 Aug, 15 Dec-12 Jan",
+    "regular": "all other dates",
+    "low": "10 Apr-31 Jun"
+  },
+  "rates": {
+    "currency": "USD", "unit": "per person sharing double/twin/triple, Bed & Breakfast",
+    "high": { "rack": 135, "net": 115 },
+    "regular": { "rack": 115, "net": 98 },
+    "low": { "rack": 75, "net": 64 }
+  },
+  "accommodationSupplements": { "singleOccupancy": "per-person rate x 1.6", "under2": "Free", "2to12sharing": "50% of adult rate", "2to12ownRoom": "85% of adult rate" },
+  "transfers": { "moiAirportMombasa_regularVehicle4pax": 55, "moiAirportMombasa_largeVehicle6pax": 65, "ukundaAirstrip_4pax": 10, "ukundaAirstrip_6pax": 20 },
+  "mealSupplements": { "halfBoard": 40, "fullBoard": 60, "childUnder7_75pctOff": true },
+  "notes": "No Resident rate offered - same rate applies to all guests. High season minimum 3-night stay. Complimentary tea & cake daily at 16:00."
+}

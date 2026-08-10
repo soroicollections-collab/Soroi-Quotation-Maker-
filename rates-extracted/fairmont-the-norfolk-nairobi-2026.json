@@ -1,0 +1,29 @@
+{
+  "$note": "Extracted 6 Aug 2026 via whole-file pdftotext read of '2026 Rate Sheet - Fairmont The Norfolk.pdf' (1 page). A Nairobi city hotel - useful as another flexible-variable Nairobi/stopover option alongside those already logged in CLAUDE.md, though positioned at a higher price point than Four Points/Crowne Plaza/Fairview.",
+  "property": "Fairmont The Norfolk, Nairobi",
+  "operator": "Fairmont Hotels (DMC-operated)",
+  "region": "Nairobi",
+  "tier": "FIT Leisure Rate 2026/2027, Bed & Breakfast basis, all markets",
+  "source": { "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/FAIRMONT HOTELS/NORFOLK AND MARA SAFARI CLUB/2026 Rate Sheet - Fairmont The Norfolk.pdf", "validity": { "start": "2026-01-02", "end": "2027-01-01" } },
+  "seasons": { "regular": "2 Jan-15 Jun 2026, 16 Sep 2026-1 Jan 2027", "peak": "16 Jun-15 Sep 2026" },
+  "rates": {
+    "currency": "USD", "unit": "per room per night, Bed & Breakfast incl. 16% VAT/10% service/2% training levy",
+    "fairmontRoom": { "regular": { "single": 201, "double": 231 }, "peak": { "single": 231, "double": 261 } },
+    "deluxeRoom": { "regular": { "single": 221, "double": 251 }, "peak": { "single": 251, "double": 281 } },
+    "deluxeVerandahRoom": { "regular": { "single": 241, "double": 271 }, "peak": { "single": 271, "double": 301 } },
+    "deluxeCourtyardRoom": { "regular": { "single": 281, "double": 311 }, "peak": { "single": 311, "double": 341 } },
+    "juniorSuiteQueen": { "regular": { "single": 451, "double": 481 }, "peak": { "single": 481, "double": 511 } },
+    "suite1937": { "regular": { "single": 701, "double": 731 }, "peak": { "single": 731, "double": 761 } },
+    "karuraSuite": { "regular": { "single": 901, "double": 931 }, "peak": { "single": 931, "double": 961 } },
+    "signatureSuite": { "regular": { "single": 1206, "double": 1236 }, "peak": { "single": 1236, "double": 1266 } },
+    "thirdAdultSupplement": 30
+  },
+  "childPolicy": {
+    "0to5sharing": "Free (1A+1C or 2A+1C)",
+    "6to12ownInterconnectingRoom": "75% of double adult room rate (family room = 2 interconnecting Deluxe Courtyard rooms for 4 pax); 3rd child pays breakfast only",
+    "13plus": "Considered adult"
+  },
+  "mealRates": { "breakfastBuffet": 35, "lunchBuffet": 40, "dinnerBuffet": 40, "note": "Beverages not included" },
+  "multiPropertyDiscount": { "twoFairmontKenyaHotels": "5%", "threeFairmontKenyaHotels": "10%" },
+  "notes": "Non-commissionable. Day use 75% of full rate. Cancellation: Regular 100% within 14 days; Peak 100% within 21 days (effectively no free cancellation window)."
+}

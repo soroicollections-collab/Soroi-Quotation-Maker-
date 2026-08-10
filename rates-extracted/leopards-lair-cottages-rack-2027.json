@@ -1,0 +1,60 @@
+{
+  "$note": "Fresh extraction, 5 Aug 2026, read directly from the property's own page in the paginated source PDF. This is the property whose Ground Package Peak Per Person rate ($525) was historically misattributed to Cheetah Tented Camp — see CLAUDE.md Corrections Log. Confirmed again today, directly from this page: the figure genuinely belongs here.",
+  "property": "Soroi Leopard's Lair (Leopards Lair Cottages)",
+  "region": "Lumo/Tsavo",
+  "tier": "Rack Rate",
+  "residency": "Non-Resident",
+  "source": {
+    "file": "SOROI 2027/Soroi - 2027 RACK Rates.pdf",
+    "pdfPageIndex": 16,
+    "docPrintedPageNumber": 17,
+    "validity": { "start": "2027-01-04", "end": "2028-01-03" }
+  },
+  "confidence": "confirmed-2026-08-05",
+  "extractionMethod": {
+    "note": "Read directly from the property's own page, header 'LEOPARDS LAIR COTTAGES' present on the same page as the figures. Cross-checked against Lions Bluff (previous page) and Cheetah (next page).",
+    "misattributionCheck": { "checked": true, "result": "No misattribution on this read. Confirms the historical error: Ground Package Per Person Peak here is exactly $525, matching the figure that was previously wrongly recorded as Cheetah's." }
+  },
+  "seasons": {
+    "peak": { "dateRanges": ["1 Jul – 31 Oct", "20 Dec – 3 Jan 2028"] },
+    "shoulder": { "dateRanges": ["4 Jan – 30 Jun", "1 Nov – 19 Dec"] },
+    "note": "Only two seasons at this property (Peak/Shoulder) — no Extended Green Season, same pattern as Cheetah and Lions Bluff."
+  },
+  "rates": {
+    "currency": "USD",
+    "unit": "per person per night",
+    "fullBoard": {
+      "perPerson": { "peak": 375, "shoulder": 305 },
+      "single": { "peak": 563, "shoulder": 382 }
+    },
+    "groundPackage": {
+      "perPerson": { "peak": 525, "shoulder": 455 },
+      "single": { "peak": 788, "shoulder": 569 }
+    },
+    "selfCatering": {
+      "unit": "per cottage per night, flat rate both seasons",
+      "rate": 250
+    }
+  },
+  "familyUnit": {
+    "verified": false,
+    "note": "No priced Family Unit row exists on this page — this property is cottages (5 Rustic Cottages: 3 triple rooms / 2 double rooms), not tented Family Units."
+  },
+  "mandatoryFees": {
+    "note": "Identical wording/figures to Lions Bluff and Cheetah — shared Lumo Conservancy fee, not property-specific. Flat rate, does not vary by season.",
+    "verified": true,
+    "verifiedDate": "2026-08-05",
+    "communityBedLevy": { "amount": 10, "unit": "per person per night" },
+    "conservationLevy": { "amount": 20, "unit": "per person per night" },
+    "lumoConservationFee": { "adult": 37, "child": 19, "unit": "per night" }
+  },
+  "portfolioWideTerms": {
+    "note": "Applies across Soroi properties per CLAUDE.md > Portfolio-wide terms. Same TL/guide rates as Cheetah and Lions Bluff.",
+    "childAge5to11": "50% of adult sharing rate",
+    "childUnder4": "free (sharing)",
+    "youngAdult12to17Sharing": "75% of adult rate",
+    "tourLeaderGuide": { "inTLTent": 175, "inGuestTent": "75% of adult single rate" },
+    "privateGuideMeals": { "amount": 50, "unit": "per day" },
+    "christmasNewYearSupplement": { "adult": 40, "child": 20, "unit": "per night" }
+  }
+}

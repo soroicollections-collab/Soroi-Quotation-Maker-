@@ -1,0 +1,62 @@
+{
+  "$note": "New carrier - Aberdair Aviation / Rift Valley Helicopter Safari Experiences. Not previously captured anywhere in rates-extracted/. This is a charter/excursion helicopter product, not scheduled point-to-point flights like the other carriers in this folder.",
+  "carrier": "Aberdair Aviation (branded as 'Rift Valley Helicopter Safari Experiences' for this product line)",
+  "currency": "USD",
+  "verified": true,
+  "productType": "Pre-planned or customized helicopter excursions ex-Nairobi (hotel or Wilson Airport pickup/drop-off) - priced as a package, NOT per-person and NOT a scheduled point-to-point service like the fixed-wing carriers in this folder.",
+  "pricingUnit": "Per excursion (i.e. per helicopter charter) - source document does not state passenger capacity or per-seat breakdown, so this cannot be converted to a per-person figure without further confirmation.",
+  "source": {
+    "ratesFile": "2026 CONTRACT RATES/KENYA/FLIGHTS/Aberdair Aviation. Rift Valley Helicopter/Rift Valley Helicopter Safari Experiences - Excursion Rates EX NBO - RV & Southern Circuit.pdf",
+    "routesFile": "2026 CONTRACT RATES/KENYA/FLIGHTS/Aberdair Aviation. Rift Valley Helicopter/Aberdair Aviation's Helicopter Safari Experiences & Routes.pdf",
+    "extractionMethod": "Clean embedded text layer via pdftotext -layout."
+  },
+  "excursions": {
+    "lakeMagadiAndNguruManEscarpment": {
+      "route": "Nairobi - Lake Magadi - Nguruman Escarpment - Nairobi",
+      "cost": 4128,
+      "costBasis": "Inclusive of VAT",
+      "tripTime": "2 hours"
+    },
+    "lakeNaivashaAndLakeElementaita": {
+      "route": "Nairobi - Suswa - Longonot - Naivasha - Elementaita - Nairobi",
+      "cost": 5804,
+      "costBasis": "Inclusive of VAT",
+      "tripTime": "2.5 hours"
+    },
+    "lakeMagadiLakeAmboseliAndKilimanjaro": {
+      "route": "Nairobi - Lake Magadi - Amboseli - Kilimanjaro Scenic - Nairobi",
+      "cost": 7080,
+      "costBasis": "Inclusive of VAT",
+      "tripTime": "3 hours"
+    },
+    "otherExperiencesCustomQuote": {
+      "note": "Priced on request/customized - no fixed rate given.",
+      "routes": [
+        "Nairobi - Chyulu Hills & Misty Forest - Ithumba - Tsavo - Nairobi",
+        "Nairobi - Magadi - Loita Hills - Maasai Mara - Nairobi",
+        "Nairobi - Lake Naivasha - Lake Elementaita - Lake Nakuru - Lake Bogoria - Lake Baringo - Nairobi"
+      ]
+    }
+  },
+  "otherServices": {
+    "note": "Marketing collateral mentions half-day/full-day excursions from Nairobi, airport-to-lodge transfers, and destination excursions from camp/lodge - none of these have a stated price in the source documents. Contact charters@aberdair.com for a quote.",
+    "verified": false,
+    "confidenceNote": "No pricing found for airport-to-lodge helicopter transfers specifically - flag as a gap if a client requests one."
+  },
+  "contact": {
+    "email": "charters@aberdair.com",
+    "phone": "+254 (0)116 077726",
+    "website": "www.aberdair.com"
+  },
+  "skipped": [
+    {
+      "file": "2026 CONTRACT RATES/KENYA/FLIGHTS/Aberdair Aviation. Rift Valley Helicopter/Aberdair Aviation Company Info.pdf",
+      "reason": "40-page corporate profile document (company history, values, safety credentials, office locations across Kenya/UAE/Ghana) - no pricing content of any kind."
+    },
+    {
+      "file": "2026 CONTRACT RATES/KENYA/FLIGHTS/Aberdair Aviation. Rift Valley Helicopter/Rift Valley Helicopter Safari Experiences- Aberdair Aviation Company Info.pdf",
+      "reason": "Duplicate/renamed copy of the same 40-page corporate profile document (same 'optional content group' PDF syntax warning, same content) - no pricing."
+    }
+  ],
+  "confidenceNote": "Because this is a group/charter cost rather than a per-person fare, it cannot be directly compared or combined with the other per-person scheduled-carrier fares in this folder (AirKenya, Airvan, Safarilink, Governors, etc.) without knowing group size / helicopter seat capacity - flag this explicitly in any quote that tries to use these figures alongside per-person flight costs."
+}

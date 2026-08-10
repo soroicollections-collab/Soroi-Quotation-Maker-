@@ -1,0 +1,81 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftotext -layout, signed STO contracts. NOT Soroi properties. Both hotels are operated by Tribe Hotel Ltd (Trademark Hotel trades as a sister property, same legal entity/registration number C140200, same address/contact). Two separate signed contracts, one per hotel. A companion 'TRADEMARK SUITES AT ENAKI - EAST AFRICA STO RATE CARD 2026.pdf' exists but was not opened this pass (appears to be a third, related-brand property - 'Enaki' - not yet confirmed as the same operator; flagged as an unexplored gap). 'Old Rates/' subfolder contains prior-year STO contracts, not used.",
+  "operator": "Tribe Hotel Ltd",
+  "contractParty": "Sunworld Safaris",
+  "region": "Gigiri, Nairobi (Village Market area)",
+  "currency": "USD",
+  "unit": "per room per night",
+  "source": {
+    "tribeFile": "2026 CONTRACT RATES/KENYA/ACCOMODATION/THE TRIBE HOTEL & TRADEMARK HOTEL/Sunworld Safaris Sto 2026 Tribe Revised.pdf",
+    "trademarkFile": "2026 CONTRACT RATES/KENYA/ACCOMODATION/THE TRIBE HOTEL & TRADEMARK HOTEL/Sunworld Safaris Sto 2026 Trademark Revised.pdf",
+    "validity": { "start": "2026-01-01", "end": "2026-12-31" },
+    "signedDate": "2026-02-23",
+    "unexploredFile": "TRADEMARK SUITES AT ENAKI - EAST AFRICA STO RATE CARD 2026.pdf - not opened, possibly a third related property"
+  },
+  "confidence": "confirmed-2026-08-06",
+  "tribeHotel": {
+    "stoRatesFIT": {
+      "up to 40 rooms": true,
+      "superior": { "sto": { "single": 225, "double": 255 }, "rack": { "single": 350, "double": 380 } },
+      "deluxe": { "sto": { "single": 255, "double": 285 }, "rack": { "single": 380, "double": 410 } },
+      "superiorClub": { "sto": { "single": 275, "double": 300 }, "rack": { "single": 400, "double": 430 } },
+      "gardenTerrace": { "sto": { "single": 325, "double": 355 }, "rack": { "single": 450, "double": 480 } }
+    },
+    "corporateRates_20plusRoomNightsPerYear": {
+      "superior": { "stoCorporate": { "single": 280, "double": 280 }, "rack": { "single": 390, "double": 420 } },
+      "deluxe": { "stoCorporate": { "single": 310, "double": 310 }, "rack": { "single": 415, "double": 445 } },
+      "superiorClub": { "stoCorporate": { "single": 330, "double": 330 }, "rack": { "single": 440, "double": 470 } },
+      "gardenTerrace": { "stoCorporate": { "single": 380, "double": 380 }, "rack": { "single": 490, "double": 520 } }
+    },
+    "suites_stoCorporate_singleDoubleFlat": {
+      "juniorSuite": { "sto": 425, "rack": 550 },
+      "ambassadorialSuite": { "sto": 575, "rack": 700 },
+      "loftBusinessSuite": { "sto": 625, "rack": 750 },
+      "oneBedroomSuite": { "sto": 675, "rack": 800 },
+      "penthouseSuite": { "sto": 2225, "rack": 2350 },
+      "presidentialSuite": { "sto": 3725, "rack": 3850 },
+      "empireSuite": { "sto": 5225, "rack": 5350 }
+    },
+    "blackoutDates": [
+      { "start": "2026-07-22", "end": "2026-08-02", "note": "$300 BB Single Occupancy" },
+      { "start": "2026-08-04", "end": "2026-08-12", "note": "$300 BB Single Occupancy" }
+    ]
+  },
+  "trademarkHotel": {
+    "stoRatesFIT": {
+      "trademarkKingTwin": { "sto": { "single": 140, "double": 165 }, "rack": { "single": 280, "double": 305 } },
+      "trademarkKingTwinView": { "sto": { "single": 160, "double": 185 }, "rack": { "single": 300, "double": 325 } },
+      "terraceKing": { "sto": { "single": 180, "double": 205 }, "rack": { "single": 320, "double": 345 } },
+      "trademarkSuite": { "sto": { "single": 200, "double": 225 }, "rack": { "single": 340, "double": 365 } },
+      "cornerSuite": { "sto": { "single": 220, "double": 245 }, "rack": { "single": 360, "double": 385 } }
+    },
+    "corporateRates_20plusRoomNightsPerYear": {
+      "trademarkKingTwin": { "stoCorporate": { "single": 180, "double": 205 }, "rack": { "single": 345, "double": 370 } },
+      "terraceKing": { "stoCorporate": { "single": 220, "double": 245 }, "rack": { "single": 385, "double": 410 } },
+      "trademarkSuite": { "stoCorporate": { "single": 240, "double": 265 }, "rack": { "single": 405, "double": 430 } },
+      "oneBedroomCornerSuite": { "stoCorporate": { "single": 260, "double": 285 }, "rack": { "single": 425, "double": 450 } }
+    }
+  },
+  "sharedAccommodationExtras": {
+    "thirdBedRate": "50% of the double room rate (Tribe: from Deluxe category upward only)",
+    "childSharingInParentsRoom": "Under 12: complimentary (Tribe: from Deluxe category upward only)",
+    "childSharingInOwnRoom": "Under 12: 75% of the single room rate",
+    "dayRoom": "75% of room rate, subject to availability; must vacate before 17:00 or full night charged",
+    "earlyArrivalBefore14h00": "50% of room rate",
+    "earlyDeparture": "Entire length of stay charged",
+    "checkIn": "14:00", "checkOut": "12:00"
+  },
+  "inclusionsInRate": ["Government tax, catering levy, service charge", "Express check-in/out (on request)", "24hr room service", "In-room laptop safe", "LCD Smart TV", "Daily local newspapers (on request)", "2 bottles mineral water", "WiFi", "Hotel pool", "Hotel gym + mall gym access"],
+  "cancellationPolicy": {
+    "groups": [{ "daysBeforeArrival": "28-15", "charge": "50%" }, { "daysBeforeArrival": "14-01", "charge": "80%" }, { "daysBeforeArrival": "noShow", "charge": "100%" }],
+    "fits": [{ "daysBeforeArrival": "03-01", "charge": "80%" }, { "daysBeforeArrival": "noShow", "charge": "100%" }],
+    "attritionAllowance": "10% of group rooms cancellable penalty-free up to 14 days prior to arrival."
+  },
+  "paymentTerms_groups": [
+    { "daysBeforeArrival": 60, "condition": "Confirmation + 10% deposit" },
+    { "daysBeforeArrival": 28, "condition": "Further 40% deposit + rooming list" },
+    { "daysBeforeArrival": 14, "condition": "Payment in full" }
+  ],
+  "paymentTerms_fits": { "daysBeforeArrival": 14, "condition": "Payment in full" },
+  "childPolicyGeneral": "Subject to availability, children under 12 (max 1) sharing a bedroom with 2 adults stay and eat breakfast free. If bedroom cannot accommodate the child sharing, 2 rooms required: 75% of regular rate for under-12, full rate for 12+."
+}

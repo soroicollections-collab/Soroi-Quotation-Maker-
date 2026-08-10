@@ -1,0 +1,19 @@
+{
+  "$note": "Extracted 6 Aug 2026 via whole-file pdftotext read (3-page single-property PDF). Source: Bush and Beyond Ltd rate sheet.",
+  "property": "House in the Wild",
+  "operator": "Bush and Beyond Ltd (booking agent)",
+  "region": "Naretoi Estate, Enonkishu Conservancy, northern edge of Mara ecosystem",
+  "tier": "RSP (rack) and Trade Rates/Preferential",
+  "source": { "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/BUSH&BEYOND/House in the Wild - 2026 Preferential US$.pdf" },
+  "seasons": { "regular": "5 Jan-30 Jun 2026, 1 Oct-19 Dec 2026", "premium": "1 Jul-30 Sep 2026, 20 Dec 2026-3 Jan 2027" },
+  "rates": {
+    "currency": "USD", "unit": "per person per night sharing, no single supplement",
+    "regular": { "rsp": { "adult": 1095, "childSharing5to15": 710, "conservancyFee": { "adult": 150, "child": 75 }, "total": { "adult": 1245, "child": 785 } }, "trade": { "adult": 821, "childSharing5to15": 533, "conservancyFee": { "adult": 150, "child": 75 }, "total": { "adult": 971, "child": 608 } } },
+    "premium": { "rsp": { "adultSharing": 1600, "adultSingle": 1875, "childSharing": 1030, "conservancyFee": 150, "total": { "adultSharing": 1750, "adultSingle": 2025, "childSharing": 1105 } }, "trade": { "adultSharing": 1200, "adultSingle": 1406, "childSharing": 773, "conservancyFee": 150, "total": { "adultSharing": 1350, "adultSingle": 1556, "childSharing": 848 } } }
+  },
+  "childPolicy": { "under5": "Free", "5to15sharing": "Child rate applies", "allAgesWelcome": true },
+  "mandatoryFeesSeparate": { "maasaiMaraNationalReserveFee_ifDaytrip": { "adult": { "janJun": 100, "julDec": 200 }, "child9to17": 50, "under8": "Free" } },
+  "inclusions": "Full board, soft drinks/local beers/non-premium wines/spirits, Ngerende airstrip transfers, statutory taxes, laundry, unlimited shared game drives on Enonkishu/Ol Chorro/Lemek Conservancies, school visits, bush breakfasts, picnic lunches, tennis, horse rides, sundowners, Rhino Sanctuary visits, Mara Training Centre, farm walks/e-bike rides.",
+  "exclusions": "Conservancy fees (payable with booking), daytrip to Mara Reserve ($400/vehicle), Maasai Mara National Reserve fees if visited, massages, balloon rides, Mara Elephant Project visits, exclusive vehicle ($400), champagne/premium spirits, extra lunch ($50).",
+  "notes": "Open year-round (unlike Lewa House/Ol Malo which close for a season). Stay 4 Pay 3 offer 5 Jan-31 May 2026."
+}

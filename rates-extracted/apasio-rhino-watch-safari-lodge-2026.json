@@ -1,0 +1,60 @@
+{
+  "$note": "Extracted 6 Aug 2026 from the same bundled document as apasio-mara-camp-2026.json (Apasio_Camps_Contract_Rates_2026.pdf / Apasio Resident Rack Rates 2026.pdf). Property identified as 'Rhino Watch Safari Lodge' based on room-category names (Bird Nest, Paradise Flycatcher, Weaver Bird Nest) which match this Lake Naivasha lodge's known branding, and because a photo-gallery link inside the source PDF is explicitly titled 'Rhino Watch Safari Lodge'. [Inference] - the document itself never labels this rate table with the property name directly above it; identification is via the gallery link and room-name pattern, not a printed heading.",
+  "property": "Rhino Watch Safari Lodge",
+  "operator": "Apasio Safari Ltd",
+  "region": "Lake Naivasha (inferred from lodge branding; not explicitly stated in this rate document)",
+  "tier": "Contract/net (non-resident USD) and Resident Rack (KES)",
+  "source": {
+    "files": [
+      "2026 CONTRACT RATES/KENYA/ACCOMODATION/APASIO SAFARIS/Apasio_Camps_Contract_Rates_2026_(1) (1).pdf",
+      "2026 CONTRACT RATES/KENYA/ACCOMODATION/APASIO SAFARIS/Apasio Resident_Rack_ Rates_ 2026 (1) (1).pdf"
+    ],
+    "validity": { "start": "2026-03-01", "end": "2027-05-31" }
+  },
+  "rates": {
+    "unit": "per person per night, Full Board, all year round",
+    "nonResidentUSD": {
+      "tent": { "sgl": 220, "dbl": 125 },
+      "honeymoonTent": { "sgl": 240, "dbl": 135 },
+      "chalet": { "sgl": 290, "dbl": 155 },
+      "birdNest": { "sgl": 300, "dbl": 165 },
+      "paradiseFlycatcher": { "sgl": 290, "dbl": 155 },
+      "weaverBirdNest": { "sgl": 290, "dbl": 155 },
+      "familyTentMax4": { "flatRate": 400 },
+      "familyChaletMax5": { "flatRate": 470 },
+      "newExclusiveWingUnits_20pctCommissionable": {
+        "senatorTent": { "sgl": 525, "dbl": 350 },
+        "governorsHouse": { "sgl": 750, "dbl": 500 },
+        "euphoriaForestHouse": { "sgl": 750, "dbl": 500 },
+        "platinumChalet": { "sgl": 750, "dbl": 500 },
+        "platinumTent": { "sgl": 525, "dbl": 350 }
+      },
+      "houses_perUnitPerNight_21Dec25to06Jan26": { "house1_2bed": 300, "house2_3bed": 400 }
+    },
+    "residentKES": {
+      "tent": { "sgl": 14000, "dbl": 9000 },
+      "honeymoonTent": { "sgl": 16500, "dbl": 9900 },
+      "chalet": { "sgl": 18500, "dbl": 10500 },
+      "birdNest": { "sgl": 19500, "dbl": 11500 },
+      "paradiseFlycatcher": { "sgl": 18500, "dbl": 10500 },
+      "weaverBirdNest": { "sgl": 18500, "dbl": 10500 },
+      "familyTentMax4": { "flatRate": 30000 },
+      "familyChaletMax5": { "flatRate": 35000 },
+      "newExclusiveWingUnits_10pctCommissionable": {
+        "senatorTent": { "sgl": 17500, "dbl": 35000, "confidenceNote": "[Unverified] sgl figure appears identical to dbl in source; may be an OCR/typesetting artifact in the original PDF table - use with caution" },
+        "platinumTent": { "sgl": 17500, "dbl": 35000 },
+        "governorsHouse": { "sgl": 25000, "dbl": 50000 },
+        "euphoriaForestHouse": { "sgl": 25000, "dbl": 50000 },
+        "platinumChalet": { "sgl": 25000, "dbl": 50000 }
+      },
+      "houses_perUnitPerNight_21Dec25to06Jan26": { "house1_2bed": 20000, "house2_3bed": 30000 }
+    }
+  },
+  "childPolicy": {
+    "0to3SharingWith2Adults": "Free",
+    "4to11SharingWith2Adults": "50% of adult DBL rate",
+    "4to11SharingWith1Adult": "75% of adult DBL rate",
+    "4to11OwnRoom": "1st child full adult DBL rate, 2nd child 75% of adult DBL rate"
+  },
+  "notes": "Single room supplement 75% of room rate. 3rd adult in double room: 20% less than per-person sharing rate. Minimum stay 3 nights 21 Dec-6 Jan."
+}

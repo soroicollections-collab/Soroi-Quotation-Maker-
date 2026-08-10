@@ -1,0 +1,19 @@
+{
+  "$note": "Extracted 6 Aug 2026. Sister property to Sarara Camp, same conservancy, separately priced.",
+  "property": "Sarara Treehouses",
+  "operator": "Bush and Beyond Ltd (booking agent)",
+  "region": "Namunyak Wildlife Conservancy, Mathews Range",
+  "tier": "RSP (rack) and Trade/Preferential",
+  "source": { "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/BUSH&BEYOND/Sarara Treehouses - 2026 Preferential US$.pdf" },
+  "seasons": { "regular": "5 Jan-30 Jun, 1 Sep-31 Oct, 1-19 Dec 2026 (closed November 2026)", "premium": "1 Jul-31 Aug 2026, 20 Dec 2026-3 Jan 2027" },
+  "rates": {
+    "currency": "USD", "unit": "per person per night sharing, no single supplement in regular season",
+    "regular": { "rsp": { "adult": 1110, "childSharing6to15": 720 }, "trade": { "adult": 833, "childSharing6to15": 540 }, "communityHeritageFee": { "rsp": { "adult": 185, "child": 115 }, "trade": { "adult": 185, "child": 115 } } },
+    "premium": { "rsp": { "adultSharing": 1515, "adultSingle": 1780, "childSharing": 985 }, "trade": { "adultSharing": 1136, "adultSingle": 1335, "childSharing": 739 }, "communityHeritageFee": { "rsp": 185, "trade": 185 } }
+  },
+  "capacity": "8 elevated treehouse tents; 2 close together suitable for families with children 6+",
+  "childPolicy": { "note": "Any age welcome but more suitable for 6 years and older (note: 6+ here vs 5+ at sister Sarara Camp)." },
+  "inclusions": "Full board, soft drinks/local beers/non-premium wines/spirits, Namunyak airstrip transfers, statutory taxes, laundry, day/night shared game drives, montane forest hiking, horse ride, De Brazza monkey hike, guided walks, village visits.",
+  "exclusions": "Community Heritage fee, Reteti Elephant Sanctuary entrance ($35pp), blacksmithing/beading, exclusive vehicle ($250/day), extra horse riding, Samburu dancers, champagne/premium spirits, Ololokwe day trip, fly camping mobilisation, massages.",
+  "notes": "Closed 1-30 November."
+}

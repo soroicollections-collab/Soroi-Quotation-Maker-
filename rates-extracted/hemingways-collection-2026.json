@@ -1,0 +1,137 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftotext -layout, read the full 25-page STO Agreement document sequentially (each property has its own clearly-labeled section header - low misattribution risk). NOT a Soroi property. Multi-property document covering 4 Hemingways Collection properties.",
+  "operator": "Hemingways Hospitality Limited",
+  "properties": ["Hemingways Nairobi", "Hemingways Ol Seki Mara", "Hemingways Watamu", "Hemingways Eden Residence"],
+  "source": {
+    "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/HEMINGWAYS COLLECTION/Hemingways STO Agreement 2026 FINAL.pdf",
+    "validity": { "start": "2026-01-01", "end": "2027-01-04" },
+    "tier": "STO Net Rates (net, non-commissionable) with a parallel Rack Rates table on every property's page",
+    "skipped": ["Hemingways HC 2026 Special Offers.pdf - not yet extracted, promotional specials not core rate data"]
+  },
+  "confidence": "confirmed-2026-08-06",
+  "currency": "USD",
+  "hemingwaysNairobi": {
+    "region": "Nairobi (city hotel)",
+    "seasons": {
+      "regular": { "dateRanges": ["05 Jan - 28 Feb 2026", "01 Nov - 17 Dec 2026"] },
+      "green": { "dateRanges": ["01 Mar - 31 May 2026"] },
+      "premium": { "dateRanges": ["01 Jun - 31 Oct 2026", "18 Dec 2026 - 04 Jan 2027"] }
+    },
+    "unit": "per suite per night",
+    "stoNet": {
+      "regular": { "deluxeSuite80m2": { "single": 520, "double": 690, "extraChild6to16": 210 }, "executiveSuite80m2": { "single": 565, "double": 810, "extraChild6to16": 245 }, "blixenSuite160m2": { "single": 1350, "double": 1350, "extraChild6to16": null }, "hemingwaySuite240m2": { "single": 1800, "double": 1800, "extraChild6to16": null } },
+      "green": { "deluxeSuite80m2": { "single": 415, "double": 555, "extraChild6to16": 170 }, "executiveSuite80m2": { "single": 450, "double": 650, "extraChild6to16": 195 }, "blixenSuite160m2": { "single": 1080, "double": 1080, "extraChild6to16": null }, "hemingwaySuite240m2": { "single": 1440, "double": 1440, "extraChild6to16": null } },
+      "premium": { "deluxeSuite80m2": { "single": 680, "double": 870, "extraChild6to16": 260 }, "executiveSuite80m2": { "single": 760, "double": 1025, "extraChild6to16": 310 }, "blixenSuite160m2": { "single": 1710, "double": 1710, "extraChild6to16": null }, "hemingwaySuite240m2": { "single": 2440, "double": 2440, "extraChild6to16": null } },
+      "verified": true
+    },
+    "rack": {
+      "regular": { "deluxeSuite80m2": { "single": 645, "double": 865, "extraChild6to16": 260 }, "executiveSuite80m2": { "single": 700, "double": 1010, "extraChild6to16": 300 }, "blixenSuite160m2": { "single": 1685, "double": 1685, "extraChild6to16": null }, "hemingwaySuite240m2": { "single": 2245, "double": 2245, "extraChild6to16": null } },
+      "green": { "deluxeSuite80m2": { "single": 520, "double": 695, "extraChild6to16": 210 }, "executiveSuite80m2": { "single": 560, "double": 810, "extraChild6to16": 245 }, "blixenSuite160m2": { "single": 1350, "double": 1350, "extraChild6to16": null }, "hemingwaySuite240m2": { "single": 1800, "double": 1800, "extraChild6to16": null } },
+      "premium": { "deluxeSuite80m2": { "single": 830, "double": 1060, "extraChild6to16": 320 }, "executiveSuite80m2": { "single": 925, "double": 1250, "extraChild6to16": 375 }, "blixenSuite160m2": { "single": 2085, "double": 2085, "extraChild6to16": null }, "hemingwaySuite240m2": { "single": 2980, "double": 2980, "extraChild6to16": null } },
+      "verified": true
+    },
+    "mealSupplement": { "lunchOrDinner": 65, "unit": "USD per person" },
+    "childPolicy": { "age0to5SharingWithAdult": "Free", "age6to16Sharing": "Applicable child rate above", "maxOneChildSharingWithTwoAdults": true, "under12OwnRoom": "75% of double room rate", "age12PlusOwnRoom": "Full room rate" },
+    "thirdAdultPolicy": "Not permitted (3rd adult or child over 16 cannot share any suite)",
+    "dayUseRoomRate": "70% of contracted room rate",
+    "airportTransfers": { "jkiaMax3pax": 100, "jkiaMax5pax": 130, "wilsonMax3pax": 60, "wilsonMax5pax": 80, "vipMeetGreetJKIA": 35, "unit": "USD per vehicle one-way unless noted" },
+    "verified": true
+  },
+  "hemingwaysOlSekiMara": {
+    "region": "Naboisho Conservancy, Maasai Mara",
+    "closedDates": "13 Apr - 22 May 2026 inclusive",
+    "seasons": {
+      "regular": { "dateRanges": ["05 Jan - 14 Jun 2026", "01 Nov - 17 Dec 2026"] },
+      "high": { "dateRanges": ["15 - 30 Jun 2026", "01 Sep - 31 Oct 2026"] },
+      "premium": { "dateRanges": ["01 Jul - 31 Aug 2026", "18 Dec 2026 - 04 Jan 2027"] }
+    },
+    "unit": "per person per night sharing (Nina Tent), or per night exclusive use (Private Villa)",
+    "stoNet": {
+      "regular": { "ninaTent60m2": { "single": 800, "perPersonSharing": 650, "childSharing8to12": 275 }, "privateVillaSimbaOrChui185m2ExclusiveUse": 3240 },
+      "high": { "ninaTent60m2": { "single": 1215, "perPersonSharing": 955, "childSharing8to12": 400 }, "privateVillaSimbaOrChui185m2ExclusiveUse": 4750 },
+      "premium": { "ninaTent60m2": { "single": 1345, "perPersonSharing": 1045, "childSharing8to12": 430 }, "privateVillaSimbaOrChui185m2ExclusiveUse": 5215 },
+      "verified": true
+    },
+    "rack": {
+      "regular": { "ninaTent60m2": { "single": 995, "perPersonSharing": 810, "childSharing8to12": 340 }, "privateVillaSimbaOrChui185m2ExclusiveUse": 4050 },
+      "high": { "ninaTent60m2": { "single": 1515, "perPersonSharing": 1195, "childSharing8to12": 500 }, "privateVillaSimbaOrChui185m2ExclusiveUse": 5940 },
+      "premium": { "ninaTent60m2": { "single": 1680, "perPersonSharing": 1305, "childSharing8to12": 535 }, "privateVillaSimbaOrChui185m2ExclusiveUse": 6520 },
+      "verified": true
+    },
+    "privateVillaCapacity": "4 adults, or 2 adults + 3 children; includes Private Game Drive Vehicle, Private Chef, Private Plunge Pool, Private Butler",
+    "minStayHighPremium": 2,
+    "mandatoryFeesExcluded": {
+      "naboishoConservancyFee": { "adult": 130, "child": 65, "unit": "per person per night; child under 18" },
+      "naboishoReserveFundFee": { "amount": 5, "unit": "per person per night" },
+      "maraReserveParkFee": { "janToJune": 100, "julToDec": 200, "unit": "per person, based on 2025 prices, subject to change" },
+      "verified": true
+    },
+    "otherExtras": { "maraReserveExcursionInclPicnic": 200, "airstripTransferKeekorokOlkiomboOrWithinReserve": 400, "bushDinner": 65, "exclusiveCaveDinner": 65, "additionalLunchSupplementDepartureDay": 30, "exclusiveSafariVehicle": 400, "culturalVillageVisit": 35, "unit": "USD, per person unless noted as per vehicle" },
+    "singleSupplementNote": "Valid for max 2 tents per night; beyond that, single tents default to double room rate.",
+    "childPolicy": { "note": "Different bracket from Hemingways' other 3 properties (8-16 vs their usual 6-16) and different from Soroi's 5-11.", "under8": "Not accommodated in Nina Tents (no restriction in Private Villa)", "age8to12SharingWith2Adults": "Max 1 child, day bed, child rate", "age8to12SharingWith1Adult": "Child rate over and above adult single", "age12Plus": "Full adult rate" },
+    "specialOffers": { "stay4pay3": "Regular and High season only; conservancy/reserve fund fees still apply for the 4th night", "honeymoonBridePays50pct": "Regular season only, 3-5 night stay, Nina Tents only" },
+    "verified": true
+  },
+  "hemingwaysWatamu": {
+    "region": "Watamu, Kenya coast (Diani-adjacent circuit alternative)",
+    "seasons": {
+      "high": { "dateRanges": ["05 Jan - 28 Feb 2026", "01 - 31 Aug 2026"] },
+      "regular": { "dateRanges": ["01 Mar - 31 Jul 2026", "01 Sep - 17 Dec 2026"] },
+      "premium": { "dateRanges": ["18 Dec 2026 - 04 Jan 2027"], "note": "Premium season defaults to Half Board instead of Bed & Breakfast - a meal-plan shift unique to this property/season, not just a price change." }
+    },
+    "unit": "per room per night",
+    "stoNet": {
+      "high": { "northWingOceanView2ndFloor": { "single": 260, "double": 340 }, "northWingDeluxeOceanViewGroundOr1st": { "single": 320, "double": 400, "extraAdult": 160, "child6to16": 100 }, "oneBedroomOceanViewSuite": { "single": 440, "double": 600 }, "twoBedroomOceanViewSuiteMax4": { "single": 680, "double": 680 }, "twoBedroomDeluxeOceanViewSuiteMax4": { "single": 820, "double": 820 }, "fourBedroomOceanViewPenthouseMax8": { "single": 1500, "double": 1500 } },
+      "regular": { "northWingOceanView2ndFloor": { "single": 205, "double": 280 }, "northWingDeluxeOceanViewGroundOr1st": { "single": 240, "double": 315, "extraAdult": 130, "child6to16": 80 }, "oneBedroomOceanViewSuite": { "single": 400, "double": 400 }, "twoBedroomOceanViewSuiteMax4": { "single": 580, "double": 580 }, "twoBedroomDeluxeOceanViewSuiteMax4": { "single": 680, "double": 680 }, "fourBedroomOceanViewPenthouseMax8": { "single": 1090, "double": 1090 } },
+      "premium": { "northWingOceanView2ndFloor": { "single": 770, "double": 770 }, "northWingDeluxeOceanViewGroundOr1st": { "single": 865, "double": 865, "extraAdult": 350, "child6to16": 220 }, "oneBedroomOceanViewSuite": { "single": 1040, "double": 1040 }, "twoBedroomOceanViewSuiteMax4": { "single": 1530, "double": 1530 }, "twoBedroomDeluxeOceanViewSuiteMax4": { "single": 1670, "double": 1670 }, "fourBedroomOceanViewPenthouseMax8": { "single": 3265, "double": 3265 } },
+      "verified": true
+    },
+    "rack": {
+      "high": { "northWingOceanView2ndFloor": { "single": 325, "double": 425 }, "northWingDeluxeOceanViewGroundOr1st": { "single": 400, "double": 500, "extraAdult": 200, "child6to16": 125 }, "oneBedroomOceanViewSuite": { "single": 550, "double": 750 }, "twoBedroomOceanViewSuiteMax4": { "single": 850, "double": 850 }, "twoBedroomDeluxeOceanViewSuiteMax4": { "single": 1020, "double": 1020 }, "fourBedroomOceanViewPenthouseMax8": { "single": 1870, "double": 1870 } },
+      "regular": { "northWingOceanView2ndFloor": { "single": 255, "double": 345 }, "northWingDeluxeOceanViewGroundOr1st": { "single": 295, "double": 395, "extraAdult": 160, "child6to16": 100 }, "oneBedroomOceanViewSuite": { "single": 500, "double": 500 }, "twoBedroomOceanViewSuiteMax4": { "single": 725, "double": 725 }, "twoBedroomDeluxeOceanViewSuiteMax4": { "single": 850, "double": 850 }, "fourBedroomOceanViewPenthouseMax8": { "single": 1360, "double": 1360 } },
+      "premium": { "northWingOceanView2ndFloor": { "single": 960, "double": 960 }, "northWingDeluxeOceanViewGroundOr1st": { "single": 1080, "double": 1080, "extraAdult": 430, "child6to16": 270 }, "oneBedroomOceanViewSuite": { "single": 1300, "double": 1300 }, "twoBedroomOceanViewSuiteMax4": { "single": 1915, "double": 1915 }, "twoBedroomDeluxeOceanViewSuiteMax4": { "single": 2085, "double": 2085 }, "fourBedroomOceanViewPenthouseMax8": { "single": 4080, "double": 4080 } },
+      "verified": true
+    },
+    "minStayPremium": 3,
+    "mealSupplement": { "halfBoard": 45, "fullBoard": 80, "childUnder12": "50% of supplement rate", "unit": "USD per person per day" },
+    "childPolicy": { "age0to5SharingWithAdult": "Free", "age6to16Sharing": "Applicable child rate above", "maxOneChildSharingWithTwoAdults": true, "under12OwnRoom": "75% of double room rate", "age12PlusOwnRoom": "Full room rate" },
+    "airportTransfers": { "malindiMax3pax": 40, "malindiMax6pax": 80, "vipingoPerPerson": 50, "moiInternationalMombasaMax6pax": 190 },
+    "specialOffers": { "stay4pay3": "valid 5 Jan 2026 - 17 Dec 2027 (sic, printed as such in source spanning into 2027)", "stay7pay5": "valid 5 Jan 2026 - 17 Dec 2027" },
+    "verified": true
+  },
+  "hemingwaysEdenResidence": {
+    "region": "Not stated explicitly in this document section (Nairobi-area based on shared airport-transfer reference to Hemingways Nairobi's page)",
+    "seasons": {
+      "regular": { "dateRanges": ["05 Jan - 28 Feb 2026", "01 - 30 Jun 2026", "01 Oct - 17 Dec 2026"] },
+      "green": { "dateRanges": ["01 Mar - 31 May 2026"] },
+      "premium": { "dateRanges": ["01 Jul - 30 Sep 2026", "18 Dec 2026 - 04 Jan 2027"] }
+    },
+    "unit": "per room per night",
+    "stoNet": {
+      "regular": { "mainHouseMasterBedroom1": { "single": 450, "double": 650 }, "mainHouseBedroom2": { "single": 385, "double": 535 }, "mainHouseBedroom3": { "single": 300, "double": 410 }, "tonioStudioGardenView": { "single": 450, "double": 620 }, "tonioStudioForestView": { "single": 450, "double": 620 }, "tonioStudioGardenLoft": { "single": 360, "double": 500, "extraChild8to16": 175 }, "cottageInclKitchenette": { "single": 450, "double": 620, "extraChild8to16": 220 }, "exclusiveMainHouse6adults": 1365, "exclusiveMainHouse6adults3childrenKidsLoft": 1640, "exclusiveTonioStudioExclGardenLofts": 1180, "exclusiveWholeProperty18adults3childrenKidsLoft": 3930 },
+      "green": { "mainHouseMasterBedroom1": { "single": 315, "double": 450 }, "mainHouseBedroom2": { "single": 270, "double": 375 }, "mainHouseBedroom3": { "single": 210, "double": 290 }, "tonioStudioGardenView": { "single": 315, "double": 430 }, "tonioStudioForestView": { "single": 315, "double": 430 }, "tonioStudioGardenLoft": { "single": 255, "double": 350, "extraChild8to16": 125 }, "cottageInclKitchenette": { "single": 315, "double": 430, "extraChild8to16": 150 }, "exclusiveMainHouse6adults": 955, "exclusiveMainHouse6adults3childrenKidsLoft": 1150, "exclusiveTonioStudioExclGardenLofts": 825, "exclusiveWholeProperty18adults3childrenKidsLoft": 2755 },
+      "premium": { "mainHouseMasterBedroom1": { "single": 570, "double": 805 }, "mainHouseBedroom2": { "single": 470, "double": 640 }, "mainHouseBedroom3": { "single": 360, "double": 495 }, "tonioStudioGardenView": { "single": 565, "double": 770 }, "tonioStudioForestView": { "single": 565, "double": 770 }, "tonioStudioGardenLoft": { "single": 440, "double": 600, "extraChild8to16": 210 }, "cottageInclKitchenette": { "single": 565, "double": 770, "extraChild8to16": 270 }, "exclusiveMainHouse6adults": 1640, "exclusiveMainHouse6adults3childrenKidsLoft": 1910, "exclusiveTonioStudioExclGardenLofts": 1500, "exclusiveWholeProperty18adults3childrenKidsLoft": 4915 },
+      "verified": true
+    },
+    "rack": {
+      "regular": { "mainHouseMasterBedroom1": { "single": 580, "double": 830 }, "mainHouseBedroom2": { "single": 490, "double": 685 }, "mainHouseBedroom3": { "single": 385, "double": 525 }, "tonioStudioGardenView": { "single": 580, "double": 795 }, "tonioStudioForestView": { "single": 580, "double": 795 }, "tonioStudioGardenLoft": { "single": 465, "double": 640, "extraChild8to16": 220 }, "cottageInclKitchenette": { "single": 580, "double": 795, "extraChild8to16": 280 }, "exclusiveMainHouse6adults": 1750, "exclusiveMainHouse6adults3childrenKidsLoft": 2100, "exclusiveTonioStudioExclGardenLofts": 1505, "exclusiveWholeProperty18adults3childrenKidsLoft": 5040 },
+      "green": { "mainHouseMasterBedroom1": { "single": 405, "double": 580 }, "mainHouseBedroom2": { "single": 345, "double": 480 }, "mainHouseBedroom3": { "single": 270, "double": 370 }, "tonioStudioGardenView": { "single": 405, "double": 555 }, "tonioStudioForestView": { "single": 405, "double": 555 }, "tonioStudioGardenLoft": { "single": 325, "double": 450, "extraChild8to16": 160 }, "cottageInclKitchenette": { "single": 400, "double": 555, "extraChild8to16": 200 }, "exclusiveMainHouse6adults": 1225, "exclusiveMainHouse6adults3childrenKidsLoft": 1470, "exclusiveTonioStudioExclGardenLofts": 1055, "exclusiveWholeProperty18adults3childrenKidsLoft": 3530 },
+      "premium": { "mainHouseMasterBedroom1": { "single": 730, "double": 1030 }, "mainHouseBedroom2": { "single": 600, "double": 820 }, "mainHouseBedroom3": { "single": 460, "double": 630 }, "tonioStudioGardenView": { "single": 730, "double": 990 }, "tonioStudioForestView": { "single": 730, "double": 990 }, "tonioStudioGardenLoft": { "single": 560, "double": 770, "extraChild8to16": 270 }, "cottageInclKitchenette": { "single": 730, "double": 990, "extraChild8to16": 340 }, "exclusiveMainHouse6adults": 2100, "exclusiveMainHouse6adults3childrenKidsLoft": 2450, "exclusiveTonioStudioExclGardenLofts": 1925, "exclusiveWholeProperty18adults3childrenKidsLoft": 6300 },
+      "verified": true
+    },
+    "mealSupplement": { "lunchOrDinner": 60, "unit": "USD per person" },
+    "childPolicy": { "note": "Third distinct Hemingways child bracket (8-16), same as Ol Seki but different from Nairobi/Watamu's 6-16.", "under8": "Not accommodated unless exclusive buy-out of whole property or Main House", "age8to16Sharing": "Applicable child rate per night, max 1 child sharing with 2 adults, Garden Lofts and Cottage only" },
+    "dayPass": { "amount": 150, "unit": "USD per person, incl. lunch or dinner supplement + private shower/changing room access" },
+    "longStayDiscount": "20% off contracted Cottage rate for 4+ nights, plus additional 50% off laundry",
+    "airportTransfersAndHoneymoon": "Same as Hemingways Nairobi (cross-referenced in source, not re-stated on this property's own page)",
+    "verified": true
+  },
+  "generalContractTerms": {
+    "ratesInclude": "All local taxes and service charges (per General Terms 2.3), net and non-commissionable.",
+    "depositRequired": "20% non-refundable within 30 days of booking voucher",
+    "cancellation": { "moreThan60days": "20% charge", "30to60days": "50% charge", "0to29days": "100% charge", "premiumHighSeasonOlSeki": "100% cancellation fee within 90 days regardless of terms", "premiumSeasonOtherThreeProperties": "100% cancellation fee within 60 days" },
+    "tourGuideOffer": "1 complimentary single B&B room for tour guide per group of 15+ paying guests (min 10 paying rooms) at Hemingways Nairobi and Hemingways Watamu only.",
+    "maxAdultsPerRoom": 2,
+    "note": "This is the boilerplate STO Agreement contract (deposit/cancellation/data protection/arbitration clauses) appended after all 4 property rate sections - reproduced here only where itinerary-relevant (deposit, cancellation, day-use, child ages); full legal boilerplate not reproduced."
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "property": "Ol Pejeta Safari Cottages",
+  "operator": "The Safari Cottages (thesafaricottages.com)",
+  "region": "Ol Pejeta Conservancy, Laikipia",
+  "isSoroiProperty": false,
+  "sourceFiles": [
+    "2026 CONTRACT RATES/KENYA/ACCOMODATION/OL PEJETA SAFARI COTTAGES/Ol Pejeta Safari Cottages 2026 Rates.pdf (labelled '2026 TOP CONTRACT RATES' - Sunworld's discounted rate, shown alongside Rack in parentheses)",
+    "2026 CONTRACT RATES/KENYA/ACCOMODATION/OL PEJETA/Ol Pejeta Safari Cottages 2026_Rack_Rates.pdf (public Rack rate card only)"
+  ],
+  "skippedFiles": [
+    { "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/OL PEJETA/～$ Pejeta Safari Cottages 2026_Rack_Rates.pdf", "reason": "Filename prefix '～$' indicates this is a temporary/lock file artifact of the Rack Rates file being open elsewhere (e.g. in Excel/Word) - not a distinct document. Not opened." }
+  ],
+  "notes": [
+    "This is a distinct, privately-operated cottage product within Ol Pejeta Conservancy - separate from the Conservancy's own Pelican House/Stables/Camping products (see ol-pejeta-conservancy-2026.json). Both sit on the same conservancy and both charge the same conservancy Conservation Fee and Bed-night levy on top.",
+    "Contract (Sunworld) rate confirmed arithmetically as Rack x 0.70 exactly across every line (e.g. High Fully Inclusive 2 adults: $483 = $690 x 0.70). This is effectively a 30% discount tier.",
+    "Two folders hold near-duplicate rate cards for the same property: 'OL PEJETA' folder has a Rack-only card; 'OL PEJETA SAFARI COTTAGES' folder has a fuller card showing both Contract and Rack figures side by side. Treat the OL PEJETA SAFARI COTTAGES version as authoritative/more complete."
+  ],
+  "currency": "USD",
+  "validity": "1 January - 31 December 2026",
+  "seasons": { "high": "15 Jun-31 Oct & 16 Dec-6 Jan", "mid": "1 Nov-15 Dec & 7 Jan-31 Mar", "low": "1 Apr-14 Jun" },
+  "rack_perAdultPerNight": {
+    "fullyInclusive": { "high": { "2adults": 690, "3plusAdults": 620 }, "mid": { "2adults": 596, "3plusAdults": 548 }, "low": { "2orMoreAdults": 505 } },
+    "fullBoard": { "high": { "2adults": 633, "3plusAdults": 562 }, "mid": { "2adults": 538, "3plusAdults": 491 }, "low": { "2orMoreAdults": 450 } },
+    "verified": true
+  },
+  "contract_Sunworld_perAdultPerNight": {
+    "fullyInclusive": { "high": { "2adults": 483, "3plusAdults": 434 }, "mid": { "2adults": 417, "3plusAdults": 384 }, "low": { "2orMoreAdults": 354 } },
+    "fullBoard": { "high": { "2adults": 443, "3plusAdults": 394 }, "mid": { "2adults": 377, "3plusAdults": 344 }, "low": { "2orMoreAdults": 315 } },
+    "verified": true
+  },
+  "compulsoryAdditionalFees_perPersonPerNight": {
+    "olPejetaConservationFee": { "adult12plus": 110, "child3to11": 55, "under3": "Free" },
+    "olPejetaBedNightLevy_valid01Jan_31Mar2026": { "adult12plus": 44, "child3to11": 22, "under3": "Free" },
+    "olPejetaBedNightLevy_valid01Apr2026_31Mar2027": { "adult12plus": 55, "child3to11": 28, "under3": "Free" },
+    "verified": true
+  },
+  "fullyInclusive": {
+    "includes": ["Transfers to/from Nanyuki or Kamok Airstrip", "Private game viewing vehicle and guide", "All meals and picnics", "Bar with soft drinks, fruit juices, local beers/spirits/wines", "Tea and coffee", "Bush breakfast/brunch, sundowners, night drives, bush walks", "Laundry", "Private chef, waiter, cleaning staff"],
+    "excludes": ["Ol Pejeta Conservation fee and bed-night levy", "Gratuities and personal expenses", "Transfers to/from other areas", "Day trips", "Activities offered by Ol Pejeta Conservancy at extra charge"]
+  },
+  "fullBoard": {
+    "includes": ["All meals", "Bar with soft drinks, fruit juices, local beers/spirits/wines", "Tea and coffee", "Laundry", "Private chef, waiter, cleaning staff"],
+    "excludes": ["Ol Pejeta Conservation fee and bed-night levy", "Vehicle and driver entry fees", "Transfers", "Day trips", "All activities", "Guide", "Gratuities and personal expenses", "Driver/Guide accommodation & meals"]
+  },
+  "childPolicy": { "raw": "Below 12 years pay 50% of adult rate; below 3 years free of charge.", "verified": true },
+  "minStay": "2 nights (special offers not applicable 16 Dec-6 Jan)",
+  "singleSupplement_perPersonPerNight": { "highSeason": { "rack": 355, "contract": 248 }, "midLowSeason": { "rack": 295, "contract": 207 }, "verified": true },
+  "guideAccommodation_perGuidePerNight": {
+    "driverGuideAccommodationAndMeals": { "rack": 25, "contract": 18 },
+    "tourLeaderAccommodationEatingWithGuests": { "rack": 95, "contract": 67 },
+    "note": "Excludes Ol Pejeta Conservation fee, vehicle entry fee, bed-night levy where applicable",
+    "verified": true
+  },
+  "specialOffers": [
+    "Stay 3+ nights in High season: pay Mid season rates",
+    "Stay 3+ nights in Mid season: pay Low season rates",
+    "Book & confirm within 1 week of travel: pay Low season rates",
+    "Not applicable for stays between 16 Dec and 6 Jan"
+  ],
+  "dayTripsAndOvernightWalkingCamp": {
+    "note": "Additional cost, must be prebooked/prepaid, weather-dependent, not commissionable",
+    "mtKenya": { "rack": 195, "unit": "per person, min 2, incl. park fees" },
+    "aberdaresNationalPark": { "rack": 195, "unit": "per person, min 2, incl. park fees" },
+    "ngareNdareForest": { "rack": 195, "unit": "per person, min 2, incl. park fees" },
+    "overnightWalkingCamp": { "contract": 170, "rack": 180, "unit": "per adult per night, min 2 people, no children under 12" }
+  },
+  "policies": {
+    "deposit": "20% of full payment to secure booking, remaining 80% due 60 days before arrival",
+    "cancellation": ">90 days: full refund less bank charges; 60-90 days: deposit forfeited; <60 days: non-refundable",
+    "travelInsurance": "Comprehensive travel/medical/evacuation insurance required, including delay/cancellation cover"
+  }
+}

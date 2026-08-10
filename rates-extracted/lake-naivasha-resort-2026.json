@@ -1,0 +1,36 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftoppm + visual image read (both PDFs are image-only/scanned, pdftotext returned nothing). NOT a Soroi property. Operated by Superior Hotels Kenya.",
+  "property": "Lake Naivasha Resort",
+  "operator": "Superior Hotels Kenya",
+  "region": "Lake Naivasha",
+  "source": { "nonResidentFile": "2026 CONTRACT RATES/KENYA/ACCOMODATION/Lake Naivasha Resort/LNR 2026 NON RESIDENT RATES.pdf", "residentFile": "2026 CONTRACT RATES/KENYA/ACCOMODATION/Lake Naivasha Resort/LNR 2026 RESIDENT RATES.pdf" },
+  "confidence": "confirmed-2026-08-06",
+  "nonResidentUSD": {
+    "unit": "per room per night",
+    "deluxeSingle": { "bb": 170, "hb": 190, "fb": 210 },
+    "deluxeDouble": { "bb": 200, "hb": 240, "fb": 270 },
+    "superiorSingle": { "bb": 190, "hb": 210, "fb": 230 },
+    "superiorDouble": { "bb": 220, "hb": 270, "fb": 300 },
+    "executivePenthouse3br": 1600,
+    "executivePenthouse4br": 2000,
+    "conference": { "fullDay": 50, "halfDay": 46, "unit": "USD per day per person" },
+    "additionalServices": { "photoSession1hr": 500, "swimmingAdult": 10, "swimmingKids": 5, "boatRidePerBoat": 40, "buffetLunch": 25 },
+    "childPolicy": { "under3SharingWithAdult": "Free", "age4to12SharingWithAdult": "25% of adult rate", "age4to12OwnRoom": "75% of room rate" },
+    "extraBed": "30% of double room rate",
+    "driverFacilitatorLunch": { "amount": 2500, "currency": "KES", "unit": "discounted rate" },
+    "cancellationPolicy": "All amendments/cancellations finalized 7 days prior to arrival; cancellations within 7 days incur a charge.",
+    "verified": true
+  },
+  "residentKES": {
+    "unit": "per room per night",
+    "deluxeRooms": { "bb": { "single": 14000, "double": 17000 }, "hb": { "single": 16000, "double": 21000 }, "fb": { "single": 18000, "double": 24000 } },
+    "superiorRooms": { "bb": { "single": 16000, "double": 19000 }, "hb": { "single": 18000, "double": 24000 }, "fb": { "single": 20000, "double": 27000 } },
+    "penthouse3br": 150000,
+    "penthouse4br": 200000,
+    "childPolicy": { "under3SharingWithAdult": "Free", "age4to12SharingWithAdult": "25% of adult rate", "age4to12OwnRoom": "75% of adult rate", "extraBedInRoom": 4000 },
+    "additionalServices": { "boatRide": 4200, "buffetLunchAdult": 3200, "buffetLunchKids": 1600, "swimmingAdult": 1000, "swimmingKids": 500, "photoSession1stHour": 50000 },
+    "groupRateThreshold": "3 nights, 10+ guests = Group Rate (inquire separately for 2026 Group Trading Terms)",
+    "conference": { "fullDay": 5000, "halfDay": 4500, "conferenceFullBoardDeluxeSingle": 21000, "exhibitionBooth3mx3m": 10000, "unit": "KES" },
+    "verified": true
+  }
+}

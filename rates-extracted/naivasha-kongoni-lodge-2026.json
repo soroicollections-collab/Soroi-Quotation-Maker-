@@ -1,0 +1,97 @@
+{
+  "property": "Naivasha Kongoni Lodge",
+  "operator": "Private Collection",
+  "region": "Lake Naivasha (Moi South Road)",
+  "isSoroiProperty": false,
+  "sourceFiles": [
+    "2026 CONTRACT RATES/KENYA/ACCOMODATION/NAIVASHA KONGONI LODGE/NAIVASHA KONGONI - NON RESIDENT RATES 2026.pdf",
+    "2026 CONTRACT RATES/KENYA/ACCOMODATION/NAIVASHA KONGONI LODGE/NAIVASHA KONGONI RESIDENT RATES 2026.pdf"
+  ],
+  "currency": { "nonResident": "USD", "resident": "KES", "verified": true },
+  "validity": "2 January 2026 - 31 December 2026 (non-resident sales contract); January-December 2026 (resident rate sheet)",
+  "notes": [
+    "Non-resident sheet gives three rate columns per room/meal-plan combo: Rack (public ceiling rate), Contract (Sunworld's discounted rate), Holiday (Easter/Christmas/New Year rate).",
+    "Family Cottage rate is priced for 2 adults + 2 children (3-11 years) as a package, not a standard per-person or per-room rate.",
+    "No seasonal (peak/shoulder/green) rate variation for non-resident rates beyond the 3 columns - Rack/Contract/Holiday. Resident sheet similarly has Rack/Contract/Holiday.",
+    "Booking release periods and deposit percentages vary by season (Peak: Jun/Jul/Aug & Feb; Festive: Easter/Christmas; Shoulder: Jan/Sep-mid Dec; Green: Mar/Apr/May) - these seasons govern DEPOSIT/CANCELLATION timing, not the room rate itself, which only varies by the Rack/Contract/Holiday split."
+  ],
+  "nonResident_USD_perNight": {
+    "rack": {
+      "deluxe_FB": { "single": 250, "double": 310 },
+      "executive_FB": { "single": 325, "double": 385 },
+      "familyCottage_FB_2adults2children": { "amount": 370 },
+      "deluxe_HB": { "single": 235, "double": 275 },
+      "executive_HB": { "single": 310, "double": 355 },
+      "familyCottage_HB_2adults2children": { "amount": 315 }
+    },
+    "contract_Sunworld": {
+      "deluxe_FB": { "single": 175, "double": 215 },
+      "executive_FB": { "single": 230, "double": 270 },
+      "familyCottage_FB_2adults2children": { "amount": 330 },
+      "deluxe_HB": { "single": 160, "double": 195 },
+      "executive_HB": { "single": 215, "double": 245 },
+      "familyCottage_HB_2adults2children": { "amount": 285 }
+    },
+    "holiday": {
+      "deluxe_FB": { "single": 195, "double": 260 },
+      "executive_FB": { "single": 250, "double": 315 },
+      "familyCottage_FB_2adults2children": { "amount": 405 },
+      "familyCottage_HB_2adults2children": { "amount": 357 }
+    },
+    "verified": true
+  },
+  "resident_KES_perNight": {
+    "rack": {
+      "deluxe_FB": { "single": 17050, "double": 21450 },
+      "executive_FB": { "single": 24750, "double": 28050 },
+      "deluxe_HB": { "single": 14850, "double": 18150 },
+      "executive_HB": { "single": 21450, "double": 24750 },
+      "familyCottageDeluxe_FB_2adults2children": 38500,
+      "familyCottageDeluxe_HB_2adults2children": 33000
+    },
+    "contract": {
+      "deluxe_FB": { "single": 15345, "double": 19305 },
+      "executive_FB": { "single": 22275, "double": 25245 },
+      "deluxe_HB": { "single": 13365, "double": 16335 },
+      "executive_HB": { "single": 19305, "double": 22275 },
+      "familyCottageDeluxe_FB_2adults2children": 34650,
+      "familyCottageDeluxe_HB_2adults2children": 29700
+    },
+    "holiday_EasterChristmasNewYear": {
+      "deluxe_FB": { "single": 21450, "double": 30250 },
+      "executive_FB": { "single": 24475, "double": 37950 },
+      "familyCottageDeluxe_FB_2adults2children": 42350,
+      "familyCottageDeluxe_HB_2adults2children": 37400
+    },
+    "includesBreakfastAndTaxes": true,
+    "verified": true
+  },
+  "childPolicy": {
+    "raw": "Below 3 years: free. 3-11 years: 50% of adult rate. Extra child in Family Cottage (3-11yrs): US$47/night (non-resident) or KES4,500/night (resident). 12+ years: charged as single adult.",
+    "verified": true
+  },
+  "activitiesAndExtras": [
+    { "item": "Fam trip / Tour Leader rate", "amount": "US$105 single, US$63 sharing twin/double", "verified": true },
+    { "item": "Full Day Conference", "amount": "US$42", "verified": true },
+    { "item": "Full Board Conference", "amount": "Half board accommodation rate + full day conference rate", "verified": true },
+    { "item": "Boat Ride (non-resident sheet)", "amount": "US$53 per boat, max 7 pax", "verified": true },
+    { "item": "Boat Ride (resident sheet)", "amount": "US$50 (inconsistent with non-resident sheet's US$53 - flagged, not reconciled)", "verified": true, "confidenceNote": "[Unverified] Two different boat ride prices appear across the non-resident ($53/boat) and resident ($50, no per-boat/per-person clarification) documents." },
+    { "item": "Guided Nature Walk", "amount": "US$25pp, half rate for children 3-11", "verified": true },
+    { "item": "Camping at Oloiden camping site", "amount": "US$25pp", "verified": true },
+    { "item": "Sundowner (resident sheet)", "amount": "US$25, includes a drink and snacks", "verified": true }
+  ],
+  "policies": {
+    "checkIn": "12:00", "checkOut": "10:00",
+    "depositBySeasonNonResident": {
+      "peak_JunJulAugFeb": "50% deposit, full payment 30 days prior",
+      "festive_EasterChristmas": "50% deposit, full payment 30 days prior",
+      "shoulder_JanSepMidDec": "25% deposit, full payment 7 days prior",
+      "green_MarAprMay": "25% deposit, full payment 7 days prior",
+      "within30days": "75% deposit, full payment 7 days prior"
+    },
+    "cancellationNonResident": "29-15 days: 25% of room charges; 14-3 days: 50%; within 48 hours or no-show: 100%",
+    "depositResident": "50% deposit on confirmation, balance before check-in",
+    "cancellationResident": "30+ days: 0% penalty, full deposit refund; 29-15 days: 25%; 14-2 days: 50%; 1 day prior/upon arrival/during stay/no-show: 100%",
+    "confidenceNote": "[Unverified] Cancellation policy differs between the non-resident (percentages of 'room charges for entire stay', tighter thresholds) and resident (percentages with a 0%-penalty >30 days band) documents - not reconciled, both quoted as stated in their respective source."
+  }
+}

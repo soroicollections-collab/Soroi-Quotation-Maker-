@@ -1,0 +1,27 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftotext -layout from 'The Hildana Lodge/The Hildana Lodge - Nett 20_ $ Rates 2027.pdf' (3pp, single property, clean tables). Location not explicitly stated but implied to be a farm/lodge near Mwatate/Voi (Tsavo area) based on transfer/nanny-accommodation notes.",
+  "property": "The Hildana Lodge",
+  "location": "Near Mwatate/Voi, Tsavo area (implied)",
+  "currency": "USD",
+  "validity": { "start": "2027-01-03", "end": "2028-01-02" },
+  "tier": "Nett 20% off Gross",
+  "unit": "per person per night, Full Board, flat all year (no seasons)",
+  "confidence": "confirmed-2027-08-06",
+  "rates": {
+    "adultSharing": { "gross": 450, "nett20": 360, "conservancyFee": 25 },
+    "single": { "gross": 560, "nett20": 448, "conservancyFee": 25 },
+    "child11to15": { "gross": 315, "nett20": 252, "conservancyFee": 19 },
+    "child4to10": { "gross": 225, "nett20": 180, "conservancyFee": 13 },
+    "verified": true,
+    "discountVerification": "Nett 20 = Gross x 0.80 exactly on every cell (e.g. 450*0.8=360, matches)."
+  },
+  "inclusions": "Full board accommodation, tea/coffee/drinking water, shared-vehicle game drives, sundowners (drinks extra), transfers to/from Farm Private Airstrip, factory/farm visits, laundry, taxes",
+  "exclusions": { "sgrTransfer": { "amount": 100, "unit": "per vehicle one way" }, "conservancyFee": "excluded (see rates above)", "barDrinks": "excluded", "activitiesExcursions": "excluded", "gratuities": "excluded", "shopPurchases": "excluded" },
+  "childPolicy": { "under4": "Free of charge", "verified": true },
+  "specials": { "threeNightsForPriceOfTwo": "Valid May & June 2027", "childrenUnder10Free": "Valid November 2027" },
+  "guideAccommodation": { "amount": 100, "unit": "per guide per night, full board only, drinks payable directly", "note": "No dedicated guide accommodation - guides stay in guest rooms at discounted rate; no nanny accommodation without pre-booking; drivers must find own accommodation in Mwatate or Voi" },
+  "lateCheckout": { "amount": 35, "unit": "per person, plus extra lunch $10", "note": "Room checkout remains 10am regardless; surcharge covers meals/activities until afternoon departure" },
+  "checkInOut": "Check-in from 12:00, check-out by 10:00",
+  "paymentTerms": "20% deposit to confirm; balance due 30 days before arrival (or immediately if booking within 45 days of travel)",
+  "cancellationPolicy": "45-30 days before arrival: 30% forfeited; less than 30 days/no-show: 100% forfeited"
+}

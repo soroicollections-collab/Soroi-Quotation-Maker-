@@ -1,0 +1,120 @@
+{
+  "$note": "Extracted 6 Aug 2026. Primary source PDF has a corrupted/non-standard font encoding that garbles LETTERS in pdftotext output (e.g. 'SINGLE' renders as 'SlN(;I,F,') but NUMBERS render correctly - this was independently verified by rendering pages 1-2 to PNG (150dpi) and visually cross-checking every rate cell against the pdftotext numeric output. All figures below are confirmed via that visual cross-check, not text-extraction alone. NOT a Soroi property. Covers THREE lodges under one contract: Mara Simba Lodge, Samburu Simba Lodge, Lake Naivasha Simba Lodge.",
+  "operator": "Simba Lodges",
+  "contractParty": "Sunworld Safaris",
+  "currency": "USD (non-resident, this contract) / KES (separate resident-rate PDFs, reference only)",
+  "unit": "per person per night unless noted",
+  "source": {
+    "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/SIMBA/SIMBA RATES 2026-SUNWORLD SAFARIS.pdf",
+    "verificationMethod": "pdftoppm -r 150 render of pages 1-2, visually read and cross-checked against pdftotext numeric output",
+    "residentFiles_referenceOnly": ["2026 resident rates - Jan to March 26.pdf", "Simba Lodges 2026 resident rates - April to June 26.pdf"]
+  },
+  "confidence": "confirmed-2026-08-06 (visual cross-check of scanned/garbled-font PDF)",
+  "generalTerms": {
+    "note": "All rates in US Dollars, non-resident clients only, inclusive of all taxes, net of commission.",
+    "halfBoardReduction": "Reduce USD 2.00 per person per night from Full Board rate.",
+    "roomAllocation": "Max 4 single rooms given at single rate, rest at double rate.",
+    "roadPackageFreebie": "1 adult sharing free for every 15 paying adults on Road Package only (max 4 tour leaders), non-residents only.",
+    "groundPackageInclusions": "2 game drives on sharing basis, airport transfers Mara/Samburu on sharing basis, Full Board accommodation. Excludes beverages, extra lunch, park fees, flight and other extra services.",
+    "circuitDiscount": "2 nights Mara + 1 night Naivasha + 2 nights Samburu (5 nights total) = 5% off contract rate for lodge accommodation only. Does not apply to Extra Services rates or Luxury Tent Supplement.",
+    "checkIn": "12 noon", "checkOut": "10:00am"
+  },
+  "properties": {
+    "maraSimbaLodge": {
+      "region": "Maasai Mara",
+      "fullBoard": {
+        "16Dec25-31Mar26": { "singlePP": 221, "doublePPS": 126 },
+        "01Apr26-31May26": { "singlePP": 75, "doublePPS": 75 },
+        "01Jun26-30Jun26": { "singlePP": 245, "doublePPS": 140 },
+        "01Jul26-31Oct26": { "singlePP": 420, "doublePPS": 240 },
+        "01Nov26-15Dec26": { "singlePP": 184, "doublePPS": 105 }
+      },
+      "groundPackage_perPersonAir": {
+        "16Dec25-31Mar26": { "single": 342, "double": 195 },
+        "01Apr26-31May26": { "single": 254, "double": 145 },
+        "01Jun26-30Jun26": { "single": 307, "double": 175 },
+        "01Jul26-31Oct26": { "single": 508, "double": 290 },
+        "01Nov26-15Dec26": { "single": 307, "double": 175 }
+      },
+      "luxuryTentSupplement": { "16Dec25-15Dec26": { "perAdult": 50, "perChild3to11": 25 } }
+    },
+    "lakeNaivashaSimbaLodge": {
+      "region": "Lake Naivasha",
+      "fullBoard": {
+        "16Dec25-31Mar26": { "singlePP": 228, "doublePPS": 130 },
+        "01Apr26-31May26": { "singlePP": 184, "doublePPS": 105 },
+        "01Jun26-30Jun26": { "singlePP": 245, "doublePPS": 140 },
+        "01Jul26-31Oct26": { "singlePP": 385, "doublePPS": 224 },
+        "01Nov26-15Dec26": { "singlePP": 228, "doublePPS": 130 }
+      }
+    },
+    "samburuSimbaLodge": {
+      "region": "Samburu",
+      "fullBoard": {
+        "16Dec25-31Mar26": { "singlePP": 167, "doublePPS": 95 },
+        "01Apr26-30Jun26": { "singlePP": 75, "doublePPS": 75 },
+        "01Jul26-31Oct26": { "singlePP": 202, "doublePPS": 115 },
+        "01Nov26-15Dec26": { "singlePP": 167, "doublePPS": 95 }
+      },
+      "groundPackage_perPersonAir": {
+        "16Dec25-31Mar26": { "single": 342, "double": 195 },
+        "01Apr26-30Jun26": { "single": 254, "double": 145 },
+        "01Jul26-31Oct26": { "single": 420, "double": 240 },
+        "01Nov26-15Dec26": { "single": 342, "double": 195 }
+      }
+    }
+  },
+  "childPolicy": {
+    "under3SharingWithAdult": "Free",
+    "age3to11": "50% of the rate",
+    "childSharingWithOneAdult": "Charged single room rate PLUS children's rate",
+    "childUnder12ExclusiveRoomUse": "75% of the above contract rates",
+    "age12AndAbove": "Considered adult",
+    "halfBoardPerChild3to11": "Reduce USD 1.00"
+  },
+  "extraServices_perAdult_perChild3to11": {
+    "courierAgentFamTripSingleByRoad": { "amount": "100.00 (single)", "perAdultDouble": 60, "perChild": "n/a" },
+    "courierAgentFamTripSingleByAir": { "amount": "165.00 (single)", "perAdultDouble": 100, "perChild": "n/a" },
+    "exclusiveUseVehiclePerDay": { "perAdult": 350, "perChild": "n/a" },
+    "gameDrivesPerPersonSharingMin4pax": { "perAdult": 40, "perChild": 40 },
+    "transferToKeekorokAirstripFromMaraSimbaMin4pax": { "perAdult": 40, "perChild": 40 },
+    "breakfastOrLunchOrDinner": { "perAdult": 30, "perChild": 15 },
+    "picnicLunch": { "perAdult": 28, "perChild": 28 },
+    "bushBreakfastMin6pax": { "perAdult": 35, "perChild": 35 },
+    "bushDinnerOrLunchMin6pax": { "perAdult": 50, "perChild": 50 },
+    "bomaBreakfastMin6pax": { "perAdult": 30, "perChild": 30 },
+    "bomaDinnerOrLunchMin6pax": { "perAdult": 40, "perChild": 40 },
+    "sundownerWithoutDrinksMin6pax": { "perAdult": 22, "perChild": 22 },
+    "christmasSupplement_24Dec-1Jan_pppn": { "perAdult": 35, "perChild": 17.5 },
+    "easterSupplement_4nights_pppn": { "perAdult": 20, "perChild": 10 },
+    "tripToCrescentIslandMin4pax_exclEntranceFee": { "perAdult": 40, "perChild": 40 },
+    "boatRidesAtNaivashaMin4pax": { "perAdult": 25, "perChild": 25 }
+  },
+  "cancellationPolicy": {
+    "period01Jun26to31Oct26AndFestive": [
+      { "daysBeforeArrival": "90-70", "charge": "25% of contract rate" },
+      { "daysBeforeArrival": "69-45", "charge": "50% of contract rate" },
+      { "daysBeforeArrival": "44-22", "charge": "75% of contract rate" },
+      { "daysBeforeArrival": "within 21 / no-show", "charge": "100% of booking value" }
+    ],
+    "restOfYear": [
+      { "daysBeforeArrival": "45-35", "charge": "25%" },
+      { "daysBeforeArrival": "34-15", "charge": "50%" },
+      { "daysBeforeArrival": "14-08", "charge": "75%" },
+      { "daysBeforeArrival": "within 7 / no-show", "charge": "100%" }
+    ]
+  },
+  "residentRates_KES_referenceOnly": {
+    "$note": "Separate PDFs, KES currency, applicable to residents of Kenya/Uganda/Tanzania/Rwanda/Burundi/Sudan. Only the Jan-Mar 2026 window was opened for this extraction; the Apr-Jun 2026 resident PDF exists in the folder but was not opened (out of scope - resident tier). Out of scope for standard non-resident quoting.",
+    "sourceFile": "2026 resident rates - Jan to March 26.pdf",
+    "window": "02-Jan-26 to 31-Mar-26 (Samburu & Mara); Lake Naivasha has 3 sub-windows within this period",
+    "samburuSimbaLodge": { "single": 14000, "double": 20000, "triple": 30000 },
+    "maraSimbaLodge": { "single": 20000, "double": 26000, "triple": 39000 },
+    "lakeNaivashaSimbaLodge": {
+      "02Jan-10Mar": { "single": 27000, "double": 33000, "triple": 49500 },
+      "11Mar-15Mar": { "single": 34000, "double": 39000, "triple": 58500 },
+      "16Mar-31Mar": { "single": 22000, "double": 28000, "triple": 42000 }
+    },
+    "childPolicy_resident": { "under3": "Free sharing with adult", "age3to11Sharing": "50% of per-person double rate, net", "under12ExclusiveSingle": "75% of single, net", "twoChildrenUnder12ExclusiveDouble": "75% of double, net", "tentSupplementAdult": 4000, "tentSupplementChild": 2000 }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "$note": "Fresh extraction, 6 Aug 2026, read directly from the property's own pages (pages 7-8 of 34) in 'Soroi - 2027 STO 40% Contract Rates.pdf' (see cheetah-tented-camp-sto40-2027.json for full provenance/duplicate-file note).",
+  "property": "Soroi Larsens Camp",
+  "region": "Samburu",
+  "tier": "STO 40%",
+  "residency": "Non-Resident",
+  "source": {
+    "file": "2027 CONTRACT RATES/KENYA/ACCOMODATIONS/SOROI/Soroi - 2027 STO 40% Contract Rates.pdf",
+    "pdfPageIndexes": [6, 7],
+    "docPrintedPageNumbers": [7, 8],
+    "validity": { "start": "2027-01-04", "end": "2028-01-03" }
+  },
+  "confidence": "confirmed-2026-08-06",
+  "extractionMethod": {
+    "note": "Read per-page via pdftotext, cross-checked against neighboring Samburu Lodge pages (9-11).",
+    "misattributionCheck": { "checked": true, "result": "No misattribution - each page carries its own 'SOROI LARSENS CAMP' header directly with its figures." }
+  },
+  "seasons": {
+    "peak": { "dateRanges": ["1 Jul – 30 Sep", "20 Dec – 3 Jan 2028"] },
+    "shoulder": { "dateRanges": ["4 Jan – 28 Feb", "1 Jun – 30 Jun"] },
+    "green": { "dateRanges": ["1 Mar – 31 May", "1 Oct – 19 Dec"] }
+  },
+  "accommodation": {
+    "luxuryTents": {
+      "roomNote": "12 Luxury Tents + 2 Two-Bedroom Family Units.",
+      "currency": "USD",
+      "unit": "per person per night",
+      "fullBoard": {
+        "perPerson": { "peak": { "rack": 750, "net": 450 }, "shoulder": { "rack": 640, "net": 384 }, "green": { "rack": 535, "net": 321 } },
+        "single": { "peak": { "rack": 1125, "net": 675 }, "shoulder": { "rack": 960, "net": 576 }, "green": { "rack": 669, "net": 401 } },
+        "familyUnit": { "peak": { "rack": 3000, "net": 1800 }, "shoulder": { "rack": 2560, "net": 1536 }, "green": { "rack": 2140, "net": 1284 } }
+      },
+      "groundPackage": {
+        "perPerson": { "peak": { "rack": 970, "net": 582 }, "shoulder": { "rack": 860, "net": 516 }, "green": { "rack": 755, "net": 453 } },
+        "single": { "peak": { "rack": 1455, "net": 873 }, "shoulder": { "rack": 1290, "net": 774 }, "green": { "rack": 944, "net": 566 } },
+        "familyUnit": { "peak": { "rack": 3880, "net": 2328 }, "shoulder": { "rack": 3440, "net": 2064 }, "green": { "rack": 3020, "net": 1812 } }
+      }
+    },
+    "starBedSuites": {
+      "roomNote": "Two Star-Bed Suites (Deluxe Suites). Children below 8 years NOT allowed.",
+      "currency": "USD",
+      "unit": "per person per night",
+      "fullBoard": {
+        "perPerson": { "peak": { "rack": 970, "net": 582 }, "shoulder": { "rack": 790, "net": 474 }, "green": { "rack": 655, "net": 393 } },
+        "single": { "peak": { "rack": 1455, "net": 873 }, "shoulder": { "rack": 1185, "net": 711 }, "green": { "rack": 819, "net": 491 } }
+      },
+      "groundPackage": {
+        "perPerson": { "peak": { "rack": 1190, "net": 714 }, "shoulder": { "rack": 1010, "net": 606 }, "green": { "rack": 875, "net": 525 } },
+        "single": { "peak": { "rack": 1785, "net": 1071 }, "shoulder": { "rack": 1515, "net": 909 }, "green": { "rack": 1094, "net": 656 } }
+      }
+    }
+  },
+  "discountRatioCheck": { "note": "Net = Rack x 0.60 confirmed exactly (nearest-integer rounding) on every cell in both room categories - same relationship confirmed on every Soroi property in this document.", "verified": true },
+  "mandatoryFees": {
+    "note": "Single combined 'Samburu Reserve fee', flat rate, unaffected by tier.",
+    "verified": true,
+    "verifiedDate": "2026-08-06",
+    "samburuReserveFee": { "adult": 85, "child": 50, "unit": "per night" }
+  },
+  "portfolioWideTerms": {
+    "childAge5to11": "50% of adult sharing rate",
+    "youngAdult12to17Sharing": "75% of adult rate",
+    "tourLeaderGuide": { "inTLTent": 175, "inGuestTent": "75% of adult single rate" },
+    "privateGuideMeals": { "amount": 50, "unit": "per day" },
+    "christmasNewYearSupplement": { "adult": 40, "child": 20, "unit": "per night" },
+    "propertySpecificNote": "Tour Leader ($175) and Private Guide meals ($50/day) here are HIGHER than Samburu Lodge's own page ($135/$35) - same as the Rack tier, confirming this isn't tier-dependent either."
+  }
+}

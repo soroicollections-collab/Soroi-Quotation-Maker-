@@ -1,0 +1,15 @@
+{
+  "$note": "Extracted 6 Aug 2026. Source is a forwarded email (16 May 2025) from Tambuzi Farm to Sunworld Safaris, not a formal rate sheet. NOT a Soroi property, and NOT confirmed to be overnight accommodation at all - the email gives a single flat per-person rate with no mention of meal plan, room type, or 'per night' - this reads more like a farm visit/tour rate (Tambuzi is a well-known rose/flower farm near Nanyuki known for garden tours) than a lodging rate. Flagged as low-confidence and possibly out of scope for this project's accommodation extraction.",
+  "property": "Tambuzi Farm",
+  "region": "Nanyuki, Laikipia",
+  "source": {
+    "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/TAMBUZI/TAMBUZI FARM 2026 rates.pdf",
+    "documentType": "Forwarded email thread, not a formal rate sheet"
+  },
+  "confidence": "low-confidence-2026-08-06 - single-line informal quote, unclear if this is an accommodation rate or a farm-visit/tour rate",
+  "rates": {
+    "resident_KES": 3500,
+    "nonResident_USD": 50
+  },
+  "confidenceNote": "[Unverified] No unit is stated (per night? per visit? per person for a garden tour?), no meal plan, no seasonality, no child policy. Given Tambuzi's public reputation as a flower-farm garden-tour destination rather than a lodge, this figure may represent a day-visit/tour rate rather than overnight accommodation. Confirm directly with Tambuzi (edwin.mugo@tambuzi.co.ke) before using in any itinerary that assumes an overnight stay."
+}

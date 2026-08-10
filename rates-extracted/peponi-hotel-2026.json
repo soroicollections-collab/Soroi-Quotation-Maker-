@@ -1,0 +1,58 @@
+{
+  "$note": "Extracted 6 Aug 2026 via direct visual read of the source PDF — image-only (pdftotext returned 0 lines, confirmed via pdfinfo). Single clean page, fully legible table, high confidence despite not being machine-text-extracted.",
+  "property": "Peponi Hotel",
+  "region": "Lamu Island, Kenya Coast",
+  "tier": "Non-Resident Rate",
+  "residency": "Non-Resident",
+  "source": {
+    "file": "2026 CONTRACT RATES/KENYA/BEACH ACCOMODATION/Peponi Hotel/Non-Resident rates 2025-2026.pdf",
+    "pdfPageIndex": 0,
+    "totalPages": 1,
+    "extractionMethod": "Image-only PDF — read visually via the PDF-rendering tool.",
+    "validity": { "note": "Filename says '2025-2026' and the season table itself runs 15 Dec 2025 - 14 Dec 2026, i.e. covers essentially the full 2026 calendar year. No year mismatch concern here (unlike Pristine Mara Bay/Travellers Beach/Warm Sea Sand Villa) — the full 2026 year is genuinely priced." }
+  },
+  "confidence": "confirmed-visual-read-2026-08-06",
+  "structuralFindings": [
+    "Rates are per ROOM (Single/Double), not per person — Single B&B = 1 person, Double B&B = 2 persons, each its own flat room rate.",
+    "Base meal plan is Bed & Breakfast only — no Half Board/Full Board/All-Inclusive option offered on this rate sheet at all.",
+    "Two room categories: Standard and Superior.",
+    "Three seasons: High (15 Dec 2025-28 Feb 2026), Mid (1 Mar-30 Apr & 1 Jul-14 Dec 2026 — two non-contiguous windows), Low (1 May-30 Jun 2026).",
+    "Extra bed rate is a flat B&B add-on split only by age bracket (3-11 yrs vs 12+ yrs), not by season or room category — same $95/$110 regardless of High/Mid/Low season.",
+    "Complimentary inclusions are notably generous for this rate: shared airport transfers on check-in/check-out dates, daily Lamu Town trips via the hotel's motorised dhow, and a welcome drink on arrival — all bundled into the room rate at no extra charge.",
+    "Rates stated as commissionable to Bonafide Travel Agents & Tour Operators — relevant for Sunworld's own commission structure.",
+    "Minimum-night stays 'may apply at certain times of year' but no specific nights/dates given — flag as an open question if booking during a likely high-demand window."
+  ],
+  "seasons": {
+    "high": { "dateRange": "15 Dec 2025 - 28 Feb 2026" },
+    "mid": { "dateRanges": ["1 Mar - 30 Apr 2026", "1 Jul - 14 Dec 2026"] },
+    "low": { "dateRange": "1 May - 30 Jun 2026" }
+  },
+  "rates": {
+    "currency": "USD",
+    "unit": "per room per night, Bed & Breakfast",
+    "verified": true,
+    "high": {
+      "standard": { "singleBB_1person": 345, "doubleBB_2persons": 460 },
+      "superior": { "singleBB_1person": 405, "doubleBB_2persons": 540 }
+    },
+    "mid": {
+      "standard": { "singleBB_1person": 280, "doubleBB_2persons": 375 },
+      "superior": { "singleBB_1person": 345, "doubleBB_2persons": 460 }
+    },
+    "low": {
+      "standard": { "singleBB_1person": 245, "doubleBB_2persons": 325 },
+      "superior": { "singleBB_1person": 300, "doubleBB_2persons": 400 }
+    }
+  },
+  "extraBedBB": {
+    "unit": "USD, flat across all seasons",
+    "age3to11": 95,
+    "age12Plus": 110
+  },
+  "taxesAndFees": { "note": "Rates inclusive of all applicable taxes." },
+  "complimentaryInclusions": ["Shared airport transfers on check-in and check-out dates only", "Daily Lamu Town trips via motorised dhow", "Welcome drink on arrival"],
+  "termsNotes": ["Cancellation charges may apply — confirm directly with hotel", "Minimum night stays may apply at certain times of year — enquire", "Rates commissionable to Bonafide Travel Agents & Tour Operators", "Rates and terms subject to change without notice"],
+  "notExtracted": {
+    "residentRates": "Resident rates 2025-2026.pdf — not extracted (out of scope for this non-resident pass). Exists on file if needed."
+  }
+}

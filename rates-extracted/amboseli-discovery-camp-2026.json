@@ -1,0 +1,35 @@
+{
+  "$note": "Extracted 6 Aug 2026 from two PDFs: 'AMBOSELI DISCOVERY CAMP RATES 2026-2027' (titled 'Resident Rates' but priced in KSH) and 'Amboseli Discovery Camp Non Resident Rates 2026-2027' (USD). Not a Soroi property.",
+  "property": "Amboseli Discovery Camp",
+  "operator": "Amboseli Discovery Camp (independent, Emali)",
+  "region": "Amboseli",
+  "tier": "Resident (KSH) and Non-Resident (USD) rack/contract rates",
+  "source": {
+    "files": [
+      "2026 CONTRACT RATES/KENYA/ACCOMODATION/Amboseli Discovery Camp/AMBOSELI DISCOVERY CAMP RATES 2026-2027 .pdf",
+      "2026 CONTRACT RATES/KENYA/ACCOMODATION/Amboseli Discovery Camp/Amboseli Discovery Camp Non Resident Rates. 2026-2027.pdf"
+    ],
+    "validity": "2026-2027 (exact end date not printed on either document)"
+  },
+  "rates": {
+    "unit": "per person per night, Full Board, inclusive of lodging/meals/conservation fee/tax/service",
+    "residentKSH": {
+      "05Jan-31Mar": { "single": 18562, "double": 24750, "triple": 30937, "familyTent": 50625, "familyCottage": 67500, "childUnder12": 10100 },
+      "01Apr-30Jun": { "single": 18562, "double": 24750, "triple": 28125, "familyTent": 50625, "familyCottage": 67500, "childUnder12": 10100 },
+      "01Jul-31Aug": { "single": 24750, "double": 30937, "triple": 37125, "familyTent": 56250, "familyCottage": 73125, "childUnder12": 12500 },
+      "01Sep-19Dec": { "single": 24750, "double": 30937, "triple": 37125, "familyTent": 56250, "familyCottage": 73125, "childUnder12": 12500 },
+      "20Dec-04Jan": { "single": 24750, "double": 30937, "triple": 37125, "familyTent": 56250, "familyCottage": 73125, "childUnder12": 12500 }
+    },
+    "nonResidentUSD": {
+      "05Jan-31Mar26": { "single": 180, "double": 250, "triple": 280, "familyTent": 500, "familyCottage": 600, "childUnder12": 100 },
+      "01Apr-30Jun26": { "single": 185, "double": 250, "triple": 280, "familyTent": 500, "familyCottage": 600, "childUnder12": 100 },
+      "01Jul-31Aug26": { "single": 250, "double": 320, "triple": 350, "familyTent": 640, "familyCottage": 690, "childUnder12": 120 },
+      "01Sep-19Dec26": { "single": 250, "double": 320, "triple": 350, "familyTent": 640, "familyCottage": 690, "childUnder12": 120 },
+      "20Dec26-04Jan27": { "single": 250, "double": 320, "triple": 350, "familyTent": 640, "familyCottage": 690, "childUnder12": 120 }
+    }
+  },
+  "otherRates": { "agentFee": "15% less of total reservation value", "residentDiscount": "10% less than non-resident rate (per non-resident doc)" },
+  "childPolicy": { "1to4": "Free", "over12": "Full price", "tourLeader": "Free with 5 paying adults" },
+  "confidenceNote": "[Inference] The KSH document is headed 'Resident Rates' yet the non-resident USD document separately states 'Resident rate: 10% less of non-resident rate' - these two resident definitions do not obviously reconcile (the KSH sheet's implied USD-equivalent is not 10% below the USD sheet at every band). Flag and confirm with the camp before quoting a Resident rate.",
+  "extras": { "fullDaySafariExcursion": "$250 per family group (park fees not included)", "nairobiPickupDropoff": "$250 per group 1-6 pax", "emaliTrainStationTransfer": "$100 per group each way" }
+}

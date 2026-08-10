@@ -1,0 +1,76 @@
+{
+  "$note": "Extracted 6 Aug 2026 directly from paginated source PDF. IMPORTANT STRUCTURAL FINDING: this single PDF bundles rates for TWO distinct accommodation products under one 'Billionaire Retreat' brand umbrella — 'Lion in the Sun' (16-room retreat) and 'Billionaire Beachfront Apartments' (separately branded apartments, same compound) — plus references a THIRD product, 'Billionaire Residence', on page 3 with no usable rate table (see notExtracted). Treat as three related-but-distinct rate sets, not one property.",
+  "property": "Lion in the Sun (Billionaire Retreat)",
+  "region": "Kenyan Coast (property's own marketing text; exact beach location not stated on these pages)",
+  "tier": "Agent Rate",
+  "residency": "Non-Resident (USD)",
+  "source": {
+    "file": "2026 CONTRACT RATES/KENYA/BEACH ACCOMODATION/Lion in The Sun/Lion in The Sun 2026 USD AGENT RATES.pdf",
+    "pdfPageIndex": 0,
+    "totalPages": 3,
+    "validity": { "note": "Document titled '2026 USD AGENT RATES' / '2026 USD RACK RATES' for the two priced products; no explicit start/end date beyond the season table below, which runs 7 Jan 2026 - 6 Jan 2027 (Peak spans the year boundary)." }
+  },
+  "confidence": "confirmed-2026-08-06",
+  "extractionMethod": { "note": "Read directly via pdftotext -layout across all 3 pages. Season column headers wrap across two source lines each (e.g. '7th Jan-28th Feb' pairs with '1-31st Aug' as one combined column) — reconstructed carefully from the raw layout, cross-checked against the KES sibling file's cleaner column rendering to confirm the pairing." },
+  "structuralFindings": [
+    "Rates for BOTH 'Lion in the Sun' rooms and 'Billionaire Beachfront Apartments' are quoted per-room/per-apartment per night, NOT per-person — a different unit from most other properties in this batch. Meal plan is a separate per-person-per-night supplement added on top (base rate is effectively Room/Apartment Only).",
+    "Three pricing columns, each combining TWO non-contiguous date ranges: Column A = 7 Jan-28 Feb + 1-31 Aug; Column B = 1 Mar-31 Jul + 1 Sep-25 Dec; Column C (Peak) = 26 Dec-6 Jan. This is a distinct season shape from every other property extracted so far.",
+    "Lion in the Sun 'Exclusive Villa Use' is On Request only, priced for 8 pax as a single villa-use rate (not per-person).",
+    "Billionaire Beachfront Apartments are priced per-apartment for a stated base pax count (2/4/6/8) that scales with bedroom count — closer to Leopard Beach's Residence villa model than a per-person rate.",
+    "Single occupancy at Lion in the Sun gets a 20% DISCOUNT off the room rate (not the usual supplement/surcharge seen elsewhere) — but explicitly 'ADULT ONLY, KIDS > 12 YO', meaning a child over 12 booked alone would not qualify at the reduced single rate (worded ambiguously — see confidenceNote).",
+    "Child policy differs between the two products: Lion in the Sun states only 'kids > 12yo' in the single-use clause (no explicit child-in-room discount stated for Lion in the Sun rooms); Beachfront Apartments separately state Kids 0-2.99 free, 3-11.99 = 50%. Do not apply the Apartments' child policy to Lion in the Sun rooms or vice versa.",
+    "Peak season minimum stay is 7 nights for both products.",
+    "Xmas Eve supplement ($160pp) and New Year 'White Party' supplement ($330pp) apply to both products identically — shared retreat-wide event surcharges."
+  ],
+  "seasons": {
+    "columnA": { "dateRanges": ["7 Jan - 28 Feb 2026", "1 - 31 Aug 2026"] },
+    "columnB": { "dateRanges": ["1 Mar - 31 Jul 2026", "1 Sep - 25 Dec 2026"] },
+    "peak": { "dateRanges": ["26 Dec 2026 - 6 Jan 2027"], "minimumStay": "7 nights" }
+  },
+  "lionInTheSun": {
+    "unit": "per room per night, room-only (meal plan is a separate supplement)",
+    "currency": "USD",
+    "basePax": 2,
+    "rates": {
+      "standard": { "columnA": 195, "columnB": 150, "peak": 484 },
+      "superior": { "columnA": 215, "columnB": 190, "peak": 506 },
+      "suite": { "columnA": 282, "columnB": 250, "peak": 528 },
+      "masterSuite": { "columnA": 388, "columnB": 322, "peak": 660 },
+      "exclusiveVillaUse": { "columnA": 1520, "columnB": 1300, "peak": 2500, "basePax": 8, "note": "On Request only" }
+    },
+    "verified": true,
+    "mealPlanSupplements": {
+      "unit": "USD per person per night, added to room rate",
+      "halfBoard": { "amount": 40, "definition": "Breakfast & lunch or dinner" },
+      "fullBoard": { "amount": 70, "definition": "Breakfast, lunch and dinner" },
+      "allInclusive": { "amount": 90, "definition": "Full Board with selected beverages" }
+    },
+    "singleOccupancy": { "discount": "20% off", "note": "[Unverified interpretation] Source text: 'Single USE 20% Off ADULT ONLY KIDS > 12 YO'. Read as: the 20% single-occupancy discount applies to an adult travelling alone; a child over 12 travelling/booked as sole occupant may be priced as an adult rather than qualifying for a child rate. Confirm exact intent with the property before quoting a solo minor." }
+  },
+  "billionaireBeachfrontApartments": {
+    "unit": "per apartment per night",
+    "currency": "USD",
+    "rates": {
+      "oneBedroom": { "basePax": 2, "columnA": 422, "columnB": 360, "peak": 712 },
+      "twoBedroom": { "basePax": 4, "columnA": 519, "columnB": 484, "peak": 968 },
+      "threeBedroom": { "basePax": 6, "columnA": 726, "columnB": 678, "peak": 1232 },
+      "fourBedroom": { "basePax": 8, "columnA": 920, "columnB": 730, "peak": 2200 }
+    },
+    "verified": true,
+    "childPolicy": { "age0to2.99": "Free", "age3to11.99": "50%" },
+    "mealPlanNote": "In-Apartment Dining (family share service) mentioned in amenities list; no separate meal-plan supplement table stated on this page for the Apartments — unlike Lion in the Sun's explicit HB/FB/AI supplement table. [Unverified] Whether the Apartments' quoted rate already includes B&B or is room-only is not explicitly stated here."
+  },
+  "sharedEventSupplements": {
+    "unit": "USD per person",
+    "xmasEve": 160,
+    "newYearWhiteParty": 330
+  },
+  "amenities": {
+    "lionInTheSun": ["Reception 24/7", "Security 24/7", "Pool", "Air Condition", "Lion In the Sun Restaurant & Bar", "Restaurant Beach & Grill (closed 1 Mar-14 Jul & 15 Sep-1 Dec)", "Beach Bar and Snacks", "Airport Transfer", "Beach facilities", "Complimentary WiFi", "Retreat Shuttle 7am-11pm", "Bicycles", "Tennis Court at Residency", "Gym", "Yoga & Personal Trainer (on request)", "Spa"],
+    "billionaireBeachfrontApartments": ["Reception 7-11pm", "24/7 security", "Infinity Pool", "Air Condition", "In-Apartment Dining (family share service)", "Restaurant Beach & Grill (same closure dates)", "Beach Bar and Snack", "Airport Transfer", "Private Beach (gazebo, sunbeds, towels)", "Complimentary WiFi", "Retreat Shuttle 7am-11pm", "Bicycles", "Tennis Court", "Gym", "Yoga & Personal Trainer (on request)", "24hr Security", "Spa", "Taxi Service"]
+  },
+  "notExtracted": {
+    "billionaireResidence": "Page 3 of this same PDF references a THIRD product, 'The Billionaire Residence', described as 'RE: 2025 EURO Net Rates per Apartment per Night in B&B' — note this is EUR currency and a 2025 validity year, unlike the USD/2026 figures above. No numeric rate table rendered as extractable text on this page (only descriptive marketing bullets came through via pdftotext) — the table itself may be image-based or was cut off. Do NOT use for a 2026 quote; flag as needing manual visual review or a re-request from the property if a Billionaire Residence quote is ever needed.",
+    "residentRates": "Lion in The Sun 2026 KES AGENT RATES (1).pdf — spot-checked for structural confirmation only (confirms same season-column shape, KES currency, e.g. Standard KES 25,064/19,380/62,533), not fully extracted since Resident tier is out of scope for this non-resident pass."
+  }
+}

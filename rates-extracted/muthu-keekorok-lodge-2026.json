@@ -1,0 +1,56 @@
+{
+  "property": "Muthu Keekorok Lodge",
+  "operator": "MGM Muthu Hotels",
+  "region": "Maasai Mara",
+  "isSoroiProperty": false,
+  "sourceFiles": [
+    "2026 CONTRACT RATES/KENYA/ACCOMODATION/MUTHU/Muthu - SUNWORLD SAFARIS - 2026 Contract Rates.pdf",
+    "2026 CONTRACT RATES/KENYA/ACCOMODATION/MUTHU HOTELS/MUTHU HOTELS - SUNWORLD SAFARIS - 2026 Contract Rates.pdf"
+  ],
+  "notes": [
+    "This single Sunworld contract covers 4 MGM Muthu properties (Keekorok Lodge, Lake Naivasha Country Club, Sovereign Suites & Spa, Silver Springs & Spa) - one JSON file written per property; shared terms (circuit/group discounts, cancellation, payment) repeated in each.",
+    "Identical PDF exists in both the 'MUTHU' and 'MUTHU HOTELS' folders (byte-for-byte same content confirmed by reading both) - a filing duplication, not a discrepancy.",
+    "52 Standard Rooms, 15 Premium Rooms, 20 Chalets, 10 Luxury Cottages, 1 Executive Suite, 1 Presidential Suite (3 bedrooms).",
+    "This is a distinct property from 'Muthu Mara River Lodge' (new opening promo, also in the MUTHU folder) - see muthu-mara-river-lodge-2026.json."
+  ],
+  "currency": "USD",
+  "validity": "CY 2026 (Jan-Dec 2026)",
+  "fullBoardRates_perPersonPerNight": {
+    "shoulder": { "dates": "1 Jan-28 Feb, 16-30 Jun, 16 Sep-22 Dec", "single": 195, "double": 245, "extraAdult": 70, "child": 50 },
+    "low": { "dates": "1 Mar-15 Jun", "single": 155, "double": 205, "extraAdult": 70, "child": 50 },
+    "peak": { "dates": "1 Jul-15 Sep, 23-31 Dec", "single": 505, "double": 555, "extraAdult": 150, "child": 70 },
+    "verified": true
+  },
+  "groundPackageRates_perPersonPerNight": {
+    "minimumPax": 2,
+    "includes": ["Full board accommodation", "Return airstrip transfers", "2 game drives per day, 2 hours each, sharing basis"],
+    "peak": { "dates": "1 Jul-15 Sep, 23-31 Dec", "single": 450, "double": 650, "extraAdult": 325, "child": 163 },
+    "shoulder": { "dates": "1 Jan-28 Feb, 16-30 Jun, 16 Sep-22 Dec", "single": 360, "double": 450, "extraAdult": 225, "child": 112 },
+    "low": { "dates": "1 Mar-15 Jun", "single": 320, "double": 375, "extraAdult": 188, "child": 94 },
+    "verified": true
+  },
+  "roomSupplements_perRoomPerNight": {
+    "chalet": 30, "premium": 40, "luxury": 100, "executiveSuite": 150, "presidentialSuite": 1000,
+    "verified": true
+  },
+  "gameDrives_exclusiveVehicle": {
+    "halfDay": 350, "fullDay": 450, "sharing2hr": 60, "exclusive2hr": 250,
+    "airstripTransfer": "US$30 per person one way",
+    "verified": true
+  },
+  "extraMealRates_perPersonPerDay": { "extraMealInHouse": 30, "lunch": 30, "dinner": 30, "picnicBox": 30, "verified": true },
+  "childPolicy": { "raw": "0-5yrs sharing with parents free. 6-11yrs child sharing rate applies. Two children in own room: 75% of twin rate (per person). Three children in own room: full twin rate.", "verified": true },
+  "seasonalSupplements": { "easter": "US$40 pppd (Good Friday-Easter Monday)", "christmas": "US$45 pppd (24, 25, 26, 31 Dec, 1 Jan)", "verified": true },
+  "halfBoardReduction": { "raw": "Applicable at Keekorok Lodge & Lake Naivasha Country Club - child 50%", "verified": true },
+  "circuitDiscounts": { "twoProperties": "4%", "threeProperties": "7%", "fourProperties": "9%", "note": "Must be indicated on booking voucher", "verified": true },
+  "groupDiscount": { "raw": "7.5% off applicable rate for 20+ rooms or 40+ guests on a single voucher. Not applicable in Peak/Festive season, not for >70% of property inventory, not for allotments.", "verified": true },
+  "famTripRate": { "raw": "50% discount off contract rate, subject to availability, not applicable Easter/Christmas/Peak", "verified": true },
+  "tourLeaderRates": { "raw": "1-6 paying pax: half twin rate. 7-14 paying pax: 50% of half twin rate. Complimentary: 1 per 15 paying guests, max 5 free, must be pre-booked.", "verified": true },
+  "policies": {
+    "checkIn": "13:30 EAT", "checkOut": "09:30 EAT",
+    "deposit": "20% non-refundable on proforma invoice to secure booking; further 50% non-refundable 90 days before arrival; balance 30 days before arrival. Peak/Festive: 30% then 45% then balance on same schedule.",
+    "cancellationPeakFestive": "0-30 days: 100%; 31-75 days: 75%",
+    "cancellationShoulder": "0-30 days: 100%; 31-45 days: 50%",
+    "cancellationLow": "0-30 days: 100%"
+  }
+}

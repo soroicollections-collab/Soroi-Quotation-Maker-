@@ -1,0 +1,33 @@
+{
+  "$note": "Extracted 6 Aug 2026 via whole-file pdftotext read of 'Fairmont Mount Kenya Safari Club- Sunworld Safaris -2026 Contract.pdf' (7 pages). This is a signed FIT/Tour Static Wholesale Agreement extended to 5 Jan 2027, per the cover letter dated 11 Jul 2025.",
+  "property": "Fairmont Mount Kenya Safari Club",
+  "operator": "Mount Kenya Safari Club Ltd (Fairmont-branded)",
+  "region": "Nanyuki, Mount Kenya",
+  "tier": "FIT/Tour Static Wholesale rate, Full Board",
+  "source": { "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/FAIRMONT HOTELS/MOUNT KENYA SAFARI CLUB/Fairmont Mount Kenya Safari Club- Sunworld Safaris -2026 Contract.pdf", "validity": { "start": "2026-01-06", "end": "2027-01-05" } },
+  "seasons": {
+    "regular": "06 Jan-02 Apr, 07 Apr-13 Jun, 18 Sep-18 Dec 2026",
+    "shoulder": "14-30 Jun 2026, 04-17 Sep 2026",
+    "peak": "01 Jul-03 Sep 2026, 03-06 Apr 2026, 19 Dec 2026-05 Jan 2027"
+  },
+  "rates": {
+    "currency": "USD", "unit": "per room per night, Full Board incl. 16% VAT/10% service/2% training levy",
+    "fairmontRiversideDeluxe": { "regular": { "single": 365, "double": 490 }, "shoulder": { "single": 445, "double": 570 }, "peak": { "single": 645, "double": 750 } },
+    "fairmontSuite": { "regular": { "single": 515, "double": 640 }, "shoulder": { "single": 595, "double": 720 }, "peak": { "single": 795, "double": 900 } },
+    "riversideSuite": { "regular": { "single": 665, "double": 790 }, "shoulder": { "single": 745, "double": 870 }, "peak": { "single": 945, "double": 1050 } },
+    "gardenSuite": { "regular": { "single": 665, "double": 790 }, "shoulder": { "single": 745, "double": 870 }, "peak": { "single": 945, "double": 1050 } },
+    "manorJuniorSuite": { "regular": { "single": 765, "double": 890 }, "shoulder": { "single": 845, "double": 970 }, "peak": { "single": 1045, "double": 1150 } },
+    "manorEquatorialSuite": { "regular": { "single": 865, "double": 990 }, "shoulder": { "single": 945, "double": 1070 }, "peak": { "single": 1145, "double": 1250 } },
+    "williamHoldenTwoBedroomSuite_4adults_perUnit": { "regular": 1390, "shoulder": 1470, "peak": 1650 },
+    "batianSendeoVilla_4adults_perUnit": { "regular": 1490, "shoulder": 1570, "peak": 1750 }
+  },
+  "mandatoryFees": { "conservancyFee": { "adult": 35, "child6to12": 18, "unit": "USD per person per STAY (not per night)", "note": "Gives unlimited access to animal orphanage and select activities in Mount Kenya Wildlife Conservancy" } },
+  "childPolicy": {
+    "0to5": "Free",
+    "6to12": "$70 per night supplement (full board basis)",
+    "12plusOr3rdAdult": "$120 per night supplement",
+    "ownRoomRestriction": "Children under 12 can only be in own room if interconnecting with adult room; 6-12yr in own interconnecting room charged 75% of room rate per occupancy"
+  },
+  "multiPropertyDiscount": { "twoFairmontKenyaHotels": "5%", "threeFairmontKenyaHotels": "10%" },
+  "notes": "Day use 75% of full rate. Non-commissionable. Cancellation: Peak 100%(0-21d)/50%(21-45d)/25%(45-60d); Shoulder/Regular 100%(0-7d)/50%(8-21d)/25%(21-45d). Complimentary room: 16th pax free (max 2/group, deluxe category only, groups 15+)."
+}

@@ -1,0 +1,23 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftotext -layout. NOT a Soroi property. Nairobi (Karen) hotel/restaurant - distinct operator from Karen Blixen Group despite sharing a folder name ('KAREN GABLES & BLIXEN').",
+  "property": "Karen Gables",
+  "region": "Karen, Nairobi",
+  "source": { "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/KAREN GABLES & BLIXEN/Karen Gables 2025 - 2026 Rate updated.pdf", "validity": "Jan-Dec 2025-2026 (exact date boundary not further specified on this page)" },
+  "confidence": "confirmed-2026-08-06",
+  "currency": "USD",
+  "unit": "per room per night, Bed & Breakfast, inclusive of all taxes/service charge/training levy",
+  "rates": {
+    "standardSingle": { "rackBB": 290, "contract": 235 },
+    "standardDoubleTwin": { "rackBB": 455, "contract": 360 },
+    "juniorSuiteSingle": { "rackBB": 415, "contract": 330 },
+    "juniorSuiteDouble": { "rackBB": 530, "contract": 425 },
+    "mainSuiteDouble": { "rackBB": 570, "contract": 460 },
+    "verified": true
+  },
+  "dayRoomRate": "75% of applicable net rate, subject to availability",
+  "childPolicy": { "under2": "Free", "under12": "50% of applicable rate", "age12Plus": "100% of adult rate" },
+  "checkInOut": { "checkIn": "11:00am", "checkOut": "10:00am" },
+  "famTripRates": "On request",
+  "cancellationPolicy": { "7daysPrior": "100% forfeit", "14daysPrior": "50% forfeit", "28daysPrior": "25% forfeit" },
+  "restaurantMenuNote": "Source document also includes a full á la carte snack/menu price list (starters, mains, desserts $6.50-$22) - not reproduced here as it's restaurant pricing, not accommodation rate data relevant to a quotation."
+}

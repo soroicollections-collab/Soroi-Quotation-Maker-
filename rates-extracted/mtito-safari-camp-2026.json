@@ -1,0 +1,50 @@
+{
+  "property": "Mtito Safari Camp",
+  "operator": "Mtito Safari Camp Ltd",
+  "region": "Tsavo (Mtito Andei area)",
+  "isSoroiProperty": false,
+  "sourceFiles": [
+    "2026 CONTRACT RATES/KENYA/ACCOMODATION/MTITO CAMP/Contract Rates- Mtito Safari Camp 2026.pdf",
+    "2026 CONTRACT RATES/KENYA/ACCOMODATION/MTITO CAMP/Rack Rates - Mtito safari camp  2026.pdf",
+    "2026 CONTRACT RATES/KENYA/ACCOMODATION/MTITO CAMP/Resident Rates - Mtito Safari Camp 2026.pdf"
+  ],
+  "currency": { "nonResident": "USD", "resident": "KES", "verified": true },
+  "notes": [
+    "Three separate rate cards found: Rack (non-resident, public/full rate), Contract (Sunworld Agent rate, non-resident, discounted from Rack), Resident (KES, 15% agent commission stated).",
+    "Rack card uses 3 season columns (Mid: 1 Jan-31 Mar & 1 Oct-20 Dec; Green: 1 Apr-30 Jun; High: 1 Jul-30 Sep & 21 Dec-2 Jan).",
+    "Contract card uses 4 season columns that don't cleanly map to the Rack card's 3 - it splits '1 Oct-20 Dec 2026' out as its own column distinct from the Jan-Mar Mid-season figure (120 vs 130 for Full Board Mtito Luxury), whereas Rack treats Jan-Mar and Oct-Dec as one combined Mid-season figure (170). [Unverified] whether this 4-way split is intentional or a document layout artifact - the source PDF's header row is visually garbled (superscript ordinals split across lines) making the season boundaries hard to fully disambiguate; figures themselves were read directly off the table cells.",
+    "ANOMALY: Contract card's Ground Package 'Single room supplement' 4th column reads 250 - wildly inconsistent with the 85/85/85 figures in the other three columns for the same row, and suspiciously identical to the Full Board High-season base rate (190) +... no clean relationship either. Very likely a table-extraction misalignment in the source PDF. Flagged, not used as verified.",
+    "ANOMALY: Resident Rates card labels its park fee line 'Masai Mara Park fees' (Adult KSH1,500, Children KSH500) despite Mtito Safari Camp being in Tsavo, not the Maasai Mara - and the amount is far too low to be an actual Maasai Mara Reserve fee (~KSH13,000-26,000 equivalent). This reads as a copy-paste/template labeling error in the source document, not a genuine Maasai Mara fee. The correct fee (likely a Tsavo/KWS park fee) is not independently confirmed anywhere in this folder."
+  ],
+  "rackRates_nonResident_USD": {
+    "unit": "per person sharing, per night",
+    "seasons": {
+      "mid": { "dates": "1 Jan-31 Mar & 1 Oct-20 Dec 2026", "fullBoard": { "mtitoLuxuryRoom": 170, "familyRoom": 170, "singleRoomSupplement": 80 }, "groundPackage": { "mtitoLuxury": 290, "familyRoom": 290, "singleRoomSupplement": 110 } },
+      "green": { "dates": "1 Apr-30 Jun 2026", "fullBoard": { "mtitoLuxuryRoom": 150, "familyRoom": 150, "singleRoomSupplement": 80 }, "groundPackage": { "mtitoLuxury": 250, "familyRoom": 250, "singleRoomSupplement": 110 } },
+      "high": { "dates": "1 Jul-30 Sep & 21 Dec-2 Jan 2027", "fullBoard": { "mtitoLuxuryRoom": 220, "familyRoom": 220, "singleRoomSupplement": 80 }, "groundPackage": { "mtitoLuxury": 365, "familyRoom": 365, "singleRoomSupplement": 110 } }
+    },
+    "groundPackageIncludes": "Full-board accommodation, airstrip transfers, shared game drives in open safari jeep, mineral water in the jeep",
+    "verified": true
+  },
+  "contractRates_nonResident_Sunworld_USD": {
+    "unit": "per person sharing, per night",
+    "seasons": {
+      "midSeason_JanMar": { "dates": "2 Jan-31 Mar 2026", "fullBoard": { "mtitoLuxuryRoom": 120, "familyRoom": 120, "singleRoomSupplement": 85 }, "groundPackage": { "mtitoLuxury": 250, "familyRoom": 250, "singleRoomSupplement": 85 } },
+      "greenSeason": { "dates": "1 Apr-15 Jun 2026", "fullBoard": { "mtitoLuxuryRoom": 100, "familyRoom": 100, "singleRoomSupplement": 65 }, "groundPackage": { "mtitoLuxury": 200, "familyRoom": 200, "singleRoomSupplement": 85 } },
+      "highSeason": { "dates": "16 Jun-30 Sep 2026", "fullBoard": { "mtitoLuxuryRoom": 190, "familyRoom": 190, "singleRoomSupplement": 85 }, "groundPackage": { "mtitoLuxury": 290, "familyRoom": 290, "singleRoomSupplement": 85 } },
+      "octDec": { "dates": "1 Oct-20 Dec 2026 (per header; unclear if 21 Dec-2 Jan 2027 is also folded into this column - see notes)", "fullBoard": { "mtitoLuxuryRoom": 130, "familyRoom": 130, "singleRoomSupplement": 85 }, "groundPackage": { "mtitoLuxury": 250, "familyRoom": 250, "singleRoomSupplement": 250 }, "confidenceNote": "[Unverified] Ground package single room supplement of 250 is an anomaly - see top-level notes." }
+    },
+    "verified": true
+  },
+  "residentRates_KES": {
+    "unit": "per person sharing, per night",
+    "agentCommission": "15%",
+    "seasons": {
+      "mid": { "dates": "1 Jan-31 Mar & 1 Oct-20 Dec 2026", "fullBoard": { "mtitoLuxuryRoom": 12950, "familyRoom": 11950 }, "groundPackage": { "mtitoLuxury": 20450, "familyRoom": 20450 }, "singleRoomSupplement": { "fullBoard": 8950, "groundPackage": 10450 } },
+      "green": { "dates": "1 Apr-30 Jun 2026", "fullBoard": { "mtitoLuxuryRoom": 10950, "familyRoom": 10950 }, "groundPackage": { "mtitoLuxury": 16950, "familyRoom": 16950 }, "singleRoomSupplement": { "fullBoard": 9450, "groundPackage": 10450 } },
+      "high": { "dates": "1 Jul-30 Sep & 21 Dec-2 Jan 2027", "fullBoard": { "mtitoLuxuryRoom": 14450, "familyRoom": 13950 }, "groundPackage": { "mtitoLuxury": 22950, "familyRoom": 22950 }, "singleRoomSupplement": { "fullBoard": 9450, "groundPackage": 10450 } }
+    },
+    "parkFee_flaggedMislabel": { "raw": "Labeled 'Masai Mara Park fees' in source - Adult KSH 1,500 per day, Children KSH 500 per day", "verified": false, "confidenceNote": "[Unverified/likely mislabeled] See top-level anomaly note - almost certainly not a genuine Maasai Mara fee given the property's Tsavo location and the low amount." },
+    "verified": true
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftotext -layout, page-by-page direct read of the signed 2026 Sunworld/Serena contract (paginated PDF, not a flattened dump). NOT a Soroi property - Serena Hotels (Tourism Promotion Services Kenya Ltd / TPS Eastern Africa). This single 20-page contract document covers SEVEN Serena Kenya properties: Mara Serena Safari Lodge, Sweetwaters Serena Camp, Amboseli Serena Safari Lodge, Kilaguni Serena Safari Lodge, Lake Elmenteita Serena Camp, Serena Beach Resort & Spa (Mombasa), and Nairobi Serena Hotel. All extracted below in one file since they share one contract/rate card. Skipped from this folder: 'Serena Experiences Tariff Guide' PDFs (spa/excursion menu pricing, not accommodation), 'Serena Conference Package 2026.pdf' (MICE/conferencing, not relevant to leisure quotes), and the Tanzania-specific PDFs (out of scope - Kenya only per this extraction slice). Resident rate PDFs (KES, East Africa resident eligibility) captured separately below for reference only - out of scope for non-resident quoting.",
+  "operator": "Serena Hotels (Tourism Promotion Services (Kenya) Limited, part of TPS Eastern Africa)",
+  "contractParty": "Sunworld Safaris Ltd",
+  "currency": "USD",
+  "unit": "per person sharing per night (Double column) unless noted; Single Room Rate = 75% of Double Room Rate; 3rd adult in triple = 50% of Double Room Rate",
+  "source": {
+    "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/SERENA/Serena - Sunworld Safaris Ltd - KE 2026.pdf",
+    "pdfPages": "signed contract dated 30 May 2025, Schedule 2 rate cards on printed pages 12-14 (pdf pages 15-17), Child Policy on printed p.15 (pdf p.18), Agent Familiarisation Rates printed p.15 (pdf p.18), Kenya Seasons table printed p.16 (pdf p.19)",
+    "validity": { "start": "2026-01-02", "end": "2027-01-01" }
+  },
+  "confidence": "confirmed-2026-08-06",
+  "properties": {
+    "maraSerenaSafariLodge": {
+      "mealPlan": "Full Board",
+      "region": "Maasai Mara",
+      "rackDoublePerPersonPerNight": {
+        "02Jan-31Jan": 344, "01Feb-28Feb": 344, "01Mar-31Mar": 264,
+        "easter_03Apr-06Apr": 324, "01Apr-30Apr": 264, "01May-31May": 264,
+        "01Jun-15Jun": 344, "16Jun-30Jun": 676, "01Jul-31Jul": 676, "01Aug-31Aug": 676, "01Sep-30Sep": 676,
+        "01Oct-31Oct": 344, "01Nov-30Nov": 344, "01Dec-22Dec": 344, "23Dec-01Jan27": 676
+      },
+      "seasonKey": { "highSeason": ["02Jan-28Feb", "01Jun-15Jun", "01Oct-22Dec"], "greenSeason": ["01Mar-31May"], "peakSeason": ["16Jun-30Sep", "23Dec-01Jan"] },
+      "suiteSupplement": 200,
+      "groundPackage": {
+        "note": "Full board + 2 game drives/day + airstrip transfers + Hippo Pool breakfast. Exclusive game drive vehicle supplement: USD 200 nett/vehicle/drive.",
+        "firstNightPP": { "02Jan-31Jan": 302, "01Mar-31Mar": 262, "easter": 292, "16Jun-30Sep": 468, "23Dec-01Jan27": 503 },
+        "extraNightPP": { "02Jan-31Jan": 272, "01Mar-31Mar": 232, "easter": 262, "16Jun-30Sep": 438, "23Dec-01Jan27": 473 },
+        "singleRoomSupplementPP": { "02Jan-31Jan": 68, "01Mar-31Mar": 0, "16Jun-30Sep": 110, "23Dec-01Jan27": 118 },
+        "confidenceNote": "[Unverified] Full month-by-month grid captured in raw layout dump but not every cell individually re-typed here - representative seasonal values shown per season band. See raw pdftotext output for exact per-month figures if a specific month's price is needed."
+      }
+    },
+    "sweetwatersSerenaCamp": {
+      "mealPlan": "Full Board",
+      "region": "Ol Pejeta Conservancy, Laikipia",
+      "rackDoublePerPersonPerNight": {
+        "02Jan-31Jan": 298, "01Mar-31Mar": 250, "easter": 310, "01Apr-31May": 250,
+        "01Jun-15Jun": 298, "16Jun-30Sep": 388, "01Oct-22Dec": 298, "23Dec-01Jan27": 388
+      },
+      "roomSupplements": { "waterholeViewTents": 50, "moraniWingHighGreen": 85, "moraniWingPeak": 150, "familyRoom": 50 }
+    },
+    "amboseliSerenaSafariLodge": {
+      "mealPlan": "Full Board",
+      "region": "Amboseli",
+      "rackDoublePerPersonPerNight": {
+        "02Jan-31Mar": 294, "easter": 304, "01Apr-15Jun": 244, "16Jun-30Sep": 382, "01Oct-22Dec": 294, "23Dec-01Jan27": 382
+      },
+      "familyRoomSupplement": 50
+    },
+    "kilaguniSerenaSafariLodge": {
+      "mealPlan": "Full Board",
+      "region": "Tsavo West",
+      "rackDoublePerPersonPerNight": {
+        "02Jan-31Mar": 286, "easter": 302, "01Apr-15Jun": 242, "16Jun-22Dec": 286, "23Dec-01Jan27": 356
+      },
+      "deluxeRoomSupplement": 50
+    },
+    "lakeElmenteitaSerenaCamp": {
+      "mealPlan": "All Inclusive (Full Board Accommodation + local beers/soft drinks/spirits + Soysambu Conservancy fees)",
+      "region": "Lake Elmenteita, Rift Valley",
+      "rackDoublePerPersonPerNight": {
+        "02Jan-31Mar": 666, "easter": 726, "01Apr-15Jun": 666, "16Jun-30Sep": 778, "01Oct-22Dec": 666, "23Dec-01Jan27": 778
+      },
+      "suiteRateSupplement": 1000,
+      "note": "No triples allowed. Children under 3 not allowed at this property."
+    },
+    "serenaBeachResortSpaMombasa": {
+      "mealPlan": "Half Board",
+      "region": "Mombasa coast",
+      "rackDoublePerPersonPerNight_gardenSuperiorFamily": {
+        "02Jan-31Mar": 320, "easter": 332, "01Apr-30Jun": 272, "01Jul-22Dec": 320, "23Dec-01Jan27": 490
+      },
+      "rackDoublePerPersonPerNight_superiorSeaViewFamilySeaView": {
+        "02Jan-31Mar": 398, "easter": 408, "01Apr-30Jun": 348, "01Jul-22Dec": 398, "23Dec-01Jan27": 568
+      },
+      "suiteSupplements": { "lamuZanzibarOnGardenSuperior": 200, "shellaTundwaOnGardenSuperior": 400 },
+      "halfBoardReductionPerPerson": 15
+    },
+    "nairobiSerenaHotel": {
+      "mealPlan": "Bed & Breakfast",
+      "region": "Nairobi",
+      "noSeasonality": true,
+      "validity": { "start": "2026-01-01", "end": "2027-01-01" },
+      "rackDoublePerNight": { "deluxeRoom": 248, "executiveRoom": 276, "premiumRoom": 318 }
+    }
+  },
+  "sharedMealSupplements": { "lunch": 40, "dinner": 50, "picnicLunch": 30, "unit": "per person" },
+  "childPolicy": {
+    "under3": "Not allowed at Lake Elmenteita Serena Camp specifically (other properties not stated as restricted).",
+    "under5": "Complimentary stay at all Serena Properties.",
+    "age6to12": "50% of adult rate, sharing with an adult or in own room.",
+    "age13to17": "75% of adult rate, sharing with an adult or in own room.",
+    "note": "This is the NON-RESIDENT/tour-operator child policy (Schedule 3 of the signed contract). A separate, different resident child policy exists on the KES resident-rate PDFs (see residentRates block) - do not conflate the two."
+  },
+  "circuitDiscounts": {
+    "combination3Properties": "10% discount",
+    "combination4Properties": "12.5% discount",
+    "note": "Applies only to bookings staying at multiple Serena Properties within a single Booking Confirmation Voucher, with a unique Circuit Discount Code issued by Serena."
+  },
+  "bonafideTourLeaderRates": {
+    "under15Guests": "50% of the double Room rate",
+    "15to30Guests": "1 complimentary Bonafide Tour Leader stay",
+    "over30Guests": "2 complimentary Bonafide Tour Leader stays"
+  },
+  "agentFamiliarisationRates": {
+    "nairobiSerenaHotel": { "amount": 200, "maxNights": 1, "note": "Listed as $200 in Schedule 4 text but printed table elsewhere in the doc shows $180 for Nairobi B&B fam rate - the PDF text itself has this apparent inconsistency (Schedule 4 clause text vs its own table cell); flagged, not resolved." },
+    "serenaBeachHotel": { "amount": 200, "maxNights": 2 },
+    "amboseliMaraKilaguniSweetwaters": { "amount": 200, "maxNights": 2, "mealPlan": "Full Board" },
+    "lakeElmenteitaSerenaCamp": { "amount": 350, "maxNights": 2, "mealPlan": "Full Board" }
+  },
+  "residentRates_KES_referenceOnly": {
+    "$note": "East Africa Resident Rates (Kshs) - applicable to residents of Kenya, Tanzania, Uganda, Rwanda, Burundi, Sudan, Ethiopia, Djibouti, Eritrea, DR Congo. NOT applicable to this project's standard non-resident quoting; captured for reference/completeness only, per two separate seasonal PDFs (Jan-Jun and Jul-Dec).",
+    "currency": "KES",
+    "sourceFiles": [
+      "Serena Kenya Lodges & Camps Resident Rates 2026.pdf",
+      "Serena Kenya Lodges & Camps July to December Resident Rates - 2026.pdf",
+      "Serena Beach Resort & Spa Resident Rates 2026.pdf",
+      "Serena Beach Resort & Spa July to December Resident Rates 2026.pdf"
+    ],
+    "amboseliSerenaSafariLodge": { "janFeb_juneOnly_fullBoard": { "double": 35500, "single": 23000 }, "marMay_fullBoard": { "double": 32500, "single": 21500 }, "julAug_fullBoard": { "double": 38000, "single": 25500 }, "sepDec_fullBoard": { "double": 35500, "single": 23000 } },
+    "maraSerenaSafariLodge": { "janFeb_juneOnly_fullBoard": { "double": 39000, "single": 25500 }, "marMay_fullBoard": { "double": 36000, "single": 24000 }, "julAug_fullBoard": { "double": 59500, "single": 47500 }, "sepDec_fullBoard": { "double": 43000, "single": 28000 } },
+    "kilaguniSerenaSafariLodge": { "janFeb_juneOnly_fullBoard": { "double": 31000, "single": 19500 }, "marMay_fullBoard": { "double": 28000, "single": 18000 }, "julAug_fullBoard": { "double": 33000, "single": 22000 }, "sepDec_fullBoard": { "double": 31000, "single": 19500 } },
+    "lakeElmenteitaSerenaCamp_sunThu": { "janFeb_juneOnly": { "double": 44000, "single": 31000 }, "marMay": { "double": 41000, "single": 29500 }, "julAug": { "double": 48000, "single": 35000 }, "sepDec": { "double": 44000, "single": 31000 } },
+    "serenaBeachResortSpa_gardenSuperior_halfBoard": { "janJun": { "double": 30000, "single": 23500 }, "julDec": { "double": 33000, "single": 26000 } },
+    "childPolicy_resident": { "under6": "Free sharing with adult", "age6to12_sharing": "25% of double rate", "age6to12_ownRoom": "75% of per-person adult double rate (min 2 children)", "age13to17": "75% of adult rate", "note": "Different from the non-resident Schedule 3 policy above - do not conflate." }
+  },
+  "confidenceNote": "[Inference] Ground Package month-by-month grid was captured for Mara Serena Lodge only as a representative sample per season band, not cell-by-cell for all 5 properties in the Ground Package and Kiliambo Package tables (pdf pages 16-17) - if a quote needs an exact Ground Package or Kiliambo Package figure for Sweetwaters, Amboseli, Kilaguni, or Lake Elmenteita for a specific date, re-check the source PDF directly rather than assuming from the Mara figures shown here."
+}

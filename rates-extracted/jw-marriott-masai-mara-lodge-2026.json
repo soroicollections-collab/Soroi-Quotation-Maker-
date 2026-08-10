@@ -1,0 +1,50 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftotext -layout. NOT a Soroi property. This exact 'JW Marriott Masai Mara Lodge - 2026 Rack/Nett Rates.pdf' file pair is filed identically (byte-for-byte, confirmed via md5) in THREE separate folders: 'JW MARRIOT', 'JW MARRIOT MAASAI MARA LODGE', and 'JW MARRIOTT MASAI MARA' - a genuine triplicate, not three different properties. This JSON is the single canonical extraction; the 'JW MARRIOT' folder additionally contains a distinct second property (JW Marriott Mount Kenya Rhino Reserve Safari Camp - see separate JSON file), which does NOT appear in the other two folders.",
+  "property": "JW Marriott Masai Mara Lodge",
+  "region": "Maasai Mara (Keekorok area)",
+  "source": {
+    "files": [
+      "2026 CONTRACT RATES/KENYA/ACCOMODATION/JW MARRIOT/JW Marriott Masai Mara Lodge - 2026 Rack Rates.pdf",
+      "2026 CONTRACT RATES/KENYA/ACCOMODATION/JW MARRIOT/JW Marriott Masai Mara Lodge - 2026 Nett Rates.pdf"
+    ],
+    "duplicateLocations": ["JW MARRIOT MAASAI MARA LODGE/", "JW MARRIOTT MASAI MARA/"],
+    "validity": {
+      "highSeason": ["20 Dec 2026 - 5 Jan 2027", "1 Jun 2026 - 15 Oct 2026"],
+      "shoulderLowSeason": ["6 Jan 2026 - 31 May 2026", "16 Oct 2026 - 19 Dec 2026"]
+    }
+  },
+  "confidence": "confirmed-2026-08-06",
+  "currency": "USD",
+  "unit": "per person, per stay basis as printed (figures are large - appear to be a fixed-stay/package total rather than a simple per-night rate; source does not explicitly clarify the number of nights the figure represents - flag before using literally as a nightly rate)",
+  "confidenceNote_unitAmbiguity": "The figures ($2,600-$3,900 per person) are far higher than comparable Mara lodges' per-night rates elsewhere in this dataset, and no per-night qualifier appears on this specific page (unlike the Mount Kenya sister-property document, which explicitly says 'per person sharing per night'). Read and reproduced exactly as printed; flag to confirm with JW Marriott directly whether this is truly per-night or a multi-night package total before quoting.",
+  "rack": {
+    "perPersonSharing": { "highSeason": 2600, "shoulderLowSeason": 1675 },
+    "singleRoom": { "highSeason": 2888, "shoulderLowSeason": 2021 },
+    "children6to12OwnRoom": { "highSeason": 1952, "shoulderLowSeason": 1256 },
+    "children6to12Sharing": { "highSeason": 1300, "shoulderLowSeason": 838 },
+    "guidePilot": { "highSeason": 500, "shoulderLowSeason": 500 },
+    "honeymoonSupplementOrFamilyRoom": { "amount": 1200, "unit": "per room per night, both seasons" },
+    "foundationFee": { "amount": 15, "unit": "USD, JW Marriott Masai Mara Foundation Fee" },
+    "verified": true
+  },
+  "nett": {
+    "perPersonSharing": { "highSeason": 1690, "shoulderLowSeason": 1090 },
+    "singleRoom": { "highSeason": 1880, "shoulderLowSeason": 1315 },
+    "children6to12OwnRoom": { "highSeason": 1270, "shoulderLowSeason": 816 },
+    "children6to12Sharing": { "highSeason": 845, "shoulderLowSeason": 545 },
+    "guidePilot": { "highSeason": 500, "shoulderLowSeason": 500 },
+    "honeymoonSupplementOrFamilyRoom": { "amount": 1200, "unit": "per room per night, both seasons" },
+    "foundationFee": { "amount": 15, "unit": "USD, JW Marriott Masai Mara Foundation Fee" },
+    "note": "Nett rates are non-commissionable, per source.",
+    "verified": true
+  },
+  "inclusions": ["Accommodation and full board meals", "Select alcoholic and non-alcoholic drinks", "Bush breakfast or picnic lunch once during stay (weather permitting)", "Sundowners once during stay (weather permitting)", "2 shared game drives per day incl. refreshments", "Bird watching", "Guided walking safaris within property", "Wi-Fi throughout lodge", "Return airstrip transfers from Keekorok airstrip", "Canon photo studio, gym, pool, adventure studio", "On-property activities (boules, archery, spear-throwing, adopt-a-tree)", "Laundry 5 items/person/day", "All statutory taxes"],
+  "exclusions": ["Champagnes, premium wines and spirits", "Masai Mara Park entrance fee", "Photo safari with resident photographer", "Spa treatments", "Items of personal nature", "Gratuities"],
+  "additionalCostActivities": ["Flights and safaris to/from Masai Mara National Reserve", "Hot air balloon safaris", "Rhino sanctuary visit", "Cultural village entrance fees", "Guided horseback riding", "Exclusive use of vehicle (subject to availability, USD 450/day)"],
+  "groupRate": "Negotiable ad hoc for 10+ paying rooms, except Easter/festive period.",
+  "tourLeaderPolicy": "Complimentary half-twin-rate accommodation for bona fide tour leaders after min 10 paying rooms, max 2 comp guests per group.",
+  "childrenPolicy": "Property is unfenced; children under 6 not recommended for safety reasons.",
+  "singleRoomPolicy": "Max 3 single rooms per group at single rate; additional singles charged at double rate.",
+  "multiPropertyDiscount": { "amount": "10%", "condition": "Combine all 3 properties: JW Marriott Masai Mara Lodge, The Ritz-Carlton Masai Mara Safari Camp, and JW Marriott Mount Kenya Rhino Reserve Safari Camp - discount on total accommodation package value. Not applicable with other offer rates.", "note": "This document's own multi-property clause differs from the Mount Kenya sister-property document's clause (5%/2 properties, 7.5%/3 properties) - the two documents disagree on the exact discount structure for combining the same three properties. Flag rather than pick one." },
+  "checkInOut": { "checkIn": "12:00 noon", "checkOut": "10:00am" }
+}

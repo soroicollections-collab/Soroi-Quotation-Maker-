@@ -1,0 +1,37 @@
+{
+  "property": "Sandai Farm",
+  "operator": "African Footprints Ltd.",
+  "region": "Not stated in source",
+  "isSoroiProperty": false,
+  "sourceFiles": ["2026 CONTRACT RATES/KENYA/ACCOMODATION/SANDAI/Sandai Farm - Rates African Footprints 24,25,26.xlsx"],
+  "currency": "EUR (non-resident); KES with a Euro-equivalent column shown for resident/self-catering rates",
+  "notes": [
+    "IMPORTANT: Despite the filename mentioning '24,25,26', the only rate table's own header explicitly reads 'African Footprints Rates 2024 - June 25' - i.e. the actual validity window stated in the document is 1 Jan 2024 through June 2025, NOT 2026. This file sits in the '2026 CONTRACT RATES' folder tree but contains NO current 2026 rate card. Flagged prominently: do NOT use these figures for a live 2026 quote without confirming a fresh rate card with the property first.",
+    "Rates quoted per person per day (full board, double room basis) for non-residents in EUR; residents and self-catering cottages in KES with a separate EUR-equivalent column.",
+    "Commission column present per line item: 20% for non-resident full-board rates, 10% for resident/self-catering rates."
+  ],
+  "expiredRates_nonResident_EUR_perPersonPerDay_fullBoardDoubleRoom": {
+    "highSeason": 120, "lowSeason": 105, "commission": "20%"
+  },
+  "expiredRates_nonResident_singleRoom_EUR": { "highSeason": 140, "lowSeason": 125, "commission": "20%" },
+  "expiredRates_nonResident_tripleRoom_perRoom_EUR": { "highSeason": 340, "lowSeason": 300, "commission": "20%" },
+  "expiredRates_nonResident_weekPrice_perPersonDoubleRoom_EUR": { "highSeason": 760, "lowSeason": 730, "commission": "20%" },
+  "expiredRates_nonResident_weekPrice_singleRoom_EUR": { "highSeason": 870, "lowSeason": 825, "commission": "20%" },
+  "expiredRates_resident_KES_perPersonPerDay": { "double": { "kes": 12000, "eurEquivalent": 90 }, "single": { "kes": 14000, "eurEquivalent": 100 }, "commission": "10%" },
+  "expiredRates_selfCateringCottages_KES_perNight": {
+    "chuiAndMakena": { "kes": 18000, "eurEquivalent": 150 },
+    "pundaMilia": { "kes": 25000, "eurEquivalent": 220 },
+    "aziziAndZawadi": { "kes": 9500, "eurEquivalent": 90 },
+    "kifaru": { "kes": 18000, "eurEquivalent": 150 },
+    "commission": "10%"
+  },
+  "expiredRates_camping": { "perPerson_KES": 500, "eurEquivalent": 5 },
+  "seasonDefinition": "High Season: 15 Dec-31 Mar and 15 Jun-31 Oct, plus 1 week before/after Easter. Plus 20% surcharge on Christmas/New Year (24 Dec-1 Jan).",
+  "childPolicy": { "raw": "Up to 4 years: free. 4-12 years: half rate.", "verified": true },
+  "policies": {
+    "deposit": "25% required on day of booking",
+    "balancePayment": "Due 30 days before booking commencement; full payment required if booked within 30 days of start",
+    "cancellation": "45-59 days before tour start: 50% of booking cost; less than 45 days: 100% of booking cost",
+    "confidenceNote": "All figures and policies in this file are historical/expired reference only per the top-level note - a fresh 2026 rate card must be obtained from the property before quoting."
+  }
+}

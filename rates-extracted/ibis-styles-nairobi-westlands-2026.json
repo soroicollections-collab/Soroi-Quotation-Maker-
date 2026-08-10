@@ -1,0 +1,29 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftotext -layout. NOT a Soroi property. IMPORTANT: the 'IBIS' folder and the 'IBIS STYLES' folder both contain a file named 'Ibis Sunworld Safaris - 2026 Rate Agreement.pdf' and these are BYTE-IDENTICAL (confirmed via md5 checksum - fa5a1ae73de29dd3688f603a99089e1e for both). Despite being filed under a generic 'ibis' folder name, the letter's actual content is explicitly for 'ibis Styles Hotel - Nairobi Westlands' throughout (letterhead, signature block, contact emails all say ibis Styles). There is NO separate rate card for a plain 'ibis' (non-Styles) branded hotel anywhere in either folder - only this one ibis Styles letter, duplicated into both folders. Do not treat this as two different properties.",
+  "property": "ibis Styles Hotel - Nairobi Westlands",
+  "operator": "Accor",
+  "region": "Nairobi (Westlands)",
+  "source": {
+    "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/IBIS/Ibis Sunworld Safaris - 2026 Rate Agreement.pdf (identical duplicate also filed under IBIS STYLES/)",
+    "validity": { "start": "2026-01-01", "end": "2026-12-31" },
+    "letterDated": "2025-05-24",
+    "tier": "Agent Rate Agreement, commissionable at 10%"
+  },
+  "confidence": "confirmed-2026-08-06",
+  "currency": "USD",
+  "unit": "per room per night, Bed & Breakfast, inclusive of all taxes",
+  "roomTypesCovered": "Double / Twin / Triple / Family / Accessible Rooms (all priced identically per occupancy band, per the source table)",
+  "rates": { "singleOccupancy": 115.00, "doubleTwinOccupancy": 140.00, "verified": true },
+  "additionalPersonBreakfastSupplement": { "amount": 25, "unit": "USD" },
+  "lunchDinnerSupplement": { "amount": 30, "unit": "USD per person, restaurant menu" },
+  "commission": "10%",
+  "childPolicy": {
+    "under3SharingWithAdult": "No charge",
+    "age3to12SharingWithAdult": "50% of 2nd person supplement; in own room 75% of adult rate",
+    "age12to16SharingWithAdult": "100% of applicable supplement per person, adult rates apply",
+    "over16OwnRoomWithParentsAdjacent": "100% of applicable full adult single/double/triple room rate"
+  },
+  "checkInOut": { "standard": "12:00", "dayUse": { "hours": "1000-1800", "rate": "25% discount on contracted rate" }, "guaranteedEarlyCheckIn": "50% of contracted rate", "pastEarlyCheckInWindow": "Full night rate" },
+  "cancellationPolicy": "48 hours prior to check-in to avoid cancellation fee.",
+  "paymentPolicy": "Payment required before or on check-in date."
+}

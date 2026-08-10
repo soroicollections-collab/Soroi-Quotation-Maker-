@@ -1,0 +1,108 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftotext -layout from 'APASIO/Apasio_Camps_Contract_Rates_2026_(1) (1).pdf' (Non-Resident, USD) and 'APASIO/Apasio Resident_Rack_ Rates_ 2026 (1) (1).pdf' (Resident, KES). ANOMALY: both source files are titled/dated '2026' and both live inside the 2027 CONTRACT RATES folder - no file in this folder is actually titled '2027'. Filed with a -2027 suffix per this extraction slice's naming convention (to avoid colliding with a separate agent's 2026-folder extraction of the same operator), but the content itself is the 2026 contract. Both documents state 'Effective March until 31.05.2027' (USD file) / 'Effective from March 2026 until 31.05.2027' (KES file) - so Sunworld's own paperwork claims this rate card is valid into 2027 - but neither document's actual date-banded rate table has a row extending past 31.12.26. There is NO explicit Jan-May 2027 rate row in either source. Treat Jan-May 2027 pricing as an inferred carry-forward of the last 2026 rate band (likely 01.11-30.11.26 or 01.01-30.06.26 band, unconfirmed which) - do not quote Apasio for Jan-May 2027 dates without confirming directly with Apasio Safari Ltd first.",
+  "operator": "Apasio Safari Ltd",
+  "currency": { "nonResident": "USD", "resident": "KES" },
+  "unit": "per person per night sharing (Full Board) unless noted; Family Tent/Chalet/House units priced per unit",
+  "propertiesReferenced": ["Mara Big Five", "Mara Legends Camp (referenced only in child-policy text, not separately priced)", "Coconut Beach Boutique Lodge & Spa", "Rhino Watch Safari Lodge", "Kazuri Galu & Kazuri Nairobi"],
+  "propertyAttributionWarning": "[Unverified] The source PDFs' rate-table headers appear to be images/logos, not extractable text - pdftotext returned the tables with NO property name attached to any of them. The mapping below (Table 1 = Mara Big Five, Table 2/3 = Rhino Watch Safari Lodge, Table 4 = Coconut Beach Boutique Lodge & Spa) is inferred from context clues (a child-policy line naming 'Mara Big Five & Mara Legends Camp' immediately after Table 1's numbers; 'Coconut late checkout' phrasing attached to Table 4; lodge-style room names - Governors House, chalets - in Tables 2/3 suggesting an inland lodge rather than a tented camp) - NOT from an explicit label. Kazuri Galu & Kazuri Nairobi appear in the gallery link list but no table could be confidently matched to them - they may be unpriced in this document. Confirm all four property attributions visually against the source PDF (open the file directly, don't rely on flattened text) before using in a client-facing quote.",
+  "rates": {
+    "table1_marabigfive_inferred": {
+      "note": "Full Board, per person/night sharing. Non-Resident (USD) and Resident (KES) both captured.",
+      "nonResidentUSD": {
+        "01Jan-30Jun26": { "exclusiveTent": { "sgl": 120, "dbl": 110 }, "superiorTent": { "sgl": 150, "dbl": 130, "tpl": 105 }, "familyTent": { "sgl": 190, "dbl": 170, "tpl": 145 } },
+        "01Jul-31Oct26_and_01Dec-31Dec26": { "exclusiveTent": { "sgl": 240, "dbl": 180 }, "superiorTent": { "sgl": 270, "dbl": 210, "tpl": 165 }, "familyTent": { "sgl": 310, "dbl": 250, "tpl": 205 } },
+        "01Nov-30Nov26": { "exclusiveTent": { "sgl": 170, "dbl": 130 }, "superiorTent": { "sgl": 200, "dbl": 160, "tpl": 128 }, "familyTent": { "sgl": 240, "dbl": 200, "tpl": 168 } },
+        "fourthAdultInFamilyTent": "USD 20 less than the 3rd-person-sharing rate",
+        "natureWalk": 25,
+        "exclusiveVehicleCharterPerDay": { "1to4pax": 300, "5to7pax": 300 }
+      },
+      "residentKES": {
+        "01Jan-30Jun26": { "exclusiveTent": { "sgl": 10000, "dbl": 8000 }, "superiorOrFamilyTent": { "sgl": 12000, "dbl": 10000, "tpl": 7500 } },
+        "01Jul-31Oct26_and_01Dec-31Dec26": { "exclusiveTent": { "sgl": 22000, "dbl": 16000 }, "superiorOrFamilyTent": { "sgl": 24000, "dbl": 18000, "tpl": 13500 } },
+        "01Nov-30Nov26": { "exclusiveTent": { "sgl": 15000, "dbl": 11000 }, "superiorOrFamilyTent": { "sgl": 17000, "dbl": 13000, "tpl": 10000 } },
+        "natureWalk": 2500,
+        "exclusiveVehicleCharterPerDay": { "1to4pax": 35000, "5to7pax": 40000 }
+      },
+      "verified": true
+    },
+    "table2_rhinowatch_inferred": {
+      "note": "All year round, per person, Full Board. No seasonal split (unusual vs Table 1 - confirmed as-stated, not an extraction gap).",
+      "nonResidentUSD": {
+        "tent": { "sgl": 220, "dbl": 125 },
+        "honeymoonTent": { "sgl": 240, "dbl": 135 },
+        "chalet": { "sgl": 290, "dbl": 155 },
+        "birdNest": { "sgl": 300, "dbl": 165 },
+        "paradiseFlycatcher": { "sgl": 290, "dbl": 155 },
+        "weaverBirdNest": { "sgl": 290, "dbl": 155 },
+        "familyTentMax4pax": { "perUnit": 400 },
+        "familyChaletMax5pax": { "perUnit": 470 }
+      },
+      "residentKES": {
+        "tent": { "sgl": 14000, "dbl": 9000 },
+        "honeymoonTent": { "sgl": 16500, "dbl": 9900 },
+        "chalet": { "sgl": 18500, "dbl": 10500 },
+        "birdNest": { "sgl": 19500, "dbl": 11500 },
+        "paradiseFlycatcher": { "sgl": 18500, "dbl": 10500 },
+        "weaverBirdNest": { "sgl": 18500, "dbl": 10500 },
+        "familyTentMax4pax": { "perUnit": 30000 },
+        "familyChaletMax5pax": { "perUnit": 35000 }
+      },
+      "newExclusiveWingUnits": {
+        "note": "USD file: 20% commissionable. KES file: 10% commissionable - discrepancy is as-stated in each source, not an extraction error.",
+        "nonResidentUSD": { "senatorTent": { "sgl": 525, "dbl": 350 }, "governorsHouse": { "sgl": 750, "dbl": 500 }, "euphoriaForestHouse": { "sgl": 750, "dbl": 500 }, "platinumChalet": { "sgl": 750, "dbl": 500 }, "platinumTent": { "sgl": 525, "dbl": 350 } },
+        "residentKES": { "senatorTent": { "sgl": 17500, "dbl": 35000 }, "platinumTent": { "sgl": 17500, "dbl": 35000 }, "governorsHouse": { "sgl": 25000, "dbl": 50000 }, "euphoriaForestHouse": { "sgl": 25000, "dbl": 50000 }, "platinumChalet": { "sgl": 25000, "dbl": 50000 } },
+        "confidenceNote": "[Unverified] KES Senator/Platinum Tent DBL rate (35,000) is HIGHER than its SGL rate (17,500) - i.e. double is 2x single, unlike every other room type where DBL < SGL. Could be a genuine per-unit-not-per-person pricing quirk for this room type, or a transcription error in the source itself. Flagging rather than correcting.",
+        "inclusions": "Private breakfast on verandah, private dinner option, complimentary water/fruit basket/flowers, room service, twice-daily housekeeping, in-room fridge/minibar (beverages extra)"
+      },
+      "verified": true
+    },
+    "table3_house1house2_inferred": {
+      "note": "Per unit per night, dated window only 21.12.25-06.01.26 (festive) - no other-season rate given for these two houses in either source document.",
+      "nonResidentUSD": { "house1_2bedroom": 300, "house2_3bedroom": 400 },
+      "residentKES": { "house1_2bedroom": 20000, "house2_3bedroom": 30000 },
+      "commission": "10% (USD file) / 5% (KES file) - as stated in each source",
+      "verified": true,
+      "confidenceNote": "[Unverified - gap] No rate given for outside the 21.12-06.01 window; property attribution (assumed same lodge as Table 2) unconfirmed."
+    },
+    "table4_coconutbeach_inferred": {
+      "note": "Half Board, per person, room-view tiers + one per-unit Beach Cottage (max 4 pax, BB).",
+      "nonResidentUSD": {
+        "21Dec25-06Jan26": { "standardGardenView": 85, "superiorGardenView": 137, "standardSeaView": 142, "superiorSeaView": 167, "standardBeachFront": 162, "superiorBeachFront": 187, "beachCottagePerUnit": 450 },
+        "07Jan-31Mar26": { "standardGardenView": 70, "superiorGardenView": 85, "standardSeaView": 90, "superiorSeaView": 105, "standardBeachFront": 110, "superiorBeachFront": 125, "beachCottagePerUnit": 450 },
+        "01Apr-30Jun26": { "standardGardenView": 65, "superiorGardenView": 80, "standardSeaView": 85, "superiorSeaView": 100, "standardBeachFront": 105, "superiorBeachFront": 120, "beachCottagePerUnit": 350 },
+        "01Jul-20Dec26": { "standardGardenView": 75, "superiorGardenView": 90, "standardSeaView": 95, "superiorSeaView": 110, "standardBeachFront": 115, "superiorBeachFront": 130, "beachCottagePerUnit": 350 }
+      },
+      "residentKES": {
+        "21Dec25-06Jan26": { "standardGardenView": 9500, "superiorGardenView": 11000, "standardSeaView": 10500, "superiorSeaView": 12000, "standardBeachFront": 11500, "superiorBeachFront": 13000, "beachCottagePerUnit": 35000 },
+        "07Jan-31Dec26": { "standardGardenView": 11500, "superiorGardenView": 13000, "standardSeaView": 12500, "superiorSeaView": 15000, "standardBeachFront": 13500, "superiorBeachFront": 17000, "beachCottagePerUnit": 40000 }
+      },
+      "extras": {
+        "singleOccupancySupplement": "75% of the room rate",
+        "thirdAdultInTriple": "20% less than per-person sharing rate",
+        "halfBoardSupplementInCottage": 25,
+        "coconutLateCheckout6pm": "50% of room rate",
+        "minStay": "3 nights required 21.12-06.01"
+      },
+      "verified": true
+    }
+  },
+  "childPolicy": {
+    "under3SharingWith2Adults": "Free of charge",
+    "age4to11SharingWith2Adults": "Free of charge (USD doc) / 50% of adult DBL rate (KES doc) - [Unverified] the two source documents disagree on this bracket, not reconciled",
+    "age4to11SharingWith1Adult": "75% of adult DBL rate",
+    "age4to11OwnRoom": "50% of the room rate (USD doc) / 1st child full adult DBL rate, 2nd child 75% of adult DBL rate (KES doc) - [Unverified] same cross-document disagreement as above",
+    "marabigfiveSpecificNote": "At Mara Big Five & Mara Legends Camp, children under 6 are only allowed on special request (KES doc only - not repeated in USD doc, flagging the gap).",
+    "verified": false,
+    "confidenceNote": "The Non-Resident (USD) and Resident (KES) source PDFs give materially different child-policy wording for the same age brackets. Both are transcribed verbatim above rather than reconciled - confirm directly with Apasio before quoting a child rate."
+  },
+  "festiveSeasonSurcharge": {
+    "christmas24to25Dec": { "usd": 25, "kes": 1500 },
+    "newYear31Dec1Jan": { "usd": 25, "kes": 1500, "note": "includes a glass of champagne" },
+    "easterSundayMonday": { "usd": 25, "kes": 1500 },
+    "unit": "per person",
+    "verified": true
+  },
+  "groupPolicy": "1 pax free (half double) for every 20 full-paying pax",
+  "cancellationPolicy": "30% charge 30+ days before arrival; 100% charge inside 29 days",
+  "paymentTerms": "20% non-refundable deposit to confirm; balance due 21 days before arrival"
+}

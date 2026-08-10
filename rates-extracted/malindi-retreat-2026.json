@@ -1,0 +1,33 @@
+{
+  "property": "Malindi Retreat",
+  "operator": "The Pot Ltd (Pamoja Collection)",
+  "region": "Malindi (coast)",
+  "isSoroiProperty": false,
+  "sourceFiles": ["2026 CONTRACT RATES/KENYA/ACCOMODATION/PAMOJA COLLECTION/Pamoja Collection -Malindi Retreat 2026 Rates.pdf"],
+  "notes": [
+    "This single PDF is a compiled document actually containing FOUR separate rate cards: Hotel Rudi (KSH & USD), Mwanzo Lodge (KSH), and Malindi Retreat (KSH) - the Hotel Rudi and Mwanzo Lodge portions duplicate what's already captured in hotel-rudi-2026.json and mwanzo-lodge-2026.json respectively; only the Malindi Retreat-specific rates are captured here.",
+    "8.5 rooms (as literally stated in the source - likely a half-room/annex configuration, not a typo we're correcting).",
+    "Only a KSH 2026 rate card exists for Malindi Retreat; a page for '2024/2025 RATES' in USD is present in the same PDF but is EXPIRED (valid 15.06.2024-31.12.2025) - not used here, noted for awareness only.",
+    "No Full Board rate is listed for Malindi Retreat (unlike Hotel Rudi/Mwanzo which have BB/HB/FB) - only Bed & Breakfast and Half Board are priced."
+  ],
+  "currency": "KSH",
+  "validity": "1 January 2026 - 31 December 2026",
+  "ratesKSH_perRoomPerNight": {
+    "single": { "bb": { "rack": 10000, "tourOperator": 8500 }, "hb": { "rack": 12500, "tourOperator": 11500 } },
+    "double": { "bb": { "rack": 15000, "tourOperator": 14000 }, "hb": { "rack": 18000, "tourOperator": 17000 } },
+    "triple": { "bb": { "rack": 22000, "tourOperator": 21000 }, "hb": { "rack": 27000, "tourOperator": 25000 } },
+    "dayroom": { "tourOperator": 3500 },
+    "verified": true
+  },
+  "expiredReference_2024_25_USD_notCurrent": {
+    "confidenceNote": "[Expired, not for 2026 use] Valid only 15 Jun 2024 - 31 Dec 2025. Included for awareness that a USD list existed previously, not as usable 2026 pricing.",
+    "single_bb": 65, "single_hb": 85, "double_bb": 110, "double_hb": 140, "triple_bb": 160, "triple_hb": 210, "dayroom": 30
+  },
+  "childPolicy": { "raw": "Same as Hotel Rudi/Mwanzo Lodge: 0-5yrs free; 6-12yrs (or 5-11) 50% sharing; 12+ full adult rate.", "verified": true },
+  "policies": {
+    "checkIn": "12:00", "checkOut": "10:00",
+    "payment": "Full payment due prior to arrival",
+    "cancellation": "Cancelled within 5 days of arrival: full amount forfeited",
+    "provisionalBookingHold": "Released automatically 2 weeks after initial request, subject to demand"
+  }
+}

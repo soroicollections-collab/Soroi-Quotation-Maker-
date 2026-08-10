@@ -1,0 +1,100 @@
+{
+  "$note": "Fresh extraction, 6 Aug 2026, read directly from two source PDFs (each single-page, single-property, layout-preserving pdftotext). 'CONFERENCE PACKAGE RATES 2026 docx.pdf' opened and confirmed to be meeting-room/day-conference pricing only (full-day/half-day conference packages, no accommodation rates) — explicitly skipped per task brief, not accommodation data.",
+  "property": "Bahari Beach Hotel",
+  "region": "Bamburi/Mombasa North Coast",
+  "skipped": {
+    "file": "CONFERENCE PACKAGE RATES 2026 docx.pdf",
+    "reason": "Confirmed by direct read to be conference/meeting-room day-package pricing (Full day KES 5,000pp, Half day KES 4,500pp) — not accommodation rates. No usable rate table for this project's purpose."
+  },
+  "sources": {
+    "keshRates": {
+      "file": "2026 CONTRACT RATES/KENYA/BEACH ACCOMODATION/Bahari Beach/Bahari rates (Kshs) 2025-26.pdf",
+      "pages": 1,
+      "validity": { "start": "2025-12-23", "end": "2026-12-22" },
+      "currency": "KES",
+      "note": "Likely a direct/resident-style published rate card (no explicit 'Resident'/'Non-Resident' label on the page, and no per-person breakdown — priced per room type by occupancy count, in KES)."
+    },
+    "operatorRatesUSD": {
+      "file": "2026 CONTRACT RATES/KENYA/BEACH ACCOMODATION/Bahari Beach/Operator rates (USD) 2026.pdf",
+      "pages": 1,
+      "validity": { "start": "2026-01-01", "end": "2026-12-31" },
+      "currency": "USD",
+      "note": "Explicitly titled 'HOTEL ALLOTMENT CONTRACT — Operator rates' — this is the trade/tour-operator contract rate, treated as primary for this project per task brief guess, confirmed by content (per-person-per-day pricing, standard tour-operator structure with release period/remarks columns)."
+    }
+  },
+  "confidence": "confirmed-2026-08-06",
+  "extractionMethod": { "note": "Both PDFs single-page, single-property; no adjacent-property risk." },
+  "structuralFindings": [
+    "KES rate card prices per ROOM TYPE by occupancy (Single/Double/Triple), across three meal plans (Half Board, Full Board, All Inclusive) and four date bands — not a per-person figure directly comparable to the USD operator sheet without dividing by occupancy.",
+    "USD Operator sheet is genuinely per-person-per-day, with explicit Single / Half-Dbl(p.p.) / 3rd-pax columns, across 5 numbered seasons and 3 meal plans (BB/HB/AI) for one room category (Standard Room). This is the cleaner one for per-person quoting.",
+    "The two sheets' season windows do NOT line up 1:1: KES sheet uses 4 bands (23 Dec-4 Jan, 5 Jan-2 Apr, 3 Apr-5 Apr, 6 Apr-22 Dec), USD sheet uses 5 bands (01-05 Jan, 06 Jan-30 Apr, 01 May-30 Jun, 01 Jul-21 Dec, 22-31 Dec) — don't assume they're the same calendar shape; each currency's own season table must be used for its own currency.",
+    "Base meal plan for the USD Operator sheet appears to be BB (Bed & Breakfast) with HB/AI as line items in the same table, each independently priced — not a base-plus-supplement structure. The KES sheet is similarly three independently-priced meal-plan rows, not base+supplement, though a Full Board supplement of $10pp/night off HB is separately stated on the USD sheet as an alternate route to Full Board.",
+    "Ocean view / Outdoor living room / Junior Suite are per-night supplements on top of the Standard Room base rate, in both currencies, with different amounts between the two sheets (e.g. Ocean view: KES 2,000/night vs USD $16/night — these are not simple currency conversions of each other, check separately)."
+  ],
+  "rates": {
+    "kes": {
+      "currency": "KES",
+      "unit": "per room per night (Single/Double/Triple totals, not per person)",
+      "dateBands": ["23 Dec 2025 - 4 Jan 2026", "5 Jan - 2 Apr 2026", "3 Apr - 5 Apr 2026", "6 Apr - 22 Dec 2026"],
+      "halfBoard": {
+        "single": [33350, 15500, 16400, 15500],
+        "double": [45950, 21500, 24000, 21500],
+        "triple": [57120, 25500, 27700, 25500]
+      },
+      "fullBoard": {
+        "single": [35050, 16000, 17900, 16000],
+        "double": [47400, 22500, 25000, 22500],
+        "triple": [61650, 26500, 28800, 26500]
+      },
+      "allInclusive": {
+        "single": [35380, 17500, 19000, 17500],
+        "double": [47950, 26500, 29300, 26500],
+        "triple": [64510, 32500, 35000, 32500]
+      },
+      "supplementsPerNight": {
+        "oceanViewRoom": 2000,
+        "outdoorLivingRoom": 4000,
+        "oceanFrontJuniorSuite": 9000
+      },
+      "childPolicy": {
+        "under2": "free",
+        "age3to12SharingSingleWithAdult": "30% of single rate",
+        "age3to12SharingDoubleWithParents": "50% discount on half-double rate",
+        "age3to12OwnRoom": "75%",
+        "babyCot": "free"
+      }
+    },
+    "usdOperator": {
+      "currency": "USD",
+      "unit": "per person per day",
+      "roomCategory": "Standard Room",
+      "seasons": {
+        "season1": { "dateRange": "01 Jan - 05 Jan 2026", "bb": { "single": 230.00, "halfDblPP": 156.00, "thirdPax": 109.00 }, "hb": { "single": 248.00, "halfDblPP": 164.00, "thirdPax": 115.00 }, "ai": { "single": 276.00, "halfDblPP": 180.00, "thirdPax": 128.00 } },
+        "season2": { "dateRange": "06 Jan - 30 Apr 2026", "bb": { "single": 136.00, "halfDblPP": 96.00, "thirdPax": 67.00 }, "hb": { "single": 150.00, "halfDblPP": 103.00, "thirdPax": 72.00 }, "ai": { "single": 172.00, "halfDblPP": 115.00, "thirdPax": 80.00 } },
+        "season3": { "dateRange": "01 May - 30 Jun 2026", "bb": { "single": 125.00, "halfDblPP": 85.00, "thirdPax": 59.00 }, "hb": { "single": 135.00, "halfDblPP": 98.00, "thirdPax": 68.00 }, "ai": { "single": 160.00, "halfDblPP": 110.00, "thirdPax": 77.00 } },
+        "season4": { "dateRange": "01 Jul - 21 Dec 2026", "bb": { "single": 136.00, "halfDblPP": 96.00, "thirdPax": 67.00 }, "hb": { "single": 150.00, "halfDblPP": 103.00, "thirdPax": 72.00 }, "ai": { "single": 172.00, "halfDblPP": 115.00, "thirdPax": 80.00 } },
+        "season5": { "dateRange": "22 Dec - 31 Dec 2026", "bb": { "single": 288.00, "halfDblPP": 200.00, "thirdPax": 119.00 }, "hb": { "single": 310.00, "halfDblPP": 207.00, "thirdPax": 126.00 }, "ai": { "single": 345.00, "halfDblPP": 230.00, "thirdPax": 140.00 } }
+      },
+      "fullBoardSupplement": "USD 10 per person per night, added to HB rate",
+      "childPolicy": {
+        "under2": "free sharing with 1-2 adults",
+        "oneAdultOneChild2to12": "adult pays single rate, child pays 30% of rate",
+        "oneAdultTwoChildren2to12": "adult pays half-double rate, each child pays 50% of adult rate",
+        "childOwnRoomMin2": "75% of adult rate per child per day"
+      },
+      "supplementsPerNight": {
+        "christmasNewYearEve": "USD 20 per person/day on 24 Dec & 31 Dec (children 50% of supplement)",
+        "oceanViewStandardRoom": 16,
+        "outdoorLivingRoom": 35,
+        "juniorSuite": 75
+      },
+      "cancellationPolicy": {
+        "noShow": "3 nights full rate charged",
+        "within1to7Days": "1 night full rate charged"
+      },
+      "paymentTerms": "75% deposit to affirm booking; balance settled in full prior to client departure."
+    }
+  },
+  "verified": true,
+  "confidenceNote": "No explicit Resident/Non-Resident label appears on either sheet — the KES sheet is inferred as the general/direct rate and the USD sheet as the trade-operator contract rate based on title and structure, not an explicit residency statement. Flag this inference if a client specifically asks about resident pricing. No mandatory conservancy/park-style fee found."
+}

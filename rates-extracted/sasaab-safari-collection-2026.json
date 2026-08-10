@@ -1,0 +1,48 @@
+{
+  "$note": "Extracted 6 Aug 2026 via direct paginated pdftotext read (pdf pages 16-17) of 'The Safari Collection 2026 Rates.pdf', the SAME signed Docusign contract document that sourced this project's existing solio-lodge-safari-collection-2026.json and the newly-extracted salas-camp-safari-collection-2026.json. NOT a Soroi property.",
+  "property": "Sasaab",
+  "operator": "The Safari Collection",
+  "region": "Samburu (Westgate Conservancy)",
+  "tier": "Contract 30% (Rack shown alongside; Contract 30% = Rack x 0.70 verified on every checked cell, e.g. 4398/6282=0.70, 3164/4520=0.70)",
+  "currency": "USD",
+  "unit": "Fully Inclusive - room-based minimum rate for Family Suite (up to 2 adults + 2 children), per-person-sharing for other suites",
+  "source": {
+    "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/THE SAFARI COLLECTION/The Safari Collection 2026 Rates.pdf",
+    "pdfPageIndices": [16, 17],
+    "docPrintedPageNumbers": [6, 7],
+    "sectionTitle": "2026 SALA'S CAMP, SASAAB & SOLIO LODGE 30% RATES CONTRACT",
+    "validity": { "start": "2026-01-01", "end": "2026-12-31" }
+  },
+  "confidence": "confirmed-2026-08-06",
+  "seasons": {
+    "theSeason": { "dateRanges": ["1 Jan 2026 - 5 Jan 2026", "1 Jun 2026 - 31 Oct 2026", "16 Dec 2026 - 31 Dec 2026"] },
+    "savingsSeason": { "dateRanges": ["6 Jan 2026 - 31 May 2026", "1 Nov 2026 - 15 Dec 2026"] }
+  },
+  "closure": "Sasaab closed 16 - 30 November 2026 inclusive (dates flexible, confirm with reservations).",
+  "rates": {
+    "familySuiteWithPool_rooms8_9_and_10_11": {
+      "theSeason": { "minimumRoomRate_upTo2Adults2Children": { "rack": 6282, "contract30": 4398 }, "thirdChild3to15": { "rack": 974, "contract30": 682 }, "fourAdultsSharing": { "rack": 7411, "contract30": 5188 }, "adultExtraBed": { "rack": 1852, "contract30": 1296 } },
+      "savingsSeason": { "minimumRoomRate_upTo2Adults2Children": { "rack": 4520, "contract30": 3164 }, "thirdChild3to15": { "rack": 622, "contract30": 436 }, "fourAdultsSharing": { "rack": 5319, "contract30": 3723 }, "adultExtraBed": { "rack": 1329, "contract30": 931 } },
+      "note": "Two spacious en-suite bedrooms with shared lounge and private plunge pool; can be taken as exclusive-use villa with separate access."
+    },
+    "allOtherSuitesWithPool": {
+      "unit": "per person",
+      "theSeason": { "perPersonSharing": { "rack": 1852, "contract30": 1296 }, "perChildRate": { "rack": 1288, "contract30": 902 }, "perChildSharingExtraBed_3to11": { "rack": 974, "contract30": 682 }, "singleRoom": { "rack": 2635, "contract30": 1845 } },
+      "savingsSeason": { "perPersonSharing": { "rack": 1329, "contract30": 931 }, "perChildRate": { "rack": 930, "contract30": 651 }, "perChildSharingExtraBed_3to11": { "rack": 622, "contract30": 436 }, "singleRoom": { "rack": 1859, "contract30": 1302 } }
+    }
+  },
+  "additionalRates": {
+    "professionalGuideRoom": { "amount": 190, "unit": "per person per night, exclusive of park & conservation fees" },
+    "parkConservationFees": { "adult": { "amountsSeen": "85 & 75", "totalCharged": 160 }, "child": { "amountsSeen": "50 & 37.5", "totalCharged": 87.5 }, "note_feeComposition": "Samburu Park & Westgate Conservation Fees combined." },
+    "exclusiveUseVehiclePerDay": 490,
+    "samburuCulturalExperience": { "amount": 350, "note": "Women's Ntorosi celebration or Warrior Dance - at local community's discretion, prior arrangement, weather-dependent." },
+    "extraLunch": 46,
+    "quadBikeExcursions": { "amount": 35, "unit": "per person per hour" }
+  },
+  "childPolicy": { "definition": "3-15 years inclusive; 16+ is adult; 2 and under is infant (free)." },
+  "roomTypes": "11 suites, all over 100m². Family Suites (rooms 8&9, 10&11) have two bedrooms + shared lounge + private pool. All other rooms have own private plunge pool.",
+  "inclusions": ["All meals and drinks (house wines/soft drinks/beers/spirits)", "Game drives, bush meals, sundowners", "Transfers from Sasaab Airstrip", "Laundry", "Guided walks, camel walks", "Rooftop stargazing beds and fly camping (prior arrangement, may involve exclusive vehicle hire at $490/day)", "Samburu manyatta visit, community project/school/market day visits (may involve exclusive vehicle hire)"],
+  "exclusions": ["Champagne, luxury spirits, selected wines, cigars", "Tips", "Travel/emergency evacuation insurance", "Spasaab spa treatments", "Quad bikes", "Personal effects", "Road transfers", "Daily park and conservation fees"],
+  "operationalPolicy": { "checkIn": "12:00 noon", "checkOut": "10:00am (may continue using lodge facilities after)" },
+  "confidenceNote": "[Unverified] Park & Conservation Fees table shows raw figures 'Adult 85 & 75' totaling to a stated US$160, and 'Child 50 & 37.5' totaling to a stated US$87.5 - the two-part breakdown (which fee is 85 vs 75, etc.) was not separately labeled in the source table; only the combined total is confidently usable."
+}

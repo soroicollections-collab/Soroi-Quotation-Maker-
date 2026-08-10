@@ -1,0 +1,30 @@
+{
+  "property": "Samburu Elephant Lodge",
+  "operator": "Samburu Elephant Lodge (booked via African Kismat Expeditions per contract signature block)",
+  "region": "Samburu National Reserve",
+  "isSoroiProperty": false,
+  "sourceFiles": [
+    "2026 CONTRACT RATES/KENYA/ACCOMODATION/SAMBURU ELEPHANT LODGE/Samburu Elephant Lodge 2026.pdf (signed copy)",
+    "2026 CONTRACT RATES/KENYA/ACCOMODATION/SAMBURU ELEPHANT LODGE/Samburu Elephant Lodge -2026 STO Rates-2.pdf (confirmed identical rate figures, unsigned template copy)"
+  ],
+  "supersededFile": {
+    "file": "Samburu Elephant Lodge 2025–2026 STO Rates-9 c-2.pdf",
+    "reason": "Covers 'June 2025 to June 2026' only, with a simpler PPPN (no Full/Half Board split) rate structure - superseded by the full-year 2026 card with FB/HB breakdown. Kept here for awareness only, not used as current: Quiet $200 (single $260), Shoulder $260 (single $320), Prime $320 (single $390); Resident: Quiet KES22,000 (single 24,000), Shoulder KES28,000 (single 33,000), Prime KES35,000 (single 40,000). This older card states 'Rates include full board accommodation and swimming.'"
+  },
+  "currency": { "nonResident": "USD", "resident": "KES", "verified": true },
+  "rateType": "STO (Sell-To-Operator) - net, non-commissionable",
+  "nonResident_perPersonPerNight_USD": {
+    "quiet_FebMarMayNov": { "double": { "fullBoard": 235, "halfBoard": 200 }, "single": { "fullBoard": 170, "halfBoard": 140 } },
+    "shoulder_Jan6to31_Apr_Jun_Oct_Dec1to15": { "double": { "fullBoard": 265, "halfBoard": 235 }, "single": { "fullBoard": 210, "halfBoard": 180 } },
+    "prime_JulSep_Dec15toJan5": { "double": { "fullBoard": 295, "halfBoard": 265 }, "single": { "fullBoard": 250, "halfBoard": 220 } },
+    "verified": true
+  },
+  "resident_perPersonPerNight_KES": {
+    "quiet_FebMarMayNov": { "double": { "fullBoard": 26000, "halfBoard": 22000 }, "single": { "fullBoard": 18000, "halfBoard": 15000 } },
+    "shoulder_Jan6to31_Apr_Jun_Oct_Dec1to15": { "double": { "fullBoard": 30000, "halfBoard": 26000 }, "single": { "fullBoard": 22000, "halfBoard": 19000 } },
+    "prime_JulSep_Dec15toJan5": { "double": { "fullBoard": 34000, "halfBoard": 30000 }, "single": { "fullBoard": 26000, "halfBoard": 23000 } },
+    "verified": true
+  },
+  "childPolicy": { "raw": "Young Explorers (5-12 years): 50% of adult rate. Little Adventurers (1-4 years): free.", "verified": true },
+  "notes": ["No detailed inclusions/exclusions list beyond 'net, non-commissionable' terms - minimal document, no cancellation/deposit policy stated in either 2026 file."]
+}

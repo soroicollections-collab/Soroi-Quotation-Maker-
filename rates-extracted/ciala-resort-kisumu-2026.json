@@ -1,0 +1,26 @@
+{
+  "$note": "Extracted 6 Aug 2026. Source PDF filename says '2026' but the table header itself reads '2025 RACK RATES' - same vintage mismatch pattern seen elsewhere in this batch.",
+  "property": "Ciala Resort",
+  "operator": "Ciala Resort Kisumu",
+  "region": "Kisumu",
+  "tier": "Rack Rate (Resident KES base; Non-Resident = Resident +35%)",
+  "confidenceNote": "[Unverified] Table headed '2025 RACK RATES' despite filename 'RACK RATES 2026.pdf' - treat 2026 applicability as provisional.",
+  "source": {
+    "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/CIALA RESORT KISUMU/RACK RATES 2026.pdf"
+  },
+  "rates": {
+    "currency": "KES", "unit": "per room per night",
+    "superior": { "single": { "BB": 15000, "HB": 18000, "FB": 21000 }, "double": { "BB": 18000, "HB": 24000, "FB": 30000 } },
+    "deluxe": { "single": { "BB": 17000, "HB": 20000, "FB": 23000 }, "double": { "BB": 20000, "HB": 26000, "FB": 32000 } },
+    "superiorDeluxe": { "single": { "BB": 19000, "HB": 22000, "FB": 25000 }, "double": { "BB": 22000, "HB": 28000, "FB": 34000 } },
+    "executiveSuite": { "single": { "BB": 25000, "HB": 30000, "FB": 35000 }, "double": { "BB": 28000, "HB": 34000, "FB": 40000 } },
+    "villaMax6pax": { "BB": 100000, "HB": 115000, "FB": 130000 },
+    "nonResidentSurcharge": "Non-resident rate = Resident rate + 35%"
+  },
+  "extraPax": {
+    "adultExtraBedAbove12": { "BB": 5000, "HB": 8000, "FB": 11000 },
+    "childExtraBed5to12": { "BB": 4000, "HB": 6500, "FB": 9000 },
+    "childSharing3to5": { "BB": 1250 }
+  },
+  "notes": "Room service surcharge KES 500. Pick up/drop off Ciala-Town KES 3500, Ciala-Airport KES 3000 one way."
+}

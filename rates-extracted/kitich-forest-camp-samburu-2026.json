@@ -1,0 +1,19 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftotext -layout (single-page rate sheet). NOT a Soroi property. Samburu-region forest camp.",
+  "property": "Kitich Forest Camp",
+  "operator": "African Territories",
+  "region": "Mathews Range, Samburu",
+  "rooms": "8 tents (4 double, 4 twin; 2 convertible to triples)",
+  "source": { "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/KITICH FOREST CAMP/Kitich Forest Camp - Preferred Agent 30% Rates 2026.pdf", "tier": "Preferred Agent 30% (off an unstated rack - no rack figure shown on this page for comparison)", "validity": { "start": "2026-01-01", "end": "2026-12-31" } },
+  "confidence": "confirmed-2026-08-06",
+  "currency": "USD",
+  "unit": "per night, Full Board, open all year (no seasonal variation on this document)",
+  "rates": { "adult": 420, "child3to15": 210, "verified": true },
+  "conservationFee": { "adult": 80, "child": 40, "unit": "per day, inclusive of VAT, minimum 2 pax" },
+  "inclusions": ["Full board accommodation", "Filtered drinking water, soft drinks, house wines, non-luxury spirits", "Guided bush walks / sundowners / fly-camping", "Return airstrip transfers (Ngelai Airstrip)", "Hiking trails and overnight fly camping"],
+  "exclusions": ["Champagne, premium wines and spirits", "Extra lunch ($30pp)", "Airstrip transfer Kalama/Sereolipi", "Samburu/Buffalo Springs Reserve entrance fees", "Gratuities"],
+  "airstripTransferKalamaSereolipi": { "amount": 300, "unit": "USD per vehicle one way, max 5 pax" },
+  "guidePilot": { "amount": 160, "unit": "USD per night, plus conservation fees" },
+  "singleSupplement": "None",
+  "emergencyEvacuationCover": { "amount": 35, "unit": "USD per person, mandatory" }
+}

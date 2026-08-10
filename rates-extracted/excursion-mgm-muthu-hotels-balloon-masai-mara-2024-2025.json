@@ -1,0 +1,22 @@
+{
+  "category": "excursion",
+  "activity": "Hot air balloon safari flight",
+  "operator": "MGM Muthu Hotels — Maasai Mara Hot Air Balloon Adventure",
+  "region": "Masai Mara, Kenya",
+  "extractedDate": "2026-08-06",
+  "sourceFiles": [
+    "2026 CONTRACT RATES/KENYA/EXCURSIONS/MGM MUTHUI BALLOON/MGM Balloon.jpg"
+  ],
+  "$fileFormatNote": "Source is a promotional JPEG graphic (no PDF/text file in this folder) — read visually rather than via pdftotext. All figures below transcribed directly from the image's rate table.",
+  "$dateFlag": "[Flag — expired] The rates table is explicitly stated 'Valid till 31st March 2025' with a booking window of '30th Sept. 2024 to 15th Nov. 2024' — i.e. this promotional rate had already expired roughly 5 months before this extraction (6 Aug 2026) and even further before the 2026/2027 travel years this project quotes for. Do NOT use these figures for a live quote without confirming a current rate with MGM Muthu Hotels — kept here only as a historical reference / placeholder pending a fresh rate.",
+  "currency": "USD",
+  "rackRatePerPersonUSD": 399,
+  "groupTiers": {
+    "1to4Pax": { "rackRatePP": 399, "commissionPct": 15, "agentNettRatePP": 339, "note": "Requires minimum 4 pax." },
+    "5to10Pax": { "rackRatePP": 399, "commissionPct": 20, "agentNettRatePP": 319 },
+    "11to16Pax": { "rackRatePP": 399, "commissionPct": 25, "agentNettRatePP": 299 }
+  },
+  "exclusionWindow": "20 Dec 2024 - 2 Jan 2025 (blacked out from the promotional rate per source text — presumably a peak-season exclusion).",
+  "verified": true,
+  "confidenceNote": "Figures are clearly legible and unambiguous in the source image; flagged only for being an expired promotional rate, not for any transcription uncertainty."
+}

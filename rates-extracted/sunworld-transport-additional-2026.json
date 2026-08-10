@@ -1,0 +1,234 @@
+{
+  "$note": "Expansion of Sunworld transport coverage beyond sunworld-transport-2026-2027.json (which only captured the 'SWS, LGA, LOCAL AGENTS/2026 TRANSPORT CONTRACT RATES.pdf' day-rate/Nairobi-local-transfer figures). This file adds: (1) self-drive rates (2026), (2) a SEPARATE, higher chauffeur-driven day-rate/transfer tier found under the 'Overseas Agents' folder that is actually still Sunworld's own rate card (not a third-party operator's rates, despite the folder name - see confidenceNote), (3) a detailed extra-services price list not previously captured, (4) Nairobi 'Executive Prices' rates for non-Landcruiser vehicle classes (saloon, Prado, Coaster, Sprinter, etc.), (5) Mombasa/Diani-area local transfer rates (Sunworld's own), and (6) Ketty Tours' Mombasa-area transfer rates as a clearly-labeled third-party product per CLAUDE.md's existing caution about that folder.",
+  "currency": "USD unless noted otherwise",
+  "verified": true,
+
+  "selfDriveRates2026": {
+    "source": "2026 CONTRACT RATES/KENYA/TRANSPORT/SELFDRIVE 4X4.COM/SELF DRIVE CONTRACT RATES 2026.pdf",
+    "note": "Identical copy also filed at 2026 CONTRACT RATES/KENYA/TRANSPORT/SWS, LGA, LOCAL AGENTS/SELF DRIVE CONTRACT RATES 2026.pdf - not independently re-extracted, same content.",
+    "vehicle": "Landcruiser / Toyota Prado, self-drive (customer drives, no chauffeur)",
+    "ratesIncludeAvg": "250 km/day average",
+    "day1to25": {
+      "peakSeason": { "dateRanges": ["1 Jul 2026 - 30 Sep 2026", "20 Dec 2026 - 2 Jan 2027"], "rate": 250 },
+      "restOfYear": { "rate": 190 }
+    },
+    "day26Plus": {
+      "peakSeason": { "dateRanges": ["1 Jul 2026 - 30 Sep 2026", "20 Dec 2026 - 2 Jan 2027"], "rate": 230 },
+      "restOfYear": { "rate": 170 }
+    },
+    "geographicRestriction": "Valid only for common tourist circuits (Masai Mara, Nakuru, Naivasha, Mt Kenya, Aberdares, Samburu, Meru, Laikipia, Lake Baringo/Bogoria, Amboseli, Coast, Tsavo East & West). NOT valid for Turkana, Marsabit, Maralal, Mombasa, Lamu, Mandera, Moyale, or any destination outside Kenya.",
+    "fuel": "Vehicle provided full tank, must be returned full tank in Nairobi.",
+    "excessLiability": {
+      "amount": 3500,
+      "note": "Full $3,500 only charged if vehicle stolen or totaled in an accident; otherwise only actual damage cost charged. Windscreen and tyres NOT covered - payable extra by client if damaged. Refundable card-hold deposit, 2-3 working days to release.",
+      "waiverOption": {
+        "3to11Days": { "perDay": 45 },
+        "12to22Days": { "perDay": 35 },
+        "23DaysPlus": { "perDay": 25 },
+        "note": "Non-refundable once purchased; not applicable to third-party vehicles."
+      }
+    },
+    "requirements": "Passport/ID copy, driver's license copy, signed car hire agreement.",
+    "commission": "Net & non-commissionable to the agent."
+  },
+
+  "overseasAgentsChauffeurDrivenRates2026": {
+    "source": [
+      "2026 CONTRACT RATES/KENYA/TRANSPORT/Overseas Agents/EXETER SAFARIS.pdf",
+      "2026 CONTRACT RATES/KENYA/TRANSPORT/Overseas Agents/2026 Vehicle Contract rates.pdf"
+    ],
+    "confidenceNote": "IMPORTANT CORRECTION to CLAUDE.md's characterization of this folder: CLAUDE.md describes 'KENYA/TRANSPORT/Overseas Agents/' as containing 'rates from overseas agents' (i.e. someone else's rates). Having now opened the actual documents, both files are Sunworld Safaris' OWN rate card ('Sunworld Safaris reserves the right to revise the above rates...', signed 'For: Sunworld Safaris', contact info@sunworldsafaris.com) - just a DIFFERENT, HIGHER pricing tier that Sunworld quotes specifically to overseas agents (as opposed to the 'SWS, LGA, LOCAL AGENTS' tier already in sunworld-transport-2026-2027.json). 'EXETER SAFARIS.pdf' is confirmed byte-for-byte identical in content to '2026 Vehicle Contract rates.pdf' (diff showed no differences) - Exeter Safaris is simply the name of the specific overseas agent this copy was addressed to, not a different rate. This should be flagged to whoever maintains CLAUDE.md - it is Sunworld's own transport product, just a different price bracket, not a lower-confidence third-party source like Ketty Tours or the true external Overseas Agents rates CLAUDE.md may have been referring to elsewhere.",
+    "vehicle": "Landcruiser (Extended Chassis 7+1 or Standard Chassis 5+1), chauffeur-driven, includes fuel, driver's allowance, park entrance fees for driver+vehicle",
+    "ratesIncludeAvg": "200 km/day average",
+    "dailyRates": {
+      "peak": { "amount": 340, "dateRanges": ["1 Jul 2026 - 30 Sep 2026", "20 Dec 2026 - 2 Jan 2027"] },
+      "restOfYear": { "amount": 295 }
+    },
+    "priceComparisonToLocalAgentTier": "This Overseas Agents tier ($340 peak / $295 rest-of-year) is $20 higher than the SWS/LGA/Local Agents tier already on file in sunworld-transport-2026-2027.json ($320 peak / $275 rest-of-year) for the SAME vehicle spec - a genuine channel-based price differential, not a data conflict. Use whichever tier matches the actual booking channel for a given quote.",
+    "fixedNairobiLocalTransfers": {
+      "unit": "per vehicle, one way, Landcruiser/Toyota Prado",
+      "routes": {
+        "JKIA-TownHotel": 100,
+        "JKIA-OutOfTownHotel": 130,
+        "JKIA-Wilson": 100,
+        "Wilson-TownHotel": 100,
+        "Wilson-OutOfTownHotel": 130,
+        "DinnerDisposal": 150,
+        "HalfDayDisposal_upTo6hrs": 220,
+        "FullDayTownDisposal_max9hrs120km": 270
+      },
+      "priceComparisonNote": "Each of these is $10-15 higher than the equivalent SWS/LGA/Local Agents figure in sunworld-transport-2026-2027.json (e.g. JKIA-Town $100 here vs $95 there; Half Day Disposal $220 here vs $200 there) - consistent with this being the higher overseas-agent-channel tier throughout, except Wilson-OutOfTownHotel which is identical ($130) in both tiers."
+    },
+    "languageSpeakingGuides": { "note": "German/Spanish/Japanese/French speaking guide, extra charge", "perDay": 25 },
+    "conversionSupplements": {
+      "wheelchairAccessibleRamp": { "perDay": 50, "note": "Ramp can be fitted to side or rear." },
+      "photographicOpenSided": { "perDay": 50, "note": "Extended Chassis (7+1) with pop-out open-sided window frames, camera stabilizing rails/bean bags, Velcro strips for securing equipment. Additional fittings (camera rails/bowls) at extra cost." }
+    },
+    "extraServices": {
+      "airportMeetGreet": 50,
+      "unbrandedEcoSteelWaterBottle": { "amount": 20, "unit": "per bottle" },
+      "brandedEcoSteelWaterBottle": { "amount": 25, "unit": "per bottle, with company logo" },
+      "parkTicketHandling": { "upTo2Guests": 35, "upTo6Guests": 50, "upTo10Guests": 100, "note": "Per group, not per individual, applies for all parks." },
+      "wineSundowner": { "amount": 50, "unit": "per sundowner", "includes": "1 bottle red (Mara wine) or white (Leleshwa), sodas, crisps/biscuits/mixed nuts" },
+      "teaCoffeeOnGameDrives": { "amount": 25, "unit": "per day per vehicle" },
+      "mineralWaterInVehicle": { "amount": 2, "unit": "per 3x0.5L bottles per person per day" },
+      "daphneSheldrickOrphanageEntry": { "amount": 20, "unit": "per person" },
+      "karenBlixenMuseumEntry": { "amount": 20, "unit": "per person" },
+      "giraffeCentreEntry": { "amount": 20, "unit": "per person" },
+      "packedLunch": { "amount": 35, "unit": "per person", "includes": "yoghurt, Kit Kat, crisps, juice, banana, apple, sandwich, pastry, wraps (menu-dependent)" },
+      "vehicleWifi5GB": { "amount": 45, "unit": "per vehicle, top-up needed once exhausted" },
+      "snackBag": { "amount": 20, "unit": "per person", "includes": "2x crisps, 2x mixed snacks, 2x wrapped cookies, 2x dried fruit, 2x granola bars, 4x banana" }
+    },
+    "longTermHireNegotiable": "10+ days negotiable rate.",
+    "commission": "Net & non-commissionable to the agent.",
+    "geographicRestriction": "Same common-circuit restriction as self-drive rates above; excludes Turkana, Marsabit, Maralal, Mombasa, Lamu, Mandera, Moyale, outside Kenya."
+  },
+
+  "nairobiExecutivePrices2026": {
+    "source": "2026 CONTRACT RATES/KENYA/TRANSPORT/SWS, LGA, LOCAL AGENTS/EXECUTIVE PRICES/2026 Rates.pdf",
+    "effectiveDate": "22 Apr 2026",
+    "currency": "KES",
+    "vatNote": "Rates subject to 16% VAT and exclusive of expressway charges.",
+    "confidenceNote": "This is a Nairobi-specific price list for non-Landcruiser-safari vehicle classes (saloon cars, SUVs, vans, coasters, Mercedes) intended for local Nairobi transfers/disposals - a different product line from the safari 4x4 day-rate. Not previously captured. An email 'Updated rates effective 22nd April 2026.msg' sits alongside this PDF in the same folder - not opened (no .msg reader available) but its filename suggests THIS PDF may itself be the update, or there may be a newer rate change communicated in that email not reflected here. Flag as a gap - worth a manual check of that email before relying on these figures long-term.",
+    "vehicleClasses": {
+      "saloonCorolla": {
+        "airportTransferCityHotelsWestlandsUpperhill": 4405,
+        "airportTransferKarenTribeTrademarkLoreshoKitisuruSGR": 5580,
+        "fullDayDisposal_0800to1800_150km": 12920,
+        "fullDayPlusDinnerDisposal_0800to2300_200km": 16440,
+        "halfDayDisposal_0800to1300_100km": 9985,
+        "halfDayPlusDinnerDisposal_1300to2300_150km": 12920,
+        "dinnerDisposal_1800to2300_100km": 9985
+      },
+      "fortunerIsuzuMUX": {
+        "airportTransferCityHotelsWestlandsUpperhill": 9100,
+        "airportTransferKarenTribeTrademarkLoreshoKitisuruSGR": 9985,
+        "fullDayDisposal_0800to1800_150km": 24660,
+        "halfDayDisposal_0800to1300_100km": 19375,
+        "fullDayPlusDinnerDisposal_0800to2300_200km": 32295,
+        "halfDayPlusDinnerDisposal_1300to2300_150km": 24660,
+        "dinnerDisposal_1800to2300_100km": 19375
+      },
+      "prado150Series": {
+        "airportTransferCityHotelsWestlandsUpperhill": 12330,
+        "airportTransferKarenTribeTrademarkLoreshoKitisuruSGR": 12920,
+        "fullDayDisposal_0800to1800_150km": 31120,
+        "halfDayDisposal_0800to1300_100km": 26420,
+        "fullDayPlusDinnerDisposal_0800to2300_200km": 38165,
+        "halfDayPlusDinnerDisposal_1300to2300_150km": 31120,
+        "dinnerDisposal_1800to2300_100km": 26420
+      },
+      "prado150SeriesNewShape": {
+        "airportTransferCityHotelsWestlandsUpperhill": 13505,
+        "airportTransferKarenTribeTrademarkLoreshoKitisuruSGR": 14095,
+        "fullDayDisposal_0800to1800_150km": 35230,
+        "halfDayDisposal_0800to1300_100km": 28770,
+        "fullDayPlusDinnerDisposal_0800to2300_200km": 41685,
+        "halfDayPlusDinnerDisposal_1300to2300_150km": 35230,
+        "dinnerDisposal_1800to2300_100km": 28770
+      },
+      "landcruiserVX200Series": {
+        "airportTransferCityHotelsWestlandsUpperhill": 14095,
+        "airportTransferKarenTribeTrademarkLoreshoKitisuruSGR": 14975,
+        "fullDayDisposal_0800to1800_150km": 41450,
+        "halfDayDisposal_0800to1300_100km": 34640,
+        "fullDayPlusDinnerDisposal_0800to2300_200km": 47325,
+        "halfDayPlusDinnerDisposal_1300to2300_150km": 41450,
+        "dinnerDisposal_1800to2300_100km": 34640
+      },
+      "sevenSeaterToyotaHiace": {
+        "airportTransferCityHotelsWestlandsUpperhill": 8220,
+        "airportTransferKarenTribeTrademarkLoreshoKitisuruSGR": 9100,
+        "fullDayDisposal_0800to1800_150km": 18200,
+        "fullDayPlusDinnerDisposal_0800to2300_200km": 25835,
+        "halfDayDisposal_0800to1300or5hrs_100km": 15855,
+        "halfDayPlusDinnerDisposal_1300to2300_150km": 18200,
+        "dinnerDisposal_1800to2300_100km": 15855
+      },
+      "twentySeaterToyotaCoaster": {
+        "airportTransferCityHotelsWestlandsUpperhill": 10570,
+        "airportTransferKarenTribeTrademarkLoreshoKitisuruSGR": 12330,
+        "fullDayDisposal_0800to1800_150km": 21725,
+        "fullDayPlusDinnerDisposal_0800to2300_200km": 38165,
+        "halfDayDisposal_0800to1300_100km": 18200,
+        "halfDayPlusDinnerDisposal_1300to2300_150km": 21725,
+        "dinnerDisposal_1800to2300_100km": 18200
+      },
+      "thirteenSeaterVIPMercedesSprinter": {
+        "airportTransferCityHotelsWestlandsUpperhill": 14095,
+        "airportTransferKarenTribeTrademarkLoreshoKitisuruSGR": 14975,
+        "fullDayDisposal_0800to1800_150km": 29360,
+        "fullDayPlusDinnerDisposal_0800to2300_200km": 40515,
+        "halfDayDisposal_0800to1300_100km": 23485,
+        "dinnerDisposal_1800to2300_100km": 23485,
+        "halfDayPlusDinnerDisposal_1300to2300_150km": 29360
+      },
+      "sevenSeaterVIPMercedesVito": {
+        "airportTransferCityHotelsWestlandsUpperhill": 11155,
+        "airportTransferKarenTribeTrademarkLoreshoKitisuruSGR": 12920,
+        "fullDayDisposal_0800to1800_150km": 22310,
+        "fullDayPlusDinnerDisposal_0800to2300_200km": 32880,
+        "halfDayDisposal_0800to1300_100km": 17320,
+        "dinnerDisposal_1800to2300_100km": 17320,
+        "halfDayPlusDinnerDisposal_1300to2300_150km": 22310
+      },
+      "sixSeaterToyotaVoxyNoah": {
+        "airportTransferCityHotelsWestlandsUpperhill": 7475,
+        "airportTransferKarenTribeTrademarkLoreshoKitisuruSGR": 8010,
+        "fullDayDisposal_0800to1800_150km": 16015,
+        "fullDayPlusDinnerDisposal_0800to2300_200km": 23485,
+        "halfDayDisposal_0800to1300or5hrs_100km": 13880,
+        "halfDayPlusDinnerDisposal_1300to2300_150km": 16015,
+        "dinnerDisposal_1800to2300_100km": 13880
+      }
+    }
+  },
+
+  "mombasaDianiAreaTransfers2026": {
+    "source": "2026 CONTRACT RATES/KENYA/TRANSPORT/SWS, LGA, LOCAL AGENTS/MOMBASA TRANSFERS/Mombasa 2026 Transfer Rates.jpg",
+    "extractionMethod": "Handwritten-annotated scanned table, extracted via direct visual read. Provider is Sunworld's own (filed under SWS, LGA, LOCAL AGENTS), unlike the Ketty Tours figures below.",
+    "currency": "KES",
+    "capacityNote": "Rates cover 1 to 5+ people (per handwritten annotation on the source image: '1 up to 5 people') - i.e. appears to be a per-vehicle rate for a small group, not per-person. Vehicle type not specified in the source - [Unverified].",
+    "confidenceNote": "Source image is a photographed/scanned handwritten-annotated table with some digit legibility risk (e.g. 'TOWN CENTRE M' truncated, likely 'Town Centre Mombasa'; a few figures partially obscured by fold/shadow) - flagged rather than guessed where illegible.",
+    "moiInternationalAirportTo": {
+      "chale": 8500, "kinondoKwetu": 7000, "pinewood": 7000, "neptune": 7000, "pulmPark": 7000, "galuBeach": 7000, "almanara": 7000, "elevenPark": 7000, "nomad": 7000, "waterLovers": 7000, "kaskaz": 7000, "swahili": 7000, "dianiReef": 7000, "theMaji": 7000, "southernPalm": 7000, "leopardBeach": 7000, "afroChic": 7000
+    },
+    "sgrTrainStationTo": {
+      "chale": 8000, "kinondo": 8000, "pinewood": 8000, "neptune": 7000, "pulmPark": 7000, "galuBeach": 7000, "almanara": 7000, "elevenPark": 6000, "nomad": 6000, "waterLovers": 6000, "kaskaz": 6000, "swahili": 6000, "dianiReef": 6000, "theMaji": 6000, "southernPalm": 7000, "leopardBeach": 6000, "afroChic": 6000,
+      "malindi": 14000, "watamu": 13000, "kilifi": 12000, "townCentreMombasa": 4000, "shellyBeach": 4500, "mariakani": 8500, "nyali": 4500
+    },
+    "dianiUkundaAirstripTo": {
+      "sgrTrainStation": 3000, "chale": 3000, "kinondo": 2500, "pinewood": 2500, "neptune": 2000, "pulmPark": 2500, "galuBeach": 2500, "almanara": 2000, "elevenPark": 1500, "nomad": 1500, "waterLovers": 1000, "kaskaz": 1500, "swahili": 1500, "dianiReef": 2000, "theMaji": 2000, "southernPalm": 2000, "leopardBeach": 2000, "afroChic": 2000
+    },
+    "dianiTo": {
+      "malindi": 15000, "voi": 24000, "watamu": 15000, "kilifi": 15000, "townCentreMombasa": 6000, "shellyBeach": 4500, "taita": 25000, "mariakani": 12500, "nyali": 8000
+    },
+    "chaleToMalindi": 18000
+  },
+
+  "kettyToursMombasaTransfers2026": {
+    "source": "2026 CONTRACT RATES/KENYA/TRANSPORT/KETTY TOURS/KETTY TOURS - TRANSFER RATES 2026.pdf",
+    "confidenceNote": "THIRD-PARTY operator, NOT Sunworld's own fleet - per CLAUDE.md's existing standing caution about this folder ('KETTY TOURS - named external operator'). Extracted anyway per this task's instructions, clearly labeled as such.",
+    "operator": "Ketty Tours Travels & Safaris Ltd, Moi Avenue, Ketty Plaza, Mombasa",
+    "currency": "KES",
+    "validity": { "start": "2026-01-01", "end": "2026-12-31" },
+    "vatNote": "Rates subject to 16% VAT, inclusive of Airport Tolls & Ferry Tolls ONLY - all other tolls/port passes paid direct by client. Porters tips and international/domestic departure taxes NOT included. Rates auto-increase without notice if fuel/toll/vehicle-spares/VAT rates rise. No-shows charged at 50% of the applicable transfer rate.",
+    "vehicleClasses": ["Per Car (3 pax)", "Minibus (9 pax)", "Rosa (18 pax)", "Coach (40 pax)", "Pajero/Mercedes"],
+    "destinationsFromMoiInternationalAirport": {
+      "town": { "perCar": 4300, "minibus": 5750, "rosa": 9450, "coach": 19000, "pajeroMercedes": 9450 },
+      "nyaliVoyagerReef": { "perCar": 5750, "minibus": 7700, "rosa": 13600, "coach": 21000, "pajeroMercedes": 13600 },
+      "whitesandsBamburiSeverin": { "perCar": 6700, "minibus": 8200, "rosa": 15200, "coach": 25000, "pajeroMercedes": 15200 },
+      "serenaMsaContinental": { "perCar": 8800, "minibus": 9600, "rosa": 17400, "coach": 26900, "pajeroMercedes": 17300 },
+      "sunNSand": { "perCar": 9600, "minibus": 10600, "rosa": 21000, "coach": 30700, "pajeroMercedes": 21000 },
+      "kilifi": { "perCar": 15400, "minibus": 19000, "rosa": 32800, "coach": 52000, "pajeroMercedes": 32800 },
+      "malindiWatamu": { "perCar": 19000, "minibus": 25000, "rosa": 44100, "coach": 71000, "pajeroMercedes": 44100 },
+      "southCoast": { "perCar": 10600, "minibus": 13300, "rosa": 24100, "coach": 43200, "pajeroMercedes": 24100 },
+      "shellyBeach": { "perCar": 8900, "minibus": 9600, "rosa": 17400, "coach": 26900, "pajeroMercedes": 17300 },
+      "chaleIsland": { "perCar": 13200, "minibus": 17100, "rosa": 28400, "coach": 57500, "pajeroMercedes": 28400 },
+      "msambweni": { "perCar": 15700, "minibus": 19000, "rosa": 32100, "coach": 57500, "pajeroMercedes": 32100 },
+      "shimoni": { "perCar": 18600, "minibus": 23600, "rosa": 42300, "coach": 76100, "pajeroMercedes": 42300 },
+      "lungaLunga": { "perCar": 21000, "minibus": 26800, "rosa": 48600, "coach": 86400, "pajeroMercedes": 48600 }
+    },
+    "note": "Source PDF likely also has SGR Train Station and Diani/Ukunda Airstrip origin tables (mirroring the Sunworld-own Mombasa transfer table structure above) but page 1's full table was captured via image read; page 2 was signature/acknowledgment content only with no further rate table visible. If SGR/airstrip-origin Ketty Tours figures are needed for a quote, re-check the source PDF directly."
+  }
+}

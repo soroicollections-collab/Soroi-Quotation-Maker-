@@ -1,0 +1,45 @@
+{
+  "property": "Ol Gaboli",
+  "operator": "Fig Tree Capital Limited",
+  "region": "Not stated in source (private banda-style accommodation)",
+  "isSoroiProperty": false,
+  "sourceFiles": [
+    "2026 CONTRACT RATES/KENYA/ACCOMODATION/OL GABOLI/Ol Gaboli Rate Card 2026.pdf",
+    "2026 CONTRACT RATES/KENYA/ACCOMODATION/OL GABOLI/Ol Gaboli Payments 2026.pdf"
+  ],
+  "currency": "USD",
+  "notes": [
+    "ANOMALY: The rate card PDF contains TWO different non-resident rate tables that appear to overlap in coverage but disagree in figures and season boundaries: a 'LAUNCH RATES, for stays until 1st April 2026' table (High Season Jan-Mar/Jun-Oct/19Dec+, Adult Rack $210/$158) and a '2025/26 NON-RESIDENT RATES Valid at December 2025' table (High Season Jun-18Dec, Low Season Apr-May, Adult Rack $250/$210). Both are quoted below verbatim, unreconciled - which one actually applies for a given 2026 date needs to be confirmed directly with Ol Gaboli before quoting.",
+    "NETT rate confirmed arithmetically as approximately Rack x 0.80 (20% discount) across both tables (e.g. Launch High Adult: 168 = 210 x 0.8; 2025/26 High Adult: 200 = 250 x 0.8).",
+    "Payments page states 'All payments will be subject to VAT at 16% and Tourism Levy at 2%' with no indication whether the rate card figures already include these - flagged as unclear.",
+    "Single occupancy = applicable PPN rate + 60% of same rate (i.e. 1.6x the sharing rate), consistent across all three rate tables."
+  ],
+  "launchRates_nonResident_untilApril2026_perPersonPerNight": {
+    "highSeason_JanMar_JunOct_19DecPlus": { "adult12plus": { "rack": 210, "nett20pct": 168 }, "child5to12": { "rack": 126, "nett20pct": 101 }, "conservancyFeePerCalendarDay": { "adult": 30, "child": 20 } },
+    "lowSeason_AprMay_Nov_18Dec": { "adult12plus": { "rack": 158, "nett20pct": 126 }, "child5to12": { "rack": 95, "nett20pct": 76 }, "conservancyFeePerCalendarDay": { "adult": 30, "child": 20 } },
+    "verified": true
+  },
+  "rates2025_26_nonResident_validDec2025_perPersonPerNight": {
+    "highSeason_Jun_18Dec2026": { "adult12plus": { "rack": 250, "nett20pct": 200 }, "child5to12": { "rack": 150, "nett20pct": 120 }, "conservancyFeePerCalendarDay": { "adult": 30, "child": 20 } },
+    "lowSeason_AprMay2026": { "adult12plus": { "rack": 210, "nett20pct": 168 }, "child5to12": { "rack": 126, "nett20pct": 101 }, "conservancyFeePerCalendarDay": { "adult": 30, "child": 20 } },
+    "verified": true
+  },
+  "rates2025_26_resident_validDec2025_perPersonPerNight": {
+    "highSeason_Jun_18Dec2026": { "adult12plus": { "rack": 150, "nett20pct": 120 }, "child5to12": { "rack": 90, "nett20pct": 72 }, "conservancyFeePerCalendarDay": { "adult": 30, "child": 20 } },
+    "lowSeason_JanMay2026": { "adult12plus": { "rack": 126, "nett20pct": 101 }, "child5to12": { "rack": 76, "nett20pct": 61 }, "conservancyFeePerCalendarDay": { "adult": 30, "child": 20 } },
+    "verified": true
+  },
+  "childPolicy": { "raw": "Under 5s stay free when sharing with parents. 5-12 charged at the Child rate shown.", "verified": true },
+  "singleOccupancy": { "raw": "Applicable PPN rate + 60% of same rate", "verified": true },
+  "minStay": "5 nights over Christmas and New Year",
+  "includes": ["Community fees", "Accommodation in private banda", "Morning and evening guided walks and guided self-drive safaris (guest must bring/hire a vehicle)", "All meals (breakfast, lunch, dinner)", "Tea, coffee & filtered water", "Laundry", "WiFi (Starlink)"],
+  "excludes": ["Transfers", "Private safari vehicle hire", "Drinks from the bar", "Gratuities to staff & guides", "Late departure fees", "All statutory increases beyond their control", "Conservancy fees are billed separately per calendar day (see above) despite 'community fees' being included"],
+  "policies": {
+    "checkIn": "12:00", "checkOut": "10:00",
+    "deposit": "20% deposit to confirm booking",
+    "balancePayment": "Due no later than 60 days prior to arrival, NETT of all bank charges",
+    "cancellation": ">120 days: 20% deposit refunded in full; 60-120 days: 20% deposit forfeited; 30-60 days: 50% of total paid forfeited; <30 days: 100% forfeited. No refunds for no-show, flight cancellation, or early departure.",
+    "privateVehicleWithGuide": "Available for exclusive use at additional cost per day - contact for current rates",
+    "tippingGuidance": "Recommended US$15 per person per night"
+  }
+}

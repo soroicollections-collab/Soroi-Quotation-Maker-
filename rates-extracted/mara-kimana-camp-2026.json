@@ -1,0 +1,64 @@
+{
+  "property": "Mara Kimana Camp",
+  "brand": null,
+  "region": "Maasai Mara",
+  "isSoroiProperty": false,
+  "sourceFiles": [
+    "2026 CONTRACT RATES/KENYA/ACCOMODATION/MARA KIMANA LUXURY CAMP/NON RES - STO RATES 2026 - MARA KIMANA LUXURY CAMP.pdf",
+    "2026 CONTRACT RATES/KENYA/ACCOMODATION/MARA KIMANA LUXURY CAMP/STO RATES- 2026 RESIDENTS MARA KIMANA LUXURY CAMP.pdf"
+  ],
+  "currency": {
+    "nonResident": "USD",
+    "resident": "KES",
+    "verified": true
+  },
+  "validity": {
+    "lowSeason": "10 January 2026 - 30 June 2026, and 1 October 2026 - 9 December 2026",
+    "highSeason": "1 July 2026 - 30 September 2026, and 10 December 2026 - 9 January 2027",
+    "verified": true
+  },
+  "notes": [
+    "Only an STO-tier rate card exists for both Non-Resident and Resident in this folder - no Rack Rate file present. Only Rack Rate for other tiers would require a fresh document.",
+    "The Non-Resident file is titled 'STO RATES' with no explicit discount % shown against a Rack baseline - cannot verify what % off Rack this represents since no Rack card was found.",
+    "Priced per room (not per person), Full Board.",
+    "Only a folder named 'MARA KIMANA LUXURY CAMP' but the document itself calls the property 'Mara Kimana Camp' throughout."
+  ],
+  "roomCategories": [
+    {
+      "category": "Single",
+      "unit": "per room per night, Full Board",
+      "nonResidentSTO": { "lowSeason": 150, "highSeason": 240, "verified": true },
+      "residentSTO_KES": { "lowSeason": 15000, "highSeason": 24000, "verified": true }
+    },
+    {
+      "category": "Double",
+      "unit": "per room per night, Full Board",
+      "nonResidentSTO": { "lowSeason": 290, "highSeason": 430, "verified": true },
+      "residentSTO_KES": { "lowSeason": 29000, "highSeason": 43000, "verified": true }
+    },
+    {
+      "category": "Triple",
+      "unit": "per room per night, Full Board",
+      "nonResidentSTO": { "lowSeason": 390, "highSeason": 550, "verified": true },
+      "residentSTO_KES": { "lowSeason": 39000, "highSeason": 55000, "verified": true }
+    }
+  ],
+  "childPolicy": {
+    "raw": "0-5 years: Free. 5-12 years: 50% of adult. 12+ years: Full price.",
+    "verified": true
+  },
+  "extras": [
+    { "item": "Extra lunch box", "amount": "US$20", "verified": true },
+    { "item": "Walk-in Casual Lunch", "amount": "US$25", "verified": true },
+    { "item": "Dinner", "amount": "US$25", "verified": true },
+    { "item": "Bush Dinner", "amount": "US$45pp, min 4 pax, exclusive of drinks", "verified": true },
+    { "item": "Bush Breakfast", "amount": "US$45pp, min 4 pax", "verified": true },
+    { "item": "Sundowner", "amount": "US$40pp, min 4 pax, exclusive of drinks", "verified": true },
+    { "item": "Nature Walk", "amount": "US$30pp", "verified": true },
+    { "item": "Visit to the Maasai Village", "amount": "US$35pp", "verified": true }
+  ],
+  "policies": {
+    "deposit": "50% non-refundable deposit to confirm; balance due 30 days before arrival",
+    "cancellation": "35-14 days before arrival: 30% charge; 14-3 days: 50% charge; within 48 hours or no-show: 100% charge"
+  }
+}

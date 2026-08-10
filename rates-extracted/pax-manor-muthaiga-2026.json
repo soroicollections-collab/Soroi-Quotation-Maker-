@@ -1,0 +1,34 @@
+{
+  "property": "Pax Manor Muthaiga",
+  "operator": "Pax Manor Limited",
+  "region": "Muthaiga, Nairobi",
+  "isSoroiProperty": false,
+  "sourceFiles": ["2026 CONTRACT RATES/KENYA/ACCOMODATION/PAX MANOR/Pax Manor STO contract.docx"],
+  "documentFormat": ".docx (Word document, not PDF) - extracted via direct XML parsing of the docx package, not pdftotext.",
+  "notes": [
+    "IMPORTANT: This signed contract's 'Second Party' is named explicitly as 'INTREPID TRAVEL', not Sunworld Safaris - this rate card may be Intrepid's specific negotiated contract sitting in Sunworld's shared rates folder for reference, rather than a rate Sunworld itself is entitled to book at. Flag before using for a Sunworld quote - confirm Sunworld has its own equivalent agreement with Pax Manor.",
+    "Property is organized into 3 named 'houses' each with individually-named rooms: MIRARI (Sunflower/Tulip/Daisy = Deluxe-tier rooms 4-6; Rose/Orchid/Lilly = Standard-tier rooms 1-3), MANOR (Lord/Duke/Master/Earl = Premium-tier rooms 3-6; Chancellor/Maestro = Deluxe-tier, rooms 1 & 4), MSITU (Meru Oak/Mugumo/Baobab/Palm/Acacia/Lotus/Whistling Thorn/Jacaranda = 8 rooms, tier unspecified in the source table - only Standard/Deluxe/Premium column totals were given, not mapped room-by-room for Msitu).",
+    "Two unlabeled rate rows appear in the source table for each room tier - the first explicitly labeled 'Rack Rate (USD)', the second unlabeled but consistently lower (likely a Net/Contract rate, discount ~21-24% depending on tier, not a single round percentage) - both quoted below without assuming which one applies to Sunworld specifically given the Intrepid Travel signature caveat above."
+  ],
+  "currency": "USD",
+  "mealPlan": "Bed & Breakfast",
+  "validity": "1 January 2026 - 31 December 2026",
+  "rates_perRoomPerNight": {
+    "standardRoom": { "rack": { "single": 325, "double": 425, "thirdAdult": 150 }, "secondRow_likelyNetOrContract": { "single": 245, "double": 325, "thirdAdult": 110 } },
+    "deluxeRoom": { "rack": { "single": 475, "double": 575, "thirdAdult": 150 }, "secondRow_likelyNetOrContract": { "single": 375, "double": 465, "thirdAdult": 110 } },
+    "premiumRoom": { "rack": { "single": 520, "double": 620, "thirdAdult": 150 }, "secondRow_likelyNetOrContract": { "single": 410, "double": 510, "thirdAdult": 110 } },
+    "verified": true
+  },
+  "childPolicy": { "raw": "5-12yrs sharing with 1-2 adults: 50% of adult sharing rate. 12-17yrs sharing with 1-2 adults: 75% of adult sharing rate. Under 17 in own room: 100% of room rate. 17+: adult rate.", "verified": true },
+  "dayUse": { "raw": "Extension up to 16:00: 60% of room rate. Extension up to 18:00: 75% of room rate.", "verified": true },
+  "notesOnRates": "Rates are net, non-commissionable, valid for non-resident leisure business only; not for onward distribution to 3rd-party online travel/hotel booking websites. Include 16% VAT, service charge, tourism levy.",
+  "policies": {
+    "checkIn": "14:00", "checkOut": "10:00",
+    "provisionalBookingRelease": "Auto-release after 24 hours, subject to availability",
+    "singleRoomPolicy": "Max 4 single rooms per group at single rate; thereafter double rate applies",
+    "cancellation": "21-15 days: 25% of total booking cost; 14-8 days: 50%; 7-3 days: 75%; within 48 hours: 100%. Unused stay nights non-refundable/non-transferable.",
+    "deposit": "Full payment at least 45 days before arrival for peak season (Jul-Oct), 30 days for remaining season, unless credit facility approved",
+    "returnedChequeFee": "US$50",
+    "materialization": "Room allocation monitored every 2 months - if utilization falls below 75% of contracted allocation, allocation may be reduced"
+  }
+}

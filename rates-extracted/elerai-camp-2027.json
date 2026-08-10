@@ -1,0 +1,64 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftotext -layout from two single-page documents in 'ELERAI CAMP/': 'ELERAI CAMP 2027 USD NON RESIDENT.pdf' (Rack) and 'ELERAI CAMP LTD 2027 - STO (25_) USD NON RESIDENT RATES.pdf' (STO 25% nett wholesale). Both issued 25.01.2026, same season structure.",
+  "property": "Elerai Camp",
+  "location": "Elerai Private Conservancy, Amboseli area",
+  "currency": "USD",
+  "seasons": {
+    "peak": { "dates": "01 Jul - 31 Oct 2027" },
+    "high": { "dates": "16 Dec 2026 - 31 Mar 2027 and 01 Nov - 15 Dec 2027" },
+    "low": { "dates": "01 Apr - 27 Apr 2027 and 25 May - 30 Jun 2027" },
+    "campClosed": "26 Apr - 21 May 2027"
+  },
+  "confidence": "confirmed-2027-08-06",
+  "discountVerification": { "note": "STO 25% figures verified arithmetically as approximately Rack x 0.75 on every cell checked (e.g. Package Peak Deluxe Tent: Rack 539 -> STO 404 = 539*0.75=404.25, rounds to 404).", "verified": true },
+  "rates": {
+    "unit": "per adult sharing per night (Deluxe Tent / Cottage Room identically priced) or per single room per night; minimum 2 pax",
+    "packageRate_rack": {
+      "note": "'Package' rate includes 2 game drives/day, night drives, guided walks, sundowner, cultural village visit, mountain biking, house drinks.",
+      "peak": { "sharing": 539, "single": 705 },
+      "high": { "sharing": 486, "single": 649 },
+      "low": { "sharing": 391, "single": 391 }
+    },
+    "packageRate_sto25": {
+      "peak": { "sharing": 404, "single": 529 },
+      "high": { "sharing": 365, "single": 487 },
+      "low": { "sharing": 293, "single": 293 }
+    },
+    "nonPackageRate_rack": {
+      "note": "'Non-Package' (Full Board only) - game drives, transfers, activities all extra.",
+      "peak": { "sharing": 381, "single": 551 },
+      "high": { "sharing": 331, "single": 496 },
+      "low": { "sharing": 240, "single": 240 }
+    },
+    "nonPackageRate_sto25": {
+      "peak": { "sharing": 286, "single": 413 },
+      "high": { "sharing": 248, "single": 372 },
+      "low": { "sharing": 180, "single": 180 }
+    },
+    "verified": true
+  },
+  "mandatoryFees": {
+    "eleraiCommunityBednightAndWildlifeConservationFee": { "adult": 48, "breakdown": "USD 22 Bednight + USD 26 Wildlife Conservation", "child3to18": "50% of adult", "unit": "per person per night", "verified": true },
+    "amboseliNationalParkEntryFee": "As published by Kenya Wildlife Service - not a fixed figure in this document, excluded from rate",
+    "verified": true
+  },
+  "childPolicy": {
+    "age2to12SharingWith2Adults": "50% of adult rate",
+    "age2to12SharingWithAnotherChild": "75% of adult rate",
+    "thirdBedAdult": "20% reduction on per-person-sharing price",
+    "verified": true
+  },
+  "cancellationPolicy": "61+ days before arrival: 10% of invoice; 60-31 days: 50%; 30 days or less: 100%. No refund for no-show/late arrival.",
+  "activitiesAlaCarte": {
+    "exclusiveGameViewingVehicle": 300,
+    "sharedGameDriveConservancy": 35,
+    "sharedGameDriveAmboseliNP": 80,
+    "sharedBushDinner": 50,
+    "privateBushDinner": 80,
+    "privateBushSundowner": 60,
+    "culturalVillageVisit": 30,
+    "guidedConservancyWalk": 20,
+    "extraMealOrPackedLunch": 25,
+    "verified": true
+  }
+}

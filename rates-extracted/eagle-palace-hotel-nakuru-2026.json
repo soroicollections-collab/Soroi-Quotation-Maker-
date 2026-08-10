@@ -1,0 +1,45 @@
+{
+  "$note": "Extracted 6 Aug 2026 from two files: main STO rates agreement and a separate one-page child-policy addendum.",
+  "property": "Eagle Palace Hotel",
+  "operator": "Eagle Palace Hotel",
+  "region": "Nakuru",
+  "tier": "STO Rates 2026 (Rack and STO side by side)",
+  "source": {
+    "files": [
+      "2026 CONTRACT RATES/KENYA/ACCOMODATION/Eagle Palace/Eagle Palace 2026 STO RATES (1).pdf",
+      "2026 CONTRACT RATES/KENYA/ACCOMODATION/Eagle Palace/Eagle Palace STO CHILD POLICY RATES.pdf"
+    ],
+    "validity": { "start": "2026-01-01", "end": "2026-12-31" }
+  },
+  "rates": {
+    "currency": "KES", "unit": "per room per night",
+    "BB": {
+      "superior": { "rack": { "single": 7000, "double": 8000 }, "sto": { "single": 6300, "double": 7200 } },
+      "empireTwin": { "rack": { "double": 9000 }, "sto": { "double": 8100 } },
+      "royalSuite": { "rack": { "single": 12000, "double": 15000 }, "sto": { "single": 10800, "double": 13500 } },
+      "familyRoom": { "rack": { "triple": 12000 }, "sto": { "triple": 10800 } }
+    },
+    "HB": {
+      "superior": { "rack": { "single": 8500, "double": 10000 }, "sto": { "single": 7800, "double": 9300 } },
+      "empireTwin": { "rack": { "double": 12000 }, "sto": { "double": 11100 } },
+      "royalSuite": { "rack": { "single": 13500, "double": 18000 }, "sto": { "single": 12300, "double": 16500 } },
+      "familyRoom": { "rack": { "triple": 16500 }, "sto": { "triple": 15300 } }
+    },
+    "FB": {
+      "superior": { "rack": { "single": 10000, "double": 13000 }, "sto": { "single": 9300, "double": 12300 } },
+      "empireTwin": { "rack": { "double": 15000 }, "sto": { "double": 14100 } },
+      "royalSuite": { "rack": { "single": 15000, "double": 21000 }, "sto": { "single": 13800, "double": 19500 } },
+      "familyRoom": { "rack": { "triple": 21000 }, "sto": { "triple": 19800 } }
+    }
+  },
+  "childPolicy": {
+    "ageLimit": "12 years and below",
+    "sharingWithAdult": "40% of Adult Single Rate",
+    "oneChildOwnRoom": "Rate of Single Superior Room",
+    "twoChildrenOwnRoom": "Rate of Single Superior Room",
+    "threeChildrenOwnRoom": "Rate of Single Superior Room",
+    "fourChildrenOwnRoom": "Rate of Twin Room",
+    "over12": "Adult rate applies"
+  },
+  "notes": "Rates valid until 31 Dec 2026, non-commissionable per source structure. Late checkout after 14:00 = 50% surcharge; after 16:00 = Day Use rate."
+}

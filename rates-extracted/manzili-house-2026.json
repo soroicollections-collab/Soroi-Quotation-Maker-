@@ -1,0 +1,72 @@
+{
+  "property": "Manzili House",
+  "brand": null,
+  "region": "Nairobi area (exact location not stated in source; airport transfer priced from JKIA)",
+  "isSoroiProperty": false,
+  "sourceFiles": [
+    "2026 CONTRACT RATES/KENYA/ACCOMODATION/MANZILI HOUSE/Manzili House - 2026 Rack Rate.pdf",
+    "2026 CONTRACT RATES/KENYA/ACCOMODATION/MANZILI HOUSE/Manzili House - 2026 STO Rate.pdf"
+  ],
+  "currency": "USD",
+  "validity": {
+    "raw": "Rack Rates valid: 1st January - 31st December 2026 (Rack file); STO Rates valid: 1st January - 31st December 2026 (STO file)",
+    "verified": true
+  },
+  "notes": [
+    "This is a boutique guesthouse, NOT a Soroi property. Distinct from 'Manzili Mara' (Manzili Ndoto/Mara exclusive-use villa) which is also in this folder but is a separate property in the Maasai Mara - see manzili-mara-2026.json.",
+    "Meal plan structure: Bed & Breakfast per-adult-sharing rate is the base; Half Board is a supplement per adult/child; Day Use is 75% of the relevant rate.",
+    "Manzili House itself = 4 doubles (sleeps 8); Manzili Ndoto = 2 doubles (sleeps 4), exclusive use only.",
+    "Check-in 13:00, check-out 10:00 (except Half Board note: 'Check in 2pm / Check out 7pm' appears to apply specifically to the Day Use / Half Board product - ambiguous in source).",
+    "STO tier discount confirmed arithmetically: STO figures = Rack x 0.80 exactly across every line checked (e.g. $384 = $480 x 0.8, $520 = $650 x 0.8, $2,960 = $3,700 x 0.8, $1,600 = $2,000 x 0.8). This is an STO 20% tier."
+  ],
+  "roomCategories": [
+    {
+      "category": "Per Adult Sharing (Manzili House)",
+      "unit": "per person per night",
+      "rack": { "amount": 480, "verified": true },
+      "sto20": { "amount": 384, "verified": true },
+      "childPolicy": { "raw": "Child 3-13 years sharing with parents: 75% of rate", "verified": true }
+    },
+    {
+      "category": "Single Room (Manzili House)",
+      "unit": "per night",
+      "rack": { "amount": 650, "verified": true },
+      "sto20": { "amount": 520, "verified": true }
+    },
+    {
+      "category": "Manzili House - Exclusive Use",
+      "unit": "per night (whole house, 4 doubles, sleeps 8, 1 extra bed for child)",
+      "rack": { "amount": 3700, "verified": true },
+      "sto20": { "amount": 2960, "verified": true }
+    },
+    {
+      "category": "Manzili Ndoto - Exclusive Use ONLY",
+      "unit": "per night (2 doubles, sleeps 4, exclusive use only)",
+      "rack": { "amount": 2000, "verified": true },
+      "sto20": { "amount": 1600, "verified": true }
+    }
+  ],
+  "mealPlanSupplements": {
+    "halfBoardSupplement": {
+      "raw": "US$ 55 per adult / US$ 40 per child (same figure across Rack and STO files)",
+      "verified": true
+    },
+    "dayUse": { "raw": "75% of the relevant per-night rate", "verified": true }
+  },
+  "additionalCharges": [
+    { "item": "Airport Meet & Greet services", "amount": "US$ 40 per person", "verified": true },
+    { "item": "Transfer JKIA - Manzili House (up to 4 pax)", "amount": "US$ 70 per vehicle one way", "verified": true },
+    { "item": "Special Swahili Dinner (booked in advance)", "amount": "0-4 pax US$400; 5-8 pax US$700; 9-12 pax US$1,000", "verified": true }
+  ],
+  "specialOffers": {
+    "raw": "Shoulder Season: additional 10% off B&B rate for April/May and November. Book 2 consecutive nights, get a free day room at end of safari (valid Apr/May & Nov).",
+    "verified": true,
+    "confidenceNote": "[Unverified] Whether this stacks with the STO discount, or is Rack-only, is not stated."
+  },
+  "policies": {
+    "deposit": "20% non-refundable deposit to confirm booking, balance due 60 days prior to arrival",
+    "cancellation": ">60 days: 20% charge; 45-60 days: 50% charge; 30-44 days: 75% charge; <=29 days: 100% charge",
+    "checkIn": "13:00",
+    "checkOut": "10:00"
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "property": "The Pelican Lodge",
+  "operator": "The Pelican Lodge",
+  "region": "Not stated in source (near Lake Nakuru National Park, per game drive listing)",
+  "isSoroiProperty": false,
+  "sourceFiles": ["2026 CONTRACT RATES/KENYA/ACCOMODATION/PELICAN & OLMORAN TENTED/PELICAN LODGE & OLMORAN TENTED CAMP 2026 CONTRACT RATES.pdf"],
+  "currency": { "nonResident": "USD", "resident": "KES", "verified": true },
+  "validity": "2 January 2026 - 1 January 2027",
+  "seasons": { "high": "2 Jan-31 Mar 2026, 1 Nov-20 Dec 2026", "low": "1 Apr-30 Jun 2026", "peak": "1 Jul-31 Oct 2026, 21 Dec 2026-1 Jan 2027" },
+  "nonResidentNetRates_executiveCottages_perPersonSharing": {
+    "high": { "fullBoard": { "single": 140, "double": 85, "triple": 80 }, "halfBoard": { "single": 125, "double": 80, "triple": 75 }, "bb": { "single": 120, "double": 75, "triple": 70 } },
+    "low": { "fullBoard": { "single": 110, "double": 80, "triple": 75 }, "halfBoard": { "single": 105, "double": 75, "triple": 70 }, "bb": { "single": 100, "double": 70, "triple": 65 } },
+    "peak": { "fullBoard": { "single": 155, "double": 105, "triple": 85 }, "halfBoard": { "single": 150, "double": 100, "triple": 80 }, "bb": { "single": 145, "double": 95, "triple": 75 } },
+    "verified": true
+  },
+  "nonResidentNetRates_deluxeRooms_perPersonSharing": {
+    "high": { "fullBoard": { "single": 110, "double": 70, "triple": 65 }, "halfBoard": { "single": 105, "double": 65, "triple": 60 }, "bb": { "single": 100, "double": 60, "triple": 55 } },
+    "low": { "fullBoard": { "single": 90, "double": 65, "triple": 60 }, "halfBoard": { "single": 85, "double": 50, "triple": 55 }, "bb": { "single": 80, "double": 55, "triple": 50 } },
+    "peak": { "fullBoard": { "single": 130, "double": 85, "triple": 70 }, "halfBoard": { "single": 125, "double": 80, "triple": 65 }, "bb": { "single": 120, "double": 75, "triple": 60 } },
+    "familyRoom": 390,
+    "verified": true
+  },
+  "residentRates_perRoom_KES": {
+    "commission": "10%",
+    "executiveCottages": { "fullBoard": { "single": 12800, "doubleTwin": 15500, "triple": 21600 }, "halfBoard": { "single": 12250, "doubleTwin": 13500, "triple": 19350 }, "bb": { "single": 11500, "doubleTwin": 12500, "triple": 17100 } },
+    "deluxeRooms": { "fullBoard": { "single": 10500, "doubleTwin": 12500, "triple": 18000 }, "halfBoard": { "single": 9950, "doubleTwin": 11000, "triple": 15750 }, "bb": { "single": 9400, "doubleTwin": 10000, "triple": 13500 } },
+    "familyRoom": 19000,
+    "verified": true
+  },
+  "conferenceRates_KES": { "commission": "10%", "fullDay": { "perPerson": 3200, "singleFB": 10500, "doubleFB": 17500 }, "halfDay": { "perPerson": 2800 }, "includes": "Flip chart & markers, notepad & pens, projector (no extra charge), in-built PA system" },
+  "pelicanVillas_perUnitBedOnly_KES": { "commission": "10%", "threeBedroomMax6pax": 30000, "twoBedroomMax4pax": 20000, "oneBedroomMax2pax": 10000 },
+  "childPolicy": { "raw": "2 years and below: free while sharing with adults. 9 years and below sharing with 2 adults: 50% of half-twin rate. Sharing with 1 adult in a room: 100% of adult rate. Exclusive use of room: 100% of adult rate.", "verified": true },
+  "easterChristmasSupplement": { "raw": "Easter Fri-Sat-Sun and Christmas 24,25,26,31 Dec 2026 & 1 Jan 2027: Resident adult KES2,000/child KES1,500 per night; Non-Resident US$30/adult, US$20/child per night.", "verified": true },
+  "meals": { "picnicOrExtraLunch": { "kes": 2500, "usd": 30 } },
+  "singleRoomPolicy": { "raw": "Max 4 single rooms at single rate per booking, rest at double rate.", "verified": true },
+  "groupReward": { "raw": "1 free pax per 15 paying clients, not applicable during promotional periods.", "verified": true },
+  "activities": [
+    { "item": "Escorted Nature Walk", "amount": "US$10pp" },
+    { "item": "Game Drive to Lake Nakuru National Park (minivan)", "amount": "US$200/vehicle" },
+    { "item": "Game Drive to Lake Nakuru National Park (4x4 Land Cruiser)", "amount": "US$300/vehicle" },
+    { "item": "Other activities available", "amount": "Team building, sundowner/bush dinners, birdwatching, private weddings, swimming (no separate price given)" }
+  ],
+  "policies": {
+    "releasePeriod": "Block bookings confirmed min 60 days prior to arrival; room lists submitted min 30 days prior",
+    "deposit": "50% deposit on confirmation, balance 30 days prior to arrival",
+    "cancellation": "60-35 days: 25% of applicable rate per bed-night; 34-22 days: 50%; within 14 days: 75%; <14 days or no-show: 100%",
+    "invoiceDispute": "Must be raised within 4 days of invoicing"
+  }
+}

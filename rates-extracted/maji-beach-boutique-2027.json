@@ -1,0 +1,60 @@
+{
+  "$note": "Extracted 6 Aug 2026, read directly (pdftotext -layout, poppler). The Maji Beach Boutique Hotel — non-Soroi, Diani Beach. Folder named 'THE MAJI BEACH BOUTIQUE HOTEL' in the 2027 tree. East Africa/Resident counterpart PDF exists in this folder ('...RATE CARD 2026-2027 EAST AFRICA _.pdf') but was NOT extracted here — lower priority per task scope, and the 2026 East Africa card was already captured for reference in maji-beach-boutique-2026.json. Extract on demand if a Resident-tier quote for this property/year is needed.",
+  "property": "The Maji Beach Boutique Hotel",
+  "region": "Diani Beach (South Coast)",
+  "tier": "STO Non-Resident Rate",
+  "residency": "Non-Resident",
+  "source": {
+    "file": "2027 CONTRACT RATES/KENYA/BEACH ACCOMODATION/THE MAJI BEACH BOUTIQUE HOTEL/THE MAJI BEACH BOUTIQUE HOTEL RATE CARD 2026-2027 STO RATES NON-RESIDENT_.pdf",
+    "pdfPageIndex": [0],
+    "validity": { "start": "2026-11-01", "end": "2027-10-31" }
+  },
+  "confidence": "confirmed-2026-08-06",
+  "extractionMethod": { "note": "Read directly, single-page document." },
+  "structuralFindings": [
+    "Every single figure on this 2026/2027 card (room rates, single supplement %, Full Board supplement, third-bed %, transfer prices, minimum stay) is IDENTICAL to the 2025/2026 card (maji-beach-boutique-2026.json) — confirmed by direct side-by-side read of both PDFs, not assumed. This property's non-resident STO rate appears to be held flat year-over-year, at least for these two cycles.",
+    "Cancellation policy wording changed slightly from the 2026 card: the '24 to 14 days' band dropped its 'max 5 days/nights per person' qualifier, and the payment condition changed from 'Strictly 30 days after invoice' to '30% non-refundable deposit upon booking confirmation, balance within 30 days prior to arrival' — a genuine T&C change, not a rate change.",
+    "Same season-band structure as 2026: MID SEASON (Nov-Dec19 + Apr-Jun + Sep-Oct), PEAK SEASON (Dec20-Jan02), HIGH SEASON (Jan03-Mar31 + Jul-Aug)."
+  ],
+  "seasons": {
+    "midSeason": { "dateRanges": ["01.11.26 - 19.12.26", "01.04.27 - 30.06.27", "01.09.27 - 31.10.27"] },
+    "peakSeason": { "dateRanges": ["20.12.26 - 02.01.27"] },
+    "highSeason": { "dateRanges": ["03.01.27 - 31.03.27", "01.07.27 - 31.08.27"] }
+  },
+  "rates": {
+    "sto_nonResident": {
+      "currency": "USD",
+      "unit": "per person per night, Half Board",
+      "gardenViewSingle": { "midSeason": 196, "peakSeason": 226, "highSeason": 213 },
+      "superiorGardenView": { "midSeason": 239, "peakSeason": 336, "highSeason": 278 },
+      "deluxeOceanViewRoom": { "midSeason": 269, "peakSeason": 374, "highSeason": 307 },
+      "gardenSuiteGardenView": { "midSeason": 316, "peakSeason": 423, "highSeason": 355 },
+      "jacuzziSuiteOceanView": { "midSeason": 365, "peakSeason": 470, "highSeason": 403 },
+      "oceanSuiteOceanView": { "midSeason": 365, "peakSeason": 470, "highSeason": 403 },
+      "singleRoomSupplementPct": { "midSeason": "30%", "peakSeason": "30%", "highSeason": "30%" },
+      "fullBoardSupplement": { "midSeason": 30, "peakSeason": 30, "highSeason": 30, "unit": "per person per day" },
+      "thirdBedAdultPct": { "midSeason": "60%", "peakSeason": "60%", "highSeason": "60%" }
+    }
+  },
+  "transfers": {
+    "fromUkunda": { "amount": 30, "unit": "per vehicle, max 4 guests" },
+    "fromMombasa": { "amount": 80, "unit": "per vehicle, max 4 guests" },
+    "freeFor7PlusNights": true
+  },
+  "minimumStay": "7 nights (all seasons)",
+  "cancellationPolicy": {
+    "30to25Days": "40% of applicable rate",
+    "24to14Days": "50%",
+    "13to4Days": "80%",
+    "3orFewer_NoShow_EarlyDeparture": "90%, max 5 nights, plus 35% on additional nights cancelled"
+  },
+  "paymentTerms": "30% non-refundable deposit upon booking confirmation. Balance within 30 days prior to arrival.",
+  "honeymoonOffer": "Complimentary upgrade to next room category (availability permitting), 1 bottle sparkling wine, management gift — requires marriage certificate not older than 6 months.",
+  "notExtracted": {
+    "file": "2027 CONTRACT RATES/KENYA/BEACH ACCOMODATION/THE MAJI BEACH BOUTIQUE HOTEL/THE MAJI BEACH BOUTIQUE HOTEL RATE CARD 2026-2027 EAST AFRICA _.pdf",
+    "reason": "East Africa/Resident tier — lower priority per task scope. Not extracted this pass."
+  },
+  "portfolioWideTerms": {
+    "note": "Non-Soroi property — CLAUDE.md's Soroi-portfolio-wide terms do not apply."
+  }
+}

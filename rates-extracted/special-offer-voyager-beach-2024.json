@@ -1,0 +1,26 @@
+{
+  "$note": "Extracted 6 Aug 2026 from SPECIAL OFFERS/VOYAGER BEACH/VOYAGER BEACH RESORT SPECIAL OFFER - AHH090924.msg via extract_msg Python library. Direct email from Heritage Hotels (not forwarded internally first) - fully readable plain-text body.",
+  "offerStatus": "promotional - confirm current validity before use",
+  "operator": "Heritage Hotels Ltd",
+  "property": "Voyager Beach Resort",
+  "offerName": "VOYAGER BEACH RESORT SPECIAL OFFER - AHH090924",
+  "source": {
+    "file": "SPECIAL OFFERS/VOYAGER BEACH/VOYAGER BEACH RESORT SPECIAL OFFER - AHH090924🌟.msg",
+    "emailDate": "2024-09-09",
+    "extractionMethod": "extract_msg Python library, plain-text body"
+  },
+  "validity": {
+    "statedText": "The offer is for travel in the month of September 2024",
+    "verified": true,
+    "expiryAssessment": "EXPIRED - single-month window (Sep 2024) closed nearly 2 years before today's date (6 Aug 2026)."
+  },
+  "offerMechanics": {
+    "type": "AGENT COMMISSION OFFER, not a guest-facing room rate discount",
+    "detail": "An additional 10% commission for travel agents and tour operators, on top of standard commission, for September 2024 bookings.",
+    "paymentTerm": "Book and Pay - agents with credit facilities must prepay.",
+    "restriction": "New bookings only; limited and revocable at any time at Heritage Hotels' discretion."
+  },
+  "noPricedFiguresInSource": true,
+  "verified": true,
+  "confidenceNote": "This is fundamentally different in kind from the other offers in this batch - it is an agent commission uplift, not a discount on the room rate a client pays. There is no room rate or guest-facing pricing figure anywhere in this source document. Do not use this file as a source for a client quote's room rate; it would only be relevant to Sunworld's own internal commission accounting, and even then only for Sep 2024 (long expired)."
+}

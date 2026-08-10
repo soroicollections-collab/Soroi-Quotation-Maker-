@@ -1,0 +1,87 @@
+{
+  "$note": "Fresh extraction, 6 Aug 2026, read directly from source PDF text (5-page, single-property document, layout-preserving pdftotext, no adjacent-property risk). Only the Non-Residents file was extracted per task brief ('primary, non-resident'); the Residents STO Rate Sheet in the same folder was left unopened — noted as skipped below, not fabricated.",
+  "property": "Cocokinondo Beach House",
+  "region": "Diani Beach area",
+  "tier": "STO Rate Sheet 2026 — Rack and Nett columns shown side by side per room/season (mirrors the general 'Rack vs Nett/discounted' pattern seen elsewhere, exact STO% not stated as a round number on this sheet)",
+  "residency": "Non-Resident",
+  "source": {
+    "file": "2026 CONTRACT RATES/KENYA/BEACH ACCOMODATION/Cocokinondo Beach House/2026 Cocokinondo Non-Residents STO Rate Sheet - Sun World Safaris.pdf",
+    "pages": 5
+  },
+  "skipped": {
+    "file": "2026 Cocokinondo Residents STO Rate Sheet - Sun World Safaris.pdf",
+    "reason": "Not extracted per task brief, which named the Non-Resident sheet as primary. Exists in the same folder for a future Resident-rate extraction if needed."
+  },
+  "confidence": "confirmed-2026-08-06",
+  "extractionMethod": { "note": "Single-property, 5-page PDF read directly with pdftotext -layout; no adjacent-property risk." },
+  "structuralFindings": [
+    "Three distinct booking modes, each with its own rate table: (1) Boutique/individual-room booking on an All Inclusive basis, (2) Boutique/individual-room booking on a Half Board basis, (3) Exclusive Use of the entire property (flat per-pax rate scaling down as guest count rises, no seasons).",
+    "Both Boutique tables (AI and HB) share the same two room categories (Deluxe Room, Presidential Suite) and same High/Low season windows, each with Rack and Nett sub-rows.",
+    "Presidential Suite has no stated Child Rate column in either Boutique table — left blank/not offered in the source, recorded as null rather than assumed equal to Deluxe.",
+    "Exclusive Use pricing is a genuinely different shape: a sliding per-person rate that decreases as total guest count (2 through 8) increases, plus flat Extra Adult/Extra Child/Infant add-ons — a shared-cost-across-group model, not a per-category room rate.",
+    "Exclusive Use carries a Festive/Easter season supplement of $50pp/night layered on top of the flat per-pax figure — the flat rate table itself has 'No Seasons' per its own header, so this supplement is the only seasonal variation for that mode.",
+    "Child age bracket for Boutique bookings is 4-12 (not the more common 2-12 seen elsewhere); Exclusive Use uses a different bracket again — Extra Child 4-13, Infant defined as 3 y/o and under free."
+  ],
+  "rates": {
+    "currency": "USD",
+    "boutiqueAllInclusive": {
+      "unit": "per person per night, All Inclusive",
+      "seasons": { "high": ["1 Jul - 30 Sep", "20 Dec - 5 Jan"], "low": ["6 Jan - 31 Jun", "1 Oct - 19 Dec"] },
+      "deluxeRoom": {
+        "high": { "rack": { "perPersonSharing": 450, "single": 563, "child4to12": 225 }, "nett": { "perPersonSharing": 337, "single": 422, "child4to12": 169 } },
+        "low": { "rack": { "perPersonSharing": 350, "single": 438, "child4to12": 175 }, "nett": { "perPersonSharing": 262, "single": 328, "child4to12": 131 } }
+      },
+      "presidentialSuite": {
+        "high": { "rack": { "perPersonSharing": 500, "single": 625, "child4to12": null }, "nett": { "perPersonSharing": 375, "single": 469, "child4to12": null } },
+        "low": { "rack": { "perPersonSharing": 400, "single": 500, "child4to12": null }, "nett": { "perPersonSharing": 300, "single": 375, "child4to12": null } }
+      }
+    },
+    "boutiqueHalfBoard": {
+      "unit": "per person per night, Half Board",
+      "seasons": { "high": ["1 Jul - 30 Sep", "20 Dec - 5 Jan"], "low": ["6 Jan - 31 Jun", "1 Oct - 19 Dec"] },
+      "deluxeRoom": {
+        "high": { "rack": { "perPersonSharing": 400, "single": 500, "child4to12": 200 }, "nett": { "perPersonSharing": 300, "single": 375, "child4to12": 150 } },
+        "low": { "rack": { "perPersonSharing": 300, "single": 375, "child4to12": 150 }, "nett": { "perPersonSharing": 225, "single": 281, "child4to12": 112 } }
+      },
+      "presidentialSuite": {
+        "high": { "rack": { "perPersonSharing": 450, "single": 562, "child4to12": null }, "nett": { "perPersonSharing": 337, "single": 421, "child4to12": null } },
+        "low": { "rack": { "perPersonSharing": 350, "single": 437, "child4to12": null }, "nett": { "perPersonSharing": 262, "single": 328, "child4to12": null } }
+      }
+    },
+    "exclusiveUse": {
+      "unit": "per pax, Full Board, flat rate, no seasons (except festive/easter supplement below)",
+      "byGuestCount": {
+        "2": { "rack": 900, "nett": 675 },
+        "3": { "rack": 800, "nett": 600 },
+        "4": { "rack": 700, "nett": 525 },
+        "5": { "rack": 640, "nett": 480 },
+        "6": { "rack": 583, "nett": 437 },
+        "7": { "rack": 535, "nett": 401 },
+        "8": { "rack": 500, "nett": 375 }
+      },
+      "extraAdult14plus": { "rack": 300, "nett": 225 },
+      "extraChild4to13": { "rack": 200, "nett": 150 },
+      "infant3AndUnder": "free",
+      "maxOccupancy": 14,
+      "festiveEasterSupplement": "USD 50 per person per night"
+    }
+  },
+  "verified": true,
+  "inclusions": {
+    "boutiqueAI": ["Daily housekeeping/turn-down", "All meals", "Selected house wines/cocktails/mocktails/beers/spirits", "Ukunda airstrip transfers", "House amenities (gym, pool, tennis, games room, cinema room)", "Wi-Fi", "Spa & massage for Presidential Suite only"],
+    "boutiqueHB": ["Daily housekeeping/turn-down", "Breakfast & lunch or dinner", "House amenities", "Wi-Fi"],
+    "exclusiveUse": ["Exclusive use of Beach House and Guest House", "11-person staff team incl. private chef", "Full board accommodation", "Specialty menus", "Snacks/soft drinks/beer/wine/spirits", "House amenities incl. jacuzzi", "Training (gym/tennis/diving/yoga/pilates)", "Massage & beauty therapy", "Complimentary Ukunda/airport transfers", "Chauffeured transport within Diani", "High-speed Wi-Fi", "Entertainment (DJ/piano/karaoke)", "Complimentary celebration cake"]
+  },
+  "bookingTerms": {
+    "deposit": "25% non-refundable at time of booking",
+    "finalPayment": "Balance due 60 days before arrival; full payment if booked within 60 days of arrival",
+    "incidentalsPreAuth": "~5% of booking value held on card at check-in",
+    "provisionalHold": "7-14 days"
+  },
+  "cancellationPolicy": {
+    "anyCancellation": "Loss of deposit",
+    "within60to31Days": "50% of accommodation cost charged",
+    "within30Days": "100% of accommodation cost charged"
+  },
+  "confidenceNote": "No mandatory conservancy/park-style fee found — consistent with a Diani-area beach house. Resident-rate version of this property (separate PDF in same folder) not extracted — if a client specifically needs Resident pricing here, that PDF still needs a fresh extraction, don't reuse these Non-Resident figures as a stand-in."
+}

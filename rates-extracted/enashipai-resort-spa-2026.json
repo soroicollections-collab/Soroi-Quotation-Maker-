@@ -1,0 +1,24 @@
+{
+  "$note": "Extracted 6 Aug 2026.",
+  "property": "Enashipai Resort & Spa",
+  "operator": "Enashipai Resort & Spa",
+  "region": "Lake Naivasha",
+  "tier": "Contract Rates Offer 2026, Sunworld Safaris specific",
+  "source": { "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/ENASHIPAI RESORT/Enashipai Resort - Sunworld Safaris 2026.pdf" },
+  "confidenceNote": "[Unverified] Clause 10 (Duration) in the document's boilerplate T&Cs states rates apply 'until 31st December 2025' - which conflicts with the rate table itself explicitly quoting 2026 date ranges (including 23 Dec 2025-1 Jan 2027). Likely a copy-paste artifact from a prior year's contract template; treat the explicit 2026 date ranges in the rate table as authoritative but flag this conflict per CLAUDE.md's instruction to surface, not silently resolve, contradictions.",
+  "rates": {
+    "currency": "USD", "unit": "per room per night, Full Board",
+    "highSeason_02Jan-31Mar26_01Jul-31Oct26_23Dec25-01Jan27": { "single": 312, "double": 438 },
+    "lowSeason_01Apr-30Jun26_01Nov-22Dec26": { "single": 260, "double": 352 },
+    "oneBedroomHoneymoonSuite_02Jan26-01Jan27": { "single": 380, "double": 490 }
+  },
+  "inclusions": "16% VAT, 2% training levy, 7% service charge, Full Board, internet.",
+  "childPolicy": {
+    "0to3sharing": "No charge",
+    "4to12sharing1or2adults": "25% of applicable double room rate per child",
+    "4to12ownRoomOneChild": "75% of adult single rate",
+    "4to12ownRoomTwoChildren": "75% of adult double rate",
+    "13plus": "Full adult rate"
+  },
+  "notes": "Festive/Easter supplement USD 50/person (50% for children over 3). Group discounts 5-10% for 20+ pax. Not applicable to conference rates."
+}

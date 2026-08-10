@@ -1,0 +1,48 @@
+{
+  "property": "Porini Mara Camp",
+  "operator": "Gamewatchers Safaris Ltd (Porini Camps)",
+  "region": "Ol Kinyei Conservancy, Maasai Mara",
+  "isSoroiProperty": false,
+  "sourceFiles": [
+    "2026 CONTRACT RATES/KENYA/ACCOMODATION/PORINI CAMPS/PORINI CAMPS  NAIROBI TENTED 2026 - PREFERRED AGENT NETT RATES.pdf",
+    "2026 CONTRACT RATES/KENYA/ACCOMODATION/PORINI CAMPS/Reduced Rates for 6 nights Porini Camps 2026 - Net Rates..pdf"
+  ],
+  "currency": "USD",
+  "rateType": "Preferred Agent NETT rates",
+  "sharedTermsNote": "Shared Gamewatchers/Porini Group policies documented in full in porini-amboseli-camp-2026.json.",
+  "groundPackage_perPersonSharing_perNight": {
+    "seasons": [
+      { "dates": "20 Dec 2025-2 Jan 2026", "rate": 786, "singleSupplement": 190 },
+      { "dates": "3 Jan-31 Mar 2026", "rate": 542, "singleSupplement": 180 },
+      { "dates": "1-15 Apr 2026", "rate": 494, "singleSupplement": 180 },
+      { "dates": "15 Apr-31 May 2026", "rate": 494, "singleSupplement": 180 },
+      { "dates": "1-30 Jun 2026", "rate": 518, "singleSupplement": 180 },
+      { "dates": "1-21 Jul 2026", "rate": 786, "singleSupplement": 195 },
+      { "dates": "22 Jul-30 Sep 2026", "rate": 786, "singleSupplement": 210 },
+      { "dates": "1-31 Oct 2026", "rate": 786, "singleSupplement": 190 },
+      { "dates": "1 Nov-19 Dec 2026", "rate": 518, "singleSupplement": 180 },
+      { "dates": "20 Dec 2026-2 Jan 2027", "rate": 810, "singleSupplement": 210 }
+    ],
+    "verified": true
+  },
+  "reducedRate_6nightsSpecialOffer_combinedWithPoriniCheetah": {
+    "confidenceNote": "Rate shown is for the combined 'Porini Mara Camp & Porini Cheetah Camp' offer column.",
+    "seasons": [
+      { "dates": "20 Dec 2025-2 Jan 2026", "rate": 711 }, { "dates": "3 Jan-31 Mar 2026", "rate": 482 }, { "dates": "1-15 Apr 2026", "rate": 438 }, { "dates": "16 Apr-31 May 2026", "rate": 438 },
+      { "dates": "1-30 Jun 2026", "rate": 497 }, { "dates": "1-21 Jul 2026", "rate": 711 }, { "dates": "22 Jul-30 Sep 2026", "rate": 711 }, { "dates": "1-31 Oct 2026", "rate": 506 },
+      { "dates": "1 Nov-19 Dec 2026", "rate": 497 }, { "dates": "20 Dec 2026-2 Jan 2027", "rate": 733 }
+    ],
+    "verified": true
+  },
+  "roomNote": "Each tent has 1 double bed + 1 single bed. 1 Family Unit (2 ensuite tents + interconnecting lounge); child in family unit tent pays 75% of per-person-sharing rate.",
+  "minStay": "2 nights",
+  "includes": ["Full board accommodation", "House drinks", "Day & night shared game drives in Ol Kinyei Conservancy and Naboisho Conservancy", "Sundowners & Maasai walks", "Local airstrip transfers (Ol Seki Airstrip)", "Daily conservancy fees", "Free inter-camp transfers"],
+  "excludes": ["Flights/taxes/visas", "Personal items", "Laundry", "Tips/gratuities", "Exclusive vehicle use $300/day min 2 days", "Late departure $125pp min 2 pax", "Christmas/New Year supplement $40pp/night"],
+  "additionalFees": { "poriniWildlifeHabitatTrustPayment": "US$5 per person per night, non-commissionable" },
+  "roadTransfer_06seaterMinivan": "Nairobi to Porini Mara/Cheetah/Giraffe: US$310/vehicle",
+  "childPolicy": { "raw": "8-16 years sharing with 2 adults: 60% of adult rate.", "verified": true },
+  "policies": {
+    "deposit": "25% deposit to confirm, balance due 60 days before arrival",
+    "cancellation": "Confirmation-120 days: 25%; 120-60 days: 35%; 60-30 days: 50%; 30-15 days: 75%; 15-3 days: 90%; <=3 days: 100%"
+  }
+}

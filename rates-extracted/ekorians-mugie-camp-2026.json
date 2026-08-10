@@ -1,0 +1,51 @@
+{
+  "property": "Ekorian's Mugie Camp",
+  "operator": "Offbeat Safaris Holdings Ltd",
+  "region": "Mugie Conservancy, Laikipia",
+  "isSoroiProperty": false,
+  "sourceFiles": ["2026 CONTRACT RATES/KENYA/ACCOMODATION/OFFBEAT/2026 Offbeat Collection Wholesale Rates (30%) AMENDED.pdf"],
+  "notes": [
+    "Part of the same 8-property Offbeat document - see offbeat-mara-camp-2026.json for sibling properties.",
+    "Minimum charge for exclusive use of camp is 10 adults at the applicable season's rate.",
+    "Wholesale rate confirmed arithmetically as Rack x 0.70 (e.g. Low adult: $389 = $555 x 0.70)."
+  ],
+  "currency": "USD",
+  "validity": "5 Jan 2026 - 4 Jan 2027",
+  "publishedRates_perPersonPerNight": {
+    "low_MarAprMayNov": { "adultSharing": 555, "childSharing5to15": 275, "perSingle": 805 },
+    "regular_05to31Jan_Feb_JunSepOct_01to17Dec": { "adultSharing": 615, "childSharing5to15": 310, "perSingle": 865 },
+    "high_JulAug_18Dec_04Jan": { "adultSharing": 800, "childSharing5to15": 400, "perSingle": 1150 }
+  },
+  "wholesale30pct_perPersonPerNight": {
+    "low_MarAprMayNov": { "adultSharing": 389, "childSharing5to15": 193, "perSingle": 564 },
+    "regular_05to31Jan_Feb_JunSepOct_01to17Dec": { "adultSharing": 431, "childSharing5to15": 217, "perSingle": 606 },
+    "high_JulAug_18Dec_04Jan": { "adultSharing": 560, "childSharing5to15": 280, "perSingle": 805 }
+  },
+  "conservancyFees_perPersonPerNight": { "adult": 130, "child": 65, "verified": true },
+  "childPolicy": { "raw": "0-4 years free of charge.", "verified": true },
+  "specials": [
+    "Early Bird Discount: 5% off accommodation, deposit 9 months prior. All seasons, combinable with 2 & 3.",
+    "Family Discount: 3rd child sharing a triple pays conservation fees only.",
+    "Per Single rate only from 2nd single room per booking.",
+    "Honeymooners Discount: 25% off accommodation for one of the couple.",
+    "4 nights for price of 3 (Regular & Low seasons).",
+    "6 nights for price of 5 when booking Ekorian for 3 nights (Low/Regular) + Offbeat Mara or Offbeat Ndoto for 3 nights (Regular/Mid/Green)."
+  ],
+  "includes": ["Full board accommodation", "House wine, beers and spirits", "Laundry", "Mugie airstrip transfers", "Exclusive use of vehicle for 4+ pax", "Unlimited shared game drives", "Night drives", "Guided walks", "Kayaking, fishing, camel rides", "Ranch activities (Dip day Saturdays)", "Demonstration with bloodhounds", "Mugie conservancy/community office/school/clinic visits", "Bush meals and sundowners"],
+  "excludes": [
+    "Conservation fees (see above)",
+    "Golf green fee: $30",
+    "Transfers from Loisaba airstrip: $120/car each way",
+    "Vintage wines and champagne on request",
+    "Filming safaris",
+    "Late departure after 2pm: $100pp (incl. lunch and game drive)",
+    "Exclusive use of vehicle (less than 4 pax): $250/vehicle/day",
+    "Pokot or Samburu boma visit: $150/car (6 pax)",
+    "Ride on horseback with mounted rangers (anti-poaching patrol) - pre-booking required, rates on request"
+  ],
+  "policies": {
+    "checkIn": "11:00", "checkOut": "10:00",
+    "deposit": "20% deposit confirms booking; balance due 45 days prior to arrival.",
+    "cancellation": ">120 days: 20% deposit refunded (net of bank charges); 120-46 days: 20% deposit forfeited; 45-30 days: 50% of full booking value forfeited; <30 days or no-show: 100% forfeited."
+  }
+}

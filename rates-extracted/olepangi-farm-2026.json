@@ -1,0 +1,61 @@
+{
+  "property": "Olepangi Farm",
+  "operator": "Olepangi Farm",
+  "region": "Laikipia (near Nanyuki, ~45min from Nanyuki Airstrip)",
+  "isSoroiProperty": false,
+  "sourceFiles": ["2026 CONTRACT RATES/KENYA/ACCOMODATION/OLEPANGI FARM/Olepangi Farm - 2026 STO Rates.pdf"],
+  "currency": "USD",
+  "validity": "2 Jan 2026 - 1 Jan 2027",
+  "notes": [
+    "Only an STO-tier rate card is on file - no separate Rack card was found in this folder, so the % discount this STO figure represents off Rack cannot be verified.",
+    "Wide range of unit types: some priced per person per night (cottages, rooms), others per property per night regardless of pax (houses/villas), each with a separate per-person-equivalent All Inclusive figure.",
+    "Larger houses have stated minimum pax requirements (see individual entries)."
+  ],
+  "fullBoard_STO": {
+    "markhamAndThesigerCottages_2pax": { "perPersonPerNight": 300 },
+    "theRoundHouse_2pax": { "perPersonPerNight": 316 },
+    "theBunkRoom_max4children6yrsPlus": { "perPersonPerNight": 196 },
+    "burtonAndSpeke_2BR4pax_1Dbl1Twin": { "perNightUpTo4pax": 1060, "minPax": 3 },
+    "villaGorilla_2BR4pax_1Dbl1Twin_livingRoom": { "perNightUpTo4pax": 1156, "minPax": 3 },
+    "olepangiHouse_5BRmax10pax": { "perNightUpTo6pax": 1920, "extraPaxPerPersonUpTo10max": 280, "minPax": 6 },
+    "littleMoonHouseAtMatembezi_2BRmax4pax": { "perNightUpTo4pax": 1536, "minPax": 4 },
+    "matembeziHouse_5BRmax10pax": { "perNightUpTo6pax": 2376, "extraPaxPerPersonUpTo10max": 360, "minPax": 6 },
+    "verified": true
+  },
+  "allInclusive_STO_perPersonPerNight": {
+    "markhamAndThesigerCottages": 560, "theRoundHouse": 576, "theBunkRoom": 280,
+    "burtonAndSpeke": 516, "villaGorilla": 540, "olepangiHouse": 600, "littleMoonHouseAtMatembezi": 664, "matembeziHouse": 704,
+    "alcoholSupplementNote": "All Inclusive excludes an alcohol supplement of US$55pp (local spirits, wine, beer, selected cocktails) - i.e. 'All Inclusive' here still doesn't cover all alcohol without a further charge.",
+    "verified": true
+  },
+  "fullBoardIncludes": ["Full board", "Soft drinks", "Selected farm activities", "Laundry"],
+  "allInclusiveIncludes": ["Full board", "Drinks (local wines, beers, spirits) on the farm", "Activities", "Signature Day Trip to Loldaiga, Ol Pejeta, Ngare Ndare, Samburu (min 2 people)", "Nanyuki Airstrip transfers", "Laundry"],
+  "excludes": ["Transfers (beyond airstrip, for Full Board tier)", "All alcoholic drinks and Olepangi signature non-alcoholic drinks (Full Board tier)", "Nairobi Road transfers", "Visas, travel & medical insurance", "Conservancy fees", "Personal items and gratuities"],
+  "singleSupplement": "50%",
+  "airstripAndRoadTransfers": [
+    { "route": "Nanyuki Airstrip (~45min)", "amount": "US$130 each way (taxi, max 4 pax) or US$190 (4WD, max 8 pax)" },
+    { "route": "Nairobi (~4.5hrs)", "amount": "US$250 each way (taxi, max 4 pax) or US$350 (4WD, max 8 pax)" }
+  ],
+  "onFarmActivities_perPerson": [
+    { "item": "Daily Life / Farm Activities", "amount": "No cost" },
+    { "item": "Farm Walks / Garden Tours", "amount": "No cost" },
+    { "item": "Young Farmer's Club", "amount": "No cost" },
+    { "item": "Community Walk with Mr Kariuki", "amount": "US$20 adult, US$10 child 4-12yrs" },
+    { "item": "Signature Gin Tasting", "amount": "US$45" },
+    { "item": "90min massage / 60min facial", "amount": "US$65 / US$40" },
+    { "item": "Horse riding on the Farm", "amount": "US$45 adult, US$30 child" },
+    { "item": "Horse riding around the Community", "amount": "US$70" },
+    { "item": "Horse riding lesson", "amount": "US$65 adult, US$45 child" }
+  ],
+  "signatureDayTrips": [
+    { "item": "Full Day Safari (4x4 with guide, one of Loldaiga/Ol Pejeta/Samburu/Shaba/Solio, incl. picnic lunch)", "amount": "US$360 per vehicle per day, excludes park fees" },
+    { "item": "Mt Kenya Day Walk with Rangers (incl. picnic lunch)", "amount": "US$360 per vehicle per day, excludes park fees and donation" },
+    { "item": "Half Day Safari (Ngare Ndare canopy walk & blue pools, incl. picnic lunch)", "amount": "US$275 per vehicle per half day, excludes park fees and ranger fee" },
+    { "item": "Helicopter Excursions", "amount": "Contact directly for prices" }
+  ],
+  "policies": {
+    "checkIn": "12:00", "checkOut": "10:00",
+    "deposit": "20% non-refundable deposit to confirm, balance due 60 days prior to arrival",
+    "cancellation": ">60 days: 20% non-refundable charge on entire booking value; 45-60 days: 50%; 30-44 days: 75%; <=29 days: 100%"
+  }
+}

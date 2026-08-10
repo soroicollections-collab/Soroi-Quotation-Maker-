@@ -1,0 +1,73 @@
+{
+  "$note": "Extracted 6 Aug 2026, read directly, single-page documents, no misattribution risk. Same dual-tier extraction as 2026 (Rack 'r' + Net Operator 'c2'). Unlike the 2026 documents, this 2027 pair has FULL season coverage including the Nov-Jan window that was missing in 2026.",
+  "property": "Pinewood Beach",
+  "region": "Mombasa North Coast",
+  "tier": "Rack/Tariff (primary) and Nett Operator Rate (secondary) — both extracted from separate documents.",
+  "residency": "Non-Resident. No separate East African Resident rate document exists in the 2027 folder (only these two files present) — if a Resident quote is needed for 2027, no source exists yet in rates-extracted or the checked folder.",
+  "source": {
+    "rackFile": "2027 CONTRACT RATES/KENYA/BEACH ACCOMODATION/PINEWOOD BEACH/USD tariff (r) 2027- Pinewood, Kenya.pdf",
+    "netOperatorFile": "2027 CONTRACT RATES/KENYA/BEACH ACCOMODATION/PINEWOOD BEACH/USD net operator rate (c2) 2027 - Pinewood, Kenya.pdf",
+    "pdfPageIndex": 0,
+    "validity": { "start": "2026-11-01", "end": "2027-10-31", "note": "Full year covered, 8 columns this time (finer granularity than 2026's 5), including the festive window that was missing from the 2026 documents." }
+  },
+  "confidence": "confirmed-2026-08-06",
+  "extractionMethod": { "note": "Read directly, single-page tables, both Rack and Net Operator documents structurally identical (same rooms/seasons/supplements, only base figures differ)." },
+  "structuralFindings": [
+    "Same 6 room categories and same unit-inventory counts as 2026.",
+    "8 seasonal columns this year (finer-grained than 2026's 5): 01Nov-23Dec26, 24Dec26-06Jan27 (festive, notably a much higher rate — nearly double), 07Jan-28Feb27, 01Mar-30Apr27, May 2027 (closed for renovation), 01Jun-30Jun27, 01Jul-30Sep27, 01Oct-31Oct27.",
+    "Hotel closure moved to be explicitly represented as its own 'closed' column in the rate table itself (May 2027) rather than only a footnote as in 2026 — same underlying closure dates (01-31 May) either way.",
+    "Same supplement structure as 2026: FB +$20 pp/pd, AI +$44 pp/pd, 3rd bed adult -30%, children sharing 50%, children own room 80%, single supplement 50%, Easter supplement $24 pp/pd (26-29 March 2027 this year), Xmas/NYE $40 pp/pd, min stay 5 nights 24Dec-02Jan.",
+    "Same cancellation and deposit policy as 2026 (0-14 days = 100%, 15-35 days = 50%; 50% deposit within 2 weeks of proforma)."
+  ],
+  "seasons": {
+    "columns": ["01-Nov-26 to 23-Dec-26", "24-Dec-26 to 06-Jan-27 (festive)", "07-Jan-27 to 28-Feb-27", "01-Mar-27 to 30-Apr-27", "May 2027 (CLOSED - renovations)", "01-Jun-27 to 30-Jun-27", "01-Jul-27 to 30-Sep-27", "01-Oct-27 to 31-Oct-27"]
+  },
+  "rates": {
+    "rack": {
+      "currency": "USD",
+      "unit": "per person per day, sharing, Half Board",
+      "deluxeGardenRoom": { "01Nov-23Dec26": 169, "24Dec26-06Jan27": 359, "07Jan-28Feb27": 191, "01Mar-30Apr27": 169, "may2027": "closed", "01Jun-30Jun27": 169, "01Jul-30Sep27": 191, "01Oct-31Oct27": 169 },
+      "premiumGardenRoom": { "01Nov-23Dec26": 190, "24Dec26-06Jan27": 380, "07Jan-28Feb27": 212, "01Mar-30Apr27": 190, "may2027": "closed", "01Jun-30Jun27": 190, "01Jul-30Sep27": 212, "01Oct-31Oct27": 190 },
+      "deluxeGardenSuite": { "01Nov-23Dec26": 214, "24Dec26-06Jan27": 404, "07Jan-28Feb27": 236, "01Mar-30Apr27": 214, "may2027": "closed", "01Jun-30Jun27": 214, "01Jul-30Sep27": 236, "01Oct-31Oct27": 214 },
+      "premiumGardenSuite": { "01Nov-23Dec26": 235, "24Dec26-06Jan27": 425, "07Jan-28Feb27": 257, "01Mar-30Apr27": 235, "may2027": "closed", "01Jun-30Jun27": 235, "01Jul-30Sep27": 257, "01Oct-31Oct27": 235 },
+      "luxuryOceanFrontRoom": { "01Nov-23Dec26": 239, "24Dec26-06Jan27": 429, "07Jan-28Feb27": 261, "01Mar-30Apr27": 239, "may2027": "closed", "01Jun-30Jun27": 239, "01Jul-30Sep27": 261, "01Oct-31Oct27": 239 },
+      "grandOceanFrontSuite": { "01Nov-23Dec26": 289, "24Dec26-06Jan27": 479, "07Jan-28Feb27": 311, "01Mar-30Apr27": 289, "may2027": "closed", "01Jun-30Jun27": 289, "01Jul-30Sep27": 311, "01Oct-31Oct27": 289 }
+    },
+    "netOperator_c2": {
+      "currency": "USD",
+      "unit": "per person per day, sharing, Half Board",
+      "deluxeGardenRoom": { "01Nov-23Dec26": 135, "24Dec26-06Jan27": 287, "07Jan-28Feb27": 153, "01Mar-30Apr27": 135, "may2027": "closed", "01Jun-30Jun27": 135, "01Jul-30Sep27": 153, "01Oct-31Oct27": 135 },
+      "premiumGardenRoom": { "01Nov-23Dec26": 152, "24Dec26-06Jan27": 304, "07Jan-28Feb27": 170, "01Mar-30Apr27": 152, "may2027": "closed", "01Jun-30Jun27": 152, "01Jul-30Sep27": 170, "01Oct-31Oct27": 152 },
+      "deluxeGardenSuite": { "01Nov-23Dec26": 171, "24Dec26-06Jan27": 323, "07Jan-28Feb27": 189, "01Mar-30Apr27": 171, "may2027": "closed", "01Jun-30Jun27": 171, "01Jul-30Sep27": 189, "01Oct-31Oct27": 171 },
+      "premiumGardenSuite": { "01Nov-23Dec26": 188, "24Dec26-06Jan27": 340, "07Jan-28Feb27": 206, "01Mar-30Apr27": 188, "may2027": "closed", "01Jun-30Jun27": 188, "01Jul-30Sep27": 206, "01Oct-31Oct27": 188 },
+      "luxuryOceanFrontRoom": { "01Nov-23Dec26": 191, "24Dec26-06Jan27": 343, "07Jan-28Feb27": 209, "01Mar-30Apr27": 191, "may2027": "closed", "01Jun-30Jun27": 191, "01Jul-30Sep27": 209, "01Oct-31Oct27": 191 },
+      "grandOceanFrontSuite": { "01Nov-23Dec26": 231, "24Dec26-06Jan27": 383, "07Jan-28Feb27": 249, "01Mar-30Apr27": 231, "may2027": "closed", "01Jun-30Jun27": 231, "01Jul-30Sep27": 249, "01Oct-31Oct27": 231 }
+    }
+  },
+  "supplements": {
+    "fullBoard": { "amount": 20, "unit": "USD per person per day" },
+    "allInclusive": { "amount": 44, "unit": "USD per person per day", "confidenceNote": "[Unverified] Same ambiguity as 2026 re: whether AI stacks on top of the FB supplement." },
+    "thirdBedAdultReduction": "30% off adult rate",
+    "childrenSharingRoom": "50% of adult rate (age 2-11)",
+    "childrenOwnRoom": "80% of adult rate (age 2-11)",
+    "singleSupplement": "50% of rate",
+    "easterSupplement": { "amount": 24, "unit": "USD pp/pd", "dates": "26-29 March 2027 (Fri-Mon)" },
+    "xmasNewYearSupplement": { "amount": 40, "unit": "USD pp/pd", "dates": "25 Dec & 31 Dec" },
+    "minimumStayFestive": { "nights": 5, "period": "24 Dec - 02 Jan" }
+  },
+  "hotelClosure": { "dates": "01 May - 31 May 2027", "reason": "renovations" },
+  "roomInventory": {
+    "note": "Identical unit counts and features to the 2026 document — see pinewood-beach-2026.json for full room descriptions."
+  },
+  "mealPlanDefinitions": {
+    "note": "Identical wording to 2026 — see pinewood-beach-2026.json."
+  },
+  "cancellationPolicy": {
+    "0to14daysPrior": "100% chargeable",
+    "15to35daysPrior": "50% chargeable",
+    "depositRequired": "50% deposit within 2 weeks of proforma invoice issue date."
+  },
+  "portfolioWideTerms": {
+    "note": "Non-Soroi property — CLAUDE.md's Soroi-portfolio-wide terms do not apply."
+  }
+}

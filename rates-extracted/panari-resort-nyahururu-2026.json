@@ -1,0 +1,53 @@
+{
+  "property": "The Panari Resort Nyahururu (TPR)",
+  "operator": "Panari Hotels and Resorts",
+  "region": "Nyahururu (near Solio Ranch)",
+  "isSoroiProperty": false,
+  "sourceFiles": ["2026 CONTRACT RATES/KENYA/ACCOMODATION/PANARI/PANARI - PRIME TIME TRAVEL LTD 2026 CONTRACT RATES.pdf"],
+  "notes": [
+    "Sister property to The Panari Hotel Nairobi in the same contract document - see panari-hotel-nairobi-2026.json for the Nairobi property and shared general terms.",
+    "Three seasonal NETT rate tables plus a separate Rack card, all for the same 3 room types: Cottage, Villa (3-bedroom), Presidential.",
+    "Villa and Presidential rates are flat per-room regardless of Single/Double/Triple occupancy label (same figure repeated across all three columns) - i.e. priced per unit, not per person.",
+    "Game package supplement of US$121pps is constant across all seasons and room types.",
+    "Christmas period (22 Dec 2026-3 Jan 2027) has a separate supplement, distinct from the seasonal rate tables' own date windows."
+  ],
+  "currency": "USD",
+  "nett_lowMidSeason_perRoomPerNight": {
+    "validity": "3 Jan-15 Jun 2026 and 1 Sep 2026-3 Jan 2027",
+    "cottage": { "fullBoard": { "single": 165, "double": 209, "triple": 246 }, "halfBoard": { "single": 149, "double": 182, "triple": 236 } },
+    "villa3BR": { "flatRatePerNight": 650, "note": "Priced per unit; the FB/HB and Single/Double/Triple headers appear to apply nominally but the source repeats 650 across all Full Board columns and 0 across all Half Board columns for this row - treat as a flat per-villa Full Board rate; Half Board not offered for the Villa at this tier." },
+    "presidential": { "flatRatePerNight": 800, "note": "Same structure as Villa - flat per-unit Full Board rate; Half Board 0/not offered." },
+    "gamePackageSupplementPerPersonSharing": 121,
+    "verified": true
+  },
+  "nett_peakSeason_perRoomPerNight": {
+    "validity": "16 June - 31 August 2026",
+    "cottage": { "fullBoard": { "single": 187, "double": 231, "triple": 308 }, "halfBoard": { "single": 155, "double": 185, "triple": 240 } },
+    "villa3BR": { "flatRatePerNight": 880 },
+    "presidential": { "flatRatePerNight": 1000 },
+    "gamePackageSupplementPerPersonSharing": 121,
+    "verified": true
+  },
+  "rack_perRoomPerNight": {
+    "cottage": { "fullBoard": { "single": 275, "double": 385, "triple": 495 }, "halfBoard": { "single": 220, "double": 231, "triple": 297 } },
+    "villa3BR": { "flatRatePerNight": 1100 },
+    "presidential": { "flatRatePerNight": 1320 },
+    "verified": true,
+    "confidenceNote": "[Unverified] Cottage Half Board Triple rack figure reads '297' with a stray '7' wrapped onto the next line in the source table ('29' then '7' on following row) - reconstructed as 297, flag if it looks wrong."
+  },
+  "additionalMeals_perPerson": {
+    "lowMidSeason": { "buffetBreakfast": 30, "buffetLunch": 30, "buffetDinner": 32, "packedLunch": 30 },
+    "peakSeason": { "buffetBreakfast": 30, "buffetLunch": 30, "buffetDinner": 32, "packedLunch": 28 }
+  },
+  "gamePackageIncludes": "Transport for game drives at Solio Ranch. Park fees paid directly at the entrance (not included).",
+  "activities_perPerson_min2people": [
+    { "item": "Bush Breakfast at Marmanet Forest", "amount": "US$50" },
+    { "item": "Thomson Falls Bush Breakfast", "amount": "US$50" },
+    { "item": "Nature Walk to Marmanet Forest (early morning/late evening)", "amount": "US$45" },
+    { "item": "Thomson Falls Guided Tour + Hippo Pool Walk & Birdwatching", "amount": "US$30" },
+    { "item": "Sundowner at Viewing Deck", "amount": "US$50" }
+  ],
+  "christmasSupplement": { "raw": "22 Dec 2026 - 3 Jan 2027: US$20 per person per day; child supplement US$10", "verified": true },
+  "circuitDiscount": { "raw": "Groups staying at both Panari Hotel Nairobi and Panari Resort Nyahururu enjoy a further 5% circuit discount - must be stated in booking voucher.", "verified": true },
+  "generalTermsReference": "See panari-hotel-nairobi-2026.json for shared child policy, day-use policy, cancellation policy, and other Tour Operator Agreement terms - identical contract covers both properties."
+}

@@ -1,0 +1,59 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftotext -layout, clean text PDFs. NOT a Soroi property. Two tiers captured: Rack, and a discounted trade tier. FLAGGED DISCREPANCY: the file is named 'Tawi Lodge - EA Agent 25% Rates 2026.pdf' (implying 25% off) but the document's own header/footer text says 'Preferred Agents' and 'Preferred Agents 30% Rates valid' - and the arithmetic confirms 30%, not 25% (e.g. 322/460 = 0.70, i.e. 30% off Rack). The filename is simply wrong; the document's own stated discount and the math agree on 30%. Also captured: Tawi's resident rate and 10% resident rate files exist in the folder but were not opened this pass (out of scope, resident tier).",
+  "property": "Tawi Lodge",
+  "region": "Amboseli (Kimana area)",
+  "currency": "USD",
+  "unit": "per person per night unless noted",
+  "source": {
+    "rackFile": "2026 CONTRACT RATES/KENYA/ACCOMODATION/TAWI/Tawi Lodge - Rack Rates 2026.pdf",
+    "preferredAgent30File": "2026 CONTRACT RATES/KENYA/ACCOMODATION/TAWI/Tawi Lodge - EA Agent 25% Rates 2026.pdf (document itself says 'Preferred Agents 30%' - filename is misleading, see $note)",
+    "skippedFiles": ["Tawi Lodge 2026 - Resident Rates.pdf", "Tawi Lodge 2026 - 10% Resident Rates.pdf - both resident tiers, out of scope"],
+    "validity": { "start": "2026-01-06", "end": "2027-01-05" }
+  },
+  "confidence": "confirmed-2026-08-06",
+  "seasons": {
+    "mid": { "dateRanges": ["6 Jan - 31 Mar", "1 - 30 Jun", "1 - 20 Dec"] },
+    "low": { "dateRanges": ["1 Apr - 31 May", "1 - 30 Nov"], "note": "Easter within this window has a 3-night minimum stay." },
+    "high": { "dateRanges": ["1 Jul - 31 Oct", "21 Dec - 5 Jan"], "note": "2-night minimum stay." }
+  },
+  "rates": {
+    "standardCottages": {
+      "rack": {
+        "fullBoard": { "mid": 460, "low": 309, "high": 601 },
+        "allInclusive": { "mid": 718, "low": 567, "high": 859 },
+        "singleSupplement": { "mid": 112, "low": 67, "high": 173, "note": "Max 3 singles per group; 4th+ single charged at double room rate." },
+        "thirdAdultSharing_FB": { "mid": 391, "low": 262, "high": 511 },
+        "thirdAdultSharing_AI": { "mid": 611, "low": 482, "high": 730 }
+      },
+      "preferredAgent30pct": {
+        "fullBoard": { "mid": 322, "low": 216, "high": 420 },
+        "allInclusive": { "mid": 503, "low": 397, "high": 601 },
+        "singleSupplement": { "mid": 78, "low": 47, "high": 121 },
+        "thirdAdultSharing_FB": { "mid": 274, "low": 183, "high": 358 },
+        "thirdAdultSharing_AI": { "mid": 428, "low": 337, "high": 511 }
+      }
+    },
+    "familyCottage_Cottage8": {
+      "rack": { "fullBoard": { "mid": 483, "low": 326, "high": 629 }, "allInclusive": { "mid": 752, "low": 595, "high": 904 } },
+      "preferredAgent30pct": { "fullBoard": { "mid": 338, "low": 228, "high": 440 }, "allInclusive": { "mid": 526, "low": 417, "high": 633 } },
+      "note": "Children sharing 50% discount does NOT apply to Family Cottage."
+    },
+    "suite": {
+      "rack": { "fullBoard": { "mid": 678, "low": 455, "high": 972 }, "allInclusive": { "mid": 935, "low": 715, "high": 1234 }, "singleSupplement": { "mid": 220, "low": 220, "high": 224 } },
+      "preferredAgent30pct": { "fullBoard": { "mid": 475, "low": 318, "high": 680 }, "allInclusive": { "mid": 655, "low": 500, "high": 864 }, "singleSupplement": { "mid": 154, "low": 154, "high": 167 } },
+      "note": "Suite guests get exclusive use of 1 vehicle on the All Inclusive rate."
+    }
+  },
+  "mandatoryFees": { "conservationFee": { "amount": 40, "unit": "per person per night", "label": "CON. FEES in source, likely Amboseli-area conservancy fee" } },
+  "amboseliNationalParkFee": "Listed as a separate 'EXTRA' line item, amount not given in this document - stated only that it applies on top.",
+  "childPolicy": { "age3to12Sharing": "50% of adult rate (does not apply to Family Cottage)", "age3to12OwnRoom": "75% of adult rate", "conservationFeeChild": 20 },
+  "extras_perPerson": {
+    "maasaiVillageVisit": 25, "bushBreakfastMin2pax": 30, "airstripTransferInclGameDrive": 80,
+    "gameDrive": 80, "extraLunch": 40, "picnicLunch": 30, "nightGameDriveMin2pax": 60
+  },
+  "exclusiveVehicleUse": { "fullBoardPerDay": 550, "allInclusivePerDay": 350 },
+  "roadTransfers": { "toEmaliOneWayPerVehicle": 200, "toNamangaOrTarekeaOneWayPerVehicle": 350 },
+  "fullBoardInclusions": ["Full board accommodation", "Drinks (house wine, beer, soft drinks, selected spirits)", "Sundowners", "Camel rides / bush walks"],
+  "allInclusiveInclusions": ["Full board accommodation", "Drinks", "Shared game drives, night game drive, bush breakfast, bush walk, sundowners, camel ride", "Return airstrip transfers", "Laundry"],
+  "propertyDetails": "12 cottages, 1 family room, 1 suite with 2 luxury rooms, all ensuite, Mt Kilimanjaro views. Kosher meals available on request."
+}

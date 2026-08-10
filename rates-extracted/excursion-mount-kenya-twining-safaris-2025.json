@@ -1,0 +1,104 @@
+{
+  "category": "excursion",
+  "activity": "Mount Kenya (and Mount Kilimanjaro) trekking / climbing expeditions",
+  "operator": "Twining Safaris (Nairobi) — cyrus@twiningsafaris.net",
+  "region": "Mount Kenya & Mount Kilimanjaro",
+  "extractedDate": "2026-08-06",
+  "sourceFiles": [
+    "2026 CONTRACT RATES/KENYA/EXCURSIONS/MT. KENYA TOUR/FW_ MT KENYA & MT KILIMANJARO YEAR 2025 RATES.msg (and its .docx attachments)"
+  ],
+  "$fileFormatNote": "Source is an Outlook .msg email (forwarded internally at Sunworld, originally from Twining Safaris) with per-route .docx attachments, not a PDF. Opened programmatically via Python's extract_msg library since pdftotext/textutil cannot read .msg directly.",
+  "$anomaly": "[Flag] This is a THIRD distinct Mount Kenya outfitter found in Sunworld's files, separate from African Ascents (see excursion-mount-kenya-african-ascents-2025-2027.json). Route names, durations, and pricing structure do not overlap cleanly with African Ascents' route set — e.g. Twining offers 'Sirimon In - Sirimon Out' and 'Kamweti In - Sirimon Out' variants not present in the African Ascents sheet. Confirm with Yasin/Sunworld which outfitter should be the default for a Mount Kenya quote, or present both as options per the project's 'flexible variable' convention.",
+  "$dateFlag": "[Unverified] Email is dated 17 Jan 2025 and rates are explicitly labeled 'YEAR 2025 RATES'. This is the only Mount Kenya email/document found under this folder for either the 2026 or 2027 CONTRACT RATES tree — no 2026/2027 update from Twining Safaris was found. Treat as a stale/reference price until a current rate is confirmed.",
+  "currency": "USD (Non-Resident); KES (Kenya Citizen and Resident/EAC tiers)",
+  "commissionNote": "Twining Safaris' original quote states rates are 'commissionable to you at the rate of 10%.'",
+  "routes": [
+    {
+      "name": "4 Days / 3 Nights - Sirimon In, Chogoria Out",
+      "sourceFile": "4 DAYS 3 OVERNIGHTS IN SIRIMON OUT CHOGORIA.docx",
+      "nonResidentUSD": { "1pax": 1706, "2pax": 1107, "3pax": 907, "4pax": 807, "5pax": 748, "6plusPax": 708 },
+      "kenyaCitizenKES": { "1pax": 117291, "2pax": 68270, "3pax": 51929, "4pax": 43759, "5pax": 38857, "6plusPax": 35589 },
+      "kenyaResidentAndEACitizenKES": { "1pax": 119223, "2pax": 70201, "3pax": 53860, "4pax": 45690, "5pax": 40788, "6plusPax": 37520 },
+      "verified": true
+    },
+    {
+      "name": "5 Days / 4 Nights - Sirimon In, Chogoria Out",
+      "sourceFile": "5 DAYS 4 OVERNIGHTS IN SIRIMON OUT CHOGORIA.docx",
+      "nonResidentUSD": { "1pax": 1729, "2pax": 1227, "3pax": 1050, "4pax": 939, "5pax": 872, "6plusPax": 828 },
+      "kenyaCitizenKES": { "1pax": 114027, "2pax": 75737, "3pax": 57766, "4pax": 48780, "5pax": 43389, "6plusPax": 39794 },
+      "kenyaResidentAndEACitizenKES": { "1pax": 116409, "2pax": 78119, "3pax": 60148, "4pax": 51162, "5pax": 45771, "6plusPax": 42176 },
+      "verified": true
+    },
+    {
+      "name": "5 Days / 4 Nights - Sirimon In, Chogoria Out (No Acclimatisation variant)",
+      "sourceFile": "5 DAYS 4 OVERNIGHTS IN SIRIMON OUT CHOGORIA - No Acclimitisation.docx",
+      "nonResidentUSD": { "1pax": 1729, "2pax": 1227, "3pax": 1050, "4pax": 939, "5pax": 872, "6plusPax": 828 },
+      "kenyaCitizenKES": { "1pax": 114027, "2pax": 75737, "3pax": 57766, "4pax": 48780, "5pax": 43389, "6plusPax": 39794 },
+      "kenyaResidentAndEACitizenKES": { "1pax": 116409, "2pax": 78119, "3pax": 60148, "4pax": 51162, "5pax": 45771, "6plusPax": 42176 },
+      "verified": true,
+      "confidenceNote": "[Unverified] Priced identically to the standard 5-day Sirimon-Chogoria route above despite the docx filename indicating a different (no-acclimatisation-day) itinerary — the two files may share a rate table by error, or the price genuinely doesn't differ by itinerary variant. Not resolved; confirm before quoting this specific variant."
+    },
+    {
+      "name": "6 Days / 5 Nights - Sirimon In, Chogoria Out",
+      "sourceFile": "6 DAYS 5 OVERNIGHTS IN SIRIMON OUT CHOGORIA.docx",
+      "nonResidentUSD": { "1pax": 1839, "2pax": 1415, "3pax": 1180, "4pax": 1063, "5pax": 992, "6plusPax": 945 },
+      "kenyaCitizenKES": { "1pax": 120239, "2pax": 83623, "3pax": 64418, "4pax": 54815, "5pax": 49054, "6plusPax": 45213 },
+      "kenyaResidentAndEACitizenKES": { "1pax": 123072, "2pax": 86456, "3pax": 67250, "4pax": 57648, "5pax": 51886, "6plusPax": 48045 },
+      "verified": true
+    },
+    {
+      "name": "6 Days / 5 Nights - Kamweti In, Sirimon Out",
+      "sourceFile": "6 Days 5 Nights - In  Kamweti Out Sirimon.docx",
+      "nonResidentUSD": { "1pax": 2115, "2pax": 1628, "3pax": 1357, "4pax": 1223, "5pax": 1141, "6plusPax": 1087 },
+      "kenyaCitizenKES": null,
+      "kenyaResidentAndEACitizenKES": null,
+      "verified": true,
+      "confidenceNote": "[Unverified] Only Non-Resident USD pricing is present in this specific document — no Kenya Citizen / Resident KES tier was given for this route (all other routes in this rate set have all three tiers)."
+    },
+    {
+      "name": "5 Days / 4 Nights - Sirimon In, Sirimon Out",
+      "sourceFile": "Five Days Four Nights SIRIMON IN - SIRIMON OUT.docx",
+      "nonResidentUSD": { "1pax": 1842, "2pax": 1216, "3pax": 1007, "4pax": 903, "5pax": 840, "6plusPax": 798 },
+      "kenyaCitizenKES": { "1pax": 122441, "2pax": 71521, "3pax": 54547, "4pax": 46060, "5pax": 40968, "6plusPax": 37574 },
+      "kenyaResidentAndEACitizenKES": { "1pax": 124823, "2pax": 73903, "3pax": 56929, "4pax": 48442, "5pax": 43350, "6plusPax": 39955 },
+      "verified": true
+    },
+    {
+      "name": "5 Days / 4 Nights - Sirimon In, Naromoru Out",
+      "sourceFile": "Five Days Four Nights Sirimon - Naromoru.docx",
+      "nonResidentUSD": { "1pax": 1761, "2pax": 1166, "3pax": 968, "4pax": 869, "5pax": 809, "6pax": 769, "7plusPax": 741 },
+      "kenyaCitizenKES": { "1pax": 119768, "2pax": 71379, "3pax": 55249, "4pax": 47184, "5pax": 42345, "6pax": 39119, "7plusPax": 36815 },
+      "verified": true,
+      "confidenceNote": "This route's group-size tiers go to 7+ pax rather than 6+ pax like the others — captured as-is. Resident/EAC KES tier not separately broken out in the source excerpt reviewed (only Non-Resident USD and Kenya Citizen KES were found)."
+    },
+    {
+      "name": "4 Days / 3 Nights - Sirimon In, Sirimon Out",
+      "sourceFile": "Four Days Three Nights SAFARI SIRIMON IN SIRIMON OUT.docx",
+      "nonResidentUSD": { "1pax": 1609, "2pax": 1051, "3pax": 864, "4pax": 771, "5pax": 715, "6plusPax": 678 },
+      "kenyaCitizenKES": { "1pax": 108021, "2pax": 63023, "3pax": 48024, "4pax": 40524, "5pax": 36024, "6plusPax": 33024 },
+      "kenyaResidentAndEACitizenKES": { "1pax": 109953, "2pax": 64954, "3pax": 49955, "4pax": 42455, "5pax": 37956, "6plusPax": 34956 },
+      "verified": true
+    }
+  ],
+  "mountKilimanjaro": {
+    "note": "Separate mountain/country (Tanzania) but included here since it was priced in the same source document as the Mt Kenya routes.",
+    "sourceFile": "MT KILIMANJARO.docx",
+    "route": "8-day / 7-night Marangu route with East Point Hotel, Moshi accommodation",
+    "costsToNonKenyaCitizensAndNonEACCitizensUSD": { "2pax": 2674, "3pax": 2397, "4pax": 2258, "5pax": 2175, "6pax": 2120, "7plusPax": 2080 },
+    "verified": true,
+    "flagTanzaniaOutOfScope": "Per CLAUDE.md, Tanzania product is out of default project scope — flagged for awareness only, not for use in a Kenya-only quote."
+  },
+  "genericInclusionsAcrossRoutes": [
+    "Accommodation whilst on safari (mountain huts/cabins, no tents needed on most routes)",
+    "All transfers as described in each route's itinerary",
+    "Mount Kenya park entry and conservation fees",
+    "Meals whilst mountaineering (and lunch at Nanyuki/exit point on some routes)",
+    "Professional guide",
+    "One porter per guest (guests carry only day packs)"
+  ],
+  "genericExclusionsAcrossRoutes": [
+    "Tips", "International flights", "Entry visas", "Items of a personal nature",
+    "Itinerary alteration cost changes", "Airport departure taxes (unless stated)",
+    "Personal insurance / emergency evacuation cover", "Beverages/extras in Nanyuki town"
+  ]
+}

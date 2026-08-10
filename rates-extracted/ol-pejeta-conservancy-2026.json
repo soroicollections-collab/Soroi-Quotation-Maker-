@@ -1,0 +1,71 @@
+{
+  "property": "Ol Pejeta Conservancy (general contract - conservancy fees, Pelican House, The Stables, Camping, Conservation Experiences)",
+  "operator": "Ol Pejeta Conservancy",
+  "region": "Laikipia",
+  "isSoroiProperty": false,
+  "sourceFiles": ["2026 CONTRACT RATES/KENYA/ACCOMODATION/OL PEJETA/2026 OL PEJETA CONTRACT RATES_.pdf"],
+  "notes": [
+    "This is the Conservancy's own general contract covering entry fees plus THREE distinct accommodation/activity products it operates directly (Pelican House self-catering cottage, The Stables budget lodge, Camping) - separate from 'Ol Pejeta Safari Cottages' (a different, privately-run luxury cottage operator on the same conservancy, see ol-pejeta-safari-cottages-2026.json).",
+    "Conservancy gates are cashless; entry/vehicle fees are not commissionable."
+  ],
+  "currency": { "eaCitizenResident": "KES", "nonResident": "USD", "verified": true },
+  "validity": "1 January - 31 December 2026",
+  "conservancyEntryFees_perPersonPerDay": {
+    "adult": { "eaCitizen_KES": 2000, "eaResident_KES": 3500, "nonResident_USD": 110 },
+    "child3to11": { "eaCitizen_KES": 1000, "eaResident_KES": 1750, "nonResident_USD": 55 }
+  },
+  "vehicleEntryFees_KES": { "upTo6seats": 1000, "seats7to14": 5000, "seats15plus": 12000 },
+  "gateHours": "Entry/exit strictly via Rongai and Serat gates, 07:00-19:00 daily",
+  "pelicanHouse": {
+    "description": "Exclusive self-catering house, sleeps 8, overlooking Pelican Dam, east of conservancy",
+    "commission": "15% (self-catering); NOT available on fully-catered option's catering costs",
+    "minBooking": "2 people",
+    "selfCateringForResidents_perPersonPerNight_KES": { "2to4pax": { "rack": 9000, "net": 7650 }, "5to8pax": { "rack": 8000, "net": 6800 }, "9to12pax": { "rack": 7300, "net": 6205 }, "child": { "rack": 4500, "net": 3825 } },
+    "selfCateringForNonResidents_perPersonPerNight_USD": { "2to4pax": { "rack": 100, "net": 85 }, "5to8pax": { "rack": 90, "net": 77 }, "9to12pax": { "rack": 80, "net": 68 }, "child": { "rack": 55, "net": 47 } },
+    "fullyCateredSupplement": { "raw": "Extra KES5,000 (residents) / US$50 (non-residents) per person per night, non-commissionable, added to self-catering charges. Excludes drinks.", "verified": true },
+    "chefOption": { "raw": "Extra KES3,500 (residents) / US$50 (non-residents) per day, non-commissionable, for a cook to help with breakfast/lunch/dinner (on top of self-catering rate, without full catering).", "verified": true },
+    "verified": true
+  },
+  "theStables": {
+    "description": "Budget accommodation: 12 single rooms (shared bathrooms/toilets), 2 double rooms, 1 twin room (ensuite)",
+    "includes": "Breakfast, lunch (Kenyan style), dinner, tea/coffee all day, boiled drinking water, fridge for residents",
+    "commission": "10%",
+    "rates_perPersonPerNight_USD_1Jan_31Dec2026": {
+      "singleRoom": { "rack": 70, "net": 63 },
+      "doubleRoom": { "rack": 140, "net": 126 },
+      "twinRoom": { "rack": 140, "net": 126 },
+      "singleTentAccommodation": { "rack": 70, "net": 63 },
+      "twinTentAccommodation": { "rack": 140, "net": 126 }
+    },
+    "childPolicy": "Child rate applies to children sharing a double room with 2+ adults (rate not separately itemized beyond the room rate structure)",
+    "verified": true
+  },
+  "camping": {
+    "description": "5 campsites; site rental includes exclusive use of campsite, firewood, water bowser, toilet facilities",
+    "rates_1Jan_31Dec2026": { "perAdult_KES": { "rack": 3500, "net": 3500 }, "perChild_KES": { "rack": 1750, "net": 1750 }, "armedGuide_KES": { "rack": 5000, "net": 5000 } },
+    "verified": true
+  },
+  "conservationExperiences_1Jan_31Dec2026": {
+    "commission": "15%",
+    "activities_USD": {
+      "lionTracking": { "rack": 70, "net": 59.5 }, "meetTheNorthernWhiteRhinos": { "rack": 70, "net": 59.5 }, "nightGameDrive": { "rack": 70, "net": 59.5 },
+      "guidedBushBirdWalks": { "rack": 70, "net": 59.5 }, "dogTracking": { "rack": 70, "net": 59.5 }, "livestockWildlifeIntegration": { "rack": 70, "net": 59.5 },
+      "runTheWild": { "rack": 40, "net": 34 }, "behindTheSceneChimpanzee": { "rack": 70, "net": 59.5 }, "rhinoMonitoring": { "rack": 70, "net": 59.5 }, "meetTheNeighbors": { "rack": 70, "net": 59.5 }
+    },
+    "guides_KES": { "armed": 5000, "unarmed": 2500 },
+    "childRestrictions": "Not permitted for children: Dog Tracking, Behind the Scene Chimpanzee, Rhino Monitoring, Guided Bush Walk. Minimum age 12.",
+    "verified": true
+  },
+  "immersiveConservationExperiencePrograms": {
+    "description": "Multi-day/week volunteer-style programs. Inclusive of conservancy entry fees, daily hosting/guiding, all accommodation and food at The Stables, safari vehicle use within conservancy, accommodation, and conservation activities.",
+    "commission": "15%",
+    "minPax": 2, "minAge": 16,
+    "theStables2026Package_USD": { "oneWeekKazi": { "rack": 1550, "net": 1318 }, "twoWeekProgramme": { "rack": 2330, "net": 1981 } },
+    "thePelican2026Package_USD": { "oneWeekKazi": { "rack": 2230, "net": 1896 }, "twoWeekProgramme": { "rack": 3370, "net": 2865 } },
+    "verified": true
+  },
+  "policies": {
+    "cancellation_stablesPelicanImmersive": "60-31 days: 20% of total booking value; 30-8 days: 30%; within 7 days: 100%",
+    "payment_stablesPelicanImmersive": "Booking within 7 days of arrival: full payment immediately. Booking 1+ month prior: 30% deposit within 7 days, balance in full at least 7 days before arrival."
+  }
+}

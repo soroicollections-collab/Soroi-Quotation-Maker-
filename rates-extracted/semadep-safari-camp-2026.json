@@ -1,0 +1,18 @@
+{
+  "$note": "Extracted 6 Aug 2026. Source is NOT a formal rate-card PDF - it is a forwarded email chain (26 Nov 2025) between Sunworld Safaris and Semadep's Managing Director, quoting an informal STO rate in response to a specific ad-hoc guest request (2 adults + 1 child, 7yo, August 2026). NOT a Soroi property. Very low-confidence/informal source relative to every other extraction in this batch - flagged accordingly. No seasonal breakdown, no mandatory fees, no child policy, no meal plan specified anywhere in the email.",
+  "property": "Semadep Safari Camp (and separately, Semadep Maasai Homestay Experience - a distinct product from the same operator)",
+  "operator": "Semadep Project / Semadep Safari Camp",
+  "region": "Sekenani, Maasai Mara (Narok)",
+  "currency": "USD",
+  "source": {
+    "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/Semadep/Semadep.pdf",
+    "documentType": "Forwarded email thread, not a formal rate sheet"
+  },
+  "confidence": "low-confidence-2026-08-06 - informal single-line email quote, not a structured contract",
+  "rates": {
+    "semadepSafariCamp": { "amount": 70, "unit": "per person per night", "tier": "STO (as labeled by the source, but no rack/base rate given to derive a discount percentage from - cannot verify against this project's known STO ladder)" },
+    "maasaiHomestay": { "amount": 70, "unit": "per person per night", "tier": "STO (same caveat as above)" }
+  },
+  "confidenceNote": "[Unverified] No meal plan stated (unclear if rate includes meals), no child policy, no mandatory/park/community fees mentioned, no seasonality, and no validity date range beyond the email being sent 26 Nov 2025 for an August 2026 stay. This is the thinnest source in this entire extraction batch - treat as indicative only and confirm directly with Semadep (jplsemadep@gmail.com) before using in a real quote.",
+  "activitiesIncluded_unpriced": ["Guided game drives in the Maasai Mara", "Cultural visits to Maasai villages", "Nature walks with Maasai guides", "Community project visits (Sekenani Health Centre, Water Project, Child Sponsorship Program, Technology Centre)", "Bush meals and sundowners", "Traditional Maasai storytelling", "Bird watching, short hikes", "Homestay family routine participation", "Volunteer engagement options"]
+}

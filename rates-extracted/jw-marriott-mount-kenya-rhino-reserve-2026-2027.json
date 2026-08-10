@@ -1,0 +1,83 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftotext -layout. NOT a Soroi property. Distinct property from JW Marriott Masai Mara Lodge (separate document, only found in the 'JW MARRIOT' folder, not duplicated in the other two JW-named folders). Four rate-tier PDFs on file for this property: Rack (implicitly Non-Resident, since a separate 'Non-Resident Nett' file exists), Non-Resident Nett, Resident Rack, Resident Nett - all covering the combined 2026-2027 validity window.",
+  "property": "JW Marriott Mount Kenya Rhino Reserve Safari Camp",
+  "region": "Solio Ranch / Mount Kenya area (Nanyuki)",
+  "source": {
+    "files": [
+      "2026 CONTRACT RATES/KENYA/ACCOMODATION/JW MARRIOT/2026 and 2027 Rack Rates - JW Marriott Mount Kenya Rhino Reserve Safari Camp _compressed.pdf",
+      "2026 CONTRACT RATES/KENYA/ACCOMODATION/JW MARRIOT/2026 and 2027 Non - Resident Nett Rates - JW Marriott Mount Kenya Rhino Reserve Safari Camp_compressed.pdf",
+      "2026 CONTRACT RATES/KENYA/ACCOMODATION/JW MARRIOT/2026 and 2027 Resident Rack Rates - JW Marriott Mount Kenya Rhino Reserve Safari Camp_compressed.pdf",
+      "2026 CONTRACT RATES/KENYA/ACCOMODATION/JW MARRIOT/2026 and 2027 Resident Nett Rates - JW Marriott Mount Kenya Rhino Reserve Safari Camp_compressed.pdf"
+    ],
+    "validity": {
+      "highSeason": ["1 Jun 2026 - 15 Oct 2026", "20 Dec 2026 - 5 Jan 2027", "1 Jun 2027 - 15 Oct 2027", "20 Dec 2027 - 5 Jan 2028"],
+      "shoulderLowSeason": ["16 Oct 2026 - 19 Dec 2026 (per doc header, printed oddly as '19th December 2025' - likely a source typo for 2026)", "6 Jan 2027 - 31 May 2027", "16 Oct 2027 - 19 Dec 2027"]
+    }
+  },
+  "confidence": "confirmed-2026-08-06",
+  "confidenceNote_criticalAnomaly": "MAJOR UNRESOLVED DISCREPANCY: the 'Non-Resident Nett Rates' file's figures are IDENTICAL, cell-for-cell, to the 'Resident Rack Rates' file (both: sharing $1,690/$975, single $2,535/$1,465, children-own-room $1,905/$1,100, children-sharing $845/$490, two-bedroom suite $6,760/$3,900). This is almost certainly a copy-paste/labeling error at the source (one of these two PDFs was generated from the wrong template) - a Non-Resident Nett rate should logically sit BETWEEN the Non-Resident Rack rate and the (lower) Resident rates, not exactly equal a Resident Rack rate. Do NOT use the 'Non-Resident Nett' figures as-is for a real non-resident nett quote without confirming directly with JW Marriott which of the two documents has the actual error. Reproduced both exactly as printed below, each individually verified true to its own source page.",
+  "currency": "USD",
+  "unit": "per person sharing per night (explicitly stated on this property's documents, unlike the sister Masai Mara Lodge document)",
+  "nonResidentRack": {
+    "perPersonSharing": { "highSeason": 2600, "shoulderLowSeason": 1499 },
+    "singleRoom": { "highSeason": 3900, "shoulderLowSeason": 2249 },
+    "children6to12Single": { "highSeason": 2925, "shoulderLowSeason": 1687 },
+    "children6to12OwnRoom": { "highSeason": 1950, "shoulderLowSeason": 1125 },
+    "children6to12Sharing": { "highSeason": 1300, "shoulderLowSeason": 750 },
+    "guidePilot": { "highSeason": 500, "shoulderLowSeason": 500 },
+    "twoBedroomSuiteUpTo4Pax": { "highSeason": 10400, "shoulderLowSeason": 5996 },
+    "foundationFee": { "amount": 15, "unit": "USD per guest per stay" },
+    "verified": true
+  },
+  "nonResidentNett_seeAnomalyNote": {
+    "perPersonSharing": { "highSeason": 1690, "shoulderLowSeason": 975 },
+    "singleRoom": { "highSeason": 2535, "shoulderLowSeason": 1465 },
+    "children6to12Single": { "highSeason": 1905, "shoulderLowSeason": 1100 },
+    "children6to12OwnRoom": { "highSeason": 1270, "shoulderLowSeason": 730 },
+    "children6to12Sharing": { "highSeason": 845, "shoulderLowSeason": 490 },
+    "guidePilot": { "highSeason": 500, "shoulderLowSeason": 500 },
+    "twoBedroomSuiteUpTo4Pax": { "highSeason": 6760, "shoulderLowSeason": 3900 },
+    "foundationFee": { "amount": 15, "unit": "USD per guest per stay" },
+    "verified": true
+  },
+  "residentRack": {
+    "perPersonSharing": { "highSeason": 1690, "shoulderLowSeason": 975 },
+    "singleRoom": { "highSeason": 2535, "shoulderLowSeason": 1465 },
+    "children6to12Single": { "highSeason": 1905, "shoulderLowSeason": 1100 },
+    "children6to12OwnRoom": { "highSeason": 1270, "shoulderLowSeason": 730 },
+    "children6to12Sharing": { "highSeason": 845, "shoulderLowSeason": 490 },
+    "guidePilot": { "highSeason": 500, "shoulderLowSeason": 500 },
+    "twoBedroomSuiteUpTo4Pax": { "highSeason": 6760, "shoulderLowSeason": 3900 },
+    "foundationFee": { "amount": 15, "unit": "USD per guest per stay" },
+    "verified": true
+  },
+  "residentNett": {
+    "perPersonSharing": { "highSeason": 1520, "shoulderLowSeason": 880 },
+    "singleRoom": { "highSeason": 2285, "shoulderLowSeason": 1320 },
+    "children6to12Single": { "highSeason": 1715, "shoulderLowSeason": 990 },
+    "children6to12OwnRoom": { "highSeason": 1143, "shoulderLowSeason": 660 },
+    "children6to12Sharing": { "highSeason": 760, "shoulderLowSeason": 445 },
+    "guidePilot": { "highSeason": 500, "shoulderLowSeason": 500 },
+    "twoBedroomSuiteUpTo4Pax": { "highSeason": 6085, "shoulderLowSeason": 3510 },
+    "foundationFee": { "amount": 15, "unit": "USD per guest per stay" },
+    "verified": true
+  },
+  "inclusions": ["Accommodation and full board meals incl. select beverages", "Return airstrip transfers (Nanyuki or Solio Airstrip, private charters)", "2 shared game drives/day incl. refreshments within Solio Game Reserve", "Shared night game drive (8pm-11pm), once during stay", "Bush meals once during stay (weather permitting)", "Breakfast/lunch at JW Garden once during stay (weather permitting)", "Sundowners once during stay", "Bicycle safaris within Solio Ranch", "Guided nature walks within Solio Ranch", "Ranching in local area", "Transfer to Aberdare National Park (excl. park fees)", "Visit to Ol Pejeta Conservancy (excl. park fees)", "Wellness meditation/yoga in the bush", "Gym, pool, map room, library", "Laundry 5 items/person/day", "Community Initiative: local school + Solio Women's Empowerment Project visit", "All statutory taxes"],
+  "exclusions": {
+    "note": "Solio Ranch conservation fee is a mandatory per-person fee excluded from the room rate - functions like Soroi's mandatory-fee-on-top-of-rate pattern.",
+    "solioRanchConservationFee": { "adult": 106, "child": 52, "unit": "USD, subject to change" },
+    "champagnePremiumWinesSpirits": true,
+    "spaTreatments": true,
+    "personalItems": true,
+    "gratuities": true,
+    "lazizeWelfareFoundationContribution": { "amount": 15, "unit": "USD per guest per stay" }
+  },
+  "additionalCostActivities": ["Nairobi hotel-Wilson Airport transfers", "Road transfers to camp", "Exclusive vehicle use within Solio/Aberdare (USD 450/day, excl. park entry)", "Private night game drives", "Ol Pejeta activities", "Day trips: Ngare Ndare, Lewa Conservancy, Mt Kenya National Park, Mt Kenya Orphanage", "Scenic helicopter experiences", "Fishing at Lake Rutundu with helicopter transfer", "Mt Kenya hiking", "Rhino darting/notching (USD 5,000 white / USD 8,000 black)", "Orphanage + veterinary program visit", "Walking with baby rhinos"],
+  "multiPropertyCircuitDiscount": { "twoProperties": "5%", "threeProperties": "7.5%", "properties": ["JW Marriott Masai Mara Lodge", "The Ritz-Carlton Masai Mara Safari Camp", "JW Marriott Mount Kenya Rhino Reserve Safari Camp"], "note": "This document's clause (5%/7.5%) differs from the Masai Mara Lodge document's own multi-property clause (flat 10% for all 3) - the two Marriott documents disagree with each other on the discount structure. Flag rather than pick one." },
+  "paymentTerms": { "deposit": "20% non-refundable on confirmation", "balanceDue": "90 days prior to arrival", "cancellationWithin90Days": "100% cancellation fee", "provisionalBookingHold": "7 days" },
+  "groupRate": "Negotiable ad hoc for 10+ paying rooms, except Easter/festive period.",
+  "tourLeaderPolicy": "Complimentary half-twin-rate accommodation for bona fide tour leaders after min 10 paying rooms, max 2 comp guests per group.",
+  "childrenPolicy": "Property is unfenced; children under 6 not recommended for safety reasons.",
+  "singleRoomPolicy": "Max 3 single rooms per group at single rate; additional singles charged at double rate.",
+  "checkInOut": { "checkIn": "12:00 noon", "checkOut": "10:00am" }
+}

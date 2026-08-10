@@ -1,0 +1,18 @@
+{
+  "$note": "Extracted 6 Aug 2026 from the same Asilia workbook. Per the Cover sheet's change-log, Encounter Mara is CLOSED April-May 2027 (and the Green-season row in the Rate Table shows all zeros for this camp, confirming closure for the corresponding Apr-May 2026 window too).",
+  "property": "Encounter Mara",
+  "operator": "Asilia Africa",
+  "region": "Naboisho Conservancy, Masai Mara",
+  "tier": "Standard net rate (RSP x 0.75)",
+  "source": { "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/ASILIA/Asilia-Contract-Rates-26-27.xlsx", "validity": { "start": "2026-06-01", "end": "2027-05-31" } },
+  "mealPlan": "Game Package only",
+  "seasons": { "high": "1 Jun-31 Oct, 20 Dec-5 Jan", "low": "1 Nov-19 Dec, 6 Jan-31 Mar", "closed": "1 Apr-31 May" },
+  "rates": {
+    "currency": "USD", "unit": "per person per night",
+    "rsp": { "high": { "sharing": 940, "single": 1410, "triple": 783.33 }, "low": { "sharing": 710, "single": 1065, "triple": 591.67 } },
+    "standardNet": { "high": { "sharing": 705, "single": 1057.5, "triple": 587.5 }, "low": { "sharing": 532.5, "single": 798.75, "triple": 443.75 } }
+  },
+  "mandatoryFees": { "unit": "per person per night", "asiliaConservationCharge": 10, "conservancyFee": { "adult": 130, "child3to17": 65 } },
+  "childPolicy": { "5to18": "50% of adult sharing rate", "19plus": "Full adult rate", "under12MustShareWithAdult": true, "under5": "Not permitted unless exclusive booking" },
+  "notes": "Tier classified 'Comfort' in Asilia's internal camp tier list."
+}

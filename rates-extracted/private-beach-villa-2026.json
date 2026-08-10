@@ -1,0 +1,72 @@
+{
+  "$note": "Extracted 6 Aug 2026, read directly (pdftotext -layout, poppler, 1-page document). Private Beach Villa — non-Soroi, part of 'The Sands & Chale Island' resort complex, 4 distinct villas. Same filing-duplication issue applies: byte-identical copy confirmed at both '2026 CONTRACT RATES/KENYA/BEACH ACCOMODATION/CHALE AND NOMADS/Private Beach Villa - USD - Net 2026.pdf' and the nested 'THE SANDS/CHALE AND NOMADS/' copy (MD5 d0216e5e604af9582f7b76621d056b62, confirmed both locations). Used the top-level copy as source. USD Net is the only USD tier available for 2026.",
+  "property": "Private Beach Villa (part of The Sands & Chale Island) — 4 distinct villas: Lazy Days, Fisherman's, The Family Cottage, Beach House",
+  "region": "Diani / South Coast",
+  "tier": "USD Net — primary and only USD tier available for 2026.",
+  "residency": "Non-Resident",
+  "source": {
+    "file": "2026 CONTRACT RATES/KENYA/BEACH ACCOMODATION/CHALE AND NOMADS/Private Beach Villa - USD - Net 2026.pdf",
+    "duplicateFilingNote": "Byte-identical copy also exists at '2026 CONTRACT RATES/KENYA/BEACH ACCOMODATION/THE SANDS/CHALE AND NOMADS/Private Beach Villa - USD - Net 2026.pdf' — same filing duplication as Chale Island and Nomad Beach Resort, see those files' notes.",
+    "kesRackFile_notExtracted": "2026 CONTRACT RATES/KENYA/BEACH ACCOMODATION/CHALE AND NOMADS/Private Beach Villa - KES - Rack 2026 (2).pdf",
+    "pdfPageIndex": [0],
+    "validity": { "start": "2025-11-01", "end": "2026-10-31" }
+  },
+  "confidence": "confirmed-2026-08-06",
+  "extractionMethod": { "note": "Read directly, single-page document." },
+  "structuralFindings": [
+    "Entirely different pricing unit from Chale Island/Nomad: priced PER VILLA (whole-unit rate) with a minimum headcount, not per person — Regular Season based on min 6 pax, Festive based on min 8 pax. This is the 3rd distinct pricing shape found across the 3 Sands/Chale-Nomads sub-properties in this batch (per-person-sharing at Chale/Nomad vs per-villa-with-minimum-pax here).",
+    "Only 2 seasons shown on this document (Regular, Festive) — no separate Spring season band exists for the Villas, unlike Chale Island and Nomad Beach Resort which both have a distinct cheaper Spring window. [Unverified] whether this is a genuine structural difference or the Spring rate simply wasn't printed on this card — read as printed, don't assume Spring pricing exists for the Villa unless confirmed separately.",
+    "Base meal plan is Half Board, matching Chale Island but not Nomad's Bed & Breakfast base.",
+    "4 villas at 2 distinct price points: Lazy Days and The Family Cottage share IDENTICAL rates ($1,470/$3,192 and identical additional-adult/child figures) despite being named/configured differently (8 rooms/16 pax vs 6 rooms/12 pax) — flagged as a genuine finding, not an extraction error; re-checked both rows independently from source.",
+    "Child policy differs from Chale/Nomad: here it's 0-2 free, 3-16 = 'Child Rates' (i.e., the Additional Child figure), 16+ = Adult rates — the child/adult cutoff age (16) is notably higher than Chale/Nomad's 12."
+  ],
+  "seasons": {
+    "regular": { "dateRange": "implicit — all dates outside Festive", "minimumPax": 6 },
+    "festive": { "dateRange": "20 Dec - 10 Jan (inferred from complex-wide Festive window; not independently re-stated on this specific page beyond the header)", "minimumPax": 8, "minimumStay": "7 nights" }
+  },
+  "rates": {
+    "currency": "USD",
+    "unit": "per villa per night (whole-unit rate at stated minimum pax), Half Board",
+    "lazyDays": { "rooms": 8, "maxOccupancy": 16, "roomConfig": "4 DBL, 4 flexible (TWN/DBL)", "villaRate": { "regular_min6pax": 1470, "festive_min8pax": 3192 }, "additionalAdult": { "regular": 184, "festive": 299 }, "additionalChild": { "regular": 70, "festive": 120 } },
+    "fishermans": { "rooms": 6, "maxOccupancy": 12, "roomConfig": "All rooms TWN or DBL", "villaRate": { "regular_min6pax": 1890, "festive_min8pax": 4096 }, "additionalAdult": { "regular": 236, "festive": 384 }, "additionalChild": { "regular": 70, "festive": 120 } },
+    "theFamilyCottage": { "rooms": 6, "maxOccupancy": 12, "roomConfig": "All rooms TWN or DBL", "villaRate": { "regular_min6pax": 1470, "festive_min8pax": 3192 }, "additionalAdult": { "regular": 184, "festive": 299 }, "additionalChild": { "regular": 70, "festive": 120 } },
+    "beachHouse": { "rooms": 4, "maxOccupancy": 10, "roomConfig": "3 DBL, 1 flexible (TWN/Triple/Quad)", "villaRate": { "regular_min6pax": 1680, "festive_min8pax": 3640 }, "additionalAdult": { "regular": 210, "festive": 341 }, "additionalChild": { "regular": 70, "festive": 120 } }
+  },
+  "supplements": {
+    "fullBoard": { "perAdult": 55, "perChild": 27 },
+    "allInclusive": { "perAdult": 100, "perChild": 50 }
+  },
+  "childPolicy": {
+    "age0to2": "Free",
+    "age3to16": "Child Rates (additionalChild figure)",
+    "age16Plus": "Adult rates"
+  },
+  "inclusions": [
+    "Soft drinks",
+    "Selected alcohol on All Inclusive",
+    "Laundry (24h return)",
+    "Non-motorized water sports",
+    "Use of Spa, Gym, Yoga Centre",
+    "Return transfers (Diani Airstrip)",
+    "1 hour massage (Lazy Days only)",
+    "Chale Day Trip (Full Board & All Inclusive)",
+    "Dining at Nomad (meals per meal plan, drinks extra)"
+  ],
+  "transfers": {
+    "moiInternationalAirport": { "amount": 70, "unit": "per 4 pax, Airconditioned Mini Van via Dongo-Kundu bypass, 60 min" },
+    "nomadToChaleIsland": { "amount": 35, "unit": "per 4 pax, 30 min" }
+  },
+  "paymentTerms": "30% deposit 14 days after invoicing; balance 30 days prior to arrival.",
+  "cancellationPolicy": {
+    "regularAndFestive": { "30PlusDays": "No charge", "15to30Days": "50%", "14orFewerDays": "100%", "noShow": "100%" },
+    "spring": { "14PlusDays": "No charge", "7to14Days": "50%", "under7Days": "100%", "noShow": "100%", "confidenceNote": "[Unverified] whether a Spring cancellation band genuinely applies to the Villa, since no Spring season pricing appears on this card — printed as a shared boilerplate policy block regardless." }
+  },
+  "skippedFiles": [
+    "RE_ 2026 Chale Island and Nomad Beach Net rates.msg (email)",
+    "Confirmation Voucher -Denis Family.pdf (booking confirmation, not a rate card)",
+    "Private Beach Villa - KES - Rack 2026 (2).pdf (KES Rack tier, not extracted)"
+  ],
+  "portfolioWideTerms": {
+    "note": "Non-Soroi property — CLAUDE.md's Soroi-portfolio-wide terms do not apply."
+  }
+}

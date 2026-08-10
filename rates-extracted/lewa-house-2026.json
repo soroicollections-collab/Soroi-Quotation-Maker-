@@ -1,0 +1,18 @@
+{
+  "$note": "Extracted 6 Aug 2026 via whole-file pdftotext read (3-page single-property PDF, no misattribution risk). Source: Bush and Beyond Ltd (booking agency) rate sheet 'Lewa House - 2026 Preferential US$.pdf'. Portfolio-wide note: a 'Bush and Beyond 2026 Special.pdf' offers a 10% long-stay discount (5+ nights across any B&B properties) for travel 2025-May & 1 Nov-19 Dec, and 5 Jan-31 May & 1 Nov-19 Dec 2026 - applies to this property too, min 2-night stay per property.",
+  "property": "Lewa House",
+  "operator": "Bush and Beyond Ltd (booking agent) / Lewa Wildlife Conservancy",
+  "region": "Lewa Wildlife Conservancy",
+  "tier": "RSP (rack) and Trade Rates/Preferential (Sunworld-relevant net rate)",
+  "source": { "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/BUSH&BEYOND/Lewa House - 2026 Preferential US$.pdf" },
+  "seasons": { "regular": "5 Jan-31 Mar, 1 May-30 Jun, 1 Sep-31 Oct, 1-19 Dec 2026 (closed April & November 2026)", "premium": "1 Jul-31 Aug 2026, 20 Dec 2026-3 Jan 2027" },
+  "rates": {
+    "currency": "USD", "unit": "per person per night sharing, no single supplement",
+    "regular": { "rsp": { "adult": 1095, "childSharing5to15": 710, "conservancyFee": { "adult": 183, "child": 92 }, "total": { "adult": 1278, "child": 802 } }, "trade": { "adult": 821, "childSharing5to15": 533, "conservancyFee": { "adult": 183, "child": 92 }, "total": { "adult": 1004, "child": 625 } } },
+    "premium": { "rsp": { "adultSharing": 1600, "adultSingle": 1875, "childSharing": 1030, "conservancyFee": 183, "total": { "adultSharing": 1783, "adultSingle": 2058, "childSharing": 1122 } }, "trade": { "adultSharing": 1200, "adultSingle": 1406, "childSharing": 773, "conservancyFee": 183, "total": { "adultSharing": 1383, "adultSingle": 1589, "childSharing": 865 } } }
+  },
+  "childPolicy": { "under5": "Free", "5to15sharing": "Child rate applies", "allAgesWelcome": true },
+  "inclusions": "Full board, soft drinks/local beers/non-premium wines/spirits, Lewa Airstrip transfers, statutory taxes, laundry, day/night game drives, Lewa HQ visit, Ngare Ndare forest+waterfall visit, horse/camel trek, prehistoric sites, bush breakfasts, picnic lunches, guided walks, sundowners.",
+  "exclusions": "Extra Ngare Ndare visit, Il'Ngwesi cultural boma fees, additional horse rides/camel treks, exclusive vehicle use ($406), massage, champagne/premium spirits, helicopter trips.",
+  "notes": "Closed April and November 2026. No departures on Christmas Day or after 10:45am. No arrivals before 09:30am. Deposit 20% non-refundable, balance 46 days prior."
+}

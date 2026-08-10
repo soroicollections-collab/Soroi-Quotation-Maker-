@@ -1,0 +1,36 @@
+{
+  "$note": "Extracted 6 Aug 2026 from separate Non-Resident and Resident agent contract rate PDFs.",
+  "property": "Enkorok Mara Camp",
+  "operator": "Enkorok Mara Camp Ltd",
+  "region": "Maasai Mara (Keekorok airstrip)",
+  "tier": "Rack Rate and Contract Rate, both Non-Resident (USD) and Resident (KES)",
+  "source": {
+    "files": [
+      "2026 CONTRACT RATES/KENYA/ACCOMODATION/Enkorok Mara camp/Enkorok Mara Camp 2026 Non-Residents Agent Contract Rates.pdf",
+      "2026 CONTRACT RATES/KENYA/ACCOMODATION/Enkorok Mara camp/Enkorok Mara Camp 2026 Residents Agent Contract Rates.pdf"
+    ],
+    "validity": { "start": "2026-01-01", "end": "2027-01-02" }
+  },
+  "seasons": { "peak": "1 Jul-30 Sep 2026, 22 Dec-2 Jan 2027", "high": "3 Jan-31 Mar, 1-30 Jun, 1-31 Oct 2026", "low": "1 Apr-31 May, 1 Nov-21 Dec 2026" },
+  "rates": {
+    "unit": "per person per night, Full Board",
+    "nonResidentUSD": {
+      "fullBoard_rack": { "peak": { "double": 385, "single": 270, "triple": 530 }, "high": { "double": 250, "single": 175, "triple": 350 }, "low": { "double": 195, "single": 135, "triple": 275 } },
+      "fullBoard_contract": { "peak": { "double": 320, "single": 225, "triple": 440 }, "high": { "double": 210, "single": 145, "triple": 290 }, "low": { "double": 160, "single": 110, "triple": 230 } },
+      "groundPackage_rack": { "peak": { "sharing": 425, "single": 740 }, "high": { "sharing": 410, "single": 645 }, "low": { "sharing": 330, "single": 600 } },
+      "groundPackage_contract": { "peak": { "sharing": 355, "single": 615 }, "high": { "sharing": 340, "single": 535 }, "low": { "sharing": 275, "single": 500 } }
+    },
+    "residentKES": {
+      "fullBoard_rack": { "peak": { "double": 35400, "single": 25800, "triple": 48600 }, "high": { "double": 22800, "single": 15000, "triple": 31200 }, "low": { "double": 18000, "single": 12000, "triple": 24700 } },
+      "fullBoard_contract": { "peak": { "double": 29500, "single": 21500, "triple": 40500 }, "high": { "double": 19000, "single": 12500, "triple": 26000 }, "low": { "double": 15000, "single": 10000, "triple": 20600 } },
+      "groundPackage_rack": { "peak": { "sharing": 42000, "single": 74400 }, "high": { "sharing": 35700, "single": 63600 }, "low": { "sharing": 33300, "single": 60600 } },
+      "groundPackage_contract": { "peak": { "sharing": 35000, "single": 62000 }, "high": { "sharing": 29750, "single": 53000 }, "low": { "sharing": 27750, "single": 50500 } }
+    }
+  },
+  "familyTentSupplement": { "usd": 50, "kes": 5000, "note": "Max 5 paying pax (4 adults, or 2 adults + 3 children)" },
+  "mandatoryFees": {
+    "gameReserveFee": { "adultUSD": { "janJun": 100, "julDec": 200 }, "childUSD9to17": 50, "adultKES": { "janJun": 1500, "julDec": 3000 }, "childKES9to17": 750, "under8": "FOC" }
+  },
+  "childPolicy": { "under3sharing": "Free", "3to12sharing2adults": "50% of adult rate", "3to12ownRoom": "75% of adult rate", "youngAdult12to17": "75% of adult twin rate" },
+  "notes": "Ground Package includes morning/afternoon shared game drives, local airstrip transfers from Keekorok, cultural visit transfers (excl. entry fees)."
+}

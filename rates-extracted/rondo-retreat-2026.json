@@ -1,0 +1,39 @@
+{
+  "property": "Rondo Retreat Centre",
+  "operator": "A Ministry of Trinity Fellowship",
+  "region": "Kakamega, Kenya",
+  "isSoroiProperty": false,
+  "sourceFiles": [
+    "2026 CONTRACT RATES/KENYA/ACCOMODATION/RONDO RETREAT/Rondo RETREAT Non Residents 2026 (USD).pdf",
+    "2026 CONTRACT RATES/KENYA/ACCOMODATION/RONDO RETREAT/Rondo RETREAT RESIDENT RATES 2026.pdf"
+  ],
+  "currency": { "nonResident": "USD", "resident": "KES", "verified": true },
+  "validity": "2026 (no specific date range stated beyond the year)",
+  "notes": ["A faith-based retreat centre (Trinity Fellowship ministry), not a typical commercial safari lodge - management explicitly reserves the right to admit or not admit children.", "SS = Single Supplement/Single Sharing (single occupancy rate)."],
+  "nonResident_perPersonPerNightSharing_USD": {
+    "adult": { "fullBoard": 130, "halfBoard": 120 },
+    "singleOccupancy": { "fullBoard": 190, "halfBoard": 180 },
+    "child3to11": 100, "child12andUp": 130,
+    "picnicLunch": 15,
+    "verified": true
+  },
+  "resident_perPersonPerNightSharing_KES": {
+    "adult": { "fullBoard": 9000, "halfBoard": 8500 },
+    "singleOccupancy": { "fullBoard": 12500, "halfBoard": 12000 },
+    "child3to11sharing": 6500, "child12andUpSharing": 8500,
+    "child12andUpOwnRoom": { "fullBoard": 12500, "halfBoard": 12000 },
+    "verified": true
+  },
+  "childPolicy": { "raw": "No single supplement for children under 12 - must share.", "verified": true },
+  "christmasSurcharge_residentCard": { "raw": "KES2,000 per person for the ENTIRE 24-26 December season (not per day). No check-in or check-out on Christmas Day.", "verified": true },
+  "policies": {
+    "deposit": "50% deposit required to reserve (bank transfer/cheque/M-Pesa)",
+    "depositWindow": "2 weeks to receive deposit after invoice, or dates may be released",
+    "checkOut": "10:00, otherwise a half-board fee is charged for the room",
+    "roomReleaseTime": "19:00 (rooms held only until then unless late arrival notified)",
+    "cancellation_individual": "30-15 days: 30% of applicable rate per night; 14-2 days: 60%; within 48 hours or non-arrival: 100% of reservation value",
+    "cancellation_blockBooking10plusPax": "Up to 2 months before arrival: 50% of applicable rate per person per night; up to 30 days before arrival: 100%",
+    "residentVerification": "Must present Driving License or other ID on arrival",
+    "liability": "No liability for lost/damaged property or personal injury (valuables can be deposited at Front Desk for safekeeping)"
+  }
+}

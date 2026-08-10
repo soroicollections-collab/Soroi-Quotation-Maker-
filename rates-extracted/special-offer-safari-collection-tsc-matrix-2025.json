@@ -1,0 +1,212 @@
+{
+  "$note": "Extracted 6 Aug 2026 from SPECIAL OFFERS/THE SAFARI COLLECTIONS OFFERS MATRIX/TSC 2025 - 20_30% Special Offers Matrix.pdf (7-page InDesign PDF, direct pdftotext read of each page in turn). Kenya-relevant only (all 4 properties named are Kenyan: Giraffe Manor, Sala's Camp, Sasaab, Solio Lodge - no Tanzania content to exclude here).",
+  "offerStatus": "promotional - confirm current validity before use",
+  "operator": "The Safari Collection",
+  "documentTitle": "Contract 20/30% - 2025 Combination Special Offers Matrix",
+  "propertiesNamedInIntroText": ["Giraffe Manor", "Sala's Camp", "Sasaab", "Solio Lodge"],
+  "source": {
+    "file": "SPECIAL OFFERS/THE SAFARI COLLECTIONS OFFERS MATRIX/TSC 2025 - 20_30% Special Offers Matrix.pdf",
+    "pages": 7,
+    "extractionMethod": "pdftotext -layout, full document, plus per-page pdftotext -f/-l cross-check"
+  },
+  "validity": {
+    "ratesValidYear": 2025,
+    "verified": true,
+    "expiryAssessment": "LIKELY EXPIRED / STALE - this is a 2025-dated seasonal rate matrix (season windows explicitly say 1 Jan 2025 - 31 Dec 2025). Today is 6 Aug 2026, so at minimum a 2026 version would be needed; do not assume these figures or discount structure carry into 2026 without confirming a current edition exists.",
+    "closureDatesOnFile": "Giraffe Manor Historic Manor closed 21 Apr-18 May 2025 (Garden Manor closed 1 Apr-31 May 2025); Sala's Camp closed 21 Apr-31 May 2025; Sasaab closed 16-30 Nov 2025; Solio Lodge closed 1-15 Nov 2025. All 2025-specific and likely superseded."
+  },
+  "combinationDiscountOffer": {
+    "note": "This is a COMBINATION/length-of-stay discount ladder off each property's own Rack/30%-Contract rates, not a flat promo price. Two calendar-defined periods per year, each with its own discount ladder.",
+    "theSeason": {
+      "dateRanges": ["1 Jan 2025 - 5 Jan 2025", "1 Jun 2025 - 31 Oct 2025", "16 Dec 2025 - 31 Dec 2025"],
+      "tiers": [
+        { "minNights": 4, "discountPct": 25, "scope": "one or a combination of properties EXCLUDING Giraffe Manor (i.e. Sala's Camp, Sasaab, Solio Lodge)" },
+        { "minNights": 7, "discountPct": 30, "scope": "combination including Giraffe Manor - discount does not apply to Giraffe Manor's own accommodation rate, but Giraffe Manor nights count toward the minimum-night threshold" },
+        { "minNights": 10, "discountPct": 35, "scope": "same combination rule as the 7-night tier" }
+      ]
+    },
+    "savingsSeason": {
+      "dateRanges": ["6 Jan 2025 - 31 May 2025", "1 Nov 2025 - 15 Dec 2025"],
+      "tiers": [
+        { "minNights": 4, "discountPct": 30, "scope": "excluding Giraffe Manor" },
+        { "minNights": 7, "discountPct": 35, "scope": "including Giraffe Manor, same carve-out as above" },
+        { "minNights": 10, "discountPct": 40, "scope": "including Giraffe Manor, same carve-out as above" }
+      ]
+    },
+    "discountAppliesTo": "accommodation NETT rates only",
+    "baseForDiscount": "Applied on top of the existing Contract 30% rate shown in each table (column labelled 'CONTRACT 30%'), not on top of Rack."
+  },
+  "propertyRateTables": {
+    "$identificationCaveat": "[Inference] Property names are NOT printed as text next to each rate table in the extracted PDF text (they appear only as a logo/image per page, which pdftotext cannot read). Property identity below is inferred from room-type naming and contextual wording (e.g. 'Spasaab' typo, 'Aberdare National Park' reference) - reasonably confident but not textually confirmed. Cross-check against the property's own name/logo in the original PDF before using in a client-facing document.",
+    "salasCampInferred": {
+      "inferenceBasis": "Room names 'Keekorok Family Unit', 'Forest Family Unit', 'Keekorok Tent', 'Forest Tents' strongly suggest Sala's Camp (Maasai Mara, near Keekorok).",
+      "currency": "USD",
+      "unit": "per room or per person as labelled, per night",
+      "mandatoryFees": {
+        "note": "Daily park and conservation fees, EXCLUDED from rates above",
+        "janToJune": { "adult": 185, "child": 95 },
+        "julyToDecember": { "adult": 285, "child": 95 },
+        "unit": "USD per person per night"
+      },
+      "theSeason_1Jan_5Jan_1Jun_31Oct_16Dec_31Dec": {
+        "keekorokFamilyUnitWithPool_tent2aAnd2b": {
+          "minRoomRate_2adults2children": { "rack": 8339, "contract30": 5837, "offerAt25pct_4nightMin": 4378, "offerAt30pct_7nightCombo": 4086, "offerAt35pct_10nightCombo": 3794 },
+          "fourAdultsSharing": { "rack": 9259, "contract30": 6481, "offerAt25pct": 4861, "offerAt30pct": 4537, "offerAt35pct": 4213 },
+          "thirdChildSharing_3to15": { "rack": 925, "contract30": 648, "offerAt25pct": 486, "offerAt30pct": 453, "offerAt35pct": 421 },
+          "adultExtraBed": { "rack": 2315, "contract30": 1620, "offerAt25pct": 1215, "offerAt30pct": 1134, "offerAt35pct": 1053 }
+        },
+        "forestFamilyUnitWithPool_tent3": {
+          "minRoomRate_2adults2children": { "rack": 7407, "contract30": 5185, "offerAt25pct": 3889, "offerAt30pct": 3629, "offerAt35pct": 3370 },
+          "fourAdultsSharing": { "rack": 8238, "contract30": 5766, "offerAt25pct": 4325, "offerAt30pct": 4036, "offerAt35pct": 3748 },
+          "thirdChildSharing_3to15": { "rack": 739, "contract30": 517, "offerAt25pct": 388, "offerAt30pct": 362, "offerAt35pct": 336 },
+          "adultExtraBed": { "rack": 2043, "contract30": 1430, "offerAt25pct": 1073, "offerAt30pct": 1001, "offerAt35pct": 930 }
+        },
+        "keekorokTentWithPool_tent1_forestTentsWithPool_tents4to7": {
+          "perPersonSharing": { "rack": 2315, "contract30": 1620, "offerAt25pct": 1215, "offerAt30pct": 1134, "offerAt35pct": 1053 },
+          "perChildSharing": { "rack": 1604, "contract30": 1123, "offerAt25pct": 842, "offerAt30pct": 786, "offerAt35pct": 730 },
+          "perChildExtraBed_3to11": { "rack": 925, "contract30": 648, "offerAt25pct": 486, "offerAt30pct": 453, "offerAt35pct": 421 },
+          "singleRoom": { "rack": 3707, "contract30": 2595, "offerAt25pct": 1946, "offerAt30pct": 1816, "offerAt35pct": 1687 }
+        }
+      },
+      "savingsSeason_6Jan_31May_1Nov_15Dec": {
+        "keekorokFamilyUnitWithPool_tent2aAnd2b": {
+          "minRoomRate_2adults2children": { "rack": 5124, "contract30": 3587, "offerAt30pct_4nightMin": 2511, "offerAt35pct_7nightCombo": 2332, "offerAt40pct_10nightCombo": 2152 },
+          "fourAdultsSharing": { "rack": 5783, "contract30": 4048, "offerAt30pct": 2834, "offerAt35pct": 2631, "offerAt40pct": 2429 },
+          "thirdChildSharing_3to15": { "rack": 566, "contract30": 396, "offerAt30pct": 277, "offerAt35pct": 257, "offerAt40pct": 238 },
+          "adultExtraBed": { "rack": 1391, "contract30": 974, "offerAt30pct": 682, "offerAt35pct": 633, "offerAt40pct": 584 }
+        },
+        "forestFamilyUnitWithPool_tent3": {
+          "minRoomRate_2adults2children": { "rack": 4319, "contract30": 3023, "offerAt30pct": 2116, "offerAt35pct": 1965, "offerAt40pct": 1814 },
+          "fourAdultsSharing": { "rack": 5124, "contract30": 3587, "offerAt30pct": 2511, "offerAt35pct": 2332, "offerAt40pct": 2152 },
+          "thirdChildSharing_3to15": { "rack": 646, "contract30": 452, "offerAt30pct": 316, "offerAt35pct": 294, "offerAt40pct": 271 },
+          "adultExtraBed": { "rack": 1171, "contract30": 820, "offerAt30pct": 574, "offerAt35pct": 533, "offerAt40pct": 492 }
+        },
+        "keekorokTentWithPool_tent1_forestTentsWithPool_tents4to7": {
+          "perPersonSharing": { "rack": 1391, "contract30": 974, "offerAt30pct": 682, "offerAt35pct": 633, "offerAt40pct": 584 },
+          "perChildSharing": { "rack": 819, "contract30": 573, "offerAt30pct": 401, "offerAt35pct": 372, "offerAt40pct": 344 },
+          "perChildExtraBed_3to11": { "rack": 566, "contract30": 396, "offerAt30pct": 277, "offerAt35pct": 257, "offerAt40pct": 238 },
+          "singleRoom": { "rack": 2096, "contract30": 1467, "offerAt30pct": 1027, "offerAt35pct": 954, "offerAt40pct": 880 }
+        }
+      },
+      "inclusions": "Airstrip transfers, game drives and other camp activities, all meals, house wines/soft drinks/beers/spirits, laundry, bush meals, sundowners, bush volleyball, nature walks, children's activities.",
+      "exclusions": "Champagne, luxury spirits, selected wines, tips, travel & emergency evacuation insurance, balloon rides, in-room massage, personal effects, road transfers, and the daily park/conservation fees listed above."
+    },
+    "sasaabInferred": {
+      "inferenceBasis": "Exclusions text mentions 'treatments in Spasaab' (typo for Sasaab's spa) and 'quad bike excursions, scenic helicopter ride' consistent with Sasaab (Samburu).",
+      "currency": "USD",
+      "unit": "per room or per person, per night",
+      "mandatoryFees": { "adult": 160, "child": 87.5, "unit": "USD per person per night, nightly park and conservation fees, excluded from rates" },
+      "theSeason_1Jan_5Jan_1Jun_31Oct_16Dec_31Dec": {
+        "familySuites_2suites": {
+          "minRoomRate_2adults2children": { "rack": 5711, "contract30": 3998, "offerAt25pct": 2998, "offerAt30pct": 2798, "offerAt35pct": 2599 },
+          "thirdChildSharing_3to15": { "rack": 885, "contract30": 620, "offerAt25pct": 465, "offerAt30pct": 434, "offerAt35pct": 403 },
+          "fourAdultsSharing": { "rack": 6737, "contract30": 4716, "offerAt25pct": 3537, "offerAt30pct": 3301, "offerAt35pct": 3065 },
+          "adultExtraBed": { "rack": 1684, "contract30": 1179, "offerAt25pct": 884, "offerAt30pct": 825, "offerAt35pct": 766 }
+        },
+        "allSuites_7suites": {
+          "perPersonSharing": { "rack": 1684, "contract30": 1179, "offerAt25pct": 884, "offerAt30pct": 825, "offerAt35pct": 766 },
+          "perChildRate": { "rack": 1171, "contract30": 820, "offerAt25pct": 615, "offerAt30pct": 574, "offerAt35pct": 533 },
+          "perChildExtraBed_3to11": { "rack": 885, "contract30": 620, "offerAt25pct": 465, "offerAt30pct": 434, "offerAt35pct": 403 },
+          "singleRoom": { "rack": 2396, "contract30": 1677, "offerAt25pct": 1258, "offerAt30pct": 1174, "offerAt35pct": 1090 }
+        }
+      },
+      "savingsSeason_6Jan_31May_1Nov_15Dec": {
+        "familySuites_2suites": {
+          "minRoomRate_2adults2children": { "rack": 4109, "contract30": 2876, "offerAt30pct": 2013, "offerAt35pct": 1870, "offerAt40pct": 1726 },
+          "thirdChildSharing_3to15": { "rack": 566, "contract30": 396, "offerAt30pct": 277, "offerAt35pct": 257, "offerAt40pct": 238 },
+          "fourAdultsSharing": { "rack": 4835, "contract30": 3385, "offerAt30pct": 2369, "offerAt35pct": 2200, "offerAt40pct": 2031 },
+          "adultExtraBed": { "rack": 1209, "contract30": 846, "offerAt30pct": 592, "offerAt35pct": 550, "offerAt40pct": 508 }
+        },
+        "allSuites_7suites": {
+          "perPersonSharing": { "rack": 1209, "contract30": 846, "offerAt30pct": 592, "offerAt35pct": 550, "offerAt40pct": 508 },
+          "perChildRate": { "rack": 845, "contract30": 592, "offerAt30pct": 414, "offerAt35pct": 385, "offerAt40pct": 355 },
+          "perChildExtraBed_3to11": { "rack": 566, "contract30": 396, "offerAt30pct": 277, "offerAt35pct": 257, "offerAt40pct": 238 },
+          "singleRoom": { "rack": 1690, "contract30": 1183, "offerAt30pct": 828, "offerAt35pct": 769, "offerAt40pct": 710 }
+        }
+      },
+      "inclusions": "Airstrip transfers, game drives, guided bush walks, camel walks, fly camping (optional exclusive vehicle hire USD 490/day), all meals, house wines/soft drinks/beers/spirits, laundry, bush meals, school/clinic/village/market visits, sundowners.",
+      "exclusions": "Champagne, luxury spirits, selected wines, spa treatments, tips, quad bike excursions, scenic helicopter ride, travel & emergency evacuation insurance, personal effects, road transfers, nightly park/conservation fees listed above."
+    },
+    "solioLodgeInferred": {
+      "inferenceBasis": "Exclusions text mentions 'Aberdare National Park' and 'visit to Cinnabar Green' - consistent with Solio Lodge (Laikipia, adjacent to Aberdares).",
+      "currency": "USD",
+      "unit": "per room or per person, per night",
+      "mandatoryFees": { "adult": 92, "child": 60, "unit": "USD per person per night, nightly conservation fees, excluded from rates" },
+      "note": "This is the promotional-offer matrix figure set, distinct from the standing 2026 Solio Lodge contract already on file at rates-extracted/solio-lodge-safari-collection-2026.json - do not conflate the two; this file's rates are 2025-dated and promotional.",
+      "theSeason_1Jan_5Jan_1Jun_31Oct_16Dec_31Dec": {
+        "familyCottage": {
+          "minRoomRate_2adults2children": { "rack": 5215, "contract30": 3650, "offerAt25pct": 2738, "offerAt30pct": 2555, "offerAt35pct": 2373 },
+          "thirdChildSharing_3to15": { "rack": 806, "contract30": 564, "offerAt25pct": 423, "offerAt30pct": 395, "offerAt35pct": 367 },
+          "fourAdultsSharing": { "rack": 6123, "contract30": 4286, "offerAt25pct": 3214, "offerAt30pct": 3000, "offerAt35pct": 2786 },
+          "adultExtraBed": { "rack": 1531, "contract30": 1071, "offerAt25pct": 804, "offerAt30pct": 750, "offerAt35pct": 696 }
+        },
+        "allOtherRooms_4cottages": {
+          "perPersonSharing": { "rack": 1531, "contract30": 1071, "offerAt25pct": 804, "offerAt30pct": 750, "offerAt35pct": 696 },
+          "perChildRate": { "rack": 1077, "contract30": 754, "offerAt25pct": 565, "offerAt30pct": 528, "offerAt35pct": 490 },
+          "perChildExtraBed_3to11": { "rack": 805, "contract30": 564, "offerAt25pct": 423, "offerAt30pct": 395, "offerAt35pct": 366 },
+          "singleRoom": { "rack": 2176, "contract30": 1523, "offerAt25pct": 1142, "offerAt30pct": 1066, "offerAt35pct": 990 }
+        }
+      },
+      "savingsSeason_6Jan_31May_1Nov_15Dec": {
+        "familyCottage": {
+          "minRoomRate_2adults2children": { "rack": 3836, "contract30": 2685, "offerAt30pct": 1879, "offerAt35pct": 1745, "offerAt40pct": 1611 },
+          "thirdChildSharing_3to15": { "rack": 793, "contract30": 555, "offerAt30pct": 388, "offerAt35pct": 361, "offerAt40pct": 333 },
+          "fourAdultsSharing": { "rack": 4501, "contract30": 3151, "offerAt30pct": 2206, "offerAt35pct": 2048, "offerAt40pct": 1891 },
+          "adultExtraBed": { "rack": 1125, "contract30": 788, "offerAt30pct": 551, "offerAt35pct": 512, "offerAt40pct": 473 }
+        },
+        "allOtherRooms_4cottages": {
+          "perPersonSharing": { "rack": 1125, "contract30": 788, "offerAt30pct": 551, "offerAt35pct": 512, "offerAt40pct": 473 },
+          "perChildRate": { "rack": 793, "contract30": 555, "offerAt30pct": 388, "offerAt35pct": 361, "offerAt40pct": 333 },
+          "perChildExtraBed_3to11": { "rack": 566, "contract30": 396, "offerAt30pct": 277, "offerAt35pct": 257, "offerAt40pct": 238 },
+          "singleRoom": { "rack": 1684, "contract30": 1179, "offerAt30pct": 825, "offerAt35pct": 766, "offerAt40pct": 707 }
+        }
+      },
+      "inclusions": "Airstrip transfers, game drives, excursions to Aberdare National Park (excl. park fees), walking, local farm visit, horse riding, mountain biking, all meals, house wines/soft drinks/beers/spirits, laundry, bush breakfasts, sundowners.",
+      "exclusions": "Champagne, luxury spirits, selected wines, tips, travel & emergency evacuation insurance, scenic helicopter ride, massage treatments, Aberdare NP park fees, visit to Cinnabar Green, personal effects, road transfers, nightly conservation fees listed above."
+    },
+    "giraffeManorTheRetreatDayRooms": {
+      "inferenceBasis": "Explicitly named 'Giraffe Manor' context ('The Retreat', Giraffe Centre access) - highest confidence of the four sections.",
+      "note": "These are DAY ROOM rates only (not overnight Giraffe Manor accommodation, which this matrix explicitly excludes from its own combination discount). Only one discount tier shown here: 20% Contract with a 30% offer (7-night combo), not the 25/30/35 or 30/35/40 ladder used elsewhere in this document.",
+      "currency": "USD",
+      "validity": "1 Jan 2025 - 31 Dec 2025 (single window, no season split)",
+      "largeDayRoom_lilysRoom": {
+        "minRoomRate_upTo4guests": { "rack": 1600, "contract20": 1280, "offerAt30pct_7nightCombo": 896 },
+        "perAdultSharing_upTo2extra": { "rack": 385, "contract20": 308, "offerAt30pct": 216 },
+        "perChildSharing_upTo2extra": { "rack": 270, "contract20": 216, "offerAt30pct": 151 }
+      },
+      "mediumDayRoom_waridisAndNandisRoom": {
+        "minRoomRate_upTo2guests": { "rack": 880, "contract20": 704, "offerAt30pct": 493 },
+        "perAdultSharing_upTo2extra": { "rack": 385, "contract20": 308, "offerAt30pct": 216 },
+        "perChildSharing_upTo2extra": { "rack": 270, "contract20": 216, "offerAt30pct": 151 }
+      },
+      "smallDayRoom_alizetisRoom": {
+        "minRoomRate_upTo2guests": { "rack": 880, "contract20": 704, "offerAt30pct": 493 },
+        "perAdultSharing_upTo1extra": { "rack": 385, "contract20": 308, "offerAt30pct": 216 },
+        "perChildSharing_upTo1extra": { "rack": 270, "contract20": 216, "offerAt30pct": 151 }
+      },
+      "additionalAccess": {
+        "retreatPass_dayAccess": { "rack": 275, "contract20": 220, "offerAt30pct": "Complimentary" },
+        "earlyBirdPackage_breakfastHalfDayAccess": { "rack": 275, "contract20": 220, "offerAt30pct": 154 },
+        "allInclusiveDayPassSupplement": { "adult": 100, "child3to11": 80 }
+      },
+      "inclusions": "Arrival/departure transfers (conditions apply), water, soft drinks, snack, use of Retreat facilities (pool, gym, steam room, sauna, hot tub), Giraffe Centre access, subject to availability.",
+      "exclusions": "Spa treatments, all food/drinks except complimentary snack, excursions, access to Giraffe Manor itself.",
+      "bookingRestriction": "The Retreat can only be booked in combination with a Safari Collection bush property (Sasaab, Solio Lodge, and/or Sala's Camp) unless the guest is already staying at Giraffe Manor. Max 10 Retreat Day Passes and 8 Early Bird passes per day."
+    }
+  },
+  "childPolicy": "Children aged 3 years - 15 years 364 days. 16+ is adult. Infants (0-2y 364d) stay free. The Retreat at Giraffe Manor has no children's rates, only minimum room rates.",
+  "bookingTerms": {
+    "provisionalHoldDays": 10,
+    "depositPct": 20,
+    "finalPaymentDeadlineDays": 45,
+    "cancellationLadder": [
+      "More than 120 days before arrival: 20% deposit refunded net of transaction/admin fee (5% of booking value)",
+      "120-46 days before arrival: 20% deposit forfeited",
+      "45-30 days before arrival: 50% of full value forfeited",
+      "Less than 30 days / no-shows: 100% forfeited"
+    ],
+    "note": "Full terms & conditions run to page 7 of the source document and cover force majeure, insurance, data protection, etc. - not reproduced here beyond the cancellation ladder; refer to the source PDF for the complete text if needed for a booking."
+  },
+  "verified": true,
+  "confidenceNote": "All numeric figures read directly from pdftotext output, cross-checked with a per-page re-extraction pass. The property-name attribution for each rate table is an inference (see $identificationCaveat above), not explicit text in the source - flag this specifically if this file is used for a client-facing quote. This is a 2025 seasonal offer matrix; given today's date, treat the whole document as likely stale and confirm a 2026 edition before use."
+}

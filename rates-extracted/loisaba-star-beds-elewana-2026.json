@@ -1,0 +1,25 @@
+{
+  "$note": "Extracted 6 Aug 2026 via paginated pdftotext read (page 15 of 24) of 'EC-2026-Rates-40.pdf'. This property has NO Green Season pricing - the source table literally shows 'Closed' for the Green Season column (Apr 1-May 31), unlike its two sister Loisaba properties which remain open and priced in Green Season.",
+  "property": "Loisaba Star Beds",
+  "operator": "Elewana Collection",
+  "region": "Loisaba Conservancy, Laikipia",
+  "tier": "Rack and Nett (Nett = Rack x 0.60)",
+  "source": { "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/ELEWANA/EC-2026-Rates-40.pdf", "pdfPageIndex": 15, "validity": { "start": "2026-01-04", "end": "2027-01-03" } },
+  "seasons": { "high": "Jul 1-Oct 31, Dec 20-Jan 3", "mid": "Jan 4-Mar 31, Jun 1-Jun 30, Nov 1-Dec 19", "green": "Closed (Apr 1-May 31)" },
+  "rates": {
+    "currency": "USD", "unit": "per person per night",
+    "fullBoard": {
+      "perPersonSharing": { "high": { "rack": 655, "nett": 393 }, "mid": { "rack": 494, "nett": 297 } },
+      "singleRoom": { "high": { "rack": 982, "nett": 589 }, "mid": { "rack": 742, "nett": 445 } },
+      "familySuite2Adults2Children": { "high": { "rack": 1495, "nett": 897 }, "mid": { "rack": 1142, "nett": 685 } }
+    },
+    "gamePackage": {
+      "perPersonSharing": { "high": { "rack": 855, "nett": 513 }, "mid": { "rack": 694, "nett": 417 } },
+      "singleRoom": { "high": { "rack": 1182, "nett": 709 }, "mid": { "rack": 942, "nett": 565 } },
+      "familySuite2Adults2Children": { "high": { "rack": 2265, "nett": 1359 }, "mid": { "rack": 1885, "nett": 1131 } }
+    }
+  },
+  "mandatoryFees": { "loisabaConservancy": { "adult": 180, "child3to17": 90, "unit": "per person per day, year-round" } },
+  "transfers": { "toNanyukiAirstrip": { "rack": 410, "nett": 369 } },
+  "notes": "Cheapest of the 3 Loisaba properties in this document at every equivalent season/board-basis. No Safari Suite or Triple Room category, but does have a Family Suite (2 adults + 2 children)."
+}

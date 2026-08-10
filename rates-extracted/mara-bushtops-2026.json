@@ -1,0 +1,49 @@
+{
+  "$note": "Extracted 6 Aug 2026 from three sources: the general 'Mara Bushtops Rack Rates.pdf' and the Sunworld-specific signed contract 'Sunworld Safaris Ltd MBT 20%.pdf' (adds a Nett column = Rack x 0.80 on every checked cell, confirmed arithmetically, consistent with this project's STO-percentage convention). Signed 29 Oct 2025 by Orion Hotels Ltd (Claudia Stuart) for Sunworld Safaris Ltd.",
+  "property": "Mara Bushtops",
+  "operator": "Orion Hotels Ltd",
+  "region": "Maasai Mara (Siana airstrip)",
+  "tier": "Rack Rate and Sunworld-specific Nett Rate (STO 20%)",
+  "source": {
+    "files": [
+      "2026 CONTRACT RATES/KENYA/ACCOMODATION/BUSHTOPS/Mara Bushtops Rack Rates.pdf",
+      "2026 CONTRACT RATES/KENYA/ACCOMODATION/BUSHTOPS/Sunworld Safaris Ltd MBT 20%.pdf"
+    ],
+    "validity": { "start": "2025-12-21", "end": "2026-12-20" }
+  },
+  "seasons": {
+    "peak1_2025-2026": "21 Dec 2025-31 Dec 2025", "peak_extends": "1 Jul-31 Oct 2026 (same rate tier as Peak1)",
+    "peak2_2026": "1 Jan-5 Jan 2026",
+    "high1_2026": "6 Jan-31 Mar 2026, 1-30 Jun 2026",
+    "green_2026": "1 Apr-31 May 2026",
+    "high2_2026": "1 Nov-20 Dec 2026"
+  },
+  "rates": {
+    "currency": "USD",
+    "familySuitesGroundPackage_perUnitPerNight_max5guests": {
+      "peak1_2025-2026_and_1Jul-31Oct2026": { "rack": 7800, "nett": 6240, "extraBed": { "rack": 8580, "nett": 6864 } },
+      "peak2_2026_1Jan-5Jan": { "rack": 7800, "nett": 6240, "extraBed": { "rack": 8580, "nett": 6864 } },
+      "high1_2026": { "rack": 5400, "nett": 4320, "extraBed": { "rack": 5940, "nett": 4752 } },
+      "green_2026": { "rack": 4660, "nett": 3728, "extraBed": { "rack": 5126, "nett": 4100.80 } },
+      "high2_2026": { "rack": 5400, "nett": 4320, "extraBed": { "rack": 5940, "nett": 4752 } }
+    },
+    "tentedSuitesGroundPackage_perPersonSharing": {
+      "peak1_2025-2026_and_1Jul-31Oct2026": { "rack": 1870, "nett": 1496, "single": { "rack": 2431, "nett": 1944.80 } },
+      "peak2_2026_1Jan-5Jan": { "rack": 1870, "nett": 1496, "single": { "rack": 2431, "nett": 1944.80 } },
+      "high1_2026": { "rack": 1300, "nett": 1040, "single": { "rack": 1690, "nett": 1352 } },
+      "green_2026": { "rack": 1120, "nett": 896, "single": { "rack": 1456, "nett": 1164.80 } },
+      "high2_2026": { "rack": 1300, "nett": 1040, "single": { "rack": 1690, "nett": 1352 } },
+      "confidenceNote": "[Unverified] These per-person figures are extremely high relative to comparable Mara luxury camps in this batch (e.g. Angama Mara peak Nett MA $2475/person). Bushtops is marketed as an ultra-luxury property so this may be genuine, but the figure could not be cross-checked against a second independent source - confirm before quoting."
+    },
+    "mandatoryFeesIncludedInAboveTable": {
+      "parkFeeMasaiMara_perPerson": { "0to17": 50, "18plus_lowSeasons": 100, "18plus_peakSeasons": 200 },
+      "conservancyFee_perPerson": { "0to17": 52.20, "18plus": 104.40 }
+    }
+  },
+  "childPolicy": { "recommendedAge": "7 and above", "under16CannotStayAlone": true },
+  "circuitDiscount": { "5nights2BushtopsCamps": "10%", "7nights3BushtopsCamps": "15%", "note": "Not combinable with 4-for-3 offer" },
+  "specialOffers": { "stay4pay3": "6 Jan-30 Jun & 1 Oct-20 Dec", "extraBedFamilyTent": "+10% of unit cost", "singleSupplement": "+30% of per-person sharing rate for Luxury Tent" },
+  "inclusions": "Full board, 2 extended game drives (or full-day) shared, bush lunch, sundowner, night game drive, walking safaris (16+ only), Siana airstrip transfers, laundry, wifi, Amani Spa Village membership (pool/jacuzzi/sauna/gym - treatments extra), non-alcoholic drinks, beers, house wines/spirits.",
+  "exclusions": "Park/conservancy fees, spa treatments, non-house wines/spirits, cigars, shop items.",
+  "notes": "Cancellation: 30% (45+ days), 100% (<45 days). Payment: 30% non-refundable deposit, 70% due 45 days prior."
+}

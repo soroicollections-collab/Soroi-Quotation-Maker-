@@ -1,0 +1,57 @@
+{
+  "property": "Sanctuary Farm",
+  "operator": "Sanctuary Farm",
+  "region": "Moi South Lake Road, Naivasha",
+  "isSoroiProperty": false,
+  "sourceFiles": ["2026 CONTRACT RATES/KENYA/ACCOMODATION/SANCTUARY FARM RATES/SANCTUARY FARM RATES 2026.docx (2).pdf"],
+  "currency": "Both USD and KES quoted (conversion rate stated as KES1:USD0.0077)",
+  "validity": "1 January 2026 - 1 January 2027",
+  "notes": [
+    "Self-catering cottage/house rentals (whole-unit pricing, NOT per person) - catering not included in the cottage price; a separate Kijiko Restaurant full-board add-on option exists.",
+    "Same rates apply to both Residents and Non-Residents (unusual - most other properties in this project differentiate).",
+    "Conservancy fee is billed separately, payable at the main gate on arrival."
+  ],
+  "conservancyFee_perPersonPerDay": { "adult": { "usd": 8, "kes": 1000 }, "child": { "usd": 4, "kes": 500 }, "payableAt": "Main gate on arrival" },
+  "cottagePrices_perUnitPerNight_excludesCatering": {
+    "theMabatiHouse": { "layout": "2 double/twin bedrooms, kitchen, 1 bathroom, open-plan living/dining (one side opens up entirely)", "usd": 211, "kes": 27402 },
+    "theRoseCottage": { "layout": "1 double/twin bedroom, kitchen, bathroom, outdoor chill & fire", "usd": 175, "kes": 22727 },
+    "theWatchTower": { "layout": "1 upstairs double bedroom with wraparound windows, kitchen, WC, shower under stars, outdoor deck", "usd": 153, "kes": 19870 },
+    "sanctuaryFarmhouse": { "layout": "3 double bedrooms + 1 bedroom with 5 single beds, kitchen, pantry, dining room, living room with fireplace, 3 bathrooms, verandah lounge & dining, lake view", "usd": 420, "kes": 54545 },
+    "theYellowHouse": { "layout": "3 double bedrooms, 2 kitchens, dining room, TV room, pantry, laundry, landscaped garden", "usd": 390, "kes": 50649 },
+    "extraBed": { "usd": 15, "kes": 2000 }, "babyCot": { "usd": 8, "kes": 1000 },
+    "verified": true
+  },
+  "camping": {
+    "maxCapacity": 30,
+    "perAdultCampingFee": { "usd": 15, "kes": 2000 },
+    "perChildUnder12CampingFee": { "usd": 8, "kes": 1000 },
+    "hireSafariTent_10x8ft_sleeps2": { "usd": 40, "kes": 5000 },
+    "hireBeddingSet_doubleOr2singles": { "usd": 15, "kes": 2000 },
+    "firewoodBundle": { "usd": 8, "kes": 1000 },
+    "charcoal6kgBag": { "usd": 8, "kes": 1000 },
+    "includes": "Bush kitchen and bathrooms, flushing toilets, dish washing station, hot showers",
+    "verified": true
+  },
+  "kijikoRestaurant": {
+    "bookingRequired": true,
+    "mealTimes": { "breakfast": "08:00-11:00", "lunch": "12:00-15:00", "dinner": "18:00-21:00" },
+    "safetyNote": "Do not walk to the restaurant after 18:45 due to roaming hippos - safari car + driver available for KES1,000",
+    "fullBoardOption": { "perDay": { "usd": 77, "kes": 10000 }, "kidsPrice": "50% of adult price" },
+    "verified": true
+  },
+  "activities": {
+    "horseRiding": { "30min": { "usd": 23, "kes": 3000 }, "1hour": { "usd": 40, "kes": 5000 }, "2hoursOr1day": { "usd": 55, "kes": 7000 } },
+    "boatRides": { "30min": { "usd": 23, "kes": 3500 }, "1hour": { "usd": 31, "kes": 4000 }, "2hoursOr1day": { "usd": 46, "kes": 8000 } },
+    "bicycleHire": { "1hour": { "usd": 5, "kes": 500 }, "2hoursOr1day": { "usd": 8, "kes": 1000 } },
+    "nightGameDrive": { "1hour": { "usd": 55, "kes": 7000 }, "2hoursOr1day": { "usd": 100, "kes": 13000 } },
+    "apolloTaxi": { "nairobiToSanctuaryFarm": "KES8,000", "hellsGateDayTrip": "KES6,000", "longonotDayTrip": "KES8,000" },
+    "verified": true
+  },
+  "policies": {
+    "bookingBasis": "Advance booking only, for accommodation, restaurant, and all activities",
+    "deposit": "50% deposit required to secure any booking",
+    "cancellation": "Moderate policy: full refund up to 7 days before stay, minus 10% processing fee",
+    "taxesIncluded": "All rates include 18% government taxes and levies",
+    "bankCharges": "Sender covers all bank transfer charges"
+  }
+}

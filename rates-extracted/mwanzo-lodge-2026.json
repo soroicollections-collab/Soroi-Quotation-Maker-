@@ -1,0 +1,37 @@
+{
+  "property": "Mwanzo Lodge / Mwanzo Top Side",
+  "operator": "The Pot Ltd (Pamoja Collection)",
+  "region": "Naivasha (same operator/payment details as Hotel Rudi)",
+  "isSoroiProperty": false,
+  "sourceFiles": [
+    "2026 CONTRACT RATES/KENYA/ACCOMODATION/PAMOJA COLLECTION/Mwanzo Lodge_TO Rates 2026 (KSH).pdf",
+    "2026 CONTRACT RATES/KENYA/ACCOMODATION/PAMOJA COLLECTION/Mwanzo Lodge_TO Rates 2026 (USD).pdf"
+  ],
+  "currency": { "primary": "KSH", "alsoQuoted": "USD" },
+  "validity": "1 January 2026 - 31 December 2026",
+  "notes": ["18 rooms + 15 tents (KSH card only - the USD card doesn't mention tents at all, only Single/Double/Triple rooms).", "Slight child-age-band inconsistency between the two currency documents: KSH card says '5-11.9yrs / 12 and above'; USD card says '5-11yrs / 11 and above' - both quoted verbatim, not reconciled."],
+  "ratesKSH_perRoomPerNight": {
+    "singleRoom": { "bb": { "rack": 11500, "tourOperator": 9500 }, "hb": { "rack": 12000, "tourOperator": 10500 }, "fb": { "rack": 13500, "tourOperator": 11500 } },
+    "doubleTwinRoom": { "bb": { "rack": 16000, "tourOperator": 14000 }, "hb": { "rack": 19000, "tourOperator": 17000 }, "fb": { "rack": 22000, "tourOperator": 20000 } },
+    "tripleRoom": { "bb": { "rack": 24000, "tourOperator": 21000 }, "hb": { "rack": 30000, "tourOperator": 23000 }, "fb": { "rack": 33000, "tourOperator": 30000 } },
+    "dayroom": { "rack": 4000, "tourOperator": 3000 },
+    "tent": { "bb": { "rack": 4500, "tourOperator": 4000 }, "hb": { "rack": 5500, "tourOperator": 5000 }, "fb": { "rack": 6500, "tourOperator": 6000 } },
+    "verified": true
+  },
+  "ratesUSD_tourOperatorOnly_perRoomPerNight": {
+    "singleRoom": { "bb": 70, "hb": 80, "fb": 90 },
+    "doubleTwinRoom": { "bb": 140, "hb": 160, "fb": 180 },
+    "tripleRoom": { "bb": 180, "hb": 210, "fb": 240 },
+    "dayroom": 40,
+    "verified": true
+  },
+  "childPolicy": { "raw": "KSH card: 0-5yrs free; 5-11.9yrs 50% sharing/75% own room; 12+ full adult rate. USD card: 0-5yrs free; 5-11yrs 50% sharing/75% own room; 11+ full adult rate.", "verified": true },
+  "policies": {
+    "checkIn": "12:00", "checkOut": "10:00",
+    "payment": "Full payment due prior to arrival",
+    "cancellation": "Cancelled within 5 days of arrival: full amount forfeited",
+    "provisionalBookingHold": "Released automatically 2 weeks after initial request, subject to demand",
+    "highLowSeasonDeposit_USDcard": "80% payment on confirmation in high season, 25% in low season; same percentages apply to cancellation fees in each period",
+    "accessibilityNote": "Rooms on ground/1st floors, stairs only - advise in advance of mobility issues."
+  }
+}

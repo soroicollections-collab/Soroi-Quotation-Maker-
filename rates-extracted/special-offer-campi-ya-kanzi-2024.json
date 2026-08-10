@@ -1,0 +1,35 @@
+{
+  "$note": "Extracted 6 Aug 2026 from SPECIAL OFFERS/CAMPI YA KANZI/. Two source documents cross-checked: 'DISCOVER THE HEART OF AFRICA offers.pdf' (standalone, 4 pages, direct pdftotext -layout read) and 'FW Offer.msg' (forwarded email, read via extract_msg in Python, subject 'FW: Offer', body confirms the same PDF was the attachment - dated 26 Sep 2024, referencing 'stay 6 pay 4 and stay 4 pay 3', which matches the PDF's two offers exactly). No conflict found between the two sources.",
+  "offerStatus": "promotional - confirm current validity before use",
+  "operator": "Campi ya Kanzi (Maasai Wilderness Conservation Trust properties)",
+  "propertiesCovered": ["Campi ya Kanzi", "Chyulu Club"],
+  "region": "Chyulu Hills / Tsavo / Amboseli area",
+  "source": {
+    "files": [
+      "SPECIAL OFFERS/CAMPI YA KANZI/DISCOVER THE HEART OF AFRICA offers.pdf",
+      "SPECIAL OFFERS/CAMPI YA KANZI/FW Offer.msg"
+    ],
+    "msgSentDate": "2024-09-26",
+    "extractionMethod": "pdftotext -layout for the PDF; extract_msg Python library for the .msg (subject/sender/date/body all read cleanly, no image-only fallback needed)"
+  },
+  "offers": [
+    {
+      "name": "6-Night Safari Experience with 2 Free Nights",
+      "structure": "Stay 6 nights, pay for 4 - staying at Campi ya Kanzi and Chyulu Club combined (itinerary includes an Amboseli day excursion for diversity).",
+      "validity": { "statedText": "Valid until March 2025", "verified": true, "expiryAssessment": "EXPIRED - stated validity end date (Mar 2025) is well over a year before today (6 Aug 2026)." },
+      "inclusions": "Airstrip-area game viewing across Chyulu Hills, Tsavo and Amboseli day excursion; access to 400,000+ acres of conserved land; zero-emissions lodges (solar power, electric Rivian game-drive vehicles); portion of payment supports Maasai Wilderness Conservation Trust.",
+      "noPricedFiguresInSource": true,
+      "contact": { "email": "booking@maasai.com", "phone": "+254 720 461300" }
+    },
+    {
+      "name": "Stay 4 Nights, Pay 3 with a free Tsavo National Park excursion",
+      "structure": "Stay 4 nights, pay for 3, at either Campi ya Kanzi or Chyulu Club, inclusive of a day excursion into Tsavo National Park.",
+      "validity": { "statedText": "Valid until March 2025", "verified": true, "expiryAssessment": "EXPIRED - same as above." },
+      "inclusions": "Chyulu Hills and Tsavo National Park exploration, walking safaris, cultural visits with Maasai guides, eco-luxury lodge stay (induction kitchens, electric Rivian vehicles).",
+      "noPricedFiguresInSource": true,
+      "contact": { "email": "booking@maasai.com", "phone": "+254 720 461300" }
+    }
+  ],
+  "verified": true,
+  "confidenceNote": "Both offers are structural (nights-stayed vs. nights-paid) discount promotions, not flat-rate promotions - neither source document states an actual dollar rate for either offer. To use either offer in a real quote, the underlying per-night NETT/Rack rate for Campi ya Kanzi or Chyulu Club must be sourced separately (not present anywhere in this SPECIAL OFFERS slice) and the 'free nights' discount applied on top. Do not fabricate a per-night rate to fill this gap."
+}

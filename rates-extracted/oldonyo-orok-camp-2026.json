@@ -1,0 +1,31 @@
+{
+  "property": "Oldonyo Orok Camp",
+  "operator": "Oldonyo Orok Camp",
+  "region": "Amboseli (nearest airstrip is inside Amboseli National Park)",
+  "isSoroiProperty": false,
+  "sourceFiles": [
+    "2026 CONTRACT RATES/KENYA/ACCOMODATION/Ol donyo.pdf (loose top-level file - NOT the famous 'ol Donyo Lodge' in Chyulu Hills; this is Oldonyo Orok Camp, a budget camp near Amboseli)",
+    "2026 CONTRACT RATES/KENYA/ACCOMODATION/Oldonyo Orok Camp/Oldonyo Orok Camp 2026.pdf (confirmed byte-identical duplicate of the above)"
+  ],
+  "documentType": "Email thread (rates shared informally by the property, not a formal rate-card PDF) - dated 12 November 2025, subject 'Re: STO Rate 2026'",
+  "notes": [
+    "IMPORTANT NAMING NOTE: 'Ol donyo.pdf' sounds like it could refer to the well-known 'ol Donyo Lodge' (Great Plains Conservation, Chyulu Hills) but is actually this much smaller, budget-tier Oldonyo Orok Camp near Amboseli. Do not confuse the two properties.",
+    "Rates given for 2 people sharing a double/twin room only - no single rate stated.",
+    "10% commission extended to tour operators (this appears to already be the STO/tour-operator rate quoted, not a separate Rack card).",
+    "Rates do not include public holidays; festive season rates were 'to be confirmed' as of the source email and are NOT captured anywhere in this folder.",
+    "Resident and Non-Resident rates are nearly identical - the only difference is the Non-Resident Park Fee supplement."
+  ],
+  "currency": { "roomRate": "KES", "parkFee": "USD", "verified": true },
+  "ratesPerRoomPerNight_2peopleSharing_FullBoard": {
+    "weekend_FriSatSun": {
+      "nonResident": { "roomRate_KES": 17000, "parkFeePerPersonUSD": 10 },
+      "resident": { "roomRate_KES": 16000 }
+    },
+    "weekday_MonTueWedThu": {
+      "nonResident": { "roomRate_KES": 15000, "parkFeePerPersonUSD": 10 },
+      "resident": { "roomRate_KES": 14000 }
+    },
+    "verified": true
+  },
+  "confidenceNote": "[Unverified] No child policy, single supplement, exact inclusions/exclusions list, cancellation policy, or deposit terms are stated anywhere in this source - it's an informal email reply, not a full rate sheet. Any of these would need to be confirmed directly with the property before use in a quote."
+}

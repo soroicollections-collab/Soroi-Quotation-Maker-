@@ -1,0 +1,26 @@
+{
+  "$note": "Extracted 6 Aug 2026 via paginated pdftotext read (page 14 of 24) of 'EC-2026-Rates-40.pdf'. No Safari Suite category at this property (unlike Loisaba Tented Camp).",
+  "property": "Loisaba Lodo Springs",
+  "operator": "Elewana Collection",
+  "region": "Loisaba Conservancy, Laikipia",
+  "tier": "Rack and Nett (Nett = Rack x 0.60)",
+  "source": { "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/ELEWANA/EC-2026-Rates-40.pdf", "pdfPageIndex": 14, "validity": { "start": "2026-01-04", "end": "2027-01-03" } },
+  "seasons": { "high": "Jul 1-Oct 31, Dec 20-Jan 3", "mid": "Jan 4-Mar 31, Jun 1-Jun 30, Nov 1-Dec 19", "green": "Apr 1-May 31" },
+  "rates": {
+    "currency": "USD", "unit": "per person per night",
+    "fullBoard": {
+      "perPersonSharing": { "high": { "rack": 1362, "nett": 817 }, "mid": { "rack": 1082, "nett": 649 }, "green": { "rack": 790, "nett": 474 } },
+      "singleRoom": { "high": { "rack": 2043, "nett": 1226 }, "mid": { "rack": 1623, "nett": 974 }, "green": { "rack": 1184, "nett": 711 } },
+      "tripleRoom": { "high": { "rack": 3064, "nett": 1838 }, "mid": { "rack": 2434, "nett": 1460 }, "green": { "rack": 1777, "nett": 1066 } }
+    },
+    "gamePackage": {
+      "perPersonSharing": { "high": { "rack": 1562, "nett": 937 }, "mid": { "rack": 1282, "nett": 769 }, "green": { "rack": 990, "nett": 594 } },
+      "singleRoom": { "high": { "rack": 2243, "nett": 1346 }, "mid": { "rack": 1823, "nett": 1094 }, "green": { "rack": 1384, "nett": 831 } },
+      "tripleRoom": { "high": { "rack": 3514, "nett": 2108 }, "mid": { "rack": 2884, "nett": 1730 }, "green": { "rack": 2227, "nett": 1336 } }
+    }
+  },
+  "mandatoryFees": { "loisabaConservancy": { "adult": 180, "child3to17": 90, "unit": "per person per day, year-round" } },
+  "extras": { "samburuVillageVisit": { "rack": 55, "nett": 47 }, "antiPoachingSnifferDogs": { "rack": 40, "nett": 34 } },
+  "transfers": { "toNanyukiAirstrip": { "rack": 410, "nett": 369 } },
+  "confidenceNote": "[Unverified] This property's per-person rates run noticeably higher than sister property Loisaba Tented Camp at every season/board-basis pairing despite an apparently similar tier positioning - genuine premium pricing per the source, not a transcription error (verified by re-reading the source page), but worth a sanity check if quoting alongside Loisaba Tented Camp in the same itinerary."
+}

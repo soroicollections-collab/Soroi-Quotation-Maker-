@@ -1,0 +1,86 @@
+{
+  "$note": "Extracted 6 Aug 2026, read directly, single-page document, no misattribution risk. NOTE ON FILENAMES: the source filenames contain a non-breaking space (U+00A0) between 'Sea' and 'Lodge' (confirmed via hex dump) instead of a normal space — this caused an initial 'file not found' error until worked around with shell globbing; flagging in case anyone scripts against this folder later.",
+  "property": "Severin Sea Lodge",
+  "region": "Mombasa North Coast (P.O. Box 82169, Mombasa)",
+  "tier": "Rack Rate",
+  "residency": "Non-Resident (filename/title: 'Rack non res2026').",
+  "source": {
+    "file": "2026 CONTRACT RATES/KENYA/BEACH ACCOMODATION/SEVERIN SEA LODGE/Severin Sea Lodge. Rack non res2026.pdf",
+    "pdfPageIndex": 0,
+    "validity": { "start": "2025-11-01", "end": "2026-10-31", "note": "Document titled 'RATES 2025-26'." }
+  },
+  "confidence": "confirmed-2026-08-06",
+  "extractionMethod": { "note": "Read directly, single-page table, single-property document." },
+  "structuralFindings": [
+    "Currency USD, confirmed ('Market Code Rack Rate / Currency USD').",
+    "Base meal plan is Half Board for this rate table ('Based on Half Board') — a Bed & Breakfast REDUCTION of -$15 is applied if guest wants BB instead, rather than BB being a separate priced row (different shape from the 2027 document, see that file's notes).",
+    "5 room categories: Standard Room, Deluxe Room, Deluxe Bungalow Room, Suite with Seaview — plus a separate 'Room-Surcharge for Seaview' flat add-on ($39) applicable to the base categories.",
+    "5 seasonal date-range columns: Main Season (01/11/25-22/12/25), Festive Season (23/12/25-02/01/26), Main Season (03/01/26-02/04/26), Easter (03/04/26-06/04/26), Main Season (07/04/26-31/10/26) — note 'Main Season' label reused three times for non-contiguous windows, all at the same price point.",
+    "Deluxe Bungalow Room explicitly stated as suitable for 2 adults + 1 child.",
+    "Standard Room and Deluxe Room available with interconnecting door; Standard/Deluxe/Deluxe Bungalow available with twin or king beds.",
+    "10% longstay discount for bookings of more than 7 nights. Group perk: 1 free guest per 15 full-paying adult guests.",
+    "Honeymoon package (welcome cocktail, flowers/fruit, sparkling wine, candlelight dinner on 'Imani Dhow' excl. drinks, room upgrade subject to availability excl. suites) for couples married within 6 months, min 3-night stay.",
+    "Children policy: infants 0-2 free; children 3-12 sharing with adult = $26 flat (not a % of adult rate — a flat per-person-per-night child rate, differs structurally from every % based property in this batch).",
+    "Transport: SGR-Station Transfer $28/person one-way, Airport Transfer $23/person one-way.",
+    "Strict cancellation: 100% of booking value charged for cancellation within 48 hours of noon on arrival date, or no-show — a much tighter window than any other property in this batch.",
+    "Early check-in from 6am = 50% of room rate; before 6am = 100% of room rate. Late check-out until 6pm = 50%; after 6pm = 100%.",
+    "Rooms must be booked as single OR double occupancy for the entire stay — no switching mid-stay; additional guests for single nights not allowed.",
+    "No cash payments accepted."
+  ],
+  "seasons": {
+    "columns": ["01/11/25-22/12/25 (Main)", "23/12/25-02/01/26 (Festive)", "03/01/26-02/04/26 (Main)", "03/04/26-06/04/26 (Easter)", "07/04/26-31/10/26 (Main)"]
+  },
+  "rates": {
+    "currency": "USD",
+    "unit": "per person per night, Half Board (DBL = per person sharing double; SGL = single occupancy)",
+    "standardRoom": {
+      "dbl": { "main1": 100, "festive": 139, "main2": 100, "easter": 120, "main3": 100 },
+      "sgl": { "main1": 147, "festive": 224, "main2": 147, "easter": 185, "main3": 147 }
+    },
+    "deluxeRoom": {
+      "dbl": { "main1": 130, "festive": 184, "main2": 130, "easter": 157, "main3": 130 },
+      "sgl": { "main1": 205, "festive": 314, "main2": 205, "easter": 259, "main3": 205 }
+    },
+    "deluxeBungalowRoom": {
+      "dbl": { "main1": 144, "festive": 206, "main2": 144, "easter": 175, "main3": 144 },
+      "sgl": { "main1": 235, "festive": 358, "main2": 235, "easter": 297, "main3": 235 },
+      "note": "Suitable for 2 adults + 1 child."
+    },
+    "seaviewSurcharge": { "main1": 39, "festive": 39, "main2": 39, "easter": 39, "main3": 39, "note": "Flat per-person add-on for seaview, applicable to the base room categories." },
+    "suiteWithSeaview": {
+      "dbl": { "main1": 247, "festive": 363, "main2": 247, "easter": 305, "main3": 247 },
+      "sgl": { "main1": 440, "festive": 672, "main2": 440, "easter": 556, "main3": 440 }
+    }
+  },
+  "reductionsAndTransport": {
+    "bedBreakfastReductionOnHB": -15,
+    "sgrStationTransfer": { "amount": 28, "unit": "USD per person, one way" },
+    "airportTransfer": { "amount": 23, "unit": "USD per person, one way" }
+  },
+  "childPolicy": {
+    "infant0to2": "Free of charge",
+    "children3to12SharingWithAdult": { "amount": 26, "unit": "USD per person per night, flat (not a % of adult rate)" }
+  },
+  "longstayGroupDiscount": {
+    "longstay": "10% discount for bookings of more than 7 nights",
+    "group": "For every 15 full-paying adult guests, one additional guest stays free"
+  },
+  "honeymoonPackage": "Welcome cocktail, flowers + fruit platter, 1 bottle sparkling wine, Honeymoon Candle Light Dinner on 'Imani Dhow' (excl. drinks), room upgrade subject to availability (excl. Suites). Valid for couples married within 6 months, min 3-night stay.",
+  "cancellationPolicy": "100% of booking value charged for cancellation within 48 hours from noon of arrival date, or no-show.",
+  "checkInOut": {
+    "checkIn": "12:00 pm",
+    "checkOut": "10:00 am",
+    "earlyCheckInFrom6am": "50% of room rate",
+    "earlyCheckInBefore6am": "100% of room rate",
+    "lateCheckOutUntil6pm": "50% of room rate",
+    "lateCheckOutAfter6pm": "100% of room rate"
+  },
+  "otherNotes": [
+    "Rooms must be booked as single or double occupancy for the entire stay — no mid-stay occupancy changes.",
+    "No cash payments accepted.",
+    "Rates subject to change without notice (e.g. government tax changes)."
+  ],
+  "portfolioWideTerms": {
+    "note": "Non-Soroi property — CLAUDE.md's Soroi-portfolio-wide terms do not apply. Severin's flat-dollar child rate and 48-hour cancellation window are both notably different from every other property extracted in this batch — do not assume either pattern generalizes."
+  }
+}

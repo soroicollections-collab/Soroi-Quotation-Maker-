@@ -1,0 +1,81 @@
+{
+  "$note": "Fresh extraction, 6 Aug 2026, read directly from source PDF text (single-page documents, layout-preserving pdftotext, low misattribution risk since each PDF covers only this one property). Two rate tiers found: Rack and Contract. Filename duplicate finding: within the ALMANARA LUXURY VILLAS folder there are 4 files but only 2 distinct documents — 'Almanara Luxury Villas_Rates_Rack_2026.pdf' and 'Almanara_Rates_Rack_2026.pdf' are byte-identical (md5 276495debf43d3fa903541cf3dc6619e), and 'Almanara Luxury Villas_Contract_2026.pdf' and 'Almanara_Rates_Contract_2026.pdf' are byte-identical (md5 c3ec418b931ba879d49318094dab640a). Confirmed via md5 checksum, not just filename guessing. No sub-brand difference — just duplicate uploads under two naming conventions.",
+  "property": "Almanara Luxury Villas",
+  "region": "Diani Beach",
+  "residency": "Not stated on source page (no Resident/Non-Resident split shown) — treat as general/non-resident rate unless told otherwise",
+  "source": {
+    "racks": {
+      "file": "2026 CONTRACT RATES/KENYA/BEACH ACCOMODATION/ALMANARA LUXURY VILLAS/Almanara_Rates_Rack_2026.pdf",
+      "duplicateOf": "Almanara Luxury Villas_Rates_Rack_2026.pdf (byte-identical, md5 confirmed)",
+      "pdfPageIndex": 0,
+      "pages": 1
+    },
+    "contract": {
+      "file": "2026 CONTRACT RATES/KENYA/BEACH ACCOMODATION/ALMANARA LUXURY VILLAS/Almanara_Rates_Contract_2026.pdf",
+      "duplicateOf": "Almanara Luxury Villas_Contract_2026.pdf (byte-identical, md5 confirmed)",
+      "pdfPageIndex": 0,
+      "pages": 1
+    },
+    "validity": { "start": "2026-01-06", "end": "2027-01-05" }
+  },
+  "confidence": "confirmed-2026-08-06",
+  "extractionMethod": { "note": "Both PDFs are single-page, single-property documents read directly with pdftotext -layout; no adjacent-property risk." },
+  "structuralFindings": [
+    "Base plan is Full Board (breakfast, lunch, dinner) plus house beverages (water, soft drinks, beer, house wine) — VAT and Catering Levy already included in the quoted rate, no separate mandatory local levy line found on this page.",
+    "Three named seasons, not the usual Peak/Shoulder/Green trio: Christmas & New Year (20 Dec - 5 Jan), Premium Season (Jul/Aug/Sep), Regular Season (6 Jan-30 Apr, Jun, Oct, Nov, 1-19 Dec).",
+    "Two room types are villa-style priced per person with a 2-6 PAX range (Garden Villa, Residence Villa) and two are room/suite-style capped at 2 PAX (Ocean View Suite, Ocean View Room) — mixed pricing-unit shape within one property, similar in spirit to Soroi Samburu Lodge's per-villa vs per-person split, though here all four categories are still quoted per-person-per-night.",
+    "Property is closed 1 May - 10 June 2026 — no rates apply in that window at all.",
+    "Two tiers exist for this property: Rack Rates 2026 and Contract Rates 2026 — both single-page PDFs with an identical table layout, Contract consistently lower than Rack across every cell."
+  ],
+  "rates": {
+    "currency": "USD",
+    "unit": "per person per night, Full Board",
+    "rack": {
+      "gardenVilla": { "paxRange": "2-6", "christmasNewYear": 770, "premium": 720, "regular": 490 },
+      "residenceVilla": { "paxRange": "2-6", "christmasNewYear": 805, "premium": 755, "regular": 510 },
+      "oceanViewSuite": { "paxRange": "2 (max)", "christmasNewYear": 680, "premium": 630, "regular": 420 },
+      "oceanViewRoom": { "paxRange": "2 (max)", "christmasNewYear": 605, "premium": 550, "regular": 370 }
+    },
+    "contract": {
+      "gardenVilla": { "paxRange": "2-6", "christmasNewYear": 615, "premium": 575, "regular": 390 },
+      "residenceVilla": { "paxRange": "2-6", "christmasNewYear": 645, "premium": 605, "regular": 410 },
+      "oceanViewSuite": { "paxRange": "2 (max)", "christmasNewYear": 545, "premium": 505, "regular": 335 },
+      "oceanViewRoom": { "paxRange": "2 (max)", "christmasNewYear": 485, "premium": 440, "regular": 295 }
+    }
+  },
+  "verified": true,
+  "childPolicy": { "under12": "50% of adult rate", "under3": "free" },
+  "singleSupplement": { "amount": "25%", "appliesTo": "Ocean View Suite & Ocean View Room only — not stated as applying to the villa categories" },
+  "minimumStay": {
+    "standard": "2 nights",
+    "christmasNewYear": "5 nights (20 Dec - 5 Jan)"
+  },
+  "minimumPax": {
+    "villas": "2 pax minimum for Garden & Residence Villa (4 pax minimum during Christmas & New Year)"
+  },
+  "inclusions": [
+    "Air-conditioned accommodation",
+    "Bespoke daily set menu (Ocean View Room & Suite)",
+    "Private chef & waiter (Garden & Residence Villas)",
+    "Breakfast, lunch & dinner; water, soft drinks, beer, house wine",
+    "Airport transfers to/from Ukunda (1 pick up & 1 drop off per booking)",
+    "Chauffeur services within Diani area",
+    "Full use of facilities (pool, table tennis, gym)"
+  ],
+  "exclusions": [
+    "Meals at Sails Beach Bar & Restaurant",
+    "Imported beer, spirits, cellar wine, champagne",
+    "Laundry services (no dry-cleaning)",
+    "Spa/massage/beauty treatments",
+    "Diving, kite and wind surfing courses",
+    "Boat excursions and outside activities",
+    "Mombasa transfers"
+  ],
+  "cancellationPolicy": {
+    "regularSeason": "No charge >30 days prior; 50% charge 30-14 days prior; 100% charge within 14 days",
+    "premiumAndChristmas": "No charge >60 days prior; 50% charge 60-30 days prior; 100% charge within 30 days"
+  },
+  "closedDates": "1 May - 10 June 2026",
+  "checkInOut": "Check-in 14:00 / Check-out 10:00 (flexible pending availability)",
+  "confidenceNote": "Residency basis (Resident vs Non-Resident) is not labeled on either source page at all — unlike Soroi's documents, Almanara's Rack/Contract tables don't distinguish resident status. Treat both tables as general international rates unless a separate resident-specific document surfaces elsewhere in the archive. No mandatory conservancy/park-style fee found on this property's page (VAT/Catering Levy stated as already included in the quoted figure, not itemized separately)."
+}

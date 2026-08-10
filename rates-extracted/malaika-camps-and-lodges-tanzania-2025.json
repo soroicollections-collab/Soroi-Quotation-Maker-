@@ -1,0 +1,44 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftotext -layout. NOT a Soroi property, and NOT the same operator as 'Malaika Camp Masai Mara' (Kenya) despite sharing a folder and part of the name - see naming-collision note in that property's own JSON file. This is a Tanzania-based operator (Tanzania phone numbers +255, properties in Seronera/Mara River/Ndutu - all Serengeti-side Tanzania locations) - OUT OF DEFAULT SCOPE per this project's Kenya-only rule; included here only because the source file was physically located in the Kenya ACCOMODATION/MALAIKA CAMP folder. Bring into scope deliberately only for a combined Kenya-Tanzania itinerary.",
+  "operator": "Malaika Camps and Lodges",
+  "region": "Tanzania (Serengeti - Seronera, Mara River, Ndutu)",
+  "source": { "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/MALAIKA CAMP/Malaika Camps and Lodges - STO RATES 2026.pdf", "validity": "January 2025 - December 2025 (as printed - despite being filed as a '2026' rates document, every page header explicitly states this 2025 validity window; flag before using for 2026 dates)" },
+  "confidence": "confirmed-2026-08-06",
+  "currency": "USD",
+  "unit": "per person, Full Board",
+  "malaikaSeroneraLuxuryCamp": {
+    "highSeason": { "dateRanges": ["Dec-Mar", "Jun-Dec15"], "luxuryTent": { "double": { "rack": 399, "nett": 289 }, "single": { "rack": 459, "nett": 359 }, "triple": { "rack": 359, "nett": 260 }, "familyRoom": { "rack": 1436, "nett": 1036 } } },
+    "lowSeason": { "dateRanges": ["Apr", "May", "Nov", "1-15 Dec"], "luxuryTent": { "double": { "rack": 269, "nett": 169 }, "single": { "rack": 289, "nett": 189 }, "triple": { "rack": 259, "nett": 151 }, "familyRoom": { "rack": 1236, "nett": 1009 } } },
+    "note": "Permanent camp.",
+    "verified": true
+  },
+  "malaikaMaraRiverLuxuryCamp": {
+    "note": "Permanent camp. This is the Tanzania/Serengeti-side 'Mara River' - a DIFFERENT river location context from the Kenya Masai Mara's Mara River where the unrelated 'Malaika Camp Masai Mara' sits.",
+    "season": "Jun-Oct",
+    "luxuryTent66sqm": { "doublePerAdult": { "rack": 449, "nett": 346 }, "single": { "rack": 584, "nett": 449 }, "triple": { "rack": 406, "nett": 312 }, "family": { "rack": 1624, "nett": 1248 } },
+    "scenicViewLuxuryTent88sqm": { "double": { "rack": 622, "nett": 479 }, "single": { "rack": 809, "nett": 622 }, "triple": { "rack": 562, "nett": 432 }, "family": { "rack": 2247, "nett": 1729 }, "extraInclusions": "Bathtub in tent, one-time exclusive under-the-stars dining (weather permitting), daily wake-up coffee." },
+    "verified": true
+  },
+  "malaikaNdutuLuxuryCamp": {
+    "note": "Seasonal camp.",
+    "season": "Nov-Apr",
+    "luxuryTent": { "double": { "rack": 382, "nett": 294 }, "single": { "rack": 497, "nett": 382 }, "triple": { "rack": 344, "nett": 264 } },
+    "verified": true
+  },
+  "extraActivities": {
+    "unit": "USD per person, non-commissionable",
+    "hamper": 10, "breakfast": 25, "lunch": 30, "dinner": 30, "extraLunchBox": 30, "sparklingWineFruitBasketInRoom": 60, "celebrationCake": 35,
+    "christmasSupplement25to26Dec": 45, "newYearSupplement31Dec1Jan": 45,
+    "bushLunch": 45, "sundowner": 45, "bushDinner": 45, "bushBreakfast": 45, "drinksBeverageSupplement": 45,
+    "verified": true
+  },
+  "inclusionsGeneral": "Full board breakfast/lunch/dinner + mineral water during meals (premium properties add a 500ml bottle).",
+  "exclusionsGeneral": ["Camping/Concession/Park/WMA fees", "Laundry", "Drinks (beyond stated supplement)", "Medical insurance/evacuation"],
+  "childPolicy": { "under4": "Complimentary", "age5to12SharingWith1Adult": "Adult pays single rate, child 50% off adult sharing rate", "age5to12SharingWith2Adults": "50% off adult sharing rate", "familyRoomChild": "Per room configuration" },
+  "singleRoomPolicy": "Single rate applies to first 2 rooms per booking; double rate for additional singles.",
+  "familyTentPolicy": "Max 4 people; if booked for fewer, full 4-person charge still applies (extra adult at triple rate, extra child at 50% of per-person rate).",
+  "tourLeaderRate": "Half-double rate per 15 paying travelers, pre-booked and confirmed.",
+  "paymentTerms": { "deposit": "30% to confirm", "fullPayment": "45 days before arrival" },
+  "cancellation": { "60to45days": "15%", "44to30days": "50%", "29daysToArrival": "100%", "lowSeason": "No cancellation fees" },
+  "circuitDiscount": { "amount": "10%", "condition": "5+ nights or group of 15+, high season only, STO rate bookings only" }
+}

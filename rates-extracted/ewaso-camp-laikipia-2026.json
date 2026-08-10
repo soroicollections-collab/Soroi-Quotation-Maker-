@@ -1,0 +1,24 @@
+{
+  "$note": "Extracted 6 Aug 2026.",
+  "property": "Ewaso Camp",
+  "operator": "Ewaso Camp (community safari camp)",
+  "region": "Naibunga Conservancy, Laikipia (bordering Loisaba)",
+  "tier": "Rack and Contract rate, both Non-Resident and Resident (both quoted in USD)",
+  "source": { "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/EWASO CAMP/Ewaso Camp Rates 2025-26.pdf" },
+  "seasons": { "low": "1 Mar-31 May", "high": "1 Jun-28/29 Feb" },
+  "rates": {
+    "currency": "USD", "unit": "per adult per night, Full Board",
+    "nonResident": {
+      "rack": { "singleLow": 275, "singleHigh": 315, "sharingLow": 220, "sharingHigh": 250, "childLow": 150, "childHigh": 175 },
+      "contract": { "singleLow": 250, "singleHigh": 275, "sharingLow": 200, "sharingHigh": 235, "childLow": 140, "childHigh": 160 }
+    },
+    "resident": {
+      "rack": { "singleLow": 240, "singleHigh": 275, "sharingLow": 210, "sharingHigh": 235, "childLow": 145, "childHigh": 165 },
+      "contract": { "singleLow": 225, "singleHigh": 250, "sharingLow": 190, "sharingHigh": 220, "childLow": 130, "childHigh": 155 }
+    },
+    "childAgeRange": "3-11 years"
+  },
+  "mandatoryFees": { "conservationFee": { "amount": 75, "unit": "USD per person" } },
+  "childPolicy": { "under3": "Free" },
+  "notes": "Game drives excluded, USD 200/car. Includes sundowner with 1 selected drink."
+}

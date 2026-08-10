@@ -1,0 +1,23 @@
+{
+  "$note": "Extracted 6 Aug 2026.",
+  "property": "Emboo River Camp",
+  "operator": "Emboo River Camp",
+  "region": "Maasai Mara",
+  "tier": "Rack Rate and STO 30% Nett",
+  "source": { "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/EMBOO RIVER CAMP/EMBOO 2026 International Rates - 30.pdf", "asOf": "2025-05-14" },
+  "seasons": { "green": "6 Jan-30 Jun 2026, 16 Oct-20 Dec 2026 (2025 rates apply 1-5 Jan 2026)", "high": "1 Jul-15 Oct 2026, 21 Dec 2026-5 Jan 2027" },
+  "rates": {
+    "currency": "USD", "unit": "per person per night",
+    "gamePackage_rack": { "sharing": { "green": 720, "high": 1080 }, "solo": { "green": 840, "high": 1260 }, "childInAdultRoom": { "green": 360, "high": 540 } },
+    "fullBoardPackage_rack": { "sharing": { "green": 620, "high": 980 }, "solo": { "green": 740, "high": 1160 }, "childInAdultRoom": { "green": 310, "high": 490 } },
+    "gamePackage_sto30net": { "sharing": { "green": 504, "high": 756 }, "solo": { "green": 588, "high": 882 }, "childInAdultRoom": { "green": 252, "high": 378 } },
+    "fullBoardPackage_sto30net": { "sharing": { "green": 434, "high": 686 }, "solo": { "green": 518, "high": 812 }, "childInAdultRoom": { "green": 217, "high": 343 } }
+  },
+  "childPolicy": { "0to3": "Complimentary", "4to15": "Child rate applies" },
+  "mandatoryFees": {
+    "unit": "per person per night, in addition to accommodation",
+    "parkFee": { "adult18plus": { "janJun": 100, "julDec": 200 }, "child9to17": { "janJun": 50, "julDec": 50 }, "adminFee": 1 },
+    "communityFee": { "adult18plus": 80, "child9to17": 40 }
+  },
+  "notes": "Full payment required if travel within 60 days; 20% deposit + balance 60 days prior otherwise. STO 30% net confirmed arithmetically = Rack x 0.70, consistent with this project's STO convention noted in CLAUDE.md."
+}

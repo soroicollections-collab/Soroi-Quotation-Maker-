@@ -1,0 +1,61 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftotext -layout. NOT a Soroi property. This folder has many overlapping/near-duplicate PDFs (multiple 'Google Sheets' exports, separate resident/non-resident/nett files) - only the two Rack (Non-Resident) PDFs were used as primary source; other tiers (Nett, Resident) exist in the folder but were not extracted for this pass (see skippedFiles).",
+  "property": "Severin Safari Camp",
+  "region": "Tsavo West National Park",
+  "operator": "Leisure Investments Ltd",
+  "currency": "USD",
+  "confidence": "confirmed-2026-08-06, with one reconciled unit-format discrepancy - see confidenceNote",
+  "source": {
+    "fileA": "2026 CONTRACT RATES/KENYA/ACCOMODATION/SEVERIN SAFARI CAMP/SSC Rate Policy 2025-2026 - RAck Non Res Upto Oct 2026.pdf",
+    "fileA_coverage": "01 Nov 2025 - 31 Oct 2026, rates shown per-person-sharing",
+    "fileB": "2026 CONTRACT RATES/KENYA/ACCOMODATION/SEVERIN SAFARI CAMP/SSC Rate Policy 2026 - RAck Non Reident Rates Nov - Dec Only.pdf",
+    "fileB_coverage": "03 Jan 2026 - 31 Dec 2026 (NOTE: despite the filename saying 'Nov - Dec Only', this document's own table covers the full 2026 calendar year, not just Nov-Dec - filename is misleading), rates shown per-room (double occupancy total, not per-person)",
+    "skippedFiles": ["SSC Rate Policy 2025-2026 - Google Sheets.pdf and its (1)/(2)/(3) duplicates - unclear which tier, not opened", "SSC Rate Policy 2025-2026 - Rack Resident upto Oct 2026.pdf - resident tier, out of scope", "SSC Rate Policy 2025-2026 - Resident Nett to Oct 2026.pdf, Non Res Nett upto Oct 2026.pdf, Nov to Dec only Nett.pdf, Nov to Dec only Nett Resident.pdf - Nett/contract tiers, not extracted this pass", "SSC Rate Policy 2025-2026 - Nov to Dec only Rack Resident.pdf - resident tier", "SSC Rate Policy 2026 - Google Sheets.pdf and (1) - unclear which tier", "test doc.txt - not a rate document"]
+  },
+  "seasons": {
+    "mainSeason": { "dateRanges": ["1 Nov 2025 - 22 Dec 2025", "3 Jan 2026 - 2 Apr 2026", "7 Apr 2026 - 31 Oct 2026"] },
+    "easter": { "dateRanges": ["3 Apr 2026 - 6 Apr 2026"] },
+    "festive": { "dateRanges": ["23 Dec 2025 - 2 Jan 2026", "23 Dec 2026 - 31 Dec 2026"], "note": "Second festive window (23-31 Dec 2026) only appears in fileB, which is the only source covering that far into the year." }
+  },
+  "rates_perPersonSharing_fileA": {
+    "kitaniBandas_selfCatering_perRoom": { "mainSeason": 100, "festive": 163, "easter": 125 },
+    "luxuryTent_fullBoard": { "double": { "mainSeason": 169, "festive": 200, "easter": 184 }, "single": { "mainSeason": 244, "festive": 306, "easter": 275 }, "thirdPersonSupplement": { "mainSeason": 94, "festive": 94, "easter": 94 } },
+    "juniorSuite_fullBoard": { "double": { "mainSeason": 231, "festive": 263, "easter": 247 }, "single": { "mainSeason": 369, "festive": 431, "easter": 400 }, "note": "Suitable for 2 adults with 1 or 2 children." },
+    "suite_fullBoard": { "double": { "mainSeason": 263, "festive": 294, "easter": 278 }, "single": { "mainSeason": 431, "festive": 494, "easter": 463 } }
+  },
+  "rates_perRoomTotal_fileB_2026fullYear": {
+    "$note": "Same underlying pricing as fileA, confirmed by dividing these room totals by 2 - matches fileA's per-person figures almost exactly (small rounding differences, e.g. 463/2=231.5 vs fileA's 231). Kept as a separate block rather than merged, since fileB extends coverage into Nov-Dec 2026 which fileA does not cover.",
+    "kitaniBandas_selfCatering_upTo3pax": { "mainSeasonJan_Apr": 100, "easter": 125, "mainSeasonApr_Dec": 100, "festiveDec2026": 150 },
+    "luxuryTent_fullBoard": { "single": { "mainJanApr": 244, "easter": 275, "mainAprDec": 244, "festiveDec2026": 300 }, "double_roomTotal": { "mainJanApr": 338, "easter": 369, "mainAprDec": 338, "festiveDec2026": 400 }, "triple_roomTotal": { "mainJanApr": 432, "easter": 463, "mainAprDec": 432, "festiveDec2026": 500 } },
+    "juniorSuite_fullBoard": { "single": { "mainJanApr": 369, "easter": 400, "mainAprDec": 369, "festiveDec2026": 450 }, "double_roomTotal": { "mainJanApr": 463, "easter": 494, "mainAprDec": 463, "festiveDec2026": 550 } },
+    "suite_fullBoard": { "single": { "mainJanApr": 431, "easter": 463, "mainAprDec": 431, "festiveDec2026": 600 }, "double_roomTotal": { "mainJanApr": 525, "easter": 557, "mainAprDec": 525, "festiveDec2026": 700 } }
+  },
+  "confidenceNote": "[Inference] fileA labels its 'DBL' column explicitly as 'Rate per Person sharing a room'; fileB's 'DBL' column carries no such label and its figures are almost exactly double fileA's per-person figures for the same room categories and overlapping date windows (e.g. Luxury Tent: 169x2=338 matches fileB's 338 exactly; Suite: 263x2=526 vs fileB's 525, a 1-dollar rounding difference) - interpreted as fileB's DBL being a per-ROOM total rather than per-person. This inference is well-supported by the arithmetic but was not confirmed by contacting Severin directly. Also flagged: fileB's filename says 'Nov - Dec Only' but its actual date columns cover the full 2026 calendar year (03/01/26 - 31/12/26) - a filename/content mismatch at the source, not an extraction error on this project's part.",
+  "generalTerms": {
+    "freeGuestPolicy": "For every 15 full-paying adult guests, one additional guest stays free.",
+    "longstaySpecial": "10% discount for bookings of more than 3 nights.",
+    "parkFeesExcluded": "KWS park fees excluded from all rates - see www.kws.go.ke",
+    "lateCheckout": "Late check-out until 6pm charged at 50% of room rate; after 6pm charged 100% of room rate.",
+    "checkIn": "12:00 pm", "checkOut": "10:00 am",
+    "deposit": "30% to confirm booking; provisional holds max 14 days.",
+    "cancellation": "Full refund (net of bank charges) if cancelled >30 days prior; 100% charge within 48 hours of arrival or no-show."
+  },
+  "childPolicy": {
+    "infant_0to6": "On request (not a fixed published rate)",
+    "children_7to12_sharingWithAdults": 50
+  },
+  "safariPackages_perGuest_accommodationNotIncluded_fileA": {
+    "trainPackage_SSC01_2nights": 253, "trainPackage_SSC02_3nights": 432,
+    "roadSafari_SSC03_2nights": 61, "roadSafari_SSC04_3nights": 178
+  },
+  "transport_oneWayPerGuest_fileA": { "railwayStationMtitoAndei": 37, "airstripKilaguniFinch": 24 },
+  "extrasActivities_perGuest_fileA": {
+    "extraBreakfast": 18, "extraLunch": 24, "extraDinner": 31, "picnicBox": 18,
+    "bushBreakfastOrLunch": 62, "massage30min": 31, "massage60min": 49,
+    "masaiNatureWalk1h": 24, "kwsRangerBushWalk4h": 81,
+    "sundownerPoachersLookoutExclTransfer": 43, "sundownerPoachersLookoutInclTransfer": 56,
+    "sunriseNosimInclMaasaiWalk": 62, "sundownerNosimInclMaasaiWalk": 74,
+    "gameDrive2_5h": 62, "nightGameDrive": 124, "gameGuidePerCar": 31, "privateGameDrive100km": 124,
+    "renewalOfVowsPerCouple": 206
+  }
+}

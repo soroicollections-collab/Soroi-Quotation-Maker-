@@ -1,0 +1,40 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftotext -layout from TWO documents in 'OLE SERENI HOTELS/': 'Sunworld Safaris - Ole Sereni Rates 2026 - 2027.pdf' and 'Sunworld Safaris - Emara Ole Sereni Contract 2026 - 2027.pdf' (both 3pp). ANOMALY: both contracts are for the same physical property (same address - Off Mombasa Road, P.O. Box 18187-00500, same 'the Only City Hotel by the Game Park' positioning) and cover the identical validity window (01 Jan 2026 - 31 Dec 2027), but use COMPLETELY DIFFERENT room category names and rate structures - 'Ole Sereni' names Cozy Rooms/Club Rooms/Wow Suites; 'Emara Ole Sereni' names Superior Room/Deluxe Room/Apartment(1BR)/Apartment(2BR)/Executive Suite. This strongly suggests a hotel rebrand mid-contract-period (Ole Sereni -> Emara Ole Sereni) with two rate cards both left active in the folder. Both are transcribed below, clearly separated - confirm with Sunworld/the hotel which one is actually current before quoting.",
+  "property": "Ole Sereni Hotel (Nairobi, by Nairobi National Park) - possibly rebranded to Emara Ole Sereni",
+  "currency": "USD",
+  "validity": { "start": "2026-01-01", "end": "2027-12-31" },
+  "confidence": "confirmed-2027-08-06-for-figures; brand/naming currency unverified",
+  "contractA_OleSereni": {
+    "unit": "per room per night, Bed & Breakfast",
+    "rates": {
+      "CozyRooms": { "single": { "contract": 140, "rack": 230 }, "double": { "contract": 190, "rack": 280 } },
+      "ClubRooms": { "single": { "contract": 170, "rack": 290 }, "double": { "contract": 220, "rack": 340 } },
+      "WowSuites": { "single": { "contract": 600, "rack": 1000 }, "double": { "contract": 600, "rack": 1000 } }
+    },
+    "mealRates": { "breakfast": 30, "lunch": 40, "dinner": 40 },
+    "conferencePackage": { "fullDay": { "usd": 55, "kes": 6000 }, "halfDay": { "usd": 50, "kes": 5500 }, "minPax": 10 },
+    "tripleSupplement": { "amount": 60, "note": "Club Rooms only, extra bed for adult" },
+    "dayUse": { "rate": "75% of room rate", "hours": "12:00-18:00" },
+    "childPolicy": { "under3": "Free sharing with adult", "age3to12sharing": 40, "age3to12ownRoomMin2": 50, "oneChildOwnRoom": "Single room rate" },
+    "cancellationPolicy": "21 days before arrival: 50% of first night; 14 days: 75% of first night; within 72 hours/no-show: 100% up to 2 nights",
+    "verified": true
+  },
+  "contractB_EmaraOleSereni": {
+    "unit": "per room per night, Bed & Breakfast, net non-commissionable",
+    "rates": {
+      "SuperiorRoom": { "single": { "contract": 190, "rack": 340 }, "double": { "contract": 230, "rack": 390 }, "childInOwnRoomMin2": 70 },
+      "DeluxeRoom": { "single": { "contract": 220, "rack": 400 }, "double": { "contract": 260, "rack": 450 }, "childInOwnRoomMin2": 70 },
+      "Apartment1Bedroom": { "single": { "contract": 250, "rack": 550 }, "double": { "contract": 300, "rack": 600 }, "thirdBedAdult": 70, "extraBedChild": 70, "childInOwnRoomMin2": 70 },
+      "Apartment2Bedroom": { "single": { "contract": 300, "rack": 700 }, "double": { "contract": 350, "rack": 750 }, "thirdBedAdult": 70, "extraBedChild": 70, "childInOwnRoomMin2": 70 },
+      "ExecutiveSuite": { "single": { "contract": 600, "rack": 1500 }, "double": { "contract": 600, "rack": 1500 }, "thirdBedAdult": 70, "extraBedChild": 70, "childInOwnRoomMin2": 70 }
+    },
+    "mealRates": { "breakfast": 35, "lunch": 40, "dinner": 45 },
+    "conferencePackage": { "fullDay": 45, "halfDay": 40, "unit": "per person per day", "minPax": 10 },
+    "dayUse": { "rate": "60% of room rate", "hours": "12:00-18:00" },
+    "childPolicy": { "under3": "Free sharing with adult", "age3to12sharing": "Child rate (see extra bed figures)", "age3to12ownRoomMin2": "Child in own room rate", "oneChildOwnRoom": "Single room rate" },
+    "tourLeaderPolicy": "1 complimentary bed (no meals) per 15 full-paying guests, max 4 beds",
+    "verified": true
+  },
+  "checkInOut": "Check-in 14:00, check-out 10:00 (both contracts)",
+  "commissionable": false
+}

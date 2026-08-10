@@ -1,0 +1,91 @@
+{
+  "$note": "Extracted 6 Aug 2026 directly from paginated source PDFs (not a flattened multi-property dump — each PDF is single-property). Structurally different from the Soroi tented-camp pattern: rates are flat per-person-per-night figures that apply across ALL accommodation categories (Penthouse Suite through 3BR Villa), varying only by season and meal-plan basis — there is no per-room-category price differentiation like Soroi's Luxury Tent vs Star-Bed Suite.",
+  "property": "Lantana Galu Beach",
+  "region": "Diani Beach (Galu Beach, South Coast)",
+  "tier": "Rack Rate",
+  "residency": "Non-Resident",
+  "source": {
+    "file": "2026 CONTRACT RATES/KENYA/BEACH ACCOMODATION/LANTANA/Lantana Galu Beach USD Non-Resident Rates 2026.pdf",
+    "pdfPageIndex": 0,
+    "totalPages": 3,
+    "validity": { "note": "Document titled 'USD Non-Resident Rack Rates 2026'; season windows given below run through 3 Jan 2027 (Peak season spans the year boundary). No explicit start/end validity date stated beyond the season table itself." }
+  },
+  "confidence": "confirmed-2026-08-06",
+  "extractionMethod": { "note": "Read directly from the property's own 3-page PDF via pdftotext -layout. Single-property document, no adjacent-property risk." },
+  "structuralFindings": [
+    "Rates are NOT per-room-category. A single per-person-per-night rate grid (by Season x Meal Plan) applies uniformly across every accommodation type — 1BR Penthouse Suite, 2BR Suite/Bungalow Suite, 3BR Suite/Bungalow Suite, 3BR Villa. Accommodation types differ only in max occupancy/layout, not price.",
+    "Four meal-plan tiers offered as base rate options (not supplements): Accommodation Only, Bed & Breakfast, Half-Board, Full-Board — guest picks one as the base per-person rate.",
+    "Three seasons: Low, High, Peak — note Peak season here (21 Dec - 3 Jan) is HIGHER priced than High season, which is itself higher than Low. Confirm season labels aren't confused with Soroi's Peak/Shoulder/Green naming convention — different portfolio, different label meanings.",
+    "Peak Season carries a 7-night minimum stay (vs 2-night minimum for High/Low).",
+    "Long-stay discounts apply to accommodation-only portion, NOT valid over Peak season: 25% off 8-14 nights, 30% off 15-27 nights, bespoke for 28+.",
+    "Low Season special offer: 1 night free (accommodation only) for bookings of 4-7 nights.",
+    "Children 0-3 free of charge; children defined as 4-12 years old (differs from Soroi's 5-11/12-17 brackets — do not reuse Soroi child-age logic for this property).",
+    "Meal Supplement Rates exist for adding a higher meal plan on top of a lower one, distinct from and consistent with the base-rate meal-plan table (see mealSupplements below)."
+  ],
+  "seasons": {
+    "low": { "dateRanges": ["4 May - 3 Jul", "1 Sep - 20 Dec"] },
+    "high": { "dateRanges": ["6 Jan - 3 May", "4 Jul - 31 Aug"] },
+    "peak": { "dateRanges": ["21 Dec - 3 Jan 2027"], "minimumStay": "7 nights" }
+  },
+  "rates": {
+    "currency": "USD",
+    "unit": "per person per night",
+    "appliesUniformlyAcrossAllAccommodationCategories": true,
+    "byMealPlan": {
+      "accommodationOnly": { "low": 135, "high": 145, "peak": 195 },
+      "bedAndBreakfast": { "low": 160, "high": 170, "peak": 220 },
+      "halfBoard": { "low": 195, "high": 205, "peak": 255 },
+      "fullBoard": { "low": 230, "high": 240, "peak": 290 }
+    },
+    "verified": true
+  },
+  "mealSupplements": {
+    "unit": "per person per night, per source's own 'Meal Supplement Rates' page",
+    "fullEnglishBreakfast": { "adult": 25, "child": 20 },
+    "halfBoardBreakfastAndDinner": { "adult": 60, "child": 45 },
+    "fullBoard": { "adult": 95, "child": 70 },
+    "note": "Children 4-12 years for meal supplements; 0-3 free. Meals exclude drinks throughout."
+  },
+  "accommodationCategories": [
+    { "name": "1 Bedroom Penthouse Suite", "size": "177 m²", "occupancy": "min 2 / max 2", "layout": "1 King Ensuite" },
+    { "name": "2 Bedroom Suite / 2 Bedroom Bungalow Suite", "size": "172 m²", "occupancy": "min 2 / max 4", "layout": "1 King Ensuite + 1 Twin", "note": "Bungalow variant includes private plunge pool & garden" },
+    { "name": "3 Bedroom Suite / 3 Bedroom Bungalow Suite", "size": "209 m²", "occupancy": "min 2 / max 6", "layout": "1 King Ensuite + 1 Queen Ensuite + 1 Twin", "note": "Bungalow variant includes private plunge pool & garden" },
+    { "name": "3 Bedroom Villa", "size": "312 m²", "occupancy": "min 3 / max 6", "layout": "1 King Ensuite + 1 Queen Ensuite + 1 Twin Ensuite" }
+  ],
+  "transfers": {
+    "unit": "USD, up to 5 people per vehicle",
+    "dianiAirport": 30,
+    "sgrMombasaStation": 110,
+    "moiInternationalAirport": 100
+  },
+  "cancellationPolicy": {
+    "deposit": "50% required to confirm, non-refundable",
+    "balanceDue": "30 days prior to arrival",
+    "cancellation35to25days": "75% fee",
+    "cancellationUnder25days": "100% fee"
+  },
+  "includesExcludes": {
+    "includes": ["Accommodation", "Meals where applicable", "Housekeeping (daily)", "Evening turn-down service", "Satellite TV", "WiFi", "All Government Taxes & Levies"],
+    "excludes": ["Consumables", "Meals if not applicable", "Drinks", "Gratuities", "Transfers", "Extras not mentioned"]
+  },
+  "secondaryTier": {
+    "name": "USD Non-Resident 20% Contract Rate 2026",
+    "file": "Lantana Galu Beach USD Non-Resident 20% Contract Rates 2026.pdf",
+    "confidence": "confirmed-2026-08-06",
+    "note": "Extracted and verified: every cell is exactly Rack x 0.80 (e.g. Low/Accommodation Only $135 -> $108; Peak/Full-Board $290 -> $232). Same season windows, meal-plan structure, and accommodation categories as Rack.",
+    "rates": {
+      "currency": "USD",
+      "unit": "per person per night",
+      "byMealPlan": {
+        "accommodationOnly": { "low": 108, "high": 116, "peak": 156 },
+        "bedAndBreakfast": { "low": 128, "high": 136, "peak": 176 },
+        "halfBoard": { "low": 156, "high": 164, "peak": 204 },
+        "fullBoard": { "low": 184, "high": 192, "peak": 232 }
+      },
+      "verified": true
+    }
+  },
+  "notExtracted": {
+    "residentRates": "Lantana Galu Beach KSH Resident Rates 2026.pdf — not extracted (out of scope, non-resident is this project's focus per CLAUDE.md). Exists on file if a Resident quote is ever needed."
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "$note": "Extracted 6 Aug 2026 from paginated read (not flattened dump) of the East Africa-wide 'A&K Sanctuary East Africa - 2026 Full Board Rates - Rack & 25%.pdf' (pages 4-14) and 'A&K Sanctuary East Africa - 2026 Game Package Rates - Rack & 25%.pdf' (pages 6-17). Used the document's own Table of Contents to jump directly to the Kenya section, then read only Kenya pages, per the length-stay-discount table structure (1-3/4-6/7+ nights). Only 2 Kenya properties exist in this document: Olonana Lodge and Tambarare Camp (Tanzania/Uganda sections excluded from this extraction).",
+  "property": "Olonana Lodge",
+  "operator": "A&K Sanctuary Retreats (Abercrombie & Kent)",
+  "region": "Maasai Mara (Kichwa Tembo airstrip)",
+  "tier": "Rack Rate and STO 25% - both Full Board and Game Package documents",
+  "source": {
+    "files": [
+      "2026 CONTRACT RATES/KENYA/ACCOMODATION/A&K SANCTUARY RETREAT/A&K Sanctuary East Africa - 2026 Full Board Rates - Rack & 25%.pdf",
+      "2026 CONTRACT RATES/KENYA/ACCOMODATION/A&K SANCTUARY RETREAT/A&K Sanctuary East Africa - 2026 Game Package Rates - Rack & 25%.pdf"
+    ],
+    "validity": { "start": "2026-01-03", "end": "2027-01-02" }
+  },
+  "seasons": {
+    "midA": "03 Jan-31 Mar, 01-15 Jun",
+    "green": "01 Apr-31 May, 01 Nov-20 Dec",
+    "high": "16 Jun-31 Oct (Full Board: Not Applicable at Suite/GK Suite level - only Tambarare priced; Game Package: priced)",
+    "festive": "21 Dec-02 Jan 2027"
+  },
+  "rates": {
+    "currency": "USD",
+    "unit": "per person per night unless noted; tiered by length of stay (1-3, 4-6, 7+ nights)",
+    "fullBoard": {
+      "suiteAndFamilySuite_perPersonSharing_1to3nights": {
+        "rack": { "midA": 900, "green": 800, "highSeason": "Not Applicable", "festive": "Not Applicable" },
+        "sto25": { "midA": 675, "green": 600, "highSeason": "Not Applicable", "festive": "Not Applicable" }
+      },
+      "geoffreyKentSuite_perSuiteMax4_1to3nights": {
+        "rack": { "midA": 3960, "green": 3520, "highSeason": "Not Applicable", "festive": "Not Applicable" },
+        "sto25": { "midA": 2970, "green": 2640, "highSeason": "Not Applicable", "festive": "Not Applicable" }
+      },
+      "note": "Olonana Lodge Full Board is priced only for midA and green seasons - 16 Jun-31 Oct and 21 Dec-02 Jan windows show 'Not Applicable' in the source (Game Package is the only option in high/festive season, see below)."
+    },
+    "gamePackage": {
+      "suiteAndFamilySuite_perPersonSharing_1to3nights": {
+        "rack": { "midA": 1190, "green": 1020, "high_16Jun-31Oct": 2450, "festive": 2450 },
+        "sto25": { "midA": 893, "green": 765, "high_16Jun-31Oct": 1838, "festive": 1838 }
+      },
+      "geoffreyKentSuite_perSuiteMax4_1to3nights": {
+        "rack": { "midA": 5236, "green": 4488, "high_16Jun-31Oct": 10780, "festive": 10780 },
+        "sto25": { "midA": 3927, "green": 3366, "high_16Jun-31Oct": 8085, "festive": 8085 }
+      }
+    }
+  },
+  "mandatoryFees": { "parkFees_perPersonPerDay": { "01Jan-30Jun2026": 110, "01Jul-31Dec2026": 210 } },
+  "childPolicy": {
+    "ageRestriction": "Children of all ages welcome",
+    "suiteFamilySuite": { "6andUnder": "Free", "7to15sharing1adult": "Adult rate applies", "7to15sharing2adults": "Child rate applies", "16plus": "Adult rate" },
+    "geoffreyKentSuite": { "6andUnder": "Free", "7to15sharing4adults": "Child rate applies", "16plus": "Adult rate" }
+  },
+  "extraAdult": { "midGreenSeason": "75% of sharing rate", "highFestiveSeason": "85% of sharing rate" },
+  "extras": { "exclusiveVehicleFullDay": { "rack": 750, "sto25": 675 }, "exclusiveVehicleHalfDay": { "rack": 375, "sto25": 338 }, "bushWalk": { "rack": 95, "sto25": 85 }, "nightGameDrive": { "rack": 95, "sto25": 85 }, "kwsRhinoSanctuaryVisit": { "rack": 90, "sto25": 81 } },
+  "inclusionsFullBoard": "All meals, non-alcoholic and alcoholic beverages (incl. premium brands), laundry, emergency medical evacuation.",
+  "inclusionsGamePackage": "As Full Board, plus transfers to/from nearest airstrip, twice-daily game drives or one full-day game drive, Maasai Village visit.",
+  "exclusions": "Park fees, additional activities, international/domestic flights, road transfers to other camps, travel insurance, spa, gratuities."
+}

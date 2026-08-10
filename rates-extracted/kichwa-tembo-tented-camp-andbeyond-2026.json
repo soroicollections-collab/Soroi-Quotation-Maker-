@@ -1,0 +1,35 @@
+{
+  "$note": "Extracted 6 Aug 2026, same source as suyian-lodge-andbeyond-2026.json and bateleur-camp-andbeyond-2026.json.",
+  "property": "Kichwa Tembo Tented Camp",
+  "operator": "andBeyond",
+  "region": "Masai Mara National Reserve (edge of reserve)",
+  "tier": "STO 20% (Rack for reference), Fully Inclusive and Full Board, 3 room categories",
+  "source": { "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/ANDBEYOND/andBeyond Lodge Rates 2026 - Kenya STO20 - FB.pdf", "validity": { "start": "2026-01-11", "end": "2027-01-10" } },
+  "seasons": { "high": "01 Jul-31 Oct; 21 Dec'26-05 Jan'27", "mid": "11 Jan-30 Jun; 01 Nov-20 Dec; 06-10 Jan'27" },
+  "roomCategories": {
+    "note": "Superior View Tents = edge of reserve, wide unrestricted views; Superior Tents also have views but not on the reserve edge; Superior Family Tents = 2 Superior Tents linked by walkway.",
+    "superiorViewTents": {
+      "fullyInclusive": { "rack": { "high": 1480, "mid": 840 }, "sto_1to3": { "high": 1185, "mid": 675 }, "sto_4to5": { "high": 1126, "mid": 642 }, "stoLongStay_6plus": { "high": 1008, "mid": 574 }, "localPilotDriverGuideRate": { "high": 593, "mid": 338 } },
+      "fullBoard": { "rack": { "high": 1385, "mid": 745 }, "sto_1to3": { "high": 1110, "mid": 600 }, "sto_4to5": { "high": 1055, "mid": 570 }, "stoLongStay_6plus": { "high": 944, "mid": 510 } }
+    },
+    "superiorTents": {
+      "fullyInclusive": { "rack": { "high": 1265, "mid": 785 }, "sto_1to3": { "high": 1015, "mid": 630 }, "sto_4to5": { "high": 965, "mid": 599 }, "stoLongStay_6plus": { "high": 863, "mid": 536 }, "tourLeaderRate_1to14guests": 65 },
+      "fullBoard": { "rack": { "high": 1170, "mid": 690 }, "sto_1to3": { "high": 940, "mid": 555 }, "sto_4to5": { "high": 893, "mid": 528 }, "stoLongStay_6plus": { "high": 799, "mid": 472 } }
+    },
+    "superiorFamilyTents_perTentPerNight": {
+      "fullyInclusive": { "rack": { "high": 4430, "mid": 2750 }, "sto_1to3": { "high": 3545, "mid": 2200 }, "sto_4to5": { "high": 3368, "mid": 2090 }, "stoLongStay_6plus": { "high": 3014, "mid": 1870 }, "note": "Not valid Jun-Sep" },
+      "fullBoard": { "rack": { "high": 4095, "mid": 2415 }, "sto_1to3": { "high": 3280, "mid": 1935 }, "sto_4to5": { "high": 3116, "mid": 1839 }, "stoLongStay_6plus": { "high": 2788, "mid": 1645 } }
+    }
+  },
+  "note": "For 01-10 Jan 2026, refer to the 2025 rate sheet per source instruction (not extracted here).",
+  "mandatoryFees": { "parkFee_perPersonPerDay": { "18plus": { "janJun_janPortion": 100, "julDec": 200 }, "9to17": 50, "0to8": "Free" } },
+  "childPolicy": {
+    "0to2sharing": "Free, no activities", "3to5sharing": "Free, no activities",
+    "6to16sharing": "50% of adult rate", "6to16ownRoom": "1st child adult rate, 2nd/3rd 50% (max 3/room)",
+    "childminders": "USD 5/child/hour"
+  },
+  "familyTentConfig": "3 Family Tents (2 Superior Tents each, linked by walkway), max 2 adults + 2 children (3 on request)",
+  "additionalMeals": { "additionalBreakfast": { "rack": 45, "sto": 42 }, "additionalLunch": { "rack": 55, "sto": 53 }, "packedLunch": { "rack": 45, "sto": 42 } },
+  "specialOffers": { "stay4pay3_11Jan-30Apr_01Nov-20Dec": "Applicable to all room types, same room type all 4 nights", "flyMeToTheMara": "Stay 4 nights KTTC or 3 nights Bateleur, return Wilson-Mara flights included" },
+  "notes": "Full Board excludes safari activities, night game drives, transfers to/from lodge (Fully Inclusive includes these). Rates confidential, nett, non-commissionable, VAT inclusive."
+}

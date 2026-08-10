@@ -1,0 +1,109 @@
+{
+  "$note": "Governors' Aviation (part of Wilderness/Governors' Collection) 2026 agent nett rates - new carrier, no prior overlap with existing flights-amboseli-mara-nanyuki-2026.json (that file covers Airvan/Safarilink only).",
+  "carrier": "Governors' Aviation",
+  "currency": "USD",
+  "rateType": "Agent Nett Rates",
+  "source": {
+    "file": "2026 CONTRACT RATES/KENYA/FLIGHTS/Governors/governors aviation 2026  - gj - 25%.pdf",
+    "validity": { "start": "2026-01-01", "end": "2026-12-31" },
+    "documentDate": "9-Apr-25 (E&OE date printed in footer)",
+    "extractionMethod": "Clean embedded text layer, extracted directly with pdftotext -layout, cross-checked against page images not needed given clean text."
+  },
+  "verified": true,
+  "seasonWindows": {
+    "note": "From 2024 onward, only ONE rate applies year-round for all routes EXCEPT the Wilson/Mara/Wilson route, which still shows separate columns below (they are in fact identical figures across all 4 date windows in the source table, but the table structure itself is season-columned so recorded as-is rather than collapsed).",
+    "windows": ["1-Jan-26 to 30-Jun-26", "1-Jan-26 to 31-Dec-26", "1-Jul-26 to 31-Oct-26", "1-Nov-26 to 15-Dec-26", "16-Dec-26 to 31-Dec-26"]
+  },
+  "adultRates": {
+    "laikipiaInterAirstripOnRequest": { "amount": 266, "unit": "per person, all windows identical" },
+    "laikipiaToMasaiMaraAirstrips": { "amount": 354, "unit": "per person, either direction, all windows identical" },
+    "loldiaToMasaiMaraAirstripsOneWay": { "amount": 240 },
+    "masaiMaraInterAirstripOnRequest": { "amount": 260 },
+    "nairobiToMasaiMaraAirstripsReturn": { "amount": 315, "amountJulToOct_NovToDec16": 326, "note": "Return fare is $315 for Jan-Jun and Jul-Oct windows, $326 for Nov 1-Dec 15 and Dec 16-31 windows per source table columns." },
+    "nairobiToMasaiMaraCamps": { "amount": 200, "unit": "per person, either direction" },
+    "nairobiToLewaReturn": { "amount": 372 },
+    "nairobiToLewaOneWay": { "amount": 224 },
+    "nairobiToLoisabaReturn": { "amount": 372 },
+    "nairobiToLoisabaOneWay": { "amount": 224 },
+    "nairobiToLoldiaOneWay": { "amount": 154 },
+    "nairobiToMugieReturn": { "amount": 372 },
+    "nairobiToMugieOneWay": { "amount": 224 },
+    "nairobiToOlPejetaNanyukiReturn": { "amount": 282 },
+    "nairobiToOlPejetaNanyukiOneWay": { "amount": 184 },
+    "olPejetaNanyukiToMasaiMaraCamps": { "amount": 348, "unit": "per person, either direction" }
+  },
+  "childRates": {
+    "ageRange": "2 to 15 years",
+    "laikipiaInterAirstripOnRequest": { "amount": 266 },
+    "laikipiaToMasaiMaraAirstrips": { "amount": 248 },
+    "loldiaToMasaiMaraAirstripsOneWay": { "amount": 168 },
+    "masaiMaraInterAirstripOnRequest": { "amount": 260 },
+    "nairobiToMasaiMaraAirstripsReturn": { "amount": 220, "amountJulToOct_NovToDec16": 228 },
+    "nairobiToMasaiMaraCamps": { "amount": 140 },
+    "nairobiToLewaReturn": { "amount": 260 },
+    "nairobiToLewaOneWay": { "amount": 158 },
+    "nairobiToLoisabaReturn": { "amount": 260 },
+    "nairobiToLoisabaOneWay": { "amount": 158 },
+    "nairobiToLoldiaOneWay": { "amount": 110 },
+    "nairobiToMugieReturn": { "amount": 260 },
+    "nairobiToMugieOneWay": { "amount": 158 },
+    "nairobiToOlPejetaNanyukiReturn": { "amount": 210 },
+    "nairobiToOlPejetaNanyukiOneWay": { "amount": 138 },
+    "olPejetaNanyukiToMasaiMaraCamps": { "amount": 244 }
+  },
+  "discounts": {
+    "multiFlight": "10% discount if 3+ flights booked with Governors Aviation in the same itinerary - NOT applicable to return-fare options."
+  },
+  "airstripsByArea": {
+    "mara": ["Musiara", "Kichwa", "Mara Serena", "Keekorok", "Olkiombo", "Ol Seki & Naibosho", "Olare Oroke", "Siana", "Cotters", "Ol Kurruk / Angama", "Ngerende", "Pardamat", "Mara North"],
+    "laikipia": ["Mugie", "Loisaba", "Lewa", "Borana", "Segera"],
+    "naivasha": ["Loldia"]
+  },
+  "scheduleRouteGroups": [
+    { "route": "Wilson / Mara / Wilson", "flights": [
+      { "from": "WILSON", "to": "MARA", "depart": "09:30", "arrive": "10:15" },
+      { "from": "MARA", "to": "WILSON", "depart": "10:45", "arrive": "12:00" },
+      { "from": "WILSON", "to": "MARA", "depart": "14:30", "arrive": "15:15" },
+      { "from": "MARA", "to": "WILSON", "depart": "15:35", "arrive": "16:35" }
+    ], "footnotes": ["b", "c", "e"] },
+    { "route": "Wilson / Loldia / Mara / Wilson", "flights": [
+      { "from": "WILSON", "to": "LOLDIA", "depart": "09:30", "arrive": "09:50" },
+      { "from": "LOLDIA", "to": "MARA", "depart": "10:00", "arrive": "10:40" },
+      { "from": "MARA", "to": "WILSON", "depart": "11:00", "arrive": "12:00" }
+    ], "footnotes": ["b", "c", "e"] },
+    { "route": "Wilson / (Mugie, Loisaba, Lewa) / Mara / Wilson", "flights": [
+      { "from": "WILSON", "to": "MUGIE/LOISABA/LEWA", "depart": "08:15", "arrive": "09:15" },
+      { "from": "MUGIE/LOISABA/LEWA", "to": "MARA", "depart": "09:30", "arrive": "10:30" },
+      { "from": "MARA", "to": "WILSON", "depart": "10:45", "arrive": "12:00" }
+    ], "footnotes": ["a", "b", "c", "d", "e"] },
+    { "route": "Wilson / Ol Pejeta (Komok) / [Mugie/Loisaba/Lewa] / Mara / Wilson", "flights": [
+      { "from": "WILSON", "to": "OL PEJETA (KOMOK)", "depart": "08:15", "arrive": "09:00" },
+      { "from": "OL PEJETA (KOMOK)", "to": "MUGIE/LOISABA/LEWA", "depart": "09:10", "arrive": "09:30" },
+      { "from": "MUGIE/LOISABA/LEWA", "to": "MARA", "depart": "09:45", "arrive": "10:45" },
+      { "from": "MARA", "to": "WILSON", "depart": "11:00", "arrive": "12:00" }
+    ], "footnotes": ["a", "b", "c", "d", "e"] },
+    { "route": "Wilson / Mara / [Mugie/Loisaba/Lewa] / Wilson", "flights": [
+      { "from": "WILSON", "to": "MARA", "depart": "09:30", "arrive": "10:15" },
+      { "from": "MARA", "to": "MUGIE/LOISABA/LEWA", "depart": "10:30", "arrive": "11:30" },
+      { "from": "MUGIE/LOISABA/LEWA", "to": "WILSON", "depart": "11:45", "arrive": "13:00" }
+    ], "footnotes": ["a", "b", "c", "d", "e", "f"] },
+    { "route": "Wilson / Mara / [Mugie/Loisaba/Lewa] / Ol Pejeta (Komok) / Wilson", "flights": [
+      { "from": "WILSON", "to": "MARA", "depart": "09:30", "arrive": "10:15" },
+      { "from": "MARA", "to": "MUGIE/LOISABA/LEWA", "depart": "10:30", "arrive": "11:30" },
+      { "from": "MUGIE/LOISABA/LEWA", "to": "OL PEJETA (KOMOK)", "depart": "11:40", "arrive": "12:00" },
+      { "from": "OL PEJETA (KOMOK)", "to": "WILSON", "depart": "12:10", "arrive": "13:00" }
+    ], "footnotes": ["a", "b", "c", "d", "e"] }
+  ],
+  "scheduleFootnotes": {
+    "a": "Governors' Aviation reserves the right to route Nanyuki/Ol Pejeta (Komok) interchangeably at its discretion; return flights from Nairobi may be routed via Masai Mara at the company's discretion.",
+    "b": "All Masai Mara and Governors' Mugie flights operate with a minimum of 2 passengers year-round. Other Laikipia flights (Loisaba, Lewa, Ol Pejeta/Komok) require minimum 2 pax in High season, minimum 4 pax in Mid and Low season.",
+    "c": "Flight may not route directly as ticketed; may stop via other scheduled destinations.",
+    "d": "Flight may be routed via Nairobi, particularly in Mid and Low season.",
+    "e": "Passengers may be re-booked onto an equivalent airline/service if load factors or other circumstances require it.",
+    "f": "Laikipia-Wilson and Masai Mara-Laikipia flights only operate during peak periods: 01 Jun - 31 Oct and 15 Dec - 31 Mar."
+  },
+  "childPolicyNote": "Child rate applies ages 2-15 (distinct wording from AirKenya's 'under 12' and from the Soroi portfolio's 5-11/12-17 brackets - do not conflate these three different child-age conventions across carriers/properties.)",
+  "insuranceCondition": "Wilderness/Governors' Collection requires guests carry travel insurance; uninsured guests are personally liable for medical emergency/evacuation costs and other claims (e.g. lost luggage).",
+  "fuelSurcharge": "Variable fuel surcharge may be levied if crude oil prices rise significantly; will be communicated in advance. No current surcharge amount stated.",
+  "termsReference": "Full flight T&Cs at https://www.governorsaviation.com/Terms-and-Conditions/termsandconditions - not reproduced here, refer guests/agents to that link for edge cases."
+}

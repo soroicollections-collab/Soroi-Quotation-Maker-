@@ -1,0 +1,52 @@
+{
+  "property": "Olmoran Tented Camp",
+  "operator": "Olmoran Tented Camp",
+  "region": "Not stated in source (near Maasai region per activities described)",
+  "isSoroiProperty": false,
+  "sourceFiles": ["2026 CONTRACT RATES/KENYA/ACCOMODATION/PELICAN & OLMORAN TENTED/PELICAN LODGE & OLMORAN TENTED CAMP 2026 CONTRACT RATES.pdf"],
+  "currency": { "nonResident": "USD", "resident": "KES", "verified": true },
+  "validity": "2 January 2026 - 1 January 2027",
+  "notes": [
+    "Both a Non-Resident 'Net Rate' (Sunworld's contract rate) AND a separate Non-Resident 'Rack Rate' (all-year-round, no seasonality) are given - unusual to have both in one document.",
+    "ANOMALY: The Kenyan Citizens/Residents rate table has two visible date typos: 'Peak' row date range reads '1st Jul 2026-31st Oct 2025\\6' (garbled) and '23rd Dec 20246-1st Jan 2027' (extra digit) - clearly OCR/typing errors in the source, not corrected, but the associated rate figures (KES13,000/17,500/22,500) are unambiguous and used as-is.",
+    "Resident rates commissionable at 15% (vs Pelican Lodge's 10% - these are two different contracts despite being in the same PDF)."
+  ],
+  "nonResidentNetRates_perRoom": {
+    "seasons": { "high": "2 Jan-31 Mar 2026, 1 Nov-22 Dec 2026", "low": "1 Apr-30 Jun 2026", "peak": "1 Jul-31 Oct 2026, 23 Dec 2026-1 Jan 2027" },
+    "high": { "singleFB": 110, "doubleFB": 160, "tripleFB": 220 },
+    "low": { "singleFB": 85, "doubleFB": 110, "tripleFB": 165 },
+    "peak": { "singleFB": 130, "doubleFB": 180, "tripleFB": 240 },
+    "verified": true
+  },
+  "nonResident2026RackRates_perRoom_allYearRound": { "singleFB": 170, "doubleFB": 240, "tripleFB": 326, "period": "2 Jan 2026-1 Jan 2027", "verified": true },
+  "kenyanCitizenResidentRates_KES_perRoom": {
+    "commission": "15%",
+    "seasons": { "high": "2 Jan-31 Mar 2026, 1 Nov-22 Dec 2026", "low": "1 Apr-30 Jun 2026", "peak": "1 Jul-31 Oct 2026, 23 Dec 2026-1 Jan 2027 (dates garbled in source, see top-level notes)" },
+    "high": { "singleFB": 12000, "doubleFB": 16500, "tripleFB": 21500 },
+    "low": { "singleFB": 10000, "doubleFB": 11500, "tripleFB": 17000 },
+    "peak": { "singleFB": 13000, "doubleFB": 17500, "tripleFB": 22500 },
+    "verified": true
+  },
+  "childPolicy": { "raw": "Below 3 years sharing with 2 parents: free. 3-9 years sharing with 2 parents: 50% of per-person sharing rate. One kid sharing with one adult: double rate. 10+ considered adults. Exclusive use of tented room: 100% of contract rate.", "verified": true },
+  "easterChristmasSupplement": { "raw": "NO Easter supplement. Christmas (24,25,26,31 Dec 2026 & 1 Jan 2027): Non-Resident US$30/person, US$20/child; Resident KES2,000/person, KES1,500/child.", "verified": true },
+  "meals": [
+    { "item": "Lunch (extra)", "amount": "US$25pp" },
+    { "item": "Picnic Lunch", "amount": "US$25pp" },
+    { "item": "Bush breakfast (min 4 people)", "amount": "US$35pp" },
+    { "item": "Bush dinner (min 4 people, incl. outside setup, bottle of wine, bonfire)", "amount": "US$35pp" }
+  ],
+  "activities": [
+    { "item": "Escorted Nature Walk", "amount": "US$35pp" },
+    { "item": "Full day Game Drive/return airstrip transfers (minivan, pop-up roof)", "amount": "US$200/vehicle/day" },
+    { "item": "Full day Game Drive/return airstrip transfers (Land Cruiser)", "amount": "US$350/vehicle/day" },
+    { "item": "Maasai dance", "amount": "US$50/group" }
+  ],
+  "singleRoomPolicy": { "raw": "Max 2 single rooms at single rate per booking, rest at double rate.", "verified": true },
+  "groupReward": { "raw": "1 free pax per 15 paying clients, not applicable during promotional periods.", "verified": true },
+  "policies": {
+    "releasePeriod": "Block bookings confirmed via 50% deposit at time of booking; room lists min 30 days prior to arrival",
+    "deposit": "50% deposit on confirmation, balance 30 days prior to arrival",
+    "cancellation": "75-50 days: 25% of applicable rate per bed-night; 49-37 days: 50%; within 36 days or no-show: 100%",
+    "invoiceDispute": "Must be raised within 4 days of invoicing"
+  }
+}

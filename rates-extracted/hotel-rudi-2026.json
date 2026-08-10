@@ -1,0 +1,36 @@
+{
+  "property": "Hotel Rudi",
+  "operator": "The Pot Ltd (Pamoja Collection)",
+  "region": "Naivasha",
+  "isSoroiProperty": false,
+  "sourceFiles": [
+    "2026 CONTRACT RATES/KENYA/ACCOMODATION/PAMOJA COLLECTION/Hotel Rudi_TO Rates 2026 (KSH).pdf",
+    "2026 CONTRACT RATES/KENYA/ACCOMODATION/PAMOJA COLLECTION/Hotel Rudi_TO Rates 2026 (USD).pdf"
+  ],
+  "currency": { "primary": "KSH", "alsoQuoted": "USD" },
+  "validity": "1 January 2026 - 31 December 2026",
+  "notes": ["12 rooms.", "USD figures are a separate, independently-set tour-operator price list (not simply the KSH tour-operator rate converted) - both quoted verbatim.", "USD payments only accepted via cash or online banking to the KSH account, converted at the bank's prevailing rate - no direct USD account."],
+  "ratesKSH_perRoomPerNight": {
+    "single": { "bb": { "rack": 10500, "tourOperator": 9000 }, "hb": { "rack": 12000, "tourOperator": 10500 }, "fb": { "rack": 13500, "tourOperator": 12000 } },
+    "double": { "bb": { "rack": 17000, "tourOperator": 16000 }, "hb": { "rack": 20000, "tourOperator": 19000 }, "fb": { "rack": 22500, "tourOperator": 22000 } },
+    "triple": { "bb": { "rack": 25000, "tourOperator": 24000 }, "hb": { "rack": 27000, "tourOperator": 26000 }, "fb": { "rack": 29000, "tourOperator": 28000 } },
+    "fullDayConferencePackage": { "rack": 3500, "tourOperator": 2800 },
+    "dayroom": { "tourOperator": 3500 },
+    "verified": true
+  },
+  "ratesUSD_tourOperatorOnly_perRoomPerNight": {
+    "single": { "bb": 70, "hb": 80, "fb": 90 },
+    "double": { "bb": 120, "hb": 150, "fb": 170 },
+    "triple": { "bb": 180, "hb": 200, "fb": 220 },
+    "dayroom": 35,
+    "verified": true
+  },
+  "childPolicy": { "raw": "0-5yrs: free. 6-12yrs: 50% of room rate (regardless of sharing with parents or not). 12+: full adult rate.", "verified": true },
+  "policies": {
+    "checkIn": "12:00", "checkOut": "10:00",
+    "payment": "Full payment due prior to arrival",
+    "cancellation": "Cancelled within 5 days of arrival: full amount forfeited",
+    "provisionalBookingHold": "Released automatically 2 weeks after initial request, subject to demand",
+    "accessibilityNote": "Rooms on 1st/2nd floors, stairs only - advise in advance of mobility issues."
+  }
+}

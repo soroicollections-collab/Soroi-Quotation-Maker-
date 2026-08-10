@@ -1,0 +1,44 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftotext -layout, clean text PDFs. NOT a Soroi property. Two rate tiers captured: Rack and 30% STO (verified STO = Rack x 0.70 on every cell, e.g. 336/480=0.70). Two package types: 'Access to Nature' (part-inclusive, shared vehicles) and 'Privately Guided Safaris' (fully inclusive, private vehicle/guide). The 30% STO document footer says '2025 Terms & Conditions' (likely a leftover/unupdated reference) while the Rack document says '2026 Terms & Conditions' - flagged as a minor inconsistency, not resolved.",
+  "property": "Moon's Camp",
+  "operator": "The Safari Series",
+  "region": "Lolldaiga Hills, Laikipia (near Nanyuki)",
+  "currency": "USD",
+  "unit": "per person per night",
+  "source": {
+    "rackFile": "2026 CONTRACT RATES/KENYA/ACCOMODATION/THE SAFARI SERIES/RACK Moon’s Camp - 2026 rates.pdf",
+    "sto30File": "2026 CONTRACT RATES/KENYA/ACCOMODATION/THE SAFARI SERIES/30% STO  Moon's Camp 2026.pdf",
+    "skippedFiles": ["2026 Fact Sheet for Moon's Camp.pdf - marketing", "2026 Booking T&C's Moon's Camp.pdf - full T&Cs, summarized inline instead", "2026 Moon’s Camp Activity & Drinks Menu.pdf - a la carte extras menu, not opened", "202530%STOThe Safari Series.pdf, 2025Fact Sheet The Safari Series (1).pdf, The Safari Series - specials 2025 & 2026.pdf (+duplicate), 2025Booking T&C's The Safari Series.pdf - prior-year or portfolio-wide docs, not Moon's-Camp-2026-specific"]
+  },
+  "confidence": "confirmed-2026-08-06",
+  "seasons": {
+    "mid": { "dateRanges": ["6 Jan - 30 Apr", "1 Jul - 31 Oct", "1 Dec - 17 Dec"] },
+    "green": { "dateRanges": ["1 May - 31 Jun", "1 Nov - 30 Nov"] },
+    "high": { "dateRanges": ["18 Dec - 5 Jan 2027"] }
+  },
+  "packages": {
+    "accessToNature": {
+      "description": "Part-inclusive package, shared vehicles, optional extras bookable separately.",
+      "rack": { "mid": { "adult": 480, "child": 240 }, "green": { "adult": 350, "child": 175 }, "high": { "adult": 520, "child": 260 } },
+      "sto30": { "mid": { "adult": 336, "child": 168 }, "green": { "adult": 245, "child": 123 }, "high": { "adult": 364, "child": 182 } },
+      "conservationFees": { "adult": 120, "child": 60, "unit": "per person per night, non-commissionable" },
+      "inclusions": ["Accommodation", "All meals", "Some drinks (water, tea, coffee, welcome juice)", "2 daily shared-vehicle game drives, bush meals, sundowners (excl. drinks), local bird walk", "Transfers to/from Main Gate or conservancy airstrip", "VAT"],
+      "exclusions": ["Nanyuki town/airstrip transfer ($210/vehicle, 8-seater)", "Additional drinks", "Additional/private activities (fly camping, community visit, extra/private/night game drives, day walks, caves visit, conservation activities, horse riding, vintage Land Rover driving)", "Horse riding (price on request)", "Personal items"]
+    },
+    "privatelyGuidedSafaris": {
+      "description": "Fully inclusive, private vehicle and private guide, premier activity access.",
+      "rack": { "mid": { "adult": 710, "child": 355 }, "green": { "adult": 550, "child": 275 }, "high": { "adult": 750, "child": 375 } },
+      "sto30": { "mid": { "adult": 497, "child": 249 }, "green": { "adult": 385, "child": 193 }, "high": { "adult": 525, "child": 263 } },
+      "conservationFees": { "adult": 120, "child": 60, "unit": "per person per night, non-commissionable" },
+      "inclusions": ["Accommodation incl. hosting by camp owners", "Classic Land Rover for guest use", "Private guided game drives in vintage Land Rovers", "All meals", "All drinks (excl. luxury spirits & champagne)", "All activities (game drives, safari/bird walks, bush meals, sundowners, star safari, rock art walk, kids club, picnics, conservation projects, fly camping, night game drives, vintage Land Rover driving, community visit)", "Transfers to/from Main Gate or conservancy airstrip", "VAT"],
+      "exclusions": ["Horse riding (price on request)", "Nanyuki airstrip transfer ($210/vehicle)", "Personal items"]
+    }
+  },
+  "childPolicy": { "under5": "Free of charge", "age5to15": "Half price" },
+  "bookingNotes": {
+    "minimumStay": "2 nights standard, 3 nights in High Season",
+    "singleSupplement": "None",
+    "payment": "Card, bank transfer, or MPESA in camp",
+    "guideNannyAccommodation": "Available on request, rates on enquiry"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftotext -layout, clean single-page PDFs. NOT a Soroi property.",
+  "property": "Shompole Wilderness",
+  "region": "South Rift, Shompole Conservancy",
+  "currency": "USD",
+  "unit": "per person per night",
+  "source": {
+    "rackFile": "2026 CONTRACT RATES/KENYA/ACCOMODATION/SHOMPOLE WILDERNESS/Shompole Wilderness - Rack Rates 2026.pdf",
+    "stoFile": "2026 CONTRACT RATES/KENYA/ACCOMODATION/SHOMPOLE WILDERNESS/Shompole Wilderness - STO Rates 2026.pdf",
+    "validity": { "start": "2026-01-16", "end": "2027-01-15" }
+  },
+  "confidence": "confirmed-2026-08-06",
+  "seasons": {
+    "high": { "dateRanges": ["1 Jun 2026 - 30 Sep 2026", "15 Dec 2026 - 15 Jan 2027"] },
+    "low": { "dateRanges": ["16 Jan 2026 - 31 May 2026", "1 Oct 2026 - 14 Dec 2026"] }
+  },
+  "rates": {
+    "rack": {
+      "perAdultSharing": { "high": 900, "low": 675 },
+      "perChild_3to12": { "high": 450, "low": 338 },
+      "singlePersonSupplement": "30% of the adult rate, not applicable to Exclusive Use bookings"
+    },
+    "sto": {
+      "perAdultSharing": { "high": 720, "low": 540 },
+      "perChild_3to12": { "high": 360, "low": 270 },
+      "singlePersonSupplement": "30% of the adult rate, not applicable to Exclusive Use bookings",
+      "discountLevel": "STO 20% (verified: 720/900 = 0.80, 540/675 = 0.80, 360/450 = 0.80, 270/338 approx 0.80) - note this project's known STO ladder (15/20/25/30/35/40%) so this is 'STO 20%' equivalent, though the document itself does not label the percentage."
+    }
+  },
+  "mandatoryFees": {
+    "conservationCommunityHideFee": { "adult": 100, "child": 50, "unit": "per person per day" },
+    "driverGuideFee": { "amount": 30, "unit": "per driver/guide per day" }
+  },
+  "driverGuideAccommodation": { "amount": 80, "unit": "per night" },
+  "inclusions": ["Full Board Accommodation", "All drinks (excl. Champagne)", "All activities incl. cultural visits, market visits, river activities, guided walks, shared game drives, baboon walk", "Shared use of Shompole Hides", "Transfers to/from Rangers Airstrip", "Laundry"],
+  "exclusions": ["Conservation & Community Fees", "Flight or road transfers", "Scenic helicopter flights", "Personal expenses/shopping", "Late departure (on request)", "Extra lunch $50/person", "Gratuities"],
+  "operationalPolicy": {
+    "capacity": "6 ensuite tents, max 12 pax",
+    "minimumStay": "2 nights (2 pax)",
+    "checkIn": "11:00am", "checkOut": "9:00am",
+    "closure": "Closed 25 April - 25 May",
+    "exclusiveUse": "Minimum 8 adult guests for 2 nights guarantees exclusive use of the camp.",
+    "deposit": "20% to confirm booking; full payment due 30 days before arrival.",
+    "cancellation": "Over 120 days: full refund less bank charges. 45-120 days: deposit forfeited. 44 days or less: 100% cancellation fee."
+  }
+}

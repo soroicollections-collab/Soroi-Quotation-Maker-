@@ -1,0 +1,57 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftotext -layout, clean document. NOT a Soroi property. Whole-house exclusive-use rental (5-bedroom house + 1 luxury tent for 2 extra guests), booked on a PER-PERSON-SHARING basis (min 2 pax) despite being an exclusive-use property - unusual hybrid pricing model. A separate 'Maa House Resident Rates January 2026.pdf' exists (not opened, out of scope - resident tier).",
+  "property": "The Maa Guest House",
+  "region": "Edge of Maasai Mara National Reserve, between Olare Motorogi and Naboisho Conservancies",
+  "operator": "The Maa Trust (non-profit, stay proceeds support the trust)",
+  "currency": "USD",
+  "unit": "per person sharing per night, minimum 2 pax for 2 nights",
+  "source": {
+    "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/THE MAA GUEST HOUSE/Maa House Rates January 2026.pdf",
+    "validity": { "start": "2026-01-06", "end": "2027-01-05" }
+  },
+  "confidence": "confirmed-2026-08-06",
+  "seasons": {
+    "low": { "dateRanges": ["6 Jan 2026 - 30 Jun 2026", "1 Oct 2026 - 19 Dec 2026"] },
+    "high": { "dateRanges": ["Jul 2026 - Sep 2026", "20 Dec 2026 - 5 Jan 2027"] }
+  },
+  "rates": {
+    "perPersonSharing": { "low": 378, "high": 432 },
+    "childSharing_3to17": { "low": 227, "high": 259 },
+    "under3": "No charge",
+    "maaTrustDonationPerBednight_nonCommissionable": { "adult": 20, "child": 10 }
+  },
+  "inclusions": ["Full board accommodation", "Soft drinks", "Laundry", "WiFi", "Statutory taxes"],
+  "exclusions": ["Alcoholic drinks", "Airstrip transfers", "Additional activities", "Maasai Mara National Reserve park fees", "Tips"],
+  "propertyDetails": { "mainHouse": "5 bedrooms, all en suite", "luxuryTent": "For 2 additional guests, en suite", "fullyStaffed": "Manager, chef, housekeeper, waiter" },
+  "optionalExtras_nonCommissionable": {
+    "safariVehicleAndGuidePerDay": { "amount": 315, "capacity": "6 guests", "note": "Plus applicable park fees. Must be pre-booked. Game drives in conservancies not possible - Reserve only." },
+    "houseAlcoholicDrinksSupplementPerGuestPerNight": 30,
+    "guideTentForExternalDriverGuide": { "amount": 80, "note": "Includes accommodation and all meals, water, tea, coffee per night - this is the 'Upgraded' driver package." },
+    "driverPackageStandard": { "amount": 15, "unit": "per person per night", "includes": "Guide tent accommodation, staff meals, non-alcoholic staff drinks, WiFi, tax/levies" },
+    "airstripTransferOlareOrokMotorogi_30min_6seater": { "amount": 200, "plus": "$10 per person" },
+    "airstripTransferOlkiombo_40min_6seater": { "amount": 200, "plus": "park fees", "note": "* Requires park fee to be charged for that day." },
+    "hotAirBallooning": { "amount": 510, "unit": "per adult", "note": "Child rates on enquiry. Launch site 20 min away at Talek." },
+    "cerkEcosystemTour": { "amount": 20, "unit": "per person", "includes": "Forest walk" },
+    "treePlanting": { "amount": 150, "unit": "per tree", "note": "Must be pre-booked." }
+  },
+  "childPolicy": {
+    "welcomeAllAges": true,
+    "facilities": "2 rooms with daybeds convertible for children, child-appropriate dining/cutlery, high chairs, cots, toys, games, activities (bow/arrow, arts/crafts, cooking with chef, beadwork classes)."
+  },
+  "operationalPolicy": {
+    "checkIn": "12:00 PM", "checkOut": "10:00 AM",
+    "insurance": "Comprehensive travel insurance required, secured before booking confirmation.",
+    "provisionalHold": "14 days",
+    "deposit": "20% non-refundable to confirm; balance due 60 days prior to arrival. Bookings within 60 days must be paid in full at confirmation."
+  },
+  "cancellationPolicy": [
+    { "daysBeforeArrival": ">61", "charge": "20% deposit donated to The Maa Trust (not refunded to guest)" },
+    { "daysBeforeArrival": "60-31", "charge": "50%" },
+    { "daysBeforeArrival": "<30 / no-show", "charge": "100%" }
+  ],
+  "accessNotes": {
+    "flyingIn": "Olare Orok airstrip (30 min) or Ol Kiombo (40 min, park fee applies that day).",
+    "drivingIn": "Approx. 5.5 hours from Nairobi by road.",
+    "noNightlyParkOrConservancyFees": "Only pay for activities/game-drive days, not nightly - a distinguishing feature of this property vs. typical Mara lodges."
+  }
+}

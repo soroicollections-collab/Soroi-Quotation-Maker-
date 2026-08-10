@@ -1,0 +1,54 @@
+{
+  "$note": "Extracted 6 Aug 2026 from resident (KES) and non-resident STO 25% (USD) rate sheets.",
+  "property": "Elerai Camp",
+  "operator": "Elerai Camp Ltd",
+  "region": "Elerai Private Conservancy, Amboseli",
+  "tier": "Rack Rate Resident (KES) and STO 25% Non-Resident (USD)",
+  "source": {
+    "files": [
+      "2026 CONTRACT RATES/KENYA/ACCOMODATION/ELERAI/ELERAI CAMP LTD - 2026 KES RESIDENT RATES.pdf",
+      "2026 CONTRACT RATES/KENYA/ACCOMODATION/ELERAI/ELERAI CAMP LTD 2026 - STO (25%) USD NON RESIDENT RATES ELERAI CAMP LTD.pdf"
+    ],
+    "issued": "2025-03-15"
+  },
+  "seasons": {
+    "peak": "01 Jul-31 Oct 2026",
+    "high": "16 Dec 2025-31 Mar 2026 and 01 Nov-15 Dec 2026",
+    "low": "01 Apr-27 Apr 2026 and 25 May-30 Jun 2026",
+    "campClosed": "27 Apr - 24 May 2026"
+  },
+  "rates": {
+    "unit": "per adult sharing / single, per night",
+    "nonResidentUSD": {
+      "package_minimum2pax": {
+        "peak": { "deluxeTentSharing": 374, "cottageSharing": 374, "deluxeTentSingle": 490, "cottageSingle": 490 },
+        "high": { "deluxeTentSharing": 347, "cottageSharing": 347, "deluxeTentSingle": 463, "cottageSingle": 463 },
+        "low": { "deluxeTentSharing": 293, "cottageSharing": 293, "deluxeTentSingle": 293, "cottageSingle": 293 }
+      },
+      "nonPackageFullBoard": {
+        "peak": { "deluxeTentSharing": 265, "cottageSharing": 265, "deluxeTentSingle": 382, "cottageSingle": 382 },
+        "high": { "deluxeTentSharing": 237, "cottageSharing": 237, "deluxeTentSingle": 354, "cottageSingle": 354 },
+        "low": { "deluxeTentSharing": 180, "cottageSharing": 180, "deluxeTentSingle": 180, "cottageSingle": 180 }
+      }
+    },
+    "residentKES": {
+      "package_minimum2pax": {
+        "peak": { "deluxeTentSharing": 27500, "cottageSharing": 25850, "deluxeTentSingle": 33000, "cottageSingle": 31350 },
+        "high": { "deluxeTentSharing": 24640, "cottageSharing": 22770, "deluxeTentSingle": 30140, "cottageSingle": 28270 },
+        "low": { "deluxeTentSharing": 22770, "cottageSharing": 20900, "deluxeTentSingle": 22770, "cottageSingle": 20900 }
+      },
+      "nonPackageFullBoard": {
+        "peak": { "deluxeTentSharing": 18150, "cottageSharing": 16500, "deluxeTentSingle": 23650, "cottageSingle": 22000 },
+        "high": { "deluxeTentSharing": 15290, "cottageSharing": 13420, "deluxeTentSingle": 20790, "cottageSingle": 18920 },
+        "low": { "deluxeTentSharing": 13420, "cottageSharing": 11550, "deluxeTentSingle": 13420, "cottageSingle": 11550 }
+      }
+    }
+  },
+  "mandatoryFees": {
+    "elerai CommunityBednightWildlifeConservationFee": { "adultUSD": 47, "adultKES": 2600, "child3to18": "50%" },
+    "amboseliNationalParkEntryFee": "Payable to KWS separately, not included"
+  },
+  "packageInclusions": "Full board, local airstrip & SGR Emali transfers, 2 game drives/day, night drives, guided walks, one shared bush sundowner.",
+  "childPolicy": { "2to12sharingWith2Adults": "50% of adult rate", "2to12sharingWithOtherChild": "75% of adult rate", "thirdBedAdult": "20% reduction on PPS price" },
+  "notes": "Cancellation: 10% (61+ days), 50% (60-31 days), 100% (30 days or less)."
+}

@@ -1,0 +1,33 @@
+{
+  "$note": "Extracted 6 Aug 2026. Apartment-style serviced accommodation in Westlands, Nairobi - not a traditional hotel or safari lodge. Useful as an alternative Nairobi/stopover option alongside the three already logged in CLAUDE.md.",
+  "property": "Clarence House Nairobi",
+  "operator": "Clarence House Nairobi",
+  "region": "Westlands, Nairobi",
+  "tier": "Contract Rate 2026 (Non-Resident USD and Resident KES)",
+  "source": {
+    "files": [
+      "2026 CONTRACT RATES/KENYA/ACCOMODATION/Clarence House Nairobi/REVISED CONTRACT RATES 2026 NON RESIDENTS.... (1) (1) 2.pdf.pdf",
+      "2026 CONTRACT RATES/KENYA/ACCOMODATION/Clarence House Nairobi/UPDATED CONTRACT RATES  RESIDENTS 2026........... (1) (1) 2.pdf.pdf"
+    ]
+  },
+  "rates": {
+    "unit": "daily rate, Bed & Breakfast (also monthly bed-only rates available for long stays)",
+    "nonResidentUSD_daily": {
+      "deluxeStudio_single": 120,
+      "oneBedroomApartment_double": 140,
+      "oneBedroomApartment_single": 160,
+      "twoBedroomApartment_double": [180, 200],
+      "twoBedroomApartment_4pax": 240
+    },
+    "residentKES_daily": {
+      "deluxeStudio_single": 11000,
+      "oneBedroomApartment_double": 14000,
+      "oneBedroomApartment_single": 16000,
+      "twoBedroomApartment_double": [18000, 22000],
+      "twoBedroomApartment_4pax": 25000
+    },
+    "monthlyRatesAlsoAvailable": true,
+    "confidenceNote": "[Unverified] Source table lists 'TWO BEDROOM APARTMENT DOUBLE' twice with two different rates (USD 180 and USD 200 / KES 18,000 and 22,000) with no distinguishing label between the two rows - likely two different apartment configurations or views, but the differentiator is not stated in the extracted text. Confirm with property before quoting a specific figure."
+  },
+  "notes": "Rate is exclusive of commission per source document."
+}

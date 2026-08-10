@@ -1,0 +1,66 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftotext -layout, paginated, from 'ASHNIL/ASHNIL HOTELS & SURANA LUXURY COLLECTION_2027.pdf' (7pp). Covers 5 properties, one per page (pages 1-5), each unambiguously labeled - no misattribution risk here since each property has its own clearly-headed page.",
+  "operator": "Ashnil Hotels Limited (AHL) / Surana Luxury Collection",
+  "currency": "USD",
+  "basis": "Full Board (FB) unless otherwise specified; net, non-commissionable; rates quoted per person sharing include service charge + applicable taxes",
+  "unit": "Half Twin = per person sharing a twin/double room per night",
+  "applicability": "Non-residents only, leisure business only. Not for onward distribution to 3rd-party OTA/booking sites.",
+  "confidence": "confirmed-2027-08-06",
+  "properties": {
+    "Ashnil Mara Camp": {
+      "region": "Maasai Mara",
+      "seasons": {
+        "Peak": { "dateRanges": ["01 Jul - 30 Sep 2027", "21 Dec 2026 - 02 Jan 2027"], "halfTwin": 605, "single": 908, "thirdAdult": 484, "releaseDays": 60 },
+        "High": { "dateRanges": ["01 Feb - 28 Feb 2027", "01 Oct - 31 Oct 2027"], "halfTwin": 348, "single": 522, "thirdAdult": 278, "releaseDays": 45 },
+        "Shoulder": { "dateRanges": ["03 Jan - 31 Jan 2027", "01 Mar - 31 Mar 2027", "01 Jun - 30 Jun 2027", "01 Nov - 20 Dec 2027"], "halfTwin": 280, "single": 420, "thirdAdult": 224, "releaseDays": 30 },
+        "Low": { "dateRanges": ["01 Apr - 31 May 2027"], "halfTwin": 199, "single": 199, "thirdAdult": 159, "releaseDays": 14 }
+      },
+      "verified": true
+    },
+    "Ashnil Samburu Camp": {
+      "region": "Samburu",
+      "seasons": {
+        "Peak": { "dateRanges": ["21 Dec 2026 - 02 Jan 2027", "01 Jul - 30 Sep 2027"], "halfTwin": 225, "single": 338, "thirdAdult": 180, "releaseDays": 60 },
+        "High": { "dateRanges": ["03 Jan - 31 Mar 2027", "01 Jun - 30 Jun 2027", "01 Oct - 20 Dec 2027"], "halfTwin": 160, "single": 240, "thirdAdult": 128, "releaseDays": 30 },
+        "Low": { "dateRanges": ["01 Apr - 31 May 2027"], "halfTwin": 99, "single": 99, "thirdAdult": 79, "releaseDays": 14 }
+      },
+      "verified": true
+    },
+    "Ashnil Aruba": {
+      "region": "Tsavo East (Aruba Dam)",
+      "seasons": {
+        "High": { "dateRanges": ["21 Dec 2026 - 31 Mar 2027", "01 Jun - 20 Dec 2027"], "halfTwin": 135, "single": 203, "thirdAdult": 125, "releaseDays": 30 },
+        "Low": { "dateRanges": ["01 Apr - 31 May 2027"], "halfTwin": 89, "single": 89, "thirdAdult": 79, "releaseDays": 15 }
+      },
+      "verified": true
+    },
+    "Surana Buffalo Springs": {
+      "region": "Samburu (Buffalo Springs Reserve)",
+      "seasons": {
+        "Peak": { "dateRanges": ["01 Jul - 30 Sep 2027", "21 Dec 2026 - 31 Mar 2027"], "halfTwin": 448, "single": 672, "thirdAdult": 358, "releaseDays": 60 },
+        "High": { "dateRanges": ["01 Jun - 30 Jun 2027", "01 Oct - 20 Dec 2027"], "halfTwin": 325, "single": 487, "thirdAdult": 260, "releaseDays": 45 },
+        "Low": { "dateRanges": ["01 Apr - 31 May 2027"], "halfTwin": 180, "single": 180, "thirdAdult": 144, "releaseDays": 21 }
+      },
+      "verified": true
+    },
+    "Surana Mara Camp": {
+      "region": "Maasai Mara",
+      "seasons": {
+        "Peak": { "dateRanges": ["01 Jul - 30 Sep 2027", "21 Dec 2026 - 31 Mar 2027"], "halfTwin": 1300, "single": 1950, "thirdAdult": 1040, "releaseDays": 60 },
+        "High": { "dateRanges": ["01 Jun - 30 Jun 2027", "01 Oct - 20 Dec 2027"], "halfTwin": 880, "single": 1320, "thirdAdult": 704, "releaseDays": 45 },
+        "Low": { "dateRanges": ["01 Apr - 31 May 2027"], "halfTwin": 625, "single": 625, "thirdAdult": 500, "releaseDays": 30 }
+      },
+      "verified": true,
+      "confidenceNote": "[Unverified] Surana Mara Camp's rates ($625-$1950/pp) are 2-4x every other property in this document including the standard Ashnil Mara Camp in the same region/season structure - no explanation given in source (could be a genuinely ultra-luxury positioning, or a transcription anomaly in Sunworld's own contract). Flagging for awareness rather than correcting."
+    }
+  },
+  "generalTerms": {
+    "cancellationPeak": "0-15 days before arrival: 100%; 16-30 days: 50%; 31-40 days: 25%",
+    "cancellationHighShoulderLow": "0-7 days: 100%; 8-14 days: 50%; 15-25 days: 25%",
+    "depositPeak": "40% non-refundable deposit within 14 days of confirmation (Peak); 20% for Off-Peak",
+    "checkInOut": "Check-in from 12:00 noon; check-out by 10:00 am",
+    "currencyDevaluationClause": "If KES devalues >5%, Ashnil may adjust rates proportionately from the devaluation date",
+    "rateChangeNotice": "Ashnil may alter rates with 3+ months' written notice",
+    "verified": true
+  }
+}

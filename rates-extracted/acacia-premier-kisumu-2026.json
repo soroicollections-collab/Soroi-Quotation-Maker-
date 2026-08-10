@@ -1,0 +1,40 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftotext direct read of the single-page-scope contract PDF. NOT a Soroi property. Kisumu city hotel, not a safari lodge.",
+  "property": "Acacia Premier Hotel",
+  "operator": "Simba Hospitality Management (t/a Acacia Premier Hotel)",
+  "region": "Kisumu",
+  "tier": "Leisure/Agent rate (residents KES, non-residents USD)",
+  "residency": "Both Resident (KES) and Non-Resident (USD) tables given",
+  "source": {
+    "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/ACACIA PREMIER/ACACIA PREMIER - SUNWORLD rates 2026.pdf",
+    "validity": { "start": "2026-01-01", "end": "2026-12-31" },
+    "note": "Contract auto-renegotiates each December; not automatically extended."
+  },
+  "rates": {
+    "unit": "per room per night, Bed & Breakfast base",
+    "residents": {
+      "currency": "KES",
+      "standardRoom": { "single": 15300, "double": 17000 },
+      "superiorRoom": { "single": 16150, "double": 17850 },
+      "deluxeRoom": { "single": 19800, "double": 21600 },
+      "baySuite": { "single": 36000, "double": 36000 },
+      "presidentialSuite": { "single": 58500, "double": 58500 }
+    },
+    "nonResidents": {
+      "currency": "USD",
+      "standardRoom": { "single": 180, "double": 200 },
+      "superiorRoom": { "single": 190, "double": 210 },
+      "deluxeRoom": { "single": 220, "double": 240 },
+      "baySuite": { "single": 400, "double": 400 },
+      "presidentialSuite": { "single": 650, "double": 650 }
+    },
+    "mealSupplements": { "halfBoard": { "usd": 30, "kes": 3000 }, "fullBoard": { "usd": 60, "kes": 6000 } }
+  },
+  "childPolicy": {
+    "note": "Not Soroi's 5-11 bracket.",
+    "0to4SharingParents": "Free (max 1 child)",
+    "5to12OwnRoomMax2": "75% of double room rack rate",
+    "5to12SharingParentsSupplement": { "usd": 40, "kes": 4000 }
+  },
+  "notes": "Rates confidential and non-commissionable for leisure travel up to 15 rooms/night. Based on minimum 300 room-nights/year production."
+}

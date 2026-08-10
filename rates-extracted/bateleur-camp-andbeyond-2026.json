@@ -1,0 +1,54 @@
+{
+  "$note": "Extracted 6 Aug 2026, same source as suyian-lodge-andbeyond-2026.json ('andBeyond Lodge Rates 2026 - Kenya STO20 - FB.pdf').",
+  "property": "Bateleur Camp",
+  "operator": "andBeyond",
+  "region": "Masai Mara National Reserve",
+  "tier": "STO 20% (Rack for reference), both Fully Inclusive and Full Board rate tables given",
+  "source": { "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/ANDBEYOND/andBeyond Lodge Rates 2026 - Kenya STO20 - FB.pdf", "validity": { "start": "2026-01-11", "end": "2027-01-10" } },
+  "seasons": { "high": "16 Jun-31 Oct; 21 Dec'26-05 Jan'27", "mid": "11 Jan-31 Mar; 01 Nov-20 Dec; 06-10 Jan'27", "low": "01 Apr-15 Jun" },
+  "rates": {
+    "currency": "USD", "unit": "per person per night sharing Luxury Tent (Family Tent = per Tent per night)",
+    "fullyInclusive": {
+      "luxuryTents": {
+        "rack": { "high": 2595, "mid": 1465, "low": 1245 },
+        "sto_1to3nights": { "high": 2080, "mid": 1175, "low": 1000 },
+        "sto_4to5nights": { "high": 1976, "mid": 1117, "low": 950 },
+        "stoLongStay_6plusNights": { "high": 1768, "mid": 999, "low": 850 }
+      },
+      "familyTent": {
+        "rack": { "high": 9085, "mid": 5130, "low": 4360 },
+        "sto_1to3nights": { "high": 7270, "mid": 4105, "low": 3490 },
+        "sto_4to5nights": { "high": 6907, "mid": 3900, "low": 3316 },
+        "stoLongStay_6plusNights": { "high": 6180, "mid": 3490, "low": 2967 },
+        "note": "Not valid Jun-Sep"
+      },
+      "localPilotDriverGuideRate": { "high": 1040, "mid": 588, "low": 500 }
+    },
+    "fullBoard": {
+      "luxuryTents": {
+        "rack": { "high": 2455, "mid": 1325, "low": 1105 },
+        "sto_1to3nights": { "high": 1965, "mid": 1060, "low": 885 },
+        "sto_4to5nights": { "high": 1867, "mid": 1007, "low": 841 },
+        "stoLongStay_6plusNights": { "high": 1671, "mid": 901, "low": 753 }
+      },
+      "familyTent": {
+        "rack": { "high": 8595, "mid": 4640, "low": 3870 },
+        "sto_1to3nights": { "high": 6880, "mid": 3715, "low": 3100 },
+        "sto_4to5nights": { "high": 6536, "mid": 3530, "low": 2945 },
+        "stoLongStay_6plusNights": { "high": 5848, "mid": 3158, "low": 2635 }
+      },
+      "note": "Full Board excludes safari activities, night game drives, and transfers (vs Fully Inclusive)."
+    }
+  },
+  "mandatoryFees": { "parkFee_perPersonPerDay": { "18plus": { "janJun_janPortion": 100, "julDec": 200 }, "9to17": 50, "0to8": "Free" } },
+  "childPolicy": {
+    "0to2sharing": "Free, no activities",
+    "3to5sharing": "Free, no activities",
+    "6to16sharing": "50% of adult rate",
+    "6to16ownRoom": "1st child adult rate, 2nd/3rd 50% (max 3/room)",
+    "childminders": "USD 5/child/hour"
+  },
+  "familyTentConfig": "1 Family Tent (2 tents linked by enclosed walkway), max 2 adults + 2 children (3 on request)",
+  "singleSupplement": "50% from 3rd single (11 Jan-31 May, 1 Nov-20 Dec); 50% on all singles (1 Jun-31 Oct, 21 Dec-10 Jan)",
+  "notes": "Park fees payable directly if guests transferred by road/self-drive. Rates confidential, nett, non-commissionable, VAT inclusive."
+}

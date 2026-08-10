@@ -1,0 +1,50 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftotext -layout. NOT a Soroi property. Nanyuki-area hotel/villa resort. Two source documents: a Sunworld-specific exclusive contract (Deluxe + Executive Suite only, narrower validity) and a general TO/TA contract rate sheet (more room categories incl. Villas, plus an Easter/Festive season). Deluxe figures match exactly between the two documents for Normal/High season.",
+  "property": "Maiyan (Maiyan Hotel Management)",
+  "region": "Nanyuki, Kenya",
+  "source": {
+    "sunworldExclusiveFile": "2026 CONTRACT RATES/KENYA/ACCOMODATION/MAIYAN/MAIYAN - SUNWORLD SAFARIS EXCLUSIVE CONTRACT RATES.pdf",
+    "sunworldValidity": { "start": "2026-02-27", "end": "2026-12-31" },
+    "generalToTaFile": "2026 CONTRACT RATES/KENYA/ACCOMODATION/MAIYAN/Maiyan TO-TA Rates 2025-2026 USD.pdf_NEW.pdf",
+    "note": "TO-TA file's Festive Season column header literally prints '23RD DEC 2024 - 2ND JAN 2025' - clearly a leftover typo from a prior-year template (should read 2025-2026 or 2026-2027 given the rest of the document is dated 2025-2026); reproduced as printed under 'easterFestive' but treat the exact festive year boundary as unconfirmed."
+  },
+  "confidence": "confirmed-2026-08-06",
+  "currency": "USD",
+  "unit": "per room per night, inclusive of 16% VAT, 2% training levy, 5% service charge",
+  "seasons": { "normal": ["03 Jan - 31 Mar", "01 May - 10 Jun", "01 Sep - 31 Oct"], "high": ["01-02 Apr & 07-30 Apr", "11 Jun - 31 Aug", "01 Nov - 22 Dec"], "easter": ["03 Apr - 06 Apr"], "festive": ["23 Dec - 2 Jan (year boundary as printed, see note above)"] },
+  "rooms": {
+    "deluxe": {
+      "normal": { "fb": { "single": 191, "double": 272 }, "hb": { "single": 166, "double": 221 }, "bb": { "single": 136, "double": 166 } },
+      "high": { "fb": { "single": 200, "double": 285 }, "hb": { "single": 170, "double": 230 }, "bb": { "single": 145, "double": 174 } },
+      "easter": { "fb": { "single": 255, "double": 315 }, "hb": { "single": 187, "double": 255 }, "bb": { "single": 170, "double": 191 } },
+      "verified": true
+    },
+    "masterKingRoom": {
+      "normal": { "fb": { "single": 234, "double": 315 }, "hb": { "single": 208, "double": 268 }, "bb": { "single": 187, "double": 213 } },
+      "high": { "fb": { "single": 247, "double": 340 }, "hb": { "single": 221, "double": 281 }, "bb": { "single": 196, "double": 221 } },
+      "easter": { "fb": { "single": 272, "double": 374 }, "hb": { "single": 247, "double": 306 }, "bb": { "single": 213, "double": 247 } },
+      "verified": true
+    },
+    "masterKingSuite_alsoLabeledExecutiveSuite": {
+      "normal": { "fb": { "single": 281, "double": 361 }, "hb": { "single": 251, "double": 306 }, "bb": { "single": 225, "double": 259 } },
+      "high": { "fb": { "single": 298, "double": 378 }, "hb": { "single": 264, "double": 319 }, "bb": { "single": 234, "double": 272 } },
+      "easter": { "fb": { "single": 327, "double": 417 }, "hb": { "single": 289, "double": 353 }, "bb": { "single": 259, "double": 298 } },
+      "confidenceNote": "The Sunworld-exclusive contract calls this category 'Executive Suite' with slightly different High-season single figures (FB single $279 vs TO-TA's $298 for Master King Suite) - likely the same physical room category under two different names between the two documents, but the High-season single figure doesn't match exactly (279 vs 298). Flag before assuming they're identical.",
+      "verified": true
+    },
+    "maiyanDoubleTwinSuiteMax4Guests": { "normal": { "fb": 604, "hb": 497, "bb": 395 }, "high": { "fb": 633, "hb": 523, "bb": 412 }, "easterFestive": { "fb": 693, "hb": 574, "bb": 455 }, "verified": true },
+    "maiyanLuxuryVillaMax6Guests": { "normal": { "fb": 829, "hb": 676, "bb": 514 }, "high": { "fb": 871, "hb": 710, "bb": 540 }, "easterFestive": { "fb": 956, "hb": 782, "bb": 595 }, "verified": true },
+    "maiyanSignatureVillaMax12Guests": { "normal": { "fb": 1764, "hb": 1424, "bb": 799 }, "high": { "fb": 1849, "hb": 1496, "bb": 842 }, "easterFestive": { "fb": 2036, "hb": 1645, "bb": 922 }, "verified": true }
+  },
+  "policies": {
+    "commissionable": false,
+    "groupRates": "15+ paying rooms negotiable ad hoc; rates otherwise apply to transient F.I.T. travellers only.",
+    "extraBed": { "amount": 80, "unit": "USD per bed per night, max 1 per room, incl. meals/taxes" },
+    "extraBedChild6to12": { "amount": 80, "unit": "USD per child per night, incl. meals" },
+    "maxOccupancy": 3,
+    "checkInOut": { "checkIn": "14:00", "checkOut": "10:00", "lateCheckout12to18": "50% of contracted rate", "lateCheckoutAfter18": "Full contracted rate" },
+    "cancellation": { "14to35daysGroup": "15%", "2to14daysGroup": "33%", "within48hoursOrNoShow": "100%" },
+    "paymentTerms": "Full pre-payment required unless credit arranged; 15% p.a. interest on overdue amounts.",
+    "easterFestiveNote": "Only Full Board package rate available for Easter/Festive bookings (per TO-TA doc)."
+  }
+}

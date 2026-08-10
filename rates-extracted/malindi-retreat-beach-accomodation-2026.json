@@ -1,0 +1,58 @@
+{
+  "$note": "Extracted 6 Aug 2026 directly from paginated source PDF (2 pages, single property, no adjacent-property risk). Notably simple structure: flat annual rates, no seasonality at all. FILENAME NOTE: saved under 'malindi-retreat-beach-accomodation-2026.json' (not the plain 'malindi-retreat-2026.json') because a separate parallel extraction batch independently produced a DIFFERENT 'malindi-retreat-2026.json' sourced from '2026 CONTRACT RATES/KENYA/ACCOMODATION/PAMOJA COLLECTION/Pamoja Collection -Malindi Retreat 2026 Rates.pdf' with wholly different (KSH, much higher) figures and a note that the same document bundles 'Hotel Rudi' and 'Mwanzo Lodge' rates too. See the CROSS-BATCH CONFLICT note below and the final report for details — this needs human reconciliation, not a silent pick-one resolution.",
+  "crossBatchConflict": {
+    "finding": "Two independent extractions exist for a property called 'Malindi Retreat', from two different source PDFs in two different SharePoint folders, with materially different figures and currency. THIS file was sourced from the folder explicitly assigned in this task's brief: '2026 CONTRACT RATES/KENYA/BEACH ACCOMODATION/MALINDI RETREAT/Malindi_TO Rates 2026 (USD).pdf' (Double B&B $110, Double HB $140, flat year-round, no seasons). The OTHER file (now living at rates-extracted/malindi-retreat-2026.json) came from '2026 CONTRACT RATES/KENYA/ACCOMODATION/PAMOJA COLLECTION/Pamoja Collection -Malindi Retreat 2026 Rates.pdf' (KSH rack/tour-operator tiers, e.g. Double B&B rack KSH 15,000 ≈ USD ~115 at typical exchange rates — actually roughly consistent in USD-equivalent terms with THIS file's $110-140 double rate, which is reassuring, but the two documents are NOT the same document and were not cross-checked against each other before either was written).",
+    "sharedThread": "Both this file's source PDF and the other batch's source PDF trace back to the same underlying operator: this file's own banking/contact details point to 'THE POT LTD' / info@hotelrudi.com (see structuralFindings below), and the other batch's file explicitly names 'The Pot Ltd (Pamoja Collection)' as the operator and bundles Hotel Rudi + Mwanzo Lodge + Malindi Retreat together. This strongly suggests Malindi Retreat, Hotel Rudi, and Mwanzo Lodge are commonly-operated/co-located properties marketed under multiple names across different rate documents in the archive — a genuine portfolio-naming complexity, not a simple duplicate.",
+    "recommendation": "Before quoting Malindi Retreat, reconcile which of the two source documents is more current/authoritative (check document dates/versions with Sunworld), and decide whether 'Malindi Retreat' should be quoted as its own line item or as a room category within the broader Hotel Rudi/Pamoja Collection property. Do not treat either file as sole truth without that reconciliation."
+  },
+  "property": "Malindi Retreat",
+  "region": "Malindi, Kenya Coast",
+  "tier": "Tour Operator Rate",
+  "residency": "Non-Resident (USD)",
+  "source": {
+    "file": "2026 CONTRACT RATES/KENYA/BEACH ACCOMODATION/MALINDI RETREAT/Malindi_TO Rates 2026 (USD).pdf",
+    "pdfPageIndex": 0,
+    "totalPages": 2,
+    "validity": { "start": "2026-01-01", "end": "2026-12-31" }
+  },
+  "confidence": "confirmed-2026-08-06",
+  "extractionMethod": { "note": "Read directly via pdftotext -layout across both pages. Simple single-table document." },
+  "structuralFindings": [
+    "FLAT, YEAR-ROUND rate — no Peak/Shoulder/Green or any season structure at all. Confirmed explicitly by the document's own validity line: 'valid from 01.01.2026 - 31.12.2026', one price for the whole year.",
+    "Rates are quoted per ROOM (Single/Double/Triple), not per person — payer books the room type directly rather than per-pax pricing.",
+    "Base meal plan choice is Bed & Breakfast or Half Board — no Full Board or All-Inclusive option offered at all.",
+    "A 'Dayroom (refreshing)' rate exists — a day-use room, separate product from an overnight stay.",
+    "Property has only 8.5 rooms total (stated literally as '8,5' in the source table) — a very small inventory; flag for availability awareness on any multi-pax quote.",
+    "NAME DISCREPANCY: the folder and quote filename are 'Malindi Retreat', and the header of this PDF says 'Malindi Retreat 2026 RATES', but every operational/contact detail in the document (banking account name 'THE POT LTD', email info@hotelrudi.com, and the 'Reservation Information' section) refers to 'Hotel Rudi'. This looks like a rebrand or the same property trading under two names — flag this explicitly on any quote using this property; confirm with Sunworld/the hotel which name a client-facing quote should use. See crossBatchConflict above — this is now corroborated by an independent parallel extraction of a 'Pamoja Collection' document that separately bundles Hotel Rudi, Mwanzo Lodge, and Malindi Retreat together.",
+    "Child policy age brackets (0-5 free, 6-12 = 50%, 12+ = full adult) differ from the 4-12 bracket seen at Lantana and the 2-13.9 bracket at Leopard Beach — check this property's own bracket, don't reuse another coastal property's child-age convention."
+  ],
+  "rates": {
+    "currency": "USD",
+    "unit": "per room per night (flat, no seasonality)",
+    "verified": true,
+    "singleBedAndBreakfast": { "qty": 1, "rate": 65 },
+    "singleHalfBoard": { "qty": 1, "rate": 85 },
+    "doubleBedAndBreakfast": { "qty": 2, "rate": 110 },
+    "doubleHalfBoard": { "qty": 2, "rate": 140 },
+    "tripleBedAndBreakfast": { "qty": 3, "rate": 160 },
+    "tripleHalfBoard": { "qty": 3, "rate": 210 },
+    "dayroomRefreshing": { "qty": 1, "rate": 30, "note": "Day-use room, not an overnight stay" }
+  },
+  "totalRooms": 8.5,
+  "childPolicy": {
+    "age0to5": "Free of charge",
+    "age6to12": "50% of the room rate, regardless of sharing with parents",
+    "age12Plus": "Full adult rate"
+  },
+  "taxesAndFees": { "note": "All prices inclusive of VAT and all government taxes." },
+  "cancellationPolicy": {
+    "accommodation": "Cancelled 5 days or less prior to arrival: full amount forfeited",
+    "events": "No refund on cancellation once confirmed by payment; increased participant count attracts additional charges at agreed rate"
+  },
+  "checkInOut": { "checkIn": "12:00 PM", "checkOut": "10:00 AM", "lateCheckOut": "Subject to availability and prior communication" },
+  "provisionalBookings": { "releasePolicy": "Released automatically 2 weeks after initial request, subject to room demand" },
+  "accessibilityNote": "Rooms located on 1st/2nd floors, stairs only — flag for guests with mobility issues.",
+  "notExtracted": {
+    "residentRates": "Malindi_TO Rates 2026 (KSH).pdf — not extracted (out of scope for this non-resident pass). Exists on file if needed."
+  }
+}

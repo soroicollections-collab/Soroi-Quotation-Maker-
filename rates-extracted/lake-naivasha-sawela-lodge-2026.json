@@ -1,0 +1,79 @@
+{
+  "property": "Lake Naivasha Sawela Lodges",
+  "operator": "Naivasha Country Hotel Ltd t/a Sawela Lodges",
+  "region": "Lake Naivasha",
+  "isSoroiProperty": false,
+  "sourceFiles": [
+    "2026 CONTRACT RATES/KENYA/ACCOMODATION/SAWELA LODGE/RACK RATES -2026 NON RESIDENTS.pdf",
+    "2026 CONTRACT RATES/KENYA/ACCOMODATION/SAWELA LODGE/Lake Naivasha Sawela Lodge 2026 rates. - RACK RATES -2026 NON RESIDENTS.pdf (confirmed distinct in content, not a duplicate)",
+    "2026 CONTRACT RATES/KENYA/ACCOMODATION/SAWELA LODGE/CONTRACTS  RATES (Revised) - JAN  TO DEC  -  2026.pdf",
+    "2026 CONTRACT RATES/KENYA/ACCOMODATION/SAWELA LODGE/Lake Naivasha Sawela Lodge 2026 rates. - CONTRACTS  RATES  - JAN  TO DEC  -  2026.pdf",
+    "2026 CONTRACT RATES/KENYA/ACCOMODATION/SAWELA LODGE/Lake Naivasha Sawela Lodge 2026 rates. - CONFERENCE & TEAM BUIDING PACKAGE 2026.pdf",
+    "2026 CONTRACT RATES/KENYA/ACCOMODATION/SAWELA LODGE/Lake Naivasha Sawela Lodge 2026 rates. - FESTIVE SEASON RATES -2O26.pdf"
+  ],
+  "skippedFiles": [
+    { "file": "Old/Dont Use old CONTRACTS  RATES  - JAN  TO DEC  -  2026.pdf", "reason": "Explicitly named 'Dont Use old' by the source folder owner - skipped per its own labeling." }
+  ],
+  "notes": [
+    "Sister property to Sawela Capella Lodge (same operator, same building/address, same contract T&Cs, but a DIFFERENT room lineup and DIFFERENT rates) - see sawela-capella-lodge-2026.json. Do not conflate the two.",
+    "Two rack/contract rate documents exist with the same filename pattern but genuinely different content: one titled 'CONTRACTS RATES (Revised)' is actually the Sawela Capella Lodge contract (misfiled/mislabeled at the top-level of this folder rather than nested under a Capella-specific name) - its content is captured in sawela-capella-lodge-2026.json instead, not here.",
+    "Non-Resident Rack rate is a single flat figure covering all 12 months of 2026 - no seasonality - unlike the more detailed seasonal Contract (Sunworld) rate.",
+    "Contract (Sunworld) rate is LOWER in low season than the flat Rack rate but HIGHER in high season for some categories - not a simple percentage-off relationship; both are quoted verbatim rather than forcing a discount-ratio interpretation."
+  ],
+  "currency": "USD",
+  "nonResidentRack_2026_perPersonPerNight_FB_flatAllYear": {
+    "superiorRoom": { "twin": 205, "single": 293, "thirdAdultSharing": 140, "childSharing4to11": "50%" },
+    "businessDeluxeRoom": { "twin": 222, "single": 308, "thirdAdultSharing": 156, "childSharing4to11": "50%" },
+    "twoBedroomExecutive_4pax": 838,
+    "verified": true
+  },
+  "contract_Sunworld_2026_perPersonPerNight_FB": {
+    "lowSeason_01Apr_30Jun_01Nov_22Dec2026": {
+      "superiorRoom": { "twin": 130, "single": 190, "thirdAdultSharing": 80, "childSharing4to12": "50%" },
+      "businessDeluxe": { "twin": 160, "single": 200, "thirdAdultSharing": 90, "childSharing4to12": "50%" },
+      "businessSuite": { "twin": 190, "single": 230, "thirdAdultSharing": 90, "childSharing4to11": "50%" },
+      "twoBedroomExecutiveSuite_4pax": 600
+    },
+    "highSeason_01Jan_31Mar_01Jul_31Oct_23to31Dec2026": {
+      "superiorRoom": { "twin": 160, "single": 230, "thirdAdultSharing": 80, "childSharing4to12": "50%" },
+      "businessDeluxe": { "twin": 180, "single": 250, "thirdAdultSharing": 100, "childSharing4to12": "50%" },
+      "businessSuite": { "twin": 190, "single": 260, "thirdAdultSharing": 90, "childSharing4to11": "50%" },
+      "twoBedroomExecutiveSuite_4pax": 700
+    },
+    "verified": true
+  },
+  "boatExcursion": { "raw": "US$50 per boat per hour, minimum 2 pax per boat", "verified": true },
+  "casualMeals": { "lunch": 35, "dinner": 45, "picnicLunchBox": 25, "halfBoardReduction": 5 },
+  "easterChristmasSupplement": { "raw": "US$45pp applies 24, 25, 26, 31 Dec & 1 Jan. Minimum stay 3 nights (24-26 Dec).", "verified": true },
+  "festiveSeasonRates_KES_24Dec2026_1Jan2027": {
+    "currency": "KES",
+    "commission": "10%, child rate net",
+    "superior": { "single": 26000, "double": 36000, "triple": 46000, "child4to12": 9000 },
+    "businessDeluxe": { "single": 28000, "double": 42000, "triple": 48000, "child4to12": 10500 },
+    "businessSuite": { "single": 30000, "double": 45000, "triple": 52000, "child4to12": 11250 },
+    "twoBedroomExecutiveSuite_4paxMax": { "single": 78000, "double": 78000, "triple": 78000, "child4to12": 19500 },
+    "minStay": "3 nights (24, 25, 26 December)",
+    "verified": true
+  },
+  "conferenceTeamBuilding_2026": {
+    "corporateRates_KES": { "singleStandard": 19000, "singleExecutive": 20000, "twinStandard": 28000, "twinExecutive": 30000, "tripleStandard": 36000 },
+    "nonResidentRates_USD": { "single": 220, "twin": 300 },
+    "dayConference_nonResidentialDelegates": { "usd": 50, "kesNet": 5000 },
+    "includes": ["Full board accommodation (residential package)", "Conference room use", "AM/PM tea/coffee with snacks", "1 soft drink per meal", "2x 500ml mineral water in conference", "Writing pad and pen", "Flip chart + 3 markers", "PA system", "Unlimited WiFi", "Access to grounds for team building"],
+    "extras": [{ "item": "Breakaway rooms (16-20 pax)", "amount": "KES25,000 each" }, { "item": "Board room supplement (incl. fresh juice/snacks)", "amount": "KES25,000" }, { "item": "LCD Projector", "amount": "KES7,000/day" }, { "item": "Video conference", "amount": "KES40,000/day" }],
+    "deposit": "80% upon confirmation, 20% at least 5 days prior to event",
+    "cancellation": "15-7 days: 50% of rate/room-night; <7 days or no-show: 100%",
+    "verified": true
+  },
+  "childPolicy": { "raw": "0-3yrs sharing with parents: free. 4-12yrs sharing with parents: 50% per person sharing. 4-12yrs own room: 75% (max 2 children); 3rd child pays double room rate.", "verified": true },
+  "singleRoomPolicy": { "raw": "Max 3 singles only - beyond that, 80% of double room rate or contract rate (whichever higher) charged per additional single.", "verified": true },
+  "policies": {
+    "tourLeaderDiscount": "1 free pax in 16th room for groups of 15+ paying rooms/night",
+    "releasePeriod": "Low season: 30 days; High season: 45 days",
+    "honeymoonOffer": "Fruit/flower basket, sparkling wine, double bed - for stays of 4+ nights",
+    "cancellation": "45-30 days: 15% of rate/room-night; 29-20 days: 25%; 19-15 days: 50%; <14 days or no-show: 100%",
+    "deposit": "25% deposit 45 days before arrival + full payment 7 days before arrival; within 30 days of arrival: 50% deposit + full payment 7 days before arrival",
+    "invoiceDispute": "Must be raised within 14 days of invoice receipt",
+    "creditFacility": "NIL"
+  }
+}

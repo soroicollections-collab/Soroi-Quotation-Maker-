@@ -1,0 +1,65 @@
+{
+  "property": "Oserengoni Wildlife Sanctuary - Chui Lodge & Chui Bush Homes (Chui, Kiboko, Seriniti House)",
+  "operator": "La Pieve Limited",
+  "region": "Naivasha area (Oserengoni Wildlife Sanctuary)",
+  "isSoroiProperty": false,
+  "sourceFiles": [
+    "2026 CONTRACT RATES/KENYA/ACCOMODATION/OSERENGONI/15% Citizen Nett Rates 2025 - 2026 Oserengoni(Chui Lodge,Bush Homes).pdf",
+    "2026 CONTRACT RATES/KENYA/ACCOMODATION/OSERENGONI/T&C'S 15% Citizen Nett Rates 2025 - 2026 Oserengoni(Chui Lodge,Bush Homes).pdf"
+  ],
+  "currency": "KES",
+  "validity": "1 January 2025 - 31 December 2026",
+  "notes": [
+    "ONLY a 'Resident Nett Rates 15%' (Citizen) tier is on file for this property - no Rack or Non-Resident rate card exists in this folder. This means non-resident/rack pricing for Oserengoni CANNOT be quoted from what's on file - would require a fresh extraction from the live SharePoint source or direct enquiry.",
+    "AMBIGUITY: the source table lists 4 numeric rows per room category with only 2 row labels visible ('SUN - THUR' and 'FRI & SAT'), but there are clearly 2 unlabeled rows in between suggesting a Low/High season split flattened into one column during PDF-to-table extraction. The exact season-to-row mapping could not be reliably determined from the layout - all 4 raw figures are recorded below per category, in table order, without assigning season labels. Do not assume which pair is Low vs High without checking the original PDF visually.",
+    "High season is stated separately in the source notes as 1 June-30 September and 20 December-10 January - this at least confirms a Low/High split exists, just not which numeric row pairs to which season."
+  ],
+  "chuiLodge_residentNett15pct_perNight_KES_rowOrderAsInSource": {
+    "standard": {
+      "row1_labeled_SUN_THUR": { "perAdultSharing": 26880, "singleRoomRate": 34390, "childSharingWithAdult3to11": 13440 },
+      "row2_unlabeled": { "perAdultSharing": 22848, "singleRoomRate": 29232, "childSharingWithAdult3to11": 11424 },
+      "row3_unlabeled": { "perAdultSharing": 30770, "singleRoomRate": 39670, "childSharingWithAdult3to11": 15385 },
+      "row4_labeled_FRI_SAT": { "perAdultSharing": 26154, "singleRoomRate": 33720, "childSharingWithAdult3to11": 13077 }
+    },
+    "deluxe": {
+      "row1_labeled_SUN_THUR": { "perAdultSharing": 29660, "singleRoomRate": 37170, "childSharingWithAdult3to11": 14830 },
+      "row2_unlabeled": { "perAdultSharing": 25211, "singleRoomRate": 31595, "childSharingWithAdult3to11": 12606 },
+      "row3_unlabeled": { "perAdultSharing": 33555, "singleRoomRate": 42460, "childSharingWithAdult3to11": 16777 },
+      "row4_labeled_FRI_SAT": { "perAdultSharing": 28520, "singleRoomRate": 36091, "childSharingWithAdult3to11": 14260 }
+    },
+    "exclusiveVehicleUse": "US$250/day within Oserengoni Conservancy (subject to availability)",
+    "verified": true,
+    "confidenceNote": "[Unverified row/season mapping] See top-level notes - the 4 rows likely represent Low/High season x weekday/weekend but the exact assignment could not be confirmed from the flattened table layout."
+  },
+  "chuiBushHomes_residentNett15pct_perNight_KES_rowOrderAsInSource": {
+    "houses": "Chui, Kiboko and Seriniti House (single per-adult-sharing rate applies to all three)",
+    "row1_labeled_SUN_THUR": { "perAdultSharing": 26880, "childSharingWithAdult3to11": 13440 },
+    "row2_unlabeled": { "perAdultSharing": 22848, "childSharingWithAdult3to11": 11424 },
+    "row3_unlabeled": { "perAdultSharing": 30770, "childSharingWithAdult3to11": 15385 },
+    "row4_labeled_FRI_SAT": { "perAdultSharing": 26154, "childSharingWithAdult3to11": 13077 },
+    "verified": true,
+    "confidenceNote": "[Unverified row/season mapping] Same ambiguity as Chui Lodge above."
+  },
+  "includes": ["Full board accommodation", "Water, soft drinks, house beers & wines", "Bush breakfast", "Morning/evening/night game drives", "Sundowner", "Boat ride", "Mula Hill climb", "Organic vegetable and dairy farm visit"],
+  "bushHomesAdditionalIncludes": ["Exclusive use of safari vehicle", "Own house team (guide, chef, waiter, housekeeper)"],
+  "excludes": [
+    "Oserengoni Wildlife Sanctuary fees: KES 3,350/adult, KES 1,675/child",
+    "Premium spirits",
+    "Extra activities: horse riding, bush dinner, Hell's Gate visit, Crescent Island visit, Mt. Longonot hill climb, Lake Elementaita visit, Lake Nakuru National Park, Eburu forest and crater lake visit",
+    "Bush Homes also exclude: speed boat riding (in addition to the above)"
+  ],
+  "extraLunchOrPackedLunch": "US$40 per meal",
+  "childPolicy": { "raw": "If two children share a room: 1st child full adult price, 2nd child 50%.", "verified": true },
+  "seasonalSupplements": {
+    "christmas": "US$40/adult per night (half price for children), applies 24, 25, 26, 31 Dec, 1 Jan",
+    "easter": "US$40/adult per night (half price for children), applies Easter Friday-Easter Monday",
+    "minStay": "Easter and Christmas bookings require minimum 2-night stay"
+  },
+  "highSeason": "1 June - 30 September and 20 December - 10 January",
+  "policies": {
+    "checkIn": "12:00", "checkOut": "10:00",
+    "deposit": "30% non-refundable deposit to confirm booking; balance due 60 days prior to arrival. Confirmation voucher issued only on 100% payment.",
+    "cancellation": "65-40 days: 30% of total cost; 39-30 days: 50%; 29 days to no-show: 100%",
+    "paymentPayableTo": "La Pieve Ltd"
+  }
+}

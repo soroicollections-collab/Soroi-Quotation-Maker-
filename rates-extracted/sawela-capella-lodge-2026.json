@@ -1,0 +1,49 @@
+{
+  "property": "Sawela Capella Lodge",
+  "operator": "Naivasha Country Hotel Ltd t/a Sawela Lodges (Capella)",
+  "region": "Lake Naivasha (same address/building as Lake Naivasha Sawela Lodges)",
+  "isSoroiProperty": false,
+  "sourceFiles": [
+    "2026 CONTRACT RATES/KENYA/ACCOMODATION/SAWELA LODGE/RACK RATES -2026 NON RESIDENTS.pdf",
+    "2026 CONTRACT RATES/KENYA/ACCOMODATION/SAWELA LODGE/CONTRACTS  RATES (Revised) - JAN  TO DEC  -  2026.pdf",
+    "2026 CONTRACT RATES/KENYA/ACCOMODATION/SAWELA LODGE/capella revised rates-2026.pdf"
+  ],
+  "skippedFiles": [
+    { "file": "RESIDENT RATES 2026.pdf", "reason": "Despite the filename, this document's own header states 'RESIDENT RATES - JAN 01ST to DEC 23RD 2025' - it is a 2025-dated card, not 2026. Superseded by 'capella revised rates-2026.pdf' (genuinely 2026-dated, lower figures: e.g. Deluxe Double 26,000 KES vs the 2025 file's 35,000 KES). Not used as current 2026 data; captured below only from the genuinely-2026 file." },
+    { "file": "Old/Dont USe Old SAWELA CAPELLA RESIDENT RATES 2026.pdf", "reason": "Explicitly named 'Dont USe Old' by the source folder owner - skipped per its own labeling." }
+  ],
+  "notes": [
+    "Sister property to Lake Naivasha Sawela Lodges (same operator/address/contract T&Cs) but a distinct room lineup (Deluxe Rooms only) and distinct rates - see lake-naivasha-sawela-lodge-2026.json. Do not conflate the two.",
+    "Only one room category (Deluxe Rooms) is priced for Capella, vs Sawela Lodges' four categories (Superior/Business Deluxe/Business Suite/2BR Executive)."
+  ],
+  "currency": { "nonResident": "USD", "resident": "KES", "verified": true },
+  "nonResidentRack_2026_perPersonPerNight_FB_flatAllYear_deluxeRoom": { "twin": 222, "single": 308, "thirdAdultSharing": 156, "childSharing4to11": "50%", "verified": true },
+  "nonResidentContract_Sunworld_2026_perPersonPerNight_FB_deluxeRoom": {
+    "lowSeason_01Apr_30Jun_01Nov_23Dec2026": { "twin": 130, "single": 200, "thirdAdultSharing": 70, "childSharing4to12": "50%" },
+    "highSeason_01Jan_31Mar_01Jul_31Oct_23to31Dec2026": { "twin": 160, "single": 250, "thirdAdultSharing": 100, "childSharing4to12": "50%" },
+    "verified": true
+  },
+  "residentRates_2026_KES_perRoom_deluxeRoom": {
+    "validity": "1 January - 23 December 2026",
+    "commission": "10% for bona fide travel agents",
+    "standard": { "doubleTwin": 26000, "single": 20000, "triple": 33000, "childSharing4to12": 6500 },
+    "festivePeriod_24Dec2026_01Jan2027": { "doubleTwin": 40000, "single": 27000, "triple": 56000, "childSharing4to12": 10000 },
+    "verified": true,
+    "confidenceNote": "Requires proof of residency at check-in."
+  },
+  "casualMeals_KES": { "breakfast": 2500, "lunchWithSoftDrink": 3000, "dinnerWithSoftDrink": 4000 },
+  "casualMeals_USD_nonResidentContract": { "lunch": 35, "dinner": 45, "picnicLunchBox": 25, "halfBoardReduction": 5 },
+  "extraActivities_KES": { "swimmingOnly": 1000, "easterSupplementAdult": 2500, "easterSupplementChild": 1250, "xmasLunchAdult": 4000, "xmasLunchKids": 2000 },
+  "childPolicy": { "raw": "0-3yrs sharing with parents: free. 4-12yrs sharing with parents: 50% of per person sharing (not commissionable). 4-12yrs own room: 75% of double adult rate, max 2 children.", "verified": true },
+  "singleRoomPolicy": { "raw": "(Non-resident contract) Max 3 singles only - beyond that, double room rate charged on each additional single.", "verified": true },
+  "policies": {
+    "tourLeaderDiscount": "1 free pax in 16th room for groups of 15+ paying rooms/night",
+    "releasePeriod": "Low season: 30 days; High season: 45 days",
+    "honeymoonOffer": "Fruit/flower basket, sparkling wine, double bed - for stays of 4+ nights",
+    "nonResidentCancellation": "45-30 days: 15% of rate/room-night; 29-20 days: 25%; 19-15 days: 50%; <14 days or no-show: 100%",
+    "residentCancellation": "15-7 days: 100% cancellation charge; <7 days or no-show: 100% of net booking value",
+    "deposit": "25% deposit 45 days before arrival + full payment 7 days before arrival; within 30 days of arrival: 50% deposit + full payment 7 days before arrival",
+    "invoiceDispute": "Must be raised within 14 days of invoice receipt",
+    "creditFacility": "NIL"
+  }
+}

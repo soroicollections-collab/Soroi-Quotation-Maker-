@@ -1,0 +1,90 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftotext -layout, read across all 3 source PDFs page by page (each camp has its own clearly-labeled section, low misattribution risk). NOT Soroi properties. Multi-property document: Kicheche operates 4 camps across 2 regions (Masai Mara conservancies + Laikipia/Ol Pejeta), plus a standalone multi-camp 'Walking Wilderness' package.",
+  "operator": "Kicheche Camps",
+  "properties": ["Kicheche Mara North (Mara North Conservancy)", "Kicheche Bush Olare (Olare Motorogi Conservancy)", "Kicheche Valley Naboisho (Naboisho Conservancy)", "Kicheche Laikipia (Ol Pejeta Conservancy)"],
+  "source": {
+    "rackFile": "2026 CONTRACT RATES/KENYA/ACCOMODATION/KICHECHE CAMP/Kicheche 2026 Camps RACK Rates.pdf (issued 5 Jun 2025)",
+    "prefToFile": "2026 CONTRACT RATES/KENYA/ACCOMODATION/KICHECHE CAMP/Kicheche 2026 Camps PREF TO Rates.pdf (updated 24 Jul 2025) - contains BOTH Nett (preferred agent) and Rack figures side by side, confirmed identical Rack figures to the standalone Rack file",
+    "laikipiaFbNettFile": "2026 CONTRACT RATES/KENYA/ACCOMODATION/KICHECHE CAMP/2026 Kicheche FB Rates.pdf (issued 4 Dec 2025) - Kicheche Laikipia ONLY"
+  },
+  "confidence": "confirmed-2026-08-06",
+  "confidenceNote_criticalDiscrepancy": "UNRESOLVED CONFLICT for Kicheche Laikipia pricing across two source files, both on file in the same folder and both labeled 'Nett'/'Full Board': the standalone '2026 Kicheche FB Rates.pdf' (issued 4 Dec 2025) states Peak adult $470, Mid $360, Regular $325; single supplement Peak $185/Mid $110/Regular $110. The 'PREF TO Rates.pdf' (updated 24 Jul 2025) states its own 'Nett Rates' for Kicheche Laikipia as Peak adult $645, Mid $485, Regular $425 - single supplement Peak $180/Mid $115/Regular $105. These are materially different adult base rates for what should be the same Nett/preferred tier (FB Rates file is ~$175-200 lower per night at every season). Conservancy fees match exactly between the two documents ($187 adult/$94 child), so it is not a currency or fee-inclusion difference. The FB Rates file is dated later (Dec 2025) than the PREF TO file (Jul 2025) which might suggest it supersedes it, but it is also the ONLY one of the three source files that does not carry a Rack-rate column for comparison, and its own child/young-adult age brackets and structure differ slightly (no explicit '12-17 young adult' row, unlike PREF TO/Rack). Do not silently pick one - confirm directly with Kicheche which Laikipia Nett rate is current before quoting.",
+  "currency": "USD",
+  "seasons": {
+    "peak": "01 Jul - 31 Oct 26 & 20 Dec 26 - 02 Jan 27",
+    "mid": "03 Jan - 28 Feb 26",
+    "regular": "01 Mar - varies by camp (see closure dates) & 01 Nov - 19 Dec 26"
+  },
+  "kicheceMaraNorth": {
+    "closureDates": "Closes 01 Apr, reopens 23 May 2026",
+    "minStay": 2,
+    "childAgeLimit": "None stated (uses 3-11 child bracket)",
+    "rack": { "peak": { "adult": 995, "youngAdult12to17": 750, "child3to11": 500, "singleSupp": 260 }, "mid": { "adult": 730, "youngAdult12to17": 550, "child3to11": 365, "singleSupp": 175 }, "regular": { "adult": 625, "youngAdult12to17": 470, "child3to11": 315, "singleSupp": 165 } },
+    "nettPrefTO": { "peak": { "adult": 745, "youngAdult12to17": 560, "child3to11": 375, "singleSupp": 195 }, "mid": { "adult": 545, "youngAdult12to17": 410, "child3to11": 275, "singleSupp": 130 }, "regular": { "adult": 470, "youngAdult12to17": 355, "child3to11": 235, "singleSupp": 125 } },
+    "conservancyFee": { "adult": 130, "childOrYoungAdult3to17": 65 },
+    "familySuite": { "rack": { "peak": 3980, "mid": 2920, "regular": 2500 }, "nett": { "peak": 2980, "mid": 2180, "regular": 1880 }, "capacity": 5, "note": "Excludes conservancy fees" },
+    "verified": true
+  },
+  "kicheceBushOlare": {
+    "closureDates": "Closes 01 Apr, reopens 23 May 2026",
+    "minStay": 2,
+    "childAgeLimit": "7+ years",
+    "rack": { "peak": { "adult": 1095, "youngAdult12to17": 825, "child7to11": 550, "singleSupp": 295 }, "mid": { "adult": 840, "youngAdult12to17": 630, "child7to11": 420, "singleSupp": 200 }, "regular": { "adult": 765, "youngAdult12to17": 575, "child7to11": 385, "singleSupp": 185 } },
+    "nettPrefTO": { "peak": { "adult": 820, "youngAdult12to17": 615, "child7to11": 410, "singleSupp": 220 }, "mid": { "adult": 630, "youngAdult12to17": 475, "child7to11": 315, "singleSupp": 150 }, "regular": { "adult": 570, "youngAdult12to17": 430, "child7to11": 285, "singleSupp": 135 } },
+    "conservancyFee": { "adult": 130, "childOrYoungAdult7to17": 65 },
+    "familySuite": { "rack": { "peak": 4380, "mid": 3360, "regular": 3060 }, "nett": { "peak": 3280, "mid": 2520, "regular": 2280 }, "capacity": 5, "note": "Excludes conservancy fees" },
+    "verified": true
+  },
+  "kicheceValleyNaboisho": {
+    "closureDates": "Closes 10 Apr, reopens 01 Jun 2026",
+    "minStay": 2,
+    "childAgeLimit": "7+ years",
+    "rack": { "peak": { "adult": 1095, "youngAdult12to17": 825, "child7to11": 550, "singleSupp": 295 }, "mid": { "adult": 840, "youngAdult12to17": 630, "child7to11": 420, "singleSupp": 200 }, "regular": { "adult": 765, "youngAdult12to17": 575, "child7to11": 385, "singleSupp": 185 } },
+    "nettPrefTO": { "peak": { "adult": 820, "youngAdult12to17": 615, "child7to11": 410, "singleSupp": 220 }, "mid": { "adult": 630, "youngAdult12to17": 475, "child7to11": 315, "singleSupp": 150 }, "regular": { "adult": 570, "youngAdult12to17": 430, "child7to11": 285, "singleSupp": 135 } },
+    "conservancyFee": { "adult": 130, "childOrYoungAdult7to17": 65 },
+    "familySuite": { "rack": { "peak": 4380, "mid": 3360, "regular": 3060 }, "nett": { "peak": 3280, "mid": 2520, "regular": 2280 }, "capacity": 5, "note": "Excludes conservancy fees" },
+    "extraTransferFee": { "amount": 200, "note": "Olkiombo departures / Mombasa Air Ol Kiombo Airstrip pickup/dropoff" },
+    "honeymoonOffer": "Brides get 25% off accommodation Jul-Sep, 50% off rest of year, + free 30-min massage (travel within 12 months of wedding)",
+    "verified": true
+  },
+  "kicheceLaikipia_olPejeta": {
+    "closureDates": "Closes 10 Apr, reopens 23 May 2026",
+    "childAgeLimit": "None stated (uses 3-11 child bracket)",
+    "rack": { "peak": { "adult": 860, "youngAdult12to17": 645, "child3to11": 430, "singleSupp": 245 }, "mid": { "adult": 650, "youngAdult12to17": 490, "child3to11": 325, "singleSupp": 155 }, "regular": { "adult": 570, "youngAdult12to17": 430, "child3to11": 285, "singleSupp": 140 } },
+    "nettPrefTO_seeDiscrepancyNote": { "peak": { "adult": 645, "youngAdult12to17": 490, "child3to11": 325, "singleSupp": 180 }, "mid": { "adult": 485, "youngAdult12to17": 365, "child3to11": 245, "singleSupp": 115 }, "regular": { "adult": 425, "youngAdult12to17": 320, "child3to11": 215, "singleSupp": 105 } },
+    "nettFbRatesFile_seeDiscrepancyNote": { "peak": { "adult": 470, "child3to11": 235, "singleSupp": 185 }, "mid": { "adult": 360, "child3to11": 180, "singleSupp": 110 }, "regular": { "adult": 325, "child3to11": 163, "singleSupp": 110 } },
+    "conservancyFee": { "adultOrYoungAdult": 187, "child3to11": 94, "note": "Ol Pejeta - Citizen KSh2,000, Resident KSh3,500 (per FB Rates file); vehicle entrance KSh1,000/night" },
+    "familySuite": { "rack": { "peak": 3440, "mid": 2600, "regular": 2280 }, "nettPrefTO": { "peak": 2580, "mid": 1940, "regular": 1700 }, "nettFbRatesFile": { "peak": 1880, "mid": 1440, "regular": "1300 (labeled GREEN in that file, not REGULAR)" }, "capacity": 5, "note": "Excludes conservancy fees. Family suite figures ALSO diverge between the two Nett sources, consistent with the base-rate discrepancy noted above." },
+    "tourLeaderTent": { "amount": 85, "unit": "USD per night, excl. conservancy fees, per FB Rates file; only one tent, must be pre-booked, guide must be KPSGA Silver rated" },
+    "verified": true
+  },
+  "walkingWildernessPackage": {
+    "description": "5-night exclusive-basis package: 2 nights Kicheche Valley Naboisho + 1 night mobile Wild Camping (walk across Naboisho Conservancy) + 2 nights Kicheche Bush Olare (walk through Olare Motorogi Conservancy). 16+ only on walks.",
+    "unit": "per person sharing, min 2 pax, inclusive of conservancy fees",
+    "rack": { "peak": 6325, "mid": 5050, "regular": 4675 },
+    "nettPrefTO": { "peak": 4920, "mid": 3970, "regular": 3670 },
+    "verified": true
+  },
+  "sharedPolicies": {
+    "singleSupplement": "Valid for 2 singles; 3rd+ single charged double the supplement.",
+    "youngAdultRule": "12-17 year olds qualify for child rates only if sharing a Triple or Quad.",
+    "lateDeparture": { "afterMidday": "Vacate tent by 10am", "supplement": "$150pp peak season, $100pp mid/regular seasons" },
+    "exclusiveVehicle": { "standard": { "peak": { "rack": 400, "nett": 360 }, "midRegular": { "rack": 350, "nett": 320 } }, "photography": { "peak": { "rack": 500, "nett": 400 }, "midRegular": { "rack": 450, "nett": 360 } }, "note": "4-6 guest bookings get exclusive vehicle free automatically. Families with children under 7 MUST book exclusive vehicle." },
+    "tourLeaderDriverGuide": { "amount": 100, "unit": "USD per night accommodation, plus conservancy fees: Mara Non-Resident $130/night, Resident/Citizen $25; Laikipia Non-resident $187, Resident KSh3,500, Citizen KSh2,000" },
+    "wildCamping": { "amount": 200, "nettAmount": 170, "unit": "USD pp supplement, min 2 pax; under-16s not allowed on walks" },
+    "maasaiMaraReserveVisit": { "adult": 200, "childUnder17": 50, "note": "Additional charge if guests want to visit the Reserve itself (not needed for normal game viewing at these camps); exclusive vehicle charge also applies outside Jul-Oct peak migration." },
+    "longStayDiscount": "10% off for 6+ nights (also applies to exclusive vehicle charges)",
+    "conservancySafari6for5": "Combine Kicheche Laikipia with any Mara camp - free night at Laikipia. Not combinable with other offers; conservancy fees still payable on free nights.",
+    "interCampTransfersMara": "Complimentary between Kicheche's own Mara camps.",
+    "deposit": "20% non-refundable to confirm booking",
+    "fullPayment": "45 days prior to arrival",
+    "cancellation": { "45DaysPlus": "Loss of deposit", "45to31days": "50% charge", "30DaysOrLess": "100% charge" },
+    "groupCancellation3PlusTents": { "90DaysPlus": "Loss of deposit", "90to31days": "50% charge", "30DaysOrLess": "100% charge" },
+    "insuranceRequirement": "Comprehensive travel, medical, and emergency evacuation insurance required for all guests.",
+    "verified": true
+  },
+  "transfersAndActivities": {
+    "note": "Detailed inter-camp and Mara-wide transfer pricing tables (per vehicle, e.g. Kicheche-to-Governors Camp $200/1h15m, Kicheche-to-Angama $350/2h, etc.) and a Laikipia transfer table (Kicheche Laikipia to Lewa/Solio $350, Meru/Samburu Gate $420, Loisaba/Sabuk $460, Nairobi $420) are on file in both the RACK and PREF TO documents (identical figures in both) - not fully reproduced here since they are transfer logistics rather than accommodation rates, but available in the source PDFs if a specific route is needed for an itinerary.",
+    "activitiesSample": { "maasaiVillageVisit": 30, "hotAirBalloonSafari": "At operator's cost, ~$250pp inclusive of park fees", "mountKenyaDayExcursionLaikipia": "Min 2 pax, pre-booked", "ngareNdareForestVisitLaikipia": { "2pax": 250, "3pax": 170, "4to6pax": 120 }, "antiPoachingDogsDisplayLaikipia": 70, "endangeredSpeciesEnclosureLaikipia": 70 }
+  }
+}

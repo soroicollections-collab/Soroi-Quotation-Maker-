@@ -1,0 +1,24 @@
+{
+  "$note": "Extracted 6 Aug 2026 from the same Asilia workbook. Only Kenya Asilia camp outside the Mara (Laikipia/Ol Pejeta) and the only one of the 4 with both Game Package AND Full Board options.",
+  "property": "Ol Pejeta Bush Camp",
+  "operator": "Asilia Africa",
+  "region": "Ol Pejeta Conservancy, Laikipia",
+  "tier": "Standard net rate (RSP x 0.75)",
+  "source": { "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/ASILIA/Asilia-Contract-Rates-26-27.xlsx", "validity": { "start": "2026-06-01", "end": "2027-05-31" } },
+  "mealPlan": "Full Board and Game Package both offered",
+  "seasons": { "high": "1 Jul-31 Oct, 20 Dec-5 Jan", "low": "1-30 Jun, 1 Nov-19 Dec, 6 Jan-31 Mar", "green": "1-30 Apr", "closed": "1-31 May" },
+  "rates": {
+    "currency": "USD", "unit": "per person per night",
+    "gamePackage": {
+      "rsp": { "high": { "sharing": 860, "single": 1290, "triple": 716.67 }, "low": { "sharing": 710, "single": 1065, "triple": 591.67 }, "green": { "sharing": 600, "single": 900, "triple": 500 } },
+      "standardNet": { "high": { "sharing": 645, "single": 967.5, "triple": 537.5 }, "low": { "sharing": 532.5, "single": 798.75, "triple": 443.75 }, "green": { "sharing": 450, "single": 675, "triple": 375 } }
+    },
+    "fullBoard": {
+      "rsp": { "high": { "sharing": 735, "single": 1102.5, "triple": 612.5 }, "low": { "sharing": 585, "single": 877.5, "triple": 487.5 }, "green": { "sharing": 475, "single": 712.5, "triple": 395.83 } },
+      "standardNet": { "high": { "sharing": 551.25, "single": 826.875, "triple": 459.375 }, "low": { "sharing": 438.75, "single": 658.125, "triple": 365.625 }, "green": { "sharing": 356.25, "single": 534.375, "triple": 296.875 } }
+    }
+  },
+  "mandatoryFees": { "unit": "per person per night", "asiliaConservationCharge": 10, "conservancyFee": { "adult": 110, "child3to11": 55 }, "concessionFee": { "adult": 77.72, "child3to11": 38.86 } },
+  "childPolicy": { "5to18": "50% of adult sharing rate", "19plus": "Full adult rate", "under12MustShareWithAdult": true, "under5": "Not permitted unless exclusive booking" },
+  "notes": "Tier classified 'Comfort' in Asilia's internal camp tier list. Closed May 2026."
+}

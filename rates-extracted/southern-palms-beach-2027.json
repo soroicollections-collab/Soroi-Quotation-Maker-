@@ -1,0 +1,83 @@
+{
+  "$note": "Extracted 6 Aug 2026, read directly from single-page PDFs (pdftotext -layout, poppler). Southern Palms Beach Resort — non-Soroi, Diani Beach. Two source documents used for 2027: the USD 'STO RATES – 2026/2027' card (covers 01.12.26-30.11.27) and the KES 'TARIFF RATES' card titled '2026/2027' in-document but whose actual date bands only run 01.12.26-30.11.27 (see gap note). This same '2026-2027 TARIFF RATES' PDF is filed identically (same bytes not checked, but identical filename/size) in both the 2026 and 2027 SharePoint folders — it's one document representing the Dec2026-Nov2027 cycle, just cross-listed in both year folders.",
+  "property": "Southern Palms Beach Resort",
+  "region": "Diani Beach (South Coast)",
+  "residency": "STO tier is the general tour-operator (non-resident-facing) trade rate. The KES 'TARIFF RATES' document (no '-RESIDENTS' suffix, unlike the 2026 Resident file) is presumed to be the Non-Resident/published tariff, but this is [Inference] — the document itself does not explicitly say 'Non-Resident' anywhere in the extracted text. Flag before quoting a client off this KES figure.",
+  "source": {
+    "stoFile": "2027 CONTRACT RATES/KENYA/BEACH ACCOMODATION/SOUTHERN PALMS BEACH/2026 -2027 STO RATES - Southern Palms Beach Resort.pdf",
+    "tariffFile": "2027 CONTRACT RATES/KENYA/BEACH ACCOMODATION/SOUTHERN PALMS BEACH/2026-2027 TARIFF RATES - SOUTHERN PALMS BEACH RESORT..pdf",
+    "pdfPageIndex": [0],
+    "stoDocumentDate": "26.02.26",
+    "tariffDocumentDate": "26.02.26",
+    "validity": { "sto": { "start": "2026-12-01", "end": "2027-11-30" }, "tariff": { "start": "2026-12-01", "end": "2027-11-30" } },
+    "duplicateFilingNote": "Both PDFs (same filenames, same sizes) also exist inside the 2026 CONTRACT RATES SOUTHERN PALMS BEACH folder. Not re-verified byte-for-byte, but same name/size in both locations — treated as the same document filed in two year-folders, not two different rate cards."
+  },
+  "confidence": "confirmed-2026-08-06",
+  "extractionMethod": { "note": "Read directly, single-page documents, no multi-property misattribution risk." },
+  "structuralFindings": [
+    "GAP: despite being titled '2026/2027' inside the PDF, the TARIFF RATES document's actual date bands only start 1 December 2026 — there is no non-resident-equivalent KES tariff for Jan-Nov 2026 anywhere in either the 2026 or 2027 folder. Only the (Resident-labelled) KES tariff and the USD STO rate cover that window — see southern-palms-beach-2026.json.",
+    "STO rate table again priced PER PERSON IN DOUBLE + SINGLE OCCUPANCY, one base room category ('Superior room') with per-night-per-person supplements for 3 upgraded room types.",
+    "All Inclusive (AI) meal plan throughout, same as 2026.",
+    "Ocean Front Deluxe room supplement DROPPED from $135 pppd (2025/2026 STO card) to $80 pppd (2026/2027 STO card) — a genuine year-over-year rate change, not an extraction error. Double-checked against both source PDFs directly.",
+    "Cancellation policy tightened for 2026/2027: 4-1 day band moved from 75%->80%, No-show moved from 80%->100% (vs the 2025/2026 STO card)."
+  ],
+  "seasons": {
+    "note": "Named by explicit From/To date bands, not Peak/Shoulder/Green labels.",
+    "dateBands": [
+      { "range": "01.12.26 - 22.12.26", "sto_pp_double": 170, "sto_single": 255 },
+      { "range": "23.12.26 - 03.01.27", "sto_pp_double": 268, "sto_single": 402, "note": "Festive peak, min 5-night stay. Gala dinner supplement 31 Dec 2026: $115pp, $57.50 child." },
+      { "range": "04.01.27 - 30.04.27", "sto_pp_double": 170, "sto_single": 255 },
+      { "range": "01.05.27 - 30.06.27", "sto_pp_double": 134, "sto_single": 201 },
+      { "range": "01.07.27 - 31.08.27", "sto_pp_double": 170, "sto_single": 255 },
+      { "range": "01.09.27 - 30.11.27", "sto_pp_double": 151, "sto_single": 227 }
+    ]
+  },
+  "rates": {
+    "sto": {
+      "currency": "USD",
+      "unit": "per person per night, Superior Room, All Inclusive",
+      "roomTypeSupplementsPerPersonPerDay": {
+        "superiorDeluxe": { "amount": 30, "childAmount": 15 },
+        "oceanFront": { "amount": 47, "childAmount": 23.5 },
+        "oceanFrontDeluxe": { "amount": 80, "childAmount": 40 }
+      }
+    },
+    "tariff": {
+      "currency": "KES",
+      "unit": "per room per night, All Inclusive (Double / Single)",
+      "confidenceNote": "[Unverified] whether this is truly the Non-Resident tier — the source document doesn't self-label residency. Confirm with Sunworld before quoting a non-resident client off this KES figure as a rack rate.",
+      "dateBands": [
+        { "range": "01.12.26 - 22.12.26", "superior": { "double": 48500, "single": 36375 }, "superiorDeluxe": { "double": 52500, "single": 39375 }, "sideSeaviewDeluxe": { "double": 54500, "single": 40875 }, "oceanFront": { "double": 59500, "single": 44625 }, "oceanFrontDeluxe": { "double": 67500, "single": 50625 } },
+        { "range": "23.12.26 - 03.01.27", "superior": { "double": 76000, "single": 57000 }, "superiorDeluxe": { "double": 80000, "single": 60000 }, "sideSeaviewDeluxe": { "double": 82000, "single": 61500 }, "oceanFront": { "double": 87000, "single": 62520 }, "oceanFrontDeluxe": { "double": 95000, "single": 71250 } },
+        { "range": "04.01.27 - 30.04.27", "superior": { "double": 48500, "single": 36375 }, "superiorDeluxe": { "double": 52500, "single": 39375 }, "sideSeaviewDeluxe": { "double": 54500, "single": 40875 }, "oceanFront": { "double": 59500, "single": 44625 }, "oceanFrontDeluxe": { "double": 67500, "single": 50625 } },
+        { "range": "01.05.27 - 30.06.27", "superior": { "double": 38000, "single": 28500 }, "superiorDeluxe": { "double": 42000, "single": 31500 }, "sideSeaviewDeluxe": { "double": 44000, "single": 33000 }, "oceanFront": { "double": 49000, "single": 36750 }, "oceanFrontDeluxe": { "double": 57000, "single": 42750 } },
+        { "range": "01.07.27 - 31.08.27", "superior": { "double": 48500, "single": 36375 }, "superiorDeluxe": { "double": 52500, "single": 39375 }, "sideSeaviewDeluxe": { "double": 54500, "single": 40875 }, "oceanFront": { "double": 59500, "single": 44625 }, "oceanFrontDeluxe": { "double": 67500, "single": 50625 } },
+        { "range": "01.09.27 - 30.11.27", "superior": { "double": 43000, "single": 32250 }, "superiorDeluxe": { "double": 47000, "single": 35250 }, "sideSeaviewDeluxe": { "double": 49000, "single": 36750 }, "oceanFront": { "double": 54000, "single": 40500 }, "oceanFrontDeluxe": { "double": 62000, "single": 46500 } }
+      ]
+    }
+  },
+  "childAndSupplementPolicy": {
+    "childSharingParentsRoom_2to12": "50% of adult rate",
+    "childOwnRoom_2to12": "80% of adult rate",
+    "extraBed3rdAdult": "70% of adult rate",
+    "roomOccupancy": {
+      "superior": "Max 3 (2 adults + 1 child, or 3 adults)",
+      "superiorDeluxe": "Max 4 (2 adults + 2 children, or 3 adults)",
+      "oceanFront": "Max 3 (2 adults + 1 child, or 3 adults)",
+      "oceanFrontDeluxe": "Max 4 (2 adults + 2 children, or 3 adults)"
+    }
+  },
+  "minimumStay": { "festive": "5 nights, 23 Dec 2026 - 3 Jan 2027" },
+  "cancellationPolicy": {
+    "29PlusDays": "No charge",
+    "28to20Days": "30%",
+    "19to13Days": "40%",
+    "12to5Days": "60%",
+    "4to1Day": "80%",
+    "noShow": "100%"
+  },
+  "paymentTerms": "Full payment in advance. Rates net non-commissionable, inclusive of Government taxes.",
+  "portfolioWideTerms": {
+    "note": "Non-Soroi property — CLAUDE.md's Soroi-portfolio-wide terms do not apply."
+  }
+}

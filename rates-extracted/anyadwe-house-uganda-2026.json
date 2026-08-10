@@ -1,0 +1,29 @@
+{
+  "$note": "Extracted 6 Aug 2026. ANOMALY: Anyadwe House is located at Murchison Falls, UGANDA - not Kenya - despite sitting inside the KENYA/ACCOMODATION folder tree. Flagged for the project owner; included here since it was in the assigned folder list, but do not treat as a Kenya property.",
+  "property": "Anyadwe House",
+  "operator": "Bakers Lodge Ltd",
+  "region": "Murchison Falls, Uganda",
+  "anomaly": "[Unverified/Flag] Filed under 2026 CONTRACT RATES/KENYA/ACCOMODATION despite being a Uganda property. Possibly intentional (Uganda extension add-on sold by Sunworld) or a filing error - not determined here.",
+  "tier": "Rack Rate and STO/Tour Operator Rate (both provided as separate PDFs)",
+  "residency": "Non-Resident High/Low season + EA Citizen/Resident (all-year) columns given",
+  "source": {
+    "files": [
+      "2026 CONTRACT RATES/KENYA/ACCOMODATION/ANYADWE/ANYADWE HOUSE UGANDA - 2026 ANYADWE HOUSE UGANDA INTERNATIONAL RATES - Copy.pdf",
+      "2026 CONTRACT RATES/KENYA/ACCOMODATION/ANYADWE/ANYADWE HOUSE UGANDA - 2026 ANYADWE HOUSE UGANDA TOUR OPERATOR RATES.pdf"
+    ],
+    "validity": { "start": "2026-01-01", "end": "2026-12-31" }
+  },
+  "unitType": "Whole-house exclusive rental (4 double/twin en-suite bedrooms, max 8 guests), priced per night not per person, except low-season shared-basis option priced per room",
+  "seasons": { "high": ["Jan", "Feb", "Jun", "Jul", "Aug", "Sep", "Dec"], "low": ["Mar", "Apr", "May", "Oct", "Nov"] },
+  "rates": {
+    "currency": "USD",
+    "unit": "per night, exclusive use of whole house (max 8 guests)",
+    "rackRate": { "highSeason": 2700, "lowSeason": 2080, "eaCitizenResidentAllYear": 1600, "lowSeasonSharedPerRoom": 675 },
+    "stoTourOperatorRate": { "highSeason": 2160, "lowSeason": 1664, "eaCitizenResidentAllYear": 1440, "lowSeasonSharedPerRoom": 540 }
+  },
+  "mandatoryFees": {
+    "futureGenerationsTrustFee": { "amount": 10, "unit": "USD per person per night", "note": "Community/conservation contribution, excluded from room rate" }
+  },
+  "childPolicy": "Children accommodated as part of the group hiring the whole house - no separate child rate structure given (whole-property rental).",
+  "notes": "National Park/UWA entry fees excluded and payable separately even though camp sits outside the park (fees apply if park access route used)."
+}

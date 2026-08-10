@@ -1,0 +1,74 @@
+{
+  "$note": "Extracted 6 Aug 2026, read directly (pdftotext -layout, poppler, 1-page documents). Private Beach Villa — non-Soroi, part of 'The Sands & Chale Island', 4 distinct villas. 2027 folder cleanly named, no duplication issue. Both USD Net and USD Rack exist for 2027. Net used as primary; Rack secondary. Net confirmed ~70% of Rack (Lazy Days Regular villa rate: 2420 Rack -> 1694 Net = 70.0%; Fisherman's: 3100 -> 2170 = 70.0%), consistent with Chale Island/Nomad's ratio.",
+  "property": "Private Beach Villa (part of The Sands & Chale Island) — 4 distinct villas: Lazy Days, Fisherman's, The Family Cottage, Beach House",
+  "region": "Diani / South Coast",
+  "tier": "USD Net (primary) and USD Rack (secondary).",
+  "residency": "Non-Resident",
+  "source": {
+    "netFile": "2027 CONTRACT RATES/KENYA/BEACH ACCOMODATION/THE SANDS & CHALE ISLAND/Private Beach Villa - USD - Net 2027.pdf",
+    "rackFile": "2027 CONTRACT RATES/KENYA/BEACH ACCOMODATION/THE SANDS & CHALE ISLAND/Private Beach Villa - USD - Rack 2027.pdf",
+    "pdfPageIndex": [0],
+    "validity": { "start": "2026-11-01", "end": "2027-10-31" }
+  },
+  "confidence": "confirmed-2026-08-06",
+  "extractionMethod": { "note": "Read directly, single-page documents each." },
+  "structuralFindings": [
+    "Same per-villa-with-minimum-pax pricing shape as 2026 (Regular min 6 pax, Festive min 8 pax), Half Board base, same 4 villas/room-configs.",
+    "Lazy Days and The Family Cottage AGAIN priced identically to each other in 2027 (both Net and Rack), same finding as 2026 — confirms this is a real, consistent portfolio decision rather than a one-year coincidence or extraction error.",
+    "All price points increased year-over-year vs 2026 (e.g. Lazy Days Regular Net: $1,470 -> $1,694, roughly +15%).",
+    "Child age cutoff (16) and 0-2 free policy unchanged from 2026.",
+    "Same 2-season structure as 2026 — still no separate Spring season band shown for the Villas."
+  ],
+  "seasons": {
+    "regular": { "dateRange": "implicit — all dates outside Festive", "minimumPax": 6 },
+    "festive": { "dateRange": "20 Dec - 10 Jan (inferred from complex-wide Festive window)", "minimumPax": 8, "minimumStay": "7 nights" }
+  },
+  "rates": {
+    "currency": "USD",
+    "unit": "per villa per night (whole-unit rate at stated minimum pax), Half Board",
+    "net": {
+      "lazyDays": { "rooms": 8, "maxOccupancy": 16, "roomConfig": "4 DBL, 4 flexible (TWN/DBL)", "villaRate": { "regular_min6pax": 1694, "festive_min8pax": 3668 }, "additionalAdult": { "regular": 210, "festive": 345 }, "additionalChild": { "regular": 70, "festive": 130 } },
+      "fishermans": { "rooms": 6, "maxOccupancy": 12, "roomConfig": "All rooms TWN or DBL", "villaRate": { "regular_min6pax": 2170, "festive_min8pax": 4711 }, "additionalAdult": { "regular": 270, "festive": 440 }, "additionalChild": { "regular": 70, "festive": 130 } },
+      "theFamilyCottage": { "rooms": 6, "maxOccupancy": 12, "roomConfig": "All rooms TWN or DBL", "villaRate": { "regular_min6pax": 1694, "festive_min8pax": 3668 }, "additionalAdult": { "regular": 210, "festive": 345 }, "additionalChild": { "regular": 70, "festive": 130 } },
+      "beachHouse": { "rooms": 4, "maxOccupancy": 10, "roomConfig": "3 DBL, 1 flexible (TWN/Triple/Quad)", "villaRate": { "regular_min6pax": 1932, "festive_min8pax": 4186 }, "additionalAdult": { "regular": 240, "festive": 390 }, "additionalChild": { "regular": 70, "festive": 130 } }
+    },
+    "rack": {
+      "lazyDays": { "villaRate": { "regular_min6pax": 2420, "festive_min8pax": 5240 }, "additionalAdult": { "regular": 305, "festive": 490 }, "additionalChild": { "regular": 70, "festive": 130 } },
+      "fishermans": { "villaRate": { "regular_min6pax": 3100, "festive_min8pax": 6730 }, "additionalAdult": { "regular": 390, "festive": 630 }, "additionalChild": { "regular": 70, "festive": 130 } },
+      "theFamilyCottage": { "villaRate": { "regular_min6pax": 2420, "festive_min8pax": 5240 }, "additionalAdult": { "regular": 305, "festive": 490 }, "additionalChild": { "regular": 70, "festive": 130 } },
+      "beachHouse": { "villaRate": { "regular_min6pax": 2760, "festive_min8pax": 5980 }, "additionalAdult": { "regular": 345, "festive": 560 }, "additionalChild": { "regular": 70, "festive": 130 } }
+    }
+  },
+  "supplements": {
+    "fullBoard": { "perAdult": 55, "perChild": 27 },
+    "allInclusive": { "perAdult": 100, "perChild": 50 }
+  },
+  "childPolicy": {
+    "age0to2": "Free",
+    "age3to16": "Child Rates (additionalChild figure)",
+    "age16Plus": "Adult rates"
+  },
+  "inclusions": [
+    "Soft drinks",
+    "Selected alcohol on All Inclusive",
+    "Laundry (24h return)",
+    "Non-motorized water sports",
+    "Use of Spa, Gym, Yoga Centre",
+    "Return transfers (Diani Airstrip)",
+    "1 hour massage (Lazy Days only)",
+    "Chale Day Trip (Full Board & All Inclusive)",
+    "Dining at Nomad (meals per meal plan, drinks extra)"
+  ],
+  "transfers": {
+    "moiInternationalAirport": { "amount": 80, "unit": "per 4 pax, 60 min" },
+    "nomadToChaleIsland": { "amount": 40, "unit": "per 4 pax, 30 min" }
+  },
+  "paymentTerms": "30% deposit 14 days after invoicing; balance 30 days prior to arrival.",
+  "cancellationPolicy": {
+    "regularAndFestive": { "30PlusDays": "No charge", "15to30Days": "50%", "14orFewerDays": "100%", "noShow": "100%" },
+    "spring": { "14PlusDays": "No charge", "7to14Days": "50%", "under7Days": "100%", "noShow": "100%", "confidenceNote": "[Unverified] whether a Spring cancellation band genuinely applies to the Villa, since no Spring season pricing appears on this card." }
+  },
+  "portfolioWideTerms": {
+    "note": "Non-Soroi property — CLAUDE.md's Soroi-portfolio-wide terms do not apply."
+  }
+}

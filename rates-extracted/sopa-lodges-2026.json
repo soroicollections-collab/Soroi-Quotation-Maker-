@@ -1,0 +1,113 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftotext -layout, clean text PDFs. NOT a Soroi property. Operator: Consolidated Tourism & Hotels Investment Ltd (CTHI) / Sopa Lodges. Single contract document covers SIX properties across Kenya and Tanzania: Tarangire Sopa Lodge (Tanzania - out of scope by this project's standing Tanzania-exclusion rule, captured anyway since it's the same signed contract, flagged clearly), Masai Mara Sopa Lodge, Lake Nakuru Sopa Lodge, Lake Naivasha Sopa Resort, Amboseli Sopa Lodge, Samburu Sopa Lodge. Two versions of essentially the same contract exist: 'Sopa 2026 - Rack Rates.pdf' (generic template, company name blank, higher figures) and 'Sopa - Sunworld 2026 Rates..pdf' (signed specifically for Sunworld Safaris Ltd, lower figures). Verified: the Sunworld figures are exactly 60% of the generic-template figures on every checked cell (e.g. Tarangire High FB Single: 385 -> 231, ratio 0.60; Masai Mara High FB Single: 351 -> 211, ratio 0.601) - i.e. the generic doc is effectively 'Rack' and the Sunworld doc is 'Nett' after the 40% contract discount referenced in both documents' header ('Sopa Lodges 40%'). Both are captured below. Skipped: 'SL ENHANCED ACTIVITY LIST 2026-2027.pdf' (20-page activities menu, not core accommodation), 'Review of Driver's Accommodation Rates.pdf' (not opened - low priority), 'Sopa - 2026 Key Highlights.pdf' (marketing, no rate table).",
+  "operator": "Sopa Lodges (Consolidated Tourism & Hotels Investment Ltd)",
+  "currency": "USD",
+  "unit": "per person per night (Single/Twin-Double/Triple columns)",
+  "source": {
+    "rackFile": "2026 CONTRACT RATES/KENYA/ACCOMODATION/SOPA LODGES/Sopa 2026 - Rack Rates.pdf",
+    "sunworldNettFile": "2026 CONTRACT RATES/KENYA/ACCOMODATION/SOPA LODGES/Sopa - Sunworld 2026 Rates..pdf",
+    "residentFiles_referenceOnly": ["2026-EAR-Rates.pdf (partial year Jan-Jun)", "SOPA 2026 Rates updated.pdf (full year)"],
+    "validity": { "start": "2026-01-02", "end": "2027-01-01" }
+  },
+  "confidence": "confirmed-2026-08-06",
+  "seasons": {
+    "high": { "dateRanges": ["1 Jul - 31 Oct 2026", "22 Dec 2026 - 1 Jan 2027"] },
+    "mid": { "dateRanges": ["2 Jan - 31 Mar 2026", "1 Jun - 30 Jun 2026", "1 Nov - 21 Dec 2026"] },
+    "green": { "dateRanges": ["1 Apr - 31 May 2026"] }
+  },
+  "properties": {
+    "tarangireSopaLodge_TANZANIA": {
+      "$flagged": "Tanzania property - out of scope for this project's default Kenya-only quoting per CLAUDE.md's standing Tanzania-exclusion rule. Captured here only because it shares this contract with the Kenya properties.",
+      "rack": { "high": { "FB": { "single": 385, "double": 593, "triple": 756 }, "HB": { "single": 380, "double": 583, "triple": 741 } }, "mid": { "FB": { "single": 328, "double": 505, "triple": 644 }, "HB": { "single": 323, "double": 495, "triple": 629 } }, "green": { "FB": { "single": 198, "double": 305, "triple": 388 }, "HB": { "single": 193, "double": 295, "triple": 373 } } },
+      "sunworldNett": { "high": { "FB": { "single": 231, "double": 356, "triple": 453 }, "HB": { "single": 226, "double": 346, "triple": 438 } }, "mid": { "FB": { "single": 197, "double": 303, "triple": 386 }, "HB": { "single": 192, "double": 293, "triple": 371 } }, "green": { "FB": { "single": 119, "double": 183, "triple": 233 }, "HB": { "single": 114, "double": 173, "triple": 218 } } }
+    },
+    "masaiMaraSopaLodge": {
+      "region": "Maasai Mara",
+      "rack": { "high": { "FB": { "single": 351, "double": 540, "triple": 689 }, "HB": { "single": 346, "double": 530, "triple": 674 } }, "mid": { "FB": { "single": 216, "double": 332, "triple": 423 }, "HB": { "single": 211, "double": 322, "triple": 408 } }, "green": { "FB": { "single": 151, "double": 232, "triple": 296 }, "HB": { "single": 146, "double": 222, "triple": 281 } } },
+      "sunworldNett": { "high": { "FB": { "single": 211, "double": 324, "triple": 413 }, "HB": { "single": 206, "double": 314, "triple": 398 } }, "mid": { "FB": { "single": 129, "double": 199, "triple": 254 }, "HB": { "single": 124, "double": 189, "triple": 239 } }, "green": { "FB": { "single": 90, "double": 139, "triple": 178 }, "HB": { "single": 85, "double": 129, "triple": 163 } } }
+    },
+    "lakeNakuruSopaLodge": {
+      "region": "Lake Nakuru",
+      "rack": { "high": { "FB": { "single": 329, "double": 506, "triple": 645 }, "HB": { "single": 324, "double": 496, "triple": 630 } }, "mid": { "FB": { "single": 216, "double": 332, "triple": 423 }, "HB": { "single": 211, "double": 322, "triple": 408 } }, "green": { "FB": { "single": 156, "double": 239, "triple": 305 }, "HB": { "single": 151, "double": 229, "triple": 290 } } },
+      "sunworldNett": { "high": { "FB": { "single": 197, "double": 304, "triple": 387 }, "HB": { "single": 192, "double": 294, "triple": 372 } }, "mid": { "FB": { "single": 129, "double": 199, "triple": 254 }, "HB": { "single": 124, "double": 189, "triple": 239 } }, "green": { "FB": { "single": 93, "double": 144, "triple": 183 }, "HB": { "single": 88, "double": 134, "triple": 168 } } }
+    },
+    "lakeNaivashaSopaResort": {
+      "region": "Lake Naivasha",
+      "suiteSupplement": { "amount": 200, "unit": "per room per night" },
+      "note": "Excluded from Sopa's Kenya-multi-property circuit discount (see circuitDiscounts).",
+      "rack": { "high": { "FB": { "single": 393, "double": 605, "triple": 771 }, "HB": { "single": 388, "double": 595, "triple": 756 } }, "mid": { "FB": { "single": 299, "double": 460, "triple": 586 }, "HB": { "single": 294, "double": 450, "triple": 571 } }, "green": { "FB": { "single": 258, "double": 397, "triple": 506 }, "HB": { "single": 253, "double": 387, "triple": 491 } } },
+      "sunworldNett": { "high": { "FB": { "single": 236, "double": 363, "triple": 463 }, "HB": { "single": 231, "double": 353, "triple": 448 } }, "mid": { "FB": { "single": 179, "double": 276, "triple": 352 }, "HB": { "single": 174, "double": 266, "triple": 337 } }, "green": { "FB": { "single": 155, "double": 238, "triple": 304 }, "HB": { "single": 150, "double": 228, "triple": 289 } } }
+    },
+    "amboseliSopaLodge": {
+      "region": "Amboseli",
+      "kiliSuiteSupplement": { "amount": 150, "unit": "per room per night" },
+      "premiumRooms": {
+        "rack": { "high": { "FB": { "single": 256, "double": 394, "triple": 502 }, "HB": { "single": 251, "double": 384, "triple": 487 } }, "mid": { "FB": { "single": 225, "double": 346, "triple": 441 }, "HB": { "single": 220, "double": 336, "triple": 426 } }, "green": { "FB": { "single": 157, "double": 242, "triple": 308 }, "HB": { "single": 152, "double": 232, "triple": 293 } } },
+        "sunworldNett": { "high": { "FB": { "single": 154, "double": 236, "triple": 301 }, "HB": { "single": 149, "double": 226, "triple": 286 } }, "mid": { "FB": { "single": 135, "double": 208, "triple": 265 }, "HB": { "single": 130, "double": 198, "triple": 250 } }, "green": { "FB": { "single": 94, "double": 145, "triple": 185 }, "HB": { "single": 89, "double": 135, "triple": 170 } } }
+      },
+      "standardRooms": {
+        "rack": { "high": { "FB": { "single": 225, "double": 345, "triple": 440 }, "HB": { "single": 220, "double": 335, "triple": 425 } }, "mid": { "FB": { "single": 206, "double": 317, "triple": 404 }, "HB": { "single": 201, "double": 307, "triple": 389 } }, "green": { "FB": { "single": 149, "double": 230, "triple": 293 }, "HB": { "single": 144, "double": 220, "triple": 278 } } },
+        "sunworldNett": { "high": { "FB": { "single": 135, "double": 207, "triple": 264 }, "HB": { "single": 130, "double": 197, "triple": 249 } }, "mid": { "FB": { "single": 124, "double": 190, "triple": 242 }, "HB": { "single": 119, "double": 180, "triple": 227 } }, "green": { "FB": { "single": 90, "double": 138, "triple": 176 }, "HB": { "single": 85, "double": 128, "triple": 161 } } }
+      }
+    },
+    "samburuSopaLodge": {
+      "region": "Samburu",
+      "rack": { "high": { "FB": { "single": 204, "double": 314, "triple": 400 }, "HB": { "single": 199, "double": 304, "triple": 385 } }, "mid": { "FB": { "single": 197, "double": 302, "triple": 386 }, "HB": { "single": 192, "double": 292, "triple": 371 } }, "green": { "FB": { "single": 149, "double": 230, "triple": 293 }, "HB": { "single": 144, "double": 220, "triple": 278 } } },
+      "sunworldNett": { "high": { "FB": { "single": 122, "double": 188, "triple": 240 }, "HB": { "single": 117, "double": 178, "triple": 225 } }, "mid": { "FB": { "single": 118, "double": 181, "triple": 231 }, "HB": { "single": 113, "double": 171, "triple": 216 } }, "green": { "FB": { "single": 90, "double": 138, "triple": 176 }, "HB": { "single": 85, "double": 128, "triple": 161 } } }
+    }
+  },
+  "roomTypeSpecs": { "double": "One large king-size bed", "twin": "Two queen-size beds", "triple": "Two queen-size beds + one standard single bed" },
+  "childPolicy": {
+    "sharingWithAdults": "50% of per-person-sharing rate",
+    "oneChildOwnRoom": "Charged at single room rate",
+    "twoChildrenOwnRoom": "75% of double room rate",
+    "threeChildrenOwnRoom": "75% of triple room rate",
+    "age0to3": "Free of charge, all seasons",
+    "age4to12Sharing": "50%, all seasons",
+    "age4to12OwnRoom": "75%, all seasons"
+  },
+  "extraMealsPerPerson": { "packedLunch": { "adult": 20, "child4to12": 10 }, "lunch": { "adult": 25, "child4to12": 15 }, "dinner": { "adult": 30, "child4to12": 15 } },
+  "supplements": {
+    "easter_sunworldDoc": { "amount": 30, "unit": "per adult per day", "dates": "3-6 Apr 2026", "childDiscount": "50% off for children under 12" },
+    "festive": { "amount": 40, "unit": "per adult per day", "dates": "24, 25, 26, 31 Dec 2026 & 1 Jan 2027", "childDiscount": "50% off for children under 12 (per Sunworld doc; generic doc doesn't mention child discount on this supplement)" }
+  },
+  "circuitDiscounts": {
+    "withinKenya_excludingLakeNaivasha": [
+      { "properties": 2, "minNights": 4, "discount": "5%" },
+      { "properties": 3, "minNights": 5, "discount": "7.5%" },
+      { "properties": 4, "minNights": 5, "discount": "10%" },
+      { "properties": "4+", "minNights": 6, "discount": "12.5%" }
+    ],
+    "longStaySingleProperty": { "minNights": 6, "discount": "15%" },
+    "crossBorder_TarangireWithKenyaProperty": [
+      { "properties": 2, "minNights": 4, "discount": "5%" },
+      { "properties": 3, "minNights": 6, "discount": "10%" },
+      { "properties": "4+", "minNights": 8, "discount": "12.5%" }
+    ],
+    "note": "Not combinable with other discounts/offers/resident rates. Must be indicated on booking voucher."
+  },
+  "tourLeaderRates_sunworldDocOnly": {
+    "complimentary": "1 half-twin per 15 full-paying adults (pre-booked, confirmed)",
+    "inGuestAccommodation_FBorHB": { "high": "N/A", "mid": 85, "green": 60 },
+    "inTourLeaderAccommodation": { "high": 55, "mid": 50, "green": 40 },
+    "note": "Tour Leader accommodation rate only applicable at Tarangire Sopa Lodge. Table shows High=N/A for 'in guest accommodation' oddly matching the Agent rate table layout - see confidenceNote.",
+    "confidenceNote": "[Unverified] The pdftotext table for 'Tour Leader Rates' (High/Mid/Green: $100/$85/$50 in guest accommodation, $55/$50/$40 in TL accommodation) appears immediately before a separate 'Agent rates' table with different figures (N/A/70/60) - both tables were captured in the raw extraction, but the exact row-to-season alignment for the Tour Leader table's High-season figure was not independently re-verified visually. Treat with light caution if used for tour-leader costing."
+  },
+  "agentFamRates_sunworldDocOnly": { "perPersonSharing": { "high": "N/A - not applicable in High season", "mid": 70, "green": 60 }, "singleRoomSupplement": "30%", "note": "Not applicable over High season, public holidays, long weekends, or Easter weekend." },
+  "cancellationPolicy": {
+    "high": [{ "daysBeforeArrival": "0-21", "charge": "100%" }, { "daysBeforeArrival": "22-44", "charge": "50%" }, { "daysBeforeArrival": "45-60", "charge": "25%" }],
+    "mid": [{ "daysBeforeArrival": "0-14", "charge": "100%" }, { "daysBeforeArrival": "15-30", "charge": "50%" }, { "daysBeforeArrival": "31-45", "charge": "25%" }],
+    "green": [{ "daysBeforeArrival": "0-7", "charge": "100%" }, { "daysBeforeArrival": "8-15", "charge": "50%" }],
+    "noShow": "100%"
+  },
+  "singleRoomsPolicy": "Max 5 single rooms per group at single rate, balance charged at double/twin rate.",
+  "residentRates_referenceOnly": {
+    "$note": "East African Resident Rates - KES for Kenya properties, USD for Tarangire (Tanzania). Out of scope for standard non-resident quoting; captured for reference only.",
+    "sourceFile": "SOPA 2026 Rates updated.pdf (full year 2026-27)",
+    "currency": "KES (Kenya properties) / USD (Tarangire)",
+    "masaiMara_FB": { "high": { "single": 30400, "double": 41900, "triple": 53400, "quad": 62900 }, "mid": { "single": 20500, "double": 28200, "triple": 36000, "quad": 42300 }, "green": { "single": 15200, "double": 20900, "triple": 26600, "quad": 31400 } },
+    "lakeNakuru_FB": { "high": { "single": 26100, "double": 36000, "triple": 45900, "quad": 54000 }, "mid": { "single": 19300, "double": 26600, "triple": 33900, "quad": 39900 }, "green": { "single": 15100, "double": 20700, "triple": 26400, "quad": 31100 } },
+    "childPolicy_resident": { "under4": "Free", "age4to12Sharing": "50% of per-person double/twin rate", "age0to12OwnRoom": "75% of room rate" },
+    "confidenceNote": "[Unverified] Only Masai Mara and Lake Nakuru resident figures captured (from the visible portion of the raw text dump) - Lake Naivasha, Amboseli, and Samburu resident figures exist in the same table but were not individually re-typed here. Re-check source PDF directly if a resident-rate quote is needed for those three properties."
+  }
+}

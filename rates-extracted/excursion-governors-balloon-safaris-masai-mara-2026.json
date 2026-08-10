@@ -1,0 +1,48 @@
+{
+  "category": "excursion",
+  "activity": "Hot air balloon safari flight",
+  "operator": "Governors Balloon Safaris Ltd",
+  "region": "Masai Mara, Kenya",
+  "extractedDate": "2026-08-06",
+  "sourceFiles": [
+    "2026 CONTRACT RATES/KENYA/EXCURSIONS/GOVERNORS BALLOON/2026 Standard Rates - 25%.pdf",
+    "2026 CONTRACT RATES/KENYA/EXCURSIONS/GOVERNORS BALLOON/2026 Standard Rates - RSP.pdf"
+  ],
+  "validity": "1 January 2026 - 31 December 2026",
+  "currency": "USD",
+  "documentDate": "25 March 2025 (issue date printed on rate sheet)",
+  "monthlyRates": {
+    "unit": "per person",
+    "net25pct": {
+      "note": "'25% NET RATES' — presumed 25% off the RSP/rack rate below (mapping not explicitly stated as a formula in-document, but arithmetic is broadly consistent).",
+      "hotAirBalloonFlightAdultUSD": { "Jan": 323, "Feb": 323, "Mar": 323, "Apr": 300, "May": 300, "Jun": 323, "Jul": 368, "Aug": 368, "Sep": 368, "Oct": 368, "Nov": 323, "Dec1to15": 323, "Dec16to31": 368 },
+      "hotAirBalloonFlightChildOrGuideUSD": { "Jan": 220, "Feb": 220, "Mar": 220, "Apr": 220, "May": 220, "Jun": 220, "Jul": 220, "Aug": 220, "Sep": 220, "Oct": 220, "Nov": 220, "Dec1to15": 220, "Dec16to31": 220 },
+      "verified": true
+    },
+    "rspRackRate": {
+      "note": "'RSP' rate sheet, labeled RACK RATES in the source document.",
+      "hotAirBalloonFlightAdultUSD": { "Jan": 430, "Feb": 430, "Mar": 430, "Apr": 400, "May": 400, "Jun": 430, "Jul": 490, "Aug": 490, "Sep": 490, "Oct": 490, "Nov": 430, "Dec1to15": 430, "Dec16to31": 490 },
+      "hotAirBalloonFlightChildOrGuideUSD": { "Jan": 275, "Feb": 275, "Mar": 275, "Apr": 275, "May": 275, "Jun": 275, "Jul": 275, "Aug": 275, "Sep": 275, "Oct": 275, "Nov": 275, "Dec1to15": 275, "Dec16to31": 275 },
+      "verified": true
+    }
+  },
+  "mandatoryExtrasAllMonths": {
+    "narokCountyGovernmentLandingFeeAdultUSD": 80,
+    "narokCountyGovernmentLandingFeeChildOrGuideUSD": 35,
+    "communityDevelopmentLevyAdultNonResidentUSD": 20,
+    "communityDevelopmentLevyChildNonResidentUSD": 20,
+    "medicalEvacuationCoverAdultUSD": 5,
+    "medicalEvacuationCoverChildUSD": 5,
+    "note": "All passengers must pay landing fee + community development levy as an extra, on top of the flight rate. Medical evacuation cover is automatically added to the invoice unless the client confirms they already have their own cover.",
+    "verified": true
+  },
+  "notes": [
+    "Clients staying outside the Masai Mara Reserve who enter specifically for ballooning and depart after breakfast are no longer required to purchase a park ticket. A game drive after the flight does require a park ticket if not already held.",
+    "Park fees / landing fees or their governing rules may change at short notice.",
+    "All passengers must sign an indemnity document before flight."
+  ],
+  "skippedFiles": [
+    { "file": "GBS PICKUP POINTS.pdf", "reason": "Pure logistics (pickup times/drive durations per lodge/camp) — no pricing." },
+    { "file": "FW GBS BALLOON RATES 2025.msg", "reason": "Not opened — the 2026 PDF rate sheets (dated 25 March 2025, explicitly for calendar year 2026) supersede a 2025-titled email; opening was deprioritized given the direct 2026 PDFs already provide verified figures." }
+  ]
+}

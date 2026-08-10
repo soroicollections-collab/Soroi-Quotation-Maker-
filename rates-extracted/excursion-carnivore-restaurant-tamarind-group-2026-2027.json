@@ -1,0 +1,100 @@
+{
+  "category": "excursion",
+  "activity": "Dining excursions / restaurant experiences (Nairobi & Mombasa) — The Tamarind Group",
+  "operator": "The Tamarind Group (The Carnivore, Simba Saloon, Mombasa Tamarind, Tamarind Dhows, Tamarind Brasserie, Tamarind Village apartments, Tamarind Tree Hotel)",
+  "region": "Nairobi & Mombasa",
+  "extractedDate": "2026-08-06",
+  "sourceFiles": [
+    "2026 CONTRACT RATES/EXCURSIONS/Carnivore Restaurant/Carnivore Restaurant -Tour Operator Guide 2025 - 2026.pdf",
+    "2027 CONTRACT RATES/EXCURSIONS/Carnivore Restaurant/Canvivore Tour operator rates 2027.pdf"
+  ],
+  "currency": "USD (some Mombasa/dhow figures in KES as noted per line)",
+  "years": {
+    "2026": {
+      "validity": "16 Dec 2025 - 15 Dec 2026",
+      "theCarnivore": {
+        "location": "Nairobi (Langata)",
+        "tourOperatorRate": { "lunchUSD": 28.50, "dinnerUSD": 32.50, "verified": true },
+        "rackRateKES": { "lunchOrDinner": 4950.00, "note": "subject to change; inclusive of all taxes", "verified": true },
+        "childPolicy": "Under 12 years: 50% discount on contract rates.",
+        "accountDirectDiscount": "10% discount on food for 'account direct' bookings with official voucher, paid monthly.",
+        "notApplicable": "Christmas Eve, Christmas Day, New Year's Eve, and periodic special functions."
+      },
+      "mombasaTamarind": {
+        "location": "Mombasa",
+        "setMenuRatesNettUSD": { "KILINDINI": 35.00, "KILIFI": 40.00, "LAMU": 45.00, "verified": true },
+        "childPolicy": "Under 10 years: 50% discount on Tamarind Set Menus."
+      },
+      "tamarindDhows": {
+        "location": "Mombasa (Tudor Creek)",
+        "vessels": ["Nawalilkher (70 pax dinner / 100 pax cocktails)", "Babulkher (60 pax dinner / 80 pax cocktails)"],
+        "ratesNett": {
+          "lunchCruisePerPersonKES": 5000, "lunchCruiseInclVAT": true,
+          "dinnerCruisePerPersonKES": 6800,
+          "chomaCruisePerPersonKES": 5000,
+          "transportSurchargeNorthCoastKES": 2000,
+          "transportSurchargeSouthCoastKES": 3600,
+          "transportNote": "Return transport rate, minimum 2 pax.",
+          "dinnerCruiseDiscount": "10% discount with a booking voucher, dinner cruise only.",
+          "verified": true
+        },
+        "childPolicy": "Age 2-11: 50% discount (excludes transport, which is charged at full rate)."
+      },
+      "tamarindBrasserie": {
+        "location": "Nairobi (Ngong Road)",
+        "setMenuRatesNettUSD": { "KAREN": 30.50, "NGONG": 32.50, "MAGADI": 35.00, "PWANI": 40.00, "verified": true },
+        "childPolicy": "Under 10 years: 50% discount on Set Menus.",
+        "accountDirectDiscount": "10% discount on a la carte food for account-direct bookings with voucher."
+      }
+    },
+    "2027": {
+      "validity": "16 Dec 2026 - 15 Dec 2027",
+      "theCarnivore": {
+        "location": "Nairobi (Langata)",
+        "tourOperatorRate": { "lunchUSD": 30.00, "dinnerUSD": 33.00, "verified": true, "confidenceNote": "Confirmed via direct re-read of page 2 of the 2027 PDF — the -layout text extraction initially garbled this table's row order; verified against the raw (non-layout) page text." },
+        "rackRateKES": { "lunchOrDinner": 4950.00, "note": "Same figure as 2026 — 'subject to change'; document repeatedly warns 'Prices may vary without prior notice.'", "verified": true },
+        "childPolicy": "Under 12 years: 50% discount on contract rates.",
+        "accountDirectDiscount": "10% discount on food for 'account direct' bookings with official voucher, paid monthly.",
+        "notApplicable": "Christmas Eve, Christmas Day, New Year's Eve, and periodic special functions; not valid during public holidays."
+      },
+      "mombasaTamarind": {
+        "location": "Mombasa",
+        "setMenuRatesNettUSD": { "KILINDINI": 36.00, "KILIFI": 42.00, "LAMU": 47.00, "verified": true },
+        "childPolicy": "Under 10 years: 50% discount on Tamarind Set Menus."
+      },
+      "tamarindDhows": {
+        "location": "Mombasa (Tudor Creek)",
+        "ratesNett": {
+          "lunchCruisePerPersonUSD": 39.00,
+          "dinnerCruisePerPersonUSD": 53.00,
+          "chomaCruisePerPersonUSD": 39.00,
+          "transportSurchargeNorthCoastKES": 2000,
+          "transportSurchargeSouthCoastKES": 3600,
+          "transportNote": "Return transport rate, minimum 2 pax.",
+          "dinnerCruiseDiscount": "10% discount with a booking voucher, dinner cruise only.",
+          "verified": true,
+          "confidenceNote": "[Unverified] 2027 dhow cruise prices switched currency from KES (2026) to USD per person — a genuine change in the source, not a transcription assumption."
+        },
+        "childPolicy": "Age 2-11: 50% discount (excludes transport, which is charged at full rate)."
+      },
+      "tamarindBrasserie": {
+        "location": "Nairobi (Ngong Road)",
+        "setMenuRatesNettUSD": { "KAREN": 31.50, "NGONG": 33.50, "MAGADI": 36.00, "PWANI": 41.50, "verified": true },
+        "childPolicy": "Under 10 years: 50% discount on Set Menus."
+      },
+      "tamarindVillageApartments": {
+        "location": "Mombasa (next to Mombasa Tamarind)",
+        "note": "Accommodation product, not an excursion — included for reference only since it shares this rate document.",
+        "dailyRatesKES": { "oneBedroom": 24200, "twoBedroom": 37400, "threeBedroom": 48400, "verified": true },
+        "dayRoomRate": "75% of rack rate, 0600-1800hrs",
+        "ratesValidUntil": "19 December 2025",
+        "confidenceNote": "[Unverified] The 2027 rate document states these apartment rates are 'applicable up to 19th December 2025' — i.e. the accommodation rate table inside the '2027' document is already expired at time of extraction (6 Aug 2026). Do not use for any 2026/2027 accommodation quote without reconfirming."
+      }
+    }
+  },
+  "portfolioNotes": [
+    "Both PDFs also contain the full multi-course set menu descriptions (starters/mains/desserts) for KILINDINI, KILIFI, LAMU, KAREN, NGONG, MAGADI, PWANI — omitted here as menu content, not pricing.",
+    "Carnivore driver meal policy: drivers are given lunch/dinner free while waiting for clients (both years).",
+    "Tamarind Tree Hotel (Nairobi, next to Carnivore) is mentioned in both documents but with no rates published — 'For rates please contact the General Manager' in both years. Not usable for costing."
+  ]
+}

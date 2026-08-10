@@ -1,0 +1,27 @@
+{
+  "$note": "Extracted 6 Aug 2026 via whole-file pdftotext read of 'New - 2026 Fairview Nairobi Contracted FIT Leisure Agreement - SUNWORLD SAFARIS.pdf' (5 pages) - the current, non-'Old'-subfolder version. Fairview is already logged in CLAUDE.md as one of the three flexible-variable Nairobi/stopover hotel options (quoted there at $280/night for 2 adults + 1 child, BB). This extraction supplies the full underlying rate table and CONFIRMS the room-type conflict already flagged in CLAUDE.md's Known Issues: the Child Policy / Maximum Occupancy sections both appear in this same document, and this current 2026 agreement ONLY prices 'Deluxe Queen Room' and 'Premium Room' - it does NOT price the 'Deluxe Queen Pool View' room that the Maximum Occupancy clause says is the only room actually configured to fit a child (via sofa bed). Deluxe Queen Room's own Maximum Occupancy line says 2 Adults, no extra bed - i.e. cannot fit a child at all despite the Child Policy clause discussing children sharing generally. This is the same conflict CLAUDE.md flags, now re-confirmed from the live 2026 contract text itself.",
+  "property": "Fairview Hotel Nairobi",
+  "operator": "Fairview Hotel Limited (IHG Trading Terms apply)",
+  "region": "Upper Hill, Nairobi",
+  "tier": "Contracted Packaged Leisure Agreement (net rate)",
+  "source": { "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/FAIRVIEW HOTELS/New - 2026  Fairview Nairobi Contracted FIT Leisure  Agreement - SUNWORLD SAFARIS.pdf", "validity": { "start": "2026-01-01", "end": "2026-12-31" } },
+  "rates": {
+    "currency": "USD", "unit": "per room per night, Bed & Breakfast incl. 28% taxes (16% VAT, 10% service charge, 2% training levy)",
+    "deluxeQueenRoom": { "single": 230, "double": 260 },
+    "premiumRoom": { "single": 260, "double": 290 },
+    "dayUse": "75% of room rate, until 8pm",
+    "conferenceFullDay": 45,
+    "conferenceHalfDay": 40
+  },
+  "roomConflict": "[Flag - matches CLAUDE.md Known Issues] Maximum Occupancy clause: Standard Room 2 adults no extra bed; Deluxe Queen 2 adults no extra bed; Deluxe Queen Pool View 2 adults + 2 kids (sofa bed, on request) - but Deluxe Queen Pool View is not a priced room type in this rate table. Confirm directly with the hotel before booking a family with children into a 'Deluxe Queen' expecting it to accommodate a child.",
+  "childPolicy": {
+    "under5sharing": "Free (max 1 child per room)",
+    "5to12sharing": "50% of breakfast supplement (USD 20/night) for room and breakfast",
+    "12plus": "Full adult rate for room and breakfast",
+    "breakfastOnly_6to11_99": "50% discount on meals", "breakfastOnly_12plus": "Full price on meals",
+    "extraChildBreakfastCharge_over5": 20
+  },
+  "extraPersonCharge": { "thirdPaxDoubleRoom": 40, "note": "3rd pax can only be accommodated in Deluxe Pool View room", "fourthPax": "N/A" },
+  "mealSupplements": { "halfBoard": 40, "fullBoard": 80, "mealCouponLunchDinner": 40 },
+  "notes": "Non-commissionable. Not applicable to groups of 10+ rooms (ad-hoc quote required). Cancellation: free 21+ days prior, 100% within 21 days. Rates supersede any previously offered for this period."
+}

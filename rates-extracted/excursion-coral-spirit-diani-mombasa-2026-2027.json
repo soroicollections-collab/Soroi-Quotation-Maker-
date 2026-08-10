@@ -1,0 +1,74 @@
+{
+  "category": "excursion",
+  "activity": "Coastal day tours / watersports excursions (Diani / South Coast & Mombasa / North Coast)",
+  "operator": "Coral Spirit (based Diani Reef Resort & Spa, Diani Beach Road)",
+  "region": "Kenya Coast",
+  "yearsCovered": [2026, 2027],
+  "extractedDate": "2026-08-06",
+  "sourceFiles": [
+    "2026 CONTRACT RATES/EXCURSIONS/CORAL SPIRIT/Coral Spirit 2025 Excursions Agent Rates.pdf",
+    "2026 CONTRACT RATES/EXCURSIONS/CORAL SPIRIT/Coral Spirit Excursions _NR.pdf",
+    "2027 CONTRACT RATES/EXCURSIONS/CORAL SPIRIT/Coral Spirit 2025 Excursions Agent Rates.pdf",
+    "2027 CONTRACT RATES/EXCURSIONS/CORAL SPIRIT/Coral Spirit Excursions _NR.pdf",
+    "2026 CONTRACT RATES/KENYA/EXCURSIONS/CORAL SPIRIT EXCURSION/Coral Spirit Excursions _NR.pdf"
+  ],
+  "$duplicateCheck": "All 5 copies above verified byte-identical via md5 checksum — one extraction covers every location.",
+  "$anomaly": "[Unverified] Source PDFs are titled '2025 Excursion Rates' / 'Coral Spirit Excursions _NR' but are the only Coral Spirit files present in BOTH the 2026 and 2027 CONTRACT RATES/EXCURSIONS folders — i.e. Sunworld is carrying the 2025 rate card forward as the current file for both years with no 2026/2027-specific update found. Treat figures as best-available, not confirmed current for 2027.",
+  "currency": "USD (agent rates also quoted in KES; NR brochure USD only)",
+  "documentA": {
+    "name": "Agent Rates (wholesale, with commission)",
+    "sourceFile": "Coral Spirit 2025 Excursions Agent Rates.pdf",
+    "pricingModel": "per person, selling rate + separate agent commission",
+    "pickupZones": ["South Coast (within Diani)", "North Coast (Mombasa and environs to Shanzu)"],
+    "tours": [
+      { "code": "000-01", "name": "Wasini Day Trip", "southCoast": { "sellingRateUSD": 145.00, "commissionUSD": 15.00 }, "northCoast": { "sellingRateUSD": 155.00, "commissionUSD": 15.00 }, "verified": true },
+      { "code": "000-02", "name": "Funzi Day Trip", "southCoast": { "sellingRateUSD": 120.00, "commissionUSD": 15.00 }, "northCoast": { "sellingRateUSD": 130.00, "commissionUSD": 15.00 }, "verified": true },
+      { "code": "000-03", "name": "Glass Boat Trip", "southCoast": { "sellingRateUSD": 35.00, "commissionUSD": 5.00 }, "northCoast": { "note": "No pick ups from North Coast" }, "verified": true },
+      { "code": "000-04", "name": "Diving in Diani - 2 Dives", "southCoast": { "sellingRateUSD": 180.00, "commissionUSD": 10.00 }, "northCoast": { "sellingRateUSD": 200.00, "commissionUSD": 20.00 }, "verified": true },
+      { "code": "000-05", "name": "Whale Shark Spotting", "southCoast": { "sellingRateUSD": 250.00, "commissionUSD": 20.00 }, "northCoast": { "sellingRateUSD": 250.00, "commissionUSD": 20.00 }, "verified": true },
+      { "code": "000-06", "name": "Deep Sea Fishing - 4 Hrs per boat", "unit": "per boat", "southCoast": { "sellingRateUSD": 500.00, "commissionUSD": 30.00 }, "northCoast": { "sellingRateUSD": 500.00, "commissionUSD": 30.00 }, "verified": true },
+      { "code": "000-07", "name": "Chale Island Day Trip with Lunch", "minPax": 4, "southCoast": { "sellingRateUSD": 150.00, "commissionUSD": 15.00 }, "northCoast": { "sellingRateUSD": 160.00, "commissionUSD": 15.00 }, "verified": true },
+      { "code": "000-08", "name": "Diani Sunset Cruise", "minPax": 4, "southCoast": { "sellingRateUSD": 65.00, "commissionUSD": 10.00 }, "northCoast": { "note": "No pick ups from North Coast", "sellingRateUSD": 50.00, "commissionUSD": 10.00 }, "verified": true, "confidenceNote": "[Unverified] North Coast row is contradictory in source — states 'No pick ups from North Coast' yet also lists a $50 rate. Recorded as-is; confirm with operator before quoting a North Coast client." },
+      { "code": "000-09", "name": "Funzi or Wasini Cruise with Dinner", "minPax": 6, "southCoast": { "sellingRateUSD": 120.00, "commissionUSD": 10.00 }, "northCoast": { "sellingRateUSD": 130.00, "commissionUSD": 10.00 }, "verified": true },
+      { "code": "000-10", "name": "Kaya Kinondo Forest Tour", "southCoast": { "sellingRateUSD": 35.00, "commissionUSD": 5.00 }, "northCoast": { "note": "No pick ups from North Coast" }, "verified": true },
+      { "code": "000-11", "name": "Kite Surfing 3hr Introductory Course for Beginners", "southCoast": { "sellingRateUSD": 185.00, "commissionUSD": 10.00 }, "northCoast": { "sellingRateUSD": 195.00, "commissionUSD": 10.00 }, "verified": true },
+      { "code": "000-12", "name": "Jet Ski - Half hour", "southCoast": { "sellingRateUSD": 85.00, "commissionUSD": 5.00 }, "northCoast": { "note": "No pick ups from North Coast", "sellingRateUSD": 80.00, "commissionUSD": 5.00 }, "verified": true, "confidenceNote": "[Unverified] Same North Coast contradiction as Diani Sunset Cruise above — 'No pick ups' text overlapping a $80 rate figure in the source layout." },
+      { "code": "000-13", "name": "Kongo River Sunset", "southCoast": { "sellingRateUSD": 35.00, "commissionUSD": 5.00 }, "northCoast": { "note": "No pick ups from North Coast" }, "verified": true },
+      { "code": "000-14", "name": "Funzi and Wasini with Overnight at Funzi", "southCoast": { "sellingRateUSD": 280.00, "commissionUSD": 30.00 }, "northCoast": { "sellingRateUSD": 280.00, "commissionUSD": 30.00 }, "verified": true },
+      { "code": "000-15", "name": "Corporate Group Functions, Special Occasions & End Year Parties", "rate": "RATES ON REQUEST", "verified": true }
+    ]
+  },
+  "documentB": {
+    "name": "Client-facing (Non-Resident) retail brochure",
+    "sourceFile": "Coral Spirit Excursions _NR.pdf",
+    "pricingModel": "per person retail (no commission shown); some items priced per vehicle group-size tier or per rental unit",
+    "tours": [
+      { "name": "Glass Boat Ride", "pricePerPersonUSD": 35, "verified": true },
+      { "name": "Wasini Day Tour", "pricePerPersonUSD": 145, "verified": true },
+      { "name": "Kongo River Sunset Tour", "pricePerPersonUSD": 35, "verified": true },
+      { "name": "Diani Ocean Tour", "pricePerPersonUSD": 65, "minPax": 4, "verified": true },
+      { "name": "Dhow Cruise Dinner", "pricePerPersonUSD": 200, "verified": true },
+      { "name": "Funzi Day Tour", "pricePerPersonUSD": 120, "verified": true },
+      { "name": "Funzi Sunset Tour", "pricePerPersonUSD": 120, "verified": true },
+      { "name": "Cultural Tour - Kaya Kinondo", "pricePerPersonUSD": 35, "verified": true },
+      { "name": "Feed The Giraffes in Diani (Bora Bora Wildlife Park)", "pricePerPersonUSD": 75, "verified": true },
+      { "name": "SUP - Stand Up Paddle: Board Rental, 1 pax, 2 hrs", "priceUSD": 30, "unit": "per person", "verified": true },
+      { "name": "SUP - Stand Up Paddle: Board Rental, 2 pax, 2 hrs", "priceUSD": 25, "unit": "per person", "verified": true },
+      { "name": "SUP - Guide/Instructor", "priceUSD": 30, "unit": "per person", "verified": true },
+      { "name": "City Tour - Mombasa (Half Day, Fort Jesus/old town/market/tusks)", "unit": "per person, tiered by vehicle group size", "priceTable": { "2People": 160, "3People": 140, "4People": 130, "5People": 125, "6People": 120 }, "verified": true },
+      { "name": "Mombasa City Tour with Fort Jesus, Haller Park & lunch at Tamarind", "unit": "per person, tiered by vehicle group size", "priceTable": { "2People": 155, "3People": 135, "4People": 125, "5People": 120, "6People": 115 }, "verified": true },
+      { "name": "Mombasa City Tour with Fort Jesus, Haller Park & lunch at Shanzu restaurant", "unit": "per person, tiered by vehicle group size", "priceTable": { "2People": 100, "3People": 85, "4People": 75, "5People": 70, "6People": 65 }, "verified": true },
+      { "name": "Village Tour - Mwanjamba (cultural)", "pricePerPersonUSD": 70, "verified": true },
+      { "name": "Kite Surfing 3hr Discovery Course", "pricePerPersonUSD": null, "verified": false, "confidenceNote": "[Unverified] No price shown on this brochure's Kite Surfing page (confirmed via direct visual review of the page image — text/price box simply absent). Use the Agent Rates figure instead: $185 South Coast / $195 North Coast." },
+      { "name": "Ocean Cruise Tour - Whale Shark / Dolphin", "pricePerPersonUSD": null, "verified": false, "confidenceNote": "[Unverified] No price shown on this brochure's page for this tour. Use the Agent Rates figure instead: Whale Shark Spotting $250." },
+      { "name": "Pedal & Paddle (bike tour: Kaya Kinondo + Chale Island + Gazi mangroves + lunch)", "pricePerPersonUSD": 70, "verified": true, "note": "Same tour listed elsewhere in doc as 'Bike Tours'; price found under the Village Tour page number sequence — cross-check before quoting." },
+      { "name": "Jet Ski Adventure - Quick Ride (30 min)", "pricePerPersonUSD": 100, "verified": true },
+      { "name": "Special Occasions", "rate": "not priced in this brochure (see Agent Rates: RATES ON REQUEST)", "verified": false }
+    ]
+  },
+  "portfolioNotes": [
+    "Both source documents cover the same operator/tours; the Agent Rates file is the wholesale/commissionable rate (what Sunworld would book at), the _NR brochure is the client-facing retail price. South Coast figures are consistent between the two documents where both state a figure (e.g. Wasini $145, Glass Boat $35).",
+    "Children pricing, exact minimum ages, and seasonal restrictions are not stated for most tours beyond what's captured above.",
+    "Deep Sea Fishing is priced per boat (4 hrs), not per person — flagged in the line item."
+  ]
+}

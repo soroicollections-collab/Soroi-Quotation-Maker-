@@ -1,0 +1,202 @@
+{
+  "$note": "Fresh extraction, 6 Aug 2026, read directly from three separate season-specific PDFs (each single-property, layout-preserving pdftotext, no adjacent-property risk). Combined into one JSON per task instructions since the three seasons together form one continuous 2026(-27) calendar for this property, each season's figures clearly tagged with its source file.",
+  "property": "Banana House Lamu",
+  "region": "Shela, Lamu Island",
+  "tier": "Travel Agent rates — each season PDF has 2 sub-tiers: GROSS (15% commissionable) and NET, each split by residency (Resident / Non-Resident) except the Festive PDF which is combined Resident+Non-Resident.",
+  "sources": {
+    "midSeason": {
+      "file": "2026 CONTRACT RATES/KENYA/BEACH ACCOMODATION/BANANA HOUSE LAMU/BANANA HOUSE LAMU - TRAVEL AGENT MID-SEASON RATES 2026.pdf",
+      "pages": 4,
+      "validity": { "dateRanges": ["15 Jan - 15 Apr 2026", "1 Jul - 14 Dec 2026"] }
+    },
+    "lowSeason": {
+      "file": "2026 CONTRACT RATES/KENYA/BEACH ACCOMODATION/BANANA HOUSE LAMU/BANANA HOUSE LAMU - TRAVEL AGENT LOW-SEASON RATES 2026.pdf",
+      "pages": 4,
+      "validity": { "dateRanges": ["15 Apr - 30 Jun 2026"] }
+    },
+    "festiveSeason": {
+      "file": "2026 CONTRACT RATES/KENYA/BEACH ACCOMODATION/BANANA HOUSE LAMU/BANANA HOUSE LAMU - TRAVEL AGENT FESTIVE SEASON RATES 2026-2027.pdf",
+      "pages": 2,
+      "validity": { "dateRanges": ["15 Dec 2026 - 14 Jan 2027"] }
+    }
+  },
+  "confidence": "confirmed-2026-08-06",
+  "extractionMethod": { "note": "Each PDF is single-property and covers only this property's own rates; no adjacent-property misattribution risk. All three read directly with pdftotext -layout." },
+  "structuralFindings": [
+    "Base plan is Bed & Breakfast across all three seasons.",
+    "Rate is quoted per booking/room, tiered by 1/2/3/4-person occupancy — NOT a flat per-person rate. Many rows show '1 Person' and '2 Persons' priced identically (e.g. Mid-season Double Room Garden View Resident Gross: KES 14,600 for both 1 and 2 persons is FALSE — actually 1 Person=14,600, 2 Persons=21,500, they differ), while some rooms (Double Room Extra Bed, Penthouse Suites) show identical pricing between 1 and 2 persons, then a step up at 3 persons. This is a room-occupancy-tiered pricing table, not a strict per-person-per-night multiplier — treat each cell as the total for that room at that occupancy count, don't multiply/divide to derive other occupancy levels.",
+    "'X' in the source tables means that occupancy count is not available/offered for that room category — recorded as null below, not zero.",
+    "Both Resident and Non-Resident rates are published, each with a GROSS (agent, 15% commissionable) and NET (net/direct) version — four price columns total for Mid and Low seasons. The Festive season PDF, unusually, combines Resident & Non-Resident into one GROSS table and one NET table (labeled 'Resident & Non-Residents Festive Season Gross Rates' and 'DIRECT NET RATES' respectively) — no separate residency split for the festive period.",
+    "Resident-season rates (Mid/Low) are in KES; Non-Resident rates (Mid/Low) and both Festive tables are in USD — a genuine currency split by residency, not just a formatting choice.",
+    "Child rate (age 3-12) is a single flat add-on figure per season/currency, independent of room category or occupancy count.",
+    "Airport transfer fee differs by residency: KES 3,000pp (two-way) for residents, $30pp (two-way) for non-residents (Mid/Low seasons); Festive season states $30pp for all.",
+    "Festive season carries a graduated minimum-stay-by-arrival-date table, not a single flat minimum-night rule."
+  ],
+  "seasons": {
+    "mid": {
+      "dateRanges": ["15 Jan - 15 Apr 2026", "1 Jul - 14 Dec 2026"],
+      "sourceFile": "MID-SEASON RATES 2026.pdf",
+      "currency": { "resident": "KES", "nonResident": "USD" },
+      "resident": {
+        "gross": {
+          "doubleRoomGardenView": { "1p": 14600, "2p": 21500, "3p": null, "4p": null, "child3to12": 7000 },
+          "deluxeDoubleRoom": { "1p": 15200, "2p": 22300, "3p": null, "4p": null, "child3to12": 7000 },
+          "doubleRoomExtraBed": { "1p": 22300, "2p": 22300, "3p": 30600, "4p": null, "child3to12": 7000 },
+          "standardTwinRoom": { "1p": 14600, "2p": 21500, "3p": 29100, "4p": null, "child3to12": 7000 },
+          "bananaPenthouseSuite": { "1p": 33700, "2p": 33700, "3p": 41300, "4p": null, "child3to12": 7000 },
+          "wellnessPenthouseSuite": { "1p": 35200, "2p": 35200, "3p": 42900, "4p": 50500, "child3to12": 7000 },
+          "sweetPenthouseSuite": { "1p": 30600, "2p": 30600, "3p": null, "4p": null, "child3to12": 7000 },
+          "familyRoom": { "1p": 23800, "2p": 23800, "3p": 31500, "4p": 39100, "child3to12": 7000 },
+          "budgetSingleRoom": { "1p": 11600, "2p": null, "3p": null, "4p": null },
+          "standardSingleRoom": { "1p": 13800, "2p": null, "3p": null, "4p": null },
+          "budgetDoubleRoom": { "1p": 13800, "2p": 20800, "3p": null, "4p": null }
+        },
+        "net": {
+          "doubleRoomGardenView": { "1p": 12400, "2p": 18200, "3p": null, "4p": null, "child3to12": 5900 },
+          "deluxeDoubleRoom": { "1p": 12900, "2p": 18900, "3p": null, "4p": null, "child3to12": 5900 },
+          "doubleRoomExtraBed": { "1p": 18900, "2p": 18900, "3p": 26000, "4p": null, "child3to12": 5900 },
+          "standardTwinRoom": { "1p": 12400, "2p": 18200, "3p": 24700, "4p": null, "child3to12": 5900 },
+          "bananaPenthouseSuite": { "1p": 28600, "2p": 28600, "3p": 35100, "4p": null, "child3to12": 5900 },
+          "wellnessPenthouseSuite": { "1p": 29900, "2p": 29900, "3p": 36400, "4p": 42900, "child3to12": 5900 },
+          "sweetPenthouseSuite": { "1p": 26000, "2p": 26000, "3p": null, "4p": null, "child3to12": 5900 },
+          "familyRoom": { "1p": 20200, "2p": 20200, "3p": 26700, "4p": 33200, "child3to12": 5900 },
+          "budgetSingleRoom": { "1p": 9800, "2p": null, "3p": null, "4p": null },
+          "standardSingleRoom": { "1p": 11700, "2p": null, "3p": null, "4p": null },
+          "budgetDoubleRoom": { "1p": 11700, "2p": 17600, "3p": null, "4p": null }
+        }
+      },
+      "nonResident": {
+        "gross": {
+          "doubleRoomGardenView": { "1p": 117, "2p": 171, "3p": null, "4p": null, "child3to12": 55 },
+          "deluxeDoubleRoom": { "1p": 123, "2p": 183, "3p": null, "4p": null, "child3to12": 55 },
+          "doubleRoomExtraBed": { "1p": 183, "2p": 183, "3p": 242, "4p": null, "child3to12": 55 },
+          "standardTwinRoom": { "1p": 117, "2p": 171, "3p": 229, "4p": null, "child3to12": 55 },
+          "bananaPenthouseSuite": { "1p": 265, "2p": 265, "3p": 324, "4p": null, "child3to12": 55 },
+          "wellnessPenthouseSuite": { "1p": 277, "2p": 277, "3p": 335, "4p": 394, "child3to12": 55 },
+          "sweetPenthouseSuite": { "1p": 241, "2p": 241, "3p": null, "4p": null, "child3to12": 55 },
+          "familyRoom": { "1p": 188, "2p": 188, "3p": 247, "4p": 306, "child3to12": 55 },
+          "budgetSingleRoom": { "1p": 95, "2p": null, "3p": null, "4p": null },
+          "standardSingleRoom": { "1p": 112, "2p": null, "3p": null, "4p": null },
+          "budgetDoubleRoom": { "1p": 112, "2p": 165, "3p": null, "4p": null }
+        },
+        "net": {
+          "doubleRoomGardenView": { "1p": 99, "2p": 145, "3p": null, "4p": null, "child3to12": 45 },
+          "deluxeDoubleRoom": { "1p": 105, "2p": 155, "3p": null, "4p": null, "child3to12": 45 },
+          "doubleRoomExtraBed": { "1p": 155, "2p": 155, "3p": 205, "4p": null, "child3to12": 45 },
+          "standardTwinRoom": { "1p": 99, "2p": 145, "3p": 195, "4p": null, "child3to12": 45 },
+          "bananaPenthouseSuite": { "1p": 225, "2p": 225, "3p": 275, "4p": null, "child3to12": 45 },
+          "wellnessPenthouseSuite": { "1p": 235, "2p": 235, "3p": 285, "4p": 335, "child3to12": 45 },
+          "sweetPenthouseSuite": { "1p": 205, "2p": 205, "3p": null, "4p": null, "child3to12": 45 },
+          "familyRoom": { "1p": 160, "2p": 160, "3p": 210, "4p": 260, "child3to12": 45 },
+          "budgetSingleRoom": { "1p": 80, "2p": null, "3p": null, "4p": null },
+          "standardSingleRoom": { "1p": 95, "2p": null, "3p": null, "4p": null },
+          "budgetDoubleRoom": { "1p": 95, "2p": 140, "3p": null, "4p": null }
+        }
+      },
+      "airportTransferTwoWay": { "resident": "KES 3,000 per person", "nonResident": "USD 30 per person" }
+    },
+    "low": {
+      "dateRanges": ["15 Apr - 30 Jun 2026"],
+      "sourceFile": "LOW-SEASON RATES 2026.pdf",
+      "currency": { "resident": "KES", "nonResident": "USD" },
+      "resident": {
+        "gross": {
+          "doubleRoomGardenView": { "1p": 12400, "2p": 18300, "3p": null, "4p": null, "child3to12": 5800 },
+          "deluxeDoubleRoom": { "1p": 12900, "2p": 19600, "3p": null, "4p": null, "child3to12": 5800 },
+          "doubleRoomExtraBed": { "1p": 19600, "2p": 19600, "3p": 26000, "4p": null, "child3to12": 5800 },
+          "standardTwinRoom": { "1p": 12400, "2p": 18300, "3p": 24900, "4p": null, "child3to12": 5800 },
+          "bananaPenthouseSuite": { "1p": 28600, "2p": 28600, "3p": 35200, "4p": null, "child3to12": 5800 },
+          "wellnessPenthouseSuite": { "1p": 30000, "2p": 30000, "3p": 36400, "4p": 43000, "child3to12": 5800 },
+          "sweetPenthouseSuite": { "1p": 26000, "2p": 26000, "3p": null, "4p": null, "child3to12": 5800 },
+          "familyRoom": { "1p": 20300, "2p": 20300, "3p": 26600, "4p": 33200, "child3to12": 5800 },
+          "budgetSingleRoom": { "1p": 9800, "2p": null, "3p": null, "4p": null },
+          "standardSingleRoom": { "1p": 11800, "2p": null, "3p": null, "4p": null },
+          "budgetDoubleRoom": { "1p": 11800, "2p": 17700, "3p": null, "4p": null }
+        },
+        "net": {
+          "doubleRoomGardenView": { "1p": 10500, "2p": 15500, "3p": null, "4p": null, "child3to12": 4900 },
+          "deluxeDoubleRoom": { "1p": 10900, "2p": 16600, "3p": null, "4p": null, "child3to12": 4900 },
+          "doubleRoomExtraBed": { "1p": 16600, "2p": 16600, "3p": 22100, "4p": null, "child3to12": 4900 },
+          "standardTwinRoom": { "1p": 10400, "2p": 15400, "3p": 21000, "4p": null, "child3to12": 4900 },
+          "bananaPenthouseSuite": { "1p": 24300, "2p": 24300, "3p": 29900, "4p": null, "child3to12": 4900 },
+          "wellnessPenthouseSuite": { "1p": 25500, "2p": 25500, "3p": 30900, "4p": 36500, "child3to12": 4900 },
+          "sweetPenthouseSuite": { "1p": 22100, "2p": 22100, "3p": null, "4p": null, "child3to12": 4900 },
+          "familyRoom": { "1p": 17200, "2p": 17200, "3p": 22600, "4p": 28200, "child3to12": 4900 },
+          "budgetSingleRoom": { "1p": 8300, "2p": null, "3p": null, "4p": null },
+          "standardSingleRoom": { "1p": 10000, "2p": null, "3p": null, "4p": null },
+          "budgetDoubleRoom": { "1p": 10000, "2p": 15000, "3p": null, "4p": null }
+        }
+      },
+      "nonResident": {
+        "gross": {
+          "doubleRoomGardenView": { "1p": 99, "2p": 145, "3p": null, "4p": null, "child3to12": 45 },
+          "deluxeDoubleRoom": { "1p": 105, "2p": 156, "3p": null, "4p": null, "child3to12": 45 },
+          "doubleRoomExtraBed": { "1p": 156, "2p": 156, "3p": 205, "4p": null, "child3to12": 45 },
+          "standardTwinRoom": { "1p": 99, "2p": 145, "3p": 196, "4p": null, "child3to12": 45 },
+          "bananaPenthouseSuite": { "1p": 225, "2p": 225, "3p": 276, "4p": null, "child3to12": 45 },
+          "wellnessPenthouseSuite": { "1p": 236, "2p": 236, "3p": 285, "4p": 336, "child3to12": 45 },
+          "sweetPenthouseSuite": { "1p": 205, "2p": 205, "3p": null, "4p": null, "child3to12": 45 },
+          "familyRoom": { "1p": 160, "2p": 160, "3p": 211, "4p": 260, "child3to12": 45 },
+          "budgetSingleRoom": { "1p": 80, "2p": null, "3p": null, "4p": null },
+          "standardSingleRoom": { "1p": 96, "2p": null, "3p": null, "4p": null },
+          "budgetDoubleRoom": { "1p": 96, "2p": 140, "3p": null, "4p": null }
+        },
+        "net": {
+          "doubleRoomGardenView": { "1p": 84, "2p": 123, "3p": null, "4p": null, "child3to12": 38 },
+          "deluxeDoubleRoom": { "1p": 89, "2p": 132, "3p": null, "4p": null, "child3to12": 38 },
+          "doubleRoomExtraBed": { "1p": 132, "2p": 132, "3p": 174, "4p": null, "child3to12": 38 },
+          "standardTwinRoom": { "1p": 84, "2p": 123, "3p": 166, "4p": null, "child3to12": 38 },
+          "bananaPenthouseSuite": { "1p": 191, "2p": 191, "3p": 234, "4p": null, "child3to12": 38 },
+          "wellnessPenthouseSuite": { "1p": 200, "2p": 200, "3p": 242, "4p": 285, "child3to12": 38 },
+          "sweetPenthouseSuite": { "1p": 174, "2p": 174, "3p": null, "4p": null, "child3to12": 38 },
+          "familyRoom": { "1p": 136, "2p": 136, "3p": 179, "4p": 221, "child3to12": 38 },
+          "budgetSingleRoom": { "1p": 68, "2p": null, "3p": null, "4p": null },
+          "standardSingleRoom": { "1p": 81, "2p": null, "3p": null, "4p": null },
+          "budgetDoubleRoom": { "1p": 81, "2p": 119, "3p": null, "4p": null }
+        }
+      },
+      "airportTransferTwoWay": { "resident": "KES 3,000 per person", "nonResident": "USD 30 per person" }
+    },
+    "festive": {
+      "dateRanges": ["15 Dec 2026 - 14 Jan 2027"],
+      "sourceFile": "FESTIVE SEASON RATES 2026-2027.pdf",
+      "currency": "USD",
+      "residencySplit": "None — combined Resident & Non-Resident table, per source header.",
+      "gross": {
+        "doubleRoomGardenView": { "1p": 206, "2p": 206, "3p": null, "4p": null, "child3to12": 65 },
+        "deluxeDoubleRoom": { "1p": 224, "2p": 224, "3p": null, "4p": null, "child3to12": 65 },
+        "doubleRoomExtraBed": { "1p": 224, "2p": 224, "3p": 312, "4p": null, "child3to12": 65 },
+        "standardTwinRoom": { "1p": 206, "2p": 206, "3p": 295, "4p": null, "child3to12": 65 },
+        "bananaPenthouseSuite": { "1p": 354, "2p": 354, "3p": 442, "4p": null, "child3to12": 65 },
+        "wellnessPenthouseSuite": { "1p": 442, "2p": 442, "3p": 530, "4p": 618, "child3to12": 65 },
+        "sweetPenthouseSuite": { "1p": 324, "2p": 324, "3p": null, "4p": null, "child3to12": 65 },
+        "familyRoom": { "1p": 265, "2p": 265, "3p": 354, "4p": 442, "child3to12": 65 },
+        "budgetSingleRoom": { "1p": 95, "2p": null, "3p": null, "4p": null },
+        "standardSingleRoom": { "1p": 130, "2p": null, "3p": null, "4p": null },
+        "budgetDoubleRoom": { "1p": 130, "2p": 177, "3p": null, "4p": null }
+      },
+      "net": {
+        "doubleRoomGardenView": { "1p": 175, "2p": 175, "3p": null, "4p": null, "child3to12": 50 },
+        "deluxeDoubleRoom": { "1p": 190, "2p": 190, "3p": null, "4p": null, "child3to12": 50 },
+        "doubleRoomExtraBed": { "1p": 190, "2p": 190, "3p": 265, "4p": null, "child3to12": 50 },
+        "standardTwinRoom": { "1p": 175, "2p": 175, "3p": 250, "4p": null, "child3to12": 50 },
+        "bananaPenthouseSuite": { "1p": 300, "2p": 300, "3p": 375, "4p": null, "child3to12": 50 },
+        "wellnessPenthouseSuite": { "1p": 375, "2p": 375, "3p": 450, "4p": 525, "child3to12": 50 },
+        "sweetPenthouseSuite": { "1p": 275, "2p": 275, "3p": null, "4p": null, "child3to12": 50 },
+        "familyRoom": { "1p": 225, "2p": 225, "3p": 300, "4p": 375, "child3to12": 50 },
+        "budgetSingleRoom": { "1p": 80, "2p": null, "3p": null, "4p": null },
+        "standardSingleRoom": { "1p": 110, "2p": null, "3p": null, "4p": null },
+        "budgetDoubleRoom": { "1p": 110, "2p": 150, "3p": null, "4p": null }
+      },
+      "airportTransferTwoWay": "USD 30 per person",
+      "minimumStayByArrivalWindow": {
+        "15Dec-22Dec": "1 night",
+        "22Dec-26Dec": "4 nights",
+        "27Dec-4Jan": "7 nights",
+        "4Jan-14Jan": "1 night"
+      }
+    }
+  },
+  "verified": true,
+  "confidenceNote": "Occupancy-tiered room pricing (1p/2p/3p/4p) is a genuinely different pricing shape from Soroi's per-person-per-night model — do not attempt to derive a per-person rate by dividing these figures without confirming with the property. Festive season combines Resident/Non-Resident into one table (unlike Mid/Low, which split them) — this is recorded as read, not assumed to be an omission."
+}

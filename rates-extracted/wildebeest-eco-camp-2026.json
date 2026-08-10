@@ -1,0 +1,71 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftotext -layout, clean document. NOT a Soroi property - a budget/backpacker-style hostel-and-cottage camp in Karen, Nairobi (camping, dorms, and private rooms all on one property, no seasonality). A separate 'Agent Rates US$ A.pdf' file also exists (discounted trade tier, not opened this pass - out of scope/time).",
+  "property": "Wildebeest Eco Camp",
+  "operator": "Wildebeest Travels Limited",
+  "region": "Karen, Nairobi",
+  "currency": "USD",
+  "unit": "per room (or per bed for dorm/camping) per night - flat rate, no seasonality",
+  "source": {
+    "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/Wildebeest Eco Camp/Wildebeest Eco Camp 2025-2026 Rack Rates US$.pdf",
+    "skippedFile": "Wildebeest Eco Camp 2025-2026 Agent Rates US$ A.pdf - discounted trade tier, not opened this pass",
+    "validity": "2025-2026 (no explicit date range beyond the label; flat rate year-round)"
+  },
+  "confidence": "confirmed-2026-08-06",
+  "rates": {
+    "campingOwnGear": { "pax": 1, "bathroom": "Shared", "BB": 20, "BBplus": 31, "HB": 51, "FB": 71 },
+    "campingTentBeddingProvided": { "pax": 1, "bathroom": "Shared", "BB": 35, "BBplus": 46, "HB": 66, "FB": 86 },
+    "dormBed": { "pax": 1, "bathroom": "Shared", "BB": 40, "BBplus": 51, "HB": 71, "FB": 91 },
+    "gardenTent": {
+      "single": { "pax": 1, "bathroom": "Shared", "BB": 70, "BBplus": 81, "HB": 101, "FB": 121 },
+      "double": { "pax": 2, "bathroom": "Shared", "BB": 110, "BBplus": 132, "HB": 172, "FB": 212 }
+    },
+    "cottageRoom": {
+      "single": { "pax": 1, "bathroom": "Ensuite", "BB": 110, "BBplus": 121, "HB": 141, "FB": 161 },
+      "double": { "pax": 2, "bathroom": "Ensuite", "BB": 150, "BBplus": 172, "HB": 212, "FB": 252 }
+    },
+    "deluxeCottageRoom": {
+      "single": { "pax": 1, "bathroom": "Ensuite", "BB": "N/A (not offered)", "BBplus": 160, "HB": 180, "FB": 200 },
+      "double": { "pax": 2, "bathroom": "Ensuite", "BB": "N/A (not offered)", "BBplus": 200, "HB": 240, "FB": 280 }
+    },
+    "familyGardenTent": {
+      "single": { "pax": 1, "bathroom": "Ensuite", "BB": 130, "BBplus": 141, "HB": 161, "FB": 181 },
+      "double": { "pax": 2, "bathroom": "Ensuite", "BB": 170, "BBplus": 192, "HB": 232, "FB": 272 },
+      "triple": { "pax": 3, "bathroom": "Ensuite", "BB": 210, "BBplus": 243, "HB": 303, "FB": 363 },
+      "quad": { "pax": 4, "bathroom": "Ensuite", "BB": 250, "BBplus": 294, "HB": 374, "FB": 454 }
+    },
+    "deluxeSafariTent": {
+      "single": { "pax": 1, "bathroom": "Ensuite", "BB": "N/A (not offered)", "BBplus": 180, "HB": 200, "FB": 220 },
+      "double": { "pax": 2, "bathroom": "Ensuite", "BB": "N/A (not offered)", "BBplus": 220, "HB": 260, "FB": 300 },
+      "triple": { "pax": 3, "bathroom": "Ensuite", "BB": "N/A (not offered)", "BBplus": 260, "HB": 320, "FB": 380 }
+    }
+  },
+  "mealPlanKey": {
+    "BB": "Single choice basic breakfast (fruit salad/eggs/pancake) + toast + tea or coffee, 07:00-10:00",
+    "BBplus": "English-style full breakfast (sausages, bacon, eggs, beans, tomato) or pancakes + fruit salad + tea/coffee + toast",
+    "HB": "BB+ full breakfast plus lunch and/or dinner",
+    "FB": "BB+ full breakfast plus lunch and dinner"
+  },
+  "roomInventory": {
+    "dorms": { "rooms": 3, "maxCapacity": 8, "bathroom": "Shared", "bedType": "8 single bunk beds, sold as private room or individual beds" },
+    "gardenTent": { "rooms": 6, "maxCapacity": 2, "bathroom": "Shared", "bedType": "3 rooms double bed, 3 rooms twin" },
+    "cottageRoom": { "rooms": 3, "maxCapacity": 2, "bathroom": "Ensuite", "bedType": "Double bed only, no twin option" },
+    "deluxeCottageRoom": { "rooms": 3, "maxCapacity": 2, "bathroom": "Ensuite", "bedType": "Double or twin on request, has small fridge" },
+    "familyGardenTent": { "rooms": 3, "maxCapacity": 4, "bathroom": "Ensuite", "bedType": "Double+2 singles or 4 singles on request" },
+    "deluxeSafariTent": { "rooms": 8, "maxCapacity": 3, "bathroom": "Ensuite", "bedType": "Double+1 single or 3 singles on request" }
+  },
+  "childPolicy": { "under3SharingWithParents": "Free", "note": "No other child rates apply - children 3+ charged at adult rate." },
+  "operationalPolicy": {
+    "checkIn": "14:00-24:00 (other times by prior arrangement)", "checkOut": "before 11:00",
+    "dayRoom": "Available until 16:00, 75% of contract rate",
+    "earlyArrivalBefore7am": "Must book for the previous night; not admitted before 07:00 without prior booking.",
+    "restaurantHours": "07:00-21:00, no discount/refund for unused meals."
+  },
+  "cancellationPolicy": {
+    "1to3bedNights": [{ "daysNotice": "<=7 / no-show", "charge": "100%" }, { "daysNotice": "8-14", "charge": "50%" }],
+    "4to9bedNights": [{ "daysNotice": "<=14 / no-show", "charge": "100%" }, { "daysNotice": "15-30", "charge": "50%" }],
+    "10PlusBedNights": [{ "daysNotice": "<=30", "charge": "100%" }],
+    "groupBookings11PlusBedNights": "50% non-refundable deposit at booking, remaining 50% non-refundable due 30 days from arrival."
+  },
+  "paymentPolicy": { "creditCardSurcharge": "3% (booking rate divided by 0.97)", "agentBookings": "Paid in full 14 days prior (30 days if 10+ bed nights)." },
+  "lateCheckoutOrDayRoom": { "upTo16h00": "75% of rack rate", "after16h00": "100% of rack rate" }
+}

@@ -1,0 +1,76 @@
+{
+  "$note": "Extracted 6 Aug 2026 via direct VISUAL read of the source PDF (image-only/scanned document — pdftotext returned zero extractable text on both pages, confirmed via pdfinfo and a 0-line pdftotext result). Content was read from the rendered page images themselves, not OCR'd programmatically. Treat figures as verified-by-visual-read, one step below a clean text extraction — small numeral misreads are possible in a scanned table, though the table was legible and cross-checked line by line.",
+  "property": "Morning Star (Diani)",
+  "region": "Diani Beach, Kenya Coast",
+  "tier": "Rack Rate (only rate tier/file provided for this property)",
+  "residency": "Not distinguished as Resident/Non-Resident on this document — see confidenceNote",
+  "source": {
+    "file": "2026 CONTRACT RATES/KENYA/BEACH ACCOMODATION/MORNING STAR/MORNING STAR RATES 2026.pdf",
+    "pdfPageIndex": "0-1 (both pages read)",
+    "totalPages": 2,
+    "extractionMethod": "Image-only PDF — pdftotext extracted 0 lines of text from both pages (confirmed via `pdftotext` returning empty output and `pdfinfo` showing no tagged text layer). Read visually instead via the PDF-rendering tool.",
+    "validity": { "start": "2025-06-01", "end": "2026-07-31", "confidenceNote": "[Unverified / gap] Document explicitly states 'Valid from 1st June 2025' and provides three date-window columns running only through 31 Jul 2026 (1 Jun-22 Dec 2025 / 23 Dec 2025-6 Jan 2026 / 7 Jan-31 Jul 2026). NO pricing is given anywhere in the document for Aug-Dec 2026. This is a genuine coverage gap, not an extraction miss — flag explicitly on any quote needing Aug-Dec 2026 dates at this property; a fresh rate card would need to be requested from Morning Star or Sunworld for that period." }
+  },
+  "confidence": "confirmed-visual-read-2026-08-06",
+  "structuralFindings": [
+    "CURRENCY SURPRISE: only KES (Kenyan Shillings) rates are provided — no USD file exists in this property's folder at all, unlike every other property in this batch which had a USD Non-Resident option. If a USD quote is needed for this property, it does not exist in the source and would need to be requested or converted (flag conversion as an estimate, not a source figure).",
+    "Rates are NOT purely per-person or purely per-unit — each apartment category has separate line items for 'Single occupancy', 'Double occupancy', 'Each additional person', and 'Children' rates, i.e. a hybrid per-unit-with-occupancy-add-ons structure, closer to Leopard Beach's Residence model than a flat per-person or per-unit rate.",
+    "Base meal plan is Bed & Breakfast for the 1BR/2BR/2BR-Deluxe categories; the 4-Bedroom Villa is ROOM ONLY at every duration shown (no B&B base rate given for the villa).",
+    "Rates are given at FIVE different durations per category: per night, per week, per 2 weeks, per 3 weeks, and per month (month is Room Only even for categories whose shorter durations are B&B) — a much more granular duration ladder than any other property in this batch.",
+    "Several duration/season cells are simply BLANK in the source table (e.g. 2BR Apartment's 2-week and 3-week rates have no figure in the 23-Dec-25/6-Jan-26 peak column; 2BR Deluxe's 3-week and monthly rates likewise blank for peak; 4BR Villa's monthly rate blank for peak). These are recorded as null below — treat as 'not offered at that duration during Peak', not as zero or an extraction failure.",
+    "Children age bracket is inconsistent WITHIN this single document: '1 Bedroom Apartment' table says 'Children 4-11 Years' (per-night/week) but its own 'Rate per month' row says 'Children 4-12 Years'; the 2BR and 2BR Deluxe tables say 'Children 4-11 Years' for per-night, then '5-11 Years' at longer durations. This inconsistency is in the source itself, not an extraction error — flagged rather than silently normalized.",
+    "Separate 'Children's policy' footer states Under 4 years free of charge when sharing with adults — consistent with the per-category child rates being for ages 4+.",
+    "Monthly/weekly (long-stay) rates explicitly EXCLUDE power/water, charged separately — a distinct exclusion not seen at other properties.",
+    "Restaurant meal supplements (Breakfast/Half Board/Full Board) are priced separately per person per day and clearly marked 'on top of Bed & Breakfast' for HB/FB — meaning the base B&B rate is retained and these are true add-ons, not full meal-plan replacements.",
+    "Document says 'Valid from 1st June 2025! All previous prices become invalid' and 'Prices are subject to change without notice' — a live/informal rate sheet rather than a signed contract document."
+  ],
+  "seasons": {
+    "window1": { "dateRange": "1 Jun 2025 - 22 Dec 2025" },
+    "window2_peak": { "dateRange": "23 Dec 2025 - 6 Jan 2026" },
+    "window3": { "dateRange": "7 Jan 2026 - 31 Jul 2026" },
+    "gap_unpriced": { "dateRange": "1 Aug 2026 onward", "note": "No rates published for this period as of this document — see validity confidenceNote above." }
+  },
+  "rates": {
+    "currency": "KES",
+    "verified": true,
+    "oneBedroomApartmentStudios": {
+      "perNight_BB": { "window1": { "single": 7250, "double": 10250, "children4to11": 3250 }, "window2_peak": { "single": 13500, "double": 15450, "children4to11": 4200 }, "window3": { "single": 7750, "double": 11250, "children4to11": 3500 } },
+      "perWeek_BB": { "window1": { "single": 48200, "double": 68150, "children4to11": 21650 }, "window2_peak": { "single": 89800, "double": 102750, "children4to11": 27900 }, "window3": { "single": 51550, "double": 74800, "children4to11": 23300 } },
+      "per2Weeks_BB": { "window1": { "single": 91350, "double": 129150, "children4to11": 40950 }, "window2_peak": { "single": 170100, "double": 194650, "children4to11": 52900 }, "window3": { "single": 97650, "double": 141750, "children4to11": 44100 } },
+      "per3Weeks_BB": { "window1": { "single": 129400, "double": 182950, "children4to11": 58050 }, "window2_peak": { "single": 211650, "double": 254400, "children4to11": 71400 }, "window3": { "single": 138350, "double": 200800, "children4to11": 62500 } },
+      "perMonth_RoomOnly": { "window1": { "single": 111150, "double": 149650, "children4to12": 49150 }, "window2_peak": { "single": 168850, "double": 202650, "children4to12": 59400 }, "window3": { "single": 119700, "double": 166750, "children4to12": 53400 } }
+    },
+    "twoBedroomApartment": {
+      "perNight_BB": { "window1": { "double": 14950, "eachAdditionalPerson": 4250, "children4to11": 3250 }, "window2_peak": { "double": 24650, "eachAdditionalPerson": 4800, "children4to11": 4200 }, "window3": { "double": 16950, "eachAdditionalPerson": 4500, "children4to11": 3500 } },
+      "perWeek_BB": { "window1": { "double": 99400, "eachAdditionalPerson": 28300, "children4to11": 21650 }, "window2_peak": { "double": 163900, "eachAdditionalPerson": 31950, "children4to11": 27950 }, "window3": { "double": 112700, "eachAdditionalPerson": 29950, "children4to11": 23250 } },
+      "per2Weeks_BB": { "window1": { "double": 188350, "eachAdditionalPerson": 53550, "children5to11": 40950 }, "window2_peak": null, "window3": { "double": 213600, "eachAdditionalPerson": 56700, "children4to11": 44100 } },
+      "per3Weeks_BB": { "window1": { "double": 266850, "eachAdditionalPerson": 75850, "children4to11": 58050 }, "window2_peak": null, "window3": { "double": 302550, "eachAdditionalPerson": 80300, "children4to11": 62500 } },
+      "perMonth_RoomOnly": { "window1": { "double": 230000, "eachAdditionalPerson": 60850, "children4to11": 49150 }, "window2_peak": null, "window3": { "double": 264200, "eachAdditionalPerson": 64100, "children4to11": 53450 } }
+    },
+    "twoBedroomApartmentDeluxe": {
+      "perNight_BB": { "window1": { "double": 16950, "eachAdditionalPerson": 4250, "children5to11": 3250 }, "window2_peak": { "double": 28250, "eachAdditionalPerson": 4800, "children5to11": 4200 }, "window3": { "double": 17500, "eachAdditionalPerson": 4500, "children5to11": 3500 } },
+      "perWeek_BB": { "window1": { "double": 112700, "eachAdditionalPerson": 28300, "children5to11": 21650 }, "window2_peak": { "double": 197750, "eachAdditionalPerson": 33600, "children5to11": 29400 }, "window3": { "double": 116400, "eachAdditionalPerson": 29900, "children5to11": 23250 } },
+      "per2Weeks_BB": { "window1": { "double": 213550, "eachAdditionalPerson": 53550, "children5to11": 40950 }, "window2_peak": { "double": 355950, "eachAdditionalPerson": 60500, "children5to11": 52920 }, "window3": { "double": 220500, "eachAdditionalPerson": 56700, "children5to11": 44100 } },
+      "per3Weeks_BB": { "window1": { "double": 302600, "eachAdditionalPerson": 75850, "children5to11": 58000 }, "window2_peak": null, "window3": { "double": 312400, "eachAdditionalPerson": 80300, "children5to11": 62450 } },
+      "perMonth_RoomOnly": { "window1": { "double": 264200, "eachAdditionalPerson": 59850, "children5to11": 49200 }, "window2_peak": null, "window3": { "double": 273600, "eachAdditionalPerson": 64150, "children5to11": 53450 } }
+    },
+    "fourBedroomVilla": {
+      "unit": "Room Only only (no B&B base offered), up to 8 adults, priced per villa not per person",
+      "perNight": { "window1": 45000, "window2_peak": 72500, "window3": 48000 },
+      "perMonth": { "window1": 391500, "window2_peak": null, "window3": 417600 }
+    }
+  },
+  "restaurantMealSupplements": {
+    "unit": "KES per person per day",
+    "breakfastIfRoomOnlyBooked": { "window1": 1650, "window2_peak": 1850, "window3": 1750 },
+    "halfBoardOnTopOfBB": { "window1": 2250, "window2_peak": 2800, "window3": 2500 },
+    "fullBoardOnTopOfBB": { "window1": 3950, "window2_peak": 4800, "window3": 4300 }
+  },
+  "childrenPolicy": {
+    "under4": "Free of charge, sharing with adults",
+    "confidenceNote": "[Unverified inconsistency in source] Upper child age bound is given as 11, 11.99, or 12 in different rows of the same document — see structuralFindings. Use 4-11 as the general working bracket unless a specific row states otherwise."
+  },
+  "longStayNote": "Stays longer than 2 months: enquire for special price. All monthly/weekly rates exclude power/water, charged separately.",
+  "checkInOut": { "checkIn": "14:00", "checkOut": "before 10:00", "note": "Earlier check-in / later check-out on request" },
+  "contact": { "email": "morningstardiani@gmail.com", "phone": "+254 726 482 883 / +254 728 812 813 (Deutsch)" }
+}

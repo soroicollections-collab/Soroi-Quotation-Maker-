@@ -1,0 +1,60 @@
+{
+  "$note": "Solio Game Reserve/Sanctuary GATE ENTRY fees - a DIFFERENT thing from the 'conservationFees' figure already recorded in solio-lodge-safari-collection-2026.json. Per this task's explicit instruction, compared against that existing file - see confidenceNote below for the discrepancy found.",
+  "source": {
+    "file": "2026 CONTRACT RATES/KENYA/PARK FEES/Solio Rates 2025.pdf",
+    "title": "SOLIO GAME RESERVE - 2024/2025 SOLIO CONSERVANCY RATES",
+    "note": "Document is explicitly dated '2024/2025' despite sitting in the 2026 CONTRACT RATES folder tree - likely the most recent version on file, but flag that a newer 2026 Solio Game Reserve rate card may exist and hasn't been checked."
+  },
+  "verified": true,
+  "paymentNote": "NO CASH ACCEPTED at the gate.",
+  "comparisonToExistingSolioLodgeFile": {
+    "existingFile": "rates-extracted/solio-lodge-safari-collection-2026.json",
+    "existingFigure": "Solio Lodge's own accommodation rate card (The Safari Collection, 2026, 30% contract tier) quotes a 'conservationFees' line item of $122/adult/night and $61/child(3-10)/night, described there as a mandatory fee charged BY THE LODGE alongside the room rate.",
+    "thisDocumentsFigure": "Solio Game Reserve's own GATE ENTRY tariff (this file) is $106/adult (11yrs+) and $52/child (3-10yrs) Non-Resident - a per-ENTRY fee, not explicitly stated as per-night.",
+    "confidenceNote": "THESE ARE NOT THE SAME FIGURE ($122 vs $106 adult; $61 vs $52 child) and it is UNVERIFIED whether they represent the same underlying reserve fee at different markups/dates, or genuinely different things (e.g. the lodge's $122 could be an all-inclusive-package conservation levy that already covers gate entry plus extra conservancy overhead, while this $106 is the reserve's raw gate tariff that any visiting vehicle would pay regardless of which lodge they're staying at). Also: this Solio Rates 2025.pdf gives NO explicit 'per night' framing at all - its heading says 'SINGLE ENTRY RATE... MUST PAY THE FULL STATED SOLIO CONSERVANCY FEES', consistent with a per-day/per-entry gate fee, which may or may not equal what a multi-night stay accumulates to per the lodge's per-night mandatory fee framing. DO NOT assume these reconcile - flag both figures explicitly in any Solio Lodge quote and note the gap is unresolved, per CLAUDE.md's standing rule to flag rather than silently pick one number.",
+    "possibleExplanation_unconfirmed": "[Speculation, not verified] The lodge's $122 figure may already be inclusive of a small margin/rounding vs. the raw $106 reserve gate fee, similar to how some lodges quote conservation fees with an added service charge. This has not been confirmed with Solio Lodge or The Safari Collection - treat purely as a hypothesis, not a resolution."
+  },
+  "entryFees": {
+    "unit": "per person",
+    "citizen": { "adult11Plus": { "amount": 2730, "currency": "KSH" }, "child3to10": { "amount": 1470, "currency": "KSH" } },
+    "resident": { "adult11Plus": { "amount": 3360, "currency": "KSH" }, "child3to10": { "amount": 1575, "currency": "KSH" } },
+    "nonResident": { "adult11Plus": { "amount": 106, "currency": "USD" }, "child3to10": { "amount": 52, "currency": "USD" } },
+    "multiEntry": { "nonResident": { "amount": 130, "currency": "USD" }, "residentCitizen": { "amount": 40, "currency": "USD", "confidenceNote": "Source lists this as 'ResiAdents/Citizens' (likely OCR/typo for 'Residents/Citizens') at USD 40 - odd that a Resident/Citizen multi-entry fee would be in USD when their single-entry fee is in KSH; recorded as printed, not corrected." } }
+  },
+  "driversGuides": {
+    "driverCitizen": { "amount": 840, "currency": "KSH" },
+    "driverResident": { "amount": 1260, "currency": "KSH" },
+    "driverNonResident": { "amount": 106, "currency": "USD" },
+    "guideCitizen": { "amount": 840, "currency": "KSH" },
+    "guideResident": { "amount": 1260, "currency": "KSH" },
+    "guideNonResidentNonKenyanProfessional": { "amount": 104, "currency": "USD" }
+  },
+  "vehiclesAircraft": {
+    "vehicle": { "amount": 840, "currency": "KSH" },
+    "vehicleHireAndDriverMax5Guests": { "amount": 17850, "currency": "KSH" },
+    "landingFees": { "amount": 2310, "currency": "KSH", "confidenceNote": "Source shows 'Kshs ,2310' (stray comma before digits, likely an OCR/typo artifact) - recorded as 2310, flagging the odd formatting." },
+    "aircraftParkingLongerThan12hrs": { "amount": 35, "currency": "USD" },
+    "rescueAndRecovery": { "amount": 7350, "currency": "KSH" }
+  },
+  "pilots": {
+    "pilotsResidentOrCitizen": { "amount": 2415, "currency": "KSH" },
+    "lodgePilots": { "amount": 1155, "currency": "KSH" }
+  },
+  "schools": {
+    "studentsPerChildCitizenResident": { "amount": 525, "currency": "KSH" },
+    "studentsNonResident": { "amount": 29, "currency": "USD" },
+    "teachersCitizenResident": { "amount": 1357, "currency": "KSH" },
+    "teachersNonResident": { "amount": 52, "currency": "USD" }
+  },
+  "activities": {
+    "walkingBicycleRidingInRanchArea": { "amount": 10, "currency": "USD" },
+    "horseRidingMax2Hours": { "amount": 58, "currency": "USD" },
+    "nightGameDrives8pmTo11pm": { "amount": 15, "currency": "USD" }
+  },
+  "policyNotes": [
+    "Any/all persons entering must pay the FULL stated Solio Conservancy fees (single entry rate) - no partial/discounted informal entry.",
+    "All guests must sign indemnity.",
+    "All guests must produce national ID or passport, or will be charged as Non-Resident.",
+    "Tour guides must produce official Guide license, or will be charged as guests (i.e. full visitor rate, not the discounted guide rate)."
+  ]
+}

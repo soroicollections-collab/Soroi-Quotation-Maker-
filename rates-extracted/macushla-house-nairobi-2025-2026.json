@@ -1,0 +1,29 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftotext -layout. NOT a Soroi property. Nairobi (Langata) guesthouse - potential Nairobi/stopover option.",
+  "property": "Macushla House",
+  "region": "Langata, Nairobi",
+  "source": { "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/MACUSHLA HOUSE LIMITED/MACUSHLA HOUSE LIMITED 2026 RATES.pdf", "validity": "2025/2026", "tier": "Contract STO Rates (STO rate is Rack x 0.85, i.e. 15% off - confirmed: $165 x 0.85 = $140.25 exact match)" },
+  "confidence": "confirmed-2026-08-06",
+  "commission": "15% of Rack Rates",
+  "nonResidentUSD": {
+    "unit": "per room, Bed & Breakfast",
+    "singleBB": { "sto": 140.25, "rack": 165 },
+    "doubleBB": { "sto": 216.75, "rack": 255 },
+    "tripleBB": { "sto": 280.50, "rack": 330 },
+    "dayroomPerPersonRoomOnly": { "sto": 97.75, "rack": 115 },
+    "verified": true
+  },
+  "residentKES": {
+    "unit": "per room, Bed & Breakfast",
+    "singleBB": { "sto": 9350, "rack": 11000 },
+    "doubleBB": { "sto": 13600, "rack": 16000 },
+    "tripleBB": { "sto": 16150, "rack": 19800 },
+    "dayroomPerPersonRoomOnly": { "sto": 10200, "rack": 12000 },
+    "verified": true
+  },
+  "mealSupplements": { "halfBoardAdd": 40, "fullBoardAdd": 80, "unit": "USD per person per day (applies to both currency tiers per source, though likely intended in the respective local currency for KES bookings - not separately confirmed)" },
+  "childPolicy": { "age2to12Sharing": "50% reduction on quoted rate" },
+  "reservationRequirement": "Voucher required within 3 days of booking",
+  "cancellationPolicy": { "14daysPrior": "50% of quoted rate", "72hoursPrior": "100% of quoted rate" },
+  "propertyDescription": "6 double en-suite rooms in Main House + a private 2-room cottage (convertible to 3 rooms). 4 acres of untouched savannah bushland. Board room facilities for conferences/seminars available. Free Wi-Fi."
+}

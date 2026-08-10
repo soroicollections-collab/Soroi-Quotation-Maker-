@@ -1,0 +1,20 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftotext -layout from 'FAIRVIEW/Best Western Upper Hill 2027 Contract Rates -SUNWORLD SAFARIS.pdf' (3pp). Filed inside the FAIRVIEW folder but is a DIFFERENT hotel (Best Western Nairobi Upper Hill, 2nd Ngong Avenue) - managed/sold by the same Fairview Hotel Limited sales team (same Cluster Sales Manager Bruce Mwenda, identical T&C boilerplate). NEW candidate for the CLAUDE.md 'flexible variable - Nairobi/stopover hotel' list: significantly cheaper than the other 3 known options ($80-130/night vs $220-280).",
+  "property": "Best Western Nairobi Upper Hill",
+  "location": "2nd Ngong Avenue, Upper Hill, Nairobi",
+  "currency": "USD",
+  "validity": { "start": "2026-01-01", "end": "2027-12-31" },
+  "unit": "per room per night, includes breakfast and taxes (16% VAT + 10% service charge + 2% training levy)",
+  "confidence": "confirmed-2027-08-06",
+  "rates": {
+    "Standard Single": { "single": 80, "double": "N/A" },
+    "Standard King": { "single": 90, "double": 110 },
+    "verified": true
+  },
+  "thirdAdultSupplement": { "amount": 20, "unit": "per person per night on double occupancy", "note": "Standard Queen room can only accommodate an extra baby cot, not a 3rd adult bed - [Unverified] note refers to a 'Standard Queen' room not listed in the rate table itself (only Standard Single and Standard King are priced), same room-naming ambiguity pattern as Crowne Plaza and Fairview in this portfolio." },
+  "childPolicy": { "age0to11SharingStandardKingDouble": { "extraSofaBed": 15, "unit": "per person per night, double rooms only, not twin" }, "verified": true },
+  "mealRates": { "extraBreakfastAdult": 20, "child0to6": "Complimentary", "child7to11": "50% discount", "note": "Hotel only serves breakfast (no lunch/dinner on site)", "verified": true },
+  "dayUse": { "hours": "10am-8pm", "rate": "70% of contracted rate", "beyond6pm": "100% of contracted rate", "verified": true },
+  "cancellationPolicy": "48 hours notice required prior to arrival to avoid 1-night charge",
+  "commissionable": false
+}

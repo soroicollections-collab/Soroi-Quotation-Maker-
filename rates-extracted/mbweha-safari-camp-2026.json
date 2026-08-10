@@ -1,0 +1,19 @@
+{
+  "$note": "Extracted 6 Aug 2026 by reading the source Excel workbook directly with openpyxl (python3). One of 5 properties bundled in 'Atua Enkop  - Sunworld Safaris  - 2026.xlsx' (Atua Enkop Africa Ltd portfolio). Signed contract between Atua Enkop Africa Ltd and Sunworld Safaris.",
+  "property": "Mbweha Safari Camp",
+  "operator": "Atua Enkop Africa Ltd (cheques payable to Mbweha Camp Ltd)",
+  "region": "Lake Nakuru",
+  "tier": "Nett, non-commissionable contract rate",
+  "source": { "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/ATUA ENKOP/Atua Enkop  - Sunworld Safaris  - 2026.xlsx", "validity": { "start": "2026-01-03", "end": "2027-01-02" } },
+  "seasons": { "mid": "03 Jan-31 Mar, 01-30 Jun, 16 Oct-22 Dec 2026", "low": "01 Apr-31 May", "high": "01 Jul-15 Oct 2026, 23 Dec 2026-02 Jan 2027" },
+  "rates": {
+    "currency": "USD", "unit": "per person per night",
+    "package": { "mid": { "adultSharing": 270, "single": 350, "child6to11": 135, "child12to16": 205 }, "low": { "adultSharing": 225, "single": 225, "child6to11": 115, "child12to16": 170 }, "high": { "adultSharing": 330, "single": 435, "child6to11": 165, "child12to16": 250 } },
+    "nonPackage": { "mid": { "adultSharing": 170, "single": 220, "child6to11": 85, "child12to16": 130 }, "low": { "adultSharing": 150, "single": 150, "child6to11": 75, "child12to16": 115 } }
+  },
+  "childPolicy": { "note": "Child sharing with 2 adults 6-11yrs and 12-16yrs bands - different from Soroi's 5-11 bracket.", "ownRoomUnder12": "75% of adult rate", "ownRoom12plus": "Full adult rate", "oneAdultOneChildSharing": "Adult pays single room rate" },
+  "packageInclusions": "Full board accommodation, local airstrip transfer, shared game drives, sundowner.",
+  "exclusions": "Drinks, laundry, gratuities, park entry fees, flight cost, health insurance, exclusive vehicle ($395/day), bush breakfast ($60), bush dinner ($60), extra/picnic lunch ($30).",
+  "circuitDiscount": { "twoProperties": "5%", "threeOrFourFiveProperties": "7.5%", "note": "Applies across Atua Enkop's 5-property portfolio (this camp + Elephant Bedroom, Tipilikwani Mara, Mara Ngenche, Elephant Gorge)" },
+  "notes": "Max 3 single rooms per camp per booking. Cancellation: within 19 days of arrival (no-show) 100% charged."
+}

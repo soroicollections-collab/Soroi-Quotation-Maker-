@@ -1,0 +1,18 @@
+{
+  "$note": "Extracted 6 Aug 2026 from the same Asilia workbook as rekero-camp-asilia-2026.json ('Rate Table' sheet, cross-checked against 'Camp Seasons & Rack').",
+  "property": "Naboisho Camp",
+  "operator": "Asilia Africa",
+  "region": "Naboisho Conservancy, Masai Mara",
+  "tier": "Standard net rate (RSP x 0.75)",
+  "source": { "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/ASILIA/Asilia-Contract-Rates-26-27.xlsx", "validity": { "start": "2026-06-01", "end": "2027-05-31" } },
+  "mealPlan": "Game Package only",
+  "seasons": { "high": "1 Jun-31 Oct, 20 Dec-5 Jan", "low": "1 Nov-19 Dec, 6 Jan-31 Mar", "green": "1 Apr-31 May" },
+  "rates": {
+    "currency": "USD", "unit": "per person per night",
+    "rsp": { "high": { "sharing": 2250, "single": 3375, "triple": 1875 }, "low": { "sharing": 1240, "single": 1860, "triple": 1033.33 }, "green": { "sharing": 690, "single": 1035, "triple": 575 } },
+    "standardNet": { "high": { "sharing": 1687.5, "single": 2531.25, "triple": 1406.25 }, "low": { "sharing": 930, "single": 1395, "triple": 775 }, "green": { "sharing": 517.5, "single": 776.25, "triple": 431.25 } }
+  },
+  "mandatoryFees": { "unit": "per person per night", "asiliaConservationCharge": 10, "conservancyFee": { "adult": 130, "child3to17": 65 } },
+  "childPolicy": { "5to18": "50% of adult sharing rate", "19plus": "Full adult rate", "under12MustShareWithAdult": true, "under5": "Not permitted unless exclusive booking with Field Ops approval" },
+  "notes": "Tier classified 'Reserve' in Asilia's internal camp tier list."
+}

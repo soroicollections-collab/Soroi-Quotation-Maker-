@@ -1,0 +1,37 @@
+{
+  "$note": "Structured conversion of CLAUDE.md > Flexible Variables > Nairobi/stopover hotel. This is a flexible variable, not a fixed default — present these options to the requester/client rather than assuming one.",
+  "category": "Nairobi / stopover hotel",
+  "flexible": true,
+  "year": 2026,
+  "occupancy": "2 adults + 1 child",
+  "boardBasis": "Bed & Breakfast (BB)",
+  "currency": "USD",
+  "priced": [
+    {
+      "name": "Four Points by Sheraton, Nairobi Airport",
+      "totalPerNight": 220.00,
+      "notes": "Standard King + $50 extra bed"
+    },
+    {
+      "name": "Crowne Plaza, Nairobi Airport",
+      "totalPerNight": 250.00,
+      "notes": "Standard Room + $70 extra bed, child meals free, includes return airport transfers"
+    },
+    {
+      "name": "Fairview Hotel, Nairobi (Upper Hill)",
+      "totalPerNight": 280.00,
+      "notes": "Room-type conflict unresolved — see CLAUDE.md Known Issues. Confirm room type directly with the hotel before booking.",
+      "flagged": true
+    }
+  ],
+  "unverifiedCandidates": {
+    "sourceFolder": "2026 CONTRACT RATES/KENYA/ACCOMODATION/",
+    "note": "Not priced yet — extract on demand if a client specifically asks for one of these.",
+    "names": [
+      "EKA Hotel", "ibis", "ibis Styles", "House of Waine", "Kempinski",
+      "Hyatt Regency", "Monarch", "Boma Inn", "Karen Gables & Blixen",
+      "Ivory Hotels", "Panari", "Ritz Carlton", "Movenpick", "Sarova",
+      "Tamarind Tree", "Argyle Grand", "Avid", "Tribe", "Trademark"
+    ]
+  }
+}

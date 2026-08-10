@@ -1,0 +1,91 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftotext -layout, paginated, from 'HEMINGWAYS COLLECTION/Hemingways Collection - 2027 STO Rates.pdf' (20pp). 5 properties, each on its own clearly-labeled pages: Hemingways Nairobi, Hemingways Ol Seki Mara, Hemingways River Camp Mara, Hemingways Watamu, Hemingways Eden Residence (also in Watamu/coast area). A companion 'Hemingways Collection 2027 Special Offers Packages.pdf' exists in the same folder but was not separately extracted (promotional offers, not base rates).",
+  "operator": "Hemingways Collection",
+  "currency": "USD",
+  "tier": "STO (shown alongside Rack on every table; STO is NOT a flat percentage of Rack - varies room-to-room, roughly 78-82% of rack on most cells, not exactly verified as a single ratio)",
+  "confidence": "confirmed-2027-08-06",
+  "properties": {
+    "Hemingways Nairobi": {
+      "seasons": { "regular": "05 Jan-28 Feb & 01 Nov-17 Dec 2027", "green": "01 Mar-31 May 2027", "premium": "01 Jun-31 Oct 2027 & 18 Dec 2027-04 Jan 2028" },
+      "rates": {
+        "unit": "Single / Double, per room per night",
+        "DeluxeSuite": { "regular": { "rack": "670/900", "sto": "540/720" }, "green": { "rack": "530/710", "sto": "425/570" }, "premium": { "rack": "875/1120", "sto": "720/920" } },
+        "ExecutiveSuite": { "regular": { "rack": "730/1050", "sto": "585/840" }, "green": { "rack": "575/830", "sto": "460/665" }, "premium": { "rack": "955/1290", "sto": "780/1055" } },
+        "BlixenSuite": { "note": "single or double, same price", "regular": { "rack": 1750, "sto": 1400 }, "green": { "rack": 1385, "sto": 1105 }, "premium": { "rack": 2210, "sto": 1810 } },
+        "HemingwaysSuite": { "note": "single or double, same price", "regular": { "rack": 2340, "sto": 1870 }, "green": { "rack": 1850, "sto": 1475 }, "premium": { "rack": 3155, "sto": 2585 } }
+      },
+      "childRates": { "DeluxeSuite": { "regular": { "rack": 270, "sto": 215 }, "green": { "rack": 215, "sto": 170 }, "premium": { "rack": 335, "sto": 275 } }, "ExecutiveSuite": { "regular": { "rack": 315, "sto": 250 }, "green": { "rack": 250, "sto": 200 }, "premium": { "rack": 385, "sto": 315 } }, "note": "Ages 6-12 only; no child rate on Blixen or Hemingways Suites" },
+      "verified": true
+    },
+    "Hemingways Ol Seki Mara": {
+      "region": "Naboisho Conservancy, Maasai Mara",
+      "seasons": { "regular": "01 Mar-14 Jun & 01 Nov-17 Dec 2027", "high": "05 Jan-28 Feb, 15-30 Jun & 01 Sep-31 Oct 2027", "premium": "01 Jul-31 Aug 2027 & 18 Dec 2027-04 Jan 2028" },
+      "rates": {
+        "unit": "Single / Per-Person-Sharing",
+        "NinaTent": { "regular": { "rack": "1110/905", "sto": "890/725" }, "high": { "rack": "1740/1370", "sto": "1395/1100" }, "premium": { "rack": "1930/1500", "sto": "1545/1200" }, "note": "Single supplement applies to up to 2 tents/night; additional single tents charged at double rate" },
+        "PrivateVilla_SimbaOrChui": { "note": "Exclusive use, up to 4 adults or 2 adults+3 kids; includes private vehicle, chef, plunge pool, butler", "regular": { "rack": 4535, "sto": 3630 }, "high": { "rack": 6830, "sto": 5465 }, "premium": { "rack": 7500, "sto": 6000 } }
+      },
+      "childRates": { "NinaTent": { "regular": { "rack": 380, "sto": 305 }, "high": { "rack": 575, "sto": 460 }, "premium": { "rack": 615, "sto": 490 } }, "note": "Ages 8-12 only, max 1 child sharing with 2 adults; no child rate on Private Villa" },
+      "mandatoryFees": { "naboishoConservancyFee": { "adult": 150, "child": 75, "unit": "per night" }, "naboishoReserveFundFee": { "amount": 5, "unit": "per person per night" }, "maraReserveParkFee": { "range": "100-200", "unit": "per person, depending on season" }, "guideTent": { "amount": 240, "unit": "per guide per night, excl. conservation fees" } },
+      "inclusions": "Full board, sundowners, standard alcoholic drinks, 2 daily shared game drives, shared bush breakfast + night drive (min 3-night stay), airstrip transfers, guided bush walk, in-tent minibar, Wi-Fi, taxes",
+      "verified": true
+    },
+    "Hemingways River Camp Mara": {
+      "region": "Maasai Mara",
+      "seasons": { "regular": "01 Mar-09 Apr, 11 May-14 Jun & 01 Nov-17 Dec 2027", "high": "05 Jan-28 Feb, 15-30 Jun & 01 Sep-31 Oct 2027", "premium": "01 Jul-31 Aug 2027 & 18 Dec 2027-04 Jan 2028" },
+      "rates": {
+        "unit": "Single / Per-Person-Sharing",
+        "ClassicSafariTent": { "regular": { "rack": "1035/840", "sto": "830/670" }, "high": { "rack": "1505/1185", "sto": "1205/950" }, "premium": { "rack": "1700/1320", "sto": "1360/1060" } },
+        "FamilySafariSuite": { "note": "Exclusive use up to 4 adults or 2 adults+3 kids", "regular": { "rack": 3210, "sto": 2570 }, "high": { "rack": 4520, "sto": 3620 }, "premium": { "rack": 5025, "sto": 4020 } },
+        "PrivateSafariSuite": { "note": "Exclusive use up to 4 adults or 2 adults+3 kids", "regular": { "rack": 3560, "sto": 2850 }, "high": { "rack": 5025, "sto": 4020 }, "premium": { "rack": 5580, "sto": 4465 } }
+      },
+      "childRates": { "ClassicSafariTent": { "regular": { "rack": 370, "sto": 300 }, "high": { "rack": 525, "sto": 420 }, "premium": { "rack": 580, "sto": 465 } }, "note": "Ages 8-12 share with adults (max 1 child in Classic Tent); 12+ pays full adult rate; under 8 not permitted in Classic Tents; Safari Suites have no age restriction" },
+      "verified": true
+    },
+    "Hemingways Watamu": {
+      "region": "Watamu, Kenya coast",
+      "seasons": { "regular": "01 Mar-31 Jul & 01 Sep-17 Dec 2027", "high": "05 Jan-28 Feb & 01-31 Aug 2027", "premiumSeason1": "18-26 Dec 2027", "premiumSeason2": "27 Dec 2027-04 Jan 2028" },
+      "rates": {
+        "unit": "Single / Double per room per night; Premium shown as PS1/PS2",
+        "NorthWingOceanView": { "regular": { "rack": "270/360", "sto": "215/290" }, "high": { "rack": "340/445", "sto": "275/355" }, "premiumPS1PS2": { "rack": "850/995", "sto": "680/800" } },
+        "NorthWingDeluxeOceanView": { "regular": { "rack": "310/415", "sto": "250/330" }, "high": { "rack": "420/525", "sto": "335/420" }, "premiumPS1PS2": { "rack": "955/1120", "sto": "760/900" } },
+        "OneBedroomOceanViewSuite": { "note": "single or double, same price", "regular": { "rack": 525, "sto": 420 }, "high": { "rack": "580/790", "sto": "460/630" }, "premiumPS1PS2": { "rack": "1150/1350", "sto": "920/1080" } },
+        "TwoBedroomOceanViewSuite_max4pax": { "note": "single or double, same price", "regular": { "rack": 760, "sto": 610 }, "high": { "rack": 890, "sto": 715 }, "premiumPS1PS2": { "rack": "1690/1990", "sto": "1355/1590" } },
+        "TwoBedroomDeluxeOceanViewSuite_max4pax": { "regular": { "rack": 875, "sto": 700 }, "high": { "rack": 1050, "sto": 840 }, "premiumPS1PS2": { "rack": "1840/2165", "sto": "1475/1730" } },
+        "FourBedroomOceanViewPenthouse_max8pax": { "regular": { "rack": 1400, "sto": 1120 }, "high": { "rack": 1925, "sto": 1540 }, "premiumPS1PS2": { "rack": "3610/4240", "sto": "2885/3395" } }
+      },
+      "childRates": { "NorthWingDeluxeOceanView_only": { "regular": { "rack": 105, "sto": 85 }, "high": { "rack": 130, "sto": 105 }, "premium": { "rack": 280, "sto": 225 } }, "note": "Extra child in roll-away bed, North Wing Deluxe Ocean View rooms only; max 1 roll-away in a 2BR suite" },
+      "mealPlan": "Bed & Breakfast base (Half Board during Premium season); Half Board supplement $45pp/day, Full Board supplement $80pp/day, children under 12 pay 50% of meal supplement",
+      "childPolicy": { "under5SharingWithAdult": "Free", "age6to12": "Child rate sharing with 2 adults (max 1 child)", "under12OwnRoom": "75% of double room rate" },
+      "verified": true
+    },
+    "Hemingways Eden Residence": {
+      "region": "Watamu, Kenya coast",
+      "seasons": { "regular": "05 Jan-28 Feb, 01-30 Jun & 01 Oct-17 Dec 2027", "green": "01 Mar-31 May 2027", "premium": "01 Jul-30 Sep 2027 & 18 Dec 2027-04 Jan 2028" },
+      "rates": {
+        "unit": "Single / Double per room per night",
+        "MainHouse_MasterBedroom1": { "regular": { "rack": "600/860", "sto": "470/670" }, "green": { "rack": "420/600", "sto": "330/470" }, "premium": { "rack": "760/1070", "sto": "590/835" } },
+        "MainHouse_Bedroom2": { "regular": { "rack": "510/710", "sto": "400/550" }, "green": { "rack": "355/500", "sto": "275/390" }, "premium": { "rack": "625/850", "sto": "485/665" } },
+        "MainHouse_Bedroom3": { "regular": { "rack": "400/545", "sto": "310/425" }, "green": { "rack": "280/385", "sto": "220/300" }, "premium": { "rack": "480/655", "sto": "375/510" } },
+        "ToniosStudios_GardenView": { "regular": { "rack": "600/825", "sto": "470/645" }, "green": { "rack": "420/575", "sto": "330/450" }, "premium": { "rack": "760/1030", "sto": "590/800" } },
+        "ToniosStudios_ForestView": { "regular": { "rack": "600/825", "sto": "470/645" }, "green": { "rack": "420/575", "sto": "330/450" }, "premium": { "rack": "760/1030", "sto": "590/800" } },
+        "ToniosStudios_GardenLoft": { "regular": { "rack": "485/665", "sto": "380/520" }, "green": { "rack": "340/470", "sto": "265/365" }, "premium": { "rack": "580/800", "sto": "450/625" } },
+        "Cottage_withKitchenette": { "regular": { "rack": "600/825", "sto": "305/420" }, "green": { "rack": "420/575", "sto": "330/450" }, "premium": { "rack": "760/1030", "sto": "415/560" } }
+      },
+      "exclusiveUseRates": {
+        "MainHouse_6adults": { "regular": { "rack": 1820, "sto": 1420 }, "green": { "rack": 1275, "sto": 995 }, "premium": { "rack": 2180, "sto": 1700 } },
+        "MainHousePlusKidsLoft_6adults3children": { "regular": { "rack": 2180, "sto": 1700 }, "green": { "rack": 1525, "sto": 1190 }, "premium": { "rack": 2560, "sto": 2000 } },
+        "ToniosStudios_exclGardenLofts": { "regular": { "rack": 1565, "sto": 1220 }, "green": { "rack": 1095, "sto": 855 }, "premium": { "rack": 2000, "sto": 1560 } },
+        "FullEstate_18adults3children": { "regular": { "rack": 5240, "sto": 4085 }, "green": { "rack": 3670, "sto": 2860 }, "premium": { "rack": 6550, "sto": 5110 } }
+      },
+      "childPolicy": { "under8": "Not permitted unless booking exclusive use of Main House or full estate", "age8to16": "Child rate with 2 adults (max 1 child) in Garden Loft or Cottage only" },
+      "mealPlan": "Bed & Breakfast",
+      "verified": true
+    }
+  },
+  "airportTransfers": {
+    "Watamu": { "malindiAirport_1to3pax": 40, "malindiAirport_4to6pax": 80, "vipingoAirport": 50, "moiInternationalMombasa": 190, "unit": "one way, per vehicle unless noted" },
+    "EdenResidence": { "jkia_3pax": 100, "jkia_5pax": 130, "wilson_3pax": 60, "wilson_5pax": 80, "vipMeetGreetJkia": 35, "vipTransferJkia": 150 },
+    "verified": true
+  }
+}

@@ -1,0 +1,135 @@
+{
+  "$note": "AirKenya Express 2027 route network - companion file to flights-air-kenya-routes-2026.json. Structurally very similar to 2026 but with two material changes: (1) a new separate 'Fuel Surcharge' column added on top of gross/nett/tax, (2) Group Fare thresholds changed (2026: 10+pax=20%, 16+pax=25% vs 2027: 15+pax=20%, 20+pax=25%). Also includes two standalone special-fare sheets (Mara S Class, Arusha J Class) not present in the 2026 folder.",
+  "carrier": "AirKenya Express (with Regional Air Services Tanzania, Aerolink Uganda as connecting sister airlines)",
+  "currency": "USD",
+  "verified": true,
+  "source": {
+    "mainRatesFile": "2027 CONTRACT RATES/KENYA/FLIGHTS/AIR KENYA/AIRKENYA - SUNWORLD SAFARIS-RATES 2027.pdf",
+    "sClassFile": "2027 CONTRACT RATES/KENYA/FLIGHTS/AIR KENYA/AIRKENYA 2027 RATES S CLASS 15%.pdf",
+    "jClassFile": "2027 CONTRACT RATES/KENYA/FLIGHTS/AIR KENYA/AIRKENYA 2027 RATES J CLASS 15%.pdf",
+    "extractionMethod": "Main rates PDF's rate-table pages (2-7) are image-only (scanned), same as the 2026 file - extracted via direct visual read of each page image. The S Class and J Class one-page PDFs are ALSO image-only (pdftotext returns empty) - also extracted visually.",
+    "letterDate": "6 June 2026",
+    "salesContact": "Jared Mdamu, Sales Manager"
+  },
+  "validity": { "start": "2027-01-01", "end": "2027-12-31" },
+  "seasons": {
+    "high": { "dateRanges": ["01 Jan 2027 - 28 Feb 2027", "01 Jun 2027 - 31 Oct 2027", "21 Dec 2027 - 31 Dec 2027"] },
+    "low": { "dateRanges": ["01 Mar 2027 - 31 May 2027", "01 Nov 2027 - 20 Dec 2027"] }
+  },
+  "newFor2027": {
+    "fuelSurcharge": "A new *FUEL SUR-CHARGE (USD) column appears on every route table, additional to Gross/Nett/Taxes. Per the T&Cs page: 'The fuel surcharge is subject to periodic review and may be revised based on prevailing market conditions and fuel price stability.' This means the 2027 all-in cost per route is HIGHER than the nett-fare-only figures below would suggest - always add the fuel surcharge when computing a real quote total.",
+    "returnFareRestriction": "New restriction not present in the 2026 doc: 'Return fares are only applicable where both the inbound and outbound sectors are to and from the same destination' - i.e. you can't mix a return fare across two different airstrips.",
+    "sustainabilityMessaging": "Marketing copy now includes an eTA/e-visa and Yellow Fever vaccination reminder for the Mara-Serengeti (vv) connection - a genuinely new compliance note worth passing to travelers on that specific route.",
+    "arushaDirectAccess": "Letter highlights new/enhanced direct access to Arusha as a 2027 product improvement.",
+    "aircraftMix": "~70% of scheduled-circuit passengers now fly Dash 8 / Dash 7 (pressurized) per the cover letter, up from the 2026 letter's more modest fleet-upgrade framing."
+  },
+  "routes": {
+    "wilsonAmboseli": {
+      "oneWay": { "gross": 199, "net": 169.15, "tax": 25, "fuelSurcharge": 25 },
+      "return": { "gross": 348, "net": 295.80, "tax": 34, "fuelSurcharge": 50 },
+      "note": "IDENTICAL gross/nett/tax to the 2026 figures (see flights-air-kenya-routes-2026.json) - only the new fuel surcharge is additive. Daily; min 2 pax. Inbound Amboseli-Wilson connects to Nanyuki, Lewa Downs, Samburu, Meru, Loisaba at 09:45; Masai Mara at 10:30; Arusha at 13:30."
+    },
+    "wilsonArusha": {
+      "wilsonToArusha": { "gross": 210, "net": 178.50, "tax": 115, "fuelSurcharge": 25 },
+      "arushaToWilson": { "gross": 210, "net": 178.50, "tax": 128, "fuelSurcharge": 25 },
+      "return": { "gross": 352, "net": 299.20, "tax": 228, "fuelSurcharge": 50 },
+      "note": "Same route AirKenya called 'Wilson-Kilimanjaro' in the 2026 doc, now relabeled 'Arusha' in 2027 (both are the international sector requiring min 4 pax) - gross/nett figures identical to 2026's Kilimanjaro figures, tax figures also identical. Non-operational 1 Apr-20 May and 1 Nov-15 Dec, same as 2026."
+    },
+    "nanyukiKamok": {
+      "oneWay": { "gross": 208, "net": 176.80, "tax": 25, "fuelSurcharge": 25 },
+      "return": { "gross": 346, "net": 294.10, "tax": 34, "fuelSurcharge": 50 }
+    },
+    "samburuKalamaSaasab": {
+      "oneWay": { "gross": 285, "net": 242.25, "tax": 25, "fuelSurcharge": 25 },
+      "return": { "gross": 474, "net": 402.90, "tax": 34, "fuelSurcharge": 50 }
+    },
+    "lewa": {
+      "oneWay": { "gross": 285, "net": 242.25, "tax": 25, "fuelSurcharge": 25 },
+      "return": { "gross": 474, "net": 402.90, "tax": 34, "fuelSurcharge": 50 }
+    },
+    "loisaba": {
+      "oneWay": { "gross": 285, "net": 242.25, "tax": 25, "fuelSurcharge": 25 },
+      "return": { "gross": 474, "net": 402.90, "tax": 34, "fuelSurcharge": 50 }
+    },
+    "meru": {
+      "oneWay": { "gross": 285, "net": 242.25, "tax": 25, "fuelSurcharge": 25 },
+      "return": { "gross": 474, "net": 402.90, "tax": 34, "fuelSurcharge": 50 }
+    },
+    "nanyukiKamokToMasaiMara": {
+      "oneWay": { "gross": 446, "net": 379.10, "tax": 25, "fuelSurcharge": 25 },
+      "note": "Identical to 2026 gross/nett/tax."
+    },
+    "lewaSamburuLoisabaMeruToMasaiMara": {
+      "oneWay": { "gross": 474, "net": 402.90, "tax": 25, "fuelSurcharge": 25 },
+      "note": "2027 consolidates what was 3 separate route rows in 2026 (Lewa/Samburu-Mara, Loisaba-Mara, Meru-Mara) into one combined 'LEWA/SAMBURU/LOISABA/MERU - MASAI MARA' row, same fare."
+    },
+    "wilsonMasaiMara": {
+      "oneWay": { "gross": 258, "net": 219.30, "tax": 25, "fuelSurcharge": 25 },
+      "return": { "gross": 429, "net": 364.65, "tax": 34, "fuelSurcharge": 50 },
+      "note": "Identical to 2026 gross/nett/tax; 'Wilson-Masai Mara Special' promo-fare row from the 2026 doc does not appear as a separate line in the 2027 main contract - see marasClassSpecial2027 below, likely its successor/replacement."
+    },
+    "maraToMigori": {
+      "oneWay": { "gross": 311, "net": 264.35, "tax": 25, "fuelSurcharge": 25 },
+      "note": "Vice versa (vv). Identical to 2026 gross/nett/tax. Daily except non-operational 1 Apr-20 May, min 4 pax 1 Nov-15 Dec."
+    },
+    "maraToTarime": {
+      "oneWay": { "gross": 379, "net": 322.15, "tax": 25, "fuelSurcharge": 25 },
+      "note": "Vice versa. NEW for 2027: 'This service includes road transfer on Airkenya buses between Migori-Tarime (vv)' - explicitly bundled ground transfer, not mentioned in the 2026 doc's equivalent row."
+    },
+    "maraSerengetiViaMigoriTarime": {
+      "note": "Fares apply between AirKenya and either Regional Air Services, Auric Air, or Coastal Aviation, either direction. Daily, min 2 pax except non-operational 1 Apr-20 May and min 4 pax 1 Nov-15 Dec. NEW for 2027: fares now explicitly stated to be 'inclusive of transfers between Migori-Tarime and Tarime-Migori, provided by Airkenya.' New visa/health compliance note added (Kenya eTA, Tanzania e-visa, Yellow Fever certificate mandatory for East Africa travel).",
+      "routes": {
+        "maraToKogatende": { "gross": 674, "net": 572.90, "tax": 65, "fuelSurcharge": 45 },
+        "maraToLamai": { "gross": 674, "net": 572.90, "tax": 65, "fuelSurcharge": 45 },
+        "maraToSeronera": { "gross": 689, "net": 585.65, "tax": 65, "fuelSurcharge": 45 },
+        "maraToSasakwa": { "gross": 709, "net": 602.65, "tax": 65, "fuelSurcharge": 45 },
+        "maraToLobo": { "gross": 689, "net": 585.65, "tax": 65, "fuelSurcharge": 45 },
+        "maraToGrumeti": { "gross": 689, "net": 585.65, "tax": 65, "fuelSurcharge": 45 },
+        "maraToFortIkoma": { "gross": 689, "net": 585.65, "tax": 65, "fuelSurcharge": 45 },
+        "maraToNdutu": { "gross": 709, "net": 602.65, "tax": 65, "fuelSurcharge": 45 },
+        "maraToSerengetiSouth": { "gross": 709, "net": 602.65, "tax": 65, "fuelSurcharge": 45 },
+        "maraToLakeManyara": { "gross": 764, "net": 649.40, "tax": 65, "fuelSurcharge": 45 }
+      },
+      "note2": "All gross/nett/tax figures identical to 2026 - only the fuel surcharge column and the transfer-inclusion/visa notes are new."
+    }
+  },
+  "specialFareSheets2027": {
+    "maraSClass": {
+      "source": "sClassFile",
+      "title": "Mara Special Rates - S Class",
+      "confidenceNote": "This is a separate, cheaper promotional fare class specific to named flight times, similar in spirit to the 2026 'Wilson-Masai Mara Special' row but issued here as its own standalone one-page sheet rather than embedded in the main contract table. Circuit and Group discounts do NOT apply to S Class. S Class inventory is unavailable during peak season (July-August). Company may withdraw/amend/discontinue without notice.",
+      "oneWay0730hrsFlight": { "gross": 171, "net": 145.35, "tax": 25, "fuelSurcharge": 25 },
+      "return0805And1510hrsFlights": { "gross": 343, "net": 291.55, "tax": 34, "fuelSurcharge": 50 }
+    },
+    "arushaJClass": {
+      "source": "jClassFile",
+      "title": "Arusha Special Rates - J Class 2027",
+      "confidenceNote": "Separate promotional/business-style fare class for Wilson-Arusha. Child rates, circuit discounts, and group discounts do NOT apply - adult and child are charged the SAME fare level on J Class (a notable exception to AirKenya's usual 70%-child-fare rule). Company may withdraw/amend/discontinue without notice.",
+      "wilsonToArushaOneWay": { "gross": 158, "net": 134.30, "tax": 115, "fuelSurcharge": 25 },
+      "arushaToWilsonOneWay": { "gross": 158, "net": 134.30, "tax": 128, "fuelSurcharge": 25 },
+      "return": { "gross": 264, "net": 224.40, "tax": 228, "fuelSurcharge": 50 }
+    }
+  },
+  "circuitDiscounts": {
+    "note": "Applies to gross fares only, Airkenya network only (2027 wording narrows this from 2026's 'throughout Airkenya and its subsidiaries network' to 'Only on Airkenya Network' - a real scope narrowing worth flagging, not just a rewording, since it may exclude Regional Air/Aerolink-operated legs from the circuit discount in 2027 where they qualified in 2026).",
+    "threeSectorsAndAbove": { "discountOffGross": "25%", "example": "Wilson-Samburu-Mara-Wilson; Wilson-Amboseli-Wilson-Mara-Wilson; Wilson-Amboseli-Wilson-Lewa-Mara-Wilson" },
+    "confidenceNote": "2027 collapses the 2026 two-tier structure (25% for 3-4 sectors, 30% for 5+) into a single flat 25% for 3+ sectors - the 5-sector 30% tier is GONE in 2027. This is a real reduction for large circuits, not an extraction error - double check with AirKenya if quoting a 5+-sector 2027 circuit."
+  },
+  "groupDiscounts": {
+    "fifteenPlusPax": "20% off gross fare, scheduled flights only",
+    "twentyPlusPax": "25% off gross fare, scheduled flights only",
+    "confidenceNote": "Thresholds RAISED from 2026 (10+/16+) to 2027 (15+/20+) - fewer groups will qualify for either discount tier in 2027. Flag this change explicitly in any 2027 group quote."
+  },
+  "childInfantPolicy": {
+    "infantsUnder2": "Free, provided they do not occupy a seat.",
+    "childrenUnder12": "70% of the adult fare.",
+    "exceptions": "Does NOT apply to J Class (Arusha) - adult and child same fare. S Class policy on child fare not explicitly restated in the S Class sheet; assume standard 70% applies unless told otherwise [Inference]."
+  },
+  "otherTermsUnchangedFrom2026": [
+    "Minimum passengers: 2/airstrip domestic, 4/sector international.",
+    "Amendment/cancellation/no-show fee structure identical to 2026 ($50/$100 amendment tiers, $50/$100/no-refund cancellation tiers, $100 no-show revalidation fee, $20 refund admin fee + 5% PSP commission).",
+    "Baggage: 15kg soft bags, $5/kg excess, $50 flat 1-10kg pre-purchase bundle, freight seat = 75kg at child's rate + taxes.",
+    "Check-in: 60 min at Wilson/Arusha/Kisumu/Entebbe, 30 min at bush airstrips."
+  ],
+  "confidenceNoteGeneral": "Because 2027 nett fares are identical to 2026 nett fares on almost every shared route, the REAL year-over-year price change for 2027 is entirely carried by the new fuel surcharge line - a quote built from nett-fare-only figures would understate the true 2027 cost by $25-50 per sector. Always include the fuel surcharge column when pricing a 2027 AirKenya itinerary."
+}

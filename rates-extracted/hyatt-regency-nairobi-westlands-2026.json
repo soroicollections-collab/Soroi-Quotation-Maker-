@@ -1,0 +1,36 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftotext -layout. NOT a Soroi property. Nairobi hotel.",
+  "property": "Hyatt Regency Nairobi, Westlands",
+  "operator": "JM Developers trading as Hyatt Regency Nairobi Westlands",
+  "region": "38 Muthithi Road, Westlands, Nairobi",
+  "source": {
+    "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/Hyatt Regency/Sunworld Safaris -Hyatt Regency 2026 Leisure Contract.pdf",
+    "validity": { "start": "2026-01-01", "end": "2026-12-31" },
+    "tier": "Wholesale Rates (Rack and STO both shown)"
+  },
+  "confidence": "confirmed-2026-08-06",
+  "currency": "USD",
+  "unit": "per room per night, single room occupancy, inclusive of 16% VAT, 2% Catering Levy, 5.5% Service Charge",
+  "rates": {
+    "kingSingle": { "rack": 250, "sto": 150 },
+    "kingDoubleTwin": { "rack": 295, "sto": 180 },
+    "deluxeKing": { "rack": 335, "sto": 220 },
+    "kingTwinWithRegencyClubAccess": { "rack": 345, "sto": 240 },
+    "deluxeKingWithRegencyClubAccess": { "rack": 385, "sto": 260 },
+    "juniorSuiteWithRegencyClubAccess": { "rack": 425, "sto": 280 },
+    "deluxeSuiteWithRegencyClubAccess": { "rack": 455, "sto": 390 },
+    "executiveSuiteWithRegencyClubAccess": { "rack": 485, "sto": 420 },
+    "verified": true
+  },
+  "bestAvailableRateClause": "If Hyatt.com's Best Available Rate is lower than the contracted rate at time of booking, the lower rate is granted.",
+  "inclusions": "Buffet breakfast at EAT Restaurant, high-speed internet, fitness center access.",
+  "extraPersonSupplement": { "standardRoom": 50, "regencyClubRoom": 80, "unit": "USD per night" },
+  "maxOccupancy": 3,
+  "childPolicy": { "age13Plus": "Adult accommodation price", "age12AndUnder": "No extra charge for room or breakfast (if adult rate includes breakfast)", "familyRoomChildOwnRoom": "50% off rack rate" },
+  "extraBed": "No surcharge on rollaway bed itself; extra person charge applies per above.",
+  "checkInOut": { "earlyCheckIn": { "before9am": "100% of rate", "9amTo2pm": "50% of rate" }, "lateCheckout": { "noonTo6pm": "50% off rate", "past6pm": "100% of rate" } },
+  "meals": { "lunchOrDinner": 45, "unit": "USD per person" },
+  "transfers": { "jkiaOneWayAlphard": 60, "unit": "USD" },
+  "commissionable": false,
+  "cancellationPolicy": "48 hours prior to 2pm for individual bookings, 7 days for series bookings; late cancellations/no-shows charged one night's room + taxes."
+}

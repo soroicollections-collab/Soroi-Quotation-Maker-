@@ -1,0 +1,93 @@
+{
+  "$note": "Extracted 6 Aug 2026, read directly page-by-page (3 pages total), single-property document, no misattribution risk. IMPORTANT: despite the filename/title saying 'STO CONTRACT RATES', the document body itself says 'NETT per person per night' — this is a bilateral negotiated contract rate, not confirmed to be one of the generic STO 15/20/25/30/35/40% discount-ladder tiers described in CLAUDE.md. Flagging this naming conflict explicitly rather than assuming a mapping.",
+  "property": "Baobab Beach Resort",
+  "region": "Diani Beach (South Coast, near Ukunda)",
+  "tier": "Contract Rate, labeled 'STO Contract Rate' by the hotel but stated in-document as NETT — terminology unconfirmed against Sunworld's own STO ladder. See CLAUDE.md's open item on STO-to-tier mapping.",
+  "residency": "Not split by residency on this document.",
+  "source": {
+    "file": "2027 CONTRACT RATES/KENYA/BEACH ACCOMODATION/BAOBAB BEACH RESORT/BAOBAB BEACH RESORT - EURO STO CONTRACT RATES 2026-28..pdf",
+    "pdfPageIndex": 0,
+    "docPrintedPageNumber": 1,
+    "documentDate": "26 March 2026",
+    "validity": { "start": "2026-11-01", "end": "2028-01-03", "note": "This single document actually spans THREE contract years' worth of date rows: 01 Nov 2026 through 03 Jan 2028. Rows 1-6 cover the 2026/27 season (01 Nov 2026 - 31 Oct 2027) in full; rows 7-8 begin the 2027/28 season but only cover 01 Nov 2027 - 03 Jan 2028 (Nov/Dec/New Year) — the remainder of the 2027/28 season (Jan-Oct 2028) is not in this file. Filed under the '2027 CONTRACT RATES' folder likely because it's the contract that superseded the prior 2025-26 one and was current as of 2027 fiscal planning; use the row-level dates below rather than the folder name to determine which figure applies to a given trip date." }
+  },
+  "confidence": "confirmed-2026-08-06",
+  "extractionMethod": { "note": "Read directly from the document's single rate table (page 1 of 3); no multi-property risk." },
+  "structuralFindings": [
+    "Currency is EUR (confirmed 'Currency in EURO' column header), All Inclusive basis — same shape as the 2026 contract.",
+    "Five room categories, now including 'Junior Suite' instead of the 2026 contract's 'Suite Room' naming — likely the same physical room re-labeled, not independently confirmed as identical inventory.",
+    "Same three-tier pricing structure per room: Person Sharing, Single Room, 3rd Adult.",
+    "Minimum release/stay-night columns now explicit per row (varies 7-28 nights release, and >=2 or >=5 nights min stay per season) — more detail than the 2026 contract exposed.",
+    "Children policy identical in structure to the 2026 contract (free under 2, 50%/75% bands 2-11.99yrs) with minor rate label differences.",
+    "Cancellation terms tightened slightly vs 2026 contract: 03-01 days now 90% (2026 contract) -> here also present as its own band, differs slightly from the 2026 document's 100% at 03-days-or-less — treat these as two different contract versions, don't merge.",
+    "No mandatory conservancy/park fee — consistent with beach-resort pattern."
+  ],
+  "seasons": {
+    "note": "Row date ranges as printed; years inferred from context where the source table omits them (see validity note above) — flagged per row.",
+    "rows": [
+      { "dateRange": "01 Nov - 21 Dec 2026", "releaseNights": 21, "minStayNights": 2, "yearInferred": false },
+      { "dateRange": "22 Dec 2026 - 03 Jan 2027", "releaseNights": 28, "minStayNights": 5, "yearInferred": false },
+      { "dateRange": "04 Jan - 31 Mar 2027", "releaseNights": 14, "minStayNights": 2, "yearInferred": true, "confidenceNote": "Source row shows only '04 Jan-31 Mar' with no year printed; inferred 2027 from table sequence (falls between the 22Dec26-03Jan27 row and 01Apr row)." },
+      { "dateRange": "01 Apr - 15 Jul 2027", "releaseNights": 7, "minStayNights": 2, "yearInferred": true, "confidenceNote": "Year not printed in source; inferred from sequence." },
+      { "dateRange": "16 Jul - 31 Aug 2027", "releaseNights": 14, "minStayNights": 2, "yearInferred": true, "confidenceNote": "Year not printed in source; inferred from sequence." },
+      { "dateRange": "01 Sep - 31 Oct 2027", "releaseNights": 14, "minStayNights": 2, "yearInferred": true, "confidenceNote": "Year not printed in source; inferred from sequence." },
+      { "dateRange": "01 Nov - 21 Dec 2027", "releaseNights": 21, "minStayNights": 2, "yearInferred": true, "confidenceNote": "Year not printed in source; inferred from sequence (final two rows must be the following Nov/Dec-Jan given the 2028 forward-booking note)." },
+      { "dateRange": "22 Dec 2027 - 03 Jan 2028", "releaseNights": 28, "minStayNights": 5, "yearInferred": true, "confidenceNote": "Year not printed in source; inferred — matches the document's own 'Forward Bookings for 2028-2029... 04 January 2027 - 03 January 2028 contracted rates' text, confirming this row ends 03 Jan 2028." }
+    ]
+  },
+  "rates": {
+    "currency": "EUR",
+    "unit": "per person per night, All Inclusive, NETT",
+    "gardenRoom": {
+      "perPersonSharing": { "01Nov-21Dec26": 127, "22Dec26-03Jan27": 293, "04Jan-31Mar27": 150, "01Apr-15Jul27": 107, "16Jul-31Aug27": 163, "01Sep-31Oct27": 139, "01Nov-21Dec27": 136, "22Dec27-03Jan28": 314 },
+      "singleRoom": { "01Nov-21Dec26": 185, "22Dec26-03Jan27": 424, "04Jan-31Mar27": 218, "01Apr-15Jul27": 107, "16Jul-31Aug27": 236, "01Sep-31Oct27": 201, "01Nov-21Dec27": 190, "22Dec27-03Jan28": 439 },
+      "thirdAdult": { "01Nov-21Dec26": 89, "22Dec26-03Jan27": 205, "04Jan-31Mar27": 105, "01Apr-15Jul27": 75, "16Jul-31Aug27": 114, "01Sep-31Oct27": 97, "01Nov-21Dec27": 95.1, "22Dec27-03Jan28": 219 }
+    },
+    "seaFacingRoom": {
+      "perPersonSharing": { "01Nov-21Dec26": 134, "22Dec26-03Jan27": 300, "04Jan-31Mar27": 157, "01Apr-15Jul27": 114, "16Jul-31Aug27": 170, "01Sep-31Oct27": 146, "01Nov-21Dec27": 143, "22Dec27-03Jan28": 321 },
+      "singleRoom": { "01Nov-21Dec26": 192, "22Dec26-03Jan27": 431, "04Jan-31Mar27": 225, "01Apr-15Jul27": 114, "16Jul-31Aug27": 243, "01Sep-31Oct27": 208, "01Nov-21Dec27": 197, "22Dec27-03Jan28": 446 },
+      "thirdAdult": { "01Nov-21Dec26": 96, "22Dec26-03Jan27": 212, "04Jan-31Mar27": 112, "01Apr-15Jul27": 82, "16Jul-31Aug27": 121, "01Sep-31Oct27": 104, "01Nov-21Dec27": 102, "22Dec27-03Jan28": 226 }
+    },
+    "superiorFamilyRoom": {
+      "perPersonSharing": { "01Nov-21Dec26": 148, "22Dec26-03Jan27": 314, "04Jan-31Mar27": 171, "01Apr-15Jul27": 128, "16Jul-31Aug27": 184, "01Sep-31Oct27": 160, "01Nov-21Dec27": 157, "22Dec27-03Jan28": 335 },
+      "singleRoom": { "01Nov-21Dec26": 206, "22Dec26-03Jan27": 445, "04Jan-31Mar27": 239, "01Apr-15Jul27": 128, "16Jul-31Aug27": 257, "01Sep-31Oct27": 222, "01Nov-21Dec27": 212, "22Dec27-03Jan28": 460 },
+      "thirdAdult": { "01Nov-21Dec26": 110, "22Dec26-03Jan27": 226, "04Jan-31Mar27": 126, "01Apr-15Jul27": 96, "16Jul-31Aug27": 135, "01Sep-31Oct27": 118, "01Nov-21Dec27": 117, "22Dec27-03Jan28": 241 },
+      "note": "Superior/Family Room shown as single combined column, same as 2026 contract."
+    },
+    "deluxeRoom": {
+      "perPersonSharing": { "01Nov-21Dec26": 172, "22Dec26-03Jan27": 338, "04Jan-31Mar27": 195, "01Apr-15Jul27": 152, "16Jul-31Aug27": 208, "01Sep-31Oct27": 184, "01Nov-21Dec27": 181, "22Dec27-03Jan28": 359 },
+      "singleRoom": { "01Nov-21Dec26": 230, "22Dec26-03Jan27": 469, "04Jan-31Mar27": 263, "01Apr-15Jul27": 152, "16Jul-31Aug27": 281, "01Sep-31Oct27": 246, "01Nov-21Dec27": 236, "22Dec27-03Jan28": 484 },
+      "thirdAdult": { "01Nov-21Dec26": 134, "22Dec26-03Jan27": 250, "04Jan-31Mar27": 150, "01Apr-15Jul27": 120, "16Jul-31Aug27": 159, "01Sep-31Oct27": 142, "01Nov-21Dec27": 141, "22Dec27-03Jan28": 265 }
+    },
+    "juniorSuite": {
+      "perPersonSharing": { "01Nov-21Dec26": 178, "22Dec26-03Jan27": 410, "04Jan-31Mar27": 210, "01Apr-15Jul27": 150, "16Jul-31Aug27": 228, "01Sep-31Oct27": 195, "01Nov-21Dec27": 190, "22Dec27-03Jan28": 439 },
+      "singleRoom": { "01Nov-21Dec26": 249, "22Dec26-03Jan27": 574, "04Jan-31Mar27": 294, "01Apr-15Jul27": 210, "16Jul-31Aug27": 319, "01Sep-31Oct27": 272, "01Nov-21Dec27": 266, "22Dec27-03Jan28": 614 },
+      "thirdAdult": { "01Nov-21Dec26": 124, "22Dec26-03Jan27": 287, "04Jan-31Mar27": 147, "01Apr-15Jul27": 105, "16Jul-31Aug27": 160, "01Sep-31Oct27": 136, "01Nov-21Dec27": 133, "22Dec27-03Jan28": 307 },
+      "note": "Named 'Suite Room' in the 2026 contract; renamed 'Junior Suite' here — treated as the same category based on table position, not independently confirmed as identical room inventory."
+    }
+  },
+  "occupancy": {
+    "gardenSeaFacingDeluxe": "3 Adult or 2 Adult + 1 Child",
+    "superiorFamily": "3 Adult or 2 Adult + 2 Child",
+    "juniorSuite": "3 Adult or 2 Adult + 1 Child"
+  },
+  "childPolicy": {
+    "under2": "Stay free",
+    "age2to11ShareWith2Adults": "50% of Adult Sharing Rate",
+    "twoChildrenOwnRoom": "75% of Adult Sharing Rate each",
+    "oneAdultOneChildSharing": "Adult pays single rate, child pays 50% of adult sharing rate"
+  },
+  "cancellationTerms": {
+    "21to15days": "30% of full stay",
+    "14to11days": "50% of full stay",
+    "10to04days": "80% of full stay",
+    "03to01days": "90% of full stay",
+    "noShow": "100% of full stay",
+    "confidenceNote": "Differs from the 2026 contract's cancellation table (which shows 100% at 03-days-or-less, not a separate 90% band at 03-01 days) — this is a genuine contract-version difference, not an extraction inconsistency."
+  },
+  "checkInOut": "Check-in 1300hrs, check-out 1000hrs. Outside these times: EUR 30/person facility-only charge. Dayroom (with room): 75% of room rate until 1700hrs, full rate after.",
+  "forwardBookingNote": "Document states a further provisional 10% increase applies for stays from 04 Jan 2028 onward (2028-29 season, not covered by this file), based on the 04 Jan 2027-03 Jan 2028 rates.",
+  "portfolioWideTerms": {
+    "note": "Non-Soroi property — CLAUDE.md's Soroi-portfolio-wide terms don't apply. See baobab-beach-resort-2026.json for the same note."
+  }
+}

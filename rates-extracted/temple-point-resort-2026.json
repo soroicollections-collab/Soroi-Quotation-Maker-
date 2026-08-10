@@ -1,0 +1,47 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftotext -layout, clean text PDFs. NOT a Soroi property. Primary source is 'USD - Rates - Temple Point - 26_27.pdf' which does not label its own tier (no 'Rack' or 'STO' heading) - treated as the current general non-resident rate. Other files in the folder ('USD - STO Rates - Temple Point - 2025.pdf' and its '(1)' duplicate, 'USD - Rates - Temple Point - 2025.pdf') are dated 2024/2025 season, NOT 2026/2027, and were only spot-checked for reference/comparison - not used as the primary 2026 source since they predate this project's target year. KSH Resident Rates file exists but not opened (out of scope).",
+  "property": "Temple Point Resort",
+  "region": "Watamu, Kenya coast",
+  "currency": "USD",
+  "unit": "per room per night, inclusive of all taxes",
+  "source": {
+    "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/TEMPLE POINT/USD - Rates - Temple Point - 26_27.pdf",
+    "referenceOnly_outdatedFiles": ["USD - STO Rates - Temple Point - 2025.pdf and (1) duplicate - 2024/2025 season, not 2026/2027", "USD - Rates - Temple Point - 2025.pdf - 2024/2025 season"],
+    "validity": { "start": "2026-01-11", "end": "2027-01-10" }
+  },
+  "confidence": "confirmed-2026-08-06",
+  "seasons": {
+    "high": { "dateRanges": ["11 Jan 2026 - 19 Dec 2026"] },
+    "festive": { "dateRanges": ["20 Dec 2026 - 10 Jan 2027"], "minimumStay": "4 nights" }
+  },
+  "rates": {
+    "creekDeluxe": {
+      "single": { "high": { "BO": 232, "BB": 257, "HB": 282, "FB": 302 }, "festive": { "BO": 325, "BB": 350, "HB": 375, "FB": 395 } },
+      "double": { "high": { "BO": 255, "BB": 305, "HB": 355, "FB": 395 }, "festive": { "BO": 358, "BB": 408, "HB": 458, "FB": 498 } }
+    },
+    "boutique": {
+      "single": { "high": { "BO": 188, "BB": 213, "HB": 238, "FB": 258 }, "festive": { "BO": 273, "BB": 298, "HB": 323, "FB": 343 } },
+      "doubleTwin": { "high": { "BO": 206, "BB": 256, "HB": 306, "FB": 346 }, "festive": { "BO": 289, "BB": 339, "HB": 389, "FB": 429 } },
+      "triple": { "high": { "BO": 206, "BB": 281, "HB": 356, "FB": 416 }, "festive": { "BO": 341, "BB": 416, "HB": 444, "FB": 504 } }
+    },
+    "cozy": {
+      "single": { "high": { "BO": 150, "BB": 175, "HB": 200, "FB": 220 }, "festive": { "BO": 202, "BB": 227, "HB": 252, "FB": 272 } },
+      "double": { "high": { "BO": 159, "BB": 209, "HB": 259, "FB": 299 }, "festive": { "BO": 223, "BB": 273, "HB": 323, "FB": 363 } }
+    }
+  },
+  "mealPlanKey": { "BO": "Bed Only", "BB": "Breakfast", "HB": "Breakfast + 3-course dinner or buffet", "FB": "Lunch (buffet or 2-course a-la-carte) + dinner + breakfast", "note": "Meal plans exclude drinks except two 0.5L bottles of water/guest/day. No outside food/drinks, no single-use plastics." },
+  "childPolicy": { "babyCot": "Free", "age0to7_99SharingWithAdult": "Free, same meal plan as adults", "age8plus": "Same rate as adults" },
+  "operationalPolicy": {
+    "checkIn": "3pm", "checkOut": "12pm",
+    "earlyCheckIn": "8am (subject to availability)", "lateCheckOut": "8pm (subject to availability)",
+    "earlyLateCharge": "60% of room BO rate, each; excludes Festive Season"
+  },
+  "transfers": { "toFromMalindi": 40, "toFromMombasa": 120, "unit": "one-way per vehicle, max 4 people and 4 luggage pieces" },
+  "cancellationPolicy": [
+    { "daysBeforeArrival": "45+", "charge": "Free" },
+    { "daysBeforeArrival": "44-30", "charge": "50%" },
+    { "daysBeforeArrival": "29-15", "charge": "75%" },
+    { "daysBeforeArrival": "14 or less", "charge": "100%" }
+  ],
+  "paymentTerms": "25% deposit on booking; remaining 75% due at least 2 weeks prior to arrival. Groups/safaris have custom payment terms."
+}

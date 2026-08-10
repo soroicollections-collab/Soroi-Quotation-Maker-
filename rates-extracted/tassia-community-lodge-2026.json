@@ -1,0 +1,29 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftotext -layout, single clean page. NOT a Soroi property - a community-owned lodge (Lekurruki Community Trust).",
+  "property": "Tassia Community Lodge",
+  "region": "Lekurruki Community Conservancy, Northern Kenya (Laikipia)",
+  "operator": "Lekurruki Community Trust",
+  "currency": "USD",
+  "unit": "per person per night unless noted",
+  "source": {
+    "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/TASSIA COMMUNITY LODGE/Tassia Community Lodge Non Resident Rack Rate 2026.pdf",
+    "skippedFiles": ["Tassia Community Lodge Tour Operators Rate sheet 2026.pdf - not opened this pass, likely a discounted trade tier", "Tassia Resident  Rates 2026.pdf - resident tier, out of scope"]
+  },
+  "confidence": "confirmed-2026-08-06",
+  "seasons": { "low": {}, "high": {}, "peak": {}, "note": "Season date ranges not explicitly stated in this document beyond the Low/High/Peak labels themselves - no calendar date windows given." },
+  "rates": {
+    "fullBoard": { "low": 250, "high": 270, "peak": 300 },
+    "single": { "low": 290, "high": 310, "peak": 400 },
+    "child": { "low": 125, "high": 135, "peak": 150 }
+  },
+  "mandatoryFees": { "conservationFeePerPersonPerNight": { "adult": 45, "child": 20 } },
+  "inclusions": ["All meals (breakfast, lunch, dinner)", "Selection of non-alcoholic soft drinks"],
+  "exclusions": ["Conservation fees", "Alcoholic drinks", "Cultural visit", "Transportation", "Gratuities & additional services"],
+  "childPolicy": { "classification": "5-12 years old", "under4": "Not allowed" },
+  "operationalPolicy": {
+    "checkIn": "11:00am", "checkOut": "10:00am",
+    "payment": "100% payment in advance required to confirm booking.",
+    "insurance": "Guests must have their own comprehensive travel insurance; acknowledge wilderness-area risks."
+  },
+  "confidenceNote": "[Unverified] This document gives no calendar date ranges for its Low/High/Peak season labels - unlike almost every other property in this extraction batch. If a specific stay date needs to be matched to a season, this is a gap; check with the lodge directly or look for season dates in the un-opened 'Tour Operators Rate sheet' file."
+}

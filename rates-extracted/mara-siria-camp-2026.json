@@ -1,0 +1,84 @@
+{
+  "property": "Mara Siria Tented Camp",
+  "operator": "JPR Safari Camps (K) Ltd.",
+  "region": "Maasai Mara",
+  "isSoroiProperty": false,
+  "sourceFiles": [
+    "2026 CONTRACT RATES/KENYA/ACCOMODATION/MARA SIRIA CAMP/2026 Mara Siria Tented Camp Contract - Sunworld Safaris .pdf",
+    "2026 CONTRACT RATES/KENYA/ACCOMODATION/MARA SIRIA CAMP/Mara Siria Resident Rates & Packages 3Jan-31March26.pdf"
+  ],
+  "currency": {
+    "nonResidentContract": "USD",
+    "residentPackages": "KES (flying packages to/from Nairobi in KES; flying packages to/from Diani/Mombasa/Malindi quoted in USD even for residents)",
+    "verified": true
+  },
+  "nonResidentContract": {
+    "rateType": "Sunworld Safaris-specific contract - NETT",
+    "validity": "3 January 2026 - 2 January 2027",
+    "roomCategories": ["Luxury Tents & Cottages", "Deluxe Tents"],
+    "fullBoardRates_perPersonPerNight": {
+      "mid": { "dates": "3 Jan-31 Mar, 1-14 Jun, 16 Oct-20 Dec", "luxury": { "double": 195, "single": 295 }, "deluxe": { "double": 275, "single": 375 } },
+      "low": { "dates": "April, May", "luxury": { "double": 165, "single": 165 }, "deluxe": { "double": 245, "single": 245 } },
+      "high": { "dates": "15 Jun-15 Oct, 21 Dec-2 Jan", "luxury": { "double": 300, "single": 450 }, "deluxe": { "double": 350, "single": 500 } },
+      "verified": true
+    },
+    "groundPackageRates_perPersonPerNight": {
+      "includes": "Full board meal plan, 2 game drives, local airstrip transfers shared with other guests",
+      "mid": { "dates": "3 Jan-31 Mar, 1-14 Jun, 16 Oct-20 Dec", "luxury": { "double": 295, "single": 395 }, "deluxe": { "double": 375, "single": 475 } },
+      "low": { "dates": "April, May", "luxury": { "double": 265, "single": 265 }, "deluxe": { "double": 345, "single": 345 } },
+      "high": { "dates": "15 Jun-15 Oct, 21 Dec-2 Jan", "luxury": { "double": 400, "single": 550 }, "deluxe": { "double": 450, "single": 600 } },
+      "verified": true
+    },
+    "allInclusiveSupplement": { "amount": "US$40 per person per night", "includes": "soft drinks, local beers, house wines", "verified": true },
+    "thirdAdult": { "raw": "Sharing in extra bed pays 75% of the pp double rate", "verified": true },
+    "childPolicy": { "raw": "0-4 years FOC; below 12 years sharing with parents 50%, in own room 75% of pp double rate", "verified": true },
+    "policies": {
+      "deposit": "30% down payment after invoice to secure reservation",
+      "finalPayment": "No later than 30 days prior to arrival",
+      "lastMinuteBooking": "Bookings 30 days or less prior to arrival must be paid in full at time of booking",
+      "cancellation": "60-31 days prior: 30% of applicable rate per cancelled bed/night; 30-21 days: 50%; within 20 days or no-show: 100% of booking value"
+    }
+  },
+  "residentAndPackageRates": {
+    "validity": "3 January 2026 - 31 March 2026 ONLY",
+    "confidenceNote": "[Unverified] This file's validity window is only Q1 2026 - do NOT apply these figures to other months without confirming a later card exists.",
+    "currency": "KES (per person double, SRS = Single Room Supplement)",
+    "selfDrivePerNight": {
+      "luxuryCottages": { "double": 14950, "srs": 4000 },
+      "luxuryTents": { "double": 18000, "srs": 4000 },
+      "deluxeTents": { "double": 20000, "srs": 5000 },
+      "includes": "Full board accommodation, coffee & tea",
+      "verified": true
+    },
+    "groundPackagePerNight": {
+      "luxuryCottages": { "double": 21500, "srs": 4000 },
+      "luxuryTents": { "double": 24000, "srs": 4000 },
+      "deluxeTents": { "double": 26000, "srs": 5000 },
+      "includes": "Local airstrip transfers, 2 game drives per day or one full day drive, full board accommodation, coffee & tea",
+      "verified": true
+    },
+    "flyingPackages": {
+      "fromToNairobi_KES_residents": {
+        "twoDaysOneNight": { "perPersonDouble": 86500, "srs": 4000 },
+        "threeDaysTwoNights": { "perPersonDouble": 110500, "srs": 8000 },
+        "deluxeTentSupplementPerPersonNight": 2000,
+        "verified": true
+      },
+      "fromToNairobi_USD_nonResidents": {
+        "twoDaysOneNight": { "perPersonDouble": 805, "srs": 80 },
+        "threeDaysTwoNights": { "perPersonDouble": 1099, "srs": 160 },
+        "deluxeTentSupplementPerPersonNight": 85,
+        "verified": true
+      },
+      "fromToDianiMombasaMalindi_USD_nonResidents": {
+        "twoDaysOneNight": { "perPersonDouble": 955, "srs": 80 },
+        "threeDaysTwoNights": { "perPersonDouble": 1250, "srs": 160 },
+        "deluxeTentSupplementPerPersonNight": 85,
+        "verified": true
+      },
+      "includes": "1 or 2 nights full board accommodation, return flights incl. local departure taxes, airstrip transfers shared, 2 game drives (1 night) / 4 game drives (2 nights) shared",
+      "childPolicy": { "raw": "Below 3 years FOC (room rates only); 3-11 years sharing with parents 50% of full board accommodation and 75% of package rates", "verified": true }
+    },
+    "parkFees": "To be paid at the entrance gate or online, cashless only - not included in rates"
+  }
+}

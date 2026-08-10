@@ -1,0 +1,138 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftotext (paginated, page-by-page) from '2027 CONTRACT RATES/KENYA/ACCOMODATIONS/&Beyond/andBeyond Lodge Rates 2027 - Kenya STO20 - FB.pdf'. Single document covers THREE &Beyond Kenya properties (Suyian Lodge, Bateleur Camp, Kichwa Tembo Tented Camp) - all extracted. NOT a Soroi property. A companion 'Tanzania STO20' PDF also exists in the same folder but is out of scope for this Kenya slice.",
+  "operator": "&Beyond",
+  "properties": ["Suyian Lodge", "Bateleur Camp", "Kichwa Tembo Tented Camp"],
+  "source": {
+    "file": "2027 CONTRACT RATES/KENYA/ACCOMODATIONS/&Beyond/andBeyond Lodge Rates 2027 - Kenya STO20 - FB.pdf",
+    "validity": { "start": "2027-01-11", "end": "2028-01-10" },
+    "printedRevision": "2026/03/10",
+    "note": "Rate sheet explicitly states: for travel 01-10 Jan 2027, refer to the 2026 rate sheet instead - this document's rates do not cover that window."
+  },
+  "currency": "USD",
+  "tier": "RACK and STO (20% off rack, 1-3 nights); deeper 'STO Long Stay' discounts apply at 4-5 nights and 6+ nights - see discountLadder",
+  "unit": "per person per night sharing, except Family Suite/Family Tent which is per unit per night",
+  "confidence": "confirmed-2027-08-06 for RACK/STO figures actually printed; ancillary columns (Private Vehicle, Local Pilot/Driver-Guide, Tour Leader) captured but not cross-verified against source layout beyond a single read - flagged individually",
+  "discountLadder": {
+    "note": "Verified arithmetically: STO 1-3 nights = Rack x 0.80 exactly on every checked cell. 4-5 night and 6+ night figures are deeper than a flat 20% (long-stay discount), e.g. Suyian Suites High Season: Rack 2575 -> 1-3n 2060 (20% off) -> 4-5n 1957 (~24% off) -> 6+n 1751 (~32% off).",
+    "verified": true
+  },
+  "regions": {
+    "Suyian Lodge": "Suyian Conservancy (Laikipia)",
+    "Bateleur Camp": "Masai Mara National Reserve",
+    "Kichwa Tembo Tented Camp": "Masai Mara National Reserve"
+  },
+  "rates": {
+    "fullyInclusive": {
+      "note": "FULLY INCLUSIVE basis. Rate includes accommodation, all meals, soft drinks, alcoholic beverages (house pours, exclusions vary by lodge), tea/coffee, safari activities, laundry, medical evacuation cover, and lodge-specific airstrip transfers. Excludes park fees.",
+      "Suyian Lodge (Suites)": {
+        "high": { "dateRanges": ["01 Jul - 31 Oct '27", "21 Dec '27 - 05 Jan '28"], "rack": 2575, "sto1to3n": 2060, "sto4to5n": 1957, "sto6plusN": 1751, "verified": true },
+        "mid": { "dateRanges": ["11 Jan - 30 Jun '27", "01 Nov - 20 Dec '27", "06 - 10 Jan '28"], "rack": 1545, "sto1to3n": 1240, "sto4to5n": 1178, "sto6plusN": 1054, "verified": true }
+      },
+      "Suyian Lodge (Family Suite, per suite/night)": {
+        "high": { "rack": 9015, "sto1to3n": 7215, "sto4to5n": 6855, "sto6plusN": 6133, "verified": true },
+        "mid": { "rack": 5410, "sto1to3n": 4330, "sto4to5n": 4114, "sto6plusN": 3681, "verified": true }
+      },
+      "Bateleur Camp (Luxury Tents)": {
+        "high": { "dateRanges": ["16 Jun - 31 Oct '27", "21 Dec '27 - 05 Jan '28"], "rack": 2675, "sto1to3n": 2140, "sto4to5n": 2033, "sto6plusN": 1819, "verified": true },
+        "mid": { "dateRanges": ["11 Jan - 31 Mar '27", "01 Nov - 20 Dec '27", "06 - 10 Jan '28"], "rack": 1510, "sto1to3n": 1210, "sto4to5n": 1150, "sto6plusN": 1029, "verified": true },
+        "low": { "dateRanges": ["01 Apr - 15 Jun '27"], "rack": 1285, "sto1to3n": 1030, "sto4to5n": 979, "sto6plusN": 876, "verified": true }
+      },
+      "Bateleur Camp (Luxury Family Tent, per tent/night)": {
+        "high": { "rack": 9365, "sto1to3n": 7495, "sto4to5n": 7121, "sto6plusN": 6371, "verified": true },
+        "mid": { "rack": 5285, "sto1to3n": 4230, "sto4to5n": 4019, "sto6plusN": 3596, "verified": true },
+        "low": { "rack": 4500, "sto1to3n": 3600, "sto4to5n": 3420, "sto6plusN": 3060, "verified": true }
+      },
+      "Kichwa Tembo Tented Camp (Superior View Tents)": {
+        "high": { "dateRanges": ["01 Jul - 31 Oct '27", "21 Dec '27 - 05 Jan '28"], "rack": 1525, "sto1to3n": 1220, "sto4to5n": 1159, "sto6plusN": 1037, "verified": true },
+        "mid": { "dateRanges": ["11 Jan - 30 Jun '27", "01 Nov - 20 Dec '27", "06 - 10 Jan '28"], "rack": 865, "sto1to3n": 695, "sto4to5n": 661, "sto6plusN": 591, "verified": true }
+      },
+      "Kichwa Tembo Tented Camp (Superior Tents)": {
+        "high": { "rack": 1305, "sto1to3n": 1045, "sto4to5n": 993, "sto6plusN": 889, "verified": true },
+        "mid": { "rack": 810, "sto1to3n": 650, "sto4to5n": 618, "sto6plusN": 553, "verified": true }
+      },
+      "Kichwa Tembo Tented Camp (Superior Family Tents, per tent/night)": {
+        "high": { "rack": 4570, "sto1to3n": 3660, "sto4to5n": 3477, "sto6plusN": 3111, "verified": true },
+        "mid": { "rack": 2835, "sto1to3n": 2270, "sto4to5n": 2157, "sto6plusN": 1930, "verified": true }
+      }
+    },
+    "fullBoard": {
+      "note": "FULL BOARD basis (Bateleur Camp and Kichwa Tembo only - Suyian Lodge has no Full Board tier on this document, Fully Inclusive only). Excludes safari activities, night game drives, transfers, alcoholic house-pour scope narrower than Fully Inclusive - see source for exact wording.",
+      "Bateleur Camp (Luxury Tents)": {
+        "high": { "dateRanges": ["16 Jun - 31 Oct '27", "21 Dec '27 - 05 Jan '28"], "rack": 2535, "sto1to3n": 2030, "sto4to5n": 1929, "sto6plusN": 1726, "verified": true },
+        "mid": { "rack": 1370, "sto1to3n": 1100, "sto4to5n": 1045, "sto6plusN": 935, "verified": true },
+        "low": { "dateRanges": ["01 Apr - 15 Jun '27"], "rack": 1145, "sto1to3n": 920, "sto4to5n": 874, "sto6plusN": 782, "verified": true }
+      },
+      "Bateleur Camp (Luxury Family Tent, per tent/night)": {
+        "high": { "rack": 8875, "sto1to3n": 7100, "sto4to5n": 6745, "sto6plusN": 6035, "verified": true },
+        "mid": { "rack": 4795, "sto1to3n": 3840, "sto4to5n": 3648, "sto6plusN": 3264, "verified": true },
+        "low": { "rack": 4010, "sto1to3n": 3210, "sto4to5n": 3050, "sto6plusN": 2729, "verified": true }
+      },
+      "Kichwa Tembo Tented Camp (Superior View Tents)": {
+        "high": { "rack": 1430, "sto1to3n": 1145, "sto4to5n": 1088, "sto6plusN": 974, "verified": true },
+        "mid": { "rack": 770, "sto1to3n": 620, "sto4to5n": 589, "sto6plusN": 527, "verified": true }
+      },
+      "Kichwa Tembo Tented Camp (Superior Tents)": {
+        "high": { "rack": 1210, "sto1to3n": 970, "sto4to5n": 922, "sto6plusN": 825, "verified": true },
+        "mid": { "rack": 715, "sto1to3n": 575, "sto4to5n": 547, "sto6plusN": 489, "verified": true }
+      },
+      "Kichwa Tembo Tented Camp (Superior Family Tents, per tent/night)": {
+        "high": { "rack": 4235, "sto1to3n": 3390, "sto4to5n": 3221, "sto6plusN": 2882, "verified": true },
+        "mid": { "rack": 2505, "sto1to3n": 2005, "sto4to5n": 1905, "sto6plusN": 1705, "verified": true }
+      }
+    },
+    "additionalMeals": {
+      "unit": "per person per meal",
+      "additionalBreakfast": { "rack": 45, "sto": 42, "verified": true },
+      "additionalLunch": { "rack": 55, "sto": 53, "verified": true },
+      "packedLunch": { "rack": 45, "sto": 42, "verified": true }
+    }
+  },
+  "mandatoryFees": {
+    "unit": "per person per night unless noted",
+    "suyianLodgeConservationFee": { "adult18plus": 198, "child4to17": 120, "child0to3": 41, "validity": "11 Jan '27 - 10 Jan '28", "verified": true },
+    "kichwaTemboAndBateleurParkFee": {
+      "adult18plus": { "janToJun_and_earlyJan28": 100, "julToDec27": 200 },
+      "child9to17": 50,
+      "child0to8": 0,
+      "unit": "per person per day",
+      "note": "Rate doubles for the Jul-Dec 2027 window vs Jan-Jun 2027 / early Jan 2028 window. Must be paid directly by guest if transferred by road/self-drive.",
+      "verified": true
+    }
+  },
+  "childPolicy": {
+    "note": "&Beyond's own portfolio policy - does NOT match Soroi's 5-11/12-17 brackets. Ages here are 0-2, 3-5, 6-16, 17+.",
+    "age0to2SharingWithAdults": "Free of charge (cot, up to 18 months only)",
+    "age3to5SharingWithAdults": "Free of charge",
+    "age6to16SharingWithAdults": "50% of full adult rate",
+    "age6to16OwnRoom_1stChild": "Adult rate",
+    "age6to16OwnRoom_2ndAnd3rdChild": "50% of adult rate",
+    "age17plus": "Full adult rate",
+    "notApplicableTo": "Family Suites / Family Cottages / Family Tents (no child discount on these units - priced per unit)",
+    "verified": true
+  },
+  "familyUnits": {
+    "Suyian Lodge": { "config": "1 Family Suite (2 rooms)", "maxOccupancy": "2 adults + 2 children (3rd child on request, additional cost)" },
+    "Bateleur Camp": { "config": "1 Family Tent (2 tents linked by enclosed walkway)", "maxOccupancy": "2 adults + 2 children (3rd child on request, additional cost)" },
+    "Kichwa Tembo Tented Camp": { "config": "3 Family Tents (2 Superior Tents linked by enclosed walkway)", "maxOccupancy": "2 adults + 2 children (3rd child on request, additional cost)" },
+    "verified": true
+  },
+  "singleSupplement": {
+    "shoulderWindow": "11 Jan-31 May & 01 Nov-20 Dec '27: 50% supplement only from the 3rd single room per booking",
+    "peakWindow": "01 Jun-31 Oct & 21 Dec-10 Jan '28: 50% supplement on ALL single rooms",
+    "adultSharingWithInfant": "Single supplement charged",
+    "verified": true
+  },
+  "tripleRooms": {
+    "note": "Suitable for max 2 adults + 1 child aged 16 or younger. Availability limited per lodge (Suyian: 1 room, Bateleur: 2 rooms, Kichwa Tembo Superior View: 1 room / Superior: 2 rooms).",
+    "verified": true
+  },
+  "ancillaryRates": {
+    "note": "Private Vehicle, Local Pilot/Driver-Guide, and Tour Leader rate columns were present on the source table but the pdftotext layout for this densely-merged table made per-season column alignment harder to guarantee at a glance. Values below were cross-read from both a -layout and a plain-stream extraction and agree, but treat with slightly lower confidence than the core accommodation rates above.",
+    "privateVehiclePerNight": { "SuyianLodge": 788, "BateleurCamp": 788, "KichwaTembo": 788, "confidenceNote": "[Unverified] appears constant at $788/vehicle/night across all three lodges and both rate bases in every row checked, but not exhaustively checked on every single row.", "verified": false },
+    "tourLeaderRate": { "note": "1 x Tour Leader travels at no charge per group threshold shown per lodge/season; beyond that a per-person day rate applies (e.g. Suyian Mid Season 620, High Season 1030). Full ladder not fully reconstructed for every lodge/season - re-check source directly before quoting a TL rate.", "verified": false }
+  },
+  "offersNotExtracted": {
+    "note": "Page 3 lists several signature offers (Milestone Celebrations 20% off, Honeymoon 50% off one partner, Kichwa Tembo Stay4Pay3, Fly Me to the Mara, Fly Me around East Africa) - not priced/extracted as they are promotional T&Cs, not base rates. See source PDF page 3 if a client asks about one.",
+    "skipped": true
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftotext -layout, clean text PDFs (Marriott-branded, Ritz-Carlton Reserve property). NOT a Soroi property. Two tiers: Rack and Non-Resident Nett 30% (verified = Rack x 0.70, e.g. 2450/3500=0.70, 1750/2500=0.70). Note the 30% file's own header confusingly says 'NON-RESIDENT RACK RATES 30%' (calling itself 'Rack' despite being the discounted tier) - filename/label inconsistency, not an extraction error.",
+  "property": "The Ritz-Carlton, Masai Mara Safari Camp",
+  "operator": "Marriott (Ritz-Carlton Reserve)",
+  "region": "Maasai Mara (Keekorok area)",
+  "currency": "USD",
+  "unit": "per person sharing per night, All Inclusive",
+  "source": {
+    "rackFile": "2026 CONTRACT RATES/KENYA/ACCOMODATION/The Ritz Carlton/Rack Rates - The Ritz-Carlton, Masai Mara Safari Camp.pdf",
+    "nett30File": "2026 CONTRACT RATES/KENYA/ACCOMODATION/The Ritz Carlton/Non-Resident Nett Rates 30% - The Ritz-Carlton, Masai Mara Safari Camp (1) (1) (1).pdf",
+    "validity": {
+      "highPeak": ["15 Aug - 15 Oct 2025", "20 Dec 2025 - 5 Jan 2026", "1 Jun - 15 Oct 2026", "20 Dec 2026 - 5 Jan 2027"],
+      "lowShoulder": ["16 Oct - 19 Dec 2025", "6 Jan - 31 May 2026", "16 Oct - 19 Dec 2026"]
+    }
+  },
+  "confidence": "confirmed-2026-08-06",
+  "rates": {
+    "rack": {
+      "perPersonSharing": { "highPeak": 3500, "lowShoulder": 2500 },
+      "singleOccupancy": { "highPeak": 4000, "lowShoulder": 3000 },
+      "child6to12OwnRoom": { "highPeak": 2625, "lowShoulder": 1875 },
+      "child6to12Sharing": { "highPeak": 1750, "lowShoulder": 1250 },
+      "twoBedroomExecutiveSuite_4pax": { "highPeak": 14000, "lowShoulder": 10000 },
+      "fourBedroomPresidentialSuite_8pax": { "highPeak": 30000, "lowShoulder": 20000 },
+      "pilotGuideTent": { "highPeak": 500, "lowShoulder": 500 }
+    },
+    "nonResidentNett30pct": {
+      "perPersonSharing": { "highPeak": 2450, "lowShoulder": 1750 },
+      "singleOccupancy": { "highPeak": 2800, "lowShoulder": 2100 },
+      "child6to12OwnRoom": { "highPeak": 1838, "lowShoulder": 1313 },
+      "child6to12Sharing": { "highPeak": 1225, "lowShoulder": 875 },
+      "twoBedroomExecutiveSuite_4pax": { "highPeak": 9800, "lowShoulder": 7000 },
+      "fourBedroomPresidentialSuite_8pax": { "highPeak": 21000, "lowShoulder": 14000 },
+      "pilotGuideTent": { "highPeak": 500, "lowShoulder": 500 }
+    }
+  },
+  "accommodation": "14 Deluxe King/Twin Suite Tents, 5 Two-Bedroom Executive Suite Tents, 1 Four-Bedroom Presidential Suite. Exclusive-use-of-property rates available on request.",
+  "inclusions": ["Full board with personalized butler service", "Alcoholic/non-alcoholic beverages incl. premium wines/spirits", "Weather-permitting bush meals breakfast/lunch", "Champagne breakfast, sunrise smoothie, coffee glide", "High tea", "Sundowners (weather permitting)", "Boma dining experience", "Child minding (6am-10pm)", "Chef's table at wine cellar, wine pairing sessions", "Exclusive private game drives with refreshments, binoculars provided", "Photo studio + Canon professional cameras/lenses use", "Rhino Sanctuary visits (entrance fees payable directly)", "Wellness hub (pool, gym, spa access)", "Cultural village visit", "WiFi", "Return Keekorok airstrip transfers", "Laundry", "Emergency medical evacuation services", "All statutory taxes"],
+  "exclusions": ["Masai Mara National Reserve park entrance fees", "Spa treatments", "Personal items", "Gratuities", "Lazizi Welfare Foundation Fees (conservation/community contribution)"],
+  "childPolicy": { "safetyRecommendation": "Property is unfenced - children under 6 not recommended for safety reasons." },
+  "groupAndTourLeaderPolicy": {
+    "groupRate": "Negotiable ad hoc for 10+ paying rooms, except Easter/festive period.",
+    "tourLeader": "Complimentary on half-twin rate basis after minimum 10 paying rooms, max 2 complimentary guests per group.",
+    "famTrips": "Not accepted Jun/Jul/Aug/Sep/Dec/early Jan.",
+    "singleRoomPolicy": "Max 3 single rooms per group at single rate; additional at double rate."
+  },
+  "checkIn": "12:00 noon", "checkOut": "10:00am",
+  "confidentialRateNote": "This is a confidential Marriott B2B rate agreement - cannot be promoted or sold on the internet/third-party websites unless packaged with other elements; rates valid for FIT leisure packaged travel only, not business/group channels."
+}

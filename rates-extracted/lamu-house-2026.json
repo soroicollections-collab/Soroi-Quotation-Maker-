@@ -1,0 +1,81 @@
+{
+  "$note": "Fresh extraction, 6 Aug 2026, read directly from both source PDFs (each 2-page, single-property, layout-preserving pdftotext, no adjacent-property risk).",
+  "property": "Lamu House",
+  "region": "Lamu Old Town",
+  "residency": "Not stated — no Resident/Non-Resident split.",
+  "duplicateFileFinding": "The odd '(4) (1)' and '(10) (3)' filename suffixes do NOT indicate stale duplicate vintages of the same document, as the task brief speculated they might. Direct comparison confirms the two files are the SAME rate card, covering the SAME two date windows and SAME room categories, just in two different currencies: 'Lamu House - KES Price List (4) (1).pdf' is priced in KSh, and 'Lamu House - Price List (10) (3).pdf' is priced in US$. Both are current for 2026 — this mirrors the currency-pair pattern also seen at Diani Sea Resort/Lodge, not a superseded-copy situation.",
+  "sources": {
+    "kes": {
+      "file": "2026 CONTRACT RATES/KENYA/BEACH ACCOMODATION/LAMU HOUSE/Lamu House - KES Price List (4) (1).pdf",
+      "pages": 2
+    },
+    "usd": {
+      "file": "2026 CONTRACT RATES/KENYA/BEACH ACCOMODATION/LAMU HOUSE/Lamu House - Price List (10) (3).pdf",
+      "pages": 2
+    }
+  },
+  "confidence": "confirmed-2026-08-06",
+  "extractionMethod": { "note": "Both single-property, 2-page PDFs read directly with pdftotext -layout; no adjacent-property risk." },
+  "structuralFindings": [
+    "Base plan is Bed & Breakfast, with a complimentary return airport transfer BY PRIVATE BOAT included in every rate — a distinctive Lamu-specific inclusion not seen at other properties in this batch.",
+    "Rate is per room per night (Single Occ. / Double Occ. columns) — not per person.",
+    "Two season windows: a 'low/regular' window (16 Feb-15 Nov) and a 'high' window split across the calendar year boundary (16 Nov-15 Feb, spanning both 2025→2026 and 2026→2027) — an unusual season shape where the 'high' season is defined as everything outside the mid-Feb-to-mid-Nov window, rather than a short peak spike.",
+    "Two additional short surcharge windows layered on top of the two base seasons: Easter (27 Mar-12 Apr, inside the low-season window) and Festive (31 Dec-7 Jan, inside the high-season window) — a flat per-room-per-night surcharge, not a separate priced season.",
+    "Triple occupancy is available 'on certain room types' (not all) upon request, for a flat surcharge — not a separately priced triple rate per room category."
+  ],
+  "seasons": {
+    "regularLow": { "dateRange": "16 Feb - 15 Nov 2026" },
+    "high": { "dateRanges": ["16 Nov 2025 - 15 Feb 2026", "16 Nov 2026 - 15 Feb 2027"] },
+    "easterSurchargeWindow": { "dateRange": "27 Mar - 12 Apr 2026", "appliesWithin": "regularLow" },
+    "festiveSurchargeWindow": { "dateRange": "31 Dec 2026 - 7 Jan 2027", "appliesWithin": "high" }
+  },
+  "rates": {
+    "kes": {
+      "currency": "KES",
+      "unit": "per room per night, Bed & Breakfast",
+      "regularLow": {
+        "heritageRoom": { "single": 15000, "double": 17500 },
+        "seafrontHeritageRoom": { "single": 17000, "double": 19500 },
+        "courtyardSuite": { "single": 15500, "double": 18000 },
+        "oceanViewSuite": { "single": 19500, "double": 22000 }
+      },
+      "high": {
+        "heritageRoom": { "single": 20500, "double": 23000 },
+        "seafrontHeritageRoom": { "single": 22500, "double": 25000 },
+        "courtyardSuite": { "single": 21000, "double": 23500 },
+        "oceanViewSuite": { "single": 25000, "double": 27500 }
+      },
+      "easterSurcharge": { "amount": 2600, "unit": "per room per night" },
+      "festiveSurcharge": { "amount": 2600, "unit": "per room per night" },
+      "tripleOccupancySurcharge": { "amount": 3000, "unit": "on certain room types, upon request" }
+    },
+    "usd": {
+      "currency": "USD",
+      "unit": "per room per night, Bed & Breakfast",
+      "regularLow": {
+        "heritageRoom": { "single": 150, "double": 175 },
+        "seafrontHeritageRoom": { "single": 170, "double": 195 },
+        "courtyardSuite": { "single": 155, "double": 180 },
+        "oceanViewSuite": { "single": 195, "double": 220 }
+      },
+      "high": {
+        "heritageRoom": { "single": 205, "double": 230 },
+        "seafrontHeritageRoom": { "single": 225, "double": 250 },
+        "courtyardSuite": { "single": 210, "double": 235 },
+        "oceanViewSuite": { "single": 250, "double": 270 }
+      },
+      "easterSurcharge": { "amount": 20, "unit": "per room per night" },
+      "festiveSurcharge": { "amount": 20, "unit": "per room per night" },
+      "tripleOccupancySurcharge": { "amount": 30, "unit": "on certain room types, upon request" }
+    }
+  },
+  "verified": true,
+  "roomDescriptions": {
+    "heritageRoom": "Double or twin. Pool or old town view, private terrace.",
+    "seafrontHeritageRoom": "Double or twin. Stunning seafront location, private balcony.",
+    "courtyardSuite": "Double. Pool view, private terrace.",
+    "oceanViewSuite": "Double. Stunning sea views, expansive private terrace."
+  },
+  "inclusions": "Breakfast and complimentary return airport transfer by private boat, included in all rates.",
+  "confidenceNote": "No mandatory conservancy/park-style fee found. No Resident/Non-Resident split stated on either currency's sheet."
+}

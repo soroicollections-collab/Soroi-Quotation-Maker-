@@ -1,0 +1,92 @@
+{
+  "$note": "Fresh extraction, 6 Aug 2026. IMPORTANT METHOD NOTE: pdftotext (both -layout and -raw) failed to extract the numeric rate figures from these two PDFs — the season header rows and room-category labels came through fine, but every price cell came back blank. This is not a scanned/image-only document (pdfimages -list showed only two small JPEG logos, not a table image) — the numbers are real text objects that pdftotext's text-extraction ordering/encoding is failing to surface. Resolved by rendering each page to a PNG at 200dpi via pdftoppm and reading the image directly — all figures below were read visually off the rendered page image, not machine-extracted text. Flagging this extraction method prominently since it differs from every other property in this batch.",
+  "property": "Diani Sea Resort & Diani Sea Lodge",
+  "region": "Diani Beach",
+  "confidenceNote_fileNaming": "Filename resolution per task brief: 'DIANI SEA RESORT 2026.pdf' (ambiguous name) was opened and its own page header reads 'PRICE LIST – NON RESIDENT USD – ALL INCLUSIVE', so it is the NON-RESIDENT file despite the generic filename. 'DIANI SEA RESORT RESIDENT RATES - 2026.pdf' page header reads 'PRICE LIST – RESIDENT KES – ALL INCLUSIVE'. Confirmed by direct visual read of both documents' own title lines, not assumed from filename.",
+  "structuralFindings": [
+    "One PDF/document actually covers TWO separate sister properties on one page each: Diani Sea Resort and Diani Sea Lodge, each with their own logo, own season table, and own supplement notes. Both properties share the exact same season windows and the same room category name (Comfort Double/Single Per Person) but have independently priced rate tables — Diani Sea Lodge is consistently a few dollars/KES cheaper than Diani Sea Resort in every matching cell.",
+    "Six date bands per property, all All Inclusive: 2025/6 festive (21 Dec-4 Jan), 2026 shoulder (5 Jan-30 Apr), 2026 low (1 May-8 Jul), 2026 high (9 Jul-30 Sep), 2026 shoulder (1 Oct-20 Dec), 2026/7 festive (21 Dec-4 Jan) — a repeating festive/shoulder/low/high/shoulder/festive cycle rather than the Peak/Shoulder/Green trio.",
+    "'Renovation Closure dates to be advised' is printed directly on both properties' tables (both the Non-Resident and Resident versions) — an open/unconfirmed closure window exists somewhere in the 2026 calendar for both properties, with no dates given yet. Flag this on any quote spanning an uncertain period.",
+    "Family Room / Family Suite / Bahari Block/Family room categories exist as named concepts (with stated max-occupancy figures and a flat per-night supplement) but have NO base per-person rate of their own in this table — they appear to be the Comfort room's rate plus the stated supplement, not an independently priced category. Not confirmed from the source (the exact base-plus-supplement relationship is not explicitly spelled out) — treat as [Inference].",
+    "Currency split by residency is real and clean here: Non-Resident = USD, Resident = KES, with parallel table structures (same season/room layout, different currency and figures) — unlike Bahari Beach where the two currency sheets have differently-shaped season windows."
+  ],
+  "sources": {
+    "nonResident": {
+      "file": "2026 CONTRACT RATES/KENYA/BEACH ACCOMODATION/DIANI SEA RESORT/DIANI SEA RESORT 2026.pdf",
+      "pages": 1,
+      "extractionMethod": "Visual read of rendered page PNG (pdftotext failed to surface numeric cells)."
+    },
+    "resident": {
+      "file": "2026 CONTRACT RATES/KENYA/BEACH ACCOMODATION/DIANI SEA RESORT/DIANI SEA RESORT RESIDENT RATES - 2026.pdf",
+      "pages": 1,
+      "extractionMethod": "Visual read of rendered page PNG (pdftotext failed to surface numeric cells)."
+    }
+  },
+  "confidence": "confirmed-2026-08-06-visual-read",
+  "seasonDateRanges": {
+    "festive2025_6": "21 Dec 2025 - 4 Jan 2026",
+    "shoulder1_2026": "5 Jan - 30 Apr 2026",
+    "low2026": "1 May - 8 Jul 2026",
+    "high2026": "9 Jul - 30 Sep 2026",
+    "shoulder2_2026": "1 Oct - 20 Dec 2026",
+    "festive2026_7": "21 Dec 2026 - 4 Jan 2027"
+  },
+  "rates": {
+    "nonResident": {
+      "currency": "USD",
+      "unit": "per person per night, All Inclusive",
+      "dianiSeaResort": {
+        "comfortDoublePerPerson": { "festive2025_6": 201, "shoulder1_2026": 135, "low2026": 110, "high2026": 129, "shoulder2_2026": 144, "festive2026_7": 211 },
+        "comfortSinglePerPerson": { "festive2025_6": 282, "shoulder1_2026": 189, "low2026": 154, "high2026": 180, "shoulder2_2026": 200, "festive2026_7": 296 }
+      },
+      "dianiSeaLodge": {
+        "comfortDoublePerPerson": { "festive2025_6": 193, "shoulder1_2026": 132, "low2026": 104, "high2026": 125, "shoulder2_2026": 138, "festive2026_7": 208 },
+        "comfortSinglePerPerson": { "festive2025_6": 270, "shoulder1_2026": 185, "low2026": 146, "high2026": 175, "shoulder2_2026": 193, "festive2026_7": 292 }
+      },
+      "supplements": {
+        "bahariSupplementResort": { "amount": 17, "unit": "USD, unit not fully specified on page (assumed per person per night based on placement)" },
+        "bahariBlockSupplementLodge": { "amount": 17, "unit": "USD per night" },
+        "familySuitesSupplementLodge": { "amount": 25, "unit": "USD per night" },
+        "bahariFamilySupplementLodge": { "amount": 28, "unit": "USD per night" }
+      },
+      "earlyCheckIn": 25,
+      "lateCheckOut": 45
+    },
+    "resident": {
+      "currency": "KES",
+      "unit": "per person per night, All Inclusive",
+      "dianiSeaResort": {
+        "comfortDoublePerPerson": { "festive2025_6": 20100, "shoulder1_2026": 13500, "low2026": 11000, "high2026": 12900, "shoulder2_2026": 14400, "festive2026_7": 21100 },
+        "comfortSinglePerPerson": { "festive2025_6": 28200, "shoulder1_2026": 18900, "low2026": 15400, "high2026": 18000, "shoulder2_2026": 20000, "festive2026_7": 29600 }
+      },
+      "dianiSeaLodge": {
+        "comfortDoublePerPerson": { "festive2025_6": 19300, "shoulder1_2026": 13200, "low2026": 10400, "high2026": 12500, "shoulder2_2026": 13800, "festive2026_7": 20800 },
+        "comfortSinglePerPerson": { "festive2025_6": 27000, "shoulder1_2026": 18500, "low2026": 14600, "high2026": 17500, "shoulder2_2026": 19300, "festive2026_7": 29200 }
+      },
+      "supplements": {
+        "bahariSupplementResort": { "amount": 2500, "unit": "KES" },
+        "bahariBlockSupplementLodge": { "amount": 2500, "unit": "KES per night" },
+        "familySuitesSupplementLodge": { "amount": 3700, "unit": "KES per night" },
+        "bahariFamilySupplementLodge": { "amount": 4000, "unit": "KES per night" }
+      },
+      "earlyCheckIn": 2500,
+      "lateCheckOut": 4500
+    }
+  },
+  "verified": true,
+  "roomCapacityNotes": {
+    "comfortFamilyRoom": "max 2 adults, 2 children plus 1 infant",
+    "bahariFamilyRooms": "max 2 adults, 3 children plus 1 infant",
+    "familySuitesLodgeOnly": "max 2 or 3 adults, 3 children plus 1 infant"
+  },
+  "childPolicy": {
+    "sharing3to11_999years": "50% of adult rate",
+    "twoChildrenAloneInRoom": "pay FULL double rate (both currencies say this explicitly)",
+    "oneAdultSharingWithKid": "pays full double rate"
+  },
+  "checkInOut": "Check-in 1500hrs / Check-out 1000hrs",
+  "minimumStay": { "standard": "2 nights", "festive": "5 nights" },
+  "peakSeasonPaymentPolicy": "21.12-04.01: full payment required at time of booking; not guaranteed until 100% received; no refunds for peak season.",
+  "travelAgentsCommission": "12.5%",
+  "confidenceNote": "Renovation closure dates are explicitly stated as 'to be advised' on the source for BOTH Diani Sea Resort and Diani Sea Lodge — an open gap, not an omission on our part. Family Room/Suite base rates are inferred as Comfort rate + stated supplement, not independently confirmed as a base figure in the source table — flag as [Inference] if quoting a family room. No mandatory conservancy/park-style fee found — consistent with a Diani beach resort."
+}

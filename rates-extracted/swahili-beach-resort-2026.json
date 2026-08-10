@@ -1,0 +1,169 @@
+{
+  "$note": "Extracted 6 Aug 2026 directly from the paginated source PDF (18 pages, mix of text and photo pages). Single property, no adjacent-property risk. This is the most thoroughly documented contract in this batch — full deposit/cancellation/blackout-date detail captured. 'Old/' subfolder files correctly skipped per task brief (superseded copies + one .msg email, not extracted).",
+  "property": "Swahili Beach Resort (SBR)",
+  "operatorEntity": "Swahili Beach Resorts Ltd",
+  "region": "Diani Beach, Kenya Coast",
+  "tier": "Rack Rate (primary) and STO 25% (secondary, same document)",
+  "residency": "Non-Resident (USD)",
+  "source": {
+    "file": "2026 CONTRACT RATES/KENYA/BEACH ACCOMODATION/SWAHILI BEACH RESORT/SBR USD NON-RESIDENT STO Contract 2026 (5).pdf",
+    "totalPages": 18,
+    "pdfPageIndex_rackTable": 3,
+    "pdfPageIndex_stoTable": 4,
+    "validity": { "start": "2026-01-04", "end": "2027-01-03" }
+  },
+  "confidence": "confirmed-2026-08-06",
+  "extractionMethod": { "note": "Read via pdftotext -layout, page by page (checked line counts per page first to identify which of the 18 pages were text-bearing rate/policy tables vs photo pages). Rate tables on pages 4-5 (0-indexed) were dense and read directly." },
+  "structuralFindings": [
+    "IMPORTANT RESTRICTION: 'NO BED AND BREAKFAST RATES DURING EASTER AND PEAK SEASON, HALF BOARD OR FULL BOARD RATES ONLY!' — stated explicitly on both the Rack and STO rate tables. BB is simply not offered as a base meal plan during Easter (3-6 Apr) or Peak/Festive (23 Dec-3 Jan) — flag this if a quote requests BB during those dates.",
+    "Seven pricing periods (not counting the BB-excluded Easter/Peak rows for BB): High (appears 3 separate times across the year at the same rate), Low, Shoulder (x2), Easter (HB/FB only), Peak (HB/FB only) — a more granular calendar than most properties in this batch, but High/Shoulder repeat at the same rate whenever they recur.",
+    "Four room/suite categories: Standard, Superior, Club Room (SGL or DBL flat), Executive & Club Suite (SGL or DBL flat) — Club Room and Executive/Club Suite are priced FLAT regardless of single or double occupancy, unlike Standard/Superior which have distinct single/double columns.",
+    "STO tier here is labeled '25% OFF RACK' explicitly in its own table header — confirmed arithmetically exact across every cell checked (e.g. Rack BB High Single $230 x 0.75 = $172.50, rounds to STO $173).",
+    "Club Rooms and the Beach Club area are STRICTLY ADULTS ONLY — infants/children are not permitted in Club Rooms, Club Suites, or the Beach Club at all. This is a hard occupancy restriction, not just a pricing note.",
+    "Executive Suite and Club Suite carry an extensive list of complimentary/discounted perks (early check-in/late check-out, private dinner every 4 nights, daily high tea, laundry, Beach Club access, spa/shop discounts) — captured below since they materially affect what's 'included' in a quote at that category.",
+    "The hotel EXPLICITLY has no direct ocean-facing rooms ('The hotel does not have any direct ocean facing rooms') — worth flagging proactively to a beach-focused client.",
+    "A hard blackout-date calendar exists for 2026/Jan 2027 (see blackoutDates below) — Sunworld/agents cannot book on these specific dates regardless of rate tier; check before confirming any date near these windows.",
+    "Best Available Rate policy: if the agent finds a cheaper publicly-bookable rate online with identical inclusions, the hotel will match it and pay the agent a 10% commission (screenshot proof required) — a notable commercial term for Sunworld's own booking practice.",
+    "Explicit anti-rollover clause: '2025 rates are not to be used for 2026 sales / 2026 rates are not to be used for 2027 sales' — the hotel itself flags against exactly the kind of year-boundary rate misuse this project's CLAUDE.md warns about."
+  ],
+  "seasons": {
+    "high1": { "dateRange": "04/01/2026 - 02/04/2026" },
+    "low": { "dateRange": "07/04/2026 - 30/06/2026" },
+    "high2": { "dateRange": "01/07/2026 - 31/08/2026" },
+    "shoulder1": { "dateRange": "01/09/2026 - 30/09/2026" },
+    "high3": { "dateRange": "01/10/2026 - 30/10/2026" },
+    "shoulder2": { "dateRange": "01/11/2026 - 22/12/2026" },
+    "easter": { "dateRange": "03/04/2026 - 06/04/2026", "mealPlansAvailable": ["HB", "FB"], "minimumStay": "2 nights" },
+    "peak": { "dateRange": "23/12/2026 - 03/01/2027", "mealPlansAvailable": ["HB", "FB"], "minimumStay": "3 nights" }
+  },
+  "rackRates": {
+    "currency": "USD",
+    "unit": "per room per night",
+    "verified": true,
+    "bb": {
+      "note": "Not offered during Easter or Peak.",
+      "high1": { "standardSingle": 230, "standardDouble": 300, "superiorSingle": 300, "superiorDouble": 370, "clubRoom": 470, "executiveClubSuite": 570 },
+      "low": { "standardSingle": 190, "standardDouble": 260, "superiorSingle": 260, "superiorDouble": 330, "clubRoom": 430, "executiveClubSuite": 530 },
+      "high2": { "standardSingle": 230, "standardDouble": 300, "superiorSingle": 300, "superiorDouble": 370, "clubRoom": 470, "executiveClubSuite": 570 },
+      "shoulder1": { "standardSingle": 210, "standardDouble": 280, "superiorSingle": 280, "superiorDouble": 350, "clubRoom": 450, "executiveClubSuite": 550 },
+      "high3": { "standardSingle": 230, "standardDouble": 300, "superiorSingle": 300, "superiorDouble": 370, "clubRoom": 470, "executiveClubSuite": 570 },
+      "shoulder2": { "standardSingle": 210, "standardDouble": 280, "superiorSingle": 280, "superiorDouble": 350, "clubRoom": 450, "executiveClubSuite": 550 }
+    },
+    "hb": {
+      "high1": { "standardSingle": 260, "standardDouble": 360, "superiorSingle": 330, "superiorDouble": 430, "clubRoom": 530, "executiveClubSuite": 630 },
+      "easter": { "standardSingle": 280, "standardDouble": 380, "superiorSingle": 350, "superiorDouble": 450, "clubRoom": 550, "executiveClubSuite": 650 },
+      "low": { "standardSingle": 220, "standardDouble": 320, "superiorSingle": 290, "superiorDouble": 390, "clubRoom": 490, "executiveClubSuite": 590 },
+      "high2": { "standardSingle": 260, "standardDouble": 360, "superiorSingle": 330, "superiorDouble": 430, "clubRoom": 530, "executiveClubSuite": 630 },
+      "shoulder1": { "standardSingle": 240, "standardDouble": 340, "superiorSingle": 310, "superiorDouble": 410, "clubRoom": 510, "executiveClubSuite": 610 },
+      "high3": { "standardSingle": 260, "standardDouble": 360, "superiorSingle": 330, "superiorDouble": 430, "clubRoom": 530, "executiveClubSuite": 630 },
+      "shoulder2": { "standardSingle": 240, "standardDouble": 340, "superiorSingle": 310, "superiorDouble": 410, "clubRoom": 510, "executiveClubSuite": 610 },
+      "peak": { "standardSingle": 410, "standardDouble": 510, "superiorSingle": 480, "superiorDouble": 580, "clubRoom": 680, "executiveClubSuite": 780 }
+    },
+    "fb": {
+      "high1": { "standardSingle": 290, "standardDouble": 420, "superiorSingle": 360, "superiorDouble": 490, "clubRoom": 590, "executiveClubSuite": 690 },
+      "easter": { "standardSingle": 310, "standardDouble": 440, "superiorSingle": 380, "superiorDouble": 510, "clubRoom": 610, "executiveClubSuite": 710 },
+      "low": { "standardSingle": 250, "standardDouble": 380, "superiorSingle": 320, "superiorDouble": 450, "clubRoom": 550, "executiveClubSuite": 650 },
+      "high2": { "standardSingle": 290, "standardDouble": 420, "superiorSingle": 360, "superiorDouble": 490, "clubRoom": 590, "executiveClubSuite": 690 },
+      "shoulder1": { "standardSingle": 270, "standardDouble": 400, "superiorSingle": 340, "superiorDouble": 470, "clubRoom": 570, "executiveClubSuite": 670 },
+      "high3": { "standardSingle": 290, "standardDouble": 420, "superiorSingle": 360, "superiorDouble": 490, "clubRoom": 590, "executiveClubSuite": 690 },
+      "shoulder2": { "standardSingle": 270, "standardDouble": 400, "superiorSingle": 340, "superiorDouble": 470, "clubRoom": 570, "executiveClubSuite": 670 },
+      "peak": { "standardSingle": 440, "standardDouble": 570, "superiorSingle": 510, "superiorDouble": 640, "clubRoom": 740, "executiveClubSuite": 840 }
+    }
+  },
+  "sto25Rates": {
+    "$note": "Same document, page immediately following Rack. Explicitly labeled '25% OFF RACK' and verified arithmetically exact (rounded) across all cells checked.",
+    "currency": "USD",
+    "unit": "per room per night",
+    "verified": true,
+    "bb": {
+      "high1": { "standardSingle": 173, "standardDouble": 225, "superiorSingle": 225, "superiorDouble": 278, "clubRoom": 353, "executiveClubSuite": 428 },
+      "low": { "standardSingle": 143, "standardDouble": 195, "superiorSingle": 195, "superiorDouble": 248, "clubRoom": 323, "executiveClubSuite": 398 },
+      "high2": { "standardSingle": 173, "standardDouble": 225, "superiorSingle": 225, "superiorDouble": 278, "clubRoom": 353, "executiveClubSuite": 428 },
+      "shoulder1": { "standardSingle": 158, "standardDouble": 210, "superiorSingle": 210, "superiorDouble": 263, "clubRoom": 338, "executiveClubSuite": 413 },
+      "high3": { "standardSingle": 173, "standardDouble": 225, "superiorSingle": 225, "superiorDouble": 278, "clubRoom": 353, "executiveClubSuite": 428 },
+      "shoulder2": { "standardSingle": 158, "standardDouble": 210, "superiorSingle": 210, "superiorDouble": 263, "clubRoom": 338, "executiveClubSuite": 413 }
+    },
+    "hb": {
+      "high1": { "standardSingle": 195, "standardDouble": 270, "superiorSingle": 248, "superiorDouble": 323, "clubRoom": 398, "executiveClubSuite": 473 },
+      "easter": { "standardSingle": 210, "standardDouble": 285, "superiorSingle": 263, "superiorDouble": 338, "clubRoom": 413, "executiveClubSuite": 488 },
+      "low": { "standardSingle": 165, "standardDouble": 240, "superiorSingle": 218, "superiorDouble": 293, "clubRoom": 368, "executiveClubSuite": 443 },
+      "high2": { "standardSingle": 195, "standardDouble": 270, "superiorSingle": 248, "superiorDouble": 323, "clubRoom": 398, "executiveClubSuite": 473 },
+      "shoulder1": { "standardSingle": 180, "standardDouble": 255, "superiorSingle": 233, "superiorDouble": 308, "clubRoom": 383, "executiveClubSuite": 458 },
+      "high3": { "standardSingle": 195, "standardDouble": 270, "superiorSingle": 248, "superiorDouble": 323, "clubRoom": 398, "executiveClubSuite": 473 },
+      "shoulder2": { "standardSingle": 180, "standardDouble": 255, "superiorSingle": 233, "superiorDouble": 308, "clubRoom": 383, "executiveClubSuite": 458 },
+      "peak": { "standardSingle": 308, "standardDouble": 383, "superiorSingle": 360, "superiorDouble": 435, "clubRoom": 510, "executiveClubSuite": 585 }
+    },
+    "fb": {
+      "high1": { "standardSingle": 218, "standardDouble": 315, "superiorSingle": 270, "superiorDouble": 368, "clubRoom": 443, "executiveClubSuite": 518 },
+      "easter": { "standardSingle": 233, "standardDouble": 330, "superiorSingle": 285, "superiorDouble": 383, "clubRoom": 458, "executiveClubSuite": 533 },
+      "low": { "standardSingle": 188, "standardDouble": 285, "superiorSingle": 240, "superiorDouble": 338, "clubRoom": 413, "executiveClubSuite": 488 },
+      "high2": { "standardSingle": 218, "standardDouble": 315, "superiorSingle": 270, "superiorDouble": 368, "clubRoom": 443, "executiveClubSuite": 518 },
+      "shoulder1": { "standardSingle": 203, "standardDouble": 300, "superiorSingle": 255, "superiorDouble": 353, "clubRoom": 428, "executiveClubSuite": 503 },
+      "high3": { "standardSingle": 218, "standardDouble": 315, "superiorSingle": 270, "superiorDouble": 368, "clubRoom": 443, "executiveClubSuite": 518 },
+      "shoulder2": { "standardSingle": 203, "standardDouble": 300, "superiorSingle": 255, "superiorDouble": 353, "clubRoom": 428, "executiveClubSuite": 503 },
+      "peak": { "standardSingle": 330, "standardDouble": 428, "superiorSingle": 383, "superiorDouble": 480, "clubRoom": 555, "executiveClubSuite": 630 }
+    }
+  },
+  "mealPlanInclusions": {
+    "bb": "Accommodation and Breakfast daily",
+    "hb": "Accommodation, High Tea (16h00), Dinner and Breakfast",
+    "fb": "Accommodation, Lunch, High Tea (16h00), Dinner and Breakfast"
+  },
+  "childPolicy": {
+    "restriction": "Infants and children NOT allowed in Club Rooms, Club Suites, or the Beach Club.",
+    "age0to3": "Free of charge in bed of parents; baby cots available on request/confirmation only (20 available hotel-wide)",
+    "age4to11": "USD 50 on BB, USD 65 on HB, USD 80 on FB — Superior Category or Executive Suites ONLY (not available in Standard/Club)",
+    "age12Plus": "Full adult rate, no extra beds available",
+    "singleParentWithChild": "Single room rate + applicable child rate, OR double room rate, whichever is lower",
+    "note": "Children up to 11 years are not allowed to book their own separate room."
+  },
+  "extraPersonPolicy": {
+    "note": "No room accommodates 3 adults; no extra beds available at all. If a single-booked room gets an unexpected overnight guest, the rate reverts to the double room rate for that category/meal plan."
+  },
+  "maxRoomOccupancy": {
+    "standardRoom": "2 adults + 1 infant (bed of parents or cot)",
+    "superiorRoom": "2 adults + 2 children (4-11) + 1 infant (bed of parents or cot)",
+    "clubRoom": "2 adults only (adults-only room)",
+    "clubSuite": "2 adults only (adults-only room)",
+    "executiveSuite": "2 adults + 2 children (4-11) + 1 infant (bed of parents or cot)"
+  },
+  "easterAndFestivePolicy": {
+    "easter": { "dateRange": "3-6 Apr 2026", "minimumStay": "2 nights", "childSupplement": "USD 100 for children 4-11 sharing with adults, max 2 per room, Superior/Executive only, not allowed in Standard/Club", "galaDinnerSupplement": { "date": "4 Apr 2026 (Easter Saturday)", "adult": 60, "child4to11": 30 } },
+    "festive": { "dateRange": "23 Dec 2026 - 3 Jan 2027", "minimumStay": "3 nights", "childSupplement": "USD 100 for children 4-11 sharing with adults, max 2 per room, Superior/Executive only", "galaDinnerSupplement": { "dates": "24 Dec 2026 (Christmas Eve) and 31 Dec 2026 (New Year's Eve)", "adult": 60, "child4to11": 30 } }
+  },
+  "clubRoomBenefits": ["Daily Beach Club access 11am-6pm (adults only, subject to availability/reservation): infinity pool, 1 glass Prosecco/person/day, 1 snack platter/room/day, 15-min foot/back massage (value USD 55/person/day)", "15% discount on Spa treatments (adults only)", "10% discount at Swahili Shop (not combinable with Wednesday Shopping Experience)", "Dedicated WhatsApp concierge", "Room decoration, welcome gift & note", "20 nights within 12 months earns Lifetime Swahili Beach Club Membership (10% discount on direct bookings)"],
+  "executiveClubSuiteBenefits": ["Complimentary early check-in from 12pm / late check-out until 2pm (subject to availability)", "1 Private Dinner Experience per 4 nights stay (regular price USD 117 for 2, 3-course + 1 bottle house wine)", "Daily High Tea in private location", "Complimentary laundry/pressing, 1 bag/day", "Same Beach Club access as Club Room benefits", "20% discount on Spa treatments", "15% discount at Swahili Shop", "Dedicated WhatsApp concierge", "Room decoration, welcome gift & note", "Note: children may stay in Executive Suites but cannot access Beach Club or Spa (adults-only areas)"],
+  "groupsDiscount": { "threshold": "10+ rooms", "discount": "10% off Rack, additional 5% off STO rates" },
+  "depositPolicy": {
+    "standard": { "deposit": "30% within 7 days of booking confirmation", "balanceDue": "30 days prior to arrival (or immediately if booked within 30 days of arrival)" },
+    "easterFestive": { "deposit": "50% within 7 days of booking confirmation (immediate if arrival <60 days out)", "balanceDue": "60 days prior to arrival" }
+  },
+  "cancellationPolicy": {
+    "fit": { "30to15Days": "30% of total invoice", "14to8Days": "50% of total invoice", "7DaysOrLess": "100% of total invoice", "noShowOrLateAmendment": "100% of total invoice" },
+    "groupBlock10PlusRooms": { "45Days": "30% of total invoice", "30Days": "50% of total invoice", "14Days": "100% of total invoice" },
+    "easterWeekend": { "within10Days": "100% cancellation charge" },
+    "festivePeriod": { "within21Days": "100% cancellation charge" }
+  },
+  "dayRoomsAndLateCheckout": {
+    "dayRoom": "75% of prevailing room rate, up to 18:00 (full night rate applies thereafter)",
+    "lateCheckoutUntil18h00": "75% of prevailing room rate",
+    "lateCheckoutUntil14h00": "USD 70 flat",
+    "note": "Both strictly subject to availability."
+  },
+  "checkInOut": { "checkIn": "15:00", "checkOut": "10:00", "unconfirmedRoomRelease": "18:00" },
+  "blackoutDates2026": {
+    "february": ["13", "14", "15"],
+    "march": ["06", "07", "08"],
+    "june": ["26", "27"],
+    "july": ["22", "23", "24", "25", "26"],
+    "august": ["21", "22", "23", "27", "28", "29", "30", "31"],
+    "september": ["03", "04", "05"],
+    "october": ["27", "28", "29", "30"],
+    "note": "As of Nov 2025 publication; subject to change. January, April, May, November, December 2026 and January 2027 had no blackout dates listed."
+  },
+  "otherPolicyNotes": ["Hotel does not accept USD notes printed prior to 2009 or with any damage/marks", "Cash-less system on property; incidentals settled to room, cleared before departure", "No direct ocean-facing rooms exist at this property", "Best Available Rate matching: hotel will match a cheaper same-inclusion online rate the agent finds, with 10% commission to agent (screenshot proof required)", "2025 rates must not be used for 2026 sales and vice versa for 2027 — explicit anti-rollover clause in the source"],
+  "notExtracted": {
+    "residentRates": "SBR KES RESIDENT STO Contract 2026 (1).pdf — not extracted (out of scope for this non-resident pass).",
+    "oldFiles": "Old/Swahili Beach Resort - SBR-Fact-Sheet (2).pdf, Old/Nett Rates- Not Comm 2026.msg, Old/Swahili Beach Resort - 2026 Agent Rates Only (1).pdf — all skipped per task brief: superseded by the top-level SBR USD file, plus one is a .msg email."
+  }
+}

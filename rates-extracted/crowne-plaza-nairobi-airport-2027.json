@@ -1,0 +1,41 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftotext -layout from 'Crowne Plaza/Crowne Plaza  Nairobi Airport - Sunworld Safaris Contract - 2027.pdf' (5pp, single property, unambiguous). This is a DIFFERENT/newer contract than the one behind the $250/night 2026 figure already on file in CLAUDE.md's Nairobi/stopover hotel table - that 2026 figure was for '2 adults + 1 child, BB' as a blended total; this 2027 contract is room-only base rates, so the two are not directly comparable without recomputing extras.",
+  "property": "Crowne Plaza Nairobi Airport",
+  "currency": "USD",
+  "validity": { "start": "2027-01-01", "end": "2027-12-31" },
+  "unit": "per room per night, includes breakfast + taxes + return airport transfers",
+  "confidence": "confirmed-2027-08-06",
+  "rates": {
+    "Standard room": { "rooms": 117, "single": 150, "double": 180 },
+    "Standard room with Balcony": { "rooms": 16, "single": 180, "double": 210 },
+    "Club Room": { "rooms": 7, "single": 210, "double": 240 },
+    "Executive Suite": { "rooms": 4, "single": 310, "double": 340 },
+    "verified": true
+  },
+  "roomNamingInconsistency": {
+    "note": "[Unverified - same pattern as the existing Crowne Plaza room-naming flag in CLAUDE.md] The rate table (Section 3) lists room types as Standard / Standard+Balcony / Club / Executive Suite. Section 3's own bullet points then refer to 'Superior, Superior Savannah View & Deluxe Rooms' when describing extra-bed/cot policy for children - names that do NOT appear anywhere in the rate table itself. Cannot confirm whether 'Standard' = 'Superior' under a renamed label, or whether these are genuinely different (possibly unpriced) room categories. Flag on any quote and confirm with the hotel.",
+    "verified": false
+  },
+  "thirdAdultSupplement": { "amount": 60, "unit": "per person per night, on top of double occupancy", "note": "Only available in Club Room & Executive Suite - Standard/Balcony rooms can only take an extra baby cot, not a 3rd adult bed" },
+  "childPolicy": {
+    "age0to12SharingSuperiorRoom": "No extra bed provided",
+    "age0to12SharingDeluxeOrOtherRoom": "Rollaway bed provided (double rooms only, not twin)",
+    "extraBedAge4to11": 70,
+    "extraBedAge12plus": 90,
+    "verified": true
+  },
+  "mealRates": {
+    "unit": "buffet, per person",
+    "breakfastAdult": { "amount": 30, "note": "included in room rate; standalone price if needed" },
+    "lunchAdult": 35,
+    "dinnerAdult": 35,
+    "child0to6": "Complimentary",
+    "child7to11": "50% discount",
+    "verified": true
+  },
+  "taxesIncluded": "16% government tax + 2% training levy included in quoted rate",
+  "commissionable": false,
+  "dayRoom": { "amount": 120, "hours": "10am-6pm", "roomType": "Single or Double Superior room", "otherCategoriesRate": "70% of contracted rate", "verified": true },
+  "checkInOut": "Check-in 12:00 noon, check-out 10:00am. 10am-6pm departure day use = 70% of rate; beyond 6pm = full rate.",
+  "cancellationPolicy": "48 hours notice required prior to arrival to avoid one night's charge"
+}

@@ -1,0 +1,129 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftotext -layout PLUS PDF-to-image render (each property page has a text-based logo header, but the flattened text stream order does NOT match the document's own Table of Contents order - Paradise Plains actually appears first in page order, not Entim Main as the TOC suggested). Every property attribution below was cross-checked against a rendered image of its actual page header before being recorded, specifically because this project has a documented history of adjacent-property misattribution from flattened-text extraction. Source: 'WILDER GROUP/WILDER 2027 RACK rates.pdf' (17pp). Covers 6 accommodations (Paradise Plains, The River Camp Ol Pejeta, Lerai Safari Camp, Entim Main Camp, Entim Private Camp, Ilkeliani) plus 2 experiences (Hot Air Balloon Safaris, Cliff Boat Safaris) and The Cliff (Lake Nakuru) lodge. Two companion files ('WILDER GROUP -2027-30_ STO RATES_.pdf' and 'WILDER_2027_RESIDENT_NETT.pdf') exist in the same folder for discounted/resident tiers - NOT extracted in this pass, this file is Rack only.",
+  "operator": "The Wilder Group",
+  "currency": "USD",
+  "tier": "International Rack",
+  "confidence": "confirmed-2027-08-06, each property image-verified",
+  "seasonsStandard": {
+    "peak": { "dates": "1 Jul-30 Sep 2027, 22 Dec 2027-4 Jan 2028" },
+    "offPeak": { "dates": "1 Feb-31 Mar 2027, 1-30 Jun 2027, 1-31 Oct 2027" },
+    "green": { "dates": "5-31 Jan 2027, 1-6 Apr 2027, 1 Nov-21 Dec 2027" },
+    "closed": "7 Apr - 31 May 2027 (most camps)"
+  },
+  "properties": {
+    "Paradise Plains": {
+      "region": "Masai Mara",
+      "airstripTransfer": "Musiara Airstrip",
+      "rates": {
+        "LuxurySuites_groundPackageOnly": { "peak": { "adultSharing": 1850, "single": 2050 }, "offPeak": { "adultSharing": 1200, "single": 1350 }, "green": { "adultSharing": 850, "single": 1000 } },
+        "FamilySuite_perSuiteMax4guests_groundPackageOnly": { "peak": 7200, "offPeak": 4600, "green": 3200 }
+      },
+      "note": "No Full Board Package tier offered here - Ground Package only",
+      "mandatoryFees": { "gameReserveFee": { "adult": { "JanJun": 100, "JulDec": 200 }, "child9to17": 50 }, "guideInGuideTent": 250, "guideSharingMealsExclAccom": 120 },
+      "childPolicyLuxurySuites": { "under8": "Not permitted", "age8to11": "Child rate", "age12plus": "Full adult rate", "oneChildOwnTent": "75% of single occupancy rate", "twoChildrenOwnTent": "75% each of per-person sharing rate", "oneAdultOneChild": "Adult pays single, child 50% of per-person sharing" },
+      "groundPackageIncludes": "Full board, community fee $80pp, curated spirits/wines/beers/soft drinks, unstaffed sundowner at scenic point, packed picnic breakfasts, shared game drives, free exclusive vehicle (min 4 pax), Musiara airstrip transfers, laundry (excl. underwear), free Wilder inter-camp transfers",
+      "verified": true
+    },
+    "The River Camp, Ol Pejeta": {
+      "region": "Ol Pejeta Conservancy",
+      "airstripTransfer": "Kamok Airstrip",
+      "rates": {
+        "DeluxeSuite": { "groundPackage": { "peak": { "adultSharing": 1105, "single": 1470 }, "offPeak": { "adultSharing": 715, "single": 930 }, "green": { "adultSharing": 565, "single": 765 } }, "fullBoardPackage": { "peak": { "adultSharing": 995, "single": 1360 }, "offPeak": { "adultSharing": 610, "single": 825 }, "green": { "adultSharing": 460, "single": 660 } } },
+        "LuxurySuite": { "groundPackage": { "peak": { "adultSharing": 1005, "single": 1335 }, "offPeak": { "adultSharing": 650, "single": 845 }, "green": { "adultSharing": 620, "single": 805 } }, "fullBoardPackage": { "peak": { "adultSharing": 895, "single": 1225 }, "offPeak": { "adultSharing": 545, "single": 740 }, "green": { "adultSharing": 515, "single": 700 } } }
+      },
+      "mandatoryFees": { "conservancyFee": { "adult": 110, "child8to11": 55 } },
+      "occupancyNote": "No triples or extra beds at The River Camp",
+      "minimumStay": "Easter (22-28 Mar 27) and Christmas (24 Dec 27-3 Jan 28) require min 2 nights - implies otherwise no set minimum stated on this page, differs from the group's standard 2-night minimum",
+      "verified": true
+    },
+    "Lerai Safari Camp": {
+      "region": "Olerai Conservancy, Masai Mara",
+      "airstripTransfer": "Olare Orok Airstrip",
+      "rates": {
+        "StandardSuites": { "groundPackage": { "peak": { "adultSharing": 810, "single": 955, "childSharing2Adults8to11": 530 }, "offPeak": { "adultSharing": 580, "single": 695, "childSharing2Adults8to11": 400 }, "green": { "adultSharing": 550, "single": 665, "childSharing2Adults8to11": 375 } }, "fullBoardPackage": { "peak": { "adultSharing": 650, "single": 800, "childSharing2Adults8to11": 380 }, "offPeak": { "adultSharing": 420, "single": 535, "childSharing2Adults8to11": 250 }, "green": { "adultSharing": 395, "single": 510, "childSharing2Adults8to11": 225 } } }
+      },
+      "mandatoryFees": { "gameReserveFee": { "adult": { "JanJun": 100, "JulDec": 200 }, "child9to17": 50 } },
+      "occupancyNote": "Only 1 triple available, subject to availability",
+      "verified": true
+    },
+    "Entim Main Camp": {
+      "region": "Masai Mara",
+      "airstripTransfer": "Ol Kiombo Airstrip",
+      "rates": {
+        "LuxurySuite": { "groundPackage": { "peak": { "adultSharing": 1095, "single": 1335, "childSharing2Adults8to11": 640 }, "offPeak": { "adultSharing": 705, "single": 880, "childSharing2Adults8to11": 415 }, "green": { "adultSharing": 670, "single": 840, "childSharing2Adults8to11": 395 } }, "fullBoardPackage": { "peak": { "adultSharing": 900, "single": 1145, "childSharing2Adults8to11": 465 }, "offPeak": { "adultSharing": 520, "single": 700, "childSharing2Adults8to11": 240 }, "green": { "adultSharing": 490, "single": 655, "childSharing2Adults8to11": 220 } } }
+      },
+      "mandatoryFees": { "note": "All rates inclusive of bednight & community fees ($80 adult / $40 child)" },
+      "confidenceNote": "No Family Suite option found on Entim Main Camp's own page (only Luxury Suite) - contrast with Entim Private Camp below which DOES offer a Family Suite. Entim Main's Luxury Suite pricing is identical cell-for-cell to Entim Private's Luxury Suite pricing - a cross-property standardized-base-rate pattern consistent with this project's prior finding for Soroi Larsens/Amboseli.",
+      "verified": true
+    },
+    "Entim Private Camp": {
+      "region": "Masai Mara",
+      "airstripTransfer": "Ol Kiombo Airstrip",
+      "rates": {
+        "FamilySuite": { "groundPackage": { "peak": { "adultSharing": 1150, "single": 1390 }, "offPeak": { "adultSharing": 755, "single": 935 }, "green": { "adultSharing": 725, "single": 895 } }, "fullBoardPackage": { "peak": { "adultSharing": 955, "single": 1200 }, "offPeak": { "adultSharing": 570, "single": 750 }, "green": { "adultSharing": 540, "single": 710 } }, "occupancy": "Min 3 pax, max 5 pax" },
+        "LuxurySuite": { "groundPackage": { "peak": { "adultSharing": 1095, "single": 1335, "childSharing2Adults8to11": 640 }, "offPeak": { "adultSharing": 705, "single": 880, "childSharing2Adults8to11": 415 }, "green": { "adultSharing": 670, "single": 840, "childSharing2Adults8to11": 395 } }, "fullBoardPackage": { "peak": { "adultSharing": 900, "single": 1145, "childSharing2Adults8to11": 465 }, "offPeak": { "adultSharing": 520, "single": 700, "childSharing2Adults8to11": 240 }, "green": { "adultSharing": 490, "single": 655, "childSharing2Adults8to11": 220 } } }
+      },
+      "familySuiteTCs": "2 adults+1 child: child 75% of single room rate; 2 adults+2 kids: each child 75% of per-person sharing; 1 adult+2 children: adult pays single, children 75% each; 3 adults+1 child: 3 adults pay sharing rate (3rd at single rate), child 50%",
+      "verified": true
+    },
+    "Ilkeliani": {
+      "region": "Masai Mara",
+      "airstripTransfer": "Ol Kiombo Airstrip",
+      "childPolicyDistinct": "Children of ALL ages permitted (unlike the 8+ restriction at every other Wilder Mara camp); child rate applies 5-11 years; under-5 free (1 per tent, sharing adult room)",
+      "rates": {
+        "DeluxeFamilyTent": { "groundPackage": { "peak": { "adultSharing": 845, "single": 1030 }, "offPeak": { "adultSharing": 495, "single": 620 }, "green": { "adultSharing": 465, "single": 590 } }, "fullBoardPackage": { "peak": { "adultSharing": 725, "single": 910 }, "offPeak": { "adultSharing": 380, "single": 505 }, "green": { "adultSharing": 350, "single": 475 } } },
+        "PremiumFamilyTent": { "groundPackage": { "peak": { "adultSharing": 910, "single": 1090 }, "offPeak": { "adultSharing": 550, "single": 675 }, "green": { "adultSharing": 525, "single": 645 } }, "fullBoardPackage": { "peak": { "adultSharing": 785, "single": 970 }, "offPeak": { "adultSharing": 435, "single": 560 }, "green": { "adultSharing": 410, "single": 530 } } },
+        "DeluxeTent": { "groundPackage": { "peak": { "adultSharing": 770, "single": 935, "childSharing2Adults5to11": 330 }, "offPeak": { "adultSharing": 445, "single": 560, "childSharing2Adults5to11": 260 }, "green": { "adultSharing": 425, "single": 535, "childSharing2Adults5to11": 245 } }, "fullBoardPackage": { "peak": { "adultSharing": 660, "single": 825, "childSharing2Adults5to11": 230 }, "offPeak": { "adultSharing": 340, "single": 455, "childSharing2Adults5to11": 160 }, "green": { "adultSharing": 320, "single": 430, "childSharing2Adults5to11": 145 } } },
+        "PremiumTent": { "groundPackage": { "peak": { "adultSharing": 825, "single": 990 }, "offPeak": { "adultSharing": 500, "single": 615 }, "green": { "adultSharing": 480, "single": 590 } }, "fullBoardPackage": { "peak": { "adultSharing": 715, "single": 880 }, "offPeak": { "adultSharing": 395, "single": 510 }, "green": { "adultSharing": 375, "single": 485 } }, "occupancyNote": "No triples or extra beds at Ilkeliani Premium Tents" }
+      },
+      "verified": true
+    },
+    "The Cliff (Lake Nakuru)": {
+      "region": "Lake Nakuru National Park",
+      "rates": {
+        "LuxurySuites_fullBoardOnly": { "peak": { "perPersonSharing": 540, "single": 805 }, "offPeak": { "perPersonSharing": 460, "single": 655 }, "green": { "perPersonSharing": 385, "single": 535 } }
+      },
+      "easterSupplement": { "adult": 3000, "child": 2000, "currency": "KES", "note": "Net & non-commissionable" },
+      "mandatoryFees": { "adultParkEntrance": 60, "childParkEntrance": { "amount": 45, "unit": "per young adult 3-16yrs, payable direct" } },
+      "childPolicy": { "under12": "Not allowed", "age12to16sharingWith2adults": "75% of per-person sharing rate", "age12to16ownTent": "100% of per-person sharing rate" },
+      "occupancyNote": "No triples allowed",
+      "verified": true
+    }
+  },
+  "commonPolicy": {
+    "checkInOut": "Check-in 12:00, check-out 10:00",
+    "minimumStay": "2 nights for all properties except The Cliff Nakuru and The River Camp",
+    "singleRoomPolicy": "Max 3 singles per booking; 4th+ charged at double room rate",
+    "vehicleColorRequirement": "4x4 vehicles must be green or earth tones only",
+    "depositPolicy": "20% non-refundable deposit on confirmation",
+    "guideRates": { "guideTentPerNight": 250, "guideSharingMealsExclAccom": 120 },
+    "exclusiveVehiclePerDay": 450,
+    "lateDeparture": { "adult": 120, "child": 60, "note": "Includes lunch & airstrip transfers; tent checkout still 10am but camp facilities usable after" },
+    "verified": true
+  },
+  "specialOffers": {
+    "longStay": { "4nights": "5% discount", "6nights": "10% discount", "stay4get1free": "During green/off-peak - conservancy/park/bednight fees still payable on all nights", "restriction": "Single-property only, not combinable across properties" },
+    "circuitDiscount": { "5nightsTwoProperties": "5%", "7nightsTwoProperties": "7.5%" },
+    "stay3pay2": "Off-peak/Green season only, The River Camp & Lerai Safari Camp only, not combinable with other offers",
+    "combinationRestriction": "Long stay offers cannot combine with circuit discounts; park/conservancy fees always charged separately regardless of offer"
+  },
+  "experiences": {
+    "hotAirBalloonSafaris_MasaiMara": {
+      "highSeason": { "dates": "1 Jul-15 Oct 2027, 20 Dec 2027-3 Jan 2028", "adult": { "flight": 470, "landingFee": 80, "total": 550 }, "child": { "flight": 400, "landingFee": 35, "total": 435 } },
+      "lowSeason": { "dates": "5 Jan-30 Jun 2027, 16 Oct-19 Dec 2027", "adult": { "flight": 425, "landingFee": 80, "total": 505 }, "child": { "flight": 365, "landingFee": 35, "total": 400 } },
+      "exclusiveUseMax16pax": { "high": 8800, "low": 8080 },
+      "childPolicy": "5-11yrs = child; 12+ = adult; all children must be accompanied by adult; children age 5-11 must not exceed number of adults in group",
+      "notCarried": "Under 5, pregnancy 3rd trimester, diagnosed osteoporosis, known heart disease, recent injury/surgery",
+      "cancellationPolicy": "45-30 days: 25%; 30-15 days: 50%; under 14 days: 100%",
+      "verified": true
+    },
+    "cliffBoatSafari_LakeNakuru": {
+      "adult": 150, "child10to12": 80,
+      "morningSchedule": "Depart 0700, end 0930", "afternoonSchedule": "Depart 1130, end 1400",
+      "includes": "Breakfast (AM) or lunch (PM) on board, beverages, professional binoculars, Lake Nakuru guide/naturalist",
+      "childPolicy": "13+ full adult rate; under 9 not allowed",
+      "maxSeatsPerBoat": 8, "minPax": 2,
+      "verified": true
+    }
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftotext -layout, clean multi-page document. NOT a Soroi property. This document's own labeling ('2026-2027 Retail Rates') is used verbatim - no separate 'Rack' label but filename says RACK, treated as the standard non-resident rack rate.",
+  "property": "Tulia Amboseli Safari Camp",
+  "region": "Amboseli",
+  "currency": "USD",
+  "unit": "per person sharing (PPS) unless noted",
+  "source": {
+    "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/TULIA AMBOSELI SAFARI CAMP/Tulia Rack 2026 - Tulia Amboseli Safari Camp - RACK Non-Resident Rates.pdf",
+    "skippedFile": "Tulia 2026 - Tulia Amboseli Safari Camp - Resident Rates - KES.pdf - resident tier, out of scope",
+    "validity": "2026 only (per Contract Terms & Conditions)"
+  },
+  "confidence": "confirmed-2026-08-06",
+  "seasons": {
+    "highSeason": { "dateRanges": ["3 Jan - 31 Mar", "1 Oct - 19 Dec"] },
+    "lowSeason": { "dateRanges": ["1 Apr - 30 Jun"] },
+    "offPeakSeason": { "dateRanges": ["1 Jul - 15 Jul", "16 Jul - 15 Sep", "16 Sep - 30 Sep"] },
+    "peakSeason": { "dateRanges": ["20 Dec - 2 Jan"] }
+  },
+  "roomTypes": "9 Mountainview Superb Safari Tents (double/twin), 1 Mountainview Family Tent (4-6 adults), 10 Mountainview Deluxe Safari Tents w/private plunge pool (double/twin).",
+  "rates": {
+    "mountainviewSuperbSafariTent_fullBoard": {
+      "adultSharing": { "high": 225, "low": 200, "offPeak": 270, "peak": 310 },
+      "childSharing": { "high": 140, "low": 105, "offPeak": 170, "peak": 195 },
+      "singleAdult": { "high": 290, "low": 265, "offPeak": 350, "peak": 535 },
+      "thirdBedSupplement": { "high": 165, "low": 150, "offPeak": 200, "peak": 270 }
+    },
+    "mountainviewSuperbSafariTent_gamePackage": {
+      "adultSharing": { "high": 420, "low": 360, "offPeak": 515, "peak": 765 },
+      "childSharing": { "high": 250, "low": 185, "offPeak": 310, "peak": 395 },
+      "singleAdult": { "high": 575, "low": 480, "offPeak": 765, "peak": 1035 },
+      "thirdBedSupplement": { "high": 315, "low": 275, "offPeak": 365, "peak": 395 }
+    },
+    "mountainviewDeluxeSafariTentPlungePool_fullBoard": {
+      "adultSharing": { "high": 300, "low": 255, "offPeak": 355, "peak": 510 },
+      "childSharing": { "high": 155, "low": 130, "offPeak": 185, "peak": 265 },
+      "singleAdult": { "high": 400, "low": 350, "offPeak": 495, "peak": 680 },
+      "thirdBedSupplement": { "high": 225, "low": 195, "offPeak": 270, "peak": 385 }
+    },
+    "mountainviewDeluxeSafariTentPlungePool_gamePackage": {
+      "adultSharing": { "high": 510, "low": 415, "offPeak": 610, "peak": 810 },
+      "childSharing": { "high": 255, "low": 210, "offPeak": 300, "peak": 410 },
+      "singleAdult": { "high": 695, "low": 565, "offPeak": 815, "peak": 1110 },
+      "thirdBedSupplement": { "high": 385, "low": 315, "offPeak": 525, "peak": 615 }
+    }
+  },
+  "mealPlanInclusions": {
+    "fullBoard": "Breakfast, lunch, dinner, in-room water.",
+    "gamePackage": "Breakfast, lunch, dinner, airstrip transfers, shared 4x4 open-sided Landcruisers (soft drinks/water on safari), complimentary walking safari, Amboseli Park Kimana gate transfers if required."
+  },
+  "mandatoryFees": {
+    "amboseliNationalParkFee_nonResident": { "adult": 60, "childUpTo11_9": 35, "note": "Not included in room rates. Valid 24 hours, max 2 entries. No conservancy fee charged separately." }
+  },
+  "childPolicy": { "age5to11_9Sharing": "Child rate applies", "under5": "Free (excluding park fees)", "childOwnRoom": "75% of room rate" },
+  "singleRoomPolicy": "Max 2 single rooms per booking.",
+  "extras": {
+    "honeymoonPackagePerPersonPerNight": { "threeSeasons": 50, "peak": 75 },
+    "familyTentSupplementPerTentPerNight": { "threeSeasons": 125, "peak": 175 },
+    "bushBreakfastMin2": { "threeSeasons": 50, "peak": 75 },
+    "bushDinnerMin2": { "threeSeasons": 50, "peak": 75 },
+    "sundownerMin2": { "threeSeasons": 50, "peak": 75 },
+    "maasaiCulturalDanceMin5": 150,
+    "maasaiVillageTourMin2": 30,
+    "safariBushWalk": { "threeSeasons": 35, "peak": 50 },
+    "gameDriveDayNight2_5hrs_min2max6pax": { "threeSeasons": 75, "peak": 100 },
+    "privateGameDriveExclusiveVehiclePerDayMax6pax": { "threeSeasons": 350, "peak": 400 },
+    "transferSGREmaliEachWayMax6pax": { "threeSeasons": 225, "peak": 275 },
+    "transferNamangaBorderEachWayMax6pax": { "threeSeasons": 225, "peak": 275 },
+    "valentinesDayPackagePerPerson": 35,
+    "easterSupplement_apr4to6": 35,
+    "extraBreakfastOrLunch": { "threeSeasons": 25, "peak": 35 },
+    "extraDinner": { "threeSeasons": 25, "peak": 35 },
+    "birthdayCake": { "threeSeasons": 25, "peak": 35 }
+  },
+  "cancellationPolicy": [
+    { "daysBeforeArrival": "61+", "charge": "None" },
+    { "daysBeforeArrival": "60-46", "charge": "25%" },
+    { "daysBeforeArrival": "45-22", "charge": "50%" },
+    { "daysBeforeArrival": "21-72hrs", "charge": "75%" },
+    { "daysBeforeArrival": "<72hrs / no-show", "charge": "100%" }
+  ],
+  "paymentTerms": "30% non-refundable deposit on confirmation; 100% due 45 days prior to arrival (all seasons).",
+  "operationalPolicy": { "checkIn": "12:00 noon", "checkOut": "10:00am", "petsAllowed": false, "weatherDependentActivities": "Bush dinner, bush breakfast, sundowner, walking safari" }
+}

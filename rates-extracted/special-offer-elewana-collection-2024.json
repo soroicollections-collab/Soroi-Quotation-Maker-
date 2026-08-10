@@ -1,0 +1,28 @@
+{
+  "$note": "Extracted 6 Aug 2026 from SPECIAL OFFERS/ELEWANA COLLECTION/FW Newsletter.msg via extract_msg Python library. This is a general company newsletter (new team members, press coverage, conservation news, property focus) with two promotional items relevant to rates - the rest is editorial/PR content, skipped as out of scope.",
+  "offerStatus": "promotional - confirm current validity before use",
+  "operator": "Elewana Collection",
+  "propertiesCovered": "select Elewana properties across Tanzania and Kenya (not itemized by name in the extractable text; Kenya-specific note: a separate item in the same newsletter mentions park-fee payment process changes at Tortilis Camp Amboseli and Elsa's Kopje Meru, both Kenya properties, but that item is an operational/e-Citizen payment process update, not a rate offer)",
+  "offers": [
+    {
+      "name": "Pay 3, Stay 4",
+      "statedText": "Extend your adventure at select Elewana properties across Tanzania and Kenya with our special limited-time offer.",
+      "validity": { "verified": false, "confidenceNote": "No explicit start/end date given in the extractable text - only reachable via a 'Read more' link this extraction could not follow. Email itself is dated 1 Aug 2024, so at minimum treat as roughly that vintage." },
+      "noPricedFiguresInSource": true
+    },
+    {
+      "name": "No Single Supplement for Solo Travelers",
+      "statedText": "No Single Supplement for Solo Travelers visiting Elewana Properties until 20th December 2024, amounting up to a 33% discount.",
+      "validity": { "statedText": "until 20th December 2024", "verified": true, "expiryAssessment": "EXPIRED - well over a year before today's date (6 Aug 2026)." },
+      "noPricedFiguresInSource": true,
+      "discountCharacterization": "Described as 'up to a 33% discount' - this is a description of the value of waiving a typical single-supplement, not a stated percentage-off rate structure; treat as illustrative, not a guaranteed 33% figure for any specific property."
+    }
+  ],
+  "source": {
+    "file": "SPECIAL OFFERS/ELEWANA COLLECTION/FW Newsletter.msg",
+    "emailDate": "2024-08-01",
+    "extractionMethod": "extract_msg Python library, plain-text body - newsletter is text-based (Constant Contact), body readable, but all 'Read more' links point to tracked redirect URLs not fetched by this extraction"
+  },
+  "verified": true,
+  "confidenceNote": "Neither offer includes a priced rate table in the extractable text - both rely on 'Read more' links this extraction did not follow. If either offer needs to be used in a quote, someone should follow the original links (from the live email, not this .msg copy, since the tracked URLs may have expired) or contact Elewana directly for current terms."
+}

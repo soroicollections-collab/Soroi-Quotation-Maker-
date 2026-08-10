@@ -1,0 +1,25 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftotext -layout, clean document. NOT a Soroi property - a town hotel (location not specified in this document, likely Nairobi based on typical Monarch Hotel branding, but not explicitly stated - flagged).",
+  "property": "The Monarch Hotel",
+  "region": "Not explicitly stated in this document - [Inference] likely Nairobi based on typical brand positioning, unconfirmed",
+  "currency": "KES (resident) / USD (non-resident)",
+  "unit": "per room per night",
+  "source": {
+    "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/The Monarch Hotel/TRAVEL AGENTS  CONTRACT RATES 2026.pdf",
+    "validity": { "start": "2026-01-01", "end": "2026-12-31" }
+  },
+  "confidence": "confirmed-2026-08-06",
+  "rates_nonResident_USD": {
+    "single": { "BB": 70, "HB": 90, "FB": 110 },
+    "double": { "BB": 100, "HB": 140, "FB": 180 }
+  },
+  "rates_resident_KES": {
+    "single": { "BB": 8500, "HB": 11000, "FB": 13500 },
+    "double": { "BB": 12000, "HB": 17000, "FB": 22000 }
+  },
+  "conferencePackages": { "fullDay": { "KES": 3500, "USD": 30 }, "halfDay": { "KES": 3000, "USD": 28 }, "unit": "per person" },
+  "transfersAndExtras": { "airportTransferOneWay": { "amount": 30, "unit": "USD, max 2 guests" }, "extraBed": { "USD": 25, "KES": 3000 } },
+  "inclusions": ["Accommodation as booked", "Meals as indicated", "Complimentary high-speed WiFi", "Hotel facilities access"],
+  "termsNotes": "Rates are net and non-commissionable; based on agreed exchange rate and 10% service charge.",
+  "operationalPolicy": { "checkIn": "12:00 noon", "checkOut": "10:00am", "cancellation": "Free up to 24 hours prior to arrival.", "noShow": "One night charge." }
+}

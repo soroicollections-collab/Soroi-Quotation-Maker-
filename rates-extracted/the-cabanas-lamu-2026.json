@@ -1,0 +1,73 @@
+{
+  "property": "The Cabanas",
+  "operator": "Offbeat Safaris Holdings Ltd",
+  "region": "Lamu (beach)",
+  "isSoroiProperty": false,
+  "sourceFiles": ["2026 CONTRACT RATES/KENYA/ACCOMODATION/OFFBEAT/2026 Offbeat Collection Wholesale Rates (30%) AMENDED.pdf"],
+  "notes": [
+    "Part of the same 8-property Offbeat document, but structurally a beach property, not a safari camp - different meal plan/inclusions pattern (no conservancy fees, has watersports and Lamu excursions instead).",
+    "Wholesale discount here is 20% (not 30% like the inland Offbeat safari properties) - confirmed arithmetically (Regular Beachfront 2pax: $315 = $394 x 0.80).",
+    "Regular season minimum stay 2 nights; High season (20 Dec-10 Jan) minimum stay 5 nights, and Beachfront/Ocean View 4pax categories require minimum 3 adults in High season.",
+    "Room names: Beachfront Cabana (2 pax) = Aloha (Twin/Double), Moana (Double), Lokahi (Double). Beachfront Cabana (4 pax) = Makai (1 Twin & 1 Double). Ocean View Cabana (4 pax) = Malama, Ohana (1 Twin & 1 Double each)."
+  ],
+  "currency": "USD",
+  "validity": "11 Jan 2026 - 10 Jan 2027",
+  "publishedRates_perPersonPerNight": {
+    "regularSeason_11Jan_19Dec_min2nights": {
+      "beachfrontCabana2pax_AlohaMoanaLokahi": { "adultSharing": 394, "perSingle": 464 },
+      "beachfrontCabana4pax_Makai": { "adultSharing": 394, "childSharing4to10": 197 },
+      "oceanViewCabana4pax_MalamaOhana": { "adultSharing": 371, "childSharing4to10": 186 }
+    },
+    "highSeason_20Dec_10Jan_min5nights": {
+      "beachfrontCabana2pax_AlohaMoanaLokahi": { "adultSharing": 560 },
+      "beachfrontCabana4pax_Makai": { "adultSharing": 560, "childSharing4to10": 280, "note": "Sold as 3 adults minimum in High Season" },
+      "oceanViewCabana4pax_MalamaOhana": { "adultSharing": 522, "childSharing4to10": 261, "note": "Sold as 3 adults minimum in High Season" }
+    }
+  },
+  "wholesale20pct_perPersonPerNight": {
+    "regularSeason_11Jan_19Dec_min2nights": {
+      "beachfrontCabana2pax_AlohaMoanaLokahi": { "adultSharing": 315, "perSingle": 371 },
+      "beachfrontCabana4pax_Makai": { "adultSharing": 315, "childSharing4to10": 158 },
+      "oceanViewCabana4pax_MalamaOhana": { "adultSharing": 296, "childSharing4to10": 148 }
+    },
+    "highSeason_20Dec_10Jan_min5nights": {
+      "beachfrontCabana2pax_AlohaMoanaLokahi": { "adultSharing": 448 },
+      "beachfrontCabana4pax_Makai": { "adultSharing": 448, "childSharing4to10": 224 },
+      "oceanViewCabana4pax_MalamaOhana": { "adultSharing": 417, "childSharing4to10": 208 }
+    }
+  },
+  "specialPackages_nonCommissionable_mustBookInAdvance": {
+    "drinksAndActivitySupplement": { "perNight": 300, "perNightChild4to10": 150, "includes": "Soft drinks, house wines, spirits, house cocktails & beers; 1 Lamu Tour with local guide; 1 Sunset Dhow Cruise per booking; waterskiing, wakeboarding, donutting, snorkeling, yoga" },
+    "honeymoonRomanceSupplement": { "oneTimeFee": 500, "includes": "Bottle of Champagne, 2x free airport transfers, 2x 60min massages, 1 sunset dhow cruise, romantic candlelit dinner on beach" },
+    "celebrationSupplement_1to5pax": { "oneTimeFee": 400, "includes": "Bottle of house champagne, dhow sunset cruise, surprise beach dinner and cake" }
+  },
+  "childPolicy": { "raw": "0-3 years free of charge.", "verified": true },
+  "includes": ["Full board accommodation (3 meals/day, hot beverages, coffee up to 10am)", "Clean drinking tap water", "Swimming pool & common areas", "Yoga Shala use", "SUP boarding", "WiFi", "Laundry", "Airport transfers for bookings of 4+ nights"],
+  "excludes": ["All drinks from the bar", "All watersports & dhow sailing", "Deep sea fishing", "Motorised activities", "Snorkelling", "Spa treatments", "Guide fees for Lamu tours", "Transfers to/from Lamu", "Airport transfer for bookings of 3 nights or less", "Gratuities"],
+  "waterActivitiesAndExtras": [
+    { "item": "Water Skiing/Wakeboarding/Tubing", "amount": "$75 per 30min session" },
+    { "item": "Snorkelling", "amount": "$175 per trip, max 5 pax" },
+    { "item": "Extra Lunch", "amount": "$40/adult, $25/child" },
+    { "item": "Guide accommodation (Laluna ensuite)", "amount": "$200/night" },
+    { "item": "Child Care", "amount": "$75/day, pre-booking required" },
+    { "item": "Yoga Instructor private session", "amount": "$60pp" },
+    { "item": "Group Yoga Class", "amount": "$12pp" },
+    { "item": "Kitesurfing private lesson", "amount": "$120pp/hour" },
+    { "item": "Kitesurfing small group (up to 3 pax)", "amount": "$100pp/hour" },
+    { "item": "Boat support/rescue", "amount": "$20 per rescue (free for students)" },
+    { "item": "Dhow Sunset Cruise (4:30-7pm), whole dhow 1-10 pax", "amount": "$250" },
+    { "item": "Dhow Full Day (9am-6pm), whole dhow 1-10 pax", "amount": "$850" },
+    { "item": "Cabanas to Lamu Town/Airport", "amount": "$95" },
+    { "item": "Cabanas to Shela", "amount": "$100" },
+    { "item": "Cabanas to Manda Beach", "amount": "$110" },
+    { "item": "Cabanas to Manda Bay", "amount": "$300" },
+    { "item": "Lamu Museum Entrance", "amount": "$10pp" },
+    { "item": "Lamu Guide Fee", "amount": "$40 per group up to 4 pax" }
+  ],
+  "confidenceNote": "Dhow cruises are closed in June & July due to high winds & stormy seas.",
+  "policies": {
+    "checkIn": "12:00", "checkOut": "10:00",
+    "deposit": "20% deposit confirms booking; balance due 45 days prior to arrival.",
+    "cancellation": ">120 days: 20% deposit refunded (net of bank charges); 120-46 days: 20% deposit forfeited; 45-30 days: 50% of full booking value forfeited; <30 days or no-show: 100% forfeited."
+  }
+}

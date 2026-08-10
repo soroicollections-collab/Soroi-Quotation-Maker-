@@ -1,0 +1,28 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftotext -layout. NOT a Soroi property. Small exclusive-use camp - priced per camp/base group, not per person like most other properties in this dataset.",
+  "property": "Kalepo Camp",
+  "region": "Samburuland, Kenya",
+  "rooms": "4 double/twin en-suite luxury tents + 1 luxury en-suite family tent (2 adjacent tents), accommodates 12-16 pax",
+  "source": { "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/KALEPO CAMP/Kalepo Camp 2026 Rate Sheet.pdf", "tier": "Rack rates, per calendar year" },
+  "confidence": "confirmed-2026-08-06",
+  "currency": "USD",
+  "unit": "per night, exclusive use of whole camp",
+  "rates": {
+    "offPeak": { "dateRanges": ["16 Jan - 31 May", "16 Oct - 31 Oct", "1 Dec - 14 Dec"], "baseRate1to4Guests": 6000.00, "extraAdult": 1500.00, "extraChild4to15": 825.00 },
+    "peak": { "dateRanges": ["1 Jun - 15 Oct", "15 Dec - 15 Jan"], "baseRate1to4Guests": 8600.00, "extraAdult": 2125.00, "extraChild4to15": 990.00 },
+    "campClosed": ["15 Apr - 15 May", "1 Nov - 10 Dec"],
+    "verified": true
+  },
+  "childPolicy": { "under3": "Free", "age4to15": "Extra child rate per above" },
+  "inclusions": ["Exclusive use of camp incl. all activities/amenities/facilities", "All meals and beverages incl. house wines/spirits/liqueurs", "Road transfers from Kalepo airstrip", "All local taxes, VAT, Catering Levy"],
+  "exclusions": {
+    "conservationCommunityFee": { "adult16Plus": 150, "child4to15": 75, "unit": "per person per night", "note": "Even if 1-3 pax book within the 4-pax base rate, the 4-pax-per-night conservation/community fee still applies in full." },
+    "privateGuideChaperonePilotNanny": { "amount": 350, "unit": "USD per person per night, plus $30 conservation fee per person per night" },
+    "other": ["Shop purchases", "Spa treatments", "Helicopter flights", "Air transfers", "Staff gratuities"]
+  },
+  "minStay": "2 nights, booked exclusively",
+  "childrenPolicy": "Children of all ages welcome (contrasts with several other properties in this dataset that exclude young children).",
+  "depositAndPayment": "20% deposit to confirm; balance due 60 days prior to arrival.",
+  "cancellationPolicy": { "moreThan120days": "Deposit returned net of bank charges", "120to46days": "20% forfeited", "45to31days": "50% forfeited", "lessThan30daysOrNoShow": "100% forfeited" },
+  "insuranceRequirement": "AMREF / Flying Doctors membership required for all guests."
+}

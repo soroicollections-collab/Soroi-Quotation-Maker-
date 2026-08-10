@@ -1,0 +1,112 @@
+{
+  "category": "excursion",
+  "activity": "Mount Kenya trekking / climbing expeditions (guided, outfitted, multi-day)",
+  "operator": "African Ascents Ltd (Nanyuki, Kenya) — info@africanascents.com",
+  "region": "Mount Kenya, Kenya",
+  "extractedDate": "2026-08-06",
+  "sourceFiles": [
+    "2026 CONTRACT RATES/EXCURSIONS/Mount Kenya climbs and other trekking/RATES 2026 - Partner Rates new rates 1.0.xlsm",
+    "2027 CONTRACT RATES/EXCURSIONS/Mount Kenya climbs and other trekking/RATES 2026 - Partner Rates new rates 1.0.xlsm",
+    "2026 CONTRACT RATES/EXCURSIONS/Mount Kenya climbs and other trekking/Chogoria Route 5 days- All Specs 2024 1 (1) (2).docx",
+    "2026 CONTRACT RATES/EXCURSIONS/Mount Kenya climbs and other trekking/Timau  sirimon 4 days 24 (2).docx"
+  ],
+  "$duplicateCheck": "The xlsm rate file is byte-identical (md5-confirmed) between the 2026 and 2027 folders — one extraction covers both.",
+  "$anomaly": "[Unverified / Flag] The xlsm file is named 'RATES 2026' but its own internal labels are inconsistent: the 'NON RESIDENT' rates tab header reads 'MT KENYA 2025 OUTFITTING SERVICES' / 'VERSION 2025.1', while the workbook's 'Front Page' tab reads 'VERSION 2023.1' and contains a broken external-workbook cell reference ('...2025.3 2026(2) (2).xls]Front Page'!E25'), suggesting this file was assembled/rolled-forward from older versions without every internal label being updated. Filename says 2026, content says 2025/2023 in different places. Treat the numeric rates as the current best-available figures (they are the newest file present) but do not cite an internal 'version number' from this file as authoritative.",
+  "$anomaly2": "[Unverified / Flag] A separate document in the same folder ('Specifications+Pack+2019...docx') refers to the outfitter as 'Summits Africa' rather than 'African Ascents', even though the itinerary info-pack docx files (Chogoria, Timau) carry African Ascents' own letterhead/contact details. Not resolved which name is current/correct — possible rebrand or template reuse. Contact details used throughout (info@africanascents.com, Nanyuki) point to African Ascents as the operating entity.",
+  "currency": "USD",
+  "nonResidentRates": {
+    "note": "Per-person USD rates by group size (1 to 8+ pax) for VIP / LUXURY / STANDARD service specifications, at RACK / TOUR OPERATOR (offshore, 20% off rack) / PARTNER (local, 30% off rack) commercial tiers.",
+    "pricingPolicy": "'Local partners 30%, offshore tour operators 20%' off RACK — stated directly in source.",
+    "rack": {
+      "VIP": {
+        "4DayTrek_TimauBurguret": { "1pax": 4871, "2pax": 3663, "3pax": 3161, "4pax": 2147, "5pax": 2428, "6pax": 2312, "7pax": 2152, "8plusPax": 2036, "singleSupplement": 250, "eastAfricanTLRate": 1000, "verified": true },
+        "5DayTrek_ChogoriaTimauCircuit": { "1pax": 5794, "2pax": 4337, "3pax": 3768, "4pax": 2588, "5pax": 2996, "6pax": 2875, "7pax": 2695, "8plusPax": 2564, "singleSupplement": 250, "eastAfricanTLRate": 1250, "verified": true },
+        "6DayTrek_TimauChogoriaCircuit": { "1pax": 7120, "2pax": 5374, "3pax": 4791, "4pax": 3251, "5pax": 3222, "6pax": 3697, "7pax": 3452, "8plusPax": 3217, "singleSupplement": 250, "eastAfricanTLRate": 1499, "verified": true }
+      },
+      "LUXURY": {
+        "4DayTrek_TimauBurguret": { "1pax": 4209, "2pax": 3140, "3pax": 2265, "4pax": 1878, "5pax": 1787, "6pax": 1747, "7pax": 1713, "8plusPax": 1693, "singleSupplement": 200, "eastAfricanTLRate": 1000, "verified": true },
+        "5DayTrek_ChogoriaTimauCircuit": { "1pax": 5057, "2pax": 3927, "3pax": 2804, "4pax": 2305, "5pax": 2182, "6pax": 2141, "7pax": 2174, "8plusPax": 2129, "singleSupplement": 200, "eastAfricanTLRate": 1250, "verified": true },
+        "6DayTrek_TimauChogoriaCircuit": { "1pax": 5832, "2pax": 4548, "3pax": 3259, "4pax": 2596, "5pax": 2213, "6pax": 2520, "7pax": 2509, "8plusPax": 2438, "singleSupplement": 200, "eastAfricanTLRate": 1499, "verified": true }
+      },
+      "STANDARD": {
+        "4DayTrek_TimauBurguret": { "1pax": 2705, "2pax": 2066, "3pax": 1783, "4pax": 1600, "5pax": 1528, "6pax": 1485, "7pax": 1412, "8plusPax": 1375, "singleSupplement": 200, "eastAfricanTLRate": 1000, "verified": true },
+        "5DayTrek_ChogoriaTimauCircuit": { "1pax": 3221, "2pax": 2486, "3pax": 2114, "4pax": 1893, "5pax": 1804, "6pax": 1759, "7pax": 1680, "8plusPax": 1660, "singleSupplement": 200, "eastAfricanTLRate": 1250, "verified": true },
+        "6DayTrek_TimauChogoriaCircuit": { "1pax": 3920, "2pax": 3195, "3pax": 2545, "4pax": 2218, "5pax": 1874, "6pax": 2051, "7pax": 2031, "8plusPax": 1984, "singleSupplement": 200, "eastAfricanTLRate": 1499, "verified": true }
+      }
+    },
+    "tourOperatorOffshore20pctOffRack": {
+      "note": "Figures are RACK x 0.80, confirmed arithmetically consistent with the stated '20% off RACK' policy.",
+      "VIP": {
+        "4DayTrek_TimauBurguret": { "1pax": 3896.80, "2pax": 2930.40, "3pax": 2528.80, "4pax": 1717.60, "5pax": 1942.40, "6pax": 1849.60, "7pax": 1721.60, "8plusPax": 1628.80, "singleSupplement": 200, "eastAfricanTLRate": 799.68, "verified": true },
+        "5DayTrek_ChogoriaTimauCircuit": { "1pax": 4635.20, "2pax": 3469.60, "3pax": 3014.40, "4pax": 2070.40, "5pax": 2396.80, "6pax": 2300.00, "7pax": 2156.00, "8plusPax": 2051.20, "singleSupplement": 200, "eastAfricanTLRate": 999.60, "verified": true },
+        "6DayTrek_TimauChogoriaCircuit": { "1pax": 5696.00, "2pax": 4299.20, "3pax": 3832.80, "4pax": 2600.80, "5pax": 2577.60, "6pax": 2957.60, "7pax": 2761.60, "8plusPax": 2573.60, "singleSupplement": 200, "eastAfricanTLRate": 1199.52, "verified": true }
+      },
+      "LUXURY": {
+        "4DayTrek_TimauBurguret": { "1pax": 3367.20, "2pax": 2512.00, "3pax": 1812.00, "4pax": 1502.40, "5pax": 1429.60, "6pax": 1397.60, "7pax": 1370.40, "8plusPax": 1354.40, "singleSupplement": 160, "eastAfricanTLRate": 799.68, "verified": true },
+        "5DayTrek_ChogoriaTimauCircuit": { "1pax": 4045.60, "2pax": 3141.60, "3pax": 2243.20, "4pax": 1844.00, "5pax": 1745.60, "6pax": 1712.80, "7pax": 1739.20, "8plusPax": 1703.20, "singleSupplement": 160, "eastAfricanTLRate": 999.60, "verified": true },
+        "6DayTrek_TimauChogoriaCircuit": { "1pax": 4665.60, "2pax": 3638.40, "3pax": 2607.20, "4pax": 2076.80, "5pax": 1770.40, "6pax": 2016.00, "7pax": 2007.20, "8plusPax": 1950.40, "singleSupplement": 160, "eastAfricanTLRate": 1199.52, "verified": true }
+      },
+      "STANDARD": {
+        "4DayTrek_TimauBurguret": { "1pax": 2164.00, "2pax": 1652.80, "3pax": 1426.40, "4pax": 1280.00, "5pax": 1222.40, "6pax": 1188.00, "7pax": 1129.60, "8plusPax": 1100.00, "singleSupplement": 160, "eastAfricanTLRate": 799.68, "verified": true },
+        "5DayTrek_ChogoriaTimauCircuit": { "1pax": 2576.80, "2pax": 1988.80, "3pax": 1691.20, "4pax": 1514.40, "5pax": 1443.20, "6pax": 1407.20, "7pax": 1344.00, "8plusPax": 1328.00, "singleSupplement": 160, "eastAfricanTLRate": 999.60, "verified": true },
+        "6DayTrek_TimauChogoriaCircuit": { "1pax": 3136.00, "2pax": 2556.00, "3pax": 2036.00, "4pax": 1774.40, "5pax": 1499.20, "6pax": 1640.80, "7pax": 1624.80, "8plusPax": 1587.20, "singleSupplement": 160, "eastAfricanTLRate": 1199.52, "verified": true }
+      }
+    },
+    "partnerLocal30pctOffRack": {
+      "note": "Figures are RACK x 0.70, confirmed arithmetically consistent with the stated '30% off RACK' policy. This is the tier Sunworld (a Kenyan/local operator) would likely book at, but confirm with African Ascents which tier applies to Sunworld specifically.",
+      "VIP": {
+        "4DayTrek_TimauBurguret": { "1pax": 3409.70, "2pax": 2564.10, "3pax": 2212.70, "4pax": 1502.90, "5pax": 1699.60, "6pax": 1618.40, "7pax": 1506.40, "8plusPax": 1425.20, "singleSupplement": 175, "eastAfricanTLRate": 699.72, "verified": true },
+        "5DayTrek_ChogoriaTimauCircuit": { "1pax": 4055.80, "2pax": 3035.90, "3pax": 2637.60, "4pax": 1811.60, "5pax": 2097.20, "6pax": 2012.50, "7pax": 1886.50, "8plusPax": 1794.80, "singleSupplement": 175, "eastAfricanTLRate": 874.65, "verified": true },
+        "6DayTrek_TimauChogoriaCircuit": { "1pax": 4984.00, "2pax": 3761.80, "3pax": 3353.70, "4pax": 2275.70, "5pax": 2255.40, "6pax": 2587.90, "7pax": 2416.40, "8plusPax": 2251.90, "singleSupplement": 175, "eastAfricanTLRate": 1049.58, "verified": true }
+      },
+      "LUXURY": {
+        "4DayTrek_TimauBurguret": { "1pax": 2946.30, "2pax": 2198.00, "3pax": 1585.50, "4pax": 1314.60, "5pax": 1250.90, "6pax": 1222.90, "7pax": 1199.10, "8plusPax": 1185.10, "singleSupplement": 140, "eastAfricanTLRate": 699.72, "verified": true },
+        "5DayTrek_ChogoriaTimauCircuit": { "1pax": 3539.90, "2pax": 2748.90, "3pax": 1962.80, "4pax": 1613.50, "5pax": 1527.40, "6pax": 1498.70, "7pax": 1521.80, "8plusPax": 1490.30, "singleSupplement": 140, "eastAfricanTLRate": 874.65, "verified": true },
+        "6DayTrek_TimauChogoriaCircuit": { "1pax": 4082.40, "2pax": 3183.60, "3pax": 2281.30, "4pax": 1817.20, "5pax": 1549.10, "6pax": 1764.00, "7pax": 1756.30, "8plusPax": 1706.60, "singleSupplement": 140, "eastAfricanTLRate": 1049.58, "verified": true }
+      },
+      "STANDARD": {
+        "4DayTrek_TimauBurguret": { "1pax": 1893.50, "2pax": 1446.20, "3pax": 1248.10, "4pax": 1120.00, "5pax": 1069.60, "6pax": 1039.50, "7pax": 988.40, "8plusPax": 962.50, "singleSupplement": 140, "eastAfricanTLRate": 699.72, "verified": true },
+        "5DayTrek_ChogoriaTimauCircuit": { "1pax": 2254.70, "2pax": 1740.20, "3pax": 1479.80, "4pax": 1325.10, "5pax": 1262.80, "6pax": 1231.30, "7pax": 1176.00, "8plusPax": 1162.00, "singleSupplement": 140, "eastAfricanTLRate": 874.65, "verified": true },
+        "6DayTrek_TimauChogoriaCircuit": { "1pax": 2744.00, "2pax": 2236.50, "3pax": 1781.50, "4pax": 1552.60, "5pax": 1311.80, "6pax": 1435.70, "7pax": 1421.70, "8plusPax": 1388.80, "singleSupplement": 140, "eastAfricanTLRate": 1049.58, "verified": true }
+      }
+    }
+  },
+  "citizenResidentRates": {
+    "note": "East Africa Citizen/Resident tier (separate from Non-Resident above). Included for completeness though outside this project's usual Non-Resident scope.",
+    "rack": {
+      "VIP": {
+        "4DayTrek": { "1pax": 4577, "2pax": 3369, "3pax": 2867, "4pax": 1852, "5pax": 2208, "6pax": 2093, "7pax": 1933, "8plusPax": 1817, "singleSupplement": 250, "eastAfricanTLRate": 750 },
+        "5DayTrek": { "1pax": 5394, "2pax": 3937, "3pax": 3368, "4pax": 2188, "5pax": 2596, "6pax": 2474, "7pax": 2294, "8plusPax": 2164, "singleSupplement": 250, "eastAfricanTLRate": 1000 },
+        "6DayTrek": { "1pax": 6648, "2pax": 4902, "3pax": 4319, "4pax": 2779, "5pax": 2750, "6pax": 3224, "7pax": 2980, "8plusPax": 2745, "singleSupplement": 250, "eastAfricanTLRate": 1250 }
+      },
+      "verified": true,
+      "confidenceNote": "LUXURY and STANDARD citizen/resident tiers also present in source but omitted here for brevity — re-open the xlsm 'CITIZEN-RESIDENT RATES' sheet if a citizen-tier LUXURY/STANDARD quote is needed."
+    }
+  },
+  "technicalClimbGuides": {
+    "rateUSD": "300 per person (2 guests to 1 climb guide)",
+    "soloClimberRateUSD": 500,
+    "note": "NET and NON-COMMISSIONABLE",
+    "hostedClimbsPrivateGuide": { "guide": "Julian Wright", "rateUSD": 500, "unit": "per climb day", "note": "East African TL rates apply on top." },
+    "verified": true
+  },
+  "additionalServicesAddOns": {
+    "note": "Confirmed identical (same figures, same wording) in BOTH the Chogoria 5-Day and Timau 4-Day African Ascents info-pack docx files — appears to be a portfolio-wide add-on price list rather than route-specific.",
+    "sourceFiles": ["Chogoria Route 5 days- All Specs 2024 1 (1) (2).docx", "Timau  sirimon 4 days 24 (2).docx"],
+    "items": [
+      { "name": "Extra porter", "priceUSD": 20, "unit": "per porter per day", "verified": true },
+      { "name": "Mineral water throughout (4L/day)", "priceUSD": 280, "unit": "per guest (whole trip)", "verified": true },
+      { "name": "Shower tent", "priceUSD": 300, "unit": "per guest (whole trip)", "note": "Already included free in VIP specification.", "verified": true },
+      { "name": "Toilet tent (extra unit)", "priceUSD": 200, "unit": "per toilet unit", "note": "A toilet tent is already included on all specifications (Standard 1:10 pax, Luxury/VIP 1:5 pax) — this is for an additional unit.", "verified": true },
+      { "name": "Heater for mess tent", "priceUSD": 200, "unit": "per heater", "note": "Used in evenings, max 3 hours.", "verified": true }
+    ]
+  },
+  "routeFilenameMismatchFlag": "[Unverified] The file 'Timau  sirimon 4 days 24 (2).docx' is named as if covering both Timau and Sirimon routes, but its actual itinerary content describes only the Timau route (Marania Camp -> Major's Camp -> Simba Col -> summit/Old Moses). No Sirimon-specific 4-day itinerary was found under this filename.",
+  "otherInfoPacksReviewed": [
+    { "file": "Specifications+Pack+2019 (1) (1) (2) (2).docx", "verdict": "Descriptive only (VIP/Luxury/Standard equipment comparison) — no new pricing beyond what the xlsm tier names already convey. Skipped for rates, kept as context." },
+    { "file": "Pre+Dept+Info+Packet 2022.docx", "verdict": "Pure logistics/pre-departure guidance (packing, altitude, hydration). Contains porter TIPPING guidance ($20-$30/porter) — this is a gratuity suggestion, not a rate, so not included as a priced line item." },
+    { "file": "packing guide 2021 (2) (1) (1).doc", "verdict": "Pure packing/equipment guidance. No pricing. Skipped." },
+    { "file": "Aberdares info pack.docx.pdf", "verdict": "Itinerary/logistics info pack for a different mountain (Aberdares). Only pricing-adjacent text found is the same generic '$20 per person Nanyuki transfer supplement' boilerplate already captured under INCLUDES/EXCLUDES elsewhere. No dedicated rate table. Skipped as a rate source." },
+    { "file": "Chogoria info pack 6 days 2024 1 (2).docx", "verdict": "This is a DIFFERENT document from 'Chogoria Route 5 days- All Specs' (6-day vs 5-day) but contains no pricing table itself — only the generic itinerary-alteration disclaimer. No 6-day Chogoria price found in this specific file; use the xlsm '6 Day Trek - Timau, Chogoria, Circuit' rows instead." }
+  ]
+}

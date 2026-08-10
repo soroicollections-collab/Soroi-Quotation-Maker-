@@ -1,0 +1,74 @@
+{
+  "$note": "Re-verified 5 Aug 2026 via fresh page-by-page read of the source PDF (page index 1), as part of extracting the remaining Soroi properties. Shoulder/Green figures and the mandatory-fee season/date breakdown, both previously missing, are now filled in and verified. See CLAUDE.md Corrections Log, 5 Aug 2026 entry.",
+  "property": "Soroi Mara Bush Camp",
+  "region": "Maasai Mara",
+  "tier": "Rack Rate",
+  "residency": "Non-Resident",
+  "source": {
+    "file": "SOROI 2027/Soroi - 2027 RACK Rates.pdf",
+    "pdfPageIndex": 1,
+    "docPrintedPageNumber": 2,
+    "validity": { "start": "2027-01-04", "end": "2028-01-03" }
+  },
+  "confidence": "confirmed-2026-08-05",
+  "confidenceNote": "Ground Package, Full Board, and Single Tent figures (all three seasons) independently matched exactly against the SharePoint source, no discrepancy found. This is high confidence for those rows — see familyUnit.verified below for the one figure that is NOT part of that confirmed match.",
+  "openFlags": [
+    "Park Fee's own wording still says 'per adult per 12h' even now that the date-window split is known — it's genuinely unclear whether that means one charge per calendar day (current working assumption) or something else. Flag on any quote using this figure."
+  ],
+  "seasons": {
+    "peak": { "dateRanges": ["1 Jul – 30 Sep", "20 Dec – 3 Jan"] },
+    "shoulder": { "dateRanges": ["4 Jan – 28 Feb", "1 Jun – 30 Jun"] },
+    "extendedGreen": { "dateRanges": ["1 Mar – 31 May", "1 Oct – 19 Dec"] }
+  },
+  "rates": {
+    "currency": "USD",
+    "unit": "per person per night",
+    "fullBoard": {
+      "perPerson": { "peak": 585, "shoulder": 495, "extendedGreen": 420 },
+      "single": { "peak": 878, "shoulder": 743, "extendedGreen": 525 }
+    },
+    "groundPackage": {
+      "perPerson": { "peak": 785, "shoulder": 695, "extendedGreen": 620 },
+      "single": { "peak": 1178, "shoulder": 1043, "extendedGreen": 775 }
+    },
+    "familyUnit": {
+      "verified": false,
+      "warning": "Listed in CLAUDE.md as $2,048 (FB) / $2,748 (Ground) at Peak, but a direct page-by-page search of the full 34-page source PDF found NO occurrence of either figure anywhere in the document, confirmed again on this 5 Aug 2026 re-read. Mara Bush Camp's own rate table has no Family Unit row at all — the $3,520/$4,400 Family Unit rates that do exist in the PDF belong to a different property, Soroi Luxury Migration Camp. Do not use these two figures in a quote until the discrepancy is resolved.",
+      "asStatedInClaudeMd": { "fullBoardPeak": 2048, "groundPackagePeak": 2748 }
+    }
+  },
+  "mandatoryFees": {
+    "note": "Excluded from package rate above. Wording confirmed directly on the property's own page (5 Aug 2026) — identical wording/figures also appear on Private Wing's and Luxury Migration Camp's pages, so this is a shared Maasai Mara conservancy fee, not Mara-specific pricing.",
+    "verified": true,
+    "verifiedDate": "2026-08-05",
+    "communityLevy": {
+      "note": "Season-dependent, not a single flat figure. CORRECTED/COMPLETED 5 Aug 2026 — previously only had the Peak figure on file with a vague 'reduced in Extended Green' note.",
+      "peak": { "adult": 80, "child": 40, "unit": "per night" },
+      "shoulder": { "adult": 40, "child": 20, "unit": "per night" },
+      "extendedGreen": { "adult": 40, "child": 20, "unit": "per night" }
+    },
+    "parkFee": {
+      "note": "Date-window based, not season-based. CORRECTED/COMPLETED 5 Aug 2026 — previously only had the $200 figure on file, source actually splits the year in half.",
+      "janToJun": { "adult": 100, "child": 50, "unit": "per adult per 12h" },
+      "julToDec": { "adult": 200, "child": 50, "unit": "per adult per 12h" },
+      "billingUnitStillAmbiguous": true
+    }
+  },
+  "roomNote": "11 Safari Tents (1 King double + 1 single bed). 2 Family Tents (1 King double + 2 single beds, shared bathroom) exist physically but have no priced Family Unit rate on this page — see familyUnit.warning above.",
+  "portfolioWideTerms": {
+    "note": "Applies across Soroi properties per CLAUDE.md > Portfolio-wide terms. Duplicated here for convenience — CLAUDE.md is authoritative.",
+    "childAge5to11": "50% of adult sharing rate",
+    "childUnder4": "free (sharing)",
+    "youngAdult12to17Sharing": "75% of adult rate",
+    "tourLeaderGuide": { "inTLTent": 175, "inGuestTent": "75% of adult single rate" },
+    "privateGuideMeals": { "amount": 50, "unit": "per day" },
+    "singleSupplementGreenSeason": "reduced to 25% (from 50%) — Mara only",
+    "circuitLongStayDiscount": [
+      { "minNights": 6, "discountPct": 12 },
+      { "minNights": 9, "discountPct": 15 },
+      { "minNights": 12, "discountPct": 20 }
+    ],
+    "circuitDiscountExcludes": "festive periods",
+    "christmasNewYearSupplement": { "adult": 40, "child": 20, "unit": "per night" }
+  }
+}

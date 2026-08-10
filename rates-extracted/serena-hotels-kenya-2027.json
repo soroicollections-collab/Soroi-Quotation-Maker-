@@ -1,0 +1,93 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftotext -layout, paginated, from 'SERENA/Serena Tour.Travel Agent Agreement KE - 2027.pdf' (22pp, formal legal contract with Schedules). Covers 7 Kenya Serena properties: Mara Serena Safari Lodge, Sweetwaters Serena Camp (Ol Pejeta), Amboseli Serena Safari Lodge, Kilaguni Serena Safari Lodge (Tsavo West), Lake Elmenteita Serena Camp, Nairobi Serena Hotel, Serena Beach Resort & Spa (Mombasa). A companion 'Serena Tour.Travel Agent Agreement TZ-EA 2027.pdf' also exists in the same folder for Tanzania properties - NOT extracted here (out of scope for Kenya slice). No Samburu Serena or Serena Mountain Lodge rate table found in this Kenya document - if either is needed, source is not in this file.",
+  "operator": "Serena Hotels (Tourism Promotion Services (K) Limited)",
+  "currency": "USD",
+  "validity": { "start": "2027-01-02", "end": "2028-01-01" },
+  "confidence": "confirmed-2027-08-06",
+  "kenyaLodgesAndCampsFullBoardOrAI": {
+    "unit": "per room per night, Double occupancy (Full Board, except Lake Elmenteita which is All Inclusive)",
+    "dateWindows": ["02-31Jan", "01-28Feb", "01-31Mar", "Easter(26-29Mar)", "01-30Apr", "01-31May", "01-30Jun", "01-31Jul", "01-31Aug", "01-30Sep", "01-31Oct", "01-30Nov", "01-22Dec", "23Dec-01Jan28"],
+    "MaraSerenaSafariLodge": [361, 361, 264, 324, 264, 264, 710, 710, 710, 710, 361, 361, 361, 710],
+    "SweetwatersSerenaCamp": [307, 307, 258, 318, 258, 258, 400, 400, 400, 400, 307, 307, 307, 400],
+    "AmboseliSerenaSafariLodge": [294, 294, 294, 354, 244, 244, 401, 401, 401, 401, 294, 294, 294, 401],
+    "KilaguniSerenaSafariLodge": [300, 300, 300, 360, 254, 254, 254, 300, 300, 300, 300, 300, 300, 370],
+    "LakeElmenteitaSerenaCamp_AllInclusive": [666, 666, 666, 726, 666, 666, 778, 778, 778, 778, 666, 666, 666, 778],
+    "roomSupplements": { "sweetwatersWaterholeViewTents": 50, "sweetwatersMoraniWing_HighGreen": 85, "sweetwatersMoraniWing_Peak": 150, "sweetwatersOrAmboseliFamilyRoom": 50, "kilaguniDeluxeRoom": 50, "suite_ASSL_MSSL_KSSL": 200, "suiteRate_LESC": 1000 },
+    "mealAddOns": { "lunch": 40, "dinner": 50, "picnicLunch": 30, "halfBoardReduction": 15 },
+    "singleRoomRate": "75% of double room rate",
+    "thirdAdultInTriple": "50% of double room rate",
+    "lakeElmenteitaAIIncludes": "Full board + local beers/soft drinks/spirits + Soysambu Conservancy fees",
+    "verified": true
+  },
+  "nairobiSerenaHotel": {
+    "unit": "per room per night, Bed & Breakfast, flat rate all year (02Jan27-01Jan28)",
+    "rates": {
+      "DeluxeRoom": { "single": 186, "double": 248 },
+      "ExecutiveRoom": { "single": 207, "double": 276 },
+      "PremierRoom": { "single": 239, "double": 318 },
+      "SuperiorRoom": { "single": 385, "double": 435 },
+      "ExecutiveSuite": { "single": 800, "double": 800 },
+      "LamuPresidentialSuite": { "single": 5500, "double": 5500 },
+      "ChalePresidentialSuite": { "single": 8500, "double": 8500 }
+    },
+    "mealAddOns": { "lunch": 40, "dinner": 50, "picnicLunch": 30 },
+    "thirdAdultInTriple": "50% of double room rate",
+    "verified": true
+  },
+  "serenaBeachResortSpa": {
+    "region": "Mombasa",
+    "unit": "per room per night, Full Board",
+    "dateWindows": ["02-31Jan", "01-28Feb", "01-31Mar", "Easter(26-29Mar)", "01-30Apr", "01-31May", "01-30Jun", "01-31Jul", "01-31Aug", "01-30Sep", "01-31Oct", "01-30Nov", "01-22Dec", "23Dec-01Jan28"],
+    "GardenSuperiorFamily_double": [264, 264, 264, 344, 238, 238, 238, 264, 264, 264, 264, 264, 264, 490],
+    "SuperiorSeaViewFamilySeaView_double": [364, 364, 364, 444, 318, 318, 318, 364, 364, 364, 364, 364, 364, 590],
+    "roomSupplements": { "lamuZanzibarSuite": 200, "shellaAndTundwaSuite": 400 },
+    "mealAddOns": { "lunch": 40, "dinner": 50, "picnicLunch": 30, "halfBoardReduction": 15 },
+    "singleRoomRate": "75% of double room rate",
+    "thirdAdultInTriple": "50% of double room rate",
+    "verified": true
+  },
+  "groundPackages": {
+    "unit": "per person sharing; 1st Night / Extra Night / Single Room Supplement (SRS)",
+    "note": "Includes Full Board + 2 game drives/day + airstrip/train return transfer (Mara/Amboseli/Kilaguni/Sweetwaters); LESC ground package is All Inclusive + Soysambu fee + bird walk + sundowner + 1 game drive (2nd night adds night drive)",
+    "MaraSerenaSafariLodge": { "highJanFeb": { "first": 311, "extra": 281, "srs": 70 }, "greenMarMayApr": { "first": 262, "extra": 232, "srs": 0 }, "easter": { "first": 292, "extra": 262, "srs": 0 }, "peakJunSep": { "first": 485, "extra": 455, "srs": 114 }, "highOctDec": { "first": 311, "extra": 281, "srs": 70 }, "peakFestive": { "first": 485, "extra": 455, "srs": 114 } },
+    "SweetwatersSerenaCamp": { "highJanFeb": { "first": 413, "extra": 253, "srs": 63 }, "greenMarMayApr": { "first": 389, "extra": 229, "srs": 0 }, "easter": { "first": 419, "extra": 259, "srs": 0 }, "peakJunSep": { "first": 460, "extra": 300, "srs": 75 }, "highOctDec": { "first": 413, "extra": 253, "srs": 63 }, "peakFestive": { "first": 460, "extra": 300, "srs": 75 } },
+    "AmboseliSerenaSafariLodge": { "highJanMar": { "first": 317, "extra": 247, "srs": 62 }, "easter": { "first": 347, "extra": 277, "srs": 69 }, "greenAprMay": { "first": 292, "extra": 222, "srs": 0 }, "peakJunSep": { "first": 371, "extra": 301, "srs": 75 }, "highOctDec": { "first": 317, "extra": 247, "srs": 62 }, "peakFestive": { "first": 371, "extra": 301, "srs": 75 } },
+    "KilaguniSerenaSafariLodge": { "highJanMar": { "first": 370, "extra": 250, "srs": 63 }, "easter": { "first": 400, "extra": 280, "srs": 70 }, "greenAprJun": { "first": 347, "extra": 227, "srs": 0 }, "highJulDec": { "first": 370, "extra": 250, "srs": 63 } },
+    "LakeElmenteitaSerenaCamp": { "highJanJun15": { "first": 513, "extra": 393, "srs": 98 }, "easter": { "first": 543, "extra": 423, "srs": 106 }, "peakJun16Sep": { "first": 569, "extra": 449, "srs": 112 }, "highOctDec": { "first": 513, "extra": 393, "srs": 98 }, "peakFestive": { "first": 569, "extra": 449, "srs": 112 } },
+    "emaliTrainStationTransferSupplement": 80,
+    "exclusiveVehicleSupplement": { "amount": 200, "unit": "Nett per vehicle per game drive" },
+    "verified": true
+  },
+  "kiliamboPackage": {
+    "note": "Combined Amboseli + Kilaguni 2-lodge package",
+    "unit": "per person sharing",
+    "accommodationOnly": { "highJanMar": { "twoNights": 275, "extraNight": 138, "srs": 69 }, "easter": { "twoNights": 335, "extraNight": 168, "srs": 84 }, "greenAprMay": { "twoNights": 235, "extraNight": 118, "srs": 0 }, "peakJunSep": { "twoNights": 320, "extraNight": 160, "srs": 80 } },
+    "groundPackage": { "highJanMar": { "twoNights": 745, "extraNight": 138, "srs": 69 }, "easter": { "twoNights": 805, "extraNight": 168, "srs": 84 }, "greenAprMay": { "twoNights": 705, "extraNight": 118, "srs": 0 }, "peakJunSep": { "twoNights": 790, "extraNight": 160, "srs": 80 } },
+    "verified": true
+  },
+  "childPolicy": {
+    "under3NotAllowedAtLakeElmenteita": true,
+    "under5": "Complimentary stay at all Serena properties",
+    "age6to12": "50% of adult rate, sharing or own room",
+    "age13to17": "75% of adult rate, sharing or own room",
+    "verified": true
+  },
+  "famTripRates": {
+    "NairobiSerenaHotel": { "amount": 180, "unit": "BB, single or double, max 1 night" },
+    "SerenaBeachResortMombasa": { "amount": 200, "unit": "BB, single or double, max 2 nights" },
+    "AmboseliMaraKilaguniSweetwaters": { "amount": 200, "unit": "FB, single or double, max 2 nights" },
+    "LakeElmenteita": { "amount": 350, "unit": "FB, single or double, max 2 nights" },
+    "verified": true
+  },
+  "seasonsByProperty": {
+    "MaraSerenaAndSweetwaters": { "high": ["2Jan-28Feb", "1-15Jun", "1Oct-22Dec"], "green": ["1Mar-31May"], "peak": ["16Jun-30Sep", "23Dec-1Jan"] },
+    "AmboseliSerena": { "high": ["2Jan-31Mar", "1-15Jun", "1Oct-22Dec"], "green": ["1Apr-31May"], "peak": ["16Jun-30Sep", "23Dec-1Jan"] },
+    "KilaguniSerena": { "high": ["2Jan-31Mar", "1Jul-22Dec", "23Dec-1Jan"], "green": ["1Apr-30Jun"] },
+    "LakeElmenteita": { "high": ["2Jan-15Jun", "1Oct-22Dec"], "peak": ["16Jun-30Sep", "23Dec-1Jan"] },
+    "SerenaBeachResort": { "high": ["2Jan-31Mar", "1Jul-22Dec"], "green": ["1Apr-30Jun"], "peak": ["23Dec-1Jan"] },
+    "NairobiSerena": "No season - flat rate all year"
+  },
+  "circuitDiscounts": { "threeProperties": "10%", "fourProperties": "12.5%" },
+  "dayRoomPolicy": { "cityOrBeach": "Ends 6pm, beyond 6pm = full overnight rate", "nonCityNonBeach": "100% of overnight rate" },
+  "priorityBooking": "Priority confirmation at Mara Serena Safari Lodge in peak season given to clients also staying at Lake Elmenteita Serena Camp or Nairobi Serena Hotel"
+}

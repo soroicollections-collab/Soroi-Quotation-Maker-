@@ -1,0 +1,20 @@
+{
+  "$note": "Extracted 6 Aug 2026.",
+  "property": "Tangulia Mara Camp",
+  "operator": "Bush and Beyond Ltd (booking agent) / Jackson Looseyia & Dominic Nchoe",
+  "region": "Western boundary of the Masai Mara Reserve (Musiara airstrip)",
+  "tier": "RSP (rack) and Trade Rates/Preferential",
+  "source": { "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/BUSH&BEYOND/Tangulia Mara - 2026 Preferential US$.pdf" },
+  "seasons": { "regular": "5 Jan-30 Jun, 1 Oct-19 Dec 2026", "premium": "1 Jul-30 Sep 2026, 20 Dec 2026-3 Jan 2027" },
+  "rates": {
+    "currency": "USD", "unit": "per person per night sharing, no single supplement in regular season (excl. Mara Reserve fees, added separately)",
+    "regular": { "rsp": { "adult": 730, "childSharing5to15": 485 }, "trade": { "adult": 548, "childSharing5to15": 364 } },
+    "premium": { "rsp": { "adultSharing": 900, "adultSingle": 1045, "childSharing": 585 }, "trade": { "adultSharing": 675, "adultSingle": 784, "childSharing": 439 } }
+  },
+  "mandatoryFees": { "maasaiMaraNationalReserveFee_perAdultPerDay": { "janJun": 100, "julDec": 200 }, "child9to17": 50, "under8": "Free" },
+  "capacity": "6 ensuite tents + 1 family tent (2 ensuite bedrooms, shared sitting area)",
+  "childPolicy": { "note": "Not recommended for children under 5 years." },
+  "inclusions": "Full board, soft drinks/local beers/non-premium wines/spirits, Musiara airstrip transfers, statutory taxes, laundry, unlimited shared game drives (Mara Reserve + Mara Triangle), bush breakfasts/lunches, Maasai village visit, guided walks, sundowners.",
+  "exclusions": "Maasai Mara National Reserve fees, Jackson Looseiya private guide ($600/day, min 3 days), exclusive vehicle ($300/day), champagne/premium spirits.",
+  "notes": "Open year-round. Departures after 11am from Musiara attract an extra day's reserve fee (free 2-hour transit ticket before 11am on departure day)."
+}

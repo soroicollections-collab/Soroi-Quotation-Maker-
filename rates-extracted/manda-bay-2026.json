@@ -1,0 +1,132 @@
+{
+  "$note": "Extracted 6 Aug 2026 directly from paginated source PDF (6-page Rack Rates document; single property, no adjacent-property risk). One of the most completely-documented sources in this batch — includes conservancy fee, safari supplement, extras price list, and full booking T&Cs.",
+  "property": "Manda Bay",
+  "region": "Manda Island, Lamu Archipelago, Kenya Coast",
+  "tier": "Rack Rate",
+  "residency": "Non-Resident (USD)",
+  "source": {
+    "file": "2026 CONTRACT RATES/KENYA/BEACH ACCOMODATION/MANDA BAY/Manda Bay Rack Rates 2026.pdf",
+    "pdfPageIndex": 0,
+    "totalPages": 6,
+    "validity": { "start": "2026-01-05", "end": "2027-01-06" }
+  },
+  "confidence": "confirmed-2026-08-06",
+  "extractionMethod": { "note": "Read directly via pdftotext -layout across all 6 pages of the standalone Rack Rates PDF. Reservations are managed by a third-party operator, The Safari & Conservation Company (SCC) — T&Cs are SCC's, not Manda Bay's own." },
+  "structuralFindings": [
+    "Base rate is PER PERSON PER NIGHT, Full Board equivalent — 'Standard Rate Details' confirms 'All meals during your stay' is INCLUDED in the base rate, unlike Lion in the Sun or Lantana where meal plan is a separate choice/supplement.",
+    "Four pricing seasons plus a CLOSED month: Low (Apr, Jun, Sep), Mid (Jul, Nov 1-Dec 19), High (Jan 7-Mar 31, Aug, Oct), Festive (Dec 20-Jan 6). Property is CLOSED entirely 1-31 May — flag this explicitly, no May bookings possible regardless of rate tier.",
+    "Three room categories: Garden Rooms, Palm Rooms, Beachfront Rooms — each with 4 rate columns (Per Adult Sharing, Single Room, Children Sharing Own Room 6-18, Extra Bed in Room Under 18). Garden Rooms have NO extra-bed option ('X') — double occupancy only due to room size.",
+    "Conservancy Fee is a ONE-TIME PER STAY charge (not per night) — $50/adult, $20/child, $0 under-5 — a distinct billing unit from every inland Soroi property's per-night mandatory fee.",
+    "Optional 'Safari Supplement' (effectively an All-Inclusive upgrade) is priced per person PER NIGHT: $300 adult, $150 child, $0 under-5. Includes house wines/spirits, one Lamu boat trip w/ guide + museum fee, water sports, snorkelling. Excludes all fishing, dhow excursions, cellar wines, premium spirits/cocktails. Explicitly 'non-commissionable.'",
+    "Child age brackets: 0-4 free; 5-17 = children's pricing; 18+ = adult pricing. Children sharing a TWIN room (6-18) get the 'Sharing Own Room' rate; a single child alone pays the single per-person rate, not a discounted rate. Max 2 extra beds for children with parents in Beachfront/Palm only (not Garden).",
+    "'2026 SPECIAL: Stay 6, Pay 5' applies to ALL rate types throughout 2026, EXCLUDING Festive season — a fixed-nights-free promotion rather than Soroi's percentage-based long-stay ladder.",
+    "Extensive priced 'Extras' menu exists (water sports, fishing, dhow excursions, Lamu excursions, guide accommodation, child care, yoga) — captured below for completeness since a full itinerary quote may need these.",
+    "Room inventory: 11 Beachfront, 5 Palm, 6 Garden. Room 7 (Palm) is a two-bedroom Family Cottage — worth knowing for family bookings.",
+    "Minimum stay: 2 nights standard, 5 nights over Christmas/Festive."
+  ],
+  "seasons": {
+    "low": { "dateRanges": ["1-30 Apr", "1-30 Jun", "1-30 Sep"] },
+    "mid": { "dateRanges": ["1-31 Jul", "1 Nov - 19 Dec"] },
+    "high": { "dateRanges": ["7 Jan - 31 Mar", "1-31 Aug", "1-31 Oct"] },
+    "festive": { "dateRanges": ["20 Dec 2026 - 6 Jan 2027"], "minimumStay": "5 nights" },
+    "closed": { "dateRanges": ["1-31 May"], "note": "Property fully closed — no bookings possible." }
+  },
+  "rates": {
+    "currency": "USD",
+    "unit": "per person per night, Full Board (all meals included)",
+    "verified": true,
+    "low": {
+      "gardenRooms": { "perAdultSharing": 300, "singleRoom": 330, "childSharingOwnRoom6to18": 220, "extraBedUnder18": null },
+      "palmRooms": { "perAdultSharing": 440, "singleRoom": 510, "childSharingOwnRoom6to18": 320, "extraBedUnder18": 300 },
+      "beachfrontRooms": { "perAdultSharing": 466, "singleRoom": 540, "childSharingOwnRoom6to18": 380, "extraBedUnder18": 300 }
+    },
+    "mid": {
+      "gardenRooms": { "perAdultSharing": 300, "singleRoom": 350, "childSharingOwnRoom6to18": 220, "extraBedUnder18": null },
+      "palmRooms": { "perAdultSharing": 484, "singleRoom": 561, "childSharingOwnRoom6to18": 352, "extraBedUnder18": 300 },
+      "beachfrontRooms": { "perAdultSharing": 513, "singleRoom": 594, "childSharingOwnRoom6to18": 418, "extraBedUnder18": 300 }
+    },
+    "high": {
+      "gardenRooms": { "perAdultSharing": 300, "singleRoom": 350, "childSharingOwnRoom6to18": 220, "extraBedUnder18": null },
+      "palmRooms": { "perAdultSharing": 506, "singleRoom": 587, "childSharingOwnRoom6to18": 483, "extraBedUnder18": 330 },
+      "beachfrontRooms": { "perAdultSharing": 536, "singleRoom": 621, "childSharingOwnRoom6to18": 513, "extraBedUnder18": 330 }
+    },
+    "festive": {
+      "gardenRooms": { "perAdultSharing": 472, "singleRoom": 500, "childSharingOwnRoom6to18": 320, "extraBedUnder18": null },
+      "palmRooms": { "perAdultSharing": 633, "singleRoom": 702, "childSharingOwnRoom6to18": 483, "extraBedUnder18": 330 },
+      "beachfrontRooms": { "perAdultSharing": 651, "singleRoom": 736, "childSharingOwnRoom6to18": 552, "extraBedUnder18": 330 }
+    }
+  },
+  "conservancyFee": {
+    "unit": "USD, one-time per stay (NOT per night)",
+    "perAdult": 50,
+    "perChild": 20,
+    "perChildUnder5": 0
+  },
+  "safariSupplement": {
+    "unit": "USD per person per night, optional add-on, non-commissionable",
+    "perAdult": 300,
+    "perChild": 150,
+    "perChildUnder5": 0,
+    "included": "House Wines & Spirits, one Lamu Boat Trip w/ Local Guide + Museum Entrance Fee, Water Sports, Snorkelling",
+    "excluded": "All Fishing, Dhow Excursions, Cellar Wines, Premium Spirits & Cocktails"
+  },
+  "specialOffer2026": {
+    "name": "Stay 6, Pay 5",
+    "validity": "All rate types throughout 2026, excluding Festive season"
+  },
+  "childPolicy": {
+    "age0to4": "No charge",
+    "age5to17": "Children pricing applies",
+    "age18Plus": "Adult pricing (also applies to any child in a single room)",
+    "note": "Ages counted at time of stay."
+  },
+  "roomInventory": {
+    "beachfront": 11,
+    "palm": 5,
+    "garden": 6,
+    "note": "Room 7 (Palm) is a two-bedroom Family Cottage."
+  },
+  "checkInOut": { "checkIn": "12PM", "checkOut": "10AM" },
+  "minimumStay": { "standard": "2 nights", "festive": "5 nights" },
+  "includesExcludes": {
+    "includes": ["Accommodation", "All meals", "Desalinated drinking water", "Airstrip transfers from Lamu Airport", "Swimming pool", "Games Room", "Yoga room", "Kayaking/Sailing/Windsurfing/SUP", "Laundry and WiFi"],
+    "excludes": ["All bar drinks", "Conservancy Fees", "Deep sea fishing", "Motorised activities", "Snorkelling", "Spa treatments", "Guide fees for Lamu/museum entrance", "Safari Supplement (All-Inclusive)"]
+  },
+  "extras": {
+    "unit": "as individually priced, see source for full detail",
+    "waterActivities": { "waterSkiing": "$80/30min session", "tubing": "$80/30min session", "sailingWindsurfingInstruction": "$30/hr", "snorkellingFee": "$20/person" },
+    "fishing": { "deepSeaHalfDay6hr": 650, "deepSeaFullDay10hr": 1000, "deepSeaOvernight24hr": 2400, "inshoreFlyOrCast": "120/hr", "bottomFishing": "55/hr" },
+    "mandaExtras": { "extraLunch": { "adult": 65, "child": 30 }, "guideAccommodationRate": "160/night", "childCare": "75/day, pre-booking required", "yogaInstructor": "40/person/session plus boat transfers" },
+    "turtleHatchingAprToAug": { "perPerson": 30, "boatHire": 200 },
+    "boatTransfers": { "mandaBayToKipungani": 300, "mandaBayToKiwayu": 600 },
+    "dhowSailingExcursion": { "1to4pax": 200, "5to8pax": 230, "8to10pax": 280, "10to15pax": 350, "15to20pax": 400 },
+    "lamuExcursions": { "museumEntrance": "10/person", "guideFee": "20/group", "boatHire": 250 },
+    "note": "Extra costs not static, subject to change; not commissionable; VAT applies if paid at lodge (not direct cash). Credit card payments subject to 5% transaction fee."
+  },
+  "cancellationPolicy": {
+    "moreThan60Days": "Deposit and bank charges forfeited",
+    "60to45Days": "50% of full value forfeited",
+    "45to30Days": "75% of full value forfeited",
+    "under30DaysOrNoShow": "100% of full value forfeited"
+  },
+  "depositAndPayment": { "deposit": "20% non-refundable", "balanceDue": "45 days prior to arrival", "provisionalHold": "5 days" },
+  "secondaryTier": {
+    "name": "STO 20% 2026",
+    "file": "Manda Bay - STO 20% 2026.pdf",
+    "confidence": "confirmed-2026-08-06",
+    "note": "Same season structure and room categories as Rack. Verified STO 20% = Rack x 0.80 (rounded to nearest dollar) across every cell checked, e.g. Low Garden $300->$240, Low Palm Single $510->$408, High Beachfront $536->$429 (536x0.8=428.8, rounds to 429). Conservancy Fee and Safari Supplement are unchanged (same $ figures, flagged non-commissionable on this document) — discount applies to room rate only.",
+    "rates": {
+      "currency": "USD",
+      "unit": "per person per night",
+      "low": { "gardenRooms": { "perAdultSharing": 240, "singleRoom": 264, "childSharingOwnRoom6to18": 176, "extraBedUnder18": null }, "palmRooms": { "perAdultSharing": 352, "singleRoom": 408, "childSharingOwnRoom6to18": 256, "extraBedUnder18": 240 }, "beachfrontRooms": { "perAdultSharing": 373, "singleRoom": 432, "childSharingOwnRoom6to18": 304, "extraBedUnder18": 240 } },
+      "mid": { "gardenRooms": { "perAdultSharing": 240, "singleRoom": 280, "childSharingOwnRoom6to18": 176, "extraBedUnder18": null }, "palmRooms": { "perAdultSharing": 387, "singleRoom": 449, "childSharingOwnRoom6to18": 282, "extraBedUnder18": 240 }, "beachfrontRooms": { "perAdultSharing": 410, "singleRoom": 475, "childSharingOwnRoom6to18": 334, "extraBedUnder18": 240 } },
+      "high": { "gardenRooms": { "perAdultSharing": 240, "singleRoom": 280, "childSharingOwnRoom6to18": 176, "extraBedUnder18": null }, "palmRooms": { "perAdultSharing": 405, "singleRoom": 470, "childSharingOwnRoom6to18": 386, "extraBedUnder18": 264 }, "beachfrontRooms": { "perAdultSharing": 429, "singleRoom": 497, "childSharingOwnRoom6to18": 410, "extraBedUnder18": 264 } },
+      "festive": { "gardenRooms": { "perAdultSharing": 378, "singleRoom": 400, "childSharingOwnRoom6to18": 256, "extraBedUnder18": null }, "palmRooms": { "perAdultSharing": 506, "singleRoom": 562, "childSharingOwnRoom6to18": 386, "extraBedUnder18": 264 }, "beachfrontRooms": { "perAdultSharing": 521, "singleRoom": 589, "childSharingOwnRoom6to18": 442, "extraBedUnder18": 264 } },
+      "verified": true
+    }
+  },
+  "notExtracted": {
+    "residentRates": "Manda Bay - Resident Rates 2026.pdf — not extracted (out of scope for this non-resident pass).",
+    "digitalBrochure": "Manda Bay 2026 - Digital Brochure.pdf — marketing material, not a rate document. Skipped."
+  }
+}

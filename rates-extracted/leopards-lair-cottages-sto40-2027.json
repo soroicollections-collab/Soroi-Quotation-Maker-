@@ -1,0 +1,63 @@
+{
+  "$note": "Fresh extraction, 6 Aug 2026, read directly from the property's own page (page 17 of 34) in 'Soroi - 2027 STO 40% Contract Rates.pdf' (see cheetah-tented-camp-sto40-2027.json for full provenance/duplicate-file note). This is the property whose Ground Package Peak Per Person rate was historically misattributed to Cheetah - reconfirmed clean here too.",
+  "property": "Soroi Leopard's Lair (Leopards Lair Cottages)",
+  "region": "Lumo/Tsavo",
+  "tier": "STO 40%",
+  "residency": "Non-Resident",
+  "source": {
+    "file": "2027 CONTRACT RATES/KENYA/ACCOMODATIONS/SOROI/Soroi - 2027 STO 40% Contract Rates.pdf",
+    "pdfPageIndex": 16,
+    "docPrintedPageNumber": 17,
+    "validity": { "start": "2027-01-04", "end": "2028-01-03" }
+  },
+  "confidence": "confirmed-2026-08-06",
+  "extractionMethod": {
+    "note": "Read per-page via pdftotext, cross-checked against neighboring Lions Bluff (previous page) and Cheetah (next page).",
+    "misattributionCheck": { "checked": true, "result": "No misattribution. Ground Package Per Person Peak here is exactly $525 rack, matching the figure that was historically wrongly recorded as Cheetah's - confirmed again this belongs here." }
+  },
+  "seasons": {
+    "peak": { "dateRanges": ["1 Jul – 31 Oct", "20 Dec – 3 Jan 2028"] },
+    "shoulder": { "dateRanges": ["4 Jan – 30 Jun", "1 Nov – 19 Dec"] }
+  },
+  "rates": {
+    "currency": "USD",
+    "unit": "per person per night",
+    "fullBoard": {
+      "perPerson": { "peak": { "rack": 375, "net": 225 }, "shoulder": { "rack": 305, "net": 183 } },
+      "single": { "peak": { "rack": 563, "net": 338 }, "shoulder": { "rack": 382, "net": 229 } }
+    },
+    "groundPackage": {
+      "perPerson": { "peak": { "rack": 525, "net": 315 }, "shoulder": { "rack": 455, "net": 273 } },
+      "single": { "peak": { "rack": 788, "net": 473 }, "shoulder": { "rack": 569, "net": 341 } }
+    },
+    "selfCatering": {
+      "unit": "per cottage per night, flat rate both seasons",
+      "peak": { "rack": 250, "net": 185 },
+      "shoulder": { "rack": 250, "net": 185 },
+      "discountRatioAnomaly": {
+        "flag": true,
+        "note": "Net/Rack here is 185/250 = 0.74, NOT the 0.60 ratio confirmed on every other line item in this document (both for this property and every other Soroi property checked). This is read directly and correctly from the source, not a transcription guess - it's a genuine anomaly worth confirming with Sunworld/Soroi before quoting Self Catering at STO 40%, rather than assuming it's a typo and 'correcting' it to $150."
+      }
+    }
+  },
+  "discountRatioCheck": { "note": "Net = Rack x 0.60 confirmed exactly on every accommodation cell EXCEPT Self Catering - see selfCatering.discountRatioAnomaly above.", "verified": true },
+  "familyUnit": {
+    "verified": false,
+    "note": "No priced Family Unit row exists on this page, same as the Rack extraction - this property is cottages (5 Rustic Cottages: 3 triple rooms / 2 double rooms), not tented Family Units."
+  },
+  "mandatoryFees": {
+    "note": "Identical wording/figures to Lions Bluff and Cheetah - shared Lumo Conservancy fee, not property-specific.",
+    "verified": true,
+    "verifiedDate": "2026-08-06",
+    "communityBedLevy": { "amount": 10, "unit": "per person per night" },
+    "conservationLevy": { "amount": 20, "unit": "per person per night" },
+    "lumoConservationFee": { "adult": 37, "child": 19, "unit": "per night" }
+  },
+  "portfolioWideTerms": {
+    "childAge5to11": "50% of adult sharing rate",
+    "youngAdult12to17Sharing": "75% of adult rate",
+    "tourLeaderGuide": { "inTLTent": 175, "inGuestTent": "75% of adult single rate" },
+    "privateGuideMeals": { "amount": 50, "unit": "per day" },
+    "christmasNewYearSupplement": { "adult": 40, "child": 20, "unit": "per night" }
+  }
+}

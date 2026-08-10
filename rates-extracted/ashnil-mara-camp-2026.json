@@ -1,0 +1,41 @@
+{
+  "$note": "Extracted 6 Aug 2026 from 'ASHNIL HOTELS LTD_2026.pdf' (Contract rates), 'ASHNIL HOTELS RACK RATES_2026.pdf' (Rack rates - same structure, higher figures), and 'Ashnil & Surana Resident Rates 2026.pdf' (KES resident, one window only: 5 Jan-6 Apr 2026). This is one of 5 properties (Ashnil Mara Camp, Ashnil Samburu Camp, Ashnil Aruba, Surana Buffalo Springs, Surana Mara Camp) bundled in the same two contract PDFs - each extracted to its own file.",
+  "property": "Ashnil Mara Camp",
+  "operator": "Ashnil Hotels Limited (AHL)",
+  "region": "Maasai Mara",
+  "tier": "Contract rate and separate Rack rate (both full board), plus KES Resident rate for one date window",
+  "source": {
+    "files": [
+      "2026 CONTRACT RATES/KENYA/ACCOMODATION/ASHNIL HOTELS/ASHNIL HOTELS LTD_2026.pdf",
+      "2026 CONTRACT RATES/KENYA/ACCOMODATION/ASHNIL HOTELS/ASHNIL HOTELS RACK RATES_2026.pdf",
+      "2026 CONTRACT RATES/KENYA/ACCOMODATION/ASHNIL HOTELS/Ashnil  Surana Resident Rates 2026.pdf"
+    ]
+  },
+  "rates": {
+    "currency": "USD",
+    "unit": "per person, Full Board, Half Twin/Single/3rd Adult",
+    "contract": {
+      "peak_01Jul-30Sep_21Dec-02Jan": { "halfTwin": 576, "single": 864, "thirdAdult": 461 },
+      "high_01Feb-28Feb_01Oct-31Oct": { "halfTwin": 348, "single": 522, "thirdAdult": 278 },
+      "shoulder_03Jan-31Jan_01Mar-06Apr_01Jun-30Jun_01Nov-20Dec": { "halfTwin": 280, "single": 420, "thirdAdult": 224 },
+      "low_07Apr-31May": { "halfTwin": 199, "single": 199, "thirdAdult": 159 }
+    },
+    "rack": {
+      "peak": { "halfTwin": 922, "single": 1393, "thirdAdult": 738 },
+      "high": { "halfTwin": 557, "single": 835, "thirdAdult": 446 },
+      "shoulder": { "halfTwin": 448, "single": 671, "thirdAdult": 358 },
+      "low": { "halfTwin": 318, "single": 318, "thirdAdult": 254 }
+    },
+    "residentKES_05Jan-06Apr2026only": { "halfTwin": 28000, "single": 39200 }
+  },
+  "gamePackageSupplement": { "perNight": 90, "child4to12": 70, "oneWayAirstripTransfer": { "usd": 60, "minPax": 4 } },
+  "childPolicy": {
+    "0to3": "Free",
+    "4to12Sharing": "50% of adult rate",
+    "twoChildrenOwnRoom": "75% of adult rate each",
+    "threeChildrenOwnRoom": "Full double room rate"
+  },
+  "circuitDiscount": { "note": "Applies across any combination of 2+ units under Ashnil Hotels or Surana Luxury", "4nights": "5%", "5nights": "7.5%", "6nights": "8.5%" },
+  "familyTentSupplement": 75,
+  "notes": "Narok County community fee applies additionally, communicated separately by Ashnil (not included in contract rate). Circuit/group discounts and Tour Leader rates are shared across the whole Ashnil/Surana portfolio - see other Ashnil property files for exact TL figures per property."
+}

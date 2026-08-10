@@ -1,0 +1,28 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftotext -layout from 'PAX MANOR/Pax Manor STO RATES 2027.pdf' (3pp, single property, clean tables).",
+  "property": "Pax Manor Muthaiga",
+  "location": "Muthaiga Rd 58, Nairobi",
+  "currency": "USD",
+  "validity": { "start": "2027-01-01", "end": "2027-12-31" },
+  "unit": "per room per night, Bed & Breakfast",
+  "confidence": "confirmed-2027-08-06",
+  "roomInventory": {
+    "StandardRoom": { "MIRARI_wing": ["Sunflower (4)", "Tulip (5)", "Daisy (6)"], "MANOR_wing": ["Lord (3)", "Duke (4)", "Master (5)", "Earl (6)"] },
+    "DeluxeRoom": { "MIRARI_wing": ["Rose (1)", "Orchid (2)", "Lilly (3)"], "MANOR_wing": ["Chancellor (1)", "Maestro (4)"] },
+    "PremiumRoom": { "MSITU_wing": ["Meru Oak (1)", "Mugumo (2)", "Baobab (3)", "Palm (4)", "Acacia (5)", "Lotus (6)", "Whistling Thorn (7)", "Jacaranda (8)"] }
+  },
+  "rates": {
+    "StandardRoom": { "rack": { "single": 325, "double": 425, "thirdAdult": 150 }, "sunworldContract": { "single": 240, "double": 320, "thirdAdult": 150 } },
+    "DeluxeRoom": { "rack": { "single": 475, "double": 575, "thirdAdult": 150 }, "sunworldContract": { "single": 360, "double": 440, "thirdAdult": 150 } },
+    "PremiumRoom": { "rack": { "single": 520, "double": 620, "thirdAdult": 150 }, "sunworldContract": { "single": 395, "double": 480, "thirdAdult": 150 } },
+    "verified": true
+  },
+  "childPolicy": { "age5to12": "50% of adult sharing rate", "age12to17": "75% of adult sharing rate", "under17OwnRoom": "100% of room rate", "age17plus": "Full adult rate", "verified": true },
+  "checkInOut": "Check-in 14:00, check-out 10:00",
+  "dayUse": { "to16h00": "60% of room rate", "to18h00": "75% of room rate" },
+  "cancellationPolicy": "21-15 days before arrival: 25%; 14-8 days: 50%; 7-3 days: 75%; within 48hrs: 100%",
+  "singleRoomPolicy": "Max 4 single rooms per group at single rate; thereafter double rate applies",
+  "paymentTerms": "Full payment 45 days before arrival for peak season (Jul-Oct), 30 days for other seasons, unless credit facility approved",
+  "commissionable": false,
+  "distributionRestriction": "Unpublished rates - not for OTA/GDS distribution"
+}

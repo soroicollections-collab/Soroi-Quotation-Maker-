@@ -1,0 +1,14 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftotext, single page, from 'DHE Luxury Suites and Hotel/DHE_Letterhead - Nature Expeditions - USD (1).pdf'. IMPORTANT CAVEAT: this is NOT a rate contract/rate sheet - it is a one-off personal email quotation addressed 'Dear Ruth', with no year, no validity dates, and no seasonal structure at all. Filed inside the 2027 CONTRACT RATES folder but contains no indication it is specifically a 2027 rate. Budget hotel in Migori Town (near Kisii, western Kenya) - unusually cheap for this portfolio ($27-42/night) which is consistent with it being a small local hotel rather than a safari lodge.",
+  "property": "DHE Luxury Suites & Hotel",
+  "location": "Banana, Migori Town",
+  "currency": "USD",
+  "confidence": "unverified-adhoc-quote",
+  "confidenceNote": "[Unverified] No validity dates, no season structure, no contract terms - this is an informal quote to a named individual, not a Sunworld contract rate. Treat as indicative only; reconfirm directly with the hotel before quoting a client.",
+  "rates": {
+    "oneBedroomUnit": { "perNight": 27.04, "maxOccupancy": "2 adults", "basis": "Bed & Breakfast" },
+    "twoBedroomUnit": { "perNight": 42.49, "maxOccupancy": "4 adults", "basis": "Bed & Breakfast" },
+    "breakfastPerPerson": 11.59
+  },
+  "verified": false
+}

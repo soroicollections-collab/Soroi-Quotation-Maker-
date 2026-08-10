@@ -1,0 +1,58 @@
+{
+  "$note": "Extracted 5 Aug 2026 via direct PDF-to-image render + visual read (pypdf text extraction failed — image-based PDF) for the Amboseli/Mara/Solio/Samburu/Nairobi quote. NOT a Soroi property — Tortilis Camp Amboseli belongs to Elewana Collection. Do not confuse with the unrelated 'Tortilis Tanzania' brand (Lake Manyara/Tarangire/Serengeti/Ngorongoro camps) found under 2026 CONTRACT RATES/TANZANIA/TORTILIS — that is a different company despite the similar name and sits oddly misfiled under a Kenya property's search.",
+  "property": "Tortilis Camp Amboseli",
+  "operator": "Elewana Collection",
+  "region": "Amboseli",
+  "tier": "Rack / Nett (no separate named STO tier on this document — Nett is Elewana's contracted rate to Sunworld, computed as Rack x 0.60 on every checked cell, i.e. an implied ~40% discount)",
+  "residency": "Not tier-split by residency on this document",
+  "source": {
+    "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/ELEWANA/EC-2026-Rates-40.pdf",
+    "pdfPageIndex": 15,
+    "docPrintedPageNumber": 16,
+    "validity": { "start": "2026-01-04", "end": "2027-01-03" }
+  },
+  "confidence": "confirmed-2026-08-05",
+  "seasons": {
+    "high": { "dateRanges": ["Jul 1 - Oct 31", "Dec 20 - Jan 3"] },
+    "mid": { "dateRanges": ["Jan 4 - Mar 31", "Jun 1 - Jun 30", "Nov 1 - Dec 19"] },
+    "green": { "dateRanges": ["Apr 1 - May 31"] }
+  },
+  "rates": {
+    "currency": "USD",
+    "unit": "per person per night unless noted",
+    "fullBoard": {
+      "perPersonSharing": { "high": { "rack": 715, "nett": 429 }, "mid": { "rack": 491, "nett": 295 }, "green": { "rack": 317, "nett": 190 } },
+      "singleRoom": { "high": { "rack": 1073, "nett": 644 }, "mid": { "rack": 737, "nett": 442 }, "green": { "rack": 476, "nett": 285 } },
+      "tripleRoom": { "high": { "rack": 1609, "nett": 965 }, "mid": { "rack": 1105, "nett": 663 }, "green": { "rack": 713, "nett": 428 } },
+      "familySuite2Adults2Children": { "high": { "rack": 3306, "nett": 1983 }, "mid": { "rack": 2451, "nett": 1471 }, "green": { "rack": 1765, "nett": 1059 } },
+      "privateHouseUpTo5": { "high": { "rack": 3917, "nett": 2350 }, "mid": { "rack": 3028, "nett": 1817 }, "green": { "rack": 2189, "nett": 1314 } }
+    },
+    "gamePackage": {
+      "perPersonSharing": { "high": { "rack": 915, "nett": 549 }, "mid": { "rack": 691, "nett": 415 }, "green": { "rack": 517, "nett": 310 } },
+      "singleRoom": { "high": { "rack": 1273, "nett": 764 }, "mid": { "rack": 937, "nett": 562 }, "green": { "rack": 676, "nett": 405 } },
+      "tripleRoom": { "high": { "rack": 2059, "nett": 1235 }, "mid": { "rack": 1555, "nett": 933 }, "green": { "rack": 1163, "nett": 698 } },
+      "familySuite2Adults2Children": { "high": { "rack": 4076, "nett": 2445 }, "mid": { "rack": 3200, "nett": 1920 }, "green": { "rack": 2500, "nett": 1500 } },
+      "privateHouseUpTo5": { "high": { "rack": 4687, "nett": 2812 }, "mid": { "rack": 3777, "nett": 2266 }, "green": { "rack": 2924, "nett": 1755 } }
+    }
+  },
+  "mandatoryFees": {
+    "note": "From EC-2026-Rates-40.pdf page 19 (Kenya Applicable Fees section). Unlike Soroi properties, child fee bracket here is 3-17, not 5-11.",
+    "kitiruaConservancy": { "adult": 50, "child3to17": 50, "unit": "per night" },
+    "amboseliNationalPark": { "adult": 60, "child3to17": 35, "unit": "per night" }
+  },
+  "childPolicy": {
+    "note": "Elewana portfolio-wide policy (EC-2026-Rates-40.pdf page 22) — materially different from Soroi's 50%-of-adult rule for ages 5-11. FLAG this on any quote using Tortilis alongside Soroi properties.",
+    "under12SharingWith1Adult": "Free of charge",
+    "under12SharingWith2Adults": "Free of charge",
+    "age12to17_99": {
+      "ownRoom": "75% of adult single room rate",
+      "sharingWith1Adult": "50% of per-person adult sharing rate",
+      "sharingWith2Adults": "25% of per-person adult sharing rate"
+    },
+    "childDefinition": "Below 17.99 years"
+  },
+  "inclusionsNote": {
+    "gamePackageOnly": "Scheduled/shared game drives twice daily, airstrip transfer to/from Amboseli (per vehicle) included on Game Package; both cost extra on Full Board (activities $220/$187 rack/nett, airstrip transfer $120/$102 rack/nett).",
+    "circuitDiscount": "6+ nights 5%, 9+ nights 10%, 12+ nights 15% (1 Jul-31 Oct / 20 Dec-3 Jan window); different bands apply in the other season window — see page 23 of source."
+  }
+}

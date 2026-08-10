@@ -1,0 +1,61 @@
+{
+  "$note": "Fresh extraction, 6 Aug 2026, read directly from the property's own page (page 3 of 34) in 'Soroi - 2027 STO 40% Contract Rates.pdf' (see cheetah-tented-camp-sto40-2027.json for full provenance/duplicate-file note).",
+  "property": "Soroi Private Wing",
+  "region": "Maasai Mara",
+  "tier": "STO 40%",
+  "residency": "Non-Resident",
+  "source": {
+    "file": "2027 CONTRACT RATES/KENYA/ACCOMODATIONS/SOROI/Soroi - 2027 STO 40% Contract Rates.pdf",
+    "pdfPageIndex": 2,
+    "docPrintedPageNumber": 3,
+    "validity": { "start": "2027-01-04", "end": "2028-01-03" }
+  },
+  "confidence": "confirmed-2026-08-06",
+  "seasons": {
+    "peak": { "dateRanges": ["1 Jul – 30 Sep", "20 Dec – 3 Jan 2028"] },
+    "shoulder": { "dateRanges": ["4 Jan – 28 Feb", "1 Jun – 30 Jun"] },
+    "extendedGreen": { "dateRanges": ["1 Mar – 31 May", "1 Oct – 19 Dec"] }
+  },
+  "rates": {
+    "currency": "USD",
+    "unit": "per person per night",
+    "roomCategory": "River Facing Tents (base category)",
+    "fullBoard": {
+      "perPerson": { "peak": { "rack": 830, "net": 498 }, "shoulder": { "rack": 710, "net": 426 }, "extendedGreen": { "rack": 595, "net": 357 } },
+      "single": { "peak": { "rack": 1245, "net": 747 }, "shoulder": { "rack": 1065, "net": 639 }, "extendedGreen": { "rack": 744, "net": 446 } }
+    },
+    "groundPackage": {
+      "perPerson": { "peak": { "rack": 1045, "net": 627 }, "shoulder": { "rack": 925, "net": 555 }, "extendedGreen": { "rack": 810, "net": 486 } },
+      "single": { "peak": { "rack": 1568, "net": 941 }, "shoulder": { "rack": 1388, "net": 833 }, "extendedGreen": { "rack": 1013, "net": 608 } }
+    },
+    "forestFacingTentDiscount": { "amount": 40, "unit": "per person per night reduction vs. River Facing", "note": "Stated as a flat $40 reduction on this page too - not itself split into a Rack/Net STO figure." }
+  },
+  "discountRatioCheck": { "note": "Net = Rack x 0.60 confirmed exactly (nearest-integer rounding) on every priced cell above.", "verified": true },
+  "familyUnit": {
+    "verified": false,
+    "note": "No priced Family Unit/Family Tent row on this page, same gap as the Rack extraction and as Mara Bush Camp."
+  },
+  "mandatoryFees": {
+    "note": "Identical figures to Mara Bush Camp and Luxury Migration Camp.",
+    "verified": true,
+    "verifiedDate": "2026-08-06",
+    "communityLevy": {
+      "peak": { "adult": 80, "child": 40, "unit": "per night" },
+      "shoulder": { "adult": 40, "child": 20, "unit": "per night" },
+      "extendedGreen": { "adult": 40, "child": 20, "unit": "per night" }
+    },
+    "parkFee": {
+      "janToJun": { "adult": 100, "child": 50, "unit": "per adult per 12h" },
+      "julToDec": { "adult": 200, "child": 50, "unit": "per adult per 12h" }
+    }
+  },
+  "roomNote": "4 Forest-Facing Tents, 6 River-facing tents & 2 River facing Family Tents.",
+  "portfolioWideTerms": {
+    "childAge5to11": "50% of adult sharing rate",
+    "youngAdult12to17Sharing": "75% of adult rate",
+    "singleSupplementGreenSeason": "reduced to 25% (from 50%) - Mara properties only",
+    "tourLeaderGuide": { "inTLTent": 175, "inGuestTent": "75% of adult single rate" },
+    "privateGuideMeals": { "amount": 50, "unit": "per day" },
+    "christmasNewYearSupplement": { "adult": 40, "child": 20, "unit": "per night" }
+  }
+}

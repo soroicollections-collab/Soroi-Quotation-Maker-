@@ -1,0 +1,118 @@
+{
+  "property": "Pristine Mara Bay Lodge",
+  "operator": "Eland Swift Limited (Pristine Group)",
+  "region": "Maasai Mara National Reserve (beside Mara River, western reaches, Narok)",
+  "isSoroiProperty": false,
+  "sourceFiles": [
+    "2026 CONTRACT RATES/KENYA/ACCOMODATION/Pristine Mara Bay Lodge/Pristine Mara Bay Lodge - 2026 NON-RESIDENT RACK RATES  (33) (93).pdf",
+    "2026 CONTRACT RATES/KENYA/ACCOMODATION/Pristine Mara Bay Lodge/Pristine Mara Bay Lodge - 2026 NON-RESIDENT CONTRACT RATES AND AGREEMENT-Sunworld Safaris.pdf",
+    "2026 CONTRACT RATES/KENYA/ACCOMODATION/Pristine Mara Bay Lodge/Pristine Mara Bay Lodge - 2026 RESIDENT RACK RATES (4) (84).pdf",
+    "2026 CONTRACT RATES/KENYA/ACCOMODATION/Pristine Mara Bay Lodge/Pristine Mara Bay Lodge - 2026 RESIDENT CONTRACT RATES AND AGREEMENT - Sunworld Safaris.pdf"
+  ],
+  "currency": "USD (both Non-Resident and Resident rate cards are quoted in USD - unusual, but stated explicitly as such in the source)",
+  "validity": "6 January 2026 - 5 January 2027",
+  "seasons": { "green": "1 Apr-14 Jun 2026", "value": "6 Jan-31 Mar 2026 & 11 Oct-20 Dec 2026", "peak": "15 Jun-10 Oct 2026 & 21 Dec 2026-5 Jan 2027" },
+  "propertyDescription": "44 spacious guest rooms (incl. 4 Family Suites with a smaller children's bedroom), plus a Presidential House/Suite for up to 12 guests.",
+  "notes": [
+    "Rates inclusive of 16% VAT, 10% Service Charge, 2% Training Levy - but exclude park fees and a mandatory community levy of US$80 per person per night.",
+    "Non-Resident Contract (Sunworld) rate is roughly 23-24% below Non-Resident Rack (not a round percentage like other properties' STO tiers, e.g. Twin/Double Wilderness Green: 440/575=0.765).",
+    "All of the 'Suite' room categories are River Rooms; Wilderness Rooms and (non-suite) River Rooms are the two base categories, each further split Twin/Double vs Single/Standard."
+  ],
+  "nonResident_rack_perNight_USD": {
+    "fullBoard": {
+      "twinDouble2guests": { "green": { "wildernessRooms": 575, "riverRooms": 715 }, "value": { "wildernessRooms": 1000, "riverRooms": 1145 }, "peak": { "wildernessRooms": 1430, "riverRooms": 1560 } },
+      "singleStandard1guest": { "green": { "wildernessRooms": 430, "riverRooms": 520 }, "value": { "wildernessRooms": 715, "riverRooms": 820 }, "peak": { "wildernessRooms": 1000, "riverRooms": 1110 } },
+      "doubleSuite2guests": { "green": 860, "value": 1430, "peak": 1885 },
+      "singleSuite1guest": { "green": 650, "value": 1000, "peak": 1430 },
+      "tripleSuite3guests": { "green": 1000, "value": 1720, "peak": 2275 },
+      "quadrupleSuite4guests": { "green": 1145, "value": 2015, "peak": 2795 }
+    },
+    "allInclusive": {
+      "twinDouble2guests": { "green": { "wildernessRooms": 860, "riverRooms": 1000 }, "value": { "wildernessRooms": 1230, "riverRooms": 1430 }, "peak": { "wildernessRooms": 1885, "riverRooms": 2020 } },
+      "singleStandard1guest": { "green": { "wildernessRooms": 575, "riverRooms": 680 }, "value": { "wildernessRooms": 860, "riverRooms": 965 }, "peak": { "wildernessRooms": 1225, "riverRooms": 1320 } },
+      "doubleSuite2guests": { "green": 1145, "value": 1720, "peak": 2290 },
+      "singleSuite1guest": { "green": 715, "value": 1145, "peak": 1625 },
+      "tripleSuite3guests": { "green": 1430, "value": 2145, "peak": 2925 },
+      "quadrupleSuite4guests": { "green": 1720, "value": 2290, "peak": 3640 }
+    },
+    "presidentialHouse12guests": { "green": 13000, "value": 13000, "peak": 19500 },
+    "verified": true
+  },
+  "nonResident_contract_Sunworld_perNight_USD": {
+    "fullBoard": {
+      "twinDouble2guests": { "green": { "wildernessRooms": 440, "riverRooms": 550 }, "value": { "wildernessRooms": 770, "riverRooms": 880 }, "peak": { "wildernessRooms": 1100, "riverRooms": 1200 } },
+      "singleStandard1guest": { "green": { "wildernessRooms": 330, "riverRooms": 400 }, "value": { "wildernessRooms": 550, "riverRooms": 630 }, "peak": { "wildernessRooms": 770, "riverRooms": 850 } },
+      "doubleSuite2guests": { "green": 660, "value": 1100, "peak": 1450 },
+      "singleSuite1guest": { "green": 500, "value": 770, "peak": 1100 },
+      "tripleSuite3guests": { "green": 770, "value": 1320, "peak": 1750 },
+      "quadrupleSuite4guests": { "green": 880, "value": 1550, "peak": 2150 }
+    },
+    "allInclusive": {
+      "twinDouble2guests": { "green": { "wildernessRooms": 660, "riverRooms": 770 }, "value": { "wildernessRooms": 990, "riverRooms": 1100 }, "peak": { "wildernessRooms": 1450, "riverRooms": 1550 } },
+      "singleStandard1guest": { "green": { "wildernessRooms": 440, "riverRooms": 520 }, "value": { "wildernessRooms": 660, "riverRooms": 740 }, "peak": { "wildernessRooms": 940, "riverRooms": 1010 } },
+      "doubleSuite2guests": { "green": 880, "value": 1320, "peak": 1760 },
+      "singleSuite1guest": { "green": 550, "value": 880, "peak": 1250 },
+      "tripleSuite3guests": { "green": 1100, "value": 1650, "peak": 2250 },
+      "quadrupleSuite4guests": { "green": 1320, "value": 1760, "peak": 2800 }
+    },
+    "presidentialHouse12guests": { "green": 10000, "value": 10000, "peak": 15000 },
+    "verified": true
+  },
+  "resident_rack_perNight_USD": {
+    "fullBoard": {
+      "twinDouble2guests": { "green": { "wildernessRooms": 430, "riverRooms": 575 }, "value": { "wildernessRooms": 755, "riverRooms": 900 }, "peak": { "wildernessRooms": 1080, "riverRooms": 1225 } },
+      "singleStandard1guest": { "green": { "wildernessRooms": 370, "riverRooms": 430 }, "value": { "wildernessRooms": 535, "riverRooms": 650 }, "peak": { "wildernessRooms": 755, "riverRooms": 860 } },
+      "doubleSuite2guests": { "green": 650, "value": 1105, "peak": 1290 },
+      "singleSuite1guest": { "green": 430, "value": null, "peak": 1080, "confidenceNote": "[Unverified] Value season Single/Suite figure appears blank/missing in the source table row." },
+      "tripleSuite3guests": { "green": 755, "value": 780, "peak": 1715 },
+      "quadrupleSuite4guests": { "green": 860, "value": 1290, "peak": 2080 }
+    },
+    "allInclusive": {
+      "twinDouble2guests": { "green": 650, "value": { "wildernessRooms": 965, "riverRooms": 1495 }, "peak": { "wildernessRooms": 1390, "riverRooms": 1575 }, "confidenceNote": "[Unverified] Green season Twin/Double All Inclusive shows a single figure (650/780) without the usual Wilderness/River split visible in the extracted text - flagged." },
+      "singleStandard1guest": { "green": { "wildernessRooms": 430, "riverRooms": 535 }, "value": { "wildernessRooms": 650, "riverRooms": 755 }, "peak": { "wildernessRooms": 895, "riverRooms": 1000 } },
+      "doubleSuite2guests": { "green": 1000, "value": 1390, "peak": 1860 },
+      "singleSuite1guest": { "green": 715, "value": 935, "peak": 1290 },
+      "tripleSuite3guests": { "green": 1080, "value": 1615, "peak": 2200 },
+      "quadrupleSuite4guests": { "green": 1290, "value": 1715, "peak": 2720 }
+    },
+    "verified": true,
+    "confidenceNote": "[Unverified] Resident rate card layout was harder to parse cleanly from the flattened PDF text than the Non-Resident cards - a couple of individual cells are flagged inline above. Cross-check against the source PDF directly before quoting a Resident rate from this file."
+  },
+  "roomOccupancyNotes": {
+    "tripleOccupancySuite": "An extra bed may be required for triple occupancy in the suite.",
+    "quadrupleOccupancySuite": "Limited to 2 adults + 2 children under 12; an extra bed may be required."
+  },
+  "includes_fullBoard": ["All meals and accommodation", "Selected drinks", "1 guided nature walk within the lodge", "1 sundowner per stay", "Star gazing", "Maasai dancer welcome", "Swimming", "Birthday/anniversary song and dance"],
+  "includes_allInclusive": ["All meals and accommodation", "Shared game drives", "Airstrip transfers", "1 sundowner per stay", "Selected drinks", "1 guided nature walk", "Star gazing", "Maasai dancer welcome", "Swimming", "Birthday/anniversary song and dance"],
+  "includes_presidentialHouse": ["All meals and accommodation", "Shared game drives", "Airstrip transfers", "1 sundowner per stay", "Selected premium drinks", "1 guided nature walk", "Basic spa treatment", "1 bush meal", "Private swimming pool", "Maasai dancer welcome"],
+  "extraActivities_perPerson_USD": [
+    { "item": "Exclusive use of vehicle within Masai Mara", "amount": "500/day" },
+    { "item": "Pickup/drop off (airstrips within the park only)", "amount": "150/transfer" },
+    { "item": "Breakfast", "amount": 40 }, { "item": "Lunch", "amount": 45 }, { "item": "Dinner", "amount": 50 }, { "item": "Lunch box", "amount": 30 },
+    { "item": "Roasted Lamb", "amount": "800 per group, max 20 pax" },
+    { "item": "Bush Meals (breakfast, lunch, dinner)", "amount": 70 },
+    { "item": "Sundowner", "amount": "200 per group" }, { "item": "Conference", "amount": 50 },
+    { "item": "SPA", "amount": "Depends on treatment" }, { "item": "Handicraft", "amount": "Depends on item" },
+    { "item": "Maasai Moran Dance", "amount": "120 per group" }, { "item": "Maasai Manyatta Visit", "amount": 35 },
+    { "item": "Nature Walk", "amount": 40 }, { "item": "Bird Walk", "amount": 20 }, { "item": "Cake per KG", "amount": 30 },
+    { "item": "Nanny Services (1 week notice, per child per 3hr session)", "amount": 30 }
+  ],
+  "supplements": {
+    "easterChristmasRoomSupplement": "US$100/room on Easter Holiday and Dec 24/25/26/31/Jan 1 2027, plus 2-night minimum stay over Easter and Christmas/New Year",
+    "familyRoomSupplement": "US$200/suite"
+  },
+  "childPolicy": { "raw": "12+ considered adults. 3-11 years: 75% if in own bed, 50% if sharing with an adult. Under 3 sharing a bed with an adult: complimentary, max 2.", "verified": true },
+  "policies": {
+    "checkIn": "12:00", "checkOut": "10:00",
+    "deposit": "30% deposit within 7 days of booking confirmation to secure",
+    "balancePayment": "Full payment 30 days prior (standard season) / 60 days prior (peak season)",
+    "blockBookingRelease": "30% deposit not paid within 14 days: automatically released",
+    "groupPolicy": "1 free pax per 15 full-paying clients (twin room), Maasai Mara park fee still payable per night",
+    "singleRoomLimit": "Max 4 single rooms per block/group booking; 5+ singles charged at double room rate",
+    "tourLeaderGuideRate": "US$200 peak season, US$100 green/value season, guide accommodation (subject to availability for guest suite upgrade)",
+    "driverAccommodation": "KES5,000 peak season, KES3,000 green/value season",
+    "cancellation": "45+ days: free; 45-31 days: 50%; 30 days or less: 100%",
+    "groupCancellation_4plusSuites": "90+ days: free; 90-31 days: 50%; 30 days or less: 100%",
+    "provisionalBookingHold": "15 days standard season, 7 days peak season"
+  }
+}

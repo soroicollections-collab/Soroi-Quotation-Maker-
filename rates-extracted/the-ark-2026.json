@@ -1,0 +1,74 @@
+{
+  "property": "The Ark",
+  "operator": "Marasa Africa (The Ark Limited)",
+  "region": "Aberdare National Park",
+  "isSoroiProperty": false,
+  "sourceFiles": [
+    "2026 CONTRACT RATES/KENYA/ACCOMODATION/Marasa Africa Kenya/00 2026 Marasa Africa Kenya Lodges Published Rack Rates_1.pdf",
+    "2026 CONTRACT RATES/KENYA/ACCOMODATION/Marasa Africa Kenya/02 2026 Marasa Africa Kenya Lodges Local and Regional STO Nett Rates.pdf",
+    "2026 CONTRACT RATES/KENYA/ACCOMODATION/Marasa Africa Kenya/DMC 25 Marasa Africa Kenya Rate- 2025 Local DMC - Wholesale Tour Operator -.pdf (2025, historical reference only)",
+    "2026 CONTRACT RATES/KENYA/ACCOMODATION/Marasa Africa Kenya/EAC45-Marasa Africa Kenya Rate -Special Negotiated Tour Operator.pdf (titled '2025 Direct Resident Rates', historical reference only)",
+    "2026 CONTRACT RATES/KENYA/ACCOMODATION/Marasa Africa Kenya/2025 East Africa Marasa Africa Wholesale Contact.pdf (group-wide T&Cs)"
+  ],
+  "notes": [
+    "Part of the same Marasa Africa Kenya contract family as Aberdare Country Club and Mara Leisure Camp - see aberdare-country-club-2026.json for full group-wide notes on scope (Uganda properties excluded), skipped documents, and shared policies.",
+    "Only ONE room category (Classic 'Cabin') is priced for The Ark - simplest structure of the three Marasa Kenya properties.",
+    "STO discount confirmed arithmetically: STO = Rack x 0.75 exactly. STO 25% tier.",
+    "59 Classic Rooms."
+  ],
+  "currency": "USD",
+  "validity2026": "1 July 2026 - 31 December 2026 (Low: 1 Oct-22 Dec 2026; High: 1 Jul-30 Sep 2026 and 23-31 Dec 2026; Peak Season Room Supplement US$35 surcharge 23 Dec 2026-1 Jan 2027)",
+  "rack2026_perPersonPerNight": {
+    "fullBoard": {
+      "low": { "classicRoom": { "double": 288, "single": 192, "furtherPerson15plus": 108, "childUnder3": 0, "childSharingWithAdult": 72, "child3to15OwnRoom": 108 } },
+      "high": { "classicRoom": { "double": 384, "single": 256, "furtherPerson15plus": 144, "childUnder3": 0, "childSharingWithAdult": 96, "child3to15OwnRoom": 144 } }
+    },
+    "halfBoard": {
+      "low": { "classicRoom": { "double": 256, "single": 176, "furtherPerson15plus": 92, "childSharingWithAdult": 56, "child3to15OwnRoom": 92 } },
+      "high": { "classicRoom": { "double": 352, "single": 240, "furtherPerson15plus": 128, "childSharingWithAdult": 80, "child3to15OwnRoom": 128 } }
+    },
+    "verified": true
+  },
+  "sto25pct_2026_perPersonPerNight": {
+    "fullBoard": {
+      "low": { "classicRoom": { "double": 216, "single": 144, "furtherPerson15plus": 81, "childSharingWithAdult": 54, "child3to15OwnRoom": 81 } },
+      "high": { "classicRoom": { "double": 288, "single": 192, "furtherPerson15plus": 108, "childSharingWithAdult": 72, "child3to15OwnRoom": 108 } }
+    },
+    "halfBoard": {
+      "low": { "classicRoom": { "double": 192, "single": 132, "furtherPerson15plus": 69, "childSharingWithAdult": 42, "child3to15OwnRoom": 69 } },
+      "high": { "classicRoom": { "double": 264, "single": 180, "furtherPerson15plus": 96, "childSharingWithAdult": 60, "child3to15OwnRoom": 96 } }
+    },
+    "verified": true
+  },
+  "gamePackage": {
+    "includes": "Full Board Accommodation, Airstrip Meet and Greet with return transfers to lodge, option to select any 2 Safari Activities from provided list",
+    "excludes": "National Park Fees",
+    "activities": ["Morning Game Drive in Murchison Falls National Park (NOTE: this activity description is copied from the Uganda Marasa Paraa listing in the source document layout - likely a template/layout artifact, not literally applicable to The Ark in Aberdare, Kenya)"],
+    "confidenceNote": "[Unverified/likely template artifact] The activities list associated with 'The Ark' column in the source game-package table describes Murchison Falls (Uganda) activities, which cannot be geographically correct for an Aberdare National Park property. Flagged rather than silently corrected - the source document's game-package activity descriptions may be column-misaligned."
+  },
+  "historicalReference_2025_DMC_wholesale": {
+    "confidenceNote": "[Unverified for 2026] Valid only 1 Jan-31 Dec 2025. Included for season-structure reference only.",
+    "classicCabin_fullBoard_perPersonPerNight": { "low": 104, "shoulder": 114, "high": 138 }
+  },
+  "historicalReference_2025_directResident": {
+    "confidenceNote": "[Unverified for 2026] Valid only 1 Jan-31 Dec 2025. Included for structure reference only - likely superseded.",
+    "classicCabin_fullBoard_perPersonPerNight": { "low": 76, "shoulder": 84, "high": 101 }
+  },
+  "groupSharedPolicies_MarasaAfrica": {
+    "checkIn": "12:00", "checkOut": "10:00",
+    "tourLeaderAccommodation": "Max 2 tour leaders per reservation. 2-9 guests: US$150 full board. 10+ guests: stay free.",
+    "agentTravelTradeRate": "US$90 full board per person, bookable only within 7 days of arrival",
+    "agentFamTripRate": "US$90 full board per person, subject to Group Head of Sales approval",
+    "fitCancellation_lessThan9rooms": {
+      "safariSeason": { "0-14days": "100%", "15-30days": "100%", "30-45days": "50%", "45-60days": "25%", "60+days": "10%" },
+      "valueSeason": { "0-14days": "100%", "15-30days": "50%", "30-45days": "25%", "45-60days": "10%", "60+days": "10%" }
+    },
+    "groupCancellation_9plusRooms": {
+      "safariSeason": { "0-30days": "100%", "31-60days": "100%", "61-89days": "50%", "90+days": "25%" },
+      "valueSeason": { "0-30days": "100%", "31-60days": "50%", "61-89days": "25%", "90+days": "25%" }
+    },
+    "experienceAndTravelBookings": "100% deposit and 100% cancellation liability at ALL lead times - no refund window for 3rd-party experiences/permits/transfers once booked",
+    "parkFeesExcluded": "All Marasa Africa rates exclude national park/entrance/landing fees",
+    "residentRatesNote": "East African resident and bona fide conservation organisation rates available on request at reservations.kenya@marasa.africa - not published in these documents"
+  }
+}

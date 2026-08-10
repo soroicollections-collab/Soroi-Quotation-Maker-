@@ -1,0 +1,50 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftotext -layout from 'OL PEJETA SAFARI COTTAGES/OL PEJETA SAFARI COTTAGES Contract Rates 2027.pdf' (4pp, single property, clean tables). A near-duplicate file 'Ol Pejeta Safari Cottages - Contract Rates 2027.pdf' also exists in the folder - not separately verified as identical but same title pattern.",
+  "property": "Ol Pejeta Safari Cottages",
+  "location": "Ol Pejeta Conservancy, Laikipia",
+  "currency": "USD",
+  "tier": "'TOP Contract Rates' (Nett shown alongside Rack in every cell)",
+  "validity": { "start": "2027-01-01", "end": "2027-12-31" },
+  "unit": "per adult per night",
+  "confidence": "confirmed-2027-08-06",
+  "rates": {
+    "fullyInclusive": {
+      "high": { "dates": "15 Jun-31 Oct & 1-6 Jan", "twoAdults": { "nett": 508, "rack": 725 }, "threePlusAdults": { "nett": 455, "rack": 650 } },
+      "mid": { "dates": "1 Nov-15 Dec & 7 Jan-31 Mar", "twoAdults": { "nett": 441, "rack": 630 }, "threePlusAdults": { "nett": 406, "rack": 580 } },
+      "low": { "dates": "1 Apr-14 Jun", "twoOrMoreAdults": { "nett": 375, "rack": 535 } }
+    },
+    "fullBoard": {
+      "high": { "twoAdults": { "nett": 466, "rack": 665 }, "threePlusAdults": { "nett": 413, "rack": 590 } },
+      "mid": { "twoAdults": { "nett": 396, "rack": 565 }, "threePlusAdults": { "nett": 361, "rack": 515 } },
+      "low": { "twoOrMoreAdults": { "nett": 336, "rack": 480 } }
+    },
+    "verified": true
+  },
+  "mandatoryFees": {
+    "olPejetaConservationFee": { "adult12plus": 110, "child3to11": 55, "under3": "Free", "unit": "per person per night" },
+    "olPejetaBedNightLevy": { "adult12plus": 60, "child3to11": 30, "under3": "Free", "unit": "per person per night" },
+    "verified": true
+  },
+  "inclusions": {
+    "fullyInclusive": "Transfers to/from Nanyuki or Kamok Airstrip, private game vehicle + guide, all meals and picnics, bar (soft drinks/juices/local beer/spirits/wine), tea/coffee, bush breakfast/brunch, sundowners, night drives, bush walks, laundry, private chef/waiter/cleaning staff",
+    "fullBoard": "All meals, bar (soft drinks/juices/local beer/spirits/wine), tea/coffee, laundry, private chef/waiter/cleaning staff (NO game drives/guide/transfers)"
+  },
+  "childPolicy": { "under12": "50% of adult rate", "under3": "Free", "verified": true },
+  "singleSupplement": { "highSeason": { "nett": 249, "rack": 355 }, "midLowSeason": { "nett": 221, "rack": 315 }, "verified": true },
+  "guideRates": { "driverGuideAccommodation": { "nett": 18, "rack": 25 }, "tourLeaderAccommodationWithGuests": { "nett": 67, "rack": 95 }, "note": "Guide rate excludes conservation fee/vehicle entry/bed-night levy", "verified": true },
+  "specialOffers": {
+    "stay3PlusHighSeason": "Pay mid-season rates",
+    "stay3PlusMidSeason": "Pay low-season rates",
+    "stay6Pay5LowSeason": true,
+    "exclusionWindow": "Not applicable 16 Dec-6 Jan"
+  },
+  "dayTrips": {
+    "mtKenya": { "amount": 230, "unit": "per person, park fees included, min 2 people" },
+    "aberdaresNationalPark": { "amount": 230, "unit": "per person, park fees included, min 2 people" },
+    "ngareNdareForest": { "amount": 230, "unit": "per person, park fees included, min 2 people" },
+    "overnightWalkingCamp": { "nett": 175, "rack": 250, "unit": "per adult per night, min 2 people, no children under 12" },
+    "verified": true
+  },
+  "paymentTerms": "20% deposit to secure; 80% balance due 60 days before arrival",
+  "cancellationPolicy": "90+ days before arrival: full refund less bank charges; 60-90 days: deposit forfeited; less than 60 days: non-refundable"
+}

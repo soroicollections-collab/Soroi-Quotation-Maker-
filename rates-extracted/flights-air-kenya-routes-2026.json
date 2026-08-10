@@ -1,0 +1,166 @@
+{
+  "$note": "AirKenya Express 2026 scheduled route network, full network beyond the Amboseli-Mara-Nanyuki legs already captured in flights-amboseli-mara-nanyuki-2026.json (that file covers Airvan/Safarilink only, not AirKenya, so nothing here duplicates it).",
+  "carrier": "AirKenya Express (with Regional Air Services Tanzania, Aerolink Uganda as connecting sister airlines)",
+  "currency": "USD",
+  "source": {
+    "ratesFile": "2026 CONTRACT RATES/KENYA/FLIGHTS/AirKenya/AIRKENYA - SUNWORLD SAFARIS-RATES 2026.pdf",
+    "scheduleFile": "2026 CONTRACT RATES/KENYA/FLIGHTS/AirKenya/AIRKENYA FLIGHT SCHEDULE- 2026.pdf",
+    "extractionMethod": "Both PDFs are image-only (scanned/flattened to JPEG per page, no embedded text layer) - extracted via direct visual read of each page image, not a flattened text dump. Page-by-page, no adjacent-route misattribution risk since each route has its own clearly labeled table.",
+    "letterDate": "14 July 2025",
+    "addressee": "Gabrielle (Sunworld Safaris) from Anne Hiri, Regional Sales Manager"
+  },
+  "validity": { "start": "2025-12-21", "end": "2026-12-31" },
+  "verified": true,
+  "seasons": {
+    "high": { "dateRanges": ["21 Dec 2025 - 28 Feb 2026", "01 Jun 2026 - 31 Oct 2026", "21 Dec 2026 - 31 Dec 2026"] },
+    "low": { "dateRanges": ["01 Mar 2026 - 31 May 2026", "01 Nov 2026 - 20 Dec 2026"] },
+    "note": "Fares in the rate table are NOT season-differentiated by figure - only one fare per route is published. The high/low season split governs scheduling/routing (e.g. some routes go non-operational or reroute via Wilson in low season) and ticketing time limits (21 days high season / 14 days low+mid season), not the fare amount itself."
+  },
+  "fareStructure": "Gross Fare and Net Fare both shown per route; Taxes shown separately and must be added to Net Fare. All figures below are as published (Gross / Net / Taxes), USD, per adult unless noted.",
+  "childPolicy": {
+    "infantsUnder2": "Free, provided they do not occupy a seat.",
+    "childrenUnder12": "70% of the adult fare.",
+    "note": "No explicit Young Adult (12-17) bracket stated in this document - falls under the general adult fare by default (age 12+ = adult fare here, distinct from the Soroi portfolio's separate 12-17 Young Adult 75%-of-adult convention)."
+  },
+  "minimumPax": {
+    "domestic": "2 passengers per airstrip",
+    "international": "4 passengers per sector (e.g. Wilson-Kilimanjaro-Wilson; Masai Mara-Entebbe-Mara via Kisumu)"
+  },
+  "routes": {
+    "wilsonToAmboseli": {
+      "oneWay": { "gross": 199, "net": 169.15, "tax": 25 },
+      "return": { "gross": 348, "net": 295.80, "tax": 34 },
+      "notes": "Daily; min 2 pax. Inbound Amboseli-Wilson connects onward to Nanyuki, Lewa Downs, Samburu, Meru, Loisaba at 09:45; Maasai Mara at 10:30; Kilimanjaro at 13:30."
+    },
+    "wilsonToKilimanjaro": {
+      "wilsonToKilimanjaro": { "gross": 210, "net": 178.50, "tax": 70 },
+      "kilimanjaroToWilson": { "gross": 210, "net": 178.50, "tax": 83 },
+      "return": { "gross": 352, "net": 299.20, "tax": 138 },
+      "notes": "Daily; min 4 pax (international sector). Non-operational 1 Apr - 20 May and 1 Nov - 15 Dec. Connects to Arusha, Manyara, Kogatende, Lobo, Serengeti via Regional Air Services at 15:30."
+    },
+    "wilsonToLewaSamburu": {
+      "oneWay": { "gross": 285, "net": 242.25, "tax": 25 },
+      "return": { "gross": 474, "net": 402.90, "tax": 34 },
+      "notes": "Daily; min 2 pax. Covers Lewa/Kalama/Buffalo Springs airstrips, timings vary by routing. Inbound to Wilson connects Kilimanjaro at 13:30, Masai Mara at 14:00."
+    },
+    "lewaSamburuToMasaiMara": {
+      "oneWay": { "gross": 474, "net": 402.90, "tax": 25 },
+      "notes": "May route via Wilson to connect the 14:00 Masai Mara service in low season."
+    },
+    "wilsonToLoisaba": {
+      "oneWay": { "gross": 285, "net": 242.25, "tax": 25 },
+      "return": { "gross": 474, "net": 402.90, "tax": 34 },
+      "notes": "Daily; min 2 pax. Multiple airstrips, timing varies. Inbound to Wilson connects Kilimanjaro 13:30, Masai Mara 14:00."
+    },
+    "loisabaToMasaiMara": {
+      "oneWay": { "gross": 474, "net": 402.90, "tax": 25 },
+      "notes": "May route via Wilson in low season to connect the 14:00 Masai Mara service."
+    },
+    "wilsonToMasaiMara": {
+      "oneWay": { "gross": 258, "net": 219.30, "tax": 25 },
+      "return": { "gross": 429, "net": 364.65, "tax": 34 },
+      "notes": "Daily; min 2 pax. Multiple airstrips in the Mara, timings vary by routing."
+    },
+    "wilsonToMasaiMaraSpecial": {
+      "maraToWilsonOneWay": { "gross": 171, "net": 145.35, "tax": 25 },
+      "return": { "gross": 343, "net": 291.55, "tax": 34 },
+      "notes": "Special offer applies specifically to flights 851/852 (Wilson-Mara 07:30/08:00, Mara-Wilson 08:05/09:35 approx) and 951/952 (Wilson-Mara 14:00, Mara-Wilson approx). Not the general Wilson-Mara fare - a named-flight promotional fare."
+    },
+    "maraToMigori": {
+      "oneWay": { "gross": 311, "net": 264.35, "tax": 25 },
+      "notes": "Daily, min 2 pax, except non-operational 1 Apr-20 May and min 4 pax required 1 Nov-15 Dec.",
+      "unitNote": "Table header says 'vv' (vice versa) - applies both directions at this fare."
+    },
+    "maraToTarime": {
+      "oneWay": { "gross": 379, "net": 322.15, "tax": 25 },
+      "notes": "Vice versa. Connects Masai Mara-Tarime-Mara services to Serengeti via Regional Air Services, Auric Air, or Coastal Aviation - contact AirKenya for the connecting-carrier leg."
+    },
+    "wilsonToMeru": {
+      "oneWay": { "gross": 285, "net": 242.25, "tax": 25 },
+      "return": { "gross": 474, "net": 402.90, "tax": 34 },
+      "notes": "Daily; min 2 pax. Multiple airstrips; inbound to Wilson connects Kilimanjaro 13:30, Masai Mara 14:00."
+    },
+    "meruToMasaiMara": {
+      "oneWay": { "gross": 474, "net": 402.90, "tax": 25 },
+      "notes": "May route via Wilson in low season to connect 14:00 Mara service."
+    },
+    "meruToSamburu": {
+      "oneWay": { "gross": 285, "net": 242.25, "tax": 25 },
+      "notes": "One-direction service only (Meru->Samburu/Kalama), per source document."
+    },
+    "wilsonToNanyukiKamok": {
+      "oneWay": { "gross": 208, "net": 176.80, "tax": 25 },
+      "return": { "gross": 346, "net": 294.10, "tax": 34 },
+      "notes": "Daily; min 2 pax. Covers Nanyuki or Kamok airstrips. Inbound to Wilson connects Kilimanjaro 13:30, Masai Mara 14:00."
+    },
+    "nanyukiToMasaiMara": {
+      "oneWay": { "gross": 446, "net": 379.10, "tax": 25 },
+      "notes": "May route via Wilson in low season to connect 14:00 Mara service. NOTE: this AirKenya figure ($446 gross) is a separate/different carrier and fare structure from the Safarilink Nanyuki-Masai Mara fare already on file in flights-amboseli-mara-nanyuki-2026.json ($441 published / $374.80 nett + $15 tax) - do not conflate the two; they are alternative carriers for the same route."
+    },
+    "nanyukiMeruNanyuki": {
+      "nanyukiToMeru": { "gross": 285, "net": 242.25, "tax": 25 },
+      "meruToNanyuki": { "gross": 285, "net": 242.25, "tax": 25 },
+      "notes": "Daily; min 2 pax. Multiple airstrips, timing may vary."
+    },
+    "maraSerengetiViaMigoriTarime": {
+      "notes": "Fares apply between AirKenya and either Regional Air Services, Auric Air, or Coastal Aviation (connecting carrier's own T&Cs apply on the Tanzania sector), either direction. Daily, min 2 pax except non-operational 1 Apr-20 May and min 4 pax 1 Nov-15 Dec.",
+      "routes": {
+        "maraToKogatende": { "gross": 674, "net": 572.90, "tax": 65 },
+        "maraToLamai": { "gross": 674, "net": 572.90, "tax": 65 },
+        "maraToSeronera": { "gross": 689, "net": 585.65, "tax": 65 },
+        "maraToSasakwa": { "gross": 709, "net": 602.65, "tax": 65 },
+        "maraToLobo": { "gross": 689, "net": 585.65, "tax": 65 },
+        "maraToGrumeti": { "gross": 689, "net": 585.65, "tax": 65 },
+        "maraToFortIkoma": { "gross": 689, "net": 585.65, "tax": 65 },
+        "maraToNdutu": { "gross": 709, "net": 602.65, "tax": 65 },
+        "maraToSerengetiSouth": { "gross": 709, "net": 602.65, "tax": 65 },
+        "maraToLakeManyara": { "gross": 764, "net": 649.40, "tax": 65 }
+      }
+    }
+  },
+  "circuitDiscounts": {
+    "note": "Applies to gross fares only, throughout the AirKenya/subsidiary network. All sectors must be on one booking reference/voucher (else each sector charged independently). One ticket for all sectors. Travel cannot repeat the same destination; total circuit must not exceed 14 days. Circuit and Group discounts are NOT combinable.",
+    "threeToFourSectors": { "discountOffGross": "25%", "example": "Wilson-Samburu-Mara-Wilson; Wilson-Amboseli-Wilson-Mara-Wilson" },
+    "fiveSectorsAndAbove": { "discountOffGross": "30%", "example": "Wilson-Amboseli-Wilson-Nanyuki-Mara-Tarime-Serongera" },
+    "taxNote": "Taxes are payable per sector regardless of circuit discount, and are additive (e.g. Wilson-Mara return $34 + Wilson-JRO return $138 = $172 total taxes for that combined routing)."
+  },
+  "groupDiscounts": {
+    "tenPlusPax": "20% off gross fare, scheduled flights only",
+    "sixteenPlusPax": "25% off gross fare, scheduled flights only",
+    "note": "Applies year-round. Group and circuit discounts not combinable. Must be booked through AirKenya offices."
+  },
+  "baggage": {
+    "allowance": "15kg soft bags (includes hand baggage)",
+    "excessRate": "$5/kg, domestic and international",
+    "prePurchaseBundle": "1-10kg extra for a flat $50 (book 48hrs+ before departure, max 10kg extra/pax)",
+    "freightSeat": "75kg/165lbs allowance, charged at child's fare + taxes"
+  },
+  "cancellationAmendment": {
+    "amendment": { "above10Days": "Nil if unissued", "10to5Days": "$50/ticket if issued", "4to0Days": "$100/ticket if issued" },
+    "cancellation": { "above10Days": "$50/ticket", "10to5Days": "$100/ticket", "4to0Days": "Fully chargeable, no refund" },
+    "noShow": "Non-transferable, non-refundable, 6-month validity, revalidation fee $100/ticket subject to availability.",
+    "refundAdminFee": "$20/ticket plus 5% PSP commission on card payments and bank charges on transfers; refunds paid within 45 days."
+  },
+  "checkIn": {
+    "mainAirports": "60 minutes before departure at Wilson, Kilimanjaro, Kisumu, Entebbe (and Arusha per schedule doc); gate closes 30 min before departure.",
+    "bushAirstrips": "30 minutes before departure."
+  },
+  "scheduleHighlights": {
+    "note": "Full flight-number-level schedule (P2-prefixed) is in the source schedule PDF; only representative daily-first-flight times captured here since exact rotations vary by aircraft routing day to day per the source's own disclaimer ('call Airkenya operations on departure date to confirm').",
+    "wilsonAmboseli": { "flight": "P2 883", "depart": "07:30", "arrive": "08:05" },
+    "amboseliWilson": { "flight": "P2 884", "depart": "08:15", "arrive": "08:50" },
+    "wilsonMasaiMaraFirst": { "flight": "P2 851", "depart": "07:30", "arrive": "08:00" },
+    "masaiMaraWilsonFirst": { "flight": "P2 852", "depart": "08:05", "arrive": "09:35" },
+    "wilsonMasaiMaraSecond": { "flight": "P2 951", "depart": "14:15", "arrive": "15:00" },
+    "masaiMaraWilsonSecond": { "flight": "P2 952", "depart": "15:10", "arrive": "16:30" },
+    "wilsonNanyuki": { "flight": "P2 871", "depart": "09:45", "arrive": "10:45" },
+    "nanyukiWilson": { "flight": "P2 872", "depart": "12:15", "arrive": "13:10" },
+    "wilsonMeru": { "flight": "P2 871", "depart": "09:45", "arrive": "10:45" },
+    "meruWilson": { "flight": "P2 872", "depart": "11:00", "arrive": "13:10" }
+  },
+  "notesGeneral": [
+    "Fares quoted in USD; may be converted to KES at prevailing IATA rate at time of payment. AirKenya reserves right to adjust fares at any time.",
+    "Contract must be signed and a copy returned to Airkenya Express.",
+    "Private/helicopter charters available on request via charters@airkenya.com if scheduled service doesn't meet routing/timing needs."
+  ]
+}

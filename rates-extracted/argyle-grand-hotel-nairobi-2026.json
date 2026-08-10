@@ -1,0 +1,31 @@
+{
+  "$note": "Extracted 6 Aug 2026. City hotel, not a safari lodge - used for Nairobi/stopover legs. Note: this is a different property from the '2026 CONTRACT RATES/KENYA/ACCOMODATION/ARGYLE GRAND HOTEL' 2027 contract also on file in the same folder (not extracted here - 2026 only).",
+  "property": "Argyle Grand Hotel Nairobi",
+  "operator": "Deux Argyle Realtors Ltd",
+  "region": "Nairobi",
+  "tier": "Travel Agent Rate Agreement (net, non-commissionable)",
+  "source": {
+    "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/ARGYLE GRAND HOTEL/Argyle Grand Hotel  - Sunworld Safaris AGH 2026 Contract.pdf",
+    "validity": { "start": "2025-05-19", "end": "2026-12-31" }
+  },
+  "rates": {
+    "currency": "USD",
+    "unit": "per room per night, Bed & Breakfast",
+    "superiorTwin": { "single": 140, "double": 160 },
+    "superiorDouble": { "single": 140, "double": 160 },
+    "deluxeTwin": { "single": 170, "double": 200 },
+    "deluxeDouble": { "single": 170, "double": 200 },
+    "familyKing": { "single": 200, "double": 230 },
+    "executiveKing": { "single": 200, "double": 230 },
+    "premiumKing": { "single": 250, "double": 280 },
+    "executiveSuite": { "single": 350, "double": 350 },
+    "extraBed": 70
+  },
+  "childPolicy": {
+    "note": "Not Soroi's 5-11 bracket - uses a 12-year cutoff.",
+    "under12SharingOneAdult": "Free, but 50% of breakfast charge",
+    "under12ownRoomTwoChildren": "75% of double adult rate",
+    "over12": "Full adult rate"
+  },
+  "notes": "Includes complimentary airport transfers, wifi, gym/spa (sauna/steam). Max 2 breakfasts/room included; 3rd person breakfast supplement USD 30."
+}

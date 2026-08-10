@@ -1,0 +1,26 @@
+{
+  "$note": "Extracted 6 Aug 2026 via paginated pdftotext read (page 10 of 24) of 'EC-2026-Rates-40.pdf'. Only Game Package is offered at this camp (no Full Board option) - a different shape from most other Elewana Kenya properties.",
+  "property": "Elephant Pepper Camp Masai Mara",
+  "operator": "Elewana Collection",
+  "region": "Mara North Conservancy, Masai Mara",
+  "tier": "Rack and Nett (Nett = Rack x 0.60)",
+  "source": { "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/ELEWANA/EC-2026-Rates-40.pdf", "pdfPageIndex": 10, "validity": { "start": "2026-01-04", "end": "2027-01-03" } },
+  "seasons": { "high": "Jul 1-Oct 31, Dec 20-Jan 3", "mid": "Jan 4-Mar 31, Jun 1-Jun 30, Nov 1-Dec 19", "green": "Apr 1-May 31" },
+  "mealPlan": "Game Package only",
+  "rates": {
+    "currency": "USD", "unit": "per person per night",
+    "gamePackage": {
+      "perPersonSharing": { "high": { "rack": 1126, "nett": 676 }, "mid": { "rack": 856, "nett": 514 }, "green": { "rack": 771, "nett": 462 } },
+      "singleRoom": { "high": { "rack": 1690, "nett": 1014 }, "mid": { "rack": 1284, "nett": 770 }, "green": { "rack": 1156, "nett": 694 } },
+      "tripleRoom": { "high": { "rack": 2534, "nett": 1521 }, "mid": { "rack": 1926, "nett": 1156 }, "green": { "rack": 1734, "nett": 1040 } },
+      "safariSuiteUpTo3": { "high": { "rack": 2823, "nett": 1694 }, "mid": { "rack": 2142, "nett": 1285 }, "green": { "rack": 2102, "nett": 1261 } }
+    }
+  },
+  "mandatoryFees": {
+    "maraNorthConservancy": { "adult": 150, "child3to17": 75, "unit": "per person per day, year-round" },
+    "maasaiMaraNationalReserveEntrance_onlyIfVisited": { "adult": { "lowJanJun": 100, "highJulDec": 200 }, "child9to17": 50 }
+  },
+  "childPolicy": { "note": "Elewana portfolio-wide policy (3-17 bracket)." },
+  "transfers": { "toTalek": { "rack": 280, "nett": 252 }, "toRekero": { "rack": 280, "nett": 252 }, "toMusiaraGate": { "rack": 225, "nett": 203 }, "toMaraRianta": { "rack": 225, "nett": 203 } },
+  "inclusions": "Scheduled/shared game drives twice daily, 2-hr guided walking safari, Maasai cultural visit, bush sundowner, bush breakfast/lunch, airstrip transfer to/from Mara North (all included)."
+}

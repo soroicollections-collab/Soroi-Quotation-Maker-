@@ -1,0 +1,38 @@
+{
+  "$note": "Extracted 6 Aug 2026 from SPECIAL OFFERS/BUSH AND BEYOND/FW 2024 Specials - Stay 3 Pay 2.msg via extract_msg Python library. Fully readable plain-text body (Mailchimp newsletter, text-based, no image dependency for the offer terms).",
+  "offerStatus": "promotional - confirm current validity before use",
+  "operator": "Bush and Beyond",
+  "propertiesCovered": ["Tangulia Mara", "Tangulia Ndogo", "House in the Wild", "Lewa House"],
+  "offerName": "2024 Specials - Stay 3, Pay 2",
+  "source": {
+    "file": "SPECIAL OFFERS/BUSH AND BEYOND/FW 2024 Specials - Stay 3 Pay 2.msg",
+    "emailDate": "2024-09-05",
+    "extractionMethod": "extract_msg Python library, plain-text body"
+  },
+  "validity": {
+    "statedText": "Tangulia Mara/Ndogo and House in the Wild: travel November 1 - December 19, 2024. Lewa House: travel December 1-19, 2024 (Lewa House closed in November 2024).",
+    "verified": true,
+    "expiryAssessment": "EXPIRED - all stated travel windows closed well over a year before today's date (6 Aug 2026)."
+  },
+  "offers": [
+    {
+      "properties": ["Tangulia Mara", "Tangulia Ndogo"],
+      "structure": "Stay 3, pay 2 (park fees payable on the 3rd night)",
+      "extraNote": "Tangulia Ndogo noted as a newly-opened exclusive-use property at the time of this email."
+    },
+    {
+      "property": "House in the Wild",
+      "structure": "Stay 3, pay 2 (conservation fees payable on the 3rd night)",
+      "extraNote": "Couples (2 people) stays over the Nov 1 - Dec 19, 2024 window also got a choice of a complimentary private photo session OR a couple's massage with a bottle of bubbly."
+    },
+    {
+      "property": "Lewa House",
+      "structure": "Stay 3, pay 2 (conservation fees payable on the 3rd night)",
+      "extraNote": "New 'Behind the Scenes' activities at Lewa Wildlife Conservancy HQ mentioned (anti-poaching team/dogs); newly rebuilt family cottage mentioned."
+    }
+  ],
+  "generalTerms": "Applies to a minimum 3 nights at each lodge; park/conservation fee is payable on the 3rd (free) night in every case (fees are NOT waived, matching the pattern seen in other operators' stay-longer-pay-less offers in this batch).",
+  "noPricedFiguresInSource": true,
+  "verified": true,
+  "confidenceNote": "No dollar rate figures are given anywhere in this source - it is purely a nights-stayed-vs-nights-paid structure. To use for a quote, the underlying nightly rate for whichever of the four properties is relevant would need to be sourced separately (not present in this SPECIAL OFFERS slice)."
+}

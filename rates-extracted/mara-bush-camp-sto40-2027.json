@@ -1,0 +1,59 @@
+{
+  "$note": "Fresh extraction, 6 Aug 2026, read directly from the property's own page (page 2 of 34) in 'Soroi - 2027 STO 40% Contract Rates.pdf' (see cheetah-tented-camp-sto40-2027.json for full provenance/duplicate-file note).",
+  "property": "Soroi Mara Bush Camp",
+  "region": "Maasai Mara",
+  "tier": "STO 40%",
+  "residency": "Non-Resident",
+  "source": {
+    "file": "2027 CONTRACT RATES/KENYA/ACCOMODATIONS/SOROI/Soroi - 2027 STO 40% Contract Rates.pdf",
+    "pdfPageIndex": 1,
+    "docPrintedPageNumber": 2,
+    "validity": { "start": "2027-01-04", "end": "2028-01-03" }
+  },
+  "confidence": "confirmed-2026-08-06",
+  "seasons": {
+    "peak": { "dateRanges": ["1 Jul – 30 Sep", "20 Dec – 3 Jan 2028"] },
+    "shoulder": { "dateRanges": ["4 Jan – 28 Feb", "1 Jun – 30 Jun"] },
+    "extendedGreen": { "dateRanges": ["1 Mar – 31 May", "1 Oct – 19 Dec"] }
+  },
+  "rates": {
+    "currency": "USD",
+    "unit": "per person per night",
+    "fullBoard": {
+      "perPerson": { "peak": { "rack": 585, "net": 351 }, "shoulder": { "rack": 495, "net": 297 }, "extendedGreen": { "rack": 420, "net": 252 } },
+      "single": { "peak": { "rack": 878, "net": 527 }, "shoulder": { "rack": 743, "net": 446 }, "extendedGreen": { "rack": 525, "net": 315 } }
+    },
+    "groundPackage": {
+      "perPerson": { "peak": { "rack": 785, "net": 471 }, "shoulder": { "rack": 695, "net": 417 }, "extendedGreen": { "rack": 620, "net": 372 } },
+      "single": { "peak": { "rack": 1178, "net": 707 }, "shoulder": { "rack": 1043, "net": 626 }, "extendedGreen": { "rack": 775, "net": 465 } }
+    }
+  },
+  "discountRatioCheck": { "note": "Net = Rack x 0.60 confirmed exactly (nearest-integer rounding) on every cell above.", "verified": true },
+  "familyUnit": {
+    "verified": false,
+    "note": "No Family Unit row on this page, consistent with the Rack extraction - CLAUDE.md documents this figure as not existing anywhere for this property. Do not use any Family Unit number for Mara Bush Camp."
+  },
+  "mandatoryFees": {
+    "note": "Identical figures to the Rack extraction and to Private Wing/Luxury Migration Camp - shared Maasai Mara conservancy fee, unaffected by accommodation tier.",
+    "verified": true,
+    "verifiedDate": "2026-08-06",
+    "communityLevy": {
+      "peak": { "adult": 80, "child": 40, "unit": "per night" },
+      "shoulder": { "adult": 40, "child": 20, "unit": "per night" },
+      "extendedGreen": { "adult": 40, "child": 20, "unit": "per night" }
+    },
+    "parkFee": {
+      "janToJun": { "adult": 100, "child": 50, "unit": "per adult per 12h" },
+      "julToDec": { "adult": 200, "child": 50, "unit": "per adult per 12h" }
+    }
+  },
+  "roomNote": "11 Safari Tents (1 King double + 1 single bed). 2 Family Tents exist physically but have no priced Family Unit rate on this page.",
+  "portfolioWideTerms": {
+    "childAge5to11": "50% of adult sharing rate",
+    "youngAdult12to17Sharing": "75% of adult rate",
+    "singleSupplementGreenSeason": "reduced to 25% (from 50%) - Mara only",
+    "tourLeaderGuide": { "inTLTent": 175, "inGuestTent": "75% of adult single rate" },
+    "privateGuideMeals": { "amount": 50, "unit": "per day" },
+    "christmasNewYearSupplement": { "adult": 40, "child": 20, "unit": "per night" }
+  }
+}

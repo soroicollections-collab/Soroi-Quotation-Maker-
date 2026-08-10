@@ -1,0 +1,43 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftotext -layout from 'ARGYLE GRAND HOTEL/Argyle Grand Hotel  - Sunworld Safaris AGH 2027 Contract.pdf'. Single-page rate table, unambiguous. Nairobi city hotel (Deux Argyle Realtors Ltd), not a safari lodge.",
+  "property": "Argyle Grand Hotel, Nairobi",
+  "operator": "Deux Argyle Realtors Ltd",
+  "currency": "USD",
+  "validity": { "start": "2025-05-19 (contract signing)", "end": "2027-12-31" },
+  "unit": "per room per night, rates inclusive of all taxes and Bed & Breakfast",
+  "confidence": "confirmed-2027-08-06",
+  "rates": {
+    "Superior Twin": { "rooms": 32, "single": 140, "double": 160 },
+    "Superior Double": { "rooms": 42, "single": 140, "double": 160 },
+    "Deluxe Twin": { "rooms": 40, "single": 170, "double": 200 },
+    "Deluxe Double": { "rooms": 36, "single": 170, "double": 200 },
+    "Family King": { "rooms": 19, "single": 200, "double": 230 },
+    "Executive King": { "rooms": 41, "single": 200, "double": 230 },
+    "Premium King": { "rooms": 16, "single": 250, "double": 280 },
+    "Executive Suite": { "rooms": 5, "single": 350, "double": 350 },
+    "verified": true
+  },
+  "extraBed": { "amount": 70, "note": "inclusive of breakfast", "verified": true },
+  "breakfastPolicy": { "maxComplimentaryPerRoom": 2, "thirdPersonSupplement": 30, "verified": true },
+  "maxOccupancyPerRoom": 3,
+  "childPolicy": {
+    "under12SharingBedWith1Adult": "Free of charge, pays 50% of breakfast",
+    "over12": "Regarded as adult, full adult rate",
+    "twoChildrenUnder12OwnRoom": "75% of double adult rate",
+    "twoChildrenOver12OwnRoom": "Full double adult rate",
+    "extraBedForOneChild": "USD 70 incl. breakfast; 2nd child under 12 in same room pays 50% of breakfast",
+    "infant0to2": "Free, cot on request",
+    "verified": true
+  },
+  "meetingsEvents": {
+    "unit": "per person",
+    "halfDayConference": 35,
+    "fullDayConference": 40,
+    "executivePackage": 50,
+    "dinnerPackagesFrom": 30,
+    "verified": true
+  },
+  "cancellationPolicy": "Free cancellation up to 18:00 prior to arrival; after that, one-night charge + taxes; no-show = full cancellation fee",
+  "checkInOut": "Check-in 14:00, check-out 12:00. Late checkout to 18:00 = 50% of room rate; after 18:00 = 100%.",
+  "commissionable": false
+}

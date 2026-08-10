@@ -1,0 +1,71 @@
+{
+  "$note": "Fresh extraction, 6 Aug 2026, read directly from source PDF text (1-page, single-property document, layout-preserving pdftotext). Only the 'NEW' file was extracted per instructions — 'OLD/Bamburi Beach Hotel 2025-2026 TARIFF RATES.pdf' was explicitly skipped as a superseded copy per the task brief, not opened.",
+  "property": "Bamburi Beach Hotel",
+  "region": "Bamburi/Mombasa North Coast",
+  "tier": "Tariff Rates 2025/2026 (single published rate card — no Rack/Contract/STO tier split stated)",
+  "residency": "Not stated — no Resident/Non-Resident split on this page; treat as a single general rate.",
+  "source": {
+    "file": "2026 CONTRACT RATES/KENYA/BEACH ACCOMODATION/BAMBURI BEACH/BAMBURI BEACH HOTEL 2025-2026 NEW TARIFF RATES -.pdf",
+    "pages": 1,
+    "printedDate": "31.07.25",
+    "note": "Filename 'NEW TARIFF RATES' explicitly supersedes the OLD/ subfolder copy per task brief; OLD copy skipped, not opened/compared byte-for-byte."
+  },
+  "skipped": {
+    "file": "OLD/Bamburi Beach Hotel 2025-2026 TARIFF RATES.pdf",
+    "reason": "Superseded copy per folder structure and task brief ('NEW' supersedes) — not opened."
+  },
+  "confidence": "confirmed-2026-08-06",
+  "extractionMethod": { "note": "Single-property, 1-page PDF read directly with pdftotext -layout; no adjacent-property risk." },
+  "structuralFindings": [
+    "Rates are quoted PER ROOM PER NIGHT (Double/Single columns), not per person — a different pricing unit from every Soroi and most other beach properties checked, which quote per person per night. Do not divide by 2 to get a per-person figure without checking with the property — the 'DOUBLE KSH' figure appears to be the full room rate for 2 people, and 'SINGLE KSH' the full room rate for 1 (roughly 75% of the double rate in most rows, except Executive Suite and Ocean Breeze Suite where Single = Double, i.e. no single discount on those two categories).",
+    "Currency is KES (Kenya Shillings), not USD — no USD conversion given on this page.",
+    "Base plan is All Inclusive for every season shown.",
+    "Five date windows in total, but only two have genuinely different pricing: the Christmas/New Year window (23 Dec-3 Jan, 5-night minimum, +New Year's Eve supplement) is materially higher, and 1 May-30 Jun is materially lower ('low season'). The other three windows (1 Sep-22 Dec 2025, 4 Jan-30 Apr 2026, 1 Jul-30 Nov 2026) all share the exact same rate table.",
+    "Executive Suite and Ocean Breeze Suite are priced per-room flat (Single = Double, no discount for solo occupancy) — different behavior from the four other room categories."
+  ],
+  "seasons": {
+    "regularA": { "dateRanges": ["1 Sep - 22 Dec 2025"] },
+    "peakChristmasNewYear": { "dateRanges": ["23 Dec 2025 - 3 Jan 2026"], "minimumStay": "5 nights", "supplement": "New Year's Eve Supplement KSh 15,000 per person, KSh 7,500 per child" },
+    "regularB": { "dateRanges": ["4 Jan - 30 Apr 2026"] },
+    "low": { "dateRanges": ["1 May - 30 Jun 2026"] },
+    "regularC": { "dateRanges": ["1 Jul - 30 Nov 2026"] }
+  },
+  "rates": {
+    "currency": "KES",
+    "unit": "per room per night, All Inclusive",
+    "regular": {
+      "superiorSeaFacingRoom": { "double": 44000, "single": 33000 },
+      "oceanFrontDeluxeRoom": { "double": 50000, "single": 37500 },
+      "oceanFrontWithPlungePool": { "double": 56000, "single": 42000 },
+      "oceanFrontJuniorSuite": { "double": 59000, "single": 44250 },
+      "executiveSuite": { "double": 65000, "single": 65000 },
+      "oceanBreezeSuite": { "double": 75000, "single": 75000 },
+      "appliesTo": ["1 Sep - 22 Dec 2025", "4 Jan - 30 Apr 2026", "1 Jul - 30 Nov 2026"]
+    },
+    "peakChristmasNewYear": {
+      "superiorSeaFacingRoom": { "double": 69000, "single": 51750 },
+      "oceanFrontDeluxeRoom": { "double": 75000, "single": 56250 },
+      "oceanFrontWithPlungePool": { "double": 81000, "single": 60750 },
+      "oceanFrontJuniorSuite": { "double": 84000, "single": 63000 },
+      "executiveSuite": { "double": 90000, "single": 90000 },
+      "oceanBreezeSuite": { "double": 100000, "single": 100000 }
+    },
+    "low": {
+      "superiorSeaFacingRoom": { "double": 38000, "single": 28500 },
+      "oceanFrontDeluxeRoom": { "double": 44000, "single": 33000 },
+      "oceanFrontWithPlungePool": { "double": 50000, "single": 37500 },
+      "oceanFrontJuniorSuite": { "double": 53000, "single": 39750 },
+      "executiveSuite": { "double": 59000, "single": 59000 },
+      "oceanBreezeSuite": { "double": 69000, "single": 69000 }
+    }
+  },
+  "verified": true,
+  "thirdAdultExtraBed": "70% of adult rate",
+  "childPolicy": {
+    "age2to12SharingParentsRoom": "50% of adult rate",
+    "age2to12OwnRoom": "80% of adult rate",
+    "idRequirement": "Children require passport copy or birth certificate; guests 13-18 also require passport/ID copy; guests 18+ must present ID or passport at check-in."
+  },
+  "paymentTerms": "Full payment in advance. Rates subject to change without prior notice.",
+  "confidenceNote": "No mandatory conservancy/park-style fee found — consistent with a Mombasa-area beach hotel. Because rates are per-room (not per-person), any quote using this property must be reconciled carefully against per-person-based comparisons elsewhere in the portfolio — flag this unit difference explicitly if this property appears alongside per-person-priced properties in the same itinerary."
+}

@@ -1,0 +1,50 @@
+{
+  "category": "excursion",
+  "activity": "Hot air balloon safari flight",
+  "operator": "Mada Collection / Adventure Aloft (K) Ltd & Adventure Aloft (T) Ltd",
+  "region": "Masai Mara (Kenya) — also Tarangire, Serengeti, Ngorongoro (Tanzania, out of scope, see flag)",
+  "extractedDate": "2026-08-06",
+  "sourceFiles": [
+    "2026 CONTRACT RATES/KENYA/EXCURSIONS/MADA BALOON/Mada Baloon - T Sunworld Safaris 2526.pdf"
+  ],
+  "$scopeFlag": "[Flag] This single contract covers BOTH a Kenya balloon product (Masai Mara / Fig Tree Camp take-off) and Tanzania products (Tarangire, Serengeti, Ngorongoro balloon take-off sites, and Elephant Rock Luxury Camp accommodation). Only the Masai Mara / Kenya line is in this project's default scope per CLAUDE.md — the Tanzania figures are recorded below for completeness/awareness only, clearly labeled, not for use in a Kenya-only itinerary.",
+  "contractParties": "Signed rate agreement between Mada Collection and Sunworld Safaris, dated 04 August 2025 (per document's own signature block).",
+  "validity": "STO Contract Rate, stated for 2025 & 2026",
+  "currency": "USD",
+  "ratesInclude": "VAT, government levy, landing/concession fee for hot air balloon, and service charge. Rates are NET and non-commissionable.",
+  "kenyaMasaiMaraBalloon": {
+    "takeOffSite": "Fig Tree Camp",
+    "ratePerPersonUSD": 420,
+    "seasonality": "Flat rate across all date bands stated (01.01 - 31.12, both 2025 and 2026) — no seasonal variation shown for this specific take-off site, unlike the Tanzania sites in the same table.",
+    "verified": true
+  },
+  "tanzaniaBalloonSitesOutOfScope": {
+    "note": "Recorded for awareness only — Tanzania is excluded from this project's default scope per CLAUDE.md.",
+    "elephantRockCampTarangire": { "ratePerPersonUSD": 410, "dateRange": "01.01-31.03 / 01.12-31.12", "noFlyPeriods": "some windows marked 'No Fly' in source" },
+    "serengeriaCentralAndTogoroMbuziMawe": { "ratePerPersonUSD": 440 },
+    "kogatendeMaraRiver": { "ratePerPersonUSD": 440, "activeWindow": "15.06-30.11 only; 'No Fly' rest of year" },
+    "ngorongoroNdutu": { "ratePerPersonUSD": 440, "activeWindows": "01.01-31.03 and 01.12-31.12; 'No Fly' rest of year" }
+  },
+  "elephantRockCampAccommodationOutOfScope": {
+    "note": "Tanzania accommodation rate (Full Board, Superior Tent) — out of scope, recorded for awareness only.",
+    "currency": "USD",
+    "perPersonPerNight2026": {
+      "01.01to28.02": { "halfTwin": 247, "single": 371 },
+      "01.03to14.06": { "halfTwin": 149, "single": 149 },
+      "15.06to31.10": { "halfTwin": 247, "single": 371 },
+      "01.11to14.12": { "halfTwin": 149, "single": 149 },
+      "15.12to31.12": { "halfTwin": 247, "single": 371 }
+    },
+    "festiveSupplementUSD": 30
+  },
+  "optionalExtrasStatedInContract": {
+    "note": "These extras are listed generically in the contract without specifying which take-off site they apply to — treat with caution for a Kenya/Masai Mara booking.",
+    "packedOrHotLunchUSD": 25,
+    "nightGameDriveUSD": 175,
+    "nightGameDriveMinPax": 2,
+    "sundownerByThePoolUSD": 25,
+    "confidenceNote": "[Unverified] These optional extras (lunch, night game drive, sundowner) read as generic Mada Collection lodge add-ons and may apply primarily to the Tanzania (Elephant Rock) side of the contract rather than the Kenya Fig Tree Camp balloon product. Confirm applicability before including in a Kenya quote."
+  },
+  "circuitDiscountOutOfScope": "3%/5% accommodation discount tied to nights at Elephant Rock Luxury Camp (Tanzania) — not applicable to a Kenya-only booking.",
+  "childPolicy": "Under 5 sharing with 1-2 adults: free. Age 5-12 sharing with 1-2 adults: 50% of adult sharing rate. Age 5-12 sharing own room (2-3 children): 75% of adult sharing rate."
+}

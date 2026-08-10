@@ -1,0 +1,69 @@
+{
+  "$note": "Extracted 6 Aug 2026, read directly (pdftotext -layout, poppler, 1-page documents). Nomad Beach Resort — non-Soroi, part of 'The Sands & Chale Island'. 2027 folder cleanly named, no duplication issue. Both USD Net and USD Rack exist for 2027. Net used as primary; Rack as secondary. Net confirmed ~70% of Rack across checked cells (Garden Room Regular PP: 235 Rack -> 165 Net = 70.2%; Ocean View Suite Regular PP: 340 -> 238 = 70.0%), consistent with Chale Island's ratio.",
+  "property": "Nomad Beach Resort (part of The Sands & Chale Island)",
+  "region": "Diani / South Coast",
+  "tier": "USD Net (primary) and USD Rack (secondary).",
+  "residency": "Non-Resident",
+  "source": {
+    "netFile": "2027 CONTRACT RATES/KENYA/BEACH ACCOMODATION/THE SANDS & CHALE ISLAND/Nomad Beach Resort - USD - Net 2027.pdf",
+    "rackFile": "2027 CONTRACT RATES/KENYA/BEACH ACCOMODATION/THE SANDS & CHALE ISLAND/Nomad Beach Resort - USD - Rack 2027.pdf",
+    "pdfPageIndex": [0],
+    "validity": { "start": "2026-11-01", "end": "2027-10-31" }
+  },
+  "confidence": "confirmed-2026-08-06",
+  "extractionMethod": { "note": "Read directly, single-page documents each." },
+  "structuralFindings": [
+    "Base room category RENAMED from 'Sea Breeze Room' (2026) to 'Garden Room' (2027) — same tier position (cheapest, Bed & Breakfast), price increased from $151 (2026 Regular PP) to $165 (2027 Regular PP Net).",
+    "Same 4 room categories in same order and shape as 2026 (Garden Room/Ocean View Suite/Beach Cottage per-person-sharing; Family Suite min-4-pax flat + extra bed) and same 3-season structure.",
+    "Family Suite Festive figure dropped slightly on the Rack card's 3rd-bed-child line for Beach Cottage specifically (festive thirdBedChild=120 on Rack vs 130 on the equivalent Net card row) — read exactly as printed per document, a minor asymmetry worth flagging rather than assuming a typo.",
+    "Transfer prices increased across the board vs 2026 (Moi Airport 70->80, Diani Airport 15->20, Nomad-to-Chale 35->40)."
+  ],
+  "seasons": {
+    "spring": { "dateRange": "15 Mar - 15 Jun" },
+    "regular": { "dateRange": "implicit — all other dates outside Spring/Festive" },
+    "festive": { "dateRange": "20 Dec - 10 Jan", "minimumStay": "7 nights" }
+  },
+  "rates": {
+    "currency": "USD",
+    "unit": "per person sharing (or single occupancy) per night, Bed & Breakfast base",
+    "net": {
+      "gardenRoom": { "perPersonSharing": { "spring": 130, "regular": 165, "festive": 245 }, "singleOccupancy": { "spring": 182, "regular": 231, "festive": 343 }, "thirdBedAdult": { "spring": 91, "regular": 115, "festive": 172 }, "thirdBedChild": { "spring": 70, "regular": 70, "festive": 130 } },
+      "oceanViewSuite": { "perPersonSharing": { "spring": 207, "regular": 238, "festive": 322 }, "singleOccupancy": { "spring": 290, "regular": 333, "festive": 451 }, "thirdBedAdult": { "spring": 145, "regular": 167, "festive": 225 }, "thirdBedChild": { "spring": 70, "regular": 70, "festive": 130 } },
+      "beachCottage": { "perPersonSharing": { "spring": 210, "regular": 259, "festive": 399 }, "singleOccupancy": { "spring": 294, "regular": 363, "festive": 559 }, "thirdBedAdult": { "spring": 147, "regular": 181, "festive": 279 }, "thirdBedChild": { "spring": 70, "regular": 70, "festive": 130 } },
+      "familySuite_min4paxSharing": { "flatRate": { "spring": 532, "regular": 616, "festive": 823 }, "extraBed": { "spring": 93, "regular": 108, "festive": 144 } }
+    },
+    "rack": {
+      "gardenRoom": { "perPersonSharing": { "spring": 185, "regular": 235, "festive": 350 }, "singleOccupancy": { "spring": 260, "regular": 330, "festive": 490 }, "thirdBedAdult": { "spring": 130, "regular": 165, "festive": 245 }, "thirdBedChild": { "spring": 70, "regular": 70, "festive": 130 } },
+      "oceanViewSuite": { "perPersonSharing": { "spring": 295, "regular": 340, "festive": 460 }, "singleOccupancy": { "spring": 410, "regular": 480, "festive": 640 }, "thirdBedAdult": { "spring": 205, "regular": 240, "festive": 320 }, "thirdBedChild": { "spring": 70, "regular": 70, "festive": 130 } },
+      "beachCottage": { "perPersonSharing": { "spring": 300, "regular": 370, "festive": 570 }, "singleOccupancy": { "spring": 420, "regular": 520, "festive": 800 }, "thirdBedAdult": { "spring": 210, "regular": 260, "festive": 400 }, "thirdBedChild": { "spring": 70, "regular": 70, "festive": 120 } },
+      "familySuite_min4paxSharing": { "flatRate": { "spring": 760, "regular": 880, "festive": 1175 }, "extraBed": { "spring": 133, "regular": 154, "festive": 206 } }
+    }
+  },
+  "supplements": {
+    "halfBoard": { "perAdult": 50, "perChild": 25 },
+    "fullBoard": { "perAdult": 75, "perChild": 37 }
+  },
+  "childPolicy": {
+    "age0to2": "Free",
+    "age12Plus": "Adult rates",
+    "age3to11_sharingWith1Adult": "3rd bed Child + Single Occupancy",
+    "age3to11_sharingWith2Adults": "3rd bed Child + 2pp Sharing",
+    "2Children_with1Adult": "Single Occupancy + 1pp Sharing",
+    "2Children_noAdults": "Single Occupancy",
+    "3Children_noAdults": "Single Occupancy + 3rd bed Child"
+  },
+  "maxRoomOccupancy": "3 pax (exceptions may apply, except Family Suite which is min 4 pax)",
+  "transfers": {
+    "moiInternationalAirport": { "amount": 80, "unit": "per 4 pax, 60 min" },
+    "dianiAirstrip": { "amount": 20, "unit": "per 4 pax, 15 min" },
+    "nomadToChaleIsland": { "amount": 40, "unit": "per 4 pax, 30 min" }
+  },
+  "paymentTerms": "30% deposit 14 days after invoicing; balance 30 days prior to arrival.",
+  "cancellationPolicy": {
+    "regularAndFestive": { "30PlusDays": "No charge", "15to30Days": "50%", "14orFewerDays": "100%", "noShow": "100%" },
+    "spring": { "14PlusDays": "No charge", "7to14Days": "50%", "under7Days": "100%", "noShow": "100%" }
+  },
+  "portfolioWideTerms": {
+    "note": "Non-Soroi property — CLAUDE.md's Soroi-portfolio-wide terms do not apply."
+  }
+}

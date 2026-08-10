@@ -1,0 +1,65 @@
+{
+  "property": "Salt Lick Safari Lodge",
+  "operator": "Taita Hills & Salt Lick Wildlife Resort Ltd",
+  "region": "Taita Hills Wildlife Sanctuary",
+  "isSoroiProperty": false,
+  "sourceFiles": [
+    "2026 CONTRACT RATES/KENYA/ACCOMODATION/SALT LICK WILDLIFE RESORT/SALT LICK WILDLIFE RESORT  SUNWORLD SAFARIS-2026.pdf",
+    "2026 CONTRACT RATES/KENYA/ACCOMODATION/SALT LICK WILDLIFE RESORT/SALT LICK WILDLIFE RESORT  RACK RATES- Spa-2026.pdf",
+    "2026 CONTRACT RATES/KENYA/ACCOMODATION/SALT LICK WILDLIFE RESORT/SALT LICK WILDLIFE RESORT  TRAIN PACKAGE-US$ SALTLICK -2026 DMCs.pdf",
+    "2026 CONTRACT RATES/KENYA/ACCOMODATION/SALT LICK WILDLIFE RESORT/SALT LICK WILDLIFE RESORT & Taita Hills and Salt Lick Terms and Conditions - 2026_compressed.pdf"
+  ],
+  "notes": [
+    "Sister property to Taita Hills Safari Resort & Spa (same operator/contract document) - see taita-hills-safari-resort-spa-2026.json. Both signed as a single Sunworld Safaris agreement.",
+    "Children under 5 are NOT permitted at Salt Lick Safari Lodge for safety reasons (structural/environmental) - unlike Taita Hills Safari Resort & Spa where under-4s are free.",
+    "Contract (Sunworld) rate is notably lower than Rack (e.g. Park View High Double: Contract $270 vs Rack $396) - roughly 30-32% off, not a uniformly round percentage across all lines."
+  ],
+  "currency": "USD",
+  "validity": "2 January 2026 - 1 January 2027",
+  "seasons": { "high": "2 Jan-31 Mar 2026 & 1 Jul 2026-1 Jan 2027", "green": "1 Apr-30 Jun 2026" },
+  "contract_Sunworld_perPersonPerNight_FB": {
+    "parkViewRooms": { "high": { "single": 203, "double": 270, "thirdBed": 81 }, "green": { "single": 106, "double": 211, "thirdBed": 63 } },
+    "waterholeViewRooms": { "high": { "single": 219, "double": 292, "thirdBed": "N/A" }, "green": { "single": 116, "double": 231, "thirdBed": "N/A" } },
+    "verified": true
+  },
+  "rack_perPersonPerNight_FB": {
+    "parkViewRooms": { "high": { "single": 297, "double": 396, "thirdBed": 119 }, "green": { "single": 154, "double": 308, "thirdBed": 93 } },
+    "waterholeViewRooms": { "high": { "single": 313, "double": 417, "thirdBed": "N/A" }, "green": { "single": 164, "double": 328, "thirdBed": "N/A" } },
+    "verified": true
+  },
+  "christmasNewYearSupplement": { "raw": "23 Dec-1 Jan inclusive: US$40/adult/night, US$25/child(5-11.99yrs)/night", "verified": true },
+  "easterSupplement": { "raw": "3-6 April 2026 inclusive: US$20/adult/night, US$10/child(5-11.99yrs)/night", "verified": true },
+  "childPolicy": { "raw": "Under 5: NOT permitted at Salt Lick (safety). 5-11.99yrs sharing with 1-2 adults: 50% of adult sharing rate (max 3 guests/room). 5-11.99yrs in own room (min 2, max 3): 75% of adult sharing rate; under-12s should share connecting rooms subject to availability.", "verified": true },
+  "occupancyRules": { "raw": "Max 3 adults, or 2 adults + 1 child. Triple rooms available (Park View only, subject to availability) - NOT possible in Waterhole View rooms. Interconnecting rooms NOT available at Salt Lick.", "verified": true },
+  "sanctuaryEntryFee": { "raw": "US$40/adult, US$20/child per night (2 Jan 2026-1 Jan 2027); under 5 free.", "verified": true },
+  "vehicleEntryFees_perVehiclePerNight": { "4to12seats": 5, "13to24seats": 10, "25to44seats": 15, "45plusSeats": 20, "aircraft": 20, "helicopterLanding": 20 },
+  "tourLeaderPolicy": { "raw": "1 complimentary per 15 full-paying pax, max 3 tour leaders, pre-booked/confirmed. Groups <15: 50% of single/twin rate. All other supplements/sanctuary fees still apply.", "verified": true },
+  "agentFamTripRate": { "raw": "50% of single contracted rate (single use) or 75% of double contracted rate (double/twin) - not applicable during Christmas/Easter, request basis, subject to availability.", "verified": true },
+  "groupDiscounts": { "30to49guests": "5%", "50to99guests": "7.5%", "100plusGuests": "10%", "freePax": "1 per 15 paying, max 3 per group", "maxSingleRooms": 4 },
+  "dayRoom": { "raw": "50% of double/single room rate, valid until 17:00 incl. lunch; full overnight rate charged after 17:00", "verified": true },
+  "walkInMeals": { "hotBuffetBreakfast": 25, "hotBuffetLunch": 25, "buffetDinner": 25, "picnicBoxMeal": 20, "childRate": "50% of above" },
+  "halfBoardReduction": "US$5 per adult/child per night",
+  "madarakaExpressTrainPackage_2026": {
+    "route": "Nairobi-Voi & Mombasa-Voi",
+    "highSeason_02Jan_31Mar_01Jul_01Jan2027_excludingFestive": {
+      "parkView": { "singleSolo": { "oneNight": 431, "extraNight": 321 }, "doubleSharing": { "oneNight": 365, "extraNight": 255 }, "tripleSharing": { "oneNight": 299, "extraNight": 199 } },
+      "waterholeView": { "singleSolo": { "oneNight": 451, "extraNight": 341 }, "doubleSharing": { "oneNight": 385, "extraNight": 275 } }
+    },
+    "greenSeason_01Apr_30Jun_excludingEaster": {
+      "parkView": { "singleSolo": { "oneNight": 386, "extraNight": 276 }, "doubleSharing": { "oneNight": 334, "extraNight": 224 }, "tripleSharing": { "oneNight": 281, "extraNight": 181 } },
+      "waterholeView": { "singleSolo": { "oneNight": 406, "extraNight": 296 }, "doubleSharing": { "oneNight": 354, "extraNight": 244 } }
+    },
+    "oneNightPackageIncludes": ["One night full board", "All-day drinking water", "Return 1st class train tickets", "Return transfers in Voi", "2 game drives", "Sanctuary entry fees", "WW1 Talk & Artifacts Museum visit at Taita Hills Safari Resort & Spa"],
+    "extraNightPackageIncludes": ["One night full board", "All-day drinking water", "2 game drives", "Sanctuary entry fees", "Visit to Taita Hills Wildlife Education Centre"],
+    "childPolicyNote": "Same strict under-5 ban applies to the train package.",
+    "optionalExtras": [{ "item": "Extra Game Drive", "amount": "US$39pp" }, { "item": "Night Game Drive", "amount": "US$50pp" }, { "item": "Exclusive Game Drive (7-seater Landcruiser)", "amount": "Half day US$280, full day US$350" }],
+    "trainCancellation": "Train tickets non-refundable once booked/issued (100% charge, US$24/ticket/way)",
+    "verified": true
+  },
+  "policies": {
+    "checkIn": "12:00", "checkOut": "10:00",
+    "deposit": "Full payment 30 days prior to arrival; cheques not accepted",
+    "cancellation": "30-16 days: 25% loss; 15-8 days: 50% loss; 7 days-arrival: 100% loss (train package adds 60-31 days: 30% loss band)",
+    "reservationsEmail": "reservations@saltlicksafarilodge.com"
+  }
+}

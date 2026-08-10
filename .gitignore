@@ -32,6 +32,12 @@ yarn-error.log*
 
 # env files (can opt-in for committing if needed)
 .env*
+!.env.example
+
+# leftover from the pre-"stream-only" architecture - rate uploads and generated
+# PDFs are no longer written to disk anywhere; nothing should land here again,
+# but ignore it rather than delete a file that predates that refactor.
+/storage
 
 # vercel
 .vercel

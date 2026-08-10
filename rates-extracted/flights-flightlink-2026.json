@@ -1,0 +1,50 @@
+{
+  "$note": "New carrier - Flightlink (Tanzania-based regional carrier). Flagging up front per CLAUDE.md's Tanzania-scope caution: this carrier's network is almost entirely Tanzania-domestic/regional (Zanzibar, Dar es Salaam, Arusha, Serengeti, Kilimanjaro, Mwanza, Pemba), with only a handful of legs touching Nairobi Wilson/JKIA. CLAUDE.md says Tanzania product lines are out of scope by default (see '4x4 Safaris TZ Contract Rates' - Excluded for now) and should only be brought in deliberately for a combined Kenya-Tanzania itinerary. This file is extracted because it was explicitly named in this extraction task's target list, but treat it as supporting-only for cross-border itineraries, not part of the core Kenya rate base.",
+  "carrier": "Flightlink (Tanzania)",
+  "currency": "USD",
+  "verified": true,
+  "source": {
+    "file": "2026 CONTRACT RATES/KENYA/FLIGHTS/Flight Link 2026/2025 - 2026 FLIGHTLINK SCHEDULE AND FARES.pdf",
+    "extractionMethod": "Clean embedded text layer via pdftotext -layout.",
+    "validity": { "start": "2025-06-01", "end": "2027-05-31", "note": "Schedule/fares doc header itself says WEF 1 Jun 2025 to 31 Dec 2026, but the notes section on the final page states validity as 1 June 2025 to 31 May 2027 - the document contradicts itself on its own end date. Recorded both, flagging the discrepancy rather than picking one." }
+  },
+  "fareBasis": "Tax-inclusive (domestic & regional), one-way, 'FROM' fares (i.e. lowest fare on that route/time, not necessarily every departure time listed at that price) - per Flightlink's own Fare Tiers & Policies (not reproduced in this document).",
+  "timezone": "All times local, EAT (+3 GMT). '+' prefix on an arrival time denotes next-day arrival.",
+  "kenyaRelevantLegs": {
+    "note": "The only legs directly touching Kenya (Nairobi Wilson or Nairobi JKIA) - most relevant to a Kenya-based itinerary that also touches Tanzania.",
+    "darEsSalaamToNairobiJKIA": { "fareFrom": 135, "route": "via ZNZ", "etd": "16:00", "eta": "18:30" },
+    "zanzibarToNairobiJKIA": { "fareFrom": 135, "route": "direct", "etd": "17:00", "eta": "18:30" },
+    "zanzibarToNairobiWilson": { "fareFrom": 205, "route": "via ARU", "etd": "15:00", "eta": "18:30" },
+    "pembaToNairobiJKIA": { "fareFrom": 185, "route": "via ZNZ", "etd": "08:00", "eta": "18:30" },
+    "arushaToNairobiWilson": { "fareFrom": 135, "route": "direct", "etd": "17:00", "eta": "18:00" },
+    "arushaToNairobiJKIA": { "fareFrom": 235, "route": "via ZNZ", "etd": "15:00", "eta": "18:30" },
+    "serengetiFortIkomaKogatendeToNairobiWilson": { "fareFrom": 330, "route": "via ARU", "etds": ["11:30", "14:30"], "eta": "18:00" },
+    "serengetiFortIkomaKogatendeToNairobiJKIA": { "fareFrom": 455, "route": "via ARU/ZNZ", "etd": "11:30", "eta": "18:30" },
+    "serengetiSeroneraNduTuToNairobiWilson": { "fareFrom": 330, "route": "via ARU", "etds": ["11:30", "14:30"], "eta": "18:00" },
+    "serengetiSeroneraNduTuToNairobiJKIA": { "fareFrom": 455, "route": "via ARU/ZNZ", "etd": "11:30", "eta": "18:30" },
+    "lakeManyaraNgorongoroToNairobiJKIA": { "fareFrom": 405, "route": "via ARU/ZNZ", "etd": "12:10", "eta": "18:30" },
+    "lakeManyaraNgorongoroToNairobiWilson": { "fareFrom": 280, "route": "via ARU", "etds": ["12:10", "15:40"], "eta": "18:00" },
+    "mwanzaToNairobiJKIA": { "fareFrom": 235, "route": "via JRO/DAR", "etd": "10:15", "eta": "18:30" },
+    "kilimanjaroToNairobiJKIA": { "fareFrom": 235, "route": "via DAR", "etd": "12:15", "eta": "18:30" },
+    "nairobiWilsonToArusha": { "fareFrom": 135, "route": "direct", "etd": "08:00", "eta": "09:00" },
+    "nairobiWilsonToSerengetiAllAirstrips": { "fareFrom": 215, "route": "via ARU", "etd": "08:00", "eta": "11:00" },
+    "nairobiWilsonToLakeManyaraNgorongoro": { "fareFrom": 215, "route": "via ARU", "etd": "08:00", "eta": "10:20" },
+    "nairobiWilsonToZanzibar": { "fareFrom": 225, "route": "unspecified routing", "etd": "08:00", "eta": "11:15" },
+    "nairobiJKIAToZanzibar": { "fareFrom": 135, "route": "direct", "etd": "19:30", "eta": "21:00" },
+    "nairobiJKIAToDarEsSalaam": { "fareFrom": 135, "route": "via ZNZ", "etd": "19:30", "eta": "22:00" },
+    "nairobiJKIAToArusha": { "fareFrom": 185, "route": "via ZNZ", "etd": "19:30", "eta": "+09:15 (next day)" },
+    "nairobiJKIAToMwanza": { "fareFrom": 215, "route": "via DAR", "etd": "19:30", "eta": "+09:30 (next day)" }
+  },
+  "tanzaniaDomesticNetworkSummary": {
+    "note": "Extensive Tanzania-internal network NOT itemized in full here (Dar es Salaam/Zanzibar/Arusha/Pemba/Mwanza/Kilimanjaro/Serengeti-all-airstrips/Lake Manyara/Ngorongoro, multiple daily frequencies each) since it's out of scope per CLAUDE.md's Tanzania exclusion unless a combined itinerary is being built. Full route/fare/schedule table is in the source PDF if needed for a future Kenya-Tanzania combined quote - re-extract fully at that time rather than relying on this summary.",
+    "fareRangeObserved": "$50 (short regional hops e.g. Dar-Zanzibar) up to $455 (Serengeti-Nairobi JKIA via Arusha/Zanzibar)"
+  },
+  "childInfantPolicy": {
+    "verified": false,
+    "confidenceNote": "Not stated anywhere in this document. Flightlink's 'Fare Tiers & Policies' is referenced but not included in this PDF - flag as a gap, do not assume a child discount applies."
+  },
+  "airstripDefinitions": {
+    "serengetiLakeManyaraNgorongoroAirstrips": ["Seronera (SEU)", "Lake Manyara (LKY)", "Kogatende", "Fort Ikoma", "Ndutu"]
+  },
+  "website": "www.flightlink.co.tz"
+}

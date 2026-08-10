@@ -1,0 +1,36 @@
+{
+  "property": "Sosian Horse Riding Safaris (7 Night Lodge to Lodge Ride)",
+  "operator": "Offbeat Safaris Holdings Ltd",
+  "region": "Laikipia",
+  "isSoroiProperty": false,
+  "sourceFiles": ["2026 CONTRACT RATES/KENYA/ACCOMODATION/OFFBEAT/2026 Offbeat Collection Wholesale Rates (30%) AMENDED.pdf"],
+  "notes": [
+    "Distinct product from Sosian Lodge itself - a 7-night lodge-to-lodge horse riding safari package.",
+    "Wholesale rate here is 20%, NOT 30% like the other Offbeat properties - confirmed arithmetically (Low adult: $6400 = $8000 x 0.80).",
+    "Closed May, July, August, 19 Dec-5 Jan."
+  ],
+  "currency": "USD",
+  "validity": "6 Jan 2026 - 18 Dec 2026",
+  "publishedRates_7nightLodgeToLodge_perPerson": {
+    "low_MarAprNov_01to18Dec": { "adultSharing": 8000, "perSingle": 11000, "teenSharing12to16": 5200 },
+    "high_06to31Jan_Feb_Jun_Sep_Oct": { "adultSharing": 9000, "perSingle": 12400, "teenSharing12to16": 5900 }
+  },
+  "wholesale20pct_7nightLodgeToLodge_perPerson": {
+    "low_MarAprNov_01to18Dec": { "adultSharing": 6400, "perSingle": 8800, "teenSharing12to16": 4160 },
+    "high_06to31Jan_Feb_Jun_Sep_Oct": { "adultSharing": 7200, "perSingle": 9920, "teenSharing12to16": 4720 }
+  },
+  "includes": ["Full board accommodation throughout itinerary", "All drinks except champagne", "All conservancy fees", "Guided horse ride", "Day & night game drives", "Guided walks", "Camel treks", "Mountain biking", "Fishing", "Running with rangers", "Ranching activities", "Sosian community project/school/clinic visits", "Sosian airstrip transfers", "Laundry"],
+  "excludes": [
+    "Internal flights",
+    "Late departure after 12pm: Adult $65, Teen $45",
+    "Massages: $50/hour",
+    "Loisaba Airstrip transfer (50min, 7-seater): $120/vehicle incl. $50 entrance fee",
+    "Nanyuki Airstrip transfer (2hrs, 6-seater): $300/vehicle",
+    "Exclusive use of vehicle: $350/vehicle/day"
+  ],
+  "policies": {
+    "checkIn": "11:00", "checkOut": "10:00",
+    "deposit": "20% deposit confirms booking; balance due 45 days prior to arrival.",
+    "cancellation": ">120 days: 20% deposit refunded (net of bank charges); 120-46 days: 20% deposit forfeited; 45-30 days: 50% of full booking value forfeited; <30 days or no-show: 100% forfeited."
+  }
+}

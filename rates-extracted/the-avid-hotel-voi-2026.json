@@ -1,0 +1,33 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftotext -layout, clean single document. NOT a Soroi property - a town hotel in Voi (Tsavo gateway town), not a safari lodge.",
+  "property": "The Avid Hotel",
+  "region": "Voi, Kenya (Tsavo East gateway)",
+  "currency": "USD",
+  "unit": "per room per night",
+  "source": {
+    "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/THE AVID HOTEL/THE AVID HOTEL 2026 DOLLAR NON-RESIDENT RATES.pdf",
+    "validity": "2026 (no explicit date range, no seasonality stated)"
+  },
+  "confidence": "confirmed-2026-08-06",
+  "rates": {
+    "bedAndBreakfast": { "single": 35, "double": 50, "twinBed": 55, "triple": 70, "deluxeSingle": 50, "deluxeDouble": 60 },
+    "halfBoard": { "single": 65, "double": 80, "twinBed": 85, "triple": 100, "deluxeSingle": 80, "deluxeDouble": 90 },
+    "fullBoard": { "single": 95, "double": 110, "twinBed": 115, "triple": 130, "deluxeSingle": 110, "deluxeDouble": 120 }
+  },
+  "exclusions": "Activity fees not included in accommodation rates. Park fee payable at KWS gate separately.",
+  "activitiesAndMisc": {
+    "conferenceFullDay": { "amount": 2500, "currency": "KES", "unit": "per person" },
+    "conferenceHalfDay": { "amount": 2200, "currency": "KES", "unit": "per person" },
+    "projectorHirePerDay": { "amount": 5000, "currency": "KES" },
+    "honeymoonAnniversarySupplement": { "amount": 10000, "currency": "KES", "includes": "Bottle of wine, flower bouquet, petals decor, chocolate - customizable" }
+  },
+  "amenities": ["65 hotel rooms", "24hr reception", "2 restaurants", "Bar", "Swimming pool", "Private parking", "Board room", "2 conference halls", "CCTV", "WiFi", "Ornamental garden and poolside bar", "Room service", "Daily housekeeping", "SGR transfer", "Day game drives and tours"],
+  "childPolicy": { "age0to3SharingWithAdult": "Free", "age4to12SharingWithAdult": "75% of adult rate", "age13plus": "Considered adult", "childOwnRoom": "Full rate" },
+  "operationalPolicy": {
+    "checkIn": "12:00pm", "checkOut": "10:00am",
+    "complimentaryEarlyCheckIn": "From 5:00am, subject to availability.",
+    "checkInBetween12amAnd459am": "Charged as previous night's stay.",
+    "lateCheckoutAfter10am": "50% penalty of room rate", "lateCheckoutAfter4pm": "100% penalty of room rate",
+    "cancellation": "Free up to 72 hours prior to arrival (taxes/charges deducted from refund); 100% penalty after 72 hours."
+  }
+}

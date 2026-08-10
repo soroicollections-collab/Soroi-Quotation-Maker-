@@ -1,0 +1,63 @@
+{
+  "$note": "Extracted 6 Aug 2026, read directly, single-page document, no misattribution risk. Secondary/lower-priority tier per task instructions. Same structural shape as severin-sea-lodge-rack-2027.json (BB+HB both priced independently, same 4 seasons, same expanded room lineup) — only base figures and reduction/transport/child amounts differ from Rack.",
+  "property": "Severin Sea Lodge",
+  "region": "Mombasa North Coast",
+  "tier": "Tour Operator NET (labeled 'STL' in filename — 'SEVERIN SEA LODGE 2027_STL(Tour Operator NET RATES)_USD.pdf'; in-document: 'Market Code: Tour Operator NET (STL)'). Same caution as the 2026 NET file re: no confirmed mapping to the generic STO 15-40% ladder.",
+  "residency": "Not explicitly labeled; assumed Non-Resident by convention, same [Inference] caveat as the 2027 Rack file.",
+  "source": {
+    "file": "2027 CONTRACT RATES/KENYA/BEACH ACCOMODATION/SEVERIN SEA LODGE/SEVERIN SEA LODGE  2027_STL(Tour Operator NET RATES)_USD.pdf",
+    "pdfPageIndex": 0,
+    "validity": { "start": "2027-01-01", "end": "2027-12-31" }
+  },
+  "confidence": "confirmed-2026-08-06",
+  "extractionMethod": { "note": "Read directly, single-page table, structurally identical to the 2027 Rack document." },
+  "structuralFindings": [
+    "Structurally identical to severin-sea-lodge-rack-2027.json — same 4 seasons, same 5 room categories (now including Deluxe Bungalow Room with Seaview and full BB+HB Suite pricing), same policy wording.",
+    "NET figures are lower than Rack by a non-uniform percentage across cells (consistent with the 2026 NET-vs-Rack finding — not a clean single-percentage discount). Example: Standard Room BB DBL main season: Rack $180 -> NET $140 (22% cut); Suite Seaview HB DBL festive: Rack $920 -> NET $718 (22% cut) — closer to a flat 22% in this particular pair of cells, but not verified consistent across every cell, so don't assume a single ratio applies portfolio-wide without checking each figure.",
+    "Transport figures lower than Rack: Airport Transfer $12 (vs $16 Rack), SGR-Station Transfer $14 (vs $18 Rack), both still 'min. 2 Pax'.",
+    "Children policy split by meal plan same as Rack, but lower flat amounts: 3-12yrs sharing with adult on BB = $16/night (vs $20 Rack); on HB = $23/night (vs $30 Rack).",
+    "Honeymoon package, longstay/group discount (10%/7+nights, 20%/21+nights), cancellation and check-in/out policies are worded identically to the Rack document."
+  ],
+  "seasons": {
+    "columns": ["01/01/27-29/03/27 (Main)", "30/03/27-30/06/27 (Low)", "01/07/27-22/12/27 (Main)", "23/12/27-31/12/27 (Festive)"]
+  },
+  "rates": {
+    "currency": "USD",
+    "unit": "per person per night (SGL = single occupancy; DBL = per person sharing double)",
+    "standardRoom": {
+      "bedBreakfast": { "sgl": { "main1": 109, "low": 94, "main2": 109, "festive": 218 }, "dbl": { "main1": 140, "low": 125, "main2": 140, "festive": 250 } },
+      "halfBoard": { "sgl": { "main1": 125, "low": 109, "main2": 125, "festive": 234 }, "dbl": { "main1": 172, "low": 156, "main2": 172, "festive": 281 } }
+    },
+    "deluxeRoom": {
+      "bedBreakfast": { "sgl": { "main1": 131, "low": 112, "main2": 131, "festive": 262 }, "dbl": { "main1": 162, "low": 144, "main2": 162, "festive": 293 } },
+      "halfBoard": { "sgl": { "main1": 147, "low": 128, "main2": 147, "festive": 278 }, "dbl": { "main1": 193, "low": 175, "main2": 193, "festive": 324 } }
+    },
+    "deluxeBungalowRoom": {
+      "bedBreakfast": { "sgl": { "main1": 142, "low": 122, "main2": 142, "festive": 284 }, "dbl": { "main1": 173, "low": 153, "main2": 173, "festive": 315 } },
+      "halfBoard": { "sgl": { "main1": 158, "low": 137, "main2": 158, "festive": 300 }, "dbl": { "main1": 204, "low": 184, "main2": 204, "festive": 346 } },
+      "note": "Suitable for 2 adults + 1 child."
+    },
+    "deluxeBungalowRoomWithSeaview": {
+      "bedBreakfast": { "sgl": { "main1": 164, "low": 140, "main2": 164, "festive": 328 }, "dbl": { "main1": 195, "low": 172, "main2": 195, "festive": 359 } },
+      "halfBoard": { "sgl": { "main1": 179, "low": 156, "main2": 179, "festive": 343 }, "dbl": { "main1": 226, "low": 203, "main2": 226, "festive": 390 } }
+    },
+    "suiteWithSeaview": {
+      "bedBreakfast": { "sgl": { "main1": 328, "low": 281, "main2": 328, "festive": 655 }, "dbl": { "main1": 359, "low": 312, "main2": 359, "festive": 686 } },
+      "halfBoard": { "sgl": { "main1": 343, "low": 296, "main2": 343, "festive": 671 }, "dbl": { "main1": 390, "low": 343, "main2": 390, "festive": 718 } }
+    }
+  },
+  "mealPlanDefinition": "Half Board = Breakfast Buffet + Dinner Buffet.",
+  "reductionsAndTransport": {
+    "airportTransfer": { "amount": 12, "unit": "USD per person, min. 2 pax" },
+    "sgrStationTransfer": { "amount": 14, "unit": "USD per person, min. 2 pax" }
+  },
+  "childPolicy": {
+    "infant0to2": "Free of charge",
+    "children3to12SharingWithAdultOnBB": { "amount": 16, "unit": "USD per person per night, flat" },
+    "children3to12SharingWithAdultOnHB": { "amount": 23, "unit": "USD per person per night, flat" }
+  },
+  "otherTermsNote": "Longstay/group discount, honeymoon package, cancellation policy, and check-in/out rules are identical wording to the 2027 Rack document — see severin-sea-lodge-rack-2027.json.",
+  "portfolioWideTerms": {
+    "note": "Non-Soroi property — CLAUDE.md's Soroi-portfolio-wide terms do not apply."
+  }
+}

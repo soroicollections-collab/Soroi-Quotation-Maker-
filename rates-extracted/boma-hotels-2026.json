@@ -1,0 +1,41 @@
+{
+  "$note": "Extracted 6 Aug 2026 from one contract PDF covering three distinct hotels under The Boma Hotels group. All three included here since the source document prices all three.",
+  "operator": "The Boma Hotels (profits fund Kenya Red Cross Society)",
+  "region": "Nairobi (Boma Nairobi, Boma Inn Nairobi) and Eldoret (Boma Inn Eldoret)",
+  "tier": "Rack Rate and Contract Rate (Sunworld Safaris specific)",
+  "source": {
+    "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/BOMA INN/Sunworld Safaris - 2026 Contract Rates.pdf",
+    "validity": { "start": "2026-01-01", "end": "2026-12-31" }
+  },
+  "properties": {
+    "theBomaNairobi": {
+      "rates": {
+        "currency": "USD", "unit": "per room per night, BB",
+        "superiorRoom": { "rack": { "single": 350, "double": 405 }, "contract": { "single": 110, "double": 130, "thirdBedAdult": 30 } },
+        "deluxeRoom": { "rack": { "single": 395, "double": 450 }, "contract": { "single": 130, "double": 150 } },
+        "executiveSuite": { "rack": { "single": 500, "double": 500 }, "contract": { "single": 200, "double": 240 } },
+        "businessSuite": { "rack": { "single": 650, "double": 650 }, "contract": { "single": 290, "double": 330 } },
+        "presidentialSuite": { "rack": { "single": 2000, "double": 2000 }, "contract": { "single": 900, "double": 900 } }
+      },
+      "childPolicy": { "0to2": "Complimentary", "2to12sharing": "$20 per child", "2childrenUnder12OwnRoom": "75% of double room rate" }
+    },
+    "bomaInnNairobi": {
+      "note": "Formerly Red Court Hotel",
+      "rates": {
+        "currency": "USD", "unit": "per room per night, BB",
+        "standardRoom": { "rack": { "single": 240, "double": 285 }, "contract": { "single": 55, "double": 65 } }
+      },
+      "childPolicy": { "0to2": "Complimentary", "2to12sharing": "$20 per child", "2childrenUnder12OwnRoom": "75% of double room rate" }
+    },
+    "bomaInnEldoret": {
+      "rates": {
+        "currency": "USD", "unit": "per room per night, BB",
+        "superiorRoom": { "rack": { "single": 165, "double": 200 }, "contract": { "single": 80, "double": 100, "thirdBedAdult": 30 } },
+        "deluxeRoom": { "rack": { "single": 195, "double": 230 }, "contract": { "single": 100, "double": 130 } },
+        "governorsSuite": { "rack": { "single": 330, "double": 330 }, "contract": { "single": 300, "double": 300 } }
+      },
+      "childPolicy": { "0to4": "Complimentary", "4to11sharing": "$25 per child", "2childrenUnder12OwnRoom": "75% of double room rate" }
+    }
+  },
+  "notes": "Rates inclusive of BB and 28% government taxes (16% VAT, 10% service charge, 2% training levy). Net, non-commissionable. Airport transfer USD 25/person one way (Boma Nairobi context)."
+}

@@ -1,0 +1,51 @@
+{
+  "property": "Offbeat Mara Camp",
+  "operator": "Offbeat Safaris Holdings Ltd",
+  "region": "Mara North Conservancy",
+  "isSoroiProperty": false,
+  "sourceFiles": ["2026 CONTRACT RATES/KENYA/ACCOMODATION/OFFBEAT/2026 Offbeat Collection Wholesale Rates (30%) AMENDED.pdf"],
+  "notes": [
+    "This one PDF ('2026 Offbeat Collection Wholesale Rates') covers 8 distinct properties/products under the Offbeat Safaris Holdings umbrella: Offbeat Mara Camp, Offbeat Ndoto, Sosian Lodge, Sosian Horse Riding Safaris, Ekorian's Mugie Camp, Deloraine House, The Cabanas, Offbeat Riding Safaris - one JSON file written per property.",
+    "Wholesale rate confirmed arithmetically as Rack x 0.70 for Offbeat Mara Camp (e.g. Green adult: $406 = $580 x 0.70). This is a Wholesale/STO 30% tier."
+  ],
+  "currency": "USD",
+  "validity": "3 Jan 2026 - 2 Jan 2027",
+  "publishedRates_perPersonPerNight": {
+    "green_MarAprMay": { "adultSharing": 580, "teenSharing12to17": 435, "childSharing4to11": 290, "perSingle": 830 },
+    "regular_JanFebJunNov_01to15Dec": { "adultSharing": 670, "teenSharing12to17": 505, "childSharing4to11": 335, "perSingle": 920 },
+    "mid_Oct_16Dec_02Jan": { "adultSharing": 865, "teenSharing12to17": 650, "childSharing4to11": 435, "perSingle": 1115 },
+    "high_JulAugSep": { "adultSharing": 950, "teenSharing12to17": 710, "childSharing4to11": 475, "perSingle": 1300 }
+  },
+  "wholesale30pct_perPersonPerNight": {
+    "green_MarAprMay": { "adultSharing": 406, "teenSharing12to17": 305, "childSharing4to11": 203, "perSingle": 581 },
+    "regular_JanFebJunNov_01to15Dec": { "adultSharing": 469, "teenSharing12to17": 354, "childSharing4to11": 235, "perSingle": 644 },
+    "mid_Oct_16Dec_02Jan": { "adultSharing": 606, "teenSharing12to17": 455, "childSharing4to11": 305, "perSingle": 781 },
+    "high_JulAugSep": { "adultSharing": 665, "teenSharing12to17": 497, "childSharing4to11": 333, "perSingle": 910 }
+  },
+  "conservancyFees_perPersonPerNight": { "adult": 150, "teenAndChild": 75, "verified": true, "confidenceNote": "Subject to change, will be charged at the prevailing 2026 rate." },
+  "childPolicy": { "raw": "0-3 years free of charge.", "verified": true },
+  "specials": [
+    "Family Discount: 3rd child (4-11yrs) sharing a triple pays conservancy fees only. All seasons, combinable with 4 & 5.",
+    "Honeymoon Discount: 25% off accommodation rate for one of the couple. All seasons.",
+    "Per Single rate only charged from the 2nd single room per booking (first single pays per-adult-sharing rate). All seasons, combinable with 4 & 5.",
+    "4 nights for the price of 3 (conservancy fees payable for all nights). Regular/Mid/Green seasons, combinable with 1 & 3.",
+    "6 nights for the price of 5 (conservancy fees payable for all nights) when booking Ekorian for 3 nights in Green/Regular + Offbeat Mara for 3 nights in Regular/Mid/Green. Combinable with 1 & 3."
+  ],
+  "includes": ["Full board accommodation", "All drinks except champagne", "Unlimited shared game drives", "Mara North airstrip transfers", "Laundry", "Bush breakfasts/picnic lunches/sundowners/bush dinners", "Guided safari walks", "Visits to local market", "Visits to Koiyaki Guiding School/Aitong School", "Running with Masai", "Exclusive use of vehicle for groups of 4+ pax"],
+  "excludes": [
+    "Conservation fees (see above)",
+    "Late departure after 2pm: US$100pp (incl. lunch & game drive)",
+    "Visit to a Masai village: US$30/adult, US$15/child (book/pay in advance)",
+    "Balloon Safaris (price on request)",
+    "Exclusive use of game viewing vehicle: US$300/vehicle/day",
+    "Exclusive use of customised photographic vehicle: US$375/vehicle/day",
+    "Maasai Mara National Reserve fees additional: Jan-Jun US$100/adult, US$50/child/day; Jul-Dec US$200/adult, US$50/child/day",
+    "Vehicle transfers in/out of Mara North Conservancy (rates on request)"
+  ],
+  "policies": {
+    "checkIn": "11:00", "checkOut": "10:00",
+    "deposit": "20% deposit confirms booking; balance due 45 days prior to arrival. Provisional bookings expire ~2 weeks from booking date unless extended.",
+    "cancellation": ">120 days: 20% deposit refunded (net of bank charges); 120-46 days: 20% deposit forfeited; 45-30 days: 50% of full booking value forfeited; <30 days or no-show: 100% forfeited. No refund for early departure.",
+    "seasonChangeOnAmendment": "If an amended booking falls in a different season, new season rates apply."
+  }
+}

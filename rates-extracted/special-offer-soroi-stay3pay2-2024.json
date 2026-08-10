@@ -1,0 +1,27 @@
+{
+  "$note": "Extracted 6 Aug 2026 from SPECIAL OFFERS/SOROI COLLECTION/SOROI SPECIAL STAY 3 PAY 2 (1).pdf (single-page Canva flyer, direct pdftotext -layout read, no ambiguity/adjacent-property risk since it's a single page covering the whole Soroi portfolio at once). This is the most directly relevant special offer for this project per task instructions.",
+  "offerStatus": "promotional - confirm current validity before use",
+  "operator": "Soroi Collection",
+  "propertiesCovered": "any Soroi property (offer text says 'in any of our properties' / 'at any of the Soroi Properties' - not property-specific)",
+  "offerName": "1 Free Night! Pay 2 and Stay 3",
+  "source": {
+    "file": "SPECIAL OFFERS/SOROI COLLECTION/SOROI SPECIAL STAY 3 PAY 2 (1).pdf",
+    "pages": 1,
+    "extractionMethod": "pdftotext -layout, direct single-page read"
+  },
+  "validity": {
+    "travelDates": { "start": "2024-10-01", "end": "2024-12-19" },
+    "verified": true,
+    "expiryAssessment": "EXPIRED - travel window closed over 18 months before today's date (6 Aug 2026). Do not use for any current quote without confirming a renewed/current version of this offer exists."
+  },
+  "offerMechanics": {
+    "structure": "Pay for 2 nights, stay 3 nights (1 night free) at any Soroi property.",
+    "mealPlanEligibility": "Full Board or Ground Package stays only.",
+    "residency": "Non-Resident bookings only.",
+    "rateBasis": "Applies to NETT rates only - cannot be combined with any other special or discounted rate (i.e. cannot be stacked on top of an already-discounted tier like STO 30%).",
+    "feesStillApply": "Park Fees, Conservation Fees, or Conservation Levies still apply on the free night (i.e. mandatory fees are NOT waived even though the room rate is).",
+    "bookingRestriction": "New bookings only - cannot be applied retroactively or to provisional bookings already held."
+  },
+  "verified": true,
+  "confidenceNote": "All figures/terms above read directly and verbatim from the single-page flyer - no numeric room rates are given in this document (it's a policy/mechanics flyer, not a rate table); the actual per-night rate to apply the 'free 3rd night' against must come from the relevant property's own rack/contract rate extraction in rates-extracted/. Contact given: reservations@soroi.com / +254 (0) 732 557 714."
+}

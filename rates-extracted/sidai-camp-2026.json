@@ -1,0 +1,41 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftotext -layout (11-page brochure/rate doc, marketing content + 1 rate page, no seasonality). NOT a Soroi property.",
+  "property": "Sidai Camp",
+  "region": "Ewaso Nyiro River, Laikipia (private 2,000-acre conservancy bordering Mpala Research Centre)",
+  "currency": "USD (non-resident) / KES (resident)",
+  "unit": "per person per night, flat rate (no seasonal variation stated)",
+  "source": {
+    "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/SIDAI/Sidai contract rates 2026.pdf",
+    "validity": "2025/2026 (no explicit date range beyond the label; no season table in this document at all - flat year-round rate)"
+  },
+  "confidence": "confirmed-2026-08-06",
+  "rates": {
+    "nonResident": { "adultSharingFullBoard": 190, "child3to11Sharing": 95, "singleRoomSupplement": 35 },
+    "resident_KES": { "adultSharingFullBoard": 21000, "child3to11Sharing": 10500, "singleRoomSupplement": 4000 }
+  },
+  "mandatoryFees": {
+    "nonResident": { "adult": 70, "child": 35, "unit": "per person per night" },
+    "resident_KES": { "adult": 3500, "child": 2000, "unit": "per person per night" }
+  },
+  "childPolicy": { "under3": "Free of charge", "age3to11Sharing": "50% of adult rate" },
+  "minimumStay": "3 nights during Festive Period (20 Dec - 3 Jan)",
+  "capacity": "5 double ensuite tents",
+  "activities_perPerson": {
+    "4wdVehicleFullDay": 190, "4wdVehicleHalfDay": 100,
+    "blackLeopardExpeditionPerDay": 100, "bushWalkMedicinalPlants": 25,
+    "cameraTrackingExperience2days": 250, "camelSafariPerDay": 120,
+    "cattleGoatFarmingWalk": 25, "mpalaResearchCenterTour": 150,
+    "flyCampingAdventurePerDay": 130, "guidedWalkingSafariHalfDay": 35, "guidedWalkingSafariFullDay": 70,
+    "mpalaPredatorUnitDay": 150, "mpalaWildDogUnitDay": 150,
+    "singingWellsBomaVisit": 35, "overnightTraditionalBomaFullBoard": 130,
+    "rangerTrainingExperiencePerDay": 220, "stargazingWithMaasaiElder": 30,
+    "traditionalMaasaiBeadingWorkshop": 25,
+    "sundownerBushMealSetup": "Free of charge", "traditionalMaasaiMarketVisit": "Free of charge (market-day dependent)",
+    "maasaiWeddingOrVowRenewal": "Rates on request"
+  },
+  "operationalPolicy": {
+    "checkOut": "10:00am",
+    "lateDeparture": "USD 25 surcharge for meals/activities until departure; must be pre-booked, subject to vehicle/camp availability.",
+    "deposit": "20% to confirm; balance due 30 days prior to arrival (or immediately if booking within 45 days of arrival)."
+  }
+}

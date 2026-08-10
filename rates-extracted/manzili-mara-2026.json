@@ -1,0 +1,74 @@
+{
+  "property": "Manzili Mara",
+  "brand": null,
+  "region": "Maasai Mara",
+  "isSoroiProperty": false,
+  "sourceFiles": [
+    "2026 CONTRACT RATES/KENYA/ACCOMODATION/MANZILI HOUSE/REVISED Manzili MARA - Rack Rates 2026.pdf",
+    "2026 CONTRACT RATES/KENYA/ACCOMODATION/MANZILI HOUSE/REVISED Manzili MARA - STO Rates 2026.pdf"
+  ],
+  "currency": "USD",
+  "validity": {
+    "raw": "Rack Rates valid: 1st June 2025 - 15th January 2027 (both Rack and STO files state the same window)",
+    "verified": true
+  },
+  "notes": [
+    "Sits in the MANZILI HOUSE folder but is a distinct property from Manzili House (Nairobi-area guesthouse) - Manzili Mara is a Maasai Mara camp/villa with ensuite rooms (2 suites, 3 standard rooms, max 10 pax).",
+    "Two seasons only: Green Season (16 Jan-31 May, 1 Oct-15 Dec) and Premium Season (1 Jun-30 Sep, 16 Dec 2026-15 Jan).",
+    "STO tier discount confirmed arithmetically: STO = Rack x 0.80 exactly on every line (e.g. Exclusive Use Green $4,000 = $5,000 x 0.8; Premium $5,280 = $6,600 x 0.8; Suite pppn $1,200 = $1,500 x 0.8; Standard pppn $800 = $1,000 x 0.8; child $320 = $400 x 0.8). STO 20% tier.",
+    "Full board meal plan included; drinks (soft drinks, house wine, non-luxury spirits) included; champagne/premium wines & spirits excluded.",
+    "Single supplement US$300 charged only when a single guest travels SOLO (no supplement when travelling with a group) - not stated whether this is a per-night or per-stay figure."
+  ],
+  "roomCategories": [
+    {
+      "category": "Exclusive Use (2 to 4 pax)",
+      "unit": "per night, whole property",
+      "greenSeason": { "rack": 5000, "sto20": 4000, "verified": true },
+      "premiumSeason": { "rack": 6600, "sto20": 5280, "verified": true }
+    },
+    {
+      "category": "Exclusive Use Additional Adult",
+      "unit": "per adult per night, on top of Exclusive Use rate",
+      "greenSeason": { "rack": 835, "sto20": 668, "verified": true },
+      "premiumSeason": { "rack": 1100, "sto20": 880, "verified": true }
+    },
+    {
+      "category": "Non-Exclusive Use - Suite",
+      "unit": "per person per night, max 2 bookings taken when non-exclusive",
+      "greenSeason": { "rack": 1500, "sto20": 1200, "verified": true },
+      "premiumSeason": { "rack": 1800, "sto20": 1440, "verified": true }
+    },
+    {
+      "category": "Non-Exclusive Use - Standard Room",
+      "unit": "per person per night",
+      "greenSeason": { "rack": 1000, "sto20": 800, "verified": true },
+      "premiumSeason": { "rack": 1250, "sto20": 1000, "verified": true }
+    },
+    {
+      "category": "Child (3-15 years)",
+      "unit": "per night",
+      "greenSeason": { "rack": 400, "sto20": 320, "verified": true },
+      "premiumSeason": { "rack": 500, "sto20": 400, "verified": true }
+    }
+  ],
+  "mandatoryFees": {
+    "maasaiMaraReserveFee": {
+      "raw": "Valid 06:00-18:00hrs. Green Season: $100/adult, $50/child. Premium Season: $200/adult, $50/child.",
+      "verified": true,
+      "confidenceNote": "Excluded from the quoted room rate (listed under 'EXCLUDED' along with Mara Triangle/Mara Reserve fees)."
+    }
+  },
+  "inclusions": ["Full board accommodation", "Soft drinks, house wines & non-luxury spirits", "Airstrip transfers & use of private vehicle/driver", "Conservancy fees", "Bush breakfast, nature walks"],
+  "exclusions": ["Champagne, premium wines & spirits", "Mara Triangle / Mara Reserve fees", "Gratuities, items of a personal nature"],
+  "specialOffers": {
+    "raw": "Green Season Special: Stay 3 nights / Pay 2 (Park Fees still applicable). Minimum 2 night stay overall.",
+    "verified": true
+  },
+  "policies": {
+    "deposit": "20% non-refundable deposit to confirm booking, balance due 60 days prior to arrival",
+    "cancellation": ">60 days: 20% charge; 45-60 days: 50% charge; 30-44 days: 75% charge; <=29 days: 100% charge",
+    "checkIn": "11:00",
+    "checkOut": "10:00",
+    "singleSupplement": "US$300, only when travelling solo (waived when travelling with a group)"
+  }
+}

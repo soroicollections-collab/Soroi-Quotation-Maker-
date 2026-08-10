@@ -1,0 +1,52 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftotext -layout. NOT a Soroi property. IMPORTANT: sourced from a folder named 'KADILI CAMP MAASAI MARA' but the file inside it and all its internal content is for 'Kandili Camp' (booking@kandilicamp.com) - there is no evidence of a distinct 'Kadili' property; this is a folder-naming variant/typo for Kandili. A separate 'KANDILI' folder elsewhere in this tree contains the exact same file (confirmed via md5 checksum) - true duplicate, not two properties. This JSON is the single canonical extraction for both folders.",
+  "property": "Kandili Camp",
+  "region": "Maasai Mara",
+  "source": {
+    "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/KADILI CAMP MAASAI MARA/Kandili_Camp_Masai_Mara_2026_Rates_Rack_version_20250812_1_.pdf (byte-identical duplicate also in KANDILI/ folder)",
+    "documentDate": "2025-08-12",
+    "tier": "Rack rates"
+  },
+  "confidence": "confirmed-2026-08-06",
+  "currency": "USD",
+  "unit": "per person per night, Double occupancy, Full Board",
+  "seasons": { "mid": ["7 Jan - 31 Mar", "15 Jun - 30 Jun"], "low": ["1 Apr - 14 Jun"], "green": ["1 Nov - 22 Dec"], "peak": ["1 Jul - 31 Oct", "23 Dec - 6 Jan"] },
+  "fullBoardRack": {
+    "standardTents7to9": { "mid": 300, "low": 210, "green": 270, "peak": 390 },
+    "superiorTents1to6": { "mid": 385, "low": 300, "green": 365, "peak": 495 },
+    "suite": { "mid": 385, "low": 300, "green": 365, "peak": 495 },
+    "singleSupplement": { "standard": { "mid": 100, "low": 60, "green": 60, "peak": 100 }, "superiorAndSuite": { "mid": 120, "low": 70, "green": 70, "peak": 160 } },
+    "verified": true
+  },
+  "gamePackageRack": {
+    "standardTents7to9": { "mid": 485, "low": 395, "green": 450, "peak": 575 },
+    "superiorTents1to6": { "mid": 575, "low": 490, "green": 555, "peak": 690 },
+    "suite": { "mid": 575, "low": 490, "green": 555, "peak": 690 },
+    "singleSupplement": { "standard": { "mid": 100, "low": 60, "green": 60, "peak": 100 }, "superiorAndSuite": { "mid": 120, "low": 70, "green": 70, "peak": 160 } },
+    "verified": true
+  },
+  "extrasPerPerson": {
+    "maasaiMaraParkFeeJanToJune": { "adult": 100, "child": 50 },
+    "maasaiMaraParkFeeJulToDec": { "adult": 200, "child": 100 },
+    "kandiliConservancyFee": { "adult": 50, "child": 35 },
+    "sundowners": { "adult": 35, "child": 25 },
+    "manyattaVisitAndLocalSchool": { "adult": 20, "child": 10, "note": "Payable direct" },
+    "bushBreakfastLunchDinner": { "adult": 40, "child": 30, "note": "Not available in High/Peak seasons" },
+    "extraPicnicLunch": { "adult": 25, "child": 25 },
+    "casualMealsAtCamp": { "adult": 30, "child": 20 },
+    "sharedGameDriveHalfDay": { "adult": 50, "child": 50, "unit": "~3 hours, min 2 max 7 pax" },
+    "sharedGameDriveFullDay": { "adult": 100, "child": 100, "unit": "~6 hours, min 2 max 7 pax" },
+    "nightGameDrive": { "adult": 80, "child": 80, "unit": "min 2 max 7 pax" },
+    "airstripTransferPerVehicle": 80,
+    "alcoholSupplement": 40,
+    "verified": true
+  },
+  "activitiesPerDay": {
+    "exclusiveVehicleFullBoardPackage": 450, "exclusiveVehicleGamePackage": 300,
+    "kandiliGuideHalfDaySelfDrive": 50, "kandiliGuideFullDaySelfDrive": 100,
+    "masaiDancers": 130,
+    "verified": true
+  },
+  "childPolicy": { "sharingWithAdult": "50% of adult rate", "ownRoom": "75% of adult rate" },
+  "triplePolicy": "Adults sharing triple accommodation charged 85% of adult sharing rate"
+}

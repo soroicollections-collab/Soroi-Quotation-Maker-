@@ -1,0 +1,40 @@
+{
+  "property": "Muthu Silver Springs & Spa",
+  "operator": "MGM Muthu Hotels",
+  "region": "Nairobi",
+  "isSoroiProperty": false,
+  "sourceFiles": [
+    "2026 CONTRACT RATES/KENYA/ACCOMODATION/MUTHU/Muthu - SUNWORLD SAFARIS - 2026 Contract Rates.pdf",
+    "2026 CONTRACT RATES/KENYA/ACCOMODATION/MUTHU HOTELS/MUTHU HOTELS - SUNWORLD SAFARIS - 2026 Contract Rates.pdf"
+  ],
+  "notes": [
+    "Part of the same multi-property Sunworld/MGM Muthu contract as Keekorok Lodge, Lake Naivasha Country Club, and Sovereign Suites - see those files for shared terms.",
+    "This is a flexible Nairobi/stopover hotel candidate not yet in CLAUDE.md's known priced list - worth adding once used in a real quote.",
+    "82 Standard Rooms, 24 Deluxe, 7 Premium, 4 Luxury Suites.",
+    "Meal plan: Bed & Breakfast.",
+    "Extra bed possible in Deluxe and Premium rooms only (not stated for other categories)."
+  ],
+  "currency": "USD",
+  "validity": "1 Jan - 31 Dec 2026 (single rate, no seasonality)",
+  "roomRates_perPersonPerNight_BB": {
+    "standardRoom": { "single": 75, "double": 85, "extraAdult": 40, "child": 20 },
+    "verified": true
+  },
+  "roomSupplements_perRoomPerNight": { "deluxe": 20, "premium": 30, "familySuite": 120, "luxurySuite": 240, "verified": true },
+  "extraMealRates_perPersonPerDay": { "extraMealInHouse": 30, "lunch": 30, "dinner": 30, "picnicBox": 30, "verified": true },
+  "childPolicy": { "raw": "0-5yrs sharing with parents free. 6-11yrs child sharing rate applies (applicable sharing in Single or Double room). Two children in own room: 75% of twin rate (per person). Three children in own room: full twin rate.", "verified": true },
+  "seasonalSupplements": { "easter": "US$40 pppd (Good Friday-Easter Monday)", "christmas": "US$45 pppd (24, 25, 26, 31 Dec, 1 Jan)", "verified": true },
+  "circuitDiscounts": { "twoProperties": "4%", "threeProperties": "7%", "fourProperties": "9%", "note": "Must be indicated on booking voucher", "verified": true },
+  "groupDiscount": { "raw": "7.5% off applicable rate for 20+ rooms or 40+ guests on a single voucher. Not applicable in Peak/Festive season, not for >70% of property inventory, not for allotments.", "verified": true },
+  "famTripRate": { "raw": "50% discount off contract rate, subject to availability, not applicable Easter/Christmas/Peak", "verified": true },
+  "tourLeaderRates": { "raw": "1-6 paying pax: half twin rate. 7-14 paying pax: 50% of half twin rate. Complimentary: 1 per 15 paying guests, max 5 free, must be pre-booked.", "verified": true },
+  "policies": {
+    "checkIn": "13:30 EAT", "checkOut": "09:30 EAT",
+    "fitBlockRelease": "48 hours (Silver Springs & Sovereign Suites)",
+    "groupsBlockRelease": "14 days (Silver Springs & Sovereign Suites)",
+    "deposit": "20% non-refundable on proforma invoice to secure booking; further 50% non-refundable 90 days before arrival; balance 30 days before arrival. Peak/Festive: 30% then 45% then balance on same schedule.",
+    "cancellationPeakFestive": "0-30 days: 100%; 31-75 days: 75%",
+    "cancellationShoulder": "0-30 days: 100%; 31-45 days: 50%",
+    "cancellationLow": "0-30 days: 100%"
+  }
+}

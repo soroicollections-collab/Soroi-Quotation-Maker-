@@ -1,0 +1,51 @@
+{
+  "$note": "Extracted 5 Aug 2026 via direct paginated read (pypdf, page index 1 of the source PDF) for the Amboseli/Mara/Solio/Samburu/Nairobi quote. Same methodology and season windows as mara-bush-camp-rack-2027.json; STO 30% Net columns cross-checked as exactly Rack x 0.70 on every row, consistent with the Larsens Camp finding.",
+  "property": "Soroi Mara Bush Camp",
+  "region": "Maasai Mara",
+  "tier": "STO 30%",
+  "residency": "Non-Resident",
+  "source": {
+    "file": "SOROI 2027/Soroi - 2027 STO 30% Contract Rates.pdf",
+    "pdfPageIndex": 1,
+    "docPrintedPageNumber": 2,
+    "validity": { "start": "2027-01-04", "end": "2028-01-03" }
+  },
+  "standInFor2026": {
+    "confirmed": false,
+    "note": "Same unconfirmed 2027-as-2026-stand-in caveat as the Rack extraction for this property. No native 2026 non-resident file of any tier exists in the SharePoint archive."
+  },
+  "confidence": "confirmed-2026-08-05",
+  "seasons": {
+    "peak": { "dateRanges": ["1 Jul – 30 Sep", "20 Dec – 3 Jan"] },
+    "shoulder": { "dateRanges": ["4 Jan – 28 Feb", "1 Jun – 30 Jun"] },
+    "extendedGreen": { "dateRanges": ["1 Mar – 31 May", "1 Oct – 19 Dec"] }
+  },
+  "rates": {
+    "currency": "USD",
+    "unit": "per person per night",
+    "fullBoard": {
+      "perPerson": { "peak": { "rack": 585, "net": 410 }, "shoulder": { "rack": 495, "net": 347 }, "extendedGreen": { "rack": 420, "net": 294 } },
+      "single": { "peak": { "rack": 878, "net": 614 }, "shoulder": { "rack": 743, "net": 520 }, "extendedGreen": { "rack": 525, "net": 368 } }
+    },
+    "groundPackage": {
+      "perPerson": { "peak": { "rack": 785, "net": 550 }, "shoulder": { "rack": 695, "net": 487 }, "extendedGreen": { "rack": 620, "net": 434 } },
+      "single": { "peak": { "rack": 1178, "net": 824 }, "shoulder": { "rack": 1043, "net": 730 }, "extendedGreen": { "rack": 775, "net": 543 } }
+    }
+  },
+  "mandatoryFees": {
+    "note": "Identical figures to mara-bush-camp-rack-2027.json — shared Maasai Mara conservancy fee, unaffected by accommodation tier.",
+    "communityLevy": {
+      "peak": { "adult": 80, "child": 40, "unit": "per night" },
+      "shoulder": { "adult": 40, "child": 20, "unit": "per night" },
+      "extendedGreen": { "adult": 40, "child": 20, "unit": "per night" }
+    },
+    "parkFee": {
+      "janToJun": { "adult": 100, "child": 50, "unit": "per adult per 12h" },
+      "julToDec": { "adult": 200, "child": 50, "unit": "per adult per 12h" }
+    }
+  },
+  "portfolioWideTerms": {
+    "childAge5to11": "50% of adult sharing rate",
+    "note": "See CLAUDE.md > Portfolio-wide terms for full list; not duplicated here."
+  }
+}

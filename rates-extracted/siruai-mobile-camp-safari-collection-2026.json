@@ -1,0 +1,50 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftotext -layout of 'SIRUAI MOBILE CAMP 2026 30% RATES 09.05.25.pdf', a separate signed Docusign contract from the other Safari Collection docs. NOT a Soroi property. This is a seasonal MOBILE camp (only operates part of the year) with WHOLE-CAMP EXCLUSIVE USE pricing (min 4 adults, max 10 pax), unlike Sala's Camp/Sasaab/Solio's per-room/per-person model.",
+  "property": "Siruai Mobile Camp",
+  "operator": "The Safari Collection",
+  "region": "Suyian Ranch (43,000 acres), central Kenya / northwest Laikipia, near Loisaba Conservancy",
+  "tier": "Contract 30% Nett (Rate shown alongside; verified Rate x 0.70, e.g. 5204/7435=0.70)",
+  "currency": "USD",
+  "unit": "Fully inclusive private camp - whole-camp exclusive use, tiered by guest count",
+  "source": {
+    "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/THE SAFARI COLLECTION/SIRUAI MOBILE CAMP 2026 30% RATES 09.05.25.pdf",
+    "validity": "2026 contract"
+  },
+  "confidence": "confirmed-2026-08-06",
+  "operatingSeason": "Camp is seasonal - open approximately June to mid-October and mid-December to mid-January only (mobile camp, weather-dependent, can be reopened if needed).",
+  "seasons": {
+    "theSeason": { "dateRanges": ["1 Jun 2026 - 15 Oct 2026"] },
+    "festiveSeason": { "dateRanges": ["15 Dec 2026 - 15 Jan 2027"] }
+  },
+  "rates": {
+    "theSeason": {
+      "first1to4guests_minCampRatePerNight": { "rate": 7435, "contract30": 5204 },
+      "additionalAdultPerNight": { "rate": 1859, "contract30": 1301 },
+      "additionalChildPerNight_3to15": { "rate": 1293, "contract30": 905 }
+    },
+    "festiveSeason": {
+      "first1to4guests_minCampRatePerNight": { "rate": 7850, "contract30": 5495 },
+      "additionalAdultPerNight": { "rate": 1962, "contract30": 1374 },
+      "additionalChildPerNight_3to15": { "rate": 1397, "contract30": 978 }
+    },
+    "minimumStay": "3 nights", "minCostBasis": "4 adults minimum", "maxCapacity": "10 pax"
+  },
+  "additionalRates": {
+    "professionalGuideRoom": { "amount": 150, "unit": "per person per night, exclusive of conservation fees" },
+    "suyianConservationFees": { "adult": 150, "child4to16": 85 },
+    "returnTransfersLoisabaAirstripPerVehicle": 100,
+    "mpalaConservationFeeOptionalWildDogTracking": { "amount": 50, "unit": "per person per visit" }
+  },
+  "inclusions": ["All meals and drinks (house wines/soft drinks/beers/spirits)", "Game drives, hiking, fishing, kayaking, other camp activities", "Transfers from Suyian Airstrip", "Laundry", "Bush meals and sundowners", "Private guide and vehicles (1 car + 1 guide per 5 guests)"],
+  "exclusions": ["Conservation fees (quoted separately)", "Champagne", "Travel & emergency evacuation insurance", "Personal effects"],
+  "childPolicy": { "definition": "3 years - 15 years 364 days; 16+ is adult; infants (0-2y364d) free", "note": "Welcomes children of all ages; one tent near the mess area can accommodate up to 3 children. No fences - parents must watch young children in this wild open setting." },
+  "access": { "byAir": "Scheduled Safarilink/AirKenya to Loisaba Conservancy (~45 min road to camp); charter to Suyian Airstrip (10 min to camp).", "byRoad": "~5.5 hours from Nairobi." },
+  "bookingPolicy": { "exclusiveUse": "Whole-camp exclusive use per group, first-confirmation basis.", "deposit": "20% of total reservation to confirm.", "payment": "Full balance due 45 days before arrival." },
+  "cancellationPolicy": [
+    { "daysBeforeArrival": ">120", "charge": "20% deposit refunded net of bank/admin fees (5% of booking value)" },
+    { "daysBeforeArrival": "120-46", "charge": "20% deposit forfeited" },
+    { "daysBeforeArrival": "45-30", "charge": "50% of full value forfeited" },
+    { "daysBeforeArrival": "<30 / no-show", "charge": "100%" }
+  ],
+  "duplicateDocumentNote": "A separate file in this folder, 'TSC 2026 30% SALSASSOL RATES 06.05.25.pdf' (14 pages), was checked and found to be an EXACT DUPLICATE of the Sala's Camp/Sasaab/Solio Lodge 30% contract already extracted (identical figures verified on Sala's Camp page) - it does NOT contain Siruai or any new property, despite its filename suggesting a mashup of 'Sala's + Sasaab + Solio'. No separate extraction was needed for that file."
+}

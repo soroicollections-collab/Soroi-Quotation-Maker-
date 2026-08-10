@@ -1,0 +1,22 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftotext -layout. Source is an internal Sunworld email (forwarded from Mukutan Conservancy) rather than a formal rate sheet PDF - figures are from the property's introductory contract-rate offer, not a structured multi-season rate card. NOT a Soroi property. Brand-new product (introduced to Sunworld 14 Aug 2025) - exclusive single-unit wilderness accommodation.",
+  "property": "Kuki's Nest",
+  "operator": "Mukutan Conservancy",
+  "region": "Mukutan Conservancy, Laikipia",
+  "unitType": "Exclusive one-bedroom hideaway, built for one guest group at a time (king bed, private lounge, bathtub). Fully solar-powered. No fixed max pax stated (described as 'couples, individual travellers, or small families').",
+  "source": { "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/KUKI/Kuki's Nest by Mukutan Conservancy 2026.pdf (email content)", "emailDate": "2025-08-14", "tier": "Contract Rate for Agents" },
+  "confidence": "confirmed-2026-08-06",
+  "confidenceNote": "This is an introductory offer email, not a dated seasonal rate card - no season structure, validity end-date, or detailed terms (deposit/cancellation policy, child policy) are given anywhere in the source. Treat as a starting point only; confirm current terms directly with Mukutan Conservancy before quoting.",
+  "currency": "USD (non-resident) / KES (resident and citizen)",
+  "unit": "per night, Full Board, for the entire exclusive space (not per person)",
+  "rates": {
+    "nonResidentNet": { "amount": 450, "note": "Exclusive of $50 per person per night conservation fee" },
+    "residentAndCitizen": { "amount": 45000, "currency": "KES", "note": "Exclusive of KES 2,000 conservation fee" },
+    "recommendedSellingPrice": { "nonResident": "550-600 USD per night", "residentCitizen": "55,000-60,000 KES per night" },
+    "verified": true
+  },
+  "conservationFee": { "nonResident": { "amount": 50, "unit": "USD per person per night" }, "residentCitizen": { "amount": 2000, "unit": "KES, unit not explicitly stated - likely per person per night to mirror the non-resident structure but not confirmed" } },
+  "introductoryOffer": { "amount": "10% off net rate", "condition": "First 5 bookings only" },
+  "activities": "Charged separately; rates available on request. Bespoke activities: walking safaris, hikes to Mukutan Gorge, birdwatching, mountain biking, bush dinners/breakfasts, bush drives.",
+  "idealFor": "Honeymooners, nature lovers, writers, wellness-focused retreats."
+}

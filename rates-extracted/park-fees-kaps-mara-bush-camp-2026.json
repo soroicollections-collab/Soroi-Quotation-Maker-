@@ -1,0 +1,30 @@
+{
+  "$note": "KAPS LTD (Narok County) - Masai Mara Entry Slip requisition form, January-June 2026. This is the Narok County-side entry-fee schedule for the Masai Mara National Reserve (a COUNTY-level fee, separate from and additional to the Mara Reserve's own Community Levy/Park Fee already documented in CLAUDE.md's Maasai Mara mandatory-fees section for Soroi Mara Bush Camp, Private Wing, and Luxury Migration Camp). Cross-reference before assuming this replaces or duplicates the existing Mara fee figures in CLAUDE.md/rates-extracted/mara-bush-camp-rack-2027.json.",
+  "source": {
+    "file": "2026 CONTRACT RATES/KENYA/PARK FEES/KAPS LATEST Official Requisition 2 (Mara Bush Camp) (002) JAN - JUNE.pdf",
+    "issuer": "KAPS LTD (Narok County)",
+    "title": "Official Requisition for the Masai Mara Entry Slips",
+    "period": "January - June 2026",
+    "note": "This is a blank/template requisition FORM (for Sunworld/an agent to fill in guest names, nights, nationality per stay) with the applicable per-category rates printed in the column headers - not a filled-in invoice. Rates extracted from those column headers."
+  },
+  "verified": true,
+  "confidenceNote": "IMPORTANT relationship to existing data: CLAUDE.md's 'Maasai Mara mandatory fees' section (Community Levy + Park Fee, resolved 5 Aug 2026) describes fees sourced from Mara Bush Camp's/Private Wing's/Luxury Migration Camp's OWN rate documents (Soroi's SharePoint RACK PDFs). This KAPS document is a DIFFERENT, THIRD entity (Narok County's own ticketing agent, KAPS Ltd) issuing Masai Mara Reserve entry tickets, with DIFFERENT figures entirely (Non-Resident Adult $100 / Child $50 here, vs. CLAUDE.md's Park Fee figures of $100-200 adult / $50 child from the Soroi documents) - these look coincidentally similar in the low season but structurally this KAPS form has NO date-window split (no Peak/calendar-half distinction like CLAUDE.md's Mara fee), and separately lists a Community-levy-like 'Resident'/'Citizen' KSH tier not present in the Soroi documents' framing. [Unverified] whether the Soroi-quoted Park Fee IS this KAPS ticket cost passed through, or a separate camp-level charge on top of it. Flag both sources rather than assuming they reconcile, and do not substitute one for the other in a quote without confirming with Sunworld operations.",
+  "ticketCategories": {
+    "unit": "per person per entry slip (no explicit 'per night' framing on the form itself, unlike CLAUDE.md's Mara Park Fee which is described as per-night)",
+    "adultNonResident": { "amount": 100, "currency": "USD" },
+    "childNonResident": { "amount": 50, "currency": "USD" },
+    "adultResident": { "amount": 2500, "currency": "KSH" },
+    "childResident": { "amount": 1000, "currency": "KSH" },
+    "adultCitizen": { "amount": 1500, "currency": "KSH" },
+    "childCitizen": { "amount": 300, "currency": "KSH" },
+    "vehicleUpTo5Seats": { "amount": 500, "currency": "KSH" },
+    "vehicle6PlusSeats": { "amount": 1000, "currency": "KSH" }
+  },
+  "applicability": "Applies to 'Inside and Outside The Reserve' per the form's own row label - i.e. covers both properties physically inside the Masai Mara National Reserve boundary and those outside it (e.g. in the surrounding conservancies/Narok County area) for entry-slip purposes.",
+  "propertiesListedOnForm": ["Keekorok Lodge", "Sarova Camp", "Olkiompo Camp", "Fig Tree Camp", "Governor's Camp", "Ilmuran Camp", "Ashnil", "Soroi Mara Camps", "Sopa Lodge", "Simba Lodge", "Siana Camp", "Sekenani", "Other"],
+  "confidenceNote2": "'Soroi Mara Camps' is explicitly named as one of the pre-listed properties on this KAPS requisition form - confirms Sunworld/Soroi actively uses this specific county-level ticketing channel for its Mara properties (Mara Bush Camp, Private Wing, Luxury Migration Camp), making the reconciliation question above directly relevant to this project, not just tangential.",
+  "paymentDetails": {
+    "payableTo": "KAPS LTD",
+    "bankAccount": { "bank": "NBK - Hospital Branch", "kesAccount": "01020092158000", "usdAccount": "02020092158000" }
+  }
+}

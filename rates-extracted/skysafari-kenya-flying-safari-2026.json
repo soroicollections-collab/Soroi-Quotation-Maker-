@@ -1,0 +1,58 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftotext -layout, direct page reads. NOT accommodation in the usual per-property sense - SkySafari is Elewana Collection's fixed-departure, multi-day, all-inclusive PRIVATE-AIRCRAFT flying safari PACKAGE product (fixed itinerary bundling several Elewana camps + private air transfers + Nairobi hotel night). Included in this extraction slice because the source folder is literally named SKYSAFARIS under KENYA/ACCOMODATION. Only the KENYA-specific packages (8 Day and 10 Day) were extracted - Tanzania 8/10 Day and combined East Africa 13 Day packages in the same document are out of scope (Tanzania excluded per this project's standing rules) and were not extracted. A second document, '35-SkySafari-Full-Buyout-Rates-2026.pdf', contains a private full-group-charter/buyout variant with per-group-size Rack/Nett pricing tables - NOT extracted this pass (complex multi-column group-size tables across 5 itinerary types), flagged as a gap for a future extraction if a full-buyout SkySafari quote is ever needed.",
+  "product": "SkySafari Kenya (Elewana Collection private-aircraft flying safari)",
+  "currency": "USD",
+  "unit": "per person, package price for the entire itinerary duration (not per night)",
+  "source": {
+    "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/SKYSAFARIS/35-SkySafari-Rates-2026.pdf",
+    "validity": { "start": "2026-01-01", "end": "2026-12-31" },
+    "skippedFile": "35-SkySafari-Full-Buyout-Rates-2026.pdf - private group-buyout variant, per-group-size Rack/Nett tables not extracted this pass"
+  },
+  "confidence": "confirmed-2026-08-06",
+  "kenya8Day": {
+    "itinerary": "Nairobi (Hemingways or similar) -> Elewana Elsa's Kopje Meru -> (continues per full itinerary, e.g. Loisaba, Sand River Masai Mara) - 7 nights/8 days",
+    "seasons": {
+      "high": { "dateRanges": ["1 Jan - 4 Jan", "1 Jul - 31 Oct", "20 Dec - 31 Dec"] },
+      "mid": { "dateRanges": ["5 Jan - 31 Mar", "1 Jun - 30 Jun", "1 Nov - 19 Dec"] },
+      "green": { "dateRanges": ["1 Apr - 31 May"] }
+    },
+    "rates": {
+      "high": { "perPersonSharing": { "rack": 12150, "nett": 7898 }, "singleRoom": { "rack": 15000, "nett": 9750 }, "child2to11_99Sharing": { "rack": 5720, "nett": 3718 }, "child12to17_99Sharing_max2": { "rack": 8750, "nett": 5688 }, "child12to17_99OwnRoom_min1max3": { "rack": 10325, "nett": 6711 } },
+      "mid": { "perPersonSharing": { "rack": 11610, "nett": 7547 }, "singleRoom": { "rack": 13550, "nett": 8808 }, "child2to11_99Sharing": { "rack": 5720, "nett": 3718 }, "child12to17_99Sharing_max2": { "rack": 8155, "nett": 5301 }, "child12to17_99OwnRoom_min1max3": { "rack": 9550, "nett": 6208 } },
+      "green": { "perPersonSharing": { "rack": 11000, "nett": 7150 }, "singleRoom": { "rack": 12500, "nett": 8125 }, "child2to11_99Sharing": { "rack": 5720, "nett": 3718 }, "child12to17_99Sharing_max2": { "rack": 7800, "nett": 5070 }, "child12to17_99OwnRoom_min1max3": { "rack": 9050, "nett": 5883 } }
+    },
+    "parkConservancyFeesPerPerson": {
+      "adult": { "08Jan-22Jun": 764, "23Jun-07Jan": 1064 },
+      "child9to17_99": 400, "child5to8_99": 250
+    },
+    "exclusiveUseGameDriveVehiclePerVehicleEntireItinerary": 3240,
+    "balloonSafari": { "perAdult": 475, "perChild": 360, "note": "conditions apply" }
+  },
+  "kenya10Day": {
+    "seasons": {
+      "high": { "dateRanges": ["1 Jan - 4 Jan", "1 Jul - 31 Oct", "20 Dec - 31 Dec"] },
+      "mid": { "dateRanges": ["5 Jan - 31 Mar", "1 Jun - 30 Jun", "1 Nov - 19 Dec"] },
+      "green": { "dateRanges": ["1 Apr - 31 May"] }
+    },
+    "rates": {
+      "high": { "perPersonSharing": { "rack": 15204, "nett": 9883 }, "singleRoom": { "rack": 17560, "nett": 11414 }, "child2to11_99Sharing": { "rack": 6000, "nett": 3900 }, "child12to17_99Sharing_max2": { "rack": 9485, "nett": 6165 }, "child12to17_99OwnRoom_min1max3": { "rack": 11550, "nett": 7508 } },
+      "mid": { "perPersonSharing": { "rack": 13810, "nett": 8977 }, "singleRoom": { "rack": 15590, "nett": 10134 }, "child2to11_99Sharing": { "rack": 6000, "nett": 3900 }, "child12to17_99Sharing_max2": { "rack": 8860, "nett": 5759 }, "child12to17_99OwnRoom_min1max3": { "rack": 10610, "nett": 6897 } },
+      "green": { "perPersonSharing": { "rack": 12500, "nett": 8125 }, "singleRoom": { "rack": 13650, "nett": 8873 }, "child2to11_99Sharing": { "rack": 6000, "nett": 3900 }, "child12to17_99Sharing_max2": { "rack": 8400, "nett": 5460 }, "child12to17_99OwnRoom_min1max3": { "rack": 9950, "nett": 6468 } }
+    },
+    "parkConservancyFeesPerPerson": {
+      "adult": { "08Jan-22Jun": 1060, "23Jun-07Jan": 1460 },
+      "child9to17_99": 540, "child5to8_99": 340
+    },
+    "exclusiveUseGameDriveVehiclePerVehicleEntireItinerary": 4320,
+    "balloonSafari": { "perAdult": 475, "perChild": 360, "note": "conditions apply" }
+  },
+  "childPolicySharedAcrossPackages": {
+    "definition": "Child = under 18 years old",
+    "under12SharingWithAdults": "Max 2 children",
+    "age12to17_99OwnRoom": "Min 1 / max 3 children",
+    "under18SharingWith1Adult": "Child(ren) pay respective under-18 child rate; adult pays adult SINGLE room rate.",
+    "recommendation": "Children under 14 not recommended to be in their own room unless sharing with an adult."
+  },
+  "specialOffer": "Single room supplement not charged for the first single room per booking.",
+  "generalNotes": "Minimum 2 guests for guaranteed departure (per departure-dates page). Luggage allowance 23kg/person (incl. 3kg hand luggage). No further circuit discounts apply; SkySafari's own seasonality may differ slightly from standard Elewana Collection seasonality."
+}

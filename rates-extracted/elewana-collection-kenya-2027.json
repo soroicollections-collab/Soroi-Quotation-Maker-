@@ -1,0 +1,161 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftotext -layout, paginated, from 'ELEWANA/EC-2027-Rates-MP (1).pdf' (30pp). This document covers the FULL Elewana Collection portfolio (Tanzania + Kenya); only the Kenya properties were extracted for this slice: Elsa's Kopje Meru, Sand River Masai Mara, Elephant Pepper Masai Mara, Little Elephant Pepper Masai Mara, Lewa Safari Camp, Kifaru House Lewa, Loisaba Tented Camp, Loisaba Lodo Springs, Loisaba Star Beds, Tortilis Camp Amboseli. Each property has its own clearly-labeled page - no adjacent-property misattribution risk observed (page headers unambiguous). NOTE: a 2026-dated Tortilis Camp Amboseli extraction already exists at 'rates-extracted/tortilis-camp-amboseli-elewana-2026.json' from a prior session - this file's Tortilis figures are the NEW 2027 season data and are NOT a duplicate. 'Nett' in this document = Rack x 0.60 on every checked cell (exactly matching the 40%-off relationship already documented for Tortilis 2026), confirmed to also hold across all other Kenya properties in this 2027 sheet.",
+  "operator": "Elewana Collection",
+  "currency": "USD",
+  "seasons2027": {
+    "high": { "dates": "Jul 1 - Oct 31, Dec 20 - Jan 3" },
+    "mid": { "dates": "Jan 4 - Mar 31, Jun 1 - Jun 30, Nov 1 - Dec 19" },
+    "green": { "dates": "Apr 1 - May 31 (not offered at Loisaba Star Beds - property closed this window)" }
+  },
+  "discountVerification": { "note": "Nett = Rack x 0.60 exactly, verified on every property/season/room-type cell checked (e.g. Elsa's Kopje High Season PPS: 891 x 0.6 = 534.6, rounds to 535; matches).", "verified": true },
+  "properties": {
+    "Elsa's Kopje Meru": {
+      "region": "Meru National Park",
+      "fullBoard": {
+        "high": { "perPersonSharing": { "rack": 891, "nett": 535 }, "singleRoom": { "rack": 1337, "nett": 802 }, "tripleRoom": { "rack": 2005, "nett": 1203 }, "safariSuiteUnit": { "rack": 2228, "nett": 1337 }, "familySuiteUnit": { "rack": 2963, "nett": 1778 }, "privateHouseUnit": { "rack": 3707, "nett": 2224 } },
+        "mid": { "perPersonSharing": { "rack": 624, "nett": 374 }, "singleRoom": { "rack": 936, "nett": 562 }, "tripleRoom": { "rack": 1404, "nett": 842 }, "safariSuiteUnit": { "rack": 1560, "nett": 936 }, "familySuiteUnit": { "rack": 2149, "nett": 1289 }, "privateHouseUnit": { "rack": 2799, "nett": 1679 } },
+        "green": { "perPersonSharing": { "rack": 404, "nett": 242 }, "singleRoom": { "rack": 606, "nett": 364 }, "tripleRoom": { "rack": 909, "nett": 545 }, "safariSuiteUnit": { "rack": 1010, "nett": 606 }, "familySuiteUnit": { "rack": 1471, "nett": 883 }, "privateHouseUnit": { "rack": 1854, "nett": 1112 } }
+      },
+      "gamePackage": {
+        "high": { "perPersonSharing": { "rack": 1091, "nett": 655 }, "singleRoom": { "rack": 1537, "nett": 922 }, "tripleRoom": { "rack": 2455, "nett": 1473 }, "safariSuiteUnit": { "rack": 2728, "nett": 1637 }, "familySuiteUnit": { "rack": 3772, "nett": 2263 }, "privateHouseUnit": { "rack": 4515, "nett": 2709 } },
+        "mid": { "perPersonSharing": { "rack": 824, "nett": 494 }, "singleRoom": { "rack": 1136, "nett": 682 }, "tripleRoom": { "rack": 1854, "nett": 1112 }, "safariSuiteUnit": { "rack": 2060, "nett": 1236 }, "familySuiteUnit": { "rack": 2936, "nett": 1762 }, "privateHouseUnit": { "rack": 3586, "nett": 2152 } },
+        "green": { "perPersonSharing": { "rack": 604, "nett": 362 }, "singleRoom": { "rack": 806, "nett": 484 }, "tripleRoom": { "rack": 1359, "nett": 815 }, "safariSuiteUnit": { "rack": 1510, "nett": 906 }, "familySuiteUnit": { "rack": 2243, "nett": 1346 }, "privateHouseUnit": { "rack": 2626, "nett": 1576 } }
+      },
+      "mandatoryFees": { "meruNationalParkEntrance": { "adult": 74, "child5to17": 42, "note": "inclusive of E-Citizen gateway fee" }, "nightGameDrive": { "adult": 60, "child": 60 }, "walkingSafariFee": { "adult": 60, "child": 60 } }
+    },
+    "Sand River Masai Mara": {
+      "region": "Maasai Mara National Reserve",
+      "fullBoard": {
+        "high": { "perPersonSharing": { "rack": 1173, "nett": 704 }, "singleRoom": { "rack": 1760, "nett": 1056 }, "tripleRoom": { "rack": 2639, "nett": 1583 }, "familySuiteUnit": { "rack": 4473, "nett": 2684 } },
+        "mid": { "perPersonSharing": { "rack": 942, "nett": 565 }, "singleRoom": { "rack": 1413, "nett": 848 }, "tripleRoom": { "rack": 2120, "nett": 1272 }, "familySuiteUnit": { "rack": 3730, "nett": 2238 } },
+        "green": { "perPersonSharing": { "rack": 689, "nett": 413 }, "singleRoom": { "rack": 1034, "nett": 620 }, "tripleRoom": { "rack": 1550, "nett": 930 }, "familySuiteUnit": { "rack": 2727, "nett": 1636 } }
+      },
+      "gamePackage": {
+        "high": { "perPersonSharing": { "rack": 1373, "nett": 824 }, "singleRoom": { "rack": 1960, "nett": 1176 }, "tripleRoom": { "rack": 3089, "nett": 1853 }, "familySuiteUnit": { "rack": 5274, "nett": 3164 } },
+        "mid": { "perPersonSharing": { "rack": 1142, "nett": 685 }, "singleRoom": { "rack": 1613, "nett": 968 }, "tripleRoom": { "rack": 2570, "nett": 1542 }, "familySuiteUnit": { "rack": 4509, "nett": 2705 } },
+        "green": { "perPersonSharing": { "rack": 889, "nett": 533 }, "singleRoom": { "rack": 1234, "nett": 740 }, "tripleRoom": { "rack": 2000, "nett": 1200 }, "familySuiteUnit": { "rack": 3491, "nett": 2095 } }
+      },
+      "mandatoryFees": { "masaiMaraNationalReserveEntrance": { "adult": { "01Jan-30Jun": 100, "01Jul-31Dec": 200 }, "child9to17": 50 } }
+    },
+    "Elephant Pepper Masai Mara": {
+      "region": "Mara North Conservancy",
+      "boardBasis": "Game Package only (no Full Board tier offered)",
+      "gamePackage": {
+        "high": { "perPersonSharing": { "rack": 1227, "nett": 736 }, "singleRoom": { "rack": 1841, "nett": 1105 }, "tripleRoom": { "rack": 2761, "nett": 1657 }, "safariSuiteUnit": { "rack": 2964, "nett": 1778 } },
+        "mid": { "perPersonSharing": { "rack": 916, "nett": 550 }, "singleRoom": { "rack": 1374, "nett": 824 }, "tripleRoom": { "rack": 2061, "nett": 1237 }, "safariSuiteUnit": { "rack": 2249, "nett": 1349 } },
+        "green": { "perPersonSharing": { "rack": 825, "nett": 495 }, "singleRoom": { "rack": 1238, "nett": 743 }, "tripleRoom": { "rack": 1856, "nett": 1114 }, "safariSuiteUnit": { "rack": 2207, "nett": 1324 } }
+      },
+      "mandatoryFees": { "maraNorthConservancy": { "adult": 180, "child3to17": 90 }, "masaiMaraNationalReserveEntrance": { "note": "only payable when visiting the reserve itself", "adult": { "01Jan-30Jun": 100, "01Jul-31Dec": 200 }, "child9to17": 50 } }
+    },
+    "Little Elephant Pepper Masai Mara": {
+      "region": "Mara North Conservancy",
+      "boardBasis": "Game Package only",
+      "gamePackage": {
+        "high": { "perPersonSharing": { "rack": 1750, "nett": 1050 }, "singleRoom": { "rack": 2625, "nett": 1575 }, "tripleRoom": { "rack": 3938, "nett": 2363 }, "familySuiteUnit": { "rack": 7000, "nett": 4200 } },
+        "mid": { "perPersonSharing": { "rack": 1310, "nett": 786 }, "singleRoom": { "rack": 1965, "nett": 1179 }, "tripleRoom": { "rack": 2948, "nett": 1769 }, "familySuiteUnit": { "rack": 5240, "nett": 3144 } },
+        "green": { "perPersonSharing": { "rack": 850, "nett": 510 }, "singleRoom": { "rack": 1275, "nett": 765 }, "tripleRoom": { "rack": 1913, "nett": 1148 }, "familySuiteUnit": { "rack": 3400, "nett": 2040 } }
+      },
+      "mandatoryFees": "Same as Elephant Pepper Masai Mara (shared conservancy - see above)",
+      "confidenceNote": "Booked on exclusive-use-style pricing (whole property, hence high per-person figures relative to Elephant Pepper) - confirm booking basis before quoting."
+    },
+    "Lewa Safari Camp": {
+      "region": "Lewa Wildlife Conservancy",
+      "fullBoard": {
+        "high": { "perPersonSharing": { "rack": 789, "nett": 473 }, "singleRoom": { "rack": 1184, "nett": 710 }, "tripleRoom": { "rack": 1775, "nett": 1065 }, "familySuiteUnit": { "rack": 3113, "nett": 1868 } },
+        "mid": { "perPersonSharing": { "rack": 482, "nett": 289 }, "singleRoom": { "rack": 723, "nett": 434 }, "tripleRoom": { "rack": 1085, "nett": 651 }, "familySuiteUnit": { "rack": 2033, "nett": 1220 } },
+        "green": { "perPersonSharing": { "rack": 335, "nett": 201 }, "singleRoom": { "rack": 503, "nett": 302 }, "tripleRoom": { "rack": 754, "nett": 452 }, "familySuiteUnit": { "rack": 1393, "nett": 836 } }
+      },
+      "gamePackage": {
+        "high": { "perPersonSharing": { "rack": 989, "nett": 593 }, "singleRoom": { "rack": 1384, "nett": 830 }, "tripleRoom": { "rack": 2225, "nett": 1335 }, "familySuiteUnit": { "rack": 3952, "nett": 2371 } },
+        "mid": { "perPersonSharing": { "rack": 682, "nett": 409 }, "singleRoom": { "rack": 923, "nett": 554 }, "tripleRoom": { "rack": 1535, "nett": 921 }, "familySuiteUnit": { "rack": 2849, "nett": 1709 } },
+        "green": { "perPersonSharing": { "rack": 535, "nett": 321 }, "singleRoom": { "rack": 703, "nett": 422 }, "tripleRoom": { "rack": 1204, "nett": 722 }, "familySuiteUnit": { "rack": 2194, "nett": 1316 } }
+      },
+      "mandatoryFees": { "lewaWildlifeConservancy": { "adult16plus": 200, "child6to15": 100 } }
+    },
+    "Kifaru House Lewa": {
+      "region": "Lewa Wildlife Conservancy",
+      "boardBasis": "Game Package only",
+      "gamePackage": {
+        "high": { "perPersonSharing": { "rack": 1425, "nett": 855 }, "singleRoom": { "rack": 2138, "nett": 1283 }, "tripleRoom": { "rack": 3206, "nett": 1924 }, "familySuiteUnit": { "rack": 3878, "nett": 2327 } },
+        "mid": { "perPersonSharing": { "rack": 1125, "nett": 675 }, "singleRoom": { "rack": 1688, "nett": 1013 }, "tripleRoom": { "rack": 2531, "nett": 1519 }, "familySuiteUnit": { "rack": 3123, "nett": 1874 } },
+        "green": { "perPersonSharing": { "rack": 844, "nett": 506 }, "singleRoom": { "rack": 1266, "nett": 760 }, "tripleRoom": { "rack": 1899, "nett": 1139 }, "familySuiteUnit": { "rack": 2351, "nett": 1411 } }
+      },
+      "mandatoryFees": "Same as Lewa Safari Camp (shared conservancy fee)"
+    },
+    "Loisaba Tented Camp": {
+      "region": "Loisaba Conservancy, Laikipia",
+      "fullBoard": {
+        "high": { "perPersonSharing": { "rack": 950, "nett": 570 }, "singleRoom": { "rack": 1425, "nett": 855 }, "tripleRoom": { "rack": 2138, "nett": 1283 }, "safariSuiteUnit": { "rack": 2427, "nett": 1456 } },
+        "mid": { "perPersonSharing": { "rack": 706, "nett": 424 }, "singleRoom": { "rack": 1059, "nett": 635 }, "tripleRoom": { "rack": 1589, "nett": 953 }, "safariSuiteUnit": { "rack": 1841, "nett": 1105 } },
+        "green": { "perPersonSharing": { "rack": 548, "nett": 329 }, "singleRoom": { "rack": 822, "nett": 493 }, "tripleRoom": { "rack": 1233, "nett": 740 }, "safariSuiteUnit": { "rack": 1431, "nett": 859 } }
+      },
+      "gamePackage": {
+        "high": { "perPersonSharing": { "rack": 1150, "nett": 690 }, "singleRoom": { "rack": 1625, "nett": 975 }, "tripleRoom": { "rack": 2588, "nett": 1553 }, "safariSuiteUnit": { "rack": 3004, "nett": 1802 } },
+        "mid": { "perPersonSharing": { "rack": 906, "nett": 544 }, "singleRoom": { "rack": 1259, "nett": 755 }, "tripleRoom": { "rack": 2039, "nett": 1223 }, "safariSuiteUnit": { "rack": 2402, "nett": 1441 } },
+        "green": { "perPersonSharing": { "rack": 748, "nett": 449 }, "singleRoom": { "rack": 1022, "nett": 613 }, "tripleRoom": { "rack": 1683, "nett": 1010 }, "safariSuiteUnit": { "rack": 1982, "nett": 1189 } }
+      },
+      "mandatoryFees": { "loisabaConservancy": { "adult": 200, "child3to17": 100 }, "selfDriveVehicleFee": { "amount": 65, "unit": "per vehicle per day" } }
+    },
+    "Loisaba Lodo Springs": {
+      "region": "Loisaba Conservancy, Laikipia",
+      "fullBoard": {
+        "high": { "perPersonSharing": { "rack": 1430, "nett": 858 }, "singleRoom": { "rack": 2145, "nett": 1287 }, "tripleRoom": { "rack": 3218, "nett": 1931 } },
+        "mid": { "perPersonSharing": { "rack": 1136, "nett": 682 }, "singleRoom": { "rack": 1704, "nett": 1022 }, "tripleRoom": { "rack": 2556, "nett": 1534 } },
+        "green": { "perPersonSharing": { "rack": 830, "nett": 498 }, "singleRoom": { "rack": 1245, "nett": 747 }, "tripleRoom": { "rack": 1868, "nett": 1121 } }
+      },
+      "gamePackage": {
+        "high": { "perPersonSharing": { "rack": 1630, "nett": 978 }, "singleRoom": { "rack": 2345, "nett": 1407 }, "tripleRoom": { "rack": 3668, "nett": 2201 } },
+        "mid": { "perPersonSharing": { "rack": 1336, "nett": 802 }, "singleRoom": { "rack": 1904, "nett": 1142 }, "tripleRoom": { "rack": 3006, "nett": 1804 } },
+        "green": { "perPersonSharing": { "rack": 1030, "nett": 618 }, "singleRoom": { "rack": 1445, "nett": 867 }, "tripleRoom": { "rack": 2318, "nett": 1391 } }
+      },
+      "mandatoryFees": "Same as Loisaba Tented Camp (shared conservancy)"
+    },
+    "Loisaba Star Beds": {
+      "region": "Loisaba Conservancy, Laikipia",
+      "closedPeriod": "Closed 1 Apr - 31 May (no Green season offered)",
+      "fullBoard": {
+        "high": { "perPersonSharing": { "rack": 701, "nett": 421 }, "singleRoom": { "rack": 1052, "nett": 631 }, "familySuiteUnit": { "rack": 1570, "nett": 942 } },
+        "mid": { "perPersonSharing": { "rack": 529, "nett": 317 }, "singleRoom": { "rack": 794, "nett": 476 }, "familySuiteUnit": { "rack": 1199, "nett": 719 } }
+      },
+      "gamePackage": {
+        "high": { "perPersonSharing": { "rack": 901, "nett": 541 }, "singleRoom": { "rack": 1252, "nett": 751 }, "familySuiteUnit": { "rack": 2378, "nett": 1427 } },
+        "mid": { "perPersonSharing": { "rack": 729, "nett": 437 }, "singleRoom": { "rack": 994, "nett": 596 }, "familySuiteUnit": { "rack": 1979, "nett": 1187 } }
+      },
+      "mandatoryFees": "Same as Loisaba Tented Camp (shared conservancy)"
+    },
+    "Tortilis Camp Amboseli": {
+      "$note2027": "This is the 2027-dated data from the Elewana master rate sheet - distinct from the already-extracted 2026 data in 'tortilis-camp-amboseli-elewana-2026.json'.",
+      "region": "Kitirua Conservancy, Amboseli",
+      "fullBoard": {
+        "high": { "perPersonSharing": { "rack": 765, "nett": 459 }, "singleRoom": { "rack": 1148, "nett": 689 }, "tripleRoom": { "rack": 1721, "nett": 1033 }, "familySuiteUnit": { "rack": 3405, "nett": 2043 }, "privateHouseUnit": { "rack": 4035, "nett": 2421 } },
+        "mid": { "perPersonSharing": { "rack": 516, "nett": 310 }, "singleRoom": { "rack": 774, "nett": 464 }, "tripleRoom": { "rack": 1161, "nett": 697 }, "familySuiteUnit": { "rack": 2525, "nett": 1515 }, "privateHouseUnit": { "rack": 3119, "nett": 1871 } },
+        "green": { "perPersonSharing": { "rack": 333, "nett": 200 }, "singleRoom": { "rack": 500, "nett": 300 }, "tripleRoom": { "rack": 749, "nett": 449 }, "familySuiteUnit": { "rack": 1818, "nett": 1091 }, "privateHouseUnit": { "rack": 2255, "nett": 1353 } }
+      },
+      "gamePackage": {
+        "high": { "perPersonSharing": { "rack": 965, "nett": 579 }, "singleRoom": { "rack": 1348, "nett": 809 }, "tripleRoom": { "rack": 2171, "nett": 1303 }, "familySuiteUnit": { "rack": 4198, "nett": 2519 }, "privateHouseUnit": { "rack": 4828, "nett": 2897 } },
+        "mid": { "perPersonSharing": { "rack": 716, "nett": 430 }, "singleRoom": { "rack": 974, "nett": 584 }, "tripleRoom": { "rack": 1611, "nett": 967 }, "familySuiteUnit": { "rack": 3296, "nett": 1978 }, "privateHouseUnit": { "rack": 3890, "nett": 2334 } },
+        "green": { "perPersonSharing": { "rack": 533, "nett": 320 }, "singleRoom": { "rack": 700, "nett": 420 }, "tripleRoom": { "rack": 1199, "nett": 719 }, "familySuiteUnit": { "rack": 2575, "nett": 1545 }, "privateHouseUnit": { "rack": 3012, "nett": 1807 } }
+      },
+      "mandatoryFees": { "kitiruaConservancy": { "adult": 50, "child5to17": 50 }, "amboseliNationalPark": { "adult": 95, "child5to17": 47, "note": "inclusive of E-Citizen gateway fee" } }
+    },
+    "verified": true
+  },
+  "commonPolicy": {
+    "childRateAgeThreshold": "Below 12 years, EXCEPT where a property's mandatory-fee table states a different bracket (varies by property - see each property's mandatoryFees above; brackets range from 3-17 to 9-17 to 6-15 depending on property).",
+    "familyPrivateHouseExtraGuests": "Additional adults/children beyond the base occupancy in Family Suite/Private House units: adults 75% of PPS rate, children 25% of PPS rate",
+    "limitedTripleAvailability": "Triple rooms subject to availability at every property offering them",
+    "verified": true
+  },
+  "transferRatesKenya": {
+    "unit": "per vehicle, one way, max 6 guests",
+    "elsasKopje": { "toNanyukiAirstrip": { "rack": 575, "nett": 518 }, "toSararaCamp": { "rack": 575, "nett": 518 }, "toLewaSafariCamp": { "rack": 575, "nett": 518 }, "toSamburu": { "rack": 625, "nett": 563 }, "toLoisabaAndLaikipia": { "rack": 845, "nett": 761 } },
+    "lewaSafariCamp": { "toNanyukiAirstrip": { "rack": 350, "nett": 315 }, "toLoisabaAndLaikipia": { "rack": 700, "nett": 630 }, "toSamburu": { "rack": 410, "nett": 369 } },
+    "kifaruHouse": { "toNanyukiAirstrip": { "rack": 350, "nett": 315 } },
+    "lewaOrKifaruToBoranaLodge": { "rack": 125, "nett": 113 },
+    "loisabaTentedCamp_lodoSprings_starBeds": { "toNanyukiAirstrip": { "rack": 410, "nett": 369 } },
+    "sandRiverMara": { "toTalek": { "rack": 280, "nett": 252 }, "toMaraBridge": { "rack": 280, "nett": 252 } },
+    "elephantPepperOrLittleElephantPepper": { "toTalek": { "rack": 280, "nett": 252 }, "toRekero": { "rack": 280, "nett": 252 }, "toMusiaraGate": { "rack": 225, "nett": 203 }, "toMaraRianta": { "rack": 225, "nett": 203 } },
+    "tortilisCamp": { "toNamangaBorder": { "rack": 480, "nett": 432 }, "toKimanaGate": { "rack": 250, "nett": 225 } },
+    "verified": true
+  }
+}

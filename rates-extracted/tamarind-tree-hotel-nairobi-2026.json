@@ -1,0 +1,49 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftotext -layout, signed STO contract PDF. NOT a Soroi property. This folder ('TAMARIND TREE HOTEL') actually contains rate docs for TWO DIFFERENT properties under The Tamarind Group: Tamarind Tree Hotel, Nairobi (this file) and Tamarind Village (a separate coastal apartment property - see tamarind-village-mombasa-2026.json). Do not conflate them.",
+  "property": "Tamarind Tree Hotel, Nairobi",
+  "operator": "Langata Hotel Development Limited t/a Tamarind Tree Hotel (The Tamarind Group)",
+  "region": "Nairobi",
+  "currency": "USD",
+  "unit": "per room per night (Single/Double columns)",
+  "source": {
+    "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/TAMARIND TREE HOTEL/Sunworld Safaris TTH 2026.pdf",
+    "contractParty": "Sunworld Safaris (Carolyn Ndungu)",
+    "signedDate": "2025-03-13",
+    "validity": "Special tour operator rates applicable until 31 December 2026"
+  },
+  "confidence": "confirmed-2026-08-06",
+  "rates_NET_nonCommissionable": {
+    "standardRoom": { "single": 175, "double": 210 },
+    "juniorSuite": { "single": 270, "double": 310 },
+    "executiveSuite": { "single": 320, "double": 360 },
+    "superiorSuite": { "single": 375, "double": 375, "note": "VIP Suites have same rate for single and double occupancy." },
+    "familySuite": { "double": 480, "note": "No single rate listed - double occupancy only." }
+  },
+  "inclusions": "Bed, breakfast, 28% statutory taxes (16% VAT, 10% Service Charge, 2% Training Levy), hotel gym use, in-room tea/coffee, bottled water, WiFi, 42-inch TV.",
+  "mealSupplements": { "breakfast": 40, "lunch": 40, "dinner": 40, "picnicMealBox": 25, "roomServiceTrayCharge": 5, "unit": "USD" },
+  "transfers": {
+    "sedanSaloonCar": { "jkia": 35, "wilson": 12, "capacity": "max 3 pax" },
+    "van": { "jkia": 45, "wilson": 20, "capacity": "max 5 pax" }
+  },
+  "childPolicy": {
+    "under4InCotSharing": "Free of charge",
+    "age4to12Sharing": "Charged breakfast rate only",
+    "age4to12OwnRoom": "75% of applicable room rate",
+    "twoChildrenOver12OwnRoom": "Full double adult rate",
+    "unaccompaniedMinors": "Cannot check in without written parent/guardian consent."
+  },
+  "operationalPolicy": {
+    "checkIn": "12:00", "checkOut": "10:00",
+    "dayRoomRate": "75% of applicable room rate, 10:00am-18:00; after 18:00 full room rate applies.",
+    "maxOccupancy": "3 persons per room; triple rooms available on request subject to availability.",
+    "weekendPolicy": "Weekend rate applies Friday and Saturday nights only (rate table above appears to be a flat rate; a separate weekend rate structure may exist but was not distinctly itemized in the extracted table).",
+    "notApplicableFor": "Meetings, incentives, and events groups - rates for these determined case-by-case."
+  },
+  "cancellationPolicy": [
+    { "daysBeforeArrival": "60-31", "charge": "20%" },
+    { "daysBeforeArrival": "30-16", "charge": "50%" },
+    { "daysBeforeArrival": "15-0 / no-show", "charge": "100%" }
+  ],
+  "depositPolicy": { "onConfirmation": "25%", "14daysPrior": "25%", "5daysPrior": "50%", "within30days": "50%", "note": "Deposits non-refundable for groups; 1-night charge for individual bookings." },
+  "confidenceNote": "[Unverified] The Weekend Policy clause is mentioned in the T&Cs but no separate weekend rate table was found in the extracted text - the rates above may be flat rates that already account for this, or a weekend rate may exist elsewhere in the PDF not captured. Confirm directly if booking a Friday/Saturday stay."
+}

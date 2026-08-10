@@ -1,0 +1,55 @@
+{
+  "$note": "Extracted 6 Aug 2026 via direct paginated pdftotext read (pdf pages 13-15) of 'The Safari Collection 2026 Rates.pdf', the SAME signed Docusign contract document that sourced this project's existing solio-lodge-safari-collection-2026.json. That document covers THREE properties (Sala's Camp, Sasaab, Solio Lodge) under one '2026 SALA'S CAMP, SASAAB & SOLIO LODGE 30% RATES CONTRACT' but only Solio had been extracted previously - this file completes Sala's Camp. NOT a Soroi property.",
+  "property": "Sala's Camp",
+  "operator": "The Safari Collection",
+  "region": "Maasai Mara (Keekorok area)",
+  "tier": "Contract 30% (Rack shown alongside; Contract 30% = Rack x 0.70 verified on every checked cell, e.g. 6421/9173=0.70, 5703/8148=0.70)",
+  "currency": "USD",
+  "unit": "Fully Inclusive - room-based rates for Family/Forest Family tents (minimum room rate for up to 2 adults + 2 children), per-adult-sharing for standard tents",
+  "source": {
+    "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/THE SAFARI COLLECTION/The Safari Collection 2026 Rates.pdf",
+    "pdfPageIndices": [13, 14, 15],
+    "docPrintedPageNumbers": [3, 4, 5],
+    "sectionTitle": "2026 SALA'S CAMP, SASAAB & SOLIO LODGE 30% RATES CONTRACT",
+    "validity": { "start": "2026-01-01", "end": "2026-12-31" }
+  },
+  "confidence": "confirmed-2026-08-06",
+  "seasons": {
+    "theSeason": { "dateRanges": ["1 Jan 2026 - 5 Jan 2026", "1 Jun 2026 - 31 Oct 2026", "16 Dec 2026 - 31 Dec 2026"] },
+    "savingsSeason": { "dateRanges": ["6 Jan 2026 - 31 May 2026", "1 Nov 2026 - 15 Dec 2026"] }
+  },
+  "closure": "Sala's Camp closed 10 April - 29 May 2026 inclusive (dates flexible, confirm with reservations).",
+  "rates": {
+    "keekorokFamilyTentWithPool_tent2a2b": {
+      "theSeason": { "minimumRoomRate_upTo2Adults2Children": { "rack": 9173, "contract30": 6421 }, "thirdChild3to15": { "rack": 1018, "contract30": 712 }, "fourAdultsSharing": { "rack": 10185, "contract30": 7129 }, "adultExtraBed": { "rack": 2546, "contract30": 1782 } },
+      "savingsSeason": { "minimumRoomRate_upTo2Adults2Children": { "rack": 5637, "contract30": 3946 }, "thirdChild3to15": { "rack": 622, "contract30": 436 }, "fourAdultsSharing": { "rack": 6362, "contract30": 4453 }, "adultExtraBed": { "rack": 1530, "contract30": 1071 } }
+    },
+    "forestFamilyTentWithPool_tent3": {
+      "theSeason": { "minimumRoomRate_upTo2Adults2Children": { "rack": 8148, "contract30": 5703 }, "thirdChild3to15": { "rack": 813, "contract30": 569 }, "fourAdultsSharing": { "rack": 9061, "contract30": 6343 }, "adultExtraBed": { "rack": 2247, "contract30": 1573 } },
+      "savingsSeason": { "minimumRoomRate_upTo2Adults2Children": { "rack": 4751, "contract30": 3326 }, "thirdChild3to15": { "rack": 710, "contract30": 497 }, "fourAdultsSharing": { "rack": 5637, "contract30": 3946 }, "adultExtraBed": { "rack": 1288, "contract30": 902 } },
+      "note": "Should only be booked for families, not two couples, due to lack of privacy between the two rooms."
+    },
+    "keekorokTentWithPool_tent1_and_forestTentsWithPool_tent4567": {
+      "unit": "per person",
+      "theSeason": { "perAdultSharing": { "rack": 2546, "contract30": 1782 }, "perChildSharing": { "rack": 1764, "contract30": 1235 }, "perChildSharingExtraBed_3to11": { "rack": 1018, "contract30": 712 }, "singleRoom": { "rack": 4078, "contract30": 2854 } },
+      "savingsSeason": { "perAdultSharing": { "rack": 1530, "contract30": 1071 }, "perChildSharing": { "rack": 900, "contract30": 630 }, "perChildSharingExtraBed_3to11": { "rack": 622, "contract30": 436 }, "singleRoom": { "rack": 2306, "contract30": 1614 } }
+    }
+  },
+  "childRateLogic": { "note": "Same logic as Solio - see childRateLogic in solio-lodge-safari-collection-2026.json.", "perChildSharing": "Two children sharing a room (each), OR a child sharing with one adult.", "perChildSharingExtraBed": "3rd person (child aged 3-11) sharing a room with two others on an extra bed." },
+  "additionalRates": {
+    "professionalGuideRoom": { "amount": 190, "unit": "per person per night, exclusive of park & conservation fees" },
+    "parkConservationFees_JanToJun": { "adult": 185, "child9to17": 95, "under8": "Free of charge" },
+    "parkConservationFees_JulToDec": { "adult": 285, "child9to17": 95, "under8": "Free of charge" },
+    "note_feeComposition": "Masai Mara Park Fee, Bed Night Levy & Rhino Conservation Fee combined.",
+    "exclusiveUseVehiclePerDay": 490,
+    "afternoonDeparture": { "amount": "50% of per-person rate", "includes": "lunch and airstrip transfers", "note": "Not possible during The Season; possible in Savings Season only." },
+    "balloonFlightSharedBasis": { "adult": 570, "child3to11": 460 }
+  },
+  "childPolicy": { "definition": "3-15 years inclusive; 16+ is adult; 2 and under is infant (free)." },
+  "roomTypes": "5 luxury tents (1,4,5,6,7) + 2 family tents (2a/2b, 3). All have private plunge pools, en-suite bath/shower.",
+  "inclusions": ["All meals and drinks (house wines/soft drinks/beers/spirits)", "Game drives, bush meals, sundowners", "Transfers from Keekorok Airstrip", "Laundry", "Seasonal bush volleyball", "Nature walks", "Children's activities"],
+  "exclusions": ["Champagne, luxury spirits, selected wines, cigars", "Tips", "Travel/emergency evacuation insurance", "Balloon rides", "Massages", "Personal effects", "Road transfers", "Daily park and conservation fees"],
+  "roadTransfers": { "betweenMaraReserveCamps": 245, "unit": "per vehicle, on request" },
+  "access": { "byAir": "~45 min from Nairobi Wilson to Keekorok airstrip.", "byRoad": "~6 hrs from Nairobi via Sekenani Gate." },
+  "operationalPolicy": { "checkIn": "12:00 noon", "checkOut": "10:00am", "minimumStay": "2 nights", "famTrips": "Not accepted during The Season." }
+}

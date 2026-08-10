@@ -1,0 +1,27 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftotext -layout from 'FAIRVIEW/2027  Fairview Nairobi Contracted Agreement - SUNWORLD SAFARIS.pdf' (5pp). This is a NEWER contract than whatever source produced the existing CLAUDE.md Fairview flexible-variable entry ($280/night for 2 adults+1 child) and the documented 'Fairview Nairobi room conflict' Known Issue. This 2027 contract lists only TWO room types (Deluxe Queen Room, Premium Room), NEITHER of which is described as taking an extra bed - both are explicitly capped at 2 Adults with 'no extra bed available'. The previously-flagged 'Deluxe Queen Pool View' room (the one CLAUDE.md says is the only room that actually fits a child via sofa bed) does NOT appear anywhere in this 2027 document at all. This could mean: (a) that room category has been discontinued/not offered to Sunworld under this newer contract, or (b) it simply wasn't included in this particular rate sheet. Either way, the original conflict may now be MOOT rather than resolved - there is no child-accommodating room offered in writing in this document at all. Flag prominently and confirm directly with the hotel before booking any child into a Fairview room under this contract.",
+  "property": "Fairview Hotel Nairobi (Upper Hill)",
+  "currency": "USD",
+  "validity": { "start": "2027-01-01", "end": "2027-12-31", "contractSigned": "2026-01-01", "note": "Contract document covers 1 Jan 2026 - 31 Dec 2027 overall; rate table specifically headed '1st January 2027 to 31st December 2027'" },
+  "unit": "per room per night, includes breakfast and 28% taxes (16% VAT + 10% service charge + 2% training levy)",
+  "confidence": "confirmed-2027-08-06",
+  "rates": {
+    "Deluxe Queen Room": { "single": 210, "double": 240, "thirdAdult": "N/A - room cannot accommodate a 3rd adult" },
+    "Premium Room": { "single": 240, "doubleOrTwin": 270, "thirdAdult": "Upon request" },
+    "dayUse": { "amount": "75% of room rate", "hours": "until 8:00pm" },
+    "verified": true
+  },
+  "maxOccupancy": { "DeluxeQueen": "2 adults, no extra bed", "Premium": "2 adults, no extra bed", "verified": true },
+  "childPolicy": {
+    "under5SharingParentsRoom": "Free of charge (max 1 child per room)",
+    "age5to11SharingParentsRoom": "50% of breakfast supplement (USD 20/night) for room and breakfast",
+    "age12plus": "Full adult rate",
+    "verified": true,
+    "confidenceNote": "This child policy assumes a child CAN share a room, but the Maximum Occupancy section above states both room types cap at 2 adults with no extra bed - the same internal contradiction CLAUDE.md already flags for Fairview generally. Not resolved by this newer document."
+  },
+  "mealSupplements": { "breakfastExtra_5to11": 20, "halfBoardSupplement": 40, "fullBoardSupplement": 80, "mealCoupon": 40, "verified": true },
+  "conferenceRates": { "fullDay": 50, "halfDay": 45, "verified": true },
+  "cancellationPolicy": "21+ days before arrival: no fee; 21 days or less: 100% charge",
+  "commissionable": false,
+  "brandNote": "Fairview Hotel Limited also operates Best Western Nairobi Upper Hill under the same management (see separate best-western-upper-hill-2027.json) - same Cluster Sales Account Manager, same T&C boilerplate."
+}

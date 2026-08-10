@@ -1,0 +1,24 @@
+{
+  "$note": "Extracted 6 Aug 2026. Includes Sarara House, a private 2-bedroom family unit priced per-unit within the same document.",
+  "property": "Sarara Camp",
+  "operator": "Bush and Beyond Ltd (booking agent)",
+  "region": "Namunyak Wildlife Conservancy, Mathews Range",
+  "tier": "RSP (rack) and Trade/Preferential",
+  "source": { "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/BUSH&BEYOND/Sarara Camp - 2026 Preferential US$.pdf" },
+  "seasons": { "regular": "5 Jan-30 Jun, 1 Sep-31 Oct, 1-19 Dec 2026 (closed November 2026)", "premium": "1 Jul-31 Aug 2026, 20 Dec 2026-3 Jan 2027" },
+  "rates": {
+    "currency": "USD", "unit": "per person per night sharing (tents), per unit per night (Sarara House, max 5)",
+    "regular": {
+      "tents": { "rsp": { "adult": 1110, "childSharing5to15": 720 }, "trade": { "adult": 833, "childSharing5to15": 540 }, "communityHeritageFee": { "rsp": { "adult": 185, "child": 115 }, "trade": { "adult": 185, "child": 115 } }, "maxOccupancy": "4 guests, 5th pax must be a child 5-15" },
+      "sararaHouse_perUnit": { "rsp": 5500, "trade": 4125, "communityHeritageFeePerAdult": 185, "communityHeritageFeePerChild": 115 }
+    },
+    "premium": {
+      "tents": { "rsp": { "adultSharing": 1515, "adultSingle": 1780, "childSharing": 985 }, "trade": { "adultSharing": 1136, "adultSingle": 1335, "childSharing": 739 }, "communityHeritageFee": 185 },
+      "sararaHouse_perUnit": { "rsp": 6785, "trade": 5089, "childSharing": 930 }
+    }
+  },
+  "childPolicy": { "note": "Any age welcome but more suitable for 5 years and older." },
+  "inclusions": "Full board, soft drinks/local beers/non-premium wines/spirits, Namunyak airstrip transfers, transfers between Sarara properties, statutory taxes, laundry, day/night shared game drives, montane forest hiking, horse ride, De Brazza monkey hike, guided walks, village visits. Sarara House adds exclusive use of vehicles.",
+  "exclusions": "Community Heritage fee, Reteti Elephant Sanctuary entrance ($35pp), blacksmithing/beading, exclusive vehicle ($250/day, Sarara Basin only for Camp), extra horse riding, Samburu dancers, champagne/premium spirits, Ololokwe day trip, fly camping mobilisation, massages.",
+  "notes": "Closed 1-30 November. Sarara House has 2 ensuite bedrooms, own plunge pool, private guide and exclusive vehicle included."
+}

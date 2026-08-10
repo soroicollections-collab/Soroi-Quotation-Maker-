@@ -1,0 +1,49 @@
+{
+  "$note": "Extracted 6 Aug 2026 via full-document pdftotext reads (documents are short, 2-9 pages, single continuous property sections clearly headed by property name - low misattribution risk since each property's section is self-contained with its own heading, unlike a flattened multi-property table). Source: 'Angama 2026_MA_Rates.pdf' (main Nett agent rate, includes Rack reference figures inline), 'Angama 2026_African_Residents_Rack_Rates.pdf', 'Angama 2026_African_Residents_Nett_Rates.pdf', 'Angama Group-Rack-Rates-2026 EAR.pdf'.",
+  "property": "Angama Mara",
+  "operator": "Angama (Nicky Fitzgerald / Rosco Wendover, CEO)",
+  "region": "Maasai Mara (Oloololo Escarpment, above the Mara Triangle)",
+  "tier": "Nett MA Rate (agent/tour-operator net rate, Rack shown for reference), African Resident Rack & Nett, and Group Rate",
+  "source": {
+    "files": [
+      "2026 CONTRACT RATES/KENYA/ACCOMODATION/ANGAMA/Angama 2026_MA_Rates.pdf",
+      "2026 CONTRACT RATES/KENYA/ACCOMODATION/ANGAMA/Angama 2026_African_Residents_Rack_Rates.pdf",
+      "2026 CONTRACT RATES/KENYA/ACCOMODATION/ANGAMA/Angama 2026_African_Residents_Nett_Rates.pdf",
+      "2026 CONTRACT RATES/KENYA/ACCOMODATION/ANGAMA/Angama Group-Rack-Rates-2026 EAR.pdf"
+    ]
+  },
+  "seasons": { "standard": "5 Jan-Jun & Oct-22 Dec", "peak": "Jul-Sept & 23 Dec-4 Jan 2027" },
+  "rates": {
+    "currency": "USD", "unit": "per guest per night, 2 adults sharing Tented Suite unless noted",
+    "nettMA": {
+      "tentedSuite": { "standard": 1575, "peak": 2475, "rackReference": { "standard": 1850, "peak": 2750 } },
+      "children0to17": { "standard": 790, "peak": 1860, "rackReference": { "standard": 925, "peak": 2065 } },
+      "familyStay_2adults2children_2tentedSuites_perNight": { "janMay_novDec": 3145, "junOct": 4720, "julSepDec23Jan4": 8670 },
+      "interconnectedTentedSuiteSurcharge_perNight": { "janMayNovDec": 320, "junOct": 490, "julSepDec23Jan4": 880 }
+    },
+    "africanResidentRack": { "tentedSuite": { "standard": 925, "peak": 1375 } },
+    "africanResidentNett": { "tentedSuite": { "standard": 835, "peak": 1240 } },
+    "groupRate_10plusTentedSuites_min3nights": { "standard": 1250, "peak": 1775, "note": "Not applicable Jul, Aug, or 23 Dec-4 Jan" }
+  },
+  "mandatoryFees": {
+    "maasaiMaraParkFee_perPersonPerDay_12hFrom0600to1800": { "adult": { "janJun": 100, "julDec": 200 }, "child9to17": 50 },
+    "angamaFoundation": { "perGuestPerNight": 20, "appliesToAllGuests": true }
+  },
+  "childPolicy": {
+    "ageRestriction": "All ages welcome year-round",
+    "under12": "Required to share a triple (with parents/siblings) unless an additional Tented Suite booked at Family Stay rate",
+    "familyStaySecondSuite": "75% in Peak Season; free of charge in Standard Season (excluding Jun & Oct) for first 2 children 0-17 sharing",
+    "under6Note": "Families with children 0-6 must reserve a private safari vehicle if booking fewer than 3 Tented Suites"
+  },
+  "singleSupplement": { "janMayNovDec22": "First 2 singles per booking free, thereafter 50% supplement", "junOct_dec23Jan4": "50% supplement on all singles" },
+  "guideAccommodation": { "premiumGuideRoom": 450, "note": "Non-commissionable" },
+  "multiPropertyDiscount": { "combine2AngamaProperties": "further 5%", "combine3AngamaProperties": "further 10%", "note": "Not combinable with special offers; calculated on Angama accommodation only" },
+  "specialOffers": {
+    "stay4pay3": "5 Jan-Jun & Sep-22 Dec",
+    "stay3pay2": "Mar-May & Nov",
+    "signatureStay5nights": { "standard": 1290, "peak": 2380, "includes": "Hot-air balloon safari, private vehicle, massage per guest, 1hr photoshoot, sleep out at Angama Safari Camp" },
+    "honeymoonOffer_4nightsPayFor2": { "rate": 1185, "valid": "5 Jan-Jun & Oct-22 Dec" }
+  },
+  "inclusions": "Guided safaris in Mara Triangle, guided walks on Oloololo Escarpment, all meals/drinks (excl. French Champagne/reserve wines), laundry, WiFi, transfers to/from Kichwa Tembo Airstrip, emergency medevac, childminding 18h00-22h00, VAT.",
+  "exclusions": "Maasai Mara Park Fees, Angama Foundation contribution, safari shop/massages, transfers from elsewhere in the Mara, private vehicles, gratuities."
+}

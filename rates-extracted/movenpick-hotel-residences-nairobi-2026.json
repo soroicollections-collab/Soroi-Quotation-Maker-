@@ -1,0 +1,40 @@
+{
+  "property": "Movenpick Hotel & Residences Nairobi",
+  "owningCompany": "Golf Course Hotel Ltd",
+  "region": "Nairobi (Westlands)",
+  "isSoroiProperty": false,
+  "sourceFiles": [
+    "2026 CONTRACT RATES/KENYA/ACCOMODATION/MOVENPICK HOTEL/Movenpick hotel  - SUNWORLD SAFARIS-FIT 2026.pdf"
+  ],
+  "documentType": "Leisure Distribution Agreement (full legal contract), Schedule 2 (Applicable FIT Rates) on page 13/15",
+  "currency": "USD",
+  "validity": { "raw": "STATIC RATES valid from 01 Jan 2026 to 31 Dec 2026", "verified": true },
+  "roomCategories": {
+    "unit": "per room per night, Bed & Breakfast (inclusive of buffet breakfast, internet and taxes; non-commissionable)",
+    "superiorRoom": { "single": 160, "double": 180, "maxOccupancy": "2 adults / 3 guests", "verified": true },
+    "executiveRoom": { "single": 240, "double": 260, "verified": true },
+    "juniorSuite": { "single": 410, "double": 430, "verified": true },
+    "familyRoom": { "double": 230, "note": "King size bed plus twin beds; no single figure given", "verified": true },
+    "extraBedChildOrAdult": { "amount": 40, "verified": true }
+  },
+  "childPolicy": {
+    "raw": "0 - below 12 years can stay free with parents on existing bed arrangement. Child in own room is at 75%. F&B charged at 50%.",
+    "verified": true
+  },
+  "mealCharges": [
+    { "item": "Lunch", "amount": "US$40 per person", "verified": true },
+    { "item": "Dinner", "amount": "US$40 per person", "verified": true }
+  ],
+  "notes": [
+    "Rates exclude drinks.",
+    "Contracted meals available at the All-Day Dining Baluba Restaurant.",
+    "Standard check-in 14:00 / check-out 12:00. Early check-in (07:00-10:00) and late check-out (13:00-18:00) charged at 50% of room rate.",
+    "Hotel reserves right to issue stop-sale with 24 hours' notice.",
+    "This document is a full bilateral Leisure Distribution Agreement (Sunworld Safaris as 'Client'/agent, not the traveling guest) - most of its 15 pages are boilerplate legal terms (definitions, indemnification, force majeure, confidentiality, etc.) with no additional pricing beyond Schedule 2."
+  ],
+  "policies": {
+    "cancellation": "Bookings released 48 hours prior to arrival at no charge. Cancellation after 48-hour window: charged for one night stay inclusive of taxes.",
+    "payment": "Client (Sunworld) prepays prior to guest stay, immediately upon booking.",
+    "fakeOrTentativeNames": "Bookings under fake/tentative names are invalid and will be cancelled."
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "$note": "Extracted 6 Aug 2026, read directly, single-page document, no misattribution risk. ⚠ STRUCTURE CHANGED SIGNIFICANTLY FROM THE 2026 DOCUMENT — see structuralFindings. Do not reuse the 2026 file's shape/assumptions when working with this one.",
+  "property": "Severin Sea Lodge",
+  "region": "Mombasa North Coast",
+  "tier": "Rack Rate",
+  "residency": "Not explicitly labeled Non-Resident on this document (unlike the 2026 file which said 'Rack non res' in its filename) — filename here is just 'RACK RATES_USD' with no residency qualifier. Assumed Non-Resident by convention (same market-code style, same as 2026's non-res doc) but flagging this as [Inference] since the word 'non res' does not appear anywhere in this file or its filename.",
+  "source": {
+    "file": "2027 CONTRACT RATES/KENYA/BEACH ACCOMODATION/SEVERIN SEA LODGE/SEVERIN SEA LODGE  2027 RACK RATES_USD.pdf",
+    "pdfPageIndex": 0,
+    "validity": { "start": "2027-01-01", "end": "2027-12-31", "note": "This document's 4 columns cover 01/01/27-29/03/27, 30/03/27-30/06/27, 01/07/27-22/12/27, and 23/12/27-31/12/27 — a full calendar year of 2027, unlike the 2026 document's Nov-Oct fiscal window. Also note filename says 'RACK RATES  2027' with a non-breaking space, and the 2026 folder's equivalent file used 'Rack non res2026' naming — inconsistent naming convention year to year, not a data problem, just noted for future searchers." }
+  },
+  "confidence": "confirmed-2026-08-06",
+  "extractionMethod": { "note": "Read directly, single-page table, single-property document." },
+  "structuralFindings": [
+    "⚠ MAJOR STRUCTURAL CHANGE FROM 2026: Bed & Breakfast and Half Board are now BOTH independently priced rows for every room category, rather than a Half Board base with a flat BB reduction. Do not apply the 2026 file's '-$15 BB reduction' logic to this document — it has its own explicit BB rate per room per season.",
+    "Room category lineup changed too: 'Deluxe Bungalow Room with Seaview' is now its own fully separate priced category (BB + HB, SGL + DBL) rather than the 2026 approach of a flat +$39 seaview surcharge added to a base room. 'Suite with Seaview' likewise now has full BB+HB/SGL+DBL pricing rather than being the only seaview-priced category as before.",
+    "SGL is listed before DBL in this document's row order (2026 document listed DBL first) — no numeric ambiguity since columns are explicitly labeled, just a presentation difference.",
+    "4 seasonal columns (fewer than 2026's 5): Main Season (01/01/27-29/03/27), Low Season (30/03/27-30/06/27), Main Season (01/07/27-22/12/27), Festive Season (23/12/27-31/12/27) — note 'Low Season' terminology appears here, not used at all in the 2026 document (which had 'Main'/'Festive'/'Easter' only, no explicit low/green season, and no standalone Easter surcharge column this year).",
+    "Longstay discount now has a second tier: 10% for 7+ nights (same as 2026) PLUS a new 20% for 21+ nights (not present in 2026's document).",
+    "Children policy now split by meal plan: children 3-12 sharing with adult on BB = $20/night flat; on HB = $30/night flat — a new distinction (2026 had one flat $26 regardless of meal plan).",
+    "Transport reductions now explicitly say 'per person - min. 2 Pax' — a minimum-pax qualifier not stated in the 2026 document. Airport Transfer $16, SGR-Station Transfer $18 (both lower than 2026's Rack figures — flag as a possible pricing tier or genuine rate change, not verified which).",
+    "Honeymoon package is now SIMPLER than 2026's: only 'Welcome Cocktail + 1 bottle of wine + room upgrade subject to availability (excl. Suites)' — the 2026 package's flowers/fruit platter and candlelight dinner on the Imani Dhow are gone from this document. Flag this loss of amenities explicitly rather than assuming it's still included.",
+    "Cancellation, check-in/out, single/double occupancy, and no-cash-payment policies are worded identically to the 2026 document."
+  ],
+  "seasons": {
+    "columns": ["01/01/27-29/03/27 (Main)", "30/03/27-30/06/27 (Low)", "01/07/27-22/12/27 (Main)", "23/12/27-31/12/27 (Festive)"]
+  },
+  "rates": {
+    "currency": "USD",
+    "unit": "per person per night (SGL = single occupancy; DBL = per person sharing double)",
+    "standardRoom": {
+      "bedBreakfast": { "sgl": { "main1": 140, "low": 120, "main2": 140, "festive": 280 }, "dbl": { "main1": 180, "low": 160, "main2": 180, "festive": 320 } },
+      "halfBoard": { "sgl": { "main1": 160, "low": 140, "main2": 160, "festive": 300 }, "dbl": { "main1": 220, "low": 200, "main2": 220, "festive": 360 } }
+    },
+    "deluxeRoom": {
+      "bedBreakfast": { "sgl": { "main1": 168, "low": 144, "main2": 168, "festive": 336 }, "dbl": { "main1": 208, "low": 184, "main2": 208, "festive": 376 } },
+      "halfBoard": { "sgl": { "main1": 188, "low": 164, "main2": 188, "festive": 356 }, "dbl": { "main1": 248, "low": 224, "main2": 248, "festive": 416 } }
+    },
+    "deluxeBungalowRoom": {
+      "bedBreakfast": { "sgl": { "main1": 182, "low": 156, "main2": 182, "festive": 364 }, "dbl": { "main1": 222, "low": 196, "main2": 222, "festive": 404 } },
+      "halfBoard": { "sgl": { "main1": 202, "low": 176, "main2": 202, "festive": 384 }, "dbl": { "main1": 262, "low": 236, "main2": 262, "festive": 444 } },
+      "note": "Suitable for 2 adults + 1 child."
+    },
+    "deluxeBungalowRoomWithSeaview": {
+      "bedBreakfast": { "sgl": { "main1": 210, "low": 180, "main2": 210, "festive": 420 }, "dbl": { "main1": 250, "low": 220, "main2": 250, "festive": 460 } },
+      "halfBoard": { "sgl": { "main1": 230, "low": 200, "main2": 230, "festive": 440 }, "dbl": { "main1": 290, "low": 260, "main2": 290, "festive": 500 } }
+    },
+    "suiteWithSeaview": {
+      "bedBreakfast": { "sgl": { "main1": 420, "low": 360, "main2": 420, "festive": 840 }, "dbl": { "main1": 460, "low": 400, "main2": 460, "festive": 880 } },
+      "halfBoard": { "sgl": { "main1": 440, "low": 380, "main2": 440, "festive": 860 }, "dbl": { "main1": 500, "low": 440, "main2": 500, "festive": 920 } }
+    }
+  },
+  "mealPlanDefinition": "Half Board = Breakfast Buffet + Dinner Buffet.",
+  "reductionsAndTransport": {
+    "airportTransfer": { "amount": 16, "unit": "USD per person, min. 2 pax" },
+    "sgrStationTransfer": { "amount": 18, "unit": "USD per person, min. 2 pax" }
+  },
+  "childPolicy": {
+    "infant0to2": "Free of charge",
+    "children3to12SharingWithAdultOnBB": { "amount": 20, "unit": "USD per person per night, flat" },
+    "children3to12SharingWithAdultOnHB": { "amount": 30, "unit": "USD per person per night, flat" }
+  },
+  "longstayGroupDiscount": {
+    "sevenPlusNights": "10% discount",
+    "twentyOnePlusNights": "20% discount",
+    "group": "For every 15 full-paying adult guests, one additional guest stays free"
+  },
+  "honeymoonPackage": "Welcome Cocktail on arrival, 1 bottle of wine, room upgrade subject to availability (excl. Suites). Valid for couples married within 6 months, min 3-night stay. NOTE: simpler than the 2026 package — no flowers/fruit platter or candlelight dinner mentioned this year.",
+  "cancellationPolicy": "100% of booking value charged for cancellation within 48 hours from noon of arrival date, or no-show. (Same as 2026.)",
+  "checkInOut": {
+    "checkIn": "12:00 pm",
+    "checkOut": "10:00 am",
+    "earlyCheckInFrom6am": "50% of room rate",
+    "earlyCheckInBefore6am": "100% of room rate",
+    "lateCheckOutUntil6pm": "50% of room rate",
+    "lateCheckOutAfter6pm": "100% of room rate"
+  },
+  "portfolioWideTerms": {
+    "note": "Non-Soroi property — CLAUDE.md's Soroi-portfolio-wide terms do not apply."
+  }
+}

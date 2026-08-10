@@ -1,0 +1,57 @@
+{
+  "property": "Olkupelia Mara",
+  "operator": "Olkupelia Mara",
+  "region": "Maasai Mara (next to Talek River, fenced property)",
+  "isSoroiProperty": false,
+  "sourceFiles": [
+    "2026 CONTRACT RATES/KENYA/ACCOMODATION/Olkupelia Mara/Olkupelia Mara Non-Resident Rack Rates 2026 (1).pdf",
+    "2026 CONTRACT RATES/KENYA/ACCOMODATION/Olkupelia Mara/Olkupelia Mara STO Agreement 2026 1.pdf"
+  ],
+  "currency": "USD",
+  "roomCategories": ["Luxury River View Suites (100 m2)", "Honeymoon River View Suite (100 m2)"],
+  "notes": [
+    "STO discount confirmed arithmetically as exactly Rack x 0.70 on Ground Package figures (e.g. Standard: $630 = $900 x 0.7; High: $1,120 = $1,600 x 0.7) and approximately on Full Board (390/550=0.709, 840/1200=0.70) - an STO 30% tier.",
+    "ANOMALY: the STO document's 'Park Fees' section states Maasai Mara National Reserve fee validity/date bands as 'Jan-30th June 2025' / 'Jan-31st Dec 2025' / 'Jul-Dec 2025' despite this being a 2026-dated agreement - almost certainly a copy-paste template error carried over from a 2025 document, not updated for 2026. The figures themselves ($100 low, $200 high, $50 child) match the standard Maasai Mara reserve fee pattern seen elsewhere in this project, so likely still correct in substance, just mislabeled by year."
+  ],
+  "rack_nonResident_perPersonPerNight_2sharing": {
+    "seasons": { "standard": "5 Jan-30 Jun 2026, 1 Nov-19 Dec 2026", "high": "Jul-31 Oct 2026, 20 Dec 2026-4 Jan 2027" },
+    "luxuryRiverViewSuites": { "fullBoard": { "standard": 550, "high": 1200 }, "gamePackage": { "standard": 900, "high": 1600 }, "singleSupplement": { "standard": 300, "high": 300 } },
+    "honeymoonRiverViewSuite": { "fullBoard": { "standard": 550, "high": 1200 }, "gamePackage": { "standard": 900, "high": 1600 } },
+    "verified": true
+  },
+  "sto30pct_perPersonPerNight": {
+    "seasons": { "band1": "5 Jan-30 Jun 2026 & 1 Nov-19 Dec 2026", "band2": "1 Jul-31 Oct 2026 & 20 Dec 2026-4 Jan 2027" },
+    "groundPackage": { "band1": { "perAdultSharing": 630, "singleRoomSupplement": 300, "childSharing5to12": 315 }, "band2": { "perAdultSharing": 1120, "singleRoomSupplement": 300, "childSharing5to12": 560 } },
+    "fullBoard": { "band1": { "perAdultSharing": 390, "singleRoomSupplement": 300, "childSharing5to12": 195 }, "band2": { "perAdultSharing": 840, "singleRoomSupplement": 300, "childSharing5to12": 420 } },
+    "verified": true
+  },
+  "childPolicy": { "raw": "0-5 years: free of charge. 6-16 years sharing with 2 adults: 50% off adult rate PPS. Below 12 in own room: 75% of double room rate.", "verified": true },
+  "wheelchairAccessible": true,
+  "specialOffers": [
+    "Free Night Offer: stay 3+ nights, get 4th night free (accommodation only, park fees still payable for all nights). Valid 5 Jan-9 Jun 2026 and 16 Oct-19 Dec 2026. Not combinable.",
+    "Honeymooners Offer: bride gets 50% discount staying 4+ nights, proof of wedding required within 12 months, valid all year except Jul/Aug/Sep, limited availability, not combinable."
+  ],
+  "includes_groundPackage": ["Full board accommodation, water, tea & coffee in own tent", "House beverages (non-alcoholic beers, wines, champagne, soft drinks, wellness drinks, mocktails)", "Return transfers from Keekorok airstrip", "Shared day game drives (4x4 open Landcruiser)", "Mini bar replenished daily", "Guided nature walks", "Birdwatching", "Sundowner at scenic spot", "Bush meals (weather permitting)", "Beading experience", "Farm-to-table dining", "1 free 30min Swedish + 30min reflexology massage per stay", "Laundry (2 pieces/person/day)", "High speed WiFi", "Child minding (18:00-22:00, 2 weeks notice)", "Gym, heated pool", "Live cooking with chef", "Yoga"],
+  "excludes_groundPackage": ["Items of personal nature", "Maasai Mara park fees", "Gratuities", "Any other item not mentioned"],
+  "includes_fullBoard": ["Full board accommodation, water, tea and coffee", "House beverages", "Mini bar on arrival", "Farm-to-table dining", "High speed WiFi", "Guided nature walks", "Birdwatching", "Beading experience", "Child minding", "Gym, heated pool", "Live cooking with chef", "Yoga"],
+  "excludes_fullBoard": ["Maasai Mara park fees", "Game drives", "Items of personal nature", "Airstrip transfers"],
+  "guideAndAgentRates": {
+    "tourLeaderAgentRate": { "raw": "US$600/night High Season, US$400/night Standard Season, in guest room subject to availability, excludes park fees", "verified": true },
+    "driverGuide": { "raw": "KES 2,500 per person per night", "verified": true }
+  },
+  "extraMealsAndActivities": [
+    { "item": "Lunch", "amount": "US$50pp" },
+    { "item": "Picnic lunch box", "amount": "US$35pp" },
+    { "item": "Dinner", "amount": "US$50pp" },
+    { "item": "Bush breakfast/dinner (in lodge grounds, min 2 pax)", "amount": "US$60" },
+    { "item": "Sundowner", "amount": "US$45" },
+    { "item": "Exclusive use of vehicle (max 6 guests)", "amount": "US$500" }
+  ],
+  "dayRoomUse": { "raw": "75% of applicable room rate, up to 18:00, thereafter full rate applies", "verified": true },
+  "policies": {
+    "checkIn": "12:00", "checkOut": "10:00",
+    "deposit": "25% deposit to confirm; balance 45 days before arrival (60 days in High Season: 15 Jun-15 Oct 2026 & 20 Dec 2026-5 Jan 2027)",
+    "cancellation": "90+ days: free; 60+ days: 25%; 45 days: 50%; 44-31 days: 75%; 30 days-arrival: 100%",
+    "provisionalBookingHold": ">91 days to arrival: 14 days; 31-90 days: 7 days; 0-30 days: 48 hours"
+  }
+}

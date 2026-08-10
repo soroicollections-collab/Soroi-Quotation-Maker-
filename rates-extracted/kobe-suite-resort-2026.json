@@ -1,0 +1,118 @@
+{
+  "$note": "Extracted 6 Aug 2026, read directly, two single-page documents (rates table + info/policy sheet), no misattribution risk.",
+  "property": "Kobe Suite Resort",
+  "region": "Watamu, Kenya (per document footer 'P.O. Box 580 Watamu (Kenya) - 80202') — North Coast, not South Coast/Diani like the other 4 properties in this batch.",
+  "tier": "Travel Agent Rate, stated 'inclusive of 15% commission for travel agent' — i.e. a gross/agent rate, not a stripped net rate.",
+  "residency": "Not split Resident/Non-Resident on this document.",
+  "source": {
+    "ratesFile": "2026 CONTRACT RATES/KENYA/BEACH ACCOMODATION/KOBE SUITE RESORT/Kobe Suite Resort_Travel Agents Rates 2025-2026 (1).pdf",
+    "policyFile": "2026 CONTRACT RATES/KENYA/BEACH ACCOMODATION/KOBE SUITE RESORT/Kobe Suite Resort_Travel Agent Info & Policy (2).pdf",
+    "pdfPageIndex": 0,
+    "validity": { "start": "2025-07-11", "end": "2026-05-31", "note": "Document title says '2025-26' but the date rows run 11 Jul 2025 through 31 May 2026 — NOT a Jan-Dec calendar year and does NOT cover Jun-Jul 2026. This is an odd/partial fiscal window; flag on any quote needing Jun-Jul 2026 dates for this property, since no rate row covers that gap."
+    }
+  },
+  "confidence": "confirmed-2026-08-06",
+  "extractionMethod": { "note": "Read directly, single-page rates table with three parallel currency sub-tables (KES/USD/EUR) plus a separate single-page policy sheet." },
+  "structuralFindings": [
+    "Base rate table currency is quoted in THREE parallel currencies (KES, USD, EUR) for the same date rows and room — not one primary currency with conversions noted; USD used as primary here since that matches the project's general convention, but KES and EUR figures are equally 'confirmed' (all three appear on the same source page).",
+    "Base meal plan Bed & Breakfast only — 'The only formula we operate with is Bed and Breakfast' stated explicitly. No Half Board/Full Board/All Inclusive option exists at all for this property.",
+    "Base rates in the main table (SGL/DBL/PP/3rd-4th bed) are explicitly for the Standard Garden View Suite only — all other room categories are priced as a flat SUPPLEMENT added on top of this base rate, not as independent rate columns like every other property in this batch.",
+    "10 date-range rows per currency table, non-uniform lengths (irregular high/low season windows tied to Kenyan coast tourist season, not a simple Peak/Shoulder/Green 3-tier).",
+    "Minimum stay varies by row (1, 2, or 4 nights) — tied to season, not a flat policy.",
+    "Children under 2 free; 1 adult + 1 child above 2yrs charged as two adults (i.e. no child discount at all past age 2 — a notably harsher policy than every other property in this batch).",
+    "Late check-out (until 6pm) costs a flat fee: 8,000 KES / 80 USD / 75 EUR.",
+    "Cancellation policy: full non-refundable amount withheld on cancellation or no-show; a voucher (12-month validity) is issued instead if cancelled 14+ days before arrival. Different terms may apply for 2+ room bookings (unspecified what those different terms are)."
+  ],
+  "seasons": {
+    "rows": [
+      { "dateRange": "11/07/25 - 31/07/25", "minStayNights": 1 },
+      { "dateRange": "01/08/25 - 31/08/25", "minStayNights": 2 },
+      { "dateRange": "01/09/25 - 05/10/25", "minStayNights": 1 },
+      { "dateRange": "06/10/25 - 02/11/25", "minStayNights": 2 },
+      { "dateRange": "03/11/25 - 20/12/25", "minStayNights": 1 },
+      { "dateRange": "21/12/25 - 11/01/26", "minStayNights": 4, "note": "Festive peak — highest rate row." },
+      { "dateRange": "12/01/26 - 01/03/26", "minStayNights": 2 },
+      { "dateRange": "02/03/26 - 02/04/26", "minStayNights": 1 },
+      { "dateRange": "03/04/26 - 06/04/26", "minStayNights": 2 },
+      { "dateRange": "07/04/26 - 31/05/26", "minStayNights": 1 }
+    ]
+  },
+  "rates": {
+    "unit": "Standard Garden View Suite, Bed & Breakfast. SGL=single occupancy, DBL=double room total, PP=per person sharing, '3rd-4th bed ADT'=extra adult in room, '3rd-4th bed CHD'=extra child in room.",
+    "USD": {
+      "primary": true,
+      "rows": [
+        { "dateRange": "11/07/25-31/07/25", "sgl": 179, "dbl": 256, "pp": 128, "thirdFourthAdult": 96, "thirdFourthChild": 64 },
+        { "dateRange": "01/08/25-31/08/25", "sgl": 246, "dbl": 352, "pp": 176, "thirdFourthAdult": 132, "thirdFourthChild": 88 },
+        { "dateRange": "01/09/25-05/10/25", "sgl": 179, "dbl": 256, "pp": 128, "thirdFourthAdult": 96, "thirdFourthChild": 64 },
+        { "dateRange": "06/10/25-02/11/25", "sgl": 246, "dbl": 352, "pp": 176, "thirdFourthAdult": 132, "thirdFourthChild": 88 },
+        { "dateRange": "03/11/25-20/12/25", "sgl": 179, "dbl": 256, "pp": 128, "thirdFourthAdult": 96, "thirdFourthChild": 64 },
+        { "dateRange": "21/12/25-11/01/26", "sgl": 386, "dbl": 552, "pp": 276, "thirdFourthAdult": 207, "thirdFourthChild": 138 },
+        { "dateRange": "12/01/26-01/03/26", "sgl": 246, "dbl": 352, "pp": 176, "thirdFourthAdult": 132, "thirdFourthChild": 88 },
+        { "dateRange": "02/03/26-02/04/26", "sgl": 179, "dbl": 256, "pp": 128, "thirdFourthAdult": 96, "thirdFourthChild": 64 },
+        { "dateRange": "03/04/26-06/04/26", "sgl": 246, "dbl": 352, "pp": 176, "thirdFourthAdult": 132, "thirdFourthChild": 88 },
+        { "dateRange": "07/04/26-31/05/26", "sgl": 179, "dbl": 256, "pp": 128, "thirdFourthAdult": 96, "thirdFourthChild": 64 }
+      ]
+    },
+    "KES": {
+      "rows": [
+        { "dateRange": "11/07/25-31/07/25", "sgl": 17885, "dbl": 25550, "pp": 12775, "thirdFourthAdult": 9581, "thirdFourthChild": 6388 },
+        { "dateRange": "01/08/25-31/08/25", "sgl": 24640, "dbl": 35200, "pp": 17600, "thirdFourthAdult": 13200, "thirdFourthChild": 8800 },
+        { "dateRange": "01/09/25-05/10/25", "sgl": 17885, "dbl": 25550, "pp": 12775, "thirdFourthAdult": 9581, "thirdFourthChild": 6388 },
+        { "dateRange": "06/10/25-02/11/25", "sgl": 24640, "dbl": 35200, "pp": 17600, "thirdFourthAdult": 13200, "thirdFourthChild": 8800 },
+        { "dateRange": "03/11/25-20/12/25", "sgl": 17885, "dbl": 25550, "pp": 12775, "thirdFourthAdult": 9581, "thirdFourthChild": 6388 },
+        { "dateRange": "21/12/25-11/01/26", "sgl": 38640, "dbl": 55200, "pp": 27600, "thirdFourthAdult": 20700, "thirdFourthChild": 13800 },
+        { "dateRange": "12/01/26-01/03/26", "sgl": 24640, "dbl": 35200, "pp": 17600, "thirdFourthAdult": 13200, "thirdFourthChild": 8800 },
+        { "dateRange": "02/03/26-02/04/26", "sgl": 17885, "dbl": 25550, "pp": 12775, "thirdFourthAdult": 9581, "thirdFourthChild": 6388 },
+        { "dateRange": "03/04/26-06/04/26", "sgl": 24640, "dbl": 35200, "pp": 17600, "thirdFourthAdult": 13200, "thirdFourthChild": 8800 },
+        { "dateRange": "07/04/26-31/05/26", "sgl": 17885, "dbl": 25550, "pp": 12775, "thirdFourthAdult": 9581, "thirdFourthChild": 6388 }
+      ]
+    },
+    "EUR": {
+      "rows": [
+        { "dateRange": "11/07/25-31/07/25", "sgl": 163, "dbl": 232, "pp": 116, "thirdFourthAdult": 87, "thirdFourthChild": 58 },
+        { "dateRange": "01/08/25-31/08/25", "sgl": 224, "dbl": 320, "pp": 160, "thirdFourthAdult": 120, "thirdFourthChild": 80 },
+        { "dateRange": "01/09/25-05/10/25", "sgl": 163, "dbl": 232, "pp": 116, "thirdFourthAdult": 87, "thirdFourthChild": 58 },
+        { "dateRange": "06/10/25-02/11/25", "sgl": 224, "dbl": 320, "pp": 160, "thirdFourthAdult": 120, "thirdFourthChild": 80 },
+        { "dateRange": "03/11/25-20/12/25", "sgl": 163, "dbl": 232, "pp": 116, "thirdFourthAdult": 87, "thirdFourthChild": 58 },
+        { "dateRange": "21/12/25-11/01/26", "sgl": 351, "dbl": 502, "pp": 251, "thirdFourthAdult": 188, "thirdFourthChild": 125 },
+        { "dateRange": "12/01/26-01/03/26", "sgl": 224, "dbl": 320, "pp": 160, "thirdFourthAdult": 120, "thirdFourthChild": 80 },
+        { "dateRange": "02/03/26-02/04/26", "sgl": 163, "dbl": 232, "pp": 116, "thirdFourthAdult": 87, "thirdFourthChild": 58 },
+        { "dateRange": "03/04/26-06/04/26", "sgl": 224, "dbl": 320, "pp": 160, "thirdFourthAdult": 120, "thirdFourthChild": 80 },
+        { "dateRange": "07/04/26-31/05/26", "sgl": 163, "dbl": 232, "pp": 116, "thirdFourthAdult": 87, "thirdFourthChild": 58 }
+      ]
+    }
+  },
+  "roomSupplements": {
+    "note": "Added on top of the Standard Garden View Suite base rate above, per person per night presumably (unit not explicitly re-stated on the supplement line, inferred to match the base rate's per-person-per-night unit).",
+    "deluxeGardenViewSuite": { "KES": 4000, "USD": 40, "EUR": 35 },
+    "premiumGardenViewSuite": { "KES": 4500, "USD": 45, "EUR": 40 },
+    "oceanViewSuite": { "KES": 5000, "USD": 50, "EUR": 45 },
+    "deluxeOceanViewSuite": { "KES": 6000, "USD": 60, "EUR": 55 },
+    "confidenceNote": "[Inference] Unit of these supplements (per person/night vs per room/night) is not explicitly restated next to the supplement figures themselves — inferred from context to match the base table's per-person convention. Verify with the resort before quoting a large group."
+  },
+  "guestInfo": {
+    "checkIn": "12:30 pm",
+    "checkOut": "10:00 am",
+    "lateCheckOut": { "until": "6:00 pm", "fee": { "KES": 8000, "USD": 80, "EUR": 75 } },
+    "commissionNote": "Rates are inclusive of 15% commission for travel agent.",
+    "mealPlan": "Bed & Breakfast only — no other meal plan offered.",
+    "taxesIncluded": true
+  },
+  "childPolicy": {
+    "under2": "Free of charge",
+    "above2": "1 adult + 1 child above 2 years old is charged as two adults — no child discount at all past age 2."
+  },
+  "payment": {
+    "deposit": "30% required to secure booking",
+    "balance": "Due 30 days prior to arrival"
+  },
+  "cancellationPolicy": {
+    "cancelledOrNoShow": "Full amount withheld, non-refundable.",
+    "cancelled14PlusDaysOut": "Voucher issued, valid 12 months from check-in date.",
+    "note": "Different conditions may apply to bookings of 2+ rooms — specifics not stated in source."
+  },
+  "portfolioWideTerms": {
+    "note": "Non-Soroi property — CLAUDE.md's Soroi-portfolio-wide terms do not apply. Kobe's child policy (no discount past age 2) is notably harsher than every other property checked so far — don't assume Soroi's 50%-at-5-11 rule applies here."
+  }
+}

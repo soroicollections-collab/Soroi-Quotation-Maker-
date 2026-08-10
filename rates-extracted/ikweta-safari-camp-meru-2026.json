@@ -1,0 +1,22 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftotext -layout (single-page rate sheet). NOT a Soroi property. Meru National Park circuit option.",
+  "property": "iKweta Safari Camp",
+  "operator": "iKweta Hotels & Lodges Limited",
+  "region": "Meru National Park, Murera Gate",
+  "source": {
+    "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/IKWETA SAFARI CAMP/iKWETA Safari Camp Meru Contract (STO) Rates ISC 2026.pdf",
+    "tier": "Contract (STO) Rates 2026, Full-Board Accommodation"
+  },
+  "confidence": "confirmed-2026-08-06",
+  "currency": "USD",
+  "unit": "per person per night, Full Board, inclusive of 16% VAT and 2% Tourism Levy",
+  "rates": {
+    "eastAfricaResidents": { "double": 175, "single": 105 },
+    "nonResidents": { "double": 195, "single": 115 },
+    "verified": true
+  },
+  "festiveSeasonSurcharge": { "dateRange": "21 Dec 2025 - 3 Jan 2026", "note": "Festive rate uplift mentioned but no separate festive figure given on this page - flag as an unstated amount if quoting over that window (falls just before the doc's main 2026 period, likely a holdover festive rate applicable at the very start of the validity window)." },
+  "childPolicy": { "age3to11SharingGuestTent": { "amount": 48, "unit": "USD per night" } },
+  "exclusions": ["Transport", "Park fees", "Game drives", "Optional excursions"],
+  "accolades": "TripAdvisor Certificate of Excellence / Travellers' Choice for 11 consecutive years; Hall of Fame 2018 & 2019."
+}

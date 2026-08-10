@@ -1,0 +1,45 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftotext -layout, clean single-page contract. NOT a Soroi property.",
+  "property": "The Amazing Laikipia Camp",
+  "region": "Laikipia (near Mugie/Loisaba/Nanyuki)",
+  "currency": "USD (non-resident) / KES (resident)",
+  "unit": "per person per night",
+  "source": {
+    "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/THE AMAZING LAIKIPIA CAMP/THE AMAZING LAIKIPIA CAMP - 2026 CONTRACT RATES.pdf",
+    "validity": { "start": "2026-01-03", "end": "2027-01-02" }
+  },
+  "confidence": "confirmed-2026-08-06",
+  "seasons": { "low": "Mar/Apr/May/Nov", "mid": "Jan/Feb/Jun/Oct/Dec", "high": "Jul/Aug/Sep/23 Dec - 2 Jan", "note": "No seasonal price variation stated - rates are flat 'All Year Round' despite this season table being present in the document (see confidenceNote)." },
+  "rates_nonResident_USD": {
+    "fullBoard": { "rack": 480, "nett": 360, "note": "Drinks extra" },
+    "gamePackage": { "rack": 560, "nett": 420, "note": "Drinks extra" }
+  },
+  "rates_resident_KES": {
+    "fullBoard": { "gross": 22678, "nett": 19720 },
+    "gamePackage": { "gross": 29481, "nett": 25636 }
+  },
+  "mandatoryFees_nonResident": { "wildernessFee": { "amount": 90, "unit": "per person per night" } },
+  "mandatoryFees_resident_KES": { "wildernessFee": { "amount": 4000, "unit": "per person per night" } },
+  "exclusiveUseCarPerDay": { "nonResident": 300, "resident_KES": 30000 },
+  "singleTentSupplement": "30% on the per-person-sharing rate",
+  "packages": {
+    "fullBoard": "Accommodation, meals (incl. teas/coffee), drinking water. Premium drinks excluded.",
+    "gamePackage": "Accommodation, meals, drinking water, scheduled shared game drives, airstrip transfers from Mugie."
+  },
+  "transfers": { "loisabaOrNanyukiAirstripOneWay": 100 },
+  "extraLunch": 30,
+  "childPolicy": { "age3to11": "60% of per-adult-sharing rate", "adultSharingWithChild": "Adult pays per-person-sharing rate; child pays 60% of same rate" },
+  "seasonalSupplements": {
+    "christmas": { "nonResident": 30, "resident_KES": 3000, "dates": "24, 25, 26 Dec" },
+    "newYear": { "nonResident": 30, "resident_KES": 3000, "dates": "31 Dec, 1 Jan" },
+    "easter": { "nonResident": 25, "resident_KES": 2500, "dates": "Good Friday and Easter Monday" }
+  },
+  "cancellationPolicy": [
+    { "daysBeforeArrival": ">91", "charge": "Full refund, bank charges payable by client" },
+    { "daysBeforeArrival": "90-46", "charge": "20%" },
+    { "daysBeforeArrival": "45-30", "charge": "50%" },
+    { "daysBeforeArrival": "<30", "charge": "100%" }
+  ],
+  "paymentTerms": "30% non-refundable deposit to confirm; full balance due 30 days prior to arrival; confirmation voucher issued only on 100% payment.",
+  "confidenceNote": "[Unverified] The document includes a Low/Mid/High season date table but explicitly labels all rate figures 'All Year Round' with no season-specific pricing given - this is either an intentional flat-rate structure (seasons only matter for the supplements/discounts, not base rate) or an incomplete document. Flagged rather than assumed."
+}

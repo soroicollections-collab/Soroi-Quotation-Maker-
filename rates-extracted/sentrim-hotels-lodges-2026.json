@@ -1,0 +1,116 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftotext -layout, clean signed contract PDF. NOT a Soroi property. Single contract covers FIVE properties: Sentrim Castle (Royal, Nairobi-area town hotel), Sentrim Mara, Sentrim Amboseli, Sentrim Tsavo, Sentrim Elementaita. Both Contract (Nett) and Rack rates given side-by-side for each.",
+  "operator": "Sentrim Kenya Limited",
+  "contractParty": "Sunworld Safaris Ltd",
+  "currency": "USD",
+  "unit": "per room per night (SGL/DBL/TRP columns, not per person)",
+  "source": {
+    "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/Sentrim Hotels & Lodges/Sentrim Hotels & Lodges-Sunworld Safaris Ltd-2026.pdf",
+    "validity": { "start": "2026-01-01", "end": "2026-12-31" },
+    "signedDate": "2025-07-21"
+  },
+  "confidence": "confirmed-2026-08-06",
+  "seasons": {
+    "amboseliAndTsavo": { "high": "1 Jan - 31 Mar 2026", "peak": "1 Jul - 31 Oct 2026 / 20 Dec 2026 - 2 Jan 2027", "low": "1 Apr - 30 Jun 2026 / 1 Nov - 19 Dec 2026" },
+    "maraAndElementaita": { "high": "1 Jan - 31 Mar 2026", "peak": "1 Jul - 31 Oct 2026 / 20 Dec 2026 - 2 Jan 2027", "low": "1 Apr - 30 Jun 2026 / 1 Nov - 19 Dec 2026" },
+    "easterPeriod": "3-6 Apr 2026", "christmasPeriod": "24, 25, 26, 31 Dec 2026 & 1 Jan 2027",
+    "note": "Peak season NETT rates apply across ALL Sentrim properties during Easter/Christmas periods, plus WRC (World Rally Championship, TBA dates) at Sentrim Elementaita only."
+  },
+  "properties": {
+    "sentrimCastle": {
+      "region": "Nairobi area (town hotel/lodge)",
+      "roomCategory": "Standard",
+      "mealPlan": "BB",
+      "validity": "01/01/26 - 31/12/26 (no seasonality)",
+      "contractNett": { "single": 55, "double": 80, "triple": 110 },
+      "rack": { "single": 90, "double": 140, "triple": 190 },
+      "dayRoomUse": "75% of applicable room rate, up to 6:00pm (Sentrim Castle only).",
+      "cancellationPolicy": "100% of net booking value for cancellation within 24 hours of reservation date, and 100% for no-show."
+    },
+    "sentrimMara": {
+      "region": "Maasai Mara",
+      "mealPlan": "FB",
+      "standardTents": {
+        "contractNett": { "high": { "single": 130, "double": 240, "triple": 310 }, "peak": { "single": 160, "double": 300, "triple": 360 }, "low": { "single": 110, "double": 170, "triple": 225 } },
+        "rack": { "high": { "single": 160, "double": 300, "triple": 400 }, "peak": { "single": 200, "double": 400, "triple": 460 }, "low": { "single": 140, "double": 220, "triple": 290 } }
+      },
+      "twoBedroomFamilyHouse": {
+        "contractNett": { "high": 380, "peak": 420, "low": 360 }, "rack": { "high": 450, "peak": 500, "low": 420 },
+        "unit": "per unit (sold as a single unit, max 4 persons - see familyHousePolicy)"
+      },
+      "groundPackages": {
+        "minimum": "2 pax",
+        "oneNight": { "high": { "single": 240, "perPersonSharing": 210, "childSharing": 110, "childOwnRoom": 150 }, "peak": { "single": 255, "perPersonSharing": 240, "childSharing": 125, "childOwnRoom": 180 }, "low": { "single": 190, "perPersonSharing": 170, "childSharing": 110, "childOwnRoom": 150 }, "includes": "1 night FB accommodation, return airstrip transfers, mini game drive en-route, PM game drive night 1, AM game drive day 2, mini game drive to Keekorok airstrip" },
+        "twoNights": { "high": { "single": 475, "perPersonSharing": 390, "childSharing": 210, "childOwnRoom": 275 }, "peak": { "single": 510, "perPersonSharing": 435, "childSharing": 220, "childOwnRoom": 325 }, "low": { "single": 370, "perPersonSharing": 340, "childSharing": 180, "childOwnRoom": 240 } },
+        "extraNight": { "high": { "single": 190, "perPersonSharing": 170, "childSharing": 100, "childOwnRoom": 140 }, "peak": { "single": 230, "perPersonSharing": 200, "childSharing": 110, "childOwnRoom": 160 }, "low": { "single": 140, "perPersonSharing": 130, "childSharing": 100, "childOwnRoom": 130 } }
+      }
+    },
+    "sentrimAmboseli": {
+      "region": "Amboseli",
+      "mealPlan": "FB",
+      "standardTents": {
+        "contractNett": { "high": { "single": 130, "double": 230, "triple": 300 }, "peak": { "single": 150, "double": 250, "triple": 320 }, "low": { "single": 110, "double": 170, "triple": 225 } },
+        "rack": { "high": { "single": 170, "double": 300, "triple": 400 }, "peak": { "single": 195, "double": 300, "triple": 400 }, "low": { "single": 160, "double": 220, "triple": 300 } }
+      },
+      "twoBedroomFamilyHouse": { "contractNett": { "high": 380, "peak": 400, "low": 360 }, "rack": { "high": 450, "peak": 500, "low": 420 } },
+      "groundPackagesAvailable": "See sentrimMara.groundPackages structure - '2026 GROUND PACKAGE RATES' header covers Mara/Amboseli/Tsavo collectively but only the Sentrim Mara figures were shown explicitly in the source table read; Amboseli/Tsavo package figures not separately captured (see confidenceNote)."
+    },
+    "sentrimTsavo": {
+      "region": "Tsavo",
+      "mealPlan": "FB",
+      "standardTents": {
+        "contractNett": { "high": { "single": 115, "double": 210, "triple": 280 }, "peak": { "single": 130, "double": 230, "triple": 300 }, "low": { "single": 90, "double": 175, "triple": 250 } },
+        "rack": { "high": { "single": 150, "double": 270, "triple": 360 }, "peak": { "single": 170, "double": 300, "triple": 380 }, "low": { "single": 120, "double": 230, "triple": 300 } }
+      }
+    },
+    "sentrimElementaita": {
+      "region": "Lake Elementaita",
+      "mealPlan": "FB",
+      "roomCategory": "Deluxe Cottages",
+      "contractNett": { "high": { "single": 110, "double": 200, "triple": 280 }, "peak": { "single": 130, "double": 220, "triple": 300 }, "low": { "single": 100, "double": 170, "triple": 220 } },
+      "rack": { "high": { "single": 140, "double": 260, "triple": 360 }, "peak": { "single": 170, "double": 280, "triple": 390 }, "low": { "single": 130, "double": 220, "triple": 280 } },
+      "note": "World Rally Championship (WRC) dates TBA - Peak season NETT rates apply at this property specifically during WRC."
+    }
+  },
+  "confidenceNote": "[Unverified] The Ground Package Rates table header reads 'MARA / AMBOSELI / TSAVO' implying it applies to all three, but the only figures visible in the extracted table rows are explicitly labeled 'SENTRIM MARA' - Amboseli and Tsavo ground package figures were not separately itemized in the readable table and may require re-checking the source PDF's table structure directly (possible additional rows/columns not captured by pdftotext -layout).",
+  "activitiesAndExtras_perPerson": {
+    "bushBreakfastWithinLodgeMin7pax": 20, "bushBreakfastWithinParkMin7pax": 30, "breakfastByPoolsideMin7pax": 20,
+    "bushLunchWithinLodgeMin7pax": 20, "bushLunchWithinParkMin7pax": 30, "lunchByPoolsideMin7pax": 20,
+    "bushDinnerWithinLodgeMin7pax": 20, "dinnerByPoolsideMin7pax": 20,
+    "africanBarbequeWithMaasaiExperienceMin7pax": 30,
+    "cocktailHourNonAlcoholicMin7pax": 25, "bushSundownerAlcoholicMin7pax": 30,
+    "maasaiCulturalVillageAndLecture_maraAmboseliOnly": 30, "natureWalkBirdwatching": 25,
+    "birthdayCakeHalfKg": 25, "birthdayCakeOneKg": 40, "breakfastBoxes": 20, "lunchBoxesExtraLunch": 20,
+    "galaDinnerMin15pax": 35,
+    "balloonSafaris": 480,
+    "extraLunch": 25, "packedLunchBoxes": 20, "extraDinner": 30
+  },
+  "gameDrivesAndTransfers": {
+    "exclusiveUseVehiclePerGameDriveMin6pax": 300, "fullDayGameDrivePerVehicleMin6pax": 400,
+    "keekorokAirstripToSentrimMaraPerVehicleUpTo6pax": 180, "amboseliAirstripToSentrimAmboseliPerVehicleUpTo6pax": 180
+  },
+  "policies": {
+    "halfBoardReduction": { "amount": 5, "unit": "per person", "note": "Lodges only." },
+    "easterChristmasSupplement": { "amount": 25, "unit": "USD" },
+    "extraMealsAllProperties": { "lunch": 25, "packedLunch": 20, "dinner": 30 },
+    "familyHousePolicy": "Sold as single units, max 4 persons; extra adult charged 30% of family house rate (max 2 extra persons).",
+    "singleRoomPolicy": "Max 7 single rooms (lodges only); additional at double room rate. Single room supplement: USD 25/night.",
+    "agentFamTripRates": "30% off contract rates, subject to availability; not applicable during peak season, Easter, Christmas.",
+    "childPolicy": {
+      "under5_max2SharingWith1or2Adults": "Free of charge",
+      "under12_sharingWith2Adults_max2": "50% of per-person sharing rate",
+      "under12_sharingWith1Adult_max2": "50% of per-person sharing rate for child, adult pays single room rate",
+      "ownRoom_max3": "75% of applicable room rate"
+    },
+    "tourLeader": { "per15PayingGuests": "1 complimentary, pre-booked, subject to availability", "under15pax": "40% discount off contract rates" },
+    "circuitDiscounts": { "allSentrimProperties": "12.5%", "threeSentrimLodgesPlusCastle": "10%", "threeSentrimLodgesPlusElementaita": "7.5%", "threeSentrimLodgesOnly": "5%" }
+  },
+  "cancellationPolicy": {
+    "sentrimCastle": "100% of net booking value within 24 hours of reservation, and 100% for no-show.",
+    "otherFourProperties": {
+      "40pctCharge": { "low": "30-15 days before", "high": "45-20 days before", "peak": "60-45 days before" },
+      "50pctCharge": { "low": "15-2 days before", "high": "20-10 days before", "peak": "45-30 days before" },
+      "100pctCharge": { "low": "within 48 hours", "high": "within 10 days", "peak": "within 30 days" }
+    }
+  }
+}

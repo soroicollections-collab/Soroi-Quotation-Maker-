@@ -1,0 +1,41 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftotext -layout from 'MAANZONI LODGE/MAANZONI LODGE TOUR OPERATOR CONTRACT-SUNWORLD SAFARIS.pdf' (8pp). ANOMALY: document self-titles as 'MAANZONI LODGE 2025 TOUR OPERATOR CONTRACT' (with an apparent typo '20256' in the body text) but is dated 31 July 2026 and lives in the 2027 CONTRACT RATES folder with no other Maanzoni file present. No explicit validity end date is stated anywhere in the contract - it appears to be an open-ended/rolling agreement (cancellable with 30 days notice) rather than a year-bound rate card. Extracted as the only available source for this property; confirm currency of these figures with Sunworld before relying on them for 2027 bookings specifically.",
+  "property": "Maanzoni Lodge",
+  "location": "Machakos, near Nairobi (Mombasa Road)",
+  "currency": "KES",
+  "confidence": "unverified-year-ambiguity",
+  "confidenceNote": "[Unverified] Contract labeled '2025' internally, dated mid-2026, no explicit validity window - treat rates as indicative/likely-current rather than confirmed-for-2027 until cross-checked with Sunworld contracting.",
+  "unit": "per room per night",
+  "rates": {
+    "weekday_commissionable10pct": {
+      "single": { "BB": 13000, "HB": 15000, "FB": 18000 },
+      "double": { "BB": 18000, "HB": 20000, "FB": 22000 }
+    },
+    "weekend_notCommissionable": {
+      "note": "Weekend = Friday, Saturday, Sunday nights only; not applicable to block-booked rooms",
+      "single": { "BB": 11000, "HB": 14000, "FB": 16000 },
+      "double": { "BB": 16000, "HB": 18000, "FB": 20000 }
+    },
+    "verified": true
+  },
+  "taxesIncluded": "23% statutory taxes (16% VAT + 5% service charge + 2% training levy) included in quoted rate",
+  "roomCapacity": { "maxAdultsPerRoom": 2, "extraBed": "Not available except in Suites" },
+  "childPolicy": {
+    "under3SharingWithAdult": "Free of charge",
+    "age3to12OwnRoom": "75% of double adult rate",
+    "twoChildrenOver12OwnRoom": "Full double adult rate",
+    "verified": true
+  },
+  "mealPrices": { "lunch": 22, "dinner": 25, "currency": "USD", "note": "Note: meal a la carte prices given in USD in the T&C section while room rates are in KES - as-stated in source, not reconciled." },
+  "conferencePackage": {
+    "currency": "KES",
+    "fullDay": 5000, "halfDay": 4500, "paSystemPerDay": 8000, "breakoutRoomPerDay": 50000, "teamBuildingWithoutFacilitator": 4500, "breakfast": 2500, "lunch": 3200, "dinner": 3200,
+    "verified": true
+  },
+  "dayUse": { "rate": "75% of applicable room rate", "checkoutTime": "18:00", "verified": true },
+  "cancellationPolicy": "60-31 days before arrival: 20%; 30-16 days: 50%; 15 days-no show: 100%",
+  "depositPolicy": "On confirmation: 25%; 14 days before arrival: 25%; 5 days before arrival: 50%; bookings within 30 days: 50% upfront",
+  "groupDefinition": "10+ rooms on peak night",
+  "checkInOut": "Check-in 14:00, check-out 10:00",
+  "capacityFacts": { "singleOccupancyRooms": 328, "bedCapacity": 510, "twinRooms": 41, "specialNeedsRooms": 8, "conferenceRooms": 20, "boardRooms": 2 }
+}

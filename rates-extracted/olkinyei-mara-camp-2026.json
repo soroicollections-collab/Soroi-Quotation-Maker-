@@ -1,0 +1,56 @@
+{
+  "property": "Olkinyei Mara Camp",
+  "operator": "Olkinyei Mara Camp",
+  "region": "Maasai Mara (100m from Talek Gate, Masai Mara National Reserve)",
+  "isSoroiProperty": false,
+  "sourceFiles": [
+    "2026 CONTRACT RATES/KENYA/ACCOMODATION/OLKINYEI MARA CAMP/Contract_Rates_2026.pdf",
+    "2026 CONTRACT RATES/KENYA/ACCOMODATION/OLKINYEI MARA CAMP/Olkinyei Mara - Contract_Rates_2026.pdf (confirmed byte-identical duplicate of the above)",
+    "2026 CONTRACT RATES/KENYA/ACCOMODATION/OLKINYEI MARA CAMP/ComfortTents.pdf (room description only, no additional pricing) / Olkinyei Mara - ComfortTents.pdf (confirmed duplicate)"
+  ],
+  "skippedFiles": [
+    { "file": "DeluxeTents.pdf / Olkinyei Mara - DeluxeTents.pdf", "reason": "Room description/marketing brochure only, no pricing beyond what's already captured in Contract_Rates_2026.pdf." },
+    { "file": "Re OL KINYEI MARA 2024-2025 RATES INQUIRY.msg", "reason": "Email (.msg) file, not a PDF - out of scope for this tool's extraction and superseded by the 2026 contract anyway." }
+  ],
+  "currency": "USD",
+  "validity": "This is a '2026 Contract Rates - 20% NETT Rates' document - i.e. already the Sunworld-style discounted rate, not a Rack card. No separate Rack rate document was found in this folder to verify the 20% figure against.",
+  "camp": "4 Comfort Tents (1 Queen + 1 Single), 5 Deluxe Tents (1 King, or Twin, or 1 King+1 Single, or 2 King), 5 Premium Tents (1 King + 1 Single)",
+  "nonResidentFullBoard_perPersonPerNight": {
+    "greenSeason_7Jan_14Jun_1Nov_21Dec": { "comfortTent": { "single": 140, "double": 120, "triple": 110 }, "deluxeTent": { "single": 170, "double": 140, "triple": 130 }, "premiumTent": { "single": 250, "double": 180, "triple": 170 } },
+    "highSeason_15Jun_31Oct_22Dec_6Jan": { "comfortTent": { "single": 170, "double": 140, "triple": 130 }, "deluxeTent": { "single": 200, "double": 160, "triple": 150 }, "premiumTent": { "single": 300, "double": 210, "triple": 200 } },
+    "verified": true
+  },
+  "childPolicy": { "raw": "6-11 years: 50% of adult sharing rate. Under 6: free. Free baby cot subject to availability.", "verified": true },
+  "tourLeaderRate": { "raw": "50% of normal rate, applies only if group exceeds 4 pax.", "verified": true },
+  "includes": ["Accommodation and all meals (breakfast, lunch, dinner)", "Complimentary WiFi", "All taxes", "Drinking water for all meals and in the tent"],
+  "excludes": [
+    "Park fees Jan-Jun: US$100/non-resident adult/day (12hrs), US$50/child (9-17 or students)/day (<9yrs free)",
+    "Park fees Jul-Dec: US$200/non-resident adult/day (12hrs), US$50/child (9-17 or students)/day (<9yrs free)",
+    "Flights and transfers to/from the camp",
+    "Sundowners and bush breakfast",
+    "Game drives with safari vehicle and driver-guide",
+    "Laundry, tipping, insurance, personal expenses",
+    "Soft drinks and non-alcoholic/alcoholic drinks",
+    "Balloon safari and other activities"
+  ],
+  "extras": [
+    { "item": "Safari Landcruiser exclusive use, Masai Mara, Full Day (driver-guide+fuel, no mileage limit)", "amount": "US$280" },
+    { "item": "Safari Landcruiser exclusive use, Masai Mara, Half Day", "amount": "US$180" },
+    { "item": "Safari Landcruiser exclusive use, whole Kenya, Full Day", "amount": "US$350" },
+    { "item": "Transfer from/to Olkiombo Airstrip, one way", "amount": "US$80" },
+    { "item": "Transfer from/to Olkiombo Airstrip, return", "amount": "US$150" },
+    { "item": "Transfer from/to Nairobi, one way, up to 4 pax", "amount": "US$250" },
+    { "item": "Transfer from/to Nairobi, return, up to 4 pax", "amount": "US$450" },
+    { "item": "Birthday/Honeymoon/Celebration Package (1 bottle wine, cake, decoration)", "amount": "US$50" },
+    { "item": "Bush Sundowner (incl. alcoholic & non-alcoholic drinks)", "amount": "US$60pp" },
+    { "item": "Extra/Packed Lunch", "amount": "US$30pp" },
+    { "item": "Hot Air Balloon Safari (incl. champagne breakfast)", "amount": "US$450pp" },
+    { "item": "Masai Village Visit", "amount": "US$30pp" },
+    { "item": "Bush Walk (around camp, ~1hr)", "amount": "US$10pp" }
+  ],
+  "policies": {
+    "deposit": "30% deposit required to confirm booking; balance payable 4 weeks prior to arrival. Confirmation voucher issued only after full payment.",
+    "cardPaymentSurcharge": "2.5% bank charge added for card payments including online link payments",
+    "cancellation": ">91 days: no charge; 90-41 days: 30%; 40-21 days: 50%; within 20 days: 100%"
+  }
+}

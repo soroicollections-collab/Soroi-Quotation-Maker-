@@ -1,0 +1,56 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftotext -layout from 'THE HOUSE OF WAINE/The House of Waine  - 25_ Commission (2027).pdf' (6pp, single property, clean tables).",
+  "property": "House of Waine",
+  "location": "Karen, Nairobi",
+  "currency": "USD",
+  "validity": { "end": "2027-12-21" },
+  "tier": "Commissionable at 25% off Rack",
+  "unit": "per room",
+  "confidence": "confirmed-2027-08-06",
+  "seasons": { "high": { "dates": "01 Jun - 31 Oct 2027" }, "low": { "dates": "29 Dec 2026 - 31 May 2027 & 01 Nov - 22 Dec 2027" } },
+  "rates": {
+    "high": {
+      "StandardSingle": { "BB": { "rack": 525, "net": 395 }, "HB": { "rack": 545, "net": 410 }, "FB": { "rack": 565, "net": 425 } },
+      "StandardDouble": { "BB": { "rack": 790, "net": 595 }, "HB": { "rack": 830, "net": 625 }, "FB": { "rack": 870, "net": 655 } },
+      "StandardTriple": { "BB": { "rack": 1190, "net": 890 }, "HB": { "rack": 1250, "net": 935 }, "FB": { "rack": 1310, "net": 980 } },
+      "MalaikaSuiteSingle": { "BB": { "rack": 620, "net": 465 }, "HB": { "rack": 640, "net": 480 }, "FB": { "rack": 660, "net": 495 } },
+      "MalaikaSuiteDouble": { "BB": { "rack": 940, "net": 705 }, "HB": { "rack": 980, "net": 735 }, "FB": { "rack": 1020, "net": 765 } },
+      "MalaikaSuiteTriple": { "BB": { "rack": 1310, "net": 985 }, "HB": { "rack": 1370, "net": 1030 }, "FB": { "rack": 1430, "net": 1075 } },
+      "PoolsideCottage": { "BB": { "rack": 1310, "net": 985 }, "HB": { "rack": 1370, "net": 1030 }, "FB": { "rack": 1430, "net": 1075 } },
+      "childRates": {
+        "StandardDoubleTwin_1adult1child": { "BB": { "rack": 595, "net": 445 }, "HB": { "rack": 625, "net": 470 }, "FB": { "rack": 660, "net": 495 } },
+        "StandardTriple_1adult2children": { "BB": { "rack": 795, "net": 590 }, "HB": { "rack": 835, "net": 625 }, "FB": { "rack": 880, "net": 660 } },
+        "StandardTriple_2adults1child": { "BB": { "rack": 990, "net": 745 }, "HB": { "rack": 1040, "net": 780 }, "FB": { "rack": 1090, "net": 820 } }
+      }
+    },
+    "low": {
+      "StandardSingle": { "BB": { "rack": 445, "net": 335 }, "HB": { "rack": 480, "net": 360 }, "FB": { "rack": 510, "net": 380 } },
+      "StandardDouble": { "BB": { "rack": 600, "net": 450 }, "HB": { "rack": 675, "net": 505 }, "FB": { "rack": 730, "net": 550 } },
+      "StandardTriple": { "BB": { "rack": 915, "net": 690 }, "HB": { "rack": 1000, "net": 750 }, "FB": { "rack": 1100, "net": 825 } },
+      "MalaikaSuiteSingle": { "BB": { "rack": 600, "net": 450 }, "HB": { "rack": 640, "net": 480 }, "FB": { "rack": 660, "net": 495 } },
+      "MalaikaSuiteDouble": { "BB": { "rack": 735, "net": 550 }, "HB": { "rack": 765, "net": 575 }, "FB": { "rack": 865, "net": 650 } },
+      "MalaikaSuiteTriple": { "BB": { "rack": 1310, "net": 985 }, "HB": { "rack": 1370, "net": 1030 }, "FB": { "rack": 1430, "net": 1075 } },
+      "PoolsideCottage": { "BB": { "rack": 1310, "net": 985 }, "HB": { "rack": 1370, "net": 1030 }, "FB": { "rack": 1430, "net": 1075 } },
+      "childRates": {
+        "StandardDoubleTwin_1adult1child": { "BB": { "rack": 460, "net": 345 }, "HB": { "rack": 510, "net": 380 }, "FB": { "rack": 560, "net": 420 } },
+        "StandardTriple_1adult2children": { "BB": { "rack": 610, "net": 455 }, "HB": { "rack": 685, "net": 515 }, "FB": { "rack": 740, "net": 555 } },
+        "StandardTriple_2adults1child": { "BB": { "rack": 760, "net": 570 }, "HB": { "rack": 850, "net": 640 }, "FB": { "rack": 935, "net": 700 } }
+      }
+    },
+    "verified": true
+  },
+  "mealPlans": { "BB": "Accommodation + breakfast", "HB": "Accommodation + breakfast + dinner", "FB": "Accommodation + breakfast + lunch + dinner" },
+  "childPolicy": { "under2": "Free", "under12": "50% of applicable rate (sharing)", "age12plus": "100% adult rate", "verified": true },
+  "preBookedMeals": {
+    "lunchOrDinner": { "amount": 70, "unit": "per person", "includes": "welcome drink, 3-course menu, 1 soft drink, pool/changing room/garden use" },
+    "afternoonTea": { "amount": 35, "unit": "per person", "includes": "welcome drink, Kenyan tea/coffee, choice of 7 specialty teas, hot/cold snacks, pool/changing room/garden use" },
+    "commission": "10%",
+    "maxCapacity": 20,
+    "verified": true
+  },
+  "taxesIncluded": "VAT 16% + Service Charge 10% + Catering Levy 2% included in quoted rate",
+  "applicability": "Not valid for commercial/corporate clients or conference delegates",
+  "depositPolicy": { "FIT": "50% prepayment, due 7 days before arrival", "groups": "50% prepayment, due 90 days before arrival" },
+  "cancellationPolicy": { "groups": "Free up to 60 days before arrival; unallocated rooms released 60 days before", "FIT": "Free up to 3 days before arrival" },
+  "annualClosure": "Closed 22-28 December (staff Christmas break); annual renovations typically in May (subject to confirmation)"
+}

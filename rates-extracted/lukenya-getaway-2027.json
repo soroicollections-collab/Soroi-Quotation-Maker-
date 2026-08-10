@@ -1,0 +1,28 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftotext -layout from 'The Lukenya Getaway/LUKENYA GETAWAY CONTRACT RATES 2027.pdf' (3pp, single property, clean tables). Other files in the folder (Activities-.pdf, SAMPLE TEAM BUILDING PROGRAM.pdf, LUKENYA GETAWAY -Company profile.pdf) are brochures/programs, not rate sheets - skipped, no additional rate data.",
+  "property": "The Lukenya Getaway",
+  "location": "Lukenya, near Nairobi",
+  "currency": "KES",
+  "unit": "per room per night",
+  "confidence": "confirmed-2027-08-06",
+  "rates": {
+    "SingleRoom": { "BB": 8000, "HB": 10000, "FB": 14000 },
+    "DoubleRoom": { "BB": 14000, "HB": 16000, "FB": 20000 },
+    "TripleRoom": { "BB": 19000, "HB": 27000, "FB": 34500 },
+    "verified": true
+  },
+  "conferencePackage": {
+    "currency": "KES",
+    "unit": "per person per day",
+    "fullDay": 4000,
+    "halfDay": 3500,
+    "teamBuildingFacilitationFee": 1000,
+    "verified": true
+  },
+  "accommodationInclusions": "Welcome refresher on arrival, buffet breakfast, buffet dinner with 1 soft drink, unlimited high-speed internet, swimming pool, all relevant taxes",
+  "conferenceInclusions": "Conference hall 08:00-18:00, unlimited internet, teambuilding grounds, morning/evening tea+snacks, lunch, 2 bottles water, 1 soft drink at lunch, stationery, LCD projector, PA system (30+ pax), all taxes",
+  "hotelExchangeRate": { "kesPerUsd": 120, "note": "Subject to change" },
+  "paymentTerms": "50% advance payment to confirm; balance settled at checkout",
+  "cancellationPolicy": "15-7 days before check-in: 75% retention on minimum confirmed rooms; 7-0 days: 100% retention",
+  "cardsAccepted": "MasterCard, American Express, Visa"
+}

@@ -1,0 +1,97 @@
+{
+  "$note": "Extracted 6 Aug 2026 from a single-page, clean (non-flattened-risk) rate table — no adjacent-property misattribution risk since this PDF covers only Baobab Beach Resort. Read directly, page 1 of 6.",
+  "property": "Baobab Beach Resort",
+  "region": "Diani Beach (South Coast, near Ukunda)",
+  "tier": "Contract Rate (bilateral Sunworld/hotel contract, not the general STO 15-40% ladder)",
+  "residency": "Not specified as Non-Resident vs Resident on this document — appears to be a single unified contract rate for the tour operator, not split by residency.",
+  "source": {
+    "file": "2026 CONTRACT RATES/KENYA/BEACH ACCOMODATION/BAOBAB BEACH RESORT/EURO Contract Rates 2025-26.pdf",
+    "pdfPageIndex": 0,
+    "docPrintedPageNumber": 1,
+    "documentDate": "10 February 2025",
+    "validity": { "start": "2025-11-01", "end": "2026-10-31", "note": "Contract is titled '2025/26' and spans 01 Nov 2025 to 31 Oct 2026 across its 6 seasonal rows. The rows falling inside calendar year 2026 are: 04 Jan-31 Mar 26, 01 Apr-15 Jul 26, 16 Jul-31 Aug 26, 01 Sep-31 Oct 26 (all fully in 2026), plus 01 Nov-21 Dec 25 and 22 Dec 25-03 Jan 26 which start in 2025. All rows included below since the contract as a whole is the 2026-labeled source file." }
+  },
+  "confidence": "confirmed-2026-08-06",
+  "extractionMethod": { "note": "Read directly from the document's single rate table (page 1); no multi-property risk in this file." },
+  "structuralFindings": [
+    "Currency is EUR, not USD — confirmed from document header 'All rates are in EUROS per person per night on All Inclusive basis'.",
+    "Base meal plan is All Inclusive (AI) — there is no separate Half Board/Full Board base tier documented here, unlike Soroi's Ground Package model or Soroi Blue's Half Board base.",
+    "Five room categories: Garden Room, Sea Facing Room, Superior Room/Family Room (shown as one combined column), Deluxe Room, Suite Room.",
+    "Each room category has three price points per season: PPS (per person sharing double), SR (single room rate), and 3rd Adult rate — not a flat per-person figure.",
+    "No mandatory conservancy/park fee structure exists (expected for a beach resort, consistent with Soroi Blue's finding).",
+    "Minimum stay of 5 nights applies to the 22 Dec-03 Jan festive window specifically; not stated as a minimum for other seasons on this page.",
+    "Children policy: 0-<2yrs free sharing with 2 adults; 2-11.99yrs sharing with 2 adults = 50% of PPS rate; 1 adult + 1 child sharing = adult pays SR, child pays 50% of PPS; 2-3 children in own room = 75% of PPS each.",
+    "Check-in 1300hrs / check-out 1000hrs; early arrival/late departure outside these times charged EUR 30/person (facilities only, no room); Dayroom with room use = 75% of PPS or SR rate, latest checkout 1700hrs."
+  ],
+  "seasons": {
+    "note": "Six named date-range rows, not grouped under Peak/Shoulder/Green labels by the source document itself — season names below are inferred labels for organization only, not stated terminology in the PDF.",
+    "rows": [
+      { "dateRange": "01 Nov - 21 Dec 2025", "inferredLabel": "shoulder-lower" },
+      { "dateRange": "22 Dec 2025 - 03 Jan 2026", "inferredLabel": "festive-peak", "minStayNights": 5 },
+      { "dateRange": "04 Jan - 31 Mar 2026", "inferredLabel": "shoulder" },
+      { "dateRange": "01 Apr - 15 Jul 2026", "inferredLabel": "green-low" },
+      { "dateRange": "16 Jul - 31 Aug 2026", "inferredLabel": "peak-summer" },
+      { "dateRange": "01 Sep - 31 Oct 2026", "inferredLabel": "shoulder-late" }
+    ]
+  },
+  "rates": {
+    "currency": "EUR",
+    "unit": "per person per night, All Inclusive",
+    "gardenRoom": {
+      "perPersonSharing": { "01Nov-21Dec25": 118, "22Dec25-03Jan26": 266, "04Jan-31Mar26": 140, "01Apr-15Jul26": 100, "16Jul-31Aug26": 152, "01Sep-31Oct26": 129 },
+      "singleRoom": { "01Nov-21Dec25": 172, "22Dec25-03Jan26": 385, "04Jan-31Mar26": 203, "01Apr-15Jul26": 100, "16Jul-31Aug26": 220, "01Sep-31Oct26": 187 },
+      "thirdAdult": { "01Nov-21Dec25": 83, "22Dec25-03Jan26": 186, "04Jan-31Mar26": 98, "01Apr-15Jul26": 70, "16Jul-31Aug26": 106, "01Sep-31Oct26": 90 }
+    },
+    "seaFacingRoom": {
+      "perPersonSharing": { "01Nov-21Dec25": 125, "22Dec25-03Jan26": 275, "04Jan-31Mar26": 147, "01Apr-15Jul26": 107, "16Jul-31Aug26": 159, "01Sep-31Oct26": 136 },
+      "singleRoom": { "01Nov-21Dec25": 179, "22Dec25-03Jan26": 394, "04Jan-31Mar26": 210, "01Apr-15Jul26": 107, "16Jul-31Aug26": 227, "01Sep-31Oct26": 194 },
+      "thirdAdult": { "01Nov-21Dec25": 88, "22Dec25-03Jan26": 192, "04Jan-31Mar26": 103, "01Apr-15Jul26": 75, "16Jul-31Aug26": 111, "01Sep-31Oct26": 95 }
+    },
+    "superiorFamilyRoom": {
+      "perPersonSharing": { "01Nov-21Dec25": 132, "22Dec25-03Jan26": 280, "04Jan-31Mar26": 154, "01Apr-15Jul26": 114, "16Jul-31Aug26": 166, "01Sep-31Oct26": 143 },
+      "singleRoom": { "01Nov-21Dec25": 186, "22Dec25-03Jan26": 399, "04Jan-31Mar26": 217, "01Apr-15Jul26": 114, "16Jul-31Aug26": 234, "01Sep-31Oct26": 201 },
+      "thirdAdult": { "01Nov-21Dec25": 93, "22Dec25-03Jan26": 195, "04Jan-31Mar26": 108, "01Apr-15Jul26": 80, "16Jul-31Aug26": 116, "01Sep-31Oct26": 99 },
+      "note": "Superior Room and Family Room are shown as a single combined column in the source table — not split into two distinct price rows."
+    },
+    "deluxeRoom": {
+      "perPersonSharing": { "01Nov-21Dec25": 142, "22Dec25-03Jan26": 290, "04Jan-31Mar26": 164, "01Apr-15Jul26": 124, "16Jul-31Aug26": 176, "01Sep-31Oct26": 153 },
+      "singleRoom": { "01Nov-21Dec25": 196, "22Dec25-03Jan26": 409, "04Jan-31Mar26": 227, "01Apr-15Jul26": 124, "16Jul-31Aug26": 244, "01Sep-31Oct26": 211 },
+      "thirdAdult": { "01Nov-21Dec25": 100, "22Dec25-03Jan26": 202, "04Jan-31Mar26": 115, "01Apr-15Jul26": 87, "16Jul-31Aug26": 123, "01Sep-31Oct26": 106 }
+    },
+    "suiteRoom": {
+      "perPersonSharing": { "01Nov-21Dec25": 190, "22Dec25-03Jan26": 427, "04Jan-31Mar26": 225, "01Apr-15Jul26": 163, "16Jul-31Aug26": 244, "01Sep-31Oct26": 208 },
+      "singleRoom": { "01Nov-21Dec25": 276, "22Dec25-03Jan26": 618, "04Jan-31Mar26": 325, "01Apr-15Jul26": 163, "16Jul-31Aug26": 351, "01Sep-31Oct26": 300 },
+      "thirdAdult": { "01Nov-21Dec25": 133, "22Dec25-03Jan26": 299, "04Jan-31Mar26": 158, "01Apr-15Jul26": 115, "16Jul-31Aug26": 171, "01Sep-31Oct26": 145 }
+    }
+  },
+  "occupancy": {
+    "gardenRoom": "3 Adults or 2 Adults + 1 child",
+    "seaFacingRoom": "3 Adults or 2 Adults + 1 child",
+    "superiorRoom": "3 Adults or 2 Adults + 2 children",
+    "familyRoom": "2 Adults + 2 children or 3 Adults + 1 child",
+    "deluxeRoom": "3 Adults or 2 Adults + 1 child",
+    "suiteRoom": "3 Adults or 2 Adults + 1 child",
+    "infantNote": "Infants up to 1.99 years accommodated on top of max occupancy, same bed configuration."
+  },
+  "childPolicy": {
+    "under2SharingWith2Adults": "Free",
+    "age2to11_99SharingWith2Adults": "50% of Per Person Sharing rate",
+    "oneAdultOneChildSharing": "Adult pays Single Room rate, child pays 50% of Per Person Sharing rate",
+    "twoOrThreeChildrenOwnRoom": "75% of Per Person Sharing rate each"
+  },
+  "offers": {
+    "honeymoon": "Min 5 nights: bottle of wine, fruit basket & flowers on arrival, 15% off Spa (Afya Bora), 15% off a la carte restaurants (Tangezi/Maharaja), valid 6 months from marriage date.",
+    "spaAndDining": "Min 5 nights, combinable with other offers: 15% off Spa and a la carte dining."
+  },
+  "cancellationTerms": {
+    "28to15days": "30% of full stay",
+    "14to11days": "50% of full stay",
+    "10to04days": "80% of full stay",
+    "03daysOrLess": "100% of full stay",
+    "noShow": "100% of full stay"
+  },
+  "forwardBookingNote": "For stays from 01 Nov 2026 onwards prior to the new 2026-27 contract, a preliminary 15% rate increase applies against the 01 Nov 2025-31 Oct 2026 contractual rates. This is superseded by the actual 2026-28 contract found in the 2027 folder — see baobab-beach-resort-2027.json.",
+  "portfolioWideTerms": {
+    "note": "This is a non-Soroi property; CLAUDE.md's Soroi-portfolio-wide terms (child age bands, Tour Leader rates, circuit discounts) do not apply here. Baobab has its own distinct children policy and no documented Tour Leader/circuit-discount terms in this file."
+  }
+}

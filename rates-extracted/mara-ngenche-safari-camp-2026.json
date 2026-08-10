@@ -1,0 +1,20 @@
+{
+  "$note": "Extracted 6 Aug 2026, from the same Atua Enkop workbook. Note: this camp's Low Season row literally states 'MID SEASON RATES TO APPLY' instead of separate figures - captured as such, not an extraction gap.",
+  "property": "Mara Ngenche Safari Camp",
+  "operator": "Atua Enkop Africa Ltd",
+  "region": "Masai Mara",
+  "tier": "Nett, non-commissionable contract rate",
+  "source": { "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/ATUA ENKOP/Atua Enkop  - Sunworld Safaris  - 2026.xlsx", "validity": { "start": "2026-01-03", "end": "2027-01-02" } },
+  "seasons": { "mid": "03 Jan-31 Mar, 01-30 Jun, 16 Oct-22 Dec 2026", "low": "01 Apr-31 May (mid-season rates apply)", "high": "01 Jul-15 Oct 2026, 23 Dec 2026-02 Jan 2027" },
+  "rates": {
+    "currency": "USD", "unit": "per person per night",
+    "package": { "mid": { "adultSharing": 435, "single": 570, "child6to11": 220, "child12to16": 325 }, "low": "Mid season rates apply", "high": { "adultSharing": 735, "single": 960, "child6to11": 370, "child12to16": 550 } },
+    "nonPackage": { "mid": { "adultSharing": 350, "single": 450, "child6to11": 175, "child12to16": 260 }, "low": "Mid season rates apply", "high": { "adultSharing": 610, "single": 795, "child6to11": 305, "child12to16": 460 } }
+  },
+  "mandatoryFees": { "communityFee": { "adult12plus": 50, "child6to11": 25, "unit": "per day" } },
+  "childPolicy": { "ownRoomUnder12": "75% of adult rate", "ownRoom12plus": "Full adult rate", "oneAdultOneChildSharing": "Adult pays single room rate" },
+  "packageInclusions": "Full board accommodation, return local airstrip transfers, shared game drives, bush sundowner, selected drinks incl. non-premium spirits.",
+  "exclusions": "Premium spirits/champagne, park entry fees, flight cost, health insurance, exclusive vehicle ($395-505/day), bush breakfast/dinner, extra lunch ($35), Maasai village visit ($50), laundry/gratuities, community fee.",
+  "circuitDiscount": { "twoProperties": "5%", "threeOrFourFiveProperties": "7.5%" },
+  "notes": "Only 4x4 vehicles allowed (non-package)."
+}

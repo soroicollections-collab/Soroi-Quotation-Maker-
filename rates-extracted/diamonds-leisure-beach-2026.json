@@ -1,0 +1,109 @@
+{
+  "$note": "Extracted 6 Aug 2026, read directly page-by-page (2 pages), single-property document, no misattribution risk. This one PDF contains BOTH the STO/NET rate table (page 1) and the Hotel USD Rack Rate table (page 2) for the same rooms/seasons — both captured below.",
+  "property": "Diamonds Leisure Beach & Golf Resort",
+  "region": "Diani Beach (South Coast)",
+  "tier": "STO/NET (primary, page 1) and Rack (secondary, page 2) — both present in this single document. 'Rate type: FIT' printed on the STO table.",
+  "residency": "Not split Resident/Non-Resident on this document — appears to be the international FIT tour-operator rate; a separate Resident-rate document exists in the 2027 folder for this property but was not deep-extracted here (out of scope per instructions, lower priority).",
+  "source": {
+    "file": "2026 CONTRACT RATES/KENYA/BEACH ACCOMODATION/DIAMONDS LEISURE BEACH/2025-26 Diamonds Leisure Beach & Golf Resort_STO Rates.pdf",
+    "pdfPageIndex": [0, 1],
+    "docPrintedPageNumber": [1, 2],
+    "documentDate": "16.05.2025",
+    "issuedBy": "Leisure Lodges Ltd (property representative)",
+    "validity": { "start": "2025-11-01", "end": "2026-10-31" }
+  },
+  "confidence": "confirmed-2026-08-06",
+  "extractionMethod": { "note": "Read directly, both pages, single-property document." },
+  "structuralFindings": [
+    "Currency USD (confirmed 'Currency USD' header) — not the EUR seen at Baobab.",
+    "Base meal plan ALL INCLUSIVE for the standard STO/Rack rates; a paid 'Premium All Inclusive' upgrade exists (see below), a materially different upsell shape than any Soroi property or Baobab.",
+    "5 room categories in this 2026 document: A=Bustani Garden, B=Pool Side, C=Junior Suite, D=Sea View, E=6 Bedroom Oasis Villa.",
+    "Room E (6 Bedroom Oasis Villa) is priced PER UNIT for 12 pax, not per person — a distinct pricing unit, same pattern flagged for Samburu Lodge's Executive Villa in CLAUDE.md.",
+    "7 named seasons by date range, numbered 1-7 in the source (not called Peak/Shoulder/Green) — used as-is below.",
+    "Third adult (above 12yrs) = 30% (reduction, not clear if 30% of what base — read literally as printed, means 30% surcharge/rate; not independently disambiguated further).",
+    "Children under 2 free; 1st child 2-11.99yrs free; 2nd child 2-11.99yrs = 50%.",
+    "Single room supplement = 50%; one adult with children = 50% surcharge.",
+    "Minimum stay 5 nights during 23.12.2025-07.01.2026 festive window only.",
+    "Premium All Inclusive supplement: $75/person/night, adults only (18+), booked for all adults sharing the room, min 4 nights, not discountable.",
+    "10% Early Booking discount ladder exists, tied to specific booking-by dates per travel-date window — not combinable with other offers, applies to child/extra-bed/single rates too but NOT to Premium All Inclusive.",
+    "Cancellation policy differs structurally from Baobab's day-banded approach: flat 40% (30-10 days out), 60% (9-1 days out), 100% no-show; festive-period bookings have a hard cutoff (100% if cancelled after 15.10.2025 for stays in 21.12.25-07.01.26)."
+  ],
+  "seasons": {
+    "1": { "dateRange": "01.11.2025 - 20.12.2025" },
+    "2": { "dateRange": "21.12.2025 - 27.12.2025" },
+    "3": { "dateRange": "28.12.2025 - 07.01.2026", "note": "Highest-rate festive peak window." },
+    "4": { "dateRange": "08.01.2026 - 28.02.2026" },
+    "5": { "dateRange": "01.03.2026 - 31.03.2026" },
+    "6": { "dateRange": "01.04.2026 - 30.06.2026", "note": "Lowest-rate green season." },
+    "7": { "dateRange": "01.07.2026 - 31.10.2026" }
+  },
+  "rates": {
+    "sto_net": {
+      "currency": "USD",
+      "unit": "per person per night sharing double room, All Inclusive (Oasis Villa is per-unit for 12 pax)",
+      "bustaniGarden": { "s1": 144, "s2": 310, "s3": 401, "s4": 172, "s5": 144, "s6": 123, "s7": 144 },
+      "poolSide": { "s1": 163, "s2": 335, "s3": 436, "s4": 192, "s5": 163, "s6": 144, "s7": 163 },
+      "juniorSuite": { "s1": 171, "s2": 351, "s3": 457, "s4": 201, "s5": 171, "s6": 151, "s7": 171 },
+      "seaView": { "s1": 187, "s2": 362, "s3": 471, "s4": 218, "s5": 187, "s6": 168, "s7": 187 },
+      "sixBedroomOasisVilla": { "unit": "per unit, 12 pax", "s1": 1949, "s2": 4017, "s3": 5223, "s4": 2308, "s5": 1949, "s6": 1721, "s7": 1949 }
+    },
+    "rack": {
+      "currency": "USD",
+      "unit": "per person per night sharing double room, All Inclusive (Oasis Villa per-unit)",
+      "bustaniGarden": { "s1": 220, "s2": 476, "s3": 618, "s4": 264, "s5": 220, "s6": 190, "s7": 220 },
+      "poolSide": { "s1": 250, "s2": 514, "s3": 670, "s4": 296, "s5": 250, "s6": 220, "s7": 250 },
+      "juniorSuite": { "s1": 274, "s2": 530, "s3": 690, "s4": 320, "s5": 274, "s6": 246, "s7": 274 },
+      "seaView": { "s1": 288, "s2": 556, "s3": 760, "s4": 336, "s5": 288, "s6": 258, "s7": 288 },
+      "sixBedroomOasisVilla": { "unit": "per unit, 12 pax", "s1": 3000, "s2": 6168, "s3": 8040, "s4": 3552, "s5": 3000, "s6": 2640, "s7": 3000 }
+    }
+  },
+  "roomInventory": {
+    "maxOccupancy": { "A": 3, "B": 3, "C": 3, "D": 3, "E": 18 },
+    "minOccupancy": 1,
+    "bedType": "Queen, twin-convertible in all categories",
+    "extraBed": { "A": 1, "B": 1, "C": 1, "D": 1, "E": 6 }
+  },
+  "childAndSupplementPolicy": {
+    "thirdAdultAbove12": "30%",
+    "childUnder2": "Free, baby cot on request",
+    "firstChild2to11_99": "Free",
+    "secondChild2to11_99": "50%",
+    "singleRoomSupplement": "50%",
+    "oneAdultWithChildren": "50%",
+    "extraBedOasisVilla": "65 USD flat"
+  },
+  "premiumAllInclusive": {
+    "rate": 75,
+    "currency": "USD",
+    "unit": "per person per night",
+    "validity": "01.11.2025 - 31.10.2026",
+    "restrictions": "Adults only (18+), must be booked for all adults sharing the room for the full stay, minimum 4 nights, not discountable/combinable."
+  },
+  "earlyBookingDiscount": {
+    "amount": "10%",
+    "note": "Tiered by travel window with a specific booking-by cutoff date each; full stay must be prepaid 100% by that cutoff. Applies to child/extra-bed/single rates too. Not combinable with other offers. Not applicable to Premium All Inclusive.",
+    "tiers": [
+      { "travelWindow": "01.11.2025 - 31.01.2026", "bookBy": "31.08.2025", "payBy": "15.09.2025" },
+      { "travelWindow": "01.02.2026 - 30.04.2026", "bookBy": "30.11.2025", "payBy": "15.12.2025" },
+      { "travelWindow": "01.05.2026 - 31.07.2026", "bookBy": "28.02.2026", "payBy": "15.03.2026" },
+      { "travelWindow": "01.08.2026 - 31.10.2026", "bookBy": "31.05.2026", "payBy": "15.06.2026" }
+    ]
+  },
+  "cancellationPolicy": {
+    "30to10daysOut": "40% of total stay",
+    "9to1daysOut": "60% of total stay",
+    "noShow": "100% of total stay",
+    "festiveHardCutoff": "Stays 21.12.25-07.01.26: 100% charge if cancelled after 15.10.25, regardless of the day-based bands above."
+  },
+  "minimumStay": { "standard": "None stated", "festive": "5 nights, 23.12.2025 - 07.01.2026" },
+  "offers": {
+    "honeymoon": "Flowers, fruit basket, bottle of wine, 20% off Spa. Wedding certificate required, valid within 6 months, min 4 nights stay.",
+    "birthday": "Flowers decoration in room, table decoration at dinner, birthday cake on the day.",
+    "anniversary": "Flowers decoration in room, table decoration at dinner on the day.",
+    "dineAround": "Guests staying 5+ nights get 3 free dinners of choice at Coral Beach Restaurant, Bustani Steakhouse, Frangipane Pizzeria, or The Golf Pub Restaurant."
+  },
+  "otherFilesInFolderNote": "Only one file in the 2026 folder for this property (2025-26 STO Rates PDF, extracted above in full). No separate Resident-rate file exists in the 2026 folder itself.",
+  "portfolioWideTerms": {
+    "note": "Non-Soroi property — CLAUDE.md's Soroi-portfolio-wide terms (child bands, TL rates, circuit discounts) do not apply. This property has its own distinct children/single/third-adult policy documented above."
+  }
+}

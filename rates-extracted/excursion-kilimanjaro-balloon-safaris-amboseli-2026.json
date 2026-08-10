@@ -1,0 +1,45 @@
+{
+  "category": "excursion",
+  "activity": "Hot air balloon safari flight",
+  "operator": "Kilimanjaro Balloon Safaris, o/b Airborne African Antics Limited",
+  "region": "Amboseli, Kenya",
+  "extractedDate": "2026-08-06",
+  "sourceFiles": [
+    "2026 CONTRACT RATES/KENYA/EXCURSIONS/KILIMANJARO BALLOON/KBS - 2026 PLATINUM Rates.pdf"
+  ],
+  "$fileNote": "The source PDF is a blank/unsigned contract TEMPLATE — 'Contract Information' fields (address, contact names, phone numbers) and the signature block are all empty. Only the rate table itself is populated with figures; treat the rates as valid but note there is no evidence this specific contract was countersigned between Kilimanjaro Balloon Safaris and Sunworld in the copy on file.",
+  "validity": "6 January 2026 - 5 January 2027",
+  "currency": "USD",
+  "seasons": {
+    "highSeason": "6 Jan - 31 Mar, 1 Oct - 19 Dec",
+    "lowSeason": "1 Apr - 30 Jun",
+    "peakSeason": "1 Jul - 30 Sep, 20 Dec - 5 Jan"
+  },
+  "rates": {
+    "unit": "per person",
+    "internationalAdult": { "highSeason": { "rack": 475, "net": 360 }, "lowSeason": { "rack": 450, "net": 340 }, "peakSeason": { "rack": 495, "net": 375 } },
+    "internationalChild": { "highSeason": { "rack": 375, "net": 280 }, "lowSeason": { "rack": 350, "net": 260 }, "peakSeason": { "rack": 395, "net": 295 } },
+    "residentCitizenAdult": { "highSeason": { "rack": 375, "net": 280 }, "lowSeason": { "rack": 350, "net": 260 }, "peakSeason": { "rack": 395, "net": 295 } },
+    "residentCitizenChild": { "highSeason": { "rack": 295, "net": 215 }, "lowSeason": { "rack": 275, "net": 200 }, "peakSeason": { "rack": 325, "net": 240 } },
+    "verified": true
+  },
+  "childPolicy": "Child rate applies age 4-11. Children under 4 are not permitted on the flight.",
+  "inclusions": [
+    "1-hour hot air balloon safari (actual flight time ranges 45-90 minutes); 4-5 hours total from pickup to return",
+    "Chef-prepared 'made to order' hot breakfast",
+    "Traditional champagne celebration",
+    "In-flight commentary by expert captains",
+    "Return game-drive transport to/from the balloon camp",
+    "Commemorative flight ascension certificate"
+  ],
+  "cancellationPolicy": {
+    "14DaysPlusPriorToFlight": "No fee",
+    "14to7DaysPrior": "50% charged",
+    "6DaysTo48HoursPrior": "75% charged",
+    "lessThan48HoursOrNoShow": "100% charged"
+  },
+  "paymentNote": "Credit card payments incur a 5% surcharge.",
+  "skippedFiles": [
+    { "file": "Tulia Kilimanjaro Balloon Safaris Pick Up Schedule.pdf", "reason": "Pure logistics (pickup schedule per lodge) — no pricing." }
+  ]
+}

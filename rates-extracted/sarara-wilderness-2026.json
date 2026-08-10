@@ -1,0 +1,22 @@
+{
+  "$note": "Extracted 6 Aug 2026. Fully mobile/private tented camp (up to 6 ensuite tents), priced per-night for the whole group rather than per person sharing - distinct pricing shape from its sister Sarara properties.",
+  "property": "Sarara Wilderness",
+  "operator": "Bush and Beyond Ltd (booking agent)",
+  "region": "Samburu Ecosystem (Namunyak area, near Buffalo Springs & Kalama airstrips)",
+  "tier": "RSP (rack) and Trade Rates/Preferential",
+  "source": { "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/BUSH&BEYOND/Sarara Wilderness - 2026 Preferential US$.pdf" },
+  "seasons": { "operating": "1 Jan-31 Oct 2026, 1 Dec 2026-3 Jan 2027 (closed November 2026)" },
+  "rates": {
+    "currency": "USD", "unit": "per night, minimum 1 night for 4 guests",
+    "1to4guests": { "rsp": 4800, "trade": 3600 },
+    "5to6guests": { "rsp": 7200, "trade": 5400 },
+    "extraAdultEach": { "rsp": 1120, "trade": 840 },
+    "extraChild5to15each": { "rsp": 695, "trade": 521 },
+    "communityHeritageFee_perPersonPerNight": { "rsp": 185, "trade": 185, "child": { "rsp": 155, "trade": 155 } }
+  },
+  "capacity": "Up to 6 ensuite tents (solar-heated bucket showers), wellness/media tent, dining/lounge tent, mobile pool",
+  "childPolicy": { "note": "All ages welcome but more suitable for 5 years and older." },
+  "inclusions": "Full board, soft drinks/local beers/non-premium wines/spirits, Buffalo Springs & Kalama airstrip transfers, transfers between Sarara properties, statutory taxes, laundry, game drives, fireside stories, private Samburu guide/spotter, cultural immersions, bush meals, stargazing, sundowners.",
+  "exclusions": "Community Heritage fee, champagne/premium spirits, beading/blacksmithing, massage ($40-100), Samburu dancers, helicopter excursions.",
+  "notes": "Exclusive-use minimum charge for 4 adults. Optional desert-camp extension (Lake Turkana/Chalbi Desert) priced on request."
+}

@@ -1,0 +1,90 @@
+{
+  "$note": "Extracted 6 Aug 2026, read directly, single-page document, no misattribution risk. No separate Info & Policy sheet exists in the 2027 folder — general guest info (check-in/out, meal plan, cancellation, child policy) is carried forward from the 2026 folder's policy sheet by inference only, NOT independently re-confirmed for 2027.",
+  "property": "Kobe Suite Resort",
+  "region": "Watamu, Kenya",
+  "tier": "Travel Agent Rate, inclusive of 15% commission (per the 2026 policy sheet's stated convention — not independently re-confirmed on this 2027 rates-only document).",
+  "residency": "Not split Resident/Non-Resident on this document.",
+  "source": {
+    "file": "2027 CONTRACT RATES/KENYA/BEACH ACCOMODATION/KOBE SUITE RESORT/KOBE TRAVEL AGENT RATES 2026-2027 PDF - Copy.pdf",
+    "pdfPageIndex": 0,
+    "validity": { "start": "2026-07-11", "end": "2027-04-30", "note": "Title says '2026-27' but rows run 11 Jul 2026 - 30 Apr 2027, not a full calendar year and not covering May-Jul 2027. Same odd-fiscal-window pattern as the 2026 document, shifted one year forward." }
+  },
+  "confidence": "confirmed-2026-08-06",
+  "extractionMethod": { "note": "Read directly, single-page rates table, three parallel currency sub-tables (KES/USD/EUR)." },
+  "structuralFindings": [
+    "Same structure as 2026: base rates are for Standard Garden View Suite, Bed & Breakfast, three parallel currencies, 10 date-range rows with irregular season lengths.",
+    "No room-supplement table (Deluxe/Premium/Ocean View upgrades) or guest-info/policy page exists in this 2027 folder at all — only this one rates PDF and the separate Casa Blanca rates PDF are present. Do not assume the 2026 supplement figures ($40/$45/$50/$60 USD) still apply in 2027 without checking with the property; flagging as [Unverified] for 2027.",
+    "Rates increased roughly 10% year-over-year vs the equivalent 2026 date rows (e.g. USD PP for the base low-season row: 128 -> 141)."
+  ],
+  "seasons": {
+    "rows": [
+      { "dateRange": "11-07-26 - 31-07-26", "minStayNights": 1 },
+      { "dateRange": "01-08-26 - 31-08-26", "minStayNights": 2 },
+      { "dateRange": "01-09-26 - 05-10-26", "minStayNights": 1 },
+      { "dateRange": "06-10-26 - 02-11-26", "minStayNights": 2 },
+      { "dateRange": "03-11-26 - 20-12-26", "minStayNights": 1 },
+      { "dateRange": "21-12-26 - 11-01-27", "minStayNights": 4, "note": "Festive peak." },
+      { "dateRange": "12-01-27 - 01-03-27", "minStayNights": 2 },
+      { "dateRange": "02-03-27 - 24-03-27", "minStayNights": 1 },
+      { "dateRange": "25-03-27 - 30-03-27", "minStayNights": 2 },
+      { "dateRange": "31-03-27 - 30-04-27", "minStayNights": 1 }
+    ]
+  },
+  "rates": {
+    "unit": "Standard Garden View Suite, Bed & Breakfast. SGL/DBL/PP/3rd-4th bed as defined in the 2026 file.",
+    "USD": {
+      "primary": true,
+      "rows": [
+        { "dateRange": "11-07-26/31-07-26", "sgl": 197, "dbl": 281, "pp": 141, "thirdFourthAdult": 105, "thirdFourthChild": 70 },
+        { "dateRange": "01-08-26/31-08-26", "sgl": 271, "dbl": 387, "pp": 194, "thirdFourthAdult": 145, "thirdFourthChild": 97 },
+        { "dateRange": "01-09-26/05-10-26", "sgl": 197, "dbl": 281, "pp": 141, "thirdFourthAdult": 105, "thirdFourthChild": 70 },
+        { "dateRange": "06-10-26/02-11-26", "sgl": 271, "dbl": 387, "pp": 194, "thirdFourthAdult": 145, "thirdFourthChild": 97 },
+        { "dateRange": "03-11-26/20-12-26", "sgl": 197, "dbl": 281, "pp": 141, "thirdFourthAdult": 105, "thirdFourthChild": 70 },
+        { "dateRange": "21-12-26/11-01-27", "sgl": 425, "dbl": 607, "pp": 304, "thirdFourthAdult": 228, "thirdFourthChild": 152 },
+        { "dateRange": "12-01-27/01-03-27", "sgl": 271, "dbl": 387, "pp": 194, "thirdFourthAdult": 145, "thirdFourthChild": 97 },
+        { "dateRange": "02-03-27/24-03-27", "sgl": 197, "dbl": 281, "pp": 141, "thirdFourthAdult": 105, "thirdFourthChild": 70 },
+        { "dateRange": "25-03-27/30-03-27", "sgl": 271, "dbl": 387, "pp": 194, "thirdFourthAdult": 145, "thirdFourthChild": 97 },
+        { "dateRange": "31-03-27/30-04-27", "sgl": 197, "dbl": 281, "pp": 141, "thirdFourthAdult": 105, "thirdFourthChild": 70 }
+      ]
+    },
+    "KES": {
+      "rows": [
+        { "dateRange": "11-07-26/31-07-26", "sgl": 19674, "dbl": 28105, "pp": 14053, "thirdFourthAdult": 10539, "thirdFourthChild": 7026 },
+        { "dateRange": "01-08-26/31-08-26", "sgl": 27104, "dbl": 38720, "pp": 19360, "thirdFourthAdult": 14520, "thirdFourthChild": 9680 },
+        { "dateRange": "01-09-26/05-10-26", "sgl": 19674, "dbl": 28105, "pp": 14053, "thirdFourthAdult": 10539, "thirdFourthChild": 7026 },
+        { "dateRange": "06-10-26/02-11-26", "sgl": 27104, "dbl": 38720, "pp": 19360, "thirdFourthAdult": 14520, "thirdFourthChild": 9680 },
+        { "dateRange": "03-11-26/20-12-26", "sgl": 19674, "dbl": 28105, "pp": 14053, "thirdFourthAdult": 10539, "thirdFourthChild": 7026 },
+        { "dateRange": "21-12-26/11-01-27", "sgl": 42504, "dbl": 60720, "pp": 30360, "thirdFourthAdult": 22770, "thirdFourthChild": 15180 },
+        { "dateRange": "12-01-27/01-03-27", "sgl": 27104, "dbl": 38720, "pp": 19360, "thirdFourthAdult": 14520, "thirdFourthChild": 9680 },
+        { "dateRange": "02-03-27/24-03-27", "sgl": 19674, "dbl": 28105, "pp": 14053, "thirdFourthAdult": 10539, "thirdFourthChild": 7026 },
+        { "dateRange": "25-03-27/30-03-27", "sgl": 27104, "dbl": 38720, "pp": 19360, "thirdFourthAdult": 14520, "thirdFourthChild": 9680 },
+        { "dateRange": "31-03-27/30-04-27", "sgl": 19674, "dbl": 28105, "pp": 14053, "thirdFourthAdult": 10539, "thirdFourthChild": 7026 }
+      ]
+    },
+    "EUR": {
+      "rows": [
+        { "dateRange": "11-07-26/31-07-26", "sgl": 179, "dbl": 256, "pp": 128, "thirdFourthAdult": 96, "thirdFourthChild": 64 },
+        { "dateRange": "01-08-26/31-08-26", "sgl": 246, "dbl": 352, "pp": 176, "thirdFourthAdult": 132, "thirdFourthChild": 88 },
+        { "dateRange": "01-09-26/05-10-26", "sgl": 179, "dbl": 256, "pp": 128, "thirdFourthAdult": 96, "thirdFourthChild": 64 },
+        { "dateRange": "06-10-26/02-11-26", "sgl": 246, "dbl": 352, "pp": 176, "thirdFourthAdult": 132, "thirdFourthChild": 88 },
+        { "dateRange": "03-11-26/20-12-26", "sgl": 179, "dbl": 256, "pp": 128, "thirdFourthAdult": 96, "thirdFourthChild": 64 },
+        { "dateRange": "21-12-26/11-01-27", "sgl": 386, "dbl": 552, "pp": 276, "thirdFourthAdult": 207, "thirdFourthChild": 138 },
+        { "dateRange": "12-01-27/01-03-27", "sgl": 246, "dbl": 352, "pp": 176, "thirdFourthAdult": 132, "thirdFourthChild": 88 },
+        { "dateRange": "02-03-27/24-03-27", "sgl": 179, "dbl": 256, "pp": 128, "thirdFourthAdult": 96, "thirdFourthChild": 64 },
+        { "dateRange": "25-03-27/30-03-27", "sgl": 246, "dbl": 352, "pp": 176, "thirdFourthAdult": 132, "thirdFourthChild": 88 },
+        { "dateRange": "31-03-27/30-04-27", "sgl": 179, "dbl": 256, "pp": 128, "thirdFourthAdult": 96, "thirdFourthChild": 64 }
+      ]
+    }
+  },
+  "roomSupplements": {
+    "verified": false,
+    "confidenceNote": "[Unverified] No supplement table exists in the 2027 folder. Carrying forward the 2026 figures here would be a guess — do not use without confirming with the property. See kobe-suite-resort-2026.json for the last-known figures."
+  },
+  "guestInfo": {
+    "verified": false,
+    "confidenceNote": "[Unverified for 2027] No Info & Policy sheet exists in the 2027 folder. The 2026 sheet's terms (12:30pm check-in, 10am check-out, B&B only, 15% commission-inclusive, child policy, cancellation policy) are NOT independently confirmed to still apply for 2027 — flag this on any 2027 quote for this property and confirm with the resort before finalizing."
+  },
+  "portfolioWideTerms": {
+    "note": "Non-Soroi property — CLAUDE.md's Soroi-portfolio-wide terms do not apply."
+  }
+}

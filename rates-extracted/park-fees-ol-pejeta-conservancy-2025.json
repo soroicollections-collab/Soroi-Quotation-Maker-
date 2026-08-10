@@ -1,0 +1,81 @@
+{
+  "$note": "Ol Pejeta Conservancy (OPC) Tariff Guide - new source, not previously captured. Relevant for any Laikipia-area itinerary (Ol Pejeta is one of the airstrips/destinations already referenced in the Airvan/Governors/ALS flight data - e.g. Governors' 'Ol Pejeta (Komok)' routes, ALS's Wilson-Nanyuki/Samburu/Lewa/Loisaba network).",
+  "source": {
+    "file": "2026 CONTRACT RATES/KENYA/PARK FEES/OPC Tariff Guide 2025 .pdf",
+    "title": "Ol Pejeta Conservancy Tariff Guide, January 2025 - December 2025",
+    "note": "Dated for calendar year 2025 despite sitting in the 2026 folder tree - likely the most recent version on file; a 2026 OPC tariff guide may exist and hasn't been checked/found in this folder."
+  },
+  "verified": true,
+  "currency": "Mixed KES/USD by category (see per-line breakdown).",
+  "vatNote": "Rates inclusive of VAT. Rates subject to change without notice.",
+  "bookingNote": "Conservancy gates are CASHLESS - entry tickets must be booked online at https://bookings.olpejetaconservancy.org/.",
+  "conservancyEntryFees": {
+    "unit": "per person per entry (daily fee = single entrance for day-trippers, or 24hrs for overnight guests)",
+    "adult": { "eaCitizenKSH": 2000, "eaResidentKSH": 3500, "nonResidentUSD": 110 },
+    "child": { "eaCitizenKSH": 1000, "eaResidentKSH": 1750, "nonResidentUSD": 55, "ageRange": "3 to 11 years old" },
+    "student": { "eaCitizenKSH": 500, "eaResidentKSH": 500, "nonResidentUSD": 32, "note": "Requires pre-booking for concession rate; groups without a booking reference pay the daily entrance rate. Groups must be 10+ pax with a teacher/institution letter; 2 teachers per group admitted free." }
+  },
+  "vehicleEntry": {
+    "upTo6Seats": { "amount": 1000, "currency": "KSH" },
+    "sevenTo12Seater": { "amount": 5000, "currency": "KSH" },
+    "fifteenPlusSeats": { "amount": 12000, "currency": "KSH" },
+    "schoolBus": { "weekdays": 5000, "weekends": 10000, "currency": "KSH" },
+    "carHire": { "fourHours": 25000, "eightHours": 35000, "currency": "KSH" }
+  },
+  "runProperties": {
+    "note": "Ol Pejeta-operated in-house lodging (as distinct from independently-run lodges/camps ON Ol Pejeta - see accommodationRatesNote below).",
+    "pelicanHouseSelfCatering": {
+      "unit": "per person per night",
+      "twoToFourPax": { "eaCitizenResidentKSH": 9000, "nonResidentUSD": 100 },
+      "fiveToEightPax": { "eaCitizenResidentKSH": 8000, "nonResidentUSD": 90 },
+      "nineToTwelvePax": { "eaCitizenResidentKSH": 7300, "nonResidentUSD": 80 },
+      "childRate": { "eaCitizenResidentKSH": 4500, "nonResidentUSD": 50 }
+    },
+    "pelicanHouseCatered": {
+      "unit": "per person per night, Non-Resident unless noted",
+      "twoToFourPax": 150, "fiveToEightPax": 140, "nineToTwelvePax": 130, "childRate": 105,
+      "chef": { "eaCitizenResidentKSH": 3500, "nonResidentUSD": 50, "unit": "per day" },
+      "eaCitizenResidentFlatRate": { "amount": 5000, "currency": "KSH", "unit": "per person, no child rate", "note": "East African Citizens/Residents pay a flat KSH 5,000 per person for the catered option regardless of group size, unlike the Non-Resident per-pax-tier structure." }
+    },
+    "stables": {
+      "unit": "per room per night, Resident & Non-Resident rates (no citizen/EA split stated for this product)",
+      "singleRoomFullBoard": 70, "doubleRoomFullBoard": 140, "childSharingFullBoard": 35, "currency": "USD"
+    },
+    "camping": {
+      "unit": "per person per night, Resident & Non-Resident",
+      "adult": { "amount": 3500, "currency": "KSH" }, "child": { "amount": 1750, "currency": "KSH" }, "armedGuidePerNight": { "amount": 5000, "currency": "KSH" }
+    }
+  },
+  "accommodationRatesNote": "For all independently-run lodges and camps ON Ol Pejeta (i.e. not the 'Run Properties' above), the source directs readers to https://www.olpejetaconservancy.org/ol-pejeta-escapes - no rates for third-party lodges given in this document. Not extracted here - would need a separate lookup if a specific Ol Pejeta lodge (not Pelican House/Stables/camping) is quoted.",
+  "conservationExperiences": {
+    "unit": "per person unless noted",
+    "meetTheNorthernWhiteRhinos": { "amount": 70, "currency": "USD", "unit": "per adult", "schedule": "8:30-9:30am, 11am-12pm, 3-4pm, 4:30-5:30pm daily" },
+    "nightGameDrive": { "adultUSD": 70, "childUSD": 35, "schedule": "7-9pm and 9-11pm daily", "minPax": 2 },
+    "lionTracking": { "adultUSD": 70, "childUSD": 35, "schedule": "6:30-8:30am and 3:30-5:30pm daily", "minPax": 2 },
+    "dogTracking": { "adultUSD": 70, "childUSD": 35, "schedule": "once daily at 8:30am" },
+    "runTheWild": { "adultUSD": 40 },
+    "guidedBushwalkBirdwalk": { "adultUSD": 70, "childUSD": 35 },
+    "livestockWildlifeIntegration": { "adultUSD": 70, "schedule": "8am daily, ~2 hours" },
+    "meetTheNeighbours": { "adultUSD": 70, "childUSD": 35, "schedule": "Mon-Sat 10:30am-12:30pm, book 24hrs prior" },
+    "armedGuard": { "amount": 5000, "currency": "KSH" },
+    "unarmedGuide": { "amount": 2500, "currency": "KSH" },
+    "notes": ["Items marked with a minimum-pax requirement (Lion Tracking, Night Game Drive) need 2+ people.", "Maximum 6 vehicles allowed at any wildlife sighting, 10 min max per vehicle.", "Shared vehicles provided for Night Game Drives and Lion Tracking only; other experiences need separately-arranged transport at extra cost.", "Book experiences at least 1 day ahead - subject to weather/availability; activities may change based on animal health/welfare."]
+  },
+  "freeAttractions": {
+    "sweetwatersChimpanzeeSanctuary": "8:30am-12:30pm, 2-4:30pm daily",
+    "barakaAndMoraniInformationCentre": "7:30am-6pm daily",
+    "natureTrail": "9:30am-4:30pm daily",
+    "moranisRestaurantSafariDinerShops": "8am-4:30pm daily"
+  },
+  "gateTimesAndAccess": {
+    "gateTimes": "7am-7pm daily, entry/exit strictly through Rongai and Serat gates.",
+    "proofOfResidencyRequired": "East African Citizen: national ID or valid passport. East African Resident: valid passport showing work permit or alien certificate."
+  },
+  "contact": {
+    "bookingReservations": ["+254 707 187141", "+254 705 911021"],
+    "whatsapp": "0110094457",
+    "email": "reservations@olpejetaconservancy.org",
+    "tourismHelpline": "+254 713 912 324",
+    "website": "www.olpejetaconservancy.org"
+  }
+}

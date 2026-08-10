@@ -1,0 +1,42 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftotext -layout, clean document. NOT a Soroi property. Flat year-round rate (no seasonality) at Nett 20% tier. A '...Nett 10% Resident Rates 2026.pdf' also exists but not opened this pass (resident tier, out of scope).",
+  "property": "The Hildana Lodge",
+  "region": "Wildlife sanctuary/estate near Mwatate/Voi, Tsavo area (farm/factory estate setting)",
+  "currency": "USD",
+  "unit": "per person per night, no single supplement",
+  "source": {
+    "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/The Hildana Lodge/The Hildana Lodge - Nett 20_ $ Rates 2026.pdf",
+    "validity": { "start": "2026-01-03", "end": "2027-01-02" },
+    "skippedFile": "The Hildana Lodge - Nett 10_ Resident Rates 2026.pdf - resident tier, out of scope"
+  },
+  "confidence": "confirmed-2026-08-06",
+  "rates_standardDoubleAndFamilyRoom": {
+    "adult": { "grossIncConservancy": 350, "nett20ExclConservancy": 266, "totalNettRate": 284 },
+    "child11to15": { "grossIncConservancy": 250, "nett20ExclConservancy": 187, "totalNettRate": 203 },
+    "child4to10": { "grossIncConservancy": 175, "nett20ExclConservancy": 133, "totalNettRate": 142 }
+  },
+  "rates_honeymoonSuite": {
+    "adult": { "grossIncConservancy": 357, "nett20ExclConservancy": 271, "totalNettRate": 289 },
+    "child11to15": { "grossIncConservancy": 250, "nett20ExclConservancy": 187, "totalNettRate": 203 },
+    "child4to10": { "grossIncConservancy": 175, "nett20ExclConservancy": 133, "totalNettRate": 142 }
+  },
+  "mandatoryFees": { "conservancyFee": { "adult": 18, "child11to15": 16, "child4to10": 9, "unit": "per person per night, non-commissionable" } },
+  "inclusions": ["Full board accommodation", "Tea, coffee, drinking water", "Conservancy fees", "Game drives (shared vehicles; exclusive on enquiry)", "Sundowners (drinks extra)", "Transfers to/from Farm Private Airstrip", "Excursions within Sanctuary/Estate incl. factory and farm visits", "Taxes"],
+  "exclusions": ["SGR transfers ($20/person one-way)", "Bar drinks", "Activities/excursions outside the Sanctuary/Estate", "Laundry", "Tips/gratuities"],
+  "specials": {
+    "threeNightsForPriceOfTwo": { "validity": "May and June 2026" },
+    "childrenUnder10Free": { "validity": "November 2026" }
+  },
+  "minimumStay": "3 nights during Festive Period (20 Dec - 3 Jan) and Easter Weekend (3-5 Apr)",
+  "childPolicy": { "under4": "Free" },
+  "guideAccommodation": { "amount": 100, "unit": "per guide per night, full board only, drinks extra", "note": "No dedicated guide accommodation - guides stay in guest rooms at discounted rate. No driver accommodation - drivers must find own lodging in Mwatate/Voi. Nanny accommodation available on prebook only." },
+  "operationalPolicy": {
+    "checkIn": "12:00pm", "checkOut": "10:00am",
+    "lateCheckout": { "amount": 35, "unit": "per person, includes lunch", "note": "Guests must still vacate rooms by 10am; surcharge covers meals/activities until afternoon departure." },
+    "deposit": "20% to confirm; balance due 30 days prior to arrival (or immediately if within 45 days)."
+  },
+  "cancellationPolicy": [
+    { "daysBeforeArrival": "45-30", "charge": "30% of full booking value" },
+    { "daysBeforeArrival": "<30 / no-show", "charge": "100%" }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftotext -layout from 6 accommodation rate sheets (each 3pp, single property) plus 2 activity/donation sheets in 'Sheldrick Wildlife Trust/'. All 6 lodges are priced on a whole-property EXCLUSIVE-USE basis (per night for the entire property, tiered by guest count) rather than per-person - a distinct pricing model vs the rest of this Kenya slice. The 2 'Private Visit Donation' PDFs are dated 2025 (not 2027) and are for the Nairobi Nursery elephant-orphan visit, not accommodation - included here as activity add-ons but flagged as stale-year pricing.",
+  "operator": "Sheldrick Wildlife Trust",
+  "currency": "USD",
+  "unit": "per night for the ENTIRE property (whole-lodge exclusive use, tiered by guest count) - NOT per person",
+  "taxNote": "All accommodation rates subject to 16% VAT + 2% catering levy, added on top of quoted figures",
+  "confidence": "confirmed-2027-08-06",
+  "properties": {
+    "Ithumba Hill": {
+      "region": "Tsavo East National Park",
+      "rates": { "1to6guests": 2900, "7guests": 3380, "8guests": 3865 },
+      "minGuests": 1, "maxGuests": 8,
+      "childPolicy": "Children under 6 NOT permitted; under-6 not counted in occupancy total",
+      "verified": true
+    },
+    "Ithumba Private": {
+      "region": "Tsavo East National Park",
+      "rates": { "1to6guests": 2900 },
+      "maxGuests": 6,
+      "childPolicy": "Children under 6 NOT permitted",
+      "verified": true
+    },
+    "Ithumba Camp": {
+      "region": "Tsavo East National Park",
+      "rates": { "1to4guests": 1260, "5guests": 1575, "6guests": 1890, "7guests": 2205, "8guests": 2520 },
+      "maxGuests": 8,
+      "verified": true
+    },
+    "Galdessa Camp (Main)": {
+      "region": "Tsavo East National Park",
+      "rates": { "1to6guests": 2770, "7guests": 3235, "8guests": 3695, "9guests": 4160, "10guests": 4620 },
+      "maxGuests": 10,
+      "verified": true
+    },
+    "Galdessa Little": {
+      "region": "Tsavo East National Park",
+      "rates": { "1to6guests": 2770 },
+      "maxGuests": 6,
+      "verified": true
+    },
+    "Umani Springs": {
+      "region": "Kibwezi Forest / Chyulu Hills",
+      "rates": { "1to4guests": 1930, "5guests": 2415, "6guests": 2900, "7guests": 3380, "8guests": 3865, "9guests": 4345, "10guests": 4830 },
+      "maxGuests": 10,
+      "conservationFee": { "amount": 30, "unit": "per person per day, ON TOP of accommodation cost, no surcharge on this fee" },
+      "verified": true,
+      "confidenceNote": "Unlike the other 5 properties (Tsavo East, KWS park fees paid separately), Umani Springs has its own stated conservation fee rather than a KWS park-fee reference - a distinct fee shape, consistent with this project's general finding that mandatory-fee structure varies by property."
+    }
+  },
+  "parkFees": {
+    "note": "For Ithumba Camp, Ithumba Hill, Galdessa Main, and Galdessa Little: Tsavo East National Park entry fees are payable DIRECTLY to KWS, not included in the above rates. Payable in advance online via kwspay.ecitizen.go.ke. No fixed dollar figure given in these documents. Ithumba Private's document is silent on whether park fees apply separately (same Tsavo East location, presumed yes but not explicitly stated).",
+    "verified": false,
+    "confidenceNote": "[Unverified - gap] No KWS park fee dollar amount is given in any of these 6 documents - must be sourced from KWS directly or a separate Tsavo East park-fee document."
+  },
+  "commonTermsAllLodges": {
+    "minimumStay": "2 nights",
+    "checkInOut": "Check-in strictly after 10:00 AM; check-out strictly before 9:30 AM",
+    "selfCatering": "All properties are self-catering - guests bring their own food & beverage; Trust can advise on catering companies/chefs; drinking water provided in glass bottles",
+    "selfDriveAccess": "4x4 vehicles recommended",
+    "childPolicyGeneral": "Children under 6 not permitted at Ithumba Private or Ithumba Hill specifically; not counted in occupancy total where permitted elsewhere; 6+ counted as part of group",
+    "orphansMudBathViewing": "Access to the 11am mud bath viewing is on arrival day only, not departure day",
+    "paymentTerms": "20% non-refundable deposit to confirm; balance due 60 days before arrival",
+    "provisionalBookingHold": "7 days",
+    "cancellationPolicy": "60-31 days before arrival: 50% forfeited; 30-0 days: 100% forfeited. No refunds for no-shows, late arrivals, early departures, or unused services from itinerary changes.",
+    "insuranceRecommended": "Comprehensive medical and travel insurance",
+    "verified": true
+  },
+  "nairobiNurseryPrivateVisitDonations": {
+    "$note": "These 2 PDFs are dated '2025' explicitly in their own title/text ('2025 PRIVATE VISIT ENTRY DONATION') despite being filed in the 2027 folder - no 2027-specific version was found in this folder. Treat as last-known pricing, not confirmed current for 2027 - reconfirm with Sheldrick Wildlife Trust before quoting.",
+    "confidence": "unverified-stale-year",
+    "morning9am": { "1to10guests": 1500, "additionalPerPersonAbove10": 150, "unit": "USD total for the group" },
+    "afternoon3pm": { "1to10guests": 1500, "guests11to15": 2000, "guests16to20": 2500, "additionalPerPersonAbove20": 125, "unit": "USD total for the group" },
+    "duration": "~45 minutes",
+    "bookingNote": "Often booked out 2 years in advance; all bookings considered confirmed unless cancelled in writing (no provisional holds)",
+    "cancellationPolicy": "1-10 days before visit: 100% fee; 11-20 days before visit: 50% fee",
+    "kwsNairobiNationalParkGateFee": "Mandated separately by KWS - not included in the donation figure (exact amount not captured, document was truncated in extraction)"
+  }
+}

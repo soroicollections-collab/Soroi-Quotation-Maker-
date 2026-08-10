@@ -1,0 +1,57 @@
+{
+  "$note": "Fresh extraction, 6 Aug 2026, read directly from source PDF text (2-page, single-property document, layout-preserving pdftotext, no adjacent-property risk).",
+  "property": "Asha Boutique Hotel & Bistro",
+  "region": "Diani/South Coast (Mombasa area — exact locality not stated beyond airport transfer references to Moi International/Ukunda)",
+  "tier": "STO Rates 2026",
+  "residency": "Not applicable — source explicitly states 'Asha Boutique Hotel does not offer Resident Rates. The above rates are valid for all guests.'",
+  "source": {
+    "file": "2026 CONTRACT RATES/KENYA/BEACH ACCOMODATION/ASHA BOUTIQUE HOTEL & BISTRO/Asha Boutique Hotel & Bistro 2026 - ABH STO RATES.pdf",
+    "pages": 2,
+    "validity": { "start": "not explicitly dated", "end": "2027-01-12", "note": "Header states 'STO RATES 2026 (Valid until 12 Jan 2027)' — no explicit start date given; also notes 2027 bookings confirmed before 31 Mar 2026 get 2026 rates." }
+  },
+  "confidence": "confirmed-2026-08-06",
+  "extractionMethod": { "note": "Single-property, 2-page PDF read directly with pdftotext -layout; no adjacent-property risk." },
+  "structuralFindings": [
+    "Base plan is Bed & Breakfast (B&B), with optional Half Board (+$40pp/night) and Full Board (+$60pp/night) meal supplements — a different base plan from every Soroi property (Full Board base) and from Soroi Blue (Half Board base).",
+    "Two price columns per season: 'B&B RACK' and 'B&B NET' — B&B NET is consistently lower (roughly 15-20% below Rack), functioning like a built-in trade/agent discount rather than the STO-percentage-off-rack ladder seen in the Soroi documents. The exact discount percentage is not stated as a round STO tier number on the page itself (varies ~14.8%-17.3% by season) — do not assume it maps to any specific STO% band without further confirmation.",
+    "Three named seasons (High/Regular/Low) rather than Peak/Shoulder/Green.",
+    "Rate is quoted per person sharing in Double/Twin/Triple room — three occupancy types share one rate line, not broken out separately.",
+    "Single occupancy is a multiplier (x1.6) on the per-person rate, not a flat single supplement percentage."
+  ],
+  "seasons": {
+    "high": { "dateRanges": ["1 Apr - 9 Apr", "1 Jul - 31 Aug", "15 Dec - 12 Jan"] },
+    "regular": { "dateRanges": ["all other dates"] },
+    "low": { "dateRanges": ["10 Apr - 31 Jun"], "confidenceNote": "[Unverified] Source literally prints '31st JUNE' which does not exist (June has 30 days) — likely a typo for 30 June or 31 May. Recorded as printed; flag before relying on the exact end date." }
+  },
+  "rates": {
+    "currency": "USD",
+    "unit": "per person sharing (Double/Twin/Triple), B&B",
+    "bnbRack": { "high": 135, "regular": 115, "low": 75 },
+    "bnbNet": { "high": 115, "regular": 98, "low": 64 }
+  },
+  "verified": true,
+  "singleOccupancy": { "multiplier": 1.6, "note": "Applicable per-person rate x 1.6" },
+  "childPolicy": {
+    "under2": "free",
+    "age2to12SharingWithAdult": "50% of adult rate",
+    "age2to12OwnRoom": "85% of adult rate"
+  },
+  "mealSupplements": {
+    "halfBoard": { "amount": 40, "unit": "per person per night" },
+    "fullBoard": { "amount": 60, "unit": "per person per night", "childDiscount": "children under 7 years get 75% off the meal supplement" }
+  },
+  "airportTransfers": {
+    "currency": "USD",
+    "moiInternationalMombasaOrTrainStation": { "regularVehicle4pax": 55, "largeVehicle6pax": 65 },
+    "ukundaAirstrip": { "vehicle4pax": 10, "vehicle6pax": 20 }
+  },
+  "minimumStay": { "highSeason": "3 nights" },
+  "dailyExtra": "Complimentary tea & cake served at 16:00 every day",
+  "cancellationPolicy": {
+    "90percentRefund": "60+ days before arrival",
+    "50percentRefund": "31-59 days before arrival",
+    "noRefund": "within 30 days of arrival"
+  },
+  "paymentPolicy": "50% deposit to secure booking; 100% due at least 30 days prior to arrival.",
+  "confidenceNote": "No mandatory conservancy/park-style fee found on this property's page — consistent with it being a boutique town/beach hotel rather than a safari-adjacent property. 'B&B NET' column is treated here as a distinct pricing column, not assumed equal to any Soroi-style STO percentage."
+}

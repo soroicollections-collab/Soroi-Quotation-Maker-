@@ -1,0 +1,42 @@
+{
+  "property": "Deloraine House",
+  "operator": "Offbeat Safaris Holdings Ltd",
+  "region": "Rongai, Nakuru",
+  "isSoroiProperty": false,
+  "sourceFiles": ["2026 CONTRACT RATES/KENYA/ACCOMODATION/OFFBEAT/2026 Offbeat Collection Wholesale Rates (30%) AMENDED.pdf"],
+  "notes": [
+    "Part of the same 8-property Offbeat document - see offbeat-mara-camp-2026.json for sibling properties.",
+    "Only property in this set with a single year-round season ('ONE SEASON').",
+    "Two room categories: Standard Room (Main House) and Cottage Room - Cottage only used when main house rooms unavailable.",
+    "Wholesale rate confirmed arithmetically as Rack x 0.70 (e.g. Standard adult: $441 = $630 x 0.70)."
+  ],
+  "currency": "USD",
+  "validity": "1 Jan 2026 - 31 Dec 2027",
+  "validityConfidenceNote": "[Unverified] Source PDF literally states this 2-year validity window ('Valid 01 Jan 2026 to 31 Dec 2027'), unlike every other property in this document (which use Jan-Dec single-year or Jan-Jan windows). Could be a genuine 2-year rate lock or a typo for 31 Dec 2026 - not reconciled, quoted as printed.",
+  "publishedRates_perPersonPerNight": {
+    "standardRoomMainHouse": { "adultSharing": 630, "teenSharing12to17": 475, "childSharing4to11": 315, "exclusiveUsePerNightUpTo14guests": 7350 },
+    "cottageRoom": { "adultSharing": 495, "teenSharing12to17": 375, "childSharing4to11": 245 }
+  },
+  "wholesale30pct_perPersonPerNight": {
+    "standardRoomMainHouse": { "adultSharing": 441, "teenSharing12to17": 333, "childSharing4to11": 221, "exclusiveUsePerNightUpTo14guests": 5145 },
+    "cottageRoom": { "adultSharing": 347, "teenSharing12to17": 263, "childSharing4to11": 172 }
+  },
+  "conservancyFees_perPersonPerNight": { "adultAndTeen": 45, "child": 20, "verified": true },
+  "childPolicy": { "raw": "0-3 years free of charge.", "verified": true },
+  "specials": [
+    "Early Bird Discount: 5% off accommodation, deposit 9 months prior. Year-round, combinable with 2.",
+    "Family Discount: 3rd child (4-11yrs) sharing a triple pays conservancy fees only. Year-round, combinable with 1."
+  ],
+  "includes": ["Full board accommodation", "All drinks except champagne", "Horse riding & friendly polo", "Walking on the farm and forest", "Swimming pool", "Laundry", "Gogar airstrip transfers"],
+  "excludes": [
+    "Conservation fees (see above)",
+    "Special request riding and polo lessons: $40/hour",
+    "Extra lunch: $30/adult, $15/child",
+    "Day visits to Lake Nakuru or Lake Bogoria (incl. lunch & park fees): price on request"
+  ],
+  "policies": {
+    "checkIn": "11:00", "checkOut": "10:00",
+    "deposit": "20% deposit confirms booking; balance due 45 days prior to arrival.",
+    "cancellation": ">120 days: 20% deposit refunded (net of bank charges); 120-46 days: 20% deposit forfeited; 45-30 days: 50% of full booking value forfeited; <30 days or no-show: 100% forfeited."
+  }
+}

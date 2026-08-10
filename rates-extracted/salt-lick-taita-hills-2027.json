@@ -1,0 +1,70 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftotext -layout from 'SALT LICK WILDLIFE RESORT/SUNWORLD SAFARIS LTD - SALT LICK WILDLIFE RESORT 2027.pdf' (9pp). Single legal entity (Taita Hills & Salt Lick Wildlife Resort Ltd) operating TWO branded properties: Salt Lick Safari Lodge and Taita Hills Safari Resort & Spa, both in Taita Hills Wildlife Sanctuary (Tsavo area).",
+  "operator": "Taita Hills & Salt Lick Wildlife Resort Ltd",
+  "currency": "USD",
+  "validity": { "start": "2027-01-02", "end": "2028-01-01" },
+  "unit": "per person per night, Full Board",
+  "confidence": "confirmed-2027-08-06",
+  "properties": {
+    "Salt Lick Safari Lodge - Park View Rooms": {
+      "high": { "dates": "02 Jan-31 Mar 2027 & 01 Jul 2027-01 Jan 2028", "single": 237, "double": 316, "thirdBed": 95 },
+      "green": { "dates": "01 Apr-30 Jun 2027", "single": 116, "double": 231, "thirdBed": 69 }
+    },
+    "Salt Lick Safari Lodge - Waterhole View Rooms": {
+      "high": { "single": 251, "double": 335, "thirdBed": "N/A" },
+      "green": { "single": 127, "double": 254, "thirdBed": "N/A" },
+      "note": "No triple occupancy in this room category"
+    },
+    "Taita Hills Safari Resort & Spa - Resort Rooms": {
+      "high": { "single": 168, "double": 223, "thirdBed": 67 },
+      "green": { "single": 87, "double": 175, "thirdBed": 52 }
+    },
+    "Taita Hills Safari Resort & Spa - Junior Suite": {
+      "high": { "single": 236, "double": 315, "thirdBed": 95 },
+      "green": { "single": 121, "double": 242, "thirdBed": 73 }
+    },
+    "verified": true
+  },
+  "supplements": {
+    "christmasNewYear": { "dates": "22 Dec-1 Jan inclusive", "adult": 40, "child5to11": 25, "minStay": "2 nights for non-allocated programs" },
+    "easter": { "dates": "26-29 Mar inclusive", "adult": 20, "child5to11": 10 },
+    "verified": true
+  },
+  "childPolicy": {
+    "infantTo4_TaitaHillsOnly": "Free of charge (NOT applicable at Salt Lick - see below)",
+    "under5NotPermittedAtSaltLick": "Children under 5 not permitted at Salt Lick Safari Lodge for safety reasons",
+    "age5to11_99SharingWithAdults": "50% of adult sharing rate",
+    "age5to11_99OwnRoom_min2max3": "75% of adult sharing rate",
+    "connectingRoomsRequiredUnder12": "Subject to availability",
+    "verified": true
+  },
+  "occupancyRules": {
+    "SaltLickSafariLodge": "Max 3 adults or 2 adults+1 child; triples only in Park View rooms; no interconnecting rooms",
+    "TaitaHillsResort": "Max 3 adults or 2 adults+1 child (suites too); interconnecting rooms available",
+    "verified": true
+  },
+  "mandatoryFees": {
+    "taitaHillsWildlifeSanctuaryEntry": { "adult": 45, "child5to11_99": 25, "under5": "Free", "student_upTo23withID": 25, "unit": "per night", "note": "Does not apply to Taita Hills Safari Resort & Spa guests unless they enter the sanctuary for game drives" },
+    "vehicleEntryFees": { "unit": "per vehicle per night", "seats4to12": 5, "seats13to24": 10, "seats25to44": 15, "seats45plus": 20, "aircraft": 20, "helicopterLanding": 20 },
+    "verified": true
+  },
+  "tourLeaders": { "complimentaryPer15Guests": { "max": 3 }, "under15paxTLRate": "50% of single/twin rate", "verified": true },
+  "famTripRates": { "single": "50% of contracted single rate", "doubleTwin": "75% of contracted double/twin rate", "exclusions": "Not applicable Christmas/Easter/Jul-Sep", "verified": true },
+  "groupDiscounts": { "30to49pax": "5%", "50to99pax": "7.5%", "100pluspax": "10%", "freePaxPer15": { "max": 3 }, "maxSingleRoomsPerGroup": 5, "verified": true },
+  "comboDiscounts": {
+    "twoPropertyCombo": "5% off contracted rates, min 1 night at each lodge (min 2-night stay total)",
+    "extendedStayTaitaHillsOnly": "5% off for 2+ nights at Taita Hills Safari Resort & Spa only",
+    "notCombinable": "Only one combo discount may apply at a time; not combinable with other offers",
+    "verified": true
+  },
+  "checkInOut": "Check-in 12:00, check-out 10:00. Day room until 17:00 = 50% of single/double rate incl. lunch (sanctuary fee if game drives taken); after 17:00 = full night charge.",
+  "walkInMeals": { "breakfast": 30, "lunch": 30, "dinner": 30, "picnicBox": 20, "childRate": "50% of above", "halfBoardReduction": 5 },
+  "cancellationPolicy": "30-16 days before arrival: 25%; 15-8 days: 50%; 7 days-arrival: 100%. No-show: 100%. Sanctuary/conservation fees non-refundable once incurred.",
+  "festiveBookingDeposits": {
+    "bookedBy30Nov": "25% non-refundable deposit within 7 days of confirmation",
+    "booked1to15Dec": "25% non-refundable deposit within 2 days of confirmation",
+    "bookedAfter15Dec": "100% non-refundable deposit at time of booking"
+  },
+  "paymentTerms": "Full payment 30 days before arrival (cash clients); credit clients per approved terms, 30 days from invoice",
+  "blockReleasePeriods": { "peakFestive": "45 days before arrival", "high": "28 days", "green": "21 days" }
+}

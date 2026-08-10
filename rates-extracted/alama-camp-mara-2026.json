@@ -1,0 +1,59 @@
+{
+  "$note": "Extracted 6 Aug 2026 from two separate single-property PDFs (Full Board STO Rates, Ground Package STO Rates) in the ALAMA folder. Not a Soroi property.",
+  "property": "Alama Camp Mara",
+  "operator": "Alama Camp Mara (independent)",
+  "region": "Maasai Mara",
+  "tier": "STO / Net rate (both Non-Resident USD Net and Resident KES tables given; Resident commissionable at 10%)",
+  "source": {
+    "files": [
+      "2026 CONTRACT RATES/KENYA/ACCOMODATION/ALAMA/Alama Camp Mara 2026 Full Board STO Rates.pdf",
+      "2026 CONTRACT RATES/KENYA/ACCOMODATION/ALAMA/Alama Camp Mara 2026 Ground Package STO Rates.pdf"
+    ],
+    "validity": { "start": "2026-01-02", "end": "2027-01-01" }
+  },
+  "seasons": {
+    "low": ["1 Apr-30 Jun", "1 Nov-22 Dec"],
+    "high": ["2 Jan-31 Mar", "1 Oct-31 Oct"],
+    "peak": ["1 Jul-30 Sep"],
+    "festive": ["23 Dec-1 Jan 2027"]
+  },
+  "rates": {
+    "unit": "per person per night",
+    "fullBoard": {
+      "nonResidentNetUSD": {
+        "singleOccupancy": { "high": 280, "low": 200, "peak": 410, "festive": 420 },
+        "double": { "high": 370, "low": 330, "peak": 550, "festive": 490 },
+        "triple": { "high": 490, "low": 380, "peak": 710, "festive": 640 }
+      },
+      "residentKES": {
+        "singleOccupancy": { "high": 31900, "low": 27500, "peak": 44000, "festive": 38500 },
+        "double": { "high": 38500, "low": 33000, "peak": 55000, "festive": 46200 },
+        "triple": { "high": 49500, "low": 42900, "peak": 71500, "festive": 59400 }
+      }
+    },
+    "groundPackage": {
+      "nonResidentNetUSD": {
+        "singleOccupancy": { "high": 420, "low": 330, "peak": 600, "festive": 550 },
+        "double": { "high": 640, "low": 590, "peak": 880, "festive": 760 },
+        "triple": { "high": 760, "low": 700, "peak": 1040, "festive": 910 }
+      },
+      "residentKES": {
+        "singleOccupancy": { "high": 58300, "low": 53900, "peak": 83820, "festive": 78320 },
+        "double": { "high": 68640, "low": 63140, "peak": 97240, "festive": 88440 },
+        "triple": { "high": 81950, "low": 75350, "peak": 116160, "festive": 104060 }
+      }
+    }
+  },
+  "childPolicy": {
+    "0to4": "Free sharing",
+    "5to12Sharing": "50% of adult rate",
+    "13plus": "Full adult rate",
+    "ownRoom": "75% of room rate",
+    "oneAdultOneChildSharing": "Adult single rate + child at 25% of room rate"
+  },
+  "mandatoryFees": {
+    "note": "Excluded from rates, payable separately.",
+    "maasaiMaraReserveFee": { "adult": 100, "unit": "USD per day, Jan-Jun" , "adultPeak": 200, "peakUnit": "USD per day, Jul-Dec"}
+  },
+  "notes": "Tour Leader flat rate USD 100/person. Christmas surcharge USD 30/person/night (24,25,26,31 Dec, 1 Jan). Half Board reduction USD 5/person."
+}

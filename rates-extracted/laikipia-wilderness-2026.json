@@ -1,0 +1,69 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftotext -layout. NOT a Soroi property. Multi-product document: Laikipia Wilderness (Main/Palm/River Camps), Meru/Aberdares Wilderness Luxury Mobile Camps, and Laikipia Expeditions Walking Safaris - three related but distinct products from the same operator (Laikipia Expeditions / Laikipia Wilderness Camp, LWC).",
+  "operator": "Laikipia Wilderness / Laikipia Expeditions",
+  "products": ["Laikipia Wilderness (Main Camp, Palm Camp, River Camp)", "Meru/Aberdares Wilderness Luxury Mobile Camps", "Laikipia Expeditions Walking Safaris", "Laikipia Expeditions Northern Kenya Safaris (bespoke, not priced here)"],
+  "source": { "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/LAIKIPIA WILDERNESS/LWC_All Preferential 30% USD Rates_2026.pdf", "tier": "Preferential 30% (Nett = Rack x 0.70, confirmed arithmetically: e.g. Adult Rack $740 x 0.7 = $518 Nett, exact match on every tier checked)" },
+  "confidence": "confirmed-2026-08-06",
+  "currency": "USD",
+  "laikipiaWildernessCamps": {
+    "campNote": "Main Camp sleeps up to 12 adults + 8 children. Palm Camp and River Camp are exclusive-use only, min 4 adults.",
+    "unit": "per person per night, all year (no seasonal variation except Christmas surcharge)",
+    "rack": { "adult": 740, "teen11to17": 450, "child0to10": 300 },
+    "nett30pct": { "adult": 518, "teen11to17": 350, "child0to10": 225 },
+    "conservationFee": { "adult": 140, "teen11to17": 90, "child0to10": 60, "unit": "per person per night, added on top of the nett rate" },
+    "christmasSupplement": { "dateRange": "21 Dec - 3 Jan", "adult": 50, "teen": 35, "child": 25, "unit": "USD nett surcharge per person per night" },
+    "singleSupplement": { "amount": 200, "unit": "USD per adult per night" },
+    "inclusions": ["Meals, non-premium drinks, conservation fees, laundry", "Shared game drives, night drives, walking, wild dog tracking, fly-camping, fishing, mountain biking, bush meals, river swimming/rafting (water levels permitting)", "Late departure at no extra charge (vacate by 10am)"],
+    "exclusions": {
+      "villageVisit": { "amount": 100, "unit": "per group up to 6 pax" },
+      "privateVehicleExclusive": { "amount": 350, "unit": "per night" },
+      "blackLeopardPrivateVehicle": { "amount": 350, "unit": "per night" },
+      "blackLeopardSharedVehicle": { "amount": 100, "unit": "per person per night, 1 booking per row, priority slot only - not a sighting guarantee" },
+      "privateGuideNonResident": { "amount": 150, "unit": "per night, plus $140 conservation fee per night" },
+      "privateGuideResidentCitizen": { "amount": 150, "unit": "per night, plus $50 conservation fee per night" },
+      "extraFinalDayLunch": { "amount": 20, "unit": "per person" }
+    },
+    "childrenUnder5": "Welcomed by special arrangement",
+    "verified": true
+  },
+  "meruAberdaresWildernessMobileCamps": {
+    "minStay": "10 bednights",
+    "unit": "per person per night",
+    "rack": { "adult": 740, "teen11to17": 450, "child0to10": 300 },
+    "nett30pct": { "adult": 518, "teen11to17": 350, "child0to10": 225 },
+    "conservationFee": { "adult": 140, "teen11to17": 90, "child0to10": 60 },
+    "christmasSupplement": { "dateRange": "21 Dec - 3 Jan", "adult": 50, "teen": 35, "child": 25 },
+    "singleSupplement": { "amount": 200, "unit": "USD per adult per night" },
+    "inclusions": ["Meals and local drinks", "Game drives, fishing, bush meals, sundowners", "Laundry", "Late departure at no extra charge"],
+    "exclusions": { "privateGuide": { "amount": 150, "unit": "per night per guide tent, plus conservation fees" }, "privateVehicle": { "amount": 350, "unit": "per day" } },
+    "verified": true
+  },
+  "laikipiaWalkingSafaris": {
+    "minStay": "2 adults, 3 nights",
+    "minAge": 8,
+    "unit": "per person per night, no single supplement",
+    "rack": { "adult": 840, "teen11to17": 550, "child0to10": 400 },
+    "nett30pct": { "adult": 588, "teen11to17": 415, "child0to10": 300 },
+    "conservationFee": { "adult": 140, "teen11to17": 90, "child0to10": 60 },
+    "christmasSupplement": { "dateRange": "21 Dec - 3 Jan", "adult": 50, "teen": 35, "child": 25 },
+    "inclusions": ["Mobile fly-camp set up by support staff", "Meals, local drinks, laundry", "Professional walking guide", "Picnic lunches", "River swimming", "Wildlife tracking on foot"],
+    "verified": true
+  },
+  "transferCosts": {
+    "unit": "USD per vehicle one way; private/black leopard vehicles do not include transfers",
+    "nanyukiAirstripOrTownToLWC": 280, "loisabaAirstripToLWC": 280, "sosianAirstripToLWC": 100,
+    "nairobiToLWC": { "estateCar1to4pax": 500, "rav4Prado1to4pax": 550, "landcruiser4to7pax": 550 },
+    "meruWildernessToLWC": 550, "aberdaresWildernessToLWC": 400, "aberdaresWildernessToNairobi": 350,
+    "lewaAnyGateToLWC": 450, "olPejetaSeratGateToLWC": 280, "samburuArchersPostToLWC": 450, "sararaToLWC": 550, "boranaToLWC": 450, "nanyukiToMeruWilderness": 400,
+    "verified": true
+  },
+  "specialOffers": {
+    "note": "Apply to accommodation only, not peak season, exclude extras like private vehicles/conservation fees.",
+    "wildernessWeek": "7 nights for price of 6 (3 nights Wilderness Mobiles + 4 nights Laikipia Wilderness, either order)",
+    "familyTentSpecial": "Price of 3 for 4 nights in the family tent (2 tents, shared bathroom) at Laikipia Wilderness Camp only",
+    "honeymoonSpecial": "Price of 4 for 3 nights for honeymoon couples",
+    "mainCampTakeOver": "Charged as 14 pax accommodation + conservation fees per person actually staying"
+  },
+  "paymentTerms": { "deposit": "20% to confirm booking", "balance": "80% due 60 days prior to travel" },
+  "cancellation": { "depositsNonRefundable": true, "60to30daysPrior": "50% forfeited", "0to30daysPrior": "No refund" }
+}

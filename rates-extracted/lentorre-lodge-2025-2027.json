@@ -1,0 +1,54 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftotext -layout (non-resident contract) and pdftoppm + visual image read (resident rates PDF is image-only). NOT a Soroi property. South Central Rift, Kenya. Two tiers: Non-Resident 25% commission contract and Resident rates, on separate validity windows.",
+  "property": "Lentorre Lodge",
+  "region": "South Central Rift, Kenya (near Lake Magadi)",
+  "source": {
+    "nonResidentFile": "2026 CONTRACT RATES/KENYA/ACCOMODATION/Lentorre Lodge/Lentorre Lodge 25% Contract Rates 2025 - 10 Jan 2027 Email.pdf",
+    "nonResidentValidity": { "start": "2025-02-01", "end": "2027-01-10" },
+    "residentFile": "2026 CONTRACT RATES/KENYA/ACCOMODATION/Lentorre Lodge/Lentorre Resident June 2026.pdf",
+    "residentValidity": { "start": "2025-01-10", "end": "2026-06-30" },
+    "skipped": "Lentorre Lodge Resident Rates 2025 - 30 June 2026 Email.pdf - likely a duplicate/earlier version of the resident PDF above, not separately re-extracted given the visual image PDF already covers the same validity window"
+  },
+  "confidence": "confirmed-2026-08-06",
+  "exclusiveUseThreshold": "Bookings of 6 adults or more automatically get exclusive use of the lodge (applies to non-resident tier at least).",
+  "nonResident": {
+    "currency": "USD",
+    "unit": "per person per night",
+    "rates": { "adult": { "rack": 950, "commission25pct": 713 }, "child5to15": { "rack": 660, "commission25pct": 495 } },
+    "inclusions": ["Full board accommodation", "All beverages incl. premium wines and spirits", "Day and night game drives", "Laundry", "Sundowners", "Photography hides access", "Guided bush/nature walks", "River tubing (water-level dependent)", "Airstrip transfers"],
+    "exclusions": {
+      "communityConservancyFee": { "adult": 120, "child": 60, "unit": "USD per person per night" },
+      "bushDinnerOrBreakfast": 85,
+      "lateCheckoutBy2pm": "50% of rate per night", "lateCheckoutBy6pm": "75% of rate per night",
+      "guideAccommodationSharing": { "amount": 120, "unit": "per person per night" },
+      "ownerGuidedTrip": { "amount": 350, "unit": "per day (Raaji Bharij, Owner)" },
+      "other": ["Champagne", "Gratuities", "Personal expenses"]
+    },
+    "extraActivities": { "bomaVillageVisit": { "amount": 150, "unit": "per group" }, "culturalMaasaiDance": { "amount": 10, "unit": "per Maasai dancer" }, "communityElderTalk": { "amount": 20, "unit": "per elder" }, "astronomyNight": { "amount": 1600, "unit": "plus VAT" }, "lakeMagadiConservancyFee": { "adult": 50, "child": 25, "unit": "per person per visit, children below 16" } },
+    "paymentTerms": { "provisionalHold": "21 days", "deposit": "30% within 2 weeks", "fullPayment": "45 days prior to arrival" },
+    "cancellation": { "over180days": "Deposit refunded less bank charges", "90to180days": "30% deposit forfeited", "under90days": "100% cancellation charge" },
+    "checkInOut": { "checkIn": "11:30am strict", "checkOut": "10:00am latest" },
+    "cashPolicy": "Strictly no cash in camp - extras invoiced, payable in Nairobi office.",
+    "verified": true
+  },
+  "resident": {
+    "currency": "KES",
+    "unit": "per person per night",
+    "fullBoardWithSelectedBeveragesSelfDrive": { "adult": 25000, "child5to15": 18000, "note": "Own vehicle for game drives; Lentorre provides a local spotter." },
+    "gamePackageWithSelectedBeverages": { "adult": 29700, "child5to15": 20700, "minGuests": 4, "note": "Shared morning/evening game drives in Lentorre vehicles within conservancies, with spotter." },
+    "lakeMagadiNatronExcursion": { "amount": 7500, "unit": "per person, min 2 pax, morning or evening" },
+    "communityConservancyFee": { "adult": 1500, "child5to15": 750, "unit": "per person per night" },
+    "residentRatesNotApplicable": "15 Dec - 10 Jan (high-demand window reverts to non-resident-tier pricing presumably, though not explicitly restated here)",
+    "infantsUnder5": "Free of charge",
+    "extraLunches": { "adult": 5000, "child": 2500, "currency": "KES" },
+    "hideAccessPermit": { "amount": 6000, "unit": "KES per person per night, max 6 permits/night" },
+    "lakeMagadiConservancyFee": { "adult": 2000, "child": 1000, "unit": "KES per visit, children below 16" },
+    "lakeNatronConservancyFee": { "adult": 1500, "child": 750, "unit": "KES per visit, children below 16" },
+    "checkInOut": { "checkIn": "11:30am strict", "checkOut": "10:00am strict" },
+    "lateCheckout": { "by2pm": "50% of per-person rate per night", "by6pm": "75% of per-person rate per night" },
+    "cashPolicy": "Strictly no cash - extras cleared via M-Pesa at end of safari.",
+    "paymentTerms": { "deposit": "30% on confirmation", "fullPayment": "min 45 days prior to arrival" },
+    "cancellation": { "over180days": "Deposit refunded less bank charges", "90to180days": "30% deposit forfeited", "under90days": "100% cancellation charge" },
+    "verified": true
+  }
+}

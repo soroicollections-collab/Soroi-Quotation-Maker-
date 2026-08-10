@@ -1,0 +1,26 @@
+{
+  "property": "Muthu Mara River Lodge",
+  "operator": "MGM Muthu Hotels",
+  "region": "Maasai Mara (near Mara North Airstrip)",
+  "isSoroiProperty": false,
+  "sourceFiles": [
+    "2026 CONTRACT RATES/KENYA/ACCOMODATION/MUTHU/Muthu Mara Lodge Rates - Promotion.pdf"
+  ],
+  "documentType": "Exclusive Opening Promo Offer (new property, limited-time)",
+  "notes": [
+    "Distinct property from Muthu Keekorok Lodge - a newly-opened lodge, separate promo flyer, not part of the main 4-property Sunworld contract.",
+    "5 minutes from Mara North Airstrip, 20 minutes from balloon safari site.",
+    "Includes complimentary upgrade from Garden View to River View room."
+  ],
+  "currency": { "both": "USD and KES quoted side by side", "verified": true },
+  "validity": { "raw": "Book before 1 April 2026 for stays until 31 May 2026", "verified": true, "confidenceNote": "This is a narrow promo window - rates outside this booking/stay window are not covered by this document." },
+  "rates_perRoomPerNight": {
+    "doubleTwin_upTo2Adults": { "usd": 210, "kes": 29000 },
+    "single_1Adult": { "usd": 160, "kes": 22500 },
+    "suiteSupplementOverGardenView": { "usd": 170, "kes": 22000 },
+    "verified": true
+  },
+  "includes": ["Garden View room (complimentary River View upgrade)", "3 meals daily", "Soft drinks with meals", "Taxes"],
+  "excludes": ["Conservancy fee US$100 per person per day"],
+  "amenities": ["Hippo pools visible from public areas", "Day/night game drives with off-road permission", "Guided bush walks & sundowners", "River-facing rooms", "Largest Mara conference facility (200 delegates)"]
+}

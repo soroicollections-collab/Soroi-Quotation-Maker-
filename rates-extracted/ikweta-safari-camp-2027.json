@@ -1,0 +1,19 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftotext (single page) from 'iKWETA SAFARI CAMP/iKWETA Safari Camp Contract (STO) Rates, 2027.pdf'.",
+  "property": "iKweta Safari Camp",
+  "location": "Meru National Park, Murera Gate",
+  "currency": "USD",
+  "tier": "STO",
+  "unit": "per person per night, Full Board (flat all year, no seasonal variation)",
+  "confidence": "confirmed-2027-08-06",
+  "rates": {
+    "eastAfricaResident": { "double": 185, "single": 115, "triple": 245 },
+    "nonResident": { "double": 205, "single": 125, "triple": 275 },
+    "verified": true
+  },
+  "taxesIncluded": "16% VAT + 2% Tourism Levy included",
+  "childPolicy": { "age3to11SharingGuestTentWithParent": 50, "verified": true },
+  "festiveSupplement": { "dates": "24-26 Dec 2027 & 31 Dec 2027-1 Jan 2028", "amount": 30, "unit": "per adult/child per night" },
+  "inclusions": "Full board (breakfast, lunch, dinner)",
+  "exclusions": "Transport, park fees, game drives, optional excursions"
+}

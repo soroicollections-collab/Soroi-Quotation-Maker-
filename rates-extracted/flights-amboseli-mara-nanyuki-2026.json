@@ -1,0 +1,41 @@
+{
+  "$note": "Extracted 5 Aug 2026 for the Amboseli/Mara/Solio/Samburu/Nairobi quote. Two different suppliers used for different legs since no single carrier covers the whole routing (nobody flies to Solio at all — nearest served strip is Nanyuki, still ~45-60min short of the lodge by road, though Solio Lodge's own rate includes that connecting transfer, see solio-lodge-safari-collection-2026.json).",
+  "airvan": {
+    "source": {
+      "file": "2026 CONTRACT RATES/KENYA/FLIGHTS/AIRVAN/Airvan Contract Rates - Sunworld 2026 & 2027.pdf",
+      "validity": "2026/2027 contract rate letter, no explicit end date stated"
+    },
+    "confidence": "confirmed-2026-08-05",
+    "note": "A second Airvan document (Airvan Rates All Routes 2025 & 2026.xlsx) gives a DIFFERENT figure for Mara-Amboseli ($370/$282 adult/child) than this contract letter's own Mara-Amboseli figure ($350/$270) — flagging this discrepancy, not resolving it silently. This JSON uses the signed contract-letter PDF figures as the more authoritative/specific source, and specifically the point-to-point Wilson-Amboseli and Amboseli-Mara direction figures (not the reverse-direction or xlsx figures) for this itinerary.",
+    "routes": {
+      "wilsonToAmboseli": { "adult": 185, "child": 145, "unit": "one way, USD" },
+      "amboseliToWilson": { "adult": 185, "child": 145, "unit": "one way, USD" },
+      "amboseliToMaasaiMara": { "adult": 290, "child": 225, "unit": "one way, USD" },
+      "maasaiMaraToAmboseli": { "adult": 350, "child": 270, "unit": "one way, USD", "note": "Directional asymmetry vs amboseliToMaasaiMara as stated in source — not a typo we corrected, this is what the document says." },
+      "wilsonToMaasaiMaraReturn": { "adult": 285, "child": 225, "unit": "return, USD" },
+      "wilsonToMaasaiMaraOneWay": { "adult": 185, "child": 145, "unit": "one way, USD" }
+    },
+    "schedule": "Wilson->Amboseli 07:30-07:50 daily; Amboseli->Wilson 08:15-09:00 daily; Amboseli->Maasai Mara 08:30-09:30 daily.",
+    "terms": "Min 2 passengers on Wilson/Mara routes. Tickets non-refundable, valid 3 months. 15kg soft-bag baggage limit."
+  },
+  "safarilink": {
+    "source": {
+      "file": "2026 CONTRACT RATES/KENYA/FLIGHTS/Safarilink/SAFARILINK - SUNWORLD SAFARIS.pdf",
+      "validity": { "start": "2026-01-01", "end": "2026-12-31" }
+    },
+    "confidence": "confirmed-2026-08-05",
+    "seasons": {
+      "high": { "dateRanges": ["Jan 1 - Mar 31", "Jun 16 - Oct 31", "Dec 16 - Dec 31"] },
+      "low": { "dateRanges": ["Apr 1 - Jun 15", "Nov 1 - Dec 15"] }
+    },
+    "routes": {
+      "nanyukiToMasaiMara": {
+        "published": 441, "nett": 374.8, "tax": 15, "unit": "one way, USD, Y class",
+        "note": "Used for our Mara->Nanyuki leg (fares stated as applicable vice versa). Child fare not explicitly published for this specific route; general rule 'child fare is 75% of adult fare' applied as an INFERENCE: 75% of nett + same tax = ~$296.10. Flag this as an inference, not a published child figure."
+      },
+      "amboseliTsavoToMara": { "published": null, "nett": 331.5, "tax": 15, "unit": "one way, USD, Y class", "note": "Direct routing operates in High season (our Oct dates qualify) subject to min 2 pax/strip, 4 pax/service; otherwise reroutes via Wilson. Not used in this itinerary — Airvan used instead per user's stated preference for the Amboseli leg." }
+    },
+    "generalChildRule": "Child fare is 75% of the adult fare (except Tanzania through-fares, which are 80%).",
+    "terms": "15kg soft-bag baggage limit. Cancellation free up to 30 days, then tiered penalties."
+  }
+}

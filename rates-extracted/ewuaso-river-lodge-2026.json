@@ -1,0 +1,15 @@
+{
+  "$note": "Extracted 6 Aug 2026. Property sits by the Ewuaso Ngiro River near 'Rangers Airstrip' (likely South Rift / Magadi area given mention of scenic flight over Lake Magadi and Natron) - exact region not explicitly named in the source document.",
+  "property": "Ewuaso River Lodge",
+  "operator": "Ewuaso River Lodge",
+  "region": "South Rift, near Lake Magadi/Natron (inferred from source's mention of scenic flights over those lakes; not explicitly stated)",
+  "tier": "2026 Rack Rates - Conference, Resident, and Non-Resident",
+  "source": { "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/Ewuaso River Lodge/Ewuaso River Lodge Rates - 2026 .pdf (4).pdf" },
+  "rates": {
+    "conferenceRackKES_perPerson": { "deluxeDoubleRoom": 25175, "singleDeluxeRoom": 19475, "dayConferenceRate": 2500, "conservationFeeAdult": 2000, "conservationFeeChild3to12": 2000 },
+    "residentRackKES_perPerson": { "deluxeDoubleRoom": 24000, "singleDeluxeRoom": 18000, "childAccommodation3to12": 5000, "conservationFeeAdult": 2000, "conservationFeeChild3to12": 1000 },
+    "nonResidentRackUSD_perPerson": { "deluxeDoubleRoomAdult": 420, "deluxeDoubleRoomChild": 80, "singleDeluxeRoom": 270, "conservationFeeAdult": 60, "conservationFeeChild3to12": 30 }
+  },
+  "confidenceNote": "[Unverified] Non-Resident rate table figures (e.g. USD 420 for Deluxe Double per adult) appear high relative to the Resident/Conference KES tables when converted - cross-check with property before quoting, table formatting in the source PDF was irregular (misaligned columns).",
+  "notes": "Non-resident rate includes Full Board, baboon walk, river activities. Conference/Resident rates include Dinner, Breakfast (+Lunch for residents), tea/snacks, stationery."
+}

@@ -1,0 +1,68 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftotext -layout, clean single-page-per-property PDFs, all sharing an identical Terms & Conditions template. NOT Soroi properties. SHELDRICK WILDLIFE TRUST operates these as SELF-CATERING, WHOLE-PROPERTY EXCLUSIVE-USE lodges - pricing is per property per night (tiered by total guest count), NOT per person per night. Six properties extracted: Galdessa Camp, Galdessa Little, Ithumba Camp, Ithumba Hill, Ithumba Private, Umani Springs. Resident-rate equivalents also exist in the folder (not extracted this pass - out of scope, non-resident only) plus an 'SWT RATES OLD' subfolder with superseded 2026 rates (not used).",
+  "operator": "Sheldrick Wildlife Trust",
+  "currency": "USD",
+  "unit": "per property per night (whole-property exclusive use, tiered by guest count), self-catering (guests bring own food & beverage)",
+  "source": {
+    "files": [
+      "2026 CONTRACT RATES/KENYA/ACCOMODATION/Sheldrick Wildlife Trust Eco-Lodges/Galdessa Camp Non Resident Rates 2026.pdf",
+      "2026 CONTRACT RATES/KENYA/ACCOMODATION/Sheldrick Wildlife Trust Eco-Lodges/Galdessa Little Non Resident Rates 2026 .pdf",
+      "2026 CONTRACT RATES/KENYA/ACCOMODATION/Sheldrick Wildlife Trust Eco-Lodges/Ithumba Camp Non Resident Rates 2026.pdf",
+      "2026 CONTRACT RATES/KENYA/ACCOMODATION/Sheldrick Wildlife Trust Eco-Lodges/Ithumba Hill Non Resident Rates 2026.pdf",
+      "2026 CONTRACT RATES/KENYA/ACCOMODATION/Sheldrick Wildlife Trust Eco-Lodges/Ithumba Private Non Resident Rates 2026.pdf",
+      "2026 CONTRACT RATES/KENYA/ACCOMODATION/Sheldrick Wildlife Trust Eco-Lodges/Umani Springs Non Resident Rates 2026 .pdf"
+    ],
+    "skippedFiles": ["All '...Resident Rates 2026.pdf' files (resident tier, out of scope)", "SWT RATES OLD/ subfolder - superseded rate PDFs, not used"],
+    "validity": "2026 (no explicit date range beyond the '2026' label; no seasonality in any of these documents)"
+  },
+  "confidence": "confirmed-2026-08-06",
+  "properties": {
+    "galdessaCamp": {
+      "region": "Tsavo East National Park (Galusha River)",
+      "ratesPerNightWholeProperty": { "1to6guests": 2640, "7guests": 3080, "8guests": 3520, "9guests": 3960, "10guests": 4400 }
+    },
+    "galdessaLittle": {
+      "region": "Tsavo East National Park",
+      "ratesPerNightWholeProperty": { "1to6guests": 2640 }
+    },
+    "ithumbaCamp": {
+      "region": "Tsavo East National Park (Ithumba)",
+      "ratesPerNightWholeProperty": { "1to4guests": 1200, "5guests": 1500, "6guests": 1800, "7guests": 2100, "8guests": 2400 }
+    },
+    "ithumbaHill": {
+      "region": "Tsavo East National Park (Ithumba)",
+      "childRestriction": "Under 6 years not permitted.",
+      "ratesPerNightWholeProperty": { "1to6guests": 2760, "7guests": 3220, "8guests": 3680 }
+    },
+    "ithumbaPrivate": {
+      "region": "Tsavo East National Park (Ithumba)",
+      "childRestriction": "Under 6 years not permitted.",
+      "ratesPerNightWholeProperty": { "1to6guests": 2760 }
+    },
+    "umaniSprings": {
+      "region": "Kibwezi Forest",
+      "ratesPerNightWholeProperty": { "1to4guests": 1840, "5guests": 2300, "6guests": 2760, "7guests": 3220, "8guests": 3680, "9guests": 4140, "10guests": 4600 },
+      "conservationFee": { "amount": 30, "unit": "per person per day", "note": "Explicitly stated as additional to accommodation cost, no surcharge on this fee - this is the only one of the six properties with an explicitly stated conservation fee in its own document." }
+    }
+  },
+  "taxNote": "All rates subject to 16% VAT and 2% catering levy (on top of the quoted figures).",
+  "parkFees": {
+    "note": "For Ithumba Camp, Ithumba Hill, Galdessa Main (Camp), and Galdessa Little specifically - Tsavo East National Park entry fees are payable directly to KWS, NOT included in quoted rates. Ithumba Private and Umani Springs are not listed in this specific park-fees clause (Umani Springs has its own conservation fee instead, per above; Ithumba Private's park-fee status is unstated - flagged).",
+    "confidenceNote": "[Unverified] Ithumba Private's relationship to KWS park fees is not explicitly addressed in its own document despite being in the same Ithumba area as Ithumba Camp/Hill (which are explicitly named in the park-fees clause) - do not assume it is included or excluded without confirming with Sheldrick Wildlife Trust directly."
+  },
+  "childPolicy": {
+    "under6NotPermitted": "Ithumba Private and Ithumba Hill only.",
+    "under6NotCountedInOccupancy": "All properties.",
+    "age6AndOlderCountedInGroup": "All properties."
+  },
+  "operationalPolicy": {
+    "selfCatering": "Guests bring own food & beverage; Sheldrick can advise on catering companies; chefs provided; drinking water in glass bottles.",
+    "selfDriveAccess": "4x4 vehicles recommended.",
+    "checkIn": "Strictly after 10:00 AM", "checkOut": "Strictly before 9:30 AM",
+    "minimumStay": "2 nights at all properties.",
+    "orphansMudBathViewing": "11 o'clock mud bath access on day of arrival only, not day of departure.",
+    "deposit": "20% non-refundable to confirm; balance due 60 days before arrival.",
+    "cancellation": [{ "daysBeforeArrival": "60-31", "charge": "50% of total cost" }, { "daysBeforeArrival": "30-0", "charge": "100% of total cost" }],
+    "noRefunds": "No-shows, late arrivals/early departures, unused services from guest-initiated itinerary changes."
+  }
+}

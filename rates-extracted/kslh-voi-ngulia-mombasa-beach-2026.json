@@ -1,0 +1,72 @@
+{
+  "$note": "Extracted 6 Aug 2026 via direct visual read of scanned/CamScanner-photographed PDF pages (pdftotext returned no usable text at all, only the 'CamScanner' watermark on both files - these are genuinely image-only scanned documents, rendered to PNG at 150dpi with pdftoppm and read visually, per the rule to use OCR/visual review for image-only PDFs rather than guessing). NOT Soroi properties. Operator: Kenya Safari Lodges & Hotels Ltd (KSLH), covering THREE properties: Mombasa Beach Hotel, Voi Safari Lodge, Ngulia Safari Lodge. BOTH source files were fully read this pass. IMPORTANT CONFLICT FOUND: the two documents give DIFFERENT figures for what appears to be the same Standard Room / Full Board category at the same properties for the same validity window (3 Jan 2026 - 2 Jan 2027), and neither document references or reconciles the other. See 'conflictingSecondContract' block and confidenceNote below - this was NOT silently resolved.",
+  "operator": "Kenya Safari Lodges & Hotels Ltd (KSLH)",
+  "currency": "KES and USD (both shown)",
+  "source": {
+    "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/VOI SAFARI LODGE/Rack Rates VOI SAFARI LODGE. NGULIA & Mombasa Beach Hotel (2026) - Signed.pdf",
+    "documentType": "Scanned/photographed document (CamScanner), read via visual PNG render - pdftotext extraction not possible",
+    "validity": { "start": "2026-01-03", "end": "2027-01-02" },
+    "secondFile": "VOI SAFARI LODGE. NGULIA & Mombasa Beach Hotel Contract Rates (2026) - HIGH SEASON.pdf - ALSO image-only/scanned (CamScanner), 4 pages. Rendered and read visually this pass (not skipped) - see conflictingSecondContract block below. Dated 14 May 2025, signed by Mr. Ronald Simiyu (Ag. General Manager), same validity window 3 Jan 2026 - 2 Jan 2027."
+  },
+  "confidence": "confirmed-2026-08-06 via visual read of both documents, but a genuine cross-document rate conflict exists - see conflictingSecondContract and confidenceNote",
+  "properties": {
+    "mombasaBeachHotel": {
+      "region": "Mombasa coast",
+      "standardRooms": {
+        "halfBoard": {
+          "seaGardenFacing": { "single": { "KES": 8000, "USD": 110 }, "double": { "KES": 14000, "USD": 176 }, "triple": { "KES": 18000, "USD": 248 } },
+          "restaurantFacing": { "single": { "KES": 7500, "USD": 105 }, "double": { "KES": 13000, "USD": 168 }, "triple": { "KES": 16500, "USD": 237 } }
+        },
+        "allInclusive": {
+          "seaGardenFacing": { "single": { "KES": 11500, "USD": 150 }, "double": { "KES": 20000, "USD": 236 }, "triple": { "KES": 27000, "USD": 338 } },
+          "restaurantFacing": { "single": { "KES": 11000, "USD": 145 }, "double": { "KES": 19000, "USD": 224 }, "triple": { "KES": 26000, "USD": 327 } }
+        }
+      },
+      "suites": {
+        "executiveSuite": {
+          "halfBoard": { "single": { "KES": 15000, "USD": 138 }, "double": { "KES": 22500, "USD": 220 }, "family2Adult2Kids": { "KES": 25000, "USD": 310 } },
+          "allInclusive": { "single": { "KES": 18000, "USD": 188 }, "double": { "KES": 28000, "USD": 295 }, "family2Adult2Kids": { "KES": 35000, "USD": 423 } }
+        },
+        "deluxeSuite": {
+          "halfBoard": { "single": { "KES": 17500, "USD": 149 }, "double": { "KES": 25000, "USD": 238 }, "family2Adult2Kids": "N/A" },
+          "allInclusive": { "single": { "KES": 20500, "USD": 203 }, "double": { "KES": 27000, "USD": 319 }, "family2Adult2Kids": "N/A" }
+        }
+      },
+      "conferenceRates": { "fullDay": { "USD": 35, "KES": 4250 }, "halfDay": { "USD": 32, "KES": 3700 }, "fullBoardConference": { "USD": 90, "KES": 10500 }, "bedBreakfastConfDelegatesOnly": { "USD": 45, "KES": 5000 }, "note": "Applicable to MBH/VSL/NSL per person per day. Commissionable at 5%." },
+      "mealPlanSupplements": { "mbhFullBoardSupplement": { "USD": 18, "KES": 2000, "unit": "per person per day" }, "buffetBreakfast": { "USD": 18, "KES": 2000, "unit": "per adult" }, "buffetDinnerLunch": { "USD": 20, "KES": 2500, "unit": "per adult" }, "dayVacationLunchInclSoftDrinkSwimming": { "USD": 18, "KES": 2000, "unit": "per adult" } },
+      "swimmingRate": { "standard": { "adult_KES": 650, "child_KES": 350, "validUntil": "2025-12-21" }, "festive": { "adult_KES": 1000, "child_KES": 700, "validity": "22 Dec 2025 - 2 Jan 2026" } }
+    },
+    "voiSafariLodgeAndNguliaSafariLodge": {
+      "region": "Tsavo (Voi & Ngulia)",
+      "note": "Both lodges share this single combined rate table (VSL = Voi Safari Lodge, NSL = Ngulia Safari Lodge) - not separately itemized per lodge beyond the Landcruiser rates section.",
+      "fullBoardStandardRooms": { "single": { "KES": 10000, "USD": 132 }, "double": { "KES": 18000, "USD": 198 }, "triple": { "KES": 22500, "USD": 281 } },
+      "mealPlanSupplements": { "mealPlanReduction": { "USD": 5, "KES": 500, "unit": "per person per day" }, "buffetLunchInclSoftDrinkSwimming": { "USD": 20, "KES": 2500, "unit": "per adult" } },
+      "landcruiserRates_12hrDayInclSGRTransfersAnd1GameDrive": { "NSL": { "KES": 35000, "USD": 295 }, "VSL": { "KES": 30000, "USD": 250 } },
+      "transportHireNotCoveredPerKm": { "KES": 200, "USD": 2 },
+      "driverNightAllowance_KES": 2500,
+      "tourGuideServicesPerGuidePerGameDrive_KES": 3000,
+      "childPolicy": { "age4to12SharingWithAdults": "50%", "age4to12OwnRoom": "75%" },
+      "supplements": { "easterXmas_24to26Dec_31Dec_1Jan": { "USD": 25, "KES": 3000, "unit": "per person per adult" } },
+      "termsAndConditions": ["Rates not inclusive of park fees", "100% payment to firmly confirm", "Management reserves right to change rates with 2 months notice", "All commissions subject to applicable taxes"]
+    }
+  },
+  "conflictingSecondContract_HIGH_SEASON_file": {
+    "$note": "This second document (also KSLH, also '3rd January 2026 - 2nd January 2027' validity, also USD) gives a Standard Room, High/Low season rate table for all three properties that does NOT match the 'main' document's Standard Rooms Full Board figures above. E.g. this doc's Voi Safari Lodge Standard Room High Season Single = $120, Low Season = $100 - compared to the main document's VSL/NSL combined 'Full Board Standard Rooms Single' = $132 flat (no season split). Ngulia High/Low Single = $115/$100 here, vs $132 flat in the main doc. Mombasa Beach Hotel Standard Single here = $100 High / $90 Low, vs the main doc's Half Board Sea/Garden Facing Single = $110 and Restaurant Facing = $105 (no season split, and meal-plan-labeled differently). These are genuinely different numbers for what is nominally the same room category and validity period, from the same operator, with no cross-reference between the two documents explaining the difference (e.g. meal plan basis is not explicitly labeled on this second document's rate table at all - the T&Cs page implies Lodges are Full Board base with an HB reduction, and MBH is Half Board base with an FB supplement, matching the main doc's meal-plan structure, but this is inferred, not stated on the rate table itself).",
+    "mombasaBeachHotel_standardRoom": { "high": { "single": 100, "double": 160, "triple": 225 }, "low": { "single": 90, "double": 150, "triple": 215 }, "seasons": { "high": ["03/01/2026-31/03/2026", "01/07/2026-02/01/2027"], "low": ["01/04/2026-30/06/2026"] } },
+    "voiSafariLodge_standardRoom": { "high": { "single": 120, "double": 180, "triple": 255 }, "low": { "single": 100, "double": 160, "triple": 225 }, "seasons": "same as above" },
+    "nguliaSafariLodge_standardRoom": { "high": { "single": 115, "double": 175, "triple": 250 }, "low": { "single": 100, "double": 160, "triple": 225 }, "seasons": "same as above" },
+    "termsAndConditions_thisDocument": {
+      "payment": "Cash on booking/arrival",
+      "courierTourLeaderUnder15pax": { "amount": 80, "unit": "USD per courier, in guest room or manager's house" },
+      "famTripRate": "50% of applicable Full Board rate per person sharing, max 2 pax",
+      "mealPlan": { "mbhLodgesPassingLunch": 30, "mbhLodgesPassingBreakfast": 25, "mbhFullBoardSupplement": 30, "hbReductionLodges": 5, "xmasSupplement_24Dec-1Jan": 50, "bushBreakfastSupplement": 30 },
+      "restriction": "Not valid for Commercial/Corporate clients - tour package bookings only.",
+      "commissionable": false,
+      "complimentaryRooms": "1 pax free after 15 paying pax, same group voucher.",
+      "childPolicy": { "under3": "Free", "age4to12Sharing": "50% of one adult rate in a double", "under12OwnRoom": "75% of applicable adult rates" },
+      "honeymoonPackage": { "mombasaBeach": "Fruits, flowers, small cake on arrival", "lodges": "Fruits and flowers" },
+      "cancellation": [{ "daysBeforeArrival": "14-2", "charge": "50% of accommodation charges per bed-night" }, { "within48hrs": "70% no-show fee of net accommodation value" }, { "nonArrivalWithoutWrittenCancellation14DaysPrior": "1 night's accommodation charged" }]
+    }
+  },
+  "confidenceNote": "[Unverified - genuine source conflict, not an extraction error] Two separately signed KSLH rate documents for the same three properties and same validity window give materially different Standard Room / Full Board figures (see conflictingSecondContract block). Both documents appear to be legitimate signed contracts (each has KSLH stamp + signature, dated May 2025). Root cause not determined - could be superseded versions, different distribution channels/markets, or a genuine internal inconsistency at KSLH. DO NOT default to either figure for a real quote without confirming directly with KSLH reservations which one is currently authoritative for Sunworld Safaris specifically."
+}

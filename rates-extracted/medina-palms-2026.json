@@ -1,0 +1,91 @@
+{
+  "$note": "Extracted 6 Aug 2026 directly from paginated source PDFs (Rack Rates PDF, 2 pages; Meal Supplement PDF, 1 page; both single-property, no adjacent-property risk). Chose USD Rack (file code MPU) as primary per instructions; the other three rate files (KSH Rack MPK, USD Contract MPU00, KSH Contract MPK0) exist as alternate tiers/currencies and were NOT fully extracted — noted below.",
+  "property": "Medina Palms",
+  "region": "Watamu, Kenya Coast",
+  "tier": "International Rack Rate",
+  "residency": "Non-Resident (USD)",
+  "source": {
+    "file": "2026 CONTRACT RATES/KENYA/BEACH ACCOMODATION/MEDINA/Medina Palms USD Rack Rates MPU 2026.pdf",
+    "pdfPageIndex": 0,
+    "totalPages": 2,
+    "docCode": "MPU 2026",
+    "validity": { "note": "Document itself dated 'MAY 2025' in header (issue date, not validity window) but titled '2026 INTERNATIONAL USD RACK RATES' with an explicit 2026-2027 season calendar below — treat as the correct current 2026 rate card despite the May 2025 print date." }
+  },
+  "confidence": "confirmed-2026-08-06",
+  "extractionMethod": { "note": "Read directly via pdftotext -layout across both pages of the standalone Rack Rates PDF, and the separate 1-page Meal Supplement PDF." },
+  "structuralFindings": [
+    "Rates are quoted PER UNIT PER NIGHT (i.e. per suite/villa, not per person) — a different unit from most properties in this batch (Lantana, Leopard Beach, Manda Bay are per-person; Lion in the Sun's Lion rooms and Medina share the per-unit convention).",
+    "Base rate basis is 'accommodation and breakfast' (i.e. Bed & Breakfast) — confirmed explicitly in the source subtitle.",
+    "Three seasons: Green, High, Peak — note Green here is the LOWEST-priced season name (opposite of how 'Green Season' sometimes implies a discount tier elsewhere; just a season label, not a rate tier).",
+    "High Season is itself split into two separate date windows with different minimum-stay rules embedded (6 Jan-28 Feb & 3-6 Apr = min 2 nights; 1-31 Aug & 20-26 Dec = min 3 nights) — both charged at the same High Season rate despite different minimum-stay rules.",
+    "Six accommodation categories scaling from 1BR (2 guests) to 4BR Ocean Villa (8 guests) — full range extracted.",
+    "A SEPARATE 'Meal Supplement 2026' document exists for adding Half Board or Full Board on top of the B&B base rate — priced per person per night in FOUR currencies (KSH/USD/EUR/GBP) and FOUR rate columns (Green/High/Peak/New Year's Eve). New Year's Eve (31 Dec) is its own single-night surcharge column, separate from the Peak season window.",
+    "Meal supplement child policy: ages 3-11.99 charged 50% of the supplement; 12+ considered adult. Different bracket again from Lantana (4-12), Leopard Beach (2-13.9), Manda Bay (5-17), Malindi Retreat (6-12) — every coastal property checked so far uses its own distinct child-age bracket.",
+    "Meal supplement rate is locked at time of reservation, non-transferable day-to-day, non-commissionable, and movement between meal plans mid-stay is not allowed.",
+    "Peak Season here has a distinct, stricter cancellation policy (40% fee 21-60 days out, 100% within 21 days) vs the standard policy (full refund >120 days, deposit forfeited 30-120 days, 40% fee 10-30 days, 100% within 10 days)."
+  ],
+  "seasons": {
+    "green": { "dateRanges": ["1 Mar - 2 Apr", "7 Apr - 31 Jul", "1 Sep - 19 Dec"] },
+    "high": { "dateRanges": ["6 Jan - 28 Feb", "3-6 Apr (min 2 nights)", "1-31 Aug", "20-26 Dec inclusive (min 3 nights)"] },
+    "peak": { "dateRanges": ["27 Dec 2026 - 5 Jan 2027"], "minimumStay": "5 nights" }
+  },
+  "rates": {
+    "currency": "USD",
+    "unit": "per unit (suite/villa) per night, Bed & Breakfast",
+    "verified": true,
+    "medinaSuiteOneBedroom": { "sleeps": 2, "green": 286, "high": 431, "peak": 528 },
+    "medinaDeluxeTwoBedroom": { "sleeps": 4, "green": 515, "high": 616, "peak": 764 },
+    "medinaPenthouseTwoBedroom": { "sleeps": 4, "green": 655, "high": 777, "peak": 926, "note": "Adds rooftop terrace with plunge pool vs Deluxe" },
+    "medinaOceanLodgesThreeBedroom": { "sleeps": 6, "green": 779, "high": 982, "peak": 1180 },
+    "palmerieBeachVillaThreeBedroom": { "sleeps": 6, "green": 1020, "high": 1422, "peak": 1654 },
+    "oceanVillaFourBedroom": { "sleeps": 8, "green": 1220, "high": 1685, "peak": 2109 }
+  },
+  "mealSupplements": {
+    "$note": "Separate document, Meal Supplement 2026.pdf. Unit is per person per night, added to the B&B base rate above.",
+    "childPolicy": "Ages 3-11.99 charged 50% of supplement; 12+ considered adult.",
+    "usd": {
+      "halfBoard": { "green": 35, "high": 38, "peak": 58, "newYearsEve31Dec": 86 },
+      "fullBoard": { "green": 70, "high": 76, "peak": 100, "newYearsEve31Dec": 140 }
+    },
+    "ksh": {
+      "halfBoard": { "green": 3900, "high": 4200, "peak": 6600, "newYearsEve31Dec": 9000 },
+      "fullBoard": { "green": 7600, "high": 8400, "peak": 10000, "newYearsEve31Dec": 14000 }
+    },
+    "eur": {
+      "halfBoard": { "green": 28, "high": 32, "peak": 50, "newYearsEve31Dec": 74 },
+      "fullBoard": { "green": 55, "high": 64, "peak": 90, "newYearsEve31Dec": 120 }
+    },
+    "gbp": {
+      "halfBoard": { "green": 25, "high": 28, "peak": 42, "newYearsEve31Dec": 63 },
+      "fullBoard": { "green": 50, "high": 56, "peak": 80, "newYearsEve31Dec": 100 }
+    },
+    "otherTerms": ["Rate committed at reservation, non-transferable, not subject to change", "Missed meal on one day cannot be transferred to another day", "Movement between meal plans not allowed", "Rate excludes beverages", "Non-commissionable", "Excludes specials of the day (e.g. grilled seafood platters)"],
+    "verified": true
+  },
+  "airportTransfer": { "unit": "USD one-way, 7-seater vehicle", "mombasaAirport": 120, "malindiAirport": 38 },
+  "includesExcludes": {
+    "includes": ["Accommodation", "Breakfast", "Daily Housekeeping", "Satellite TV and WiFi", "All Government Taxes and Levies"],
+    "excludes": ["Flights", "Meals except breakfast", "Insurance", "Drinks", "Gratuities", "All Activities"]
+  },
+  "cancellationPolicy": {
+    "standard": {
+      "moreThan120Days": "Full refund of deposit",
+      "30to120Days": "Deposit forfeited",
+      "10to30Days": "40% cancellation fee",
+      "within10Days": "100% cancellation fee"
+    },
+    "peakSeason": {
+      "depositRequired": "Minimum 20%, reservation not confirmed without it",
+      "balanceDue": "60 days prior to arrival",
+      "21to60Days": "40% cancellation fee",
+      "within21Days": "100% cancellation fee"
+    },
+    "postponedBookings": "Deposits forfeited after 180 days"
+  },
+  "depositAndPayment": { "deposit": "20% to confirm", "balanceDue": "30 days prior to arrival (standard); 60 days for Peak" },
+  "notExtracted": {
+    "kshRackRates": "Medina Palms KSH Rack Rates MPK 2026.pdf — not fully extracted, alternate currency of the same Rack tier. Exists on file.",
+    "usdContractRates": "Medina Palms USD Contract Rates MPU00 2026.pdf — not extracted, alternate (presumably discounted) tier. Exists on file.",
+    "kshContractRates": "Medina Palms KSH Contract Rates MPK0 2026.pdf — not extracted, alternate tier/currency combination. Exists on file."
+  }
+}

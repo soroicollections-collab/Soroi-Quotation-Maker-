@@ -1,0 +1,42 @@
+{
+  "property": "Ololo Safari Lodge & Farm",
+  "operator": "Ololo Safari Lodge & Farm",
+  "region": "Nairobi (overlooking Nairobi National Park, southern river border)",
+  "isSoroiProperty": false,
+  "sourceFiles": [
+    "2026 CONTRACT RATES/KENYA/ACCOMODATION/Ololo Lodge/Published 2026 Rates - Ololo Safari Lodge & Farm.pdf",
+    "2026 CONTRACT RATES/KENYA/ACCOMODATION/Ololo Lodge/2026 20% Nett Rates - Ololo Safari Lodge & Farm (1).pdf"
+  ],
+  "currency": "USD",
+  "validity": "1 January 2026 - 31 December 2026",
+  "notes": [
+    "The '20% Nett Rates' document's cover page has a typo in its date range ('January 1st 2026 - December 31st 2025') - the actual rate table on page 2 correctly states '1st Jan 2026 - 31st Dec 2026'. Flagged, not treated as a real validity issue.",
+    "NETT discount confirmed approximately as Rack x 0.80 across all categories (e.g. Old Stable Rooms adult: 305/380=0.80; Family Wing adult: 390/490=0.796; Tower Room adult: 470/590=0.796) - a Nett/STO ~20% tier, and unusually still commissionable to agents at 10% on top (stated explicitly in the Nett document).",
+    "Room categories are grouped in pairs sharing one price point: (7 Old Stable Rooms + 3 Tented Cottages) share one rate; (Family Wing + 3-bedroom Stable Cottage) share another; (Tower Room + Terrace Room) share the third.",
+    "This is a flexible Nairobi/stopover hotel candidate not yet in CLAUDE.md's known priced list - notable for combining a Nairobi stay with Nairobi National Park game drives."
+  ],
+  "roomCategories": {
+    "oldStableRoomsAndTentedCottages": { "description": "7x Old Stable Rooms (5 Queen Double + 2 Twin, small terraces); 3x Tented Cottages (King Double + terraces)", "rack": { "adultSharing": 380, "childSharing4to14": 220 }, "nett20pct": { "adultSharing": 305, "childSharing4to14": 175 } },
+    "familyWingAndStableCottage": { "description": "Family Wing (min 4, sleeps 5: 1 mezzanine King Double + 1 triple single bedroom, 2 bathrooms, kitchenette, living room, terrace); 3-bedroom Stable Cottage (min 4, sleeps 6: 2 King Double + 1 Twin, 2 bathrooms, kitchenette, living room, terrace)", "rack": { "adultSharing": 490, "childSharing4to14": 250 }, "nett20pct": { "adultSharing": 390, "childSharing4to14": 200 } },
+    "towerRoomAndTerraceRoom": { "description": "Tower Room (King Double/Twin + balcony + private rooftop terrace); Terrace Room (King Double + private terrace)", "rack": { "adultSharing": 590, "childSharing4to14": 290 }, "nett20pct": { "adultSharing": 470, "childSharing4to14": 230 } },
+    "verified": true
+  },
+  "commission": "10% (Nett rate document explicitly states commissionable to agents at 10%)",
+  "includes": ["Airport transfers (JKIA, Wilson Airport, nearby hotels)", "Full breakfast, 2-course lunch, 3-course dinner (farm produce)", "Soft drinks, house wine, beer, selected spirits, barista coffee", "WiFi, swimming pool, bush sauna, laundry, VAT", "2 daily shared game drives in Nairobi National Park", "Guided Ololo farm tours/activities, guided walk to Kitengela Hot Glass", "Excursion to David Sheldrick's Wildlife Trust (entry fees excluded, pre-booking required)", "Kids activities (Farm Kids Program, painting, games)"],
+  "excludes": ["KWS Nairobi National Park fees (purchased on guest's behalf, added to reservation)", "Extra meal after checkout ($35)", "Other local excursions", "Spa treatments", "Premium drinks", "Exclusive use of vehicle for game drives ($250)"],
+  "singleSupplement": "US$100/adult",
+  "childPolicy": { "raw": "Infants 0-3: free. Children in own room charged adult sharing rate.", "verified": true },
+  "dayRoom": { "raw": "75% of nightly rate, includes an extra game drive, meals and drinks until departure, airport transfers", "verified": true },
+  "lateDeparture": { "raw": "After 5pm: US$120/adult, US$75/child (includes lunch, dinner, drinks, lodge use). Room checkout remains 10am unless a day room is booked.", "verified": true },
+  "parkFeesNote": "Nairobi National Park fees valid 24hrs from time of entry; additional fees charged if staying longer than 24hrs.",
+  "policies": {
+    "checkIn": "12:00", "checkOut": "10:00",
+    "deposit": "25% non-refundable deposit to confirm booking",
+    "balancePayment": "Due 45 days prior to arrival, or lodge may release rooms",
+    "provisionalHold": "14 days, extendable once on request",
+    "lastMinuteDirectBookings": "Non-resident bookings made direct to lodge must be paid in full 1 day prior to arrival",
+    "cancellation": "120-45 days: 25% of total cost (the deposit); 45-30 days: 50% forfeited; <30 days/no-show: 100% forfeited. >120 days with genuine serious reason: postponement up to 1 year may be offered instead.",
+    "tourOperatorExcursions": "Tour operators conducting their own independent excursions must pick up/return guests through Ololo - Ololo does not transport guests to/from NNP Main Gate except at its own fee.",
+    "sheldrickTrustExcursion": "Entry fees payable by guests for 11am sessions, must be pre-booked; Ololo offers complimentary return transfers."
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "$note": "Extracted 5 Aug 2026 via direct paginated read (pypdf, page indices 18-20) for the Amboseli/Mara/Solio/Samburu/Nairobi quote. NOT in the standard SOROI/CONTRACT RATES folders that CLAUDE.md's inventory table describes — found only by searching for the exact document name 'The Safari Collection 2026 Rates.pdf' inside KENYA/ACCOMODATION/THE SAFARI COLLECTION/, which a plain filename search for 'solio' does not surface (the word 'Solio' isn't in the filename). This is a signed contract (Docusign, signed by Kenneth Kimathi of Sunworld Safaris) at the 30% preferential tier bundled with Sala's Camp and Sasaab.",
+  "property": "Solio Lodge",
+  "operator": "The Safari Collection",
+  "region": "Solio Ranch, Laikipia (near Nanyuki)",
+  "tier": "Contract 30% (Rack shown alongside; Nett column = Rack x 0.70 on every checked cell)",
+  "residency": "Not tier-split by residency on this document",
+  "source": {
+    "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/THE SAFARI COLLECTION/The Safari Collection 2026 Rates.pdf",
+    "pdfPageIndices": [18, 19, 20],
+    "docPrintedPageNumbers": [9, 10, 11],
+    "sectionTitle": "2026 SALA'S CAMP, SASAAB & SOLIO LODGE 30% RATES CONTRACT",
+    "validity": { "start": "2026-01-01", "end": "2026-12-31" }
+  },
+  "confidence": "confirmed-2026-08-05",
+  "seasons": {
+    "theSeason": { "dateRanges": ["Jan 1 - Jan 5", "Jun 1 - Oct 31", "Dec 16 - Dec 31"] },
+    "savingsSeason": { "dateRanges": ["Jan 6 - May 31", "Nov 1 - Dec 15"] }
+  },
+  "closure": "Solio closed 1-15 Nov 2026 inclusive (dates flexible, confirm with reservations).",
+  "rates": {
+    "currency": "USD",
+    "unit": "fully inclusive (all meals, drinks, game drives, laundry, most excursions)",
+    "familyCottage": {
+      "note": "Up to 2 adults & 2 children sharing, minimum room rate.",
+      "theSeason": { "rack": 5736, "nett": 4015, "thirdChild3to15": { "rack": 886, "nett": 621 }, "fourAdultsSharing": { "rack": 6735, "nett": 4714 }, "adultExtraBed": { "rack": 1684, "nett": 1179 } },
+      "savingsSeason": { "rack": 4219, "nett": 2953, "thirdChild3to15": { "rack": 872, "nett": 610 }, "fourAdultsSharing": { "rack": 4951, "nett": 3466 }, "adultExtraBed": { "rack": 1238, "nett": 866 } }
+    },
+    "allOtherRooms": {
+      "unit": "per person",
+      "theSeason": {
+        "perAdultSharing": { "rack": 1684, "nett": 1179 },
+        "perChildRate_sharingWith1Adult": { "rack": 1184, "nett": 829 },
+        "perChildSharing_extraBed_age3to11": { "rack": 886, "nett": 620 },
+        "singleRoom": { "rack": 2394, "nett": 1676 }
+      },
+      "savingsSeason": {
+        "perAdultSharing": { "rack": 1238, "nett": 866 },
+        "perChildRate_sharingWith1Adult": { "rack": 872, "nett": 610 },
+        "perChildSharing_extraBed_age3to11": { "rack": 622, "nett": 436 },
+        "singleRoom": { "rack": 1852, "nett": 1296 }
+      }
+    }
+  },
+  "childRateLogic": {
+    "note": "Two distinct child rates depending on rooming, per page 20/10 of source — do not conflate them.",
+    "perChildRate": "Applies when: two children sharing a room (rate applies to each child), OR a child sharing with exactly one adult.",
+    "perChildSharingExtraBed": "Applies when a child aged 3-11 is the 3rd person in a room with two others (adults or children) on an extra bed. Our itinerary's 2-adults-plus-1-child case uses THIS rate."
+  },
+  "mandatoryFees": {
+    "conservationFees": { "adult": 122, "child3to10": 61, "unit": "per person per night", "note": "Subject to change per Solio Ranch/local councils." },
+    "professionalGuideRoom": { "amount": 190, "unit": "per person per night, exclusive of conservation fees" }
+  },
+  "transferInclusions": {
+    "note": "IMPORTANT for itinerary planning: rate INCLUDES transfers from Solio and Nanyuki Airstrips (both directions implied). Rate EXCLUDES road transfers (i.e., overland connections to/from other, non-airstrip locations, e.g. onward to Samburu).",
+    "accessByAir": "Daily scheduled flights from Nairobi into Nanyuki Airstrip, then 20-min transfer to conservancy gate + 45-min to lodge (all included). Private charter into Solio Ranch's own airstrip: 10-min transfer to lodge (included).",
+    "accessByRoad": "4-hour drive from Nairobi on a good road."
+  },
+  "roomNote": "5 individual cottages, the 5th is a Family unit (2 en-suite bedrooms, up to 5 people). Minimum stay: 2 nights.",
+  "childPolicyGeneral": "Children aged 3-15 years 364 days. 16+ is adult. Infants (0-2y 364d) stay free."
+}

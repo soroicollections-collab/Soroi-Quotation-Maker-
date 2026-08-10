@@ -1,0 +1,20 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftotext -layout, clean single-page document. NOT a Soroi property - a budget town hotel in Mombasa, not a safari lodge.",
+  "property": "Ivory Hotels, Mombasa",
+  "region": "Mombasa, Kenya coast",
+  "currency": "USD",
+  "unit": "per room per night (STO rate)",
+  "source": {
+    "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/The Ivory Hotels/Ivory Hotels STO Rates Mombasa (Non-Residents).pdf",
+    "skippedFile": "Ivory Hotels STO Rates Mombasa (Residents).pdf - resident tier, out of scope",
+    "validity": "No date range stated in this document - no seasonality either."
+  },
+  "confidence": "confirmed-2026-08-06",
+  "rates": {
+    "singleStandard": 25, "singleSuperior": 29, "singleDeluxe": 33,
+    "doubleStandard": 39, "doubleSuperior": 43, "doubleDeluxe": 46,
+    "tripleStandard": 46, "tripleExecutive": 54, "quadExecutive": 62
+  },
+  "childPolicy": { "age0to3SharingWith1or2Adults": "No charge, max 2 children per room", "age3plus": "Full adult rate applies" },
+  "confidenceNote": "[Unverified] No meal plan is stated anywhere in this document (unclear if room-only, B&B, etc.), and no validity dates or seasonality are given. Confirm meal plan and validity directly with the hotel before quoting."
+}

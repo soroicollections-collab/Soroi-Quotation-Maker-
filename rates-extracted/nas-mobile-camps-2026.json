@@ -1,0 +1,75 @@
+{
+  "property": "NAS Mobile Camps (multi-destination, bespoke setup)",
+  "operator": "Nigel Archer Safaris",
+  "region": "Maasai Mara / Samburu / Meru / Amboseli (movable camp, location-dependent)",
+  "isSoroiProperty": false,
+  "sourceFiles": [
+    "2026 CONTRACT RATES/KENYA/ACCOMODATION/Nigel Archer Safaris/NAS 2026 MOBILE CAMP RATES - RACK.pdf"
+  ],
+  "skippedFiles": [
+    { "file": "NAS 2026 MOBILE CAMP RATES - STO.pdf", "reason": "Image-only/scanned PDF - no extractable text on any of its 11 pages." }
+  ],
+  "currency": "USD",
+  "documentType": "Pooled/group mobile camping rate card - NOT a fixed lodge; per-person rate scales down sharply with group size and vehicle/guide count",
+  "notes": [
+    "Rate structure is fundamentally different from a standard lodge: price per person per night depends on (a) meal plan (Game Package vs Full Board), (b) total group size (2-36 pax), and (c) number of vehicles/guides deployed (1, 2, or 3), because fixed setup costs are spread across the group.",
+    "'Booking 3 nights or more' and 'Special 2 nights only' are two different pricing tables - the 2-night table is markedly more expensive per person (front-loaded setup cost), consistent with mobile-camp economics.",
+    "Base location assumed is Maasai Mara; a supplementary per-safari cost applies for Samburu, Meru, or Amboseli deployments (see supplementaryLocationCosts). No cost is shown for Maasai Mara itself ('N/A' in source, since that's already the base rate).",
+    "Park & Conservation/camp fees are NOT included and are 'advised upon request depending on location' - i.e. genuinely unquoted, not just excluded.",
+    "Single supplement policy here (25%/75% of pppn rate depending on number of single tents) differs from the flat single-room/double-room-rate policy used at Seringet Mara Camp - these are two different products from the same operator, don't conflate them."
+  ],
+  "gamePackage_perPersonPerNight_booking3NightsPlus": {
+    "vehicleConfig": "Scales with pax: 1 vehicle+1 guide up to a point, then 2 vehicles+2 guides, then 3 vehicles+3 guides as group grows",
+    "byPax": { "2": 3438, "3": 2291, "4": 1719, "5": 1375, "6": 1146, "7": 1242, "8": 1213, "9": 1190, "10": 1173, "11": 1158, "12": 1146, "13": 1197, "14": 1184, "15": 1173, "16": 1163, "17": 1154, "18": 1146, "19": 1181, "20": 1173, "21": 1165, "22": 1158, "23": 1152, "24": 1146, "25": 1173, "26": 1166, "27": 1161, "28": 1155, "29": 1151, "30": 1146, "31": 1167, "32": 1163, "33": 1158, "34": 1154, "35": 1150, "36": 1146 },
+    "verified": true
+  },
+  "fullBoard_perPersonPerNight_booking3NightsPlus": {
+    "byPax": { "2": 3036, "3": 2024, "4": 1518, "5": 1254, "6": 1012, "7": 1012, "8": 1012, "9": 1012, "10": 1012, "11": 1012, "12": 1012, "13": 1012, "14": 1012, "15": 1012, "16": 1012, "17": 1012, "18": 1020, "19": 1020, "20": 1020, "21": 1020, "22": 1020, "23": 1020, "24": 1020, "25": 1020, "26": 1020, "27": 1020, "28": 1020, "29": 1020, "30": 1020, "31": 1020, "32": 1020, "33": 1020, "34": 1020, "35": 1020, "36": 920 },
+    "confidenceNote": "[Unverified anomaly] The 36-pax Full Board figure (920) is lower than every other value in the 18-36 pax band (all 1020) - flagged, not corrected, could be a genuine large-group discount or a table transcription quirk in the source.",
+    "verified": true
+  },
+  "gamePackage_perPersonPerNight_booking2NightsOnly": {
+    "byPax": { "2": 4956, "3": 3303, "4": 2478, "5": 1982, "6": 1652, "7": 1748, "8": 1719, "9": 1696, "10": 1679, "11": 1664, "12": 1652, "13": 1703, "14": 1690, "15": 1679, "16": 1669, "17": 1657, "18": 1652, "19": 1687, "20": 1679, "21": 1671, "22": 1664, "23": 1658, "24": 1652, "25": 1679, "26": 1672, "27": 1667, "28": 1661, "29": 1657, "30": 1652, "31": 1673, "32": 1669, "33": 1664, "34": 1660, "35": 1656, "36": 1652 },
+    "verified": true
+  },
+  "fullBoard_perPersonPerNight_booking2NightsOnly": {
+    "byPax": { "2": 4554, "3": 3036, "4": 2277, "5": 1822, "6": 1518, "7": 1518, "8": 1518, "9": 1518, "10": 1518, "11": 1518, "12": 1518, "13": 1518, "14": 1518, "15": 1518, "16": 1518, "17": 1518, "18": 1518, "19": 1518, "20": 1518, "21": 1518, "22": 1518, "23": 1518, "24": 1518, "25": 1518, "26": 1518, "27": 1518, "28": 1518, "29": 1518, "30": 1518, "31": 1518, "32": 1518, "33": 1518, "34": 1518, "35": 1518, "36": 1518 },
+    "verified": true
+  },
+  "supplementaryLocationCosts_perSafari_USD": {
+    "raw": "Additional cost per safari (not per person) for locations other than Maasai Mara. For additional nights/locations beyond what's shown, request a fresh quote.",
+    "maasaiMara": "N/A (base location, no supplement)",
+    "samburu": { "3nights": 1077, "4nights": 1167 },
+    "meru": { "3nights": 799, "4nights": 1110 },
+    "amboseli": { "3nights": 1114, "4nights": 1392 },
+    "verified": true
+  },
+  "includes_gamePackage": ["Full board accommodation", "House beverages", "Guided game drives (max 6 guests/vehicle)", "Experienced guides", "Bush meals & sundowners", "Laundry", "Airstrip pickup/dropoff to a closed airstrip agreed at booking"],
+  "includes_fullBoard": ["Full board accommodation", "House beverages", "Laundry"],
+  "excludes_both": ["International/domestic flights", "Park and Conservation fees for staff and guests (quoted separately, mandatory)", "Special campsite fees (location-dependent)", "Personal items", "Phone calls", "Premium spirits/cellar wines/champagne", "Beauty therapy/massages", "Guided walks/cultural visits (3rd party)"],
+  "excludes_fullBoardOnly": ["Airstrip transfers", "Game drives and extra activities", "Bush meals"],
+  "childPolicy": { "raw": "Sharing with at least 1 adult: 8-12yrs 35% off adult rate; under 8yrs (upon request) 50% off adult rate.", "verified": true },
+  "singleSupplementPolicy": { "raw": "3 or less single tents per booking: 25% supplement on pppn rate. 4 or more single tents: 75% supplement on pppn rate.", "verified": true, "confidenceNote": "Different structure from Seringet Mara Camp's single supplement policy (flat single/double room rate) - these are separate products, do not reuse one policy for the other." },
+  "tripleOccupancy": { "raw": "Additional camp bed added to double occupancy tent, subject to availability, children under 12 only.", "verified": true },
+  "guideAndStaffRates": [
+    { "item": "KPSGA guide / Non-KPSGA guide", "amount": "US$114" },
+    { "item": "Pilot accompanying paying guest", "amount": "US$144" },
+    { "item": "Driver/Nanny", "amount": "US$20" }
+  ],
+  "activitiesAndExtras": [
+    { "item": "Extra lunch", "amount": "US$45pp" },
+    { "item": "Picnic/takeaway lunch", "amount": "US$29pp" },
+    { "item": "Formal Bush Dinner", "amount": "US$63pp" },
+    { "item": "Cultural Visit", "amount": "US$35pp" },
+    { "item": "Hot Air Balloon Ride with Champagne Breakfast", "amount": "US$480" },
+    { "item": "Exclusive use of vehicle per day", "amount": "US$350" },
+    { "item": "Mara Airstrip drop off/pick up besides Ol Kiombo", "amount": "US$207 per vehicle" },
+    { "item": "Afternoon departure after 12:30", "amount": "25% nightly rate per person plus extra lunch" }
+  ],
+  "policies": {
+    "checkIn": "12:00", "checkOut": "10:00",
+    "deposit": "20% non-refundable deposit on booking",
+    "balancePayment": "Full payment due 45 days prior to safari commencement",
+    "cancellation": "80% fee 44-31 days prior; 100% fee within 30 days prior"
+  }
+}

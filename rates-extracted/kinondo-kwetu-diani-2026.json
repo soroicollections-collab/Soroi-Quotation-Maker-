@@ -1,0 +1,49 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftotext -layout. NOT a Soroi property. Diani/south coast beach property - similar coastal-property pattern to Soroi Blue Diani (all-inclusive, no ground-package concept) but with its own distinct structure. Tier is 'Contract Rate = Rack x 0.8' (20% off), confirmed on every checked cell (e.g. mid-season per-person-sharing cottage: 540 x 0.8 = 432... actually printed contract is 430, close but not exact -0.796 - flagged below).",
+  "property": "Kinondo Kwetu",
+  "operator": "Coromandele Resort Ltd",
+  "region": "Diani, Kenya coast",
+  "source": { "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/KINONDU KWETU/Kinondo Kwetu 2026 20% USD NET Rates.pdf", "tier": "Contract Rates (~20% off Rack, per filename; arithmetic check below)" },
+  "confidence": "confirmed-2026-08-06",
+  "confidenceNote_discountArithmetic": "Filename says '20% USD NET Rates' but spot-checking Cottages Mid-season per-person-sharing (Rack $540 -> Contract $430) gives a 20.4% discount, not exactly 20% (540 x 0.8 = 432, not 430). Other cells checked (High season $600->$480 = exactly 20%; Christmas $640->$510 = 20.3%) are inconsistent to the dollar - close to 20% but not a clean, exact formula like Soroi's STO 30%. Treat each printed figure as authoritative rather than re-deriving from a 20% formula.",
+  "currency": "USD",
+  "unit": "per person per night, all-inclusive, unless noted",
+  "accommodationCategories": {
+    "cottages1to4AndMamaTaaVilla": {
+      "midSeason": { "dateRanges": ["02 Mar - 17 Oct 2026", "03 Nov - 18 Dec 2026"], "perPersonSharing": { "rack": 540, "contract": 430 }, "childSharing12to17": { "rack": 380, "contract": 305 }, "childSharing6to11": { "rack": 325, "contract": 260 }, "thirdChildExtraBed": { "rack": 250, "contract": 200 }, "singleRoomUse": { "rack": 645, "contract": 515 } },
+      "highSeason": { "dateRanges": ["07 Jan - 01 Mar 2026", "18 Oct - 02 Nov 2026"], "perPersonSharing": { "rack": 600, "contract": 480 }, "childSharing12to17": { "rack": 410, "contract": 330 }, "childSharing6to11": { "rack": 370, "contract": 295 }, "thirdChildExtraBed": { "rack": 275, "contract": 220 }, "singleRoomUse": { "rack": 680, "contract": 545 } },
+      "christmasSeason": { "dateRange": "19 Dec 2026 - 10 Jan 2027", "perPersonSharing": { "rack": 640, "contract": 510 }, "childSharing12to17": { "rack": 455, "contract": 365 }, "childSharing6to11": { "rack": 405, "contract": 325 }, "thirdChildExtraBed": { "rack": 300, "contract": 240 }, "singleRoomUse": { "rack": 735, "contract": 590 } }
+    },
+    "cottage5BoreliusHoneymoonAndersonAlexHouse": {
+      "midSeason": { "perPersonSharing": { "rack": 590, "contract": 470 }, "childSharing12to17": { "rack": 380, "contract": 305 }, "childSharing6to11": { "rack": 325, "contract": 260 } },
+      "highSeason": { "perPersonSharing": { "rack": 650, "contract": 520 }, "childSharing12to17": { "rack": 420, "contract": 335 }, "childSharing6to11": { "rack": 370, "contract": 295 } },
+      "christmasSeason": { "perPersonSharing": { "rack": 695, "contract": 555 }, "childSharing12to17": { "rack": 455, "contract": 365 }, "childSharing6to11": { "rack": 370, "contract": 295 } },
+      "note": "No 3rd-child/single-room-use rates printed for this category."
+    },
+    "mainHouseMamaTinaChildrenAndSinglesOnly": {
+      "midSeason": { "singleRoomUse": { "rack": 295, "contract": 235 }, "childSharing12to17": { "rack": 220, "contract": 175 }, "childSharing6to11": { "rack": 220, "contract": 175 } },
+      "highSeason": { "singleRoomUse": { "rack": 345, "contract": 275 }, "childSharing12to17": { "rack": 270, "contract": 215 }, "childSharing6to11": { "rack": 270, "contract": 215 } },
+      "christmasSeason": { "singleRoomUse": { "rack": 375, "contract": 300 }, "childSharing12to17": { "rack": 320, "contract": 255 }, "childSharing6to11": { "rack": 320, "contract": 255 } }
+    },
+    "alexHouse": { "description": "Private 4-bedroom villa with private pool, sleeps max 8 pax. Min 4 paying guests (2 adults + 2 children); max 4 adults + 4 children.", "note": "Priced per the Cottage 5/Borelius/Honeymoon/Alex House rate block above." },
+    "verified": true
+  },
+  "specials": {
+    "midSeasonStay5Pay4": "Valid mid-season except 21 Jul-31 Aug",
+    "midSeasonStay6Pay5": "Valid 21 Jul - 31 Aug only",
+    "highSeasonStay7Pay6": "Valid high season except 18 Oct - 02 Nov",
+    "bridesDiscount": { "amount": "50% off Contract rate for the bride only", "unit": "1 person per honeymoon couple, Mid & High season only, not Christmas" },
+    "combinability": "Specials/discounts cannot be combined with each other or any other discount; not valid during Christmas season."
+  },
+  "inclusions": ["All-inclusive accommodation: soft drinks, beer, house wines and spirits", "Yoga platform, gym, tennis (incl. racket & balls)", "Wood-fired sauna", "Canoeing/kayaking", "Snorkeling equipment", "Wireless internet", "Limited laundry"],
+  "exclusions": {
+    "note": "Non-commissionable extras.",
+    "items": ["Champagne, special request luxury spirits", "Motor boat excursions", "Marine Park & Paradise Lost excursions, PADI diving", "Deep sea fishing", "Cultural visits/shopping trips to Ukunda & Mombasa", "Massage & beauty treatments", "Waterskiing", "Horse riding", "Sailing", "Safari to Shimba Hills", "Extra lunch ($35pp)"],
+    "airstripTransfers": { "ukunda": { "amount": 50, "unit": "USD per vehicle one way, max pax not specified" }, "mombasaMoiInternational": { "amount": 135, "unit": "USD per vehicle one way, max 4 pax" } }
+  },
+  "childPolicy": { "under6SharingFree": true, "note": "Otherwise per the age-banded rates in the accommodation tables (6-11, 12-17)." },
+  "checkInOut": { "checkIn": "12:00", "checkOut": "10:00" },
+  "closedDates": "May and approx. 21 June (June dates demand-dependent)",
+  "minStay": { "midHighSeason": 2, "christmasSeason": 4 },
+  "exclusiveUseWholeProperty": "Available upon request, rates not stated on this document."
+}

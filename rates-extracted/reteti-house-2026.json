@@ -1,0 +1,25 @@
+{
+  "$note": "Extracted 6 Aug 2026. Priced as a whole-property safari package (1-6 guests per night), not simple per-person sharing like most others in this batch.",
+  "property": "Reteti House",
+  "operator": "Bush and Beyond Ltd (booking agent)",
+  "region": "Namunyak Wildlife Conservancy, Mathews Range (Northern Kenya, Samburu)",
+  "tier": "RSP (rack) and Trade Rates/Preferential",
+  "source": { "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/BUSH&BEYOND/Reteti House - 2026 Preferential US$.pdf" },
+  "seasons": { "regular": "5 Jan-30 Jun, 1 Sep-31 Oct, 1-19 Dec 2026 (closed November 2026)", "premium": "1 Jul-31 Aug 2026, 20 Dec 2026-3 Jan 2027" },
+  "rates": {
+    "currency": "USD", "unit": "per night for 1-6 guests, plus per-person extras",
+    "regular": {
+      "rsp": { "1to6guestsPerNight": 7500, "retetiElephantSanctuaryCompulsoryFee_perGroupOnce": 550, "communityHeritageFee_perPersonPerNight": 185, "extraAdultEach": 1250, "extraChild5to15each": 640 },
+      "trade": { "1to6guestsPerNight": 5625, "retetiElephantSanctuaryCompulsoryFee_perGroupOnce": 550, "communityHeritageFee_perPersonPerNight": 185, "extraAdultEach": 938, "extraChild5to15each": 480 }
+    },
+    "premium": {
+      "rsp": { "1to6guestsPerNight": 7890, "retetiElephantSanctuaryCompulsoryFee_perGroupOnce": 550, "communityHeritageFee_perPersonPerNight": 185, "extraAdultEach": 1315, "extraChild5to15each": 930 },
+      "trade": { "1to6guestsPerNight": 5918, "retetiElephantSanctuaryCompulsoryFee_perGroupOnce": 550, "communityHeritageFee_perPersonPerNight": 185, "extraAdultEach": 986, "extraChild5to15each": 698 }
+    }
+  },
+  "capacity": "7 ensuite rooms (some configurable double/twin, 1 family room with double + up to 3 singles)",
+  "childPolicy": { "note": "Any age welcome but more suitable for 5 years and over." },
+  "inclusions": "Full board, soft drinks/local beers/non-premium wines/spirits, Namunyak airstrip transfers, exclusive use of vehicles, statutory taxes, laundry, day/night game drives, exclusive Reteti Elephant Sanctuary visits, montane forest hiking, horse ride, De Brazza monkey hike, guided walks, village visits.",
+  "exclusions": "Community Heritage fee, blacksmithing/beading experiences, extra horse riding, Samburu dancers, champagne/premium spirits, Ololokwe day trip, fly camping mobilisation, massages.",
+  "notes": "Closed 1-30 November. Community Heritage fee funds Samburu-led conservation."
+}

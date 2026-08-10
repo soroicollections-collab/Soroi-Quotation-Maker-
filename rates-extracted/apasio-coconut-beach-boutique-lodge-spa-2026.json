@@ -1,0 +1,40 @@
+{
+  "$note": "Extracted 6 Aug 2026 from the same bundled document as apasio-mara-camp-2026.json and apasio-rhino-watch-safari-lodge-2026.json. Property identified as 'Coconut Beach Boutique Lodge & Spa' via an explicit gallery link inside the source PDF and the Garden View/Sea View/Beach Front/Beach Cottage room-category names, which fit a coastal property.",
+  "property": "Coconut Beach Boutique Lodge & Spa",
+  "operator": "Apasio Safari Ltd",
+  "region": "Kenya coast (not more precisely stated in this document; likely Diani/south coast based on similarly-named coastal properties, [Unverified])",
+  "tier": "Contract/net (non-resident USD) and Resident Rack (KES)",
+  "source": {
+    "files": [
+      "2026 CONTRACT RATES/KENYA/ACCOMODATION/APASIO SAFARIS/Apasio_Camps_Contract_Rates_2026_(1) (1).pdf",
+      "2026 CONTRACT RATES/KENYA/ACCOMODATION/APASIO SAFARIS/Apasio Resident_Rack_ Rates_ 2026 (1) (1).pdf"
+    ],
+    "validity": { "start": "2026-03-01", "end": "2027-05-31" }
+  },
+  "mealPlanBase": "Half Board (HB)",
+  "rates": {
+    "unit": "per person sharing per night unless noted",
+    "nonResidentUSD": {
+      "seasons": {
+        "21Dec25-06Jan26": { "standardGardenView": 85, "superiorGardenView": 137, "standardSeaView": 142, "superiorSeaView": 167, "standardBeachFront": 162, "superiorBeachFront": 187, "beachCottageMax4_perUnit_BB": 450 },
+        "07Jan26-31Mar26": { "standardGardenView": 70, "superiorGardenView": 85, "standardSeaView": 90, "superiorSeaView": 105, "standardBeachFront": 110, "superiorBeachFront": 125, "beachCottageMax4_perUnit_BB": 450 },
+        "01Apr26-30Jun26": { "standardGardenView": 65, "superiorGardenView": 80, "standardSeaView": 85, "superiorSeaView": 100, "standardBeachFront": 105, "superiorBeachFront": 120, "beachCottageMax4_perUnit_BB": 350 },
+        "01Jul26-20Dec26": { "standardGardenView": 75, "superiorGardenView": 90, "standardSeaView": 95, "superiorSeaView": 110, "standardBeachFront": 115, "superiorBeachFront": 130, "beachCottageMax4_perUnit_BB": 350 }
+      }
+    },
+    "residentKES": {
+      "seasons": {
+        "21Dec25-06Jan26": { "standardGardenView": 9500, "superiorGardenView": 11000, "standardSeaView": 10500, "superiorSeaView": 12000, "beachCottage_perUnit": 35000 },
+        "07Jan26-31Dec26": { "standardGardenView": 11500, "superiorGardenView": 13000, "standardSeaView": 12500, "superiorSeaView": 15000, "beachCottage_perUnit": 40000 }
+      },
+      "confidenceNote": "[Unverified] Resident table only shows Garden/Sea View columns (no separate Beach Front columns) - possibly an omission in the source PDF rather than a real absence of that category for residents."
+    }
+  },
+  "childPolicy": {
+    "0to3SharingWith2Adults": "Free",
+    "4to11SharingWith2Adults": "50% of adult DBL rate",
+    "4to11SharingWith1Adult": "75% of adult DBL rate",
+    "4to11OwnRoom": "1st child full adult DBL rate, 2nd child 75% of adult DBL rate"
+  },
+  "notes": "Single occupancy 75% of room rate. 3rd adult in triple: 20% less than per-person sharing rate. Half Board supplement in Cottage: USD 25pp. Late checkout (6pm): 50% of room rate."
+}

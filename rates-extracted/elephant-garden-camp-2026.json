@@ -1,0 +1,92 @@
+{
+  "$note": "Extracted 6 Aug 2026. IMPORTANT: 'ELEPHANT GARDEN' and 'ELEPHANT GARDEN CAMP' are TWO SEPARATE FOLDERS on disk but the SAME property (Elephant Garden Camp, Amboseli) - just different rate-sheet vintages uploaded at different times. Combined into one file here. ELEPHANT GARDEN folder = Jun2025-May2026 rack + resident rates. ELEPHANT GARDEN CAMP folder = Jun2026-May2027 DMC + rack rates, plus a further-out Jun2027-May2028 non-resident DMC sheet.",
+  "property": "Elephant Garden Camp",
+  "operator": "Elephant Garden Camp Ltd",
+  "region": "Amboseli",
+  "tier": "Rack Rate and DMC/Resident rate, multiple validity windows",
+  "source": {
+    "files": [
+      "2026 CONTRACT RATES/KENYA/ACCOMODATION/ELEPHANT GARDEN/Elephant Garden Camp 2025-2026 rates v2.pdf (rack, non-resident)",
+      "2026 CONTRACT RATES/KENYA/ACCOMODATION/ELEPHANT GARDEN/Elephant Garden Camp 2025-2026 resident rates (1).pdf",
+      "2026 CONTRACT RATES/KENYA/ACCOMODATION/ELEPHANT GARDEN CAMP/Elephant Garden Camp rates 2026-2027.pdf (rack, non-resident)",
+      "2026 CONTRACT RATES/KENYA/ACCOMODATION/ELEPHANT GARDEN CAMP/Elephant Garden Camp DMC rates 2026-2027.pdf",
+      "2026 CONTRACT RATES/KENYA/ACCOMODATION/ELEPHANT GARDEN CAMP/Elephant Garden Camp 2027-2028 Non-Resident DMC rates.pdf"
+    ]
+  },
+  "windows": {
+    "jun2025-may2026": {
+      "validity": { "start": "2025-06-01", "end": "2026-05-31" },
+      "seasons": { "mid": "Jun 1-30, Oct 1-31, Dec 1-20, Jan 4-Mar 31", "green": "Apr 1-May 31, Nov 1-30", "peak": "Jul 1-Sep 30, Dec 21-Jan 3" },
+      "rackUSD_perPersonPerNight": {
+        "gamePackageDoubleTwin": { "mid": 540, "green": 410, "peak": 655 },
+        "gamePackageSingle": { "mid": 640, "green": 500, "peak": 780 },
+        "gamePackageFamilyTent": { "mid": 1890, "green": 1435, "peak": 2290 },
+        "fullBoardDoubleTwin": { "mid": 450, "green": 320, "peak": 575 },
+        "fullBoardSingle": { "mid": 550, "green": 410, "peak": 700 },
+        "fullBoardFamilyTent": { "mid": 1575, "green": 1120, "peak": 2010 }
+      },
+      "residentKES_perPersonPerNight": {
+        "gamePackageDoubleTwin": { "mid": 40900, "green": 36000, "peak": 50400 },
+        "gamePackageSingle": { "mid": 52100, "green": 45900, "peak": 64200 },
+        "gamePackageFamilyTent": { "mid": 132900, "green": 116900, "peak": 163900 },
+        "fullBoardDoubleTwin": { "mid": 32900, "green": 26900, "peak": 41600 },
+        "fullBoardSingle": { "mid": 41900, "green": 34500, "peak": 53000 },
+        "fullBoardFamilyTent": { "mid": 106900, "green": 87400, "peak": 134100 }
+      },
+      "mandatoryFeesUSD": { "elephantGardenConservancy": { "adult": 35, "child3to17": 20 }, "amboseliParkFees_2023rate_dueForReview": { "adult": 60, "child3to17": 35 } },
+      "mandatoryFeesKES": { "elephantGardenConservancy": { "adult": 800, "child3to17": 300 }, "amboseliParkFees": { "adult": 860, "child3to17": 215 } },
+      "closedDates": "20 Apr 2026 - 14 May 2026 (per rack doc) / 13 Apr - 7 May 2026 (per resident doc) - [Unverified] the two documents state slightly different closure dates for the same period; flag."
+    },
+    "jun2026-may2027": {
+      "validity": { "start": "2026-06-01", "end": "2027-05-31" },
+      "seasons": { "mid": "Jun 1-30, Oct 1-31, Dec 1-20, Jan 4-Mar 31", "green": "Apr 1-May 31, Nov 1-30", "peak": "Jul 1-Sep 30, Dec 21-Jan 3" },
+      "rackUSD_perPersonPerNight": {
+        "gamePackageDoubleTwin": { "mid": 565, "green": 420, "peak": 685 },
+        "gamePackageSingle": { "mid": 670, "green": 510, "peak": 810 },
+        "gamePackageFamilyTent": { "mid": 1975, "green": 1470, "peak": 2390 },
+        "fullBoardDoubleTwin": { "mid": 455, "green": 320, "peak": 580 },
+        "fullBoardSingle": { "mid": 560, "green": 410, "peak": 700 },
+        "fullBoardFamilyTent": { "mid": 1590, "green": 1120, "peak": 2030 }
+      },
+      "dmcRatesUSD_perPersonPerNight": {
+        "gamePackageDoubleTwin": { "mid": 424, "green": 315, "peak": 514 },
+        "gamePackageSingle": { "mid": 503, "green": 383, "peak": 608 },
+        "gamePackageFamilyTent": { "mid": 1481, "green": 1103, "peak": 1793 },
+        "fullBoardDoubleTwin": { "mid": 342, "green": 240, "peak": 435 },
+        "fullBoardSingle": { "mid": 420, "green": 308, "peak": 525 },
+        "fullBoardFamilyTent": { "mid": 1193, "green": 840, "peak": 1523 }
+      },
+      "mandatoryFeesUSD": { "elephantGardenConservancy": { "adult": 35, "child3to17": 20 }, "amboseliParkFees_2024rate": { "adult": 60, "child3to17": 35 } },
+      "closedDates": "12 Apr - 6 May 2027"
+    },
+    "jun2027-may2028_nonResidentDmcOnly": {
+      "validity": { "start": "2027-06-01", "end": "2028-05-31" },
+      "seasons": { "peak": "Jul-Sep, Dec20-Jan2", "mid": "Jan3-Mar31, Jun, Oct, Dec1-19", "green": "Apr-May, Nov" },
+      "rackUSD_perPersonPerNight": {
+        "gamePackageSharing": { "peak": 730, "mid": 590, "green": 434 },
+        "gamePackageSingle": { "peak": 860, "mid": 700, "green": 528 },
+        "gamePackageFamilyTent": { "peak": 2550, "mid": 2065, "green": 1515 },
+        "fullBoardSharing": { "peak": 616, "mid": 476, "green": 320 },
+        "fullBoardSingle": { "peak": 740, "mid": 586, "green": 410 },
+        "fullBoardFamilyTent": { "peak": 2150, "mid": 1660, "green": 1120 }
+      },
+      "dmcRatesUSD_perPersonPerNight": {
+        "gamePackageSharing": { "peak": 548, "mid": 443, "green": 326 },
+        "gamePackageSingle": { "peak": 645, "mid": 525, "green": 396 },
+        "gamePackageFamilyTent": { "peak": 1913, "mid": 1549, "green": 1137 },
+        "fullBoardSharing": { "peak": 462, "mid": 357, "green": 240 },
+        "fullBoardSingle": { "peak": 555, "mid": 440, "green": 308 },
+        "fullBoardFamilyTent": { "peak": 1613, "mid": 1245, "green": 840 }
+      },
+      "closedDates": "18 Apr - 12 May 2028"
+    }
+  },
+  "childPolicy": {
+    "note": "3rd person = 50% of sharing rate in all windows. Slight difference between the two windows' child brackets, both captured below.",
+    "jun2025-2027windows": { "0to7": "FOC", "8to17OwnTent": "75% of adult rate", "8to17Sharing1plusAdult": "50% of adult rate" },
+    "2027-2028window": { "under8SharingWith1or2Adults": "FOC", "8to17Sharing1or2Adults": "50% of adult rate", "12to17OwnTent": "75% of adult single/double rate" }
+  },
+  "maxOccupancy": { "doubleTwinTent": 3, "familyTent": 5 },
+  "longStayDiscount": { "5plusNights": "5%", "9plusNights": "10%" },
+  "transfers": { "emaliTarakea": { "2025-27": 220, "2027-28rack": 240 }, "namanga": { "2025-27": 380, "2027-28rack": 420 }, "nairobi": 470 }
+}

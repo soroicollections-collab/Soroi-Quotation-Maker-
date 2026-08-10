@@ -1,0 +1,35 @@
+{
+  "$note": "Extracted 6 Aug 2026, same source documents as angama-mara-2026.json. This camp does NOT appear in the Group Rates document (only Angama Mara and Angama Amboseli qualify for group rates) and has no African Resident-specific Nett rate table beyond the Rack figure - only Rack and Nett (MA) rates found.",
+  "property": "Angama Safari Camp",
+  "operator": "Angama",
+  "region": "Maasai Mara Triangle (riverine escarpment location; relocates to heart of the Mara Triangle during Great Migration season per source text)",
+  "tier": "Nett MA Rate (Rack shown for reference) and African Resident Rack",
+  "source": {
+    "files": [
+      "2026 CONTRACT RATES/KENYA/ACCOMODATION/ANGAMA/Angama 2026_MA_Rates.pdf",
+      "2026 CONTRACT RATES/KENYA/ACCOMODATION/ANGAMA/Angama 2026_African_Residents_Rack_Rates.pdf",
+      "2026 CONTRACT RATES/KENYA/ACCOMODATION/ANGAMA/Angama 2026_African_Residents_Nett_Rates.pdf"
+    ]
+  },
+  "seasons": { "standard": "5 Jan-Jun & Oct-22 Dec", "peak": "Jul-Sept & 23 Dec-4 Jan 2027" },
+  "rates": {
+    "currency": "USD", "unit": "per guest per night, 2 adults sharing tent",
+    "nettMA": { "tent": { "standard": 810, "peak": 1980, "rackReference": { "standard": 950, "peak": 2200 } }, "children0to17": { "standard": 810, "peak": 1980 } },
+    "africanResidentRack": { "tent": { "standard": 475, "peak": 1100 } },
+    "africanResidentNett": { "tent": { "standard": 430, "peak": 990 } }
+  },
+  "mandatoryFees": {
+    "maasaiMaraParkFee_perPersonPerDay": { "adult": { "janJun": 100, "julSep": 260, "octDec": 200 }, "child9to17": { "janJun": 50, "julSep": 90, "octDec": 50 } },
+    "angamaFoundation": { "perGuestPerNight": 20 }
+  },
+  "childPolicy": {
+    "ageRestriction": "All ages welcome, charged adult rate when occupying own tent",
+    "firstChildFree": "First child 0-12 free when tripling in a tent with 2 other guests",
+    "maxTriples": "2 triples available per camp per night",
+    "under6Note": "Families with children 0-6 must reserve a private safari vehicle"
+  },
+  "guideAccommodation": { "guideTent": 300 },
+  "checkInOutNote": "No early check-in or late check-out offered at this camp (unlike Angama Mara).",
+  "inclusions": "Guided safaris in Mara Triangle, guided walks, all meals/drinks, laundry (36h notice), WiFi (Guest Area only), transfers to/from Kichwa Tembo & Serena airstrips, medevac, camping fees, VAT.",
+  "exclusions": "Maasai Mara Park Fees, Angama Foundation, safari shop/massages (24h notice), transfers from elsewhere in the Mara, community visits, private vehicles, gratuities."
+}

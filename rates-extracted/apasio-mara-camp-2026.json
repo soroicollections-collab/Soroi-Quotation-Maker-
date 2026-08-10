@@ -1,0 +1,37 @@
+{
+  "$note": "Extracted 6 Aug 2026 from 'Apasio_Camps_Contract_Rates_2026.pdf' (non-resident, USD) and 'Apasio Resident_Rack_Rates_2026.pdf' (resident, KES), both in the APASIO SAFARIS folder. IMPORTANT AMBIGUITY: this document bundles rates for what appears to be a Maasai Mara tented camp operated by Apasio Safari Ltd, but the document never names the camp on this rate table itself. The Terms & Conditions section (Child Policy clause) references 'At Mara Big Five & Mara Legends Camp children under 6 are only allowed on special request' - implying Apasio operates (at least) two distinct Mara camps (Mara Big Five and Mara Legends Camp) but only ONE set of Exclusive/Superior/Family Tent rates is given, with no indication of which camp (or both) it prices. Do not assume this is 'Mara Big Five' specifically without confirming with Apasio - flagged as [Unverified] property identity.",
+  "property": "Apasio Mara Camp (ambiguous - Mara Big Five and/or Mara Legends Camp, see $note)",
+  "operator": "Apasio Safari Ltd",
+  "region": "Maasai Mara",
+  "tier": "Contract/net (non-resident USD) and Resident Rack (KES)",
+  "source": {
+    "files": [
+      "2026 CONTRACT RATES/KENYA/ACCOMODATION/APASIO SAFARIS/Apasio_Camps_Contract_Rates_2026_(1) (1).pdf",
+      "2026 CONTRACT RATES/KENYA/ACCOMODATION/APASIO SAFARIS/Apasio Resident_Rack_ Rates_ 2026 (1) (1).pdf"
+    ],
+    "validity": { "start": "2026-03-01", "end": "2027-05-31", "note": "As stated on document ('Effective March until 31.05.2027')" }
+  },
+  "rates": {
+    "unit": "per person per night, Full Board",
+    "nonResidentUSD": {
+      "exclusiveTent": { "01Jan-30Jun": { "sgl": 120, "dbl": 110 }, "01Jul-31Oct": { "sgl": 240, "dbl": 180 }, "01Nov-30Nov": { "sgl": 170, "dbl": 130 }, "01Dec-31Dec": { "sgl": 240, "dbl": 180 } },
+      "superiorTent": { "01Jan-30Jun": { "sgl": 150, "dbl": 130, "tpl": 105 }, "01Jul-31Oct": { "sgl": 270, "dbl": 210, "tpl": 165 }, "01Nov-30Nov": { "sgl": 200, "dbl": 160, "tpl": 128 }, "01Dec-31Dec": { "sgl": 270, "dbl": 210, "tpl": 165 } },
+      "familyTent": { "01Jan-30Jun": { "sgl": 190, "dbl": 170, "tpl": 145 }, "01Jul-31Oct": { "sgl": 310, "dbl": 250, "tpl": 205 }, "01Nov-30Nov": { "sgl": 240, "dbl": 200, "tpl": 168 }, "01Dec-31Dec": { "sgl": 310, "dbl": 250, "tpl": 205 } },
+      "fourthAdultInFamilyTent": "USD 20 less than 3rd-person sharing rate"
+    },
+    "residentKES": {
+      "exclusiveTent": { "01Jan-30Jun": { "sgl": 10000, "dbl": 8000 }, "01Jul-31Oct_01Dec-31Dec": { "sgl": 22000, "dbl": 16000 }, "01Nov-30Nov": { "sgl": 15000, "dbl": 11000 } },
+      "superiorFamilyTent": { "01Jan-30Jun": { "sgl": 12000, "dbl": 10000, "tpl": 7500 }, "01Jul-31Oct_01Dec-31Dec": { "sgl": 24000, "dbl": 18000, "tpl": 13500 }, "01Nov-30Nov": { "sgl": 17000, "dbl": 13000, "tpl": 10000 } }
+    }
+  },
+  "extras": { "natureWalk": { "usd": 25, "kes": 2500 }, "exclusiveVehicleCharter": { "usd": "300/day (1-7 pax)", "kes": "35,000-40,000/day" } },
+  "childPolicy": {
+    "note": "Same portfolio-wide policy stated once for all three bundled Apasio properties (see also Rhino Watch Lodge and Coconut Beach files).",
+    "0to3SharingWith2Adults": "Free",
+    "4to11SharingWith2Adults": "50% of adult DBL rate",
+    "4to11SharingWith1Adult": "75% of adult DBL rate",
+    "4to11OwnRoom": "1st child full adult DBL rate, 2nd child 75% of adult DBL rate",
+    "specialNote": "At Mara Big Five & Mara Legends Camp, children under 6 allowed only on special request."
+  },
+  "festiveSeasonSurcharge": { "usd": 25, "kes": 1500, "unit": "per person, Christmas 24-25 Dec, New Year 31 Dec-1 Jan, Easter" }
+}

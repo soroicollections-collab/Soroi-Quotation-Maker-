@@ -1,0 +1,24 @@
+{
+  "$note": "Extracted 6 Aug 2026 from SPECIAL OFFERS/SOPA LODGES/FW Newsletter - July 2024.msg via extract_msg Python library. This is a general newsletter (multiple unrelated content sections: property focus, GM interviews, conservation partnerships) with one 'SPECIAL OFFERS' section relevant to rates - the rest of the newsletter content was skipped as out of scope for a rates extraction.",
+  "offerStatus": "promotional - confirm current validity before use",
+  "operator": "Sopa Lodges",
+  "propertiesCovered": "not property-specific - stated as a blanket discount on 'contract rates' across Sopa Lodges generally (Lake Nakuru Sopa Lodge and Samburu Sopa Lodge are both mentioned elsewhere in the newsletter but only in non-rates editorial content, not tied specifically to this discount)",
+  "offerName": "Unbeatable Rates at Sopa Lodges - 10% discount on contract rates",
+  "source": {
+    "file": "SPECIAL OFFERS/SOPA LODGES/FW Newsletter - July 2024.msg",
+    "emailDate": "2024-07-24 (forwarded internally 2024-08-24)",
+    "extractionMethod": "extract_msg Python library, plain-text body - fully readable, no image dependency for the offer text itself"
+  },
+  "validity": {
+    "statedText": "Available Until August 31, 2024 (per headline); body text separately states 'valid from 1st October 2024 to 21st December 2024' for the discount itself - these two dates conflict and are reproduced here exactly as they appeared in the source, not reconciled.",
+    "verified": true,
+    "expiryAssessment": "EXPIRED under either reading - both the 'available until' date and the travel-validity window are well over a year before today's date (6 Aug 2026)."
+  },
+  "offerMechanics": {
+    "discountPct": 10,
+    "appliesTo": "contract rates (general statement, no rate table or specific figures given in the newsletter itself - it links out to a 'Read more' URL not accessible from this extraction)"
+  },
+  "noPricedFiguresInSource": true,
+  "verified": true,
+  "confidenceNote": "Source text contains an internal date inconsistency (headline says 'Available Until August 31, 2024' while the body says the discount is 'valid from 1st October 2024 to 21st December 2024') - flagged rather than resolved, per project rule not to silently pick one figure. No actual rate table exists in the extractable text; the 10%-off mechanic is stated but has nothing to apply it against without a separate Sopa Lodges base rate card (not present in this SPECIAL OFFERS slice)."
+}

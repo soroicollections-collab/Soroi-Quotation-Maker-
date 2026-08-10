@@ -1,0 +1,147 @@
+{
+  "$note": "Extracted 6 Aug 2026 via pdftotext -layout from two documents in 'HERITAGE HOTELS/': '2027-Sunworld Safaris-Intrepids-Kizingo -HERITAGE HOTELS.pdf' (1pp, dense multi-property table) and '2027-Sunworld Safaris-VSC-VBR- HERITAGE HOTELS.pdf' (3pp, Voyager Ziwani Camp + Voyager Beach Resort).",
+  "operator": "Heritage Hotels Ltd",
+  "currency": "USD",
+  "validity": { "start": "2027-01-02", "end": "2028-01-01" },
+  "confidence": "confirmed-2027-08-06",
+  "properties": {
+    "Samburu Intrepids": {
+      "region": "Samburu",
+      "unit": "per person per day",
+      "fullBoard": {
+        "high_02Jan-31Mar": { "half_twin": 130, "single": 195 },
+        "low_01Apr-30Jun": { "half_twin": 115, "single": 173 },
+        "peak_01Jul-31Oct": { "half_twin": 145, "single": 218 },
+        "high_01Nov-22Dec": { "half_twin": 130, "single": 195 },
+        "festive_23Dec-01Jan28": { "half_twin": 131, "single": 196 }
+      },
+      "package": {
+        "note": "Includes 2 game drives/day + return airstrip transfers on top of Full Board",
+        "high_02Jan-31Mar": { "half_twin": 248, "single": 372 },
+        "low_01Apr-30Jun": { "half_twin": 168, "single": 252 },
+        "peak_01Jul-31Oct": { "half_twin": 424, "single": 636 },
+        "high_01Nov-22Dec": { "half_twin": 248, "single": 372 },
+        "festive_23Dec-01Jan28": { "half_twin": 381, "single": 572 }
+      }
+    },
+    "Great Rift Valley Lodge": {
+      "region": "Naivasha",
+      "unit": "per person per day, Full Board",
+      "lodgeTwinVilla": {
+        "high_02Jan-31Mar": { "half_twin": 120, "single": 180 }, "low_01Apr-30Jun": { "half_twin": 100, "single": 150 }, "peak_01Jul-31Oct": { "half_twin": 135, "single": 203 }, "high_01Nov-22Dec": { "half_twin": 120, "single": 180 }, "festive_23Dec-01Jan28": { "half_twin": 122, "single": 183 }
+      },
+      "juniorSuite": {
+        "high_02Jan-31Mar": { "half_twin": 230, "single": 345 }, "low_01Apr-30Jun": { "half_twin": 210, "single": 315 }, "peak_01Jul-31Oct": { "half_twin": 245, "single": 368 }, "high_01Nov-22Dec": { "half_twin": 230, "single": 345 }, "festive_23Dec-01Jan28": { "half_twin": 232, "single": 348 }
+      }
+    },
+    "Kizingo Eco Lodge": {
+      "region": "Lamu coast",
+      "unit": "per person per day, Full Board",
+      "maxOccupancy": "3 pax per room",
+      "rates": {
+        "high_02Jan-31Mar": { "half_twin": 140, "single": 210, "thirdBed": 112 },
+        "low_01Apr-30Apr": { "half_twin": 122, "single": 183, "thirdBed": 98 },
+        "closed_01May-30Jun": "Closed",
+        "peak_01Jul-31Oct": { "half_twin": 150, "single": 225, "thirdBed": 120 },
+        "high_01Nov-22Dec": { "half_twin": 140, "single": 210, "thirdBed": 112 },
+        "festive_23Dec-01Jan28": { "half_twin": 166, "single": 249, "thirdBed": 133 }
+      },
+      "extras": "Sanctuary fees $30 (Jan-Jun) / $60 (Jul-Dec) not included"
+    },
+    "Mara Intrepids Camp": {
+      "region": "Maasai Mara",
+      "unit": "per person per day, Package (incl. meals, 3 game drives, airstrip transfers, VAT)",
+      "rates": {
+        "high_02Jan-31Mar": { "half_twin": 369, "single": 554 },
+        "low_01Apr-31May": { "half_twin": 246, "single": 369 },
+        "high_01Jun-30Jun": { "half_twin": 369, "single": 554 },
+        "peak_01Jul-15Sep": { "half_twin": 653, "single": 980 },
+        "shoulder_16Sep-31Oct": { "half_twin": 588, "single": 882 },
+        "high_01Nov-22Dec": { "half_twin": 369, "single": 554 },
+        "festive_23Dec-01Jan28": { "half_twin": 588, "single": 882 }
+      },
+      "excludes": "Reserve entry fees not included even on Package rate"
+    },
+    "Mara Elatia Camp": {
+      "region": "Maasai Mara",
+      "unit": "per person per day",
+      "fullBoard": {
+        "high_02Jan-31Mar": { "half_twin": 251, "single": 377 }, "low_01Apr-31May": { "half_twin": 251, "single": 377 }, "high_01Jun-30Jun": { "half_twin": 286, "single": 429 }, "peak_01Jul-15Sep": { "half_twin": 316, "single": 474 }, "shoulder_16Sep-31Oct": { "half_twin": 281, "single": 422 }, "high_01Nov-22Dec": { "half_twin": 281, "single": 422 }, "festive_23Dec-01Jan28": { "half_twin": 316, "single": 474 }
+      },
+      "package": {
+        "note": "Adds morning guided nature walk + 2 game drives + airstrip transfers vs Full Board",
+        "high_02Jan-31Mar": { "half_twin": 339, "single": 509 }, "low_01Apr-31May": { "half_twin": 339, "single": 509 }, "high_01Jun-30Jun": { "half_twin": 385, "single": 578 }, "peak_01Jul-15Sep": { "half_twin": 415, "single": 623 }, "shoulder_16Sep-31Oct": { "half_twin": 369, "single": 554 }, "high_01Nov-22Dec": { "half_twin": 369, "single": 554 }, "festive_23Dec-01Jan28": { "half_twin": 415, "single": 623 }
+      }
+    },
+    "verified": true
+  },
+  "commonNotes": {
+    "adventurersClub": "Free membership for children 4-18 years, eco-activities included at all properties",
+    "maxSingleRoomsAtOneRate": 5,
+    "verified": true
+  },
+  "cancellationPolicy": "60-46 days before arrival: 20%; 45-36 days: 35%; 35-31 days: 50%; 30 days-no show: 100%",
+  "hbReduction": { "MaraIntrepids_MaraElatia_SamburuIntrepids_GreatRiftValleyLodge": 4, "GreatRiftValleyLodge_alt": 3.5, "unit": "USD per person per night" },
+  "voyagerZiwaniCamp": {
+    "region": "Tsavo West area",
+    "currency": "USD",
+    "mealPlan": "Full Board",
+    "unit": "per person, Single / Twin / 3rd bed",
+    "rates": {
+      "02Jan-31Mar27": { "single": 188, "twin": 125, "thirdBed": 100 },
+      "01Apr-31May27": { "single": 150, "twin": 100, "thirdBed": 80 },
+      "easter_26-29Mar27": { "single": 188, "twin": 125, "thirdBed": 100 },
+      "01Jun-30Jun27": { "single": 165, "twin": 110, "thirdBed": 88 },
+      "01Jul-31Oct27": { "single": 228, "twin": 152, "thirdBed": 122 },
+      "01Nov-19Dec27": { "single": 173, "twin": 115, "thirdBed": 92 },
+      "20Dec27-01Jan28": { "single": 206, "twin": 137, "thirdBed": 110 }
+    },
+    "hbReduction": 3.5,
+    "verified": true
+  },
+  "voyagerBeachResort": {
+    "region": "Kenya coast",
+    "currency": "USD",
+    "mealPlan": "All Inclusive (AI)",
+    "unit": "per person, Single / Twin / 3rd bed",
+    "roomCategories": {
+      "GardenRoom": {
+        "02Jan-31Mar27": { "single": 171, "twin": 114, "thirdBed": 91 }, "01Apr-30Jun27": { "single": 132, "twin": 88, "thirdBed": 70 }, "easter_26-29Mar27": { "single": 195, "twin": 130, "thirdBed": 104 }, "01Jul-31Oct27": { "single": 195, "twin": 130, "thirdBed": 104 }, "01Nov-22Dec27": { "single": 171, "twin": 114, "thirdBed": 91 }, "23Dec27-01Jan28": { "single": 332, "twin": 221, "thirdBed": 177 },
+        "maxOccupancy": "2 adults double, or 3 adults triple, or 2 adults + 1 child under 12 with extra bed"
+      },
+      "GardenRoomHalfOlympicPoolView": {
+        "02Jan-31Mar27": { "single": 200, "twin": 133, "thirdBed": 106 }, "01Apr-30Jun27": { "single": 161, "twin": 107, "thirdBed": 86 }, "easter_26-29Mar27": { "single": 225, "twin": 150, "thirdBed": 120 }, "01Jul-31Oct27": { "single": 225, "twin": 150, "thirdBed": 120 }, "01Nov-22Dec27": { "single": 200, "twin": 133, "thirdBed": 106 }, "23Dec27-01Jan28": { "single": 362, "twin": 241, "thirdBed": 193 },
+        "maxOccupancy": "2 adults double, 2 adults twin, or 1 adult + 1 child"
+      },
+      "SuperiorGardenViewCabin": {
+        "02Jan-31Mar27": { "single": 215, "twin": 143, "thirdBed": 114 }, "01Apr-30Jun27": { "single": 176, "twin": 117, "thirdBed": 94 }, "easter_26-29Mar27": { "single": 239, "twin": 159, "thirdBed": 127 }, "01Jul-31Oct27": { "single": 239, "twin": 159, "thirdBed": 127 }, "01Nov-22Dec27": { "single": 215, "twin": 143, "thirdBed": 114 }, "23Dec27-01Jan28": { "single": 375, "twin": 250, "thirdBed": 200 },
+        "maxOccupancy": "2 adults + 2 children under 12, or 3 adults",
+        "specialChildRule": "2 children aged 2-11 sharing with 1 adult: each child pays 50% of the half-double rate while the adult pays the single rate"
+      },
+      "SuperiorSeaViewCabin": {
+        "02Jan-31Mar27": { "single": 230, "twin": 153, "thirdBed": "N/A" }, "01Apr-30Jun27": { "single": 191, "twin": 127, "thirdBed": "N/A" }, "easter_26-29Mar27": { "single": 254, "twin": 169, "thirdBed": "N/A" }, "01Jul-31Oct27": { "single": 254, "twin": 169, "thirdBed": "N/A" }, "01Nov-22Dec27": { "single": 230, "twin": 153, "thirdBed": "N/A" }, "23Dec27-01Jan28": { "single": 390, "twin": 260, "thirdBed": "N/A" },
+        "maxOccupancy": "2 adults (triple on request only)"
+      },
+      "SuperiorDeluxeCabin": {
+        "confidenceNote": "[Unverified - source anomaly] This room category's date column in the source PDF reads '02.01.2026 to 01.01.2027' etc. - i.e. 2026 dates - while every other room category in the same table correctly shows 2027 dates. This looks like a copy-paste year error in Heritage Hotels' own document, not an extraction error. Figures transcribed as-is below; confirm actual 2027 applicability with the hotel before quoting.",
+        "asPrintedDates_actually2026Labeled": { "02Jan-31Mar": { "single": 239, "twin": 159, "thirdBed": 127 }, "01Apr-30Jun": { "single": 200, "twin": 133, "thirdBed": 106 }, "easter_03-06Apr": { "single": 264, "twin": 176, "thirdBed": 141 }, "01Jul-31Oct": { "single": 264, "twin": 176, "thirdBed": 141 }, "01Nov-22Dec": { "single": 239, "twin": 159, "thirdBed": 127 }, "23Dec-01Jan": { "single": 401, "twin": 267, "thirdBed": 214 } },
+        "maxOccupancy": "2 adults + 2 children under 12, or 3 adults"
+      },
+      "ExecutiveGardenViewCabin": {
+        "02Jan-31Mar27": { "single": 249, "twin": 166, "thirdBed": "N/A" }, "01Apr-30Jun27": { "single": 210, "twin": 140, "thirdBed": "N/A" }, "easter_26-29Mar27": { "single": 273, "twin": 182, "thirdBed": "N/A" }, "01Jul-31Oct27": { "single": 273, "twin": 182, "thirdBed": "N/A" }, "01Nov-22Dec27": { "single": 249, "twin": 166, "thirdBed": "N/A" }, "23Dec27-01Jan28": { "single": 410, "twin": 273, "thirdBed": "N/A" },
+        "maxOccupancy": "2 adults"
+      },
+      "ExecutiveSeaViewCabin": {
+        "02Jan-31Mar27": { "single": 258, "twin": 172, "thirdBed": "N/A" }, "01Apr-30Jun27": { "single": 219, "twin": 146, "thirdBed": "N/A" }, "easter_26-29Mar27": { "single": 284, "twin": 189, "thirdBed": "N/A" }, "01Jul-31Oct27": { "single": 284, "twin": 189, "thirdBed": "N/A" }, "01Nov-22Dec27": { "single": 258, "twin": 172, "thirdBed": "N/A" }, "23Dec27-01Jan28": { "single": 420, "twin": 280, "thirdBed": "N/A" },
+        "maxOccupancy": "2 adults"
+      }
+    },
+    "offers": {
+      "earlyBird": "10% off for bookings made 60+ days ahead, for 01Apr-15Jul27 (excl. Easter) and 01Sep-31Oct27",
+      "sevenForSix": "Same windows as Early Bird, min 7-night stay",
+      "combinability": "Early Bird and 7-for-6 are NOT combinable with each other"
+    },
+    "circuitDiscount": "5% off when booking both Voyager Ziwani and Voyager Beach Resort together, min 3-night stay",
+    "verified": true
+  }
+}

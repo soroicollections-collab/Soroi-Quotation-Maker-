@@ -1,0 +1,86 @@
+{
+  "$note": "Extracted 6 Aug 2026, read directly (pdftotext -layout, poppler, 3-page documents). Waterlovers Beach Resort — non-Soroi, Diani Beach. Folder named 'WATERLOVERS BEACH RESORT' in 2026 tree. Skipped: '2026 KES WL resident rates.pdf' (Resident tier, KES, out of scope) and 'Re_ RESIDENT RATES.msg' (email).",
+  "property": "Waterlovers Beach Resort",
+  "region": "Diani Beach (South Coast)",
+  "tier": "Two tiers extracted: 'Non Resident Rates' (base/published) as primary, and 'Non Resident TO Rates' (tour-operator, ~20% off base) as secondary — both fully priced across the same room categories and seasons.",
+  "residency": "Non-Resident",
+  "source": {
+    "baseFile": "2026 CONTRACT RATES/KENYA/BEACH ACCOMODATION/WATERLOVERS BEACH RESORT/WATERLOVERS BEACH RESORT - 2026 WL non resident rates.pdf",
+    "toFile": "2026 CONTRACT RATES/KENYA/BEACH ACCOMODATION/WATERLOVERS BEACH RESORT/WATERLOVERS BEACH RESORT - 2026 WL NEW rates Non Resident 20 %.pdf",
+    "pdfPageIndex": [0, 1, 2],
+    "validity": { "regular": { "start": "2026-01-11", "end": "2026-12-17" }, "festive": { "start": "2026-12-18", "end": "2027-01-10" } }
+  },
+  "confidence": "confirmed-2026-08-06",
+  "extractionMethod": { "note": "Read directly, 3-page documents each; both files structurally identical layout, figures cross-checked." },
+  "structuralFindings": [
+    "TO (tour-operator) rate confirmed to be almost exactly Base x 0.80 across every occupancy/meal-plan cell checked (e.g. Ocean View Suites 2 Adults Half Board: 490 -> 392 = 80.0%; Ocean Penthouse 4 Adults Half Board: 1099 -> 879 = 80.0%; Birds Villa 4 Adults Breakfast: 709 -> 567 = 80.0%, rounding to nearest dollar) — i.e. this is functionally an 'STO 20%' rate in CLAUDE.md's tier terminology, though the source document itself never uses the word 'STO'.",
+    "Three room categories, each a genuinely different pricing SHAPE: Ocean View Suites (max 3 pax, priced per 1/2/3-adult occupancy plus 3 mixed adult+child combos), Ocean Penthouse (min 4 - max 8 pax, priced per headcount 4 through 8, plus a flat child 4-9yr rate), Birds Villa (same min4-max8 shape as Penthouse). Penthouse and Birds Villa are NOT per-room flat rates — they scale per additional adult even within their minimum-4 baseline.",
+    "All three meal plans (Breakfast / Half Board / Full Board) are fully priced side-by-side for every occupancy count — base meal plan is effectively 'Breakfast' (BB) with HB/FB as clearly delineated upgrade tiers, not supplements added on top.",
+    "Children policy is unusually generous: 0-3 free, and children AGED 4-9 have their OWN flat per-person rate (not a % of adult) only on Ocean Penthouse and Birds Villa; children 10+ are simply charged full adult rates — no 4-9 child rate exists on Ocean View Suites at all (it instead uses mixed adult+child occupancy combos, e.g. '2 Adults & 1 child', '1 Adult & 1 Child', as distinct priced rows).",
+    "Taxi transfer price list is a flat menu (Mombasa Airport, Diani Airstrip, SGR), not scaled by season or tier — same across base and TO documents."
+  ],
+  "seasons": {
+    "regular": { "dateRange": "11 Jan 2026 - 17 Dec 2026" },
+    "festive": { "dateRange": "18 Dec 2026 - 10 Jan 2027" }
+  },
+  "rates": {
+    "currency": "USD",
+    "unit": "price per night, per the occupancy/room shown",
+    "base_nonResident": {
+      "oceanViewSuites_max3pax": {
+        "regular": { "breakfast": { "1Adult": 255, "2Adults": 415, "3Adults": 499, "2Adults1Child": 457, "1Adult1Child": 297, "1Adult2Children": 339 }, "halfBoard": { "1Adult": 295, "2Adults": 490, "3Adults": 612, "2Adults1Child": 551, "1Adult1Child": 356, "1Adult2Children": 417 }, "fullBoard": { "1Adult": 325, "2Adults": 553, "3Adults": 707, "2Adults1Child": 630, "1Adult1Child": 402, "1Adult2Children": 479 } },
+        "festive": { "breakfast": { "1Adult": 383, "2Adults": 622, "3Adults": 748, "2Adults1Child": 685, "1Adult1Child": 446, "1Adult2Children": 509 }, "halfBoard": { "1Adult": 443, "2Adults": 736, "3Adults": 918, "2Adults1Child": 827, "1Adult1Child": 534, "1Adult2Children": 625 }, "fullBoard": { "1Adult": 488, "2Adults": 830, "3Adults": 1060, "2Adults1Child": 945, "1Adult1Child": 603, "1Adult2Children": 718 } }
+      },
+      "oceanPenthouse_min4max8pax": {
+        "regular": { "breakfast": { "4A": 936, "5A": 1117, "6A": 1204, "7A": 1322, "8A": 1407, "child4to9": 74 }, "halfBoard": { "4A": 1099, "5A": 1321, "6A": 1449, "7A": 1608, "8A": 1734, "child4to9": 97 }, "fullBoard": { "4A": 1235, "5A": 1491, "6A": 1654, "7A": 1846, "8A": 2007, "child4to9": 120 } },
+        "festive": { "breakfast": { "4A": 1403, "5A": 1676, "6A": 1807, "7A": 1983, "8A": 2111, "child4to9": 111 }, "halfBoard": { "4A": 1649, "5A": 1981, "6A": 2174, "7A": 2411, "8A": 2600, "child4to9": 146 }, "fullBoard": { "4A": 1852, "5A": 2237, "6A": 2481, "7A": 2769, "8A": 3010, "child4to9": 180 } }
+      },
+      "birdsVilla_min4max8pax": {
+        "regular": { "breakfast": { "4A": 709, "5A": 798, "6A": 889, "7A": 966, "8A": 1040, "child4to9": 45 }, "halfBoard": { "4A": 873, "5A": 940, "6A": 1134, "7A": 1252, "8A": 1366, "child4to9": 66 }, "fullBoard": { "4A": 1008, "5A": 1173, "6A": 1338, "7A": 1490, "8A": 1639, "child4to9": 83 } },
+        "festive": { "breakfast": { "4A": 1063, "5A": 1197, "6A": 1334, "7A": 1449, "8A": 1559, "child4to9": 68 }, "halfBoard": { "4A": 1309, "5A": 1410, "6A": 1701, "7A": 1877, "8A": 2049, "child4to9": 99 }, "fullBoard": { "4A": 1512, "5A": 1759, "6A": 2007, "7A": 2235, "8A": 2459, "child4to9": 125 } }
+      }
+    },
+    "to20pct_nonResident": {
+      "confidenceNote": "Verified ~80% of base rate across every checked cell — see structuralFindings.",
+      "oceanViewSuites_max3pax": {
+        "regular": { "breakfast": { "1Adult": 204, "2Adults": 332, "3Adults": 399, "2Adults1Child": 366, "1Adult1Child": 238, "1Adult2Children": 271 }, "halfBoard": { "1Adult": 236, "2Adults": 392, "3Adults": 490, "2Adults1Child": 441, "1Adult1Child": 285, "1Adult2Children": 334 }, "fullBoard": { "1Adult": 260, "2Adults": 443, "3Adults": 565, "2Adults1Child": 504, "1Adult1Child": 322, "1Adult2Children": 383 } },
+        "festive": { "breakfast": { "1Adult": 306, "2Adults": 498, "3Adults": 599, "2Adults1Child": 548, "1Adult1Child": 356, "1Adult2Children": 407 }, "halfBoard": { "1Adult": 354, "2Adults": 588, "3Adults": 735, "2Adults1Child": 661, "1Adult1Child": 427, "1Adult2Children": 500 }, "fullBoard": { "1Adult": 390, "2Adults": 664, "3Adults": 848, "2Adults1Child": 756, "1Adult1Child": 482, "1Adult2Children": 574 } }
+      },
+      "oceanPenthouse_min4max8pax": {
+        "regular": { "breakfast": { "4A": 748, "5A": 894, "6A": 963, "7A": 1058, "8A": 1126, "child4to9": 60 }, "halfBoard": { "4A": 879, "5A": 1057, "6A": 1159, "7A": 1286, "8A": 1387, "child4to9": 78 }, "fullBoard": { "4A": 988, "5A": 1193, "6A": 1323, "7A": 1477, "8A": 1605, "child4to9": 96 } },
+        "festive": { "breakfast": { "4A": 1123, "5A": 1341, "6A": 1445, "7A": 1586, "8A": 1688, "child4to9": 89 }, "halfBoard": { "4A": 1319, "5A": 1585, "6A": 1739, "7A": 1929, "8A": 2080, "child4to9": 117 }, "fullBoard": { "4A": 1482, "5A": 1789, "6A": 1985, "7A": 2215, "8A": 2408, "child4to9": 144 } }
+      },
+      "birdsVilla_min4max8pax": {
+        "regular": { "breakfast": { "4A": 567, "5A": 638, "6A": 711, "7A": 773, "8A": 832, "child4to9": 36 }, "halfBoard": { "4A": 698, "5A": 752, "6A": 907, "7A": 1001, "8A": 1093, "child4to9": 53 }, "fullBoard": { "4A": 806, "5A": 938, "6A": 1070, "7A": 1192, "8A": 1311, "child4to9": 66 } },
+        "festive": { "breakfast": { "4A": 851, "5A": 958, "6A": 1067, "7A": 1159, "8A": 1247, "child4to9": 55 }, "halfBoard": { "4A": 1047, "5A": 1128, "6A": 1361, "7A": 1502, "8A": 1639, "child4to9": 79 }, "fullBoard": { "4A": 1210, "5A": 1407, "6A": 1605, "7A": 1788, "8A": 1967, "child4to9": 100 } }
+      }
+    }
+  },
+  "childPolicy": {
+    "age0to3": "Free",
+    "age4to9": "Flat child rate (Ocean Penthouse, Birds Villa only)",
+    "age10Plus": "Charged full adult rate"
+  },
+  "roomNotes": {
+    "oceanViewSuites": "Triple Suite = King bed + day bed. Twin Suite = King bed + day bed."
+  },
+  "transfers": {
+    "mombasaAirport": { "oneWay": 75, "return": 140, "unit": "per vehicle, max 4 pax" },
+    "dianiAirstrip": { "oneWay": 20, "return": 35, "unit": "per vehicle, max 4 pax" },
+    "sgr": { "oneWay": 85, "unit": "per vehicle, max 4 pax" }
+  },
+  "paymentTerms": "30% deposit on confirmation; 70% balance one month prior to arrival; USD only unless prior arrangement.",
+  "cancellationPolicy": {
+    "60PlusDays": "15%",
+    "60to21Days": "30%",
+    "20to4Days": "75%",
+    "3DaysOrNoShow": "100%"
+  },
+  "skippedFiles": [
+    "2026 KES WL resident  rates .pdf (Resident tier, KES — out of scope)",
+    "Re_ RESIDENT RATES.msg (email)"
+  ],
+  "portfolioWideTerms": {
+    "note": "Non-Soroi property — CLAUDE.md's Soroi-portfolio-wide terms do not apply."
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "$note": "Extracted 6 Aug 2026.",
+  "property": "Eleven Pearl Boutique Hotel & Spa",
+  "operator": "French Dream Ltd",
+  "region": "Diani Beach",
+  "tier": "New Agent Rates 2026",
+  "source": { "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/ELEVEN PEARL/Eleven Pearl Boutique Hote - AGENT RATES 2026.pdf" },
+  "rates": {
+    "currency": "KES", "unit": "per room per night",
+    "highSeason_23Dec26-02Jan27_min4nights": { "BB": { "single": 20689, "double": 28388, "thirdPax": 7762, "child": 7098 }, "HB": { "single": 23264, "double": 33540, "thirdPax": 10338, "child": 8386 }, "FB": { "single": 25427, "double": 37868, "thirdPax": 12502, "child": 9467 } },
+    "easterSeason_02Apr26-08Apr26_min3nights": { "BB": { "single": 14023, "double": 20286, "thirdPax": 8867, "child": 5072 }, "HB": { "single": 16600, "double": 25438, "thirdPax": 11444, "child": 6360 }, "FB": { "single": 18764, "double": 29766, "thirdPax": 13607, "child": 7442 } },
+    "normalPeriod_03Jan-02Apr26_10Jul-22Dec26": { "BB": { "single": 12418, "double": 17076, "thirdPax": 7262, "child": 4269 }, "HB": { "single": 14995, "double": 22228, "thirdPax": 9839, "child": 5558 }, "FB": { "single": 17159, "double": 26556, "thirdPax": 12002, "child": 6639 } },
+    "lowSeason_23Apr-09Jul26": { "BB": { "single": 9315, "double": 12730, "thirdPax": 4347, "child": 3183 }, "HB": { "single": 11890, "double": 17882, "thirdPax": 6922, "child": 4469 }, "FB": { "single": 14053, "double": 22210, "thirdPax": 9086, "child": 5551 } }
+  },
+  "childPolicy": { "ageRange": "above 3 - below 11 years", "maxPerRoom": 2, "with1AdultInRoom": "25% discount" },
+  "festiveSupplement": { "amount": 8000, "unit": "KES per person per night", "dates": "24, 25, 31 Dec & 1 Jan" },
+  "notes": "Rates subject to change if Kenya inflation exceeds 5% from end of June."
+}

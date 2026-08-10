@@ -1,0 +1,64 @@
+{
+  "property": "Porini Ol Kinyei Safari Cottages",
+  "operator": "Gamewatchers Safaris Ltd (Porini Camps)",
+  "region": "Ol Kinyei Conservancy, Maasai Mara",
+  "isSoroiProperty": false,
+  "sourceFiles": [
+    "2026 CONTRACT RATES/KENYA/ACCOMODATION/PORINI CAMPS/PORINI CAMPS  NAIROBI TENTED 2026 - PREFERRED AGENT NETT RATES.pdf",
+    "2026 CONTRACT RATES/KENYA/ACCOMODATION/PORINI CAMPS/Reduced Rates for 6 nights Porini Camps 2026 - Net Rates..pdf"
+  ],
+  "currency": "USD",
+  "notes": [
+    "Distinct from the tented Porini camps - these are 4-bedroom cottages, each bedroom bookable individually or the whole cottage on exclusive use (up to 8 guests).",
+    "Higher rates overall than the tented camps - premium product within the Porini family."
+  ],
+  "groundPackageRates_perPersonSharing_perNight": {
+    "seasons": [
+      { "dates": "20 Dec 2025-2 Jan 2026", "rate": 974, "singleSupplement": 205, "childSharing5to16": 584 },
+      { "dates": "3 Jan-31 Mar 2026", "rate": 710, "singleSupplement": 180, "childSharing5to16": 426 },
+      { "dates": "1 Apr-30 Jun 2026", "rate": 598, "singleSupplement": 180, "childSharing5to16": 359 },
+      { "dates": "1-31 Jul 2026", "rate": 1086, "singleSupplement": 195, "childSharing5to16": 652 },
+      { "dates": "1 Aug-30 Sep 2026", "rate": 1202, "singleSupplement": 210, "childSharing5to16": 721 },
+      { "dates": "1-31 Oct 2026", "rate": 1086, "singleSupplement": 190, "childSharing5to16": 652 },
+      { "dates": "1 Nov-19 Dec 2026", "rate": 598, "singleSupplement": 180, "childSharing5to16": 359 },
+      { "dates": "20 Dec 2026-2 Jan 2027", "rate": 1202, "singleSupplement": 210, "childSharing5to16": 721 }
+    ],
+    "verified": true
+  },
+  "exclusiveUsePerCottage_upTo8guests_perNight": {
+    "seasons": [
+      { "dates": "20 Dec 2025-2 Jan 2026", "rate": 7222, "additionalAdult": 786, "additionalChild5to16": 472 },
+      { "dates": "3 Jan-31 Mar 2026", "rate": 5226, "additionalAdult": 578, "additionalChild5to16": 347 },
+      { "dates": "1 Apr-30 Jun 2026", "rate": 4374, "additionalAdult": 486, "additionalChild5to16": 292 },
+      { "dates": "1-31 Jul 2026", "rate": 8066, "additionalAdult": 874, "additionalChild5to16": 524 },
+      { "dates": "1 Aug-30 Sep 2026", "rate": 8946, "additionalAdult": 966, "additionalChild5to16": 580 },
+      { "dates": "1-31 Oct 2026", "rate": 8066, "additionalAdult": 874, "additionalChild5to16": 524 },
+      { "dates": "1 Nov-19 Dec 2026", "rate": 4374, "additionalAdult": 486, "additionalChild5to16": 292 },
+      { "dates": "20 Dec 2026-2 Jan 2027", "rate": 8946, "additionalAdult": 966, "additionalChild5to16": 580 }
+    ],
+    "note": "Exclusive use of vehicle for every 6 guests. Exclusive use requires minimum 2-night booking.",
+    "verified": true
+  },
+  "reducedRate_6nightsSpecialOffer": {
+    "seasons": [
+      { "dates": "20 Dec 2025-2 Jan 2026", "rate": 886, "singleSupplement": 205 }, { "dates": "3 Jan-31/03/2026", "rate": 640, "singleSupplement": 180 }, { "dates": "1 Apr-30 May 2026", "rate": 534, "singleSupplement": 180 },
+      { "dates": "1-30 Jun 2026", "rate": 577, "singleSupplement": 180 }, { "dates": "1-31 Jul 2026", "rate": 991, "singleSupplement": 180 }, { "dates": "1 Aug-30 Sep 2026", "rate": 1100, "singleSupplement": 180 },
+      { "dates": "1-31 Oct 2026", "rate": 638, "singleSupplement": 195 }, { "dates": "1 Nov-19 Dec 2026", "rate": 577, "singleSupplement": 210 }, { "dates": "20 Dec 2026-2 Jan 2027", "rate": 1100, "singleSupplement": 190 }
+    ],
+    "verified": true
+  },
+  "minStay": "2 nights",
+  "includes": ["Full board accommodation", "Soft drinks, non-premium beers/whiskies/spirits, mineral water", "Bush picnics (breakfast & lunch)", "Day & night shared game drives", "Sundowners", "Guided bush walks with Maasai warriors in Ol Kinyei Conservancy", "Local airstrip transfers (Ol Seki Airstrip)", "Ol Kinyei Conservancy fees", "WiFi", "Private chef per cottage", "Free inter-camp transfers"],
+  "excludes": [
+    "Porini Wildlife Habitat Conservation fee: US$5pp/night",
+    "Maasai Mara National Reserve fee: $100 (Jan-Jun), $200 (Jul-Dec) 2026",
+    "Premium drinks (champagne, premium spirits, cellar wines)",
+    "Additional activities (balloon safaris, village visits)",
+    "Gratuities and personal items",
+    "Exclusive vehicle use: $300/day min 2 days",
+    "Late departure after 10:00: US$150pp min 2 pax",
+    "Christmas/New Year supplement: $40pp/night"
+  ],
+  "roadTransfer_06seaterMinivan": "Nairobi to Porini Ol Kinyei Safari Cottages: US$330/vehicle (valid 1 Jan-31 Dec 2026)",
+  "sharedTermsNote": "Deposit/cancellation policy identical to other Porini properties - see porini-amboseli-camp-2026.json."
+}

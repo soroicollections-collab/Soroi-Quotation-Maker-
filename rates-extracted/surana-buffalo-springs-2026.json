@@ -1,0 +1,40 @@
+{
+  "$note": "Extracted 6 Aug 2026, from the same bundled Ashnil documents (Surana is a sister brand of Ashnil Hotels, same contract PDFs).",
+  "property": "Surana Buffalo Springs",
+  "operator": "Ashnil Hotels Limited (AHL) / Surana Luxury",
+  "region": "Samburu (Buffalo Springs National Reserve)",
+  "tier": "Contract rate and Rack rate (full board)",
+  "source": {
+    "files": [
+      "2026 CONTRACT RATES/KENYA/ACCOMODATION/ASHNIL HOTELS/ASHNIL HOTELS LTD_2026.pdf",
+      "2026 CONTRACT RATES/KENYA/ACCOMODATION/ASHNIL HOTELS/ASHNIL HOTELS RACK RATES_2026.pdf",
+      "2026 CONTRACT RATES/KENYA/ACCOMODATION/ASHNIL HOTELS/Ashnil  Surana Resident Rates 2026.pdf"
+    ]
+  },
+  "rates": {
+    "currency": "USD",
+    "unit": "per person, Full Board, Half Twin/Single/3rd Adult",
+    "contract": {
+      "peak_01Jul-30Sep": { "halfTwin": 415, "single": 622, "thirdAdult": 322 },
+      "high_21Dec-06Apr_01Jun-30Jun_01Oct-20Dec": { "halfTwin": 325, "single": 487, "thirdAdult": 260 },
+      "low_07Apr-31May": { "halfTwin": 180, "single": 180, "thirdAdult": 144 }
+    },
+    "rack": {
+      "peak": { "halfTwin": 664, "single": 995, "thirdAdult": 531 },
+      "high": { "halfTwin": 520, "single": 780, "thirdAdult": 416 },
+      "low": { "halfTwin": 288, "single": 288, "thirdAdult": 230 }
+    },
+    "residentKES_fullBoardAllInclusive": { "halfTwin": 24000, "single": 33600 }
+  },
+  "gamePackageSupplement": { "perNight": 130, "child4to12": 70, "oneWayAirstripTransfer": { "usd": 60, "minPax": 4 } },
+  "childPolicy": {
+    "0to3": "Free",
+    "4to12Sharing": "50% of adult rate",
+    "twoChildrenOwnRoom": "75% of adult rate each",
+    "threeChildrenOwnRoom": "Full double room rate"
+  },
+  "circuitDiscount": { "4nights": "5%", "5nights": "7.5%", "6nights": "8.5%" },
+  "familyTentSupplement_contract": 100,
+  "familyTentSupplement_rack": 100,
+  "tourLeader": { "peak": 100, "offPeak": 80 }
+}

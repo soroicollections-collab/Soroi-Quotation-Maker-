@@ -1,0 +1,117 @@
+{
+  "$note": "Extracted 6 Aug 2026 via a combination of pdftotext -layout and visual PNG rendering (property name headers are logo images, not extractable text, so pages were rendered at 100dpi and read visually to correctly attribute each rate table to its property - this project has a documented history of adjacent-property misattribution, so this extra step was taken deliberately). NOT Soroi properties. Covers SEVEN Wilder Group properties across Maasai Mara, Lake Nakuru, and Ol Pejeta, plus two 'Experiences' (Cliff Boat Safari, Hot Air Balloon). A companion 'WILDER GROUP -2026-30% STO RATES_.pdf' (same page structure, 30% discount tier) exists and was spot-checked for the discount ratio only, not fully re-extracted line-by-line (see stoTierNote). An 'Old/WILDER GROUP -2026-25% STO RATES_.pdf' also exists in an 'Old' subfolder - superseded, not used.",
+  "operator": "Wilder Group",
+  "currency": "USD",
+  "unit": "per adult sharing per night (Ground Package or Full Board Package) unless noted",
+  "source": {
+    "file": "2026 CONTRACT RATES/KENYA/ACCOMODATION/WILDER GROUP/WILDER GROUP -2026-RACK RATES.pdf",
+    "sto30File": "2026 CONTRACT RATES/KENYA/ACCOMODATION/WILDER GROUP/WILDER GROUP -2026-30% STO RATES_.pdf (not fully re-extracted; spot-check needed if STO tier figures are required for a quote)",
+    "validity": "2026 calendar year (season windows below)"
+  },
+  "confidence": "confirmed-2026-08-06",
+  "seasons": {
+    "peak": { "dateRanges": ["1 Jul 2026 - 30 Sep 2026", "22 Dec 2026 - 4 Jan 2027"] },
+    "offPeak": { "dateRanges": ["1 Feb 2026 - 31 Mar 2026", "1 Jun 2026 - 30 Jun 2026", "1 Oct 2026 - 31 Oct 2026"] },
+    "green": { "dateRanges": ["5 Jan 2026 - 31 Jan 2026", "1 Apr 2026 - 6 Apr 2026", "1 Nov 2026 - 21 Dec 2026"] },
+    "closed": { "dateRanges": ["7 Apr 2026 - 31 May 2026"] }
+  },
+  "properties": {
+    "entimMainCamp": {
+      "region": "Maasai Mara", "airstripTransfer": "Ol Kiombo Airstrip",
+      "luxurySuite": {
+        "groundPackage": { "peak": { "perAdultSharing": 1095, "single": 1335, "childSharingWith2Adults_8to11": 640 }, "offPeak": { "perAdultSharing": 705, "single": 880, "childSharingWith2Adults_8to11": 415 }, "green": { "perAdultSharing": 670, "single": 840, "childSharingWith2Adults_8to11": 395 } },
+        "fullBoardPackage": { "peak": { "perAdultSharing": 900, "single": 1145, "childSharingWith2Adults_8to11": 465 }, "offPeak": { "perAdultSharing": 520, "single": 700, "childSharingWith2Adults_8to11": 240 }, "green": { "perAdultSharing": 490, "single": 655, "childSharingWith2Adults_8to11": 220 } }
+      },
+      "note": "Rates inclusive of bednight & community fees ($80 adult/$40 child)."
+    },
+    "entimPrivateCamp": {
+      "region": "Maasai Mara", "airstripTransfer": "Ol Kiombo Airstrip",
+      "familySuite": {
+        "groundPackage": { "peak": { "perAdultSharing": 1150, "single": 1390 }, "offPeak": { "perAdultSharing": 755, "single": 935 }, "green": { "perAdultSharing": 725, "single": 895 } },
+        "fullBoardPackage": { "peak": { "perAdultSharing": 955, "single": 1200 }, "offPeak": { "perAdultSharing": 570, "single": 750 }, "green": { "perAdultSharing": 540, "single": 710 } },
+        "tcs": "Min 3 / max 5 pax. Child sharing w/4+ adults = 50% pp; 2 adults+1 child = child pays 75% single rate; 2 adults+2 kids = each child 75% pp sharing; 1 adult+2 children = adult single rate, children 75% pp; 3 adults+1 child = 2 adults pp sharing + 3rd adult single rate + child 50% pp."
+      },
+      "luxurySuite": {
+        "groundPackage": { "peak": { "perAdultSharing": 1095, "single": 1335, "childSharingWith2Adults_8to11": 640 }, "offPeak": { "perAdultSharing": 705, "single": 880, "childSharingWith2Adults_8to11": 415 }, "green": { "perAdultSharing": 670, "single": 840, "childSharingWith2Adults_8to11": 395 } },
+        "fullBoardPackage": { "peak": { "perAdultSharing": 900, "single": 1145, "childSharingWith2Adults_8to11": 465 }, "offPeak": { "perAdultSharing": 520, "single": 700, "childSharingWith2Adults_8to11": 240 }, "green": { "perAdultSharing": 490, "single": 655, "childSharingWith2Adults_8to11": 220 } }
+      },
+      "note": "Rates inclusive of bednight & community fees ($80 adult/$40 child)."
+    },
+    "ilkeliani": {
+      "region": "Maasai Mara", "airstripTransfer": "Ol Kiombo Airstrip",
+      "familySuite": {
+        "deluxeFamilyTent": { "groundPackage": { "peak": { "perAdultSharing": 845, "single": 1030 }, "offPeak": { "perAdultSharing": 495, "single": 620 }, "green": { "perAdultSharing": 465, "single": 590 } }, "fullBoardPackage": { "peak": { "perAdultSharing": 725, "single": 910 }, "offPeak": { "perAdultSharing": 380, "single": 505 }, "green": { "perAdultSharing": 350, "single": 475 } } },
+        "premiumFamilyTent": { "groundPackage": { "peak": { "perAdultSharing": 910, "single": 1090 }, "offPeak": { "perAdultSharing": 550, "single": 675 }, "green": { "perAdultSharing": 525, "single": 645 } }, "fullBoardPackage": { "peak": { "perAdultSharing": 785, "single": 970 }, "offPeak": { "perAdultSharing": 435, "single": 560 }, "green": { "perAdultSharing": 410, "single": 530 } } }
+      },
+      "suites": {
+        "deluxeTent": { "groundPackage": { "peak": { "perAdultSharing": 770, "single": 935, "childSharingWith2Adults_8to11": 330 }, "offPeak": { "perAdultSharing": 445, "single": 560, "childSharingWith2Adults_8to11": 260 }, "green": { "perAdultSharing": 425, "single": 535, "childSharingWith2Adults_8to11": 245 } }, "fullBoardPackage": { "peak": { "perAdultSharing": 660, "single": 825, "childSharingWith2Adults_8to11": 230 }, "offPeak": { "perAdultSharing": 340, "single": 455, "childSharingWith2Adults_8to11": 160 }, "green": { "perAdultSharing": 320, "single": 430, "childSharingWith2Adults_8to11": 145 } } },
+        "premiumTent": { "groundPackage": { "peak": { "perAdultSharing": 825, "single": 990 }, "offPeak": { "perAdultSharing": 500, "single": 615 }, "green": { "perAdultSharing": 480, "single": 590 } }, "fullBoardPackage": { "peak": { "perAdultSharing": 715, "single": 880 }, "offPeak": { "perAdultSharing": 395, "single": 510 }, "green": { "perAdultSharing": 375, "single": 485 } } }
+      },
+      "childPolicy": { "note": "Different from other Wilder Mara properties - Ilkeliani permits children of ALL ages (not just 8+), and children under 5 (one per tent) stay free of charge sharing in adult room. Child rate applies 5-11 years." }
+    },
+    "paradisePlains": {
+      "region": "Maasai Mara", "airstripTransfer": "Musiara Airstrip",
+      "luxurySuites": { "groundPackage": { "peak": { "perAdultSharing": 1850, "single": 2050 }, "offPeak": { "perAdultSharing": 1200, "single": 1350 }, "green": { "perAdultSharing": 850, "single": 1000 } } },
+      "familySuite": { "groundPackagePerSuiteMax4guests": { "peak": 7200, "offPeak": 4600, "green": 3200 } },
+      "note": "Rates inclusive of bednight & community fees ($80 adult/$40 child). This property does not offer a separate 'Full Board Package' tier - Ground Package only. Highest-priced property in the group."
+    },
+    "leraiSafariCamp": {
+      "region": "Olerai Conservancy, Maasai Mara", "airstripTransfer": "Olare Orok Airstrip",
+      "standardSuites": {
+        "groundPackage": { "peak": { "perAdultSharing": 810, "single": 955, "childSharingWith2Adults_8to11": 530 }, "offPeak": { "perAdultSharing": 580, "single": 695, "childSharingWith2Adults_8to11": 400 }, "green": { "perAdultSharing": 550, "single": 665, "childSharingWith2Adults_8to11": 375 } },
+        "fullBoardPackage": { "peak": { "perAdultSharing": 650, "single": 800, "childSharingWith2Adults_8to11": 380 }, "offPeak": { "perAdultSharing": 420, "single": 535, "childSharingWith2Adults_8to11": 250 }, "green": { "perAdultSharing": 395, "single": 510, "childSharingWith2Adults_8to11": 225 } }
+      },
+      "note": "Only 1 triple available, subject to availability. Full Board Package excludes Conservancy Fees ($80 adult/$40 child if doing game drives within Olerai Conservancy) - different from other properties where fees are bundled into Ground Package only."
+    },
+    "theCliffLakeNakuru": {
+      "region": "Lake Nakuru National Park",
+      "luxurySuites": { "fullBoardPackage": { "peak": { "perPersonSharing": 540, "single": 805 }, "offPeak": { "perPersonSharing": 460, "single": 655 }, "green": { "perPersonSharing": 385, "single": 535 } } },
+      "note": "No Ground Package option - Full Board only. Minimum 2 nights: Easter (3-6 Apr 2026) & Christmas (24 Dec 2026 - 3 Jan 2027).",
+      "parkEntranceFees": { "adult": 60, "childYoung3to16": 35, "unit": "per person per night, payable direct, subject to change by KWS" },
+      "extras": { "morningEveningGameDrivesMin2pax": 75, "honeymoonPackage": 65, "paidSundownerMin2max8": 50, "privateDinnerByPoolFor2": 65, "extraLunch": 50, "lunchBoxesPerBox": 40, "drinksSupplementPerPerson": 50 },
+      "childPolicy": { "under11": "Not allowed", "youngAdult12to16SharingWith2Adults": "75% of per-person sharing rate", "youngAdult12to16OwnTent": "100% of per-person sharing rate", "oneChildSharingWithAdult": "Full double room rate applies" }
+    },
+    "theRiverCampOlpejeta": {
+      "region": "Ol Pejeta Conservancy", "airstripTransfer": "Kamok Airstrip",
+      "deluxeSuite": { "groundPackage": { "peak": { "perAdultSharing": 1105, "single": 1470 }, "offPeak": { "perAdultSharing": 715, "single": 930 }, "green": { "perAdultSharing": 565, "single": 765 } }, "fullBoardPackage": { "peak": { "perAdultSharing": 995, "single": 1360 }, "offPeak": { "perAdultSharing": 610, "single": 825 }, "green": { "perAdultSharing": 460, "single": 660 } } },
+      "luxurySuite": { "groundPackage": { "peak": { "perAdultSharing": 1005, "single": 1335 }, "offPeak": { "perAdultSharing": 650, "single": 845 }, "green": { "perAdultSharing": 620, "single": 805 } }, "fullBoardPackage": { "peak": { "perAdultSharing": 895, "single": 1225 }, "offPeak": { "perAdultSharing": 545, "single": 740 }, "green": { "perAdultSharing": 515, "single": 700 } } },
+      "conservancyFees": { "adult": 110, "child8to11": 55 },
+      "note": "No triples or extra beds at The River Camp. Minimum 2 nights: Easter & Christmas period."
+    }
+  },
+  "sharedMaraPolicy": {
+    "gameReserveFees": { "janToJun": { "adult": 100, "child9to17": 50 }, "julToDec": { "adult": 200, "child9to17": 50 }, "unit": "per day" },
+    "guideRateInGuideTent": 250,
+    "guideSharingMealsWithClientsExclAccommodation": 120,
+    "exclusiveVehiclePerDay": 450,
+    "extraLunchOrPackedLunch": 50,
+    "lateDeparture": { "adult": 120, "child": 60, "includes": "lunch and airstrip transfers", "note": "Tent checkout still 10am; guests may continue using camp facilities after." },
+    "checkIn": "12pm", "checkOut": "10am", "minimumStay": "2 nights",
+    "deposit": "20% non-refundable on confirmation.",
+    "vehiclePolicy": "4x4 vehicles green/earth tones only.",
+    "singleRoomPolicy": "Max 3 singles per booking; 4th+ charged at double room rate.",
+    "childPolicyLuxurySuites_mostProperties": { "under8": "Not permitted", "age8to11": "Child rate", "age12plus": "Full adult rate", "oneChildOwnTent": "75% of single occupancy rate", "twoChildrenOwnTent": "75% of pp sharing rate each", "oneAdultOneChildSharing": "Adult pays single occupancy, child pays 50% of pp sharing rate" }
+  },
+  "specialOffers": {
+    "longStayOffers": { "note": "Off Peak/Green season only. Valid for individual properties only, not combinable across properties.", "min4nights": "5% discount", "min6nights": "10% discount", "stay4PlusGetOneNightFree": "During green & off-peak only; conservancy/park/bednight fees still payable on all nights." },
+    "circuitDiscounts": { "min5nightsAtTwoProperties": "5%", "min7nightsAtTwoProperties": "7.5%", "note": "Cannot combine with Long Stay offers." }
+  },
+  "experiences": {
+    "cliffBoatSafari": {
+      "perAdult": 150, "perChild10to12": 80,
+      "schedule": { "morning": "0630 briefing, 0700 depart, 0930 end", "afternoon": "1100 briefing, 1130 depart, 1400 end" },
+      "inclusions": { "morning": "Breakfast on board, sparkling wine & beverages, binoculars, Lake Nakuru guide/naturalist", "afternoon": "Lunch on board, alcoholic/non-alcoholic beverages, binoculars, guide" },
+      "childPolicy": { "age13plus": "Full adult rate", "age0to9": "Not allowed" },
+      "capacity": "Max 8 seats/boat, min 2 pax/boat"
+    },
+    "hotAirBalloon": {
+      "seasons": { "high": { "dateRanges": ["16 Jun 2026 - 15 Oct 2026", "20 Dec 2026 - 3 Jan 2027"] }, "low": { "dateRanges": ["5 Jan 2026 - 15 Jun 2026", "16 Oct 2026 - 19 Dec 2026"] } },
+      "high": { "adult": { "flight": 470, "landingFee": 80, "total": 550 }, "child": { "flight": 400, "landingFee": 35, "total": 435 } },
+      "low": { "adult": { "flight": 425, "landingFee": 80, "total": 505 }, "child": { "flight": 365, "landingFee": 35, "total": 400 } },
+      "childPolicy": { "definition": "5-11 years is child; 12+ is adult", "note": "All children flying must be accompanied by an adult." },
+      "cancellationPolicy": [{ "daysBeforeArrival": "30-4", "charge": "25%" }, { "daysBeforeArrival": "15-30", "charge": "50%" }, { "hoursBeforeArrival": "14-48hrs", "charge": "100%" }],
+      "bookingReleasePeriod": "45 days"
+    }
+  },
+  "stoTierNote": "[Unverified/not extracted] A '30% STO RATES' PDF exists in this folder with the identical page structure - not fully re-extracted this pass due to time. If a discounted Wilder Group quote is needed, re-open that file directly rather than assuming a flat 30% off every line item above (some fee lines like conservancy/park fees are typically NOT discountable)."
+}
