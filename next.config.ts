@@ -9,6 +9,12 @@ const nextConfig: NextConfig = {
     "src/app/api/quotes/[quoteId]/download/route": [
       "./templates/*.hbs",
       "./src/lib/render/assets/**/*",
+      // @sparticuz/chromium locates its own ~66MB of binary blobs (chromium.br,
+      // swiftshader/fonts/al2023 tarballs) via `dirname(fileURLToPath(import.meta.url))`
+      // inside its own package, not a literal path - the same dynamic-path tracing gap
+      // as the two entries above, just inside a dependency's code instead of ours. Without
+      // this, the deployed function launches with no actual Chromium binary to find.
+      "./node_modules/@sparticuz/chromium/bin/**/*",
     ],
     // The chat route's non-Soroi property tools (list_non_soroi_rate_files,
     // read_non_soroi_rate_file) read rates-extracted/*.json via fs at runtime, not
