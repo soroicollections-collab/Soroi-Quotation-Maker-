@@ -1,0 +1,15 @@
+{
+  "name": "render-service",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Always-on HTML-to-PDF rendering service for the Soroi Quotation Maker - see README.md for why this exists as a separate service instead of running inside the main Vercel app.",
+  "scripts": {
+    "start": "node server.mjs",
+    "dev": "node server.mjs"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "playwright": "1.61.0"
+  }
+}

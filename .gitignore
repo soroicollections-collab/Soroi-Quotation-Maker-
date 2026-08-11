@@ -1,7 +1,9 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
-/node_modules
+# Unrooted (not "/node_modules") because render-service/ is a separate npm package
+# inside this repo (see its own README) with its own node_modules to also catch.
+node_modules
 /.pnp
 .pnp.*
 .yarn/*

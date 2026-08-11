@@ -1,35 +1,22 @@
-# Deploying to Vercel + Neon
+# Deploying to Vercel + Neon (+ render-service)
 
-This is the setup needed to get the app off `localhost` and onto a real URL a few
-reservations team members can log into. I can't create any of these accounts myself -
-everything in "Prerequisites" needs you to do it, then hand me the values.
+Live setup, kept current as it changes rather than describing a one-time initial deploy.
+The app has two deployed pieces:
+- **This Next.js app**, on Vercel, connected to `github.com/soroicollections-collab/Soroi-Quotation-Maker-` (repo root = this `webapp/` folder).
+- **`render-service/`**, a separate always-on service that renders PDFs - see its own
+  README for what it is and why it's separate. Deploy it independently (Render, Railway,
+  Fly.io, or similar - anywhere that runs a Dockerfile as a persistent process).
 
-## Prerequisites (you do these)
+## Accounts already set up
 
-1. **A git repository.** This project has never been put under git - `git status` from
-   the project root confirms `fatal: not a git repository`. Vercel's normal workflow
-   (auto-deploy on push) needs the code in GitHub, GitLab, or Bitbucket. Simplest path:
-   ```sh
-   cd "Quotation Maker"
-   git init
-   git add webapp CLAUDE.md AGENTS.md   # NOT rates-extracted/, the CONTRACT RATES trees, etc.
-   git commit -m "Initial commit"
-   ```
-   then create a **private** GitHub repo and push to it. I can help write a sensible
-   `.gitignore` and do the commits, but creating the actual GitHub repo (and deciding who
-   else gets access) is your call.
-2. **A Vercel account**, with the GitHub repo above connected as a new project. Set the
-   project's root directory to `webapp/` (this repo has the Next.js app in a subfolder,
-   not at the repo root).
-3. **A Neon account** with a new Postgres project/database created. Neon gives you two
-   connection strings - a direct one and a **pooled** one (usually has `-pooler` in the
-   hostname). **Use the pooled one for `DATABASE_URL`** - serverless functions open many
-   short-lived connections, and Neon's pooler (PgBouncer-based) is built for exactly that;
-   a direct connection can hit Postgres's connection limit under concurrent use.
-4. Your **Anthropic API key** (already have this) and the **spend cap** set in the
-   Anthropic Console, per the earlier conversation about predictable monthly cost.
+- **GitHub**: repo above, `main` branch auto-deploys to Vercel on push.
+- **Vercel**: project connected, root directory `webapp/`.
+- **Neon**: Postgres database created; `DATABASE_URL` uses the **pooled** connection string
+  (has `-pooler` in the hostname) - serverless functions open many short-lived connections,
+  and a direct connection can hit Postgres's connection limit under concurrent use.
+- **Anthropic**: API key set, spend cap configured in the Console.
 
-## Environment variables (set these in Vercel's Project Settings → Environment Variables)
+## Environment variables (Vercel → Project Settings → Environment Variables)
 
 | Variable | Value |
 |---|---|
@@ -38,77 +25,83 @@ everything in "Prerequisites" needs you to do it, then hand me the values.
 | `ANTHROPIC_API_KEY` | Your real key |
 | `ANTHROPIC_MODEL_EXTRACTION` | `claude-opus-5` |
 | `ANTHROPIC_MODEL_CHAT` | `claude-sonnet-5` |
+| `RENDER_SERVICE_URL` | The deployed render-service's public URL, no trailing slash |
+| `RENDER_SERVICE_TOKEN` | Must exactly match the same variable set on render-service itself |
 
 Auth.js v5 auto-detects the deployment URL on Vercel (via `VERCEL_URL`) - no `AUTH_URL`
 needed unless a custom domain is added later, in which case set `AUTH_URL` explicitly.
 
+If `RENDER_SERVICE_URL` isn't set, PDF rendering falls back to launching a local browser
+directly - fine for local dev, **not viable on Vercel** (no desktop Chromium available in
+that environment; this is exactly the setup that broke three times before render-service/
+existed - see its README for the history). Always set both vars in production.
+
 ## Database schema: known gap - migration history is incomplete
 
 `prisma/migrations/` only has two migrations (`20260805171252_init`,
-`20260805175448_add_rate_card_seasons`). Every schema change since then - `RateCardEvent`,
-`Quote`, `Conversation`, `ConversationMessage`, `SourceDocument`, `ExtractionRun`, and
-today's `Quote.documentData` field - was applied with `prisma db push`, which doesn't
-write migration files. Running `prisma migrate deploy` against a fresh Neon database
-right now would only create the first two migrations' tables and silently leave the rest
-missing.
-
-**For this first deploy**, the pragmatic fix is to sync the schema the same way it's been
-done locally the whole time:
+`20260805175448_add_rate_card_seasons`). Every schema change since then was applied with
+`prisma db push`, which doesn't write migration files. Running `prisma migrate deploy`
+against a fresh database would only create the first two migrations' tables and silently
+leave the rest missing - use `prisma db push` against the target database instead, same as
+local dev:
 ```sh
-DATABASE_URL="<neon pooled connection string>" npx prisma db push
+DATABASE_URL="<pooled connection string>" npx prisma db push
 ```
-Run this once, from your machine, pointed at the new Neon database, before the app is
-used for real. It's the same command (and the same honest gap) as local dev - I'm not
-introducing a new risk here, just carrying forward the existing one.
+If the change narrows an enum or otherwise risks data loss, Prisma requires
+`--accept-data-loss` and (when run by an AI agent) an explicit human consent step - check
+what's actually using the old value first rather than assuming it's safe.
 
 **Worth fixing properly before this matters more** (i.e. once real data and a team both
 depend on coordinated schema changes): regenerate a clean migration history with
 `prisma migrate dev` against a disposable database, so future changes go through
 `prisma migrate deploy` instead of `db push`. Flagging this rather than silently doing it
-now, since squashing history is a judgment call, not a required step for launch.
+now, since squashing history is a judgment call, not a required step.
 
 ## Build configuration
 
-Vercel runs `npm install` then `npm run build`. Two things this needs, both already true
-of this repo:
-- `@prisma/client` is a dependency, and `prisma generate` needs to run before `next build`
-  sees any Prisma types. Check `package.json`'s `build` script actually does this (if not:
-  `"build": "prisma generate && next build"`).
-- `playwright` (the full package with its own bundled browser download) is a
-  **devDependency**, not a regular dependency - Vercel's production install skips
-  devDependencies, so it won't try to download a desktop Chromium build during the Vercel
-  build. `playwright-core` and `@sparticuz/chromium` (the serverless-compatible browser)
-  are regular dependencies and do get installed.
+Vercel runs `npm install` then `npm run build` (`prisma generate && next build`) from the
+`webapp/` root directory - it never touches `render-service/`, which is deployed
+separately with its own root-directory setting on its own host. `@prisma/client` needs
+`prisma generate` to run before `next build` sees any Prisma types, which the build script
+already does.
 
-## What changed to make this deployable at all
+`playwright` is a **devDependency** here, only used as a local-dev fallback when
+`RENDER_SERVICE_URL` isn't set (see `lib/render/render-pdf.ts`) - Vercel's production
+install skips devDependencies, so the deployed function never tries to download a desktop
+Chromium build. There is no `@sparticuz/chromium` or `playwright-core` dependency in this
+app at all anymore; that whole approach (launching Chromium inside the Vercel function
+itself) was replaced by render-service/ after three separate real bugs trying to make it
+work (a version mismatch, then two different missing-file bundling gaps under this
+Next.js/Turbopack build) - see git history around the render-service/ introduction if the
+full story is ever needed again.
 
-For context, since this wasn't originally built with Vercel in mind:
-- PDF rendering (`lib/render/render-pdf.ts`) now detects `process.env.VERCEL` and
-  launches either the full local Chromium (dev) or `@sparticuz/chromium` +
-  `playwright-core` (Vercel) - see that file's comments.
+## Architecture notes
+
 - **No PDF or uploaded rate document is ever written to disk anywhere**, by design (per
   the "stream-only" decision) - the download route renders fresh from
-  `Quote.documentData` (stored in Postgres) on every request and streams the bytes
-  straight back. Re-downloading a quote costs a fresh Chromium render each time; nothing
-  is cached.
+  `Quote.documentData` (stored in Postgres) on every request, via a call to render-service,
+  and streams the bytes straight back. Re-downloading a quote costs a fresh render each
+  time; nothing is cached.
 - `next.config.ts` has `outputFileTracingIncludes` pointing at `templates/*.hbs` and
   `src/lib/render/assets/**` - without this, Vercel's build wouldn't know to bundle those
   files into the download route's serverless function, since they're read via `fs` at
-  runtime rather than imported.
-- The chat route and download route both set `runtime = "nodejs"` (not Edge - Prisma and
-  Playwright both need real Node) and a longer `maxDuration` than Vercel's default, since
-  a multi-tool-call agent turn or a Chromium PDF render can run past 10s.
+  runtime rather than imported. (This mechanism works fine for project-relative paths; it's
+  specifically `node_modules`-rooted globs that didn't work reliably, which is part of why
+  the Chromium-in-Vercel-function approach was abandoned rather than patched further.)
+- The chat route and download route both set `runtime = "nodejs"` (not Edge - Prisma needs
+  real Node) and a longer `maxDuration` than Vercel's default, since a multi-tool-call
+  agent turn or a render-service round-trip can run past 10s.
 
 ## Post-deploy smoke test
 
-Once deployed and `DATABASE_URL` is pointed at the fresh Neon database:
 1. `npx tsx prisma/seed.ts` (pointed at the Neon DB) to create your Rate Manager account -
    or add a one-off script/route to do this, since Vercel doesn't give you a shell.
 2. Re-run `migrate-rates.ts` against the Neon DB to populate the Soroi rate cards (same
    script, same command, just pointed at `DATABASE_URL=<neon>` instead of local Postgres).
 3. Log in on the real URL, generate a test quote, confirm the download button actually
-   returns a PDF (this is the one path that behaves differently in production vs. local
-   dev - it's exercising `@sparticuz/chromium` for the first time outside this
-   conversation's testing).
-4. Confirm a STAFF-role test account can't reach `/admin/rates` or `/admin/users` - this
-   was flagged as untested weeks ago and still hasn't been checked for real.
+   returns a PDF for both formats.
+4. Confirm a Reservations- or Sales-role test account can't reach `/admin/rates` or
+   `/admin/users`.
+5. If PDF downloads are slow specifically after a period of no use, check whether
+   render-service is on a free tier that spins down when idle - see its README's
+   "Operational notes" section.

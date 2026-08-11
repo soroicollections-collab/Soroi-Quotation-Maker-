@@ -1,7 +1,7 @@
 import * as fs from "node:fs";
 import * as path from "node:path";
 import Handlebars from "handlebars";
-import type { Browser } from "playwright-core";
+import type { Browser } from "playwright";
 import type { QuoteDocumentData } from "./quote-data";
 import { masterLogoDataUri, coverPhotoDataUri } from "./images";
 
@@ -24,48 +24,71 @@ function getTemplate(name: "agent-quote" | "client-quote"): HandlebarsTemplateDe
   return compiled;
 }
 
-// Vercel (and AWS Lambda, which it runs on) sets VERCEL=1 in every deployed environment,
-// local `next dev`/`next start` never do. On Vercel there's no full desktop Chromium
-// install available, so we launch a serverless-packaged build via @sparticuz/chromium
-// instead - see that package's own README for this exact integration pattern with
-// Playwright. Locally, the full `playwright` package's own bundled Chromium (installed
-// via `npx playwright install chromium`) is simpler and doesn't need any of this.
-const IS_SERVERLESS = !!process.env.VERCEL;
+// Getting a real Chromium binary to run correctly *inside* a Vercel serverless function
+// (via @sparticuz/chromium + playwright-core) turned out to be persistently fragile in
+// this Next.js/Turbopack build - three separate real bugs (a version mismatch, then two
+// different missing-file tracing gaps) before deciding it wasn't worth a fourth round.
+// PDF rendering now always happens in the always-on render-service/ (see its README) -
+// locally that's just a plain HTTP call to a Chromium process running the exact same way
+// local dev's browser used to run in-process; in production it's a call to that same
+// service deployed as its own host. Either way, this file no longer launches a browser
+// itself at all - one fewer place PDF rendering can break independently of the
+// render-service, and one fewer heavy dependency (@sparticuz/chromium, playwright-core)
+// in the main app's own deployment.
+const RENDER_SERVICE_URL = process.env.RENDER_SERVICE_URL;
+const RENDER_SERVICE_TOKEN = process.env.RENDER_SERVICE_TOKEN;
+
+async function renderHtmlToPdf(html: string): Promise<Buffer> {
+  if (RENDER_SERVICE_URL) {
+    return renderViaService(html);
+  }
+  // No RENDER_SERVICE_URL configured - assume local dev without the render-service
+  // running, and fall back to a directly-launched local browser (the full `playwright`
+  // package, a devDependency) so `npm run dev` keeps working with zero extra setup.
+  return renderViaLocalBrowser(html);
+}
+
+async function renderViaService(html: string): Promise<Buffer> {
+  if (!RENDER_SERVICE_TOKEN) {
+    throw new Error("RENDER_SERVICE_URL is set but RENDER_SERVICE_TOKEN is not - refusing to call the render service unauthenticated.");
+  }
+  const res = await fetch(`${RENDER_SERVICE_URL}/render-pdf`, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      Authorization: `Bearer ${RENDER_SERVICE_TOKEN}`,
+    },
+    body: JSON.stringify({ html }),
+  });
+  if (!res.ok) {
+    const body = await res.text().catch(() => "");
+    throw new Error(`render-service returned ${res.status}: ${body.slice(0, 500)}`);
+  }
+  const arrayBuffer = await res.arrayBuffer();
+  return Buffer.from(arrayBuffer);
+}
 
 let browserPromise: Promise<Browser> | null = null;
-function getBrowser(): Promise<Browser> {
+function getLocalBrowser(): Promise<Browser> {
   if (!browserPromise) {
-    browserPromise = IS_SERVERLESS ? launchServerlessBrowser() : launchLocalBrowser();
+    // Only imported when actually reached (no RENDER_SERVICE_URL set), so a production
+    // deploy that always has RENDER_SERVICE_URL configured never needs `playwright`
+    // installed at all.
+    browserPromise = import("playwright").then(({ chromium }) => chromium.launch({ headless: true }));
   }
   return browserPromise;
 }
 
-// playwright-core's version must match the Chromium build @sparticuz/chromium bundles -
-// they're driven over the same CDP protocol, and a mismatch (e.g. playwright-core expecting
-// Chromium 151 while @sparticuz/chromium only ships 149) fails the launch outright. This
-// broke the download route in production once already (see git history) because
-// playwright-core's caret range let it drift ahead of what @sparticuz/chromium had
-// published. Both packages - and the local-dev-only `playwright` in devDependencies, kept
-// in lockstep for the same reason - are pinned to exact versions in package.json rather
-// than "^" for this reason. Before bumping either one, check that
-// https://cdn.jsdelivr.net/npm/playwright-core@<version>/browsers.json reports the same
-// Chromium major version as whatever @sparticuz/chromium version is being paired with it.
-async function launchServerlessBrowser(): Promise<Browser> {
-  const { chromium } = await import("playwright-core");
-  const chromiumBinary = (await import("@sparticuz/chromium")).default;
-  return chromium.launch({
-    args: chromiumBinary.args,
-    executablePath: await chromiumBinary.executablePath(),
-    headless: true,
-  });
-}
-
-async function launchLocalBrowser(): Promise<Browser> {
-  // Full `playwright` package - only imported in the local-dev path, so it's never
-  // pulled into the Vercel serverless bundle (its own bundled browser download would
-  // be redundant with @sparticuz/chromium and needlessly bloat the deployment).
-  const { chromium } = await import("playwright");
-  return chromium.launch({ headless: true }) as unknown as Promise<Browser>;
+async function renderViaLocalBrowser(html: string): Promise<Buffer> {
+  const browser = await getLocalBrowser();
+  const page = await browser.newPage();
+  try {
+    await page.setContent(html, { waitUntil: "networkidle" });
+    const pdf = await page.pdf({ printBackground: true, format: "A4" });
+    return Buffer.from(pdf);
+  } finally {
+    await page.close();
+  }
 }
 
 function slugify(text: string): string {
@@ -90,15 +113,7 @@ export async function renderQuotePdfBuffer(params: {
     coverPhoto: coverPhotoDataUri(format),
   });
 
-  const browser = await getBrowser();
-  const page = await browser.newPage();
-  try {
-    await page.setContent(html, { waitUntil: "networkidle" });
-    const pdf = await page.pdf({ printBackground: true, format: "A4" });
-    return Buffer.from(pdf);
-  } finally {
-    await page.close();
-  }
+  return renderHtmlToPdf(html);
 }
 
 export { slugify };
