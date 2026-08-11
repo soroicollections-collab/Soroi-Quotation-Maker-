@@ -231,7 +231,6 @@ export function QuoteChat({
 
   return (
     <div className="flex flex-1 flex-col gap-3 overflow-hidden">
-      {finalizedQuote && <QuoteDownloadBar quote={finalizedQuote} />}
       <div ref={scrollRef} className="flex-1 space-y-5 overflow-y-auto rounded-2xl border border-line bg-white p-5 shadow-sm">
         {messages.length === 0 && (
           <div className="flex h-full flex-col items-center justify-center gap-6 px-4 text-center">
@@ -261,6 +260,7 @@ export function QuoteChat({
           <MessageBubble key={m.id} message={m} />
         ))}
       </div>
+      {finalizedQuote && <QuoteDownloadBar quote={finalizedQuote} />}
       <form
         onSubmit={(e) => {
           e.preventDefault();

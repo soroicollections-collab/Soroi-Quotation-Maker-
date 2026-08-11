@@ -40,6 +40,16 @@ function getBrowser(): Promise<Browser> {
   return browserPromise;
 }
 
+// playwright-core's version must match the Chromium build @sparticuz/chromium bundles -
+// they're driven over the same CDP protocol, and a mismatch (e.g. playwright-core expecting
+// Chromium 151 while @sparticuz/chromium only ships 149) fails the launch outright. This
+// broke the download route in production once already (see git history) because
+// playwright-core's caret range let it drift ahead of what @sparticuz/chromium had
+// published. Both packages - and the local-dev-only `playwright` in devDependencies, kept
+// in lockstep for the same reason - are pinned to exact versions in package.json rather
+// than "^" for this reason. Before bumping either one, check that
+// https://cdn.jsdelivr.net/npm/playwright-core@<version>/browsers.json reports the same
+// Chromium major version as whatever @sparticuz/chromium version is being paired with it.
 async function launchServerlessBrowser(): Promise<Browser> {
   const { chromium } = await import("playwright-core");
   const chromiumBinary = (await import("@sparticuz/chromium")).default;
