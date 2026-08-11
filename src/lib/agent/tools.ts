@@ -383,7 +383,7 @@ const itineraryDaySchema = {
   additionalProperties: false,
 } as const;
 
-function makeFinalizeQuoteTool(userId: string, preparerInitials: string, onCall: ToolCallRecorder) {
+function makeFinalizeQuoteTool(userId: string, preparerInitials: string, conversationId: string, onCall: ToolCallRecorder) {
   return betaTool({
     name: "finalize_quote",
     description:
@@ -436,6 +436,15 @@ function makeFinalizeQuoteTool(userId: string, preparerInitials: string, onCall:
         inclusions: { type: "array", items: { type: "string" }, description: "Omit to use the standard portfolio-wide defaults." },
         exclusions: { type: "array", items: { type: "string" }, description: "Omit to use the standard portfolio-wide defaults." },
         notes: { type: "array", items: { type: "string" }, description: "Omit to use the standard validity/deposit notes." },
+        specialRequests: {
+          type: "array",
+          items: { type: "string" },
+          description:
+            "Anything specific to this trip worth flagging to both sides, distinct from the standard validity/deposit notes - " +
+            "a client's special request (dietary need, celebration, honeymoon), or something Soroi/Sunworld wants to suggest " +
+            "back to the client (e.g. a sundowner, a spa treatment, an early check-in). Ask the requester if there's anything " +
+            "like this before finalizing - omit entirely if there's genuinely nothing beyond the standard itinerary.",
+        },
         confirmedFlexibleVariables: {
           type: "object",
           properties: {
@@ -474,6 +483,12 @@ function makeFinalizeQuoteTool(userId: string, preparerInitials: string, onCall:
         data: { quoteId, preparerId: userId, route: input.route, status: "draft" },
       });
 
+      // Links this conversation to its (latest) quote, so the sidebar can show a title
+      // and the chat page can offer PDF downloads when this conversation is reopened -
+      // see the Conversation.quoteId field. A conversation that finalizes more than once
+      // (e.g. a revision) just points at whichever quote was finalized most recently.
+      await prisma.conversation.update({ where: { id: conversationId }, data: { quoteId: quote.id } });
+
       const [{ computeQuote: computeQuoteFn }, { buildQuoteDocumentData }] = await Promise.all([
         import("@/lib/calculator/quote"),
         import("@/lib/render/quote-data"),
@@ -510,6 +525,7 @@ function makeFinalizeQuoteTool(userId: string, preparerInitials: string, onCall:
           inclusions: input.inclusions,
           exclusions: input.exclusions,
           notes: input.notes,
+          specialRequests: input.specialRequests,
         },
       });
 
@@ -532,7 +548,7 @@ function makeFinalizeQuoteTool(userId: string, preparerInitials: string, onCall:
   });
 }
 
-export function allTools(userId: string, preparerInitials: string, onCall: ToolCallRecorder) {
+export function allTools(userId: string, preparerInitials: string, conversationId: string, onCall: ToolCallRecorder) {
   return [
     makeListSoroiPropertiesTool(onCall),
     makeGetSoroiRateCardOptionsTool(onCall),
@@ -540,6 +556,6 @@ export function allTools(userId: string, preparerInitials: string, onCall: ToolC
     makeListFlexibleVariableOptionsTool(onCall),
     makeListNonSoroiRateFilesTool(onCall),
     makeReadNonSoroiRateFileTool(onCall),
-    makeFinalizeQuoteTool(userId, preparerInitials, onCall),
+    makeFinalizeQuoteTool(userId, preparerInitials, conversationId, onCall),
   ];
 }

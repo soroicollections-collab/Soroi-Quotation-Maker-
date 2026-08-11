@@ -14,9 +14,15 @@
     --line: #E4D6BE;
   }
   * { box-sizing: border-box; }
-  html, body { margin: 0; padding: 0; background: #ddd; }
+  html, body { margin: 0; padding: 0; background: var(--bg); }
   body { font-family: 'Poppins', sans-serif; color: var(--earth); }
   @page { size: A4; margin: 0; }
+  /* Named page for the flowing financial-detail section below: real margins that repeat
+     on every physical page it spans, unlike padding/margin on the flowing box itself
+     (which only applies once, at the very start/end of the whole box - see the .detail-wrap
+     rule). The fixed cover/itinerary boxes above stay on the default (margin: 0) page so
+     they can keep their full-bleed design. */
+  @page detail { size: A4; margin: 16mm; }
 
   /* ============ PAGES 1-2: fixed A4 boxes, byte-identical to the client
      template's cover + itinerary design. The agent copy is the client copy
@@ -95,14 +101,14 @@
      depends on the itinerary and must never be silently clipped. Same visual
      language (colors, type, table treatment) as the pages above, just laid
      out for natural print pagination instead of one screen-sized box. ============ */
-  .detail-wrap { background: var(--bg); padding: 16mm; page-break-before: always; }
-  .detail-section { page-break-inside: avoid; margin-bottom: 26px; }
+  .detail-wrap { background: var(--bg); page: detail; }
+  .detail-section { page-break-inside: avoid; margin: 14px 0; }
 
   table.pricing { width: 100%; border-collapse: collapse; }
   table.pricing thead tr.band th { background: var(--band); color: #FBF7F0; font-family: 'Cinzel', serif; font-size: 12px; letter-spacing: 0.14em; padding: 13px 0; text-align: center; text-transform: uppercase; }
   table.pricing thead tr.cols th { background: var(--tan-light); font-size: 8.7px; letter-spacing: 0.1em; color: var(--earth); text-transform: uppercase; padding: 10px 12px; text-align: left; font-weight: 600; }
   table.pricing thead tr.cols th.r { text-align: right; }
-  table.pricing tbody td { padding: 12px; border-bottom: 1px solid var(--line); font-size: 10.5px; color: var(--earth); }
+  table.pricing tbody td { padding: 9px 12px; border-bottom: 1px solid var(--line); font-size: 10.5px; color: var(--earth); }
   table.pricing tbody td.r { text-align: right; }
   table.pricing tfoot td { background: var(--band); color: #fff; font-family: 'Cinzel', serif; font-weight: 700; font-size: 12px; letter-spacing: 0.06em; padding: 15px 12px; }
   table.pricing tfoot td.r { text-align: right; font-size: 16px; }
@@ -114,23 +120,30 @@
   .discount-note { font-size: 8.7px; color: var(--grey); font-style: italic; margin: 6px 0 0; text-align: right; }
   .property-total-row { display: flex; justify-content: space-between; align-items: center; padding: 10px 12px; background: var(--earth); color: #fff; font-family: 'Cinzel', serif; font-weight: 700; font-size: 11.5px; margin-top: 6px; border-radius: 4px; }
 
-  .two-col { display: grid; grid-template-columns: 1.35fr 1fr; gap: 26px; margin-top: 30px; }
+  .two-col { display: grid; grid-template-columns: 1.35fr 1fr; gap: 20px; margin-top: 14px; }
   .incl-excl h3 { font-family: 'Cinzel', serif; font-size: 12px; letter-spacing: 0.1em; color: var(--earth); margin: 0 0 9px; text-transform: uppercase; }
   .incl-excl ul { list-style: none; margin: 0 0 20px; padding: 0; }
   .incl-excl li { font-size: 9.7px; color: #5c4c3a; margin-bottom: 8px; padding-left: 17px; position: relative; line-height: 1.4; }
   .incl-excl li.yes::before { content: "\2713"; position: absolute; left: 0; color: var(--band); font-weight: 700; }
   .incl-excl li.no::before { content: "\2715"; position: absolute; left: 0; color: #8a4b2e; font-weight: 700; }
 
-  .notes-card { border: 1px solid var(--gold); border-radius: 6px; padding: 22px 18px; text-align: center; height: fit-content; }
-  .notes-card h3 { font-family: 'Cinzel', serif; font-size: 11px; letter-spacing: 0.14em; color: var(--gold-deep); margin: 0 0 12px; text-transform: uppercase; }
-  .notes-card p { font-size: 9px; color: var(--grey); font-style: italic; margin: 0; line-height: 1.5; }
-  .notes-card .sep { color: var(--gold); font-style: normal; margin: 7px 0; font-size: 8px; }
+  .notes-card { border: 1px solid var(--gold); border-radius: 6px; padding: 14px 16px; text-align: center; height: fit-content; }
+  .notes-card h3 { font-family: 'Cinzel', serif; font-size: 11px; letter-spacing: 0.14em; color: var(--gold-deep); margin: 0 0 8px; text-transform: uppercase; }
+  .notes-card p { font-size: 9px; color: var(--grey); font-style: italic; margin: 0; line-height: 1.4; }
+  .notes-card .sep { color: var(--gold); font-style: normal; margin: 6px 0; font-size: 8px; }
 
-  .closing { text-align: center; margin-top: 40px; }
+  .special-card { border: 1px solid var(--gold); border-radius: 6px; padding: 16px 20px; margin-top: 20px; }
+  .special-card h3 { font-family: 'Cinzel', serif; font-size: 11px; letter-spacing: 0.14em; color: var(--gold-deep); margin: 0 0 10px; text-transform: uppercase; }
+  .special-card ul { list-style: none; margin: 0; padding: 0; }
+  .special-card li { font-size: 9.7px; color: #5c4c3a; margin-bottom: 6px; padding-left: 15px; position: relative; line-height: 1.4; }
+  .special-card li::before { content: "\2022"; position: absolute; left: 0; color: var(--gold-deep); }
+  .special-card li:last-child { margin-bottom: 0; }
+
+  .closing { text-align: center; margin-top: 20px; }
   .closing .thanks-line { font-size: 9px; letter-spacing: 0.22em; color: var(--gold-deep); text-transform: uppercase; margin-bottom: 12px; }
   .closing .script { font-family: 'Alex Brush', cursive; font-size: 22px; color: var(--gold-deep); line-height: 1.3; }
 
-  .plain-footer { margin-top: 30px; padding-top: 14px; border-top: 1px solid var(--line); text-align: center; font-size: 8.3px; color: var(--grey); }
+  .plain-footer { margin-top: 16px; padding-top: 10px; border-top: 1px solid var(--line); text-align: center; font-size: 8.3px; color: var(--grey); }
 </style>
 
 <!-- ============ PAGE 1 — COVER (identical layout to the client copy) ============ -->
@@ -309,12 +322,23 @@
     </div>
   </div>
 
-  <div class="closing">
-    <div class="thanks-line">Thank You For Considering Soroi Collection</div>
-    <div class="script">We look forward to welcoming you to<br>experience the magic of Africa.</div>
+  {{#if specialRequests.length}}
+  <div class="special-card detail-section">
+    <h3>Special Requests &amp; Notes For This Trip</h3>
+    <ul>
+      {{#each specialRequests}}<li>{{this}}</li>{{/each}}
+    </ul>
   </div>
+  {{/if}}
 
-  <div class="plain-footer">
-    reservations@soroi.com &nbsp;&nbsp;|&nbsp;&nbsp; +254 754 351 908 &nbsp;&nbsp;|&nbsp;&nbsp; www.soroi.com &nbsp;&nbsp;|&nbsp;&nbsp; Quote Ref: {{quoteId}}
+  <div class="detail-section">
+    <div class="closing">
+      <div class="thanks-line">Thank You For Considering Soroi Collection</div>
+      <div class="script">We look forward to welcoming you to<br>experience the magic of Africa.</div>
+    </div>
+
+    <div class="plain-footer">
+      reservations@soroi.com &nbsp;&nbsp;|&nbsp;&nbsp; +254 754 351 908 &nbsp;&nbsp;|&nbsp;&nbsp; www.soroi.com &nbsp;&nbsp;|&nbsp;&nbsp; Quote Ref: {{quoteId}}
+    </div>
   </div>
 </div>

@@ -21,6 +21,7 @@ export type FinalizeQuoteContentInput = {
   inclusions?: string[];
   exclusions?: string[];
   notes?: string[];
+  specialRequests?: string[];
 };
 
 export type PropertyLineItemRow = { description: string; pax: string; nights: number; ratePerPersonPerNight: string; subtotal: string };
@@ -58,6 +59,7 @@ export type QuoteDocumentData = {
   inclusions: string[];
   exclusions: string[];
   notes: string[];
+  specialRequests: string[];
 };
 
 const DEFAULT_INCLUSIONS = [
@@ -191,13 +193,30 @@ export async function buildQuoteDocumentData(params: {
   const propertyTotalSum = quoteResult.stays.reduce((sum, s) => sum + s.total, 0);
   const grandTotal = propertyTotalSum + transfersTotal;
 
-  const summaryRows = [
-    ...quoteResult.stays.map((s) => ({
-      description: `${displayNamesBySlug.get(s.input.propertySlug) ?? s.input.propertySlug} (${s.nights.length} night${s.nights.length > 1 ? "s" : ""})`,
-      amount: `$${money(s.total)}`,
-    })),
-    ...(content.transfers ?? []).map((t) => ({ description: t.description, amount: `$${money(t.amount)}` })),
-  ];
+  // Itemized rather than one blended figure per property - CLAUDE.md's default inclusions
+  // text says "Park, conservancy and reserve fees as itemized", so the summary needs to
+  // actually show that split, not just claim it. Each property's rows sum exactly to its
+  // stay.total (accommodation net of circuit discount + fees + festive supplement, matching
+  // the formula in calculator/quote.ts) so nothing is silently dropped from the total.
+  const summaryRows = quoteResult.stays
+    .flatMap((s) => {
+      const displayName = displayNamesBySlug.get(s.input.propertySlug) ?? s.input.propertySlug;
+      const nightsLabel = `${s.nights.length} night${s.nights.length > 1 ? "s" : ""}`;
+      const rows = [
+        {
+          description: `${displayName} — Accommodation (${nightsLabel})`,
+          amount: `$${money(s.accommodationSubtotal - s.circuitDiscountAmount)}`,
+        },
+      ];
+      if (s.mandatoryFeesSubtotal > 0) {
+        rows.push({ description: `${displayName} — Park & Conservancy Fees`, amount: `$${money(s.mandatoryFeesSubtotal)}` });
+      }
+      if (s.christmasSupplementSubtotal > 0) {
+        rows.push({ description: `${displayName} — Festive Season Supplement`, amount: `$${money(s.christmasSupplementSubtotal)}` });
+      }
+      return rows;
+    })
+    .concat((content.transfers ?? []).map((t) => ({ description: t.description, amount: `$${money(t.amount)}` })));
 
   const tiers = Array.from(new Set(quoteResult.stays.map((s) => `${s.input.tier} (${s.input.residency})`)));
 
@@ -219,5 +238,6 @@ export async function buildQuoteDocumentData(params: {
     inclusions: content.inclusions ?? DEFAULT_INCLUSIONS,
     exclusions: content.exclusions ?? DEFAULT_EXCLUSIONS,
     notes: content.notes ?? DEFAULT_NOTES,
+    specialRequests: content.specialRequests ?? [],
   };
 }

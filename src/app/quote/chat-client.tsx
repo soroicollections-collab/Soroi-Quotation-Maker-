@@ -1,20 +1,19 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { useRouter } from "next/navigation";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 
 type QuoteReady = {
   quoteId: string;
   grandTotal: string;
-  calculatorFlags?: string[];
 };
 
 type ChatMessage = {
   id: string;
   role: "user" | "assistant";
   text: string;
-  quoteReady?: QuoteReady;
 };
 
 const SUGGESTIONS = [
@@ -68,26 +67,27 @@ function TypingIndicator() {
   );
 }
 
-function QuoteReadyCard({ quote }: { quote: QuoteReady }) {
-  const flags = quote.calculatorFlags?.filter(Boolean) ?? [];
+/** Persistent, not tied to any one chat bubble - shows for a freshly-finalized quote
+ * just as well as one reopened from the sidebar days later. Re-rendering the PDF is
+ * always a live fetch to the download route (see api/quotes/[quoteId]/download), so
+ * there's nothing stale to worry about here even though nothing is cached client-side. */
+function QuoteDownloadBar({ quote }: { quote: QuoteReady }) {
   return (
-    <div className="mt-3 max-w-[85%] overflow-hidden rounded-xl border border-gold shadow-sm">
-      <div className="flex items-center justify-between gap-4 bg-earth px-5 py-4">
-        <div>
-          <div className="text-[10px] font-semibold uppercase tracking-[0.2em] text-gold">Draft quote ready</div>
-          <div className="mt-1 font-heading text-lg text-white">{quote.quoteId}</div>
-        </div>
-        <div className="text-right">
-          <div className="text-[10px] uppercase tracking-wide text-tan">Total</div>
-          <div className="font-heading text-xl text-white">{quote.grandTotal}</div>
-        </div>
+    <div className="flex flex-wrap items-center justify-between gap-3 rounded-2xl border border-gold bg-earth px-5 py-3.5 shadow-sm">
+      <div>
+        <div className="text-[10px] font-semibold uppercase tracking-[0.2em] text-gold">Quote Ready</div>
+        <div className="mt-0.5 font-heading text-base text-white">{quote.quoteId}</div>
       </div>
-      <div className="flex gap-2 bg-tan-light p-3">
+      <div className="text-right">
+        <div className="text-[10px] uppercase tracking-wide text-tan">Total</div>
+        <div className="font-heading text-lg text-white">{quote.grandTotal}</div>
+      </div>
+      <div className="flex gap-2">
         <a
           href={`/api/quotes/${quote.quoteId}/download?type=agent`}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex-1 rounded-lg bg-gold-deep py-2.5 text-center text-xs font-semibold uppercase tracking-wide text-white transition hover:brightness-105"
+          className="rounded-lg bg-gold-deep px-4 py-2 text-center text-xs font-semibold uppercase tracking-wide text-white transition hover:brightness-105"
         >
           Agent PDF
         </a>
@@ -95,23 +95,11 @@ function QuoteReadyCard({ quote }: { quote: QuoteReady }) {
           href={`/api/quotes/${quote.quoteId}/download?type=client`}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex-1 rounded-lg border border-earth py-2.5 text-center text-xs font-semibold uppercase tracking-wide text-earth transition hover:bg-white"
+          className="rounded-lg border border-white/40 px-4 py-2 text-center text-xs font-semibold uppercase tracking-wide text-white transition hover:bg-white/10"
         >
           Client PDF
         </a>
       </div>
-      {flags.length > 0 && (
-        <div className="border-t border-line bg-white px-5 py-3">
-          <div className="text-[10px] font-semibold uppercase tracking-wide text-grey">Flagged for review</div>
-          <ul className="mt-1.5 space-y-1">
-            {flags.map((f, i) => (
-              <li key={i} className="text-xs leading-relaxed text-grey">
-                {f}
-              </li>
-            ))}
-          </ul>
-        </div>
-      )}
     </div>
   );
 }
@@ -148,17 +136,26 @@ function MessageBubble({ message }: { message: ChatMessage }) {
             <TypingIndicator />
           )}
         </div>
-        {message.quoteReady && <QuoteReadyCard quote={message.quoteReady} />}
       </div>
     </div>
   );
 }
 
-export function QuoteChat() {
-  const [messages, setMessages] = useState<ChatMessage[]>([]);
+export function QuoteChat({
+  conversationId: initialConversationId,
+  initialMessages,
+  initialQuote,
+}: {
+  conversationId?: string;
+  initialMessages?: ChatMessage[];
+  initialQuote?: QuoteReady | null;
+}) {
+  const router = useRouter();
+  const [messages, setMessages] = useState<ChatMessage[]>(initialMessages ?? []);
+  const [finalizedQuote, setFinalizedQuote] = useState<QuoteReady | null>(initialQuote ?? null);
   const [input, setInput] = useState("");
   const [sending, setSending] = useState(false);
-  const conversationId = useRef<string | undefined>(undefined);
+  const conversationIdRef = useRef<string | undefined>(initialConversationId);
   const scrollRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -179,13 +176,22 @@ export function QuoteChat() {
       const res = await fetch("/api/quote/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ conversationId: conversationId.current, message: text }),
+        body: JSON.stringify({ conversationId: conversationIdRef.current, message: text }),
       });
       if (!res.ok || !res.body) throw new Error(`Request failed: ${res.status}`);
 
       await readSSE(res.body, (event, data) => {
         if (event === "conversation") {
-          conversationId.current = (data as { conversationId: string }).conversationId;
+          const id = (data as { conversationId: string }).conversationId;
+          const isNewConversation = !conversationIdRef.current;
+          conversationIdRef.current = id;
+          if (isNewConversation) {
+            // Cosmetic URL sync only (no navigation/remount, which would tear down this
+            // in-flight stream) - router.refresh() re-fetches the sidebar's server data
+            // while explicitly preserving client state, so it's safe mid-stream too.
+            window.history.replaceState(null, "", `/quote/${id}`);
+            router.refresh();
+          }
         } else if (event === "text") {
           const delta = (data as { delta: string }).delta;
           setMessages((prev) =>
@@ -193,7 +199,8 @@ export function QuoteChat() {
           );
         } else if (event === "quote_ready") {
           const quote = data as QuoteReady;
-          setMessages((prev) => prev.map((m) => (m.id === assistantId ? { ...m, quoteReady: quote } : m)));
+          setFinalizedQuote(quote);
+          router.refresh();
         } else if (event === "error") {
           const msg = (data as { message: string }).message;
           setMessages((prev) =>
@@ -215,7 +222,8 @@ export function QuoteChat() {
   }
 
   return (
-    <div className="flex flex-1 flex-col gap-4 overflow-hidden">
+    <div className="flex flex-1 flex-col gap-3 overflow-hidden">
+      {finalizedQuote && <QuoteDownloadBar quote={finalizedQuote} />}
       <div ref={scrollRef} className="flex-1 space-y-5 overflow-y-auto rounded-2xl border border-line bg-white p-5 shadow-sm">
         {messages.length === 0 && (
           <div className="flex h-full flex-col items-center justify-center gap-6 px-4 text-center">

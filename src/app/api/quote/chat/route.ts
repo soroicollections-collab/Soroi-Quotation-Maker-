@@ -93,7 +93,7 @@ export async function POST(req: Request) {
           model: process.env.ANTHROPIC_MODEL_CHAT || "claude-sonnet-5",
           max_tokens: 8000,
           system: QUOTE_AGENT_SYSTEM_PROMPT,
-          tools: allTools(userId, initials, onCall),
+          tools: allTools(userId, initials, conversation!.id, onCall),
           // eslint-disable-next-line @typescript-eslint/no-explicit-any
           messages: [...history, userMessage] as any,
           stream: true,
