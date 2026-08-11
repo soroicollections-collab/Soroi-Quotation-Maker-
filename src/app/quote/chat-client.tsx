@@ -186,11 +186,10 @@ export function QuoteChat({
           const isNewConversation = !conversationIdRef.current;
           conversationIdRef.current = id;
           if (isNewConversation) {
-            // Cosmetic URL sync only (no navigation/remount, which would tear down this
-            // in-flight stream) - router.refresh() re-fetches the sidebar's server data
-            // while explicitly preserving client state, so it's safe mid-stream too.
+            // URL bar sync only - a raw history API call, not Next's router, so it can't
+            // trigger a re-render/remount of this component mid-stream (see the note on
+            // router.refresh() below for why that distinction matters here).
             window.history.replaceState(null, "", `/quote/${id}`);
-            router.refresh();
           }
         } else if (event === "text") {
           const delta = (data as { delta: string }).delta;
@@ -200,7 +199,6 @@ export function QuoteChat({
         } else if (event === "quote_ready") {
           const quote = data as QuoteReady;
           setFinalizedQuote(quote);
-          router.refresh();
         } else if (event === "error") {
           const msg = (data as { message: string }).message;
           setMessages((prev) =>
@@ -218,6 +216,16 @@ export function QuoteChat({
       );
     } finally {
       setSending(false);
+      // Sync the sidebar (new conversation title, quote-finalized dot) now that the
+      // exchange has fully settled. Calling this mid-stream instead (as an earlier
+      // version of this code did) re-fetches this route's server data while the SSE
+      // read loop above is still running - React re-renders this component from that
+      // fresh server payload, which at that point still only reflects the just-sent
+      // user message, silently discarding the in-progress assistant bubble and any
+      // further "text"/"quote_ready" events, since they were meant for a state setter
+      // that's no longer attached to what's on screen. Refreshing only after the loop
+      // finishes avoids stepping on the stream while it's live.
+      router.refresh();
     }
   }
 
