@@ -73,7 +73,7 @@ function TypingIndicator() {
  * there's nothing stale to worry about here even though nothing is cached client-side. */
 function QuoteDownloadBar({ quote }: { quote: QuoteReady }) {
   return (
-    <div className="flex flex-wrap items-center justify-between gap-3 rounded-2xl border border-gold bg-earth px-5 py-3.5 shadow-sm">
+    <div className="flex flex-wrap items-center justify-between gap-3 rounded-2xl border border-gold bg-earth px-4 py-3 shadow-sm md:px-5 md:py-3.5">
       <div>
         <div className="text-[10px] font-semibold uppercase tracking-[0.2em] text-gold">Quote Ready</div>
         <div className="mt-0.5 font-heading text-base text-white">{quote.quoteId}</div>
@@ -231,7 +231,7 @@ export function QuoteChat({
 
   return (
     <div className="flex flex-1 flex-col gap-3 overflow-hidden">
-      <div ref={scrollRef} className="flex-1 space-y-5 overflow-y-auto rounded-2xl border border-line bg-white p-5 shadow-sm">
+      <div ref={scrollRef} className="flex-1 space-y-5 overflow-y-auto rounded-2xl border border-line bg-white p-3 shadow-sm md:p-5">
         {messages.length === 0 && (
           <div className="flex h-full flex-col items-center justify-center gap-6 px-4 text-center">
             {/* eslint-disable-next-line @next/next/no-img-element -- see app-header.tsx */}
@@ -278,7 +278,7 @@ export function QuoteChat({
         <button
           type="submit"
           disabled={sending || !input.trim()}
-          className="rounded-xl bg-gold-deep px-6 py-3 text-sm font-medium text-white shadow-sm transition hover:brightness-105 disabled:opacity-40"
+          className="rounded-xl bg-gold-deep px-4 py-3 text-sm font-medium text-white shadow-sm transition hover:brightness-105 disabled:opacity-40 md:px-6"
         >
           Send
         </button>

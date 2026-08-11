@@ -38,7 +38,7 @@ export default async function QuoteLayout({ children }: { children: React.ReactN
   });
 
   return (
-    <div className="mx-auto flex w-full max-w-5xl flex-1 gap-6 px-6 py-6">
+    <div className="mx-auto flex w-full max-w-5xl flex-1 flex-col gap-3 px-3 py-3 md:flex-row md:gap-6 md:px-6 md:py-6">
       <QuoteSidebar conversations={sidebarItems} />
       <main className="flex min-w-0 flex-1 flex-col">{children}</main>
     </div>
