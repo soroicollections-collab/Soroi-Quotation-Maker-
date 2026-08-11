@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Cinzel, Poppins } from "next/font/google";
 import { AuthSessionProvider } from "@/components/session-provider";
 import { AppHeader } from "@/components/app-header";
@@ -22,6 +22,15 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "Soroi Quotation Maker",
   description: "Internal quotation tool for Soroi Collection travel quotes",
+};
+
+// Without this, there's no viewport meta tag at all, so mobile browsers fall back to
+// their own default (desktop-width) viewport and render the page zoomed out - the
+// responsive breakpoints below md never actually kick in until the visitor manually
+// pinches to zoom, which is the "padding looks wrong until I zoom out" symptom.
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
