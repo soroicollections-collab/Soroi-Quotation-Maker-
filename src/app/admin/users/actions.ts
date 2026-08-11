@@ -13,7 +13,7 @@ async function requireRateManager() {
   return session;
 }
 
-export async function updateUserRole(userId: string, role: "RATE_MANAGER" | "STAFF") {
+export async function updateUserRole(userId: string, role: "RATE_MANAGER" | "RESERVATIONS" | "SALES") {
   await requireRateManager();
   await prisma.user.update({ where: { id: userId }, data: { role } });
   revalidatePath("/admin/users");
@@ -25,7 +25,8 @@ export async function createUser(formData: FormData) {
   const email = String(formData.get("email") ?? "").trim().toLowerCase();
   const name = String(formData.get("name") ?? "").trim();
   const password = String(formData.get("password") ?? "");
-  const role = formData.get("role") === "RATE_MANAGER" ? "RATE_MANAGER" : "STAFF";
+  const roleValue = formData.get("role");
+  const role = roleValue === "RATE_MANAGER" || roleValue === "SALES" ? roleValue : "RESERVATIONS";
 
   if (!email || !name || password.length < 8) {
     throw new Error("Email, name, and a password of at least 8 characters are required.");

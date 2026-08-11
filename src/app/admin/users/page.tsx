@@ -15,9 +15,10 @@ export default async function AdminUsersPage() {
     <main className="mx-auto flex w-full max-w-3xl flex-col gap-8 p-8">
       <h1 className="text-2xl font-semibold">Users &amp; roles</h1>
       <p className="text-sm text-gray-500">
-        Rate Manager can upload/publish rate updates. Staff can only use the quote chat.
-        Handing the Rate Manager role to someone else is just a dropdown change here -
-        no redeploy needed.
+        Rate Manager can upload/publish rate updates. Reservations and Sales can only use
+        the quote chat - the two are currently identical in what they can access, this is
+        just for telling accounts apart at a glance. Handing the Rate Manager role to
+        someone else is just a dropdown change here - no redeploy needed.
       </p>
 
       <table className="w-full border-collapse text-left text-sm">
@@ -47,8 +48,9 @@ export default async function AdminUsersPage() {
           <input name="name" placeholder="Full name" required className="rounded border px-3 py-2" />
           <input name="email" type="email" placeholder="Email" required className="rounded border px-3 py-2" />
           <input name="password" type="password" placeholder="Temporary password (min 8 chars)" required minLength={8} className="rounded border px-3 py-2" />
-          <select name="role" defaultValue="STAFF" className="rounded border px-3 py-2">
-            <option value="STAFF">Staff</option>
+          <select name="role" defaultValue="RESERVATIONS" className="rounded border px-3 py-2">
+            <option value="RESERVATIONS">Reservations</option>
+            <option value="SALES">Sales</option>
             <option value="RATE_MANAGER">Rate Manager</option>
           </select>
           <button type="submit" className="rounded bg-black px-3 py-2 text-white">

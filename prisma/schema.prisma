@@ -10,7 +10,8 @@ datasource db {
 
 enum Role {
   RATE_MANAGER
-  STAFF
+  RESERVATIONS
+  SALES
 }
 
 model User {
@@ -18,7 +19,7 @@ model User {
   email         String    @unique
   name          String
   passwordHash  String
-  role          Role      @default(STAFF)
+  role          Role      @default(RESERVATIONS)
   createdAt     DateTime  @default(now())
 
   accounts          Account[]
