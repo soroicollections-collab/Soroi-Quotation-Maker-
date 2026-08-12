@@ -16,6 +16,11 @@ type ChatMessage = {
   text: string;
 };
 
+type PendingChoices = {
+  question: string;
+  options: string[];
+};
+
 const SUGGESTIONS = [
   "Soroi Cheetah Tented Camp, 2 nights, 2 adults, Rack Rate, Non-Resident, check-in 2027-07-14, Ground Package, sharing.",
   "Soroi Larsens Camp, 3 nights, 2 adults and 1 child aged 8, STO 30%, Non-Resident, check-in 2027-08-20, Luxury Tents, Full Board, sharing.",
@@ -104,6 +109,30 @@ function QuoteDownloadBar({ quote }: { quote: QuoteReady }) {
   );
 }
 
+/** Clickable "quick reply" buttons for a multiple-choice question the agent just asked
+ * (see the present_choices tool). Clicking one sends its exact label as the next message,
+ * identical to the requester having typed it themselves - the agent can't tell the
+ * difference, so there's no separate answer-handling path to keep in sync. */
+function ChoiceButtons({ choices, disabled, onPick }: { choices: PendingChoices; disabled: boolean; onPick: (option: string) => void }) {
+  return (
+    <div className="ml-9 flex max-w-[85%] flex-col gap-2">
+      <div className="text-[10px] font-semibold uppercase tracking-wide text-grey">{choices.question}</div>
+      <div className="flex flex-wrap gap-2">
+        {choices.options.map((option) => (
+          <button
+            key={option}
+            disabled={disabled}
+            onClick={() => onPick(option)}
+            className="rounded-full border border-gold bg-tan-light px-3.5 py-1.5 text-xs font-medium text-earth transition hover:bg-gold hover:text-white disabled:opacity-40"
+          >
+            {option}
+          </button>
+        ))}
+      </div>
+    </div>
+  );
+}
+
 function MessageBubble({ message }: { message: ChatMessage }) {
   const isUser = message.role === "user";
   return (
@@ -153,6 +182,7 @@ export function QuoteChat({
   const router = useRouter();
   const [messages, setMessages] = useState<ChatMessage[]>(initialMessages ?? []);
   const [finalizedQuote, setFinalizedQuote] = useState<QuoteReady | null>(initialQuote ?? null);
+  const [pendingChoices, setPendingChoices] = useState<PendingChoices | null>(null);
   const [input, setInput] = useState("");
   const [sending, setSending] = useState(false);
   const conversationIdRef = useRef<string | undefined>(initialConversationId);
@@ -167,6 +197,9 @@ export function QuoteChat({
     if (!text || sending) return;
     setInput("");
     setSending(true);
+    // Whether answered by clicking a button or typing free text, the question's been
+    // answered - clear it so stale buttons can't be clicked again after the fact.
+    setPendingChoices(null);
 
     const userMsg: ChatMessage = { id: crypto.randomUUID(), role: "user", text };
     const assistantId = crypto.randomUUID();
@@ -199,6 +232,8 @@ export function QuoteChat({
         } else if (event === "quote_ready") {
           const quote = data as QuoteReady;
           setFinalizedQuote(quote);
+        } else if (event === "choices") {
+          setPendingChoices(data as PendingChoices);
         } else if (event === "error") {
           const msg = (data as { message: string }).message;
           setMessages((prev) =>
@@ -259,6 +294,7 @@ export function QuoteChat({
         {messages.map((m) => (
           <MessageBubble key={m.id} message={m} />
         ))}
+        {pendingChoices && <ChoiceButtons choices={pendingChoices} disabled={sending} onPick={(option) => send(option)} />}
       </div>
       {finalizedQuote && <QuoteDownloadBar quote={finalizedQuote} />}
       <form

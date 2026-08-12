@@ -289,6 +289,50 @@ function makeListFlexibleVariableOptionsTool(onCall: ToolCallRecorder) {
 }
 
 // ---------------------------------------------------------------------------
+// present_choices
+// ---------------------------------------------------------------------------
+
+// Purely a UI signal - the chat route (api/quote/chat/route.ts) detects calls to this tool
+// and forwards {question, options} to the browser as a "choices" SSE event, which renders
+// them as clickable buttons under the assistant's message (see chat-client.tsx). Clicking
+// one sends its exact label back as the requester's next message - no special handling
+// needed on that end, it's indistinguishable from them having typed it. This tool's `run`
+// does no real work; it exists so the option list reaches the frontend as structured data
+// instead of the model's prose being parsed for it, which would be unreliable.
+function makePresentChoicesTool(onCall: ToolCallRecorder) {
+  return betaTool({
+    name: "present_choices",
+    description:
+      "Shows the requester clickable buttons for a multiple-choice question, so they can tap an answer instead of " +
+      "typing it. Use this for any genuinely enumerable choice - tier, Nairobi/stopover hotel, meal plan, room " +
+      "category, occupancy mode, or similar - never for open-ended questions like dates, nights, or guest counts, " +
+      "which the requester should just type normally. Call this right after the text response that explains the " +
+      "question, using the exact same option labels - whichever one they click is sent back to you verbatim as " +
+      "their next message, so word each option exactly as you'd want to receive it back.",
+    inputSchema: {
+      type: "object",
+      properties: {
+        question: { type: "string", description: "Short label for what's being asked, e.g. 'Which tier applies?' - shown above the buttons." },
+        options: {
+          type: "array",
+          items: { type: "string" },
+          minItems: 2,
+          description: "Exact clickable option labels, e.g. ['Rack Rate (Non-Resident)', 'STO 30%', 'STO 40%'].",
+        },
+      },
+      required: ["question", "options"],
+      additionalProperties: false,
+    },
+    run: recordingRun("present_choices", onCall, async () => {
+      return JSON.stringify({
+        ok: true,
+        note: "Options presented to the requester as clickable buttons - the buttons themselves already make it visually obvious you're waiting for an answer, so end your turn here rather than adding a closing sentence like 'I'll wait for your selection.' Do not assume which one they'll pick.",
+      });
+    }),
+  });
+}
+
+// ---------------------------------------------------------------------------
 // list_non_soroi_rate_files / read_non_soroi_rate_file
 // ---------------------------------------------------------------------------
 
@@ -554,6 +598,7 @@ export function allTools(userId: string, preparerInitials: string, conversationI
     makeGetSoroiRateCardOptionsTool(onCall),
     makeCalculateQuoteTool(onCall),
     makeListFlexibleVariableOptionsTool(onCall),
+    makePresentChoicesTool(onCall),
     makeListNonSoroiRateFilesTool(onCall),
     makeReadNonSoroiRateFileTool(onCall),
     makeFinalizeQuoteTool(userId, preparerInitials, conversationId, onCall),

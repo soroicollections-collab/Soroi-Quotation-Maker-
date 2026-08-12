@@ -138,6 +138,17 @@ export async function POST(req: Request) {
                 // malformed tool output - let the assistant's own text response cover it
               }
             }
+
+            // Same idea as quote_ready above, but for present_choices: the useful data
+            // ({question, options}) is the tool's *input*, not its output (which is just
+            // an ack) - see tools.ts's comment on why this tool does no real work.
+            const choicesCall = pendingCalls.find((c) => c.name === "present_choices");
+            if (choicesCall) {
+              const input = choicesCall.input as { question?: unknown; options?: unknown };
+              if (typeof input.question === "string" && Array.isArray(input.options)) {
+                send("choices", { question: input.question, options: input.options });
+              }
+            }
           }
           pendingCalls = [];
 
