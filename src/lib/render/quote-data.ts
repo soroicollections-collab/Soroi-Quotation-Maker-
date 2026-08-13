@@ -73,9 +73,8 @@ export type QuoteDocumentData = {
   /** Agent PDF only - the client template never reads this field. Null when no
    * commissionPct was supplied (most quotes, until/unless a preparer confirms one). */
   commission: { pct: string; amount: string; note: string | null } | null;
-  /** For the cover page's "From {day}{suffix} {month} {year}" line - derived from the
-   * earliest checkIn across all stays (a real Date, unlike travelDatesLabel which is
-   * free text the agent composed), so it can't drift from what was actually calculated. */
+  /** For the cover page's "From {day}{suffix} {month} {year}" line - the date this
+   * quotation was created (same moment as dateIssuedLabel), not the travel date. */
   coverDate: { day: string; suffix: string; month: string; year: string };
 };
 
@@ -269,25 +268,20 @@ export async function buildQuoteDocumentData(params: {
 
   const tiers = Array.from(new Set(quoteResult.stays.map((s) => `${s.input.tier} (${s.input.residency})`)));
 
-  // Using UTC getters throughout - checkIn is a date-only value from the calculator, and
-  // reading it back with local-time getters risks a server-timezone off-by-one on the day.
-  const earliestCheckIn = quoteResult.stays.reduce<Date | null>((earliest, s) => {
-    const d = s.input.checkIn;
-    return !earliest || d.getTime() < earliest.getTime() ? d : earliest;
-  }, null);
-  const coverDate = earliestCheckIn
-    ? {
-        day: String(earliestCheckIn.getUTCDate()),
-        suffix: ordinalSuffix(earliestCheckIn.getUTCDate()),
-        month: earliestCheckIn.toLocaleDateString("en-US", { month: "long", timeZone: "UTC" }),
-        year: String(earliestCheckIn.getUTCFullYear()),
-      }
-    : { day: "", suffix: "", month: "", year: "" };
+  // One "now" reused for both dateIssuedLabel and coverDate - the cover shows the date the
+  // quotation was created (not the travel start date), so it must match the header exactly.
+  const now = new Date();
+  const coverDate = {
+    day: String(now.getDate()),
+    suffix: ordinalSuffix(now.getDate()),
+    month: now.toLocaleDateString("en-US", { month: "long" }),
+    year: String(now.getFullYear()),
+  };
 
   return {
     quoteId,
     preparerName,
-    dateIssuedLabel: new Date().toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric" }),
+    dateIssuedLabel: now.toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric" }),
     guestsSummary: content.guestsSummary,
     rateBasisLabel: tiers.join(" / "),
     durationLabel: content.durationLabel,
