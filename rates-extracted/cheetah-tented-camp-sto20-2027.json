@@ -1,0 +1,97 @@
+{
+  "$note": "Extracted from the STO 20% 2027 portal PDF (13 Aug 2026 batch, confirmed by Yasin as source of truth), refreshing/superseding the previously-reviewed-but-uncommitted batch from earlier in Aug 2026.",
+  "property": "Soroi Cheetah Tented Camp",
+  "region": "Lumo/Tsavo",
+  "tier": "STO 20%",
+  "residency": "Non-Resident",
+  "source": {
+    "file": "2027 CONTRACT RATES STO 20%.pdf (portal download, 13 Aug 2026)",
+    "validity": {
+      "start": "2027-01-04",
+      "end": "2028-01-03"
+    }
+  },
+  "seasons": {
+    "peak": {
+      "dateRanges": [
+        "1 Jul \u2013 31 Oct",
+        "20 Dec \u2013 3 Jan"
+      ]
+    },
+    "shoulder": {
+      "dateRanges": [
+        "4 Jan \u2013 30 Jun",
+        "1 Nov \u2013 19 Dec"
+      ]
+    }
+  },
+  "rates": {
+    "currency": "USD",
+    "unit": "per person per night",
+    "fullBoard": {
+      "perPerson": {
+        "peak": {
+          "rack": 400,
+          "net": 320
+        },
+        "shoulder": {
+          "rack": 330,
+          "net": 264
+        }
+      },
+      "single": {
+        "peak": {
+          "rack": 600,
+          "net": 480
+        },
+        "shoulder": {
+          "rack": 410,
+          "net": 328
+        }
+      },
+      "familyUnit": {
+        "peak": {
+          "rack": 1580,
+          "net": 1264
+        },
+        "shoulder": {
+          "rack": 1290,
+          "net": 1032
+        }
+      }
+    },
+    "groundPackage": {
+      "perPerson": {
+        "peak": {
+          "rack": 560,
+          "net": 448
+        },
+        "shoulder": {
+          "rack": 480,
+          "net": 384
+        }
+      },
+      "single": {
+        "peak": {
+          "rack": 830,
+          "net": 664
+        },
+        "shoulder": {
+          "rack": 600,
+          "net": 480
+        }
+      },
+      "familyUnit": {
+        "peak": {
+          "rack": 2210,
+          "net": 1768
+        },
+        "shoulder": {
+          "rack": 1920,
+          "net": 1536
+        }
+      }
+    }
+  },
+  "roomNote": "5 Standard Guest Tents, 2 Family Tents, 1 Quadruple."
+}

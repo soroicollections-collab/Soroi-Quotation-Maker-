@@ -1,0 +1,90 @@
+{
+  "$note": "Extracted from the 2026 Rack Rates portal PDF (13 Aug 2026 batch, confirmed by Yasin as source of truth). Numbers extracted via a validated script (cross-checked row-by-row against a manual page-by-page read) then spot-verified.",
+  "property": "Soroi Amboseli",
+  "region": "Amboseli",
+  "tier": "Rack Rate",
+  "residency": "Non-Resident",
+  "source": {
+    "file": "2026 CONTRACT RATES.pdf (portal download, 13 Aug 2026 - titled '2026 RACK RATES' internally)",
+    "validity": {
+      "start": "2026-01-04",
+      "end": "2027-01-03"
+    }
+  },
+  "seasons": {
+    "peak": {
+      "dateRanges": [
+        "1 Jul \u2013 30 Sep",
+        "20 Dec \u2013 3 Jan"
+      ]
+    },
+    "shoulder": {
+      "dateRanges": [
+        "15 Jun \u2013 30 Jun",
+        "1 Oct \u2013 19 Dec"
+      ]
+    }
+  },
+  "rates": {
+    "currency": "USD",
+    "unit": "per person per night",
+    "standardTents": {
+      "fullBoard": {
+        "perPerson": {
+          "peak": 760,
+          "shoulder": 545
+        },
+        "single": {
+          "peak": 1140,
+          "shoulder": 818
+        },
+        "familyUnit": {
+          "peak": 3040,
+          "shoulder": 2180
+        }
+      },
+      "groundPackage": {
+        "perPerson": {
+          "peak": 980,
+          "shoulder": 765
+        },
+        "single": {
+          "peak": 1470,
+          "shoulder": 1148
+        },
+        "familyUnit": {
+          "peak": 3920,
+          "shoulder": 3060
+        }
+      }
+    },
+    "deluxeSuite": {
+      "fullBoard": {
+        "perPerson": {
+          "peak": 980,
+          "shoulder": 695
+        },
+        "single": {
+          "peak": 1470,
+          "shoulder": 1043
+        }
+      },
+      "groundPackage": {
+        "perPerson": {
+          "peak": 1180,
+          "shoulder": 895
+        },
+        "single": {
+          "peak": 1770,
+          "shoulder": 1343
+        }
+      }
+    }
+  },
+  "mandatoryFees": {
+    "note": "Not yet confirmed in this document - printed as 'to be confirmed'.",
+    "amboseliNationalParkFee": "to be confirmed"
+  },
+  "roomNote": "13 Standard Tents (2 Family Tents, up to 5 persons); 1 Deluxe Suite with star bed, children below 8 not allowed.",
+  "operationalNote": "Proposed opening date 15 June 2026 - no non-resident rate coverage before this date anywhere in the 13 Aug 2026 batch."
+}

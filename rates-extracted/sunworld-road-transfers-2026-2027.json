@@ -1,0 +1,28 @@
+{
+  "$note": "Extracted from the 'BY ROAD - In Land Cruiser 4x4' table that appears identically in every one of the 17 documents in the 13 Aug 2026 portal batch (both 2026 and 2027, all STO tiers plus the standalone Rack docs) - confirmed via direct grep across all 17 extracted texts, byte-identical figures everywhere checked. Confirmed by Yasin as source of truth. This is a genuine point-to-point one-way vehicle rate, distinct from the existing per-vehicle-per-day Sunworld transport contract rate (sunworld-transport-2026.json / sunworld-transport-additional-2026.json) - see openFlags for how these two sources should be reconciled.",
+  "type": "road-transfer-point-to-point",
+  "vehicle": "Land Cruiser 4x4",
+  "currency": "USD",
+  "unit": "per vehicle, one way",
+  "source": {
+    "files": ["Present in all 17 documents of the 13 Aug 2026 portal batch (2026 and 2027, Rack + every STO tier)"],
+    "validity": { "note": "Identical figures found in both the 2026 and 2027 batches - appears to be a stable, year-independent rate, matching the existing pattern already noted for Sunworld's own per-day transport rates." }
+  },
+  "routes": [
+    { "route": "Nairobi ↔ Samburu", "drivingTime": "5 hours", "rack": 590, "net": 530 },
+    { "route": "Nairobi ↔ Mara", "drivingTime": "5-6 hours", "rack": 590, "net": 530 },
+    { "route": "Nairobi ↔ Amboseli", "drivingTime": "5 hours", "rack": 590, "net": 530 },
+    { "route": "Amboseli ↔ Lumo", "drivingTime": "5 hours", "rack": 590, "net": 530 },
+    { "route": "Nairobi ↔ Lumo", "drivingTime": "6-7 hours", "rack": 690, "net": 620 },
+    { "route": "Kilimanjaro Airport ↔ Lumo (via Taveta Border)", "drivingTime": "2-3 hours", "rack": 620, "net": 555 },
+    { "route": "Mombasa ↔ Lumo", "drivingTime": "4-5 hours", "rack": 420, "net": 375 },
+    { "route": "Malindi ↔ Lumo", "drivingTime": "4-5 hours", "rack": 450, "net": 405 },
+    { "route": "Diani ↔ Lumo", "drivingTime": "4-5 hours", "rack": 450, "net": 405 }
+  ],
+  "openFlags": [
+    "'Net' does not appear to scale with the document's own STO tier - checked several tiers (10/15/20/25/30/35/40) and the Net figure never moved from the values above, unlike accommodation rates which do discount by tier. Worth confirming with Sunworld whether this Net figure is a fixed trade rate rather than a per-tier discount.",
+    "Coverage gaps: no Mara↔Samburu direct route, no Nairobi↔Diani, and no route distinguishes Cheetah/Leopard's Lair/Lions Bluff specifically - all three share the generic 'Lumo' endpoint even though their actual driveway distances within the conservancy likely differ.",
+    "The Resident-tier document (2026 RESIDENT RACK RATES.pdf) has this exact same route/driving-time table but with NO price column at all - confirmed by rendering the actual PDF page, not just text extraction. Resident bookings have no road transfer pricing anywhere in this batch.",
+    "Reconciliation with the existing per-day Sunworld transport contract (sunworld-transport-2026.json): this table should likely become the primary source for the specific routes it covers (especially Nairobi-Mara and Nairobi-Lumo, previously only estimated via the per-day rate + an [Inference] doubling rule for dead-mileage return - see CLAUDE.md). The per-day model should remain for multi-day circuit itineraries (vehicle stays with guests the whole trip) and for routes not listed here."
+  ]
+}

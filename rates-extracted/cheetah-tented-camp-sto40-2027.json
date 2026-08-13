@@ -1,79 +1,97 @@
 {
-  "$note": "Fresh extraction, 6 Aug 2026, read directly from the property's own page (page 18 of 34) in 'Soroi - 2027 STO 40% Contract Rates.pdf', found in the newly-added local '2027 CONTRACT RATES' folder (KENYA/ACCOMODATIONS/SOROI/). Cross-checked against neighboring Lions Bluff (page 16) and Leopard's Lair (page 17) pages on the same read - no misattribution, all three properties' own headers sit directly above their own figures. A byte-different but content-identical duplicate of this source PDF exists as '40% SWS 2027.pdf' in the same folder (confirmed via page 2 text comparison) - safe to treat as the same document.",
+  "$note": "Extracted from the STO 40% 2027 portal PDF (13 Aug 2026 batch, confirmed by Yasin as source of truth), refreshing/superseding the previously-reviewed-but-uncommitted batch from earlier in Aug 2026.",
   "property": "Soroi Cheetah Tented Camp",
   "region": "Lumo/Tsavo",
   "tier": "STO 40%",
   "residency": "Non-Resident",
   "source": {
-    "file": "2027 CONTRACT RATES/KENYA/ACCOMODATIONS/SOROI/Soroi - 2027 STO 40% Contract Rates.pdf",
-    "pdfPageIndex": 17,
-    "docPrintedPageNumber": 18,
-    "validity": { "start": "2027-01-04", "end": "2028-01-03" }
-  },
-  "confidence": "confirmed-2026-08-06",
-  "extractionMethod": {
-    "note": "Read per-page via pdftotext (not a flattened whole-document dump), specifically to avoid the adjacent-property misattribution documented in CLAUDE.md's Corrections Log for this exact cluster.",
-    "misattributionCheck": {
-      "checked": true,
-      "result": "No misattribution. Cheetah's own Ground Package Per Person Peak Rack figure here is $560, matching the already-corrected figure on file - not the $525 that belongs to Leopard's Lair."
+    "file": "2027 CONTRACT RATES STO 40%.pdf (portal download, 13 Aug 2026)",
+    "validity": {
+      "start": "2027-01-04",
+      "end": "2028-01-03"
     }
   },
   "seasons": {
-    "peak": { "dateRanges": ["1 Jul – 31 Oct", "20 Dec – 3 Jan 2028"] },
-    "shoulder": { "dateRanges": ["4 Jan – 30 Jun", "1 Nov – 19 Dec"] },
-    "note": "Same two-season pattern as the Rack extraction - no Extended Green Season at this property."
+    "peak": {
+      "dateRanges": [
+        "1 Jul \u2013 31 Oct",
+        "20 Dec \u2013 3 Jan"
+      ]
+    },
+    "shoulder": {
+      "dateRanges": [
+        "4 Jan \u2013 30 Jun",
+        "1 Nov \u2013 19 Dec"
+      ]
+    }
   },
   "rates": {
     "currency": "USD",
     "unit": "per person per night",
     "fullBoard": {
       "perPerson": {
-        "peak": { "rack": 400, "net": 240 },
-        "shoulder": { "rack": 330, "net": 198 }
+        "peak": {
+          "rack": 400,
+          "net": 240
+        },
+        "shoulder": {
+          "rack": 330,
+          "net": 198
+        }
       },
       "single": {
-        "peak": { "rack": 600, "net": 360 },
-        "shoulder": { "rack": 410, "net": 246 }
+        "peak": {
+          "rack": 600,
+          "net": 360
+        },
+        "shoulder": {
+          "rack": 410,
+          "net": 246
+        }
       },
       "familyUnit": {
-        "peak": { "rack": 1580, "net": 948 },
-        "shoulder": { "rack": 1290, "net": 774 }
+        "peak": {
+          "rack": 1580,
+          "net": 948
+        },
+        "shoulder": {
+          "rack": 1290,
+          "net": 774
+        }
       }
     },
     "groundPackage": {
       "perPerson": {
-        "peak": { "rack": 560, "net": 336 },
-        "shoulder": { "rack": 480, "net": 288 }
+        "peak": {
+          "rack": 560,
+          "net": 336
+        },
+        "shoulder": {
+          "rack": 480,
+          "net": 288
+        }
       },
       "single": {
-        "peak": { "rack": 830, "net": 498 },
-        "shoulder": { "rack": 600, "net": 360 }
+        "peak": {
+          "rack": 830,
+          "net": 498
+        },
+        "shoulder": {
+          "rack": 600,
+          "net": 360
+        }
       },
       "familyUnit": {
-        "peak": { "rack": 2210, "net": 1326 },
-        "shoulder": { "rack": 1920, "net": 1152 }
+        "peak": {
+          "rack": 2210,
+          "net": 1326
+        },
+        "shoulder": {
+          "rack": 1920,
+          "net": 1152
+        }
       }
     }
   },
-  "discountRatioCheck": {
-    "note": "Net = Rack x 0.60 confirmed exactly (nearest-integer rounding) on every cell above - consistent with the STO 40% = 40%-off-rack relationship confirmed across every other Soroi property in this same document.",
-    "verified": true
-  },
-  "mandatoryFees": {
-    "note": "Excluded from package rate above. Flat rate, does not vary by season. Identical figures to the Rack extraction - fee amounts don't change by tier.",
-    "verified": true,
-    "verifiedDate": "2026-08-06",
-    "communityBedLevy": { "amount": 10, "unit": "per person per night" },
-    "conservationLevy": { "amount": 20, "unit": "per person per night" },
-    "lumoConservationFee": { "adult": 37, "child": 19, "unit": "per night" }
-  },
-  "roomNote": "5 Safari Tents, 2 Two-Bedroom Family Units, 1 Quadruple (3 Doubles and 2 Triples).",
-  "portfolioWideTerms": {
-    "note": "Applies across Soroi properties per CLAUDE.md > Portfolio-wide terms. Duplicated here for convenience - CLAUDE.md is authoritative.",
-    "childAge5to11": "50% of adult sharing rate",
-    "youngAdult12to17Sharing": "75% of adult rate",
-    "tourLeaderGuide": { "inTLTent": 175, "inGuestTent": "75% of adult single rate" },
-    "privateGuideMeals": { "amount": 50, "unit": "per day" },
-    "christmasNewYearSupplement": { "adult": 40, "child": 20, "unit": "per night" }
-  }
+  "roomNote": "5 Standard Guest Tents, 2 Family Tents, 1 Quadruple."
 }

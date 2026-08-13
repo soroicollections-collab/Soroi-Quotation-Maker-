@@ -1,0 +1,134 @@
+{
+  "$note": "Extracted from the 2026 Rack Rates portal PDF (13 Aug 2026 batch, confirmed by Yasin as source of truth). Numbers extracted via a validated script (cross-checked row-by-row against a manual page-by-page read) then spot-verified. \u26a0 Executive Villa room count/opening status is INCONSISTENT across this batch (1 villa 'TBC' in most docs, 2 villas fully priced in the STO40 doc, 'December 2026' in the Resident doc) - see report, do not sell until confirmed. Also note: Superior/Family Units Full Board Peak Per Person Net was printed as $619 in the STO10 doc (impossible, Net>Rack) - this Rack file's $450 figure is independently confirmed correct via 2 sources.",
+  "property": "Soroi Samburu Lodge",
+  "region": "Samburu",
+  "tier": "Rack Rate",
+  "residency": "Non-Resident",
+  "source": {
+    "file": "2026 CONTRACT RATES.pdf (portal download, 13 Aug 2026 - titled '2026 RACK RATES' internally)",
+    "validity": {
+      "start": "2026-01-04",
+      "end": "2027-01-03"
+    }
+  },
+  "seasons": {
+    "peak": {
+      "dateRanges": [
+        "1 Jul \u2013 30 Sep",
+        "20 Dec \u2013 3 Jan"
+      ]
+    },
+    "shoulder": {
+      "dateRanges": [
+        "4 Jan \u2013 28 Feb",
+        "1 Jun \u2013 30 Jun"
+      ]
+    },
+    "extendedGreen": {
+      "dateRanges": [
+        "1 Mar \u2013 31 May",
+        "1 Oct \u2013 19 Dec"
+      ]
+    }
+  },
+  "rates": {
+    "currency": "USD",
+    "unit": "per person per night",
+    "standard": {
+      "fullBoard": {
+        "perPerson": {
+          "peak": 388,
+          "shoulder": 350,
+          "extendedGreen": 325
+        },
+        "single": {
+          "peak": 582,
+          "shoulder": 525,
+          "extendedGreen": 406
+        }
+      },
+      "groundPackage": {
+        "perPerson": {
+          "peak": 573,
+          "shoulder": 535,
+          "extendedGreen": 510
+        },
+        "single": {
+          "peak": 860,
+          "shoulder": 803,
+          "extendedGreen": 638
+        }
+      }
+    },
+    "superiorFamilyUnits": {
+      "fullBoard": {
+        "perPerson": {
+          "peak": 450,
+          "shoulder": 413,
+          "extendedGreen": 388
+        },
+        "single": {
+          "peak": 675,
+          "shoulder": 620,
+          "extendedGreen": 484
+        },
+        "familyUnit": {
+          "peak": 1800,
+          "shoulder": 1652,
+          "extendedGreen": 1552
+        }
+      },
+      "groundPackage": {
+        "perPerson": {
+          "peak": 635,
+          "shoulder": 598,
+          "extendedGreen": 573
+        },
+        "single": {
+          "peak": 953,
+          "shoulder": 896,
+          "extendedGreen": 716
+        },
+        "familyUnit": {
+          "peak": 2540,
+          "shoulder": 2392,
+          "extendedGreen": 2292
+        }
+      }
+    },
+    "executiveVilla": {
+      "fullBoard": {
+        "perVilla": {
+          "peak": 4650,
+          "shoulder": 4313,
+          "extendedGreen": 4088
+        }
+      },
+      "groundPackage": {
+        "perVilla": {
+          "peak": 5760,
+          "shoulder": 5423,
+          "extendedGreen": 5198
+        }
+      },
+      "unit": "per villa per night"
+    }
+  },
+  "mandatoryFees": {
+    "note": "Single flat fee, confirmed on the property's own 2026 page.",
+    "tourLeaderGuide": {
+      "inTLRoom": 135,
+      "inGuestRoom": "75% of adult single rate"
+    },
+    "privateGuideMeals": {
+      "amount": 35,
+      "unit": "per day"
+    },
+    "samburuReserveFee": {
+      "adult": 85,
+      "child": 50,
+      "unit": "per night"
+    }
+  },
+  "roomNote": "Standard Twin/Double rooms; Superior Rooms/Family Units (2 triple rooms per block, up to 6 pax); 1 Executive Villa (3 bedrooms, 4-6 guests)."
+}

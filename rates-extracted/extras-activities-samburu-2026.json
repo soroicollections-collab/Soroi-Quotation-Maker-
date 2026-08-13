@@ -1,0 +1,32 @@
+{
+  "$note": "Extracted from the 'EXTRAS & ACTIVITIES' page (Samburu section), present identically in every 2026 document in the batch (verified in STO10). Not previously documented in CLAUDE.md.",
+  "region": "Samburu",
+  "validity": { "start": "2026-01-04", "end": "2027-01-03" },
+  "currency": "USD",
+  "items": [
+    { "item": "Romantic sunset dinner & Star Bed Sleepout (Soroi Larsens Camp only, min 2 adults, in-camp booking, subject to availability)", "rackAdult": 150, "netAdult": 135, "note": "no kids" },
+    { "item": "Drinks supplement (Soroi Samburu Lodge)", "rackAdult": 40, "netAdult": 35, "rackChildUnder12": 20, "netChildUnder12": 15 },
+    { "item": "Additional Camp Lunch (Larsens Camp)", "rackAdult": 50, "netAdult": 45, "rackChildUnder12": 25, "netChildUnder12": 20 },
+    { "item": "Additional Lunch (Samburu Lodge)", "rackAdult": 40, "netAdult": 35, "rackChildUnder12": 20, "netChildUnder12": 15 },
+    { "item": "Additional Packed Lunch", "rackAdult": 35, "netAdult": 30, "rackChildUnder12": 20, "netChildUnder12": 15 },
+    { "item": "Private Bush Breakfast (min 2 adults; groups above 6 get a further 10% discount)", "rackAdult": 110, "netAdult": 100, "rackChildUnder12": 55, "netChildUnder12": 50 },
+    { "item": "Private Sundowner in the park (min 2 adults)", "rackAdult": 85, "netAdult": 77, "rackChildUnder12": 43, "netChildUnder12": 39 },
+    { "item": "Private Pool Side Dinner (min 2 adults)", "rackAdult": 50, "netAdult": 45, "rackChildUnder12": 25, "netChildUnder12": 22 },
+    { "item": "Reteti Elephant Sanctuary Visit (entrance fee p.p. + vehicle)", "rackAdult": 75, "rackChildUnder12": 50, "rackVehiclePerDay": 445, "netVehiclePerDay": 400 },
+    { "item": "Cultural Village Visit (min 2 adults)", "rackAdult": 65, "netAdult": 55, "rackChildUnder12": 35, "netChildUnder12": 30 },
+    { "item": "Samburu Bush Walk (min 2 adults)", "rackAdult": 75, "netAdult": 65, "note": "no kids" },
+    { "item": "One-way Oryx/Kalama Airstrip Transfer (Full Board bookings)", "rackVehicle": 180, "netVehicle": 160 },
+    { "item": "One-way to all other Samburu Camps", "rackVehicle": 350, "netVehicle": 315 },
+    { "item": "Add-on Scheduled Game Drive (Full Board guests)", "rackAdult": 115, "netAdult": 105, "rackChildUnder12": 70, "netChildUnder12": 65 },
+    { "item": "Exclusive use of Photo Hide (24hrs, max 4 guests)", "rack": 1040 },
+    { "item": "Shared use of Photo Hide (8-hour session)", "rack": 150 },
+    { "item": "Exclusive use of open/open-sided vehicle per day - Peak", "rack": 450, "net": 405 },
+    { "item": "Exclusive use of open/open-sided vehicle per day - Shoulder/Green", "rack": 350, "net": 315 }
+  ],
+  "samburuLodgeOnly": [
+    { "item": "Boma Dinner (min 12, max 50 pax)", "rackAdult": 60, "netAdult": 50, "rackChildUnder12": 30, "netChildUnder12": 20 },
+    { "item": "Exclusive Sundowner from Sundowner Deck (min 2 adults, hot/cold appetisers + selected beverage)", "rackAdult": 50, "netAdult": 45, "rackChildUnder12": 25, "netChildUnder12": 22 },
+    { "item": "Visit to Larsens Camp Photo Hide (3hr shared, Ground Package guests, min 2 pax)", "rackAdult": 60, "netAdult": 55 },
+    { "item": "Visit to Larsens Camp Photo Hide (3hr shared, Full Board guests, min 2 pax)", "rackAdult": 120, "netAdult": 105 }
+  ]
+}

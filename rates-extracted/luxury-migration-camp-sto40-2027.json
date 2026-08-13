@@ -1,57 +1,127 @@
 {
-  "$note": "Fresh extraction, 6 Aug 2026, read directly from the property's own page (page 4 of 34) in 'Soroi - 2027 STO 40% Contract Rates.pdf' (see cheetah-tented-camp-sto40-2027.json for full provenance/duplicate-file note).",
+  "$note": "Extracted from the STO 40% 2027 portal PDF (13 Aug 2026 batch, confirmed by Yasin as source of truth), refreshing/superseding the previously-reviewed-but-uncommitted batch from earlier in Aug 2026.",
   "property": "Soroi Luxury Migration Camp",
   "region": "Maasai Mara",
   "tier": "STO 40%",
   "residency": "Non-Resident",
   "source": {
-    "file": "2027 CONTRACT RATES/KENYA/ACCOMODATIONS/SOROI/Soroi - 2027 STO 40% Contract Rates.pdf",
-    "pdfPageIndex": 3,
-    "docPrintedPageNumber": 4,
-    "validity": { "start": "2027-01-04", "end": "2028-01-03" }
+    "file": "2027 CONTRACT RATES STO 40%.pdf (portal download, 13 Aug 2026)",
+    "validity": {
+      "start": "2027-01-04",
+      "end": "2028-01-03"
+    }
   },
-  "confidence": "confirmed-2026-08-06",
   "seasons": {
-    "peak": { "dateRanges": ["1 Jul – 30 Sep", "20 Dec – 3 Jan 2028"] },
-    "shoulder": { "dateRanges": ["4 Jan – 28 Feb", "1 Jun – 30 Jun"] },
-    "extendedGreen": { "dateRanges": ["1 Mar – 31 May", "1 Oct – 19 Dec"] }
+    "peak": {
+      "dateRanges": [
+        "1 Jul \u2013 30 Sep",
+        "20 Dec \u2013 3 Jan"
+      ]
+    },
+    "shoulder": {
+      "dateRanges": [
+        "4 Jan \u2013 28 Feb",
+        "1 Jun \u2013 30 Jun"
+      ]
+    },
+    "extendedGreen": {
+      "dateRanges": [
+        "1 Mar \u2013 31 May",
+        "1 Oct \u2013 19 Dec"
+      ]
+    }
   },
   "rates": {
     "currency": "USD",
     "unit": "per person per night",
     "fullBoard": {
-      "perPerson": { "peak": { "rack": 880, "net": 528 }, "shoulder": { "rack": 750, "net": 450 }, "extendedGreen": { "rack": 630, "net": 378 } },
-      "single": { "peak": { "rack": 1320, "net": 792 }, "shoulder": { "rack": 1125, "net": 675 }, "extendedGreen": { "rack": 788, "net": 473 } },
-      "familyUnit": { "peak": { "rack": 3520, "net": 2112 }, "shoulder": { "rack": 3000, "net": 1800 }, "extendedGreen": { "rack": 2520, "net": 1512 } }
+      "perPerson": {
+        "peak": {
+          "rack": 880,
+          "net": 528
+        },
+        "shoulder": {
+          "rack": 750,
+          "net": 450
+        },
+        "extendedGreen": {
+          "rack": 630,
+          "net": 378
+        }
+      },
+      "single": {
+        "peak": {
+          "rack": 1320,
+          "net": 792
+        },
+        "shoulder": {
+          "rack": 1125,
+          "net": 675
+        },
+        "extendedGreen": {
+          "rack": 788,
+          "net": 473
+        }
+      },
+      "familyUnit": {
+        "peak": {
+          "rack": 3520,
+          "net": 2112
+        },
+        "shoulder": {
+          "rack": 3000,
+          "net": 1800
+        },
+        "extendedGreen": {
+          "rack": 2520,
+          "net": 1512
+        }
+      }
     },
     "groundPackage": {
-      "perPerson": { "peak": { "rack": 1100, "net": 660 }, "shoulder": { "rack": 970, "net": 582 }, "extendedGreen": { "rack": 850, "net": 510 } },
-      "single": { "peak": { "rack": 1650, "net": 990 }, "shoulder": { "rack": 1455, "net": 873 }, "extendedGreen": { "rack": 1063, "net": 638 } },
-      "familyUnit": { "peak": { "rack": 4400, "net": 2640 }, "shoulder": { "rack": 3880, "net": 2328 }, "extendedGreen": { "rack": 3400, "net": 2040 } }
+      "perPerson": {
+        "peak": {
+          "rack": 1100,
+          "net": 660
+        },
+        "shoulder": {
+          "rack": 970,
+          "net": 582
+        },
+        "extendedGreen": {
+          "rack": 850,
+          "net": 510
+        }
+      },
+      "single": {
+        "peak": {
+          "rack": 1650,
+          "net": 990
+        },
+        "shoulder": {
+          "rack": 1455,
+          "net": 873
+        },
+        "extendedGreen": {
+          "rack": 1063,
+          "net": 638
+        }
+      },
+      "familyUnit": {
+        "peak": {
+          "rack": 4400,
+          "net": 2640
+        },
+        "shoulder": {
+          "rack": 3880,
+          "net": 2328
+        },
+        "extendedGreen": {
+          "rack": 3400,
+          "net": 2040
+        }
+      }
     }
   },
-  "discountRatioCheck": { "note": "Net = Rack x 0.60 confirmed exactly (nearest-integer rounding) on every cell above, including the Family Unit rows.", "verified": true },
-  "mandatoryFees": {
-    "note": "Identical figures to Mara Bush Camp and Private Wing.",
-    "verified": true,
-    "verifiedDate": "2026-08-06",
-    "communityLevy": {
-      "peak": { "adult": 80, "child": 40, "unit": "per night" },
-      "shoulder": { "adult": 40, "child": 20, "unit": "per night" },
-      "extendedGreen": { "adult": 40, "child": 20, "unit": "per night" }
-    },
-    "parkFee": {
-      "janToJun": { "adult": 100, "child": 50, "unit": "per adult per 12h" },
-      "julToDec": { "adult": 200, "child": 50, "unit": "per adult per 12h" }
-    }
-  },
-  "roomNote": "8 Luxury Tents + 2 Two-Bedroom Family Units Overlooking River.",
-  "portfolioWideTerms": {
-    "childAge5to11": "50% of adult sharing rate",
-    "youngAdult12to17Sharing": "75% of adult rate",
-    "singleSupplementGreenSeason": "reduced to 25% (from 50%) - Mara properties only",
-    "tourLeaderGuide": { "inTLTent": 175, "inGuestTent": "75% of adult single rate" },
-    "privateGuideMeals": { "amount": 50, "unit": "per day" },
-    "christmasNewYearSupplement": { "adult": 40, "child": 20, "unit": "per night" }
-  }
+  "roomNote": "Single accommodation category."
 }

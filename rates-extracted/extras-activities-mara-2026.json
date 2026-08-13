@@ -1,0 +1,33 @@
+{
+  "$note": "Extracted from the 'EXTRAS & ACTIVITIES' page (Maasai Mara section), present identically in every 2026 document in the batch (verified in STO10). Not previously documented in CLAUDE.md.",
+  "region": "Maasai Mara",
+  "validity": { "start": "2026-01-04", "end": "2027-01-03" },
+  "currency": "USD",
+  "note": "Rack/Net columns present; Net figures shown here are from the STO 10% document specifically and may vary by tier - treat as illustrative, re-check against the tier actually being quoted.",
+  "perPersonPerDay": [
+    { "item": "Drinks supplement", "rackAdult": 40, "netAdult": 35, "rackChildUnder12": 20, "netChildUnder12": 15 },
+    { "item": "Additional Camp Lunch (Private Wing / Luxury Migration Camp)", "rackAdult": 50, "netAdult": 45, "rackChildUnder12": 25, "netChildUnder12": 20 },
+    { "item": "Additional Camp Lunch (Mara Bush Camp)", "rackAdult": 40, "netAdult": 35, "rackChildUnder12": 20, "netChildUnder12": 15 },
+    { "item": "Additional Packed Lunch", "rackAdult": 35, "netAdult": 30, "rackChildUnder12": 20, "netChildUnder12": 15 },
+    { "item": "Private Hippo Pool Breakfast or Lunch (min 2 adults, Private Wing only)", "rackAdult": 50, "netAdult": 45, "rackChildUnder12": 20, "netChildUnder12": 15 },
+    { "item": "Private Bush Breakfast (min 4 adults)", "rackAdult": 110, "netAdult": 99, "rackChildUnder12": 40, "netChildUnder12": 35 },
+    { "item": "Private Sundowner (min 4 adults)", "rackAdult": 60, "netAdult": 55, "rackChildUnder12": 30, "netChildUnder12": 25 },
+    { "item": "Out of Africa Sunset Experience (min 4 adults)", "rackAdult": 100, "netAdult": 90, "rackChildUnder12": 40, "netChildUnder12": 35 },
+    { "item": "Private Bush Dinner (min 4 adults)", "rackAdult": 90, "netAdult": 80, "rackChildUnder12": 45, "netChildUnder12": 40 },
+    { "item": "Add-on Scheduled Game Drive (Full Board guests)", "rackAdult": 115, "netAdult": 105, "rackChildUnder12": 70, "netChildUnder12": 65 }
+  ],
+  "exclusiveVehiclePerDay": {
+    "peak": { "rack": 450, "net": 405 },
+    "shoulderGreen": { "rack": 350, "net": 315 }
+  },
+  "activitiesAndTransfers": [
+    { "item": "Cultural Village Visit (min 2 adults, GP bookings only)", "rackAdult": 70, "netAdult": 60, "rackChild": 35, "netChild": 30 },
+    { "item": "Hot Air Ballooning (min 1 adult)", "rackAdult": 550, "netAdult": 495, "note": "Children: min 8 years and 120cm height, on request" },
+    { "item": "Ol Malaika Trust Visit (full day incl. packed lunch, min 2 adults)", "rack": 145, "net": "charitable excursion, not commissionable" },
+    { "item": "Guided Bush Walk (min 2 adults)", "rackAdult": 80, "netAdult": 70, "note": "no kids" },
+    { "item": "Mara Bush School Adventure (min 3 children, per 3 nights, NOT available Peak)", "rackChild": null, "netChild": 110 },
+    { "item": "One-way Olkiombo Airstrip Transfer (Full Board bookings)", "rackPerVehicle": 60, "netPerVehicle": 55 },
+    { "item": "One-way Talek Gate Transfer", "rackPerVehicle": 130, "netPerVehicle": 120 },
+    { "item": "One-way Sekenani Gate Transfer", "rackPerVehicle": 220, "netPerVehicle": 200 }
+  ]
+}

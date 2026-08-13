@@ -1,0 +1,97 @@
+{
+  "$note": "Extracted from the STO 15% 2026 portal PDF (13 Aug 2026 batch, confirmed by Yasin as source of truth). Extracted via a validated script, cross-checked against a systematic Net/Rack ratio scan across the whole batch (only the 2 already-known/flagged anomalies found, no new ones). \u26a0 Figures identical to Leopard's Lair Cottages in this same tier - unresolved, needs Sunworld confirmation.",
+  "property": "Soroi Cheetah Tented Camp",
+  "region": "Lumo/Tsavo",
+  "tier": "STO 15%",
+  "residency": "Non-Resident",
+  "source": {
+    "file": "2026 CONTRACT RATE STO 15%.pdf (portal download, 13 Aug 2026)",
+    "validity": {
+      "start": "2026-01-04",
+      "end": "2027-01-03"
+    }
+  },
+  "seasons": {
+    "peak": {
+      "dateRanges": [
+        "1 Jul \u2013 31 Oct",
+        "20 Dec \u2013 3 Jan"
+      ]
+    },
+    "shoulder": {
+      "dateRanges": [
+        "4 Jan \u2013 30 Jun",
+        "1 Nov \u2013 19 Dec"
+      ]
+    }
+  },
+  "rates": {
+    "currency": "USD",
+    "unit": "per person per night",
+    "fullBoard": {
+      "perPerson": {
+        "peak": {
+          "rack": 375,
+          "net": 319
+        },
+        "shoulder": {
+          "rack": 305,
+          "net": 259
+        }
+      },
+      "single": {
+        "peak": {
+          "rack": 563,
+          "net": 479
+        },
+        "shoulder": {
+          "rack": 382,
+          "net": 325
+        }
+      },
+      "familyUnit": {
+        "peak": {
+          "rack": 1500,
+          "net": 1275
+        },
+        "shoulder": {
+          "rack": 1220,
+          "net": 1037
+        }
+      }
+    },
+    "groundPackage": {
+      "perPerson": {
+        "peak": {
+          "rack": 525,
+          "net": 446
+        },
+        "shoulder": {
+          "rack": 455,
+          "net": 387
+        }
+      },
+      "single": {
+        "peak": {
+          "rack": 788,
+          "net": 670
+        },
+        "shoulder": {
+          "rack": 569,
+          "net": 484
+        }
+      },
+      "familyUnit": {
+        "peak": {
+          "rack": 2100,
+          "net": 1785
+        },
+        "shoulder": {
+          "rack": 1821,
+          "net": 1548
+        }
+      }
+    }
+  },
+  "roomNote": "5 Standard Guest Tents, 2 Family Tents, 1 Quadruple."
+}

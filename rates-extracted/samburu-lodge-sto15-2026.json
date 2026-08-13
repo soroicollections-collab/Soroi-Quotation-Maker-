@@ -1,0 +1,226 @@
+{
+  "$note": "Extracted from the STO 15% 2026 portal PDF (13 Aug 2026 batch, confirmed by Yasin as source of truth). Extracted via a validated script, cross-checked against a systematic Net/Rack ratio scan across the whole batch (only the 2 already-known/flagged anomalies found, no new ones).",
+  "property": "Soroi Samburu Lodge",
+  "region": "Samburu",
+  "tier": "STO 15%",
+  "residency": "Non-Resident",
+  "source": {
+    "file": "2026 CONTRACT RATE STO 15%.pdf (portal download, 13 Aug 2026)",
+    "validity": {
+      "start": "2026-01-04",
+      "end": "2027-01-03"
+    }
+  },
+  "seasons": {
+    "peak": {
+      "dateRanges": [
+        "1 Jul \u2013 30 Sep",
+        "20 Dec \u2013 3 Jan"
+      ]
+    },
+    "shoulder": {
+      "dateRanges": [
+        "4 Jan \u2013 28 Feb",
+        "1 Jun \u2013 30 Jun"
+      ]
+    },
+    "extendedGreen": {
+      "dateRanges": [
+        "1 Mar \u2013 31 May",
+        "1 Oct \u2013 19 Dec"
+      ]
+    }
+  },
+  "rates": {
+    "currency": "USD",
+    "unit": "per person per night",
+    "standard": {
+      "fullBoard": {
+        "perPerson": {
+          "peak": {
+            "rack": 388,
+            "net": 330
+          },
+          "shoulder": {
+            "rack": 350,
+            "net": 298
+          },
+          "extendedGreen": {
+            "rack": 325,
+            "net": 276
+          }
+        },
+        "single": {
+          "peak": {
+            "rack": 582,
+            "net": 495
+          },
+          "shoulder": {
+            "rack": 525,
+            "net": 446
+          },
+          "extendedGreen": {
+            "rack": 406,
+            "net": 345
+          }
+        }
+      },
+      "groundPackage": {
+        "perPerson": {
+          "peak": {
+            "rack": 573,
+            "net": 487
+          },
+          "shoulder": {
+            "rack": 535,
+            "net": 455
+          },
+          "extendedGreen": {
+            "rack": 510,
+            "net": 434
+          }
+        },
+        "single": {
+          "peak": {
+            "rack": 860,
+            "net": 731
+          },
+          "shoulder": {
+            "rack": 803,
+            "net": 683
+          },
+          "extendedGreen": {
+            "rack": 638,
+            "net": 542
+          }
+        }
+      }
+    },
+    "superiorFamilyUnits": {
+      "fullBoard": {
+        "perPerson": {
+          "peak": {
+            "rack": 450,
+            "net": 383
+          },
+          "shoulder": {
+            "rack": 413,
+            "net": 351
+          },
+          "extendedGreen": {
+            "rack": 388,
+            "net": 330
+          }
+        },
+        "single": {
+          "peak": {
+            "rack": 675,
+            "net": 574
+          },
+          "shoulder": {
+            "rack": 620,
+            "net": 526
+          },
+          "extendedGreen": {
+            "rack": 484,
+            "net": 411
+          }
+        },
+        "familyUnit": {
+          "peak": {
+            "rack": 1800,
+            "net": 1530
+          },
+          "shoulder": {
+            "rack": 1652,
+            "net": 1404
+          },
+          "extendedGreen": {
+            "rack": 1552,
+            "net": 1319
+          }
+        }
+      },
+      "groundPackage": {
+        "perPerson": {
+          "peak": {
+            "rack": 635,
+            "net": 540
+          },
+          "shoulder": {
+            "rack": 598,
+            "net": 508
+          },
+          "extendedGreen": {
+            "rack": 573,
+            "net": 487
+          }
+        },
+        "single": {
+          "peak": {
+            "rack": 953,
+            "net": 810
+          },
+          "shoulder": {
+            "rack": 896,
+            "net": 762
+          },
+          "extendedGreen": {
+            "rack": 716,
+            "net": 609
+          }
+        },
+        "familyUnit": {
+          "peak": {
+            "rack": 2540,
+            "net": 2159
+          },
+          "shoulder": {
+            "rack": 2392,
+            "net": 2033
+          },
+          "extendedGreen": {
+            "rack": 2292,
+            "net": 1948
+          }
+        }
+      }
+    },
+    "executiveVilla": {
+      "fullBoard": {
+        "perVilla": {
+          "peak": {
+            "rack": 4650,
+            "net": 3953
+          },
+          "shoulder": {
+            "rack": 4313,
+            "net": 3666
+          },
+          "extendedGreen": {
+            "rack": 4088,
+            "net": 3475
+          }
+        }
+      },
+      "groundPackage": {
+        "perVilla": {
+          "peak": {
+            "rack": 5760,
+            "net": 4896
+          },
+          "shoulder": {
+            "rack": 5423,
+            "net": 4610
+          },
+          "extendedGreen": {
+            "rack": 5198,
+            "net": 4418
+          }
+        }
+      },
+      "unit": "per villa per night"
+    }
+  },
+  "roomNote": "Standard; Superior/Family Units; Executive Villa."
+}

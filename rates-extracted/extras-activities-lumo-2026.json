@@ -1,0 +1,36 @@
+{
+  "$note": "Extracted from the 'EXTRAS' and 'ACTIVITIES' pages (Lumo Conservancy section), present identically in every 2026 document in the batch (verified in STO10). Not previously documented in CLAUDE.md.",
+  "region": "Lumo/Tsavo",
+  "validity": { "start": "2026-01-04", "end": "2027-01-03" },
+  "currency": "USD",
+  "extras": [
+    { "item": "Drinks Supplement (Leopard's Lair or Cheetah)", "rackAdult": 40, "netAdult": 35, "rackChildUnder12": 20, "netChildUnder12": 15 },
+    { "item": "Additional Camp Lunch (Lions Bluff Lodge)", "rackAdult": 50, "netAdult": 45, "rackChildUnder12": 25, "netChildUnder12": 23 },
+    { "item": "Additional Camp Lunch (Leopard's Lair or Cheetah)", "rackAdult": 40, "netAdult": 35, "rackChildUnder12": 20, "netChildUnder12": 18 },
+    { "item": "Packed Lunch", "rackAdult": 30, "netAdult": 25, "rackChildUnder12": 15, "netChildUnder12": 13 },
+    { "item": "Private Bush Breakfast (min 2 adults)", "rackAdult": 110, "netAdult": 100, "rackChildUnder12": 55, "netChildUnder12": 50 },
+    { "item": "Private Sundowner (min 2 adults)", "rackAdult": 60, "netAdult": 55, "rackChildUnder12": 40, "netChildUnder12": 35 },
+    { "item": "Add-on Scheduled Game Drive (Full Board guests)", "rackAdult": 115, "netAdult": 105, "rackChildUnder12": 70, "netChildUnder12": 65 },
+    { "item": "Private Safari Vehicle per day - Peak", "rackVehicle": 400, "netVehicle": 360 },
+    { "item": "Private Safari Vehicle per day - Shoulder/Green", "rackVehicle": 335, "netVehicle": 300 },
+    { "item": "Use of Camp Guide (Full Board bookings)", "rackVehicle": 65 },
+    { "item": "Exclusive use of Photo Hide (24hrs, max 4 guests)", "rack": 1040 },
+    { "item": "Shared use of Photo Hide (8-hour session)", "rack": 150 }
+  ],
+  "activities": [
+    { "item": "Sunset Safari (in the park)", "netAdult": 115, "netChild": 105, "note": "min 2 adults" },
+    { "item": "Bush and Bird Walk (1-3 hours, min 2 pax)", "netAdult": 75, "note": "no kids" },
+    { "item": "Ngangau Forest (1/2 to 3/4 day)", "netAdult": 130, "netChild": 115 },
+    { "item": "Hike Vuria/Taita Hills (1/2 to 3/4 day)", "netAdult": 130, "netChild": 115 },
+    { "item": "Full day Lake Jipe (incl. packed lunch, excl. Tsavo Park Fee)", "netAdult": 170, "netChild": 150 },
+    { "item": "Full day Shetani Lava Flow & Mzima Springs (incl. packed lunch, excl. Tsavo Park Fee)", "netAdult": 200, "netChild": 180 },
+    { "item": "2hr Night Game Drive", "netAdult": 90, "netChild": 80, "note": "children below 8 at Management's discretion" },
+    { "item": "Cultural Visit of Taita Tribe (half day, min 4 pax)", "netAdult": 95, "netChild": 85 },
+    { "item": "Battlefield Tour (World War I)", "netAdult": 80, "netChild": 70 },
+    { "item": "Taita Dancers Private Performance at the Lodge", "netVehicle": 495 },
+    { "item": "One-way Taita Hills Airstrip Transfer", "netVehicle": 135 },
+    { "item": "One-way Voi Train Station Transfer", "netVehicle": 145 },
+    { "item": "One-way Taveta Border Transfer", "netVehicle": 265 },
+    { "item": "One-way Finch Hattons Airstrip Transfer", "netVehicle": 405 }
+  ]
+}

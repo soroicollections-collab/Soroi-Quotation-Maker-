@@ -1,0 +1,20 @@
+{
+  "$note": "Extracted in full from the standalone 'RESCUE. CO INSURANCE COVER.pdf' (1 page) in the 13 Aug 2026 manual-downloads batch, and cross-confirmed against clause 24 of the Terms & Conditions in every other document in the batch (identical figure). Confirmed by Yasin as source of truth. This is a sellable ancillary product, not currently offered on any quote.",
+  "product": "Rescue.co SafeTravels Cover (via Soroi Collection)",
+  "price": { "amount": 25, "currency": "USD", "unit": "per person per stay" },
+  "coverageScope": "Air evacuation to/from Nairobi only",
+  "howToOffer": "Advise the consultant when making a reservation - purchased at time of booking.",
+  "includedServices": [
+    "24/7 teleguidance",
+    "Air evacuation cover (helicopter and airplane)",
+    "Ground ambulance evacuation",
+    "Roadside assistance"
+  ],
+  "howItWorks": [
+    "Call rescue.co's 24/7 hotline to reach dispatch",
+    "Physicians/nurses provide teleguidance over the phone",
+    "If medical evacuation is required, rescue.co coordinates an aircraft (helicopter if remote/needed, otherwise airplane)",
+    "If the emergency occurs at night outside flying times, rescue.co sends a ground ambulance or nearest medical professional",
+    "For any other emergency, rescue.co coordinates an appropriate evacuation including towing or security services"
+  ]
+}

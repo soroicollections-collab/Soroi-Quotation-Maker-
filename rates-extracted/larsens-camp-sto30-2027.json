@@ -1,126 +1,191 @@
 {
-  "$note": "Fresh extraction (not derived from CLAUDE.md prose — no prior reference data existed for this property/tier). Extracted page-by-page directly from the paginated source PDF, per CLAUDE.md's adjacent-property misattribution caution, and cross-checked against the neighboring Samburu Lodge pages.",
+  "$note": "Extracted from the STO 30% 2027 portal PDF (13 Aug 2026 batch, confirmed by Yasin as source of truth), refreshing/superseding the previously-reviewed-but-uncommitted batch from earlier in Aug 2026.",
   "property": "Soroi Larsens Camp",
-  "region": "Samburu National Reserve",
+  "region": "Samburu",
   "tier": "STO 30%",
   "residency": "Non-Resident",
   "source": {
-    "file": "SOROI 2027/Soroi - 2027 STO 30% Contract Rates.pdf",
-    "pdfPageIndexes": [6, 7],
-    "docPrintedPageNumbers": [7, 8],
-    "validity": { "start": "2027-01-04", "end": "2028-01-03" }
-  },
-  "extractionMethod": {
-    "note": "Read per-page via pypdf (not a flattened whole-document text dump), specifically to avoid the adjacent-property row misattribution documented in CLAUDE.md's Corrections Log for the Cheetah/Leopard's Lair case.",
-    "misattributionCheck": {
-      "checked": true,
-      "result": "No misattribution found. Larsens Camp occupies PDF pages 7-8 (doc-printed numbers), each carrying its own 'SOROI LARSENS CAMP' header directly on the same page as its rate figures. Samburu Lodge (the true neighboring property) starts cleanly at PDF page 9 with its own 'SOROI SAMBURU LODGE' header and different room names (Standard Twin/Double/Triples). No numbers were shared or ambiguous between the two properties on direct per-page read."
+    "file": "2027 CONTRACT RATES STO 30%.pdf (portal download, 13 Aug 2026)",
+    "validity": {
+      "start": "2027-01-04",
+      "end": "2028-01-03"
     }
   },
-  "structuralFindingsVsCheetahMara": {
-    "note": "Surfaced per CLAUDE.md instruction to flag structural differences rather than force this property into the Cheetah/Mara pattern.",
-    "findings": [
-      "Larsens Camp has TWO distinct accommodation categories, each independently priced with its own Full Board and Ground Package tables: 'Luxury Tents' (12 tents + 2 Two-Bedroom Family Units) and 'Star-Bed Suites' (2 Deluxe Suites, children under 8 NOT allowed). Cheetah Tented Camp and Mara Bush Camp each had only ONE accommodation category on their Rack Rate pages. This extraction uses Luxury Tents (the base/standard category) — Star-Bed Suites is recorded separately below as an unpriced-in-this-quote upgrade option.",
-      "Mandatory fee structure is simpler and different in kind: a single 'Samburu Reserve fee' ($85/adult, $50/child per night) replaces Mara's two-part Community Levy + Park Fee and Cheetah's three-part Community Bed Levy + Conservation Levy + LUMO Conservation Fee.",
-      "This document (STO 30% Contract Rates) shows both a 'Rack' and a 'Net' column per season for every rate — Net is the STO 30%-discounted figure. Confirmed arithmetically: Net = Rack x 0.70 exactly across every cell checked (e.g. Full Board Peak Per Person: 525/750 = 0.70; Shoulder: 448/640 = 0.70). This is the first extraction to confirm the STO discount is a flat, exact percentage off Rack rather than an independently-set Net figure.",
-      "Larsens Camp's own Shoulder season date range was checked directly on its own page rather than assumed from Mara/Cheetah, per instruction. Result: it is identical to Mara Bush Camp's Shoulder dates (4 Jan-28 Feb & 1 Jun-30 Jun) — same underlying portfolio calendar, but this was verified independently for Larsens/Samburu, not assumed."
-    ]
-  },
   "seasons": {
-    "peak": { "dateRanges": ["1 Jul – 30 Sep", "20 Dec – 3 Jan 2028"] },
-    "shoulder": { "dateRanges": ["4 Jan – 28 Feb", "1 Jun – 30 Jun"], "verifiedIndependently": true },
-    "green": { "dateRanges": ["1 Mar – 31 May", "1 Oct – 19 Dec"] }
+    "peak": {
+      "dateRanges": [
+        "1 Jul \u2013 30 Sep",
+        "20 Dec \u2013 3 Jan"
+      ]
+    },
+    "shoulder": {
+      "dateRanges": [
+        "4 Jan \u2013 28 Feb",
+        "1 Jun \u2013 30 Jun"
+      ]
+    },
+    "extendedGreen": {
+      "dateRanges": [
+        "1 Mar \u2013 31 May",
+        "1 Oct \u2013 19 Dec"
+      ]
+    }
   },
-  "accommodation": {
-    "luxuryTents": {
-      "roomNote": "12 Luxury Tents + 2 Two-Bedroom Family Units. Family tent accommodates up to 4 persons (e.g. 4 adults or 2 adults + 2 children), 2 rooms with ensuite bathrooms, shared terrace.",
-      "currency": "USD",
-      "unit": "per person per night",
+  "rates": {
+    "currency": "USD",
+    "unit": "per person per night",
+    "standardTents": {
       "fullBoard": {
         "perPerson": {
-          "peak":     { "rack": 750,  "net": 525 },
-          "shoulder": { "rack": 640,  "net": 448 },
-          "green":    { "rack": 535,  "net": 375 }
+          "peak": {
+            "rack": 750,
+            "net": 525
+          },
+          "shoulder": {
+            "rack": 640,
+            "net": 448
+          },
+          "extendedGreen": {
+            "rack": 535,
+            "net": 375
+          }
         },
         "single": {
-          "peak":     { "rack": 1125, "net": 788 },
-          "shoulder": { "rack": 960,  "net": 672 },
-          "green":    { "rack": 669,  "net": 468 }
+          "peak": {
+            "rack": 1125,
+            "net": 788
+          },
+          "shoulder": {
+            "rack": 960,
+            "net": 672
+          },
+          "extendedGreen": {
+            "rack": 669,
+            "net": 468
+          }
         },
         "familyUnit": {
-          "peak":     { "rack": 3000, "net": 2100 },
-          "shoulder": { "rack": 2560, "net": 1792 },
-          "green":    { "rack": 2140, "net": 1498 }
+          "peak": {
+            "rack": 3000,
+            "net": 2100
+          },
+          "shoulder": {
+            "rack": 2560,
+            "net": 1792
+          },
+          "extendedGreen": {
+            "rack": 2140,
+            "net": 1498
+          }
         }
       },
       "groundPackage": {
         "perPerson": {
-          "peak":     { "rack": 970,  "net": 679 },
-          "shoulder": { "rack": 860,  "net": 602 },
-          "green":    { "rack": 755,  "net": 529 }
+          "peak": {
+            "rack": 970,
+            "net": 679
+          },
+          "shoulder": {
+            "rack": 860,
+            "net": 602
+          },
+          "extendedGreen": {
+            "rack": 755,
+            "net": 529
+          }
         },
         "single": {
-          "peak":     { "rack": 1455, "net": 1019 },
-          "shoulder": { "rack": 1290, "net": 903 },
-          "green":    { "rack": 944,  "net": 661 }
+          "peak": {
+            "rack": 1455,
+            "net": 1019
+          },
+          "shoulder": {
+            "rack": 1290,
+            "net": 903
+          },
+          "extendedGreen": {
+            "rack": 944,
+            "net": 661
+          }
         },
         "familyUnit": {
-          "peak":     { "rack": 3880, "net": 2716 },
-          "shoulder": { "rack": 3440, "net": 2408 },
-          "green":    { "rack": 3020, "net": 2114 }
+          "peak": {
+            "rack": 3880,
+            "net": 2716
+          },
+          "shoulder": {
+            "rack": 3440,
+            "net": 2408
+          },
+          "extendedGreen": {
+            "rack": 3020,
+            "net": 2114
+          }
         }
       }
     },
     "starBedSuites": {
-      "verifiedButNotUsedInThisQuote": true,
-      "roomNote": "Two Star-Bed Suites (Deluxe Suites). Children below 8 years NOT allowed. Access to star bed platform, outdoor shower, private plunge pool.",
-      "currency": "USD",
-      "unit": "per person per night",
       "fullBoard": {
         "perPerson": {
-          "peak":     { "rack": 970,  "net": 679 },
-          "shoulder": { "rack": 790,  "net": 553 },
-          "green":    { "rack": 655,  "net": 459 }
+          "peak": {
+            "rack": 970,
+            "net": 679
+          },
+          "shoulder": {
+            "rack": 790,
+            "net": 553
+          },
+          "extendedGreen": {
+            "rack": 655,
+            "net": 459
+          }
         },
         "single": {
-          "peak":     { "rack": 1455, "net": 1019 },
-          "shoulder": { "rack": 1185, "net": 830 },
-          "green":    { "rack": 819,  "net": 573 }
+          "peak": {
+            "rack": 1455,
+            "net": 1019
+          },
+          "shoulder": {
+            "rack": 1185,
+            "net": 830
+          },
+          "extendedGreen": {
+            "rack": 819,
+            "net": 573
+          }
         }
       },
       "groundPackage": {
         "perPerson": {
-          "peak":     { "rack": 1190, "net": 833 },
-          "shoulder": { "rack": 1010, "net": 707 },
-          "green":    { "rack": 875,  "net": 613 }
+          "peak": {
+            "rack": 1190,
+            "net": 833
+          },
+          "shoulder": {
+            "rack": 1010,
+            "net": 707
+          },
+          "extendedGreen": {
+            "rack": 875,
+            "net": 613
+          }
         },
         "single": {
-          "peak":     { "rack": 1785, "net": 1250 },
-          "shoulder": { "rack": 1515, "net": 1061 },
-          "green":    { "rack": 1094, "net": 766 }
+          "peak": {
+            "rack": 1785,
+            "net": 1250
+          },
+          "shoulder": {
+            "rack": 1515,
+            "net": 1061
+          },
+          "extendedGreen": {
+            "rack": 1094,
+            "net": 766
+          }
         }
       }
     }
   },
-  "mandatoryFees": {
-    "note": "Excluded from package rate above. Single combined fee, unlike Cheetah's 3-part levy or Mara's 2-part levy — see structuralFindingsVsCheetahMara.",
-    "verified": true,
-    "samburuReserveFee": { "adult": 85, "child": 50, "unit": "per night", "childDefinition": "under 12, per document wording" },
-    "openFlag": "The document defines the child levy rate as applying to 'child under 12' but does not separately address the 12-17 Young Adult bracket for THIS fee. Treated here as adult-rate for levy purposes (since a 14-year-old does not meet the document's own 'under 12' child definition), distinct from the accommodation rate where the Young Adult gets a 75% discount. This is an interpretation, not an explicit rule stated in the source — flag on any quote using this figure for a Young Adult."
-  },
-  "portfolioWideTerms": {
-    "note": "Confirmed present verbatim in THIS document (page 30, 'General Terms'), not assumed from the Rack file.",
-    "youngAdult12to17": {
-      "sharingWithTwoAdults": "75% of adult rate",
-      "ownTentMin2YoungAdults": "full adult rate",
-      "availability": "Available in all Soroi properties except Soroi Leopards Lair — Larsens Camp is not excluded"
-    },
-    "childAge5to11": "50% of adult rate if sharing; 75% in own tent (min. 2 children)",
-    "childUnder4Sharing": "1st child free, 2nd child 50% of adult sharing rate",
-    "tourLeaderGuide": { "inTLTent": 175, "inGuestTent": "75% of the adult single rate" },
-    "privateGuideMeals": { "amount": 50, "unit": "per day" },
-    "christmasNewYearSupplement": { "adult": 40, "child": 20, "unit": "per night" },
-    "singleRoomPolicy": "Maximum 3 singles per booking at single room rate. Additional singles charged at double rate during Peak and festive seasons.",
-    "minimumStay": "Mid & Low Seasons: 1 night. Peak Season: 2 nights (1 night on request, at Soroi's discretion)."
-  }
+  "roomNote": "Standard/Family Tents + Deluxe/Star-Bed Suites."
 }

@@ -1,0 +1,124 @@
+{
+  "$note": "Extracted from TWO 2026 portal PDFs that together cover the full year: '2026 RESIDENT RACK RATES.pdf' (04 Jan - 30 Jun, h1_janToJun) and the doc Yasin filed as 'Resident Rates 2027 Commisonable 15%.pdf' but which is titled internally '2026 RESIDENTS RACK RATES, 01 July 2026 to 03 January 2027' (h2_julToDec) - NOT a 2027 document, and the '15%' commission figure does not appear anywhere in its text (only generic eTIMS/tax boilerplate). Confirmed by Yasin as source of truth, 13 Aug 2026 batch. Currency is KES, not USD - the first Soroi property data in this project priced in a non-USD currency.",
+  "property": "Soroi Amboseli",
+  "region": "Amboseli",
+  "tier": "Resident Rack Rate",
+  "residency": "Resident",
+  "source": {
+    "files": [
+      "2026 RESIDENT RACK RATES.pdf (04 Jan - 30 Jun 2026)",
+      "Resident Rates 2027 Commisonable 15%.pdf (actually 01 Jul - 03 Jan 2027, mislabeled filename)"
+    ],
+    "validity": {
+      "start": "2026-01-04",
+      "end": "2027-01-03"
+    }
+  },
+  "rates": {
+    "currency": "KES",
+    "unit": "per person per night",
+    "standardTents": {
+      "fullBoard": {
+        "h1_janToJun": {
+          "perPerson": {
+            "shoulder": 33500
+          },
+          "single": {
+            "shoulder": 44000
+          },
+          "familyUnit": {
+            "shoulder": 134000
+          }
+        },
+        "h2_julToDec": {
+          "perPerson": {
+            "peak": 39500,
+            "shoulder": 33500
+          },
+          "single": {
+            "peak": 51000,
+            "shoulder": 44000
+          },
+          "familyUnit": {
+            "peak": 137000,
+            "shoulder": 103500
+          }
+        }
+      },
+      "groundPackage": {
+        "h1_janToJun": {
+          "perPerson": {
+            "shoulder": 45500
+          },
+          "single": {
+            "shoulder": 56000
+          },
+          "familyUnit": {
+            "shoulder": 182000
+          }
+        },
+        "h2_julToDec": {
+          "perPerson": {
+            "peak": 50500,
+            "shoulder": 45000
+          },
+          "single": {
+            "peak": 62000,
+            "shoulder": 55500
+          },
+          "familyUnit": {
+            "peak": 175500,
+            "shoulder": 139500
+          }
+        }
+      }
+    },
+    "deluxeSuite": {
+      "fullBoard": {
+        "h1_janToJun": {
+          "perPerson": {
+            "shoulder": 41500
+          },
+          "single": {
+            "shoulder": 58900
+          }
+        },
+        "h2_julToDec": {
+          "perPerson": {
+            "peak": 52500,
+            "shoulder": 39500
+          },
+          "single": {
+            "peak": 71000,
+            "shoulder": 56000
+          }
+        }
+      },
+      "groundPackage": {
+        "h1_janToJun": {
+          "perPerson": {
+            "shoulder": 58300
+          },
+          "single": {
+            "shoulder": 75700
+          }
+        },
+        "h2_julToDec": {
+          "perPerson": {
+            "peak": 63500,
+            "shoulder": 55500
+          },
+          "single": {
+            "peak": 82000,
+            "shoulder": 72000
+          }
+        }
+      }
+    }
+  },
+  "openFlags": [
+    "Road transfer table (BY ROAD) in the H1 document has routes/driving times but NO price column at all - Resident road transfers are unpriced in this batch.",
+    "Kenya's park-fee system splits 'Resident' and 'Citizen' as two distinct rates with different KES figures - this file uses the 'Resident' figures; do not conflate with 'Citizen'.",
+    "Extended Green season: Single Tent rate prints identical to Per Person sharing rate for several properties (e.g. Mara KES 23,700 = KES 23,700) - no single supplement shown, contradicting the documented 25%-reduced (not zero) Green season single supplement policy. Printed this way in the source; not corrected here."
+  ]
+}

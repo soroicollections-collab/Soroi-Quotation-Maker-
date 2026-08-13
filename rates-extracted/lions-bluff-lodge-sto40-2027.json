@@ -1,53 +1,97 @@
 {
-  "$note": "Fresh extraction, 6 Aug 2026, read directly from the property's own page (page 16 of 34) in 'Soroi - 2027 STO 40% Contract Rates.pdf' (see cheetah-tented-camp-sto40-2027.json for full provenance/duplicate-file note).",
+  "$note": "Extracted from the STO 40% 2027 portal PDF (13 Aug 2026 batch, confirmed by Yasin as source of truth), refreshing/superseding the previously-reviewed-but-uncommitted batch from earlier in Aug 2026.",
   "property": "Soroi Lions Bluff Lodge",
   "region": "Lumo/Tsavo",
   "tier": "STO 40%",
   "residency": "Non-Resident",
   "source": {
-    "file": "2027 CONTRACT RATES/KENYA/ACCOMODATIONS/SOROI/Soroi - 2027 STO 40% Contract Rates.pdf",
-    "pdfPageIndex": 15,
-    "docPrintedPageNumber": 16,
-    "validity": { "start": "2027-01-04", "end": "2028-01-03" }
-  },
-  "confidence": "confirmed-2026-08-06",
-  "extractionMethod": {
-    "note": "Read per-page via pdftotext, cross-checked against neighboring Leopard's Lair (page 17) and Cheetah (page 18).",
-    "misattributionCheck": { "checked": true, "result": "No misattribution - figures noticeably higher than Leopard's Lair/Cheetah, consistent with the Rack-tier extraction's own note that this is the most upscale property in the cluster." }
+    "file": "2027 CONTRACT RATES STO 40%.pdf (portal download, 13 Aug 2026)",
+    "validity": {
+      "start": "2027-01-04",
+      "end": "2028-01-03"
+    }
   },
   "seasons": {
-    "peak": { "dateRanges": ["1 Jul – 31 Oct", "20 Dec – 3 Jan 2028"] },
-    "shoulder": { "dateRanges": ["4 Jan – 30 Jun", "1 Nov – 19 Dec"] }
+    "peak": {
+      "dateRanges": [
+        "1 Jul \u2013 31 Oct",
+        "20 Dec \u2013 3 Jan"
+      ]
+    },
+    "shoulder": {
+      "dateRanges": [
+        "4 Jan \u2013 30 Jun",
+        "1 Nov \u2013 19 Dec"
+      ]
+    }
   },
   "rates": {
     "currency": "USD",
     "unit": "per person per night",
     "fullBoard": {
-      "perPerson": { "peak": { "rack": 1035, "net": 621 }, "shoulder": { "rack": 875, "net": 525 } },
-      "single": { "peak": { "rack": 1553, "net": 932 }, "shoulder": { "rack": 1094, "net": 656 } },
-      "familyUnit": { "peak": { "rack": 4140, "net": 2484 }, "shoulder": { "rack": 3500, "net": 2100 } }
+      "perPerson": {
+        "peak": {
+          "rack": 1035,
+          "net": 621
+        },
+        "shoulder": {
+          "rack": 875,
+          "net": 525
+        }
+      },
+      "single": {
+        "peak": {
+          "rack": 1553,
+          "net": 932
+        },
+        "shoulder": {
+          "rack": 1094,
+          "net": 656
+        }
+      },
+      "familyUnit": {
+        "peak": {
+          "rack": 4140,
+          "net": 2484
+        },
+        "shoulder": {
+          "rack": 3500,
+          "net": 2100
+        }
+      }
     },
     "groundPackage": {
-      "perPerson": { "peak": { "rack": 1235, "net": 741 }, "shoulder": { "rack": 1075, "net": 645 } },
-      "single": { "peak": { "rack": 1853, "net": 1112 }, "shoulder": { "rack": 1344, "net": 806 } },
-      "familyUnit": { "peak": { "rack": 4940, "net": 2964 }, "shoulder": { "rack": 4300, "net": 2580 } }
+      "perPerson": {
+        "peak": {
+          "rack": 1235,
+          "net": 741
+        },
+        "shoulder": {
+          "rack": 1075,
+          "net": 645
+        }
+      },
+      "single": {
+        "peak": {
+          "rack": 1853,
+          "net": 1112
+        },
+        "shoulder": {
+          "rack": 1344,
+          "net": 806
+        }
+      },
+      "familyUnit": {
+        "peak": {
+          "rack": 4940,
+          "net": 2964
+        },
+        "shoulder": {
+          "rack": 4300,
+          "net": 2580
+        }
+      }
     }
   },
-  "discountRatioCheck": { "note": "Net = Rack x 0.60 confirmed exactly (nearest-integer rounding) on every cell above.", "verified": true },
-  "mandatoryFees": {
-    "note": "Identical figures to Leopard's Lair and Cheetah's mandatory fees - shared Lumo Conservancy fee, not property-specific. Flat rate, unaffected by tier.",
-    "verified": true,
-    "verifiedDate": "2026-08-06",
-    "communityBedLevy": { "amount": 10, "unit": "per person per night" },
-    "conservationLevy": { "amount": 20, "unit": "per person per night" },
-    "lumoConservationFee": { "adult": 37, "child": 19, "unit": "per night" }
-  },
-  "roomNote": "9 Luxury Suites & 2 Two-Bedroom Family Units. Room 2 of the Family Unit can accommodate an additional child.",
-  "portfolioWideTerms": {
-    "childAge5to11": "50% of adult sharing rate",
-    "youngAdult12to17Sharing": "75% of adult rate",
-    "tourLeaderGuide": { "inTLTent": 175, "inGuestTent": "75% of adult single rate" },
-    "privateGuideMeals": { "amount": 50, "unit": "per day" },
-    "christmasNewYearSupplement": { "adult": 40, "child": 20, "unit": "per night" }
-  }
+  "roomNote": "9 Luxury Suites & 2 Family Rooms."
 }

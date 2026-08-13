@@ -1,0 +1,145 @@
+{
+  "$note": "Extracted from the STO 25% 2026 portal PDF (13 Aug 2026 batch, confirmed by Yasin as source of truth). Extracted via a validated script, cross-checked against a systematic Net/Rack ratio scan across the whole batch (only the 2 already-known/flagged anomalies found, no new ones). Proposed opening date 15 June 2026 - no coverage before this date.",
+  "property": "Soroi Amboseli",
+  "region": "Amboseli",
+  "tier": "STO 25%",
+  "residency": "Non-Resident",
+  "source": {
+    "file": "2026 CONTRACT RATE STO 25%.pdf (portal download, 13 Aug 2026)",
+    "validity": {
+      "start": "2026-01-04",
+      "end": "2027-01-03"
+    }
+  },
+  "seasons": {
+    "peak": {
+      "dateRanges": [
+        "1 Jul \u2013 30 Sep",
+        "20 Dec \u2013 3 Jan"
+      ]
+    },
+    "shoulder": {
+      "dateRanges": [
+        "15 Jun \u2013 30 Jun",
+        "1 Oct \u2013 19 Dec"
+      ]
+    }
+  },
+  "rates": {
+    "currency": "USD",
+    "unit": "per person per night",
+    "standardTents": {
+      "fullBoard": {
+        "perPerson": {
+          "peak": {
+            "rack": 760,
+            "net": 570
+          },
+          "shoulder": {
+            "rack": 545,
+            "net": 409
+          }
+        },
+        "single": {
+          "peak": {
+            "rack": 1140,
+            "net": 855
+          },
+          "shoulder": {
+            "rack": 818,
+            "net": 613
+          }
+        },
+        "familyUnit": {
+          "peak": {
+            "rack": 3040,
+            "net": 2280
+          },
+          "shoulder": {
+            "rack": 2180,
+            "net": 1635
+          }
+        }
+      },
+      "groundPackage": {
+        "perPerson": {
+          "peak": {
+            "rack": 980,
+            "net": 735
+          },
+          "shoulder": {
+            "rack": 765,
+            "net": 574
+          }
+        },
+        "single": {
+          "peak": {
+            "rack": 1470,
+            "net": 1102
+          },
+          "shoulder": {
+            "rack": 1148,
+            "net": 861
+          }
+        },
+        "familyUnit": {
+          "peak": {
+            "rack": 3920,
+            "net": 2940
+          },
+          "shoulder": {
+            "rack": 3060,
+            "net": 2295
+          }
+        }
+      }
+    },
+    "deluxeSuite": {
+      "fullBoard": {
+        "perPerson": {
+          "peak": {
+            "rack": 980,
+            "net": 735
+          },
+          "shoulder": {
+            "rack": 695,
+            "net": 521
+          }
+        },
+        "single": {
+          "peak": {
+            "rack": 1470,
+            "net": 1103
+          },
+          "shoulder": {
+            "rack": 1043,
+            "net": 782
+          }
+        }
+      },
+      "groundPackage": {
+        "perPerson": {
+          "peak": {
+            "rack": 1180,
+            "net": 885
+          },
+          "shoulder": {
+            "rack": 895,
+            "net": 671
+          }
+        },
+        "single": {
+          "peak": {
+            "rack": 1770,
+            "net": 1328
+          },
+          "shoulder": {
+            "rack": 1343,
+            "net": 1007
+          }
+        }
+      }
+    }
+  },
+  "roomNote": "Standard Tents + Deluxe Suite."
+}

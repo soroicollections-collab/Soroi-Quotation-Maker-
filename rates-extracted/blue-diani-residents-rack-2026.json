@@ -1,0 +1,58 @@
+{
+  "$note": "Extracted from the two 2026 Resident portal PDFs (see other Resident files for full source note). Diani has a distinct layout (per-room-type rows: 'Per Person sharing' / 'Single Room') rather than the Full Board/Ground Package block structure used inland - matches its non-resident structure (Half Board base, 4 room categories, no Ground Package concept).",
+  "property": "Soroi Blue",
+  "region": "Diani Beach",
+  "tier": "Resident Rack Rate",
+  "residency": "Resident",
+  "source": {
+    "files": [
+      "2026 RESIDENT RACK RATES.pdf (h1, 1 Jun - 30 Jun 2026 only - proposed opening 1 Jun 2026)",
+      "Resident Rates 2027 Commisonable 15%.pdf (h2, actually 2026 H2, mislabeled filename)"
+    ],
+    "validity": {
+      "start": "2026-06-01",
+      "end": "2027-01-03"
+    }
+  },
+  "rates": {
+    "currency": "KES",
+    "unit": "per person per night",
+    "basis": "Half Board",
+    "h1_junOnly": {
+      "Garden View": {
+        "perPerson": 25200,
+        "single": 37900
+      },
+      "Ocean View": {
+        "perPerson": 26700,
+        "single": 40000
+      },
+      "Junior Suite": {
+        "perPerson": 31400,
+        "single": 47000
+      },
+      "Executive Suite": {
+        "perPerson": 35900,
+        "single": 53900
+      }
+    },
+    "h2_julToDec": {
+      "Garden View": {
+        "perPerson": 45400,
+        "single": 68100
+      },
+      "Ocean View": {
+        "perPerson": 47300,
+        "single": 70900
+      },
+      "Junior Suite": {
+        "perPerson": 53800,
+        "single": 90000
+      }
+    }
+  },
+  "openFlags": [
+    "H1 only covers 1-30 June 2026 (property's own proposed opening date) - no Resident rate exists for Jan-May 2026.",
+    "Source PDF has a typo: Executive Suite Single Room H1 printed as 'KES 53.900' (period, not comma) - read as 53,900, consistent with the comma-formatted figure elsewhere. Flagging in case the source intended a decimal (KES 53.90, implausible) rather than a typo."
+  ]
+}

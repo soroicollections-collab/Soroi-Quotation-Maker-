@@ -1,0 +1,97 @@
+{
+  "$note": "Extracted from the STO 40% 2026 portal PDF (13 Aug 2026 batch, confirmed by Yasin as source of truth). Extracted via a validated script, cross-checked against a systematic Net/Rack ratio scan across the whole batch (only the 2 already-known/flagged anomalies found, no new ones). Proposed opening date 1 June 2026 - no coverage before this date.",
+  "property": "Soroi Blue",
+  "region": "Diani Beach",
+  "tier": "STO 40%",
+  "residency": "Non-Resident",
+  "source": {
+    "file": "2026 CONTRACT RATE STO 40%.pdf (portal download, 13 Aug 2026)",
+    "validity": {
+      "start": "2026-01-04",
+      "end": "2027-01-03"
+    }
+  },
+  "seasons": {
+    "peak": {
+      "dateRanges": [
+        "20 Dec \u2013 3 Jan"
+      ]
+    },
+    "shoulder": {
+      "dateRanges": [
+        "1 Jun \u2013 31 Oct"
+      ]
+    },
+    "green": {
+      "dateRanges": [
+        "15 Feb \u2013 31 Mar",
+        "1 Apr \u2013 31 May",
+        "1 Nov \u2013 19 Dec"
+      ]
+    }
+  },
+  "rates": {
+    "currency": "USD",
+    "unit": "per person per night",
+    "halfBoard": {
+      "Garden View": {
+        "peak": {
+          "rack": 595,
+          "net": 357
+        },
+        "shoulder": {
+          "rack": 365,
+          "net": 219
+        },
+        "green": {
+          "rack": 215,
+          "net": 129
+        }
+      },
+      "Ocean View": {
+        "peak": {
+          "rack": 610,
+          "net": 366
+        },
+        "shoulder": {
+          "rack": 410,
+          "net": 246
+        },
+        "green": {
+          "rack": 246,
+          "net": 148
+        }
+      },
+      "Junior Suite": {
+        "peak": {
+          "rack": 675,
+          "net": 405
+        },
+        "shoulder": {
+          "rack": 490,
+          "net": 294
+        },
+        "green": {
+          "rack": 355,
+          "net": 213
+        }
+      },
+      "Executive Suite": {
+        "peak": {
+          "rack": 761,
+          "net": 457
+        },
+        "shoulder": {
+          "rack": 577,
+          "net": 346
+        },
+        "green": {
+          "rack": 440,
+          "net": 264
+        }
+      },
+      "single": []
+    }
+  },
+  "roomNote": "4 room categories (Garden/Ocean/Junior/Executive)."
+}

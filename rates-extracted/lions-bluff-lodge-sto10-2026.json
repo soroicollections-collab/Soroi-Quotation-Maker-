@@ -1,0 +1,97 @@
+{
+  "$note": "Extracted from the STO 10% 2026 portal PDF (13 Aug 2026 batch, confirmed by Yasin as source of truth). Extracted via a validated script, cross-checked against a systematic Net/Rack ratio scan across the whole batch (only the 2 already-known/flagged anomalies found, no new ones).",
+  "property": "Soroi Lions Bluff Lodge",
+  "region": "Lumo/Tsavo",
+  "tier": "STO 10%",
+  "residency": "Non-Resident",
+  "source": {
+    "file": "2026 CONTRACT RATE STO 10%.pdf (portal download, 13 Aug 2026)",
+    "validity": {
+      "start": "2026-01-04",
+      "end": "2027-01-03"
+    }
+  },
+  "seasons": {
+    "peak": {
+      "dateRanges": [
+        "1 Jul \u2013 31 Oct",
+        "20 Dec \u2013 3 Jan"
+      ]
+    },
+    "shoulder": {
+      "dateRanges": [
+        "4 Jan \u2013 30 Jun",
+        "1 Nov \u2013 19 Dec"
+      ]
+    }
+  },
+  "rates": {
+    "currency": "USD",
+    "unit": "per person per night",
+    "fullBoard": {
+      "perPerson": {
+        "peak": {
+          "rack": 1035,
+          "net": 932
+        },
+        "shoulder": {
+          "rack": 875,
+          "net": 788
+        }
+      },
+      "single": {
+        "peak": {
+          "rack": 1553,
+          "net": 1398
+        },
+        "shoulder": {
+          "rack": 1094,
+          "net": 985
+        }
+      },
+      "familyUnit": {
+        "peak": {
+          "rack": 4140,
+          "net": 3726
+        },
+        "shoulder": {
+          "rack": 3500,
+          "net": 3150
+        }
+      }
+    },
+    "groundPackage": {
+      "perPerson": {
+        "peak": {
+          "rack": 1235,
+          "net": 1112
+        },
+        "shoulder": {
+          "rack": 1075,
+          "net": 968
+        }
+      },
+      "single": {
+        "peak": {
+          "rack": 1853,
+          "net": 1668
+        },
+        "shoulder": {
+          "rack": 1344,
+          "net": 1210
+        }
+      },
+      "familyUnit": {
+        "peak": {
+          "rack": 4940,
+          "net": 4446
+        },
+        "shoulder": {
+          "rack": 4300,
+          "net": 3870
+        }
+      }
+    }
+  },
+  "roomNote": "9 Luxury Suites & 2 Family Rooms."
+}

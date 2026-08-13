@@ -1,67 +1,80 @@
 {
-  "$note": "Re-verified 5 Aug 2026 via fresh page-by-page read of the source PDF (page index 17), as part of extracting the remaining Soroi properties. This superseded the 4 Aug 2026 version, which had carried over an unverified Conservation Levy figure that turned out to be wrong. See CLAUDE.md Corrections Log, 5 Aug 2026 entry.",
+  "$note": "Extracted from the Rack Rate 2027 portal PDF (13 Aug 2026 batch, confirmed by Yasin as source of truth), refreshing/superseding the previously-reviewed-but-uncommitted batch from earlier in Aug 2026.",
   "property": "Soroi Cheetah Tented Camp",
   "region": "Lumo/Tsavo",
   "tier": "Rack Rate",
   "residency": "Non-Resident",
   "source": {
-    "file": "SOROI 2027/Soroi - 2027 RACK Rates.pdf",
-    "pdfPageIndex": 17,
-    "docPrintedPageNumber": 18,
-    "validity": { "start": "2027-01-04", "end": "2028-01-03" }
-  },
-  "confidence": "confirmed-2026-08-05",
-  "extractionMethod": {
-    "note": "Read directly from the property's own page (per-page pypdf extraction, not a flattened dump), cross-checked against neighboring Lions Bluff (page 15) and Leopard's Lair (page 16) pages.",
-    "misattributionCheck": {
-      "checked": true,
-      "result": "No misattribution. Confirms the root cause already on file in the Corrections Log: Leopard's Lair Cottages' own Ground Package Per Person Peak rate is exactly $525 — the same figure originally misattributed to Cheetah. Seeing both properties' real pages side-by-side today removes any doubt about which figure belongs to which property."
+    "file": "2027 CONTRACT RATES Rack Rate.pdf (portal download, 13 Aug 2026)",
+    "validity": {
+      "start": "2027-01-04",
+      "end": "2028-01-03"
     }
   },
-  "openFlags": [
-    "These figures come from the 2027 rate document. No 2026 non-resident Rack file exists in the SharePoint archive to confirm directly. Using the 2027 figure for a 2026 quote is an inference (supported by Mara Bush Camp showing zero change between years) — not proven for Cheetah specifically."
-  ],
   "seasons": {
-    "peak": { "dateRanges": ["1 Jul – 31 Oct", "20 Dec – 3 Jan"] },
-    "shoulder": { "dateRanges": ["4 Jan – 30 Jun", "1 Nov – 19 Dec"] },
-    "note": "Only two seasons at this property (Peak/Shoulder) — no Extended Green Season, unlike the Maasai Mara properties."
+    "peak": {
+      "dateRanges": [
+        "1 Jul \u2013 31 Oct",
+        "20 Dec \u2013 3 Jan"
+      ]
+    },
+    "shoulder": {
+      "dateRanges": [
+        "4 Jan \u2013 30 Jun",
+        "1 Nov \u2013 19 Dec"
+      ]
+    }
   },
   "rates": {
     "currency": "USD",
     "unit": "per person per night",
     "fullBoard": {
-      "perPerson": { "peak": 400, "shoulder": 330 },
-      "single": { "peak": 600, "shoulder": 410 },
-      "familyUnit": { "peak": 1580, "shoulder": 1290 }
+      "perPerson": {
+        "peak": 400,
+        "shoulder": 330
+      },
+      "single": {
+        "peak": 600,
+        "shoulder": 410
+      },
+      "familyUnit": {
+        "peak": 1580,
+        "shoulder": 1290
+      }
     },
     "groundPackage": {
-      "perPerson": { "peak": 560, "shoulder": 480 },
-      "single": { "peak": 830, "shoulder": 600 },
-      "familyUnit": { "peak": 2210, "shoulder": 1920 }
+      "perPerson": {
+        "peak": 560,
+        "shoulder": 480
+      },
+      "single": {
+        "peak": 830,
+        "shoulder": 600
+      },
+      "familyUnit": {
+        "peak": 2210,
+        "shoulder": 1920
+      }
     }
   },
+  "roomNote": "5 Standard Guest Tents, 2 Family Tents, 1 Quadruple.",
   "mandatoryFees": {
     "note": "Excluded from package rate above. Flat rate, does not vary by season.",
     "verified": true,
     "verifiedDate": "2026-08-05",
-    "communityBedLevy": { "amount": 10, "unit": "per person per night" },
-    "conservationLevy": { "amount": 20, "unit": "per person per night", "correctionNote": "CORRECTED 5 Aug 2026 — previously recorded as $10, source clearly states $20. See Corrections Log." },
-    "lumoConservationFee": { "adult": 37, "child": 19, "unit": "per night" }
-  },
-  "roomNote": "5 Safari Tents, 2 Two-Bedroom Family Units, 1 Quadruple (3 Doubles and 2 Triples).",
-  "portfolioWideTerms": {
-    "note": "Applies across Soroi properties per CLAUDE.md > Portfolio-wide terms. Duplicated here for convenience — CLAUDE.md is authoritative.",
-    "childAge5to11": "50% of adult sharing rate",
-    "childUnder4": "free (sharing)",
-    "youngAdult12to17Sharing": "75% of adult rate",
-    "tourLeaderGuide": { "inTLTent": 175, "inGuestTent": "75% of adult single rate" },
-    "privateGuideMeals": { "amount": 50, "unit": "per day" },
-    "circuitLongStayDiscount": [
-      { "minNights": 6, "discountPct": 12 },
-      { "minNights": 9, "discountPct": 15 },
-      { "minNights": 12, "discountPct": 20 }
-    ],
-    "circuitDiscountExcludes": "festive periods",
-    "christmasNewYearSupplement": { "adult": 40, "child": 20, "unit": "per night" }
+    "communityBedLevy": {
+      "amount": 10,
+      "unit": "per person per night"
+    },
+    "conservationLevy": {
+      "amount": 20,
+      "unit": "per person per night",
+      "correctionNote": "CORRECTED 5 Aug 2026 \u2014 previously recorded as $10, source clearly states $20. See Corrections Log."
+    },
+    "lumoConservationFee": {
+      "adult": 37,
+      "child": 19,
+      "unit": "per night"
+    }
   }
 }

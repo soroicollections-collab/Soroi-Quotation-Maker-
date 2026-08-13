@@ -857,6 +857,111 @@ function loadBlueDianiSto40(): RateCardSeed {
 }
 
 // ---------------------------------------------------------------------------
+// 13 Aug 2026 batch: full 2026 Rack+STO ladder (10/15/20/25/30/35/40) and a
+// refreshed 2027 Rack+STO ladder (15/20/25/30/35/40), extracted from a fresh
+// portal download confirmed by Yasin as source of truth. Every file in this
+// batch uses ONE consistent top-level key ("rates"), unlike the older ad-hoc
+// files above (some multi-category properties used "accommodation" instead) -
+// so this batch gets its own clean generic loader rather than patching the
+// bespoke functions above, which have several now-incompatible assumptions
+// baked in (different key names, fields this batch's files don't carry).
+// Mandatory fees don't vary by discount tier (confirmed identical across every
+// tier checked during extraction) so each property's fee data is loaded once
+// from its own Rack-tier file and reused for every STO tier of that property.
+// ---------------------------------------------------------------------------
+
+const SOROI_2026_VALIDITY = { start: new Date("2026-01-04"), end: new Date("2027-01-03") };
+
+function feesAmboseliBatch(mf: any, sourcePage?: number): FigureSeed[] {
+  const pf = mf.amboseliNationalParkFee;
+  if (typeof pf === "string") {
+    // 2026: "to be confirmed" - no real figure exists yet, don't fabricate one.
+    return [];
+  }
+  return [
+    { category: "mandatory_fee", path: "amboseliNationalParkFee.nonResident", occupancy: "adult", amount: pf.nonResident.adult, unit: pf.nonResident.unit, verified: true, sourcePage },
+    { category: "mandatory_fee", path: "amboseliNationalParkFee.nonResident", occupancy: "child", amount: pf.nonResident.child, unit: pf.nonResident.unit, verified: true, sourcePage },
+    { category: "mandatory_fee", path: "amboseliNationalParkFee.surchargePct", amount: pf.kwsSurchargePct, unit: "%", verified: true, sourcePage, confidenceNote: "KWS surcharge applied on top of the base adult/child fee above." },
+  ];
+}
+
+function feesDianiBatch(): FigureSeed[] {
+  return []; // No mandatory conservancy/park fee at this property - confirmed structurally different.
+}
+
+type BatchPropertyConfig = {
+  slug: string;
+  displayName: string;
+  region: string;
+  isMultiCategory: boolean;
+  feeShape: string;
+  feeBuilder: (mf: any, contextYear: number, sourcePage?: number) => FigureSeed[];
+};
+
+const BATCH_PROPERTIES: BatchPropertyConfig[] = [
+  { slug: "soroi-mara-bush-camp", displayName: "Soroi Mara Bush Camp", region: "Maasai Mara", isMultiCategory: false, feeShape: "2-part: season-dependent Community Levy + date-window Park Fee", feeBuilder: (mf, y, p) => feesMaraStyle(mf, y, p).figures },
+  { slug: "soroi-private-wing", displayName: "Soroi Private Wing", region: "Maasai Mara", isMultiCategory: false, feeShape: "2-part: season-dependent Community Levy + date-window Park Fee", feeBuilder: (mf, y, p) => feesMaraStyle(mf, y, p).figures },
+  { slug: "soroi-luxury-migration-camp", displayName: "Soroi Luxury Migration Camp", region: "Maasai Mara", isMultiCategory: false, feeShape: "2-part: season-dependent Community Levy + date-window Park Fee", feeBuilder: (mf, y, p) => feesMaraStyle(mf, y, p).figures },
+  { slug: "soroi-larsens-camp", displayName: "Soroi Larsens Camp", region: "Samburu", isMultiCategory: true, feeShape: "1-part flat Samburu Reserve fee", feeBuilder: (mf, _y, p) => feesSamburu1Part(mf, p) },
+  { slug: "soroi-samburu-lodge", displayName: "Soroi Samburu Lodge", region: "Samburu", isMultiCategory: true, feeShape: "1-part flat Samburu Reserve fee", feeBuilder: (mf, _y, p) => feesSamburu1Part(mf, p) },
+  { slug: "soroi-amboseli", displayName: "Soroi Amboseli", region: "Amboseli", isMultiCategory: true, feeShape: "% KWS surcharge (+8.5%) on top of a base per-adult/child Non-Resident park fee", feeBuilder: (mf, _y, p) => feesAmboseliBatch(mf, p) },
+  { slug: "soroi-lions-bluff-lodge", displayName: "Soroi Lions Bluff Lodge", region: "Lumo/Tsavo", isMultiCategory: false, feeShape: "3-part flat (Community Bed Levy + Conservation Levy + LUMO Conservation Fee)", feeBuilder: (mf, _y, p) => feesLumo3Part(mf, p) },
+  { slug: "soroi-leopards-lair", displayName: "Soroi Leopard's Lair (Leopards Lair Cottages)", region: "Lumo/Tsavo", isMultiCategory: false, feeShape: "3-part flat (Community Bed Levy + Conservation Levy + LUMO Conservation Fee)", feeBuilder: (mf, _y, p) => feesLumo3Part(mf, p) },
+  { slug: "soroi-cheetah-tented-camp", displayName: "Soroi Cheetah Tented Camp", region: "Lumo/Tsavo", isMultiCategory: false, feeShape: "3-part flat (Community Bed Levy + Conservation Levy + LUMO Conservation Fee)", feeBuilder: (mf, _y, p) => feesLumo3Part(mf, p) },
+  { slug: "soroi-blue-diani", displayName: "Soroi Blue (Diani Beach)", region: "Diani Beach", isMultiCategory: false, feeShape: "none - no mandatory conservancy/park fee at this property", feeBuilder: () => feesDianiBatch() },
+];
+
+const RATES_EXTRACTED_SLUG: Record<string, string> = {
+  "soroi-mara-bush-camp": "mara-bush-camp", "soroi-private-wing": "private-wing",
+  "soroi-luxury-migration-camp": "luxury-migration-camp", "soroi-larsens-camp": "larsens-camp",
+  "soroi-samburu-lodge": "samburu-lodge", "soroi-amboseli": "amboseli",
+  "soroi-lions-bluff-lodge": "lions-bluff-lodge", "soroi-leopards-lair": "leopards-lair-cottages",
+  "soroi-cheetah-tented-camp": "cheetah-tented-camp", "soroi-blue-diani": "blue-diani",
+};
+
+function loadBatchTier(
+  cfg: BatchPropertyConfig,
+  filename: string,
+  feeSourceFilename: string,
+  validity: { start: Date; end: Date },
+  contextYear: number,
+): RateCardSeed {
+  const data = loadJson(filename);
+  const feeData = filename === feeSourceFilename ? data : loadJson(feeSourceFilename);
+  const gapLog: string[] = [];
+  const figures = emitAccommodation(data.rates, cfg.isMultiCategory, undefined, gapLog);
+  figures.push(...cfg.feeBuilder(feeData.mandatoryFees, contextYear, undefined));
+  if (gapLog.length) console.warn(`[${cfg.slug} / ${data.tier}] gaps (not inserted, no fabricated figures):\n  - ${gapLog.join("\n  - ")}`);
+  return {
+    propertySlug: cfg.slug, displayName: cfg.displayName, region: cfg.region, propertyCategory: "soroi-lodge",
+    tier: data.tier, residency: data.residency,
+    validityStart: validity.start, validityEnd: validity.end,
+    mandatoryFeeShape: cfg.feeShape,
+    sourceDocFile: data.source.file, extractedFile: filename,
+    figures,
+    seasons: seasonsFromBlock(data.seasons, contextYear),
+  };
+}
+
+function loadBatch2026And2027(): RateCardSeed[] {
+  const seeds: RateCardSeed[] = [];
+  const tiers2026 = ["rack", "sto10", "sto15", "sto20", "sto25", "sto30", "sto35", "sto40"];
+  const tiers2027 = ["rack", "sto15", "sto20", "sto25", "sto30", "sto35", "sto40"];
+  for (const cfg of BATCH_PROPERTIES) {
+    const slug = RATES_EXTRACTED_SLUG[cfg.slug];
+    const rackFile2026 = `${slug}-rack-2026.json`;
+    const rackFile2027 = `${slug}-rack-2027.json`;
+    for (const tier of tiers2026) {
+      seeds.push(loadBatchTier(cfg, `${slug}-${tier}-2026.json`, rackFile2026, SOROI_2026_VALIDITY, 2026));
+    }
+    for (const tier of tiers2027) {
+      seeds.push(loadBatchTier(cfg, `${slug}-${tier}-2027.json`, rackFile2027, SOROI_2027_VALIDITY, 2027));
+    }
+  }
+  return seeds;
+}
+
+// ---------------------------------------------------------------------------
 // Main
 // ---------------------------------------------------------------------------
 
@@ -912,29 +1017,12 @@ async function main() {
   console.log(`Cleared ${managedCardIds.length} managed RateCard(s) for a fresh reseed (left any other property's data untouched).`);
 
   const seeds: RateCardSeed[] = [
-    loadCheetah(),
-    loadLionsBluff(),
-    loadLeopardsLair(),
-    loadMaraBushCampRack(),
-    loadMaraBushCampSto30(),
-    loadPrivateWing(),
-    loadLuxuryMigrationCamp(),
-    loadLarsensRack(),
-    loadLarsensSto30(),
-    loadSamburuLodgeRack(),
-    loadSamburuLodgeSto30(),
-    loadAmboseli(),
-    loadBlueDiani(),
-    loadCheetahSto40(),
-    loadLionsBluffSto40(),
-    loadLeopardsLairSto40(),
-    loadMaraBushCampSto40(),
-    loadPrivateWingSto40(),
-    loadLuxuryMigrationCampSto40(),
-    loadLarsensSto40(),
-    loadSamburuLodgeSto40(),
-    loadAmboseliSto40(),
-    loadBlueDianiSto40(),
+    // Full 2026 Rack+STO10-40 and refreshed 2027 Rack+STO15-40 for all 10 Soroi
+    // properties (13 Aug 2026 portal batch) - supersedes every individual
+    // Soroi-lodge loader call that used to be listed here (loadCheetah,
+    // loadMaraBushCampRack, loadLarsensSto40, etc.) since this is a full
+    // superset covering the same properties/tiers plus everything new.
+    ...loadBatch2026And2027(),
     loadTortilis(),
     loadSolio(),
     ...loadNairobiHotels(),

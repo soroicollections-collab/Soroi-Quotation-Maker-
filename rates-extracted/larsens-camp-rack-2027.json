@@ -1,70 +1,111 @@
 {
-  "$note": "Fresh extraction, 5 Aug 2026, Rack Rate tier (separate from the existing larsens-camp-sto30-2027.json, which is the STO 30% tier). Read directly from the property's own pages. Rack Peak/Shoulder/Green figures here match the Rack column already on file in the STO 30% extraction exactly — cross-validated between two independently-read documents.",
+  "$note": "Extracted from the Rack Rate 2027 portal PDF (13 Aug 2026 batch, confirmed by Yasin as source of truth), refreshing/superseding the previously-reviewed-but-uncommitted batch from earlier in Aug 2026.",
   "property": "Soroi Larsens Camp",
   "region": "Samburu",
   "tier": "Rack Rate",
   "residency": "Non-Resident",
   "source": {
-    "file": "SOROI 2027/Soroi - 2027 RACK Rates.pdf",
-    "pdfPageIndexes": [6, 7],
-    "docPrintedPageNumbers": [7, 8],
-    "validity": { "start": "2027-01-04", "end": "2028-01-03" }
-  },
-  "confidence": "confirmed-2026-08-05",
-  "extractionMethod": {
-    "note": "Read directly from the property's own pages, cross-checked against neighboring Samburu Lodge pages.",
-    "misattributionCheck": { "checked": true, "result": "No misattribution — consistent with the STO 30% extraction's earlier check of the same property boundary." }
+    "file": "2027 CONTRACT RATES Rack Rate.pdf (portal download, 13 Aug 2026)",
+    "validity": {
+      "start": "2027-01-04",
+      "end": "2028-01-03"
+    }
   },
   "seasons": {
-    "peak": { "dateRanges": ["1 Jul – 30 Sep", "20 Dec – 3 Jan 2028"] },
-    "shoulder": { "dateRanges": ["4 Jan – 28 Feb", "1 Jun – 30 Jun"] },
-    "extendedGreen": { "dateRanges": ["1 Mar – 31 May", "1 Oct – 19 Dec"] }
+    "peak": {
+      "dateRanges": [
+        "1 Jul \u2013 30 Sep",
+        "20 Dec \u2013 3 Jan"
+      ]
+    },
+    "shoulder": {
+      "dateRanges": [
+        "4 Jan \u2013 28 Feb",
+        "1 Jun \u2013 30 Jun"
+      ]
+    },
+    "extendedGreen": {
+      "dateRanges": [
+        "1 Mar \u2013 31 May",
+        "1 Oct \u2013 19 Dec"
+      ]
+    }
   },
-  "accommodation": {
-    "luxuryTents": {
-      "roomNote": "12 Luxury Tents + 2 Two-Bedroom Family Units.",
-      "currency": "USD",
-      "unit": "per person per night",
+  "rates": {
+    "currency": "USD",
+    "unit": "per person per night",
+    "standardTents": {
       "fullBoard": {
-        "perPerson": { "peak": 750, "shoulder": 640, "extendedGreen": 535 },
-        "single": { "peak": 1125, "shoulder": 960, "extendedGreen": 669 },
-        "familyUnit": { "peak": 3000, "shoulder": 2560, "extendedGreen": 2140 }
+        "perPerson": {
+          "peak": 750,
+          "shoulder": 640,
+          "extendedGreen": 535
+        },
+        "single": {
+          "peak": 1125,
+          "shoulder": 960,
+          "extendedGreen": 669
+        },
+        "familyUnit": {
+          "peak": 3000,
+          "shoulder": 2560,
+          "extendedGreen": 2140
+        }
       },
       "groundPackage": {
-        "perPerson": { "peak": 970, "shoulder": 860, "extendedGreen": 755 },
-        "single": { "peak": 1455, "shoulder": 1290, "extendedGreen": 944 },
-        "familyUnit": { "peak": 3880, "shoulder": 3440, "extendedGreen": 3020 }
+        "perPerson": {
+          "peak": 970,
+          "shoulder": 860,
+          "extendedGreen": 755
+        },
+        "single": {
+          "peak": 1455,
+          "shoulder": 1290,
+          "extendedGreen": 944
+        },
+        "familyUnit": {
+          "peak": 3880,
+          "shoulder": 3440,
+          "extendedGreen": 3020
+        }
       }
     },
     "starBedSuites": {
-      "roomNote": "Two Star-Bed Suites (Deluxe Suites). Children below 8 years NOT allowed. No Family Unit option.",
-      "currency": "USD",
-      "unit": "per person per night",
       "fullBoard": {
-        "perPerson": { "peak": 970, "shoulder": 790, "extendedGreen": 655 },
-        "single": { "peak": 1455, "shoulder": 1185, "extendedGreen": 819 }
+        "perPerson": {
+          "peak": 970,
+          "shoulder": 790,
+          "extendedGreen": 655
+        },
+        "single": {
+          "peak": 1455,
+          "shoulder": 1185,
+          "extendedGreen": 819
+        }
       },
       "groundPackage": {
-        "perPerson": { "peak": 1190, "shoulder": 1010, "extendedGreen": 875 },
-        "single": { "peak": 1785, "shoulder": 1515, "extendedGreen": 1094 }
+        "perPerson": {
+          "peak": 1190,
+          "shoulder": 1010,
+          "extendedGreen": 875
+        },
+        "single": {
+          "peak": 1785,
+          "shoulder": 1515,
+          "extendedGreen": 1094
+        }
       }
     }
   },
-  "structuralNote": "Luxury Tents Rack figures here are IDENTICAL to Soroi Amboseli's base Luxury Tent category (all seasons, both packages), and Larsens' Star-Bed Suite figures are identical to Amboseli Camp's Star-Bed Suite figures too. Verified via two independent clean per-page reads, not a copy-paste error on our end — appears to reflect a Soroi-wide standardized price per room category, with properties actually differentiated by their separate mandatory conservancy fees rather than by base accommodation rate. Flagging for awareness rather than treating as a coincidence to dismiss.",
+  "roomNote": "Standard/Family Tents + Deluxe/Star-Bed Suites.",
   "mandatoryFees": {
     "note": "Single combined 'Samburu Reserve fee', flat rate, does not vary by season.",
     "verified": true,
     "verifiedDate": "2026-08-05",
-    "samburuReserveFee": { "adult": 85, "child": 50, "unit": "per night" }
-  },
-  "portfolioWideTerms": {
-    "note": "Applies across Soroi properties per CLAUDE.md > Portfolio-wide terms. Larsens Camp uses the higher Tour Leader/private-guide rate — see propertySpecificNote.",
-    "childAge5to11": "50% of adult sharing rate",
-    "childUnder4": "free (sharing)",
-    "youngAdult12to17Sharing": "75% of adult rate",
-    "tourLeaderGuide": { "inTLTent": 175, "inGuestTent": "75% of adult single rate" },
-    "privateGuideMeals": { "amount": 50, "unit": "per day" },
-    "christmasNewYearSupplement": { "adult": 40, "child": 20, "unit": "per night" },
-    "propertySpecificNote": "Tour Leader ($175) and Private Guide meals ($50/day) rates here are HIGHER than Samburu Lodge's own page, which states $135 in TL room and $35/day — even though both properties are in the same Samburu region under the same brand. Don't assume these figures are shared regionally; check each property's own page."
+    "samburuReserveFee": {
+      "adult": 85,
+      "child": 50,
+      "unit": "per night"
+    }
   }
 }

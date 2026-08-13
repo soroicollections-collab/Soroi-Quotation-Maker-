@@ -1,0 +1,97 @@
+{
+  "$note": "Extracted from the 'SOROI COLLECTION - TERMS AND CONDITIONS' pages (28 numbered clauses), present identically in every 2026 document in the 13 Aug 2026 portal batch (verified in STO10). None of this content previously existed in CLAUDE.md. This is reference/policy material, not pricing data - not wired into the calculator, intended as a lookup reference for the agent when a booking-policy question comes up (deposits, cancellation, amendments, etc). Confirmed by Yasin as source of truth.",
+  "validity": { "start": "2026-01-04", "end": "2027-01-03" },
+  "clauses": {
+    "1_bookingTermsProcess": {
+      "summary": "All bookings/service requests must be in writing (email or vouchers) - no verbal bookings. All pricing in USD. FIT & Independent Traveler bookings confirmed only on a non-refundable 25% deposit; rooms released if not received in time. Full payment due 45 days prior to arrival."
+    },
+    "2_provisionalBookings": {
+      "summary": "Holding period scales down as travel date approaches; high-demand periods may shorten these further.",
+      "table": [
+        { "daysBeforeTravel": "90+", "holdingPeriod": "14 days", "extension": "One extension" },
+        { "daysBeforeTravel": "89-60", "holdingPeriod": "7 days", "extension": "One extension" },
+        { "daysBeforeTravel": "59-30", "holdingPeriod": "4 days", "extension": "No extension" },
+        { "daysBeforeTravel": "<30", "holdingPeriod": "48 hours", "extension": "No extension" },
+        { "daysBeforeTravel": "<14", "holdingPeriod": "24 hours", "extension": "No extension" }
+      ]
+    },
+    "3_cancellationPolicy_FIT": {
+      "summary": "Applies to reductions in stay/guests, or no-shows - must be communicated in writing.",
+      "terms": ["46+ days before travel: 25% cancellation fee", "45 days or less: 100% cancellation fee", "No-show: 100% cancellation fee", "25% deposit due within 7 days of confirmation", "Balance due 45 days before travel", "No refunds for early departures"]
+    },
+    "4_groupBookings": {
+      "summary": "A group booking = 5+ rooms on the same booking at small camps, or 25%+ of Soroi Samburu Lodge specifically. Materially different deposit/cancellation structure from FIT.",
+      "terms": ["30% non-refundable deposit required 14 days after booking confirmation", "91 days before arrival: 50% deposit due, 50% cancellation fee applicable", "60 days before arrival: 100% payment due, 100% cancellation fee applicable", "A group occupying 80%+ of a camp/lodge is treated as exclusive-use and charged at DOUBLE occupancy rates"],
+      "cancellationTerms": ["91+ days before arrival: 50% cancellation fee", "60 days before arrival: 100% cancellation fee", "30% deposit required within 14 days of confirmation", "70% balance due 90 days before travel"]
+    },
+    "5_groupSingleRoomPolicy": {
+      "summary": "Max 3 singles per booking at the standard single supplement. Additional singles beyond 3 are charged at DOUBLE rate during peak/festive. Green Season single supplement reduced to 25% (matches the figure already in CLAUDE.md, now with the added '3 singles cap' detail)."
+    },
+    "6_seriesBlockBookings": {
+      "summary": "Rooms held until a specified release date; confirmed bookings cancelled after release incur 100% fee. New bookings after release are on-request/subject to availability.",
+      "salesUpdates": "Issued every 2 weeks, covering the 210-day period prior to arrival. If under 30% of the room allocation is utilized in that window, Soroi reserves the right to reclaim 50% of the remaining unbooked rooms.",
+      "releasePolicy": "Confirmation voucher must reach Soroi Collection reservations at least 48 hours before the release date to secure the booking.",
+      "bookingConfirmation": "Vouchers, complete client details, and payment must be submitted no later than 90 days prior to arrival."
+    },
+    "7_alterationOfConfirmedBookings": {
+      "summary": "Confirmed bookings can't be reduced in value (dates/guests/packages/meal plans) except: amendments requested 46+ days before check-in may be accommodated subject to availability with a 10% amendment fee, price difference based on prevailing rates at time of change. Requests within 45 days of check-in follow standard cancellation terms."
+    },
+    "8_exclusiveUse": {
+      "summary": "Minimum 3-night stay during peak season, 2 nights other seasons. Rates available on request."
+    },
+    "9_checkInCheckOut": { "checkIn": "No earlier than 12:00", "checkOut": "No later than 10:00" },
+    "10_tourLeaders": {
+      "samburuLodge": "Group of 15 paying pax = 16th person complimentary (per person sharing basis). 2 tour leaders sharing a room: free. 2 tour leaders wanting single rooms: one charged the normal TL rate. Upgrades to guest rooms based on availability. TL Rate $135 in a TL Tent, minimum 4 paying clients.",
+      "allOtherProperties": "TL Rate $175 in a TL Tent, minimum 4 paying clients. TL in Guest Tent: 75% of adult single rate. Soroi Blue (Diani) has NO Tour Leader accommodation at all. TL rate includes accommodation, full board, filtered water, soft drinks."
+    },
+    "11_pilotsAndDriverGuides": {
+      "summary": "Pilots accommodated in shared/single TL rooms, can upgrade to guest rooms on availability - rate agreed in writing between the airline and Soroi Collection. Driver guides accommodated in dedicated driver-guide rooms."
+    },
+    "12_minimumStay": {
+      "midLowSeason": "1 night minimum in all properties except Soroi Blue",
+      "peakSeason": "2 nights minimum (1 night on request, at Soroi's discretion) except Soroi Blue (see its own rate conditions)",
+      "lionsBluff": "2 nights minimum year-round (1 night on request) - property-specific exception"
+    },
+    "13_singleRoomPolicy": { "note": "Duplicate of clause 5 - repeated verbatim in the source document." },
+    "14_youngAdults_12to17": {
+      "summary": "75% of adult rate if sharing with 2 adults. 1 Young Adult + 1 child sharing = adult sharing rate + 50% for the child. Full adult rate if in their own tent (minimum 2 young adults)."
+    },
+    "15_familyUnitsTents": {
+      "summary": "Available in all Soroi properties. Cost based on 4 persons sharing in family units - EXCEPT Mara Bush Camp/Private Wing, which use 3.5 persons sharing. Additional young adults: 75% of adult rate. Additional children (5-11): 50% of adult rate. Special case: 2 Adults + 1 child under 11 in a family tent pay the per-person rate, but ONLY at Mara Bush Camp and Private Wing."
+    },
+    "16_children_5to11": {
+      "summary": "50% of adult rate if sharing; 75% if in own tent (min 2 children). Under 4 sharing: free. 1 Adult + 1 Child: single rate + child rate. 1 Adult + 1 Young Adult: double room rate (full adult). 1 Adult + 1 Young Adult + 1 Child: double rate + 50% for the child."
+    },
+    "17_refunds": { "summary": "No refund for unused services once a tour has started - includes accommodation, activities, spa, third-party services, meals, etc." },
+    "18_thirdPartyFees": { "summary": "Park/conservancy/reserve fees subject to change without notice. 3rd-party deposit policies, if different from Soroi's own, take precedence. Soroi reserves the right to adjust rates at any time." },
+    "19_generalTerms": { "summary": "Agents are responsible for all confirmed/amended/cancelled bookings. Payments via bank transfer or M-Pesa must be made before travel date. Credit cards accepted at camps/lodges (Visa & MasterCard only) - guest covers surcharges. Credit card may be required for last-minute bookings (within 7 days)." },
+    "20_closureDates": { "summary": "Seasonal closures may apply - check availability at www.soroi.com." },
+    "21_gameDrives": { "summary": "Scheduled 06:30-09:00 and 16:00-18:30. 6+ guests per booking guarantees an exclusive-use vehicle and unlimited game drives." },
+    "22_photoHides": {
+      "summary": "Shared access to Soroi hides is complimentary for Ground Package guests, subject to availability on arrival. Lumo Photo Hide is accessible by road from all Soroi properties within Lumo Conservancy, bookable year-round (dry season = best viewing). Exclusive use: $1,040/24h for up to 4 guests, must be booked in advance, subject to availability. Shared use: $150/adult per 8-hour session. Children under 16 not permitted. Soroi Larsens Photo Hide is separately accessible to Soroi Samburu Lodge guests at a fee (see activities pricing)."
+    },
+    "23_forceMajeure": { "summary": "Soroi not liable for disruption caused by events beyond its control (acts of God, natural disasters, pandemics, civil unrest, wars, strikes, fires, lockouts, explosions, etc). Reserves the right to cancel/postpone/reroute/modify bookings at its sole discretion in such events. Refund decisions for undelivered services due to force majeure are entirely at Soroi's discretion. Not responsible for cancellations from government travel advisories." },
+    "24_travelInsurance": { "summary": "Strongly recommends comprehensive travel insurance. Optional rescue.co Cover available at booking, $25/person/stay, covers air evacuation to/from Nairobi only - see rescue-co-insurance.json." },
+    "25_confidentiality": { "summary": "Agreement contents are confidential and not to be shared with third parties." },
+    "26_requiredBookingInformation": { "summary": "Property selected; number of rooms/guests/dietary requirements (with ages); meal plan; full names and rooming list; nationality + passport/ID/proof of residency; arrival/departure dates and transport details." },
+    "27_publicLiability": { "summary": "Every guest must sign a public liability form at check-in (via QR code scan)." },
+    "28_rightOfAdmissionGuestConduct": { "summary": "Management reserves the right of admission. Guests must adhere to camp/conservancy/park rules. Non-compliance may result in removal without refund." }
+  },
+  "signatoryBlock": {
+    "note": "Contract requires a signed copy returned to sales@soroi.com or uploaded to the agent portal before it becomes valid.",
+    "headOfSalesAndMarketing": "William Mbunjiro"
+  },
+  "contacts": {
+    "centralReservations": { "email": "reservations@soroi.com", "phone": "+254 732 557 714" },
+    "maasaiMara": "+254 700 141 736",
+    "samburu": "+254 780 652 618",
+    "lumoTsavo": "+254 754 351 908",
+    "headOfSales": { "name": "William Mbunjiro", "email": "William@soroi.com", "phone": "+254 780 920779" },
+    "kenyaItalySales": { "name": "Michela Consiglio", "email": "michela@soroi.com", "phone": "+254 111 762 376" },
+    "kenyaSales": [
+      { "name": "Peter Musya", "email": "pmusya@soroi.com", "phone": "+254 780 652 618" },
+      { "name": "Patricia Mutuku", "email": "pmutuku@soroi.com" }
+    ],
+    "tanzaniaSales": { "name": "David Buhatwa", "email": "david@soroi.com", "phone": "+255 794 549 717" }
+  }
+}

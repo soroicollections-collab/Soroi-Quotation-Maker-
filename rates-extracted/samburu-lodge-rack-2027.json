@@ -1,77 +1,128 @@
 {
-  "$note": "Fresh extraction, 5 Aug 2026, read directly from the property's own pages (3 pages, 3 accommodation categories) in the paginated source PDF.",
+  "$note": "Extracted from the Rack Rate 2027 portal PDF (13 Aug 2026 batch, confirmed by Yasin as source of truth), refreshing/superseding the previously-reviewed-but-uncommitted batch from earlier in Aug 2026.",
   "property": "Soroi Samburu Lodge",
   "region": "Samburu",
   "tier": "Rack Rate",
   "residency": "Non-Resident",
   "source": {
-    "file": "SOROI 2027/Soroi - 2027 RACK Rates.pdf",
-    "pdfPageIndexes": [8, 9, 10],
-    "docPrintedPageNumbers": [9, 10, 11],
-    "validity": { "start": "2027-01-04", "end": "2028-01-03" }
-  },
-  "confidence": "confirmed-2026-08-05",
-  "extractionMethod": {
-    "note": "Read directly from the property's own pages, cross-checked against neighboring Larsens Camp pages.",
-    "misattributionCheck": { "checked": true, "result": "No misattribution — each page carries its own 'SOROI SAMBURU LODGE' header directly with its figures." }
+    "file": "2027 CONTRACT RATES Rack Rate.pdf (portal download, 13 Aug 2026)",
+    "validity": {
+      "start": "2027-01-04",
+      "end": "2028-01-03"
+    }
   },
   "seasons": {
-    "peak": { "dateRanges": ["1 Jul – 30 Sep", "20 Dec – 3 Jan 2028"] },
-    "shoulder": { "dateRanges": ["4 Jan – 28 Feb", "1 Jun – 30 Jun"] },
-    "extendedGreen": { "dateRanges": ["1 Mar – 31 May", "1 Oct – 19 Dec"] }
+    "peak": {
+      "dateRanges": [
+        "1 Jul \u2013 30 Sep",
+        "20 Dec \u2013 3 Jan"
+      ]
+    },
+    "shoulder": {
+      "dateRanges": [
+        "4 Jan \u2013 28 Feb",
+        "1 Jun \u2013 30 Jun"
+      ]
+    },
+    "extendedGreen": {
+      "dateRanges": [
+        "1 Mar \u2013 31 May",
+        "1 Oct \u2013 19 Dec"
+      ]
+    }
   },
-  "structuralNote": "Three distinct accommodation categories, more than any other Soroi property checked so far (Larsens Camp and Amboseli each have two).",
-  "accommodation": {
-    "standardRooms": {
-      "roomNote": "Standard Twin/Double rooms/Triples. Units of 4 rooms — 2 ground floor, 2 top floor (ground floor can accommodate Triples). No Family Unit option.",
-      "currency": "USD",
-      "unit": "per person per night",
+  "rates": {
+    "currency": "USD",
+    "unit": "per person per night",
+    "standard": {
       "fullBoard": {
-        "perPerson": { "peak": 388, "shoulder": 350, "extendedGreen": 325 },
-        "single": { "peak": 582, "shoulder": 525, "extendedGreen": 406 }
+        "perPerson": {
+          "peak": 388,
+          "shoulder": 350,
+          "extendedGreen": 325
+        },
+        "single": {
+          "peak": 582,
+          "shoulder": 525,
+          "extendedGreen": 406
+        }
       },
       "groundPackage": {
-        "perPerson": { "peak": 573, "shoulder": 535, "extendedGreen": 510 },
-        "single": { "peak": 860, "shoulder": 803, "extendedGreen": 638 }
+        "perPerson": {
+          "peak": 573,
+          "shoulder": 535,
+          "extendedGreen": 510
+        },
+        "single": {
+          "peak": 860,
+          "shoulder": 803,
+          "extendedGreen": 638
+        }
       }
     },
-    "superiorAndFamily": {
-      "roomNote": "Superior Rooms, Family Room Quad (up to 4 guests, shared bathroom), and Family Unit-Interconnecting Superior (two triple Superior Rooms joined by an interconnecting door, up to 6 guests).",
-      "currency": "USD",
-      "unit": "per person per night",
+    "superiorFamilyUnits": {
       "fullBoard": {
-        "perPerson": { "peak": 450, "shoulder": 413, "extendedGreen": 388 },
-        "single": { "peak": 675, "shoulder": 620, "extendedGreen": 484 },
-        "familyUnit": { "peak": 1800, "shoulder": 1652, "extendedGreen": 1552 }
+        "perPerson": {
+          "peak": 450,
+          "shoulder": 413,
+          "extendedGreen": 388
+        },
+        "single": {
+          "peak": 675,
+          "shoulder": 620,
+          "extendedGreen": 484
+        },
+        "familyUnit": {
+          "peak": 1800,
+          "shoulder": 1652,
+          "extendedGreen": 1552
+        }
       },
       "groundPackage": {
-        "perPerson": { "peak": 635, "shoulder": 598, "extendedGreen": 573 },
-        "single": { "peak": 953, "shoulder": 896, "extendedGreen": 716 },
-        "familyUnit": { "peak": 2540, "shoulder": 2392, "extendedGreen": 2292 }
+        "perPerson": {
+          "peak": 635,
+          "shoulder": 598,
+          "extendedGreen": 573
+        },
+        "single": {
+          "peak": 953,
+          "shoulder": 896,
+          "extendedGreen": 716
+        },
+        "familyUnit": {
+          "peak": 2540,
+          "shoulder": 2392,
+          "extendedGreen": 2292
+        }
       }
     },
     "executiveVilla": {
-      "roomNote": "1 Executive Villa (Three-Bedroom), accommodates 4 to 7 guests. Priced PER VILLA, not per person — different unit from every other rate in this file.",
-      "currency": "USD",
-      "unit": "per villa per night",
-      "fullBoard": { "peak": 7000, "shoulder": 6510, "extendedGreen": 6185 },
-      "groundPackage": { "peak": 10500, "shoulder": 9765, "extendedGreen": 9277 }
+      "fullBoard": {
+        "perVilla": {
+          "peak": 7000,
+          "shoulder": 6510,
+          "extendedGreen": 6185
+        }
+      },
+      "groundPackage": {
+        "perVilla": {
+          "peak": 10500,
+          "shoulder": 9765,
+          "extendedGreen": 9277
+        }
+      },
+      "unit": "per villa per night"
     }
   },
+  "roomNote": "Standard; Superior/Family Units; Executive Villa.",
   "mandatoryFees": {
     "note": "Same 'Samburu Reserve fee' as Larsens Camp, flat rate, does not vary by season.",
     "verified": true,
     "verifiedDate": "2026-08-05",
-    "samburuReserveFee": { "adult": 85, "child": 50, "unit": "per night" }
-  },
-  "portfolioWideTerms": {
-    "note": "Applies across Soroi properties per CLAUDE.md > Portfolio-wide terms. Samburu Lodge uses a LOWER Tour Leader/private-guide rate than Larsens Camp — see propertySpecificNote.",
-    "childAge5to11": "50% of adult sharing rate",
-    "childUnder4": "free (sharing)",
-    "youngAdult12to17Sharing": "75% of adult rate",
-    "tourLeaderGuide": { "inTLRoom": 135, "inGuestRoom": "75% of adult single rate" },
-    "privateGuideMeals": { "amount": 35, "unit": "per day" },
-    "christmasNewYearSupplement": { "adult": 40, "child": 20, "unit": "per night" },
-    "propertySpecificNote": "Tour Leader ($135) and Private Guide meals ($35/day) are LOWER here than Larsens Camp's page ($175 / $50/day) despite both being Samburu-region Soroi properties — confirm which property before quoting a Tour Leader/guide rate."
+    "samburuReserveFee": {
+      "adult": 85,
+      "child": 50,
+      "unit": "per night"
+    }
   }
 }

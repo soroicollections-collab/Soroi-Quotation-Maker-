@@ -1,0 +1,89 @@
+{
+  "$note": "Extracted from the STO 30% 2027 portal PDF (13 Aug 2026 batch, confirmed by Yasin as source of truth), refreshing/superseding the previously-reviewed-but-uncommitted batch from earlier in Aug 2026. Self Catering ($250/$185) does not follow this tier's discount ratio - identical across every tier checked, likely an intentional flat rate.",
+  "property": "Soroi Leopard's Lair",
+  "region": "Lumo/Tsavo",
+  "tier": "STO 30%",
+  "residency": "Non-Resident",
+  "source": {
+    "file": "2027 CONTRACT RATES STO 30%.pdf (portal download, 13 Aug 2026)",
+    "validity": {
+      "start": "2027-01-04",
+      "end": "2028-01-03"
+    }
+  },
+  "seasons": {
+    "peak": {
+      "dateRanges": [
+        "1 Jul \u2013 31 Oct",
+        "20 Dec \u2013 3 Jan"
+      ]
+    },
+    "shoulder": {
+      "dateRanges": [
+        "4 Jan \u2013 30 Jun",
+        "1 Nov \u2013 19 Dec"
+      ]
+    }
+  },
+  "rates": {
+    "currency": "USD",
+    "unit": "per person per night",
+    "fullBoard": {
+      "perPerson": {
+        "peak": {
+          "rack": 375,
+          "net": 263
+        },
+        "shoulder": {
+          "rack": 305,
+          "net": 214
+        }
+      },
+      "single": {
+        "peak": {
+          "rack": 563,
+          "net": 394
+        },
+        "shoulder": {
+          "rack": 382,
+          "net": 267
+        }
+      }
+    },
+    "groundPackage": {
+      "perPerson": {
+        "peak": {
+          "rack": 525,
+          "net": 368
+        },
+        "shoulder": {
+          "rack": 455,
+          "net": 319
+        }
+      },
+      "single": {
+        "peak": {
+          "rack": 788,
+          "net": 551
+        },
+        "shoulder": {
+          "rack": 569,
+          "net": 398
+        }
+      }
+    },
+    "selfCatering": {
+      "perCottage": {
+        "peak": {
+          "rack": 250,
+          "net": 185
+        },
+        "shoulder": {
+          "rack": 250,
+          "net": 185
+        }
+      }
+    }
+  },
+  "roomNote": "5 Rustic Cottages + Self Catering."
+}

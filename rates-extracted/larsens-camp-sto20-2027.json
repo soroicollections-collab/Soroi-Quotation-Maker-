@@ -1,0 +1,191 @@
+{
+  "$note": "Extracted from the STO 20% 2027 portal PDF (13 Aug 2026 batch, confirmed by Yasin as source of truth), refreshing/superseding the previously-reviewed-but-uncommitted batch from earlier in Aug 2026.",
+  "property": "Soroi Larsens Camp",
+  "region": "Samburu",
+  "tier": "STO 20%",
+  "residency": "Non-Resident",
+  "source": {
+    "file": "2027 CONTRACT RATES STO 20%.pdf (portal download, 13 Aug 2026)",
+    "validity": {
+      "start": "2027-01-04",
+      "end": "2028-01-03"
+    }
+  },
+  "seasons": {
+    "peak": {
+      "dateRanges": [
+        "1 Jul \u2013 30 Sep",
+        "20 Dec \u2013 3 Jan"
+      ]
+    },
+    "shoulder": {
+      "dateRanges": [
+        "4 Jan \u2013 28 Feb",
+        "1 Jun \u2013 30 Jun"
+      ]
+    },
+    "extendedGreen": {
+      "dateRanges": [
+        "1 Mar \u2013 31 May",
+        "1 Oct \u2013 19 Dec"
+      ]
+    }
+  },
+  "rates": {
+    "currency": "USD",
+    "unit": "per person per night",
+    "standardTents": {
+      "fullBoard": {
+        "perPerson": {
+          "peak": {
+            "rack": 750,
+            "net": 600
+          },
+          "shoulder": {
+            "rack": 640,
+            "net": 512
+          },
+          "extendedGreen": {
+            "rack": 535,
+            "net": 428
+          }
+        },
+        "single": {
+          "peak": {
+            "rack": 1125,
+            "net": 900
+          },
+          "shoulder": {
+            "rack": 960,
+            "net": 768
+          },
+          "extendedGreen": {
+            "rack": 669,
+            "net": 535
+          }
+        },
+        "familyUnit": {
+          "peak": {
+            "rack": 3000,
+            "net": 2400
+          },
+          "shoulder": {
+            "rack": 2560,
+            "net": 2048
+          },
+          "extendedGreen": {
+            "rack": 2140,
+            "net": 1712
+          }
+        }
+      },
+      "groundPackage": {
+        "perPerson": {
+          "peak": {
+            "rack": 970,
+            "net": 776
+          },
+          "shoulder": {
+            "rack": 860,
+            "net": 688
+          },
+          "extendedGreen": {
+            "rack": 755,
+            "net": 604
+          }
+        },
+        "single": {
+          "peak": {
+            "rack": 1455,
+            "net": 1164
+          },
+          "shoulder": {
+            "rack": 1290,
+            "net": 1032
+          },
+          "extendedGreen": {
+            "rack": 944,
+            "net": 755
+          }
+        },
+        "familyUnit": {
+          "peak": {
+            "rack": 3880,
+            "net": 3104
+          },
+          "shoulder": {
+            "rack": 3440,
+            "net": 2752
+          },
+          "extendedGreen": {
+            "rack": 3020,
+            "net": 2416
+          }
+        }
+      }
+    },
+    "starBedSuites": {
+      "fullBoard": {
+        "perPerson": {
+          "peak": {
+            "rack": 970,
+            "net": 776
+          },
+          "shoulder": {
+            "rack": 790,
+            "net": 632
+          },
+          "extendedGreen": {
+            "rack": 655,
+            "net": 524
+          }
+        },
+        "single": {
+          "peak": {
+            "rack": 1455,
+            "net": 1164
+          },
+          "shoulder": {
+            "rack": 1185,
+            "net": 948
+          },
+          "extendedGreen": {
+            "rack": 819,
+            "net": 655
+          }
+        }
+      },
+      "groundPackage": {
+        "perPerson": {
+          "peak": {
+            "rack": 1190,
+            "net": 952
+          },
+          "shoulder": {
+            "rack": 1010,
+            "net": 808
+          },
+          "extendedGreen": {
+            "rack": 875,
+            "net": 700
+          }
+        },
+        "single": {
+          "peak": {
+            "rack": 1785,
+            "net": 1428
+          },
+          "shoulder": {
+            "rack": 1515,
+            "net": 1212
+          },
+          "extendedGreen": {
+            "rack": 1094,
+            "net": 875
+          }
+        }
+      }
+    }
+  },
+  "roomNote": "Standard/Family Tents + Deluxe/Star-Bed Suites."
+}

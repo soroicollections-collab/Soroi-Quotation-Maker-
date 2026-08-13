@@ -1,0 +1,50 @@
+{
+  "$note": "Extracted from the 'EXTRAS & ACTIVITIES' page (Diani section), present identically in every 2026 document in the batch (verified in STO10). Not previously documented in CLAUDE.md.",
+  "region": "Diani Beach",
+  "validity": { "start": "2026-06-01", "end": "2027-01-03" },
+  "currency": "USD",
+  "items": [
+    { "item": "Deep sea game fishing (4 hours, min 2 guests)", "rackAdult": 600, "netAdult": 560 },
+    { "item": "Private 'lobster & champagne' beach dinner (min 2 guests)", "rackAdult": 225, "netAdult": 200 },
+    { "item": "Mombasa city excursion (full day, max 4 guests per vehicle)", "rackAdult": 150, "netAdult": 130 },
+    { "item": "Dolphin safari (full day, min 2 guests)", "rackAdult": 150, "netAdult": 135 },
+    { "item": "Golf package (18 holes incl. club hire, green & caddie fees)", "rackAdult": 115, "netAdult": 105 },
+    { "item": "One-way airport transfer to/from Mombasa (min 2 guests)", "rackAdult": 95, "netAdult": 85 },
+    { "item": "One-way SGR transfer to/from Mombasa (min 2 guests)", "rackAdult": 95, "netAdult": 85 },
+    { "item": "One-way airport transfer to/from Ukunda (min 2 guests)", "rackAdult": 20, "netAdult": 15 },
+    { "item": "Yoga mats", "rack": "FOC" },
+    { "item": "Half-day Kaya Kinondo Sacred Forest excursion (min 2 guests)", "rackAdult": 135, "netAdult": 120 }
+  ],
+  "diningSupplements": {
+    "note": "Base meal plan is Half Board - matches CLAUDE.md's existing 'no Ground Package concept' note. Now with confirmed exact dollar figures.",
+    "fullBoardSupplement": { "adult": 45, "child": 20, "unit": "per day", "excludes": "all drinks" },
+    "allInclusiveSupplement": { "adult": 95, "child": 50, "unit": "per day", "excludes": "champagne, private cellar wines, premium spirits" }
+  },
+  "minimumStay": [
+    { "period": "4 Jan – 19 Dec", "nights": 2 },
+    { "period": "3 Apr – 6 Apr (Easter)", "nights": 3 },
+    { "period": "20 Dec – 3 Jan (festive)", "nights": 5 }
+  ],
+  "specialOffers": {
+    "longStayOffer": { "discountPct": 7.5, "minNights": 5, "extra2027": "2027 version adds: free transfers from Ukunda to Soroi Blue for a minimum of 4 nights booked - not confirmed present in the 2026 version." },
+    "honeymoonOffer": { "discountPct": 10, "minNights": 4, "note": "on room booking" },
+    "combinability": "Not combinable with any other discount; only one offer per booking; valid all year except festive season (20 Dec – 3 Jan)."
+  },
+  "roomOccupancyMap": {
+    "note": "Resolves a previously-flagged ambiguity in CLAUDE.md about which named rooms fit a child.",
+    "rooms": [
+      { "name": "Tiwi", "type": "Garden view", "floor": "2nd", "maxCapacity": "2 adults", "bedConfig": "Twin/double bed", "note": "$40/pp/night reduction during peak & shoulder" },
+      { "name": "Chale", "type": "Garden view", "floor": "1st", "maxCapacity": "2 adults + 1 infant", "bedConfig": "King bed + baby cot" },
+      { "name": "Funzi", "type": "Garden view", "floor": "1st", "maxCapacity": "2 adults + 1 child", "bedConfig": "King bed + single" },
+      { "name": "Lamu", "type": "Garden view", "floor": "1st", "maxCapacity": "2 adults + 1 child", "bedConfig": "King bed + single" },
+      { "name": "Kusini", "type": "Ocean view", "floor": "1st", "maxCapacity": "2 adults + 1 child", "bedConfig": "King bed + single" },
+      { "name": "Galu", "type": "Ocean view", "floor": "1st", "maxCapacity": "2 adults + 1 child", "bedConfig": "King bed + single" },
+      { "name": "Wasini", "type": "Ocean view", "floor": "1st", "maxCapacity": "2 adults", "bedConfig": "Twin/double bed" },
+      { "name": "Kaskazi", "type": "Ocean view", "floor": "1st", "maxCapacity": "2 adults + 1 child", "bedConfig": "King bed + single" },
+      { "name": "Shimoni", "type": "Junior suite/Ocean", "floor": "2nd", "maxCapacity": "2 adults + 2 children", "bedConfig": "King bed + twin" },
+      { "name": "Zanzibar", "type": "Junior suite/Ocean", "floor": "2nd", "maxCapacity": "2 adults + 2 children", "bedConfig": "King bed + queen + single" },
+      { "name": "Bahari Blue", "type": "Executive suite/Ocean, 2-bedroom en-suite", "floor": "2nd", "maxCapacity": "2 adults + 3 children", "bedConfig": "King bed + single + twin" }
+    ],
+    "babyCot": "Can be placed in all rooms."
+  }
+}

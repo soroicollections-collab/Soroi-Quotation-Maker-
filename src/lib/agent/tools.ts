@@ -14,28 +14,36 @@ const RATES_EXTRACTED_DIR = path.resolve(process.cwd(), "rates-extracted");
 
 // Files already covered by the normalized Postgres schema (see migrate-rates.ts) -
 // the agent should use lookup_soroi_rate_card_options / calculate_quote for these,
-// not read them as raw JSON. Kept as a prefix/exact-match list so list_non_soroi_rate_files
-// doesn't surface duplicates of data already available through the tested calculator path.
-const DB_COVERED_PREFIXES = [
-  "cheetah-tented-camp-",
-  "lions-bluff-lodge-",
-  "leopards-lair-cottages-",
-  "mara-bush-camp-",
-  "private-wing-",
-  "luxury-migration-camp-",
-  "larsens-camp-",
-  "samburu-lodge-",
-  "amboseli-",
-  "blue-diani-",
-  "tortilis-camp-amboseli-",
-  "solio-lodge-",
-  "nairobi-hotels-",
-  "sunworld-transport-",
-  "flights-amboseli-mara-nanyuki-",
+// not read them as raw JSON. The 10 Soroi properties now have Non-Resident Rack+STO
+// data in the DB for both 2026 (10/15/20/25/30/35/40) and 2027 (15/20/25/30/35/40),
+// added 13 Aug 2026 - listed by EXACT tier suffix (not a bare property-name prefix),
+// because several new reference files share a property's name prefix without being
+// DB-covered (e.g. mara-bush-camp-residents-rack-2026.json is Resident-tier, KES,
+// NOT in the database - a prefix match would have wrongly hidden it from
+// list_non_soroi_rate_files, exactly the kind of gap this comment now guards against).
+const DB_COVERED_SOROI_SLUGS = [
+  "cheetah-tented-camp", "lions-bluff-lodge", "leopards-lair-cottages",
+  "mara-bush-camp", "private-wing", "luxury-migration-camp",
+  "larsens-camp", "samburu-lodge", "amboseli", "blue-diani",
+];
+const DB_COVERED_SOROI_TIER_SUFFIXES = [
+  "-rack-2026.json", "-sto10-2026.json", "-sto15-2026.json", "-sto20-2026.json",
+  "-sto25-2026.json", "-sto30-2026.json", "-sto35-2026.json", "-sto40-2026.json",
+  "-rack-2027.json", "-sto15-2027.json", "-sto20-2027.json", "-sto25-2027.json",
+  "-sto30-2027.json", "-sto35-2027.json", "-sto40-2027.json",
+];
+// Other DB-covered files that aren't part of the Soroi tier ladder (single file each,
+// no risk of a same-prefix reference file being wrongly hidden).
+const DB_COVERED_EXACT_PREFIXES = [
+  "tortilis-camp-amboseli-", "solio-lodge-", "nairobi-hotels-",
+  "sunworld-transport-", "flights-amboseli-mara-nanyuki-",
 ];
 
 function isDbCovered(filename: string): boolean {
-  return DB_COVERED_PREFIXES.some((p) => filename.startsWith(p));
+  if (DB_COVERED_EXACT_PREFIXES.some((p) => filename.startsWith(p))) return true;
+  return DB_COVERED_SOROI_SLUGS.some(
+    (slug) => DB_COVERED_SOROI_TIER_SUFFIXES.some((suffix) => filename === `${slug}${suffix}`)
+  );
 }
 
 // ---------------------------------------------------------------------------

@@ -1,0 +1,110 @@
+{
+  "$note": "Extracted from the STO 20% 2027 portal PDF (13 Aug 2026 batch, confirmed by Yasin as source of truth), refreshing/superseding the previously-reviewed-but-uncommitted batch from earlier in Aug 2026.",
+  "property": "Soroi Blue",
+  "region": "Diani Beach",
+  "tier": "STO 20%",
+  "residency": "Non-Resident",
+  "source": {
+    "file": "2027 CONTRACT RATES STO 20%.pdf (portal download, 13 Aug 2026)",
+    "validity": {
+      "start": "2027-01-04",
+      "end": "2028-01-03"
+    }
+  },
+  "seasons": {
+    "peak": {
+      "dateRanges": [
+        "20 Dec \u2013 3 Jan"
+      ]
+    },
+    "shoulder": {
+      "dateRanges": [
+        "1 Jun \u2013 31 Oct"
+      ]
+    },
+    "green": {
+      "dateRanges": [
+        "15 Feb \u2013 31 Mar",
+        "1 Apr \u2013 31 May",
+        "1 Nov \u2013 19 Dec"
+      ]
+    }
+  },
+  "rates": {
+    "currency": "USD",
+    "unit": "per person per night",
+    "halfBoard": {
+      "Garden View": {
+        "peak": {
+          "rack": 690,
+          "net": 552
+        },
+        "shoulder": {
+          "rack": 420,
+          "net": 336
+        },
+        "green": {
+          "rack": 250,
+          "net": 200
+        }
+      },
+      "single": {
+        "peak": {
+          "rack": 1320,
+          "net": 1056
+        },
+        "shoulder": {
+          "rack": 1005,
+          "net": 804
+        },
+        "green": {
+          "rack": 765,
+          "net": 612
+        }
+      },
+      "Ocean View": {
+        "peak": {
+          "rack": 710,
+          "net": 568
+        },
+        "shoulder": {
+          "rack": 480,
+          "net": 384
+        },
+        "green": {
+          "rack": 290,
+          "net": 232
+        }
+      },
+      "Junior Suite": {
+        "peak": {
+          "rack": 780,
+          "net": 624
+        },
+        "shoulder": {
+          "rack": 570,
+          "net": 456
+        },
+        "green": {
+          "rack": 410,
+          "net": 328
+        }
+      },
+      "Executive Suite": {
+        "peak": {
+          "rack": 880,
+          "net": 704
+        },
+        "shoulder": {
+          "rack": 670,
+          "net": 536
+        },
+        "green": {
+          "rack": 510,
+          "net": 408
+        }
+      }
+    }
+  },
+  "roomNote": "4 room categories (Garden/Ocean/Junior/Executive)."
+}

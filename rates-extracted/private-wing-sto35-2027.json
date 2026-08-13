@@ -1,0 +1,99 @@
+{
+  "$note": "Extracted from the STO 35% 2027 portal PDF (13 Aug 2026 batch, confirmed by Yasin as source of truth), refreshing/superseding the previously-reviewed-but-uncommitted batch from earlier in Aug 2026.",
+  "property": "Soroi Private Wing",
+  "region": "Maasai Mara",
+  "tier": "STO 35%",
+  "residency": "Non-Resident",
+  "source": {
+    "file": "2027 CONTRACT RATES STO 35%.pdf (portal download, 13 Aug 2026)",
+    "validity": {
+      "start": "2027-01-04",
+      "end": "2028-01-03"
+    }
+  },
+  "seasons": {
+    "peak": {
+      "dateRanges": [
+        "1 Jul \u2013 30 Sep",
+        "20 Dec \u2013 3 Jan"
+      ]
+    },
+    "shoulder": {
+      "dateRanges": [
+        "4 Jan \u2013 28 Feb",
+        "1 Jun \u2013 30 Jun"
+      ]
+    },
+    "extendedGreen": {
+      "dateRanges": [
+        "1 Mar \u2013 31 May",
+        "1 Oct \u2013 19 Dec"
+      ]
+    }
+  },
+  "rates": {
+    "currency": "USD",
+    "unit": "per person per night",
+    "fullBoard": {
+      "perPerson": {
+        "peak": {
+          "rack": 830,
+          "net": 540
+        },
+        "shoulder": {
+          "rack": 710,
+          "net": 462
+        },
+        "extendedGreen": {
+          "rack": 595,
+          "net": 387
+        }
+      },
+      "single": {
+        "peak": {
+          "rack": 1245,
+          "net": 809
+        },
+        "shoulder": {
+          "rack": 1065,
+          "net": 692
+        },
+        "extendedGreen": {
+          "rack": 744,
+          "net": 483
+        }
+      }
+    },
+    "groundPackage": {
+      "perPerson": {
+        "peak": {
+          "rack": 1045,
+          "net": 679
+        },
+        "shoulder": {
+          "rack": 925,
+          "net": 601
+        },
+        "extendedGreen": {
+          "rack": 810,
+          "net": 527
+        }
+      },
+      "single": {
+        "peak": {
+          "rack": 1568,
+          "net": 1019
+        },
+        "shoulder": {
+          "rack": 1388,
+          "net": 902
+        },
+        "extendedGreen": {
+          "rack": 1013,
+          "net": 658
+        }
+      }
+    }
+  },
+  "roomNote": "Single accommodation category."
+}

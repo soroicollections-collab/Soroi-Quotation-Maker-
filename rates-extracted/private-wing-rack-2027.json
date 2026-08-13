@@ -1,64 +1,98 @@
 {
-  "$note": "Fresh extraction, 5 Aug 2026, read directly from the property's own page in the paginated source PDF.",
+  "$note": "Extracted from the Rack Rate 2027 portal PDF (13 Aug 2026 batch, confirmed by Yasin as source of truth), refreshing/superseding the previously-reviewed-but-uncommitted batch from earlier in Aug 2026.",
   "property": "Soroi Private Wing",
   "region": "Maasai Mara",
   "tier": "Rack Rate",
   "residency": "Non-Resident",
   "source": {
-    "file": "SOROI 2027/Soroi - 2027 RACK Rates.pdf",
-    "pdfPageIndex": 2,
-    "docPrintedPageNumber": 3,
-    "validity": { "start": "2027-01-04", "end": "2028-01-03" }
+    "file": "2027 CONTRACT RATES Rack Rate.pdf (portal download, 13 Aug 2026)",
+    "validity": {
+      "start": "2027-01-04",
+      "end": "2028-01-03"
+    }
   },
-  "confidence": "confirmed-2026-08-05",
-  "extractionMethod": { "note": "Read directly from the property's own page, header 'SOROI PRIVATE WING' present on the same page as the figures." },
   "seasons": {
-    "peak": { "dateRanges": ["1 Jul – 30 Sep", "20 Dec – 3 Jan"] },
-    "shoulder": { "dateRanges": ["4 Jan – 28 Feb", "1 Jun – 30 Jun"] },
-    "extendedGreen": { "dateRanges": ["1 Mar – 31 May", "1 Oct – 19 Dec"] }
+    "peak": {
+      "dateRanges": [
+        "1 Jul \u2013 30 Sep",
+        "20 Dec \u2013 3 Jan"
+      ]
+    },
+    "shoulder": {
+      "dateRanges": [
+        "4 Jan \u2013 28 Feb",
+        "1 Jun \u2013 30 Jun"
+      ]
+    },
+    "extendedGreen": {
+      "dateRanges": [
+        "1 Mar \u2013 31 May",
+        "1 Oct \u2013 19 Dec"
+      ]
+    }
   },
   "rates": {
     "currency": "USD",
     "unit": "per person per night",
-    "roomCategory": "River Facing Tents (base category)",
     "fullBoard": {
-      "perPerson": { "peak": 830, "shoulder": 710, "extendedGreen": 595 },
-      "single": { "peak": 1245, "shoulder": 1065, "extendedGreen": 744 }
+      "perPerson": {
+        "peak": 830,
+        "shoulder": 710,
+        "extendedGreen": 595
+      },
+      "single": {
+        "peak": 1245,
+        "shoulder": 1065,
+        "extendedGreen": 744
+      }
     },
     "groundPackage": {
-      "perPerson": { "peak": 1045, "shoulder": 925, "extendedGreen": 810 },
-      "single": { "peak": 1568, "shoulder": 1388, "extendedGreen": 1013 }
-    },
-    "forestFacingTentDiscount": { "amount": 40, "unit": "per person per night reduction vs. River Facing" }
+      "perPerson": {
+        "peak": 1045,
+        "shoulder": 925,
+        "extendedGreen": 810
+      },
+      "single": {
+        "peak": 1568,
+        "shoulder": 1388,
+        "extendedGreen": 1013
+      }
+    }
   },
-  "familyUnit": {
-    "verified": false,
-    "warning": "No priced Family Unit/Family Tent row exists on this property's page, same gap as Mara Bush Camp. 2 River-facing Family Tents exist physically per the room note below but are not independently priced here."
-  },
+  "roomNote": "Single accommodation category.",
   "mandatoryFees": {
-    "note": "Identical wording/figures to Mara Bush Camp and Luxury Migration Camp — shared Maasai Mara conservancy fee, not property-specific.",
+    "note": "Identical wording/figures to Mara Bush Camp and Luxury Migration Camp \u2014 shared Maasai Mara conservancy fee, not property-specific.",
     "verified": true,
     "verifiedDate": "2026-08-05",
     "communityLevy": {
-      "peak": { "adult": 80, "child": 40, "unit": "per night" },
-      "shoulder": { "adult": 40, "child": 20, "unit": "per night" },
-      "extendedGreen": { "adult": 40, "child": 20, "unit": "per night" }
+      "peak": {
+        "adult": 80,
+        "child": 40,
+        "unit": "per night"
+      },
+      "shoulder": {
+        "adult": 40,
+        "child": 20,
+        "unit": "per night"
+      },
+      "extendedGreen": {
+        "adult": 40,
+        "child": 20,
+        "unit": "per night"
+      }
     },
     "parkFee": {
-      "janToJun": { "adult": 100, "child": 50, "unit": "per adult per 12h" },
-      "julToDec": { "adult": 200, "child": 50, "unit": "per adult per 12h" },
+      "janToJun": {
+        "adult": 100,
+        "child": 50,
+        "unit": "per adult per 12h"
+      },
+      "julToDec": {
+        "adult": 200,
+        "child": 50,
+        "unit": "per adult per 12h"
+      },
       "billingUnitStillAmbiguous": true
     }
-  },
-  "roomNote": "4 Forest-Facing Tents, 6 River-facing tents & 2 River facing Family Tents (1 King double + 2 single beds, shared bathroom).",
-  "portfolioWideTerms": {
-    "note": "Applies across Soroi properties per CLAUDE.md > Portfolio-wide terms. Duplicated here for convenience — CLAUDE.md is authoritative.",
-    "childAge5to11": "50% of adult sharing rate",
-    "childUnder4": "free (sharing)",
-    "youngAdult12to17Sharing": "75% of adult rate",
-    "tourLeaderGuide": { "inTLTent": 175, "inGuestTent": "75% of adult single rate" },
-    "privateGuideMeals": { "amount": 50, "unit": "per day" },
-    "singleSupplementGreenSeason": "reduced to 25% (from 50%) — Mara properties only",
-    "christmasNewYearSupplement": { "adult": 40, "child": 20, "unit": "per night" }
   }
 }

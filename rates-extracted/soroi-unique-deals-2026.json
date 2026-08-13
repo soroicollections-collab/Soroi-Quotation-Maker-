@@ -1,0 +1,44 @@
+{
+  "$note": "Extracted from the 'SOROI UNIQUE DEALS' page, present identically in every 2026 document in the 13 Aug 2026 portal batch (verified across STO10 and the standalone Rack doc). This resolves a previously-flagged gap: the SOROI 2027 UNIQUE DEALS.pdf from the original SharePoint tree had no extractable text (image-only/scanned) - this is a different, readable document. Confirmed by Yasin as source of truth.",
+  "validity": { "start": "2026-01-04", "end": "2027-01-03" },
+  "generalRules": [
+    "Specials must be requested at time of booking and cannot be applied retroactively.",
+    "Special offers are NOT combinable with each other.",
+    "Circuit discounts and long-stay offers do not apply to special/discounted group rates."
+  ],
+  "circuitDiscount": {
+    "description": "Applicable when combining any bush properties for the same visit, minimum 6 nights. Year-round, excludes festive periods. This is the same figure already documented in CLAUDE.md.",
+    "tiers": [
+      { "minNights": 6, "discountPct": 12 },
+      { "minNights": 9, "discountPct": 15 },
+      { "minNights": 12, "discountPct": 20 }
+    ]
+  },
+  "longStayOffer": {
+    "description": "NOT previously documented in CLAUDE.md - distinct from Circuit Discount, applies to a stay at ONE bush property (not a multi-property combination). Year-round, excludes festive periods. NOTE: the 2027 version of this offer has DIFFERENT thresholds and percentages - see soroi-unique-deals-2027.json.",
+    "tiers": [
+      { "minNights": 4, "discountPct": 5 },
+      { "minNights": 6, "discountPct": 10 }
+    ]
+  },
+  "pay3Stay4": {
+    "description": "Not previously documented. Applicable to Camp/Lodge bookings only - explicitly NOT valid for Soroi Blue (Diani). Cannot be combined with any other offer.",
+    "validDates": ["5 Jan – 30 Jun 2026", "1 Oct – 19 Dec 2026"]
+  },
+  "honeymoonSpecial": {
+    "description": "Ground Package bookings only. Requires a valid marriage certificate. NOTE: the 2027 version of this offer is substantially more generous and detailed (50% off accommodation for one partner, spa discount, Valentine's window) - see soroi-unique-deals-2027.json. Do not assume the 2026 and 2027 versions are the same offer.",
+    "includes": [
+      "A celebratory private sundowner experience",
+      "A premium bottle of sparkling wine on arrival in their room",
+      "A complimentary 30-minute spa treatment"
+    ],
+    "subjectToAvailability": [
+      "Upgrade to a higher room category where possible",
+      "A private safari vehicle where possible"
+    ]
+  },
+  "repeatGuestOffer": {
+    "description": "Not previously documented. 5% accommodation discount for returning guests. Not combinable with other offers. Must be requested at time of booking with proof of a prior stay.",
+    "discountPct": 5
+  }
+}

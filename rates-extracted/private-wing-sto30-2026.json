@@ -1,0 +1,127 @@
+{
+  "$note": "Extracted from the STO 30% 2026 portal PDF (13 Aug 2026 batch, confirmed by Yasin as source of truth). Extracted via a validated script, cross-checked against a systematic Net/Rack ratio scan across the whole batch (only the 2 already-known/flagged anomalies found, no new ones).",
+  "property": "Soroi Private Wing",
+  "region": "Maasai Mara",
+  "tier": "STO 30%",
+  "residency": "Non-Resident",
+  "source": {
+    "file": "2026 CONTRACT RATE STO 30%.pdf (portal download, 13 Aug 2026)",
+    "validity": {
+      "start": "2026-01-04",
+      "end": "2027-01-03"
+    }
+  },
+  "seasons": {
+    "peak": {
+      "dateRanges": [
+        "1 Jul \u2013 30 Sep",
+        "20 Dec \u2013 3 Jan"
+      ]
+    },
+    "shoulder": {
+      "dateRanges": [
+        "4 Jan \u2013 28 Feb",
+        "1 Jun \u2013 30 Jun"
+      ]
+    },
+    "extendedGreen": {
+      "dateRanges": [
+        "1 Mar \u2013 31 May",
+        "1 Oct \u2013 19 Dec"
+      ]
+    }
+  },
+  "rates": {
+    "currency": "USD",
+    "unit": "per person per night",
+    "fullBoard": {
+      "perPerson": {
+        "peak": {
+          "rack": 830,
+          "net": 581
+        },
+        "shoulder": {
+          "rack": 710,
+          "net": 497
+        },
+        "extendedGreen": {
+          "rack": 595,
+          "net": 417
+        }
+      },
+      "single": {
+        "peak": {
+          "rack": 1245,
+          "net": 872
+        },
+        "shoulder": {
+          "rack": 1065,
+          "net": 746
+        },
+        "extendedGreen": {
+          "rack": 744,
+          "net": 521
+        }
+      },
+      "familyUnit": {
+        "peak": {
+          "rack": 2905,
+          "net": 2034
+        },
+        "shoulder": {
+          "rack": 2485,
+          "net": 1740
+        },
+        "extendedGreen": {
+          "rack": 2083,
+          "net": 1458
+        }
+      }
+    },
+    "groundPackage": {
+      "perPerson": {
+        "peak": {
+          "rack": 1045,
+          "net": 732
+        },
+        "shoulder": {
+          "rack": 925,
+          "net": 648
+        },
+        "extendedGreen": {
+          "rack": 810,
+          "net": 567
+        }
+      },
+      "single": {
+        "peak": {
+          "rack": 1568,
+          "net": 1097
+        },
+        "shoulder": {
+          "rack": 1388,
+          "net": 971
+        },
+        "extendedGreen": {
+          "rack": 1013,
+          "net": 709
+        }
+      },
+      "familyUnit": {
+        "peak": {
+          "rack": 3658,
+          "net": 2560
+        },
+        "shoulder": {
+          "rack": 3238,
+          "net": 2266
+        },
+        "extendedGreen": {
+          "rack": 2835,
+          "net": 1985
+        }
+      }
+    }
+  },
+  "roomNote": "Single accommodation category."
+}

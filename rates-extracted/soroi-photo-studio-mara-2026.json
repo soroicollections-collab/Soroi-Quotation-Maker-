@@ -1,0 +1,47 @@
+{
+  "$note": "Extracted from the 'SOROI PHOTO STUDIO' page (Maasai Mara section), present identically in every 2026 document in the batch (verified in STO10). Not previously documented in CLAUDE.md - a genuinely new sellable product line. All prices explicitly marked 'PRICES ARE PER DAY AND NOT COMMISSIONABLE' in the source - directly relevant to how commission is calculated on any quote including this product.",
+  "location": "Soroi Mara Bush Camp / Maasai Mara properties",
+  "validity": { "start": "2026-01-04", "end": "2027-01-03" },
+  "currency": "USD",
+  "commissionable": false,
+  "cameraKits": {
+    "unit": "per day",
+    "items": [
+      { "name": "Pro Kit", "cameraType": "Nikon Z8 + 180-600mm & 24-70mm lenses", "price": 120 },
+      { "name": "Advanced Kit", "cameraType": "Nikon Z6II + 180-600mm & 24-120mm lenses", "price": 90 },
+      { "name": "Beginner Kit", "cameraType": "Nikon Z50 + 15-50mm & 50-250mm lenses", "price": 45 }
+    ]
+  },
+  "lensOnly": {
+    "unit": "per day",
+    "items": [
+      { "name": "Nikkor 180-600mm", "price": 70 },
+      { "name": "Nikkor 24-70mm", "price": 70 },
+      { "name": "Nikkor 24-120mm", "price": 70 }
+    ]
+  },
+  "cameraOnly": {
+    "unit": "per day",
+    "items": [
+      { "name": "Nikon Z8", "price": 90 },
+      { "name": "Nikon Z6 II", "price": 70 }
+    ]
+  },
+  "photoshoot": {
+    "unit": "flat rate",
+    "items": [
+      { "name": "1 hour", "price": 90 },
+      { "name": "Half Day", "price": 230 },
+      { "name": "Full Day", "price": 350 }
+    ]
+  },
+  "guidedPhotoSafari": {
+    "note": "Price excludes mandatory private vehicle",
+    "items": [
+      { "name": "Half Day", "price": 175 },
+      { "name": "Full Day", "price": 350 }
+    ]
+  },
+  "photoClass": "1 hour photo class + 1 hour editing class included with photoshoots.",
+  "photoprinting": "Professional photo printing available on request."
+}

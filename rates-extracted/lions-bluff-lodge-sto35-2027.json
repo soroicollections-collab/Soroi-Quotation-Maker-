@@ -1,0 +1,97 @@
+{
+  "$note": "Extracted from the STO 35% 2027 portal PDF (13 Aug 2026 batch, confirmed by Yasin as source of truth), refreshing/superseding the previously-reviewed-but-uncommitted batch from earlier in Aug 2026.",
+  "property": "Soroi Lions Bluff Lodge",
+  "region": "Lumo/Tsavo",
+  "tier": "STO 35%",
+  "residency": "Non-Resident",
+  "source": {
+    "file": "2027 CONTRACT RATES STO 35%.pdf (portal download, 13 Aug 2026)",
+    "validity": {
+      "start": "2027-01-04",
+      "end": "2028-01-03"
+    }
+  },
+  "seasons": {
+    "peak": {
+      "dateRanges": [
+        "1 Jul \u2013 31 Oct",
+        "20 Dec \u2013 3 Jan"
+      ]
+    },
+    "shoulder": {
+      "dateRanges": [
+        "4 Jan \u2013 30 Jun",
+        "1 Nov \u2013 19 Dec"
+      ]
+    }
+  },
+  "rates": {
+    "currency": "USD",
+    "unit": "per person per night",
+    "fullBoard": {
+      "perPerson": {
+        "peak": {
+          "rack": 1035,
+          "net": 673
+        },
+        "shoulder": {
+          "rack": 875,
+          "net": 569
+        }
+      },
+      "single": {
+        "peak": {
+          "rack": 1553,
+          "net": 1009
+        },
+        "shoulder": {
+          "rack": 1094,
+          "net": 711
+        }
+      },
+      "familyUnit": {
+        "peak": {
+          "rack": 4140,
+          "net": 2691
+        },
+        "shoulder": {
+          "rack": 3500,
+          "net": 2275
+        }
+      }
+    },
+    "groundPackage": {
+      "perPerson": {
+        "peak": {
+          "rack": 1235,
+          "net": 803
+        },
+        "shoulder": {
+          "rack": 1075,
+          "net": 699
+        }
+      },
+      "single": {
+        "peak": {
+          "rack": 1853,
+          "net": 1204
+        },
+        "shoulder": {
+          "rack": 1344,
+          "net": 873
+        }
+      },
+      "familyUnit": {
+        "peak": {
+          "rack": 4940,
+          "net": 3211
+        },
+        "shoulder": {
+          "rack": 4300,
+          "net": 2795
+        }
+      }
+    }
+  },
+  "roomNote": "9 Luxury Suites & 2 Family Rooms."
+}

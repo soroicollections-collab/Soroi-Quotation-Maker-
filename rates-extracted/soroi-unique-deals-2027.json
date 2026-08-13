@@ -1,0 +1,52 @@
+{
+  "$note": "Extracted from the 'SOROI UNIQUE DEALS' page, present identically in every 2027 document in the 13 Aug 2026 portal batch (verified in the STO40 doc). Confirmed by Yasin as source of truth. This offer set is MATERIALLY DIFFERENT from the 2026 version (soroi-unique-deals-2026.json) - do not assume the two years share the same terms; several offers changed thresholds, percentages, or scope entirely.",
+  "validity": { "start": "2027-01-04", "end": "2028-01-03" },
+  "generalRules": [
+    "All special offers must be requested at the time of booking and cannot be applied retrospectively.",
+    "All offers are not combinable with other promotions, discounted rates, special discounted rates, or negotiated rates unless otherwise stated.",
+    "All offers are not valid for group bookings or property buyouts.",
+    "Community and park fees apply for all nights regardless of any offer.",
+    "All offers are not valid for Soroi Blue (Diani) unless stated otherwise.",
+    "During periods of high demand, Soroi Collection reserves the right to review and adjust these offers and rates at its discretion."
+  ],
+  "circuitDiscount": {
+    "description": "Multi-Property Stay. Applicable when combining any Soroi bush properties within the same itinerary, minimum 6 nights. Year-round, excludes festive period. Matches the figure already in CLAUDE.md and identical to the 2026 version.",
+    "tiers": [
+      { "minNights": 6, "discountPct": 12 },
+      { "minNights": 9, "discountPct": 15 },
+      { "minNights": 12, "discountPct": 20 }
+    ]
+  },
+  "longStayOffer": {
+    "description": "Single Property Stay. CHANGED FROM 2026: different night thresholds AND different percentages (2026 was 4+/5% and 6+/10%; 2027 is 6/8/10+ nights at 10%/15%/20%). Year-round, excludes festive period.",
+    "tiers": [
+      { "minNights": 6, "discountPct": 10 },
+      { "minNights": 8, "discountPct": 15 },
+      { "minNights": 10, "discountPct": 20 }
+    ]
+  },
+  "stay4Pay3": {
+    "description": "Renamed from 2026's 'Pay 3 Stay 4' (same concept: one complimentary night on extended stays). Applicable to all Camp/Lodge bookings, excluding Soroi Blue. Same validity date pattern as 2026.",
+    "validDates": ["5 Jan – 30 Jun 2027", "1 Oct – 19 Dec 2027"]
+  },
+  "honeymoonSignatureOffer": {
+    "description": "SUBSTANTIALLY DIFFERENT AND MORE GENEROUS than the 2026 Honeymoon Special - not a simple refresh, a materially different offer. Applicable to honeymoon couples on presentation of a valid marriage certificate (6 months validity from marriage date). Minimum stay 3 consecutive nights. Also valid for a specific Valentine's window. NOT valid during festive season, NOT valid for group bookings or property buyouts.",
+    "validityWindow": "Marriage certificate must be within 6 months of the marriage date",
+    "specialWindow": "Also valid for Valentine's bookings, 10–20 February 2027",
+    "excludedDates": "24-26 & 31 December, 1 January (festive season)",
+    "includes": [
+      "50% off accommodation for one partner",
+      "Private celebratory camp sundowner experience (weather permitting)",
+      "Seasonal welcome amenities",
+      "15% discount on spa services"
+    ],
+    "subjectToAvailability": [
+      "Complimentary room upgrade on arrival",
+      "Chef's romantic turndown treat"
+    ]
+  },
+  "repeatGuestOffer": {
+    "description": "Not explicitly re-stated on this page in the 2027 document as read - present in 2026, status for 2027 not separately confirmed. Flag for follow-up rather than assume it still applies unchanged.",
+    "status": "unconfirmed-for-2027"
+  }
+}

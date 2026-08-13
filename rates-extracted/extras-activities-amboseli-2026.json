@@ -1,0 +1,23 @@
+{
+  "$note": "Extracted from the 'EXTRAS & ACTIVITIES' page (Amboseli section), present identically in every 2026 document in the batch (verified in STO10). Not previously documented in CLAUDE.md.",
+  "region": "Amboseli",
+  "validity": { "start": "2026-06-01", "end": "2027-01-03" },
+  "currency": "USD",
+  "perPersonPerDay": [
+    { "item": "Additional Camp Lunch", "rackAdult": 50, "netAdult": 45, "rackChildUnder12": 25, "netChildUnder12": 20 },
+    { "item": "Additional Packed Lunch", "rackAdult": 35, "netAdult": 30, "rackChildUnder12": 20, "netChildUnder12": 15 },
+    { "item": "Private Bush Breakfast (min 4 adults)", "rackAdult": 110, "netAdult": 99, "rackChildUnder12": 40, "netChildUnder12": 35 },
+    { "item": "Private Sundowner (min 4 adults)", "rackAdult": 60, "netAdult": 55, "rackChildUnder12": 30, "netChildUnder12": 25 },
+    { "item": "Private Bush Dinner (min 4 adults)", "rackAdult": 90, "netAdult": 80, "rackChildUnder12": 45, "netChildUnder12": 40 },
+    { "item": "Add-on Scheduled Game Drive (Full Board guests)", "rackAdult": 115, "netAdult": 105, "rackChildUnder12": 70, "netChildUnder12": 65 }
+  ],
+  "exclusiveVehiclePerDay": {
+    "peak": { "rack": 450, "net": 405 },
+    "shoulderGreen": { "rack": 350, "net": 315 }
+  },
+  "other": [
+    { "item": "Hot Air Balloon Safari", "rackAdult": 495, "netAdult": 455, "rackChild": 395, "netChild": 350 },
+    { "item": "Transfer to/from Amboseli Airstrip (one way, per vehicle)", "rackVehicle": 85, "netVehicle": 75 },
+    { "item": "Transfer to/from Emali Train Station (one way, per vehicle)", "rackVehicle": 350, "netVehicle": 315 }
+  ]
+}

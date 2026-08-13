@@ -1,0 +1,78 @@
+{
+  "$note": "Extracted from the 2026 Rack Rates portal PDF (13 Aug 2026 batch, confirmed by Yasin as source of truth). Numbers extracted via a validated script (cross-checked row-by-row against a manual page-by-page read) then spot-verified. \u26a0 WARNING: these figures are IDENTICAL, row for row, to Leopard's Lair Cottages' figures in this same document - confirmed independently in the STO 10 doc too, and CORRECTLY DIFFERENT in the KES-priced Resident doc. Do NOT treat as verified-correct until Sunworld confirms - see report.",
+  "property": "Soroi Cheetah Tented Camp",
+  "region": "Lumo/Tsavo",
+  "tier": "Rack Rate",
+  "residency": "Non-Resident",
+  "source": {
+    "file": "2026 CONTRACT RATES.pdf (portal download, 13 Aug 2026 - titled '2026 RACK RATES' internally)",
+    "validity": {
+      "start": "2026-01-04",
+      "end": "2027-01-03"
+    }
+  },
+  "seasons": {
+    "peak": {
+      "dateRanges": [
+        "1 Jul \u2013 31 Oct",
+        "20 Dec \u2013 3 Jan"
+      ]
+    },
+    "shoulder": {
+      "dateRanges": [
+        "4 Jan \u2013 30 Jun",
+        "1 Nov \u2013 19 Dec"
+      ]
+    }
+  },
+  "rates": {
+    "currency": "USD",
+    "unit": "per person per night",
+    "fullBoard": {
+      "perPerson": {
+        "peak": 375,
+        "shoulder": 305
+      },
+      "single": {
+        "peak": 563,
+        "shoulder": 382
+      },
+      "familyUnit": {
+        "peak": 1500,
+        "shoulder": 1220
+      }
+    },
+    "groundPackage": {
+      "perPerson": {
+        "peak": 525,
+        "shoulder": 455
+      },
+      "single": {
+        "peak": 788,
+        "shoulder": 569
+      },
+      "familyUnit": {
+        "peak": 2100,
+        "shoulder": 1821
+      }
+    }
+  },
+  "mandatoryFees": {
+    "note": "3-part flat fee, shared across Lions Bluff/Leopard's Lair/Cheetah - confirmed identical wording/figures on each property's own 2026 page.",
+    "communityBedLevy": {
+      "amount": 10,
+      "unit": "per person per night"
+    },
+    "conservationLevy": {
+      "amount": 10,
+      "unit": "per person per night",
+      "correctionNote": "\u26a0 This 2026 document reads $10 per person per night, directly and independently confirmed on two separate 2026 sources (STO 10% doc and the standalone 2026 Rack doc), for all three Lumo properties (Lions Bluff, Leopard's Lair, Cheetah) uniformly. This matches the ORIGINAL, since-corrected $10 figure from the 2027 documents (corrected to $20 on 5 Aug 2026 per CLAUDE.md's Corrections Log, based on a direct 2027 PDF read). Given this is a DIFFERENT document (2026, not 2027) read carefully and independently twice, this is preserved as printed rather than silently 'corrected' to match 2027 - but it needs Sunworld confirmation: is the 2026 Conservation Levy genuinely $10 (different from 2027's $20), or does the same $10/$20 confusion exist independently in Sunworld's 2026 paperwork too?"
+    },
+    "lumoConservationFee": {
+      "adult": 37,
+      "child": 19,
+      "unit": "per night"
+    }
+  },
+  "roomNote": "5 Standard Guest Tents, 2 Family Tents, 1 Quadruple."
+}

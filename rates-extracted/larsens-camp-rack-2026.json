@@ -1,0 +1,117 @@
+{
+  "$note": "Extracted from the 2026 Rack Rates portal PDF (13 Aug 2026 batch, confirmed by Yasin as source of truth). Numbers extracted via a validated script (cross-checked row-by-row against a manual page-by-page read) then spot-verified.",
+  "property": "Soroi Larsens Camp",
+  "region": "Samburu",
+  "tier": "Rack Rate",
+  "residency": "Non-Resident",
+  "source": {
+    "file": "2026 CONTRACT RATES.pdf (portal download, 13 Aug 2026 - titled '2026 RACK RATES' internally)",
+    "validity": {
+      "start": "2026-01-04",
+      "end": "2027-01-03"
+    }
+  },
+  "seasons": {
+    "peak": {
+      "dateRanges": [
+        "1 Jul \u2013 30 Sep",
+        "20 Dec \u2013 3 Jan"
+      ]
+    },
+    "shoulder": {
+      "dateRanges": [
+        "4 Jan \u2013 28 Feb",
+        "1 Jun \u2013 30 Jun"
+      ]
+    },
+    "extendedGreen": {
+      "dateRanges": [
+        "1 Mar \u2013 31 May",
+        "1 Oct \u2013 19 Dec"
+      ]
+    }
+  },
+  "rates": {
+    "currency": "USD",
+    "unit": "per person per night",
+    "standardTents": {
+      "fullBoard": {
+        "perPerson": {
+          "peak": 750,
+          "shoulder": 640,
+          "extendedGreen": 535
+        },
+        "single": {
+          "peak": 1125,
+          "shoulder": 960,
+          "extendedGreen": 669
+        },
+        "familyUnit": {
+          "peak": 3000,
+          "shoulder": 2560,
+          "extendedGreen": 2140
+        }
+      },
+      "groundPackage": {
+        "perPerson": {
+          "peak": 970,
+          "shoulder": 860,
+          "extendedGreen": 755
+        },
+        "single": {
+          "peak": 1455,
+          "shoulder": 1290,
+          "extendedGreen": 944
+        },
+        "familyUnit": {
+          "peak": 3880,
+          "shoulder": 3440,
+          "extendedGreen": 3020
+        }
+      }
+    },
+    "starBedSuites": {
+      "fullBoard": {
+        "perPerson": {
+          "peak": 970,
+          "shoulder": 790,
+          "extendedGreen": 655
+        },
+        "single": {
+          "peak": 1455,
+          "shoulder": 1185,
+          "extendedGreen": 819
+        }
+      },
+      "groundPackage": {
+        "perPerson": {
+          "peak": 1190,
+          "shoulder": 1010,
+          "extendedGreen": 875
+        },
+        "single": {
+          "peak": 1785,
+          "shoulder": 1515,
+          "extendedGreen": 1094
+        }
+      }
+    }
+  },
+  "mandatoryFees": {
+    "note": "Single flat fee, confirmed on the property's own 2026 page.",
+    "tourLeaderGuide": {
+      "inTLRoom": 175,
+      "inGuestRoom": "75% of adult single rate"
+    },
+    "privateGuideMeals": {
+      "amount": 50,
+      "unit": "per day"
+    },
+    "samburuReserveFee": {
+      "adult": 85,
+      "child": 50,
+      "unit": "per night"
+    }
+  },
+  "roomNote": "12 Standard Tents + 2 Family Tents (up to 4 persons); separate Deluxe/Star-Bed Suites with star bed, children below 8 not allowed, no family rate."
+}

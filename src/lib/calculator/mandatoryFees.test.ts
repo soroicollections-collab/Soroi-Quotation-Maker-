@@ -96,14 +96,19 @@ describe("mandatoryFees - Mara Bush Camp's date-window Park Fee", () => {
 });
 
 describe("mandatoryFees - no fabricated figures for known gaps", () => {
-  it("Mara Bush Camp's disputed Family Unit figure is never returned by the accommodation lookup", async () => {
+  it("Mara Bush Camp's Family Unit figure is now confirmed and present (resolved 13 Aug 2026)", async () => {
+    // Previously disputed/unverified (never found in the source PDF at the time) - now
+    // independently confirmed via two separate documents in the 13 Aug 2026 portal
+    // batch (the STO 10% doc and the standalone Rack doc), both giving the same figures
+    // ($2,048 FB / $2,748 Ground Package at Peak) directly on Mara's own page. This test
+    // now guards the opposite regression: that the figure doesn't silently disappear again.
     const figureCount = await prisma.rateFigure.count({
       where: {
         rateCard: { property: { slug: "soroi-mara-bush-camp" }, tier: "Rack Rate" },
         path: { contains: "familyUnit" },
       },
     });
-    expect(figureCount).toBe(0);
+    expect(figureCount).toBeGreaterThan(0);
   });
 });
 

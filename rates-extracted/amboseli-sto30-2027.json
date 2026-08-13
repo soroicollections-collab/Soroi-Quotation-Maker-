@@ -1,0 +1,191 @@
+{
+  "$note": "Extracted from the STO 30% 2027 portal PDF (13 Aug 2026 batch, confirmed by Yasin as source of truth), refreshing/superseding the previously-reviewed-but-uncommitted batch from earlier in Aug 2026. 2027 uses 3 full seasons (Peak/Shoulder/Extended Green), unlike the 2026 2-season structure (property only proposed-opens mid-2026). Mandatory fee now has confirmed figures for 2027: Non-Resident \\/adult + \\/child per 12h, plus 8.5% KWS surcharge (African Citizen \\/\\ + 8.5%) - contrast with 2026's 'to be confirmed'.",
+  "property": "Soroi Amboseli",
+  "region": "Amboseli",
+  "tier": "STO 30%",
+  "residency": "Non-Resident",
+  "source": {
+    "file": "2027 CONTRACT RATES STO 30%.pdf (portal download, 13 Aug 2026)",
+    "validity": {
+      "start": "2027-01-04",
+      "end": "2028-01-03"
+    }
+  },
+  "seasons": {
+    "peak": {
+      "dateRanges": [
+        "1 Jul \u2013 30 Sep",
+        "20 Dec \u2013 3 Jan"
+      ]
+    },
+    "shoulder": {
+      "dateRanges": [
+        "4 Jan \u2013 28 Feb",
+        "1 Jun \u2013 30 Jun"
+      ]
+    },
+    "extendedGreen": {
+      "dateRanges": [
+        "1 Mar \u2013 31 May",
+        "1 Oct \u2013 19 Dec"
+      ]
+    }
+  },
+  "rates": {
+    "currency": "USD",
+    "unit": "per person per night",
+    "standardTents": {
+      "fullBoard": {
+        "perPerson": {
+          "peak": {
+            "rack": 750,
+            "net": 525
+          },
+          "shoulder": {
+            "rack": 640,
+            "net": 448
+          },
+          "extendedGreen": {
+            "rack": 535,
+            "net": 375
+          }
+        },
+        "single": {
+          "peak": {
+            "rack": 1125,
+            "net": 788
+          },
+          "shoulder": {
+            "rack": 960,
+            "net": 672
+          },
+          "extendedGreen": {
+            "rack": 669,
+            "net": 468
+          }
+        },
+        "familyUnit": {
+          "peak": {
+            "rack": 3000,
+            "net": 2100
+          },
+          "shoulder": {
+            "rack": 2560,
+            "net": 1792
+          },
+          "extendedGreen": {
+            "rack": 2140,
+            "net": 1498
+          }
+        }
+      },
+      "groundPackage": {
+        "perPerson": {
+          "peak": {
+            "rack": 970,
+            "net": 679
+          },
+          "shoulder": {
+            "rack": 860,
+            "net": 602
+          },
+          "extendedGreen": {
+            "rack": 755,
+            "net": 529
+          }
+        },
+        "single": {
+          "peak": {
+            "rack": 1455,
+            "net": 1019
+          },
+          "shoulder": {
+            "rack": 1290,
+            "net": 903
+          },
+          "extendedGreen": {
+            "rack": 944,
+            "net": 661
+          }
+        },
+        "familyUnit": {
+          "peak": {
+            "rack": 3880,
+            "net": 2716
+          },
+          "shoulder": {
+            "rack": 3440,
+            "net": 2408
+          },
+          "extendedGreen": {
+            "rack": 3020,
+            "net": 2114
+          }
+        }
+      }
+    },
+    "deluxeSuite": {
+      "fullBoard": {
+        "perPerson": {
+          "peak": {
+            "rack": 970,
+            "net": 679
+          },
+          "shoulder": {
+            "rack": 790,
+            "net": 553
+          },
+          "extendedGreen": {
+            "rack": 655,
+            "net": 459
+          }
+        },
+        "single": {
+          "peak": {
+            "rack": 1455,
+            "net": 1019
+          },
+          "shoulder": {
+            "rack": 1185,
+            "net": 830
+          },
+          "extendedGreen": {
+            "rack": 819,
+            "net": 573
+          }
+        }
+      },
+      "groundPackage": {
+        "perPerson": {
+          "peak": {
+            "rack": 1190,
+            "net": 833
+          },
+          "shoulder": {
+            "rack": 1010,
+            "net": 707
+          },
+          "extendedGreen": {
+            "rack": 875,
+            "net": 613
+          }
+        },
+        "single": {
+          "peak": {
+            "rack": 1785,
+            "net": 1250
+          },
+          "shoulder": {
+            "rack": 1515,
+            "net": 1061
+          },
+          "extendedGreen": {
+            "rack": 1094,
+            "net": 766
+          }
+        }
+      }
+    }
+  },
+  "roomNote": "13 Luxury Tents - 2 Two-Bedroom Family Units (up to 5 persons); separate Star-Bed/Deluxe Suite."
+}

@@ -1,65 +1,226 @@
 {
-  "$note": "Extracted 5 Aug 2026 via direct paginated read (pypdf, page indices 8-10) for the Amboseli/Mara/Solio/Samburu/Nairobi quote. Three accommodation categories, same as the Rack extraction: Standard, Superior/Family Room Quad/Family Unit, Executive Villa (priced per villa).",
+  "$note": "Extracted from the STO 30% 2027 portal PDF (13 Aug 2026 batch, confirmed by Yasin as source of truth), refreshing/superseding the previously-reviewed-but-uncommitted batch from earlier in Aug 2026. \u26a0 Superior/Family Units Full Board Single Shoulder Rack shows $619 here vs $620 in the standalone Rack doc and the STO15/STO20 tiers - confirmed as a persistent, reproducible split across Sunworld's own documents (checked in a fresh 13 Aug 2026 portal download, not a stale artifact). Needs Sunworld's confirmation of which is correct.",
   "property": "Soroi Samburu Lodge",
   "region": "Samburu",
   "tier": "STO 30%",
   "residency": "Non-Resident",
   "source": {
-    "file": "SOROI 2027/Soroi - 2027 STO 30% Contract Rates.pdf",
-    "pdfPageIndices": [8, 9, 10],
-    "docPrintedPageNumbers": [9, 10, 11],
-    "validity": { "start": "2027-01-04", "end": "2028-01-03" }
+    "file": "2027 CONTRACT RATES STO 30%.pdf (portal download, 13 Aug 2026)",
+    "validity": {
+      "start": "2027-01-04",
+      "end": "2028-01-03"
+    }
   },
-  "standInFor2026": {
-    "confirmed": false,
-    "note": "Same unconfirmed 2027-as-2026-stand-in caveat as every other Soroi property. No native 2026 non-resident file of any tier exists in the SharePoint archive."
-  },
-  "confidence": "confirmed-2026-08-05",
   "seasons": {
-    "peak": { "dateRanges": ["1 Jul – 30 Sep", "20 Dec – 3 Jan"] },
-    "shoulder": { "dateRanges": ["4 Jan – 28 Feb", "1 Jun – 30 Jun"] },
-    "green": { "dateRanges": ["1 Mar – 31 May", "1 Oct – 19 Dec"] }
+    "peak": {
+      "dateRanges": [
+        "1 Jul \u2013 30 Sep",
+        "20 Dec \u2013 3 Jan"
+      ]
+    },
+    "shoulder": {
+      "dateRanges": [
+        "4 Jan \u2013 28 Feb",
+        "1 Jun \u2013 30 Jun"
+      ]
+    },
+    "extendedGreen": {
+      "dateRanges": [
+        "1 Mar \u2013 31 May",
+        "1 Oct \u2013 19 Dec"
+      ]
+    }
   },
   "rates": {
     "currency": "USD",
-    "unit": "per person per night unless noted",
+    "unit": "per person per night",
     "standard": {
       "fullBoard": {
-        "perPerson": { "peak": { "rack": 388, "net": 271 }, "shoulder": { "rack": 350, "net": 245 }, "green": { "rack": 325, "net": 228 } },
-        "single": { "peak": { "rack": 582, "net": 407 }, "shoulder": { "rack": 525, "net": 368 }, "green": { "rack": 406, "net": 284 } }
+        "perPerson": {
+          "peak": {
+            "rack": 388,
+            "net": 271
+          },
+          "shoulder": {
+            "rack": 350,
+            "net": 245
+          },
+          "extendedGreen": {
+            "rack": 325,
+            "net": 228
+          }
+        },
+        "single": {
+          "peak": {
+            "rack": 582,
+            "net": 407
+          },
+          "shoulder": {
+            "rack": 525,
+            "net": 368
+          },
+          "extendedGreen": {
+            "rack": 406,
+            "net": 284
+          }
+        }
       },
       "groundPackage": {
-        "perPerson": { "peak": { "rack": 573, "net": 401 }, "shoulder": { "rack": 535, "net": 375 }, "green": { "rack": 510, "net": 357 } },
-        "single": { "peak": { "rack": 860, "net": 602 }, "shoulder": { "rack": 803, "net": 562 }, "green": { "rack": 638, "net": 446 } }
-      },
-      "roomNote": "Standard Twin/Double/Triple. Units of 4 rooms - 2 ground floor / 2 top floor (ground floor can accommodate Triples). Local airstrip transfers from/to Kalama Airstrip included in Ground Package."
+        "perPerson": {
+          "peak": {
+            "rack": 573,
+            "net": 401
+          },
+          "shoulder": {
+            "rack": 535,
+            "net": 375
+          },
+          "extendedGreen": {
+            "rack": 510,
+            "net": 357
+          }
+        },
+        "single": {
+          "peak": {
+            "rack": 860,
+            "net": 602
+          },
+          "shoulder": {
+            "rack": 803,
+            "net": 562
+          },
+          "extendedGreen": {
+            "rack": 638,
+            "net": 446
+          }
+        }
+      }
     },
-    "superiorFamily": {
+    "superiorFamilyUnits": {
       "fullBoard": {
-        "perPerson": { "peak": { "rack": 450, "net": 315 }, "shoulder": { "rack": 413, "net": 289 }, "green": { "rack": 388, "net": 271 } },
-        "single": { "peak": { "rack": 675, "net": 473 }, "shoulder": { "rack": 619, "net": 433 }, "green": { "rack": 484, "net": 339 } },
-        "familyUnit": { "peak": { "rack": 1800, "net": 1260 }, "shoulder": { "rack": 1652, "net": 1156 }, "green": { "rack": 1552, "net": 1086 } }
+        "perPerson": {
+          "peak": {
+            "rack": 450,
+            "net": 315
+          },
+          "shoulder": {
+            "rack": 413,
+            "net": 289
+          },
+          "extendedGreen": {
+            "rack": 388,
+            "net": 271
+          }
+        },
+        "single": {
+          "peak": {
+            "rack": 675,
+            "net": 473
+          },
+          "shoulder": {
+            "rack": 619,
+            "net": 433
+          },
+          "extendedGreen": {
+            "rack": 484,
+            "net": 339
+          }
+        },
+        "familyUnit": {
+          "peak": {
+            "rack": 1800,
+            "net": 1260
+          },
+          "shoulder": {
+            "rack": 1652,
+            "net": 1156
+          },
+          "extendedGreen": {
+            "rack": 1552,
+            "net": 1086
+          }
+        }
       },
       "groundPackage": {
-        "perPerson": { "peak": { "rack": 635, "net": 445 }, "shoulder": { "rack": 598, "net": 418 }, "green": { "rack": 573, "net": 401 } },
-        "single": { "peak": { "rack": 953, "net": 667 }, "shoulder": { "rack": 896, "net": 627 }, "green": { "rack": 716, "net": 501 } },
-        "familyUnit": { "peak": { "rack": 2540, "net": 1778 }, "shoulder": { "rack": 2392, "net": 1674 }, "green": { "rack": 2292, "net": 1604 } }
-      },
-      "roomNote": "Superior Rooms, Family Room Quad (up to 4 guests), Family Unit - Inter-Connecting Superior (two triple Superior Rooms connected, up to 6 guests)."
+        "perPerson": {
+          "peak": {
+            "rack": 635,
+            "net": 445
+          },
+          "shoulder": {
+            "rack": 598,
+            "net": 418
+          },
+          "extendedGreen": {
+            "rack": 573,
+            "net": 401
+          }
+        },
+        "single": {
+          "peak": {
+            "rack": 953,
+            "net": 667
+          },
+          "shoulder": {
+            "rack": 896,
+            "net": 627
+          },
+          "extendedGreen": {
+            "rack": 716,
+            "net": 501
+          }
+        },
+        "familyUnit": {
+          "peak": {
+            "rack": 2540,
+            "net": 1778
+          },
+          "shoulder": {
+            "rack": 2392,
+            "net": 1674
+          },
+          "extendedGreen": {
+            "rack": 2292,
+            "net": 1604
+          }
+        }
+      }
     },
     "executiveVilla": {
-      "unit": "per villa per night, accommodates 4-7 guests",
-      "fullBoard": { "peak": { "rack": 7000, "net": 4900 }, "shoulder": { "rack": 6510, "net": 4557 }, "green": { "rack": 6185, "net": 4330 } },
-      "groundPackage": { "peak": { "rack": 10500, "net": 7350 }, "shoulder": { "rack": 9765, "net": 6836 }, "green": { "rack": 9277, "net": 6494 } }
+      "fullBoard": {
+        "perVilla": {
+          "peak": {
+            "rack": 7000,
+            "net": 4900
+          },
+          "shoulder": {
+            "rack": 6510,
+            "net": 4557
+          },
+          "extendedGreen": {
+            "rack": 6185,
+            "net": 4330
+          }
+        }
+      },
+      "groundPackage": {
+        "perVilla": {
+          "peak": {
+            "rack": 10500,
+            "net": 7350
+          },
+          "shoulder": {
+            "rack": 9765,
+            "net": 6836
+          },
+          "extendedGreen": {
+            "rack": 9277,
+            "net": 6494
+          }
+        }
+      },
+      "unit": "per villa per night"
     }
   },
-  "mandatoryFees": {
-    "samburuReserveFee": { "adult": 85, "child": 50, "unit": "per night", "note": "Flat, not season-dependent." }
-  },
-  "portfolioWideTerms": {
-    "childAge5to11": "50% of adult sharing rate",
-    "tourLeaderGuide": { "inTLRoom": 135, "inGuestRoom": "75% of adult single rate" },
-    "privateGuideMeals": { "amount": 35, "unit": "per day" },
-    "note": "Tour Leader/Guide rate differs from Larsens Camp's $175/$50 even though both are Samburu-region properties — see CLAUDE.md Known Issues."
-  }
+  "roomNote": "Standard; Superior/Family Units; Executive Villa."
 }
