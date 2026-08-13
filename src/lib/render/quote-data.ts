@@ -13,6 +13,9 @@ export type ItineraryDayInput = {
 export type TransferInput = { description: string; amount: number };
 
 export type FinalizeQuoteContentInput = {
+  /** Who this trip is for - shown on the client-facing cover in place of the old date
+   * line, e.g. "Mr. & Mrs. John Doe". The agent-facing cover shows preparerName instead. */
+  clientName: string;
   guestsSummary: string;
   travelDatesLabel: string;
   durationLabel: string;
@@ -53,7 +56,11 @@ export type PropertySectionData = {
 
 export type QuoteDocumentData = {
   quoteId: string;
+  /** Full name (not initials) of the Sunworld staff member who prepared this quote -
+   * shown on the itinerary page's "Prepared By" field and the agent-facing cover. */
   preparerName: string;
+  /** Who the trip is for - shown on the client-facing cover. */
+  clientName: string;
   dateIssuedLabel: string;
   guestsSummary: string;
   rateBasisLabel: string;
@@ -73,9 +80,6 @@ export type QuoteDocumentData = {
   /** Agent PDF only - the client template never reads this field. Null when no
    * commissionPct was supplied (most quotes, until/unless a preparer confirms one). */
   commission: { pct: string; amount: string; note: string | null } | null;
-  /** For the cover page's "From {day}{suffix} {month} {year}" line - the date this
-   * quotation was created (same moment as dateIssuedLabel), not the travel date. */
-  coverDate: { day: string; suffix: string; month: string; year: string };
 };
 
 const DEFAULT_INCLUSIONS = [
@@ -105,13 +109,6 @@ const BOOKING_DISCLAIMER = "This quotation is an estimate only. It does not cons
 
 function money(n: number): string {
   return n.toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
-}
-
-function ordinalSuffix(day: number): string {
-  if (day % 10 === 1 && day !== 11) return "st";
-  if (day % 10 === 2 && day !== 12) return "nd";
-  if (day % 10 === 3 && day !== 13) return "rd";
-  return "th";
 }
 
 function mealPlanLabel(mealPlan: string): string {
@@ -268,20 +265,11 @@ export async function buildQuoteDocumentData(params: {
 
   const tiers = Array.from(new Set(quoteResult.stays.map((s) => `${s.input.tier} (${s.input.residency})`)));
 
-  // One "now" reused for both dateIssuedLabel and coverDate - the cover shows the date the
-  // quotation was created (not the travel start date), so it must match the header exactly.
-  const now = new Date();
-  const coverDate = {
-    day: String(now.getDate()),
-    suffix: ordinalSuffix(now.getDate()),
-    month: now.toLocaleDateString("en-US", { month: "long" }),
-    year: String(now.getFullYear()),
-  };
-
   return {
     quoteId,
     preparerName,
-    dateIssuedLabel: now.toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric" }),
+    clientName: content.clientName,
+    dateIssuedLabel: new Date().toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric" }),
     guestsSummary: content.guestsSummary,
     rateBasisLabel: tiers.join(" / "),
     durationLabel: content.durationLabel,
@@ -298,6 +286,5 @@ export async function buildQuoteDocumentData(params: {
     notes: [...(content.notes ?? DEFAULT_NOTES), BOOKING_DISCLAIMER],
     specialRequests: content.specialRequests ?? [],
     commission,
-    coverDate,
   };
 }

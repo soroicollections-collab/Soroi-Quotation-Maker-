@@ -427,7 +427,7 @@ const itineraryDaySchema = {
   additionalProperties: false,
 } as const;
 
-function makeFinalizeQuoteTool(userId: string, preparerInitials: string, conversationId: string, onCall: ToolCallRecorder) {
+function makeFinalizeQuoteTool(userId: string, preparerInitials: string, preparerFullName: string, conversationId: string, onCall: ToolCallRecorder) {
   return betaTool({
     name: "finalize_quote",
     description:
@@ -462,6 +462,13 @@ function makeFinalizeQuoteTool(userId: string, preparerInitials: string, convers
             required: ["propertySlug", "tier", "residency", "checkIn", "checkOut", "mealPlan", "occupancyMode", "pax"],
             additionalProperties: false,
           },
+        },
+        clientName: {
+          type: "string",
+          description:
+            "Who this trip is for, e.g. 'Mr. & Mrs. John Doe' or 'The Doe Family' - ask the requester directly if the " +
+            "itinerary description didn't already give you a name. Shown on the client-facing PDF's cover in place of the " +
+            "old date line; the agent-facing cover shows the preparer's name instead, automatically, not this field.",
         },
         guestsSummary: { type: "string", description: "e.g. '2 Adults + 1 Child'." },
         travelDatesLabel: { type: "string", description: "e.g. '14-16 July 2027'." },
@@ -520,7 +527,7 @@ function makeFinalizeQuoteTool(userId: string, preparerInitials: string, convers
         },
       },
       required: [
-        "route", "stays", "guestsSummary", "travelDatesLabel", "durationLabel",
+        "route", "stays", "clientName", "guestsSummary", "travelDatesLabel", "durationLabel",
         "itineraryDays", "confirmedFlexibleVariables", "assumptionsSurfaced",
       ],
       additionalProperties: false,
@@ -572,10 +579,11 @@ function makeFinalizeQuoteTool(userId: string, preparerInitials: string, convers
       // run on a stateless serverless host.
       const documentData = await buildQuoteDocumentData({
         quoteId,
-        preparerName: preparerInitials,
+        preparerName: preparerFullName,
         routeTitle: input.route,
         quoteResult,
         content: {
+          clientName: input.clientName,
           guestsSummary: input.guestsSummary,
           travelDatesLabel: input.travelDatesLabel,
           durationLabel: input.durationLabel,
@@ -609,7 +617,7 @@ function makeFinalizeQuoteTool(userId: string, preparerInitials: string, convers
   });
 }
 
-export function allTools(userId: string, preparerInitials: string, conversationId: string, onCall: ToolCallRecorder) {
+export function allTools(userId: string, preparerInitials: string, preparerFullName: string, conversationId: string, onCall: ToolCallRecorder) {
   return [
     makeListSoroiPropertiesTool(onCall),
     makeGetSoroiRateCardOptionsTool(onCall),
@@ -618,6 +626,6 @@ export function allTools(userId: string, preparerInitials: string, conversationI
     makePresentChoicesTool(onCall),
     makeListNonSoroiRateFilesTool(onCall),
     makeReadNonSoroiRateFileTool(onCall),
-    makeFinalizeQuoteTool(userId, preparerInitials, conversationId, onCall),
+    makeFinalizeQuoteTool(userId, preparerInitials, preparerFullName, conversationId, onCall),
   ];
 }

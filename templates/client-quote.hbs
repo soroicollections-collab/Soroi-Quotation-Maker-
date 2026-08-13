@@ -78,8 +78,7 @@
   .cover-dash { width: 34px; height: 2px; background: var(--gold); margin-top: 14px; }
 
   .cover-bottom { position: absolute; bottom: 15mm; left: 0; right: 0; text-align: center; z-index: 4; }
-  .cover-date { font-family: 'Cinzel', serif; font-size: 15px; color: #fff; letter-spacing: 0.02em; }
-  .cover-date sup { font-size: 0.62em; }
+  .cover-name { font-family: 'Cinzel', serif; font-size: 15px; color: #fff; letter-spacing: 0.02em; }
   .cover-url { margin-top: 9px; font-size: 9px; letter-spacing: 0.34em; color: rgba(255,255,255,0.92); text-transform: uppercase; }
 
   .quote-meta { display: flex; align-items: center; gap: 18px; margin: 14px 16mm 0; padding: 16px 22px; background: var(--tan-light); border: 1px solid var(--line); border-radius: 6px; }
@@ -176,7 +175,7 @@
   </div>
 
   <div class="cover-bottom">
-    <div class="cover-date">From {{coverDate.day}}<sup>{{coverDate.suffix}}</sup> {{coverDate.month}} {{coverDate.year}}</div>
+    <div class="cover-name">For {{clientName}}</div>
     <div class="cover-url">www.soroi.com</div>
   </div>
 </div>
