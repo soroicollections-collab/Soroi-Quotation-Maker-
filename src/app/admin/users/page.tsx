@@ -2,6 +2,7 @@ import { auth } from "@/lib/auth";
 import { prisma } from "@/lib/db";
 import { createUser } from "./actions";
 import { RoleSelect } from "./role-select";
+import { NameEditor } from "./name-editor";
 
 export default async function AdminUsersPage() {
   const session = await auth();
@@ -32,7 +33,9 @@ export default async function AdminUsersPage() {
         <tbody>
           {users.map((u) => (
             <tr key={u.id} className="border-b">
-              <td className="py-2">{u.name}</td>
+              <td className="py-2">
+                <NameEditor userId={u.id} currentName={u.name} />
+              </td>
               <td className="py-2">{u.email}</td>
               <td className="py-2">
                 <RoleSelect userId={u.id} currentRole={u.role} />

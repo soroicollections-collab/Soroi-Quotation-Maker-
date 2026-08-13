@@ -19,6 +19,16 @@ export async function updateUserRole(userId: string, role: "RATE_MANAGER" | "RES
   revalidatePath("/admin/users");
 }
 
+export async function updateUserName(userId: string, name: string) {
+  await requireRateManager();
+  const trimmed = name.trim();
+  if (!trimmed) {
+    throw new Error("Name cannot be empty.");
+  }
+  await prisma.user.update({ where: { id: userId }, data: { name: trimmed } });
+  revalidatePath("/admin/users");
+}
+
 export async function createUser(formData: FormData) {
   await requireRateManager();
 
