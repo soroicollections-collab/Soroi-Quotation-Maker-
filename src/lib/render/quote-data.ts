@@ -22,6 +22,16 @@ export type FinalizeQuoteContentInput = {
   exclusions?: string[];
   notes?: string[];
   specialRequests?: string[];
+  /** Percentage, e.g. 10 for 10% - omit entirely if no commission applies to this quote.
+   * Computed against accommodation revenue only (not mandatory fees/transfers), matching
+   * standard trade-commission convention. See CommissionInput.note for where this number
+   * came from - never computed by the agent itself, always supplied as a plain percentage
+   * and multiplied here in code. */
+  commissionPct?: number;
+  /** Where the percentage came from, e.g. "Per Sunworld STO agreement" or "Confirmed by
+   * requester - not stated in the rate card." Shown next to the commission line in the
+   * agent PDF so it's never an unexplained number. */
+  commissionNote?: string;
 };
 
 export type PropertyLineItemRow = { description: string; pax: string; nights: number; ratePerPersonPerNight: string; subtotal: string };
@@ -60,6 +70,9 @@ export type QuoteDocumentData = {
   exclusions: string[];
   notes: string[];
   specialRequests: string[];
+  /** Agent PDF only - the client template never reads this field. Null when no
+   * commissionPct was supplied (most quotes, until/unless a preparer confirms one). */
+  commission: { pct: string; amount: string; note: string | null } | null;
 };
 
 const DEFAULT_INCLUSIONS = [
@@ -200,6 +213,24 @@ export async function buildQuoteDocumentData(params: {
   const propertyTotalSum = quoteResult.stays.reduce((sum, s) => sum + s.total, 0);
   const grandTotal = propertyTotalSum + transfersTotal;
 
+  // Commission applies to accommodation revenue only - not mandatory fees (those are
+  // pass-through park/conservancy charges, not Soroi/Sunworld revenue) and not transfers.
+  // The agent supplies only the percentage (confirmed from the rate card or asked directly
+  // - see systemPrompt.ts); this multiplication is the only place the dollar figure is
+  // computed, same "never let the model do arithmetic" rule as everywhere else in this app.
+  let commission: QuoteDocumentData["commission"] = null;
+  if (typeof content.commissionPct === "number") {
+    const totalAccommodation = quoteResult.stays.reduce(
+      (sum, s) => sum + (s.accommodationSubtotal - s.circuitDiscountAmount),
+      0
+    );
+    commission = {
+      pct: `${content.commissionPct}%`,
+      amount: `$${money(totalAccommodation * (content.commissionPct / 100))}`,
+      note: content.commissionNote ?? null,
+    };
+  }
+
   // Itemized rather than one blended figure per property - CLAUDE.md's default inclusions
   // text says "Park, conservancy and reserve fees as itemized", so the summary needs to
   // actually show that split, not just claim it. Each property's rows sum exactly to its
@@ -246,5 +277,6 @@ export async function buildQuoteDocumentData(params: {
     exclusions: content.exclusions ?? DEFAULT_EXCLUSIONS,
     notes: [...(content.notes ?? DEFAULT_NOTES), BOOKING_DISCLAIMER],
     specialRequests: content.specialRequests ?? [],
+    commission,
   };
 }

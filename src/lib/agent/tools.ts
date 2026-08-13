@@ -489,6 +489,21 @@ function makeFinalizeQuoteTool(userId: string, preparerInitials: string, convers
             "back to the client (e.g. a sundowner, a spa treatment, an early check-in). Ask the requester if there's anything " +
             "like this before finalizing - omit entirely if there's genuinely nothing beyond the standard itinerary.",
         },
+        commissionPct: {
+          type: "number",
+          description:
+            "Agent commission as a plain percentage (e.g. 10 for 10%), shown only on the agent-facing PDF, never the client-facing " +
+            "one. Applied to accommodation revenue only (not mandatory fees or transfers) - the multiplication happens in code, " +
+            "never do this arithmetic yourself. Check whether a commission rate is stated in whatever rate source you already " +
+            "have open for this property/tier; if it isn't, ask the requester directly rather than guessing or defaulting. " +
+            "Omit this field entirely if the requester confirms no commission applies to this quote - do not invent 0.",
+        },
+        commissionNote: {
+          type: "string",
+          description:
+            "Where commissionPct came from, e.g. 'Per Sunworld STO agreement' or 'Confirmed by requester - not stated in the " +
+            "rate card.' Shown next to the commission line so it's never an unexplained number. Required if commissionPct is set.",
+        },
         confirmedFlexibleVariables: {
           type: "object",
           properties: {
@@ -570,6 +585,8 @@ function makeFinalizeQuoteTool(userId: string, preparerInitials: string, convers
           exclusions: input.exclusions,
           notes: input.notes,
           specialRequests: input.specialRequests,
+          commissionPct: input.commissionPct,
+          commissionNote: input.commissionNote,
         },
       });
 

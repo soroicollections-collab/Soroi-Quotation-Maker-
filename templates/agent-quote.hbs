@@ -122,6 +122,12 @@
   .discount-note { font-size: 8.7px; color: var(--grey); font-style: italic; margin: 6px 0 0; text-align: right; }
   .property-total-row { display: flex; justify-content: space-between; align-items: center; padding: 10px 12px; background: var(--earth); color: #fff; font-family: 'Cinzel', serif; font-weight: 700; font-size: 11.5px; margin-top: 6px; border-radius: 4px; }
 
+  /* Deliberately outside the pricing table and visually distinct (gold border, not the
+     earth-colored total band) - this is the agent's own earnings, informational only, never
+     part of what the client owes. Agent-copy only; client-quote.hbs has no equivalent. */
+  .commission-line { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 9px 12px; margin-top: 8px; border: 1px solid var(--gold); border-radius: 4px; background: var(--tan-light); font-size: 9.7px; color: var(--earth); }
+  .commission-line .commission-amount { font-family: 'Cinzel', serif; font-weight: 700; font-size: 11px; color: var(--gold-deep); white-space: nowrap; }
+
   .two-col { display: grid; grid-template-columns: 1.35fr 1fr; gap: 20px; margin-top: 14px; }
   .incl-excl h3 { font-family: 'Cinzel', serif; font-size: 12px; letter-spacing: 0.1em; color: var(--earth); margin: 0 0 9px; text-transform: uppercase; }
   .incl-excl ul { list-style: none; margin: 0 0 20px; padding: 0; }
@@ -308,6 +314,12 @@
       </tbody>
       <tfoot><tr><td>Grand Total</td><td class="r">{{grandTotal}}</td></tr></tfoot>
     </table>
+    {{#if commission}}
+    <div class="commission-line">
+      <span>Agent Commission ({{commission.pct}} of accommodation){{#if commission.note}} &mdash; {{commission.note}}{{/if}}</span>
+      <span class="commission-amount">{{commission.amount}}</span>
+    </div>
+    {{/if}}
   </div>
 
   <div class="two-col detail-section">
