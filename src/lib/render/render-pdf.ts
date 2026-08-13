@@ -110,6 +110,7 @@ export async function renderQuotePdfBuffer(params: {
   const html = template({
     ...data,
     masterLogo: masterLogoDataUri("black"),
+    masterLogoWhite: masterLogoDataUri("white"),
     coverPhoto: coverPhotoDataUri(format),
   });
 

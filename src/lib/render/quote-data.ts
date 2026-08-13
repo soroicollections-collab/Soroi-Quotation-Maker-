@@ -73,6 +73,10 @@ export type QuoteDocumentData = {
   /** Agent PDF only - the client template never reads this field. Null when no
    * commissionPct was supplied (most quotes, until/unless a preparer confirms one). */
   commission: { pct: string; amount: string; note: string | null } | null;
+  /** For the cover page's "From {day}{suffix} {month} {year}" line - derived from the
+   * earliest checkIn across all stays (a real Date, unlike travelDatesLabel which is
+   * free text the agent composed), so it can't drift from what was actually calculated. */
+  coverDate: { day: string; suffix: string; month: string; year: string };
 };
 
 const DEFAULT_INCLUSIONS = [
@@ -102,6 +106,13 @@ const BOOKING_DISCLAIMER = "This quotation is an estimate only. It does not cons
 
 function money(n: number): string {
   return n.toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+}
+
+function ordinalSuffix(day: number): string {
+  if (day % 10 === 1 && day !== 11) return "st";
+  if (day % 10 === 2 && day !== 12) return "nd";
+  if (day % 10 === 3 && day !== 13) return "rd";
+  return "th";
 }
 
 function mealPlanLabel(mealPlan: string): string {
@@ -258,6 +269,21 @@ export async function buildQuoteDocumentData(params: {
 
   const tiers = Array.from(new Set(quoteResult.stays.map((s) => `${s.input.tier} (${s.input.residency})`)));
 
+  // Using UTC getters throughout - checkIn is a date-only value from the calculator, and
+  // reading it back with local-time getters risks a server-timezone off-by-one on the day.
+  const earliestCheckIn = quoteResult.stays.reduce<Date | null>((earliest, s) => {
+    const d = s.input.checkIn;
+    return !earliest || d.getTime() < earliest.getTime() ? d : earliest;
+  }, null);
+  const coverDate = earliestCheckIn
+    ? {
+        day: String(earliestCheckIn.getUTCDate()),
+        suffix: ordinalSuffix(earliestCheckIn.getUTCDate()),
+        month: earliestCheckIn.toLocaleDateString("en-US", { month: "long", timeZone: "UTC" }),
+        year: String(earliestCheckIn.getUTCFullYear()),
+      }
+    : { day: "", suffix: "", month: "", year: "" };
+
   return {
     quoteId,
     preparerName,
@@ -278,5 +304,6 @@ export async function buildQuoteDocumentData(params: {
     notes: [...(content.notes ?? DEFAULT_NOTES), BOOKING_DISCLAIMER],
     specialRequests: content.specialRequests ?? [],
     commission,
+    coverDate,
   };
 }
