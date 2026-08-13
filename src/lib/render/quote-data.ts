@@ -50,7 +50,7 @@ export type QuoteDocumentData = {
   durationLabel: string;
   travelDatesLabel: string;
   routeTitle: string;
-  itineraryDays: (ItineraryDayInput & { overnightLogoDataUri: string | null })[];
+  itineraryDays: (ItineraryDayInput & { overnightLogoDataUri: string | null; overnightWebsiteUrl: string | null })[];
   propertySections: PropertySectionData[];
   hasTransfers: boolean;
   transfers: { description: string; amount: string }[];
@@ -80,6 +80,12 @@ const DEFAULT_NOTES = [
   "A deposit is required to confirm and hold this quotation.",
   "This quotation is valid for 14 days from the date of issue.",
 ];
+
+// Always appended, never overridable by a custom notes[] the agent supplies - unlike the
+// default notes above (which exist only as a convenience and can be swapped out), this is
+// a liability-relevant statement that must never silently disappear just because a quote
+// happened to pass a custom notes list.
+const BOOKING_DISCLAIMER = "This quotation is an estimate only. It does not constitute a confirmed booking or reservation.";
 
 function money(n: number): string {
   return n.toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
@@ -183,10 +189,11 @@ export async function buildQuoteDocumentData(params: {
     quoteResult.stays.map((s) => buildPropertySection(s, displayNamesBySlug))
   );
 
-  const { propertyLogoDataUri } = await import("./images");
+  const { propertyLogoDataUri, propertyWebsiteUrl } = await import("./images");
   const itineraryDays = content.itineraryDays.map((d) => ({
     ...d,
     overnightLogoDataUri: d.overnightPropertySlug ? propertyLogoDataUri(d.overnightPropertySlug) : null,
+    overnightWebsiteUrl: d.overnightPropertySlug ? propertyWebsiteUrl(d.overnightPropertySlug) : null,
   }));
 
   const transfersTotal = (content.transfers ?? []).reduce((sum, t) => sum + t.amount, 0);
@@ -237,7 +244,7 @@ export async function buildQuoteDocumentData(params: {
     grandTotal: `$${money(grandTotal)}`,
     inclusions: content.inclusions ?? DEFAULT_INCLUSIONS,
     exclusions: content.exclusions ?? DEFAULT_EXCLUSIONS,
-    notes: content.notes ?? DEFAULT_NOTES,
+    notes: [...(content.notes ?? DEFAULT_NOTES), BOOKING_DISCLAIMER],
     specialRequests: content.specialRequests ?? [],
   };
 }

@@ -88,6 +88,8 @@
   .dest { font-size: 12px; font-weight: 700; letter-spacing: 0.03em; color: var(--earth); text-transform: uppercase; line-height: 1.3; }
   .details { font-size: 10px; color: #5c4c3a; line-height: 1.5; }
   .overnight { display: flex; align-items: center; gap: 9px; }
+  .overnight-link { display: flex; align-items: center; gap: 9px; text-decoration: none; color: inherit; }
+  .overnight-link:hover .ov-name { color: var(--gold-deep); }
   .overnight .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--gold); flex: none; }
   .overnight img.plogo { height: 26px; width: auto; flex: none; }
   .overnight .ov-text { line-height: 1.35; }
@@ -211,6 +213,7 @@
       <div class="details">{{this.details}}</div>
       <div class="overnight">
         {{#if this.overnightPropertyName}}
+          {{#if this.overnightWebsiteUrl}}<a href="{{this.overnightWebsiteUrl}}" target="_blank" rel="noopener noreferrer" class="overnight-link">{{/if}}
           {{#if this.overnightLogoDataUri}}
             <img class="plogo" src="{{this.overnightLogoDataUri}}" alt="" />
           {{else}}
@@ -220,6 +223,7 @@
             <div class="ov-name">{{this.overnightPropertyName}}</div>
             {{#if this.mealPlanLabel}}<div class="ov-meal">{{this.mealPlanLabel}}</div>{{/if}}
           </div>
+          {{#if this.overnightWebsiteUrl}}</a>{{/if}}
         {{else}}
           <span class="ov-none">&mdash;</span>
         {{/if}}

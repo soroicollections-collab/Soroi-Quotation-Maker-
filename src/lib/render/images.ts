@@ -54,3 +54,24 @@ export function propertyLogoDataUri(propertySlug: string): string | null {
   if (!file) return null;
   return dataUri(`logos/${file}`, "image/png");
 }
+
+// Verified 13 Aug 2026 (fetched soroi.com's live navigation, then curled each URL
+// individually and confirmed a 200 response before using any of them - see the
+// conversation this was added in). Same slug key space as PROPERTY_LOGO_FILES above.
+// No entry for soroi-nairobi - pre-launch, no live page yet.
+const PROPERTY_WEBSITE_URLS: Record<string, string> = {
+  "soroi-mara-bush-camp": "https://soroi.com/maasai-mara-camp-portfolio/soroi-mara-bush-camp/",
+  "soroi-private-wing": "https://soroi.com/maasai-mara-camp-portfolio/soroi-private-wing/",
+  "soroi-luxury-migration-camp": "https://soroi.com/maasai-mara-camp-portfolio/soroi-luxury-migration-camp/",
+  "soroi-lions-bluff-lodge": "https://soroi.com/tsavo-camp-portfolio/soroi-lions-bluff-lodge/",
+  "soroi-leopards-lair": "https://soroi.com/tsavo-camp-portfolio/soroi-leopards-lair/",
+  "soroi-cheetah-tented-camp": "https://soroi.com/tsavo-camp-portfolio/soroi-cheetah-tented-camp/",
+  "soroi-larsens-camp": "https://soroi.com/samburu-camp-portfolio/soroi-larsens-camp/",
+  "soroi-samburu-lodge": "https://soroi.com/samburu-camp-portfolio/soroi-samburu-lodge/",
+  "soroi-amboseli": "https://soroi.com/amboseli-camp-portfolio/soroi-amboseli/",
+  "soroi-blue-diani": "https://soroi.com/diani-beach-portfolio/soroi-blue-diani-beach/",
+};
+
+export function propertyWebsiteUrl(propertySlug: string): string | null {
+  return PROPERTY_WEBSITE_URLS[propertySlug] ?? null;
+}
