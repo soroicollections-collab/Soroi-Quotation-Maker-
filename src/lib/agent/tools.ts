@@ -101,10 +101,12 @@ function makeGetSoroiRateCardOptionsTool(onCall: ToolCallRecorder) {
   return betaTool({
     name: "get_soroi_rate_card_options",
     description:
-      "For a given Soroi property + tier + residency, returns what's actually available in the rate card: " +
-      "the validity window, whether it's an unconfirmed stand-in year, the property's own mandatory-fee shape, " +
-      "and the exact room category / meal plan / occupancy-mode values you must pass to calculate_quote. " +
-      "Call this BEFORE calculate_quote for any Soroi property - never guess a room category or meal plan name.",
+      "For a given Soroi property + tier + residency + travel date, returns what's actually available in the rate card " +
+      "covering that date: the validity window, whether it's an unconfirmed stand-in year, the property's own " +
+      "mandatory-fee shape, and the exact room category / meal plan / occupancy-mode values you must pass to " +
+      "calculate_quote. Call this BEFORE calculate_quote for any Soroi property - never guess a room category or meal " +
+      "plan name. checkInDate is required: most properties now have a separate published card for 2026 and 2027 " +
+      "(added 13 Aug 2026) covering the same tier - without a date this tool cannot know which one you mean.",
     inputSchema: {
       type: "object",
       properties: {
@@ -115,30 +117,45 @@ function makeGetSoroiRateCardOptionsTool(onCall: ToolCallRecorder) {
             "Exact tier label as stored, e.g. 'Rack Rate', 'STO 30%', 'STO 40%'. Must be confirmed with the requester first - never default or guess.",
         },
         residency: { type: "string", enum: ["Non-Resident", "Resident"] },
+        checkInDate: { type: "string", description: "ISO date the stay begins, e.g. '2026-09-22' - used to pick the card whose validity window actually covers this trip." },
       },
-      required: ["propertySlug", "tier", "residency"],
+      required: ["propertySlug", "tier", "residency", "checkInDate"],
       additionalProperties: false,
     },
-    run: recordingRun("get_soroi_rate_card_options", onCall, async ({ propertySlug, tier, residency }) => {
+    run: recordingRun("get_soroi_rate_card_options", onCall, async ({ propertySlug, tier, residency, checkInDate }) => {
       const property = await prisma.property.findUnique({ where: { slug: propertySlug } });
       if (!property) {
         return JSON.stringify({ error: `No property found for slug "${propertySlug}". Call list_soroi_properties to see valid slugs.` });
       }
 
+      const date = new Date(checkInDate);
+      // Filtered by validity window, not just tier/residency - properties now commonly have
+      // more than one published card per tier (2026 and 2027 are both real, distinct data as
+      // of 13 Aug 2026, not one standing in for the other). A bare findFirst with no date
+      // filter would pick between them nondeterministically and could report the wrong
+      // year's validity window/figures for the trip actually being quoted.
       const rateCard = await prisma.rateCard.findFirst({
-        where: { propertyId: property.id, tier, residency, status: "published" },
+        where: {
+          propertyId: property.id, tier, residency, status: "published",
+          validityStart: { lte: date }, validityEnd: { gte: date },
+        },
         include: { figures: { where: { category: "accommodation" } } },
       });
 
       if (!rateCard) {
-        const availableTiers = await prisma.rateCard.findMany({
+        const availableCards = await prisma.rateCard.findMany({
           where: { propertyId: property.id, status: "published" },
-          select: { tier: true, residency: true },
-          distinct: ["tier", "residency"],
+          select: { tier: true, residency: true, validityStart: true, validityEnd: true },
+          orderBy: [{ tier: "asc" }, { validityStart: "asc" }],
         });
         return JSON.stringify({
-          error: `No published rate card for ${propertySlug} / ${tier} / ${residency}.`,
-          availableTiersForThisProperty: availableTiers,
+          error: `No published rate card for ${propertySlug} / ${tier} / ${residency} covers ${checkInDate}.`,
+          availableCardsForThisProperty: availableCards.map((c) => ({
+            tier: c.tier, residency: c.residency,
+            validityStart: c.validityStart.toISOString().slice(0, 10),
+            validityEnd: c.validityEnd.toISOString().slice(0, 10),
+          })),
+          note: "Check whether the requested tier/residency simply doesn't exist for this property, or whether it exists but for a different date range than checkInDate - the list above shows every published card and its actual validity window.",
         });
       }
 
@@ -273,7 +290,7 @@ function makeListFlexibleVariableOptionsTool(onCall: ToolCallRecorder) {
             "STO 15%", "STO 20%", "STO 25%", "STO 30%", "STO 35%", "STO 40%",
             "Brass", "Bronze", "Silver", "Gold", "Preferred", "Super Preferred", "Platinum",
           ],
-          note: "STO's exact relationship to the Brass-Platinum named tiers is UNCONFIRMED - never assume 'STO 20%' equals any specific named tier. Only Rack Rate, STO 30%, and STO 40% currently have verified figures in the database for most Soroi properties (a few also have STO 30%). If a requested tier has no published rate card, get_soroi_rate_card_options will report that explicitly - surface it rather than substituting a different tier's numbers.",
+          note: "STO's exact relationship to the Brass-Platinum named tiers is UNCONFIRMED - never assume 'STO 20%' equals any specific named tier. As of 13 Aug 2026, Rack Rate and every STO tier (10/15/20/25/30/35/40, though 2027 has no STO 10% card) are published for all 10 Soroi properties, for BOTH 2026 and 2027 as separate, independently-dated cards - always pass a checkInDate to get_soroi_rate_card_options so it resolves the correct year, never assume only one year exists. If a requested tier has no published rate card for the requested date, get_soroi_rate_card_options will report that explicitly, including every card that IS available - surface it rather than substituting a different tier's numbers or assuming the data doesn't exist at all.",
         });
       }
       // nairobi_hotel
